@@ -1,0 +1,61 @@
+{{- $desc := .Description | default site.Params.description -}}
+{{- if and .IsPage (not .Description) }}{{ $desc = .Summary | plainify | truncate 120 }}{{ end -}}
+{{- $img := "images/site/hero.webp" | absURL -}}
+{{- with findRE `/images/[^)\s"]+\.(webp|jpg|jpeg|png)` .RawContent 1 }}{{ $img = index . 0 | absURL }}{{ end -}}
+{{- $title := cond .IsHome (printf "%s · %s" site.Title site.Params.subtitle) (printf "%s · %s" .Title site.Title) -}}
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="{{ site.Params.author }}">
+{{- if .IsPage }}
+{{- $kw := slice }}{{ range .GetTerms "models" }}{{ $kw = $kw | append .LinkTitle }}{{ end }}{{ range .GetTerms "companies" }}{{ $kw = $kw | append .LinkTitle }}{{ end }}{{ range .GetTerms "tags" }}{{ $kw = $kw | append .LinkTitle }}{{ end }}
+{{- with $kw }}<meta name="keywords" content="{{ delimit . "," }}">{{ end }}
+{{- end }}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $img }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+{{- if .IsPage }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+{{- range .GetTerms "tags" }}<meta property="article:tag" content="{{ .LinkTitle }}">{{ end }}
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $img }}">
+{{- with site.Params.googleVerification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+{{- with site.Params.bingVerification }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
+{{- with site.Params.baiduVerification }}<meta name="baidu-site-verification" content="{{ . }}">{{ end }}
+{{- if .IsPage }}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "description" $desc
+  "image" (slice $img)
+  "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")
+  "inLanguage" "zh-CN"
+  "mainEntityOfPage" .Permalink
+  "url" .Permalink
+  "author" (dict "@type" "Person" "name" site.Params.author "url" site.BaseURL)
+  "publisher" (dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url" ("images/site/logo-512.png" | absURL)))
+  | jsonify | safeJS }}
+</script>
+{{- else if .IsHome }}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" site.Title
+  "alternateName" "如是有为博客"
+  "description" site.Params.description
+  "url" site.BaseURL
+  "inLanguage" "zh-CN"
+  | jsonify | safeJS }}
+</script>
+{{- end }}

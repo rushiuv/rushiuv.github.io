@@ -8,7 +8,11 @@ capitalizeListTitles = false  # 标签原样显示（ams OSRAM、iC-Haus 不被�
 enableRobotsTXT = true
 
 [params]
-  description = "公众号「如是有为」文章存档"
+  description = "如是有为：一个芯片工程师的技术手记，写磁编码器、磁传感器、TMR/霍尔芯片、机器人关节与人形机器人，以及半导体这一行的人和事。"
+  # 在 Google Search Console / Bing / 百度站长后台拿到验证码后填这里
+  googleVerification = ""
+  bingVerification = ""
+  baiduVerification = ""
   author = "如是有为"
   subtitle = "芯片 · 传感器 · 机器人"
   sutra = "一切有为法，如梦幻泡影，如露亦如电，应作如是观。"
@@ -28,6 +32,10 @@ enableRobotsTXT = true
   model = "models"
   company = "companies"
   tag = "tags"
+
+[sitemap]
+  changeFreq = "weekly"
+  priority = 0.5
 
 [outputs]
   home = ["HTML", "RSS"]
