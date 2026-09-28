@@ -1,0 +1,183 @@
+---
+title: "宇树双足毛利63.18%， 关节敢用“普通霍尔”： 我算完20.58：1，又去看了FOC那10微秒"
+date: 2026-09-03T08:25:00+08:00
+slug: "eg8C9XK_GkSV8VppeZZ_dQ"
+description: "同一颗电机端编码器，在关节位置那边被减速比压小；到了FOC，机械角误差却乘极对数，延迟再乘电角速度。"
+original: "https://mp.weixin.qq.com/s/eg8C9XK_GkSV8VppeZZ_dQ"
+---
+
+如是有为 · 编码器工程手记
+
+## 宇树双足毛利63.18%，
+关节敢用“普通霍尔”： 我算完20.58:1，又去看了FOC那10微秒
+
+同一颗电机端编码器，在关节位置那边被减速比压小；到了FOC，机械角误差却乘极对数，延迟再乘电角速度。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUWNaL4T6DYUbZgX0baYKtCcbmicSw3BoVfCRibibHyp3VMYCQHK6CzfEkq5VuEgecOPicbE5wn0V3sVq0FwGic6AiaoKDgY3dKeVcJg/640?wx_fmt=jpeg&from=appmsg)
+
+《财经》那篇宇树长文里，我最先停下来的不是上市，也不是王兴兴。
+
+是两个挨得很近的数字。
+
+一个是：2025年宇树人形机器人毛利率 **63.18%**。这个数在招股书里能直接对上；同年四足机器人毛利率是56.72%。
+
+另一个更扎眼。《财经》采访的一位拆过宇树产品的具身智能公司CTO举例说，宇树不会使用高精度编码器，而是用搭载霍尔元件的“最普通的编码器”，两类方案成本可以相差百倍。
+
+我看到这里第一反应不是“宇树真会省”。
+而是：这颗霍尔到底站在哪条误差链上？
+
+《财经》没有继续交代这颗编码器具体装在哪。宇树G1官网公开参数只明确写了一个很值得注意的词：**关节编码器：双编码器**。
+
+那就不猜宇树内部BOM。先算一种关节里很常见、也最值得算的情况：**如果其中一颗角度传感器位于减速器前、电机这一侧，这笔“精度”最后到底值多少钱。**
+
+01
+
+### 我先去找减速比
+
+公开拆解资料里，G1小腿处一个小关节用了二级行星减速器，总减速比约 **20.58:1**。它不是什么夸张的百倍减速，但拿来算量级已经够了。
+
+宇树没有公开《财经》所说那颗“普通霍尔”的位数。我就拿一个普通的12 bit做示例。
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWNBupicKNCdMhPE9TvISt253Tpw97Sic3CFrkx96oGVphWgSdgdpMSCrd4ErHL1jl7UBBbiaCTe8u8gib4PLP0QZA7ibrruiaibZdXlg/640?wx_fmt=png&from=appmsg)
+
+12 bit 的量化步距
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW4McG5d1V8rvhib06kicrsiaDqN4PqR5nyyqSnQ2vdkstyxhQFzpNYI9eUnBvRC3CqGu8eVAcxvtdfK5Z5ptXia07ZMmd11RwR8sM/640?wx_fmt=png&from=appmsg)
+
+经过20.58:1折算后的量化步距
+
+我算到这里，就已经不太想争12bit还是17bit了。
+
+当然，0.00427°不是编码器精度，只是量化步距折算。实际磁编码器还有INL、偏心、磁场误差、零位和温漂。
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXOKl98Hia5EzjzA5OHYczf7nZjZt63yJ94xUrxQ4oENuRC7IMX9aPtibS5SeY18CSK6Yj1See06aQ7CEfrndWkibLKbtB4GaAxEM/640?wx_fmt=png&from=appmsg)
+
+假设电机端机械角误差为0.5°
+
+如果为了把电机端从0.5°做到0.1°，磁场、装配、标定、温漂一路往上堆，前面辛辛苦苦砍掉0.4°，真正落到关节端少掉的是：
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVOJbmtBkYQlQzJep7AC36beBBN57V6S7uWvFWNRXkJ75SEswNjaQaPoEENF20b4XRjGV4eegRVPOurcKckiasC4vvlibeI1Hrls/640?wx_fmt=png&from=appmsg)
+
+钱当然可以继续花。只是算到这里，我通常会先把头抬起来，看一眼减速器后面。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXcgUSV3pVSTb4l9XD0tKiatwic5E4b08AnoJyhicGZRcoANFZ7icEy3HhvvfrBQ3ibrdLC6QR9jE2RHMnoIga0QY4CPJlMOocagbIg/640?wx_fmt=jpeg&from=appmsg)
+
+02
+
+### 台架上真正烦人的，往往在编码器后面
+
+空载的时候，很多关节都很好看。位置跟得漂亮，重复跑几遍也规规矩矩。
+
+一加负载，味道就变了。电机端角度没觉得跑掉多少，输出法兰已经让了一截。
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXVfbnwdv6EznhGQcb3UILAHtmk6A47QtysY1Zec5e1b74POpfRbnQctiaFddK8eRKravCB9OWV5pavrmKmQtWsDawUqyxoyibLM/640?wx_fmt=png&from=appmsg)
+
+传动误差与负载弹性扭转，发生在编码器后面
+
+编码器自己的误差进到输出端，会被减速比压一遍。减速器内部以及减速器之后才长出来的传动误差和弹性扭转，不会。
+
+更麻烦的是，电机端那颗编码器根本看不见它们。所以我看一些关节方案，编码器规格写得特别豪华的时候，反而会先问后面机械链：**前面多花的那几位，最后机械肯不肯兑现？**
+
+03
+
+### 顺手往FOC一算，方向突然反了
+
+到这里很容易顺手得出一句：电机端编码器不用太准。
+
+但这句话只要往FOC里带一步，就会出事。FOC要的不是关节输出角，它要的是转子电角度。
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXhQgcHO4AJOhqDic3gXv2ClS9O8t9Vtt3WRNUejjYdn1R0opm7gdTER77ca2MfibCZfcluicbQ0IfVduNWNmiamYfFCZlGWaCVghM/640?wx_fmt=png&from=appmsg)
+
+刚才在关节位置那边，我们还在把机械角误差除以减速比；到了换相这里，机械角误差却直接乘上极对数。
+
+一个在做除法。
+一个在做乘法。
+
+所以我绝不会因为减速器后面的定位账不敏感，就说FOC也不在乎电机端角度。它当然在乎。只是它烦的不是“最终关节能不能做到0.01°”那种准。它更烦零位、周期误差、噪声，以及：**这个角度到底晚了多久。**
+
+04
+
+### 我后来反而盯上了那10微秒
+
+公开拆解资料把这类G1小关节电机描述在3000～5000 rpm级别。那就取5000 rpm看一眼。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU37NyWznszx9C229NvMBzzRQTCANJQ1glmnUoJcCzCf3OnYKlv3OwIPkxqo28AU5l1SLH2xk3dlFWoIg1icYvqCib7xNPibl4eaE/640?wx_fmt=png&from=appmsg)
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWs06A8CfN4f4Z6ZDcBCCckD5gAHMRWLYGWLJicYCkwQJqL3MgPNpBPHLYrCJGkBbxQlhAhYkP89Em0PhicyZox2Xd6dv9CH1ibUU/640?wx_fmt=png&from=appmsg)
+
+5000 rpm时，角度链每晚10微秒，机械角已经落后0.3°；进入FOC以后，再按极对数往上乘。
+
+这时候有人把一颗编码器从14bit换到18bit，我第一反应真不一定是“更好了”。
+
+台架上我会先问
+
+延迟呢？
+
+bit数最好找，INL通常也能找到。latency有时候得翻半天。可电机真正跑起来以后，这几微秒一点都不虚。
+
+控制环拿到的不是一张静态Excel里的角度，而是某一个时刻的角度估计。分辨率再漂亮，角度如果已经旧了，FOC还是得按旧角度打电流。
+
+一颗bit数没那么夸张、但延迟低、周期误差干净的磁编码器，放在高速换相里，完全可能比一颗静态参数漂亮、动态链很长的方案舒服。不是因为低bit有什么魔法，是因为FOC根本不认识“20bit”三个字。它只认识此刻你送进来的那个电角度。
+
+同一颗编码器，两套完全不同的尺度
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXr4VefbGNuIOKcbL1T3bIcLd2icuAibP6WeNiaick0XI0giclqLjAtoOfzNWqOcspaFYeCAP3icymRoVUDicWlREb5bCY4qRR3Sq1AoU/640?wx_fmt=png&from=appmsg)
+
+Position loop
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU0ETmlrjZnqHerErgvEoiaqLxuwnZn3lW4Mwjm27kiccdZoqlPM2nBMWmiaa2o5nSBhgQ9owgrTqa3cOAv4ibc3juxj1OicAJ4HFiaQ/640?wx_fmt=png&from=appmsg)
+
+FOC
+
+05
+
+### 然后我又回去看了一眼Dual encoder
+
+宇树G1官网明确写的是：**关节编码器：双编码器。**
+
+公开资料没有把两颗的具体芯片、测量位置、原理和控制分工说透，所以到这里别替宇树编故事。
+
+但“双编码器”本身已经很有意思。只要测量点不同，看到的东西就不同。靠前的传感器可以把高速转子运动看得很清楚，却看不见后面机械链自己发生的变化；越靠近最终输出的测量点，越有机会直接看到那些减速器前编码器看不到的东西。
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVjlcKlrnjTvlRfVObj5dk4RCT6EtJC9oicP2fHqib6FLy3MYNvuTmicFxnRUiapPmJORfGwV3A2XU1ib8upiaibOMQiczvO2cCfcNucibE/640?wx_fmt=jpeg&from=appmsg)
+
+06
+
+### “成本差百倍”，贵的当然也不只是bit
+
+《财经》的匿名CTO说的是两类编码器方案成本可以相差百倍。这个数字是采访对象给出的量级判断，不是宇树招股书披露的BOM差价。
+
+但做编码器的人很容易理解钱去哪了：更好的INL，更严的磁场或者光学结构，更小的偏心和气隙容差，温漂，逐颗标定，治具，标定节拍，装配一致性，以及这些全做完以后，动态延迟还能不能压住。
+
+芯片贵一点只是开头。量产把这些指标同时做出来，才是真钱。
+
+可如果其中某个性能最终进到关节输出端之前，还要先被20.58压一遍，那我一定会停一下。不是不做，先看看值不值。
+
+63.18%的毛利当然不是一颗霍尔省出来的。宇树招股书对人形机器人较高毛利率的解释，本身就提到人形与四足部分零组件通用带来的成本优势，同时也持续做生产和采购降本。
+
+但《财经》那句“普通霍尔和高精度方案成本差百倍”，还是让我把一只关节的账重新顺了一遍。
+
+最后发现最有意思的并不是12bit到底够不够。
+
+在关节位置那边，20.58替它做除法。
+在FOC这边，极对数和转速追着它做乘法。
+
+而真正从减速器后面长出来的那几笔误差，它甚至压根看不见。
+
+我在台架上真正怕的，通常也不是一颗编码器只有12bit。
+
+我更怕前面花很多钱，把一个马上要被减速比压下去的误差继续往下抠。另一边，10微秒已经开始按极对数收利息了。
+
+参考资料
+
+1. 《财经》原文《宇树的低成本密码》： 财经杂志网页
+
+2. 《财经》全文转载版本，包含“普通霍尔编码器 / 成本可差百倍”采访段落： 新浪财经转载
+
+3. 宇树科技G1官方产品页，Joint Encoder：Dual encoder： Unitree G1
+
+4. 宇树科技招股相关公开文件，2025年人形机器人毛利率63.18%、四足56.72%： 公开披露页面
+
+5. G1公开拆解资料，小腿小关节二级行星减速、总减速比约20.58等： 拆解资料转载
+
+文中12 bit、0.5°及极对数p用于工程量级推导，并非宇树公开BOM参数；《财经》“普通霍尔、成本可差百倍”为受访CTO的拆解判断，并非宇树官方BOM披露。

@@ -1,0 +1,155 @@
+---
+title: "LED 光学鼠标 vs 激光鼠标：一次芯片级的系统工程对决, 从微软 IE1.0 和 罗技 MX Master 到 PixArt 几乎一统江湖"
+date: 2026-07-06T00:00:00+08:00
+slug: "ZJJauOyOkMKaau3fYlxzZg"
+description: "1999 年，微软和安捷伦联合发布了 IntelliMouse Explorer 1.0（IE1.0）。它搭配安捷伦设计的 IntelliEye 光学引擎——一颗 CMOS 传感器，每秒拍摄约 1500 张鼠标垫表面的图像。没有滚球、没有编…"
+original: "https://mp.weixin.qq.com/s/ZJJauOyOkMKaau3fYlxzZg"
+---
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXfsNDfhtMhaozzFGY5cVCENXibwL28MlMQqjRlLlA8LnCCIfyXFwwb4PVicEhS2U3UPLMGx2lUTOdVMwfaECpBdQj9qTrYHp8Mw/640?wx_fmt=png&from=appmsg)
+
+## 微软 IE1.0 的 1500fps CMOS vs 激光鼠标：一次芯片级的系统工程对决
+
+### 1999：微软 IE1.0 用图像追踪干掉滚球失效模式
+
+1999 年，微软和安捷伦联合发布了 IntelliMouse Explorer 1.0（IE1.0）。它搭配安捷伦设计的 IntelliEye 光学引擎——一颗 CMOS 传感器，每秒拍摄约 1500 张鼠标垫表面的图像。没有滚球、没有编码轮、没有灰尘粘着。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWdHBSe1iayxckLPnjqYzdlU6ibhZs2BIARNsjicW9Mj4GnRPAzLmpqXmiaubLq5KfNCTZDJTK8LtU2Cuv6sxEVQia20HUc3LdqzGWo/640?wx_fmt=png&from=appmsg)
+
+*微软 IntelliMouse Explorer 1.0 - 1999 年发布的第一款光学鼠标，改变了鼠标设计的未来*
+
+这听起来没什么不了不起。但问题是，同一年罗技还在卖 MouseMan+, 一个靠橡胶球和机械编码轮读位移的产品。对办公室用户来说，IE1.0 不是"更先进"，而是一次从结构上干掉最烦人失效模式的变革：不再需要每隔几周拆开鼠标掏灰，不再忍受打滑和漂移。往后几年，光电鼠标迅速把机械球鼠标挤下牌桌——"不用再拆开鼠标掏灰"这一件事，就是那几年最直观的转折。一个 26 年的过渡，就此打开序幕。
+
+光学鼠标的工作逻辑并不复杂：LED（红光，650-880nm）照亮鼠标垫，CMOS 阵列逐帧捕捉反射光，DSP 对比前后两帧图像中纹理的位移。本质就是"看图识运动"。但集成度是关键——IntelliEye 把 LED 驱动、CMOS 传感器、图像处理都装进一个封装，让制造商可以直接用，不需要堆一堆外围电路。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUL1LbuulbicJXia0Xa9s02QaUm71cHH3x8ga6eNFEGVfVBZF5tGVkiabAd1A0ibEmq9d1wqCOwwwZHxnFVPDg58MNPwLzYXTicRrkM/640?wx_fmt=jpeg&from=appmsg)
+
+*光学鼠标的工作原理：LED 照射表面，CMOS 传感器捕捉反射光信号*
+
+那时候的光学鼠标，LED 用的是红光，波长在 650-880 纳米之间（取决于具体的芯片设计）。LED 的工作逻辑是傻瓜式的：恒定功率发光，照亮鼠标垫表面，CMOS 传感器拍摄反射回来的光线。一张图，一张图地拍，每秒可能拍 1500 到 3000 张。信号处理芯片对比前后两帧图像，追踪鼠标垫纹理特征的位移，算出速度和方向。这套东西的核心，就是一个"看图说话"的图像识别过程。
+
+### 2013-2016：PixArt 原相如何把光学方案做成行业底座
+
+2000 年代中期，光电鼠标芯片市场最关键的玩家是谁？答案是台湾的 PixArt 原相科技。从 2005 年开始，他们专注光学鼠标传感器芯片设计，推出 PMW 系列（后改名 PAW）。早期 PMW3310（5000 DPI）、PMW3325（5000 DPI，功耗优化 30%）都在无线鼠标里大量应用——没有参数竞赛，只有可靠性竞赛。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUYA6jN2ia5kiacH04QHWg2WrRiahLOPAiaYAdpOGFJxZDrqicYBicT8u5RxSxceic2ypparzgELMibG5ecOGLcHpecQB5c9oz9RFfoakM/640?wx_fmt=png&from=appmsg)
+
+转折点在 2013 年。PixArt 发布 PMW3360（12000 DPI）。从这个型号开始，游戏鼠标开始"参数通胀"——DPI 从一个可靠性指标变成了营销亮点。
+
+但真正改变整个产业的，是 2016 年的 PMW3389。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWAw6aYjc2SF8UvHaGx8XIboFqNc3UXPo0XotXPCKBbfGSODVD9Qt7cdKztzWibDoDr4nFFV6X7v1IXMRI233Ly5y6ZbRXiaKqzc/640?wx_fmt=png&from=appmsg)
+
+这颗芯片：16000 DPI、400 IPS 追踪速度、50G 加速度。关键特性有两个。
+
+其一，**动态帧率**。CMOS 传感器不再每秒拍满 3000 张，而是根据鼠标移动速度调整。静止时 100Hz，高速运动时 3000Hz。这个"按需供电"设计让无线鼠标续航从几天拉到了一周乃至两周。
+
+其二，**集成度**。LED 驱动、CMOS 阵列、DSP 信号处理全部整合进 QFN-16 一个封装。制造商不需要外接模拟电路，只要画 PCB 就能做鼠标。成本一下降，从 2016 到 2021，数百家小厂商涌入游戏鼠标市场——Cougar 700M EVO、Gigastone G4M、Delux M628，都用 PMW3389。售价从 100 块到 300 块，同一颗芯片支撑。
+
+PixArt 原相从不做鼠标，只卖芯片。但通过 PMW3389，他们实际上定义了中端游戏鼠标的下限。竞争对手要么跟参数，要么用激光（当时还很贵）。
+
+### 2004：激光鼠标为何一度看起来更高级，最后却输掉了
+
+2004 年，罗技推出了 MX1000 激光无线鼠标——全球第一款用激光代替 LED 的商用鼠标。激光（波长 ~850nm）是相干光，光线几乎平行，有天然的方向性。这让它可以工作在 LED 无法胜任的表面——比如钢化玻璃。在玻璃上，LED 光大部分透射过去，激光却能打透玻璃反射。这是激光的核心卖点。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW4o232CNEkQB7HEibeE7QWOX91EH01Lx12jFDqmA24ibm3jJqFicsr8ALTrj9ibkPIxbGIlb3lX7ChjOsX5oIaB4xFOibhUJj7qAr0/640?wx_fmt=png&from=appmsg)
+
+Logitech MX1000 Laser Cordless Mouse
+
+Avago（安捷伦分拆子公司）制造激光传感器 ADNS-9500（最高 5700 DPI、30G 加速、165 IPS 追踪）、ADNS-9800（最高 8200 DPI）。看起来不起眼，但激光鼠标从不靠速度——靠的是"万能"。任何表面都能用。
+
+罗技 MX1000 用 Avago 激光芯片，首发价 79.95 美元。后来 MX Revolution（2006）也用激光。一度，激光成了罗技高端的标志。
+
+但问题来了：**太贵了。**
+
+激光芯片工艺复杂，二极管良率低。2005-2010 年，激光传感器成本比 LED 高 30-50%。成本全转给消费者。结果是，普通用户买不起激光，真正需要它（在玻璃上工作）的用户也不是鼠标市场主体。
+
+2010 年起，激光鼠标热度衰退。PixArt 原相的 PMW3310、PMW3325 这些光学芯片，凭成本和稳定性优势成了市场标配。到 2015 年，激光鼠标已经沦为小众——只有高端商务鼠标（罗技 MX Master 等）还坚持用。光学赢了，不是因为参数，而是因为**系统工程账算不过来**：激光太贵、太重、太耗电、太难迭代。
+
+### 8000Hz 时代：高报告率彻底放大光学集成度优势，激光彻底出局
+
+2021 年 1 月，雷蛇推出 Viper 8KHz——全球第一款把报告率做到 8000Hz 的量产鼠标，用的是自家定制光学传感器。
+
+什么意思？传统光学鼠标报告率 1000Hz，意味着每秒发送 1000 次位置数据，间隔 1 毫秒。8000Hz 把这压到 0.125 毫秒。在 240fps 的电竞显示器上（每帧 4.17ms），一个鼠标动作被分成 33 个微动作。相比 1000Hz 的对手，延迟降低 7 倍多。
+
+这是个转折点。此前市场上要么用 LED 光学（便宜但报告率 1000Hz 封顶），要么用激光（贵、工艺陈旧、报告率难以提升）。Razer 这一手，暴露了激光的核心问题：**激光传感器这一代设计，没跟上报告率往上冲这条路。**
+
+为什么？PixArt 的光学芯片（PMW3389 及后续）集成度极高——LED、CMOS、DSP 全部在一个 QFN-16 封装里，信号路径短、延迟小。一帧图像处理时间 <100 微秒。报告率往上冲更多是 MCU 和无线协议这一侧的活，只要这两头速度够快，就能推到 8000Hz、16000Hz。
+
+激光传感器这条线，核心芯片（ADNS-9500/9800 这代）定型在 2008-2010 年前后，之后再没有为高报告率、低延迟改过款——工艺路线原地不动，帧率、响应时间这些年几乎是同一张规格表。是芯片架构天生上不去，还是厂商压根没打算重新设计，两种可能都有；能确定的是，激光二极管在高频驱动下更烫、更费电，这点在不少评测里都提到过，是实打实的软肋。
+
+2021-2022 年，罗技、Corsair、SteelSeries 陆续跟进 8000Hz。到 2023-2024 年，8000Hz 成了中端游戏鼠标标配，顶级产品往 12000Hz、16000Hz 推。激光鼠标则从竞技游戏市场彻底消失——太重、太耗电、改进太慢。
+
+### 最后的堡垒：为什么 MX Master 还坚持激光
+
+2021 年底，PixArt 推出 PAW3395。26000 DPI、650 IPS、50G 加速。核心改进：动态帧率（不动 100Hz，运动 3000Hz）降功耗 30%，支持硬件 Motion Sync 减少抖动。迅速成为 2024-2025 年竞技鼠标标配。Razer、Corsair、SteelSeries 全部跟进。
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVwmoD4EqdLaCSKnibtlTmEZkByAEUpicp73CmnMCl5uMGLWovMYBIJKfSFJaNsopjvbxnMZaMAgoP6H8bqmqicrW4Fvqliajj5qvk/640?wx_fmt=png&from=appmsg)
+
+但有个产品线始终没有跟。罗技 MX Master 系列——高端商务鼠标——还在用激光。
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWxqCPaLXUp8sZvPdpvAmczz8WEGDz65icY2uqvbbvCEu4OMmLykBU8Unz34NIXe0ltGvs1kibkQgRmW4161XJGP6hPLiaHGnshsU/640?wx_fmt=png&from=appmsg)
+
+为什么？因为它的用户完全不同。商务用户不在乎 8000Hz 报告率，不在乎 26000 DPI。他们在乎：**一次充电用两个月**，**能在任何表面工作**（包括玻璃）。
+
+激光鼠标在这一点上优势明显。报告率低（1000Hz）意味着无线芯片工作周期宽松，功耗极低。光学鼠标 8000Hz 高报告率，即便有动态帧率优化，无线续航也只能做到一周左右。这个差距对竞技玩家无所谓（一周充一次能接受），对每天整天用的办公族来说就是致命伤。
+
+而且玻璃桌面。LED 光学在玻璃上彻底瞎子，需要配鼠标垫。激光直接穿透。这对高档办公室用户是卖点。
+
+所以格局是：**竞技游戏彻底光学化（PixArt PAW 系列），高端商务孤岛化（激光 + MX Master），中低端全光学（PMW3389 衍生版）。**
+
+### 一个工程师的结论：高端不是参数最高，而是失效模式、成本、供应链的闭环
+
+回到开头的问题：为什么光学传感反而成了高端的标配？
+
+短答：不是因为光学参数更漂亮，而是激光输掉了**系统工程**这一仗。
+
+长答要扫几个维度：
+
+**集成度**。PixArt 的光学芯片（PMW3389 及后续）把 LED、CMOS、DSP 全部集成进 QFN-16，信号路径短，处理延迟 <100 微秒。激光传感器多一颗独立的激光二极管做光源，光路和结构更复杂，这也是它一直比光学方案贵的原因之一。真正卡住激光脖子的，其实是下一条——**这代芯片十几年没有为高报告率重新设计过**。
+
+**工艺进度**。光学芯片跟随 CMOS 工艺演进，每两三年一代。激光芯片设计定型在 2000 年代末，工艺路线基本固化，参数天花板清晰：DPI 封顶 8200（ADNS-9800）、报告率 1000Hz，此后再没有旗舰级新款。
+
+**成本与供应链**。PixArt 是台湾光学传感龙头，供应链成熟、产能充足、良率高。一家小厂只需配 MCU + PCB 就能做鼠标。激光则需要专门的激光二极管供应商（Avago/Broadcom 现在微乎其微），导致总成本 30-50% 更高，而且产能受限。
+
+**参数迭代**。2015 年后，游戏鼠标营销把"数字"本身当成卖点。PixArt 每两三年推一代芯片，DPI 从 12000（PMW3360，2013）→ 16000（PMW3389，2016）→ 26000（PAW3395，2021）→ 30000（PAW3950，2024），每次都能成为"新品发布会"的亮点。激光做不到这种"年年都有新故事"——工艺限制，只能小幅微调。
+
+所以，光学赢了不是因为"参数更高"，而是因为在**成本、供应链、迭代速度、失效模式**上全面压倒激光。这是一次典型的技术代际替换：不是新方案全方位更优，而是旧方案的设计空间走到头，新方案的平台优势彻底释放。
+
+对一线芯片工程师来说，这个案例值得记住。单点参数竞争最终输给系统工程，而系统工程的本质是：**可持续迭代的能力**。
+
+### 知识卡片
+
+>
+
+### DPI 和报告率，说的不是一回事
+
+-
+
+DPI 说的是鼠标"看得多细"——移动 1 英寸，数出多少个点。
+
+-
+
+报告率（Hz）说的是"多久汇报一次"——1000Hz 是每 1 毫秒发一次坐标，8000Hz 是每 0.125 毫秒发一次。
+
+-
+
+DPI 高只是看得细，报告率高才是反应快，两者堆在一起卖，容易被当成一回事。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWqCkzKgISzgC4Rk66ouLQHCdtzlwJ5xImibq75e2zjF8eCpEtmId58O9l8lcK0KeOzqsEiclozcWpJDGibdOF0PyWSFJAaXYicxkQ/640?wx_fmt=jpeg&from=appmsg)
+
+>
+
+### 同样是"发光测位移"，光学和激光差在哪
+
+-
+
+光学鼠标用 LED，激光鼠标用激光二极管——本质都是照一下、拍一下、比对两张图算位移。
+
+-
+
+LED 光散得开，遇到玻璃这类高反光/透明表面容易照穿或散射，传感器"看不清"。
+
+-
+
+激光是相干光，几乎平行前进，能在玻璃上打出可用的反射图案——代价是二极管贵、耗电、发热。

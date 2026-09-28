@@ -1,0 +1,109 @@
+---
+title: "赛峰Colibrys 把＂ 加速度计 校准表寿命 ＂做成了商品，国产加速度计走到哪一步了"
+date: 2026-05-14T00:00:00+08:00
+slug: "13m4mP_brVRcIkipH7bfVQ"
+description: "Safran 体系里的 Colibrys，现在官方名称归在 Safran Timing Technologies 下面。公开资料写得很清楚：这家公司在瑞士 Yverdon-les-Bains，2013 年并入 Safran Electron…"
+original: "https://mp.weixin.qq.com/s/13m4mP_brVRcIkipH7bfVQ"
+---
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUYVA5AicOfQGE7F4JBRPTt4Fko0knz1Q28lr8NURgWka4L2jQgdCweJ4hVicZtK0bac6eoyWHuFejclznuzoxCh44tevm8Yu7KY/640?wx_fmt=jpeg&from=appmsg)
+
+## 赛峰Colibrys 把" 加速度计 校准表寿命 "做成了商品，国产加速度计走到哪一步了
+
+### 7μg/√Hz挂在封面，0.24mg压在寿命里
+
+Safran 体系里的 Colibrys，现在官方名称归在 Safran Timing Technologies 下面。公开资料写得很清楚：这家公司在瑞士 Yverdon-les-Bains，2013 年并入 Safran Electronics & Defense，核心能力就是高性能 MEMS 惯性微传感器，长期做高端电容式加速度计。MS1000 公开页面把几组数字直接摆在封面：±2g 档位下，long-term bias repeatability 0.24mg，in-run bias stability 3μg，noise in band 7μg/√Hz；官方同时把 long-term bias 和 scale factor repeatability 直接写进产品定义。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXPEnibUVLLjHEicxQMN2Uw84mUWnS7EjfzOwkkWVB0SJ0pbYGUjfNtUfDIgIbW12FqpfJ1WYAywQ3jqvZicryR30TWErAYtuGNqU/640?wx_fmt=png&from=appmsg)
+
+这家公司真正值钱的地方，落在 0.24mg 这一刀上。7μg/√Hz 很亮眼，3μg 也很亮眼，真正让系统工程师安静下来的，是偏置表几年后还认账。这个价值平时不显山露水，账都记在后面：老设备继续跑，新设备接进来，历史数据不断档，温补表继续用，返厂重标的频率压下去。Safran 自己在 SI1000 上把这层意思说得更直：系统整个生命周期里，不需要 recalibration，也不需要 maintenance。
+
+### 0.24mg 这一下，直接砍到后账上
+
+加速度计进系统，最后都落在同一条式子里：
+
+这里  是出厂时的比例因子， 是出厂时的偏置， 和  是后面慢慢长出来的漂移， 是随机噪声。系统长期用的，永远都是出厂那天那张表：
+
+这时候最值钱的东西就明摆着了。 大一点，很多场合还能靠平均、带宽限制、结构平均去压。 和  一旦慢慢长出来，那张表就开始老。老设备和新设备开始说两套话，历史数据开始松，温补表也一起松。MS1000 把 long-term bias repeatability 做到 0.24mg，把 scale factor long-term repeatability 做到 400ppm，卖点全压在这儿。
+
+把这个数字摊开算一下，味道更重。0.24mg 大约等于 。单看很小，放进时间里，速度误差和位置误差按下面两条长：
+
+1 小时以后，单靠这一项偏置漂移，就能长出大约 8.5m/s 的速度误差，位置误差能上到十几公里量级。现场当然不会傻到让系统裸奔 1 小时不加任何约束，这个算例的意义只有一件事：**长期偏置从来不是“小修小补”，它决定的是那张校准表还能活多久**。这里真正贵的，不是某一秒更准，而是后面几年少出多少事。基于 MS1000 官方公开值 0.24mg 计算。
+
+### 噪声能平均，老化不会自己消失
+
+行业里最容易被带偏的地方，就是盯噪声盯得太狠。噪声当然重要，很多 datasheet 也最爱把噪声摆在最醒目的位置。可从系统账本看，噪声和长期偏置漂移压根不是一类问题。对白噪声来说，平均时间拉长，方差会按下面这条往下掉：
+
+偏置漂移没有这种待遇。它不会自己平均掉，只会慢慢长进补偿残差里，最后把历史口径拖散。Safran 给 MS1000 的官方描述里，核心关键词始终是 repeatability、scale factor、in-run bias、vibration behavior，这套语言的重心很明确：系统真正疼的地方，全在那张表会不会老。
+
+这也是很多客户平时看不见、出事时最疼的地方。采购阶段看到的是器件单价；项目后面真花钱的，是停机、复验、返厂、重校、历史数据重解释、批次重对齐。SI1000 把“生命周期内无需 recalibration 和 maintenance”写进公开资料，本质上就是把运维账提前算进了产品定义。强震监测这种场景里，设备一放就是很多年，谁都不想隔几年把整套口径重来一遍。
+
+### Colibrys 把老化、温循、振动、冲击都算进去了
+
+Colibrys 这条线真正狠的地方，在于它给的不是“桌面上轻轻测一次”的数字。Safran 2018 年的技术资料写得很清楚，MS1000 的 long-term bias 和 scale factor 性能，是在 severe environmental test plan 和 ageing 之后再做表征的。MS1000L 的 datasheet 里，long-term repeatability 对应的应力历史包括 Turn On/Off、低温存储、高温带电、温度循环、temperature harass、振动和冲击。
+
+这几项摆在一起，工程味就全出来了。偏置表会死，很多时候不是敏感结构一下坏了，而是封装应力慢慢松、材料慢慢老、寄生电容一点点变、温度历史一点点积累，最后把偏置和比例因子往外拱。TS1000T 这类高温系列公开把工艺链条也放出来了：单晶硅电容式 MEMS、Silicon Fusion Bonding、soft die attach、气密封装，再配高温带电寿命、温循、随机振动和重复冲击测试。这里每一步都盯同一件事：别让那张表偷偷老掉。
+
+说到底，Colibrys 的商品不是“加速度值”，是“校准表寿命”。这几个数字一旦被客户记住，产品就从性能件变成寿命件了。7μg/√Hz 是面子，0.24mg 和 400ppm 才是里子。
+
+### 国内这盘棋，钱花在三处
+
+**国内现在不是“有没有加速度计”的问题，产品已经很多**。真正该看的，是各家把钱花在误差预算的哪一截。
+
+#### QMA6100P、MXC3638AL：前端商品已经很成熟
+
+**矽睿 QMA6100P** 的公开定义非常标准：三轴、14-bit ADC、2×2×0.95 mm、低功耗、I²C/SPI，应用直接对着可穿戴、IoT、TWS、游戏手柄和个人导航。 **文本**
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV2IPShiabFX4ZsDd7nBV0pf3WSqLeE0TAdUuxQlvfstgOhBq5zo0QRPzcNPbdAyOgzIsW9I6mgSiaS6qckxnrXWn5SdTFPLzmtM/640?wx_fmt=png&from=appmsg)
+
+**美新 MXC3638AL** 公开参数是 ±2/4/8/12/16g、14–1300 samples/sec、0.4μA Sniff mode、0.9μA wake mode、2.3mgRMS 噪声、I²C/SPI、AEC-Q100 Class 3。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXicAkCqmEIicTqLrpRVNbadUpAuTRFJQa1fKYOn2lt6vxGzC9gbTL71qYdbberyghS2nUl67W19JmZW8qxqGpTibw7ueHVJxuRYU/640?wx_fmt=png&from=appmsg)
+
+这类产品的钱，压在功耗、封装、接口、量产、车规导入效率上。它们对应的系统大多有频繁外部参考：重力方向、姿态重置、状态机、上层算法融合，长期偏置表活 5 年还是活 8 年，采购第一页不会先看这个。这个阶段国内已经很成熟，成熟在“**前端商品化**”这几个字上。**产品任务很明确：先把海量装机做稳**。基于这些产品公开应用和参数作出的工程判断。
+
+#### 高华：测点先冻住，接口再冻住
+
+高华这条线很值得单拎。它公开最清楚的产品，不是通用高性能 catalog 加速度计，而是**高铁场景**里的节点件。高华 2025 年年报公开写到，MJ-131B/BL1 采用微机电感应电容，将加速度值转换为电压信号，再通过 V/I 转换输出 4–20mA 电流，主要用于高铁车辆转向架水平横向加速度检测；MJ-331AL1 通过 V/I 转换输出三路 4–20mA 电流，用于高铁车厢垂向、纵向、横向加速度检测。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWIZiarII4FibONmw7V8AwDofbUmr0sTEtNGdMjqqBK3z8r4zFdzJVyo0icUINfKBspZmVZjpHsUicJoo4pEEpHHpQgOConShGVibso/640?wx_fmt=png&from=appmsg)
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVJXKqXEooy2GX2XOnmYO8Lpu6a6Cr29SZP3CRHH2KZlMeTicL7ibUv7SFd4LCA6SDTQsmLeNxwv72tYDrz7yib04dUwR4VWVC1hQ/640?wx_fmt=png&from=appmsg)
+
+这组定义背后的技术重心很重。转向架横向、车厢三向、4–20mA，这几个词连起来，说明高华公开市场里优先解决的是测点方向、长线传输、抗扰、系统接收、验收口径。4–20mA 这条链，在工业和轨交里本来就是拿来扛长线、扛噪声、扛故障识别的。高华这条线的钱，压在“测点冻结”和“接口冻结”上。主导误差项排在前面的，是安装、方向、EMC、线缆、接收端，而不是 datasheet 封面上那几个器件级数字。基于高华公开产品形态和 4–20mA 工业链路特性作出的工程判断。
+
+这一步很深。**国内很多项目先死在安装和链路**，死不到 0.24mg 和 0.5mg 谁更漂亮那一步。高华已经把“高铁上测哪儿、朝哪儿、怎么接”做成了产品，这条线吃的是场景误差预算。公开资料里暂时看不到 Colibrys 那种型号级 long-term bias repeatability、scale factor repeatability 写在第一页的口径，高华目前公开更像“测点和接口产品化已经很深”，寿命级误差模型还没有被做成统一商品语言。这个阶段判断，来自其公开页面的参数结构。
+
+#### EAM1010、EAM1011、芯动联科：已经摸到表寿命这块肉了
+
+国内另一条线已经开始有明显的“器件味”。**天羿领航公开的 EAM1010** 写得很直：单轴、Z 轴敏感、蝶翼式结构、体硅工艺、良好的零偏稳定性和恶劣环境适应性，量程 ±2g 到 ±30g，**可替代 Colibrys MS9000 系列**。EAM1011 则公开写成单轴、Z 轴敏感、DC 到高频振动检测基准，强调线性、重复性、高冲击性和噪声性能组合，自带嵌入式自检，可替代 Colibrys VS1000 和 ADI ADXL100X，另有页面给出 3dB 带宽 ≥10kHz、抗冲击 12000g。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX8taVYLTmvvAhickfJExtSh1c6NsemZF1AAyNgSCeQa52ZZXSsl512MqN0oFCGWaKbPFuKJ1ibfWV4F9ueNnFQl5lQHTYTic8Dqg/640?wx_fmt=png&from=appmsg)
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWMB7xDOYibNzam2F3y1kNsnQvha1Wucph7iczrfhoFapdS7Xr0Vb800DUuPkLXb8dB5E0ibnQrKIHYsEh5iazbuVfEKVNcCicXHhvg/640?wx_fmt=png&from=appmsg)
+
+这些词放进同一个误差模型里，意思就很明确：国内已经开始认真啃 Δb 和 ΔK 这块肉了。零偏稳定性、重复性、体硅工艺、自检、高冲击，这一串公开语言说明产品逻辑已经从“检测到运动”走到了“测量基底尽量干净”。再往前走一步，商品脸会彻底变掉，型号页上会开始出现 long-term bias repeatability、scale factor repeatability、经历温循/振动/冲击后还剩多少原样。现在这类公开资料更多还是结构路线正确、工况性能不错、替代关系明确，说明手已经摸到门把手了。
+
+**芯动联科**这条线又往上顶了一截。公司公开年报写到，高性能 MEMS 加速度计接近石英加速计水平，可达到导航级水平，MEMS 陀螺仪和加速度计性能在国内高性能 MEMS 惯性传感器行业处于领先地位；募投项目里也单列了“高性能及工业级 MEMS 加速度计开发及产业化项目”。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVGBmmib1KPefdKXmhVYAWPo9jIWsT8PjweHHxOCz8WOOnRNRF5IYeFVWl05Wic3RdEgqATLhbEyvrKAq0OicNZrBNYItA54BWTWo/640?wx_fmt=png&from=appmsg)
+
+这段离 Colibrys 最近。差距已经不在“有没有高性能敏感结构”，也不在“有没有导航级产品”，更多落在最后那层商品语言上：型号级、寿命级、应力历史之后，Δb 和 ΔK 还能被公开钉死到什么程度。Colibrys 把这件事做成了 0.24mg、400ppm 这种客户一眼能记住的数字；国内高性能惯性线已经走到门口，公开商品化还在长肉。这个阶段判断，基于双方公开口径的颗粒度差异。
+
+### 下一轮胜负，落在谁先把 Δb 和 ΔK 做成公开商品
+
+这几条线摆在一起，国内所处阶段就很清楚了。
+
+QMA6100P、MXC3638AL 这一段，前端商品已经成熟，钱花在功耗、封装、接口和量产上。
+
+高华这一段，测点和接口已经做深，钱花在安装、传输链、系统接收和验收口径上。
+
+EAM1010、EAM1011 和芯动联科这一段，已经开始往偏置表寿命和比例因子寿命上冲。
+
+Colibrys 站在更靠前的位置，把“表能活多久”这件事直接做成了公开可比的商品。
+
+这一整盘棋里，最硬的分水岭落在同一个地方： **偏置表能活多久，比例因子表能活多久，经历温循、振动、冲击和老化之后，还剩多少原样。**
+
+0.24mg 这把尺子量出来的，从来不只是 datasheet 好不好看，量出来的是一条产业线把钱花在了哪里。Colibrys 把钱花在“校准表寿命”上，而且把这件事公开卖成了商品。国内已经有人把测点做深了，有人把前端商品做满了，有人已经摸到了偏置表这块肉。下一轮真正见血的地方，落在谁先把 Δb 和 ΔK 的寿命边界，写成型号页上那一行最硬的数字。
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWU9cvIUXAnKpvf5wWQ0KJiazichmm2icmZXCiavCgtwTCAJF19LSQcTP8l3rCTcyQLFDksKl2hwg6egZaJSnjZia0AMFlTiaMb15kDQ/640?wx_fmt=png&from=appmsg)

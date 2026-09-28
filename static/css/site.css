@@ -1,0 +1,35 @@
+:root{--bg:#fbfaf7;--fg:#1f1f1f;--muted:#6b6b6b;--line:#e6e3dc;--accent:#8a3b12;--code:#f1eee7}
+@media (prefers-color-scheme:dark){:root{--bg:#161616;--fg:#e6e6e6;--muted:#9a9a9a;--line:#2c2c2c;--accent:#e0a070;--code:#222}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+.site-header{border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.brand{font-size:20px;font-weight:700;color:var(--fg)}
+nav a{margin-left:18px;color:var(--muted)}
+.tagline{color:var(--muted);font-size:14px;margin:28px 0 8px}
+.page-title{font-size:26px;margin:32px 0 16px}
+.card{padding:20px 0;border-bottom:1px solid var(--line)}
+.card h2{font-size:19px;line-height:1.5;margin:0 0 4px}
+.card h2 a{color:var(--fg)}
+.card time,.meta{color:var(--muted);font-size:13px}
+.card p{margin:8px 0 0;color:var(--muted);font-size:15px;line-height:1.7}
+.pager{display:flex;justify-content:space-between;align-items:center;margin:28px 0;color:var(--muted);font-size:14px}
+.post-title{font-size:27px;line-height:1.45;margin:36px 0 8px}
+.meta{margin-bottom:28px}
+.content{overflow-wrap:anywhere}
+.content img{display:block;max-width:100%;height:auto;margin:18px auto;border-radius:4px}
+.content h2{font-size:21px;margin:36px 0 12px}.content h3{font-size:18px}
+.content blockquote{margin:16px 0;padding:4px 16px;border-left:3px solid var(--line);color:var(--muted)}
+.content pre,.content code{background:var(--code);border-radius:4px;font-size:14px}
+.content pre{padding:12px;overflow-x:auto}.content code{padding:1px 4px}
+.content table{border-collapse:collapse;display:block;overflow-x:auto;font-size:15px}
+.content th,.content td{border:1px solid var(--line);padding:6px 10px}
+.prevnext{display:flex;justify-content:space-between;gap:16px;margin:40px 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.year h2{font-size:20px;margin:28px 0 8px}.count{font-size:13px;color:var(--muted);font-weight:400}
+.year ul{list-style:none;padding:0;margin:0}
+.year li{display:flex;gap:14px;padding:6px 0;border-bottom:1px dashed var(--line);line-height:1.6}
+.year li time{color:var(--muted);font-size:14px;flex:none;font-variant-numeric:tabular-nums}
+.site-footer{border-top:1px solid var(--line);margin-top:48px;padding:24px 0;color:var(--muted);font-size:13px}

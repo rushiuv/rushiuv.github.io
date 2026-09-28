@@ -1,0 +1,7 @@
+{{ define "main" }}
+<p class="tagline">{{ site.Params.description }} · 共 {{ len (where site.RegularPages "Section" "posts") }} 篇</p>
+{{ $pages := (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+{{ $pager := .Paginate $pages }}
+{{ range $pager.Pages }}{{ partial "card.html" . }}{{ end }}
+{{ partial "pager.html" $pager }}
+{{ end }}

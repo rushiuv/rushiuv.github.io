@@ -1,0 +1,45 @@
+---
+title: "我读完博士以后理解 Dyson 讨厌 Ph.D. 制度"
+date: 2026-09-17T18:09:00+08:00
+slug: "TVSLHHFPsoYrv5hYyGFsOg"
+description: "我读完博士以后，反而越来越理解 Dyson 为什么讨厌 Ph.D. 制度"
+original: "https://mp.weixin.qq.com/s/TVSLHHFPsoYrv5hYyGFsOg"
+---
+
+我读完博士以后，反而越来越理解 Dyson 为什么讨厌 Ph.D. 制度
+
+Freeman Dyson 有句很狠的话：“I’m very proud of not having a Ph.D.” 他甚至把 Ph.D. 制度称为一种“abomination”。
+
+以前看到这种话，我大概会觉得是天才的特权。现在自己读完博士，又做了这些年芯片，反而越来越理解他在说什么。
+
+他批评的其实不是知识，也不是研究训练，而是研究训练最后变成了资格认证。
+
+博士本来应该训练一个人：面对一个没人知道答案的问题，自己定义问题、找证据、推翻假设，再一点点逼近答案。可制度运行久了，很容易变成另一套东西：读够几年，发够论文，完成答辩，然后拿到一张证明“你有资格做研究”的纸。
+
+这两件事，并不是完全一回事。
+
+我现在做磁传感器芯片，这种感觉特别明显。客户现场不会按论文目录给你出题。他只会问：为什么 85°C 开始漂？为什么静态角度很好，一转起来误差就变大？为什么 SPI 读出来的曲线很漂亮，电机还是会抖？
+
+这时候没人告诉你答案在哪。可能是磁场，可能是模拟前端，可能是 ADC、数字滤波、时钟，也可能最后查到客户机械装配的一点偏心。
+
+这种时候，我反而最感谢博士训练。
+
+博士真正值钱的，不是你当年研究了什么题目，而是你已经习惯了一件很难受的事：连续很长时间不知道答案，还能继续把问题往下拆。
+
+所以我并不觉得博士没用。
+
+我只是越来越觉得，Dyson 真正反对的是另一件事：当“会不会研究”慢慢被替换成“有没有博士”，当能力开始让位于证书，Ph.D. 就从训练变成了门票。
+
+而工业研发最后还是很残酷。
+
+芯片不会因为你有博士学位，就少一个 bug。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVGcB1cicWV49VDzVLuooKXgpgXMrImsZBGOiaYwfzpK0ZGWGxqpt21xQibdp2M89J8eicd8iao6fdqB2SaTYqVDvCQVnUtUE0Zy4LQ/0?wx_fmt=jpeg&from=appmsg)
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWRVxKNibbUKITufRWTLsruUubLuonttic5HzRKwCqoRBrrCFTT6aMqjiaAFthoUic56tEWTgu4PAarzHPrA2KbPZKc0E2iaaeaoyWQ/0?wx_fmt=jpeg)
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIX1DRBO1GeDQiatu48khcDcheq5vjb5n5SOh5NRGKCynbnPPWb3gHvL3ep9p0tvbq6SOqmQyrgmEn9XOvhHa5pqQFiaovzmUKfU4/0?wx_fmt=jpeg)
+
+![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXo46iaWAib7BXUcaSuxu7YjLvqdELgn3QFg6NaibWjSpacvGTBJn0ibcjqc5tgq3iaic3yJBgMO7jdLahsx6d8TvI28mvEPV3knBk9w/0?wx_fmt=png&from=appmsg)
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUxM8KjAiccqWOIqZh8ayd7ZP7iaW6k0FmSz4VrztvbQUiafibd0p7ZXlIXbib6Mb81BXNG7J8ibXqK7ANZEpxb86LchUNIyCUhibrfSc/0?wx_fmt=png)

@@ -1,0 +1,21 @@
+---
+title: "编码器的分辨率和精度区别"
+date: 2026-04-04T20:54:00+08:00
+slug: "yjNAGS3K_sxebtsNJghj1g"
+description: "编码器的分辨率和精度，是两个完全独立的核心指标，用一把尺子就能说透。"
+original: "https://mp.weixin.qq.com/s/yjNAGS3K_sxebtsNJghj1g"
+---
+
+编码器的分辨率和精度，是两个完全独立的核心指标，用一把尺子就能说透。
+
+分辨率，就是尺子上的最小刻度。比如一把尺子最小标到1毫米，它的分辨率就是1毫米，代表这把尺子能看清的最小单位。对应到编码器，分辨率就是它能分辨的最小角度变化，由一圈的脉冲数、磁极对数、霍尔阵列密度等硬件参数决定。比如16位磁编码器，一圈能分2的16次方也就是65536个刻度，分辨率就是360°/65536≈0.0055°，这是它的“最小计数单位”，只和刻度数量有关，和准不准没关系。
+
+精度，就是这把尺子本身的准头。哪怕尺子刻了密密麻麻的细刻度（分辨率很高），如果尺子本身弯了、刻度歪了，量出来的长度也会不准，这就是精度差。对应到编码器，精度是测量值和真实角度的最大偏差，是综合了信号畸变、安装偏心、温漂、震动等所有误差后的最终结果。比如一个16位高分辨率编码器，因为安装偏心、谐波畸变，实际测量误差达到了±10个刻度，那它的精度就远差于分辨率，高分辨率只是“虚标”。
+
+两者的核心关系是：分辨率高不代表精度高，精度高也不代表分辨率高。就像一把刻度精细但歪掉的塑料尺，分辨率高但精度差；一把刻度粗但刻度绝对准的钢尺，精度高但分辨率低。工程里选编码器，不能只看分辨率参数，更要关注精度指标——高分辨率只是“能数得细”，高精度才是“数得准”，最终的控制效果，永远由精度决定，而非分辨率。
+
+＃编码器分辨率解析 ＃编码器精度详解 ＃最小角度变化揭秘 
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUBjLqQvmV1GnKshF8LjDJCtXiblF5uwQ2JjPUWN4Kub6CoYtjW0VYVLW6FosdcsOOSaXvlJxICYHpwSu8tREcGv6QcjQrRqOeY/0?wx_fmt=png)
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXZ7klDxZnavOAqxt7QOm4qsv7k4AQn5xPGCRiaicEiaUxKm1dr4Lq9gUBLscTQExxyL5BAHaC3O8t0ibDKaDPK2iaV3ORUT6sMxfbU/0?wx_fmt=png)

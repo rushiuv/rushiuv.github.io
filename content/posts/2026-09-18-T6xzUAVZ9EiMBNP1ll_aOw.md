@@ -1,0 +1,57 @@
+---
+title: "从 RTL 到 GDS：那些文件到底在干什么"
+date: 2026-09-18T13:51:00+08:00
+slug: "T6xzUAVZ9EiMBNP1ll_aOw"
+description: "刚学 VLSI 时，最容易把人劝退的，其实不是 RTL。"
+original: "https://mp.weixin.qq.com/s/T6xzUAVZ9EiMBNP1ll_aOw"
+---
+
+刚学 VLSI 时，最容易把人劝退的，其实不是 RTL。
+
+Verilog 刚写顺一点，仿真也能跑了，突然有人扔给你一个项目目录：
+
+.lib、.lef、.def、.sdc、.spef、.upf、.gds
+
+第一次打开的时候，真正麻烦的不是「这些后缀背不下来」，而是你根本不知道工具为什么需要这些东西。
+
+后来才发现，根本不用背文件名。物理设计工具一直在问几个非常具体的问题：
+
+电路里有什么？ —— Netlist
+
+时序要求是什么？ —— SDC
+
+这个标准单元到底能跑多快？ —— LIB
+
+单元长什么样、Pin 在哪里？ —— LEF
+
+芯片上的东西最终摆在哪里？ —— DEF
+
+布完线以后，真实的 RC 寄生有多大？ —— SPEF
+
+电源域怎么切、哪里需要隔离和电平转换？ —— UPF
+
+DFT/Scan 链最后怎么排？ —— SCANDEF
+
+最终交给晶圆厂的几何图形是什么？ —— GDS / OASIS
+
+这样再去看一个 ASIC 项目目录，感觉会完全不一样。
+
+.lib 不再是一个陌生后缀，它其实是在告诉 STA：这颗门在什么 PVT、什么输入 slew、什么负载下面，需要多少时间。
+
+.lef 也不只是“版图文件”，它故意不把晶体管内部细节全部告诉 P&R，只告诉工具：这个 cell 多大，哪些地方能走线，Pin 在哪。
+
+而 .spef 出现以后，事情又变了一层。前面你看到的是逻辑连接，到了这里，工具开始承认一件真正属于物理世界的事：
+
+线不是理想的。
+
+它有电阻，有电容，会拖慢边沿，也会改变时序。
+
+所以 VLSI 后端真正难学的，从来不是十几个文件扩展名。
+
+而是慢慢看懂：从 RTL 到 GDS，工具每往前走一步，都在向你索取一部分更接近真实硅片的信息。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXusWN83jvfI4RJO4vAcgjOBvBAYicazeKksDnNwkFOzqlLCtHDQKKFBDibm2sn6qLgsN3RwWsqD8opPbwW7q1UgSNzd2GRqSFFg/0?wx_fmt=png&from=appmsg)
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWugzTEYiaoOyKGX6ibnib5UBo530krzIVseupB08JiaSL2pJM1UDXhs8bLibUDDuvXnG5j3tBQXKvzvVC4unqq71elgicAHj1OxRXY8/0?wx_fmt=png)
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX1fSRmHyqQXZJK5iaiayJndgRibyvic86IdNBv6dsDw9E0f7NPXmVHiac4LhkZv9PnH8ia3V0QFp49LbtIsfEyibKTaLG7gjbado3BQ0/0?wx_fmt=jpeg)

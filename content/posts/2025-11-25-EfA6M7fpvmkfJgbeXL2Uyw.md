@@ -1,0 +1,76 @@
+---
+title: "26家展商、36个品牌：瑞士在进博览会（CIIE 2025）上打出最大阵仗，只为一次“被看见”"
+date: 2025-11-25T18:45:00+08:00
+slug: "EfA6M7fpvmkfJgbeXL2Uyw"
+description: "在第八届中国国际进口博览会（CIIE）上，瑞士终于走出了它那座安静的阿尔卑斯山。"
+original: "https://mp.weixin.qq.com/s/EfA6M7fpvmkfJgbeXL2Uyw"
+---
+
+在第八届中国国际进口博览会（CIIE）上，瑞士终于走出了它那座安静的阿尔卑斯山。
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWj31pDm72vzsN8T8kxmIGFB3OibUicGlhM0RFt58Q0J4kBzya7svro8cqg/640?wx_fmt=jpeg&from=appmsg)
+
+不是一个品牌，而是一整个国家形象集体下场——Swiss Centers China 组织了26家展商、36个品牌，占据了他们历史上最大面积的展台阵容，覆盖从传统奶酪、药品，到高端厨具、智能家电，精密得像开了一场跨行业的“瑞士人格体验展”。
+
+这不是瑞士第一次来中国参展，但却是他们**最主动的一次集体表达**。
+
+瑞士驻上海总领事 Sacha Bachmann 在社交媒体上亲自发文，盛赞这次“瑞士品牌与中国消费者之间的强大磁场”，并表示自己“非常高兴能与瑞士商务促进中心负责人 Joel Saurina 和驻华大使馆经济处主任 Martin Matter 一起，见证这一历史性场景”。
+
+他写道：
+
+![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWj90rhx15cDiazjXkJl1ByCInOwFHUZek25zWQP9Nnyar1hMFelQZ6t3A/640?wx_fmt=png&from=appmsg)
+
+>
+
+“Swiss Centers at CIIE 2025: Magnet for Swiss Brands & Chinese Consumers.”
+——CIIE 2025 上的瑞士中心，是瑞士品牌与中国消费者之间的磁场。
+
+这不再是一次例行参展，而是一次国家认知方式的转折点。
+
+你如果曾看过早几年的CIIE展，就会知道——瑞士人从不张扬。
+
+他们的展台一贯设计得像表盘一样精准，产品排得像电路板一样冷静，解说词干净利落、克制有度。你来不来、买不买，他们都不会多说一句话。
+
+但这一回，他们变了。
+
+你会看到瑞士品牌员工站在展位前直播讲解产品，用带口音但认真的中文介绍“阿尔卑斯草本饮”的功效；你会看到展位背景图从雪山湖泊变成了适配中国厨房的生活化场景；甚至连品牌文案都开始用上了“小红书体”：“这台净化器，瑞士原装，适合有娃家庭。”
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWj0ud7MJh9CxQBrIVdxo2F4T6zdOaskWJtCibohUZqMzkxd6H1sJv2zWA/640?wx_fmt=jpeg&from=appmsg)
+
+**三分之一的品牌是第一次参展。他们原本更习惯于在欧洲市场里闭环运行，从不在意内容传播、情绪互动、人格包装。但这次，他们显然做足了功课——而这一切，背后正是 Swiss Centers 这家组织25年来在中国市场的深耕结果。**
+
+但这一次，瑞士来中国，不是来卖货的。
+
+他们来，是为了**被看见**。
+
+不是让别人记住瑞士有多精密，而是让你感觉“它也可以很亲近”。这对瑞士品牌来说，是一次自我表达能力的集体升级；对中国市场来说，是一次文化适配方式的试炼。
+
+**瑞士不缺品质，但它过去一直缺“存在感”。**
+在欧美语境中它是“中立者”，在亚太市场它是“隐形高端”，但在中国——这个人人都在卷人格、卷标签、卷内容的舞台上，瑞士终于明白了一件事：
+
+完美不够，得会说话。
+严肃不够，得让人想靠近。
+
+所以他们组团来了，打破沉默，用一整块展台练习“表达”。
+
+Sacha Bachmann 在回顾这次参展时，提到 Swiss Centers 正好迎来了 25 周年。他说：“Very happy to meet visiting members from the Ticino Market Delegation… co-organized by Swiss Centers, Cc-Ti and SCCC.”
+
+从联邦的商业系统，到地方的区域商会，再到中瑞间跨文化的桥梁组织——瑞士从国家到企业，从传统制造到新锐品牌，**都在用一种更积极的姿态进入中国市场。
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWjzuJEyAjjKfX1dzlZylLpznEqAuC9iaGFcPY0mKhes2EdfvO1wibjuOyw/640?wx_fmt=jpeg&from=appmsg)
+
+你以为他们来“找买家”？错。**
+
+他们是来“重启人格”的。
+
+这不是生意，这是一次国家认知的“重新对焦”。
+
+商业世界里，一个品牌可以靠品质生存，但要靠“表达”才能被喜欢。
+
+瑞士过去太安静了，现在，它终于愿意说话了。
+
+这一次，它打出最大阵仗，只为一次真正的被看见。
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWjCQv9SW2G6IbkMx8srbrGA9KUwWeicUXC7JlHbB6a1Q7NhgkUNq5L8mA/640?wx_fmt=jpeg&from=appmsg)
+
+###

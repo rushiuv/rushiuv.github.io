@@ -1,0 +1,161 @@
+---
+title: "机器人客户上市以后，做磁传感芯片的供应商会先遇到什么"
+date: 2026-09-13T14:16:00+08:00
+slug: "xOoe1Qq7H9ylmBMjNq4ojA"
+description: "如果你是一家上海做磁传感芯片、磁编码器芯片的国产供应商，客户是一家杭州正在冲上市、或者刚上市的人形机器人公司，接下来最先发生的事情，往往不是订单突然变多，而是客户开始把你的工厂看得更细了。"
+original: "https://mp.weixin.qq.com/s/xOoe1Qq7H9ylmBMjNq4ojA"
+---
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXzx5wrCOh7yCbDKG92KgGsaNxpSl3HFDZ9RwFlKbdOIDibkLacUUJ2Y8mgWbInVPichy5WMnOe2mWkIJd0q2bPLQO77A3ic8HGLc/640?wx_fmt=png&from=appmsg)
+
+## 机器人客户上市以后，做磁传感芯片的供应商会先遇到什么
+
+如果你是一家上海做磁传感芯片、磁编码器芯片的国产供应商，客户是一家杭州正在冲上市、或者刚上市的人形机器人公司，接下来最先发生的事情，往往不是订单突然变多，而是客户开始把你的工厂看得更细了。
+
+以前样片装进关节，角度精度过线，SPI 能读，高低温没出大问题，项目就可以往下推。等客户真正开始准备几千台、几万台量产，问题会突然换一批：晶圆批、封装批、测试批能不能追回去？PCN 怎么管？一颗编码器返修以后原来的标定参数还能不能继续用？现场出现 0.3° 的角度偏差，到底是芯片、磁铁、装配还是标定？突然把需求从 1 万颗拉到 10 万颗，测试产能能不能跟上？
+
+然后采购也会进来。明年能不能再降一点？账期能不能从 60 天做到 90 天？第二供应商怎么安排？
+
+到了这里你才会发现，客户嘴里采购的是一颗磁传感芯片，实际上在挑的是一家未来几年能不能陪它量产、陪它处理质量问题、还能扛住供应链波动的公司。
+
+这和实验室里选一颗“参数更好的芯片”，已经不是一回事了。
+
+### 你的料都测过了，为什么还是二供？
+
+这是国产芯片供应商最容易不服的一件事。
+
+同样一颗磁编码器芯片，绝对角度精度不差，延迟更小，最高转速甚至还高一点，价格也低，客户端测试报告一项项都过了。研发也没说不能用，最后采购开会，还是一句：“先放二供。”
+
+很多人第一反应是继续改产品。INL 再压一点，温漂再降一点，SPI 再提一点，下一版总该能把主供换掉了。
+
+但客户不动主供，很多时候已经不是因为那颗芯片比你好。
+
+原来的供应商用了五年，客户知道它什么时候会出问题；出了问题找谁，知道；哪个温度点会漂，知道；哪一代封装曾经有过什么毛病，也知道。甚至连它家 FAE 收到波形以后，是先让你查磁铁还是先查电源，客户都已经熟悉。
+
+你带进去的是一颗测试结果很好的新芯片。
+
+原来的供应商留下的是一套**已经被验证过的故障边界**。
+
+量产里面，这两样东西并不等价。
+
+一个已经知道会怎么坏的产品，经常比一个还不知道会怎么坏的产品更让人放心。
+
+所以真正的国产替代，不是客户把你的料号放进 BOM 就结束了。更难的一关是：客户什么时候开始把原来压在主供身上的那部分责任，也慢慢压到你身上。
+
+而磁编码器，恰好特别容易把这件事暴露出来。
+
+### 那0.3°到底是谁的？
+
+假设客户一台机器人膝关节跑了一段时间，回零以后发现多了 0.3°。
+
+如果还是样机阶段，大家很容易把板子拆下来，测测芯片，说一句“芯片正常”，事情就过去了。
+
+量产客户不会接受这个答案。
+
+因为客户买的不是裸 die 输出的角度，而是电机轴最后那个角度。
+
+这中间至少经过磁铁、机械中心、气隙、封装位置、模拟前端、正余弦通道、atan2、数字校准、模组标定和最终装配。最终 0.3° 是整条链一起给出来的。
+
+这里有一个非常好用、也非常容易把“芯片问题”和“系统问题”分开的方法：**别先盯最大误差，先看误差随机械角度怎么重复。**
+
+理想的磁角度传感器可以先抽象成两路正交信号：
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM79ySL8Ys0QMuIibAtvtVn4HMdmVuqsKtnYQKXyGqgavmDibPpsRZBhV4BIyxVHpJ0l7l07DnoR7MyrFjRTDAicibP7f4m2zqz8Gd7BV93ibNVmJ1A/640?wx_fmt=svg&from=appmsg)
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7DwjZxE17sYIniaNE8N5y265mZKXIRjkmCSPWxMIc3WUbekxcoXbx4dSpGO0VVfyK79ibhOgiae6SfIgNh2Sm8ZeQ9jia89Pn0Uf37LIiadOCTx7w/640?wx_fmt=svg&from=appmsg)
+
+最后得到：
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4gfJSc3yRO34yicCibTA0qdTWbBooB9qpCHacDyCTstkmsMzUgIcPvuCnALdIqGwS2bSWcLvxbetJavtcOmmGPwpVnNibfib5ALHcKhZKtaVDtCw/640?wx_fmt=svg&from=appmsg)
+
+实际产品当然不会这么漂亮。两路会有 offset、增益不一致和正交误差。先只保留一阶小量，可以写成：
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM43dwX1oFaFuPrgdOXaficB4WvhI9BPfZWR1w8KAiccuDkticqR13XXia2HHiabpqWsQjIvYmWD2pcVtVuANRvxy9hibjOrGneIyq1XVpNba3DcwpsQ/640?wx_fmt=svg&from=appmsg)
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM64v0fC3TeWaB0ekBGTiahz5VMicAYsGq4nhuyU5TBXpQu8bScC0Cbq6PAQtsTQkXH2aqafXCkxoEod1a4STD1f48Yln9xc66PhTrtnotp9KUibg/640?wx_fmt=svg&from=appmsg)
+
+这里最有意思的不是公式本身，而是把它送进 atan2 以后会发生什么。
+
+对于小扰动，角度误差近似是：
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4kb9iapwuG1OhcV2SOv9Q3zVsAk9OoYwAxs14U0YcRMLxTvHsyvicD2SZ7aTjh7lcqwfZc7QITflMLmmwIM2uibj2ExWOZMib0fLy2QxXw45R19w/640?wx_fmt=svg&from=appmsg)
+
+最后那个常数项通常可以被零位校准拿掉。真正值得看的是前面几项。
+
+两路 offset 会主要留下 **1× 每转一次**的误差分量；增益不匹配会留下非常典型的 **2× 分量**；正交误差在去掉固定零位以后，同样会在 **2×** 上留下很强的痕迹。
+
+所以真正懂这个系统的人看到一条“±0.3°”曲线，不会先问：
+
+“0.3°超没超规格？”
+
+他先会看 FFT，或者至少把误差对机械角度展开，看 **1×、2×、3×、4×分别有多少**。
+
+因为 0.3° 只是结果。
+
+谐波结构才开始告诉你原因。
+
+如果 2× 很漂亮地冒出来，第一批该查的是两路幅值和正交关系，而不是先去怀疑 MCU。如果 1× 随着模组重新装磁铁明显改变，那就该沿着中心偏置、磁场不对称、装配位置去查。如果高次谐波随着磁铁批次、气隙或者封装位置变化，那问题已经开始越过单纯的芯片通道失配，进入磁场空间分布和机械装配。
+
+注意，这里不能机械地说“1×一定就是偏心、2×一定就是倾斜”。真实磁路比这个复杂，磁铁尺寸、传感器位置、on-axis/off-axis 架构、磁场模型都会改变各阶分量。但这套方法最大的价值是：**它把一句模糊的‘角度不准’，变成了一组可以逐层排查的频谱指纹。**
+
+这就是客户为什么越来越爱问你整圈误差曲线，而不是只收一个最大值。
+
+### 真正难回答的是：温度一变，它还是不是同一个误差
+
+事情再往下走一层，才开始真正麻烦。
+
+假设常温时 2× 很大，你把 gain mismatch 和 quadrature correction 做掉了，曲线漂亮了。客户马上会问：-40 °C 呢？125 °C 呢？
+
+如果只是芯片内部两路增益随温度变化，这还是芯片能够处理的东西。但磁编码器是一个磁—机—电系统。磁铁剩磁随温度变，PCB、支架、轴、胶水的热膨胀系数不同，die 和磁铁之间的实际几何关系也会缓慢变化。
+
+也就是说，你在 25 °C 校掉的并不一定是一个固定系数。
+
+有些误差项本身也是温度的函数：
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM482lgxibIrktq8tbvNianhibo2icHDrMWDNRRtXgqvymdiaYqwf3CVuFV3HhMkNTtH9ZZFZ4aP5R8AuXUPeLRE1ibzQsdeaRzD16Cjop5hxpTsdJfw/640?wx_fmt=svg&from=appmsg)
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6Gvic6MaLuFsLf6cE54nySSEWHPkLAQabNIiby4fFIyhQa6ksoicJCjdejuBiaYM7cwNEicRPt1XPtkquiadbtVtNWlWNH4mO8LGqllEHmCNWNj4Vw/640?wx_fmt=svg&from=appmsg)
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5QzUTKYQozFA5QUt7FX2nPwzso5DzMicjzxX4hoPL4iaMPvuPhwMac130EicCSJxE4TeicC6NCdhgh2Wn9icuYic0prCic18bicy8icx6mTwqjRGY8kww/640?wx_fmt=svg&from=appmsg)
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7z45gpuicvL3qOCBicicCh28Ty7VLiaWpianoXPFK1KPaExU7cDyHvnrebdC1NSVn9DeX32FyEaxTasXHeGhRzUibW62ndsMNib7nwvXYGSCCd9Qyuw/640?wx_fmt=svg&from=appmsg)
+
+更麻烦的是，系统层面的机械参数也在变。
+
+所以客户如果只问“你芯片温漂多少”，这个问题其实还停留在器件层。
+
+真正做到机器人关节量产以后，应该问的是：
+
+**整圈误差频谱里的各阶系数，随温度怎么走？**
+
+这时候三温标定为什么会出现，就很好理解了。
+
+不是因为“三温”这两个字听起来车规，也不是为了把测试做复杂，而是要判断这些谐波系数到底是一个常数，还是一个随温度漂移的函数。
+
+再往后，量产策略就完全不同了。
+
+如果主要误差来自每颗芯片自身相对稳定的 offset/gain/quadrature，那么芯片内校准解决一大部分问题是合理的；如果误差主要在磁铁和机械装配，那么你把裸芯片测得再漂亮，也代替不了模组 EOL 标定；如果同一个模组在拆装磁铁以后谐波系数明显改变，那么返修后继续沿用原来的校准参数，本身就可能是不成立的。
+
+所以客户真正来审你的时候，问“返修以后是不是强制重新标定”，并不是质量部门喜欢走流程。
+
+它背后其实是一个非常具体的技术判断：
+
+**你这组校准参数到底属于这颗芯片，还是属于“这颗芯片+这块PCB+这颗磁铁+这次装配”这一整个组合？**
+
+这个问题回答不清楚，后面的 SN 绑定、参数存储、返修流程、追溯逻辑全都会乱。
+
+### 客户问到晶圆批的时候，关系已经不一样了
+
+这也是为什么客户上市、进入真正规模量产以后，验厂会突然变得烦。
+
+他不是突然迷上了表格。
+
+他是在给上面那个 0.3° 找责任边界。
+
+如果最终发现某一阶误差只集中在一批产品上，下一步自然要问：是不是同一封装批？是不是同一测试批？再往前能不能追回晶圆批？这一批当时的 wafer sort 数据有没有异常？同一批 die 放到另一批磁铁上还有没有这个特征？
+
+这时候 traceability 就不再是“质量体系要求”。
+
+它已经变成故障定位工具。
+
+同样，GR&R 也不是拿来给审核员看的。如果你的 EOL 角度测试系统自己的重复性已经接近产品规格的三分之一甚至更差，那么今天看到的 0.3°，可能有相当一部分是你的测试机在动。你连

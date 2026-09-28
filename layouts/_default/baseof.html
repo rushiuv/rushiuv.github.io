@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+    <nav><a href="{{ "/" | relURL }}">首页</a><a href="{{ "/archives/" | relURL }}">归档</a><a href="{{ "/index.xml" | relURL }}">RSS</a></nav>
+  </div>
+</header>
+<main class="wrap">{{ block "main" . }}{{ end }}</main>
+<footer class="site-footer"><div class="wrap">© {{ now.Year }} {{ site.Params.author }} · 文章首发于微信公众号「如是有为」</div></footer>
+</body>
+</html>
