@@ -21,6 +21,8 @@ git worktree add --detach "$TMP" >/dev/null
   git checkout --orphan deploy-tmp >/dev/null 2>&1
   git rm -rfq . >/dev/null 2>&1 || true
   cp -r "$OLDPWD/public/." .
+  mkdir -p .github/workflows
+  cp "$OLDPWD/tools/pages-workflow/pages.yml" .github/workflows/pages.yml
   git add -A
   git commit -qm "deploy: 由 source@$SRC_REV 构建"
   git push -f "$REMOTE" HEAD:main
