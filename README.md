@@ -1,17 +1,24 @@
 # 如是有为博客
 
 Hugo 静态博客，内容是公众号「如是有为」已发表文章的存档（264 篇，2025-09-22 ~ 2026-09-22）。
+线上地址（发布后）：https://rushiuv.github.io/
 
-- 文章来源：`D:\VerySync\VerySync_notes\2-Resources\2K-公众号-如是有为`（后台整号下载的存档）
-- 重新导入：`python tools/import_wechat.py`（会清空并重建 `content/posts/`，本地图从库的 `_source` 复制到 `static/images/`）
+## 日常操作
+
 - 本地预览：`hugo server`，打开 http://localhost:1313/
-- 构建：`hugo`，产物在 `public/`
-- 主题是 `layouts/` 里自带的极简模板，没有外部依赖
+- 重新导入文章：`python tools/import_wechat.py`
+  - 来源：`D:\VerySync\VerySync_notes\2-Resources\2K-公众号-如是有为`
+  - 会清空并重建 `content/posts/`；新出现的微信配图自动下载到 `static/images/wx/`，已下载的不重复下
+- 压缩新下载的大图：`python tools/optimize_images.py`，然后再跑一次导入改好链接
+- 发布：`bash tools/deploy.sh`（`main` 分支放构建产物给 GitHub Pages，`source` 分支放源码）
 
-## 图片
-大部分配图仍是微信 CDN（mmbiz.qpic.cn）外链。微信按 Referer 防盗链，所以页面加了
-`<meta name="referrer" content="no-referrer">`，图片渲染钩子也带 `referrerpolicy="no-referrer"`。
-若以后要彻底脱离微信 CDN，需要把这些图下载进 `static/images/` 再改链接。
+## 标签
 
-## 部署前
-把 `hugo.toml` 里的 `baseURL` 改成真实域名。
+`tools/tag_vocab.txt` 是词表，分三段：`[型号]` `[公司]` `[主题]`，每行「显示名|别名|别名」。
+导入时在标题和正文里匹配。型号和公司出现 1 次就打标签，主题词要出现 2 次（标题里出现算 2 次）。
+加标签就往词表里加一行，再重跑导入。
+
+## 主题
+
+`layouts/` 和 `static/css/site.css` 是自带的模板，只做亮色，没有外部依赖。
+主图、头像、二维码在 `static/images/site/`；《金刚经》引句写在 `hugo.toml` 的 `params` 里。
