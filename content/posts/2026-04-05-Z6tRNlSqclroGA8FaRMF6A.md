@@ -4,9 +4,11 @@ date: 2026-04-05T00:00:00+08:00
 slug: "Z6tRNlSqclroGA8FaRMF6A"
 description: "很多人一聊磁编码器，就喜欢先比位数、再比分辨率，最后顺手把“滤波开大一点”当成通用解法。"
 original: "https://mp.weixin.qq.com/s/Z6tRNlSqclroGA8FaRMF6A"
+models: ["KTH78", "AS5600"]
+tags: ["磁编码器"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXervgEBTnsOsXgaZocoQrpOicKGT1OBdUmzVkoiacGe0ibZS6zgrYeo5TJiaTQLNEqlsCwByA8C4Qib0hVZ47bpQsWn4v5pibibDxIuE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5cf782e384d1cb1fc50c686a69e54aa8.webp)
 
 很多人一聊磁编码器，就喜欢先比位数、再比分辨率，最后顺手把“滤波开大一点”当成通用解法。
 

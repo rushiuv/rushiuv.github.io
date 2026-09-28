@@ -4,11 +4,12 @@ date: 2025-11-17T00:00:00+08:00
 slug: "yJhhq7w5YYgibuKub0XjMw"
 description: "大盘在4000点附近别想什么“全面起飞”，更现实的场景，是指数卡在3700–4300这一块来回磨，真正往上走的是少数几个：行业越来越集中、把同行卷死、利润率真抬上去的板块。行情长什么样，最终还是看企业是不是从“拼便宜”转成“拼赚钱”。"
 original: "https://mp.weixin.qq.com/s/yJhhq7w5YYgibuKub0XjMw"
+tags: ["投资"]
 ---
 
 大盘在4000点附近别想什么“全面起飞”，更现实的场景，是指数卡在3700–4300这一块来回磨，真正往上走的是少数几个：行业越来越集中、把同行卷死、利润率真抬上去的板块。行情长什么样，最终还是看企业是不是从“拼便宜”转成“拼赚钱”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyTht464cxahM0alOicUpLJqh6p7bXiaeVGM75PicHHic4JvG8o6mX2H1PeKEA6Mn0I3GTS1DibfsyQRgTA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e08726f0167a817bf6b73d9c122dc213.webp)
 
 最近的盘面，其实已经把这个逻辑写在脸上。上证指数现在就在4000点上下晃，离2015年那种五千多点的癫狂，还有一大截距离，估值在16倍附近，说贵不贵、说便宜也谈不上白菜价。
 

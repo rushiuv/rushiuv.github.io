@@ -4,11 +4,13 @@ date: 2025-10-07T00:00:00+08:00
 slug: "o0jXzRPsaAGAqE4tA96BZQ"
 description: "在芯片行业里，泡沫并非一个偶然的错误，而是系统给年轻产业的“高烧期”。那些烧掉的钱、失败的项目、倒闭的公司，不是被动的牺牲，而是整个产业肌体在进化时必须熬过的高烧与排毒期。"
 original: "https://mp.weixin.qq.com/s/o0jXzRPsaAGAqE4tA96BZQ"
+companies: ["中芯国际", "Intel", "Qualcomm"]
+tags: ["芯片设计"]
 ---
 
 ###
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYorf7ibuibsScU0pF8PzmeQEkFG5Q4Dx3r0wnfMFsOfy3pN2y8wB06gvEv6WEtsjsrJF14Nn1Y6qw/640?wx_fmt=jpeg)
+![](/images/wx/505f36d69643c47401665d448497f053.jpg)
 
 ### 核心观点
 
@@ -86,4 +88,4 @@ original: "https://mp.weixin.qq.com/s/o0jXzRPsaAGAqE4tA96BZQ"
 
 泡沫高烧的那一天，不是灾难。它是给产业一个机会——一次自我演化的试炼。走过去的人，才是将来能站在舞台中央的人。让产业在痛苦里“发烧”，然后在灰烬里复活，这才是真正的开始。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYorf7ibuibsScU0pF8PzmeQCWtHDytwDEa7mKTfLjQDkmks0XrULqbl5EguN8Hic9yUVzWEiaQyqmqQ/640?wx_fmt=jpeg)
+![](/images/wx/69f891dc7c485f4e1fc2124bb4da7d2f.jpg)

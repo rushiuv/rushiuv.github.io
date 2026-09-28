@@ -4,6 +4,7 @@ date: 2026-04-23T22:08:00+08:00
 slug: "88Pc4ByqKz3mW1oFl2qOEw"
 description: "磁传感器技术的三代演进，每一代都以不同的核心机理，适配着工业与消费市场的不同需求。"
 original: "https://mp.weixin.qq.com/s/88Pc4ByqKz3mW1oFl2qOEw"
+tags: ["TMR", "AMR", "霍尔"]
 ---
 
 磁传感器技术的三代演进，每一代都以不同的核心机理，适配着工业与消费市场的不同需求。
@@ -16,8 +17,8 @@ original: "https://mp.weixin.qq.com/s/88Pc4ByqKz3mW1oFl2qOEw"
 
 从霍尔到TMR，三代技术并非简单的替代关系，而是形成了覆盖高中低端市场的完整矩阵。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUouWPjRv7j008KKWy0XkaVsGP4k8tPL57YZufhrjjibp6ElWbMZ2qjYrGf9ZT7b9RppWqRWNKP1sD85ITDibMical9CEibMLgQXsM/0?wx_fmt=jpeg)
+![](/images/wx/933893b4a21f81fb8fd9cc5778a31cad.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIW8e3187Yn2nk1cfRbfC6sia3eWF4IMiaib4bJhfAgwuLCx0iaZudiamms86awVicAowSa489hNP1ylfzeBKgTibJPRJdMPgcOmVicLgaI/0?wx_fmt=jpeg)
+![](/images/wx/ad3e94a94d7636b3d7861a945c345295.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWiaqxF4Cf4kPerS57JJ6UDUqKZU4ByLk6UdDaI9s46tlACn3BCVoqmKnGRuefbwNMyamQbwuP8fG9xcRJMibAbG2nnP0iaFM5rx0/0?wx_fmt=jpeg)
+![](/images/wx/0bfdbf618153fc9660bd42d2923997c3.webp)

@@ -4,9 +4,11 @@ date: 2026-06-03T03:52:00+08:00
 slug: "i3_gLwRVkm7ao3OsIcS_QA"
 description: "做磁编码器高温验证，最容易被一种“看起来正确”的结论骗了：温箱一升温，磁场幅值下降，于是判断磁钢退磁；回到室温以后，幅值没有完全恢复，又进一步判断不可逆退磁，甚至把一批样品直接判成高风险。"
 original: "https://mp.weixin.qq.com/s/i3_gLwRVkm7ao3OsIcS_QA"
+companies: ["麦歌恩", "多维科技", "金力永磁"]
+tags: ["磁编码器", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVlg4qRwhuIHdPFkSzbBPcofE5dzJKoO3PicAc6L76NogzIHpp0gQtaa08Dv4z9r9CF4gNMbqsA2JbokNYrzwcxMmpG2p16mGk8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9beb0930737dfac46ab050a10d296970.webp)
 
 做磁编码器高温验证，最容易被一种“看起来正确”的结论骗了：温箱一升温，磁场幅值下降，于是判断磁钢退磁；回到室温以后，幅值没有完全恢复，又进一步判断不可逆退磁，甚至把一批样品直接判成高风险。
 

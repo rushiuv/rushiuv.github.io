@@ -4,9 +4,11 @@ date: 2026-09-01T07:33:00+08:00
 slug: "1XA6GvDIcGQvtKSEbvtI9g"
 description: "我翻出十五年前画的第一张编码器接口时序图，纸边还压着当时记的页码。一根时钟、一根数据，我拿示波器两根探头分别戳上去，数了一个下午，自认为看懂了这套接口。后来才反应过来，我看懂的只是它怎么把数据抖出来，不是它怎么活到今天。"
 original: "https://mp.weixin.qq.com/s/1XA6GvDIcGQvtKSEbvtI9g"
+companies: ["iC-Haus", "海德汉"]
+tags: ["编码器接口"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUOC7GIjcATtRA5vnNAnmydhFE0b42jXHukezrMaoORXC1SwcCv3DmDJnJysZKkicOnauibZdUQrGg6Ubk2O4pcPJLZQUS1JaL04/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e3420e8bde5cd4a9911e44d9bcecab63.webp)
 
 ##
 

@@ -4,9 +4,12 @@ date: 2026-07-23T00:13:00+08:00
 slug: "ZKxaaNrOOFXhrAw6gfub1A"
 description: "同一颗编码器、同样1°机械角误差，放进4对极电机是4°电角度，放进32对极电机就是32°。够不够，从来不能只看编码器。"
 original: "https://mp.weixin.qq.com/s/ZKxaaNrOOFXhrAw6gfub1A"
+models: ["AS5047P", "MT6701"]
+companies: ["ams OSRAM"]
+tags: ["FOC"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXeKeshkyZib90lYA2nrPjTmT9QcBsyXiaEbs1ds3IP9tLdr5wiaYL6dIfiaNmH2E86P9lG4CrWPpC4xgrSoxCpjpcHC4CcQ1yuurI/640?wx_fmt=jpeg)
+![](/images/wx/38016eee25c513a3f51c34f10499feba.webp)
 
 FOC · 极对数 · 编码器选型
 
@@ -32,7 +35,7 @@ FOC要让电流矢量对准转子磁场。控制器真正使用的是电角度�
 
 AS5047P这类14位磁角度传感器，或MT6701一类磁编码器，输出的都是机械位置。芯片分辨率不会因为换了一台电机而变化，但它对应的电角度误差会随极对数变化。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWkU5WWvibzf8RYlyp4LwJUAictpG5sPeeDicwTXnPmibFdJLM3G1sjYogEmUZPRtX5vAQSJIXibBRqHnlHcx1mafEd6aeSJKn3Ssbo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/26cf228f7e1c370c67d4ae8075af623a.png)
 
 知识卡片1｜极对数是隐藏的乘数。同一个1°机械角，在不同电机里对应完全不同的电角度窗口。
 
@@ -46,7 +49,7 @@ T有效/ T理想= cos(Δθe) = cos(P · Δθm)
 
 但“能启动”不等于“额定转矩只打几折”。真实启动还取决于负载、静摩擦、齿槽转矩、初始位置辨识、限流、凸极性、MTPA和保护阈值。余弦模型的价值是给出量级，不是替真实系统出成绩单。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUJcWJesYsnF70IIBlOm0QmyjOZK02MhWRqjotSwzUicnqUd2Kr08hiakthkmHsNppia3AB3WXPyWHtNb4NCnuvF7N0jByolh7Ovs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0c9da4fa350a0bdb6820a2b2455f85f1.png)
 
 知识卡片2｜32°电角度偏差时，理想有效转矩约剩84.8%。实际启动余量还要叠加负载和控制条件。
 
@@ -70,7 +73,7 @@ e2,pk≈ 0.01 / 2 rad ≈ 0.286°
 
 这类误差和转子位置锁定，普通时间平均压不掉。不过还要避免另一个过度简化：在理想零平均偏角、固定电流幅值的余弦模型里，小角度周期误差对转矩幅值的一阶项可能为零；真实转矩纹波还取决于平均角度偏置、dq耦合、电流环动态、凸极性和补偿方式。更稳妥的说法是：位置谐波会稳定注入FOC坐标变换，并可能通过这些路径形成可重复转矩纹波。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUKtjFQVwqZ0AuvzaF0DQibzVHlS0lBGCNwj2rgM7iagYWrZ6xYlicrA2GlcPppD2Wjbib5HFPvBTwicjyRiad5m6NyYzJhGaWWoFicrI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6b8683e00252d51e25cc823f8f11d89a.png)
 
 知识卡片3｜随机噪声可通过多圈平均降低；位置锁定的二次谐波会在同一角度重复出现，需要按位置建表或辨识补偿。
 

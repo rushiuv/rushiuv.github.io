@@ -4,9 +4,12 @@ date: 2026-05-19T00:00:00+08:00
 slug: "n5AoXwH50MHu8g6hiSxsDA"
 description: "一个玩家把 WASD 的触发点拉到 0.1mm，打开 Rapid Trigger，再把 SOCD、LKP、Snap Click 这类功能全开。第一天觉得自己像换了手：急停更干净，探头更利索，技能像是提前半拍出去了。到了第二天，问题开始冒出来…"
 original: "https://mp.weixin.qq.com/s/n5AoXwH50MHu8g6hiSxsDA"
+models: ["KTH3105", "TMR2617S", "HAL9303R", "CD4051"]
+companies: ["昆泰芯", "多维科技", "Wooting", "达尔优", "Akko"]
+tags: ["TMR", "霍尔", "ADC", "磁轴键盘"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV7jCadArGdt5dFUUyKYoOleNMup2C6q9fiaEYK08lkF5SRpKEJFHSmsnX65RHjEpicjib01ghQrKI4PAhyrILiaHBuRk0MfbaPX6Q/640?wx_fmt=png&from=appmsg)
+![](/images/wx/63cbdd039e9976eb4f2855dbdfdf5584.webp)
 
 ## 磁轴键盘其实是一把“按键编码器”：卷到0.1mm后，真正值钱的是位移数据敢不敢信
 
@@ -14,7 +17,7 @@ original: "https://mp.weixin.qq.com/s/n5AoXwH50MHu8g6hiSxsDA"
 
 这件事的本质很简单：**磁轴键盘把每一颗按键都做成了一颗低成本位移编码器**。传统机械轴只回答“按下没有”，磁轴键盘回答“这颗键现在走到了几毫米”。编码器不只是机器人关节里那个测角度的东西，它的本质是把运动变成可计算的位置数据。旋转编码器测角度，直线编码器测位移，磁轴键盘测的是按键行程。只是这一次，编码器被塞进了消费电子里，被塞进了每一颗按键下面。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWs4hrFjdPIWaTzXRjz1d9mS9ve5uNUxQn1ZxXySicEhVJUJKv5z5dS24a9U0eE5KwFQLj0xpIOytufqEevKdx1qbUpWb5vRCfA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3f7dc75a62f495022cd92028dc41a9c1.webp)
 
 >
 
@@ -36,7 +39,7 @@ Wooting 80HE 是这个逻辑最容易被玩家看见的产品。它不是只把�
 
 昆泰芯 KTH3105 放在这篇文章里，不应该被写成一个普通键盘配件。它更适合被看成一个信号：**编码器和磁传感器厂商，正在把原本服务电机、摇杆、工业位置检测的能力，下沉到每一颗按键。**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWUw3E2YZ2uarTicFL1vI91jrc6AIglxlxBpUGg8Yxick30Nj7hQlIRaibsz4LnHhyj57vEicVyfqBKsq1n4BqiaCv1UicpwLhc0aeKw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/08abbcbb67968936871005c3e12a071b.png)
 
 绿都电子公开发布的“**基于国民技术 N32H482 单片机及昆泰芯 KTH3105 线性霍尔的 8K 磁轴键盘方案**”(https://szlvdu.com/show-27-161.html)。这套方案把国民技术 N32H482REL7 主控、昆泰芯 KTH3105 比例式线性霍尔、中微爱芯 CD4051 模拟开关和 AiP33091 RGB LED 驱动放在同一条链路里。这个证据比泛泛说“霍尔可以测磁场”要硬得多，它说明 KTH3105 已经进入了具体的 8K 磁轴键盘参考方案。
 
@@ -52,7 +55,7 @@ KTH3105 这类线性霍尔的价值，在于提供一个成熟、低成本、可
 
 这就是按键编码器的第一道门槛：**能不能把每颗键的零点、满程、曲线和阈值管住**。KTH3105 这类线性霍尔的价值，在于给厂商提供一个低成本、成熟、可大规模铺开的磁位移测量入口。后面真正拼的，是整机厂和方案商如何把几十颗 KTH3105 变成一组稳定的按键编码器阵列。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIU1eybiafS6ibyP1X9GOcDxYRYghavJy0UVGqIfSlvZJVjCxCO4xWcHchLoQ4PMmPzD3Of0wkCckVVJ7sQIn8BbMrcfOvymQNwvw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c13db5531033ade1188eb6a340d02c58.jpg)
 
 >
 
@@ -74,7 +77,7 @@ SteelSeries 的 Protection Mode 很能说明这个问题。它的逻辑是目标
 
 线性霍尔是成熟路线，TMR 是另一条正在被推到台前的路线。TMR 也在测磁场，只是它利用的是磁阻变化。外部磁场变化会改变传感器内部电阻状态，电路再把这种变化转成可用信号。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW8GLlWhFSRzxatF2nibQy4Ata42mrakhryDnDUufAKEvcfE9ZzU3TWWVtQFfvMCiaYiagQxDWSsOexrNZQBcqvG7D1Th3ibibibYk8I/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4f081046433e80b9f75eeec41015d560.png)
 
 Keychron K2 HE 是普通玩家最容易看到的整机样本。Keychron 官方页面写到，K2 HE 使用 Gateron double-rail magnetic switches 和 **advanced TMR sensors**，每颗键触发点可在 0.2mm 到 3.8mm 之间调节，调节灵敏度 0.1mm，并支持 Dynamic Rapid Trigger、Analog Mode、LKP / Snap Click 等功能。这里要把证据边界说清楚：Keychron 官方能证明 K2 HE 使用每键 TMR 传感器，也能证明它使用 Gateron 双导轨磁轴；公开页面没有披露具体 TMR 传感器芯片供应商。
 
@@ -96,7 +99,7 @@ TMR2617S 最值得看的地方，不只是“灵敏度高”。它真正打的�
 
 当然，TMR 也有代价。高灵敏度会更认真地看见结构里的小毛病。磁铁高度差一点，轴芯偏一点，PCB 局部翘一点，键帽边缘按压导致轴芯倾一点，TMR 可能都会看得更清楚。看得更细是一种能力，把这些差异管住才是产品能力。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXcERNkF65jAhJID3CJjojJ48bpV3f3hRrFyb0vIptsNWBS05LzrOuqkKGnEian6K4n3OGGXWfXo4ABKxibZIjfaYib64Kvf5Zao8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/84defe8294e352587c551adc8c5c207b.webp)
 
 TMR 方案的价值不只是“更灵敏”，更重要的是低功耗、一致性和三模无线迁移能力。
 
@@ -104,9 +107,9 @@ TMR 方案的价值不只是“更灵敏”，更重要的是低功耗、一致�
 
 还有一条路线更激进：把传感器和轴体结构做得更紧。这样一来，轴体本身就不再只是带磁铁的机械结构，而更像一个自带传感单元的输入模块。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVcdNEnB4uSVZ9GJ1ibl6hibiaQhsnaVf8LsxBUn2fsb5Xib0cU426m6nVn9nRaxpDeuRn9oUiaC9HQ9icLSSAEDv7tO2CFdEQ8zB3U4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d6d0a9cfbd3492f6f6d9ea66aa185485.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVag5eTVxraQf5bBMK4LbOSPK8ReQwHyt4TibKGlMQPaUIzUyXVyiaI5o7h30NSI2L29nI2Q9XAxCPMQ3g0WA1JwQB0LfUcJibZ18/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c2d0bc5acfd882609c78d56a737a1cc5.webp)
 
 >
 

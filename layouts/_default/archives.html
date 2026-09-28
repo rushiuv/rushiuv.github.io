@@ -1,9 +1,9 @@
 {{ define "main" }}
-<h1 class="page-title">归档</h1>
+<header class="page-head"><h1 class="page-title">归档</h1><p class="muted">共 {{ len (where site.RegularPages "Section" "posts") }} 篇</p></header>
 {{ range (where site.RegularPages "Section" "posts").GroupByDate "2006 年" }}
 <section class="year">
   <h2>{{ .Key }} <span class="count">{{ len .Pages }} 篇</span></h2>
-  <ul>{{ range .Pages }}<li><time>{{ .Date.Format "01-02" }}</time><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+  <ul>{{ range .Pages }}<li><time>{{ .Date.Format "01.02" }}</time><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
 </section>
 {{ end }}
 {{ end }}

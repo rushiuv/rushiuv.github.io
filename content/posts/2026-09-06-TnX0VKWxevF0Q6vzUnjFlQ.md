@@ -4,9 +4,10 @@ date: 2026-09-06T14:03:00+08:00
 slug: "TnX0VKWxevF0Q6vzUnjFlQ"
 description: "设备工程师从床上爬起来，赶到现场，最后发现是一只编码器报错。"
 original: "https://mp.weixin.qq.com/s/TnX0VKWxevF0Q6vzUnjFlQ"
+tags: ["编码器接口"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU7uXlxRUbx6libQeBWXRiciaI5Ya6Kqv5DV1RibOM3aezbg7sib48od0PMJBdzIObOOLvLmJzFm0r2CS9FdgNYJibOAibCia9waVzPytk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/432c48c9783c886d7f0317ece755a525.webp)
 
 ## 国产编码器最大的敌人，可能正是“国产化”
 

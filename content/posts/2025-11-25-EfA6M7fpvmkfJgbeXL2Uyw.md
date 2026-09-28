@@ -4,11 +4,12 @@ date: 2025-11-25T18:45:00+08:00
 slug: "EfA6M7fpvmkfJgbeXL2Uyw"
 description: "在第八届中国国际进口博览会（CIIE）上，瑞士终于走出了它那座安静的阿尔卑斯山。"
 original: "https://mp.weixin.qq.com/s/EfA6M7fpvmkfJgbeXL2Uyw"
+tags: ["瑞士"]
 ---
 
 在第八届中国国际进口博览会（CIIE）上，瑞士终于走出了它那座安静的阿尔卑斯山。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWj31pDm72vzsN8T8kxmIGFB3OibUicGlhM0RFt58Q0J4kBzya7svro8cqg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/345af0584e54ea7e5848f21c3e81743e.jpg)
 
 不是一个品牌，而是一整个国家形象集体下场——Swiss Centers China 组织了26家展商、36个品牌，占据了他们历史上最大面积的展台阵容，覆盖从传统奶酪、药品，到高端厨具、智能家电，精密得像开了一场跨行业的“瑞士人格体验展”。
 
@@ -18,7 +19,7 @@ original: "https://mp.weixin.qq.com/s/EfA6M7fpvmkfJgbeXL2Uyw"
 
 他写道：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWj90rhx15cDiazjXkJl1ByCInOwFHUZek25zWQP9Nnyar1hMFelQZ6t3A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4b7c98d44bca1bcd214e808fe857ebf0.png)
 
 >
 
@@ -35,7 +36,7 @@ original: "https://mp.weixin.qq.com/s/EfA6M7fpvmkfJgbeXL2Uyw"
 
 你会看到瑞士品牌员工站在展位前直播讲解产品，用带口音但认真的中文介绍“阿尔卑斯草本饮”的功效；你会看到展位背景图从雪山湖泊变成了适配中国厨房的生活化场景；甚至连品牌文案都开始用上了“小红书体”：“这台净化器，瑞士原装，适合有娃家庭。”
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWj0ud7MJh9CxQBrIVdxo2F4T6zdOaskWJtCibohUZqMzkxd6H1sJv2zWA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/44195af5afe0556ec03948a3eab0d828.jpg)
 
 **三分之一的品牌是第一次参展。他们原本更习惯于在欧洲市场里闭环运行，从不在意内容传播、情绪互动、人格包装。但这次，他们显然做足了功课——而这一切，背后正是 Swiss Centers 这家组织25年来在中国市场的深耕结果。**
 
@@ -57,7 +58,7 @@ Sacha Bachmann 在回顾这次参展时，提到 Swiss Centers 正好迎来了 2
 
 从联邦的商业系统，到地方的区域商会，再到中瑞间跨文化的桥梁组织——瑞士从国家到企业，从传统制造到新锐品牌，**都在用一种更积极的姿态进入中国市场。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWjzuJEyAjjKfX1dzlZylLpznEqAuC9iaGFcPY0mKhes2EdfvO1wibjuOyw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c828eb32edc89006a95138d18751996d.jpg)
 
 你以为他们来“找买家”？错。**
 
@@ -71,6 +72,6 @@ Sacha Bachmann 在回顾这次参展时，提到 Swiss Centers 正好迎来了 2
 
 这一次，它打出最大阵仗，只为一次真正的被看见。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWjCQv9SW2G6IbkMx8srbrGA9KUwWeicUXC7JlHbB6a1Q7NhgkUNq5L8mA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/b11646ca3be210c116fca148d6b3d122.jpg)
 
 ###

@@ -4,9 +4,12 @@ date: 2026-08-01T00:00:00+08:00
 slug: "TWEcHy_ioXS1VBSSTFS8tg"
 description: "一线编码器工程师视角：五条国产路线，五种不同的上车逻辑"
 original: "https://mp.weixin.qq.com/s/TWEcHy_ioXS1VBSSTFS8tg"
+models: ["KTM5900", "MT6701", "MT6835", "TMR3111"]
+companies: ["昆泰芯", "纳芯微", "麦歌恩", "希磁", "多维科技", "Sensitec", "小鹏"]
+tags: ["磁编码器", "电感编码器", "多圈编码器", "离轴", "TMR", "AMR", "霍尔", "编码器接口", "人形机器人", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX9pRv6uUNNxZKiaZ0ogVxQJ3VxMyK2wyGItVhNFsCKSeZhuIPURuVRHo4WFSu3wShLJKFcHibIvayKibOaia6QMB2dreT6VVNHFdM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b7c2f98b1a160237fdfbd100d8651015.webp)
 
 小鹏、比亚迪同时把人形机器人推向量产
 
@@ -78,7 +81,7 @@ KTM5900对外提供24 bit角度数据格式，公开规格中的有效位约为1
 
 代价也很直接：IDM和模组路线资产重、验证周期长，必须同时把晶圆一致性、机械结构、标定节拍和客户应用做好。PAM7940系列能不能在国内人形机器人关节中形成规模，最终仍取决于成本、交付和本地工程响应。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUlxLzaxBEokxROm1PX3Z4ZtY6zZWoRxOw5HhbANJd8xxF1b135oPgC7jia32RqgxB3X1U1m3OIUdOLDLOhFh6EhXpAN4icK5eI0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e3cc22a1ff74b5fa7c9ea1fb8d7a566b.webp)
 
 ### 五条路线，没有谁可以只靠一张参数表获胜
 

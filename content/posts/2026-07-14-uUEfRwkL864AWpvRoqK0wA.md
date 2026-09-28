@@ -4,9 +4,12 @@ date: 2026-07-14T00:00:00+08:00
 slug: "uUEfRwkL864AWpvRoqK0wA"
 description: "全球 CGM 都卡在 10~15 天。我本以为是电池撑不住，查到真实电池是银氧纽扣电池 SR626W（约 28mAh、156J）后更这么想——可把功耗一算，到第 14 天电池根本没用完（有的能撑 17~18 天）。真正画线的是酶活、生物膜污…"
 original: "https://mp.weixin.qq.com/s/uUEfRwkL864AWpvRoqK0wA"
+models: ["nRF52832"]
+companies: ["TI", "美敦力"]
+tags: ["ADC"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUysWKINrk1OCbQsdpjuor2smkBsZia8ich2Z2AJXCdh2ZampG5VWrff95NRljHcnAGPp1k38pEUbONcnU6sELiavIxtlgNQ60ppo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0dd674656368d4319f34610c8e6f523f.webp)
 
 CGM · 血糖贴片 · 芯片
 
@@ -26,7 +29,7 @@ CGM · 血糖贴片 · 芯片
 
 贴上去，工作 14 天。第 15 天早上，撕下来，换新的。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUemD6nIGh4T1AAVC9GK7qI5p8oX0snXdoC0RhjLd1NH2hstbOLnIUZr0l28R66BhqnHPrOibtj4MxlWZOiaa7w2Cjcn2Q9frlCE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e0fc47d5c7f87a4f5385cd7bb33768b0.webp)
 
 图1：贴片的三件事——贴在上臂内侧、圆盘里塞着 PCB／纽扣电池／芯片、针尖穿过表皮和真皮停在皮下组织的间质液里。直径 35mm、厚 5.5mm、入皮 5mm。（原创示意图，非产品实拍）
 
@@ -70,7 +73,7 @@ CGM · 血糖贴片 · 芯片
 
 而最讽刺的，是那个"温度恒定"。葡萄糖氧化酶（GOD）最活跃的温度是 25℃，可**在 37℃ 下它的活性是指数级衰减的**。有研究实测：GOD 在 37℃ 下，**7 天掉 30%，14 天掉 60%**。**人体恒温 37℃，恰好是这个酶最不想待的地方。**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUW7gkcgQntFSq3lndjiahLn5O30BzmeBicqWBovuhR7LStkeGhkJoIAE4JYia2O6BRnfJrv1YTc7UrXv86udwVGfAWP7vyFbp9Lk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/72485669af275ad91b4a7d8246a82dd2.webp)
 
 图2：针尖视角的"滚出去"。电极被蛋白质一层层糊住，巨噬细胞伸出伪足围上来包裹——这就是异物反应。恒温 37℃、pH 7.4 的环境对人很舒服，对葡萄糖氧化酶是慢性死刑。（原创示意图，非显微实拍）
 
@@ -146,7 +149,7 @@ CGM · 血糖贴片 · 芯片
 
 ### 真正的悬案：它们到底用了什么芯片
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU0Hcx9texVX0n9RuicM82QUxYXO5IVrKfticEjgaNXMHENFm1NOPAiafwozl3noBCvHpgHSEv6Jo5Uj7ks7ETYakFkas5BibxuEk4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a99ea3b8997ae2c5c88514bb96a70373.png)
 
 整条链只有五级。前四级都在「测」，最后一级什么都不测——它却吃掉了近一半的功耗。
 
@@ -166,17 +169,17 @@ CGM · 血糖贴片 · 芯片
 
 **最硬、也最会说话的一颗，在初代 Freestyle Libre 上。**拆解直接读出丝印：**TI RF430FRL152H**——NFC 前端 + 16 位 MSP430 内核 + 14 位 Σ-Δ ADC + FRAM（铁电存储）+ 传感接口，几乎全包了第二到第四块。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWJzjjJUvlFUC30Zo37ShgwdNGgT6V0ia97kubEib3vU8szPU1QfU0mVwhdbUDMRwwK8gYXFv4qIcTic6ovric0dlIMaibWfQtMGTzA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5510511ffa24c9cc519423d7061a71d6.png)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUVibJHzBFXRT82tMxzHsWh4svb8plORXaRABicdl4UVqEp41yl75gEkrnySDn0qEFicq4monzvTOk3zPHswL7qhSbfUL4thussnE/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/95f1abcfed043e8a5c825e6532c028c6.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWX3HRSZfdrTicOl6QDDibopYjKK2APaicG9BaZunzRoLO049XpY9oQ57pcZycP7OnlGOOfMsyyUBickbtULibYNup9pE4YNADQSshM/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/92dba10f73c0e19a2449ca795a10b507.jpg)
 
 初代 Libre 是**扫描式 NFC**——读数的能量是手机射频场隔空供的，根本不花电池；FRAM 非易失、写入功耗极低，一颗纽扣电池连记 14 天的账靠的就是它。**一旦从 NFC 走到蓝牙，账就翻了。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIV1MkGGIHv7YsbdGXrSsqiaYQIBUQ9VzibKfoMg3GqciaRCzWdfWia2WarU7ibHib83mWHN3LdsFqFOrlTYguh169zBTgzaIYng2J7Y4/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/216b0d0863076b5059cddca8fdac73aa.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXA3eBSdgP470syrykIliaClEBemrxibK0bWnFVGo75ibszpgIuPvHPC4qEeqMfG5F8l7Xe0IQAUSqTvZyWdxJshuHKwnR0uyGZc0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/fd09cdc8efa0e56b23b46c8b464b235e.jpg)
 
 Libre 2** 主控是 TI RF430 定制版，旁边多贴一颗独立蓝牙 EM Microelectronic **EM9304**——因为蓝牙得自己带电池主动广播，**从"白嫖读卡器的能量"变成了"啃自己的电池"**。**Dexcom G7** 蓝牙是通用货 **Nordic nRF52832**；真正干前三块活的主控只打了个 **"DCG7"**——只能判断是自研 ASIC。**Eversense** 干脆把电池都省了：植入体内的传感器不含电池，靠感应磁耦合供电，**没有电池，就没有电池寿命这道坎**。
 
@@ -240,11 +243,11 @@ CGM 的芯片选型，本质是"射频功耗预算 + 模拟前端护城河"的�
 
 三张漫画卡，把全文最基础的三个概念各讲成"扫一眼就懂"
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXX70B4tVTNJibJG20p4mH6ANXpNjOVGicvOVia5Vhia2UfDg4Ll3ZDSOUm8JxI7h4pIJbS9fxgULiccIavLUMReUzoZbKJ0ObjsVYw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c54ce4a31a70127b70f84d07cd7aa189.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWU7RBWQJ0YpxrVZFF1J9DfPtqIibuiavBHT3C4R521nuVCK4ZMMcNTOAxYXvHZhAgibI8icssvKtmMutxHcPS7yOHMMe7fkuicd1M4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9d347946fec069c01dd526934fdb2e92.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVzraI9e96OSibkETsWLVK0PrAcV9byW2wtBxbRYiaFr2VJibPPJNxC8cWEg7xAcp5ymRwT8wCScsfYwBqe6KypHYibsSTmkibbVUIg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b18bad5cd6652f8a88a481bf8f511dff.webp)
 
 边界说明
 

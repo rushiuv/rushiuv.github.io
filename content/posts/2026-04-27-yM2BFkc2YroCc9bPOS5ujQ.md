@@ -4,6 +4,7 @@ date: 2026-04-27T00:00:00+08:00
 slug: "yM2BFkc2YroCc9bPOS5ujQ"
 description: "先用人话说清楚。Lucid 是美国一家做高端纯电车的公司，前面已经有 Lucid Air 和 Lucid Gravity。"
 original: "https://mp.weixin.qq.com/s/yM2BFkc2YroCc9bPOS5ujQ"
+companies: ["特斯拉"]
 ---
 
 ### Lucid Atlas 到底是什么？
@@ -14,9 +15,9 @@ original: "https://mp.weixin.qq.com/s/yM2BFkc2YroCc9bPOS5ujQ"
 
 Lucid 自己说得很明白：Atlas 是新 **Midsize 平台的核心**，目标不是只把动力做猛，而是把整个电驱做得更小、更轻、更简单、更便宜，好支撑接下来起售价低于 5 万美元的新车型。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWI44P4PG8rkFgHyD0SEcPwHibDxIKexLGqBbnNGic8mVuMIeQU1hC8VqCY6RllGKK9xQ7gMNfqbJLHqPMlxfXJicibvyaqoW5kQGs/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/4efc47a27279149d232b983e17a14110.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVMtbXibNHlCHAiccZ0J6p2l6wZUvRIIct2wibsYb8uO6w2icfply7xhll39b4f7qIKQH5KuLzSVRiauhDegXhAyd5NdhhhHFxSibYGY/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/1b16f871ef9c9c06de37ee475ded99a7.jpg)
 
 所以 Atlas 这玩意儿，别把它想成“又一个电机名字”。它更像 Lucid 对下一代大众化量产电驱的一次重新做题。
 
@@ -60,4 +61,4 @@ Atlas 这代真正难的，不是把一颗电机做得更有劲，而是把一�
 
 这才是产品。至于那种只看功率密度、只看减重百分比、看得满脸通红的人，说难听点，大多还停留在看热闹阶段。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWca3r9J3gdN6F2BhV98bmfSVUPmGAHpQz1RrUDYlEWc9sgbwDrI1FKWaCQmu50dv7siaI0zicYt6aE8E8vZoYM730tYfJbeF0CY/640?wx_fmt=jpeg)
+![](/images/wx/f6be86a29b0dc242003360d6b5c2ac32.jpg)

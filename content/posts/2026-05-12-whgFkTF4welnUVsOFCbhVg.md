@@ -4,9 +4,12 @@ date: 2026-05-12T00:00:00+08:00
 slug: "whgFkTF4welnUVsOFCbhVg"
 description: "昆泰芯KTM52最值钱的，不是21位，而是把“校准必须匀速”这根刺，当众拔给你看了"
 original: "https://mp.weixin.qq.com/s/whgFkTF4welnUVsOFCbhVg"
+models: ["KTM5200", "MT6835", "TLE5012B"]
+companies: ["昆泰芯", "麦歌恩", "英飞凌", "Allegro", "iC-Haus"]
+tags: ["光电编码器", "自校准", "非线性校准", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVXuOHU9a4u6GwnOWibDVXERJuyFDYg8Svcb7UhLu2r7svO7LL9bcnrz7rMpxM6PMHs5DzAXUlRg6TgPujLQAX5JxPGTnMCWKf0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f391ee6f48fed83a1747db3615a73428.webp)
 
 昆泰芯KTM52最值钱的，不是21位，而是把“校准必须匀速”这根刺，当众拔给你看了
 
@@ -30,21 +33,21 @@ original: "https://mp.weixin.qq.com/s/whgFkTF4welnUVsOFCbhVg"
 
 同样是麦歌恩，MT6826S的资料也差不多。它的用户自校准一样要求恒定转速，先配置对应的转速寄存器，再让系统持续旋转18圈以上。这个逻辑很典型：不是不会自校准，而是自校准这件事，本身就建立在“速度先收住”的基础上。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU3gN4BO13Yc4YKY4cXQJYrib4lmbR95FMRsEjDjiavLARUr9ejdXz0VHdTLicicR4J7pC9qGVzEQoHQ6sEyvyZw6gZmtbhVH1yMpo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8c1765a60b8e1bb97cc3deba8f1d8ea2.png)
 
 再看国外，情况也没轻松多少。
 
 英飞凌（Infineon）的TLE5012B，公开资料里的自动校准更偏向运行中的连续修正。它需要1.5圈来生成新的自动校准参数；如果这1.5圈里温度变化超过5℃，额外角度误差还得单独算进去。它的数据手册里关于预测功能的描述，也是在“高速、连续、相对可预测”的运动背景下成立。换句话说，它解决的是动态漂移和传播误差，但不是在公开材料里高调宣称“你速度乱成这样我也照样帮你把非线性修下来”。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUTHl23cYwN8gZEeRk3ZXxfSyc7pl8yc1ZWtIVnRnZKfoOCNn7NoDiaRzoZyrPtVJHoLibtygYlK9XiblFgelCG3pbtZjvtgqZh10/640?wx_fmt=png&from=appmsg)
+![](/images/wx/dae4b892719f9e5c1eba950f635a1d68.png)
 
 Allegro MicroSystems（Allegro）的A17802、A17803走的是电感路线，官方应用笔记写得更直：如果目标在校准过程中能够旋转，最简单的做法是让目标稳定地旋转；它的自动偏置校准也是为连续旋转、由电机驱动的目标设计的，在低速角度测量或直线位移应用里甚至建议关闭。这个表述已经非常坦白了：它也在做校准，但它默认你得给它一个连续、稳定、比较听话的运动过程。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUeBiaI49ibxycwV4qpWhXJTBoqud8BAGEg8aESRGSEI7ibdLmhADtbrXfgDf7V5HpJPXp5kD1407PIqNZ3sPJr7jicsgmibEHSMoibI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/77d8dafc535a6fd70d6867a43a5cf1f4.png)
 
 德国iC-Haus的iC-TW39，公开口径更偏产品化一点，强调的是“按一下按钮即可校准”、运行中自动信号误差修正、残余误差监测这些优点。它确实在讲易安装、易校准，也确实把长期自动修正讲得很强，但至少从公开资料看，它最抓人的表达仍然是“按键校准”和“持续自动修正”，而不是把“极端非匀速下也能做全自动非线性校准”直接推到台前。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVcXy0YrBIiaJlgYWc7t8dagpf99vWePnjiapVot7lnkQagx3gUMf7GW60vnjMmTZgicXC1RQCKvaxibhziacnvs5UOzCXPNYm9JUms/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1f4c3e28b7bbfdd31b33df7664323712.webp)
 
 你把这几家摆在一起看，那个味道就出来了。
 
@@ -68,7 +71,7 @@ Allegro MicroSystems（Allegro）的A17802、A17803走的是电感路线，官�
 
 但客户现场不是这样的。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXKaglh5jsZdIpSuwaYzx1PgM3LUjzMqsgZ1UjVU45PJ6Z6ibSdzNHdZg7AoBe0LecYNFExjtbCnyyMqH2flwKxKZjl56RhgxOM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/12104b8a0be153dbf8d688008319ba35.webp)
 
 产线导入时，别人不一定愿意为了你多上一套高精度带动装置。现场联调时，速度控制也未必细到实验室那个程度。到了售后返修，更不可能让工程师背着一套参考光编和精密台架满世界跑。很多时候，就是普通电机带着转，或者另一个执行器拖着走，甚至就是先把系统转起来再说。
 

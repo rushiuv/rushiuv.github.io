@@ -4,9 +4,12 @@ date: 2026-07-11T00:00:00+08:00
 slug: "983mRRuk_Vy2m3FtcA2Cdw"
 description: "是老周，做四足的，甩给我一条多维科技（MDT）7 月 1 日的新闻：新的 TMR 磁旋转编码器 IC，型号 TMR3111D，通稿第一行就是那个数字，转速上限 40000rpm。他问我一句：为什么最近厂家都在扎堆做 TMR。"
 original: "https://mp.weixin.qq.com/s/983mRRuk_Vy2m3FtcA2Cdw"
+models: ["KTM5900", "KTM5910", "MT6835", "TMR3110", "TMR3111"]
+companies: ["昆泰芯", "麦歌恩", "多维科技", "MPS", "iC-Haus"]
+tags: ["磁编码器", "离轴", "非线性校准", "TMR", "AMR", "霍尔", "ADC", "FOC"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUzwiaBrldLbcYVA3MPGUBhiakIqLqZ9icDiaCbJQC3y6DtSOaaUGpp7YeB4p4rhAfnA8M09hgGAQfeKPibVYZpr3TNLibCLzYkL9U3g/640?wx_fmt=png&from=appmsg)
+![](/images/wx/326fabc2b068e5b95e343b409f707c9d.webp)
 
 工程手记 · 编码器高速动态精度
 
@@ -20,7 +23,7 @@ original: "https://mp.weixin.qq.com/s/983mRRuk_Vy2m3FtcA2Cdw"
 
 发完就有点后悔。这答案太糊弄了。而且看着那个 40000rpm，我想起去年那台主轴。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWhg1Ia3FmeqC09Q9H3MXNib2icibj88u9ZzzzMfAMhJXJoibIYJFfSsbnVF3V11vHVGPReCuibAC5APYgLbJvdYFstbxnonqGianIHc/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/345367fb39b554686ef289ba4be01763.jpg)
 
 零速台架标得漂亮，一上高速角度整体滞后
 
@@ -104,7 +107,7 @@ N−1 = 2 × 2e6 × 5e-6 = **20**
 30000rpm → **0.9°**
 40000rpm → **1.2°**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIW7CctDIC9kyJAJAGiaFfQ5kpepyZIxfgIsjASUY5SrLVYg0zPTOwbkA1qKG8DWrNiaejrVI49Z18rib22IeOXZHWV7SgjoibDKmqA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/29fb6e186feaa2f06781aa050631d214.jpg)
 
 延迟不变，滞后角随转速线性长：24000rpm × 5μs = 0.72°
 

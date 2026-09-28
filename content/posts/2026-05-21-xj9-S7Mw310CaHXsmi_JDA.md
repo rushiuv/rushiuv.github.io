@@ -4,6 +4,8 @@ date: 2026-05-21T00:00:00+08:00
 slug: "xj9-S7Mw310CaHXsmi_JDA"
 description: "直白标题: AI涨价与编码器标定成本-判断力正在成为传感器行业最贵的资产 目标平台: 知乎 创建日期: 2026-05-20 当前轮次: 2 最新版本: v02 当前状态: 已完成 下一步任务: 无 | 已完成 | 文章已归档为最终稿 cu…"
 original: "https://mp.weixin.qq.com/s/xj9-S7Mw310CaHXsmi_JDA"
+companies: ["昆泰芯", "Melexis", "Anthropic"]
+tags: ["自校准", "霍尔", "AI"]
 ---
 
 ```
@@ -22,7 +24,7 @@ current_owner_since:
 发布用标题: AI写标定代码只要30秒，但决定标定策略的那个人，刚涨了工资
 ```
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW1GwFoL3cWmWYkxHW5icK4TCYQBQjsqbhqymzHCLicwHAgfUv1O1aysvcEm5FTIbzN4aZ2A5D5vFYCuVw9cXp6dSV9FdiaBQDBjA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3eef8073e7f0b0668f5f1405cf996a22.webp)
 
 ## 编码器公司用AI写芯片只要30秒，标定判断却越来越贵◈
 

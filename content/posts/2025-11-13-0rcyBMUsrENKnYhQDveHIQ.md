@@ -6,7 +6,7 @@ description: "十点，整层楼黑着灯，老张孤零零坐在屏幕前，肩
 original: "https://mp.weixin.qq.com/s/0rcyBMUsrENKnYhQDveHIQ"
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyScY83JD3wxu0lgktKQx4Ijdw3NKwpmQnp7aCfAcFaFEpicqr8L9t0JoqibZPA4DCGcbshLARNKcd8g/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a03ed0195c23f1833c883d213b170c5d.webp)
 
 **十点，整层楼黑着灯，老张孤零零坐在屏幕前，肩膀像被压弯了似的，一边喝着凉了的咖啡，一边反复调时序。群里leader发来一句：“张哥辛苦了，靠你了。”点赞的有十几个，说谢谢的只有一个——老张自己没回。**
 

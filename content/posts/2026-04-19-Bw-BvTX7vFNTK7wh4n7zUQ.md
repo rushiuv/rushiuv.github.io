@@ -4,9 +4,11 @@ date: 2026-04-19T14:14:00+08:00
 slug: "Bw-BvTX7vFNTK7wh4n7zUQ"
 description: "当绝影赤兔队的“闪电”第一个冲过终点线，冠军却颁给了慢了 2 分钟的自主导航组。这场半马规则的“偏心”，撕开了人形机器人行业最后一道防线：离开人的“微操”，你的机器人到底还知不知道自己在哪？"
 original: "https://mp.weixin.qq.com/s/Bw-BvTX7vFNTK7wh4n7zUQ"
+companies: ["昆泰芯", "纳芯微", "麦歌恩", "希磁", "Melexis", "Renesas", "iC-Haus"]
+tags: ["非线性校准", "TMR", "人形机器人", "AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXumhUUzVUEQZuSoUXHNhpq8yhWhweKqlOHuouVpVS9wX7b7CNSDkzYE6HES9HmEJOzBpXOA4nbaHUOqLuiaoxjKDpTjDdDTMH4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d0684d8b93fb0cfa0cba397722837620.webp)
 
 ##
 
@@ -22,9 +24,9 @@ original: "https://mp.weixin.qq.com/s/Bw-BvTX7vFNTK7wh4n7zUQ"
 
 >
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWiagiaTSsBK0Br4icsibtfCvUuggpxWRZsAjwW9OxUvEJs9vgB9Jibghq9iansp5dgWmatbT0tryPeZOenYytjZPQLLNlbkJjlarVqw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/7dcabdc00689af712b93a0509e1085bc.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVKEh0rBnMcFjNtRdZjb5OcF2nnWR9nLe4VL63FOQyXIhjg0EljvnT321Jode3sh6iaqg7tLaMib9WjcT40O7xtj7IBltu3yyhfM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/590c6f2de8e607bcc1df5824dddc4162.webp)
 
 这件事表面上是规则给自主导航“让路”，实际上是在逼所有人回答一个工程上的硬命题：
 **当背后那个负责“擦屁股”的人消失了，机器人还能跑多久不摔跤？**
@@ -60,7 +62,7 @@ original: "https://mp.weixin.qq.com/s/Bw-BvTX7vFNTK7wh4n7zUQ"
 
 >
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUPcxGmVm7NU5qKBibib3a5nSUYfq8aVX3Z1icAAz2JDccSa8d0n8c9MpvZnekOjplonfCyMfDvGYD6YloX3m9ia0nJMrLNvLdYdvk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1989052294fe0474e60f46599a3686a5.webp)
 
 ### 04. 真刀真枪：延迟与尖峰的“审判”
 

@@ -4,9 +4,12 @@ date: 2026-06-06T00:02:00+08:00
 slug: "vSfjfcXqaWudq1lMkMYWWQ"
 description: "昨天长鑫科技 IPO 的消息刷屏，很多人都在看它的营收、利润和国产 DRAM 的战略意义。公开报道里，长鑫科技 2026 年一季度营业收入 508 亿元，同比增长 719.13%；归母净利润 247.62 亿元，同比增长 1688.30%；…"
 original: "https://mp.weixin.qq.com/s/vSfjfcXqaWudq1lMkMYWWQ"
+models: ["KTM5800", "KTH7101"]
+companies: ["昆泰芯", "多维科技", "长鑫", "Melexis", "ams OSRAM"]
+tags: ["磁编码器", "离轴", "非线性校准", "TMR", "AMR", "霍尔", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXibjXVCJuNsOzMLxAE4YreWUjM0DVYJ8B17PCdxHH4Yus0eSY5FN6uIjrBqNib9VBD2FfziajlB7smwgvdibOztyaiayTlDh6UdvN8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f48f81da2cfc74783a47e4f7116685c0.webp)
 
 ##
 
@@ -16,7 +19,7 @@ original: "https://mp.weixin.qq.com/s/vSfjfcXqaWudq1lMkMYWWQ"
 
 昨天长鑫科技 IPO 的消息刷屏，很多人都在看它的营收、利润和国产 DRAM 的战略意义。公开报道里，长鑫科技 2026 年一季度营业收入 508 亿元，同比增长 719.13%；归母净利润 247.62 亿元，同比增长 1688.30%；经营活动现金流净额 425.7 亿元，同比增长超过 212 倍。这个数据确实很猛，也难怪市场会把它当成国产半导体的标志性事件来看。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU4elU9P3zHykUib7F2aibHKRyHhnSVTiaMXn478XYhnlJic6r9aY2fZKvSrBxencXD7VM2NZ6Z6XTPKMXe8QZfoEFgm9rEM8uyo1o/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b4b988bcadd4f47b076123d99bd1c14b.png)
 
 但我看到这个消息时，脑子里冒出来的不是 DRAM，而是另一个小得多、冷得多的东西：机器人关节里的磁编码器芯片。它没有存储器那么大的资本声量，也没有 GPU、CPU 那么容易被外行理解，很多时候就藏在电机后面、轴承旁边、机械缝隙里。但只要做过伺服、机器人关节、位置反馈的人都知道，这颗芯片一旦不稳，整台机器都会跟着抖。
 
@@ -36,11 +39,11 @@ original: "https://mp.weixin.qq.com/s/vSfjfcXqaWudq1lMkMYWWQ"
 
 拿昆泰芯举个例子，不把它放在主角位置，也不做软广，只看公开资料里能看到的方向。昆泰芯 KTH7101 是一款 16 位高速高精度磁编码器，官方资料提到它内置自动非线性校准 ANLC，校准后在轴应用 INL 精度小于 ±0.1°，离轴应用校准后 INL 精度小于 ±0.2°，数据更新率 1μs，SPI 通信最高 10Mbps，工作温度 -40℃ 到 125℃。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXRzSJuWbIB6xumZ67jiaNdxTNNmgYTqXhmhSy9OWYQxxHP2oTD6EOmMG4dMRFk1G5TyBF9jKs3v1KdU4Z4GG8N5oicgApp0JYF0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/a7c0dbe42e7db43085357a7f9492d4ee.jpg)
 
 这些信息说明什么？说明国产厂商已经不是只会做“低价替代”，而是在往客户真正痛的地方补：非线性校准、离轴应用、低延迟、宽温区、接口适配。再比如昆泰芯 KTM5800，公开资料里写到它是 30bit 绝对角度细分器，可以与 AMR/TMR 磁电阻传感器搭配，构成高速高精度非接触磁性编码器模块，也可搭配光编、光栅、磁栅等传感器。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIV5kv1RIlckZsVBvrbxkzbQDJPOibThXAhP7PIHaN2gw4vPXA8J45Yq95X9hp5Yb3CFhWH84ibJ0mxNiay5GRAUIALH5Wq6icEcrbw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/261a270a2e625527294a73f8bd8893da.jpg)
 
 但从一线量产角度看，这还只是第一步。参数补齐以后，客户下一轮会问得更具体：ANLC 校准结果有没有质量评分？补偿参数有没有贴边报警？磁场幅值过高或过低时，状态字怎么报？sin/cos 幅值不匹配、相位正交误差变大时，芯片能不能告诉主控？数据更新很快，但每一帧有没有 counter、CRC、status、frame age？如果不能回答这些问题，产品还是会停留在“能输出角度”，而不是“能解释角度”。
 
@@ -60,7 +63,7 @@ original: "https://mp.weixin.qq.com/s/vSfjfcXqaWudq1lMkMYWWQ"
 
 最近行业里很容易出现一种叙事：某种新材料、新工艺、新路线一出来，就要“掀翻”传统方案。TMR、AMR、霍尔、电感、光电，每一种路线都有自己的优势，也都有自己的坑。比如多维科技在 2023 年发布过基于 TMR 技术的 14 位角度编码器芯片 TMR3103 和 TMR3106，集成信号调理、角度解算、SPI 通讯，并支持自动校准、SPI/ABZ/UVW 等接口。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVGYkl1NhDcs8P5ia1lpoS8opRedQ4q8bPtab2g8j9pc0J5410jHefJvQL0U6mviamAOJG6IBia1ib2f6rtcN6f9gRGngtFzKr2ECw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b3f7dfed5b544b64a6fd3f574855bf14.webp)
 
 这类技术路线当然值得关注，但我不建议轻易写“谁把谁踹翻了”。编码器不是单纯材料比赛，它最终要落到客户系统里。TMR 灵敏度高，但系统成本、磁场设计、抗干扰、温度稳定性、封装一致性都要算；霍尔路线成熟、成本友好，但高精度时要靠补偿和系统设计；电感式抗污染、适合某些结构，但线圈设计、目标金属、PCB 和解算链路也很考验工程能力。路线没有绝对胜负，场景才决定胜负。
 

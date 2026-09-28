@@ -4,9 +4,12 @@ date: 2026-05-10T00:00:00+08:00
 slug: "vFk6oBXi5tsy9V7HIwDkkg"
 description: "纳芯微最近推出 MT6901 电感编码器，很多解读文章说得很猛：它摆脱了光编码器对光路的依赖，也避免了磁编码器对背景磁场的敏感。翻译成大白话就是：电感编码器想进机器人关节，而且不是来当配角的。"
 original: "https://mp.weixin.qq.com/s/vFk6oBXi5tsy9V7HIwDkkg"
+models: ["MT6901"]
+companies: ["纳芯微"]
+tags: ["磁编码器", "电感编码器", "光电编码器", "离轴", "TMR", "人形机器人", "机器人关节", "稀土"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUTBFWbNfocjrgGU04ps8zBApIIiayQpZkialdmRD9rNu2JFDLNWDHBCeJbNQmqYKJ9xnI9ic0ltUbCYtScv9ia4yh0JhhjEmUdCx4/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/f8a29e7e204128448d42e1b0de82c423.webp)
 
 ## 电感编码器想把磁编码器干掉，先解决贵三倍这个问题
 

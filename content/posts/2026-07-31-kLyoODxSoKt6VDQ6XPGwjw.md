@@ -4,9 +4,12 @@ date: 2026-07-31T00:00:00+08:00
 slug: "kLyoODxSoKt6VDQ6XPGwjw"
 description: "1 AI 抢的是先进制程，编码器却连被抢的资格都没有——它在 AI 基建投资里占比低到没人当回事。"
 original: "https://mp.weixin.qq.com/s/kLyoODxSoKt6VDQ6XPGwjw"
+models: ["KTM5900", "TMR3111", "TLE5012B"]
+companies: ["昆泰芯", "英飞凌", "ams OSRAM", "Qualcomm", "西门子"]
+tags: ["磁编码器", "光电编码器", "人形机器人", "机器人关节", "AI", "投资"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWDdd14yuZXVRtxBWRYve5axGiaL2AicicO7uzUHgfXCK3cMocWnJEMbriaNsRCnvbUOiaia56JkgtGmcYPxWstsTb9pibJM1ozcb6UEI/640?wx_fmt=jpeg)
+![](/images/wx/136788793c44856dc7e8fee1abbbb054.webp)
 
 产业观察 · 机器人关节编码器
 
@@ -82,7 +85,7 @@ AI 公司在疯狂囤芯片，芯片公司在拼命扩产能，按理说这是�
 100 × 360° × 42.7μs ≈ 1.54° 机械角
 ×7 对极 → 电角度 ≈ 10.8°
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVcLducBoG9iazohibPQQqjh9CKoedicBRPdtKtiazWdOVspovSxSIDibSOsYGM0lrdAiapU3CDElaiaNoRicEUuVWf0wp2xPSVtt7MWVs/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/426689a30e02a8c29e811b7b1882b450.jpg)
 
 图1：42.7μs 更新周期一路放大成转矩纹波——6000rpm 下迟到 1.54° 机械角、×7 对极变 10.8° 电角，再经 Park 变换掺进周期性 d 轴寄生分量。（原创示意图，数字为文中推演量级）
 
@@ -90,7 +93,7 @@ AI 公司在疯狂囤芯片，芯片公司在拼命扩产能，按理说这是�
 
 看清这个反差了吗：标称 0.1° 是位置环的账，动起来迟到的 1.54° 是速度环和电流环的账。静态精度和动态真实性，压根不是一个维度的东西。而 PPT 上印的，永远是那个漂亮的静态数字。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWevpd8Llrr4oY3eciaKAYVWlBVIwD2yrDYDt6CGOBQz2CiahjHo68v0iaEBRW9TEibibp3QUqN3Pzlmeia06DTfZexqTyCLG84gicQa4/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/0c0775446315869ace7d7c4233da4e9a.jpg)
 
 图2：同一颗编码器，静态标定台上的 0.1° 和动起来的 1.54°，差了约 15 倍。静态精度和动态真实，压根不是一个维度的东西。（原创示意图）
 
@@ -104,7 +107,7 @@ AI 公司在疯狂囤芯片，芯片公司在拼命扩产能，按理说这是�
 
 有多狠？在“对预测位置再差分测速”这个特定架构下，只补编码器自己那 1μs，速度噪声标准差就放大约 **2.24 倍**（√5）；要是有人异想天开，想拿编码器去替伺服补那十几毫秒的采样大延迟，噪声能被放大**两万多倍**。这也是为什么西门子、Rockwell 这些老牌伺服，宁可让编码器**直接输出算好的速度**、也不鼓励控制器裸差分位置，还对任何外推时间都设死上限——他们早在现场被这个耦合坑过。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIW3vaE0QWCDwWicQiaicQD4YE5LjYJcibMD04083AsvaKYeowBjltXq6tHTFXf9wg2DuxHH5FsB4Ix74AVvqqxiaUglYs76TmndLb3k/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/88d1d7c8bb2ec0644112568ae37a5c63.jpg)
 
 图3：预测外推越远，速度噪声放大越狠。补自己那约 1μs，噪声约 2.24×（尚可）；硬替伺服外推 15.625ms，放大到约 22098×——直接炸。（原创示意图，R(k)=√((k+1)²+k²)）
 

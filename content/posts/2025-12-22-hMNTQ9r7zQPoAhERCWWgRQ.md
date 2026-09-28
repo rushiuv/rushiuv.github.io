@@ -4,11 +4,12 @@ date: 2025-12-22T22:22:00+08:00
 slug: "hMNTQ9r7zQPoAhERCWWgRQ"
 description: "酒桌上最容易听到的一句话，就是那种带着自信、又带着点不耐烦的语气：“我们做的是高科技，是真正的硬核技术，只要钱到位，什么人找不到？”话一落地，烟灰一抖，杯子一碰，像是在给自己壮胆。"
 original: "https://mp.weixin.qq.com/s/hMNTQ9r7zQPoAhERCWWgRQ"
+tags: ["芯片设计"]
 ---
 
 酒桌上最容易听到的一句话，就是那种带着自信、又带着点不耐烦的语气：“我们做的是高科技，是真正的硬核技术，只要钱到位，什么人找不到？”话一落地，烟灰一抖，杯子一碰，像是在给自己壮胆。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTw4PL1GQ9o14SUkhQmwsfuwiaZnia7hRcWZwZnrMr4lenRZCcV09S4ibffYJuVFEjGia7qniapAqYMiadg/640?wx_fmt=jpeg)
+![](/images/wx/3f09241a2e23c9edea3c8a62bcdd736b.jpg)
 
 芯片这行，偏偏不是靠喊口号混的。圈子不大，小到什么程度呢？小到一个项目组长换了公司，第二天脉脉上就开始有人匿名分析他到底是被拖死的，还是看清了路子提前跳船。小到一个验证专家消失在工位上，第三天猎头那边就已经知道是管理层拍脑袋改架构，把人逼走了。消息流通得比公司内部周会纪要还快。
 

@@ -4,9 +4,12 @@ date: 2026-08-15T09:14:00+08:00
 slug: "LQsRJu2PWRQWZ3rl9y8dqA"
 description: "所有人都在谈吨位、产能和 94%。但真正决定编码器性能的，可能是一颗几乎不贡献吨位的磁体——因为它最后不是按克验收，而是按角度误差验收。"
 original: "https://mp.weixin.qq.com/s/LQsRJu2PWRQWZ3rl9y8dqA"
+models: ["MA600"]
+companies: ["MPS", "RLS", "宇树", "优必选", "金力永磁"]
+tags: ["人形机器人", "机器人关节", "稀土"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUw3nujIWDzLBDaxnlPl5POicYs0fEPPj9j1vJDhxTwS6RBzzSq5JVbqnrAkRpGYmicVqlprtZwIXLxMmWPjuHVv4QhG8te7zusM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8650bd0b477726aeb388a5d282c86920.webp)
 
 产业研究 · 编码器 · 稀土永磁
 
@@ -31,7 +34,7 @@ MPS MA600 的 datasheet 给了一个很具体的设计例子：**N35，直径 5 
 
 我盯着这 0.37 克突然意识到一个问题：我们可能不是把钕铁硼的账算错了，而是从一开始就用错了单位。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUlziac7c8avwOuN6uGyGQwzgR6GaG5k6ibBf7wFqpbeWtpiaSnUvhukCCPTcWBYyhGiaL851Gey4QzHs6vp2KuBUNX7Z3LXDxRHicY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3b318691ed3fa1e07f2292ceb1d18051.png)
 
 图 1｜同样叫“磁体”，电机和编码器真正购买的东西并不一样。
 
@@ -64,7 +67,7 @@ IEA 给出的数据非常夸张：中国在 2024 年已经占全球**烧结永�
 32,985 t/月 × 12 = 395,820 t/年
 3,500 ÷ 395,820 ≈ **0.88%**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUeYc3wFSzurkiacj7bOnIBiaJtnx7oTO0VNiaMaKtXNfv7n2wH5Z4FJRqLKl0Ud09h5Nia6oAUmm52hQOJUu8OR7Uuk7DWjh6fibjg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ec5d9cc593e78262e781fd1a69b8d116.png)
 
 图 2｜0.88% 不是供需预测，只是一个数量级校正：百万台级机器人，并不会天然等于全行业吨位吃紧。
 
@@ -83,7 +86,7 @@ IEA 给出的数据非常夸张：中国在 2024 年已经占全球**烧结永�
 
 **验收对象已经变了。**以前卖的是 Material。再往下一层，卖的是一个经过充磁、检测、匹配，能够在规定安装条件下产生“合格磁场”的 Field Device。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVAFZPfNZRk7nOgytAjpGdqVlP0MdqL7R8zvarR3rCKBgSobZq9icrv5VwafV9RovRgMvB6Yib2tJyVIDjfXUAlPja9KIvhibQ7VU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5d6f864b6b77fe036f3fcb6ba8ad597b.png)
 
 图 3｜真正的跨层，不是把磁体做得更强，而是把“磁场质量”变成可以交付、可以验收、可以定价的产品。
 
@@ -107,7 +110,7 @@ SMM 预计 2026 年中国稀土永磁出口同比增长 **17%**，达到 6.75 �
 
 看到这两个数字，第一反应很容易是“海外需求比国内强太多”。但这一步不能直接跳。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUAC2ib583msuK3tic34D3VJiasCmaFs5aSDPsK3iaU5cPJohthtlXqBqmNyae6l5bXtpKMJq7ibyQTQJibq0t5G9pm9KpTG2FSRT1nA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9808b51b0d05817560632116e938e040.png)
 
 图 4｜Shipment = Consumption + ΔInventory。补库存与去库存，都会让出货量偏离真实终端消耗。
 

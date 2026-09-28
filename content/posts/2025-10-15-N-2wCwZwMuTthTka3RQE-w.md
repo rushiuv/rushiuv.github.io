@@ -4,11 +4,12 @@ date: 2025-10-15T00:11:00+08:00
 slug: "N-2wCwZwMuTthTka3RQE-w"
 description: "稀土不是“挖出来”的，是一道道化学地狱里“炼出来”的。中国可怕的地方不在矿，更不在价格，而在三把连环刀：高纯分离的硬核化学、几十年工艺数据沉淀成的手艺、以及能长期不计代价把整条链压出来的举国体制。美国不是没钱没技术，是没法在这类“长、苦、脏…"
 original: "https://mp.weixin.qq.com/s/N-2wCwZwMuTthTka3RQE-w"
+tags: ["稀土"]
 ---
 
 稀土不是“挖出来”的，是一道道化学地狱里“炼出来”的。中国可怕的地方不在矿，更不在价格，而在三把连环刀：高纯分离的硬核化学、几十年工艺数据沉淀成的手艺、以及能长期不计代价把整条链压出来的举国体制。美国不是没钱没技术，是没法在这类“长、苦、脏、重”的系统工程里持续二十年。胜负不在矿口，在系统能力。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTNOdbC8Cudib1Pjt29rWExWBBgMMa2bxYhwQibAC5TvBlyepuDu64JOAMQhHN3c2ZibUqxPJKZMXyzw/640?wx_fmt=jpeg)
+![](/images/wx/48443145d7e5f4e5306dcead5c6a0d77.jpg)
 
 夜里进过稀土厂的人都懂，那不是车间，是连续剧：溶剂萃取塔一溜烟排开，像千手观音，手里全是试剂瓶。稀土元素性子太像，一不小心就拧成一团，你只能靠成百上千级的萃取把它们一层一层“撕开”，每撕一次，多一点纯度，少一点良率，化学废液在背后喘气。做得好的，纯度要上“五个九”，做不好，整线报废，钱像水一样往下漏。学术圈早就说得直白：传统工艺常常要“数百乃至上千次”的萃取段，极端烧人、烧钱、烧时间。
 
@@ -32,4 +33,4 @@ original: "https://mp.weixin.qq.com/s/N-2wCwZwMuTthTka3RQE-w"
 
 所以结尾只剩一句重话：稀土不是资源之战，是耐性之战；不是矿藏之争，是制度之争。谁能把“不划算”的事做二十年，谁就把“最划算”的牌握在手里。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTNOdbC8Cudib1Pjt29rWExWSNrYA8gZP6VZnlibgKTCeO4eoORGzMo2HKnqhX0LRPG9D1aMjOlicWUg/640?wx_fmt=jpeg)
+![](/images/wx/1ea9e45feaf90c4884bd7bffa0076494.jpg)

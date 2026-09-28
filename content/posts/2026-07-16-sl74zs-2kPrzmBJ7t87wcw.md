@@ -6,7 +6,7 @@ description: "·判错一段，关节跳 24°、指尖弹出 37 毫米——而�
 original: "https://mp.weixin.qq.com/s/sl74zs-2kPrzmBJ7t87wcw"
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUl7EHVDicgSEkB3syyJkPfOwbnlcll1VSmiappffo3iaMxeEbCDyvIhg54pwg1Cke81CxEggXicPzCpVMWLXbHFxvcFsS1P74ottw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2b537c4541b87b5d52c055d76ab164fd.webp)
 
 工程手记 · 人形机器人
 
@@ -184,6 +184,6 @@ original: "https://mp.weixin.qq.com/s/sl74zs-2kPrzmBJ7t87wcw"
 
 ### 知识卡片
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIW1rSa9vubkdcGNziccrZPlLiaAHpGxKwJgDueIRZ0kDwUicIXBZcN6xGkjRicemuZoib2cbmTviazSKVecvsl8VgWcUOkSdxgqk25Tk/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/da3e6c950fe72387ac47f8af80332361.jpg)
 
 ◆ ◆ ◆

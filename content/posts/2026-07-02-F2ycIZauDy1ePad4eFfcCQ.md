@@ -4,9 +4,12 @@ date: 2026-07-02T00:01:00+08:00
 slug: "F2ycIZauDy1ePad4eFfcCQ"
 description: "6月2日，Infineon 把 XENSIV 磁传感器产品线正式扩展到 TMR。公告里没有给出一个能直接压过国产 TMR3111 的角度精度数字，但它把 TLI55910、TLI55950、TLI5570、TLI5572、TLE5571、T…"
 original: "https://mp.weixin.qq.com/s/F2ycIZauDy1ePad4eFfcCQ"
+models: ["KTM5900", "KTH7101", "TMR3111", "TLE5502"]
+companies: ["昆泰芯", "纳芯微", "麦歌恩", "希磁", "英飞凌", "Renesas", "海德汉"]
+tags: ["磁编码器", "非线性校准", "TMR", "AMR", "霍尔", "功能安全", "车规", "编码器接口", "机器人关节", "稀土"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWVz6xJRA3uHvzuIE9CvfPMKWeUPY0oPsHP0fbvszI3YF4mJD5IJ4mqqBO9sC6zszX3zcQ61dsfaRB8s2N3lb6Z8uzQwgcvsK4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/65903afc31c4264ac111279d5b8f7599.webp)
 
 ## 英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态
 

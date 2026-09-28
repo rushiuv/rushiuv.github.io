@@ -4,13 +4,16 @@ date: 2026-04-11T00:01:00+08:00
 slug: "PyU3Zowztlw9oEB2XbQfmw"
 description: "很多人会把 ENX 22 EMT 理解成“一颗高端编码器芯片”。这其实不准。更准确的理解是：它是一套小型位置子系统。因为一套模块如果同时做到单圈 17 位、多圈 16 位、断电记圈、SSI/BiSS 差分输出，而且还能塞进 22 mm 这一…"
 original: "https://mp.weixin.qq.com/s/PyU3Zowztlw9oEB2XbQfmw"
+models: ["KTH78", "MT6701", "MT6835", "MA600", "TMR3108", "TMR3111", "ENX 22 EMT"]
+companies: ["昆泰芯", "麦歌恩", "MPS", "iC-Haus", "maxon"]
+tags: ["多圈编码器", "自校准", "霍尔", "编码器接口", "瑞士"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU89sWuMwBXibVTP4YSbd5mGoG7EyJacLCa5XodDJTuicPibwPicMzvcIlk8FibI2D72GgbBiak20x8FONVWJ3BDHIHzjyiaZrmkA4We4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0d765f6f69cbe2e02c6e4edcbf5704fb.webp)
 
 很多人会把 ENX 22 EMT 理解成“一颗高端编码器芯片”。这其实不准。更准确的理解是：它是一套小型位置子系统。因为一套模块如果同时做到单圈 17 位、多圈 16 位、断电记圈、SSI/BiSS 差分输出，而且还能塞进 22 mm 这一类小型系统里，它内部大概率不可能只靠一颗单芯片硬扛，而是至少拆成三层：第一层负责单圈测角，第二层负责 Wiegand 取能与多圈记忆，第三层负责把单圈和多圈数据封装后通过 SSI/BiSS 输出给控制器。maxon 自己对外卖的也是模块，而不是裸芯片，甚至明确写了这类传感器“只能作为组合件的一部分购买”。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXJ3zx22MyiaotyMmqswL4FGnP3ILlClpjeX5zsCTgp56wyYF0P705wibBCkArfTmISVWG81DdvB0tOYuq2blxO6QOywDWiclmH5Y/640?wx_fmt=jpeg)
+![](/images/wx/732bc2af0b175850a57b46f74da411b5.jpg)
 
 真正关键的是第二层。因为这层决定的不是“这一刻角度精度”，而是系统掉电之后会不会失忆。iC-PMX 之所以最像 maxon 这类方案的心脏，不是因为它名字里带“encoder”，而是因为它公开给出的功能就是这套问题的标准答案：Wiegand 脉冲取能、无电池无齿轮计圈、方向检测、外接非易失存储器、还能给上层微控制器交换数据。更重要的是，iC-Haus 甚至还公开了一颗与它配套的 iC-RMF，直接写明是给 iC-PMX 这种取能式多圈计数器配套的 FRAM 存储器。也就是说，iC-PMX + iC-RMF这组组合，本身就是行业里一条非常清晰的“无电池多圈模块”技术血统。
 
@@ -38,23 +41,23 @@ original: "https://mp.weixin.qq.com/s/PyU3Zowztlw9oEB2XbQfmw"
 
 这里就要把问题分清楚。国内现在并不缺“单圈角度芯片”，真正缺的是“像 iC-PMX 这种把 Wiegand 取能、多圈计数、掉电写存储、状态同步做成一颗专用芯片”的那一层。换句话说，国产要复刻 ENX 22 EMT，不是先缺单圈，而是先缺无电池多圈架构芯片。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUx6t4pSVaWica7dgEYyMUz3FBib4ia2vqKO3v0JWxicncH5qXxicwoJzN64EquhE8iaiah7NOkf064TgPSrS8t2eR7dW7JVsb5u4rGxc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/08fd70a8f1826677470f0dbba9e4a826.png)
 
 但如果只看单圈前端，其实国内已经有不少能打的芯片可以拿来做这套模块的“前半身”。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXicfdGOCmaEUhFgQfQSMfEEdHqYSyibX57Zn9Wq6tVgib9DUJtb1bRttArd7zbZibQbfH2f2OFIb0BDibFCqaFLC2xtaAmH0PZf3OE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/38c67260d38219f53189d76fee84d79d.png)
 
 先看昆泰芯。KTH78 系列是 16 位霍尔绝对角度编码器，支持 SPI、SSI、ABZ、UVW、PWM，系统延时 1 微秒，最高转速 120000 rpm，还带磁场诊断/报警。这类芯片的优势很明显：接口齐、延时低、落地快，很适合做 maxon 这类模块里的单圈层。它欠缺的不是角度本身，而是掉电不失忆这一层目前没有公开的一体化方案。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUA36Jso3XvrmtFtdPRRApsntNpqYhVDToEH0rh8IRumye1HMUZ9awRWgcUGQEzwgFCvPB7pl7s88wlCCLwXXojSYPVaL6WUOM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5bdc1722a5c7586664294e5a26c8a802.webp)
 
 再看多维。TMR3111 这颗芯片非常值得重视。官方给的是 23 位绝对位置信息读取能力，SPI/ABZ/PWM 输出，转速到 40000 rpm，角度输出延迟小于 2 微秒，还带自校准和 EEPROM，可做对轴与离轴。它本质上已经很接近“高端单圈前端”的样子。TMR3108 也有 17 位高速绝对角度输出，带 SPI、ABZ、UVW/PWM 配置和自校准。多维这条线的特点是：前端很强，尤其适合把单圈做漂亮；但从公开资料看，它还没有把 Wiegand 取能多圈这层做成像 iC-PMX 那样的专用芯片。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUhEd1RhNiaez8v3V1C0ic21y2wCZFiaib2KaVZDBkBX8SuDLLRIDibNpPqYnlDMzUWiajhBhxaueEiaRYsiaDdqSicAXEqrFYMOkURc6jw/640?wx_fmt=jpeg)
+![](/images/wx/9621e60e32575c3fc73bd65fffe78e65.jpg)
 
 麦歌恩这边，要分两条看。一条是 MT6835，它官方直接定位在“通用伺服控制”“17 位绝对值伺服电机控制”这类场景，说明它瞄准的是高性能单圈绝对值编码。另一条更有意思的是 MT6701，它走的是差分霍尔思路，官方明确强调它天然抗外部磁场干扰，还给了 SSI 接口、状态位和 CRC，而且专门把直流无刷舵机、机器人关节写成应用场景。这个产品很值得注意，因为它在逻辑上跟 maxon 的 ENX MILE 有一点共鸣：不是先追求最漂亮的纸面噪声，而是先解决“电机旁边能不能测得还算干净”这个问题。不过，它依然主要停留在单圈与抗干扰层，离 ENX 22 EMT 这种无电池多圈记忆模块还有一层没补。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUWd4PEcYVy96UyvYVQgEnhIZpYPFVAaPTcrVnHjcPXHQlgeluK40Q8ApSWcoCSuIENOHwsRUaKKn1iczFQUCqY0NUphRibv2Z9Q/640?wx_fmt=png&from=appmsg)
+![](/images/wx/916e11190f76dfcda10c0c491b190d5d.png)
 
 MPS 这边最像“可塞进 maxon 模块前半身”的，其实不是整套多圈方案，而是高性能单圈前端。比如 MAQ600 这类产品，官方给的是 TMR 传感器、高带宽、高精度、支持 SPI/SSI，系统校准后 INL 可以做到 0.1° 以内，封装 3×3 mm；如果更看重靠近电机的杂散场环境，那它 2024 目录里的 MagDiff 家族，比如 MA900、MAQ79010，更明确强调对寄生杂散磁场的鲁棒性，接口里已经给到 SPI、SSI、ABZ、UVW 等。MPS 这条线的强项是把单圈前端做成高带宽、高精度、甚至带杂散场鲁棒性；但从公开资料看，它并没有公开一颗对应 iC-PMX 这种“Wiegand 多圈管理芯片”。所以如果用 MPS 来拼 ENX 22 EMT，最现实的方式也还是“单圈 MPS + 外部 Wiegand 多圈层 + 存储/协议层”。
 
@@ -74,7 +77,7 @@ MPS 这边最像“可塞进 maxon 模块前半身”的，其实不是整套多
 
 第四，是最后的工业接口和诊断层。ENX 22 EMT 对外不是吐一个原始角度，而是模块级 SSI/BiSS 差分输出。这说明 maxon 卖的并不是“传感器裸能力”，而是“控制器能直接接进去用”的完整接口能力。这个层面看着不像核心，其实决定了模块能不能被整机厂真正拿去量产。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUibrIBiaiarocsqPuQ6uDj49B683xwxdD92gYwrjVBtiamvYCM1sgxVo8BibTTmtEF2AtNsK5AkQSjfJaSqBIa1zibIErJq5s2yGLtg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/56d83ab15f77a9011e8f83545c9567a0.png)
 
 ## 不得不说：maxon 模块的价值
 
@@ -90,4 +93,4 @@ maxon 这套模块当然有它一贯的可靠性、集成度和工业气质，�
 
 maxon 这类模块真正贵的，不是角度算得多漂亮，而是掉电以后它仍然记得你是谁。国产现在最该补的，不是再多卷一位分辨率，而是把这层“系统记忆”做成芯片。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVsmeYSia6wnQk4EQNZopkaQXSH8Mdd5DGQOVM211y0LDv26EAl7UIxkqQsiaZV0Nh4XLIyQ4lQEibthOW89C9oA6ias93dOSoicQ60/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7b976cbf89beb2ab96a959672da874d7.webp)

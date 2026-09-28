@@ -4,6 +4,7 @@ date: 2026-06-09T00:12:00+08:00
 slug: "4nfJ9hnjtbi8RKYKO60Uow"
 description: "我第一次意识到靶体材料不能随便换，是在一次高速误差复盘会上。屏幕上那条误差曲线很难看。铜靶体换上去以后，RX 信号比原来的 6061 铝靶体高了三成多。按常识，这应该是个好消息。"
 original: "https://mp.weixin.qq.com/s/4nfJ9hnjtbi8RKYKO60Uow"
+tags: ["电感编码器"]
 ---
 
 ## 把电感编码器靶体从铝换成铜，信号涨了35%，精度却翻车了
@@ -16,7 +17,7 @@ original: "https://mp.weixin.qq.com/s/4nfJ9hnjtbi8RKYKO60Uow"
 
 这件事让我重新理解了一句话：**电感编码器的靶体材料，不是导电率越高越好。** 它本质上是在信号幅度、空间带宽、谐波保真、温漂和机械约束之间做取舍。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXsmL6ibeHibb0EaDAQ5m0Fybz0IFdMby8JU1k8pU2ykWEZVcJVH34ZMN7fkf9HolDn9TaDVib91k5h6ic5wu9YdY3rSWSfovYNic0w/640?wx_fmt=png&from=appmsg)
+![](/images/wx/88786f7131be09946815d1bfca928883.webp)
 
 ### 一开始，我以为靶体材料很简单
 
@@ -160,4 +161,4 @@ original: "https://mp.weixin.qq.com/s/4nfJ9hnjtbi8RKYKO60Uow"
 
 而是信号变好了以后，你以为问题解决了。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWiaEIFia02lZ2bV1WPlIPhK9q95TmOFaPp4vWUBSBtd1WicnbIIBrZ3z3v8Xb8F87JKic8VzKMYhupbjFJ0qDFbRFTtvIMNJwphRE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d3c36fe0107fdce6956a79108ae9b512.webp)

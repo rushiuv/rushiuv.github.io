@@ -16,6 +16,6 @@ original: "https://mp.weixin.qq.com/s/yjNAGS3K_sxebtsNJghj1g"
 
 ＃编码器分辨率解析 ＃编码器精度详解 ＃最小角度变化揭秘 
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUBjLqQvmV1GnKshF8LjDJCtXiblF5uwQ2JjPUWN4Kub6CoYtjW0VYVLW6FosdcsOOSaXvlJxICYHpwSu8tREcGv6QcjQrRqOeY/0?wx_fmt=png)
+![](/images/wx/7d14dd31bb3fb0e7bd97036cc025926f.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXZ7klDxZnavOAqxt7QOm4qsv7k4AQn5xPGCRiaicEiaUxKm1dr4Lq9gUBLscTQExxyL5BAHaC3O8t0ibDKaDPK2iaV3ORUT6sMxfbU/0?wx_fmt=png)
+![](/images/wx/c1003aca7dd93fdffc2bdc0c099864ef.webp)

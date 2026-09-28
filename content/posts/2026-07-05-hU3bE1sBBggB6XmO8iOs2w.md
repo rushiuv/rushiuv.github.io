@@ -4,9 +4,12 @@ date: 2026-07-05T00:00:00+08:00
 slug: "hU3bE1sBBggB6XmO8iOs2w"
 description: "KTM5910 高温角度漂了，最后背锅的往往不是芯片"
 original: "https://mp.weixin.qq.com/s/hU3bE1sBBggB6XmO8iOs2w"
+models: ["KTM5910", "KTO9512", "KTH7111"]
+companies: ["昆泰芯"]
+tags: ["磁编码器", "非线性校准"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXSBwSzjm4ysiaHcAedDx0w3gvpqJh3QdBvViajKPmicUsL9hgTJUAcsjZnLuh14oWJNHLxFVnVuotjZ3YAQUXWBwHCOHvtaQiahUU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a81ae416c92a67b28de6600a5b2aaec4.webp)
 
 磁编码器 · 高温可靠性
 

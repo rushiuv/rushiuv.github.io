@@ -8,7 +8,7 @@ original: "https://mp.weixin.qq.com/s/NxdIqz16cz9tMF439aFcxg"
 
 **
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyScY83JD3wxu0lgktKQx4IjDxXxS5hEBPsWaz9dbPryUd4KX1rCpvFsS2TWVKrIwra0FGDD3gFD4w/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0b165633122c7caa577a5cb091d6412a.webp)
 
 **
 

@@ -4,6 +4,7 @@ date: 2025-11-16T18:39:00+08:00
 slug: "w-xGfRkqWv1ykkJtOPsSuw"
 description: "ADC 输出的毛刺不是问题，是宇宙给数字电路人的一次阴间灵魂拷问。它让刚入行的人以为是接线问题，让老工程师怀疑是电源噪声，让所有人折腾了三天三夜后才发现：真正麻烦的是“测试”，不是“毛刺”。毛刺只是脾气差，测试才是地狱级副本。"
 original: "https://mp.weixin.qq.com/s/w-xGfRkqWv1ykkJtOPsSuw"
+tags: ["ADC"]
 ---
 
 ADC 输出的毛刺不是问题，是宇宙给数字电路人的一次阴间灵魂拷问。它让刚入行的人以为是接线问题，让老工程师怀疑是电源噪声，让所有人折腾了三天三夜后才发现：真正麻烦的是“测试”，不是“毛刺”。毛刺只是脾气差，测试才是地狱级副本。
@@ -64,4 +65,4 @@ ADC 输出的毛刺不是问题，是宇宙给数字电路人的一次阴间灵�
 
 你想逃？没门。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTht464cxahM0alOicUpLJqhIBANregyEDoEIZzavEjX1VS0m9uibA5FQzWaMNQtt19HyiaECqNyRRwA/640?wx_fmt=jpeg)
+![](/images/wx/26d0b78f3136a7b0faca7514a71b3d2f.jpg)

@@ -4,19 +4,20 @@ date: 2025-09-27T00:00:00+08:00
 slug: "JJ8vuZZguGS6T6QFVwTtMg"
 description: "世博展览馆的灯白得像手术室。瑞士国家馆那条红白配的通道很安静，外壳打磨得像钟表，电路板的走线像教科书。人群里有位戴浅框眼镜的中年人，不抢前排，走到每个展台前都会停一下，问两句“在中国的公司设了没、生产什么时候转进来、售后能不能两小时到科室”…"
 original: "https://mp.weixin.qq.com/s/JJ8vuZZguGS6T6QFVwTtMg"
+tags: ["瑞士"]
 ---
 
 世博展览馆的灯白得像手术室。瑞士国家馆那条红白配的通道很安静，外壳打磨得像钟表，电路板的走线像教科书。人群里有位戴浅框眼镜的中年人，不抢前排，走到每个展台前都会停一下，问两句“在中国的公司设了没、生产什么时候转进来、售后能不能两小时到科室”。他的名片翻到中文那一面：**瑞士驻上海总领事馆总领事邵凯文（Sacha Bachmann）**。这不是客套，他问的其实是**名分**。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQ9r5mEwtJCePReGFSZEGJmqOp0bnt7Sk6ibOrWOrC1wfUCGKuwjZpNWUwKTyreQsMEEJKxkxniczyg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1cfa9fe77a7d7ce5f8ada1d9280a0fbb.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQ9r5mEwtJCePReGFSZEGJmaOaA8dJ8Gibw3OoT5dcCVsqCYHC33yj9pB2NRiaH9kDu1o8IzJEbEZOw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/96fae4665b3928004c6a366eea19b518.jpg)
 
 同一时间，瑞士另一队人马在中国南北穿梭。**沃州（Vaud）**的官方代表团把行程拉成一条线：上海、常州、南京、东莞、深圳、香港。带队的是**沃州经济与创新国务委员伊莎贝拉·莫雷（Isabelle Moret）**。他们一路看实验室、看工厂、看园区、见地方政府。代表团里的一位创业者在深圳写下的第一句话是：“从图纸到小批量，他们只用了几个月。”随后的几行字就很“冷”：**同一实际控制人、注册证迁移、维保半径、国产化率**。兴奋过后是流程，这就是现实。
 
 那张瑞士杂志《PME》的双页海报，该说清楚。画面是一条红金色的龙盘着地球，标题写着“因特朗普，中国回到中心”。意思不复杂：美国加关税、强调“脱钩”，并没有把中国推远，反而让企业把目光重新放到中国的规模、速度和不可替代的环节上。瑞士人在封面上完成了心理转弯：不是我们慢，是外部把中国推回了C位。落在医疗器械这个行业，转弯更直接——**先解决“能不能进门”，再谈“进门后能做多好”**。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQ9r5mEwtJCePReGFSZEGJmzgEl4T6fD2chqktbPCPmeriam7aBA3IFXib78gSjKjqbRB9XulIJ7ErQ/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c970afcdb7d6344e0f6903d8b67f1b81.jpg)
 
 为什么会这样？因为中国的采购是**从身份起步**的。
 
@@ -30,7 +31,7 @@ original: "https://mp.weixin.qq.com/s/JJ8vuZZguGS6T6QFVwTtMg"
 
 别忘了大背景。外面是特朗普式的强硬：关税、限制、把中国推回“中心”。欧洲那边也有“保护自家公共采购”的声音。中国这边的回应同样现实：**你如果在中国生产，就不把你当外面的人**。所以你会看到两条看似对立、其实互补的线：新闻头条里谈“大国博弈”，展馆过道里谈“如何在本地落户”。**摩擦在外，豁免在内**，这就是“身份优先”的时代逻辑。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQ9r5mEwtJCePReGFSZEGJm0rZ02V4HmMl1RVHV0B9Nfpuibfyh8z8DuDVKGcA4Aer2mLic9qgg6CDw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/8b5564ad4cdae328501fe790b4feffd7.jpg)
 
 把这些拼回到现场，你就明白**邵凯文**为什么要在展台之间走上两圈。他问性能不是不重要，他更清楚评标室**第一关是合法的本地身份**。这时候，“瑞士制造”的牌子当然还是好牌，但它必须搭在“在中国创造并在中国制造”上，才能进场。
 
@@ -46,4 +47,4 @@ original: "https://mp.weixin.qq.com/s/JJ8vuZZguGS6T6QFVwTtMg"
 
 特朗普把盘面搅热，把中国推回了C位；瑞士医械要在中国真正落地，第一步不是秀肌肉，**是把“户口本”落进去**。等这一步坐实了，技术的长处，才有地方施展。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQmzP7KIoasJttub3Wl1vGxnZ2gBNDIcRMsCIs0icy4xJHgEN5VsDibepU0roIXcZe6aRRS89IYcg8A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/88029d0e022db03effe122b36e9950ac.webp)

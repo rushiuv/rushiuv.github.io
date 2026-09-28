@@ -6,7 +6,7 @@ description: "那天我出门去火车站，家和车站之间差不多一公里
 original: "https://mp.weixin.qq.com/s/nzvSxnST3K-UnYkUhIe4IQ"
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTQk8picwsGwxDJVoYzqic4ZpjPazN381xaJxwSbiaG0hdA5eLszqic5EZo9ltOo4x977Aiaoia3ziarLkdQ/640?wx_fmt=jpeg)
+![](/images/wx/288a1a0e1b22e52e9777cc45ced08cbe.jpg)
 
 那天我出门去火车站，家和车站之间差不多一公里，路不算长，平时我走十五分钟就到了。那天我锁完门下楼，状态也挺正常，脑子里还在想着等会儿买什么早餐。走到差不多半路的时候，突然有一个很小、很轻、但极其讨厌的想法钻出来：“你刚才那个门，是不是没锁紧？”那念头像细针一样扎一下，我脚步没有立刻停，但心里有一种说不上来的轻飘感，好像某个细节在我脑子里漏了一点点。
 
@@ -18,7 +18,7 @@ original: "https://mp.weixin.qq.com/s/nzvSxnST3K-UnYkUhIe4IQ"
 
 结果回去路上碰见了我的邻居。她看到我，招了一下手，表情很平常，可我心里突然冒出一种非常尴尬的感觉：我不想让她以为我是在乱走，也不想解释我在干嘛。那种羞耻感不是因为做错了什么，而是觉得自己“这一路折返”太蠢、太显眼。于是我假装没看见她，绕到另一边草地那条小路上走过去，好像躲避一个秘密被看到一样。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTQk8picwsGwxDJVoYzqic4Zp3VzzcRYghiaqfKB4Xt2mkwdMN2majicezCZibMqhuXN7GiclRHooA74csQ/640?wx_fmt=jpeg)
+![](/images/wx/783ae0b87f04fe4321e5dc6d73c3f220.jpg)
 
 第二次回到家门口时，我锁门的动作特别小心，像怕惊动心里的那点不安。确认两次以后，我深呼吸了一下，再次往外走。这次我心里清楚地知道自己刚刚明明锁好了，动作完整清晰，没有任何遗漏。
 
@@ -42,7 +42,7 @@ original: "https://mp.weixin.qq.com/s/nzvSxnST3K-UnYkUhIe4IQ"
 
 那天我锁门三次，确认三次，往返三次。每一次回头，心里的理由都是新的，可心里的感觉却越来越像同一个：不是怕出事，而是对自己的那一下动作，突然没那么敢相信。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTQk8picwsGwxDJVoYzqic4ZpZOIt7f9IR5qrMjJPvXbE54Ip9Vg9eUotY95C4MAQjZeYN1fzjwbEIQ/640?wx_fmt=jpeg)
+![](/images/wx/4fbe84033a96441d533f28fa96c0d8b8.webp)
 
 不是顿悟，也不是突然明白什么，就是在走那一公里的路里，重复折返的时候，很自然地发现自己变得比以前更容易犹豫。
 

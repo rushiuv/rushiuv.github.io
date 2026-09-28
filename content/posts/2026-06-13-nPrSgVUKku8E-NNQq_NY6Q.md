@@ -4,9 +4,12 @@ date: 2026-06-13T00:23:00+08:00
 slug: "nPrSgVUKku8E-NNQq_NY6Q"
 description: "我以前以为，光学编码器选型的核心就是分辨率。bit 数越高越好，插补越细越高级。宣传页上能写 20bit、22bit、24bit，听起来就比 12bit、14bit 靠谱。"
 original: "https://mp.weixin.qq.com/s/nPrSgVUKku8E-NNQq_NY6Q"
+models: ["KTO9512", "AEDR-850x", "AM26C32"]
+companies: ["昆泰芯", "TI", "Broadcom", "iC-Haus", "雷尼绍"]
+tags: ["光电编码器", "ADC", "编码器接口"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW9eH1ZGp3dYJD4l8Oic52cSxjHtddibzamepakMwDwt4wuEy6KSqFVbfIibUaqBgTzOp5TSuzd1gG0jYwSVkUSbSjlMkDsIpuuUA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ccc79459e86f51b254de0a99b42f15a1.webp)
 
 ## 光编做到 10MHz，不是炫技，是给高速扫描留命
 
@@ -60,7 +63,7 @@ original: "https://mp.weixin.qq.com/s/nPrSgVUKku8E-NNQq_NY6Q"
 
 再看国产光编芯片，就不能只用“国产替代”四个字一笔带过。比如昆泰芯 KTO9512，公开资料里写的是“游标绝对值光学旋转编码器芯片”，内部集成高清相位阵列光电传感器，提供正弦/余弦信号，后级可以继续做高分辨率插值；昆泰芯官网还提到，KTO9512 采用三通道 Nonius 游标插值方式，可实现最高 24 位单圈位置分辨率，并列出 26mm 光栅码盘、2bit 格雷码道、512CPR/510CPR/480CPR 三码道游标原理、6 对模拟差分输出、1MΩ 互阻增益、100µs 上电稳定时间、-40℃ 到 +125℃ 工作温度等信息。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU7JP9Rj2SbgedyYJV8q9jplC3Rffh6ZGHpGpPgNWgwZqTc3ZUKictgPnIwsjLEnibyYF6PZ8LFI7ownhibEwHwj36T1tvIWfX1FA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/cff4315cfb36b1d08246149f6e408488.png)
 
 如果只看宣传页，最容易记住的是“24bit”。但我看这种芯片时，反而不会先看 24bit。我会先看四个东西：**三通道 Nonius 游标、512/510/480 CPR、2bit 格雷码、sin/cos 差分输出。**这几个词合在一起，才是工程问题的入口。
 

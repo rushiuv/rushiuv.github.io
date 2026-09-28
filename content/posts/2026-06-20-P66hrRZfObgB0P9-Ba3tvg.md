@@ -4,6 +4,7 @@ date: 2026-06-20T07:07:00+08:00
 slug: "P66hrRZfObgB0P9-Ba3tvg"
 description: "Unitree G1 Edu-U4 上，同一个 Sort Cans 结构化分拣任务，只用主动双目相机的 A 组合做到 94.4%；加入 Dex3-1 三指手指端压力后，A-P 组合掉到 67.3%。不是因为压力传感器一定没用，而是因为在小数…"
 original: "https://mp.weixin.qq.com/s/P66hrRZfObgB0P9-Ba3tvg"
+companies: ["宇树"]
 ---
 
 >
@@ -106,4 +107,4 @@ Unitree G1 Edu-U4 上，同一个 Sort Cans 结构化分拣任务，只用主动
 
 它缺的是，每一个感觉都值得相信。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXoA3h1gwHUkkrzaSFnWPdQ8Hib5Wo1bCibqzSXWzAD9jcCw58lIOFibk7UK3Y15rJSAWOMUeKAZoLO2LyVVjpch9wgakSFLx11kg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/94d0cf28f86721325f483db3ce924759.webp)

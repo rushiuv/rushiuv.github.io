@@ -4,9 +4,10 @@ date: 2026-06-10T03:57:00+08:00
 slug: "DiEQcaetKz_twLzX7DSyuw"
 description: "我桌上摆着两块读头板。左边是PNH2628，右边是PNH3348。同一个码盘，同一个850nm AlGaAs LED模组，同一套光路，同一个安装条件。真正的区别只有一个：PNH3348有AGC，PNH2628没有。"
 original: "https://mp.weixin.qq.com/s/DiEQcaetKz_twLzX7DSyuw"
+models: ["PNH3348"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVcHCiaWSvNmRqBjaThI5pJDaX2mXHO2vQNj4ia0JDBibNWicqHvMfQSI6ibf7GXGNczRg3BlADzRzMzsic5rhzBrYT9m6tgt8zHOugI/640?wx_fmt=jpeg)
+![](/images/wx/20e050df5f97c88818b25c1abee2b71e.webp)
 
 ##
 

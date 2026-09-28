@@ -4,6 +4,8 @@ date: 2026-04-04T20:43:00+08:00
 slug: "dSHNQClv7ZMqN0Kr962MNg"
 description: "Claude Code 之所以被程序员追捧，不是因为它最会营销，而是它最有“下地干活”的踏实感，像一个真正能并肩做事的同事。"
 original: "https://mp.weixin.qq.com/s/dSHNQClv7ZMqN0Kr962MNg"
+companies: ["Anthropic"]
+tags: ["AI", "Claude Code"]
 ---
 
 Claude Code 之所以被程序员追捧，不是因为它最会营销，而是它最有“下地干活”的踏实感，像一个真正能并肩做事的同事。
@@ -18,6 +20,6 @@ Claude Code 之所以被程序员追捧，不是因为它最会营销，而是�
 
 归根结底，Claude Code 并不是最聪明的 AI 编程工具，但它最早把“像同事一样持续干活”这件事做到了可用、好用。真正用过之后，最明显的提升不是代码质量，而是少折腾。它省去大量返工、解释和擦屁股的时间， quietly 提升了一整天的开发体验。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU1Wml3Mn3x9fkS8yu9JpeFBL96EQMSs6zRrLSA1dSGfU2Jtk45Wf8VOkr98BaDicIf6EMPekdT7sB1jvic5miaia0c0Hw1omnUM8Y/0?wx_fmt=png)
+![](/images/wx/dd97800dcd946b36cbaa28d991b8df95.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWZibiagxhXzxpXfgpJRCGgDdpVF6m3QvL1oNB0lfhI2O8DibButAG3m8caB3eEJmXlAiaTF2dtbdqJMd8QGyf0ruY4mDKrFAW1SH8/0?wx_fmt=png)
+![](/images/wx/aef8900ff3439f392e827a9b65d7fdee.webp)

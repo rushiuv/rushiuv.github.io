@@ -4,9 +4,10 @@ date: 2026-08-07T00:00:00+08:00
 slug: "jNgCpo7kxDQhIuyibhiQkw"
 description: "实验室做到 ±0.5°，为什么量产还是输给了一颗普通磁编码器？"
 original: "https://mp.weixin.qq.com/s/jNgCpo7kxDQhIuyibhiQkw"
+tags: ["磁编码器", "霍尔"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVt5RgdxIyLpibDqhibdPUvS7eMTl1b9fPrbBJK78qB3ibgiaBjw1xxoLo6gWCsf7vutM7C6alCC2O1HXummLl6ga85icH5DrLxqVrY/640?wx_fmt=jpeg)
+![](/images/wx/f178c42aa2f91d48dd60b3ac82784611.webp)
 
 一线工程手记
 

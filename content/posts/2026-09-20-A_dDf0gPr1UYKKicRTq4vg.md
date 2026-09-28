@@ -4,6 +4,8 @@ date: 2026-09-20T08:57:00+08:00
 slug: "A_dDf0gPr1UYKKicRTq4vg"
 description: "前几天我跟一个同行聊天，我说了一句有点吓人的话：“我总觉得有一天可能很快就要来了，所有编码器都要被颠覆。”"
 original: "https://mp.weixin.qq.com/s/A_dDf0gPr1UYKKicRTq4vg"
+companies: ["宇树", "Figure AI"]
+tags: ["磁编码器", "光电编码器", "非线性校准", "机器人关节", "AI"]
 ---
 
 ![](/images/如是有为_20260920_2647878628_1_01.jpg)

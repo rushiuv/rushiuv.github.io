@@ -4,11 +4,14 @@ date: 2025-09-23T22:41:00+08:00
 slug: "mfwmVnigXJohSQRDSUeMXg"
 description: "离轴这件事，行业里都知道是灾难放大器：磁铁偏个零点几毫米，角度曲线立马变形、谐波乱飞，实验室里看着漂亮的精度在现场瞬间崩盘。工博会首日，昆泰芯把“离轴闭环一键自校准”硬生生按在台面上，屏幕稳稳亮出 ±0.05°，那不是数字炫技，是把整条产业…"
 original: "https://mp.weixin.qq.com/s/mfwmVnigXJohSQRDSUeMXg"
+models: ["KTH7111"]
+companies: ["昆泰芯", "麦歌恩", "iC-Haus", "雷尼绍", "安川", "汇川", "堡盟"]
+tags: ["离轴", "自校准", "TMR"]
 ---
 
 离轴这件事，行业里都知道是灾难放大器：磁铁偏个零点几毫米，角度曲线立马变形、谐波乱飞，实验室里看着漂亮的精度在现场瞬间崩盘。工博会首日，昆泰芯把“离轴闭环一键自校准”硬生生按在台面上，屏幕稳稳亮出 **±0.05°**，那不是数字炫技，是把整条产业线最难啃的骨头当众咬碎。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRmreicFbHegBhDdpMYTvaZGgUEvcnKrTbYxLkfc8h70zGm4Rfvnq5CdD37ZQ1jxBlVh9LS98Szl0A/640?wx_fmt=jpeg)
+![](/images/wx/cfede4e93b41a4b8fd132204087e82e4.jpg)
 
 开馆十分钟，7.1馆D202已经挤得像春运。没有灯光秀，只有一个演示屏。技术员手指一落，KTH71 动态装置起转，16位绝对角度在屏上咚咚跳，误差线像钉子一样钉在 **±0.05°**。先是短促的安静，然后人群像被点着的油锅“嗤”的一声炸开——有人举着手机喊“比进口的还稳”，有人把名片成把地塞给工程师，连相邻展位的人都探着身子往里靠。
 
@@ -34,4 +37,4 @@ original: "https://mp.weixin.qq.com/s/mfwmVnigXJohSQRDSUeMXg"
 
 收个画面当句号：展台像一列高速列车从你面前呼啸而过，风里全是人声、铁屑和电弧的味道。屏幕中央，一个数字像满到杯沿的水，晃来晃去，就是不洒。你若非要给它一个名字，就叫：**离轴闭环自校准的 0.05°**。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRmreicFbHegBhDdpMYTvaZGWZRBDS9omJEfrVu2icsbjb3qEAdafI1RWSJvRXRSaNZUdxgaQE7xBqw/640?wx_fmt=jpeg)
+![](/images/wx/c8a7e210bcecefb5919b8d885b805449.jpg)

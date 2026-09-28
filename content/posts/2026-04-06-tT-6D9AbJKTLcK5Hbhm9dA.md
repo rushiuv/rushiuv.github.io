@@ -4,9 +4,12 @@ date: 2026-04-06T00:00:00+08:00
 slug: "tT-6D9AbJKTLcK5Hbhm9dA"
 description: "4月2日，一则新闻在机器人圈刷屏：国内关节模组厂商泉智博宣布其自动化产线正式投产，节拍90秒、自动化率85%、一次性合格率96%，部分基础关节模组成本已压缩至百元级别。"
 original: "https://mp.weixin.qq.com/s/tT-6D9AbJKTLcK5Hbhm9dA"
+models: ["KTH78", "MT6901"]
+companies: ["昆泰芯", "纳芯微", "智元", "特斯拉"]
+tags: ["磁编码器", "电感编码器", "人形机器人", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXrrDV5XGMI0TULpkMZ7g3uzPrutwYeOE6w3aBOJV1tehVibGAEl2OHSGHUMm1GUHXibJlseiamNMlpSibYMiaZGDfl03a1e0hwPHzg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/f55b466728fdb8bd14c4d6e6deba7133.jpg)
 
 >
 
@@ -40,7 +43,7 @@ original: "https://mp.weixin.qq.com/s/tT-6D9AbJKTLcK5Hbhm9dA"
 
 我没有答案，但我认为这是整个行业需要正视的问题。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVCQibeC7ibibARzyCWxrEWEWDjJNzu0dHEZMwK0HzYoVzSYphk0BWnMEcpdrtvCib6C0GL7ptLsBNibNBw1czEmib6gExTFuBVDDxD8/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/39e207144890cc4838dc1c3e7fb5bc70.jpg)
 
 ## 三、电感编码器的"高精度低成本"幻觉，与真实代价
 
@@ -54,7 +57,7 @@ original: "https://mp.weixin.qq.com/s/tT-6D9AbJKTLcK5Hbhm9dA"
 
 换算一下：假设电机端编码器的电角速度为100,000 rpm（高速关节并不罕见），那么100ns的传播延迟对应的电角度误差约为：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVq9kdZqHregShAdHjr7VREBEoYQ9Iqnr6RNZEdYlSYWTQTfE51fJ1ZaNNCAouu5sThCL6zPcDerzQTrISAYfXOptLEPVDECXg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9aba3774aadc511c90782085ae72ea0b.png)
 
 这个数字看起来不大，但如果极对数很高（比如32极对），这个电角度误差折算成机械角度就是0.06/32≈0.002°——相当于7角秒。听起来还行，但这只是传播延迟贡献的那部分误差，实际信号链还有ADC量化噪声、线圈谐波失真、温漂等叠加项。
 

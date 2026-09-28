@@ -4,9 +4,11 @@ date: 2026-09-16T14:27:00+08:00
 slug: "hg4wD25WkyYGn0ynenIuEg"
 description: "假设一台电机同时给你三种角度读数：屏幕上的数字、PWM 占空比、还有 A/B 脉冲。它们最后都被软件换算成 32768。你会认为电机正好转了半圈，而且三种读法同样可靠。"
 original: "https://mp.weixin.qq.com/s/hg4wD25WkyYGn0ynenIuEg"
+models: ["STM32"]
+companies: ["ST"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVlEKnsf2LPlDcEibyoVyzF84delfHIOicPb3EiaZwiaySlU30iarh4FhYUERGBdYRic1RpdrU46US5JusaqC8EOr2ibdqI2bUVibxs93g/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/1c72558eb66650f74b9099a2b9da4066.jpg)
 
 假设一台电机同时给你三种角度读数：屏幕上的数字、PWM 占空比、还有 A/B 脉冲。它们最后都被软件换算成 32768。你会认为电机正好转了半圈，而且三种读法同样可靠。
 

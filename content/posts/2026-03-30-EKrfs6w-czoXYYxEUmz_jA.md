@@ -4,11 +4,12 @@ date: 2026-03-30T13:26:00+08:00
 slug: "EKrfs6w-czoXYYxEUmz_jA"
 description: "4月19日，北京亦庄，300多台人形机器人要在同一条半马赛道上开跑。"
 original: "https://mp.weixin.qq.com/s/EKrfs6w-czoXYYxEUmz_jA"
+tags: ["磁编码器", "霍尔", "功能安全", "人形机器人"]
 ---
 
 4月19日，北京亦庄，300多台人形机器人要在同一条半马赛道上开跑。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWm7H2EzMRITLqhwBaXIEkic4m5uhiag1GiaLG058d0WRmk0R4olEtehSY8ERpN1ePVBeD9frRa2HQxO7vx3XVkmseXsxrVSjEiavs/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/54fa4d5c45a1c723daeed101a401c16a.jpg)
 
 ## 一、半马不是秀场，是一场把编码器拖上赛道的压力测试
 
@@ -24,11 +25,11 @@ original: "https://mp.weixin.qq.com/s/EKrfs6w-czoXYYxEUmz_jA"
 
 很多做磁编码器的人都知道，类似游标这类多对极绝对位置算法最怕的，不是“噪声大一点”，而是参考通道在某个瞬间越过了解模糊边界。拿最典型的一类结构来说，假设内圈是N极对，高分辨率角度来自内圈，外圈提供低频参考，帮助系统判断当前落在哪个内圈周期里。那么这类融合算法能不能稳定输出唯一绝对角度，核心并不在“平时大概准不准”，而在参考误差是否始终被压在一个硬边界里。很多实现最后都会收敛到类似这样的判据：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXgibCJnpvudYII4IhicBDjdscicpjWEocndniawaicAwrrVuCR3nrPicicLllqHBWojYD3UdhVkoDX124ibdEwVBsgRqL0tu4OiaETRhic0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b073d101cb1bed47c8d112fae89a60a5.png)
 
 这不是营销文案，这是解模糊唯一性的底线。比如N=32时，右边就是1/64圈，也就是机械角约5.625°。只要参考通道的瞬时误差始终小于这个边界，系统就还能知道自己在哪个32分之一周期里；一旦跨过去，事情就不再是“精度从0.2°掉到0.8°”，而是可能直接跳错一个极对周期。对32极对来说，那一下就是11.25°级别的突变。放在图表上也许只是曲线突然蹦 了一下，放在跑步中的膝关节或踝关节上，就可能是一次完全不该出现的虚假收腿或者虚假落脚。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWWOtUXNd2Uu3uaa34JJnFhtozGUxwFmgle9ica5gobmH9iazpmbfonaXSdhne5icaZNiczCA7bOqXr5e01Kabz3zZfG49LhjcJWuw/640?wx_fmt=jpeg)
+![](/images/wx/0ba21c844596d6b85cdfa0c6e30d251d.jpg)
 
 ## 二、真正危险的，不是平均误差，而是那个最坏瞬间会不会越界
 
@@ -44,7 +45,7 @@ original: "https://mp.weixin.qq.com/s/EKrfs6w-czoXYYxEUmz_jA"
 
 说白了，这场比赛对编码器的拷问，根本不是“你在最顺的时候能有多准”，而是“你在最乱的时候还会不会认错周期”。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVjBemQ8xdA81W8TEjDrTgVibN2s9MhS1ibQYmIds8fJ2SCQce6l6T2ibFpBJ3dAysicUodIq9ISbggn4rJjUA4M3JZicOPJyqzH2oU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ef310b0945d139b0f138b38d11559446.webp)
 
 ## 三、路线之争，拼的不是谁参数好看，而是谁更懂失效模式
 
@@ -52,17 +53,17 @@ original: "https://mp.weixin.qq.com/s/EKrfs6w-czoXYYxEUmz_jA"
 
 最便宜的那种方案，问题不是准不准，而是信息量本来就不够。三霍尔或者极粗粒度位置反馈，能不能让电机转起来是一回事，要不要拿它去支撑一个人形机器人长时间稳定跑步，是另一回事。它的问题不是偶尔漂一点，而是底层可观测性就有限。你让它在低速启停、反复冲击、动态姿态切换里一直把换相、扭矩和步态配合好，难度太大了。它便宜，但它天然更接近“能动”，离“能跑完”还有距离。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUvsAvh0HMnFYx4rLibzqvorOQTYWQo3urkY72brAefQfGS2lfxI715hRO8JjK9fu0hd7cLVbTMHQEL5ibsgboicWbXR9XU82404o/640?wx_fmt=jpeg)
+![](/images/wx/71da1408138e548b166d164b45f35fb6.jpg)
 
 再往上一档，单磁环、单绝对角的离轴磁编方案，是很多机器人的现实选择。成本、体积、装配、供应链，都比较友好。它真正的挑战不在纸面分辨率，而在动态鲁棒性。也就是说，静止时你可以做到很好看，但跑起来以后，机械偏心、安装偏角、温漂、杂散场、振动，会不会把你从“误差连续变化”推到“解算偶发断裂”，这才是分水岭。很多团队最后拼的，不只是芯片本身，而是磁路设计、结构公差、装配控制、前端滤波、异常值拒判和整个伺服环的联调功底。真正能打的方案，往往不是最漂亮的，而是最不容易在脏工况里失态的。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVH7qbvssVkGvzt2nX990xOianXMKicwdrRliaVberdp4ucBa8jXiaNBHeRu2XkeNciaIUuRsYxYrWkOk4iaH3jsxDsYPk9UFqVybfxQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/380f720f0eeaac73e42ca8ee1b594890.webp)
 
 再往上，就是双通道、双传感器、双位置源交叉验证的路数。电机侧一个，输出侧一个；高速环看一个，位置环再看一个；或者同轴不同原理互相交叉。它贵，复杂，布置也麻烦，但逻辑很朴素：你既然知道单一位置源总有盲区，那就别把全部命运押在一个传感器上。这条路不是为了把静态精度从0.05度卷到0.01度，而是为了防止某一颗传感器在最倒霉的时刻突然说胡话，系统却没人能识别出来。
 
 也正因为如此，我一直觉得人形机器人对编码器的真正筛选，不是“谁的宣传册写得更猛”，而是谁更理解“失效模式”这四个字。你到底担心的是幅值塌陷、相位扰动、偏心导致的周期性误差、换相点附近的瞬时偏移、强冲击下的机械相对位移，还是历史滤波把真实突变错当噪声给抹掉？每一种担心，最后对应的设计方法都不一样。你靠堆分辨率没用，靠堆位数也没用，甚至靠把曲线校到特别圆，有时候也没用。因为真正要命的那一下，往往不是“整体不准”，而是“局部突然不连续”。千万不要把"隐藏问题"当成"解决问题"。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXfEheSFmkxmlG5nVQ6hZoRPVF8PjpUsk0HZib3w4SPg5MKZLiaeeCwOd1Pv3pgxevZQawzRVYoFQ9mLWyPnloArxKsDvTfUL5Dc/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/b8194ca2ea35343ce155e7d48c9e2828.jpg)
 
 ## 四、半马真正筛掉的，不是落后的品牌，而是不敢面对最坏工况的方案
 
@@ -78,4 +79,4 @@ original: "https://mp.weixin.qq.com/s/EKrfs6w-czoXYYxEUmz_jA"
 
 而一个真正成熟的编码器方案，最终要回答的也只有一句话：你到底是大多数时候都不错，还是最坏那一下也不会错。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVxiaaqibtjd3YGibDfE8oM8NFHjHXcX2D7sv0D7MuP87iaqTKaLzicIRs6MkuzTCDESapE8NGiclv7BSNtxvF9ichE0VEicjIzZIrLfa0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c3106af07bf8c1be82188cc67a988646.webp)

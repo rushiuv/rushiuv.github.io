@@ -4,6 +4,7 @@ date: 2026-04-25T17:07:00+08:00
 slug: "-dtUJ0_z4vVnnqCtdT6Z5Q"
 description: "芯片行业这些年有个特别魔幻的场面：一帮人西装革履，PPT做得跟故宫琉璃瓦似的，第一页写“国产替代”，第二页写“百亿市场”，第三页写“对标海外龙头”，第四页写“价格优势明显”。"
 original: "https://mp.weixin.qq.com/s/-dtUJ0_z4vVnnqCtdT6Z5Q"
+tags: ["光电编码器", "人形机器人", "芯片设计", "投资"]
 ---
 
 芯片行业这些年有个特别魔幻的场面：一帮人西装革履，PPT做得跟故宫琉璃瓦似的，第一页写“国产替代”，第二页写“百亿市场”，第三页写“对标海外龙头”，第四页写“价格优势明显”。
@@ -16,7 +17,7 @@ original: "https://mp.weixin.qq.com/s/-dtUJ0_z4vVnnqCtdT6Z5Q"
 
 “哎呦，太好了，又来一家能帮我压价的。”
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUSxV2Nc2yFPfuujltOVUeIKGiciaC0icpscw8WqZmftucMqNDmo7ERSeQVIFs8ZHMnCOeQUiawn5biclFl5MPnD6xamK83OkDh9aPs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3030d5c0ea2b295fe38665a66814db3d.webp)
 
 这叫什么赛道？这叫进菜市场当韭菜，还自带蒜泥。
 
@@ -50,7 +51,7 @@ original: "https://mp.weixin.qq.com/s/-dtUJ0_z4vVnnqCtdT6Z5Q"
 
 那完了。你这家公司在客户眼里就不是供应商，是采购部年底降本PPT里的素材。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVvZYJtI3MyO3StfibLfGVkMxbQqbpLssg5wRdR5oX1hNk5SvsUibP4vBy5y4v8IHs4f7CDN7fuM7icdFR3IxDANhYHvEKyTgO2jA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/bc126f2149be85a1c5bf74dbd4e4016c.webp)
 
 今天拿你砍国外原厂，明天拿隔壁国产砍你，后天再拿新来的创业公司砍隔壁。你们仨在会议室外面互相瞪眼，客户在里面喝茶，采购KPI完成了，老板笑了，只有你们毛利率被打成肉馅儿。
 
@@ -70,7 +71,7 @@ original: "https://mp.weixin.qq.com/s/-dtUJ0_z4vVnnqCtdT6Z5Q"
 
 很多人以为热门赛道是星辰大海，冲进去才发现是北京早高峰地铁十号线。大家都挤，大家都喊，大家都觉得自己马上能上车，最后有平台的先进去了，有钱的先进去了，早绑定客户的先进去了。你在门口抱着样片喊“我性能也不错”，门一关，下一班吧您呐。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV5MyicrAcPnDjye9SN77O7k2o5dDx5IOOBqGnEunyYA5zDM4ltsCy0Cpnlu0CgW0nB9K2Cp56BNpHTlsbN5zIhXJAcV5n20w8Y/640?wx_fmt=png&from=appmsg)
+![](/images/wx/97b9fe17603bd398251a74b8c30d1db3.webp)
 
 更扎心的是，等你终于把产品跑稳了，市场已经被测过十轮了。客户说：“你这个我们也挺感兴趣，先送二十套样品吧，价格你再想想，竞品现在报得挺狠。”
 
@@ -108,7 +109,7 @@ original: "https://mp.weixin.qq.com/s/-dtUJ0_z4vVnnqCtdT6Z5Q"
 
 尤其“替代光编”这句话，很多时候听着就像健身房门口小伙儿说“我要三个月练成彭于晏”。不是不能有志气，但您先把动作做标准了行不行？
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW2GtvCOdcOl7pZlgJmP3yK1VQxH3tbXnQQB4zj9jNza7EdSZjl0bwVEBVbGNgn6Nqb7UgdqqoFMibTNRicibYQaFsALDrHfmSK90/640?wx_fmt=png&from=appmsg)
+![](/images/wx/035e72b70f201a298a1a709befe8450a.webp)
 
 编码器不是只报一个角度就完事儿。真到了机器人、伺服、电机现场，客户要面对的不是你PPT上的大字，而是一地鸡毛：
 
@@ -146,7 +147,7 @@ original: "https://mp.weixin.qq.com/s/-dtUJ0_z4vVnnqCtdT6Z5Q"
 
 别老说自己是“国产替代”。说多了，客户真拿你当替代品。真正牛的公司，是让客户觉得：这玩意儿换掉太麻烦，还是用它踏实。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVBs7WXFO36KLr5xwnC3ldNna1qFM4sCG9O8y0Gmqm9UGk62clMvytOQljBQLDCcUF348DwYeDMpVfwaQOkUZpvia3hnm2d2kkM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7f78fc818c81c4fef9ecafa476718752.webp)
 
 ## 最好的赛道不是最大，而是客户离不开你
 

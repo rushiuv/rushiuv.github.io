@@ -4,9 +4,12 @@ date: 2026-05-20T00:00:00+08:00
 slug: "Uv8E8tR9lsqeqvAZ8vQwqQ"
 description: "5月13日，商务部外贸司一行到访瑞士中国商会日内瓦分会，同驻瑞中资机构和企业代表座谈。那天在日内瓦会场里，听银行讲结算，听航司讲运输，听贸促和商会讲企业服务，听标准机构讲规则沟通，脑子里一直浮着一块很小的东西：一块编码器评估板。"
 original: "https://mp.weixin.qq.com/s/Uv8E8tR9lsqeqvAZ8vQwqQ"
+models: ["KTM5900", "KTM5200", "KTM5300", "KTH7111"]
+companies: ["昆泰芯", "希磁", "Sensitec", "华为", "maxon", "POSITAL", "堡盟"]
+tags: ["磁编码器", "多圈编码器", "离轴", "自校准", "非线性校准", "AMR", "专利", "瑞士"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUgoQicsbm3Z28YgXGUDzOLGkLLSXOa0Tf6iaekStlcckJicOkicIdJdo6rQDxUG0e4Jf5yjCCDc0oAM8fTQVJ2JKa10cItk0C5YHI/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/63156607b59fd0c83b4e4003f32d8c83.webp)
 
 ## 商务部外贸司到瑞士日内瓦那天，昆泰芯让我看到中国磁编码器出海的新考题
 
@@ -22,15 +25,15 @@ original: "https://mp.weixin.qq.com/s/Uv8E8tR9lsqeqvAZ8vQwqQ"
 
 华为在瑞士设研究中心，是把一部分研发、人才和概念验证放进欧洲。华为公开资料显示，它从2018年起在瑞士设立研究中心，总部在苏黎世，主要做创新技术探索和概念验证，苏黎世研究中心已有超过100名研究人员。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXWeNev9PpHzbvicEOCn4xT8nsCYytpKOUpqX8nBoEmdvv8ic6oVSVyGVWMS4aMWl5HybKQvmYCEov6V4fKibwpDlP5zicrIOLxaLE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8700eae4420a5b2ed805d7a66119163d.webp)
 
 希磁收购德国Sensitec，是另一种方式。Sensitec长期做磁阻传感器和磁性微系统，2021年被宁波希磁收购。磁阻传感器不是一颗芯片能讲完的东西，它背后有磁路、器件、工艺、封装、应用结构和客户项目经验。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWRluwtJcvUtC4K83icg1Fozlt0ovYLNiaI9ry7YdImbMeFicejQ2IFV2UgGJgocB3r9mqyic91JgyrddeUE8ReOLkmaxZ96MBja7w/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c59516a32abee9537714c80847a7562b.webp)
 
 Nexperia在德国汉堡投2亿美元扩展SiC、GaN等宽禁带器件产能，则是更重的路线：把工艺、供应、质量体系和客户认证落到欧洲。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV8208bh69Xdf7VKpxibYU0mRcic5LVxwPvicyVaSU9E5PLLlodO2uSbpFnlf4o0ebmqZyJ6ZKBicmVYedrUAHyBNlmYT89kHbTY4o/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0bc162312937806c11c37ed547a7c2e4.webp)
 
 这些公司路径不同，指向的是同一件事：中国硬科技公司进欧洲，已经从“把货卖过去”，变成“把技术能力长到欧洲客户附近”。
 
@@ -46,7 +49,7 @@ Nexperia在德国汉堡投2亿美元扩展SiC、GaN等宽禁带器件产能，�
 
 磁传感的诱惑在这里：一个磁体加一颗芯片，隔着塑料、玻璃、陶瓷也能感知动作。外壳可以完整，用户动作还在，机械接触链可以拿掉。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUmGWPaxOElnRI95ZLWhBGz7LZV7Eq7g8bXg3a24Ule8Tnnou3kBxo6hUnXLNTPUtB9vhxjMlWEO4UlbPGFsJkzduwolK4QBT8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/55c56329b96e7b1a3997d62322551f08.webp)
 
 **武建峰博士在清华美院**(神奇， 芯片公司老板去清华聊艺术) 讲“一个磁体+一个芯片=完整3D输入设备”，设计学生听到的是交互语言，欧洲工程师听到的是结构余量。任天堂Joy-Con漂移就是反面教材。传统电位器摇杆靠刷片和电阻轨道接触，长期使用后，磨损、污染、氧化都会让零位漂移；霍尔摇杆把接触式电阻链换成磁体和芯片，用户动作没有变，失效模式变了。
 
@@ -62,7 +65,7 @@ Nexperia在德国汉堡投2亿美元扩展SiC、GaN等宽禁带器件产能，�
 
 和最好是两路幅值相等、相位差90°、没有偏置的正弦和余弦。真实设备里，很少有这么舒服的信号。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVqayzJgs2XjQYwdjEmKfWULPM54EIiaWLcQGNWZFqCzsjck3HSWAdvyk8Gv9XQkftuHM6j0Ua06MrNQHqEMtibIDunRehA4b6u8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d9b59d32dc261aa80aae3a461be76a68.webp)
 
 磁铁偏心，一圈一次误差会出来。和幅值不一样，圆会变成椭圆。相位不是90°，二阶误差会冒出来。磁体充磁不均，周围钢件重新拉扯磁路，三次、五次谐波会跟着进来。气隙变一点，幅值和信噪比都会动。
 
@@ -90,7 +93,7 @@ KTM52/53采用AMR，也就是各向异性磁阻技术。它内部集成两对互
 
 电机转一圈，如果某一段因为齿槽转矩转得慢，时间均匀采样会在那段采更多点；另一段转得快，采样点会更少。算法如果没有把时间域速度波动从角度域空间误差里剥出去，LUT里就可能写进速度纹波。校准当下曲线变漂亮，换个速度、换个负载、换套驱动参数，残差又出来。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVicaqaLAruXiaLaW1NDoyoSkibfzvEOYOoNARdbp0pdb1M93IeRclnFNVW9INN2jicRkbQ6NniaV6Yicz2WyeibBboVyHM6ibBofNysuw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/847ac3c36d5b2d0d29b8635a0a489288.png)
 
 昆泰芯KTM59在德国纽伦堡SPS上做一键自校准demo，用可视化软件实时反馈校准数据。公开资料里提到，单对极校准后，在轴INL≤±0.025°，离轴INL≤±0.05°。这个demo真正能让欧洲客户停住的地方，不是屏幕上的数字，而是过程被摊开了。
 
@@ -98,7 +101,7 @@ KTM52/53采用AMR，也就是各向异性磁阻技术。它内部集成两对互
 
 Baumer的EB260很能说明欧洲客户的口味。Baumer没有只讲分辨率最高65,536 ppr、精度最高0.05°，它把LowHarmonics自动校准、Airgap Monitor和IO-Link状态监控放进产品叙事里，强调安装、温度、老化和机械因素导致的信号误差如何被处理，气隙变化如何被监控。欧洲编码器的卖点已经从“我很准”，往“我知道什么时候会不准”移动。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWLFQ5YN6VlYRXdxsRQhaTW3UaAzEybh7xa6ILnHzRN9ygoD6Dvs2cAiaTQXtDvlmkbP8lUTDBn227VIX5f3ZB5yfsHWvYZ2tmE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4b35af83983e1033b0e77438068c71ee.webp)
 
 昆泰芯第一件欧洲专利《磁性编码器的自校准方法、电机及校准角度检测值的方法》获得欧洲专利局授权，也应该顺着这条线理解。它不是一张拿来挂墙的证书，而是把自校准推进到了欧洲知识产权体系里。以后谈电机开环自校准、磁铁安装误差修正、环境变化引入误差补偿，就能回到专利、算法、产品和测试数据上讨论。
 
@@ -110,7 +113,7 @@ Baumer的EB260很能说明欧洲客户的口味。Baumer没有只讲分辨率最
 
 这句话放在磁编码器行业里，一点也不空。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVIubrRsAqfteibbpsRu3tZYCRqVNgKZAMLRoyBMQzk4T6RIaug2FoaapGKdItBiaBZAfLPZgp13m3ibo9AiawQmVTXtBjnSHlnDrE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e1dfec0e44b809807b9b9bd3de22613a.webp)
 
 国内不少同行已经把磁编码器做到INL ±0.05°以下。真正的差距不一定在谁的纸面精度更漂亮，而在能不能让欧洲客户的工程师在自己的实验桌上跑出可重复的曲线。国内市场已经把磁编码器卷到价格像废铁，一批同行又同时往欧洲跑。如果到了欧洲还是拼低价、拼夸张指标、拼短期承诺，最后伤的不是一家公司的单子，而是整个“中国磁传感”的信用账户。
 
@@ -120,7 +123,7 @@ Baumer的EB260很能说明欧洲客户的口味。Baumer没有只讲分辨率最
 
 昆泰芯在SPS展会上设置技术问答角，由武建峰博士直接接待预约技术观众，这个动作比单纯展台热闹更有意义。客户在欧洲现场问出具体问题，企业敢当场拆技术，就不是只在做销售。瑞士服务点、欧洲渠道评估板、欧洲专利、自校准demo，也都在做同一件事：把销售承诺变成工程证据。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXOZFrHao6a0UEHlBKd6IwQicABLU4fMvDzfWPeJRpNfVP2JDSnjCfte4gFeicnWevIlKN0oZU6YDKNic7ic8HQYuJV2MztdicKia6CE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/40103bb26e1f455d457c34029ab91e7c.webp)
 
 (昆泰芯在SPS展会上设置技术问答角)
 
@@ -132,7 +135,7 @@ Baumer的EB260很能说明欧洲客户的口味。Baumer没有只讲分辨率最
 
 这就是商务部外贸司日内瓦座谈会和昆泰芯欧洲动作之间真正顺的连接。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU1DtjQpyRbIwOPQn4GQLtldg8DtnGSzVcy4ANaianIaeBEEzS39vqq5oaJ3ol94OH8yhsPdd4c5WWkZ0z5icyq1wMnR66GyhDwQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/aa3c81a855087b391d012f6622875246.webp)
 
 （王志华司长做指示）
 
@@ -146,4 +149,4 @@ Baumer的EB260很能说明欧洲客户的口味。Baumer没有只讲分辨率最
 
 中国磁编码器在欧洲能不能站住，最后不是看哪家跑得最快，是看大家在欧洲客户实验桌上跑出来的曲线，能不能共同支撑住一个判断：**中国磁传感可以信。**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWxCceZBQqyVqs0nVNkBHO4L4ia2r2HNu72hKxHvuoh8vblib4uRbYGWGzc910JcYDdia8LBJb0NHibEicEfO0vmF7p3RZptXbvO8qA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/87689ee3131bef9dfd312c99f0c122e9.webp)

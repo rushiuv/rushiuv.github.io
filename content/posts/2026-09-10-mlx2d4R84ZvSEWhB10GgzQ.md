@@ -4,30 +4,32 @@ date: 2026-09-10T08:00:00+08:00
 slug: "mlx2d4R84ZvSEWhB10GgzQ"
 description: "苏黎世先是一座具体的城市。它在苏黎世湖北端，是瑞士最大的城市；老城、银行总部、ETH Zürich 和工业区挤在并不大的范围里。但机器人从业者说“苏黎世”，往往不只指市界。地图上的 Bubble Robotics 在 Dübendorf，更…"
 original: "https://mp.weixin.qq.com/s/mlx2d4R84ZvSEWhB10GgzQ"
+companies: ["ABB", "宇树", "ANYbotics", "ETH"]
+tags: ["EtherCAT", "瑞士"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVcf8g1rfm2K7AzK9OsOZvoRHqtftGXjlic51hib4ib4kmTeKYv9B4dqeMcNvJtwWeNG6UT1T70CL4iaZzcz9P4XqYgoG7GD3a8e9Q/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/5b8d4aee191be070a376bd8f43c55405.webp)
 
 ## 瑞士苏黎世
 26家机器人公司
 没有一家做芯片
 我却在一只关节里追了三遍
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6DPakKZt7dQfZzDasEPVjGCEcEqRj9NiakSeZTsficuWQFSLLmDxSz5ceDxibw8hicE6iaGFSxYNdOMxggWncJRheoWK68vCNZh4xLyUNQFGwUOkA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/425024bd8d785e04ca87a374fcf33386.svg)
 
 苏黎世先是一座具体的城市。它在苏黎世湖北端，是瑞士最大的城市；老城、银行总部、ETH Zürich 和工业区挤在并不大的范围里。但机器人从业者说“苏黎世”，往往不只指市界。地图上的 Bubble Robotics 在 Dübendorf，更多团队散在机场、ETH 校区和周边城镇，实际指的是一个可以当天往返的 Greater Zurich 工程圈。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWGzOo5pScNEQ9e44yLdR31WJeNa1vANqDAAa0HnraXnykDLiaCK9UhRdib3XBfOglHv0Bd49Ahjb2Xy1qucib3u8KzXBD2aEVOBI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/90f1a0d5788cdc68af08cfdda635663d.webp)
 
 我自己也在苏黎世附近。对我来说，Hagenholzstrasse 83a 和 85 不是遥远的欧洲公司地址，而是开车可以到的两个门牌；苏黎世机场旁边那些看起来普通的办公楼里，可能一层在做四足机器人，隔壁就在校六维力传感器。地图引起我的兴趣，也不是因为“欧洲机器人之都”这个称号，而是它画的正好是我所在的工程半径。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXdaE85shzN76h3Sc4drlCrOu6juf4rHd3Esc4gFI8Fvdxjw3CRLYWzvylDNPhWOgEONJPgOwb3hj8yQic4pGrA0h6nqXMSCdEQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b639cf5d2da880cf8c36c625cb0b8dd1.png)
 
 这个圈最硬的背景是 ETH。ETH Robotic Systems Lab 自己的 spin-off 页面把 ANYbotics、Bota Systems、Duatic、Flexion、Gravis Robotics 和 RIVR 排在同一页；Autonomous Systems Lab 的名单里又能看到 Ascento、Sevensense、Tethys、Voliro 和 Wingtra。2025 年，RAI Institute 把波士顿之外的第二个研究中心放到苏黎世，ETH 的公开说法直接把它类比为“Boston with MIT”。所以这里的密度并非一张社交媒体地图凭空画出来，它有实验室、学生项目、公司和收购退出一路相连的公开记录。
 
 Lukas M. Ziegler 把苏黎世的机器人公司放在一张地图上：ANYbotics、Bota Systems、Gravis Robotics、Verity、RIVR、Voliro……地图下面，有人问这些公司里究竟有多少家盈利；有人说它们更像“system builders”；还有人在转发帖里 @ 中国同行，说它们似乎需要一张去深圳的邀请函。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUUbHsoojklRgrGU5vNcZsm8PRYkLJMbQepntic7Ocxpu9qBlVoqDaCt4IJrsaJNX4wukRZBKkytvf7pJwlBwj7cOFDpq0WmW3A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b8c150bab694a39406dbeeaf903b7c3c.webp)
 
 *图源：Lukas M. Ziegler 的 LinkedIn 原帖。原作者注明地图并不完整。*
 
@@ -37,7 +39,7 @@ Lukas M. Ziegler 把苏黎世的机器人公司放在一张地图上：ANYbotics
 
 我原本只是想确认 ANYdrive 用了几只编码器。结果在那张图上，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5hxKibgM5W8qCHj3DbAZH60CJylF4ZMJ1A8JaXe6Xg25wBpQLibOibXIszHpUyOOwpA0oKCPlfib7XWmLlwBs6AzM4E8PDx6zzJkjeicmxuCHNic8A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/0e99ef4accac3d176c6ad26a243f0e8a.svg)
 
  被我圈了三遍。
 
@@ -46,19 +48,19 @@ Lukas M. Ziegler 把苏黎世的机器人公司放在一张地图上：ANYbotics
 
 ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹性执行器。2016 年公开技术报告里的结构很紧凑：高转矩电机、谐波减速器、旋转弹簧、功率与控制电子装在同一个单元里。报告首页给出的重量是约 0.9 kg，峰值力矩 40 N·m，峰值关节速度 12 rad/s。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVxEuJlUhHVtGq2NvCibgzk1X6vOB9bG17kJfezMREJQ7fXTPxiaxtuhfSGgXjyZ5JvFh7BQwGv2x4uFz0e3COG5oGibFmrXB3Ljg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/fac36e245c0946995c85f0dabff0db50.webp)
 
 机械照片旁边就是控制框图。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWRfMiaGZoellYVBWGbFF6JvEpibAM0iblx6wlfIdVKTbibuvzYu7UdTIQmibo7lu2HPPSnMib2Nd2qDUU3Yd26ojQrOB7UjVmhSqOKk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6a17fd18e475da3c81eddaa7d11fc695.webp)
 
 *图源：ETH Robotic Systems Lab / ANYdrive ECHORD 2016 技术报告，第 2 页裁图。右图中
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5cjtXj8fYAjgEjFRnPH9Dl9lH4Ao3rPstLju3cKTFOqoE0YDZZlOcCsblZdfKt7LQSu1cFs8icv9eFxnjYvNJvo2SDQj3qQZqwRIkibIxRED6A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/929ad1d6b83508b8020ee6845cc2b14c.svg)
 
  为关节输出角，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4QwdDw1CfxmiaCs9QCPauKZnILBOte5XrPdQ1FiayeebxS8naPCNzsic5IDWvibjAXuPpLDCLrYShf6DcpleYF5h3cg3xibDlQ0T6YFDXfrFhGSyw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/ffd62c7171fb9f547359e8982a15105f.svg)
 
  为减速器侧角度。
 *
@@ -67,15 +69,15 @@ ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹�
 
 先看最右边。减速器侧角度
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4tjGHibgxCibRt7znebBWpSUfvicmicbdRsApY885Tn9LSH9W8agljibTNb6P0g2yXokZqqiaWWjiccuDoGLOqPxk4AODnYarlWZIniblvibbnzpOZTxA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/444b24b0ab8c7a930256216ca99ee16b.svg)
 
  与关节输出角
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6ZnLhWXPyP2uibVganxpPKV7rXNFo75gqPMbdrT6GSLMWFNicKYMaggjhxfxambLIvziaetQn2z7BPsVjhQ9XjJ4ZVWjfluS0mbQVad7fg4b1iaw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/07a7169312b63ec6df4b188caf7b876e.svg)
 
  做差，乘旋转弹簧刚度 k，得到关节力矩估计：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5lbC7sQYs8P8gwGXnBXPg9ic7lr91eQ54HTE1VOm8J7ibXwHCoCdPoNhdoqNtwziaRtgFN8w3NqJBuQLZycMzDD29ibuSe0Lt84ohISq8icoe7wLg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/87ba9fbda921df3a5858198ae43d845a.svg)
 
 这就是串联弹性关节最关键的观测量。它没有在输出端再塞一只传统力矩计，而是测弹簧两端的位置差，把扭转角换算成力矩。
 
@@ -83,63 +85,63 @@ ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹�
 
 我沿着
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6DPakKZt7dQdKCGdrg2vu13Vic3op9lxRrnhQeLKibNI7ogON9Ww5aqQuG2YQYWNlfbymZ57j315GfNFTqqf2AkuuhGjbnv9ftB7BKF9bMQqNA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/c983efe7e2223a591e4ff4c10207dce3.svg)
 
  往左追，才发现它并不只参加这次相减。
 
 第一条路径是位置环：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7m5mGhA2ePMXaI9TWEu7M5F3WhvfXStGFSu3kP9kx0uPK3QelxjTfzDxouFe3HbZdIqsIWusSNyhf2geITyFAZbWRN0UY3hUJHMQsqmzFURg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/121f9352f355f0abe6c99da3fda72966.svg)
 
 位置 PID 根据
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5MZmJOKJGyCfjMxgiaJRKo1BmfiaShVCWGiatd7M0flbBMuBqKZwcg6HDojr1ic98TF0OGKkwHVan3AEBWiavFxQuFrzOBvNNrIcklmxvKyjevNYg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/99a06fa054bcb76a2d5c35b6d27c15db.svg)
 
  生成期望力矩
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM66m7RJJ6dJRfdYINW4cH1xj6C4w5Iic1PhxMtG5iaKA4GywrXsQzTBTUreYZwEdjwT3OrkRK0c2vL8IicWLYdeibeD7iavEiahqNN5ejuUyaibW3NtQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/870730833d789f2b4c1b5b43a9c113c7.svg)
 
 。
 
 第二条路径才是刚才的弹簧力矩：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7qks3jr8VoPtboB4wUghibhtXKLl1Rogj5uz3jMAFLKyuDiaX0bFDfBjg7XIFJb7PvIXwyfogEqzvjdicOcnG7SzNECS4sogutKukENicDpBo9TQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/8434a88f3800fff9a18936b1ffd1c7e4.svg)
 
 内层力矩误差为：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM58Sb1Wic5lr4Vw3j5AOCicwYe0G8L9uAvgC76XJMhSCDvQPmdH57tx5pP0S2tLjQU22BXGdxXQia4HR85GklEUd7knh2mwnfkdibr6QsfaT9R97w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/671e04c95a591c9c4b82d4b15ebdfcb4.svg)
 
 第三条路径藏在框图下方。
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7wQUFUpYnsj97tO7SNDMTPXShf91ib16diaDY9VntkMpH4kUJ2eUZfM5J4VfY0dECNlMEicQQFib47cOibxe3EKMRzJ7jxurZ1zweMrydWD9EHRbg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/1584d3584e3ffe1d22f6f5b30688f9f2.svg)
 
  先经过微分得到关节速度，速度再进入摩擦补偿，最后以电流形式加到驱动命令中。报告写出的补偿形式是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7kNcCHaWneSJ5LiaSAt1qurOkweWefld9fTepBot1ib1VsCmXA6PY2d0rbBu2rvtE3DstBajm7tpSxE4liaO5hIKB53lR2fhOefgZUc7yyPja5g/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/c3652568c40fa224d5113ab09229986f.svg)
 
 这里前一项处理低速附近的偏置/库仑摩擦，后一项近似黏性摩擦。它们与力矩 PID 输出、
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7hEgt0iaicgyHwLwUgeutPo6bFicxqUiaHZndjlymzgMFJiaLBE7OjYeEmia1IDz46ESuLicNy9nqHd1J7KAHwQml4TBY4iaRwQpJjlqL6RUlyib1ibGZg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/a746beca4c37e08c452922f0eb813fc0.svg)
 
  前馈一起汇成期望电流
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4WhEicbAWwVL5iaJ9ibfmdSqKVrCWwzBCXcu0wKfibSnQGmfUgYoVNE5INxOWYnO5oxiaJ64WVK7NaSMxwhbHjGlSicprn7Z7hMatT49ic1Q4KKEaxw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3075ac634528db2a2d4513d360d2e69d.svg)
 
 。
 
 同一个
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7qaNb3wZM2kyT4OscJiah3vMiaWKviaW0cE51TnqwuHrkVicbQOt0PiaMpzVfjJUOianscGEHH2CJLHCPU65Rk9AY4AWic3mSZek0HY9f4gCibx69KfA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/1f13e6d207344168ec28759a51ed6422.svg)
 
 ，一份送位置环，一份与
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5jzgrh4c6fYJicwSbUXfNEWRcuk59BfIicM24n8pJDNPfFkyq9lNzFGh6xqaUf8EPZ8GLNhasTAy3ceibZzwib9gLXFbQEhDZNsAjRl680KOTIDg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/03a4dd961863badd6edfea1ea0c0f5d4.svg)
 
  相减，一份先微分再送摩擦补偿。位置传感器不是控制系统末端的一只“读数器”，它同时参与期望力矩的生成、实际力矩的估算和电流前馈的修正。
 
 到这里，我才开始认真想：如果
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6CicB0HEk19zhPXicaxfGibYMxAtcia03p36bTiaP6Tc4HnicsVze1odU0cCVBzDLBX1883kVoGk8WOJibPzoc9UWQczYcHmBPF0gU68sEwuhfmUCzw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/9a79f9abc0891070378a289a4040a4b0.svg)
 
  只错一帧，会发生什么？
 
@@ -147,39 +149,39 @@ ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹�
 
 假设真实关节角没有变，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4GbOTp2LphbRoX1TW5bl6aWE15WnH10F8H9tS2mYs8no7tSLGI7YG6BLPgkGTMicibebPnIBTcLvSeN7I8uTbto9cymk5ZIsicz1hR5ia6tiaXE6g/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/caaf5ba86812945b60ee71b2c798b7de.svg)
 
  的测量值却突然多出一个正误差
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6FiaRiaaoUZvQo3q02X86SgwkqIHjfXHRZwkKB564muziaC3bgOaPictTxbhA2MkbymHKwicIiav7Q5HrLI5F8ibVl85ayiaxZ96yKZItAicMjVTGicwOQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/82405387392a38d77ef21e38501f8113.svg)
 
 。
 
 在外层位置环里，测得的关节位置偏大，因此位置误差少了
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4cpvZukH2KeLatgCBDeuDj9ibLXUJM9UzNTlJGcNSahaFgOqjS15oymd9uibvROKdKCf6nPjPN969R1XhDCqTeZLdm8G4ib7VxcxEviaZlxV6PWw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/f5c19dfbcb612bfe330f9e3c713cb75d.svg)
 
 ：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7IOM9Gp1sdOR2OGo9SIHHJzdH4ST6m0naoUK3qmFYooNEn6icxcnyTCYx7NkIDb1kqZNDWe5AYotj0aj47EZ9AejjPLsbVXl6KVViaKQ825icCA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/ad9af6e4dd08f974cedf0ecaa002eaec.svg)
 
 只看比例项，位置 PID 会把期望力矩往下拉。
 
 与此同时，力矩估计把同一个正误差当成弹簧多扭了一点：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5EWRRVSAicibcAqMuvot1vicQWwSE8lVQKP75e7M2GsJ5R5DVbLsKicq40jibcwWP56dDeuvuqLOWLORIJ84UFiaDf1OzMROYaMTX8bweazp1eCqng/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e7100b13a408398400742b0e5ba12351.svg)
 
 于是内层的力矩误差又被压低：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4bgrR1Os14K9tKOHl2K8l8wJo8szmiacchjCBEq5HQa3riaibGcV4W69rWwibYmCn2fia77lHhq11hERMyluPhmGh7YaSrKCcGDGKpsBSG8vxh0Mg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3a63cdc93845ddfd94cd664e78987731.svg)
 
 对一个普通正增益位置环来说，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7m5mGhA2ePMe3ibuGJ1mvicVGhogg9enyKop3XF9ETyz72SjsFyuWQBicEvnrc9D1a84DAzxQauNSHhpzDJve97iaTYD6I6TicEzbUHZW2GdLFIvA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/75813f80b603ef5664852cd0af4f46ef.svg)
 
  本身也是负的。也就是说，这个正向位置毛刺不是只沿一条线进入力矩环：外环先降低了“我想要的力矩”，差值计算又抬高了“我已经有的力矩”。两项在
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5O6wwtZIMSha3DQGibWz2csLgF3IQIcTr0s1JDFNAfWqUsscvy4wnibBMCOGxMX1xAZaZd6cDQWFzAWZQ5BjGxgfITQC66m5JRh0Fia1drd5YRQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/4d242b4d8e17f10f99fb64e4aaf9f4b6.svg)
 
  里朝同一个方向叠加，力矩 PID 会更用力地减小电流。
 
@@ -187,15 +189,15 @@ ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹�
 
 若
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6FiaRiaaoUZvQoUou5WRkmIca57RN8U6TdxrGrFgpmzWvbJbcSIMiblRo7icPjLV3icZEOF98UeZ2kZ79gSjpJfW1v041va8aicd7782ECMic4rpbfQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/8556edcd9b06d9411e1fba4ed4aa51a3.svg)
 
  是一步跳变，微分器看到的不是一个小角度，而是一个近似
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6l4yMVrlgKrbfgfSYaRER6To3YbRmqBPGUwNicqfzHfzDAlZ6VXpiaRiblDZVjiahbWV0wicibSzaY6fKibaVk5Juuhv5KJhJIDR7Y1ge25bHnoyOfA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/733eb63930fa1bfa1f8344cdca352292.svg)
 
  的速度脉冲。
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5WeVx7PnIlVz1pATrox1OFVK398UOgLY8XLWr6XKaVc6P9gibmFU9n5xFVhNtWfa0IowpsiaIkDXMYn9MdqNBlh8F6PrVxvj1rjbWu7HNNV3Dg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/cb537c3c8ec0d8f725bfaf6e3f8f8599.svg)
 
  是采样周期。摩擦补偿会把这个速度脉冲变成一股电流补偿；按框图中的正号，它可能与力矩 PID 正在做的减流动作相反。下一帧若角度又跳回去，微分项的符号随之翻转。
 
@@ -205,7 +207,7 @@ ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹�
 
 这里不能凭 ANYdrive 公开报告断言它实际用了多高控制频率、怎样滤波，也不能断言一帧毛刺一定穿过状态机。报告没有公开这些参数。能从框图确定的是误差入口有三处；能从工程上继续追问的是：三条路径用的是不是同一帧
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4GDCeHQO1ict8uHrvUOQq2Hb4a8tAaoW4ibjKGHSBnepqykmiapLZiceOmZoY25RyEystMudia5dkAibvBGwCibFvKXdjzMYticqnyFhxoia55ZLdQ5ww/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/d41062e6ab85821895f1cc939f1e6ce1.svg)
 
 ，微分前有没有去毛刺，诊断无效时各环节保持上一值、降级还是立即撤力。
 
@@ -213,31 +215,31 @@ ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹�
 
 ### ◆
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4xvNGSpp5WYLAdAYuxkBJUcWn3VU7gEicB9AbcAEfamnZ1C6DtU0A1AmhWtPfticHiaPTYpj8TjcHuVt1poqO5EkVfYicxyia5CzLzbfyrDPxAB1w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/1b788698ed97c3b471c33e87fa2799b5.svg)
 
  错一帧，没有三条路；这反而给故障定位留了一枚指纹
 
 把同样的正误差放到减速器侧
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4sLEJY3bVQia9ONJI3PSRricAdN5OfsibsyHFCnQuwRJ4zwwoDPvWC50axS2AOJPAUy4cyl6MAKUibzia7ZI8icjy25icoiab2TpLszVXfGCbh6JbkRA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/b3495ca622e46b5ebbccaa9f3d2edf32.svg)
 
  上：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4uR57cggQygGjbW3nAUibxKXnzs8OXVjIFHqxcNYHs7YSFbaDKJnCAA8lW11SVB30p5lyUAVnib1jlC7HNibdtnn04QibcytJ2cz9EPZajrsKTdQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/f3d1fee18442368d72dfa1a4acb6f9c9.svg)
 
 力矩估计变小，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM42N5m97kMkiaCsk815XLcXcTYs2ibfTYosIxMByiakGVW3CIvojAkEiboIo3ibWBxzXc3JpRxGjKMghVkPb1kL6J7gh1uXnyjH2Vz2ofS0WaeyLsg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/deaa54e789ccfd5dec696a89b117dbf0.svg)
 
  变大，内层力矩控制器倾向于加电流。
 
 但在公开框图中，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6oibvn6NrB8Sic4QvOxq0gKz6AGLAQNwpNcMkAmGkkJpXQKYset4ehic76FM75zFNjbPNqVesadSKQBiclMHM4BFXJNYsDfic3bOpg4nhZeeibJEog/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/8cffb15a3748caa81009decbefb4bdee.svg)
 
  不进入外层关节位置误差，也不进入以
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM60z4hWsdFI6DvnWnMBmafQf9TAXWNLicy4ejwu7oOmP8pye3xEqDaASIHic3JqFoA5QOicARmRo12v5FBVrge7o3McKPw2zxEQpanqgje9EkqNw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/eade85600a9983e52b491cc9034c1250.svg)
 
  为输入的摩擦补偿。它主要通过弹簧差值影响力矩估计。
 
@@ -245,43 +247,43 @@ ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹�
 
 -
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5cjtXj8fYAjiacHqVQg7wEWXI87wT7R1ITSOtYWO3NYicRSPibaW7q9H4ic7q23FHARxuI1EReFFeLwd2utKsG0OS4233LWbQk3eJyiaUqxXZQlOA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/a7431923300d095ea77233060ff98a9d.svg)
 
  毛刺同时改动
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM70uFYYzdWFfqC1sJJUEkdGkEb8EZp9QVkegWF9zXf6rKeVpJS3ecq5iauHNKxktKxoP7DqQkmXeNW8tSyFhOE0IOJcYuGVqqrwBENd2SL7nQQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/17628d127523bf4f49af50836ad40b31.svg)
 
 、
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4VUFM15QrdTvJVz4ibsfic1G6y7rVEic4QNPT5hynKqnzrpSeIibUuYwnn7F5H3uuTsicibmRQMAThn8DKREZ9WtHwbMCk3DLT8fVTXm7pTEsYLhWw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/11115fedf0ca94e1d1c18425da0d54c4.svg)
 
  和
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5YWmNicic1s34gSgPnyISUaQ2u2Cvu5Ne4z1k88rwAVEhLIS8ibq6icrV9jtP1xKkDc7BuVcdhZmT1vOXOeibetAmiaqo0Qly3SxFJXjFEW16E2ufw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/b5d9f2ce337c96fa943972d7bf5b5fd6.svg)
 
 ；
 
 -
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5hnBkHfP0CJLkN3RJb6aHgFD1V9X7iaib0plOLHFxEaROnXhbgLRD8TEa7sufOfa1CQPcnZ8t9q24OkIumLdVDgjZyzhEueyxIfyb10d4e3icRg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/fff52d850f80bddbecbe4603c049a1c0.svg)
 
  毛刺主要改动
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4uR57cggQygPicLS6GDfzR4FHMsZPg3Sic2icewYn54no0GZxiaiaQ0xuib2sVbMPYZUW7FRPzK2w4uJ2p3a1hKmXDXPB2whgNer1UfFmJChGX6P2A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/6d2b7dfd1e717e6256180f3ae0a386b5.svg)
 
 。
 
 这不是建议客户“多录几路数据”的泛泛而谈，而是一条可以在台架上故意注错验证的预测。分别给
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5vZDNavRnRYHWFA9Vb1ib04oDDYI7dPiayfcVBzpXqlb7hby74GFtJMvAT19UCib6DziciaicAW1icNFIho7bXXM2pl5ofMHX5Tbb9H562f8tAcBEYQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/aac9287d273ec1fd1eedd2d468e26978.svg)
 
  与
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6ZWbgoTA5LQnKkm3Lhh9hu3zibynfNbgm81XS5NicLKTjRia3L1HpN7s0t3X3ibRaqj3v5k1sNicM9bjg0YwrQVNjibT4ujeUU58icNEHht8Er5kbeA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/8e0ea71245cdb6fcd06fc2208371c5ae.svg)
 
  注入一个相同的数字台阶，记录力矩误差、摩擦补偿电流和最终
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6qXDCh1WObiaxU4Z8rwOVWogBt1xOx8iajk6icoTgyDciaiajF4wahb3NAe1sfxbI2AboUZeOSUFTH4qaxibVYNI2291xDS2f6Fb58v8ISXibX6v85w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/a89abd1b2989f3d5f9eb344f3586c0e2.svg)
 
 ，三条通道的先后与符号应该能对上控制框图。若对不上，说明实际固件里还有公开框图没有画出的滤波、限幅、状态机或观测器。
 
@@ -289,41 +291,41 @@ ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹�
 
 设两只传感器偏置分别为
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4sLEJY3bVQia1rnSA6rmlhRLHhm0iaOcibT8YwpRKvGCCb9ibVia4A8F5mhmbqFBoian5WTfM2ibsNLcHDqVrtUGeW65KovH5n3O7AbFTwrAwbsAeYw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/92236a376eb584699d80fe1763747001.svg)
 
 、
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5gBYy8b508ql82sGRqibeczjkvJN2RwjjrfBDfmicWSjetVkictXMibiajSvPibkQviaaCgX8h2TUaAgjK1yxbHO7YyEgbuCA6RJP3ODdHcgNTgAtgQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3ab93162cc23ae9c4bc9166c3e784c39.svg)
 
 ，那么力矩零点误差是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6icjL0YUwXu9bkYJVbEcAR5ic0FnS5Ka8gG1W1ubERiaX9ib8phLZ1mcEx1F807mCWiaZ8KIK36eVS9TmjXgTc8zjPBw01ichgUQhZS8ZhYicpU2x2w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e8b305f2fd624b4cd8436d50b51ac457.svg)
 
 如果两只传感器在温度上升后恰好同向漂了相同角度，即
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM728rcRkicd0QIXibbrbN2nkdswYr864GicZlHzibc0Y0Jz2knqCibG4j0ujZQ9akvB48fKzrnF62bzBEiamEAQFr7SPop2QiaNcyN7U3My3B86Ss0dw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/2a308e870e86fd80acae2bcc7e75bee6.svg)
 
 ，差值里的偏置会完全抵消，力矩估计看起来仍然为零。
 
 但
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4MfiaTrtD0ic4wIkYtjydzY3MTvU7E1Rxh6pFzrjCqDw9s3ymOPElqMb1rEKYwtLNFhwwibGDMPbknyanHWmXIokMtY5VGZtRU1DYrfxIgJMZbQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/676d2158d86cd76f5fd53f9823250264.svg)
 
  本身已经偏了。外层位置环仍会把这个共同偏置当成真实关节位置。
 
 反过来，如果两只传感器一正一负地漂，关节姿态在外部看来可能没有明显变化，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4Nscx9kOc58lVmcFskmDMEUOfwmkZJGuR9MTsmOJ5JzVWBD0xuE3ichYzcfLzQlqUMDAEbkGVziapibWKxO3v6CialYgRFXibSzA2Lib8t1wNwW1icA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/82103ecdbf5dfefe1559fe6e85d23ce3.svg)
 
  却会凭空长出力矩。
 
 这是差分测量里很容易被一句“共模抑制”遮住的细节：共模误差对力矩估算可能是好事，对位置控制却不是；差模误差恰好相反。只看最终力矩零点，检不出共同偏置；只拿外部量角器校
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6DPakKZt7dQVcovRDFBDtwG60L3RBj3ib1qZp5UMuIjAdYT0e8avC3koeVMm4fbbfHPzKjrPyOJC8JtlR5sH4Q9hBA5WRSdtubfKYM6VSOiaAw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e23ddd48cee86ae93a66b097c5e97fd1.svg)
 
 ，又检不出
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6icv5gNAe3wDNkKia2dZv7WprXzZ0AJu7afWVNoUDWJW8bSKPdlQ2eFG6sojVMsXEKH6wVicibQIPTiaFI2uf0ydxLIJibnxpNM7l8nquft0EJCcibQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/431a854432322d81bb01881980879c76.svg)
 
  单独造成的假力矩。
 
@@ -331,31 +333,31 @@ ANYdrive 是 ETH Robotic Systems Lab 为腿式机器人做的一体化串联弹�
 
 把偏置换成随机噪声，这个问题可以写得更明确。设两路角度噪声标准差为
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4GDCeHQO1ict5Y9aXzTYIicqrticicKGJhXvMdU1wlr2IS08yFaHQw0XeQ5ia3b5Br5mLJ0An7BJv5QxngoTSeaV4kgtGPu31nkuDBq5ZSZfqhPng/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/08b73f947b72eea42a2efcd102d002ee.svg)
 
 、
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7Fno25L19bicQSQQmicZQufxevUGxPhjnduyInj99GKPhNUibToaRBH5gibV3XmstOibLeyWv66K3WdFe3C2CJKQGm3dI1O0HVfOflpersbVFyLvA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/8196c55cb0e54497354397bb5bca366e.svg)
 
 ，相关系数为 ρ，差值力矩的标准差为：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4tjGHibgxCibRqEsXDZwuD3L6QTlfocYzUuFH4ibiaIWTwaqbJaXyOVG7NAMe4OmjBpibaJ5KPVgemPEjyVfV3xnbttyUEvtNBCeRib6xl64sCibZ1w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/b0cec3f4ab0cb149e203b87fda1fcb4f.svg)
 
 如果两路噪声大小相同且完全同向，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5zj3rTp1goiaP2jNl4knqKvNibbZlnkTHr2HnXjme1siaVY5fXicUibvwoU90T0XfgKiaurU8CXXS7GxLqgTcSNNu1zVarAymnS1YNKeM05IbricriaQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e5eaecf6fac2a6e97ea4df60080b7de4.svg)
 
 ，它们在差值中抵消；如果互不相关，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6sBDEiaW9edzbVEoI2ByicWQEWMUqiceaydMyI5LLHGAXevgBFd9u5yLQpxP0MrIwB3dplfEgibLQRuiaHlibMeib3961E37OLgbyiam9snQubScKVIQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/ad5e01a50c63c7b30767e0e286d0581b.svg)
 
 ，差值噪声是单路的
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6sBDEiaW9edzSLy9lj1XiaFv7pFMN1deQTDcmugibAuaKY6NibibWpia88ELh48loTyWjwz66ZrzbSs1a7lQFap0B5daZaBx14a6rAXRYhic9bLKx0Q/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/4a63d10a9cad8a747235e13f3d9a7696.svg)
 
  倍；如果同幅反向，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5FSyXScI1ETYXTvwE2RSpA5ISL5y5PCEIBErJj176ZTpaYNg6Ww37oZhlQYc0bnBjEgiaz0zQFDZA8FGpbYQ0AFzfGGAW99Ciaug1ibibhUvCUXA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/bed51212baed582ebc4082b8d7eacea6.svg)
 
 ，差值噪声会变成单路的 2 倍。
 
@@ -369,11 +371,11 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 先不把这当作 ANYdrive 的事实，只做一笔用于审接口的情景计算。假设关节在近似稳态、弹簧变形不变的情况下转动；把两侧角度折算到同一输出尺度后，它们的角速度都近似为 ω。若两路采样时刻相差 Δt，先令两只传感器的静态误差为零，做差时仍会多出一项：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM60KY6NjgvSjkFpeukWbswBL0Tsiaa3dOTQ0yLmiciaGI0OwL2EbFf7AIgUukWWNfE8qiacqSxT24D6IN1nxJdD7vyOdYryqeZib917dsZIuk79iarw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/4f55de8cbcef86fb997f7ef193917aaa.svg)
 
 报告公开的峰值关节速度是 12 rad/s。若相对时差取 100 μs：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM58Sb1Wic5lr4SIDXOzm6FKt21HXWG985wP0GLocZnAiaibDYgqFlKVwfJAuoqzy0aogd27bErt3HUcdUsibk9ffzmic0fw1tUqnVP2R0jRLZdDECA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/c9ed118b6c1ca1880efcc8965a226ac5.svg)
 
 同一份报告的宣传页把关节位置精度写成小于 0.025°。上面的 0.0688° 是它的约 2.75 倍。
 
@@ -383,11 +385,11 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 若
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6F86vku4hPIaP9JVmng7xe3aJH3Eq9nPaCH6SszakPAdquAdFia25ibic2lFTVibYhDgduAP1y5ybBRBnicIe9M7PFRKEW4esKArgKaC3Bh0b3d5g/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/a154de6a2b5777dd50ffa5a145376c08.svg)
 
  先经过一段滤波，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7aukIG1S8vVBl5KCgdamOibhBAlC7kibRg9pB5MbJmfkCNUzshQYFygDBibHicy9mRo8xnaqagYvP6fobxTXYRTFKm04xIdUVdtc2SZNHyrAml6w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e987fa5a5b611f406c5529f33067446b.svg)
 
  走另一段滤波，即使原始采样同时，两路群延迟不同，做差后仍可能出现与速度相关的假弹簧角。静止标定时它是零，一转起来才出现；恒速时像固定偏置，加减速时又像动态力矩。这样的误差拿静态转台慢慢转一圈，很可能测不出来。
 
@@ -403,7 +405,7 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 17 bit 一圈有 131072 个码，理想最低位对应：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7lkwSw0icQL4wQShKNA8D04iaQc0xMbFcM4ctK8wsJWbyJdhIWRPQAaKZ01abDORuRvGj8tN5KxiaFDOyoRog9aZnqibI2MmCDPHnTiasH3eibtS7A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e8cdc78eeeb8fb59c06506efe9a43637.svg)
 
 因此 0.025° 约等于 9.1 个 LSB。
 
@@ -411,15 +413,15 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 真正值得追问的反而是报告没有说清的地方：这条 17 bit 是
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7QJC5iaA8yFYldCKiazoDt7CB2nmX7MmXEI6Zw55Y2VtvkpQBeuglskibjrlKcLeicxUhtY9KBW6ghPLiaJJljuoWtxiaX2EUZWia2lvYH78YrTraog/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/c2588ab813ffb230be728c21fa98d3d6.svg)
 
  的输出分辨率，还是两路传感器各自的原始分辨率？
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM698se1Dtjk1krqianbiaGaYiaw7Sq4icpsklysXNPUmTgUjmWV0vlz8vT4uxJ5rQatvOArH9Qmp73n0iapPn63jkicnRuqAXucf6CCeswWNz0dmlVQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/341f473c4598c31c34f296fa2c9cc28c.svg)
 
  经减速比折算后，有效量化怎样进入
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7DwjZxE17sYA3TcTsuDX3Dt3pgdIML0Y7FcG8xVEkbQicMKVcneSLj0cW8Moay85dO0Er17oxvBWNdAQPLcqhtlkU7SteQjRibpXvB3nnyMd1g/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3611b6927ccee2c5b9381aed60b5ab25.svg)
 
 ？两路角度是否在同一坐标系、同一零点定义下参与相减？
 
@@ -427,11 +429,11 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 同一份 2016 技术报告，首页宣传页写“Joint output torque resolution
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4BzJAHDZD6OwZ1opr2IO87f4cFdcXDkXDJh758exIiah45DBwx9zumQb7Tliagl3oGLW8VNIdRMFmf1ZDDI9uiaSwd7Zapb6kokdaic186WQDZkA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/019d050af4e05cc724d52df3e48634a7.svg)
 
 ”；正文 1.1 节的文本却写 8 mN·m。后来公开的 ANYdrive 论文常见版本写的是 0.08 N·m。8 mN·m 与 0.08 N·m 相差十倍，而
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4q5F6AMCcR3gKw1n5178U1Ozl7SdibmB5YRKELiaSu2m1fjVGiauzredEbGYAI97I13jbDdurEA4icnJibeYZbTOmmAbdap8JNo4sv3L1uau42Fiag/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/9b0c8102e1ae56c3e000876bd465ffae.svg)
 
  又像是对后者的取整表述。
 
@@ -465,15 +467,15 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 撞墙瞬间，输出端
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4n3GB5BD0djfu5HA03PjBy3aZ4KoD03N5I9MJ9WdkdrwQLibGDz6C0BY9NhSNIJrjWm6w1CaWwGibxCRqx75TECtKQVN9XMn1wnNBPBd2AJialg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/09f2f714f93cb74287efc1c68c9138aa.svg)
 
  先被外界约束，电机与减速器侧
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7dZTia5V0kZOh8icTbvIfblnRolypgsDSeOYoIXswfovgWnAGYNReejmP7LrqYEJF0WzXMkxBhqnQ800Mic41ib6rviaGH94HXjkZ0AmTkXGHxjTg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/a608a95425e909cf3e5982002e1a1058.svg)
 
  还带着惯量继续运动，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7hqKPgQLdtHrbnvCE7UlxciaIygU1jTJaFgAR9BHZYTKOg8jg3UiauVjnILIgV9DiclgGzpYdkLK3czu9d8B10GqDypAUfvBFdpzn7SKOE1Nw9w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/0201289e4ce61991d2032077bfc2a85f.svg)
 
  快速变化。这个差值既是被测力矩，也是控制器决定如何制动的输入。传感器要记录的不是一个缓慢扫角误差，而是一段两端运动突然分叉、随后重新收敛的瞬态。
 
@@ -487,7 +489,7 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 真正有用的读法是：在外部持续扰动、目标力矩为零时，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6B9TZK0cTAP5zNPdIj3Xcia26kM2xNHIIVrE9sML9AgqP1wkwm5sMCFThcqGlvheFo988ib9YZthLueib4SHjKDX9Nb97WAWxC1GfVFwMvKpicSw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/ebe857a10fbbbab908b215fd90f0677a.svg)
 
  的估算与内层控制必须跟得上，不能把人手带来的运动误认成需要对抗的关节力矩。这恰好回到前面那只“虚拟的第三传感器”：两路角度若有速度相关时差，零力矩运动中就会产生与运动速度相关的力矩残差。
 
@@ -503,7 +505,7 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 这件事与编码器芯片看似隔了一层，实际正好咬住
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7dZTia5V0kZOlCCVxEPPxnSq4eLIYdC9kVX14Z5pWj207Or5d0pyPHDMwiapicLnu87Fjxkt8aCTyGNKSgoXyPgDE6FniagvpIjicyGr9tJOBtq7A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/27a94559f16d1d11e49e555e77cdb40c.svg)
 
 。
 
@@ -513,11 +515,11 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 -
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4mnqqIoJ18iawwFDzkHvw7sSJwibdbsLbPwOkAbEKhbXDicosnHmKyRfTFVUyO32uEHyI4eNZ80zvb6h9GGVzllKsFedLsR8rcQf0DiaN4m3xOwg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/d1c84b33006949649ac9d469be19a8b6.svg)
 
 、
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7m5mGhA2ePMY7UOico1RetTkO6err6o2SdLJ6Ck7rOrn1kJG2iaZP61qCODFcibFnLpibkMYkicaPczS7ibbC9e4VoSwqImcUSiaJ3KzC4Rm3dy9TTQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/2a8a5ee4779a9da1e2b08597940e468c.svg)
 
  与各自诊断位是否原子对应；
 
@@ -539,11 +541,11 @@ ANYdrive 把两个角度相减，默认读者很容易把它们想成同一时�
 
 这五行不是给系统公司开需求清单。它们都是从那张控制框图里倒推出来的：因为
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4pXqFWzJyAj3sg5b66mcibhCy0wmTr25lIGQ62Xgiak8ibVhF4Gq6iaYV28oKvRiaKpZrVicyQWFWPEuDkvyepoeQTic8B7WyQDDAgGNP4TugSWagUQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e23f451fe73644b14f9b94434716751c.svg)
 
  有三条去路，因为
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5uymiaX8wy72X7FTibVjP5hGGJ1Rq6z7IfaEqEhQ30YxR2tPgBAr7J2YelQ5vKCvKQKnMRf4qfFsdU8yI9dXmALZa2GiaQ38SvgNicENibxjh8Pag/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/f516dec9c454e585bf7aa6d8a6fee80d.svg)
 
  与它做差，因为微分会改变错误形状，因为碰撞把可用时间压到毫秒量级，所以错误的“值、时刻、状态”必须能重新对齐。
 
@@ -555,11 +557,11 @@ Bota Systems 的公开时间线写着：2013 年先为腿式机器人与研究�
 
 ANYdrive 里的位置传感器更隐蔽。公开资料没有告诉我具体芯片型号，也没有给芯片厂商一个 logo。可只要沿
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7dZTia5V0kZOvlfalBjDibRJiaQZMIjqpVCwicnsj1aX84VBoWWrfVpIXmkVCME4dR6QtomjKvicwadktJia1WHmf34wMtSEKYO0NxprqOVOKaDKXg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e453b8bb9ac12df0afa4866b241dd65f.svg)
 
  追下去，它先决定位置误差，又参与弹簧力矩，再经微分改动摩擦补偿；沿
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6z8REia3G9ibpbOFPicdfic1Gj9hcZUftHLVUpbK8zrSaNYhvWO89QX1EtBEwdk6liceqdaWJn26VHOpONd4hqdQZmhcDIsPhptXlJPE1HxqjPJqg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/f946f0d3f72fb9d229b360816ed8d7c3.svg)
 
  追下去，它没有出现在位置环，却能单独制造假力矩；把两者放到时间轴上，即使各自静态合格，相对延迟仍能造出不存在的弹簧变形。
 
@@ -577,7 +579,7 @@ ANYdrive 里的位置传感器更隐蔽。公开资料没有告诉我具体芯�
 
 当客户只发来一段电流尖峰，能不能沿
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4XfHz4BYY7OrMQicuHzMBibjL60rchkkSicsgxLQlTKeFq1g6SkD0D5HrCvMfmjPHCyms3V5M5KeXoul3lJL68s4vgKeHFzfJMk7rohDmJdVgtA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/45d5c8b41fabb27a8d817bf63ef3719d.svg)
 
  反向走回最初那一帧？
 

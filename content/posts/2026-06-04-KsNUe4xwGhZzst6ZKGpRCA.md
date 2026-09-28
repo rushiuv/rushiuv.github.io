@@ -4,9 +4,10 @@ date: 2026-06-04T16:57:00+08:00
 slug: "KsNUe4xwGhZzst6ZKGpRCA"
 description: "“某某EDA工具更新了，支持AI优化了。”"
 original: "https://mp.weixin.qq.com/s/KsNUe4xwGhZzst6ZKGpRCA"
+tags: ["芯片设计", "AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVvRf9nUQKazKmf6DNYnFsoIM2Z0TCmgtn5HZhR8JRN2YpLRHU8SCW5KkH3toCacglqA3qGRz0LA07rKrB1JlzhqIpCexdNR4s/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4d8cac032edda72a0af83e7418d61c63.webp)
 
 ## AI能帮你优化路径，但它不会替你理解每一次优化背后的物理代价。
 
@@ -307,4 +308,4 @@ AI会继续进入芯片设计流程。
 
 踏实做完这些的人，才是真的不慌。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVdSSGhWIZBicE5ib1Ec0HUbfiaTbmDMS5zeWndy6rKgvwvvHKvoYhgvKd5czicVtyHNtsQPiaplxOjBibrMlkxKOb0WDmfJEmB7j4Eg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f6185b9ae123b76395b53470ef182a06.webp)

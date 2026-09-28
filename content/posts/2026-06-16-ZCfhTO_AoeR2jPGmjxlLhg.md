@@ -4,9 +4,12 @@ date: 2026-06-16T00:00:00+08:00
 slug: "ZCfhTO_AoeR2jPGmjxlLhg"
 description: "有家做精密转台的客户，选了一套基于昆泰芯 KTO9512-D26-QN32 的光学绝对值编码器方案。公开资料里，KTO9512 属于昆泰芯 KTO95 系列，面向游标绝对值光学旋转编码器，适用于直径26mm光栅码盘，通过3码道游标原理，码盘…"
 original: "https://mp.weixin.qq.com/s/ZCfhTO_AoeR2jPGmjxlLhg"
+models: ["KTO9512"]
+companies: ["昆泰芯"]
+tags: ["光电编码器"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVZiajLwB2qaZ8shEMs19eiaRjrMgQyyoIib8UWXeicz3SSpISnZ5Aribwib5BFg9BST6WhZOWrqpqadkUdRl6d6HwFTVmua02icxInWM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8c5597118289358f8bae1c17f6f541e3.webp)
 
 ## 昆泰芯 KTO9512 最高24bit光学绝对值编码器芯片，但26mm码盘上0.02mm轴系偏心会导致精密转台定位精度掉到±15角秒
 

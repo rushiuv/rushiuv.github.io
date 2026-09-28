@@ -4,6 +4,7 @@ date: 2025-10-07T14:23:00+08:00
 slug: "SKKM7e7W_cnQkU-9yhUkHw"
 description: "人类一旦觉得自己快被超越，就开始谈“逻辑”。"
 original: "https://mp.weixin.qq.com/s/SKKM7e7W_cnQkU-9yhUkHw"
+tags: ["AI"]
 ---
 
 ### 人类的恐惧
@@ -12,7 +13,7 @@ original: "https://mp.weixin.qq.com/s/SKKM7e7W_cnQkU-9yhUkHw"
 
 那是一种优雅的恐惧——嘴上说AI推理能力不够，心里其实在祈祷它永远不够。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRVVvCpbq33TgbKviaRTac7lc7VhKeOeTUYQFb5zJOxvibhbriaGFsRr2YpkAKkW9Naiby31sCgtf0O9g/640?wx_fmt=jpeg)
+![](/images/wx/e6be5755105c38f3046f0066aec39d1b.jpg)
 
 ### 表面的分析
 
@@ -36,7 +37,7 @@ original: "https://mp.weixin.qq.com/s/SKKM7e7W_cnQkU-9yhUkHw"
 
 你以为它在编，其实它在统计。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRVVvCpbq33TgbKviaRTac7lPRHTLojy58rcm6ibss9licib8nFQh2Z30ficNkqYxvNxCQibCFWPMmQiaZcA/640?wx_fmt=jpeg)
+![](/images/wx/342b53cc9cd498253c656461c654fbaa.jpg)
 
 ### 现代推理结构
 
@@ -70,7 +71,7 @@ original: "https://mp.weixin.qq.com/s/SKKM7e7W_cnQkU-9yhUkHw"
 
 这不是它不懂，而是它太懂——懂得逻辑必须在边界内生存。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRVVvCpbq33TgbKviaRTac7lkeXYLibRUibkXF25Q6aqxKxM45KaibgZngxgA6FJYJ4gkncmu02rAZKsQ/640?wx_fmt=jpeg)
+![](/images/wx/059ec8efce024decafd02bcb5c628639.jpg)
 
 ### 两种逻辑系统
 
@@ -88,10 +89,10 @@ original: "https://mp.weixin.qq.com/s/SKKM7e7W_cnQkU-9yhUkHw"
 
 这也是为什么它让人不安——因为那面镜子照见的，不是AI的缺陷，而是我们的伪装。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRVVvCpbq33TgbKviaRTac7lMS6SM2a3jvQgffmlaRHJBPZgmzFuluRJ6h8sEMic7Q3hP1abb1qTa7Q/640?wx_fmt=jpeg)
+![](/images/wx/b8cfe7a1481bd7c5eadc6485e33c9637.jpg)
 
 ### 真相的拒绝
 
 当我们说“AI没逻辑”，其实是在拒绝承认：也许逻辑这件事，本来就不属于人类。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRVVvCpbq33TgbKviaRTac7lTV4pHFjibJoqDSANu4iaJcZiadYNRiaiamwOiaUFiciafTbZRUAialvOBnicq9HA/640?wx_fmt=jpeg)
+![](/images/wx/b416b6e830ad1163c791af6864a611ab.jpg)

@@ -4,9 +4,10 @@ date: 2026-07-17T00:00:00+08:00
 slug: "4Zp5zcvpo8f2D4k1rMlG-w"
 description: "MAGNETIC ENCODER / CALIBRATION LABEL"
 original: "https://mp.weixin.qq.com/s/4Zp5zcvpo8f2D4k1rMlG-w"
+models: ["KTM5900"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX14qduyb76NHW6Kv9sf4Wy3Wh5onPmkGqZrtUKoAVBAiaPMSJOpkNvZ3Ffd3gRjYdRTulLicnwKS3ObfQoqAoT4owkYjKDbyRp8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9c0260325e18c5a1c00d7201220298cb.webp)
 
 |
 
@@ -118,7 +119,7 @@ CAL +0.48°
 
  |
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWyqtrTia5PUfXib2rC0Tp3VY9TsgHHuxUHfqnqWSMp4kdwrG3nGIpb7pqw4WgXvEst8T3SOUN8DHP2poS7VU6q5ZJI11q93j1T0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a5d83ea48cab9d3ae8f0cb36b88ba3ff.webp)
 
 把一次温度循环后的残余误差拆开，大概长这样：
 
@@ -206,7 +207,7 @@ T预老化 ≥ Tmax,work + (10~20)°C
 
 顺序反了，你标定得再漂亮，明天都会过期。这句话规格书不写，它藏在良率里。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWTYoZETeBnMhgBFfNUF4xBlXh7tIO3Hh6ZVG0KlsKscx92XdUnXS5Z3UBrXNsD1bXOX5hRFHBpicybuaTrbW1uvdSjEA6ynUuo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e4f98113394173e655e85609525cbbcd.webp)
 
 04 / MASS PRODUCTION
 
@@ -235,7 +236,7 @@ T预老化 ≥ Tmax,work + (10~20)°C
 
 量产十万台，你没法给每台单独扫全温。可 **联轴器扭矩有离散、磁铁有批次差异、炉温有梯度**——每台的"不可逆底子"都不一样。共用一张补偿表，等于假设它们的保质期一样长。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUZqLjLECX0l30KZLBT5XqXLXlwGlBkiaRycUib2D0FS2LIp208R8rqzibGFkibiadCWUfa1DlvEOJjJpUQKic89vmseiaoE3UGyTJBKc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/174f97c6b999578933f53545a5dd3b18.webp)
 
 验收要守的不是"每台都能打到 ±0.1°"——是"十万台里最差的那一台，能不能打到"。
 
@@ -255,10 +256,10 @@ PRECISION HAS AN EXPIRY DATE
 
 — 知识卡片 —
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVdjyVXwNXaI7IONdTFuSgK1F9EsSuia10W9FqGqqFicBc9NNIs4XRdscichyoEpPC5Vsvr3m3mey4nyrU89PVZzPyglRYCJl0wdw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6d461851ed8afdb2efaaaa182e145d79.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWo3WyiaFGMIeQheMDleDxLdlkO84gJtCibT4MmnqjUaKUtF3zOt7RKFAyjwKiaWfdBGqsDpWNrthxlLULAUyl8MsHrcpVcbCuQo0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7f70c1d1a6dd5e56137cad120b82a693.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUcQMX0pkx9VOiaenMfwuicplKz4PMqOG9PU3ibrzx4zcJDrhsWjHyTicBDheKBeX9ITgRVOKggUV010QskCHoHgibYdfb9hbtf599o/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7d7b71a6bdfdaefb41bd3ed98a7f3026.webp)
 
 微信公众号｜如是有为 · KTM5900 温度校准手记

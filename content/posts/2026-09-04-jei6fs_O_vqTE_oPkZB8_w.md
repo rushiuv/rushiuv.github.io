@@ -4,23 +4,26 @@ date: 2026-09-04T08:00:00+08:00
 slug: "jei6fs_O_vqTE_oPkZB8_w"
 description: "弓望传感8月31日公布A轮，近亿元，蔚来资本领投，厦门钨业产业基金跟投。"
 original: "https://mp.weixin.qq.com/s/jei6fs_O_vqTE_oPkZB8_w"
+models: ["AS5147", "MLX90382"]
+companies: ["Melexis", "ams OSRAM", "TI", "Renesas", "厦门钨业", "弓望"]
+tags: ["磁编码器", "电感编码器", "非线性校准", "稀土"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWL77mGOsISYL3MPMN8ibz3HxnM0C1T7Hk2LrjWj0Sr8TTaqE66LSbgMBuFapghfLVKpfYavyia4ykytN3eEJBvhmjB81d1kEe7E/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1a0fb1b54ee4e428f3731463c162a0e9.webp)
 
 ##
 
 ## 厦门钨业跟投弓望传感：从寄生电容到 0.1°，电感编码器真正的 EMC 硬仗
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVicXq1d5KNeTLia3fIyIgzGFLweNpvGibQLnfey4QhiaRUvWricWnoed9ZHWIBicQkibTrPS3F7Ts9KR8Em1ia60LU9yKuwU6q7u6VQWo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ab6ea9160b5cd9bb9978014661f1ee21.webp)
 
 弓望传感8月31日公布A轮，近亿元，蔚来资本领投，厦门钨业产业基金跟投。
 
 厦门钨业是卖稀土永磁材料的，还参股了**势拓伺服**（永磁同步伺服电机）和**势拓伟鑫电气**（永磁电机驱动器）。这次跟投的弓望传感，产品却是**电感式编码器**。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX3jkFic59cduGG4gwDUPiau6xNmvSplz5xacf0as3Qj7ziaMKkMlNfK4YictCF7PkHFYLCicyC9s4F8rvu2c8icdjYO9ibTGOOzGbrlM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f984e63d388006c82d645321f788361e.png)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVlWCfDiaORraQicHtGXJZooiakNknk5BJHYZ8Xia8acN0BBWqyU0XPuR1YFhYOaBR2v5ibvs4wIcicTRRgibc2oyGyFDNeibOe4bdn9rg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7bdec22c4410f516eb04c98d9037286a.webp)
 
 **厦门钨业投电感编码器是不是为了绕开自己电机的漏磁**？我没找到一手证据，但磁材料、电机、驱动器、编码器摆在同一张供应链地图上，我这个做磁位置传感器的，想把这条链上真正的技术账算一遍。
 
@@ -40,7 +43,7 @@ original: "https://mp.weixin.qq.com/s/jei6fs_O_vqTE_oPkZB8_w"
 
 常见工业伺服驱动器 PWM 频率 16~20kHz，比几 MHz 的载波低两个数量级，单看这个数字似乎安全。但这问错了问题——该问的是开关边沿有多陡，不是多久开关一次。边沿越陡，频谱拖得越宽。工程上可以用一条经验关系粗估这个边沿能甩到多高频：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4YyDiaBccP8bEzrqACXUrppxnHYwtIdeGlvFslibvJH9ALDk3Fe3vswfrH6vk2ekuMrDB5mgrfy8h08J2CFmBqMukEk1KDH3oafMMiaQSMJkiayA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/90103f08f41f5f1c3d415f4cbbe5549d.svg)
 
 这是单极点/高斯类系统里 10%~90% 上升时间和 -3dB 带宽的对应关系，回答的是"响应到多高频还有意义"，不是"频谱在这之前存在、之后消失"。拿 30ns 这个 SiC 器件常见的边沿量级代入，BW 到 11.7MHz——已经进了电感编码器工作的那几 MHz。这不是说频段一定被"覆盖"，是说这股能量确实有机会跑到那附近，值得继续往下查。
 
@@ -52,7 +55,7 @@ original: "https://mp.weixin.qq.com/s/jei6fs_O_vqTE_oPkZB8_w"
 
 功率器件每开关一次，母线电压跳变一次，这个跳变通过走线之间、线圈和机壳之间、连接器引脚之间到处都有的寄生电容，往任何"看得见"这个跳变的导体注入一股电流：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4iapibFWibfdEOejJJJDkWIicsmVPyxxzjvmLicnl26etyPNa3vS9dQ4ib9E8KprzX1iaADibaoKzRNiaiaBVXBWU7dhvEvKvZTwzM49PAhamicUlTvklyA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/9f245f4ac1d54bae870ce2a424f200a8.svg)
 
 耦合电容哪怕小到 1pF，配上 50kV/µs 这类现代快速开关器件常见的边沿斜率，位移电流尺度已经是 **50mA**。这是这条寄生支路扛下完整这个 dV/dt 对应的电流量级，不会全灌进编码器接收前端，具体走哪条路径取决于整个共模回流网络——地、屏蔽、机壳、连接器一起说了算。但这数字说明 pF 级寄生真不是能忽略的东西。
 
@@ -60,13 +63,13 @@ original: "https://mp.weixin.qq.com/s/jei6fs_O_vqTE_oPkZB8_w"
 
 **这两个数字有一处要说清楚：它们是开关边沿那一瞬间的时域峰值，不是同步解调真正关心的东西。** 同步解调是个窄带操作，只认编码器载波附近那一小段频谱，不认时域上的瞬态峰值有多高。要接上后面的解调，得把这股差模耦合电流换到频域：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6sBDEiaW9edzRIBKgKRuUMbd7GKD5j9tcCFWcWa8jbYqJMrPLES77eaZE8aicrl5VIcBuPHuM1DyypS7g93S8iaWibbRh7q93lPQxPLtYO5Hr2sQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/52626e985dee3727fa2d6e08be046036.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5YWmNicic1s34qdpiaAibXjHG50qsKo1NKFl9ial1l69EA72IlT7hDEcyobUSltbNBZ0fbYbgNQGchvdicIAyt9hl42M1SFeyj8NicaJ78IicfMfn18A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3d5d7fe0b0c7a459f0ac1697c9167828.svg)
 
  是开关节点电压的频谱，含开关本身的谐波和边沿带来的宽带成分。**真正决定编码器会不会出角度误差的，不是 50mA 或 2.5mA 这个瞬态峰值，是这股耦合电流在载波附近
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5hnBkHfP0CJCKKTHfoiatS39OShcsy4icvvSF9CyvRqHCtZW5t45KwTZVGyQ8DTGQALVMQr7o8EJqAHCNdjlibEjgUmqHAyXkflEp2uAwNibhzkg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/4db526744e7d00383de9363a514d4409.svg)
 
  处还剩多少频谱分量**——这才是下一步同步解调真正要处理的输入。
 
@@ -76,47 +79,47 @@ original: "https://mp.weixin.qq.com/s/jei6fs_O_vqTE_oPkZB8_w"
 
 假设一路干扰频率是
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5jzgrh4c6fYIggHuEMFleFNxjib9ZiaT3lszGlhecAXvxtd1gGsd5VCHMOe1ic5vib85jFgGCtu0zWw8ArdTRFlWluibvgKCUuREX69aW2pGRN6Lg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/cf58ef9a8606fbcbdc2769d7283f8cda.svg)
 
 ，拿它和本地载波相乘：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4tjGHibgxCibRrj7jtVcSLbSMZPR8MnbFToWmwr3iax6Coo1KQBXPTCFCSfiaE0cyOESvF7pmj8LkYicomNBOBjFJHzZg35eic2KzI0U2uugrlypMA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/d9e62e14013270b4be653bdf2c77ccfc.svg)
 
 和频项在
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6mZ7BbYxoZDbxtVr4zZPIA9ia5DGCIFnI8xRlUu9HRdakF3TEC3GX1m2AOiaparloZFV1OdTI7ic68FezxwbnNhPyFyGROwI5e0zRK94icpdF7Zg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/aa7f6d40ea5c9c48a6a36dab966c7334.svg)
 
  附近，被后级低通照常滤掉；差频项如果 Δf 只有几十 Hz 到几 kHz，恰好落进低通的通带，跟真正的位置信号待在同一个频段，原样留了下来。这不是干扰混进信号里等着被滤掉，是解调这个动作本身把一团 MHz 级的干扰"搬"到跟真实位置信号一样的频段，伪装成一段正常的位置读数。
 
 把前端带通和后级低通串起来，真正落进基带的干扰幅度大致是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5dgSiaOprb297ibuPepiayKqk2oiaGoOdGibaY4gEPB8kAiaoMbibniaz5jD09LYMv6VD5HhKH9VWspyYgQFpsUjG6knZkVXXV0PAgvY2osLy980AaEw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/d1a392435076b91e40c34947cc4b6eac.svg)
 
 真正该问的问题，从来不是"驱动器有没有几个 MHz 的宽带 EMI"，是"载波附近这一小段窗口里，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7dZTia5V0kZOj4Fia5u1JjY55pxpS3oT9KTjC6NGTMFNLBIpia6xMzvrK0ibl313jpMkcDSyiaW0KsfPYfsA9v5oQNdSvibFlhFrcwSoX9WzDzPpcA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/efc676c9cb22fae410c15e67916b49fb.svg)
 
  有多大、BPF 压掉多少、LPF 又压掉多少"。这已经是产品定义层面的东西，一句"符合 EMC 认证"糊弄不过去。
 
 这团落进基带的残差，最后要过一道运算才变成客户拿到手的角度：电感编码器靠反正切解出角度，
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4V3PTwbzsu0gv4Mr4sLiaoJib05d3oDBU6hJ3gpEIoL5DwyUicvWlPruZbo8PZwcAOIic68Yhe4xKAe69ZVfH1zA3pPZsG4yZUxxqEa6ntHGic5Cg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e99085baa6a6bf5a8175527e6c35b0ff.svg)
 
 如果 S 和 C 上都叠了点残差：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7SSkexmCkSgGZQomP4icGjiawGjwFz3RsHoaaTSLVU29MhcWZibyOVN7jAdfDeI93EibfoaBAB8uYs5pA1SRrlMVKOg0TvYRiatU4nKe7VI5Lo38w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/8964de5d41edff2bc2d0ea97be50e56d.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7uyU6TCBbhDyZDWWbYdb7QEichJwmZHYgR3eoIWxCZgOb3icoxYb90iawN50fBh74LBe4bp5fbU6icHbQSV5vicY53MFK3DE4cADIPmZGh8GeJUjw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/a00048ff72e6c3943a7b4f4297eb1f3e.svg)
 
 对 atan2 做一阶展开：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6WLYeatm6741FkT5EdwKiby4DuOaH8HDCze9JjA9014hvdDicmcaelibxgseNBt6XJicbcMIMDMQicmianPql61tvedOv4vHeoaQ7xKJa5gl06eOhA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/90d7902283322c5eccd375b891b5e2c3.svg)
 
 **这条公式的分子，是残差向量在圆周切向方向上的投影，不是残差的总大小。** Sin/Cos 可以看成平面上一个长度为 A、角度为 θ 的向量；残差沿着这个向量的径向方向走，主要改的是长度 A，也就是信号幅值；只有沿切向方向的那部分残差，才真正推着角度走。
 
 这解释了一个容易让人困惑的现场现象：有些 EMC 注入把 Sin/Cos 波形弄得很难看，角度却没怎么动——残差主要落在径向；另一些看起来波形只歪了一点点，角度却突然鼓起来——残差恰好落在切向。不管径向切向，0.1° 换算成弧度约
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6l4yMVrlgKrfbpb92zVaaPDSic0Kaerhkqds7XY8fB9mibIDLKXYJr4ndKS8QYU8RvDib1LychkBX82ccX07Xia2iaCtH4U0sv58xBQKW6iaArBytg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/f98954a3af8a4f8eb57edba13b14a2d0.svg)
 
 ，最坏情况（残差全部落在切向）只需要残差幅值达到信号幅值的约 0.175%，就够产生这 0.1° 的角度扰动。
 
@@ -146,7 +149,7 @@ original: "https://mp.weixin.qq.com/s/jei6fs_O_vqTE_oPkZB8_w"
 
 **源预算（Source）**：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7ibkYES7d18NYOaeU3qsEWV7hW7hibNuwEyE5Ac5iaHu3Y04HUxj5fqpXXh4UUPicTGxvXogw4P5Yov8MKX5LkqKUba6KC8yEfHP4a2sr2JhOQlA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/6fa6ae823f6ee00d5c2f571d701ef60d.svg)
 
 、开关节点频谱、振铃幅度。
 
@@ -154,11 +157,11 @@ original: "https://mp.weixin.qq.com/s/jei6fs_O_vqTE_oPkZB8_w"
 
 **路径预算（Coupling）**：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6VbeicszgHhozrIV6KE2ic4nMSbkyiaCAlK5v9eiaCicQeHQx6Ibwm4Zw2FkcMU3SSRpd6NsZcN4SpZcplBDLvFAAkjX6wsDmKvAF0gjZIOD5Liavg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/860a5eb0bba3fa962ecafeb991314ec2.svg)
 
 、
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6icv5gNAe3wDDkmnGmxCcU2Nv9Z3VqvB2OF1L1VAZ0osAib21AibzSQNeiaRHpgPElgtLkcT3dldvia3HACpMFOucEFSNz95epYqxJjJ1ibCWn7YVw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3ae8ea58105233543340087c666b321e.svg)
 
 ，加上真实系统里的接地阻抗、线束、互感这些约束。
 

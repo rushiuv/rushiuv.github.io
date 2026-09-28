@@ -4,9 +4,10 @@ date: 2026-07-30T00:00:00+08:00
 slug: "5h32-dOjADUS2mXFXxDFBw"
 description: "屹晶微专利CN122306120A，让它在撞上 ADC 满量程之前就预判"
 original: "https://mp.weixin.qq.com/s/5h32-dOjADUS2mXFXxDFBw"
+tags: ["磁编码器", "ADC", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW8qyibxicCa9mh6Kl6kU7KgL0qsoDtD1M0294U3ctwvcX3ufkVX9SCcg4vLE5pne0avHJ2lZw71IDpBzo4QtdiazQ50VmrhnnbGU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/62633e6acca088637c6a139c2c2d4cd9.webp)
 
 编码器 · 位置反馈 · 芯片
 
@@ -26,7 +27,7 @@ original: "https://mp.weixin.qq.com/s/5h32-dOjADUS2mXFXxDFBw"
 
 AGC 的真正目的，不是把幅值调得漂亮，而是绝不让信号碰到 ADC 的轨。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVVsYXECKroGKhrpNxpt8d4datcw8wQkgicsEw9icAia9PICnkWmV82VOcvZ1eiamPxEp2JhYrzKNFvJPaaFmUdEgwjdicR2GBwYz4A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1e8dc124d4487f591a4de48eed157fbd.webp)
 
 ### 传统 AGC 的病：它是“事后诸葛亮”
 
@@ -36,7 +37,7 @@ AGC 的真正目的，不是把幅值调得漂亮，而是绝不让信号碰到 
 
 现场表现往往是电机突然报故障、停机，但坏数据只持续几十微秒，普通示波器触发未必能抓住。于是故障看起来像“偶发”，实际上是 AGC 动手得太晚。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXibOW4TIG5mkwQoiciaRYuuguLw0rLknzzhUVUUDIX6YqM3lqiahwiaqmxDEoWVSqbj3cSTLXtrAnhOGyJICI7SweR6B2kubLTg6fY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c567d5dc2d7fe8fed0a6d0a7f96e78ea.webp)
 
 ### 屹晶微的做法：预测 + 稳定区间
 
@@ -52,7 +53,7 @@ AGC 如果只盯着一个目标值，信号在目标附近稍微波动，增益�
 
 因此再设置一个上下阈值区间：幅值只要留在区间内，增益就保持不动；只有真正冲出区间，才重新调节。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVeVrib8icbxhibbqgcnjc716x8ibVrcnvXl5FeDaBljfggEcOcVdvSArEfL0SgtdLpg87raPv4C5Xjiceic7sRCur0wgL69gkqNBRrs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5fc2116a1be4a1208eae2789c67b8f45.webp)
 
 ### 翻译成信号链语言
 
@@ -62,7 +63,7 @@ atan2 本质上看的是 sin 和 cos 的比例关系。只要两路信号被同�
 
 预测层解决“动作太晚”，死区解决“动作太频繁”。两者缺一不可。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWZ9X0U7asTw6VibZVjyE9NTSxgcwQXtLW07TnSuFicSvWG02y4devjnKE1pLvaBk9iakoibibN2XFBNibqBKKA1IVvy1FJ37lPn2joY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/417bde7a336b624c230a94edd98a6266.webp)
 
 ### 代价与边界
 

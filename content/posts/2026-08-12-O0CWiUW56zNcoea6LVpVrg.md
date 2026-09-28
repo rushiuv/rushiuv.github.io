@@ -4,9 +4,12 @@ date: 2026-08-12T00:00:00+08:00
 slug: "O0CWiUW56zNcoea6LVpVrg"
 description: "很多伺服团队验的是“角度准不准”，客户最后投诉的却是“电机叫不叫”。"
 original: "https://mp.weixin.qq.com/s/O0CWiUW56zNcoea6LVpVrg"
+models: ["KTM5200"]
+companies: ["昆泰芯"]
+tags: ["非线性校准", "AMR"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX1AU5M37nyWFgAiaqLsmoGClFVuWtS1DgibKgu0ozV5hPXcFLIgIMmxiaZIpn7RLyVlIanUWc0TgrzzcnmhFk8Vrx2XR5bHGpt1g/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/156d44254d10d0e4f4850d5e63355708.webp)
 
 伺服工程实践系列
 
@@ -30,7 +33,7 @@ original: "https://mp.weixin.qq.com/s/O0CWiUW56zNcoea6LVpVrg"
 
 客户的耳朵，不认识 ±0.015°
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUxHoaK0arEl8anUPwtB9uyrZposjrZ31UI4rbsnSPhorWrTnXhL9TZGBYOcqwJrASADeXuU6K940hfdvcLiaOibiaV3hGJZicvyRI/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/5ca496f90530a3ec37e407c7f56ef895.jpg)
 
 有一次排类似的低速问题，我盯着屏幕上的角度误差，第一眼其实没觉得有什么大事。误差不大，没有跳变，通信也干干净净。
 
@@ -50,7 +53,7 @@ original: "https://mp.weixin.qq.com/s/O0CWiUW56zNcoea6LVpVrg"
 
 先别拆轴承，先看阶次
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWDYhoc630cnbfrXyCicJq73tWKqS4ElW9wxibhNROGZkIqgspCvGGULB5grOgJzoOEUYGpSguq4TjNrjgR8TTnanO3ZVJZiaMk8w/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/8b7e4a72804a80c8c8bc8fd6795f5c45.webp)
 
 这是很多人理解编码器时最容易漏掉的一层。假设编码器一圈的位置误差只有一个很小的周期波纹。站在编码器工程师的角度，我们很容易问：峰峰值多少？INL 超没超？
 
@@ -70,7 +73,7 @@ f = N × rpm / 60
 
 一圈来几次，就会变成一个频率
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUo6MxAWyyqibaVL9orlHnBA5NcxyA3A6s0eZ85vaDLYJqoDia1Yq5ic48XJjZmd6wVzJUITDHcfv9SnJSEiaCpoujicFuAeuPRuzEw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/5aee792b92ab6f5cc674873ea1671945.jpg)
 
 很多现场排障，真正值钱的不是一上来就找到答案，而是先把错误的方向砍掉一半。
 
@@ -80,7 +83,7 @@ f = N × rpm / 60
 
 我接下来不盯 INL，我去拉 Iq
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWdGH4fP6EsLibwSokdjSGfHXR9u9NhUWpGPn6JRRLMpsnwt2N8fLrC4NCAgu9lsBohgwnjg5L0ticUemISmClib6g9dvOAut8QqI/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/3423218e371931b6520f3ec05ebaf08d.webp)
 
 接下来我不会继续死盯 KTM5200 的角度曲线。我会转头找驱动工程师：**“把 Iq 给我。”**
 
@@ -102,7 +105,7 @@ FOC 要拿这个角度做坐标变换。假设编码器给出的角度和真实�
 
 三张图，突然开始讲同一个故事
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVO5YEerZozFxRvN7451TibMyLPAs854vVl85e0nhhmiaul3EGVwdrDMD6occ49xVOn5Kzm08k35WQutKTJm9PMxc8oF9144Obkg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c3fc082e2940f4b9fd855bd706a5630f.jpg)
 
 真正让我兴奋的从来不是某张图“超标”，而是三张完全不同的图，突然开始讲同一个故事。
 
@@ -124,7 +127,7 @@ FOC 要拿这个角度做坐标变换。假设编码器给出的角度和真实�
 
 别只问误差多大，还要问误差长什么样
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXclctegrE01YgPsVBZDxh3Cdjia2WLwH7nRYjGbf6CPheZ7ic2IJGPBIXx2voJHq4s7kiaTq8fRctd2GhZe45icrJy5gmCuJJQU6I/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/519bf61b87e9b6d21e345c6984cdd431.jpg)
 
 这也是为什么，我现在看 KTM5200 这种高精度编码器，不会只盯着“±0.015°”。
 
@@ -152,7 +155,7 @@ FOC 要拿这个角度做坐标变换。假设编码器给出的角度和真实�
 
 高精度编码器，最后交付的不该只是一张 INL 图
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWYNOqNkmVy4bibiclPN8oVhO7g8GqpVfH9Rpwm1h31p3DhsNZONibpcx57EtZicy1JfPoxA0YpVQXXbC6k5JcxOMicIqKbddpU63YA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/13cd7532d23209a0546b10181243c826.webp)
 
 所以现在如果让我验一颗准备上伺服的编码器，我不会只保存最终那张 INL 图。我的文件夹里至少会留下三层东西。
 
@@ -182,7 +185,7 @@ FOC 要拿这个角度做坐标变换。假设编码器给出的角度和真实�
 
 补充一点基础知识:**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUTs1FKibzIyKI6K55uJx3cjNZVb0rXzgzkhVzhDiaTT8AG9TI60wkRr9QicqXyC9Lb0exXukjLdjawwnUlABz9SibAsfF5NOkzwPo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d4c6d2d91bf224e84484b5b4fa7adc6f.webp)
 
 产品事实依据：昆泰芯 KTM5200 官方公开产品资料。文中系统链路用于解释工程验证方法，具体伺服表现仍取决于电机极对数、电流环、采样与机械系统等条件。
 

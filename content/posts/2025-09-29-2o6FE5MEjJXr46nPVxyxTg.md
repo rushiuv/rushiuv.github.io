@@ -4,11 +4,13 @@ date: 2025-09-29T00:00:00+08:00
 slug: "2o6FE5MEjJXr46nPVxyxTg"
 description: "香港这次不是救市，而是改造自己，把全球资本硬生生接进中国核心资产。恒生科技疯涨、中资蓄力、半导体企业排队赴港，资金南下破纪录，投行纷纷回流……这一切全都在说明，资本水管已经接好，水压正越来越大。对于普通投资者，A股的恒生ETF是钥匙，而港股…"
 original: "https://mp.weixin.qq.com/s/2o6FE5MEjJXr46nPVxyxTg"
+companies: ["希磁", "中芯国际", "华虹"]
+tags: ["AI", "投资"]
 ---
 
 香港这次不是救市，而是改造自己，把全球资本硬生生接进中国核心资产。恒生科技疯涨、中资蓄力、半导体企业排队赴港，资金南下破纪录，投行纷纷回流……这一切全都在说明，资本水管已经接好，水压正越来越大。对于普通投资者，A股的恒生ETF是钥匙，而港股科技、特别是半导体，是未来十年的财富爆点。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySVMNgP9y2GqKWjGdgmAByozFlpcd2icRLyTMhictytMjDDFVFCtcssiap3ZGp233S8rUTcRcMTY1gAA/640?wx_fmt=jpeg)
+![](/images/wx/69e90cd8e781f924af02215a43d6fb65.jpg)
 
 阀门一扣死，资本哭着喊着也得钻
 
@@ -76,4 +78,4 @@ original: "https://mp.weixin.qq.com/s/2o6FE5MEjJXr46nPVxyxTg"
 
 香港这座城，从今天起，不再是资本的中转站，而是中国和世界财富的汇流口。错过这波，可能比错过十年前的房地产更惨。那时是中国人自己往楼市里挤，这一次，是全世界的钱跪着往里钻。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySVMNgP9y2GqKWjGdgmAByoVCcHPlS19Iiasq5ehSwLpCN90mqmaZrsCwokm7S0MvE77EC52Kp4V8w/640?wx_fmt=jpeg)
+![](/images/wx/55e84e73e4b028f0a8b4770dc1b60290.jpg)

@@ -4,6 +4,7 @@ date: 2026-09-17T17:13:00+08:00
 slug: "N6UjxjbJVunqwGkbduIK7Q"
 description: "离轴磁编 4.8° 到 0.6° 的那一步，不在算法里"
 original: "https://mp.weixin.qq.com/s/N6UjxjbJVunqwGkbduIK7Q"
+tags: ["磁编码器", "离轴", "专利"]
 ---
 
 工程拆解 · 离轴磁编码
@@ -33,13 +34,13 @@ original: "https://mp.weixin.qq.com/s/N6UjxjbJVunqwGkbduIK7Q"
 
 内圈是一只单极对永磁环，给全圈一个粗略但不重复的参考；外圈是一只多极对永磁环，把一圈切成许多小段，负责把每一段看细。粗角告诉系统“你在第几段”，细角告诉系统“这一段里走了多远”。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUvkRyPg9QTsmic8iaiahmU8OzeacwnVLfOwptfHEMHWnQcx9Ozrmze81fXqbgBwicw0ZxyMxBAGxHGE5Rm7cu3WuUnbXGn531ORKo/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/9f3dfa4279b70be22164a2eb9b7d6746.jpg)
 
 按 CN122708631A 公开结构重绘：内单极对、外多极对，中间为软磁隔离环。
 
 上图按公开结构重绘。红蓝的内、外两圈是两只实际永磁环；中间灰色那圈不编码，它是一只软磁隔离环。上面的芯片读内圈，侧面的芯片读外圈。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUiayqibBPYdBiaU1G7uASYC8NibnnVx2YO4F2RRlg6PYXLiaLhzZ1pHNTJ33KEibRP7FcPQm2BZjASlYARdUnlxXW81RweD585Lib8Jg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/7618bb3c5f05de95ec0a58e68de07c79.webp)
 
 CN122708631A 摘要附图：21 位于内环上方，22 位于外环侧壁外。
 
@@ -59,11 +60,11 @@ CN122708631A 摘要附图：21 位于内环上方，22 位于外环侧壁外。
 
 空气不好导磁，软磁材料好导磁。它不是硬把磁场挡住，而是让漏磁优先沿着低磁阻回路绕回去。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUkhSmibLUa6ej2ibDppZf7fWWrFvDWNBn2EFpymFKj89oH8gtvznia3p7CchYXicULPHMJhIwEibN3vfO4P6nrPF9vlguY2EicPW26Y/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/816f310b59671bbe7e2b3c8ffec1e715.jpg)
 
 按专利图 5 所述场分布关系重绘，用于解释磁路；非专利原始有限元数据。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXueeCY8uMymcyqfzicSfVOfqx87iaqpcDOjAsh6D2wlZAjiblkD1FuhecOUAJx6DFkiaeumAnEyUiazSRliaE2ogJDF47rkMofEV4rA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/da40182511e146c27f15a8415594853b.webp)
 
 所以，它更像双磁环之间的一条泄洪渠：水还在流，但优先被引回该走的河道，不再漫进隔壁。专利才会同时约束磁导率、高度、分段和叠片形态；顶部或底部留出的空隙，就是磁通仍可能绕过去的入口。
 
@@ -73,7 +74,7 @@ CN122708631A 摘要附图：21 位于内环上方，22 位于外环侧壁外。
 
 专利把收尾动作依次写成：去直流偏置、幅值归一化、正交校正、谐波补偿。这个顺序很重要：先找回圆心，再拉回尺度，再扶正坐标轴，最后才追波形褶皱。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXu1VO6Isd1apxuUxIiciciboPu42g44jiaCAnn09D3ZksRLtuXzOE1p8HXpDic3MLrYXKJS7gdwIyrlCjQUIP21bm90WicUgW0zKFuk/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/a5bd0caa8d2a066b6f49ba0568f67add.jpg)
 
 按专利图 4 与说明书所列预处理链重绘；非专利原图。
 

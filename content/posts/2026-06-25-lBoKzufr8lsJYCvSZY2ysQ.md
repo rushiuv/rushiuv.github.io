@@ -4,9 +4,12 @@ date: 2026-06-25T00:00:00+08:00
 slug: "lBoKzufr8lsJYCvSZY2ysQ"
 description: "追觅 X50 Ultra 最容易被用户记住的，是 ProLeap 机械腿越障。官方资料里写到，ProLeap 系统可以越过最高 6cm 障碍；Dreame 全球官网还把可伸缩机械腿、20,000Pa 吸力、VersaLift 降低机身高度和…"
 original: "https://mp.weixin.qq.com/s/lBoKzufr8lsJYCvSZY2ysQ"
+models: ["KTH5701", "KTH7823"]
+companies: ["昆泰芯", "追觅"]
+tags: ["磁编码器", "霍尔", "编码器接口", "AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIX01XCbCzNUOWRSylbKMCzU40YibzbOBdVjqcsF7VqFDmna2USyiaBiaHHX6mZkqibhf1X6EQ2iaN3Vo49QAeib0GDbtQ6uhJp4unTicM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/dc0098917e2bf4104c365ad1a31a46ed.webp)
 
 ### 追觅 X50 Ultra 标称 ProLeap 越障 6cm，但轮端编码计步一旦被打滑和减速箱背隙污染，会导致地图修正频繁、回充姿态偏差
 

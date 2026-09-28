@@ -4,11 +4,14 @@ date: 2026-06-24T07:07:00+08:00
 slug: "HJPIXnlW8de50eK1YTZoww"
 description: "我见过一张机器人关节角度传感器选型表。第一列写着\"磁阻传感器\"，下面列着昆泰芯 KTH5900、Infineon TLE5012B、NXP KMZ60，旁边还有 ams OSRAM AS5600。"
 original: "https://mp.weixin.qq.com/s/HJPIXnlW8de50eK1YTZoww"
+models: ["KTM5800", "KTH5900", "AS5600", "TLE5012B", "KMZ60"]
+companies: ["昆泰芯", "英飞凌", "ams OSRAM", "TDK", "NXP"]
+tags: ["磁编码器", "非线性校准", "TMR", "AMR", "霍尔", "ADC", "机器人关节"]
 ---
 
 ##
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUwiaPlbEg4uKQp3WJZM2KWS9icica4qUPFGjQlh5OJSl7ibtRVFRlY17iafQnnRTlKJe6YywptrT9jwJqoXUrJtibu1pGictHdc1aHzk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2201c730d97d38eff6d5e6f446bb18dc.webp)
 
 ## AMR、GMR、TMR，不是“磁阻三兄弟”傻傻分不清楚
 

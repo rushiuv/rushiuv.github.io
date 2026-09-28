@@ -4,9 +4,11 @@ date: 2026-09-05T08:00:00+08:00
 slug: "u-pmkrKvcdLI98_nhmaDmw"
 description: "我觉得这个问题问错了一个字。不是“多远”，而是“哪里”。"
 original: "https://mp.weixin.qq.com/s/u-pmkrKvcdLI98_nhmaDmw"
+companies: ["昆泰芯"]
+tags: ["人形机器人"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXCEic2J8cjbM07DlZRHt1tpHcyx4uwzs5U5TyrPFlFicMgp31jnkPazdW8zpibMNnmY3MZVjhZLNexUFB8LwKhCPapicVTSUZTrcg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/96b8c95998927ec9f293f57115553dee.webp)
 
 ##
 
@@ -40,7 +42,7 @@ original: "https://mp.weixin.qq.com/s/u-pmkrKvcdLI98_nhmaDmw"
 
 假设双足方案比轮式方案多出来的生命周期成本为一个量，环境改造以及获得更大任务覆盖带来的价值分别是另外两个量，那么真正的决策边界其实很简单：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7JChLu9QXwPX6vxzoYU6McWGZg0PQTt9ereC26zvfjrbOTbuicLP0k3986ic2m9O5zOHXVhX6DhVMcrRWR0VK6jQNoJNKJiayXDmpdYD0zLIbQA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/7a165ab1759805629cb58d944cb70cf7.svg)
 
 左边是“坚持做人形”要多花的钱；右边则是“不做人形”以后，为场地改造和任务受限付出的代价。
 
@@ -70,7 +72,7 @@ original: "https://mp.weixin.qq.com/s/u-pmkrKvcdLI98_nhmaDmw"
 
 最基本的机械功率关系只是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5VmtgKOhVcpjHXb5SA92bOTCUXfrFpYG9VZCoqWfcdwo0Eq9FoqSCSsE9iajyWvYfoD8lxotLgCqtK7WQsJDDAibRgNiaum8iczrXaswKTslGT5A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/bf4ee50829ac77c9128aaba294744b71.svg)
 
 看起来非常普通，但放到腿上以后，麻烦在于扭矩和转速都不是平缓的。
 
@@ -99,19 +101,19 @@ original: "https://mp.weixin.qq.com/s/u-pmkrKvcdLI98_nhmaDmw"
 
 假设一个关键关节在一个给定任务周期内可靠工作的概率是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7qks3jr8VoPr9nzALibRzNXUvpFojNQbg2APETx0DyLmOg95bk3icLEgG1H8cbBa5fFc1hIJppcyR2XJPjibMbLOfWpymebrGia9q3MMv96EKusQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/0269ed0b7782ab96cbd32a1cbe0e67fc.svg)
 
 如果一条运动链里有多个关键关节，而且先用最简单的独立近似，那么整条链的可靠度会近似变成：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5hKwWPuovPSk27HSOKicicJdQsewWnJlPvpHVlIDiaAPLP6yNBtjsD9BtUNcmmHeIKOqp2jm6H3NrpsaklGhf74sM8BaibA81JahtiaEebyic6hMvA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/1ee48363241457772f0e6180a1deef9c.svg)
 
 假设单个环节已经漂亮到：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6GXVpk5nDhYYjibBzo9dLFmY0aVuup9ic33WBbaCSmmhpza1LLMUZ5BwAMxBfibBbHffDpccQQgQhF8DX47zetfp2F54TSvkGicLnwianRAUZjN3A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/0b72e3e9cd682a5c1b4135d56af91c3b.svg)
 
 12 个关键环节组合起来：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM58Sb1Wic5lr4Zj3sXqM0j7tDkQXvQjR26SqOx9styay74kBptQg8RUxIevibTnpBzoicJGU8ZuBSH3Z9M6BmdxCWa3DYpYWibMBD40WkyibwicrBRQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/5c4974a1458781ea23cd970c8a27d568.svg)
 
 这个模型当然非常粗糙，真实机器人还有共因失效、软件容错、冗余和降级运行，但它说明了一个很重要的工程事实：
 
@@ -135,7 +137,7 @@ original: "https://mp.weixin.qq.com/s/u-pmkrKvcdLI98_nhmaDmw"
 
 一台几十公斤的机器人，质心距离地面一米左右，仅仅重力势能的量级就是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4sLEJY3bVQia9kvcZUgcYseZdMrxJvroojYOia2nnicgrtkB2D4MdRQia5s4COa0QTV0xQ71A6tqQLeJbCU003LLPp3PCFTwKiaFwUS6DTBSLRXyw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/6505826a1be01531bbc33cb142855ef4.svg)
 
 60 kg 的机器人，从 1 m 的质心高度跌落，理论势能接近 600 J。真正碰撞还会因为局部接触、姿态和运动速度产生更高的瞬态载荷。
 
@@ -161,13 +163,13 @@ original: "https://mp.weixin.qq.com/s/u-pmkrKvcdLI98_nhmaDmw"
 
 最简单的二维连杆关系已经能看出来：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM56p2yZk0OxOFK92ovs1BNtCjHHVsFXAAFteHKPc4hyBKXz5C8uCPqW9sdX7SdXeU0TDPECCM0CSRsR9qaiadHlUIlvEEILj4go6JISicEIFjhA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/6ca86fecfe8e14fa310ff019fa7dfd5e.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5QzUTKYQozFMicp5awklgUck7VBHhXMD7ibXavrUXDXvTunn6FicPq2cVxCTib6kroliafqUrwy5R4AZIiaHl7vUSQpmXI804RNGllibm8gia4yh827w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3f646ca37595e53fe6f15e16e9032396.svg)
 
 角度误差进入足端以后，本质上服从雅可比关系：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5YWmNicic1s34hIhYj0GYSR0ia8j9lFc4MNvhClsf4hrPw35vBoZ8cZPL4vkTmZEsZdB6vUGBuBUFPiaRt8iaCYyQhqbwoeNY1Ds20wThiaCFVTdhw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/a155710226680d64195a8975d9b833ac.svg)
 
 所以机器人关节多以后，“每颗编码器差一点点”并不会简单地停留在每颗编码器里面。
 

@@ -4,9 +4,12 @@ date: 2026-08-08T00:00:00+08:00
 slug: "CNLQBBcIOZmkeTdoeUUazQ"
 description: "ROBOTICS / POSITION SENSING"
 original: "https://mp.weixin.qq.com/s/CNLQBBcIOZmkeTdoeUUazQ"
+models: ["KTM5900", "KTM5910", "KTM5200", "KTH78", "AS5600", "MT6835"]
+companies: ["昆泰芯"]
+tags: ["非线性校准", "TMR", "AMR", "ADC", "人形机器人"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXCHh3qLldnibI8WzEyyONHkTyz4aU7gb7fTicdTDPJqBd9ReiaWXI3IIRtYoLdyRbpnI8gQhFpL05qWQHehM95XMQ4XPKOutO1SM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/15cb7db287110db75f73b61577ae358c.webp)
 
 ROBOTICS / POSITION SENSING
 

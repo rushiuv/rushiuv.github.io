@@ -4,6 +4,7 @@ date: 2025-11-20T00:00:00+08:00
 slug: "15MdTRCykibWRqL8Kyg5kQ"
 description: "搞芯片的，今天这条视频可能有点扎心，你自己看着受不受得了。你回头想一想，你这几年到底 tape-out 了几个项目？ 再想一想，你自己这个“人形芯片”，上一次换工艺节点，是哪一年？别跟我说你很忙，28nm 到 7nm 都踩过。 说白了，你就…"
 original: "https://mp.weixin.qq.com/s/15MdTRCykibWRqL8Kyg5kQ"
+tags: ["芯片设计"]
 ---
 
 搞芯片的，今天这条视频可能有点扎心，你自己看着受不受得了。你回头想一想，你这几年到底 tape-out 了几个项目？

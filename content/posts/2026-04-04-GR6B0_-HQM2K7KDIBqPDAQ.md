@@ -4,6 +4,7 @@ date: 2026-04-04T20:46:00+08:00
 slug: "GR6B0_-HQM2K7KDIBqPDAQ"
 description: "磁编码器通过旋转磁铁产生磁场，由霍尔传感器阵列读取正交的正弦（Sin）、余弦（Cos）信号，再经ATAN2算法换算得到旋转角度。"
 original: "https://mp.weixin.qq.com/s/GR6B0_-HQM2K7KDIBqPDAQ"
+tags: ["磁编码器", "霍尔"]
 ---
 
 磁编码器通过旋转磁铁产生磁场，由霍尔传感器阵列读取正交的正弦（Sin）、余弦（Cos）信号，再经ATAN2算法换算得到旋转角度。
@@ -18,6 +19,6 @@ original: "https://mp.weixin.qq.com/s/GR6B0_-HQM2K7KDIBqPDAQ"
 
 4. 震动漂移：机械震动会加剧安装偏心带来的气隙波动，进一步放大角度测量误差。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWoDdLuNiaNJDoBZ0HLHmxQicxCwWwQaCdIiavulq2oEIyZSkM6E7EArgLTOiakn2XfuyfkkPY3CT7O3icn28IzlvC5pGeLwAxKYyicY/0?wx_fmt=png)
+![](/images/wx/4ede52d4e87dec36a4c695ee0c99806c.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWiaW8pQFQjNYfPoLFiaIQh8biblvKpThBzVrSD1NHq7KQ3w8RnXCfUvwWqJN0hcWCl9SqibhbeKfgkXfiaYSu9z9OYQricgjXiacn6KY/0?wx_fmt=png)
+![](/images/wx/0ed4342b5b65c6f0973a1d5e11241ddb.webp)

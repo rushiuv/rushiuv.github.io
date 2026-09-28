@@ -4,9 +4,10 @@ date: 2026-05-26T04:05:00+08:00
 slug: "lMl7Jj2Yq5jOq5P1uUKsjg"
 description: "美芯晟2025年智能传感器业务增长112.01%，毛利率提升14.08个百分点。这个数字很好看，外界报道也把它说成公司业绩修复里的核心增长点。更关键的是，报道里还提到，光学追踪传感器营收破亿，ToF传感器导入头部机器人和手机客户，产品覆盖手…"
 original: "https://mp.weixin.qq.com/s/lMl7Jj2Yq5jOq5P1uUKsjg"
+tags: ["磁编码器", "霍尔", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVianSxFNGn2WkhHzYicCia9wCsrVib59drrbibtbAY90CSHTMIIwagYSmx78xOIKV0bYhjS5fNbWDC26Cq1AsnK1Dra7GZX5uDIlvY/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/9714e8a2a1e47131a6ea579ccd016f9b.webp)
 
 ## 美芯晟传感器增长112%： 光学看得见桌腿，磁传感又摸到电机轴
 
@@ -32,7 +33,7 @@ original: "https://mp.weixin.qq.com/s/lMl7Jj2Yq5jOq5P1uUKsjg"
 
 美芯晟官方资料里写得很具体：MT3321采用OLGA16封装，尺寸只有**3.32mm × 1.7mm × 0.6mm**；集成CRGBW五个环境光检测通道和一个独立IR通道；环境光感度做到**0.00001 lux/lsb**；支持低至**0.5%透过率**的OLED屏幕；最高支持4路独立VCSEL电源驱动。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUWiaHrJ6R8Cx7XpVBd8pyZu5ruDbPBchhvvrwRXdiaOeFTpya7cWkxLS78VOOKBibZPSmuozR0COtLshiaib6LBVre30XKmbLDRLcQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4939bba58827abeca82d2eb9937da21a.webp)
 
 0.5%透过率是什么意思？
 
@@ -142,7 +143,7 @@ ToF里面几个词也不用神秘化。
 
 这里面最容易讲清楚的一个型号，是**GH2301**。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV6m8f338QmItpG3CmDibIxIhVibuiaOwln1ZKgxQrsv6r8t0xicEWBXaO7o0hO0QV1tIib5CicOQGEUtOtFEtDLDuLhjwUkNlEvCGBA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3c1335686cade502e524d043996755d0.png)
 
 GH2301是一颗水平感应型双极锁存霍尔传感器。先说霍尔是什么：霍尔传感器就是一种能感应磁场的芯片。旁边有磁铁，磁场扫过来，芯片内部会产生电信号，系统就能判断磁铁有没有靠近、位置有没有到、电机转子到了哪个区间。
 

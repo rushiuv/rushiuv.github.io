@@ -4,9 +4,12 @@ date: 2026-05-18T00:00:00+08:00
 slug: "5g7s0Fl5bOqrJ_ojm6WOOw"
 description: "2026年5月15日，黄仁勋在北京南锣鼓巷刷屏。他穿着标志性的黑色皮衣，出现在胡同、炸酱面、蜜雪冰城、豆汁这些极生活化的场景里。媒体报道称，他走进方砖厂69号炸酱面、稻香村等门店，店员还介绍那碗招牌黑猪肉炸酱面原价38元，是店里请他免费品尝…"
 original: "https://mp.weixin.qq.com/s/5g7s0Fl5bOqrJ_ojm6WOOw"
+models: ["KTM5900", "KTM5200", "KTM5300"]
+companies: ["昆泰芯", "NVIDIA"]
+tags: ["多圈编码器", "自校准", "非线性校准", "机器人关节", "AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWkmtNuzplBY4G4ftIUwZY8rGY2TicnRFjib5DIeV4Lw1zhp8Niakkic7sOocat7RmchWaiaqtGIfzwmoK3ibuQTGibJkP4AqficQlV8Fs/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/812c97f218f6d74eea86aed790fe0ab2.webp)
 
 ## 黄仁勋一碗38元炸酱面刷屏：国产编码器公司别再用钢铁直男思维写公众号了
 
@@ -28,9 +31,9 @@ original: "https://mp.weixin.qq.com/s/5g7s0Fl5bOqrJ_ojm6WOOw"
 
 你去看很多国产编码器公司的网站，味道都很熟悉：高精度、绝对值、多圈、工业级、抗干扰、宽电压、支持多种接口。字都认识，连起来像一盘没放酱的炸酱面。比如欧艾迪一款CAN绝对值编码器产品页，开头就是IP68防水防尘、防盐雾、抗震动、最高17位分辨率、精度0.07度、工业级、宽电压、EMC测试、抗干扰等典型参数罗列；零差云控eCoder页面则集中强调最高65毫米中孔、最高21位分辨率、2的16次方记圈圈数、全差分接口、结构紧凑、RS485协议等优势。信息都有用，但表达方式像把工程师Excel表格复制进了网页。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXHu5De5ytfYAyBwicNl8X9XE9a8SDYAYst6xtFnowRibSfqqo0d48Th2vqtDWscchKqgbaE0KyjrQwlAnDNJoduicXWjJicQUYxww/640?wx_fmt=png&from=appmsg)
+![](/images/wx/cb3428252da51e58c3de2ed567870d4c.png)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWGYUIMiaoVI4fldKHO3ukopKjJic12gVHJggm2cx0myNBoNcG0fqjYpZyQaf5xmwPR1oDROdJnW9PSawzz11obYriazZ6eCUZ5sA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/a7c4c0e2ac57e2a40542fb5d2a1d62b0.jpg)
 
 这就是硬科技公司的钢铁直男传播：**我很强，我参数很多，我接口很多，我测试很多，我抗干扰，我工业级，我国产替代**。客户看完以后，只能礼貌地点点头：**嗯，你人挺好，但我没心动。**
 

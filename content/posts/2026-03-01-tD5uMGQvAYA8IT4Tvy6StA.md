@@ -4,11 +4,13 @@ date: 2026-03-01T00:21:00+08:00
 slug: "tD5uMGQvAYA8IT4Tvy6StA"
 description: "三月的A股并不缺题材：一边是经历年初大涨、景气度持续验证的AI算力链，一边是政策窗口临近、涨价与供给扰动共振的有色金属（尤其是稀土与小金属）。但“谁逻辑更强”并不能回答“谁能拿到当月涨幅第一”——月度冠军是一个可以用历史统计与交易结构推演出…"
 original: "https://mp.weixin.qq.com/s/tD5uMGQvAYA8IT4Tvy6StA"
+companies: ["厦门钨业"]
+tags: ["AI", "投资", "黄金", "稀土"]
 ---
 
 三月的A股并不缺题材：一边是经历年初大涨、景气度持续验证的AI算力链，一边是政策窗口临近、涨价与供给扰动共振的有色金属（尤其是稀土与小金属）。但“谁逻辑更强”并不能回答“谁能拿到当月涨幅第一”——月度冠军是一个可以用历史统计与交易结构推演出来的结果。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUibjCEsL9x8ctFCicbMLYgGIiasXZPMfYniaJRYm6eJPgOOKNUlxQbfzVcWicN7Ua6T7H3HqdK3SibHSxiataIuBJeBP8ENUCqThgh4Q/640?wx_fmt=jpeg)
+![](/images/wx/a365562727ba590f7bebaed2cae82b6f.jpg)
 
 基于对2019—2024年全部月度涨幅第一板块的复盘，我们建立了月度冠军板块五因子评分模型（板块容量、连板核心、中军趋势、新增预期、资金结构）。将其代入当前盘面，结论非常明确：
 

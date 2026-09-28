@@ -4,9 +4,11 @@ date: 2026-06-07T00:01:00+08:00
 slug: "bxtpOYJBicGhF1dLkzZ4KA"
 description: "SpaceX 要 IPO 了。按照公开报道，这家公司计划以约 135 美元/股的价格发行，目标融资约 750 亿美元，对应估值约 1.75 万亿美元；如果成行，这将是全球资本市场历史级别的 IPO。路透社还报道称，SpaceX 的 IPO …"
 original: "https://mp.weixin.qq.com/s/bxtpOYJBicGhF1dLkzZ4KA"
+companies: ["纳芯微", "麦歌恩", "特斯拉"]
+tags: ["磁编码器", "机器人关节", "AI", "投资"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUdsc5RPlbYnr8IBvhpEhvOiateuJl8IQh9b8Ggzeeon2sia742FqjicSnAEHDq55Gz68JOicAicJa4BOAUFTegb4e9naE63ctGj7mI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a9c765593b3a1632b0d7f654c2936561.webp)
 
 ## SpaceX 估值 1.75 万亿美元：硬科技 IPO 最后拼的不是故事，而是闭环验证
 

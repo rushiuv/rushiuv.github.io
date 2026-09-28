@@ -4,9 +4,12 @@ date: 2026-08-11T00:00:00+08:00
 slug: "VYXjAfe5MHBlsVOTUCSnwg"
 description: "ENGINEER'S NOTE · 编码器一线手记"
 original: "https://mp.weixin.qq.com/s/VYXjAfe5MHBlsVOTUCSnwg"
+models: ["KTM5900", "KTM5200", "KTM5300", "KTH78"]
+companies: ["昆泰芯"]
+tags: ["离轴", "非线性校准", "TMR", "AMR", "ADC"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXh7fy3icwHCwPpER0n9GGu6J2d23gjQ9saMqPoUwSabbRohft6yMSFzhQwYyw3iajXm9bxohr6BPIelhEY0c0v93WoTblNQQmmw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e639f51d6e06b2f01fa43fd926e21f6b.webp)
 
 ENGINEER'S NOTE · 编码器一线手记
 
@@ -22,7 +25,7 @@ ENGINEER'S NOTE · 编码器一线手记
 
 一块镜子负责 X，一块负责 Y。控制器让两块镜子按照一串角度指令高速摆动，激光点就在工件上“画”出文字、二维码和轮廓。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXAI6uVBNMFOwC8A8TE8Svr1fdJ0J1AmYE031Ff9ejr9GEHdrRiaxTibbIl8AW3yK4FB9Co9FhOv4nexsKpnXVgQdc7PYJYqn3C4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/fa5707fb19e7f8e9408c358655027355.webp)
 
 所以振镜电机可以粗暴理解成：**一台专门负责让小镜子在很小角度内疯狂摆动的伺服电机。**
 
@@ -32,7 +35,7 @@ ENGINEER'S NOTE · 编码器一线手记
 
 普通伺服编码器最自然的任务是把整圈 360° 都测准。振镜却恰恰相反：它根本不在乎整圈，只想把中心附近这一小段测得极快、极安静、极稳定。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUbXkpaqVkdpKibIncYicCTeO7WORuqKAWIkSwzGMyBse7gzictcpibEx6ibtFMCOntpYIz9W6nQH4ER7LrYwUH5zTbdIUlj37ftbSQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/63310c257b4cf3075e90d27d3713945f.webp)
 
 反射镜还有一个很关键的光学关系：**光束偏转角约是镜片机械转角的 2 倍。**因此看起来很大的光学扫描范围，落到轴上，机械角度其实并没有那么大。
 
@@ -40,11 +43,11 @@ ENGINEER'S NOTE · 编码器一线手记
 
 以 KTM5200 的 21 bit 绝对角输出为例。如果把它理解为覆盖完整 360°，一个数字 LSB 的角度尺度约为：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVv7ibfKnbLE8zfKMDmHGgzSiaVwhuNKlNiaicHABic2ed2y1fCAZGEBYibmMJAOz70dZHGXKAMrQaKfP2FccgfYExmLEiciagu9PMgWqo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2204ab37e72baa43c79d87da7e3f1ed3.png)
 
 看起来已经很细。但如果振镜机械上只使用约 20° 的工作区间，那么真正落在这段范围里的有效码数，只是整圈的一小部分。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX3DOtWQXwpPrjgoX4qHRibcXmsm4qIbqKSvT5yJMngfCzESDichOeAfMz0icvQHKzermCXFB13TEGIVwdIjqklNkFF2Gic2Sn1m08/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2db1052e676794ecdcedd0cba7a92d4f.png)
 
 数字上当然可以重新缩放成 21 bit，但**缩放不会凭空增加物理信息。**这就是为什么把一个为 360° 设计的编码器塞到只摆 ±10° 的振镜上，bit 数很容易产生错觉。
 
@@ -52,7 +55,7 @@ ENGINEER'S NOTE · 编码器一线手记
 
 KTM5200 公开噪声指标约 0.005°。换成角度尺度：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXQbHghQOhOmuMznMgxoOojicCSWOfIKnjyN4zABzywthmxH2KpJBUXLic21sXia4xLBoWwf1tUvUotRe8KOxwZ421g1fLB0som28/640?wx_fmt=png&from=appmsg)
+![](/images/wx/cd3cc7343be01f131b6b0e075f39d391.png)
 
 这个数字比一个 21 bit LSB 大很多。于是立刻出现一个振镜选型里最容易踩的坑：
 
@@ -70,7 +73,7 @@ Noise ＞ Latency / Bandwidth ＞ Drift ＞ Repeatability ＞ Static INL
 
 这里不能简单按“谁 bit 多谁赢”排序。更合理的是看它们分别解决什么问题。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWvJXibZw2HbyrrHUbEyZs3Bic2m4nNcwcybnrxU2bnX9mdlRaS6B4uBn0RCO4zFicesF4IfomrWTwpxibnU2YTicFSiaNKzRJOaibXicI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/802028f1be20820875aeb523e09dfad9.webp)
 
 #### KTH78：够快，但不是我冲高端振镜的第一选择
 
@@ -80,13 +83,13 @@ KTH78 的优势是响应快、刷新率高。但振镜最容易把“刷新率�
 
 KTM5200 是 AMR、在轴使用思路清晰，公开角度输出延迟在几微秒量级，而且 AMR 本身具有 180° 周期特征。理想情况下两桥信号可写成：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWJo4ERPibQXs7VedvG5icmMVcAb7YMCGH5qlByuw2iaP2xQ5Zd0KRBPBcFbjKoVkGLAkbCw6Hn2SAkicEmDcKnCQ4TkiczDzibAXkro/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2981727fe3fc759ff08e2caf4d1fb6a9.png)
 
 这里的 **2θ** 对振镜非常有意思。普通 360° 编码器会嫌 180° ambiguity 麻烦，但振镜只在中心附近摆动，这个问题反而可能根本不存在。更重要的是：机械角变化 1°，原始 AMR 相位变化 2°，天然有一次角度放大。
 
 在中心小角度附近：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVdpdOpjPYJTBCxB4zUjnyaSTAtPO6iaW8iaJpca9N6w9iapqGFBjaRP2TemXgYpMxO2AGKUtdXcydPOsDt0wtT5uJQSM9jswTKy4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f86c7838fb557e4c3220e346f1e1ec91.png)
 
 这意味着，如果真为振镜重做专用位置传感器，完全没必要照搬一颗 360° 编码器的完整架构。可以把资源集中到 ±十几度的小范围、低噪声 AFE、高速 ADC 和极低延迟输出上。
 
@@ -102,15 +105,15 @@ KTM5900 真正吸引我的，不是“24 bit”三个字，而是它背后的高
 
 这是磁编码器进入振镜最容易被忽略的一关。传感器旁边不是一个安静环境，而是一台高动态力矩电机。传感器看到的总磁场可以粗略写成：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWdRrUubomwKWeEhdehoHicogzg7DV2v7KshkutPqoUJzpLpoX4DkmA3VdXoHUJTkwicGfchuS8A73QMCjlPjg7Bhjx9e9obib35g/640?wx_fmt=png&from=appmsg)
+![](/images/wx/092434ecc9f773607bafba87ae4e5dc3.png)
 
 最麻烦的是最后一项。它随着伺服电流变化。振镜大幅跳转时，电流可能快速从 +Imax 翻到 −Imax；如果这股漏磁改变了传感器所看到的磁场方向，芯片可能会认为“轴动了”，其实轴根本没动。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXOKqKPLwl1ewKhnTsUjqeLznNNKzamW9aSVgzGcooLC0mgGc1c7THbGPspooKCEtrgJXfjjiciaKWhwDoD1ZstRhzUy2HCob2Iw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0070b47fa2e591b169c026a611cdf8f1.webp)
 
 所以一颗磁传感器适不适合振镜，我甚至想新增一个普通编码器 datasheet 很少写的指标：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWsoqyBultOF0MibtIXxlXkKPDnzia7a9fude9wwm2VjGfKA6bRzECaValHmcBJ93OnP8qJ8XP9cOR4Zuz1qEPanKWWHU380lkzY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6766896eba3bf03b0b0103256948fe56.png)
 
 也就是：电机电流变化 1 A，到底会制造多少 μrad 的假角度。
 
@@ -118,19 +121,19 @@ KTM5900 真正吸引我的，不是“24 bit”三个字，而是它背后的高
 
 我会先把轴机械锁死，确保真实角度不动，然后把线圈电流从 −Imax 扫到 +Imax，记录传感器角度是否跟着电流跑。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWYs0ZpXyCNXHeXH2Op9naAAJAQcvQaH1XqkiazBfm7J0ibMUk1ShYyJAlVwzH8qRaMyLK41j9BM5pGnWfyichyFD4BjPcuGKFTEY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f42cd090d01934d0960f68ad6a716d1b.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW2KyekJPeJPZ4uZfec8GdIFtbl4dvx3dST7QGCEpHAQLdaqdDAVibByhElqS6fyFkR37lD45JaeYMS81Em8fxV7lur4rueOOho/640?wx_fmt=png&from=appmsg)
+![](/images/wx/214c42dd4a477a4cec4310dd93e5f812.png)
 
 第二张图，我会测最低延迟模式下的角度噪声功率谱：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIX0qXcFh3FMjPxActt7p4ibqK3jpSnaLMFgQe5iburf4QTrc0icUnPFmgUuz3dYs3RLmWrQLrXRBQ0Qx9RcodibAVdUssfgz0icbEOY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f59a60dd9b8093f56aa437bc80b2e98e.png)
 
 重点盯 0–5 kHz。振镜位置环真正会“吃进去”的，是这个频段里的噪声，不是一个脱离带宽定义的单独 noise 数字。
 
 第三张图测温升过程里的零位漂移：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXw17bJibQVqcGhUS6MtQT2MD7xyTbrbm8icqKgrEU9je0A7JNGWibVvsZbUibt0G4fcCbKm53UCkECRksiaicYTiaq3pukyZxgLQOv9U/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1af9b4d5583a073aac794eb0bbaedf34.png)
 
 这三张图如果漂亮，才有资格继续谈“昆泰芯能不能做振镜”。
 

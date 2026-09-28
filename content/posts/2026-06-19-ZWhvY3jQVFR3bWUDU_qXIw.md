@@ -4,9 +4,12 @@ date: 2026-06-19T00:00:00+08:00
 slug: "ZWhvY3jQVFR3bWUDU_qXIw"
 description: "多圈绝对值编码器被误解得最多的地方，不是单圈bit数、不是通信协议、不是最高转速。"
 original: "https://mp.weixin.qq.com/s/ZWhvY3jQVFR3bWUDU_qXIw"
+models: ["WIN48", "SROA48"]
+companies: ["锐鹰"]
+tags: ["多圈编码器", "机器人关节", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVj4ZG12DmABapuSmiap3LDcjbVK60TQpnITFIFtsMEH3XmThOtc0e6cxiaEOeOaBPvw7gVRsxtavTAvZXyW19gCeqp60N29tWNs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/25b129a75d78d65f38728b976c6fcde1.webp)
 
 ## 锐鹰传感 WIN48 标称15.5mm、23bit+12bit无电池机械多圈
 

@@ -6,7 +6,7 @@ description: "两个编码器的差值就是腱变形，是免费的力信号，
 original: "https://mp.weixin.qq.com/s/muWitiYD46_G-TGfXmKvUw"
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVDoakH4ZE5eaet7HnaeYfZoeuf8McawM7LfuQDFVziaJiaPBXT0uh2J1gBJyvx5dxEW6AibOuk7uw1M6cbwd5icLJJGoGAibapd8JY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/38e70f868c4e1e4afb99a18d7a528b3b.webp)
 
 工 程 现 场 手 记
 
@@ -156,6 +156,6 @@ original: "https://mp.weixin.qq.com/s/muWitiYD46_G-TGfXmKvUw"
 
 知识卡片
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW0lkjoZgqibhseibJAcXvXg9icv2ibdkJWWUNUHIhWpeJuJGFzLH0VVDiciagwoA7Mxetwwgicic2dIRuFLLPveeFMy9V3rnEPdo3EUtA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e99b79433f20810ec5cb913fa5ed9309.png)
 
 如 是 有 为 · 把工程现场追到底

@@ -4,9 +4,11 @@ date: 2026-07-22T00:26:00+08:00
 slug: "8Sw27AgeNguliDyjfsM9WQ"
 description: "URKL · 人形机器人格斗 · 位置反馈"
 original: "https://mp.weixin.qq.com/s/8Sw27AgeNguliDyjfsM9WQ"
+companies: ["众擎"]
+tags: ["人形机器人"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVBWDCqDjqic7ia84ibTQ2licKCQFrtEPPeTkTMjQrpKQdVlia0XFfc5NpCBic2UVRWhywE5kYpiclXD2yoYRKUpptmT7GPSVSJRts8JE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/42b58eaf742f6d83240c6e60784aeb5c.webp)
 
 URKL · 人形机器人格斗 · 位置反馈
 
@@ -30,7 +32,7 @@ URKL · 人形机器人格斗 · 位置反馈
 
 冲击加速度本身不能直接换算成角度误差；结果取决于磁铁直径、气隙、偏心灵敏度、安装刚度、悬臂长度、轴承游隙和芯片算法。没有具体结构与冲击台实测，不能报一个通用角度。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVvnhnajy5JSNicnibxVJticJCiaupFkGicsMuoNGOv2wqGqJBriaibbmmbseCWQPibymoqialQFhqahqmSpzleLtsD0LypwCm4S3ISp9ZU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/78f7bd42f276575625518ee681246f8e.png)
 
 知识卡片1｜同一个角度突变，可能对应三种不同物理过程。单颗编码器无法独自完成归因。
 
@@ -46,7 +48,7 @@ v假= Δe冲击÷ Ts
 
 控制器通常不会因为一个尖峰就数学意义上“发散”。更常见的后果是力矩限幅、环路振铃、保护误触发，或者在结构已经回弹后补上一记迟到的校正力矩。只有当延迟、饱和、积分累积和符号关系凑在一起，错误补偿才可能演变成持续失稳。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUejscYDEezvvdsnm2KdOalDFicS7WNxGwmPmO6BgVTVGEQCtomvg4lqgTvybwx6ooK3bib2yfyX38oAytz1IdZVPvGicJiaSgVjUI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0a77ce22efb2256b31144e70fb6ccb3d.png)
 
 知识卡片2｜模拟示例：0.5°角度台阶在1 ms差分周期下产生±500°/s速度尖峰，不代表赛事机器人实测结果。
 
@@ -84,7 +86,7 @@ SIN/COS幅值、诊断位和供电是否也在跳？
 
 这些证据共同决定是跟随、短时外推、降低增益，还是进入保护。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVV8EN3M150Ue5oicBbgqzI6yUR3PWW7icNwLyG6Khkibiadv7gySgnGtRBR9uia5ucd16ue5RxAiahlQmMJHxkcMfwxEUIOOD7ezI7Q/640?wx_fmt=png&from=appmsg)
+![](/images/wx/bf980e6d39bf9e9b2d23597174ff91a3.webp)
 
 知识卡片3｜机械、传感、时间和控制四层同时做，才能避免把真实运动与传感伪跳变混为一谈。
 

@@ -4,9 +4,10 @@ date: 2025-10-12T18:06:00+08:00
 slug: "vQcKj96VRiCympHRouRDYQ"
 description: "林宇盯着显微镜下的晶圆，指关节因为用力而泛白。第三十七次流片结果出来了，边缘电路的信号传输比理论值慢了0.3纳秒，在他眼里，这和报废没什么区别。"
 original: "https://mp.weixin.qq.com/s/vQcKj96VRiCympHRouRDYQ"
+tags: ["芯片设计"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTXSHZKUEkNSib0qw7wnf4XOsbbOqibw5fGyiciaEYO6WGfVzaJj4vNibOv7RNiaczcZDC4I1aTTwGRbeug/640?wx_fmt=jpeg)
+![](/images/wx/5d20683531ffc155f34ab12e6111bab5.jpg)
 
 林宇盯着显微镜下的晶圆，指关节因为用力而泛白。第三十七次流片结果出来了，边缘电路的信号传输比理论值慢了0.3纳秒，在他眼里，这和报废没什么区别。
 
@@ -34,4 +35,4 @@ original: "https://mp.weixin.qq.com/s/vQcKj96VRiCympHRouRDYQ"
 
 晶圆上的那点瑕疵，最终成了照亮市场的微光。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTXSHZKUEkNSib0qw7wnf4XOUxIe1lH3hjg058nnfRECUshEsG9CLUCe995ecPVuic3ZuAZ4icvNwo5g/640?wx_fmt=jpeg)
+![](/images/wx/169fdba6121edbd6bb986e802c37d663.jpg)

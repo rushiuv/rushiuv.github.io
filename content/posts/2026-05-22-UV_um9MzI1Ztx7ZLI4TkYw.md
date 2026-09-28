@@ -4,9 +4,12 @@ date: 2026-05-22T00:00:00+08:00
 slug: "UV_um9MzI1Ztx7ZLI4TkYw"
 description: "宇树 G1 的头部感知里，有一个很有意思的组合：Livox MID-360 激光雷达 + Intel RealSense D435i 深度相机。前者是国产，后者是 Intel RealSense 系列。也就是说，在这台国产人形机器人身上，激…"
 original: "https://mp.weixin.qq.com/s/UV_um9MzI1Ztx7ZLI4TkYw"
+models: ["D435i", "MID-360", "MX6800"]
+companies: ["NVIDIA", "Intel", "宇树", "奥比中光", "图漾", "海康", "光鉴"]
+tags: ["人形机器人"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX30oxCZ03EGciaxHtrhogxLicS0BXvxk77Exbg1Fibyk6icqNOtFeqhoeZiaayXgJSnq6WtexWU2bL50xUHfN6KZvSgTHSY7tjicczc/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/73ac63531e4bbabb039dc3ebd2a4e901.webp)
 
 ## 宇树 G1 头部的深度视觉芯片，为什么还不是中国造？奥比中光、图漾、海康、光鉴...加油
 
@@ -14,11 +17,11 @@ original: "https://mp.weixin.qq.com/s/UV_um9MzI1Ztx7ZLI4TkYw"
 
 宇树 G1 的头部感知里，有一个很有意思的组合：**Livox MID-360 激光雷达 + Intel RealSense D435i 深度相机**。前者是国产，后者是 Intel RealSense 系列。也就是说，在这台国产人形机器人身上，激光雷达这类看起来更“贵”的传感器已经国产了，但深度视觉模块这条链路，仍然能看到国外方案。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXwvEouRRZOBj19NmDEE3AXfqPyWYiamt5ARP0uweuwzO0er1utCQX3TnhhqR3rNUAtVRZhEYe9LQl2vKNOLYUHlB2OFtTd0Zfc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/96f6003ea4e44394925caf25c3bbd7de.png)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXxVV34b0pS0MicpicRfFSdfqhDOxU0VibzKBJ6nib7q7wVnw2XbFVQkia2PFQhtX6CY3ZH5uPw4nlQocrZVqEeAmm12HjUEwibztV5M/640?wx_fmt=png&from=appmsg)
+![](/images/wx/fc9f863e3c10a19e235a28d0cf62bf77.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVClhbYUo0nQaUT2CV8eVR1bLM89iaXRvNJpAg3WMlbpeicNMXLzvp8Wp4ymUVIUVTQUcXNAjDwJubguFYHibpNfzXsx0nt7txdU0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/45ac5feb3a16aaeca5cd253d1e9bef5b.webp)
 
 这不是因为中国做不出深度相机。国产厂商现在已经有不少产品可以对标 D435i，比如奥比中光 Gemini 330 系列里的 **Gemini 335、Gemini 335L、Gemini 336、Gemini 336L、Gemini 335Lg、Gemini 335Le**，还有 Femto 系列、图漾工业 3D 相机、海康机器人 3D 视觉产品。真正的问题是：G1 头部这种位置要的不是“能出深度图”的相机，而是一个能被机器人算法栈直接相信的深度视觉默认件。
 
@@ -38,9 +41,9 @@ D4 的价值就在这里：它不是“能算”，而是把这套 pipeline 固�
 
 国产很多方案现在已经开始补这一层。比如奥比中光 Gemini 33X 系列明确强调 **MX6800 自研深度引擎 ASIC**，也是把深度计算放在相机端，而不是完全丢给主机。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXwRwbSUdYwDzz7T7Ma2IQrichkh6JupS0Tsv2lSiajsAiaQ8l4h2xoUQP50mUHVyOMFaHh5IRww7tZjTzGxzSN34oA1fg9wwwUic0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/16eda10343afba72bcef0cde813c028f.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW2VHicA5maBoMpgJHVJEVc3fPcOCBibmGfibFgJEIrGUdcdxoULmqsUF3QQYHabVoEM8UkhThWGrQObJicibNId58Z2sXE8vzibtDeo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ccc852557689336851f1602b7f7089b5.webp)
 
 但从“有 ASIC”到“客户敢直接替 D435i”，中间还有距离。因为 ASIC 不只是算出深度图，还要把输出格式、时间戳、同步方式、SDK 行为、异常恢复做成客户可预期的东西。芯片算力只是第一关，系统确定性才是签字关。
 
@@ -48,9 +51,9 @@ D4 的价值就在这里：它不是“能算”，而是把这套 pipeline 固�
 
 国产现在不是没产品。奥比中光 Gemini 330 系列已经不是早期那种“能出 3D 图就行”的开发板思路，而是明显朝机器人、AMR、工业自动化去做工程化。Gemini 330 系列公开资料里写了主动/被动双目融合、自研 MX6800 深度 ASIC、宽视场、深度和彩色帧同步、多设备同步，并且支持 NVIDIA Isaac ROS 和 Omniverse。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUupVgjMk1MueJEW9emmPQol8BgJcLBfOQ9kjoRmsTrpXXDltf572EMMdCicg2lpBW6TKAQeZiavmGagyxTNkYTE4lh1savyQynQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/debe8f6859f5864b76ca88a1321e5ae4.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUIKQ9ib849DxxEYicX8pVRytYbCm6vibiaHOy5us65xibGTrRNuoyzazhhPbuiaw4qPLA06yRsxybwRoI3r39VGRzPKic9icQj5Mrice4E/640?wx_fmt=png&from=appmsg)
+![](/images/wx/656e5a1d37148816dbcce7088189dba1.webp)
 
 具体到型号，**Gemini 335 / 336** 更像标准 USB 机器人双目相机；**Gemini 335L / 336L** 加了 IP65、全局快门 RGB 和 IR，更偏工业机器人和移动机器人；**Gemini 335Lg** 走 GMSL2/FAKRA，强调 6Gbps 带宽、15m 线缆、抗振连接和 IP65，明显是给移动机器人、机械臂、严苛工业场景准备的；**Gemini 335Le** 则走 PoE/M12，以太网供电和长距离布线更方便。
 
@@ -58,7 +61,7 @@ D4 的价值就在这里：它不是“能算”，而是把这套 pipeline 固�
 
 但问题是，G1 头部这种位置，不是换一个接口就结束。D435i 的强项是 **1280×720@90fps** 和成熟 RealSense pipeline。Gemini 335 这类产品常见公开参数是 **1280×800@30fps**，部分新资料提到 Gemini 330 系列可支持更高帧率模式，但客户在替换时不会只看“最高帧率”几个字，而会问：在我需要的分辨率、曝光、IR 模式、同步模式、SDK 输出格式下，实际能不能稳定跑？
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXqcnOMg87knxo5iaD40FaJjC4xJJNE8ScxwooNUHSYiazcN50hicLrH7QXd5ibNm8Hnlb7d5KE2a9ATp2AB9VubDexXcjraIhiaadw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ff495f7d4b76541cbd819598baef0c5b.webp)
 
 这就是动态场景的坑。静态测 2m 白墙，国产相机可能很好看；但机器人走起来以后，头部会摆动，机身会振动，图像会有运动模糊，IMU 和 depth frame 要对齐，点云还要投到机器人坐标系。30fps 和 90fps 的差异，不是视频流畅度，而是感知链路的时间裕量。
 

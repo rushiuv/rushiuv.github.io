@@ -4,9 +4,10 @@ date: 2025-09-28T12:38:00+08:00
 slug: "NEB3WX81MU8vFYGaFlUojQ"
 description: "很多人听到 vibe coding 会懵，觉得是不是新语言、新框架。其实不是。你要是用过 Cursor，就会立刻懂：你在编辑器里写一段自然语言，“帮我写一个 React 表单，字段有姓名、邮箱、手机号，要带校验”，AI 就直接把代码贴出来。…"
 original: "https://mp.weixin.qq.com/s/NEB3WX81MU8vFYGaFlUojQ"
+tags: ["AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySVMNgP9y2GqKWjGdgmAByoPfib1MmCm62ibsbI5mtlWHXktPDyG9QJ9Dbwiak8B0VUxFav308MY2dzA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5c1f7d07d3bb7f6106c2a90fa2ad3223.webp)
 
 很多人听到 vibe coding 会懵，觉得是不是新语言、新框架。其实不是。你要是用过 Cursor，就会立刻懂：你在编辑器里写一段自然语言，“帮我写一个 React 表单，字段有姓名、邮箱、手机号，要带校验”，AI 就直接把代码贴出来。你改两句描述，它再帮你改。整个过程不是敲命令，而是用人话驱动机器。Cursor 只是今天最火的一个落地工具，背后原理就是 vibe coding：**用自然语言持续迭代，把模糊的需求变成执行代码**。
 
@@ -14,7 +15,7 @@ original: "https://mp.weixin.qq.com/s/NEB3WX81MU8vFYGaFlUojQ"
 
 灯管嗡嗡响到半夜，数字开发例会开成了守灵。架构把PPT甩上去，一句“功耗差不多要下去”，房间里像有人打了个喷嚏又假装没打。谁都不想当那个追问的人——降到哪儿算下去，是均值还是峰值，是室温还是高温，是静态还是动态，低功耗唤醒的时间窗给几微秒，门级优化是否允许牺牲余量？问题全在空气里晃，没人伸手抓。会议纪要里留下四个字：差不多行。第二天，AI接过这份“输入”，态度端正、逻辑严谨，认真把“差不多”解析成零约束，然后生出一堆表面体面、实则跑偏的RTL。人拍桌子：AI不懂人话；AI看着你：你根本没给话。——外部那些“反鸡汤”也说得很直白：盲信模型、不给约束是“无效 vibe”的典型症状，最好结果是跑偏，最坏结果是全栈埋雷。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySVMNgP9y2GqKWjGdgmAByo6ZOKrAIIYAn2xE25b7bDMtcPiavVhQtuibqzxkgzp2VSquMmAibLFx6bg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ba50ea63cbf9fb66599e6e44c68f51da.webp)
 
 说穿了，这一幕里最吓人的不是AI，而是人。我们在工作里养成了一套自我保护的“假人话体系”：用模糊挡子弹，用默契垫风险，用“之前说过”代替“此时此地”，用“我们都知道”拿捏沉默。每一句单拎都像玩笑，混在一起就像密不透风的城墙，把问题封得严严实实。架构说“差不多”，心里偷偷对齐了10%；设计听成50%才有意义；验证以为只看均值就好；后端结论是“看来功耗不是主矛盾”。每个人都信自己“懂了”，团队层面其实人人活在自己的版本里。到最后，崩掉的不是AI，崩掉的是那堵“好像沟通过”的墙。——行业里对 vibe 的审慎评价其实就在暗戳你：这套“空气沟通”一旦进生产，就会转化成质量、安全、可维护性的真成本。
 
@@ -26,7 +27,7 @@ vibe coding把这堵墙一拳打裂。它不接受“你猜猜我意思”，也
 
 最隐蔽的，是“先随便做一版看看”。看似给自由，实则把“我还没想好”的尴尬丢给别人。AI会照字面意思“先随便做一版”，等你回头一顿痛骂“这都是什么”，现实只会回你：**输入就是这样**。自由不是没有边界，真正的自由，是边界清清楚楚，探索区间明明白白。给三条可变路径、两档权衡顺序、四个禁入红线，这叫给空间；一句“你先发挥”，是把赌桌往AI那边一推，输了好骂人。——实务点评早就把“盲目放权给LLM”列入灾难清单：看似省事，实则把错误以指数倍放大。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySVMNgP9y2GqKWjGdgmAByoUV1WTFsDibdunn2iaGErNziaaXHM0GyibFruR2yQBzW2EX4lGeLspc1iaMw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/fa607cfbfa69570860e334dd53a69668.webp)
 
 你可能会说，这样说话太累。累点在把感觉换算成结构，把隐约映像拆进句子，把风险写进阈值。可你不在开头累一小时，就会在尾巴上累十周：返工、扯皮、甩锅、补锅，再返工。技术债可以滚，表达债不能。一旦滚起来，下一回就变成关系债、信任债，利息比浮点数还凶。——连市场数据也在敲打：今年一波“vibe 平台”高开低走，流量和留存回落得很快，很多就是因为预期与产出脱节、输入端懒表达导致体验反噬。
 
@@ -38,8 +39,8 @@ vibe coding把这堵墙一拳打裂。它不接受“你猜猜我意思”，也
 
 最狠的一句留到最后：所谓“不会数人话”，从来不是智力问题，更多是勇气问题。愿不愿意让语言暴露你的判断，愿不愿意把“我没想好”写成“允许探索的范围”，愿不愿意把“心里一拍脑门”的直觉押上阈值与验收。你一旦把话写出来，错就有形状，权衡就有成本，合作就有抓手。你不写，错会长成雾，权衡会变成情绪，合作只剩气氛。——这也是不少从业者对 vibe 的“清醒乐观”：它能快，但也会放大达宁-克鲁格式自信；能提效，但更需要“把话写硬”的自律。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySVMNgP9y2GqKWjGdgmAByo3M3JKM6Oia2X0pdRQaFdcfFrUacata3Uky8YXErFtJNtHNlQUgM94DQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7677f421283ba73e9090aa4be52b62cc.webp)
 
 酒喝到这儿，话也该掀桌了：别再把 vibe coding 当成“AI来写代码”的新把戏，它更像一面照妖镜，专照人类的沟通懒癌。AI会越来越像人，关键在于人能不能重新像人——用语言承担、用句子施工。下次你准备说“差不多”，把嘴闭上三秒，然后写下“到底多少”；下次你想说“你懂的”，把“你懂什么”落到今天的上下文里；下次你想用沉默维护聪明，至少把摄像头打开，哪怕给一个眼神，也别让AI在真空里工作。——顺带提醒：所谓“只靠 vibes 就能造系统”的幻觉，连一些深度使用者都在降温，真正有效的 vibe 是“人话+约束+迭代”的三件套，不是玄学。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQmzP7KIoasJttub3Wl1vGxnZ2gBNDIcRMsCIs0icy4xJHgEN5VsDibepU0roIXcZe6aRRS89IYcg8A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/88029d0e022db03effe122b36e9950ac.webp)

@@ -4,15 +4,18 @@ date: 2026-06-08T00:15:00+08:00
 slug: "vSMo_lrRgATNHgDmzYLtQA"
 description: "前段时间聊一个国产设备项目，对方用的是欧艾迪这类 SSI 绝对值编码器。选它的理由其实很朴素：国产供应链响应快，价格和交期都更友好；绝对值输出对设备上电回零更方便；SSI 接口也足够标准，控制器侧好接，资料里把 CLOCK+/CLOCK-、…"
 original: "https://mp.weixin.qq.com/s/vSMo_lrRgATNHgDmzYLtQA"
+models: ["AM26C32", "STM32"]
+companies: ["海德汉", "雷尼绍"]
+tags: ["多圈编码器", "编码器接口"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWqR9HviaECYzJYmZRPKQgEANMuXLVycicZNllAOlB8tcF5K5EV965rlibmbkJksGenM4ibbG6sia8jUJOU3jL6CZiaLvVDYE2jkZKxw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8c6dbfae38e74757a51d2419424e23a2.webp)
 
 ## 从欧艾迪绝对值编码器说起：SSI 读到的是比特，可能现场输掉的是采样确定性
 
 前段时间聊一个国产设备项目，对方用的是欧艾迪这类 SSI 绝对值编码器。选它的理由其实很朴素：国产供应链响应快，价格和交期都更友好；绝对值输出对设备上电回零更方便；SSI 接口也足够标准，控制器侧好接，资料里把 CLOCK+/CLOCK-、DATA+/DATA-、电源和地写得很清楚。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWHLyhuQy8eOfflptMqnsENTdt07iaiaTD1ND1mNvzuBcw60a6nagIM0oo7newh9pmANlnxJhX0GcSSb3Ty6LTHUwePB5g77Sn1w/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8bd05ecf57697295bf97c0b44f7f33f8.webp)
 
 说实话，这类国产绝对值编码器这几年进步很明显。以前很多人一提绝对值编码器，第一反应就是海德汉、雷尼绍、库伯勒、倍加福。现在不少国产设备上，欧艾迪这类产品已经不是“能不能用”的问题，而是很自然地进入了机器人关节、自动化平台、伺服执行机构、测试设备这些真实现场。
 

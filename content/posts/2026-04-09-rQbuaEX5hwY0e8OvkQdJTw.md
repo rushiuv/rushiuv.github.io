@@ -4,6 +4,9 @@ date: 2026-04-09T01:00:00+08:00
 slug: "rQbuaEX5hwY0e8OvkQdJTw"
 description: "上周刷到芯师爷那篇文章，说希磁科技新发布了一颗 STK-636TMF，40ns 阶跃响应，10MHz 带宽，专门盯高频电流检测。很多人看完，第一反应是：这又是一颗更快的电流传感芯片。可我真正觉得有意思的，不是它快，而是它把一个老问题重新摆到…"
 original: "https://mp.weixin.qq.com/s/rQbuaEX5hwY0e8OvkQdJTw"
+models: ["KTM5900", "KTM5800"]
+companies: ["昆泰芯", "希磁", "Allegro", "TDK"]
+tags: ["非线性校准", "TMR", "AMR", "霍尔", "GaN"]
 ---
 
 上周刷到芯师爷那篇文章，说希磁科技新发布了一颗 STK-636TMF，40ns 阶跃响应，10MHz 带宽，专门盯高频电流检测。很多人看完，第一反应是：这又是一颗更快的电流传感芯片。可我真正觉得有意思的，不是它快，而是它把一个老问题重新摆到了台面上——TMR 这项技术，到底是适合做“快”，还是更适合做“准”？(https://www.gsi24.com/a/2901.html)
@@ -12,7 +15,7 @@ original: "https://mp.weixin.qq.com/s/rQbuaEX5hwY0e8OvkQdJTw"
 
 这才是 TMR 真正可怕的地方。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV2gB6C9dmeBxib8Kghb3CdzguviaYo5DzzBwbnlJBTkPB0uwtT4Iqy3GB4jTxwx6VMVDqR4Wa4gojJXBp7gNibVHDzmU23uFHnPM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/12be6bc92cbcb78ae805c796ee4fa131.webp)
 
 一边盯着电流尖峰，一边盯着角度误差
 
@@ -24,7 +27,7 @@ original: "https://mp.weixin.qq.com/s/rQbuaEX5hwY0e8OvkQdJTw"
 
 这不是两个产品差异，这是两种工业哲学。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWeoUGxFGB9VudJomnWh5BbdNADiagDpkvicDpmgueh5yjQKxibLFZTWILibG3mYUI3ib4GosxplFia5YuH1lZpvO7y03nztccY9lXuo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1c3e04792fd2e7a112ee7e342b1b66e9.png)
 
 ## 希磁要的不是“能测电流”，而是“别错过那一下”
 
@@ -36,7 +39,7 @@ SiC 和 GaN 这几年把开关频率拉得很高，系统效率上去了，但�
 
 你别小看这几十纳秒。很多时候，系统的成败就差在这几十纳秒里。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVdhic8pQ1qiaKOFlc5zicyHNN2DYOKGln3ibic2FACL3qeWVLEJQFiaAWcrTs8pBIwTwWib76V7utRSyAuLJ0FO3CaBGDeplB352QT3k/640?wx_fmt=png&from=appmsg)
+![](/images/wx/82c6beddd288d718bd02569119ff7c78.png)
 
 ##
 

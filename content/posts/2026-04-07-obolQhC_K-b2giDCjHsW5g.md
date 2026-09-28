@@ -4,6 +4,8 @@ date: 2026-04-07T00:00:00+08:00
 slug: "obolQhC_K-b2giDCjHsW5g"
 description: "上周看到一篇文章，说磁传感器芯片可以实现门窗开合的\"亚毫米级\"检测。"
 original: "https://mp.weixin.qq.com/s/obolQhC_K-b2giDCjHsW5g"
+companies: ["昆泰芯"]
+tags: ["TMR"]
 ---
 
 上周看到一篇文章，说磁传感器芯片可以实现门窗开合的"亚毫米级"检测。
@@ -12,7 +14,7 @@ original: "https://mp.weixin.qq.com/s/obolQhC_K-b2giDCjHsW5g"
 
 这个问题问得很关键——如果只是单纯判断门窗"开"或"关"，微动开关确实能满足基础需求，但如果想让家居真正实现"智能"，磁传感器芯片便是不可或缺的核心部件。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWAVon1q0pKj0icvKBtWPeV80bZXhwkibD6VPictKDMXFeWy2fW1cTMvg2iadibAAkibf7QicEianBRCN42lCrHMjNuQ3N6SWnmicJ4Z15g/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6a50b4c78fdb8d23c2ac4d6082ce73e7.webp)
 
 ## 传统门窗传感器的三大痛点
 
@@ -30,7 +32,7 @@ original: "https://mp.weixin.qq.com/s/obolQhC_K-b2giDCjHsW5g"
 
 机械式开关的工作依赖门窗与开关的精确对齐，哪怕安装位置出现微小偏差，就可能导致触点无法接触，无法正常检测门窗状态，这给现场施工带来了极大的不便，也增加了施工成本。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUuNGCcQp7pDwywczibvsSzzcLHS7VPltVNpFGLxoYNcbWnNUdQJv5miaUDbqmj9lWmhTjlK8DqjtHN0zh374fkSqG9icgcG6cYIA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e0e38938b70e08d98abe6120d1b2270e.webp)
 
 ## 磁传感器芯片的核心优势
 
@@ -52,13 +54,13 @@ original: "https://mp.weixin.qq.com/s/obolQhC_K-b2giDCjHsW5g"
 
 回到开头的问题，磁传感器芯片能实现“亚毫米级”检测，核心原理很简单，不用记复杂的公式：磁铁的磁场强度和距离的平方成反比——距离越近，磁场越强；距离越远，磁场越弱。芯片能精准检测到磁场的强弱，再通过内部的简单算法，反推出磁铁和传感器之间的距离，就能实现0.1毫米级（也就是亚毫米级）的精准检测。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUNFwsGFRHPBzZficJiapjpU3ic6HyX7BQVman21M5U4ibET1AFFxuQVqboED6EhbAN6UvFeugZFYLg7f1riazMh9icRvWCCF5BJFSsM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9bf7e3cd19821025d99c7acef1711477.png)
 
 比如昆泰芯KTM1308这款芯片，能检测1-20毫米范围内的距离，刚好符合门窗开合的间隙需求。实际用的时候，家里的金属件、其他磁铁可能会干扰检测，温度变化也会影响精度，所以芯片里加了专门的“补偿”和“抗干扰”设计，能把温度导致的误差控制在很小的范围，也能减少金属件的干扰，确保在家庭环境中，能稳定实现亚毫米级检测。
 
 可能有人会担心，家里的金属件、其他磁铁，或者温度变化，会不会影响检测精度？其实不用太担心，芯片本身就有专门的“补偿”和“抗干扰”设计，能把这些干扰的影响降到最低，哪怕有轻微误差，对于门窗开合检测来说也完全够用，甚至比我们实际需求的精度还要高。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXdDdToicZoaoQ7mVV6AW1nYuEYuaQGfbNjPEV7EZqyhaiae5qAaUiazCic9CicGFCTcT56KCc4NQUsAg9tbia6TzjsaMfBvksbKGPlY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8a74955dcc7739631c182438e1726ae5.webp)
 
 ## 不止于门窗：磁传感器芯片的更多智能应用
 
@@ -84,7 +86,7 @@ original: "https://mp.weixin.qq.com/s/obolQhC_K-b2giDCjHsW5g"
 
 它没有显性的科技噱头，也没有华丽的外观展示，却在无形中解决了传统传感器的诸多痛点，优化了用户的使用体验，这便是智能家居领域一场隐形却意义深远的革命。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXCCOktpk485zBMA3RC2pmfMZCdoYUJxyP2BmFjQt3qoW9rticFh6t0JSTFYQfY9GxKdIcXfRlib6X6f9e7FAdbwoP72wPskXUfs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/578e88227628f58eb9de22b8d39299af.webp)
 
 下次你选购智能门锁、智能窗帘等产品时，不妨多留意一下，其核心部件中是否用到了磁传感器芯片——正是这些不起眼的芯片，守护着我们居家生活的便捷与安全。
 

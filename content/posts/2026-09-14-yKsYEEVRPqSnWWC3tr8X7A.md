@@ -4,9 +4,11 @@ date: 2026-09-14T16:39:00+08:00
 slug: "yKsYEEVRPqSnWWC3tr8X7A"
 description: "今年 8 月，帕西尼接连发了三条消息。拿到 10 亿元战略轮，公司说过去一年自研触觉芯片用量逼近 100 万颗；发布足底多维触觉传感器 PX-FOOTRIX；世界机器人大会上，又拿出搭载自研 6D 触觉芯片的第四代产品。"
 original: "https://mp.weixin.qq.com/s/yKsYEEVRPqSnWWC3tr8X7A"
+companies: ["Melexis", "帕西尼", "他山"]
+tags: ["磁编码器", "霍尔"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWQ8wxWsXyErb71iayx9GU6UmeIRgcR5Fsghtqs3J0RP4pxnrdZfeXDkUPH7bHQ2Z4EtkhYyoOzZUNQa02OHpWNFqCnbbia2XjnU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/bbfb8761504fee51e16238dca0557739.webp)
 
 ##
 
@@ -14,7 +16,7 @@ original: "https://mp.weixin.qq.com/s/yKsYEEVRPqSnWWC3tr8X7A"
 
 今年 8 月，帕西尼接连发了三条消息。拿到 10 亿元战略轮，公司说过去一年自研触觉芯片用量逼近 100 万颗；发布足底多维触觉传感器 PX-FOOTRIX；世界机器人大会上，又拿出搭载自研 6D 触觉芯片的第四代产品。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIULiaSrRyy3r52pCggibk0c7RRhdc1JZZsY8Z4fpsic2LER8VB1LHdPupeK8awx3rkZ0GLskMxOSXiaUibzDam0lClXkVXsqL3BFjibA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0f39b0be191e7bd4c678aed82ccd3c10.webp)
 
 一年前，它把触觉传感器做到了 199 元起售。今年，又把霍尔触觉从手指铺到了脚底。
 
@@ -68,7 +70,7 @@ AnySkin 的作者在论文局限里写得很直白：**这类磁皮肤沿袭下�
 
 所以同样在芯片处读到 5 毫特，源在 2 厘米外和在 20 厘米外，差分之后剩下的根本不是一回事。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVPOkYet6qia4pLL7T4KkWdKyN9QYpp1nKjcgKp6zS21saD1jCzLI10LNZ8AjQWHYQGKKhfcpq7a6ncOWVkZFaibpCLagLCCXCxg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d5adf866ae48c95f8594acab038df576.webp)
 
 ### 我现在翻霍尔触觉的规格书，关键找三行
 

@@ -4,9 +4,12 @@ date: 2026-07-10T00:00:00+08:00
 slug: "oXKXxzDOWGOXuzmgdprZwg"
 description: "很多人觉得，人形机器人最大的门槛是AI。站在做编码器芯片的人角度，我更愿意相信另一件事情。"
 original: "https://mp.weixin.qq.com/s/oXKXxzDOWGOXuzmgdprZwg"
+models: ["AS5047P", "MT6816"]
+companies: ["宇树"]
+tags: ["磁编码器", "电感编码器", "多圈编码器", "TMR", "霍尔", "人形机器人", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW0e0YIAwqIjjzIlpnJHwM8O5xn8t7lSGk26eBiaNhcchDs2TPpianASOkX0uaVeNJKAIG64mIPQIzmz26YgaLVgVRIkNFmXu37w/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d64bddecc7a57308e25fcf2fa0e51cb0.webp)
 
 ##
 

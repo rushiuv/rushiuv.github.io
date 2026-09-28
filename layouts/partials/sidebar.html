@@ -1,0 +1,19 @@
+<aside class="sidebar">
+  <div class="card about">
+    <img class="avatar" src="{{ "images/site/avatar.webp" | relURL }}" alt="主人公" width="72" height="72">
+    <div>
+      <p class="card-title">如是有为</p>
+      <p class="muted">一个做芯片的工程师，写编码器、磁传感器、机器人关节，也写这一行里的人和事。</p>
+    </div>
+  </div>
+  {{ partial "qr-card.html" . }}
+  {{ range slice (dict "tax" "models" "label" "芯片型号" "k" "model") (dict "tax" "companies" "label" "公司与品牌" "k" "company") (dict "tax" "tags" "label" "主题" "k" "tag") }}
+  {{ $k := .k }}{{ $label := .label }}{{ $tax := .tax }}
+  {{ with index site.Taxonomies $tax }}
+  <div class="card">
+    <p class="card-title">{{ $label }}<a class="more-link" href="{{ printf "/%s/" $tax | relURL }}">全部 →</a></p>
+    <div class="chips">{{ range first 24 .ByCount }}<a class="chip {{ $k }}" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<small>{{ .Count }}</small></a>{{ end }}</div>
+  </div>
+  {{ end }}
+  {{ end }}
+</aside>

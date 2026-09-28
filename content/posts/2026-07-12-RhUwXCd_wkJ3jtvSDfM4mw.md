@@ -4,9 +4,12 @@ date: 2026-07-12T00:00:00+08:00
 slug: "RhUwXCd_wkJ3jtvSDfM4mw"
 description: "44°——ADI AD2S1210 的相位范围，超出这个窗口，解调就不保证了。"
 original: "https://mp.weixin.qq.com/s/RhUwXCd_wkJ3jtvSDfM4mw"
+models: ["SR3511N"]
+companies: ["峰岹", "ADI", "多摩川"]
+tags: ["磁编码器", "电感编码器", "FOC"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU54egjiaj7zSMniaBYERJgbqp8Il9SdXrzL9dvoWPLDtZbxV6K4wslouU56bcIhGia36MSibibxB1n2LuVZqib6Mmbb7cO5Iu8x4vqw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a61e5d2fa215c05f5df37032dcfe91bc.webp)
 
 工程手记 · 旋变解码
 
@@ -20,7 +23,7 @@ original: "https://mp.weixin.qq.com/s/RhUwXCd_wkJ3jtvSDfM4mw"
 
 **40°**——ADI 自家 CN0276 参考设计，EXC 到 SIN 的实测总相移。**一块设计得当、器件全部正常的参考板，把 44° 的预算花掉了 40°。只剩 4°。90°**——峰岹 6 月 1 日发布的国产 RDC SR3511N，公开宣称：实时相位校正，"**能自动纠正任意大小的相位延迟，即使超过 90°**"。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUbgAOEsEEcVQcnq10brqQ130SqTPFmpzcRdHHXW00LZziaQEhvRbiaQicXz3wN7JmBmgv58IRRbDNF5McqxeQqG07lGPp2wNmoHU/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/b470caabaa288aeb46a7ee4e59df058e.jpg)
 
 **峰岹这一枪，精准打在 ADI 最薄的那 4° 上。**
 
@@ -40,7 +43,7 @@ original: "https://mp.weixin.qq.com/s/RhUwXCd_wkJ3jtvSDfM4mw"
 
 新闻稿会挑好听的说，框图不会。它画了什么、没画什么、把哪个器件画在了芯片外面，全都写在脸上。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWl7IJTjTp5GNkFuxhJ0uyaAjvAzU3ibSF97tPgx3U1UKmYKsGLDXkiaHibJyNzsjGfMyrDHribExniavQLBEYTJgPQaDeFWoVjSq4k/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/f7ac819620db4942dffb580c20078ebe.jpg)
 
 SR3511N 内部框图（引自峰岹官网公开资料）
 
@@ -299,7 +302,7 @@ AD2S1210 的激励是可编程的：**2 kHz 到 20 kHz，250 Hz 步进。顶到 
 
 有意思的是，峰岹这次跟 SR3511N 一起发的那颗"双磁式旋变"，长这样：
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVDh7n5fO2iclfBwjHfvicGfic5ibhShL04r7roU1QOTxzib3DfkpuCicHDUiaicfq9xP3gG93lyutQ0SPPZJCXZI6qDPiaYzDHoqO2pkBs/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/98cc1f3b803f6b79f34e462e2f77e3f1.jpg)
 
 同期发布的「双磁式旋变」——是印在 PCB 上的线圈环
 
@@ -367,7 +370,7 @@ SR3511N 公开强调的第三个功能：**插值误差修正 / 系统误差标�
 
 而它为这个功能配的那张效果图，值得所有人盯着看三十秒：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWprESD0XdG1eU13zyvBSgdQB3r1Hrt3oZmscyeU6HZGf1Hv24A8gtibw5FVRo8bwdq8ria3bZC5c0qZuaonouXrffIyY2iccWJvU/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/e3857f26c05d85f49ca99f84d4b505fa.jpg)
 
 峰岹公开的插值校正效果图：蓝线走了整整两个周期，就是二次谐波
 
@@ -549,7 +552,7 @@ CN0276 把激励驱动、接收滤波、相位范围、绕组阻抗、功耗和�
 
 **这张清单我做成了一张图，方便你存下来、或者直接甩到群里：**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVQurqqYE4vE7m3hkuCt8arT9kV1QBEwpicN9Efn58FkBrXYzficuCBn9tiaWt6E9duiaibA4xTDRJ5dwSPR2Atogic6BmES9a67ejPs/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/5504e9ce067d55f156dd596e3c9955b6.jpg)
 
 存下来，拿到手册时照着问
 
@@ -593,6 +596,6 @@ CN0276 把激励驱动、接收滤波、相位范围、绕组阻抗、功耗和�
 
 ### 知识卡片
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWTJt0jOx8ZeKRTTNWibWuZIYvayxFz4rAJicEW6Fzzwe6ycv7VnicFic5eP193x4eAqM8K84SdaRFcqjLMJnH3wYMNsWLTJb2K0ibM/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/12df731ff8e980fd4f2e468b4723f81a.jpg)
 
 ◆ ◆ ◆

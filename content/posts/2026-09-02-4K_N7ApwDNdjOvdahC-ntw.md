@@ -4,9 +4,10 @@ date: 2026-09-02T08:51:00+08:00
 slug: "4K_N7ApwDNdjOvdahC-ntw"
 description: "台架上一台伺服电机，指令给了 10 A，电流环正常，转速也稳。可它就是比旁边那台更烫。"
 original: "https://mp.weixin.qq.com/s/4K_N7ApwDNdjOvdahC-ntw"
+tags: ["FOC"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUvXLmLo5iaQfIoBBBZ5aibPVIMSLFOTJ1UAYO6mRUGm0tPael05dCuS8ibbAl8PmMg6c5gIUSA9SpI2BFhWjhV37JZqHFJkQRssk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/45405e96522dad38851ce81ea8f44a67.webp)
 
 ## d 轴多了 0.2 A，为什么铜耗只多 0.044%？
 

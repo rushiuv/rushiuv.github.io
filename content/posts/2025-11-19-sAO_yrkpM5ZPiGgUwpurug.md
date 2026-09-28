@@ -4,15 +4,17 @@ date: 2025-11-19T00:00:00+08:00
 slug: "sAO_yrkpM5ZPiGgUwpurug"
 description: "你看见的不是一个“网络故障”，你看见的是全球互联网的神经中枢被拔掉了半个小时的插头。一家公司，一个我们几乎从未察觉的服务，它一咳嗽，马斯克的X、你引以为傲的ChatGPT、甚至某些国际航班的系统，统统陪葬。"
 original: "https://mp.weixin.qq.com/s/sAO_yrkpM5ZPiGgUwpurug"
+companies: ["Anthropic", "OpenAI", "Cloudflare"]
+tags: ["AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyStUR7lj67uTeE1OvqB85iczicwGyKK7W8GDIMYRcClpejT7rUtWM9jianFXmmlhn0nrSsa2ibibKHtlGA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c6b4b5753d1b2c5549457da2352167f8.webp)
 
 你看见的不是一个“网络故障”，你看见的是**全球互联网的神经中枢被拔掉了半个小时的插头**。一家公司，一个我们几乎从未察觉的服务，它一咳嗽，马斯克的X、你引以为傲的ChatGPT、甚至某些国际航班的系统，**统统陪葬**。
 
 这事儿最颠覆的脑洞在于：我们以为自己在用着**去中心化**的、自由的互联网，结果却发现，整个世界的信息流动，其实被**少数几家巨头**像**拧螺丝**一样，紧紧捏在手心里。你追求的“稳定”，正在制造**巨大的、灾难性的中心化风险**。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyStUR7lj67uTeE1OvqB85iczq3Ym49NJ5mAMPMLwH2rKfKOsibMk2NtyvJ7QCYb5jNFfodQkfVaxohw/640?wx_fmt=jpeg)
+![](/images/wx/874e66bb97d5cf5f9229ba0fa4baff66.webp)
 
 我跟你讲，昨天晚上七点多，我正准备打开一个国外硬核技术网站，结果屏幕上一个大大的500 Internal Server Error，我当时火就上来了，第一反应？**“又是我那破梯子出问题了，一定是梯子又被墙了！”** 气急败坏地折腾了半小时，换节点、重启软件、重装内核，差点把电脑砸了，最后才看到朋友圈有人哀嚎：**“卧槽，Cloudflare崩了！”**
 

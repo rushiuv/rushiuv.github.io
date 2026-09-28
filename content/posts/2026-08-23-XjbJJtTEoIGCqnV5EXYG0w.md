@@ -4,9 +4,11 @@ date: 2026-08-23T08:53:00+08:00
 slug: "XjbJJtTEoIGCqnV5EXYG0w"
 description: "有人扔过来一份 AS5047P 的 datasheet，配一句话：没有线性校准，没有非线性校准，14 bit 分辨率，宣称 1700 rpm 下精度 0.02°，这合理吗。"
 original: "https://mp.weixin.qq.com/s/XjbJJtTEoIGCqnV5EXYG0w"
+models: ["AS5047P"]
+tags: ["非线性校准", "AMR", "车规"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWkhfAAU9hc02YVozQxP7GAfpcCA7EGjker35MLgEVDXibTH4G1YNLKibibLYo5C6hNFbGgjEPq7F4iaqSUEkKSYTWVw8F2kmcFrnw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ada3ab615c547f25540bef4a75e10fbf.webp)
 
 ##
 

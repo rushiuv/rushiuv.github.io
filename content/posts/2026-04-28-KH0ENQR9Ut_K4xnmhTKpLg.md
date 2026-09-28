@@ -4,9 +4,10 @@ date: 2026-04-28T07:00:00+08:00
 slug: "KH0ENQR9Ut_K4xnmhTKpLg"
 description: "小米这次把机器人灵巧手拿出来，最值得看的不是“像不像人”，而是它终于不再像一个只会摆手势的展示品了。"
 original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
+companies: ["昆泰芯", "小米"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUALtiaqRCWnhtaCI45OFbZqgm37nPDQoG7glwm606lbN0dQWLc8scJt1TiaXfdLia2jf9gdRbaeyUHgHZIecMBtPpdrEnF67cMbA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/e05779e91539922397d64857a7656b1d.jpg)
 
 ## 小米灵巧手这次不秀动作了：8200 平方毫米触觉覆盖，才是机器人进工厂的门槛
 
@@ -34,7 +35,7 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
 这里面最值得拆的，就是 8200 平方毫米全掌触觉覆盖。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVfDxFmROe0qibmdrPiaNNX9OBPWkYqvicpPfJIECdwVv3qY5rTOuBGJ1qYyGJzC2vECRzIhomx1RPzBOOH8EBiclpiaAU5QR4wh51Q/640?wx_fmt=png&from=appmsg)
+![](/images/wx/50d74157fde609007e44d13bd685a301.webp)
 
 >
 
@@ -46,7 +47,7 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
 成年人单手手掌面积大概在 100 平方厘米到 120 平方厘米这个量级。也就是说，小米这个触觉覆盖面积，已经接近一只手掌的大部分区域。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXR4dJw5zhrUvsAOaRDGKgYq9ic8WTbgl5cVA678GdiaYqZDGSzJOgkgMbclocd7yiaFqcunOcGFUz4dOXMAmRKd39vFHFNORDFAU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c1ceb54494913eb5ac868b9226173859.png)
 
 这就不是“指尖贴几个传感器”了。
 
@@ -66,7 +67,7 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
 小米方案里还有一个容易被忽略的细节：触觉手套。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXrfnjn5vAcwic0nnbhNKTiboAicRxD5b3xxy4vcHezxEw28LaRRdZJoehoAbSvYXFIYVv5fqs9F3Q1KnQkE2p3nfEffLe5TPgpUQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/bb3a84742a294dfc16840e4611767da4.webp)
 
 这东西表面看是外设，实际上很关键。因为灵巧手最难的，不只是硬件能不能做出来，而是数据怎么来。
 
@@ -92,7 +93,7 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
 它不是安安静静地等你按。它会跟着手指一起弯，会被物体反复摩擦，会被电机加热，也会被油污、灰尘、冲击和长期磨损折腾。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVl4ViaPFlTL7kcGfdExj3ZribFcBoBRc02VkblWmdHyFOZpibea22t1xPzdibW3NvkR5oCzOamMibag5TgnTBkJiak5DgwtssUkic8JQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/36aa656dc1960a81e55e001d4a0ed439.webp)
 
 这时候，传感器读到的变化，不一定都来自真实接触。
 
@@ -237,7 +238,7 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
  |
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVmXQdar6Mxx9fz1Xicl1OM106SV2icGE50QvkBWvh3o0ZWp0zaR8WErZ0icPYdAF3A4fnjz2lUzg3KkibV45dG8ianxJbCShpvRico8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b81fa24c6c516c9b36178f68dbc69c72.webp)
 
 这里面没有免费的午餐。
 
@@ -332,23 +333,23 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
  |
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVHib7QiaFWBy7hIdQmdiarVTOc8eTAz2aYqEraVbwiaDiadNfMByFuR6jlsP6RbUq8zVHFG9rjnsnoZdHe82wWquPY0t0LlxejBVFk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f809bcc876cc49fc77b00ded76ef8e98.webp)
 
 压阻式最像一张会变电阻的皮肤。压一下，电阻变；松开，电阻回去。它适合铺面积，但柔性材料会“记仇”：按下去和松回来不是同一条曲线，抓住不动时读数也可能慢慢飘。做“有没有接触”很好，做精密力控就要小心迟滞和蠕变。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXhTDpXrUzQhq8L6jq8HqCibwqNJ9NOek76xfOiadUGticsEBpZjXZYwicSbZ4ttAyic6Pp7giadq416Ebv4XEcGFp8A9OHtpx8CUAN0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/94d98325a433d75407649104988369ad.webp)
 
 电容式很灵，轻轻一碰就有反应，也容易做薄。但它最怕系统不干净。手指里有电机线、驱动线、金属结构、柔性排线，面积越大、布线越长，寄生电容越麻烦。它考验的不是单点灵敏度，而是屏蔽、接地、版图和扫描电路。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWBnIcFmNHWAnhfXHpuiaClNHyibBicCFxPu5EqJqsFGnVDtvic3mZiaoYvD3W4xTdev6DMAFAIhnhjjfWXz6FfPicLF8ZRjasMOAVEU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f12528d91fafcbb376deb14948509f6c.webp)
 
 视触觉像给手指装了一只“看触觉的眼睛”。它的信息量最大，能看边缘、纹理、接触面积和微小滑移，特别适合指尖精细操作。但它需要摄像头、光源、弹性体、反光层和稳定光路，表面还怕脏、怕磨、怕划。指尖用它很合理，全掌无脑铺满就会很复杂。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVmNdBJNbd1qtakBBLic8xpUiaCbzV1FDbibehFB6quX3CbkOfcIeh0alBF4D2tZnLEl66jJvFczJoYWewQQ9ryhUw8xYiceyJv68s/640?wx_fmt=png&from=appmsg)
+![](/images/wx/17f7b8e5a306e734a4a5cedc82c71403.webp)
 
 磁感应式通常是在弹性体里放小磁体，下面放磁传感器。受力后磁体位移，X、Y、Z 三轴磁场变化，就能推断压力、侧向力和滑移趋势。它适合三维力，但多个磁体靠近会互相影响，阵列越密，标定越难。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUTfOKyRlumFDc4hfY0a17ZSsbnsq7Q7DUYs1TyQfFudhX0voZ3gdT9lnCYT9ZUtR0cw9WjwLt8OQgcfDukhmKT6KiaBGsK5HO8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c7ab23f97e7899066dc423fb1460ff18.webp)
 
 压电式对动态变化很敏感。敲一下、震一下、滑一下，它反应很快，适合做滑移报警和动态接触补充。但它不擅长长期静态力。如果机器人手抓住一个物体不动，你想让它持续告诉你当前压力是多少，这就不是压电最舒服的场景。
 
@@ -396,7 +397,7 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
 小米方案里还有一个特别有话题性的设计：仿生汗腺主动散热。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUuwj808kia3hwicYxE1RPPxicH1rMpuC1CsAZjBcmYhJ6fxn9v7CANJic3LGQp3qYUDgrjGvK8hjABAMpyzQ8BQCsYe4CnqOxiaTgo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2ac3c74d746bf3bedb489b2f9bdff9df.webp)
 
 这件事技术上很有意思。
 
@@ -414,7 +415,7 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
 很多人把触觉传感器和编码器分开看，这是不够的。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXsYNUgGHJoibCR7tBmDfNvQxmwUWX8S548PljFlVdkz5kRTVVF7R8HaGMaiaPdiaZCHA7tiaQr9zpaOQUvBY1gJ9QsYibhiarP4Vib8o/640?wx_fmt=png&from=appmsg)
+![](/images/wx/998a675965ed0e6d0a98da03a06ded58.png)
 
 **触觉传感器告诉你：手碰到了什么，压力在哪里，物体是不是要滑。关节编码器告诉你：手指现在弯到哪里，每个关节处在什么角度，接触发生时姿态是什么。**
 
@@ -432,7 +433,7 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
 手越灵巧，触觉越密，关节越多，对位置反馈的要求越高。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWjmtA3au7ooibsnJs9ZvjA97r596F6IuO0FuxwO4jWpkTnLflgrScGDFuQIjK8CsK3SFDVI3qd52OiabrXrxaibSLkYnwO9qp158/640?wx_fmt=png&from=appmsg)
+![](/images/wx/837dca822aef81219942073680052a0e.webp)
 
 ## 这个市场已经从“论文”走向“订单”
 
@@ -448,7 +449,7 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
 这些信息，视觉给不了全部，位置编码器也给不了全部，必须靠触觉补上。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW3ibWrbQ0ib3owTD71flRiclu1ZHZ8t292nEDCI3eia1dc9Xaz4Jia3FL0kHYQzz314AhNllPeENCMNhtffHHCdGxekcAdDmMxiaIvs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7ccc858862a4adc500f7f71379bc2779.webp)
 
 ## 对编码器芯片公司的启示：机会在触觉旁边，不是盲目做触觉
 
@@ -494,4 +495,4 @@ original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 
 **灵巧手的竞争，已经从“像人”进入“能干活”。而能干活的前提，是整只手都得有感觉。**
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUHJ06UMdeD7BnQASbmKZCfZrp3XxxmquDjhIdkbIR0B2nHl87n2cZ1KopiccZcor5VeGQFZOg6paYiazibn9DkvT2fNe32Dcjib08/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/4758cfb29cb1683eb494a5ba43a9a704.jpg)

@@ -4,11 +4,12 @@ date: 2026-02-04T22:49:00+08:00
 slug: "lXsiU3724DEtbpiB7Tb6Xw"
 description: "盘面上第一次出现“商业航天”四个字的时候，其实很安静。没涨停、没爆量，只是悄悄多了一批名字里带“航天”“动力”“卫星”的票，被资金反复扫了一眼，又放下。"
 original: "https://mp.weixin.qq.com/s/lXsiU3724DEtbpiB7Tb6Xw"
+tags: ["投资"]
 ---
 
 盘面上第一次出现“商业航天”四个字的时候，其实很安静。没涨停、没爆量，只是悄悄多了一批名字里带“航天”“动力”“卫星”的票，被资金反复扫了一眼，又放下。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRhThmZJy90QPWEI15FV31iaSkiacM38SsibopKIMWve8lviblPfasqsA6mZuibzw5RsIm25I0smsm42Jg/640?wx_fmt=jpeg)
+![](/images/wx/9493e00d67f8af59d8eccc8afd976027.jpg)
 
 那种感觉很像在牌桌上，有人刚把筹码往桌子中间推了一点点，还没亮底牌。
 
@@ -84,4 +85,4 @@ original: "https://mp.weixin.qq.com/s/lXsiU3724DEtbpiB7Tb6Xw"
 
 也可以聊聊你更关心的是：等真正的商业航天公司上市那天，你是准备去接，还是准备跑。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRhThmZJy90QPWEI15FV31iaErHGJl6bXFKTVWEAYmibHc4Me1vhwMEicq17awEpH5ibv2OytoR4Od2Hg/640?wx_fmt=jpeg)
+![](/images/wx/270b9c0b9ccad7214906862b52fabbce.webp)

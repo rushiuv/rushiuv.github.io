@@ -4,6 +4,8 @@ date: 2026-09-22T07:44:00+08:00
 slug: "boh6PE6LAWfEu_qeE7nktA"
 description: "我一直有一个判断：编码器在汽车上，ISO 26262 这张卷子已经考了很多年；到了机器人关节，却一直没人真正出卷子。"
 original: "https://mp.weixin.qq.com/s/boh6PE6LAWfEu_qeE7nktA"
+companies: ["昆泰芯", "NVIDIA"]
+tags: ["功能安全", "人形机器人", "机器人关节"]
 ---
 
 ![](/images/如是有为_20260922_2647878640_1_01.png)

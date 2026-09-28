@@ -4,9 +4,12 @@ date: 2026-06-15T00:00:00+08:00
 slug: "ETFDHWAXhX_yvsZbXTbsFg"
 description: "我第一次在项目会上意识到“PTP 不是救命药”，不是看白皮书，是看一张验收表。"
 original: "https://mp.weixin.qq.com/s/ETFDHWAXhX_yvsZbXTbsFg"
+models: ["AS5047P"]
+companies: ["ams OSRAM", "Intel", "倍福"]
+tags: ["ADC", "编码器接口", "EtherCAT"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVS5sIib0kyHGku6qGhv705bicVz3eK1D4QWosbZCwlTwpafzyZg8zNiaqzdRJsmXHyCJiaNLrZvOQEXobT4I4K978c0OJHr0K8U7c/640?wx_fmt=png&from=appmsg)
+![](/images/wx/67f52bc667a096efa995488924fb8de2.webp)
 
 ## Basler 相机、Moxa 交换机都上了 PTP，机器人为什么还是抓偏 5mm？
 

@@ -4,13 +4,14 @@ date: 2026-04-15T22:50:00+08:00
 slug: "dybkZaSnyWWp70QPaa9i3Q"
 description: "知乎号钟林写了一篇文章，说国内做芯片既要又要还要，性能要好、成本要低、品质还要稳，三个方向互相拉扯，最后变成不可能三角。他说得对，但只对了一半。"
 original: "https://mp.weixin.qq.com/s/dybkZaSnyWWp70QPaa9i3Q"
+tags: ["磁编码器", "TMR", "芯片设计"]
 ---
 
 知乎号钟林写了一篇文章，说国内做芯片既要又要还要，性能要好、成本要低、品质还要稳，三个方向互相拉扯，最后变成不可能三角。他说得对，但只对了一半。
 
 因为他说的那个不可能三角，是通用芯片的不可能三角。传感器芯片的不可能三角，比那个多了一维。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXu31KNlltZW6jQbmXQbcEg3XVcKJaCrARxYc39Yl4ibjOg9gzQfl5jWX1yWxFvwvGpficdfHMGQjG1ybcUTBTbjjGk1qH3Gjnw8/640?wx_fmt=jpeg)
+![](/images/wx/f1aae9244ba987e934cee432f254a4ea.jpg)
 
 普通芯片的不可能三角是：性能、功耗和面积。你把频率拉上去，功耗就炸了；你把面积压下来，性能就缩了。这三者互相制约，所以叫三角。后来钟林又加了一个——可靠性，变成PPRA。性能、功耗、可靠性、面积，四角互相拉扯，找系统最优解。
 

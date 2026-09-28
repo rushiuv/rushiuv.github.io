@@ -4,15 +4,18 @@ date: 2026-06-01T00:45:00+08:00
 slug: "J6xXoFDWdbNLWSZFb12RpQ"
 description: "最近，我们公司老大弄到了一颗昆泰芯的新产品：光学编码器芯片KTO9512。"
 original: "https://mp.weixin.qq.com/s/J6xXoFDWdbNLWSZFb12RpQ"
+models: ["KTO9512"]
+companies: ["昆泰芯", "iC-Haus"]
+tags: ["光电编码器", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUl1wuxUzeVORPCUR5pvaM5kM3oM9z3l4VHXVPU6uQftAJjDHMKzicVsRNRcsYKwOdpI7xRV154oW7Z3hA0tZUAx2XtbEx9G7fY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7226c101281143ec12d820f15a790a9b.webp)
 
 最近，我们公司老大弄到了一颗昆泰芯的新产品：光学编码器芯片KTO9512。
 
 听网上文章介绍，这颗芯片的目标很明确：对标甚至替代德国iC-Haus 的 iC-PN2612这类高性能光编芯片。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXnuyNZuxcvn5moPrPVMTYFib0wJKFvNleibzwWx89JYIVbE7akvDaGAMkJ1B97HicJ3ukRYJaf8Lzm5u1ANnmiaQIw3nZzyRo41xo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/30e845dca95da26dc8626bb38852da77.png)
 
 这种芯片，很多人第一眼会看什么？
 
@@ -42,11 +45,11 @@ original: "https://mp.weixin.qq.com/s/J6xXoFDWdbNLWSZFb12RpQ"
 
 图形决定信号怎么来，PDIFF 决定脏电流往哪走。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXo1RI3FqdPcP9e1NA1GZ2YEVThibLx4IcYAuBlQpYKO1pZqdUHcChnz38PaP93xwoz53YFyQZWPJicbZUrfdkzTtSbJEyszGEcA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2657ea348ce20451d05e5caa2e28c9b7.webp)
 
 网络搜到昆泰芯公开专利CN117664195A 《光电检测单元、光电编码器系统及电机》，讲的是一种光电检测单元：它用于把表征光栅盘位移的扫描光信号转换成电信号，而扫描光信号里会携带谐波分量；该专利的核心思路，是通过定义光电检测单元的几何结构，对谐波分量进行抑制，从而提高信噪比、减少测量误差。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXTy6EKZWARbSjVWvE259U5ib0oAaRQrL8dRqvDFS6rgLMAKU0GCmlpDGKpRsZnS0vzMTXa7OtODkf97garq3f0mxicXcNZoIPSg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e83eb99051d58c627c12f41758763e34.webp)
 
 你看专利图里的 151、152、153、154，或者下面一排 155、156、157、158，它们不是简单矩形 PD，而是一组经过几何定义的光电检测单元。
 
@@ -116,7 +119,7 @@ PD 图形不是“接光的铜盆”，而是信号链的第一道滤波器。
 
 在 CMOS 图像传感器和硅光电二极管阵列研究里，电串扰常被归因于光生载流子在硅中的横向扩散；相邻像素或相邻光电二极管之间的隔离结构、衬底厚度、外延层条件，都会影响这种串扰。比如前照式硅光电二极管阵列研究中，有论文明确把 electrical crosstalk 与光生载流子从受光像素向未受光像素扩散联系起来，并比较了不同 guard ring 结构对串扰的影响。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWpCibAicyuvFSWSMibiaOzXfgbvf6tjViaial1y8wiaMeqHXVS8h3p5st4uic81l9gcByM6vHiamfZKsPoLmvNn091ibv2d7MKav1oqCO4I/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9be3c499c64a25b63ede44dd4441154e.webp)
 
 所以不要把两块感光区之间那条缝看成“空气缝”。
 
@@ -148,7 +151,7 @@ NWELL/P-sub 的 PN 结不是只在垂直方向工作，它的边缘也有电场�
 
 CMOS 图像传感器里有大量研究指出，STI 与有源区界面、氧化层/硅界面缺陷、结边缘缺陷，都是暗电流的重要来源。比如有论文提出用 P-well 包围光电二极管，目的就是把 STI 区域与光电二极管结隔开；测试中该结构把暗电流降到传统结构大约一半。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVcd3tIMJkd5PpsGXBiaabcTgMj0iaiavfWgPniaiammqN1on7yeqEu3iauPwJOx57zWNXkhKuS4NWJTS9eECgwnuEXjY5pth37mBOoE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/828e8e672a780081cbaedfd4702480f1.png)
 
 第四，阵列会把这个问题复制很多次。
 
@@ -168,7 +171,7 @@ PDIFF 如果接到 GND，它就不是一条普通扩散区。
 
 它变成了一个P+ substrate contact / guard ring / guard stripe类型的结构。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUKfzicJGibUMibx5m6bCHllpZ1DgJPicPzQQHrJPY0RjicM1wXGfibWvRJv6RjaNGUgHzyrCmxwjLhhgYjKFPvt4EtFiaojrVibiclKPlI/640?wx_fmt=webp&from=appmsg)
+![](/images/wx/053cfba7c61f99eaa7d8dca32c62eb2d.jpg)
 
 它至少做了三件事。
 
@@ -214,7 +217,7 @@ PDIFF 或 P-well 类隔离结构的作用之一，就是把高场区域、STI �
 
 例如，有低暗电流 CMOS 图像传感器像素论文用 P-well 包围 photodiode junction，把 STI 区域与光电二极管结隔开，在不改工艺的情况下通过布局降低暗电流。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU2W5J9IlllxiczEyXxGQVrq0sZwXzVB0FhQ8LtTokCcUv15ZqqpvhfwCD6r7LBGk1gpdrKf6oMysJWqvZpNajIddSWjs2dOHuI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/626aa740634cda4ea1b76d270b499569.webp)
 
 这跟我们说的 PDIFF 接地隔离不是完全同一个结构，但底层思想一致：
 

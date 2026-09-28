@@ -4,9 +4,12 @@ date: 2026-07-08T00:00:00+08:00
 slug: "4wI2vLUkLLREXRp3tvUZ9A"
 description: "编码器角度误差校准点加得再密也压不住温漂，根源是封装热应力造成的整圈直流偏移不在校准表能拟合的维度里，必须靠角度-温度二维标定才能补掉。"
 original: "https://mp.weixin.qq.com/s/4wI2vLUkLLREXRp3tvUZ9A"
+models: ["KTM5220", "KTH78"]
+companies: ["昆泰芯"]
+tags: ["非线性校准", "AMR"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUeIvaYdcsEfka7nxxJKEI0PlzAqsaVMdlXial6z1Jic2m0xSO3Edy6MI1hUGK0ib96hHw2QHsVCKictEibq3Z5SzujubjONYXoOkPI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/984faa7a29ab0e7c272f18edde951534.webp)
 
 工程拆解 00/08
 
@@ -140,7 +143,7 @@ INL全称积分非线性，通俗讲就是“编码器实际给出的角度，�
 
 选型时多问一句“这个数是什么条件下测的”，比只看数字大小更重要。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXoEDkfQvb2wdFkslSI4gZXh6Lia5VPfDzfH0o3m4Ozd2xMl7CsrEUknY8YHkjOasI9PIOwTQ9hLGhGmpuWpBLxibm49Xq9pTeRQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/84107170de5bb91adcacb4a3488f24d1.webp)
 
 《KTM5220校准点堆到256个，全温±0.15°纹丝不动》知识卡
 
@@ -156,6 +159,6 @@ INL全称积分非线性，通俗讲就是“编码器实际给出的角度，�
 
 如果误差根本不随角度变化，比如随温度整体漂移，校准表再密也无能为力。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVGbRlurIGmfzuFQDHlp6qO0qQncibv45gQJAh9ibQ8cKt1abu83aablsEynyfXicyq0D5Bdj6Cliccxy6dyn2MYL0bdxJUTShf4oM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d315175f61208b665c9527092492351b.webp)
 
 《KTM5220校准点堆到256个，全温±0.15°纹丝不动》知识卡

@@ -4,6 +4,8 @@ date: 2026-09-21T13:59:00+08:00
 slug: "jbLxQmR1yYF4wej1yXWE5g"
 description: "· BMW 的公开信息证明人形机器人已在真实产线承担重复动作，但不证明它获得了某项功能安全认证。"
 original: "https://mp.weixin.qq.com/s/jbLxQmR1yYF4wej1yXWE5g"
+companies: ["Figure AI", "宝马"]
+tags: ["功能安全", "人形机器人", "AI"]
 ---
 
 工程手记 · 人形机器人功能安全

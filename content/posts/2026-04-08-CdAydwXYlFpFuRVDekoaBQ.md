@@ -4,11 +4,14 @@ date: 2026-04-08T00:00:00+08:00
 slug: "CdAydwXYlFpFuRVDekoaBQ"
 description: "他跟我说：「我们关节要用1 arcmin精度的编码器。」"
 original: "https://mp.weixin.qq.com/s/CdAydwXYlFpFuRVDekoaBQ"
+models: ["KTH78"]
+companies: ["ADI", "TI"]
+tags: ["磁编码器", "人形机器人", "机器人关节"]
 ---
 
 前几天见了一个机器人项目的采购负责人，
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXzFBub53icpoahQ8tD2UyrBXfBs2qPQibW1FkzXQvCYmLAbRJibnKw2e6kOG64FoNGxiaTVdKLF70lRibInnYibpvY9y1AZYWZkWBX0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3a373294195b61a126159bf560a9c70d.webp)
 
 他跟我说：「我们关节要用1 arcmin精度的编码器。」
 

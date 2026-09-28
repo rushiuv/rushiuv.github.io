@@ -4,13 +4,14 @@ date: 2025-10-05T00:00:00+08:00
 slug: "EqVsXUvjnbd0auIng6Ifdw"
 description: "一家公司要是真没威胁，根本轮不到“挨骂”的待遇。小米这两年骂声骤然变密，不是它变差，而是它把三张最肥的桌子同时推开了：手机守住现金，大家电猛冲，汽车直上高毛利。财报和对手的报表都在同一页纸上——谁的增长停了、谁的毛利被压了、谁在回避价格战，…"
 original: "https://mp.weixin.qq.com/s/EqVsXUvjnbd0auIng6Ifdw"
+companies: ["小米"]
 ---
 
 >
 
 一家公司要是真没威胁，根本轮不到“挨骂”的待遇。小米这两年骂声骤然变密，不是它变差，而是它把三张最肥的桌子同时推开了：手机守住现金，大家电猛冲，汽车直上高毛利。财报和对手的报表都在同一页纸上——谁的增长停了、谁的毛利被压了、谁在回避价格战，翻新闻就能对上号。要不要投？别问情绪，盯数字，盯格局，盯它到底是在“抢销量”，还是在“改规矩”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQTAngoic38BOuV9M85k8iafoMMzXjC6sFDS6udnFPUewZ3buorp0c9zcEDPOWicV8LEiaTXZ1F5pG1lg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1fdcaa8827c9db37bb71af920649f671.webp)
 
 #### 一、骂声从哪儿起：不是“口水”，是“证据”
 
@@ -28,7 +29,7 @@ original: "https://mp.weixin.qq.com/s/EqVsXUvjnbd0auIng6Ifdw"
 
 你会发现，骂声并不是“风向突然变了”，而是当这些数字落地的同一时间开始密集爆发。为什么？因为它动的地方，正好是别人最肥的那块肉。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQTAngoic38BOuV9M85k8iafoZswvbC4XgxzibKAhR7cQEUQIEyJbibxBOK3UzMxpTFgSQbDLrvVvWp6Q/640?wx_fmt=png&from=appmsg)
+![](/images/wx/484ead0ba7543236e785a3b0f9c407ec.webp)
 
 #### 二、谁的蛋糕被端走：对手报表是最诚实的“控诉”
 
@@ -40,7 +41,7 @@ original: "https://mp.weixin.qq.com/s/EqVsXUvjnbd0auIng6Ifdw"
 
 所以“谁在被端盘子”，不用猜——看谁增长停了、谁的利润线往下拐、谁在公开场合拒绝低价战，答案就躺在它们自家的公告里。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQTAngoic38BOuV9M85k8iafo2I9vrPqrF1aZo97P1pI8PhKDvUetdrqdDgx53snPuSSgLtDASKzcrQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a121deb88a2a0d36cc609db35d61d511.webp)
 
 #### 三、这不是“竞争”，这是“改规矩”：为什么它一骂就全骂
 
@@ -52,7 +53,7 @@ original: "https://mp.weixin.qq.com/s/EqVsXUvjnbd0auIng6Ifdw"
 
 为什么一骂就全骂？因为它切断的不只是某家对手的销量，更是**广告—媒体—渠道**这条老链条上的“现金回路”。你不喂这条链，链上的人就会同时发声。这不是道德问题，是经济学。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQTAngoic38BOuV9M85k8iafoepCvjiaxh9anezvOILCicrE9nKWqBibmFiceSywZLwT2lxlEZ4pAib6B2Xg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9b647367fa8312816d6abf4ebc1ac5bd.webp)
 
 #### 四、三条腿能不能站住：从“会不会倒”到“能不能跑”
 
@@ -91,7 +92,7 @@ original: "https://mp.weixin.qq.com/s/EqVsXUvjnbd0auIng6Ifdw"
 
 再啰嗦一句：你要看见这五个角度在**同一时间指向同一个答案**——小米不是只在“抢销量”，它是在“重排行业现金流的走向”。这才是“被骂”的底层含义。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQTAngoic38BOuV9M85k8iafoicXgOicAia9HPVavPIbiaZ6wibY4DtQKdt4Ejx98ITZ0pXshWZXEy6n7ynA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7cfb2dbdbcd553d4c9ad5e7c41ca55c9.webp)
 
 #### 六、风险摆桌面上说清楚，然后给结论
 
@@ -111,8 +112,8 @@ original: "https://mp.weixin.qq.com/s/EqVsXUvjnbd0auIng6Ifdw"
 
 **怎么拿？** 用人话说：把它当“会吵、会掉头、但在重写规则”的公司，拆成每个季度看三件事——汽车毛利能否稳在 20% 以上且亏损继续收窄；大家电收入和毛利有没有被价格战打穿；手机 ASP 能不能小幅回升而不是一路向下。三件里两件向好，就继续“慢慢买”；有一件炸雷且持续两季，还不改，**再见不送**。这一整段不是“玄学仓位术”，是把你在这篇文章里看到的证据，压进一个能执行的观察框架。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQTAngoic38BOuV9M85k8iafoabrDKRclgu3OMakkXFsicXVTz0h1kaB8nYPWyABJqL6ywOgEmdfhjBg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9dc8aa4d02ce9478f42afdb5f47008f7.webp)
 
 **现在的骂声，都是旧秩序的回声；如果它真能把桌子掀翻，等到新秩序落地，今天举刀子的人，最后也都得掏钱买单。**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQmzP7KIoasJttub3Wl1vGxnZ2gBNDIcRMsCIs0icy4xJHgEN5VsDibepU0roIXcZe6aRRS89IYcg8A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/88029d0e022db03effe122b36e9950ac.webp)

@@ -4,9 +4,12 @@ date: 2026-06-02T00:00:00+08:00
 slug: "VhOOE5WELgrSRsMLRb4LzA"
 description: "之前写宇树 G1 头部的 Intel RealSense D435i 深度相机时，评论区有位读者问：激光雷达不是已经能测距离了吗，为什么还必须有图像深度？激光和图像的深度在应用时到底怎么结合？"
 original: "https://mp.weixin.qq.com/s/VhOOE5WELgrSRsMLRb4LzA"
+models: ["D435i", "MID-360"]
+companies: ["Intel", "宇树", "特斯拉"]
+tags: ["AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUlqziajWP4iatNm5RwiaCnp8AgAh94a4ic8xgwqlcz32MicDOKknhhJITnLaJ0UJiaVpouBV4kdGgvON13M30IvaxcnugcTVvpeuFcQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/611f1bffe2a1360a6a292fc6605621fb.webp)
 
 ###
 
@@ -36,7 +39,7 @@ original: "https://mp.weixin.qq.com/s/VhOOE5WELgrSRsMLRb4LzA"
 
 特斯拉是最极端的一条路线。官方资料显示，特斯拉 2021 年开始从 Model 3 和 Model Y 上移除雷达，转向 Tesla Vision；2022 年又开始移除超声波传感器，让大部分市场的新车依赖基于摄像头的 Autopilot 系统。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIURwUXbNw21warQ6ia7S2OJuk0sAC8XBJnMvxWjujBD3kDz8Oibewr5jwGAiauQuS2Hsb3u2kCdJDG9hPJXVcLW2kGRzWPywnQe3g/640?wx_fmt=png&from=appmsg)
+![](/images/wx/54116e1371cf24eaae5f53de430d74dd.webp)
 
 这个动作在工程上非常激进。别人做自动驾驶，通常是摄像头、毫米波雷达、激光雷达、超声波尽量多堆几路冗余；特斯拉反过来，一路一路往下删。
 
@@ -50,7 +53,7 @@ original: "https://mp.weixin.qq.com/s/VhOOE5WELgrSRsMLRb4LzA"
 
 Waymo 走的是另一条路线。它不是删传感器，而是把传感器融合做得更工程化。Waymo 第六代 Driver 公开信息里提到，新系统包含 13 个摄像头、4 个激光雷达、6 个雷达和外部音频接收器，强调用重叠视场覆盖车辆周围，并兼顾白天、夜晚和复杂天气。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUHnDhBaRo6vkE2VXyMSf2EGFD7mDzGAb1BhQL6GG2LnmuG4VmlScssymdHibofVWKP2uTbmrRDgqTCvbVZo82kDhOKMeysXqnE/640?wx_fmt=other&from=appmsg)
+![](/images/wx/bbbc44a766f5d71d384f5691185238e7.jpg)
 
 这就是典型的安全冗余思路。摄像头看语义，激光雷达看几何，毫米波雷达看速度和遮挡，声音传感器补充特殊事件。它不像特斯拉那样赌单一路线，而是让多种传感器互相兜底。
 
@@ -58,7 +61,7 @@ Waymo 走的是另一条路线。它不是删传感器，而是把传感器融�
 
 所以特斯拉和 Waymo 的分歧，不是“谁懂 AI，谁不懂 AI”。更像两种工程哲学：特斯拉押注视觉模型规模化之后可以吃掉大部分问题；Waymo 押注多传感器冗余可以把尾部风险压下去。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIV1e18c9v47dvMIaUlfQP2Aib13Q8AjeaQ6REGx7YarWibSUCn9nnO2t6GYfs85iaQqmgd6wOBlycgOeNYHrJxiadpHAWficznx0RRk/640?wx_fmt=other&from=appmsg)
+![](/images/wx/c1ea188855921d5f61c3a9072144be41.jpg)
 
 ### 05 宇树 G1 的问题比汽车更像 Waymo，不像特斯拉
 

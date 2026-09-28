@@ -8,7 +8,7 @@ original: "https://mp.weixin.qq.com/s/oHTk2b-RzMKYXYLplSO0dg"
 
 你第一次进入市场，注意力一定在价格上，在涨跌上，在“我能不能赚到钱”上，这很正常，因为收益是显性的，成本是隐形的。问题在于，市场真正改变你命运的那部分，往往就藏在这些你一开始看不见的地方。你以为自己在参与一场判断对错的游戏，实际上你更早被拖进的是一套非线性的结构：位置不同，规则不同，动作不同，结果也完全不同。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTusRn8QQldibfI6RQcgl14vG1qThdmu55OcTRMbP4EPnFugH6PuHIIKz0VYpKuicLvM3GdsfMwhHIA/640?wx_fmt=jpeg)
+![](/images/wx/e62e291597ce99d3e5969f4059f6da1d.jpg)
 
 先从最容易理解的地方说起。去菜市场买菜，买两根黄瓜，价格写在牌子上；你要是一开口说把这一筐全要了，价格立刻变成“现场协商”。不是黄瓜变了，是你占用的空间变了。金融市场也是一样，你看到的价格，从来不是“无限量供应价”，而只是“这一点点量的价格”。你拿得少，世界安静；你拿得多，价格开始被你自己推着走，这个被你推开的距离，就是成本。
 

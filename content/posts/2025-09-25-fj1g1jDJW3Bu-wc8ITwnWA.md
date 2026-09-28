@@ -4,11 +4,12 @@ date: 2025-09-25T22:51:00+08:00
 slug: "fj1g1jDJW3Bu-wc8ITwnWA"
 description: "很多人做事，其实不是“被逼”，而是发自内心地爽。可我们习惯在字里行间加一层“不得已”的滤镜，好像痛苦才有价值。雷军造车、造芯，说是“压力大得窒息”，可你真以为他是受难？那分明是他的爽感来源。"
 original: "https://mp.weixin.qq.com/s/fj1g1jDJW3Bu-wc8ITwnWA"
+companies: ["小米"]
 ---
 
 很多人做事，其实不是“被逼”，而是发自内心地爽。可我们习惯在字里行间加一层“不得已”的滤镜，好像痛苦才有价值。雷军造车、造芯，说是“压力大得窒息”，可你真以为他是受难？那分明是他的爽感来源。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTRgficscqelNft92FRoxibZoW0lFgQu2dhnHClFwYMzK7Hk70KiaTsz3vrr1pDia9qvPcM7CUqIEYpicw/640?wx_fmt=jpeg)
+![](/images/wx/db0e85c784907b87d12324a4a38e861f.jpg)
 
 你有没有发现一个怪现象？很多人做事的时候，明明一脸兴奋，却偏偏要说成是“没办法”。比如程序员盯着屏幕熬到凌晨三点，调通了个接口，笑得跟中彩票一样，第二天朋友圈文案永远是“又加班，被生活逼的”。听起来特别苦，但你心里知道，他昨晚嗨得根本停不下来。
 
@@ -22,7 +23,7 @@ original: "https://mp.weixin.qq.com/s/fj1g1jDJW3Bu-wc8ITwnWA"
 
 问题在于，我们普通人学的却是相反的：被教育成“工作是痛苦的”“责任是沉重的”，所以哪怕你真心喜欢写稿、喜欢创业、喜欢钻研，也要假装很累，好让别人觉得你“值得”。久而久之，我们都忘了一个最简单的事实——人做事，本来就可以是因为享受、因为愿意、因为爽。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTRgficscqelNft92FRoxibZox5zicZia7gTD1iaSzJRVOibK5urjpF4woICPhQRNaT9CqVE0uRCnT1pk2w/640?wx_fmt=jpeg)
+![](/images/wx/65437573bf81afa369410917a2ebe596.webp)
 
 所以，当雷军说“当时哪来这么大的勇气”，你要学会听弦外之音。
 
@@ -32,4 +33,4 @@ original: "https://mp.weixin.qq.com/s/fj1g1jDJW3Bu-wc8ITwnWA"
 
 你要真以为他是受难，那就上了叙事的当。也许真正该学的，不是模仿他们孤注一掷的苦情，而是学会承认自己做事的爽感。因为那才是支撑人走下去的真正燃料。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTRgficscqelNft92FRoxibZo2ltz07tfic7kMWTgWWCE87WrsygdNYkyQnVn6SRTuyEF0YM9icia91qPg/640?wx_fmt=jpeg)
+![](/images/wx/7a56af3dd414bb14aa63eb9337debd0d.jpg)

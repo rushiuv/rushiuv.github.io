@@ -4,9 +4,12 @@ date: 2026-08-04T00:00:00+08:00
 slug: "BiuvW-HLF8UeZyeEXiMdug"
 description: "用KTM5900和丝杠注射泵做一笔可复核的误差账：编码器量化远小于真实给药误差；低流量下更难的是丝杠回差、柱塞静摩擦、管路顺应性与堵塞后的储能释放。轴端编码器只能证明轴转了，不能证明药已经到达患者。"
 original: "https://mp.weixin.qq.com/s/BiuvW-HLF8UeZyeEXiMdug"
+models: ["KTM5900", "AS5048A", "AS5048B", "TLE5012B"]
+companies: ["昆泰芯", "英飞凌", "ams OSRAM"]
+tags: ["磁编码器", "光电编码器", "非线性校准", "TMR", "ADC", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWVibyBYukVqDtg6xXE3HCFZuFWn5ap97ibDfZ66b1SD2BJlHibCrfr9QZiazlE55vxCd7EiboxjKibxUNMuLe8qxibCuXSbI3gK8GG7U/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0ebbbcc2c53aacb20af5e9466fb069b3.webp)
 
 医疗设备 × 编码器芯片
 
@@ -30,7 +33,7 @@ original: "https://mp.weixin.qq.com/s/BiuvW-HLF8UeZyeEXiMdug"
 
 从电机轴到患者端，这条链有多少状态看不见？发生失步、回差、堵塞或柱塞黏滑时，系统能否及时分辨？
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIV3icOvq2GMCMMVbENSpnB94fr6vQGxJapQ3GBX9UjQE6iaCXjzzs1ptgNuRE1lyjicRtdNBseCmgicXyQmpmDeL5m9BfJFOL379tk/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/da80a981b9a816d6e7157c9129a9800d.jpg)
 
 迈瑞 BeneFusion i Series 官方产品图，用于说明输注系统中可以并列存在不同泵型。本文只讨论右侧这类丝杠驱动的注射泵，不推断其内部采用KTM5900或任何特定编码器。图片来源：迈瑞官方产品页。
 
@@ -42,7 +45,7 @@ original: "https://mp.weixin.qq.com/s/BiuvW-HLF8UeZyeEXiMdug"
 
 这只能说明“编码器用于注射泵”是成立的技术路线，**不能反推某一款迈瑞、BD 或其他商用泵使用了哪颗磁编码器芯片**。具体 BOM 没有一手资料，就不写成事实。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXq4NYlkw1TwkbkSRZXrhkLMFselCS4y49PraU4mxGcticXhwNjrd1SLziar6ibYhFCobLWVLzEDdcNbIpsgy68qhnoWWSCy4Ixvo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c650bae482ae971c8f2be4e3017e0175.webp)
 
 丝杠注射泵驱动链原理示意：1 电机，2 磁编码器芯片，3 联轴器，4 丝杠，5 推块，6 注射器。图中编码器是一种可行的闭环方案，不代表某一商用泵的真实内部结构或医疗认证状态。
 
@@ -106,7 +109,7 @@ tₐₗₐᵣₘ ≈ C × ΔP ÷ Qₛₑₜ
 
 KTM5900 的数据链是 TMR 正交信号 → 可调增益 → 双 SAR ADC → atan2 → 校准与滤波 → SPI/ABZ/UVW/PWM。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUjibPZADQicuMYJjWCRR5nJFWMkls6s5KauXVvS5icnJ6lia6rO0P8qWyw83SghbtALFKSuRdOPxIJPcuf1hOvawyDRWOkTWVjfqc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/775b483ba409408a25d6119284578adb.png)
 
 KTM5900 datasheet 功能框图。这里能确认的是器件架构和器件级指标，不能据此宣称它已经通过某款医疗泵的系统验证。
 

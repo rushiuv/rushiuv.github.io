@@ -4,11 +4,12 @@ date: 2025-11-18T00:46:00+08:00
 slug: "vNlVSkQylI32ZL9eTHnstQ"
 description: "开源在中国像被塞进高压锅里的野草，越压越疯长，不靠资源堆、不靠巨头喂，反而成了最适合当下中国 AI 环境的爆裂式生长路径。硬件掣肘反倒让人学会把每一滴算力像压榨柠檬一样用到尽头，这种极端生存方式正在把整个生态逼成另一种形态，一种美国闭源体系…"
 original: "https://mp.weixin.qq.com/s/vNlVSkQylI32ZL9eTHnstQ"
+tags: ["AI"]
 ---
 
 开源在中国像被塞进高压锅里的野草，越压越疯长，不靠资源堆、不靠巨头喂，反而成了最适合当下中国 AI 环境的爆裂式生长路径。硬件掣肘反倒让人学会把每一滴算力像压榨柠檬一样用到尽头，这种极端生存方式正在把整个生态逼成另一种形态，一种美国闭源体系完全无法理解的形态。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYz09otkZYWibUyxajVfTTX5KJ33w0uWnJDVqdpSORkM3TXgPhgusCDb13V8dbKdkuxoSib96SdeJQ/640?wx_fmt=jpeg)
+![](/images/wx/89efeee44a82de00ecc206e500eac7bd.webp)
 
 当外面还在讨论 GPU 限制有没有把中国按住的时候，国内开源模型已经在实验室里闷头跑出了奇怪的味道。那些参数被砍得干干净净的“小模型”，一开始像是营养不良的苗子，没几个人看好，结果到处被企业抱去训练，用得越久越像是喝了工业酒精的野狗，越打越猛。
 

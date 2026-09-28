@@ -4,6 +4,7 @@ date: 2026-09-18T13:51:00+08:00
 slug: "T6xzUAVZ9EiMBNP1ll_aOw"
 description: "刚学 VLSI 时，最容易把人劝退的，其实不是 RTL。"
 original: "https://mp.weixin.qq.com/s/T6xzUAVZ9EiMBNP1ll_aOw"
+tags: ["芯片设计"]
 ---
 
 刚学 VLSI 时，最容易把人劝退的，其实不是 RTL。
@@ -50,8 +51,8 @@ DFT/Scan 链最后怎么排？ —— SCANDEF
 
 而是慢慢看懂：从 RTL 到 GDS，工具每往前走一步，都在向你索取一部分更接近真实硅片的信息。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXusWN83jvfI4RJO4vAcgjOBvBAYicazeKksDnNwkFOzqlLCtHDQKKFBDibm2sn6qLgsN3RwWsqD8opPbwW7q1UgSNzd2GRqSFFg/0?wx_fmt=png&from=appmsg)
+![](/images/wx/12d37d68dd9f7042266f311547ba7313.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWugzTEYiaoOyKGX6ibnib5UBo530krzIVseupB08JiaSL2pJM1UDXhs8bLibUDDuvXnG5j3tBQXKvzvVC4unqq71elgicAHj1OxRXY8/0?wx_fmt=png)
+![](/images/wx/2e5edc38cdafc41ec5156318f618c99b.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX1fSRmHyqQXZJK5iaiayJndgRibyvic86IdNBv6dsDw9E0f7NPXmVHiac4LhkZv9PnH8ia3V0QFp49LbtIsfEyibKTaLG7gjbado3BQ0/0?wx_fmt=jpeg)
+![](/images/wx/ffbf98dddf6b185d032cbc8f575a9494.webp)

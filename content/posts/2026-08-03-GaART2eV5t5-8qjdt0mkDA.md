@@ -4,9 +4,12 @@ date: 2026-08-03T00:00:00+08:00
 slug: "GaART2eV5t5-8qjdt0mkDA"
 description: "TECHNOLOGY ADOPTION MEMO · 2026"
 original: "https://mp.weixin.qq.com/s/GaART2eV5t5-8qjdt0mkDA"
+models: ["KTM5220"]
+companies: ["汇川", "雷赛"]
+tags: ["磁编码器", "光电编码器", "自校准", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUrZzakvkEzaKXv9lUqbxtjuj6Wdqiaj5P30uGkR8eCFXtkzdG2MRtcnTtw3eUJQr5OJ49WTEicNxgsuDjNFF0RaKoJwadR7nib08/640?wx_fmt=png&from=appmsg)
+![](/images/wx/850767b82f17bacb69f31e51e659d88d.webp)
 
 TECHNOLOGY ADOPTION MEMO · 2026
 
@@ -40,7 +43,7 @@ THE DOUBLE BIND
 
 会议不是缺少更多数据，而是项目定义让最关键的数据无法产生。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUQ18rdXlicXGORANE9mEJvmxkRJTR1S5TZWlyVUdjrb4ibibcSp1clSXs7fYk0EuHd0kCicvFmQA6Zg08dcbcz9be4hIzib0gw3ZfI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/fe4a551fcb832b94aeddcca11cdc9db0.webp)
 
 FIG. 01新技术必须先证明价值，系统才允许改变；系统不改变，关键证据就无法产生。
 
@@ -52,7 +55,7 @@ SECTION 01
 
 传统编码器的误差表通常在出厂校准阶段生成。高精度光编提供参考角 θref，待校编码器输出检测角 θdet，两者相减得到误差：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXPabq6icFiaeUgaDOibREzMEvV9Df3cOjTAYRA8SdPQrzSLRaMstEWDat1SCXjuyzRFRibC9tOJN7qwjqWNicck8BKnq5Ct5JKEbLg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/57d228bf5be1adf408543a72b8b0ce0d.png)
 
 校准完成后，表被写入器件或模块。伺服厂拿到的是一个已经完成测量责任闭环的部件：供应商负责校准过程，电机厂主要验证装配后的结果是否满足要求。
 
@@ -60,11 +63,11 @@ KTM5220所代表的自校准路线改变了这条责任链。它试图在没有�
 
 做法的核心，不是让编码器“相信自己”，而是引入另一种物理约束。在一圈内设置多个参考点，每次经过参考点 n 时记录时间戳 TS[n]。同一参考点两次被经过，可以得到整圈周期估计：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWpGnQ9GUF0K9LzjLLYXeiabjc138Mbn0xJQdIRmcUjOgCxsfYW6t3czTC4141WApk69Z5ibVD4yyUiaqQXh47BEBjUCVK82XicXj0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/87d4fa68ef4724b6a3d0dd7862dde114.png)
 
 若一个短窗口内转速足够稳定，相邻参考点间的经过时间占整圈周期的比例，应当接近这段真实角度占360°的比例：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIX2jf5iaodEyiaCy8qfPbgekGtgpIafPvGZhGCiarOC0ORWHITyZiacCGTOujMGMFwo8QjX7fXCEgKJ9tVmAlTWlYo0BwRuECykibEc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f9e5401ba83d686ad621fe42b5360dd8.png)
 
 长期偏离这一关系的部分，可以用于增量修正参考表。
 
@@ -96,7 +99,7 @@ CN116892970B公开了基于参考点时间戳和相邻周期差的稳定性判�
 
 这说明闭环自校准不是芯片在后台自行打开一个寄存器，而是一段编码器与驱动器共同执行的受控过程。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWq4L13w7vH1cxibEdSG0lP3TvKThiaJmfwuCZUUzKL57Z1PVX7n4kP7UTm986Dmv2Z02veREUBnDv1AIib7TlenLoDRXCA91L2oE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1cb636d018a3fd6d0194dad05e5189f2.webp)
 
 FIG. 02闭环里更平顺，不等于机械角更真实；错误也可能在反馈循环中变得自洽。
 
@@ -120,7 +123,7 @@ SECTION 03
 
 继续测试不会自然靠近答案。因为缺的不是测试项目，而是允许产生关键证据的系统边界。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW6kYLEbzcqh53foytdanGjMwWav5V4frgAuPRicwfhLtzTVR20FV2CgdPqfsibcRicTMghrxZr3ToRcw7miaVeHKJGSZibKLjQBRzc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c1b50c58d8558a5d228fa67af5394e79.webp)
 
 FIG. 03测试项目越来越完整，真正决定架构价值的系统证据仍然缺席。
 
@@ -134,7 +137,7 @@ SECTION 04
 
 真正可执行的办法，是停止要求同一个项目同时完成“成熟机型降本”和“新反馈平台验证”。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXNozh8QMCDnlIIoWN1FLJa7bY0aojzP46edj3gbnC29VVPPBibwM7V2P1vPBJmtvYp675XicAg58KBgLdZYiatebpxrpyWuISDHw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/718f65cc6157c25e748a747d1f324458.webp)
 
 FIG. 04成熟业务不承担第一次试验；新技术也不必在被锁住的旧系统里证明自己。
 
@@ -178,7 +181,7 @@ SECTION 05
 
 ### 老板最终批准的不是昆泰，而是一种风险结构
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUmM8sQqf3hDuAG2W9YAiausibQibicZ4E4oicUlSmcNiboEGNDOIPfkmqUP7icc0k5sYhkwKCzGAuV2dmjb6TDFO8B2zL7Ufic1aNiaLnU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/36d120a7d6ea3816e2598cf5c40efa7d.webp)
 
 FIG. 05成熟系统不替第一次试验买单，实验失败可以回退，成功经验留在公司——老板批准的是这套风险结构。
 

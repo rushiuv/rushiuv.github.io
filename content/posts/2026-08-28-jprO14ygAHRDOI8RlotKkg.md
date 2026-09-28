@@ -4,9 +4,11 @@ date: 2026-08-28T10:09:00+08:00
 slug: "jprO14ygAHRDOI8RlotKkg"
 description: "前两天又看到有人拿ams OSRAM AS5047P做电机位置反馈，开口就是一句："
 original: "https://mp.weixin.qq.com/s/jprO14ygAHRDOI8RlotKkg"
+models: ["AS5047P"]
+companies: ["ams OSRAM"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVrzYkajfUPvFJBZCibqJCrEqlzucYG0oJbRMvkibAmIa51n1112Yiatp7mw8IhiaF6FYDNjW4IWD4hkPlIwiamNJgEV0km1iaYWFYdQ/640?wx_fmt=jpeg)
+![](/images/wx/f9cae5f11cd87cfeeee84ff0b802dd5f.jpg)
 
 前两天又看到有人拿ams OSRAM AS5047P做电机位置反馈，开口就是一句：
 

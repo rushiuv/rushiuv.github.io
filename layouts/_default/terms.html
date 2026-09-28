@@ -1,0 +1,10 @@
+{{ define "main" }}
+<header class="page-head">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <p class="muted">共 {{ len .Data.Terms }} 个，按出现篇数排序</p>
+</header>
+{{ $k := "tag" }}{{ if eq .Data.Plural "models" }}{{ $k = "model" }}{{ else if eq .Data.Plural "companies" }}{{ $k = "company" }}{{ end }}
+<div class="chips big">
+  {{ range .Data.Terms.ByCount }}<a class="chip {{ $k }}" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<small>{{ .Count }}</small></a>{{ end }}
+</div>
+{{ end }}

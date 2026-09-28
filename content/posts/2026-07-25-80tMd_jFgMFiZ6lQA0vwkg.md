@@ -4,9 +4,11 @@ date: 2026-07-25T00:00:00+08:00
 slug: "80tMd_jFgMFiZ6lQA0vwkg"
 description: "极对数决定分得多细，偏心决定分得准不准。纸面分辨率再高，也救不了装偏的码盘。"
 original: "https://mp.weixin.qq.com/s/80tMd_jFgMFiZ6lQA0vwkg"
+companies: ["海康"]
+tags: ["磁编码器", "TMR", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWmMEUPAfFu9X5ic3h2mBxrGwN8lzsiabfUaa8bQ8WoYiaNSaC5qIJV89o42zfKJHwWkjlrIl1I58oic0lqWJGPUSNoS5Bob7wjw60/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e3ec7156029f6a66ec1f0ab0f7b03179.webp)
 
 游标编码器 · TMR · 结构自补偿
 
@@ -20,7 +22,7 @@ original: "https://mp.weixin.qq.com/s/80tMd_jFgMFiZ6lQA0vwkg"
 
 > 转轴中心和磁环中心只差几十微米，就可能把一条漂亮的游标相位链，变成每圈重复一次的系统误差。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVrXKr6XFjfTjPeBnF5sMVElMf4RzOd4FbupruFC4JWIqXgMRhWeOfUzlFibvMocGx8ibhoL2gr4new2xkKPjLEC86YoIODoYxL0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8afdbb688419d621f7d48ac98fd51e72.webp)
 
 中电海康公开申请 CN121297907A（文中所据资料标注 2026 年 1 月 9 日公开）给出了一种很漂亮的处理思路：不先测偏心、不先建立补偿表，而是利用对称布置，让偏心引起的一阶反对称误差在结构上相互抵消。
 
@@ -30,7 +32,7 @@ original: "https://mp.weixin.qq.com/s/80tMd_jFgMFiZ6lQA0vwkg"
 
 理想情况下，转轴中心、磁环中心和算法使用的旋转中心重合。发生偏心后，磁环相对于固定传感器做“边转边晃”的运动：转到一侧时气隙变小，转到对面时气隙变大。这个几何扰动每机械转一圈重复一次，因此最先冒出来的通常就是转频一次项。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVZ9Kqo2UgEib14PfSh8SKGQZZ0XOU3yn31t6v52ic6ibREYeAzT79EmHwEiaXwGFGqnegjgfj794mMiaryNJO7PGXQReBIK5TnWG9U/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/2c82fd2390d097e101f67352804e5f89.jpg)
 
 图1｜蓝点是理想轴心，橙点是磁环实际中心。偏心方向随转角相对传感器旋转，气隙与场分量随一圈周期变化，形成明显的一次误差项。
 
@@ -56,7 +58,7 @@ original: "https://mp.weixin.qq.com/s/80tMd_jFgMFiZ6lQA0vwkg"
 
 θ̂ = circular_mean(θ₁, θ₂′) ≈ θ
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIU9P7fokuMVs4lWJT6WVgdyLxKOZJicavUGicgiacNymicoia17133BIzbY9tPFh8o5zWnp8u21uVjLicJBuCld4pEj7PdJ13qvjtViaQ/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/9789a3d89bb4ae88405beb5840a61763.jpg)
 
 图2｜一侧更近、另一侧更远，两路一次误差呈相反空间相位。正确对齐并组合后，主导一阶项被压低，绿色直线代表剩余误差接近零。
 
@@ -72,7 +74,7 @@ atan2(A·sinθ, A·cosθ) = θ
 
 所以幅值归一化处理的是共同比例缩放、增益缓慢变化。偏心却可能同时改变空间相位、正交性与两个分量的相对增益；对称双传感器处理的是这些扰动中具有反对称空间特征的角度误差。两种方法在不同层级工作，不能互相替代。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWCfJZbz7xFw17DmzEibqTpZVY4EJXTy2hu73wCic9Swl2o5xZeWPjic2XSFXkfoPSu7of6WP0aTV1wFY9zgNZZB26tI9TFIGxMuA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/029bdc659c0fd0af1a6d17cb8999dcf2.jpg)
 
 图3｜上：共同包络缩放可由归一化消除。下：两个相对测点产生反号角误差，需要利用空间对称关系组合。
 
@@ -86,7 +88,7 @@ atan2(A·sinθ, A·cosθ) = θ
 
 **第四，硬件账是真实的。**两颗 TMR、两套模拟前端或采样通道、额外布板空间与同步要求，都要进入成本和失效率预算。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXTt1zxjd4iadweXibKTQf5X9n2KyksgEECKYMXNRAjHzsZbtyrI2mvwiboXPTGjM6Tz9YEVVgOV4iaJYqCKW2GJrP7UqtO2n1QBaw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/76c74d14cfb796db5f25d0e752c982e6.jpg)
 
 图4｜左侧绿色区域是一阶偏心项；右侧橙色区域保留二次、磁极边界与高次纹波。下方天平表示：偏心公差被交换成对称装配、通道匹配和双传感器成本。
 
@@ -96,7 +98,7 @@ atan2(A·sinθ, A·cosθ) = θ
 
 双传感器路线依赖几何对称，响应直接、无需等待估计收敛；阵列路线依赖多点信息和模型，能进一步观察更多空间谐波，但算法、算力与验证成本更高。两者不是谁绝对高级，而是把难度放在不同地方。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIU2BhvGaTEchOQ0ibXBoTtib5Emsz4oe1sUWbraMq30rdeQzUAPZdSQ0Z9jqWGibAEwrFneNQjOWYic6bwdxrUf0YCDrzPKTLwZqso/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/23a722477e972fb5cc244ad63f180ef8.jpg)
 
 图5｜左：用两个对称测点直接压低一次项。右：用多个采样点拟合偏心调制，再由算法恢复角度。最终目标相同，成本落点不同。
 

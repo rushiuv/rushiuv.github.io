@@ -4,9 +4,12 @@ date: 2026-06-27T00:00:00+08:00
 slug: "n2A_yp-DInfvqI86TSmL8g"
 description: "我第一次认真看汇川伺服编码器参数时，注意力不是停在“23bit”“26bit”这几个字上。汇川 SV660ND 页面写得很明确：它配合 MS1 系列高响应伺服电机，采用 23 位圈绝对值编码器，强调运行安静平稳、定位控制更加精准。MS1-R…"
 original: "https://mp.weixin.qq.com/s/n2A_yp-DInfvqI86TSmL8g"
+models: ["KTO9512", "SV660ND"]
+companies: ["昆泰芯", "TI", "海德汉", "汇川"]
+tags: ["光电编码器", "多圈编码器", "ADC"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWl4ictLJrWnRAiaj27NDUZPpn1T6U0xpmD5ibscf7ictaODVYBPxRI6GKc9I04Pgh5PjWLYL4oF2swS0M4gEm48vOMsOmevs13JHc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6093e46b62bca26556305633c3665939.webp)
 
 ##
 
@@ -16,7 +19,7 @@ original: "https://mp.weixin.qq.com/s/n2A_yp-DInfvqI86TSmL8g"
 
 我第一次认真看汇川伺服编码器参数时，注意力不是停在“23bit”“26bit”这几个字上。汇川 SV660ND 页面写得很明确：它配合 MS1 系列高响应伺服电机，采用 **23 位圈绝对值编码器**，强调运行安静平稳、定位控制更加精准。MS1-R 系列资料里又能看到 **26 位多圈绝对值编码器**、功能安全型 26 位多圈绝对值编码器这些配置。再往传感器侧看，汇川 EA38 系列直接叫**伺服整体式光编码器**，特点写的是高精度、高响应、高可靠性、低速度波动，主要用在 100 及以上大基座伺服电机上。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW3LFvwTQop5oS98N6K9gH9XnUwp85xSXcgVXJDgnzFiaNibicj2eydWHKWVEcwZX0ynZ0Bicb5pYAPjAvaCdcXXQPicvfkxl3lbVnE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7100fea35ffd7ea981e3603ce8af56a5.png)
 
 这些词放在一起，其实挺有压力的。23bit/26bit 不是单独给样本看的，它最后要进速度环、进电流环、进机械结构。汇川把编码器分辨率推上去，驱动器带宽和电机响应也跟着上去，编码器最后几位就不再是“数字末尾的小抖动”。它会被速度估算拿去差分，会被速度环当成真实反馈，会被电流环变成电流纹波。
 
@@ -28,21 +31,21 @@ original: "https://mp.weixin.qq.com/s/n2A_yp-DInfvqI86TSmL8g"
 
 我更愿意把插值 DNL 想成一把尺子。标称 23bit 或 26bit 时，每一小格都应该一样宽。现实里不是这样。某几格宽一点，某几格窄一点，电机慢慢转过去时，反馈角度不是匀速爬，而是一顿一顿地过这些细小台阶。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV7jrazMYxogKFlzXlz0g5940Uu2IAdnc3IvibmAMiamH4iajNcBCjG1JEJlQL5Sy6uv2eN20NvFCgOxw27miacEp23DjhV6pTaBPs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/511ad4a2d64582e9aacb22dfa3fd5782.webp)
 
 理想 sin/cos 很漂亮：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7qks3jr8VoPv8T0mQyhBM3f1Ze5h3hM4icIWS4jOBicyzziaMfnuECm9QHqtDickSWC7O2R5TbiageRkykcIia2YOJtK562Nf953N9ePic5GSuXk1tQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/d8db576015c4ad3d615c9a7b73f57bbf.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5aI3bvD3jzzj7JsenZVqjES29Rib2Ga4cPDa9b0hT9g1UWbRIdVL7iasiav0M1QDG8CPcCZFhkk260SBDRDrwkt9UCtvtX9LcbgxhT3g3XG1gXg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/60d9e691170f50eb7a706405f6d05fa7.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4QwdDw1CfxmmLQ3F4APvVDjiajav4XyeQgicNO1mwCSXvdNiaYEicdgoSEcYEK8EyVicMf8b9zSFt2qqGhRiaTgasrCwnEawGbmFtSNmqM0qIqSRaQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/9398954ce6f0663dfc232384d443de25.svg)
 
 但实验台上看到的波形更像：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7Fno25L19bicc7Wf7GBohHreHW5hmHoruQVRmRG3wTqwnDzcVpiaJN5qzJnplOxD4dromqBgLup5B6jzR3u3YrzDNpypOc9Xpu6wME4JKdzkMg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/190ae16d9cf6cdeae441c32c0a74e02a.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5glqicAzPPn9DWdxunNlhicg9zjeaduCdiaXmlQQtY8rrDnx2XJKrCrkn9IokCptJ6icdb03xXWJg5Eyo50qtekym9JaVibme6iajINjGNmayexNNg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/c33d1db120cfee013567b4a664ac62aa.svg)
 
 这里 (Os,Oc) 是 offset，(ΔAs,ΔAc) 是幅值误差，(ϕ) 是正交相位误差，(ns,nc) 是噪声。把 (C) 放横轴、(S) 放纵轴，理想情况下是一只圆。offset 一来，圆偏心；幅值失配一来，圆变椭圆；相位不正交，圆开始歪。atan2 仍然能算出角度，但角度已经带了周期性误差。TI 的 Sin/Cos 编码器设计资料专门讨论过 offset、增益误差、相位偏移、迟滞、传播延迟、采样和锁存不同步这些误差来源；HEIDENHAIN 也提到，插值误差会影响定位精度，并恶化速度稳定性和可听噪声。
 
@@ -52,27 +55,27 @@ original: "https://mp.weixin.qq.com/s/n2A_yp-DInfvqI86TSmL8g"
 
 这也是为什么汇川 EA38 那句“低速度波动”我会多看一眼。低速度波动不是靠通信口多吐几位就能换来的，它要光学扫描、模拟前端、插值算法和时序锁存一起干净。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWkS5OXYFrDk4yoMRVHsoKLwm30XtpVgbURUTcyvz70ibicdVBUPrYoUUNibaYABe1viaAgo2TORS5QVGuibj8rOsY7ibk15ibq7MZ8aw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b2127698a973ed22b150d4ed193a3341.png)
 
 ### 三、最后几位角度噪声进了速度环，就不再是“最后几位”
 
 编码器里一点点角度毛刺，进伺服以后会被速度估算放大。最简单的速度估算就是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5jzgrh4c6fYJ1yMMHFs0l3RibOTqSqMhpcWDok3QGCDeHbDonDMgicOsQvQfVylwIlPXM5XlBGSfbz4K9DFPtxb6sfjkh9zZKVxVwmsOPcuLgA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/6c5ff1d657e08bbb9fa1fa4db80e98b3.svg)
 
 这个公式很温柔，也很残酷。温柔在于它简单；残酷在于 (T_s) 很小的时候，位置里一点点抖动，被一除就变成速度尖刺。
 
 如果角度误差里有一个周期项：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7qks3jr8VoPia3cnLPTjJMCI1LGKA0nclRG8LibSoIUN1RBaWcdwU5a2gdRvaAP0YF4AtMUKlQ5EBrCMtWCMtBib7QeLC4tibxdbgIMzbBgGiaQicw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/7fae5b4244bce1276bf56bc61819e681.svg)
 
 速度误差近似就是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM599OzjVEFklPtaLpU8meib7uLZMG34SZ8OjaRHTCn29DOYb733ICkdiayXMynAeK5NNT8eO9MABAE8CTF3eRyjYlFJ82ZbVB2qicdavjWL9cbjw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/1d21e6ec7fb2f884c1b829d24ba99802.svg)
 
 这个式子就是我对“高位数编码器为什么还会啸叫”的理解。误差幅值 (E) 可能很小，小到静态定位报告里不好看出来；但谐波阶次 (N) 和转速 (\omega) 会把它抬进速度环。速度环一看反馈在抖，就会补电流。电流一补，电机就有声音。机械刚性越高、负载越轻、速度环越硬，这个声音越容易被听见。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWsfPtCicU2iawIqnUGEkesKTblfkvNQyIJibJPY6hCD6XusibuNvicicqtsf1JYyicxbeWErTSXp697M0wAUUkSWt7WcgFXJLftOdHr8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/36651e774589543d3ebf41d9d4188164.webp)
 
 之前看 LinuxCNC 论坛，有个讨论很有意思：用户说位置反馈看起来正常，但速度反馈噪声很明显。PLCtalk 里也有人把速度分辨率说得很直白：如果 1ms 里只差 1 个 count，换算出来就是 1000 counts/s 的速度分辨率。它们不是汇川的案例，但那种“位置看着正常，速度反馈已经粗糙”的感觉，和伺服现场很接近。
 
@@ -88,29 +91,29 @@ original: "https://mp.weixin.qq.com/s/n2A_yp-DInfvqI86TSmL8g"
 
 固定延迟还好，系统可以补。麻烦的是延迟会变：光强低时平均窗口可能变长，噪声大时数字滤波可能更重，某些协议帧错了要重同步，驱动器侧采样刚好跨过控制周期边界。于是编码器给出的 (θ) 是对的，但它对应的是 (
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6OBPpNBN5yrULMpPia6hgdYKYSFAI4dC9ibLmOIyp6kMNutOxZUNX9l8iaWp2Y9ouY2vPmWOwELXOmCtAGsDlOkR32sVQjQJuxvGib2vkiaWwVwQg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/80c3d377e92b4695f27d2cd6dce0c63a.svg)
 
 ) 时刻。
 
 频域里可以粗略写：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6HdhBfcZBAneskhRfnR1TyoqvaOibl72PCsXZOpnSDSwSQRE0dr6lgCxr5C2iccA4T6Hk5Yvb5hIXrSMqAd6icP9dLONKic0g5GEZDOMdd6gtEKQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/5d1612053e449f52f07834bd83d6d596.svg)
 
 在控制带宽附近，相位损失近似是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4WRWVacpdyeMXlxicYCvVAQVkf51IKJFrrmMmcPLIPeYwSIXJWmOicClnZ4v3I0IG1IJcf08ebCgf7icklp6lbFyGwgITpzibibVluQoZORSwSiaSg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/514bf0a8d8c613914d16be9018f794ca.svg)
 
 汇川这种高响应伺服，带宽越往上走，编码器延迟越不像小事。几十微秒在慢系统里可能被糊过去，在高刚性伺服里就会变成相位裕度上的一口缺口。
 
 绝对值编码器还有一个更细的时间问题：粗码和细分必须在同一个时间意义上成立。可以抽象成：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7rr16GcKibv5hjAXmKpfNj4aib3fickicHMx9zR9Hgufh4b4kuqUov7rD2Gzv11MJmEcJbJPiciarsJv3b2yDh5m2PqMD25yP8NTSUiaS6BOvXN13sQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3177668d2034877ec6369fe5342b086f.svg)
 
 这里的 (W) 是一致性窗口。粗码道告诉你在哪个区间，细分角告诉你区间内的位置。如果粗码已经跨界，细分还没跨；或者细分已经跨界，粗码还没翻，系统就会看到一次“不一致”。这不是计算能力不够，而是时间没对齐。
 
 只要存在锁存偏差：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7auCjXzhXOWD89eXQF3sTJ45466KGPn9mQkRfdlhJX2ZJqAhNesicLTp5VpVZC0RUWe3kzBZURW2hHxMzIVgiau1nZxysCjfw4kTMeycoylU2A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/540fd749a93b69c64c49767e0d566f83.svg)
 
 转速一上来，(\Delta t) 就会变成角度误差。位数越高，窗口越细，粗细一致性的容错越紧。23bit/26bit 听起来是位数问题，做进去以后，其实是时间问题、相位问题和前端噪声问题。
 

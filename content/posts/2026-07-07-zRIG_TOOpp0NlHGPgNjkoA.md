@@ -4,9 +4,11 @@ date: 2026-07-07T00:00:00+08:00
 slug: "zRIG_TOOpp0NlHGPgNjkoA"
 description: "这篇拆的是 Allegro 一件新公开的冗余电感编码器相关申请。"
 original: "https://mp.weixin.qq.com/s/zRIG_TOOpp0NlHGPgNjkoA"
+companies: ["Allegro"]
+tags: ["电感编码器", "功能安全"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUfPiaazvUoqDfOqicFicv8ZWicXH7ibMmxH5XW7T93ibb05L4bgakVMCWvODPfRMMorfqVZEvicaTC6nn2rlLyYd5qI4jiaspqsJw9dXo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b31243cd40de3051ddf430864b3ddcb3.webp)
 
 ##
 
@@ -16,7 +18,7 @@ original: "https://mp.weixin.qq.com/s/zRIG_TOOpp0NlHGPgNjkoA"
 
 严格说，专利原文讲的是 **redundant inductive sensor system**。本文按编码器工程语境来讲，因为它最后影响的是 **角度、位置反馈和冗余通道可信度**。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUfuViaMKZFJjaGorA04jbSJwa4LfVqibuNy5MJqSvoFv0FHaoibovZ0jdRB9XBXCm6Chs7FZAuzIkFHcj7N70ibOzJgIIXBTYljL0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d769f62bdb6b7a1d3e0ea097523173a6.png)
 
 它不是一个已经授权结论，也不是产品发布会新闻，而是一件值得工程师拿出来看的公开技术方案。
 
@@ -148,7 +150,7 @@ Allegro 这件申请的反常识在于，它没有把串扰只当成敌人。
 
 **同一时间只能有一个通道主动说话。**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU0eKTibrpHCartg3UYIlpqawJpteqF4PGZng8jR2jqAeHgLYOqKxiaVSRTb8kgGqT6ou9XhiakwOicicATKCEjwPnSCt7Yj1A7CLXs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3a046df381f2e22d61d65f9cb826ec0a.webp)
 
 图 2：IC1 发射时，IC2 监听；IC2 发射时，IC1 监听。发射窗口不重叠，系统才知道“此刻理论上是谁在说话”。
 
@@ -204,7 +206,7 @@ Allegro 这套思路的价值，是把诊断前移到了发射行为本身。
 
 **fail operational 的价值，不是一发现问题就全部停掉，而是在确认哪一路失控以后，把故障通道隔离掉，让剩下那一路尽可能继续提供位置反馈。**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXPYJP6YIgK7JwWGibiak9XR2Ib3KKptvkvSDGiaV09Lf2HLalBT76NIPpyspOKhGN8RkuKgxBjWkAus5micwu9mgkwHnhnXqOXejA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/97efb8312eff20bbea7374556248575b.webp)
 
 图 3：坏通道不是简单“没输出”，更危险的是继续发射并污染另一条链路。互相监听的意义，是先抓住谁在胡来，再让健康通道继续提供位置反馈。
 

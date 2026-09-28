@@ -4,11 +4,14 @@ date: 2026-06-12T00:43:00+08:00
 slug: "AnuQ-bDphpoubXrb1itoJw"
 description: "上个月，一台 AGV 关节在客户产线上停了。电话会一接进来，我就听见三方的语气都不太对。供应商说驱动器参数可能没压住，驱动器厂说角度反馈先飘了，集成商夹在中间，反复问一句话：今天下午能不能恢复产线？"
 original: "https://mp.weixin.qq.com/s/AnuQ-bDphpoubXrb1itoJw"
+models: ["KTM5900", "MLX90380"]
+companies: ["Melexis"]
+tags: ["非线性校准", "TMR", "ADC"]
 ---
 
 ##
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXHBicxX7vRH0DxoFNSd9wKbXNMsl6ytoGVX3T8HAfErP6OWltztXNAlgqHicayqu7OVqxzTuFJdPiaEv1WQyMeNYGo2aEL6PrBWs/640?wx_fmt=jpeg)
+![](/images/wx/6c368b8ee72af02d6ec660ab03920995.webp)
 
 ## KTM5900 标称 24bit、1–4096 极对和 3μs 低延迟，但只盯角度不读 IRQ.STA 会导致 AGV 关节把磁钢偏移误判成芯片故障
 

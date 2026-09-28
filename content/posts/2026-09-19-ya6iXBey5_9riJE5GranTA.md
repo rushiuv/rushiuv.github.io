@@ -4,6 +4,9 @@ date: 2026-09-19T06:59:00+08:00
 slug: "ya6iXBey5_9riJE5GranTA"
 description: "中空轴把芯片挪到磁场边缘后，误差为什么开始有了形状？"
 original: "https://mp.weixin.qq.com/s/ya6iXBey5_9riJE5GranTA"
+models: ["KTM5200", "KTM5220", "KTM5300"]
+companies: ["昆泰芯"]
+tags: ["离轴", "非线性校准"]
 ---
 
 ![](/images/如是有为_20260919_2647878623_1_01.jpg)

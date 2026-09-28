@@ -4,9 +4,12 @@ date: 2026-08-21T12:35:00+08:00
 slug: "DaH4oEza0vJj763i0wPYIg"
 description: "最近在看芯片里的小 CPU，有个问题一直挺扎眼。"
 original: "https://mp.weixin.qq.com/s/DaH4oEza0vJj763i0wPYIg"
+models: ["KTM5200"]
+companies: ["昆泰芯"]
+tags: ["磁编码器", "芯片设计"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUnConoS2gWBABH6FiceyotOLKf2hp1aFL7H275W9iah8kVOkia9GI30icANznIia3cSpzdicQdywiaIiaQSXA7OSqicRYiayWRJbuCKTjJo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/04bb1742677f5415af5fd96babfda8e2.webp)
 
 ## 开源 RISC-V 最尴尬的地方：大系统不敢用，小芯片反而敢用
 

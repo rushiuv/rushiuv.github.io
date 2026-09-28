@@ -4,9 +4,12 @@ date: 2026-05-01T00:00:00+08:00
 slug: "E87io3ZyfWD9fmLGiDPwTQ"
 description: "我是做编码器芯片的。这活说白了，就跟舞台后面的电工差不多。灯亮了没人夸你，灯灭了全场第一个骂你。"
 original: "https://mp.weixin.qq.com/s/E87io3ZyfWD9fmLGiDPwTQ"
+models: ["MT6901", "SV660ND", "CT-21X"]
+companies: ["纳芯微", "Melexis", "NVIDIA", "汇川", "雷赛", "宇树", "优必选", "特斯拉"]
+tags: ["离轴", "人形机器人", "AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXXchJz1d9Hhy9gpyYeicV8FCINW4mzB7ovR6vJdLofiaasaY4AzjrzsgldyAfRGBxqH8qCWzyDgQHjrYfOUvrgd1lvZjA1FxcEs/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/d54b2b8c5213093a7f9ea5272b99be5e.webp)
 
 ### 机器人和AI都快吹出泡沫了
 
@@ -26,7 +29,7 @@ original: "https://mp.weixin.qq.com/s/E87io3ZyfWD9fmLGiDPwTQ"
 
 你说这事怎么上新闻？总不能发个标题：《国产机器人再迎重大突破：我司成功定位 0.02 毫米偏差，产业又续命一天》？
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXzYX4kOnMEcBWEw9yj1drqbhbRCsrVKRibKjM6RrQibXbmlmHXlOjSa4Rjr4dOlzicMB3zP24VnFNWE3fRborgIclwbce0e3WBzQ/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/5068ad7ae8e6f6830aedc7fbf2a5b6b0.webp)
 
 先把公道话放前头：**宇树是真牛，优必选也是真牛。**
 
@@ -44,7 +47,7 @@ original: "https://mp.weixin.qq.com/s/E87io3ZyfWD9fmLGiDPwTQ"
 所以别一看整机风光，就以为最难的关已经过了。
 不是。很多时候，**最难的那关摄像机根本没拍到**。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVicvC61u4eLHOJIza4YIPMbUpoqibZsCeiaFToyBuvY1M7PG8tzXDEEzuCO1w65ancFV7aYNTqTC7dLbU7wbBNtqCFdK2LKYnhmI/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/6ecc0c9c9f0f8540f2a57ddf219253d6.webp)
 
 外行最爱说一句话：
 
@@ -109,7 +112,7 @@ original: "https://mp.weixin.qq.com/s/E87io3ZyfWD9fmLGiDPwTQ"
 **不浪漫，但特别扛事。**
 平时不抢镜，一出事全得活着。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXcF51o13Mtp5Y6HTpRbrVn5bLwq4c2M2DN1ia4ZIhHjyiaSmVS9RZYpVyvaX4NGLiaXl7JBIsoEDT89lurxvcuSCNADsmMtWB6WE/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/fd8e9a278fdaa83c4b73c47699c7634c.webp)
 
 最近最让我有感觉的，不是“又一家整机融资了”，而是几条特别坏、特别现场的路线。
 
@@ -209,7 +212,7 @@ original: "https://mp.weixin.qq.com/s/E87io3ZyfWD9fmLGiDPwTQ"
 
 **谁先不装了，谁就更接近真东西。**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIV3mRo7pjptmSWib9joibny2RmicGeh8ng3jf2pTw2hW1o4ICfDE6aXkib7meibOqxVKpibjHyRvRphv5XMUjNo8SISebSOERicorJQyk/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/e0b30b405d249b75470e214861f2f040.webp)
 
 这场面真不新鲜。
 
@@ -268,4 +271,4 @@ EMC 能不能扛住
 
 **至少机器人真摔了，别摔在我们这颗小芯片上。**
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUTP4f3qog6Lu1BBMvjq5uufmgFgnaazhkMSRsNtrgibibUdbpnHUnlXf1r1jngCXleUqU8chzo8zeyKxYTpWNt6AZfHKW5E9PQ0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/9e8b272a751d793149f47c660d3fd738.jpg)

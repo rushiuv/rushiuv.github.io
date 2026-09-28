@@ -4,9 +4,10 @@ date: 2026-04-10T00:00:00+08:00
 slug: "prw1VFz7Eu1d9UbJ-qM08g"
 description: "昨天看到泉智博那条新闻，最扎眼的不是90秒节拍，也不是85%自动化率，更不是96%一次性合格率。"
 original: "https://mp.weixin.qq.com/s/prw1VFz7Eu1d9UbJ-qM08g"
+tags: ["多圈编码器", "人形机器人"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVy8FPHGJUcLbfGyiavQkLaOhbG9zlE0WRKfQtgTdsiaibBXOhVVtCIIGyzMAOGNw6ZLpLa8xb0fE06nb7upnbSk1XUFTJDQql6So/640?wx_fmt=png&from=appmsg)
+![](/images/wx/74ad5524823bbe519baeaf5fee675bda.webp)
 
 昨天看到泉智博那条新闻，最扎眼的不是90秒节拍，也不是85%自动化率，更不是96%一次性合格率。
 

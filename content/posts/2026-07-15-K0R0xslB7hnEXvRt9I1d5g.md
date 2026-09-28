@@ -4,9 +4,12 @@ date: 2026-07-15T00:00:00+08:00
 slug: "K0R0xslB7hnEXvRt9I1d5g"
 description: "·它每 40 毫秒向电池索要一次 2 毫安的电流脉冲。18 个月货架期里，这个动作要重复 11.8 亿次。"
 original: "https://mp.weixin.qq.com/s/K0R0xslB7hnEXvRt9I1d5g"
+models: ["KTM1305", "KTH1701"]
+companies: ["昆泰芯", "多维科技"]
+tags: ["TMR", "霍尔"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWOQf3TMqyNVWCTASE8gZiaFics8lAXiaawGD3xMNvIpvdaiclibh6zhRl9HzG15OCYLbDnibbaUUkFMwX7wlvVbTDNRs64C9LoEQdnc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2d716429dc202d7bca897e97d55e0ab7.webp)
 
 工程手记
 
@@ -56,7 +59,7 @@ original: "https://mp.weixin.qq.com/s/K0R0xslB7hnEXvRt9I1d5g"
 
 算笔账。以 Freestyle Libre 3 用的 SR41 银氧电池为例（1.55V / 约 150mAh，公开资料）：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXcXlDW6yB3OCZCbIzYJ5vAiaCZwLdyDx5aMfDfQzqP2K4YVVnR6M8oRrwt3uFeFne8sqq9xFUpibZfeGNGku0zDrKcuExmnlOiao/640?wx_fmt=png&from=appmsg)
+![](/images/wx/fef507f3890a11b550006d97fb85287f.png)
 
 整机工作时平均功耗约 180 µW（按公开参数推演），14 天用掉 218 J，余量很足。
 
@@ -110,11 +113,11 @@ KTH1701 的电参数表里，还有四行不那么显眼的东西：
 
 平均电流是这么来的：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVpEdZv1EOnC428q5lia6PyCvIAp9nzXQeo0jRoGyPNDMdNIXxuyjdjgTCngBOy0HEDtIrplwXVKqhkvyYyp5NibOlWzia1RATtlc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9946f549c09a8d82285d359f61c44c07.png)
 
 代进去：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUTl1FfVlHcqoudHFe9q8BcDo9xfnhNeggESYuMyYQXMsC9O8pfUsgCKibaE8P0D0YtZ6wo0ib3mHyeKABQjibpKok8xSmLxJVdto/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3b7681645d7313be017d30fc95b70511.png)
 
 **拿另外两个版本验一下这个公式：**
 
@@ -136,7 +139,7 @@ KTH1701 的电参数表里，还有四行不那么显眼的东西：
 
 **2 mA 的脉冲砸上去：**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWctCYWe35ibX00hhkKv1Td2FXyU9cvQNwgE6bnO6gYxKbHJTBoFW9MOEK75lSD6um8pF5TOcXLicjsu45sjVWPVyenXibzoxxic7w/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6674798d2ef160bfaabe7c47ddc209f6.png)
 
 左边是新电池的瞬时压降，右边是内阻升到 100Ω 之后的。
 
@@ -156,7 +159,7 @@ KTH1701 的电参数表里，还有四行不那么显眼的东西：
 
 霍尔效应的输出电压：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWPMicKlSoN7WlM4aHojCo9X9wb0L1NRKmYQfCGy4Yl0RicfLkDYAbic6bGsiaqfJL3phmjxiatL779sFfCwp3KPNM3opMJjPhhHDno/640?wx_fmt=png&from=appmsg)
+![](/images/wx/08c2a6c4421822f6710ba561583abb9d.png)
 
 （I 是灌进霍尔片的偏置电流，B 是磁场，n 是载流子浓度，q 是电子电荷，t 是霍尔片厚度）
 
@@ -170,7 +173,7 @@ KTH1701 的电参数表里，还有四行不那么显眼的东西：
 
 TMR 是**电阻**。磁场改变的是隧道结的阻值，读它只要在电阻桥上分个压：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVXglRrXYDkrZjaNXibibEsy5ebpMsBJ1aaGMGJNY0Jdib1Apo7zQrTKXF7DhYcoBVH2OUbKXYhdcOt0VCiaW5LsaL4wzyM2FCnMts/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ca3bd64f4f79197ddb633083ecb36537.png)
 
 **看这个式子里有没有 I？没有。输出只和"分压比"有关，和电流一点关系都没有。**
 
@@ -306,7 +309,7 @@ KTM1305 的采样周期是 **600 毫秒**——最坏情况，磁铁走了 0.6 �
 
 银氧纽扣电池的自放电率典型是**每年 5~10%**（公开资料）。折算成等效功耗：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV4qHia5zhocCvibHnFow6FhNQL1M5pUIUThQ6ia1vpyTMspZJWmbpUlqHcqJYHTMibRWNvsaMU66EXj3E0pbOpu4iasqcuzJbGA0cE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3c9b6a93c22a9b26efcfab9c31807f80.png)
 
 **把三个数摆在一起看：电池自放电本底：1.3 ~ 2.7 µW霍尔 KTH1701（25Hz）：1.62 µW** —— **和自放电本底完全同量级。TMR KTM1305：0.078 µW** —— **是本底的 1/17 到 1/34。看懂了吗？霍尔那 0.9 µA 根本不是什么"低功耗"——它是给这颗电池装了第二个自放电源。** 货架期的电池损耗直接翻倍。
 
@@ -370,7 +373,7 @@ TMR：磁场改变的是**隧道结的电阻**，读它只要在电阻桥上分�
 
 代价：TMR 那层势垒只有 1nm，**天生怕 ESD**——选型第一个要问的就是 ESD 等级。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWAqjb7VRNR5XqlSaBSp8kLCNFgnAzZvElpNz8BjgwhF57ChdlRdTugmj2KKHPurLF0xwxmzvKGEoQPP1XbLeRbuAQWbW7hV0Y/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/17028dfce346c7d16b92f332283cd06b.jpg)
 
 #### 卡片2｜为什么一个"没有孔"的东西能开机
 
@@ -398,7 +401,7 @@ TMR：磁场改变的是**隧道结的电阻**，读它只要在电阻桥上分�
 
 白送一个好处：磁铁你捡不回来，**这片贴片物理上无法复位重用**。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUibDZiaMtKaxjXwcicNNaia2oK1zFyXeTNvWibI6ibQVwtKxVfG0LvR7813DPfmvWIU3KLLbEXicIHibAYOvFHtE0VrV80xYhib6QYGVKA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/96445a506f72104cca5b141f1c6a3582.jpg)
 
 #### 卡片3｜"低功耗"是个相对词——相对谁？
 
@@ -430,7 +433,7 @@ TMR：磁场改变的是**隧道结的电阻**，读它只要在电阻桥上分�
 
 附赠一个更狠的对比：**霍尔光睡觉的 400nA，就是 TMR 全部工作电流（52nA）的 7.7 倍。**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUo1e5WnBI2q1yry8JumgtibX7KJE5RsK9ro6CWA149XQTzDuzqlbibAJ5ibGV4ZftGox9lYSmibpqrzX8jNibEMJ9fbDT1KQoEj3gM/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/af6c5b968c8a79afb30124ccd949e9ba.jpg)
 
 边界说明
 

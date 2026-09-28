@@ -4,6 +4,7 @@ date: 2026-04-17T00:00:00+08:00
 slug: "HAYtJLeuP0WN50k1YfIRgw"
 description: "别再被实验室那套“够用就行”的话术骗了。"
 original: "https://mp.weixin.qq.com/s/HAYtJLeuP0WN50k1YfIRgw"
+tags: ["磁编码器", "TMR", "AMR", "人形机器人", "机器人关节"]
 ---
 
 别再被实验室那套“够用就行”的话术骗了。
@@ -12,7 +13,7 @@ original: "https://mp.weixin.qq.com/s/HAYtJLeuP0WN50k1YfIRgw"
 
 听起来像是理性的工业选型，实际上全是闭门造车的臆想。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUicpaWxogr45HT5pu163gHoGavvgpPgaw6opHpQt5nfA7ic8VTCyeicQJoKRsB7GliaypSXJAIeayn3KZAOBs2VcZYk51Z4l5ib8dU/640?wx_fmt=jpeg)
+![](/images/wx/287895cc7adf733a1cd96644f07f1cc3.jpg)
 
 直到这两天的现实直接砸穿了行业假象：
 
@@ -20,7 +21,7 @@ original: "https://mp.weixin.qq.com/s/HAYtJLeuP0WN50k1YfIRgw"
 
 几乎同一时间，**Automation World**发文点破真相：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVuD6D8VM9vRjeaQGNqQVziaSzAdmXczlYCn8pL0FvJZiabribN4QAXEkYLe4k0rAbnsp4ibkVY0OZ7khIM68aQNjNwvR2nJVjFocQ/640?wx_fmt=jpeg)
+![](/images/wx/f8bba8e45e5a9ffd0ae6b1760d63842c.jpg)
 
 **“现在选反馈器件，谁高级已经不重要了；谁能让系统少标定、少报错、少还技术债，谁才配活下去。”**
 
@@ -116,7 +117,7 @@ AMR的信号输出天生是线性的噩梦。为了让它实现精准的角度�
 
 ####
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVDUtPk8pCgIKH5ZvcRd0stiaI28FLMdubFRgl6coKh27Ff7f3Oglv3ibib1aUApJiashXXsyIviaUDkWvGtRIZu6f7rFgg9nK08NoQ/640?wx_fmt=jpeg)
+![](/images/wx/e34c21263875dccc6730d8b25c305b6b.jpg)
 
 工业选型从来不是参数竞赛，而是**确定性**的竞争。
 

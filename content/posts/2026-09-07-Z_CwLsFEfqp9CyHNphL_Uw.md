@@ -4,9 +4,11 @@ date: 2026-09-07T11:21:00+08:00
 slug: "Z_CwLsFEfqp9CyHNphL_Uw"
 description: "9 月 1 日，美敦力宣布向康诺思腾战略投资约 7 亿美元，并获得 Sentire 手术机器人在美国以外部分已获批市场的分销权。"
 original: "https://mp.weixin.qq.com/s/Z_CwLsFEfqp9CyHNphL_Uw"
+companies: ["美敦力", "康诺思腾"]
+tags: ["手术机器人", "投资"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVLUT8Zqibn0oVia2tQrprMrUUhjpQKUoqR5hNetBpPKWHZiaGXOTOUibSaIia6wlhsUO13kpILbe5EdiapeOJHyA1uuH6jZhvJdIibng/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d456b0e6fd9f7de4eadbf8bd2a685fdc.webp)
 
 ## 美敦力7亿美元投康诺思腾，手术机器人最难测的不是力，是把机器自己的力扣掉
 
@@ -14,7 +16,7 @@ original: "https://mp.weixin.qq.com/s/Z_CwLsFEfqp9CyHNphL_Uw"
 
 这里先把几个容易写错的事实钉死：康诺思腾是**创立并总部位于香港**的手术机器人公司，在深圳等地设有研发和产业布局；Sentire 2024 年获得中国 NMPA 批准，2026 年 5 月又获得欧盟 CE Mark 和新加坡 HSA 批准。美敦力自己的 Hugo 已经进入全球 35 个以上国家，2025 年 12 月获得美国 FDA 泌尿外科适应证许可，美敦力预计其全球累计手术量将在**公司本财年结束前**超过 5 万例——不是“2026 年底”。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXSlJ0gdwDRkSrQpKhcd9dm0TmGNNdCf8UCxSQd5x65NydXWzDibQrWard8ACXWAp56cAPsm8WKtKwsXwWN645374icQAa3cicryw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b7600819a1711d08c46ddd5f1faa8b2e.webp)
 
 我做磁传感器和编码器，看这种新闻习惯先跳过融资数字，去找机械臂到底怎么感知。
 
@@ -38,7 +40,7 @@ original: "https://mp.weixin.qq.com/s/Z_CwLsFEfqp9CyHNphL_Uw"
 
 伺服电机的输出转矩，在一定工作区间里可以从电流估：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM543JMpg1RUJms43dzsgOyrmHXA73UicbXw1C3nVDOkX5dtAbsDfqmvnWHQ2Im31dA3ck2WwtQF8clRvlb6oroH1tj9KI1GYo64kHYqbVjgg8A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/0386cb2d8950afc1be3c412e58a08fac.svg)
 
 于是很容易产生一个想法：
 
@@ -52,7 +54,7 @@ original: "https://mp.weixin.qq.com/s/Z_CwLsFEfqp9CyHNphL_Uw"
 
 可以粗略地把这笔账写成：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4rGuDF35Eoia4pPJHfRClPn2T7B95BWOSiav3AcLyicibHKRHEN9ibRWIJOC48wDgOcRZgkRMuetXnNtG5npbWsiaCLQmt5KWfkBRPhwUmmUrzdRsw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/01b795e316e162abd5e26a9361eae9ff.svg)
 
 其中真正想知道的只有第一项，也就是组织作用在器械上的那部分。
 
@@ -66,11 +68,11 @@ original: "https://mp.weixin.qq.com/s/Z_CwLsFEfqp9CyHNphL_Uw"
 
 而是在做：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM728rcRkicd0QIFSyTpetf7FQNRMfubcLNickRnfibXu154ruIzeAPbTCv6X1ueVlibck0NEqsMfaiaWEFMRtdk0ml8mANbEzItialb7KpTDauyvibXQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/51558d57f76e5dbaec40bab92e6adc60.svg)
 
 最后才通过机构的运动学和雅可比关系，把关节侧扰动力矩映射到器械端：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5uymiaX8wy72XIsl1vE2GNzF9qibiac078KwicPsUfZ1bmjdnXBptoNZMw4hiacrcahXYoHtiatyiaVCZat7MNchkMTGPnCVa4a2kV5gTibrwkkp3Svw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/11a7fc1109edf448e7f5d857d130a794.svg)
 
 这时候问题的性质已经完全变了。
 
@@ -154,7 +156,7 @@ da Vinci 5 就是现成的商业反例。
 
 Intuitive 对它的描述非常明确：Force Feedback 使用的传感器位于**尽可能接近实际组织受力的位置，也就是器械尖端附近**；系统把器械端检测到的推、拉作用力传给医生的手控器。官方还宣称，在相关测试中，使用 Force Feedback 可使组织受到的力最多降低 43%。后一个数字应当理解成厂商公布的性能结果，而不是直接等同于独立的大规模临床终点。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIX6poxbktmMnNTzZJjMyibogfgdEwwicpoOK7WA5AOfibFO1sgXf9u8HAZhPCcqOKpkPZB2jmYBF3jmDjF7cjuqdgp8cBVwnCzfS4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c92d1e322b8067d17ee07c9972f74718.webp)
 
 真正值得看的反而是 Intuitive 自己解释“为什么拖了这么多年”。
 
@@ -190,7 +192,7 @@ Intuitive 对它的描述非常明确：Force Feedback 使用的传感器位于*
 
 真实钢丝绳系统的摩擦很难只是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4GDCeHQO1ictwT9icwk1vdQCDjDjZvllVL6ibwJu70iblczPv9LEjw0m3OV0pCHrrEBJZA1onCI239nbVK0AYCWqWeraO8qVBNuFJMaE4QymMnnw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e462c7ec43a5bb16f6362de851325cc0.svg)
 
 换向前后可能不一样，预紧变化会影响它，弯曲状态会影响它，温度会影响它，使用次数也会影响它。
 

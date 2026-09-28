@@ -4,9 +4,10 @@ date: 2026-05-29T06:00:00+08:00
 slug: "U2ZFh4BxeWVMLpRMw9Ma1Q"
 description: "凌晨两点，客户车间的伺服测试台前，验收工程师把《机器人关节模组验收表》往桌上一放，第三栏“低速位置波动”后面还是空白。"
 original: "https://mp.weixin.qq.com/s/U2ZFh4BxeWVMLpRMw9Ma1Q"
+tags: ["磁编码器", "霍尔", "ADC", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVUKzOn82qqZaAFRV9ASIDAuByeNBd4ARA9Qkia8qun6icSRicjvMgxDWdjrNMAicNNmXscshUgcicx0D6Sia7NgWIZkD4lEae4LMjick/640?wx_fmt=png&from=appmsg)
+![](/images/wx/768e347c50b7841f97df422ab2d96f95.webp)
 
 ## 客户换了三台电机，机器人关节还是抖：最后锅，竟然在编码器头上
 

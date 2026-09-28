@@ -4,9 +4,11 @@ date: 2025-12-24T23:56:00+08:00
 slug: "UeDJxybN6NZJYk3BZ9r02g"
 description: "在工程领域，有一个几乎被写进血液里的认知："
 original: "https://mp.weixin.qq.com/s/UeDJxybN6NZJYk3BZ9r02g"
+models: ["KTH5701"]
+companies: ["昆泰芯"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRibERmRvSQu7DjBgVjrxPSpgwtTuYLicpJ7iaIdVicjHfrlg9DUrMnrcrYDHUzDRfMObboE0UWaHwFpg/640?wx_fmt=jpeg)
+![](/images/wx/6b6e13519f1e469c2cf49bbb3eea4f8b.webp)
 
 1. 偏差不是问题，偏差被忽略才是问题
 

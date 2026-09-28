@@ -4,9 +4,10 @@ date: 2026-07-28T00:00:00+08:00
 slug: "CYIbzvWsim327PizGZda5A"
 description: "WAIC 2026 · 人形机器人 · 位置反馈"
 original: "https://mp.weixin.qq.com/s/CYIbzvWsim327PizGZda5A"
+tags: ["FOC", "人形机器人", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUkwtWibwiasRG97h0Hd3udvMHr4NoqTNcajdWxibUONxYHkIVOlJrFHFoicJodagQicel0BBqjj9QMsxX92DibC9zCMaQNXjRScMXIc/640?wx_fmt=jpeg)
+![](/images/wx/5aa8977a77d645557c575715c2aff681.webp)
 
 WAIC 2026 · 人形机器人 · 位置反馈
 
@@ -20,7 +21,7 @@ WAIC 2026 · 人形机器人 · 位置反馈
 
 **但我把官方公开清单来回看了几遍，没有看到一颗被单独说明的编码器，也没有看到关节模组采用什么位置反馈方案。**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWSiaxMseKSHUnTDoqicbNH9V8oBWiaiaP5icNhWS1Hc5rgKzDdicKQRa7Ufr0D9dkANgoDLq3Ca5G7LlaodrpA5jrG583HLXD7GfhGM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9ccd58cc302160d54c511fa1a47441db.png)
 
 知识卡片1｜公开信息列出了大量机械与执行部件，但未披露编码器关键参数。二维码采用原图无损嵌入。
 
@@ -66,7 +67,7 @@ WAIC 2026 · 人形机器人 · 位置反馈
 
 因此，不应该简单规定“超过半个PWM周期就失效”。更专业的验收方式，是分别测量采样时刻、数据年龄、抖动范围和补偿后的残余电角度误差。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUQlic5uI7t5SNot6RaI6DddISCJUsx7myjH11iaXdI1ia2iaWqRXKFw2A58s8Yyian4lLRzycR55PDxWcdMCTtHibW0JTPwKiaPKTFko/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3f518fea56d0b30fd6f554d66e523cf7.webp)
 
 知识卡片2｜14对极、200 rpm、200 μs数据年龄，对应3.36°电角度滞后。固定延迟可补偿，漂移与抖动更危险。
 
@@ -76,7 +77,7 @@ WAIC 2026 · 人形机器人 · 位置反馈
 
 但模组验收不能只看编码器静态INL，也不能只看电机空载转速。至少要同时看四项：额定负载下的输出端精度；1–50 rpm、悬停和换向时的转矩纹波；编码器数据年龄与抖动；全温、大电流和磁串扰条件下的漂移。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUZu3P9B84YJjbQJuIpvuOSFZ0b8bd0NEO47zcicbPR6DAZ9PoE87ictWZbjxSusmiaNUUIF22ibvZX0h8kBZicLPibfSkoxoknvgaiac/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2f2f51a46b960b8bfa06dd4716e19873.webp)
 
 知识卡片3｜“全工况”不是产品品类齐全，而是负载、速度、温度和电磁环境变化后，误差链仍然闭合。
 

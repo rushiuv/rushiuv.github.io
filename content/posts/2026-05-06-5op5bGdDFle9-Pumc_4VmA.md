@@ -4,11 +4,12 @@ date: 2026-05-06T00:00:00+08:00
 slug: "5op5bGdDFle9-Pumc_4VmA"
 description: "很多人聊 AI 对数字芯片工程师的影响，喜欢上来就说两句大话："
 original: "https://mp.weixin.qq.com/s/5op5bGdDFle9-Pumc_4VmA"
+tags: ["芯片设计", "AI"]
 ---
 
 ###
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWPrCb493QbliaibGtwyUuCCL176Dj2h1JUu6UXeRWXKLmLSjichGPuV6HeXQjm61iaK1U76l0x3KUvSrK5gJ1iavvCXE2ll68m0lqM/640?wx_fmt=jpeg)
+![](/images/wx/d210e2c265649e49ef0f4d2bca798a45.webp)
 
 很多人聊 AI 对数字芯片工程师的影响，喜欢上来就说两句大话：
 

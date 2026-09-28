@@ -4,9 +4,12 @@ date: 2026-08-31T09:25:00+08:00
 slug: "C_-HcCDYBj-pja-IVkEFwA"
 description: "有一类旋转结构，生下来就要求中间必须空着。"
 original: "https://mp.weixin.qq.com/s/C_-HcCDYBj-pja-IVkEFwA"
+models: ["MLX90381"]
+companies: ["Melexis", "TI"]
+tags: ["磁编码器", "离轴"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUObibOicaBXmoufa4pIQCPp7BhKGaomMowgCCDymrjCQe55a566fXJNyqSLsSyj1asbDhXlM99aV5t72GSgy8577icAkmV0OiaTA8/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/183a83503d9e9d621d67513b80d2fbc2.jpg)
 
 ## 为什么有些旋转结构天生做不成「在轴」——不是磁场不够，是圆心已经被占了
 
@@ -88,13 +91,13 @@ TI 对 on-axis 的定义也是传感器与磁体旋转轴准确对准；而 Mele
 
 理想情况下，两路磁场可以写成正交正弦：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM43dwX1oFaFuEbp8cqhGDtZ6ORSSxZeyBns4icOiaR3pAbWcqcpG7Y5dS3UtgV2A72hhpCbdaFtvrp4V7kqH9Bhyh41rGmImReUVBJR2oRI3S0w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/760567e9653813376d1a5cb070c30382.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6GSX5Rib1jIo7TvTZYGSBoVgqL0jmcDy0hzOjt63cjj6sgXNdwP0jIkZBskMMBLHxyb2LjW1IUcqtzfNE4sfhkbHsa8afukuKQ2rfY5ooqCbw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/9a51993af7c171ccc2db7aee2524c711.svg)
 
 于是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5cjtXj8fYAjpson1vOxE5G3Ov6piaVvnPYXW9vkNcoEgfe457vR4LBpTtVqasEIr0LyibtCSDKlQjPIyQbgIY2qIF62m2ut1EpozRr3bvaSw5A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/b7f1adc044cb6e4c12dbf3bb7ba317e2.svg)
 
 把两路信号画出来，就是一个圆。
 
@@ -146,11 +149,11 @@ Through-Shaft 本来就是成熟的量产架构。Melexis 的 MLX90381 甚至可
 
 如果磁环有 (p) 对极，同一个机械位置扰动映射到**电角度**以后，确实会乘上极对数：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7aukIG1S8vVIaCdnibkLEgoMUvDjGOl5BPiaiaPQnliazDRZnw2SQ7yzBWS0jXxpH6iawb9Yj7dKkR11qVcmUJeseib9OjGFVhwcht55SDqdukFVNQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/cc827a2b85f39bb3247055dbe26813ac.svg)
 
 但如果最后还原的是机械角：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5cjtXj8fYAjjAwrsLY1qPic448rxg4orZdiboMFRMicwTdkicib0VM2tP9VsR8aCG84vicmkMBqQ2YJAbyiaSQiaOXYGibdPZUZCQib6afCn7Qc3EUWcJw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/5dc2ed19056d2e864cc9ba4c5c0b5123.svg)
 
 极对数会再除回来。
 

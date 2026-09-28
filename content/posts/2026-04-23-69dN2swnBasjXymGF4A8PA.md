@@ -4,6 +4,9 @@ date: 2026-04-23T22:27:00+08:00
 slug: "69dN2swnBasjXymGF4A8PA"
 description: "昆泰芯59系列（KTM5900/KTM5800）：为精密控制定义“极致误差标准”"
 original: "https://mp.weixin.qq.com/s/69dN2swnBasjXymGF4A8PA"
+models: ["KTM5900", "KTM5800"]
+companies: ["昆泰芯"]
+tags: ["磁编码器", "非线性校准", "TMR", "机器人关节"]
 ---
 
 昆泰芯59系列（KTM5900/KTM5800）：为精密控制定义“极致误差标准”
@@ -26,8 +29,8 @@ original: "https://mp.weixin.qq.com/s/69dN2swnBasjXymGF4A8PA"
 
 - 国产替代标杆：凭借与国际一线产品比肩的精度指标，以及更低的系统适配成本，该系列为国产高端装备提供了关键的位置反馈方案，推动精密控制领域的自主化进程。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIV2ybQowx1MWTrKcYhVADIVEJrEBV4oU8ctcbtYbTIfcyo6gAdgaFag4mf8MGUiclB2TK1PbrJHQ7slc2iamLiaOtgCKibmUcJu1G0/0?wx_fmt=jpeg)
+![](/images/wx/c6543b3bd225ed06d627b6395323dc5d.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIU17ckzaC0dD0PQSKSFMwTic9jNV9xP5gQHb7kicwkC55ChPHf1q4HyFjvv5l1ZJ0Lea2kaARB5UibCribZPwibrL075yUCFTxpB5uA/0?wx_fmt=jpeg)
+![](/images/wx/9e52c24372e96d0554f11c6cdcc8eca6.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVI4Zo2icHNbprnbU6AqDHejGG6iaXE5RqQ2hp6icGu3p7ic3U2sypfGeBhblGOTbvM3mR4giaicfv1cRptSk4n6q72Kxia3T9NhlsPG4/0?wx_fmt=jpeg)
+![](/images/wx/730856b0bcceb0bbf8b3a0fed202fe87.webp)

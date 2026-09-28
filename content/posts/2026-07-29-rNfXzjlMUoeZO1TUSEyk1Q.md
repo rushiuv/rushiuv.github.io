@@ -4,9 +4,12 @@ date: 2026-07-29T00:00:00+08:00
 slug: "rNfXzjlMUoeZO1TUSEyk1Q"
 description: "不是换一颗芯片，而是重算整套磁路、气隙、偏心与校准。"
 original: "https://mp.weixin.qq.com/s/rNfXzjlMUoeZO1TUSEyk1Q"
+models: ["KTM5900", "KTM5910", "AS5047P"]
+companies: ["昆泰芯", "ams OSRAM"]
+tags: ["磁编码器", "TMR", "霍尔", "ADC", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWfEliaL6yQjMalrBfJbU3j1FmPazAaG9acwUe26mdicyh7vA4CnrUFDib3BwFJIIcCjmTXA2TEthU4ZInlnCLHN5Dr4SjtmibINfA/640?wx_fmt=jpeg)
+![](/images/wx/dc4b1b7a1359837d1c5671ac8f3a06e4.webp)
 
 机器人关节编码器国产替代
 
@@ -22,7 +25,7 @@ original: "https://mp.weixin.qq.com/s/rNfXzjlMUoeZO1TUSEyk1Q"
 
 问题就在这里：两颗芯片最后都输出角度，但底层未必在看同一种磁场。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWX4dq4rjMhv3RHhkGuxY3HIZjspr941xicaLncgibbF5Px6xSu0j5aiaSLyHlkLibDoqjlk7tMh7O027JaqJujlMX0NibRstMHZHl0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/36249cd2b839453c703dbcd2c4037377.png)
 
 同一颗磁铁，Hall 与 TMR 可能依赖完全不同的有效信号模型
 
@@ -38,7 +41,7 @@ AS5047P 使用 4 个集成 Hall 单元。官方数据手册明确写到，侧向
 
 ### 昆泰芯先看哪四件事
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV72icjRTUfxG6j2OTSdceWic1Bq5VU4FI0opmzUibdiaEricmj4KO3iaEf5IibQWCVyFoESzgeMDAib36OCJhnTQSkmwKxXeIfcGwmJic4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3b6d540bcfd9aa2be4cb1e34e1dedaf0.png)
 
 第一看磁铁
 

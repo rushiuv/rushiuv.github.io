@@ -4,13 +4,16 @@ date: 2026-04-13T14:27:00+08:00
 slug: "rH1hnsnZ46AbIiC308yWGg"
 description: "3月下旬，亚马逊确认收购 Fauna Robotics。被买下的，不是什么仓库搬运机器，而是一台身高 107 厘米、重 22.7 公斤、外壳柔软、明显冲着“人类共享空间”去设计的小型人形机器人 Sprout。它不是干重体力活的，卖点反而是“…"
 original: "https://mp.weixin.qq.com/s/rH1hnsnZ46AbIiC308yWGg"
+models: ["KTM5800", "KTH78"]
+companies: ["昆泰芯", "Renesas", "海德汉", "多摩川"]
+tags: ["磁编码器", "电感编码器", "霍尔", "人形机器人", "机器人关节", "AI"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWlMe8mp4q9P5GcicQ4ArAIAgkMJN0JOLXZjw1ZicCaM9oS2YAjKH0UDcDdUrvicuPeial6KWwqOuAvG7UE1cLnBOJX3utnoapIOLc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7b3058366c23e3e2af793e860bcc980f.webp)
 
 3月下旬，亚马逊确认收购 Fauna Robotics。被买下的，不是什么仓库搬运机器，而是一台身高 107 厘米、重 22.7 公斤、外壳柔软、明显冲着“人类共享空间”去设计的小型人形机器人 Sprout。它不是干重体力活的，卖点反而是“安全、亲和、适合家庭和教育环境”。几乎同一时间，北京亦庄那边，4月19日的人形机器人半马确认有 300 多台机器人、26 个品牌参加，同场跑 21.0975 公里。那边拼的是另一套东西：连续运动、关节负载、抗冲击、长时间稳定性。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUibKVMRbKHcMbgTMXSlRzXk0Bda1QeGoX50icS0ZPFRmPUSe58FECSYSOxar3SW8hMh5nDNaXG69xRsvXv8Fqia5lI1AWCOWYibR4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b76b9096b8d8ea3dad17291b686451e6.webp)
 
 这两件事放在一起看，特别有意思。
 
@@ -58,7 +61,7 @@ Fauna 的 Sprout 为什么做得那么轻、那么软、还强调 shared human s
 
 这也是为什么，三霍尔在机器人关节里越来越像过渡方案：不是不能用，而是越来越不像一个体面的长期答案。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW0WDzCSkDsmZiaJicgibE9UVTdaXGvg54zgiaxcmA9DRt8F76ibz2kibP2jfVz5b45G6nrLoKvMljt6Ecia8d0YuflFcSYVYY9rPPVpw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f5735eb701c75c0eb341e96688f1f268.webp)
 
 ## 家用人形机器人最现实的答案
 
@@ -86,7 +89,7 @@ Fauna 的 Sprout 为什么做得那么轻、那么软、还强调 shared human s
 
 在这件事上，磁编码器非常像今天的甜蜜点。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUiaxCZic8FQ0Eic1shwJjy2hTbiaPBsEHTlRUNKnqM6R1K8H3e1ibN6WQUl2LMGXES7IIZKUoIQXUD9EWwic0AzfsCglqUOWeacJFOE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7f3c47f5f392ca16023f1485346b9556.webp)
 
 ## 一旦走到工业人形机器人，电感编码器的味道就出来了
 

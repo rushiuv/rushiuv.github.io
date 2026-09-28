@@ -4,9 +4,12 @@ date: 2026-05-11T00:00:00+08:00
 slug: "MmoFynxBQorDjHIAtek1BQ"
 description: "传感器路线能不能活过百万台量产，先看的不是实验室最好那张精度曲线，先看标定成本能不能被摊薄。"
 original: "https://mp.weixin.qq.com/s/MmoFynxBQorDjHIAtek1BQ"
+models: ["AS5048A", "AS5048B", "MLX90316"]
+companies: ["Melexis", "ams OSRAM", "Allegro"]
+tags: ["霍尔", "人形机器人"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWrOWURB360oBORr5ESzGBg7dHUBs4Na30slEWMia4nOLUARLhKrDFI1IU6p6a03j0FmrUtV5qE6YFia2suUDvu1WRcX0UEo97Ko/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4bf7dc7aa02cb62677cea874491ee63e.webp)
 
 ## 百万台量产先过标定关：传感器技术路线的胜负，写在工位账上
 
@@ -110,4 +113,4 @@ Sensirion 的 SHT1x 是另一个赛道里的好例子。它的数据手册写得
 更关键的是，它得让标定成本不过线。
 只要这笔账算不过去，技术再漂亮，也过不了量产这一关。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUibjfU4AXMIY7ZOFjclHwSxAGvRVlicmvS8mJibMovno5t8hTDzRYyglpPPZFJq2glgAbvEUVOSx8DxaKawia8CnibrrEhY6sVLOZk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/298bd5530db1d31f48b07bae43344888.webp)

@@ -4,9 +4,12 @@ date: 2026-05-15T00:00:00+08:00
 slug: "wax-SAbyCdCO6npH1NM3qg"
 description: "客户把参数表拿过去一看，精度、分辨率、温漂、接口，都过得去。样片回来，实验室里也能转起来。会开到这里，气氛通常不差。真正让节奏慢下来的，是后面那一长串事：外围怎么搭，前端怎么调，校准怎么做，磁铁偏心怎么收，EMC 怎么过，量产以后批次差异谁…"
 original: "https://mp.weixin.qq.com/s/wax-SAbyCdCO6npH1NM3qg"
+models: ["AS5048A"]
+companies: ["昆泰芯", "纳芯微", "Melexis", "ams OSRAM", "TI"]
+tags: ["自校准", "霍尔"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV8PrSfDViahIdH4whJ3BEgD9cenKm2UAibgsXMVARjibGWHEficjwPYgoUGblFnpszkoiaRwFMwkehATQcDsPo1jTyFVG98G0jlx60/640?wx_fmt=png&from=appmsg)
+![](/images/wx/643ef7d582309d54b18e6f5e4420fa42.webp)
 
 ## 为什么很多国产传感器芯片参数不差 ，收入却一直上不去
 
@@ -28,15 +31,15 @@ original: "https://mp.weixin.qq.com/s/wax-SAbyCdCO6npH1NM3qg"
 
 这件事看国际厂的产品组织方式最明显。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXZpQLklEjq22Gll1Odgc53ctCt2HGtiaj9ZWTk3Z37ibDXE39aH1XCo9LVeg1EEmkkHaBD3Sfj6akSNyiaSYbiaGeicMJsFT7ReMO0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f9c1ff67df81a8f3b2c43522abb96132.png)
 
 TI 做 TMAG5170，不是把一颗芯片寄给客户就结束。它把 TMAG5170UEVM、GUI、寄存器读写、测量结果查看保存这些东西一起摆出来，还配了一个 rotate-and-push 模块。客户第一次上电的时候，先看到的是一套已经能跑的验证环境，不用先自己拼一套。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU6dgCVd4LpCWTYUx7vvodUVFguEMSTTKhv2r5iaPDFcxwRm1R0PflVSe66msKuNsThYOZYnujaz2GibrDzrePlvLM9DQr64V8OI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c260ef57f04d4f96cae8c8d7e9a92c86.webp)
 
 ams 做 AS5048A 也很实在。官方评估套件不是孤零零一块板，资料里明确写了 4 个不同尺寸的 magnet holder 和 1 把内六角扳手。这个细节看着不大，味道很重。它等于把客户第一次机械对位、第一次装磁铁、第一次看角度的那轮麻烦先做掉了。开发现场里，这比“参数再高一点”更早见效。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU92fN413oMJwlv7MrdTE676hYXWJnHBd2tb9icjZ2icjTt8QTgpjtt4SgO8h42gI1ibVqLQmVTibTDjDNgbDfCkU3UVLOmqJia0YtM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/eba75565d20d007211ff782a997c9646.webp)
 
 Melexis 的 MLX90371 更典型。官方一边给 EVB90371 评估板，一边把 8 点和 17 点线性化参数写进 datasheet。客户拿到手，不只是“能测角度”，而是“怎么把输出关系修成你要的样子”这件事，厂商已经给了路。
 

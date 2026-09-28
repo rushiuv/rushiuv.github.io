@@ -4,6 +4,7 @@ date: 2026-04-14T10:27:00+08:00
 slug: "2AUpl5SQjPIXX-bX34ytZQ"
 description: "很多人以为，现在芯片公司烧钱全砸在算力、流片上，动不动几百万上千万。其实真正耗钱的，是一件特别反直觉的事：看懂AI写的代码，并且敢拍板用它，吃掉了所有资深工程师的时间。"
 original: "https://mp.weixin.qq.com/s/2AUpl5SQjPIXX-bX34ytZQ"
+tags: ["芯片设计", "AI"]
 ---
 
 很多人以为，现在芯片公司烧钱全砸在算力、流片上，动不动几百万上千万。其实真正耗钱的，是一件特别反直觉的事：看懂AI写的代码，并且敢拍板用它，吃掉了所有资深工程师的时间。
@@ -48,20 +49,20 @@ AI可以给你出报告、说没问题，但它不能替你签字，不能替你
 
 AI时代，芯片最贵的不是生成代码的算力，而是为了敢拍板、敢负责，去读懂AI代码耗掉的资深工程师人命。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXEaURcAadoLc0waym1L8Bicmq670Nsib3OlmxUIF8YcyvRJac2nx5ng8fVgicszhBSbLjU05QlM7MrHiaKDUxOJlEuaOvN9SNL1vg/0?wx_fmt=jpeg)
+![](/images/wx/878e91b5e6410000e2fbee763af6dead.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIX7EiaEcR67vpIlKsC2DWFn6SXIVdoJTukosu88ibfMWibTDD4uicTHgwaFpY8JkZWGH2MZK7ibhaZSYLiacY02Nkz4UeTCgMlKyX7iaw/0?wx_fmt=jpeg)
+![](/images/wx/f2b9502de01027e838bd7e7aa3fab1a9.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVMTfQcPx1neJ5V6KQjga5Picc2fwMj63mWqm64nD61V3iccl3llqxv0GGNsPU2clO843NpO3Zuib9xqsojRYhAib9bPibSicZboJFWM/0?wx_fmt=jpeg)
+![](/images/wx/544a989d373dd5af0c574fca7f697f25.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXQNuicHTNYwqlr2cWiapHzj1a83OrYX9OYQHyO4J2Xiaf4j2HBg2YSpW4MHnbibemJibecjiaAG4iaicQvXVUBXozV1ONY3icx6wxnKPwU/0?wx_fmt=jpeg)
+![](/images/wx/0562dc54ac774b579cd7d7f1927ad215.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX3KbfA1c5gN7UVXSSu6AVNabEkCScrrmMVPpQ74hXRiarmg9n0hG9TMRrd3Hdk1ngzvL5RWhPtwzICYQiam2gCJZ2aNXwKZOGn4/0?wx_fmt=jpeg)
+![](/images/wx/c6971df0e919d189a6e0376a5a5496c3.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIX0XbK2deyuCHbwjWwuEnDUSIicx0m7N1cCXc1q80KgqfibGemzz0ib3HpdOic4vm1TZQJofx5409Gc7KU5FyEt6ryD4a81uWibFXMI/0?wx_fmt=jpeg)
+![](/images/wx/25062105cd52ae8d45dc6bd311ff3ec0.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVBrXyzGFA7V3eE2UqWDcrJo2hjcsPXic5MJMvsFeYZYgImUicQjfWsyicWE2nXte50ck81h0cRicm69uknQt43HNibKBMjR7b33QGQ/0?wx_fmt=jpeg)
+![](/images/wx/a0327d86da85c042eb74c0a9ccca2df8.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWg0UpZibUsTpalKqjw0Wk3Uaiaicwg8cbq2j7oIQspcy97iciaIwHU1QnOhf40SJaibS98e4ULrkJIveNzicnw76hickKnKfTD48P1B4g/0?wx_fmt=jpeg)
+![](/images/wx/62e8eae8f2e1959858bee264f923b12f.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXyHZSoyPeNFxjYypxuL7wqGibGX5Ox2ibmtKAhIcP5vEaicjMkfUnP0Ax77hqdcdxliaIutq4u7GfKy8Cv9zpJFTuib0WeoQEEGnmY/0?wx_fmt=jpeg)
+![](/images/wx/782e226ede7418473d74af03bc9aa339.webp)

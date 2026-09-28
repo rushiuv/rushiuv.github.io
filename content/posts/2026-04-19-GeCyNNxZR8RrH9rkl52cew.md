@@ -4,13 +4,14 @@ date: 2026-04-19T00:00:00+08:00
 slug: "GeCyNNxZR8RrH9rkl52cew"
 description: "工资不像刚毕业时那么低了，身体也不像刚毕业时那么扛了。下面的人更年轻，更便宜，眼睛盯波形能盯到半夜两点，第二天照样开站会。你自己也不是干不动了，只是越来越清楚：有些活不是不能干，是再这么干下去，心里会发虚。"
 original: "https://mp.weixin.qq.com/s/GeCyNNxZR8RrH9rkl52cew"
+tags: ["AI"]
 ---
 
 ## 芯片这行干到 35 岁，很多话其实不用明说。
 
 工资不像刚毕业时那么低了，身体也不像刚毕业时那么扛了。下面的人更年轻，更便宜，眼睛盯波形能盯到半夜两点，第二天照样开站会。你自己也不是干不动了，只是越来越清楚：有些活不是不能干，是再这么干下去，心里会发虚。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUdjzqbzU0SLUG1toNHDwkG7iar9FLs4PYUWxv4qedMhYZAiaquqDgnH3jFuKfZuDVJl8JafAxoU700KNobR0JdZG1uDmEYyTDV0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/3c7670946876bdbf1bc75e934e40956b.jpg)
 
 因为你知道，自己不可能永远靠“**能熬**”“**能顶**”“**能把几百页报告啃完**”来证明价值。
 
@@ -34,7 +35,7 @@ STA report 几百条 violation，先拉表。 CDC 几百个 warning，一个个�
 
 一份 timing report，加上几版历史结果、模块层级和约束摘要，AI 很快就能先把 **setup violation** 超过阈值的路径捞出来，按 **startpoint** 分组，按公共逻辑锥聚类，把多 mode、多 corner 下反复冒头的热点先拎出来。以前新人熬一晚上才能做出的第一轮整理，现在它几分钟就能给你一版像样的底稿。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUxe4fKfDsYskwzX5qB2XfMIHicROvcUGRcmPiayMwickh3QNxuBVZtETiaEweZdXhsUTZiavyagC02glDHz4Fia1uHmKbdCICNe4mP0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/70cf6c953068a52dfaf1f50305a2f831.jpg)
 
 CDC 也一样。 哪些像 **reconvergence**，哪些像 **pulse crossing**，哪些像 **async reset release**，哪些其实只是同类结构反复报，AI 很适合先做粗筛和归类。
 
@@ -68,7 +69,7 @@ CDC 也一样。 哪些像 **reconvergence**，哪些像 **pulse crossing**，�
 
 是一条 **setup violation** 摆在那儿，你到底怎么定。 是补 buffer，还是改逻辑，还是加一级 pipeline，还是回去重查 **generated clock**、**false path**、**multicycle** 有没有建偏。 每个选项背后都不只是技术，是**面积、功耗、频率、验证量、布局布线难度、ECO 成本和 tapeout 节点**。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXR588In669tsKZGibQ8cR7JbtFUHicJibBNxiaiaHuMGqbLKfYBGu0jdg3yriafq6BBETuU0koceVO4ReRfPlynib6KbTRU0WjklHyz4/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/d10bb9c516b48c62dee20af012de2065.jpg)
 
 CDC 更狠。
 
@@ -102,7 +103,7 @@ AI 可以帮你整理理由，可以把历史 pattern 找出来，可以告诉�
 
 而是到了**该花钱、该延期、该背锅**的时候，谁敢把话说死。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUqxR15f5ia03le8nZC2hD9pWibZkF4e1yTnhyYpicGUMHicNxMJsG3aIECRiaCgZWV8MDAvImEfR0bApXejYYRqYLZibwMvdQ7ibGeibE/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/23210d53abc75173a04382e092c2c718.jpg)
 
 ### 35岁以后最疼的，不是自己不如年轻人了，是你突然发现自己一直没机会拍板
 
@@ -152,7 +153,7 @@ AI 可以帮你整理理由，可以把历史 pattern 找出来，可以告诉�
 
 是某次 **metal ECO**，所有人都不想动 **full mask**，因为那真是钱，真是延期，真是会上要挨问责，但最后还是得承认：这一把 metal 顶不住，再赌就是把坑往客户那边推。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXmG8DOuXj755warIZ9zdz4xZiavzYbiahDQnRMRn1icFuPYOYldqAibI7DgIRcHGmtcib4qogYvaP88Rvq506oXBeI8XuMTZ8nicKkU/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/8dda1a2fe9b249a27c16e9b7608badf7.jpg)
 
 这些事，才会把一个人真正打成熟。
 
@@ -196,4 +197,4 @@ AI 可以帮你整理理由，可以把历史 pattern 找出来，可以告诉�
 
 那一下，才是真的值钱。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWMeWewMM5ibZ2vnSPfTCvwDO9rU4cRX71RMjianrUnHGiamymxkX7ytFKygQ5D8fpFC4av6EL9ATUgSsA5n7cyCWJSwebZibibvkaE/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/551030865be126e54eef09053b090856.jpg)

@@ -4,11 +4,12 @@ date: 2025-09-26T00:00:00+08:00
 slug: "kyK8iDJRRNiA_xXV6X3cTg"
 description: "别跟我谈礼貌和尊重。技术讨论里，信任是废话。我们没有时间去相信谁，只有时间把问题掰碎。只有以最大的恶意怀疑你，才能逼出错误、救项目、保命。"
 original: "https://mp.weixin.qq.com/s/kyK8iDJRRNiA_xXV6X3cTg"
+tags: ["芯片设计"]
 ---
 
 别跟我谈礼貌和尊重。技术讨论里，信任是废话。我们没有时间去相信谁，只有时间把问题掰碎。**只有以最大的恶意怀疑你**，才能逼出错误、救项目、保命。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTRgficscqelNft92FRoxibZoXSfyK1Bs8lgdjTqfpYyXglAPYI95kZUjlaHXQgbgPcBc57XaESLjNg/640?wx_fmt=jpeg)
+![](/images/wx/6a257d42a03651ae05e51b567792a616.jpg)
 
 ##
 
@@ -34,4 +35,4 @@ original: "https://mp.weixin.qq.com/s/kyK8iDJRRNiA_xXV6X3cTg"
 
 最后再把命题压得更狠一点：别自欺欺人地以为“大家都是好人，大家都值得信任”，这只会让隐患在安静中扩张。把怀疑放到制度里，把“恶意”作为一种职业礼仪，这样我们才能在最冷的光照下看到最真实的东西。信任留给生活，问题留给证据；你要的是信任加成，别指望在我们这儿拿到通行证。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTRgficscqelNft92FRoxibZo2ltz07tfic7kMWTgWWCE87WrsygdNYkyQnVn6SRTuyEF0YM9icia91qPg/640?wx_fmt=jpeg)
+![](/images/wx/7a56af3dd414bb14aa63eb9337debd0d.jpg)

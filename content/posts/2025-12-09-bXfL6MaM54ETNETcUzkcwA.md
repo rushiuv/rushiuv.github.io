@@ -8,7 +8,7 @@ original: "https://mp.weixin.qq.com/s/bXfL6MaM54ETNETcUzkcwA"
 
 城市的夜景越来越亮，楼市却越来越沉。倒是另一边，那些原本被嫌贵、嫌难、嫌烧钱的芯片企业，突然像从地下钻出的嫩芽，在资本这种“怕死又逐利”的风里越冒越硬。一个时代的兴趣正在换对象，经济的神经悄悄改线。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRJsTGo7OFvqZ7lPu91DJxttMQ8svFNyXCEgWtPdhhF6uGQmQwuQ4Z7OoTacxPAdgQ34Jdq6jQuWA/640?wx_fmt=jpeg)
+![](/images/wx/66944ae8ae5dfab4789594e4eb90ff47.jpg)
 
 深夜的城市像个喝太多的巨人，楼光亮得刺眼，可你贴耳去听，一幢幢新房子里静得像密封的玻璃罐。没人住，没人吵，没人开灯，只有债务在空房里回音。那股凉劲儿不是新闻说出来的，是路过时风里的金属味告诉你的。
 

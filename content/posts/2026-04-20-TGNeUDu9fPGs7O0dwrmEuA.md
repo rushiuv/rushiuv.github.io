@@ -12,7 +12,7 @@ original: "https://mp.weixin.qq.com/s/TGNeUDu9fPGs7O0dwrmEuA"
 
 做磁编码器的人知道，做双磁环时两个极对数最好互质。做电感编码器的人也知道，两组周期数最好互质。做光学双码道的人，讲到最后也常常会落到同一句话上：两个码道最好互质
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVpiawoLtBCpRnDmFqkU771C4kvPosRqFbuzDgvvWvJcZ7560Cp6kxXiaDBNOqtLPQiapXL7Q6fpP8vg1x4feATCF0BFTApOytd5o/640?wx_fmt=png&from=appmsg)
+![](/images/wx/38952330fc234ee26cb3b9d44323f3af.png)
 
 这句话大家都会说，但很多时候也就停在“知道”这一层。再往下追，往往就只剩下一句“这是原理要求”。至于互质到底是什么，为什么一定要互质，互质到底保证了什么，很多人其实并没有真的把这件事在脑子里想明白。
 
@@ -37,7 +37,7 @@ original: "https://mp.weixin.qq.com/s/TGNeUDu9fPGs7O0dwrmEuA"
 
 游标真正要做的事，就是把这个“重复”拆开。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVSMYU7AtN52zMw6gFYGyrby2Jwaia7HmDS5rCcsExyk2B2MaLIUu7yr4yATaThiaib1JxIvabjJiccCqkD2f3zGeMlIhhMmjNocdM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6ba2c4a177ddba014b5dc68f7f07314c.webp)
 
 ### 两条码道放在一起，真正想要的不是“更细”，而是“唯一”
 
@@ -60,7 +60,7 @@ original: "https://mp.weixin.qq.com/s/TGNeUDu9fPGs7O0dwrmEuA"
 
 互质，解决的就是这件事。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWXD2W6UKEcZjeggvPCAxXAn8uaEzxILeadghSL9PhRbnc9myTv4rFsJfa6wYlArjryTJ76xbNre1mpyA7wbq6UH3bvHDzbC1s/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1800cc811c6360ba55cc0ec9136f2c4a.webp)
 
 ### 为什么不互质一定不行
 
@@ -197,7 +197,7 @@ original: "https://mp.weixin.qq.com/s/TGNeUDu9fPGs7O0dwrmEuA"
 
 不是一个随便写出来的式子，而是互质最深的数学骨架。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUcHoicqgC0Bgn15l70bibumj9gCBGicoMOtzDNQJwibZSMBRv3uGNicGwyeDFHG172rJtMj0GkX0rBRZrHgTc78aZg4Fe61hSZxv38/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d8852816202deceb45db975320031392.webp)
 
 ### 这和游标到底是什么关系
 

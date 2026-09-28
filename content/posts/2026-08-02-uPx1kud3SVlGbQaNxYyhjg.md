@@ -12,7 +12,7 @@ original: "https://mp.weixin.qq.com/s/uPx1kud3SVlGbQaNxYyhjg"
 
 当工具无法给出答案，我们最容易犯的错误，是用更多人的参与来替代更可靠的证据。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUAicn3ZrpfJZfiavdpia4WTOI9aHBrGGVFBVMZmOWnKr5QpF0TcJCkczjxLibxeuUfazfsHjq7G3NcepsP5zEVz5Hz33jibGZ1Qn1E/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3c0418622e6036a873d4f83a21fb822d.webp)
 
 ### 开场
 
@@ -42,7 +42,7 @@ original: "https://mp.weixin.qq.com/s/uPx1kud3SVlGbQaNxYyhjg"
 
 **他看完以后，仍然不确定自己到底有没有看对。**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWeOjXvoGGQNUPA7iblug53vhiaHH1nRxibQ4MRnwUPTh3C0mKSUMiarsiajpM9zo3JLjicv2VBNibC1C9xicJSf3ZeD0CkeI0cbibGNiavI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3b7d13d4f8878f959a51b5e63dddc911.webp)
 
 工具无法自动验证后，工程师只能逐根检查复杂版图连接。
 
@@ -74,7 +74,7 @@ original: "https://mp.weixin.qq.com/s/uPx1kud3SVlGbQaNxYyhjg"
 
 他能顺着自己的思路讲下去，其他人却必须一边听，一边重新建立整套上下文。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVprwnXSWVcia0Svc7G52j60MkAQJ5iaaHbAQOTBUenZYiaq6cHF7zuibreJ8OITXku5Iewm0MsvHdkMdytsrSOokguu3ICaVhsicUI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0648ed8ab69c6d09fb72f5b884575f1a.webp)
 
 临时腾讯会议被拉起，多地工程师围绕共享版图做人肉 LVS。
 
@@ -132,7 +132,7 @@ original: "https://mp.weixin.qq.com/s/uPx1kud3SVlGbQaNxYyhjg"
 
 但它不会自动增加事实。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUZtmY26JBT5RZ2biajN0Frib3jGGYZmLXzicjrHiaJINyPiaMZpyyMoDNgAM4KJO7A4u1AyRjuV2js1BM6Ug4Fib2uGcXRPKGbnByF0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ff1930c4ee4144b11cdab8400c564507.webp)
 
 红线、蓝线和问号越叠越多，讨论升温，但可复核证据没有增加。
 
@@ -152,11 +152,11 @@ original: "https://mp.weixin.qq.com/s/uPx1kud3SVlGbQaNxYyhjg"
 
 人数从 5 增加到 10，潜在的沟通关系从
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUibWRuwZlmSbUuPH4wDrrQdIZdl33eMqq0sZ9PH8QicO6AD9sawzac97CHzlr1MVVGBnV5RO1rB1iaGpkX963WRiaXlcAVBe3fibc0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d3a121cbacbf5307550d925af4a385b6.png)
 
 增加到
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV5g8585ialD46T3WzvRUZnu5eexAIFoTfcQibhc7marmdglyvp2Kqb82J3icMqqlG2M6YzvLgSA7OibmdicpxlPZQ5Yu4OuwBeZ50A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/695c03fa8c4f986197e32508ea3fc620.png)
 
 人翻了一倍，潜在沟通路径却变成了原来的 4.5 倍。
 
@@ -204,7 +204,7 @@ original: "https://mp.weixin.qq.com/s/uPx1kud3SVlGbQaNxYyhjg"
 
 **下一次换一个人来做，能不能得到同样的结果？**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWDozV73543rqtdFwQBVibzpxtDX5BMgoDfribH4R9TArEibwI7WXyJHIDfyFCD3fqKJWicFrkOmFQ4Zg6AxCKjtNZNic9mEYbw4icQc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a9d9bd2e8cb39f78bc538bc00c80919f.webp)
 
 真正的验证最终落到连接矩阵、检查表、Netlist 与可追踪的 Sign-off 记录。
 
@@ -248,6 +248,6 @@ Root Cause 没找到，就把更多部门拉进群里。
 
 而是那根线，究竟有没有接对。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWqhuwUWDltgictnJLcfec4ZiaSxFq88AkMdZSJ67gnpKIX6cwgMhPWpQqpK2RQwoHaky764lwPh4w5WY4jswZqQ1SoucuU9vwKo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9c38e5c2b8a4b2cf3640bd26c0fa0eea.webp)
 
 讨论可以产生共识，但只有证据能够完成验证。

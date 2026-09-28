@@ -6,7 +6,7 @@ description: "前几天饭桌上，有人问了一个看起来很初级的问题
 original: "https://mp.weixin.qq.com/s/mleutcdpSPNF7_ZI8-HjLg"
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXd9qzOKe3CEChV7T2Ox3odqDCswUrtEjdvvDTicAVCkngYLmnMsbxSGMFX2UibBq7XxYxy2ibLEEElyGEdzibEJX91BzzrdVI7ff0/640?wx_fmt=jpeg)
+![](/images/wx/bce8c29ff857c1fb6a2899c47a4e6431.webp)
 
 ## 编码器角度平均：修好了跨零 Bug，为什么还是会算错？
 
@@ -71,7 +71,7 @@ original: "https://mp.weixin.qq.com/s/mleutcdpSPNF7_ZI8-HjLg"
 
 (1° + 359°) / 2 = 180°
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUd9x3hrFAKmMeUict2TNsXM6lWojMXO1tDibP4YYbZPdF6BBwKFjjoebAtCw2xHsqicIItexTlYJrqxKGoQr79hLBJf6WzLSgv3U/640?wx_fmt=jpeg)
+![](/images/wx/a882fd3daca3e6a4935c26760acda41d.jpg)
 
 同样两个编码器读数，0° 和 180° 都能成立。
 
@@ -110,7 +110,7 @@ wrap(359° − 1°) = −2°
 
 这并没有证明真实运动一定反向转了 2°。它只是利用“单帧位移小于 180°”这个工程约束，排除了其他分支。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX4FDytlUbLScE0OrqLGAeocHkCaK1lic2aQt6XDgbwEyTkC8vcgHL5JWFO0JwRs5mB7uR7ICKQs40s1QbHJ2My9AzVe1mibOWJ0/640?wx_fmt=jpeg)
+![](/images/wx/05c0ed57fcf1826e4da19aa4a1ad8f92.jpg)
 
 所以更严格的说法是：
 

@@ -4,11 +4,12 @@ date: 2026-04-24T00:00:00+08:00
 slug: "wz2LN0Tfo8-EiHtrtsHWYA"
 description: "这两天我反复想到的，是一个特别小、特别土、但特别容易让客户心里犯嘀咕的细节："
 original: "https://mp.weixin.qq.com/s/wz2LN0Tfo8-EiHtrtsHWYA"
+tags: ["编码器接口"]
 ---
 
 ## 读着累可听本文播客
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWZf2zT2sdBkaUP5YDapsf5hTyOu6CrR0qoHWcTeqACnBmIFs1bodDN9M5KLicceEfSJJDVXyGWzRxZVsPial0gre1AYicEiaakQ9g/640?wx_fmt=png&from=appmsg)
+![](/images/wx/fff6b7817792adb072f478a0e4976214.webp)
 
 这两天我反复想到的，是一个特别小、特别土、但特别容易让客户心里犯嘀咕的细节：
 
@@ -235,4 +236,4 @@ original: "https://mp.weixin.qq.com/s/wz2LN0Tfo8-EiHtrtsHWYA"
 
 **今天拿到板子，下午就能把系统接起来。**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVmYos9YSYTUwBgNSO3top0vTK4zcK1jlgSpnb98WuoFmnOIcbbM0JC4dgFrIVVtSGSw9few9Vs4puNeME5zicjtlHC0uYWkGHk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9b442b4a2fa59963c071fc5663b0acaa.webp)

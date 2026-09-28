@@ -4,11 +4,13 @@ date: 2026-04-02T14:51:00+08:00
 slug: "7rvGswRW1zo8rMAA722hlg"
 description: "2026年3月20日，宇树科技科创板IPO申请获受理，拟融资42.02亿元。更扎眼的是，宇树招股书里还写到：2025年度，公司纯人形机器人出货量已超5500台，全球第一。很多人看到的是资本市场开始给人形机器人按下加速键，但真正让硬件工程师后…"
 original: "https://mp.weixin.qq.com/s/7rvGswRW1zo8rMAA722hlg"
+companies: ["Melexis", "NXP", "Renesas", "海德汉", "宇树"]
+tags: ["磁编码器", "电感编码器", "霍尔", "FOC", "人形机器人", "机器人关节"]
 ---
 
 2026年3月20日，宇树科技科创板IPO申请获受理，拟融资42.02亿元。更扎眼的是，宇树招股书里还写到：2025年度，公司纯人形机器人出货量已超5500台，全球第一。很多人看到的是资本市场开始给人形机器人按下加速键，但真正让硬件工程师后背发紧的，是另一件事：一旦人形机器人开始走向规模交付，关节里那些原本“勉强能用”的传感器方案，就会被一轮一轮清洗掉。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVQT8BjTlDIGG7jJib3Ygdy2ic2pFenqPO3oQfJFPZicu5OlGBbNy5WZbibpDbAvTBYI6BDT6wt1dPgTqvqbSquz9dgJ6KnIMPhnh8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/881643ef1ca75f9b99c13aeead5ad30b.webp)
 
 这件事最狠的地方，不在于某个器件突然变坏了，而在于系统需求变了。以前的标准是“能转起来”，后来变成“能稳稳地转”，再后来变成“能在受力、冲击、减速器弹性、装配误差和电磁干扰同时存在的情况下，还能闭环控制得住”。标准每抬高一层，上一代方案就不是“落后一点”，而是会在最关键的时候突然露出天花板。
 
@@ -34,7 +36,7 @@ original: "https://mp.weixin.qq.com/s/7rvGswRW1zo8rMAA722hlg"
 
 但这里最容易写偏的一点是：不能把它写成“磁编码器已经不行了”。至少从公开的一线厂商材料看，事实不是这样。Melexis在最新的机器人关节资料里，仍然把磁编码器和电感编码器并列作为机器人关节的核心路线来讲。它甚至专门强调，磁方案也在做stray field immunity，说明磁路线并没有被行业宣判死刑。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUx7px9r65NsrhBqYEyAriaJ3Y6EjsNCDMzsr1wickoOsNgVpwn12bLNB4nku8ghqFu8nAb7QPZytnqX8icaeb5ILKp2f1icwkNPew/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4ae24232a51df7c574e6c7315145670e.webp)
 
 那为什么很多工程师还是越来越焦虑？因为磁编码器真正难的，从来不是实验室里那条漂亮的精度曲线，而是它一旦塞进真实的人形机器人关节，问题就不再只是“测不测得准”，而变成“在电机、驱动、线束、减速器、磁路耦合、动态电流和有限空间同时存在时，你还能不能一直测得准”。
 
@@ -50,7 +52,7 @@ original: "https://mp.weixin.qq.com/s/7rvGswRW1zo8rMAA722hlg"
 
 这不是玄学，而是减速器把问题逼出来的。机器人关节里有减速器，就会有柔性变形，就会有回程误差，就会有零位误差，动态负载一上来，还会叠加更多实际偏差。HEIDENHAIN在机器人资料里讲得非常直接：双编码器和次级编码器的意义，就是为了补偿高级机器人中的关节弹性、零位误差、反向误差以及加工带来的影响。换句话说，工程师终于承认了一件事：电机转了多少，不等于关节末端就真的到了哪里。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWjmRniaXC3aY8dEyIdzTKcicOeoDHs0roS6tL27TzrNhFA16BxcFECHeLqpuecibRZpOHJoktKCHFc3oibfVaElMyvX7g6wRicvTRQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9b46b7bf8e5a55f0dea006cbb03149f4.webp)
 
 这一步一旦成立，整个故事就变了。
 

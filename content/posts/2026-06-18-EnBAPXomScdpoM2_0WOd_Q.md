@@ -4,9 +4,12 @@ date: 2026-06-18T00:00:00+08:00
 slug: "EnBAPXomScdpoM2_0WOd_Q"
 description: "5 月底，一个朋友把雷尼绍 QC20-W 球杆仪报告发到我手机上。现场是一台新搭的三轴龙门，主站跑倍福 TwinCAT 3，三根轴用汇川 IS620N 驱动走 EtherCAT，电机端编码器是多摩川 TS5700N8501，17 位单圈串行…"
 original: "https://mp.weixin.qq.com/s/EnBAPXomScdpoM2_0WOd_Q"
+models: ["AS5047P", "IS620N"]
+companies: ["ams OSRAM", "iC-Haus", "雷尼绍", "多摩川", "汇川", "倍福"]
+tags: ["磁编码器", "编码器接口", "EtherCAT"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXxn5o94pZyqbw6YaFw45faeMSg0wFrAMtd8QsBYYQqW1OMA2KakBKybnkAjwk8l1V1rPXvNx65ibJ6AwXtxJAx4CXT4732wda4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/51ae09daa5c9f18606f35607e8f24558.webp)
 
 ## 倍福 TwinCAT 3 控汇川 IS620N + 多摩川 TS5700N8501 17 位反馈，如果三轴采样差 200µs，会导致龙门 50mm 圆插补拉出 0.02mm 椭圆
 
@@ -78,4 +81,4 @@ BiSS-C、部分 iC-Haus 器件会定义明确的 latch point，比如在帧开�
 
 圆画不圆，有时不是哪根轴不准，而是几根轴各看各的表。对多轴系统来说，同步不是配置页上的一个勾，而是每一个位置值背后的真实采样时刻。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXlAXgVEuFxbQ2PYtMecOVLqnj2tryzMhlUFyS4lHp7Hicq74xRp7AibIHW5tdyQmc0YOQswqHcCv9kKHE6c9ib9APVPqSsSEFIAA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0cc97c08063c0e5dcacf733de2674594.webp)

@@ -4,6 +4,9 @@ date: 2026-03-27T13:14:00+08:00
 slug: "OmpOD447OoifSoRPf5Ts2Q"
 description: "人形机器人不是在采购一堆成熟零件拼装，而是在逼整个底层器件体系重新洗牌。"
 original: "https://mp.weixin.qq.com/s/OmpOD447OoifSoRPf5Ts2Q"
+models: ["KTO9512", "KTH5900", "KTH7111", "MT6901"]
+companies: ["昆泰芯", "纳芯微", "Renesas", "特斯拉"]
+tags: ["磁编码器", "电感编码器", "光电编码器", "离轴", "非线性校准", "TMR", "人形机器人", "机器人关节", "AI"]
 ---
 
 ## 人形机器人现在最容易被高估的，不是大模型，不是灵巧手，甚至都不是电机本身，而是那个过去总被当成“配角”的位置传感器。
@@ -14,7 +17,7 @@ original: "https://mp.weixin.qq.com/s/OmpOD447OoifSoRPf5Ts2Q"
 
 ##
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWpav463RaFXv88Pgzht1h2diaIu0Qaqquwmr5vrM94YcbHmaZxCUAyI85IandPojGhdevNxsSDC3ZvkPicrZqQrxfEiaiaomMQZNQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/58732f16b1c6aab3bd1e15e68bf0f363.webp)
 
 人形机器人不是在采购一堆成熟零件拼装，而是在逼整个底层器件体系重新洗牌。
 
@@ -30,7 +33,7 @@ MT6901 真正打动行业的，不是“国产”两个字，而是它在一个�
 
 Renesas 去年发布 RAA2P3226 时，官方写法就很直接：这是 magnet-free 的电感式位置传感器，支持双线圈 sensing、最高 19-bit 分辨率、0.01° 绝对精度、低于 100ns 的传播延迟，目标就是替代一部分磁编码器和光学编码器。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWHWybsNwguMmF5vseNrQI12jxLlHnEOiaMzciaUAUebWgNcDEmbdfuWiasw0g6iboQuFZ1tiaDUD0FNeVbymkPy1qQSKjyUMcL4sKc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/82f61dc4aaf649cb812888c2ea75044c.webp)
 
 这就是 MT6901 出现的真正背景
 
@@ -40,7 +43,7 @@ Renesas 去年发布 RAA2P3226 时，官方写法就很直接：这是 magnet-fr
 
 那为什么标题敢写“狙击百亿市场”？因为这已经不是一个实验室选型问题，而是产业链真金白银在往里砸。2 月底，泰国 BOI 已经批准 5 家中国企业在人形机器人零部件方向投资超过 100 亿泰铢，生产结构件、关节、传动和控制相关组件，面向的项目里就包括 Tesla Bot。这个信号很清楚：人形机器人零部件已经开始进入全球产能卡位阶段。谁先把关节、执行器、传感、控制这些底层件做成稳定方案，谁就更有机会吃到后面的规模化订单。这个“百亿”，不是嘴上吹出来的，是供应链已经在用资本和工厂投票。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXDJgzdpwX3d8q6PkqpVfxdjFeYNZKHJsxTYBxL0n7c1qtF1Zdp3b0U5XmpdTJhtODCnuuZVy06t2YyckXxcrjveQKDbWm8a8c/640?wx_fmt=png&from=appmsg)
+![](/images/wx/859ea65409cb1e9fa7b42fbfeece6738.png)
 
 但话说回来，MT6901 真能一颗芯片打穿市场吗？
 
@@ -52,4 +55,4 @@ Renesas 去年发布 RAA2P3226 时，官方写法就很直接：这是 magnet-fr
 
 说白了，MT6901 横空出世，真正可怕的不是它发了一颗新芯片，而是它提醒了整个行业一件事：人形机器人这场仗，已经开始从大模型的云端，往最底层的关节硬件里见血了。下一步死得最快的，不一定是技术最差的那个，而可能是那个还以为“编码器不过是个小配件”的人。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVqdDW8o3yaS2CumglfM9Po4cO2rf1DWmKGug3jiaD0A9gQquQPG69WSbPYjc7lJRPUmEEmThW9kQwY7e2hXYic075IqAjIVVaPE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1b81929a60df562b466de5c59c5c1313.webp)

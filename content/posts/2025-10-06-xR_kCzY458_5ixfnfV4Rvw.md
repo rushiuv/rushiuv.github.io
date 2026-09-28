@@ -4,6 +4,8 @@ date: 2025-10-06T00:00:00+08:00
 slug: "xR_kCzY458_5ixfnfV4Rvw"
 description: "眼看全世界都在抢制程、抢算力，我偏说一句不合时宜的：未来两年，决定国产芯片公司生死的不是\"纳米\"，而是\"人味\"——把芯片当服务（Service）来卖的人，会在AI存储超级周期里吃掉利润最高的一口。"
 original: "https://mp.weixin.qq.com/s/xR_kCzY458_5ixfnfV4Rvw"
+companies: ["OpenAI"]
+tags: ["AI", "投资"]
 ---
 
 ### 核心观点
@@ -26,7 +28,7 @@ original: "https://mp.weixin.qq.com/s/xR_kCzY458_5ixfnfV4Rvw"
 
 第三季 PC端 DDR4 合同价被预测大涨 38%–43%，一度出现"DDR4 比 DDR5 还贵"的市场倒挂，这种戏法在过去几乎不可想象。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQb9GsKcg4GiaLO0twVMdHBCqf9MglDIiaMf6teLhv8h7ck7Zia75He0Xgic5jWYIpKibspicYic4ic2n2tnA/640?wx_fmt=jpeg)
+![](/images/wx/b7ff2259b56bcb798496b19cf6e0c032.jpg)
 
 ### 资本反应
 
@@ -58,7 +60,7 @@ original: "https://mp.weixin.qq.com/s/xR_kCzY458_5ixfnfV4Rvw"
 
 **第四，资本周期会奖励"有现金流的服务"，而不是"等死的研发"**。摩根士丹利喊"存储超级周期"，厂商财报里 HBM 收入按年翻倍，美光单季把 HBM 拉到近 20 亿美元、全年指引看 80 亿；这种结构下，靠卖裸芯片的中小厂商会更难拿到信贷，反而是"服务化交付"能给银行看得见的回款节奏。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQb9GsKcg4GiaLO0twVMdHBC5HbqyWgjKmCiash8QvBrxUeqPgV8zVDiaFwSZTsG3qW2VfhTiaibZLt1Gg/640?wx_fmt=jpeg)
+![](/images/wx/31498b80a5ea725d57fa474b8d338280.jpg)
 
 ### 落地模型"把芯片当服务卖"
 
@@ -78,7 +80,7 @@ original: "https://mp.weixin.qq.com/s/xR_kCzY458_5ixfnfV4Rvw"
 
 我们再看几个冷冰冰的信号，顺着它把商业模型定死。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQb9GsKcg4GiaLO0twVMdHBCNbLYLeQZHicLpvo8wu9wmYshXhGaBtCLKSacAhHX5vXic7NNnhf5ZtoQ/640?wx_fmt=jpeg)
+![](/images/wx/477d3ca289ef612834dc3c46535320a4.jpg)
 
 **现货与合约同时抬升**：Q3 PC DRAM 合同价季增 8–13%，Q4 合同端继续+15–20%。这意味着"赌现货"的客户被迫回到长期协议，服务商的"年度托管"正好接住这波迁移。
 
@@ -118,4 +120,4 @@ original: "https://mp.weixin.qq.com/s/xR_kCzY458_5ixfnfV4Rvw"
 
 *注：文中数据与动向来自业内权威及公开渠道*
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQb9GsKcg4GiaLO0twVMdHBCMyUwMvhlomB1R1r9drcicYAT39sS0HYCcFNzSVZrEhQyY3Gwmdo8t2w/640?wx_fmt=jpeg)
+![](/images/wx/95ad3a8ecedd4eee2a59c3f26c6cbb5d.jpg)

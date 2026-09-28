@@ -4,9 +4,12 @@ date: 2026-07-24T00:00:00+08:00
 slug: "0fTn5pZc94oodEmcCof8BA"
 description: "一根只有约四分之一毫米粗的合金丝，为什么能在没有电池的情况下，给断电后的编码器记下一圈？"
 original: "https://mp.weixin.qq.com/s/0fTn5pZc94oodEmcCof8BA"
+models: ["ADMT4000"]
+companies: ["ADI", "POSITAL"]
+tags: ["多圈编码器", "TMR", "AMR", "霍尔"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW2Gl23ISLrXABjpJlkVD2ykbOKtVCHfvRYAW98m1m3PlAQvMQ4YaH88yqelYBGY0Sia2zxUmt92uOFibic6eMJEdp7gRArY0EsibY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ae8081613397e51a5faa9aeede39e5ef.webp)
 
 磁传感器 · 无电池多圈 · 能量采集
 
@@ -26,7 +29,7 @@ original: "https://mp.weixin.qq.com/s/0fTn5pZc94oodEmcCof8BA"
 
 工程资料常把它简化成“软磁区＋硬磁区”的双稳态结构。外部反向磁场逐渐增强时，磁化方向不会跟着平滑转过去；达到临界阈值后，某个区域会发生雪崩式反转，磁通在极短时间内跳变。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUd6JgJicRJzGtiaEYB0MtoX05SoCujsmJBBuQ9HPcuichgwcrpyeib1iatX21YkHpDS7qkDdWmic4L3jwQbmGNghibCMH8KLian1picYIo/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/b9c753b494e82c4a9d2fb751124105d8.jpg)
 
 图1｜韦根丝的核心不是“两种材料拼接”，而是同一根合金丝经加工后形成不同矫顽力区域。图中蓝色与橙色用于区分软、硬磁区。
 
@@ -40,7 +43,7 @@ U = −N · ΔΦ / Δt
 
 其中，** N **是线圈匝数，**ΔΦ**是磁通变化量，**Δt**是变化时间。翻转通常发生在微秒量级，因此即使总能量很小，线圈两端仍能出现数伏级的尖脉冲。具体峰值、脉宽和可收集能量取决于线圈、磁场、负载与整流电路，不能只用一个固定电压概括。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVttg0F2tZb0BXGIK2t9HYWxbacdOqNtGLkwJia21ghmMbPIEUdfa4zQ6wIbFGxrtWuYNcuAdYT0TrJpsia6kzEK6Oqg5bI36C7s/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/598a686d9c45a08b8eb419f42e018a63.jpg)
 
 图2｜旋转磁铁改变外部磁场，韦根丝达到阈值后快速翻转；线圈得到尖脉冲，整流并暂存后，为一次计数和非易失写入供能。
 
@@ -52,7 +55,7 @@ U = −N · ΔΦ / Δt
 ① 脉冲对**转速**不敏感；
 ② 但磁铁距离、方向和磁场强度仍决定能否越过**触发阈值**。磁铁太远，照样不会出脉冲。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIU8lmV8rCvHFiaHNrLVtyticvr0ic1htZFkbmpx6QKWvPKibfQYUNQIeR98FpLvpH4Xz9PbEDByjaHcBQNd1KZ9EqU4q6vX2lXhvZE/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/9f3f20a9bfc8032d1f1da221ca89f751.jpg)
 
 图3｜上排：普通模拟磁传感信号会随磁铁变远而连续减弱。下排：韦根脉冲在成功触发后对运动快慢不敏感；一旦磁场低于阈值，则完全没有脉冲。
 
@@ -115,7 +118,7 @@ U = −N · ΔΦ / Δt
 
  |
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVCXibrl866TsyknsqY0CjPt0npJBsUdybFyCCaVf9XjGbDsibJibIM1XYO5WubdRz0nFSpgbZYTMZPruVpFgo8G9icG5axPiamMOmk/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/27359f2787c6a700fde625afcdd7488c.jpg)
 
 图4｜左：韦根脉冲主动供能写入；中：磁性薄膜被动保存状态；右：机械齿轮直接记圈。三条路线解决的是同一个断电记账问题。
 
@@ -133,7 +136,7 @@ E采集 > E整流 + E计数 + E写入 + E损耗
 
 绝对多圈位置 ＝ 单圈绝对角度 ＋ 已累计圈数
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXMpNHa7icWyxWcTrhicUFW1Z2riaBCyicMDlYIY5sicruRKhkrVInV7BNAoSmnTorpcE3jBzyXklWfk4rVBU72Y7aibhGVWmX6ichbS0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/43dbf7b92915b64f075cb14d398a246c.jpg)
 
 图5｜角度芯片连续测量单圈位置；韦根支路每圈产生事件脉冲并为计圈写入供能；系统将两者合成为多圈绝对位置。
 

@@ -4,6 +4,8 @@ date: 2025-10-01T12:28:00+08:00
 slug: "rjRoGrVMx6NiX58s3_zDDg"
 description: "瑞士人最近在为一件事吵翻天：国内唯一还能撑门面的超级大银行UBS，说自己被政府逼得快活不下去了。"
 original: "https://mp.weixin.qq.com/s/rjRoGrVMx6NiX58s3_zDDg"
+companies: ["UBS"]
+tags: ["投资", "瑞士"]
 ---
 
 瑞士人最近在为一件事吵翻天：国内唯一还能撑门面的超级大银行UBS，说自己被政府逼得快活不下去了。
@@ -12,7 +14,7 @@ original: "https://mp.weixin.qq.com/s/rjRoGrVMx6NiX58s3_zDDg"
 
 就像宫斗剧。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicXKB1icLNduMucrrFg7o64sbvayRuxrAa8UlUyBu7pz1wCnQRHVmBXxw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a63ad8ae63e6774ba259cb23c6623816.webp)
 
 👑 皇帝（瑞士政府）板着脸拍桌子：
 “朕上次救瑞信，差点倾家荡产。如今只剩你一人撑门面，朕要你更稳。七年之内，所有海外子公司必须塞满最硬的底钱，到2035年百分之百，不得有误！还有，你账上的软件、税收优惠券，危机时一文不值，全给朕按零算。”
@@ -33,7 +35,7 @@ original: "https://mp.weixin.qq.com/s/rjRoGrVMx6NiX58s3_zDDg"
 
 玩笑归玩笑，真实的规则比甄嬛还要冷酷。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicqicU3Kf7mWtIlv3dQCSuQ5eXYjY7ujZblHjuWCh5ay4eI6WOQibzad2A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/cd03ac6cc178e55591cbff7546ced76f.webp)
 
 财政部提的新规，要求UBS额外再拿出两三百亿美元资本。路透社在9月30日的报道写得很直白：UBS在正式意见书里批评方案“不成比例、脱离现实”，并估算自己要多掏约**420亿美元**，把CET1资本比率顶到**19%**，比美国、欧洲同类大行高出**50%**。
 
@@ -41,9 +43,9 @@ original: "https://mp.weixin.qq.com/s/rjRoGrVMx6NiX58s3_zDDg"
 
 而且瑞士政府还要改口径，重算什么算资本。过去软件系统、风控模型、手机App、未来少交的税（递延税资产）都能算家底。这次财政部说：危机时这些全卖不掉，算零。UBS在材料里点名：光软件+递延税资产两项按零，就“毁掉约110亿美元资本”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMictk8ff5gWpvlLIVgicicNUEZzKctjZvVMvfhJMj7WM62P0yHzmdp2VObA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/91bef0d8f153ad5f51c617fdad391306.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicibic0pshXrFF5ibWRsI3IwrkAnWkq4gWFwrcSOJy81HibAQeh01BQTXg5Q/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0aa86db9564b1a77e8af3dda316fab82.webp)
 
 瑞士为啥这么狠？因为2023年救瑞信那夜，FINMA直接清零了160亿瑞郎AT1债券。本来常规是股东先亏，债券后亏，瑞士反着来，结果全球投资人到现在还在打官司。监管吃过亏，所以要提前把“最坏打算”写进规矩。
 
@@ -63,7 +65,7 @@ UBS的财务主管也在欧洲大会上放狠话：“要是这版规则原样�
 
 为什么瑞士敢这么硬？一是政治风向。9月15日，上议院否掉了“把新规交议会慢慢审”的提案，相当于给政府直接发规则开了绿灯。二是系统安全的共识：财政部、央行、FINMA在9月26日的文件里齐声说，全面资本化是防止“太大不能倒”的核心举措。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicCEibPMLPUdlUGLKlI4UOZwpvdHQpfY2kAWJgBAVwxT76QJ6FictcE2ZA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ef063fb9c2e2ae198e8fcdf98c9a1cdc.webp)
 
 到这一步，中国读者也能代入：这就是一道“谁来买单”的题。政府怕纳税人再掏钱，银行怕利润被榨死，股东怕分红缩水，地方怕饭碗丢掉。人人都说得对，但绑在一起就是拉扯。
 
@@ -73,4 +75,4 @@ UBS的财务主管也在欧洲大会上放狠话：“要是这版规则原样�
 
 等你下次在苏黎世玻璃幕墙前路过，别只想到钟表和奶酪，想想墙后那本账：**谁来为风险买单，写在规则哪一行，决定了一国的脸面，也决定了一家银行的命。**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicS7veAiaUa5ngicTOLA0ZxrPA1lfzWR8DzMo3BKEfFD88JWS5L2UXIoFQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9500e66080f11156518dde2612a4563c.webp)

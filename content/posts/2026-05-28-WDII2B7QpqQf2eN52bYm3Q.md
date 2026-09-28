@@ -4,9 +4,11 @@ date: 2026-05-28T06:00:00+08:00
 slug: "WDII2B7QpqQf2eN52bYm3Q"
 description: "规格表第一页决定客户愿不愿意聊，后面三十页才决定客户敢不敢用。"
 original: "https://mp.weixin.qq.com/s/WDII2B7QpqQf2eN52bYm3Q"
+companies: ["Melexis", "ams OSRAM"]
+tags: ["磁编码器", "非线性校准", "TMR", "GaN", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW7YwtfZrFdFKeXcPR7BjTStMlphtibHMCruvYRfbCI8dfIDOL1nseXh7ccNjpsoocUcqavcyrZUJaxHPOaPIs8ksouSorZiaRLo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f0c5aaf886a188557bc0632207295def.webp)
 
 规格表第一页决定客户愿不愿意聊，后面三十页才决定客户敢不敢用。
 

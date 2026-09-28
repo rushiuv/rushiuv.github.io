@@ -4,9 +4,10 @@ date: 2025-10-02T00:25:00+08:00
 slug: "f09gpKLXGtEbecrGu4hzow"
 description: "深夜翻到美国能源署的数据，眼睛瞬间清醒——到2030年，全美的数据中心可能要吃掉全国近十分之一的发电量。听上去只是数字，可你再想画面：湾区机房的风扇像合唱团整夜轰鸣，电表跑得比股价还快，调度台上的红点一跳再跳。这不是科技热潮，这是电力系统被…"
 original: "https://mp.weixin.qq.com/s/f09gpKLXGtEbecrGu4hzow"
+tags: ["AI", "投资"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicnriaDJ24MBV92TupmS7S7hv9zw4RUopBgDgKic3lQA78CwzslyBSRRibw/640?wx_fmt=jpeg)
+![](/images/wx/a649ee63810a4211f84b54c4f7a2e62f.jpg)
 
 深夜翻到美国能源署的数据，眼睛瞬间清醒——到2030年，全美的数据中心可能要吃掉全国近十分之一的发电量。听上去只是数字，可你再想画面：湾区机房的风扇像合唱团整夜轰鸣，电表跑得比股价还快，调度台上的红点一跳再跳。这不是科技热潮，这是电力系统被逼着硬生生开一场大手术。
 
@@ -28,7 +29,7 @@ original: "https://mp.weixin.qq.com/s/f09gpKLXGtEbecrGu4hzow"
 
 你看着新闻里的铁塔、机房、储能方阵，其实已经在看未来的现金流。芯片能被关税打趴，算法能被迭代淘汰，电却一秒都不能断。火可以忽明忽暗，柴必须一捆一捆码。等风口吹到谷底的柴堆时，你就会知道哪些名字注定会先被点燃。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMic9yoZDWKq7XoHCXpT5PTZJlZmn3qWZYuoCSbOmykn1nIM7AZjxBl4Lw/640?wx_fmt=jpeg)
+![](/images/wx/de1d7f2e48ea799ba7f8dcbd81aa9a1b.webp)
 
 附录
 
@@ -76,4 +77,4 @@ CGN Power (01816) —— 内地核电龙头，规模化无碳基荷属性，与�
 
 说明：以上仅为与AI驱动用电增长强相关的“电网/配电/核电/特高压/储能”链条公司线索汇总，依据公开资料与机构报道；并非投资建议，也不评价安全边际与估值优劣。实际决策请结合你的风险承受能力、估值区间与持仓周期自行判断。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicrwpu30iaBtnNfuzXxseMxasHMb3q2q1X73QG35ywlkZ1YkdPYtJMKmA/640?wx_fmt=jpeg)
+![](/images/wx/602a84c52ea5bb6e45f9555b3f9402c8.jpg)

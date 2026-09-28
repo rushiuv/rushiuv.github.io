@@ -4,9 +4,12 @@ date: 2026-09-15T14:23:00+08:00
 slug: "Xbsiw3xC6ChcsawVw-rmQg"
 description: "8 月中旬，一批行业稿开始转同一句话：按 Yole《Magnetic Sensors 2026》，纳芯微磁传感器出货量全球第四、国产第一，2025 年单年出货超过 10 亿颗，累计超过 20 亿颗。"
 original: "https://mp.weixin.qq.com/s/Xbsiw3xC6ChcsawVw-rmQg"
+models: ["NSM350x"]
+companies: ["纳芯微", "麦歌恩", "美新半导体"]
+tags: ["磁编码器", "离轴", "自校准", "非线性校准", "AMR", "霍尔", "机器人关节", "投资"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWRiaTpXH0UYrOZuoLhUups8D24GBhzeicYiaFnl2Ko6GMTiaKFG9vLOQEestvCicEH2nlUtUdHza3Qj6efxbvpicMmrj0pUgQHReoQE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f34fdfa7b3a6a98204ba6536b768bef4.webp)
 
 8 月中旬，一批行业稿开始转同一句话：按 Yole《Magnetic Sensors 2026》，纳芯微磁传感器出货量全球第四、国产第一，2025 年单年出货超过 10 亿颗，累计超过 20 亿颗。
 
@@ -32,7 +35,7 @@ Yole 给纳芯微的排名，原文是 **by magnetic sensor shipment volume**，
 
 这两个问题看起来很像，其实隔着一整套测试机。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVGrfh9VR6o0vHb3gMeguwbOvl2DxyAr6nN9vr3SqwHXu6OXg3hqqR014Jr9iaNWH23rwqX5O13UhVIdFsWFM1CLvm8bNf5volc/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/481f426b9da47c5c76a6cafba140ab34.webp)
 
 ### 10 亿颗能证明很多东西，但编码器还多了一样叫“角度基准”的东西
 
@@ -66,13 +69,13 @@ Yole 给纳芯微的排名，原文是 **by magnetic sensor shipment volume**，
 
 半年报刚好给了一点。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUNGaHibGTtGzICAM6icky9Tia5D0h2ZlaMWXNypaicichRtt9cwf1cYEp9NOm9O37ta9zHwIH0aJ95FMN9ChQmO1MmDvZXVP7jHMCQ/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/0df659a676f6d876aafcd6151051fa5d.webp)
 
 ### 半年报技术分析：真正有意思的是两个动词
 
 纳芯微 2026 年半年报第 19 页，磁传感器研发进展里有一句很短的话。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXJBIr2jEEWxrxOXdRQ36tuXp3VDJibCwibjZXzbx2RkoLQ2gyyWvhOe7v0OwLt5hmF3KGGL0SnwPqGDVe221GRIHD9MFRlqCfkw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4fac7ecd27e82d2a7d79c33d9d2b8d7f.png)
 
 *半年报第 19 页原文截图。同一句话里两个编码器、两种物理原理、两个动词。*
 
@@ -98,7 +101,7 @@ Yole 给纳芯微的排名，原文是 **by magnetic sensor shipment volume**，
 
 第 20 项是“基于电涡流原理的角度编码器芯片”，预计总投资规模 3300 万元，累计投入 2174.09 万元，应用直接写着“机器人关节、伺服电机”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUmrhqIHGpmSxOvQrCwMGR8co3s1hhj8RHCmQCjFGAWMNUlia98Nh4dhcg0d2aZXyicmXtv0bKVUU08CRFw7Rf7WexicgDns07gV0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5c803cda6356d6903203635be0768004.png)
 
 *半年报第 30 页研发项目表第 20 项。注意最右边那一栏写的是“机器人关节、伺服电机”，而“进展或阶段性成果”一栏写的是“持续开发”。*
 
@@ -112,13 +115,13 @@ Yole 给纳芯微的排名，原文是 **by magnetic sensor shipment volume**，
 
 第 26 项：**工业机器人、数控机床用高性能离轴角度传感器芯片**，预计总投资规模 3855 万元，目标写得很具体——离轴 2 mm 固定磁极距**增量式**编码器，应用是工业离轴角度编码器、直线位移检测。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUaWfxrh1fZFJ4CF8mvJhYBZp9Whm7AqS40ZWrbxtrmdU0O0dDk630Hk2dbCcpqnIOlgVlKvVnXqibmh0lRnFEHPyHX9iaaBUalY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/cb4d26f107908cab55c91ebc29d2a261.png)
 
 *第 31 页第 25 项与第 26 项。上面那行 AMR 轮速传感器状态“量产”，本期投入 3.55 万元、累计投入 2298.62 万元；下面第 26 项状态“持续开发”，本期投入 171.84 万元。*
 
 然后是更大的一张项目卡：**磁位置传感器电路设计**，预计总投资规模 6500 万元，累计投入 2435.05 万元，其中 2026 年上半年一期就投了 1317.86 万元。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXlld02nYW2CH1p0tzZiahcwL4iaVibBtyyl0TpfjtvTgDicO9FiakssqN1HtDj6HsdQlXPbFyQqgCMQo9loRyp7CdicR28xdBvTFoicc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6860102fd7372f2f1d66e861f46043f1.png)
 
 *第 31 页第 36 项。6500 万元，上半年本期投入 1317.86 万元，累计投入 2435.05 万元。*
 
@@ -130,7 +133,7 @@ Yole 给纳芯微的排名，原文是 **by magnetic sensor shipment volume**，
 
 这是整张表里我唯一记住的数字。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV9OlZka6qU38RhD7B3bAjTyYibR8YVicovTUaibicGdibN4jLv04LuCH1MeuROJ2eYLz7pVrxFGGicxD62BmfN74jQ2PDictzNzQG0ibc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3cb22c208e4dc491d2fb36f001052000.webp)
 
 项目表没有写明哪笔钱具体属于 NSM350x，也不该硬把 NSM350x 塞进其中某一行。
 
@@ -190,7 +193,7 @@ Yole 给纳芯微的排名，原文是 **by magnetic sensor shipment volume**，
 
 同样都是角度，面对的可能并不是同一份环境账单。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXvuA4K5uC1Lwck38YMbvcuwRLgOdcmxkzMHoqxhNY75Mg7d7QQurHpssnGRGVlBXDS3jCQpSgWDLS8icFOnrAz7IuqHYTk7O3Y/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c225b808091d0b552500679d5b2e3dfc.webp)
 
 ### 匀速自校准那张表，到底属于谁
 

@@ -4,13 +4,14 @@ date: 2025-12-07T21:33:00+08:00
 slug: "2V6nJ6FWaglRSju8euZMJg"
 description: "芯片研发的人啊，一个个都像把自己焊死在工位上的孤岛，谁都觉得自己那口锅最烫。可真把所有人拆开来看看，你会发现每个人都在以自己的方式托着那颗 SoC 不散架，只是没人愿意抬头，承认别人也在发光。"
 original: "https://mp.weixin.qq.com/s/2V6nJ6FWaglRSju8euZMJg"
+tags: ["芯片设计"]
 ---
 
 芯片研发的人啊，一个个都像把自己焊死在工位上的孤岛，谁都觉得自己那口锅最烫。可真把所有人拆开来看看，你会发现每个人都在以自己的方式托着那颗 SoC 不散架，只是没人愿意抬头，承认别人也在发光。
 
 ##
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRAnjAb57Kc6HUhtQiaSTkVsTzGxLH1DXDsZaMiaUUiaE2Nzia8fkYfibEia8OMgg5tYtD28PDTHw0anrKA/640?wx_fmt=jpeg)
+![](/images/wx/3e13566c8203e176d7a2f226f948a473.webp)
 
 烟灰缸里的烟还没灭，RTL 那个哥们就开始拍桌子，说自己写 state machine 写到凌晨三点，脑子都快冒出同步逻辑；对面的验证小姐姐白了他一眼，手指还停在 waveform 上，像是在解剖一具尸体，嘴里嘀咕着 coverage hole 像深渊一样无底；后端那位更绝，眼睛红得和 signoff log 一个色，说整个芯片的命脉都卡在他那条 timing path 上，PPA 被压得像他的人生一样窄。
 

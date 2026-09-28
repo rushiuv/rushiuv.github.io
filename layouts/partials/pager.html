@@ -1,7 +1,7 @@
 {{ if gt .TotalPages 1 }}
 <nav class="pager">
-  {{ with .Prev }}<a href="{{ .URL }}">← 较新</a>{{ end }}
-  <span>{{ .PageNumber }} / {{ .TotalPages }}</span>
-  {{ with .Next }}<a href="{{ .URL }}">较早 →</a>{{ end }}
+  {{ with .Prev }}<a href="{{ .URL }}">← 较新</a>{{ else }}<span></span>{{ end }}
+  <span class="muted">{{ .PageNumber }} / {{ .TotalPages }}</span>
+  {{ with .Next }}<a href="{{ .URL }}">较早 →</a>{{ else }}<span></span>{{ end }}
 </nav>
 {{ end }}

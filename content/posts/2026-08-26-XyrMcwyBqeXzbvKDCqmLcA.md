@@ -4,9 +4,11 @@ date: 2026-08-26T15:30:00+08:00
 slug: "XyrMcwyBqeXzbvKDCqmLcA"
 description: "ENCODER · PARK · CLOSED LOOP"
 original: "https://mp.weixin.qq.com/s/XyrMcwyBqeXzbvKDCqmLcA"
+companies: ["易德龙"]
+tags: ["非线性校准", "霍尔", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVK9xkOUzVicXdl1rRKwXNHG6vHa7lYTS7bY0Bb7dKjpGLFribSCaW4iaNRKDedDpvTU3zWRufZFB1TNibeoQdJjxKgGLAFFZrxGSs/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/dc7822ed349824451f5d3c6a53e96f01.jpg)
 
 ENCODER · PARK · CLOSED LOOP
 
@@ -24,7 +26,7 @@ ENCODER · PARK · CLOSED LOOP
 
 **双路径而不是单路径滤波也很工程。** 它至少承认了「响应快」和「抗噪好」之间不存在一个永远正确的固定参数，把这个折中从设计时挪到了运行时。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXt5roAlOOfzTHIg7HniaHuewLvam8OBzw8aMZgI68ibzFCiaicYiaibictdaJPGPCVx94UgfGuw8aiawsaNpjGMYLZzOo3Hib3ibfDskjiaA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/bd4dcc4f266473f12a35638ede95f294.jpg)
 
 *图 1｜接近真实机构的原理示意：磁体装在运动连杆或曲柄上，霍尔固定在磁体轨迹附近；磁体经过时产生一次模拟脉冲。这里只画公开的物理关系，不展开 MCU 内部算法。*
 
@@ -44,7 +46,7 @@ ENCODER · PARK · CLOSED LOOP
 
 设真实过线时刻为 t₀，算法输出事件时刻为 tₑ，那么
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIX5Ntpv9sZ9hfticmAuZekE9w9ia1sfvpRBhHrZMCcz5C52YECeTzGM4EhHGzMFqhIb2pibwuSDQXDHUNToLlibZx3Fb2z97LSf6MM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/983a72339d0604b68523c7060c81d2f3.png)
 
 就是这条信号链的核心误差。它会被采样周期、模拟前端带宽、数字滤波群延迟、门限高度、消抖时间和任务调度抖动一起吃掉。
 
@@ -52,17 +54,17 @@ ENCODER · PARK · CLOSED LOOP
 
 文本里的“双层自适应滤波”，可以抽成：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW1hSiazILzOEGjQKYCN1Bnf3JNjQnQzYak9LFB4WDckJZu82TT1rCE2hLPIZfCgY9hzfEzTMdukh11X8BZcCvicwicTsAH1Qa9Nw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6e63b8b20e45f011a17b47e110bef4d4.png)
 
 y_f 是快层，y_s 是慢层。按专利描述，噪声指标 N 变大时，快层权重 w(N) 下降，输出更多依赖慢层。门限同时按零点 z 和噪声尺度 σ 调整：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUdevWSXglEqo32L98lwDxQzjgbXvLCmaBiaRic23JGwIg5VEGX8uUUp9AZuAdk2aOd8ppEicWlUaLSGw8nw718cCTDsR2kSUnXy8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5078c1ad9cb79274f7f989ba9926b78a.png)
 
 这两个动作单独看都合理：噪声大，滤波收窄；噪声大，门限抬高。放到事件时间上，它们却在同一个方向上叠加——**快分量变小，过线的横杆又升高。**
 
 相机已经把快门拖慢了，裁判又把横杆抬高了；同一个运动员，当然会更晚被判定“过线”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU4humbhDF32foBpm9cEsAr0eaH2WrvhXj7zVK3aFpGTF4ggh4uDAUy3Dh5gl8cct3pdiaMZhXXDg2A4iaWTz5Utic79Z8g7ec0hU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d8375a151c3f634132fa2f7a4b083480.png)
 
 *图 2｜专利附图 2 原图。它明确给出“强噪声时稳态层占比大、弱噪声时快速层占比大”，方向是清楚的；w(N) 的函数形式、档位数量与最坏时延约束不在公开文本里。*
 
@@ -70,23 +72,23 @@ y_f 是快层，y_s 是慢层。按专利描述，噪声指标 N 变大时，快
 
 给两个一阶 IIR 一个幅值为 A 的阶跃：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV4xgTfglBgRaYXt5hnjlV73vwjO3W9pDPGutIMXj6CeWuRcMVSRNsxCcxkaBEZovYhAibLlw6Mhp8udsAKRbA9hQIWicCOLoeEM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c090ec18cc2abdf36b9fa89d168fa7a6.png)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVibRSr0CAYSjahSoUf2ibHm4GsRDJVXjjF7HUtbPY57oIRFHJRhLuZD8y7qYHNYibj0WdzRTQjk7uSr5ibKjAMeCR46Irfsviaic3Tc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/07277ec6f6e9705951d4daee7024970a.png)
 
 事件发生在
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWeplIxhzNwibgDZoKCGIDFickvXw7Kg7VpNCGeDZH0oiaDibhsYcBRhZfkARjXv6paibCibxudRIJy8ZTrCcsMv1Bhcjs1GkicUs8Fk4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3a8a9dd2b3a63879b161cdd2c670c08f.png)
 
 这里没有什么玄学。强干扰时 w 下降、h 上升，k* 就会往后走。若要声称首个采样或前两个采样内一定触发，至少要给出类似
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXweNEaAVAnZZKauMIG7HUBHoTFNYmpCyXsrfnZcCw3ZyEmwXtg7f2jHuz6P1hRtxDwd7yUdmoVgNND8gRLOPDevZ9pK8GfTv8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8a823b2b66491c910d31cf1ba84d83d6.png)
 
 这样的最坏工况约束，再把 ADC、滤波、去抖、软件任务周期的预算都加进去。**公开文本没有展开 N 的具体合成方式，也没有展开 w(N) 是连续调度还是两档切换**——这很正常，一份专利申请本来也不必把实现细节都摊开。但结果是：**从公开材料还判断不了最坏情况下的事件延迟边界**，而「1～2 个采样周期」恰恰是一个对这个边界最敏感的指标。
 
 两层融合还有一个容易漏掉的瞬态：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUcjGoKHS3ysnqN4sdAThlDEicoYlDxiaFheP80I7A1o7t0y9gib2Tp1miabM7RnCOg3iaWxG953MNesAJOUEJ1nBmJibibib5p8VicWbd0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/615d84e84d6292c62f53b9d8d9de27f7.png)
 
 稳态时两层差不多，换权重没什么动静；边沿来时两层分歧最大，偏偏这时 N 也最容易变，权重最想动。限斜率或短时冻结能把这一下摊开，不能把它消掉。
 
@@ -130,7 +132,7 @@ y_f 是快层，y_s 是慢层。按专利描述，噪声指标 N 变大时，快
 
 把两件的著录页并排放，申请人和注册地址一字不差。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXuDmxiaXYpeMxGmbMBuVmerhnmKSrfCWfhnNZUheGs2WFrE1S43ic8UkMgRnPej6ukUJQ8iblAGBhtjAeYDnW0KvzNbzha7jaReQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c8f8617a6c16f78de9b9f22466cc2ba6.webp)
 
 *图 4｜国家知识产权局专利公布公告查询的两件著录页。上：CN121749808A，2025.12.17 申请，发明人杨祥海，分类号 H02P5/46（电机控制）。下：CN122613256A，2026.04.30 申请，发明人俞玉春，分类号 G01R33（磁场测量）。申请人同为苏州易德龙科技股份有限公司，地址同为 215200 苏州相城区春兴路 50 号。两件均为发明专利申请，尚未授权。*
 
@@ -142,11 +144,11 @@ y_f 是快层，y_s 是慢层。按专利描述，噪声指标 N 变大时，快
 
 若 A、B 两台电机的真实周期分别为 T_A、T_B，两侧 PARK 检测延迟为 Δt_A、Δt_B，那么归一化位置里注入的时间误差近似为
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXP7aM2keqdK8iaglnrquia70YMWicn0DtAIHDjDHmP9VWIz0MliarE05u75ST9GlcGic6FOue808ARsQqHPnrXdrJTiclIeCm7TxwIg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0bdf4771988b2a068d1094d7885a3493.png)
 
 同步控制器看到的相位差变成
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWMS8DoibibtyrpzmzCOqYyAPFDrr3Xeib375w3sjMevemwrSAAJI3uQyfJ9EGba1QJbO827aAoA2icExgxn6xIW5uoV8RaWdiagDFs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1dbbf2365179a7650be8994a987376ed.png)
 
 **从这一刻开始，真正重要的量已经不是某一路 PARK 晚了多少，而是两路 PARK 晚得一不一样。**
 
@@ -158,13 +160,13 @@ y_f 是快层，y_s 是慢层。按专利描述，噪声指标 N 变大时，快
 
 同步 PI 会认真修正这个“假相差”，改变左右 PWM。PWM 又改变电流纹波、换相边沿和线束共模干扰，进而改变磁通道的 N，也改变另一件专利用来数位置的电流纹波质量。参数没隔开时，系统可能出现的不是明显发散，而是一种更烦的状态：左右占空比周期性互相追，台架上看总能回位，湿刮、低压或老化后才冒出相位摆动。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVyxNhrtliaJKQz6fspB8yV4dsYqWenvIEnvAdfxjMCO3beg8DV8p3QwuhClibNXoX4GsuRlHeCH8pSv9NibhoFpYPSyKFN199fYY/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/8500547ab60d4cdb10c2681b18020f47.jpg)
 
 *图 5｜两侧 PARK 延迟不一致时，差值会进入相位 PI；PI 改变 PWM，电机换相 EMI 又回到两路霍尔输入。橙线不是说系统必然振荡，而是指出台架必须一起观测的耦合通路。*
 
 ### 同一段换相信号，在一条链路里是噪声，在另一条链路里是位置
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXOQXgicaywheQlYYtfloNUQeVBjxMNt9ibqmoosjNAXg2NcQC19qnBXLGEoQKDoQoTvHhMT8EgQdic5sURaOsZq0vKS61Ae1zeMQ/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/b1942a302f66096b016dd644d38cfb09.jpg)
 
 解读图｜同一段换相信号，在磁通道里可能是干扰，在电流纹波通道里却是位置。
 
@@ -262,7 +264,7 @@ y_f 是快层，y_s 是慢层。按专利描述，噪声指标 N 变大时，快
 
 ### 角度报对了，还得报在同一时刻
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUBkhwv0RvkCdt58xC2bsURXf8c2GwMSwMA5j3JFQOJ1iak4u0wicmDxlibibS3iasKKzg9cBAuJD7ricXLHm8DibPdnibzgEFX0eeanbg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/7617bbc2bf3739f8ae8ed6f4e263de7c.jpg)
 
 解读图｜角度值可以一样精确，但如果不是同一时刻采到，闭环看到的仍可能是伪相位差。
 

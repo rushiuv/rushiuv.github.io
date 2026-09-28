@@ -6,7 +6,7 @@ description: "·传动比一动，四样东西同时动：力矩和编码器刻�
 original: "https://mp.weixin.qq.com/s/8JLbo9PPafkGPNFaNV64lA"
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWpcJXTTmiagzDNiaZoVUibTL7jbC71VcYmgBJJh01b9aUIpqAia015WSKKlkCNr4NrEPZEfOpKhcCianJE34f8rkhDSgGB5sm7dJwM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c05a5cd6228a80023179deb182a28d8d.webp)
 
 工程手记 · 人形机器人
 
@@ -24,7 +24,7 @@ original: "https://mp.weixin.qq.com/s/8JLbo9PPafkGPNFaNV64lA"
 
 宣传片里，它端起了一只红酒杯。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVYzXAcZFqmJIuZOhcoibdIgUx0vraiccw14ibekQYCPfiasaG8lX1U4onWP1Ews616CicVnD1PCcXSXt5YiaItrwMweZhw4cDDPKzr4/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/e9a6474179dc21a1ec93ee0afd79b871.jpg)
 
 握得住，又不能捏碎——这需要手知道自己在使多大的力（1X 官网）
 
@@ -32,7 +32,7 @@ original: "https://mp.weixin.qq.com/s/8JLbo9PPafkGPNFaNV64lA"
 
 而它做到这件事的方式，**是砍掉了减速比。**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVG3G0p36gCVhebknMqxPB7X4h9NQ2CP5O6jK3OdDZSGLkqOjw75V0ibiaejViaH9I6ruOPKNjGKsAlv58cDiasUKTBpEQjTkTRCCk/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/b5e2a1d0af8daf49bd8633c077801b94.jpg)
 
 Tendon Drive Ratio：5:1 – 15:1（1X 官网公开规格）
 
@@ -119,8 +119,8 @@ Tendon Drive Ratio：5:1 – 15:1（1X 官网公开规格）
 
 ### 知识卡片
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVjWQIAlSmUDNk5jN0LjcicnbKj5vviaKibxRZvHk4icmCjcAZbXr4NdjegTsyDYc1TP3Ral0JoWz8sRR07ZopiacpiagicSAC2bI7Zec/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/2511db41db408eff12c97b2d2a9978b0.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWtZZRzdgTzZTM1xiaZq82CCswb4DVklsLy82DtgnrGeRv1pRKdQqYovun7Wpia3P2MCoMzgicicjujyCq2fz7wliba6aP1kic4b8Gwg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/5a8f58639407bf1c16081d43df4a372f.jpg)
 
 ◆ ◆ ◆

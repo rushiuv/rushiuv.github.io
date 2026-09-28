@@ -4,9 +4,12 @@ date: 2026-08-18T08:08:00+08:00
 slug: "tKPJ756Y-hhozRbyt-Zvlw"
 description: "CHIP DESIGN · ENCODER IC · TAPE-OUT"
 original: "https://mp.weixin.qq.com/s/tKPJ756Y-hhozRbyt-Zvlw"
+models: ["KTM5800"]
+companies: ["西门子"]
+tags: ["非线性校准", "ADC", "芯片设计"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWB9ZibtsqrbPHhOgOFYsJ8kHNbkZZsVAK3U84wRJywoJpdUBVQHCOib3xva4iaz5wkGUia2jOtLxjibg0QwwQvQKmy0J8ojmUSYJck/640?wx_fmt=png&from=appmsg)
+![](/images/wx/74a23aa548a29f9729043a968b0ef433.webp)
 
 CHIP DESIGN · ENCODER IC · TAPE-OUT
 
@@ -29,7 +32,7 @@ STA clean，CDC clean，DRC、LVS clean，Regression 跑完了，coverage 也够
 
 ### 做 KTM5800 这种编码器芯片，这种感觉尤其强
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXmEvCZQiajYEibdPEfZ2CLonXsewiau4meky347WerXw2X6dFKBibiaIP6e9e4EjicNgRmpOGPic21v1PELkqltFlgiaqgRF9k683BNxk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e5470584b39e871857479710dc9338ac.png)
 
 ###
 

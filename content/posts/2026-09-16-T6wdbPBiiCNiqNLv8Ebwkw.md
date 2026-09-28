@@ -4,6 +4,8 @@ date: 2026-09-16T15:19:00+08:00
 slug: "T6wdbPBiiCNiqNLv8Ebwkw"
 description: "electronica India 2026 今天在班加罗尔开幕，iC-Haus 和当地合作伙伴 Omniscient Electronics 一起参展，展位在 Hall 5，H5A31。"
 original: "https://mp.weixin.qq.com/s/T6wdbPBiiCNiqNLv8Ebwkw"
+companies: ["iC-Haus"]
+tags: ["光电编码器"]
 ---
 
 electronica India 2026 今天在班加罗尔开幕，iC-Haus 和当地合作伙伴 Omniscient Electronics 一起参展，展位在 Hall 5，H5A31。
@@ -22,8 +24,8 @@ iC-Haus 就是其中很典型的一家。
 
 有时候看展会照片，比看“机器人又融资多少亿”更容易看到这个行业真正卖了很多年的东西。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWiaf4DZsgaodwbtib7obGNRGiaicKlLMapicIOicP5Pl7VX0xdLkZgkzCUw4Sl1OFWH24C3mQB2ianNEmSyPuz8yiaic0U6TzO61AwicBick/0?wx_fmt=png&from=appmsg)
+![](/images/wx/1873517229fe9cbb09d83838ce327a32.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXtvZkqff1wKpbcw6L1NOVfkytxmvSGZhLia0SSsDGPGEI5qegd8tbcZZ3licdnXJzcvTeh1Mkzc0lUVQ2Z5bQ8CVlc3f0m1Y61s/0?wx_fmt=png)
+![](/images/wx/387905fb5c5c2f71f08648bcc6b9e6e9.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXYPNalyrsmTHNQaQlaqqibRsPgyicpicIkLicsqOTYzVpzwpnGZMA2eIroX7h5gkfGAiapQ2EB5LFJxhFlokmtG09jNEM2GAbibrBNA/0?wx_fmt=jpeg)
+![](/images/wx/d58d59a1a6dee36265c159152f11f786.jpg)

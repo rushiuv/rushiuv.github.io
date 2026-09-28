@@ -4,11 +4,12 @@ date: 2026-05-05T00:00:00+08:00
 slug: "UU86a4I4eJETf4TBRrRqrA"
 description: "最让人窝火的是，你按标准把主站做出来了，线接对了，时钟打出来了，逻辑分析仪上波形也规规矩矩，结果客户看一眼，来一句：“不对，我们以前那家能用。”"
 original: "https://mp.weixin.qq.com/s/UU86a4I4eJETf4TBRrRqrA"
+tags: ["多圈编码器", "编码器接口"]
 ---
 
 ###
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWczAibeG0MzhdmwGqoXDqicepjkQqpqhFoqty6aZmJNJJMy8PFFgd6T24Ktvtv3wr2zgLHz7AveSianM7pSU1Yic4cuymPA0GnovM/640?wx_fmt=jpeg)
+![](/images/wx/8d8d6e4f3339c5056ac4a15027f14c9c.webp)
 
 ###
 
@@ -18,7 +19,7 @@ original: "https://mp.weixin.qq.com/s/UU86a4I4eJETf4TBRrRqrA"
 
 客户要的却是一套祖传私货
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVrIa5l38eIrIBZ7HQ74yhPHibmQmG5hlc96RibytOKjgKOloPXwYde2zB3rX4AiaqxG95hNvezN0UCwFF4uJ5Z0CUak1hjx2sicXw/640?wx_fmt=jpeg)
+![](/images/wx/6b7e6c0a52d6710ec52bb9738922925b.webp)
 
 最让人窝火的，不是协议难。
 
@@ -106,7 +107,7 @@ BiSS C 的一帧，长相并不玄。空闲时主从保持高电平，主站开�
 
 说白了，很多所谓“现场标准”，其实就是：公开协议的壳 + 自定义校验 + 历史项目遗留。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX4ibk8ky9TEoUKvXDs0BUexjShB0diaMDqET0utqumYZ8vRXaHKRvYMWahe0hG4qf1eaeysdgX1sQ8hyichiaLExesNibogPv6KRkg/640?wx_fmt=jpeg)
+![](/images/wx/770eb1177a788e86ce641393182bbcfb.webp)
 
 ### 四、寄存器访问本来是标准能力，硬是被玩成了私有门槛
 
@@ -142,7 +143,7 @@ BiSS 比 SSI 值钱，不只是因为它会吐位置值，更因为它支持寄�
 
 你要私有，就明说私有。你要兼容旧设备，就明说兼容旧设备。别一边吃标准的名声，一边干私改的活，最后别人按标准接不上，还反过来怪别人不懂协议。说穿了，不是标准难接，是有人拿一套祖传脾气冒充标准，还真把自己装出权威来了。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWBLCvFmjahakrICNm8e8xmXHInicHTNfQPMaYsDZE1g5uIxFqrlkC4icXYr6vJBnLDNf9dCM1wsxgTHvegnGVE7iaH2Clhqbjlt8/640?wx_fmt=jpeg)
+![](/images/wx/e96410f606c0000a5a51bf139506301e.jpg)
 
 ### 七、这 8 样东西拿不出来，就别跟我谈“标准兼容”
 

@@ -4,13 +4,15 @@ date: 2026-05-25T06:00:00+08:00
 slug: "fmEPPJCwX3aFj_XZyojY1w"
 description: "前几天看到 ABB 发了一条机器人仿真的新闻，说 RobotStudio HyperReality 可以让虚拟机器人和真实机器人的行为相关性最高达到 99%。这句话翻译成人话就是：以后客户在电脑里调好的机器人，搬到真实产线上，应该越来越像。"
 original: "https://mp.weixin.qq.com/s/fmEPPJCwX3aFj_XZyojY1w"
+companies: ["NVIDIA", "ABB"]
+tags: ["磁编码器", "自校准", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVsLfG6obDIsA2LBMwAyNl6pegBicrJdkAtVT6UcqQJ0g3CMORv65sWcZYnNQSEyRqTYxzqXlibaXvDuwfbNSEDZLKlA2eCuRwks/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b892c2fad5a3241b4635934265647e2e.webp)
 
 前几天看到 ABB 发了一条机器人仿真的新闻，说 RobotStudio HyperReality 可以让虚拟机器人和真实机器人的行为相关性最高达到 99%。这句话翻译成人话就是：以后客户在电脑里调好的机器人，搬到真实产线上，应该越来越像。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXoaXqxIkia5eoJPbjXAZLyhEnib7oGJliaDBCHkpibOGERyYYQgU8cYeSe7ia9ialBibhKwsfSZPeDY7qEwUV1EDkCHAct5QSiaEEjHSI/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/3b69968526dab07583fab32d67b04436.jpg)
 
 这当然是好事。
 

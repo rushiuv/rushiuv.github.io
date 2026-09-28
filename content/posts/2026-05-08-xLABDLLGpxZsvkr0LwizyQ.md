@@ -4,15 +4,17 @@ date: 2026-05-08T00:00:00+08:00
 slug: "xLABDLLGpxZsvkr0LwizyQ"
 description: "5月7日，北京日报发了一篇《机器人“狂奔”仍需迈关卡》。这话我认。只是站在一个做编码器的基层工程师位置上，我现在越来越觉得，很多人把“关卡”想浅了。"
 original: "https://mp.weixin.qq.com/s/xLABDLLGpxZsvkr0LwizyQ"
+companies: ["Melexis", "EPFL"]
+tags: ["人形机器人"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW2qAMTBzRwJcm3CLyfAACV2VeyI6nFslcLra6M6ibibVpotgX5cgEX21Mw0zQmxuIawIvJATZeEBUV8HPDle1z5WbeiaPBl6vbAc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/760a38b90e625a24746ee23ccbdf95d3.webp)
 
 ##
 
 ### 先别急着怪算法，身体这一层已经开始不对劲了
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWNWxI7zcaJZEj9wxhuhu02POF8Cz6zic6KA3Q0vFP4fnsiao65so5vTnwV7qJsRykfuzQXKR53fN8rZ7ljxBQmW6DnibRSm4CoH4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a934a5bf55ecdcf80c4e9917d3ad1dd5.png)
 
 5月7日，北京日报发了一篇《机器人“狂奔”仍需迈关卡》。这话我认。**只是站在一个做编码器的基层工程师位置上，我现在越来越觉得，很多人把“关卡”想浅了**。
 
@@ -20,7 +22,7 @@ original: "https://mp.weixin.qq.com/s/xLABDLLGpxZsvkr0LwizyQ"
 
 这件事不是抽象的哲学争论，而是产品细节自己在说话。4月26日**超维动力**发布的**KAI**，115 个全身自由度，单手 36 个自由度，全身 18000 个触点，可感知约 0.1N 的轻微触碰，双臂负载接近 20kg。 (Sina Finance[2])
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUu9cHbgciaPEHQ9Uh4KKeHto9iawYGCIkJD5rXdbNcNFaGe4YibkkEiarmM3rYaaRicRVNchcUN3wGPddotpzS4pcSibFniczYc1bYUo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1a0e9e3c094ae40387e12d4e25b0f497.webp)
 
 单看这组数字，很多人会觉得这是“更复杂、更高级、更接近人”。可我盯得最久的不是 115，也不是 18000，而是它那只手里明确分成了 22 个主控自由度和 14 个柔顺自由度。
 
@@ -30,7 +32,7 @@ original: "https://mp.weixin.qq.com/s/xLABDLLGpxZsvkr0LwizyQ"
 
 传统伺服架构之所以几乎成了整个机器人行业的母语，不是因为谁保守，而是因为它过去太成功了。机床、工业机械臂、包装设备、输送线，这些系统面对的是一个被整理得很干净的世界：边界清楚，动作固定，接触可预测，误差来源也大多能拆开。于是最自然的办法就是：每个轴都定义清楚、测量清楚、控制清楚，最后靠总线、时钟和控制器把整机拼起来。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVMdomGhBqqSVleNbSfLFu3rVwFBib468g6CPvtsmaAnWRCRKZCiburUmRdksJJs1cicarTgJrdmCrNXIPly3WP7QbFcsYHL3kiaPc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c72fbc8d898cb248260cada90d6555a3.webp)
 
 这套逻辑在工业里几乎无敌。因为**工业系统最值钱的是确定性，是可追责，是重复性**，是一个问题出现以后能很快定位到“哪根轴、哪个编码器、哪段线、哪项参数”。工业伺服擅长的，正好就是把世界切成很多段确定关系，然后一段一段压误差。
 
@@ -56,19 +58,19 @@ original: "https://mp.weixin.qq.com/s/xLABDLLGpxZsvkr0LwizyQ"
 
 真正说明问题的，不是那些口号，而是公开产品和论文里已经长出来的那些“看起来不那么伺服”的东西。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIU3cY65rAYw4VZ53y9dxyJYyFCZRxMoStSpHicA5C9oXeia8hNemqd4YCORgGPibUglfhcnQGmONYDQNXKEb5cbpVxUeXGcTOZsWg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/0718110474176f5be38dd876b373fa20.jpg)
 
 1X 的 NEO 和 NEO Gamma，官方反复强调的是 Tendon Drive、soft body、pinch proof、low-energy movements。它不是先讲高刚性，而是先讲外部包覆、被动安全、低能量动作和避免夹伤。这个语言系统本身就已经偏离了工业伺服的老词典：**它不再默认“更硬更稳”，而是默认“先别伤人、先别顶硬、先别让接触变成危险”**。 (1X[3])
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWMfanrnDyxqiaicu7ibH5IsicJpk0ZxXdg4oTJg6dray4yIFbDLIbZdmS6ibSch6KTe6KWRB2wjW9hnTHhBNRialSiclDiamBQDibd8Vrg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2cb0afe80b3de947a0b96e834a9735c8.png)
 
 DLR 的 neoDavid 走得更直接。公开资料里写得很明白：它的关节采用可变刚度执行器(variable stiffness actuators)，传动链里机械弹性可调；同时还有连续体弹性颈部、带过载耦合的重力补偿躯干。更关键的是，它在操作里不是只靠位置环，而是把 proprioception 和 vision 融合起来做 grasp state estimation，再做 compliant positioning。翻成人话就是：**它已经不再把“刚性轴 + 角度闭环”当唯一中心，而是把弹性、顺应、抓握状态一起放进主回路**。 (DLR[4])
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUBEgW1JnRcO4FjPpmNTV5GUfoicEtZl3SDcIicTlezbjqcVCezWF2Q0TZbHicsxxP0y0glQVERhbfMSicvDTdibgnUq91bibYMCFn4Q/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/691e8d166250124b3b39f9a2768365e7.jpg)
 
 手部路线更说明问题。EPFL 的 ADAPT Hand 做得很漂亮，但它漂亮的地方不在于“给每个手指再多配几个电机”，而在于它把顺应性分布在皮肤、手指和手腕里，**让抓型在接触中自己组织起来**。公开结果是：面对 24 类不同物体，它实现了约 93% 的抓取成功率，在 800 多次压力测试里表现稳定，而且抓型和自然人手有 68% 的直接相似性。这里真正刺眼的一句不是 93%，而是“由被动适应驱动的自组织行为支撑了这种鲁棒性”。这等于在说，**有些智能本来就不该全堆在控制器里，而应该先长在身体上**。 (EPFL News[5])
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW0mAfqDeXA4Qo7G1w48GnfTfoHibV8j8hD86co1icWmsKWDDIbWibseFib07TpceUnrDgHa0rKOcKpkT5BqW4qrSpnSRX6M0xibs8A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/146652fb6a3917ced7ad1b8fb630d233.webp)
 
 触觉这条线也是同一个方向。Melexis 和 OYMotion 正在把 Tactaxis 往下一代机器人手里推，目标是更像人手的灵巧操作；Nature Machine Intelligence 2025 的 F-TAC Hand 则把**高分辨率触觉铺到了约 70% 的手部表面**，空间分辨率达到 0.1 mm，并在 600 次真实试验中显著优于非触觉方案。 (Nature[6])
 
@@ -96,7 +98,7 @@ DLR 的 neoDavid 走得更直接。公开资料里写得很明白：它的关节
 
 翻成人话就是：脚底一滑，先救你的不一定是一个“总控大脑”重新求全身最优，而是局部环路先把你从摔倒边缘拽回来；手指一碰到物体，先变的也不一定是世界模型，而可能是局部张力、局部顺应、局部反射。身体之所以像身体，很多时候靠的不是所有部位都统一听命，而是很多局部在没等到全局命令之前，就已经知道先别死、先别断、先别顶硬。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVTYMKSX8tKWB9zjJMaGoOd81SDQAwibmmsvcCDmvsjZIIDLVAU3IVdoqrocaLfiaXt39ysC12rKMfiaB6NjSn49icFr8HDdTHjBiaU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/06ce7fbc968c6ec383ebb3c2fd4157d1.webp)
 
 这一点跟今天很多机器人底层仍然偏爱的思路，几乎是反着来的。我们今天的系统很喜欢“全身统一时钟、统一总线、统一控制框架、统一解释”。这当然有工程价值，但它也很容易把“身体”做成一台系统架构很整齐的机器。问题是，**身体真正宝贵的地方，很多恰恰来自不整齐，来自局部先行，来自一些关系先模糊着，只要最后别出大错就行**。
 

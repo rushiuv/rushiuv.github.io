@@ -4,9 +4,12 @@ date: 2026-04-15T00:00:00+08:00
 slug: "Cu84F0AzOk6HQrpOnAWI5Q"
 description: "这张“先进磁传感器技术研讨会”的议程表，其实很诚实。"
 original: "https://mp.weixin.qq.com/s/Cu84F0AzOk6HQrpOnAWI5Q"
+models: ["KTM5900", "KTM5910", "KTM5800", "KTH7812", "ADMT4000"]
+companies: ["昆泰芯", "纳芯微", "圣邦微", "英飞凌", "ADI"]
+tags: ["磁编码器", "离轴", "自校准", "非线性校准", "TMR", "AMR"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWgqlXLWnTv5NfyFaYfdEd9hXLOGfAdmAHRh8PCV26UkguBrIKBvjbS4IGfn36HVHTRw9UpXJqUw7gQvxXA99cSqRib9EbcL45I/640?wx_fmt=png&from=appmsg)
+![](/images/wx/da5fba9198180224d5968b173754f69a.webp)
 
 ##
 
@@ -24,7 +27,7 @@ original: "https://mp.weixin.qq.com/s/Cu84F0AzOk6HQrpOnAWI5Q"
 
 这种场合看多了，你会发现，满场都很会讲“未来”，却未必很愿意讲“为什么你的编码器一装上电机就开始掉链子”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWUd0fJFLGhGPp3jc2J55otJ5K2ypBDC6wnCOLloEOITXOCSibzSdC1oib95NFkdPugHoNPNGdxKwfgE32WwYmeNShRh9PBTODp0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1234ac0781f10c24d1d87f2d4fc8a898.webp)
 
 工厂不关心谁的 PPT 词更热。工厂真正关心的是：偏心一点会不会废，漏磁一上来会不会飘，减速器一加还能不能校，低速能不能跑通流程，中空轴一上来，纸面精度会不会直接现原形。
 
@@ -34,7 +37,7 @@ original: "https://mp.weixin.qq.com/s/Cu84F0AzOk6HQrpOnAWI5Q"
 
 这就不是普通的产品宣讲思路了。因为只有真被现场问题反复毒打过，真知道编码器不是“参数表越漂亮越好”的公司，才会把麦克风先用来讲判断，而不是先用来喊口号。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVOIX05LCmafDAscibvADRx7QYibe2DTGicmrmxPMMGh6C7IJrWXgtQZh5mua0djyh3HPmicvPwfl3XhcKBxFGQX8yCiciaJzvJWzicWY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8ed19d5dd67633ec60ad41e076397b81.webp)
 
 ##
 
@@ -54,7 +57,7 @@ original: "https://mp.weixin.qq.com/s/Cu84F0AzOk6HQrpOnAWI5Q"
 
 前者更热闹，后者更见底子。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWl5m54n04yDB5hEQ5YjoMc3gv9N79pGoySQQPsf2Bap4t83lv7OouEbf3NH2VN3QNJmAZjdkgYv22VoRRZJT6f5RXfOrW0Fag/640?wx_fmt=png&from=appmsg)
+![](/images/wx/bd5feec90f59c2a3f9f1f0c5500ad24f.webp)
 
 ## 58/59 系列
 
@@ -76,7 +79,7 @@ KTM5900、KTM5910 做到 24 位绝对角度 TMR 编码器，KTM5800 做到 30 �
 
 这不是同一种产品观。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXFezpEgRO2WbehIYumqh428TzSyiaq3qW9vLPGn0wO1PVk5hxmj3nvVVLRiajibe90xia3ZHey9Wib9Bib7iaPEXgfHWQ2hVZGeSqXzc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c685aaa05cd59bd63601be95941ce321.webp)
 
 ## 78 系列
 
@@ -94,7 +97,7 @@ KTM5900、KTM5910 做到 24 位绝对角度 TMR 编码器，KTM5800 做到 30 �
 
 很多公司最爱讲“单芯片全能”。这话听着爽，但工业现场不信神话。愿意承认有些问题必须上系统级解法，反而说明更成熟。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXwMVJLzVxgfB1udMdb60LZh4AlUI11PUPgdklWs1c5eMhWALgASq2WLpSkGHkQ5BzfJ6gYKhaWOq3NXsibwsxal6eDCW4yia3kc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/931be71999e73e1443f468138aa9a8ba.webp)
 
 ## 71 系列
 
@@ -116,7 +119,7 @@ ANLC 自动非线性校准，支持在轴、离轴两种模式，支持闭环自
 
 能把一颗芯片做准，是本事。能把一颗芯片做得不那么娇气，才是更值钱的本事。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVwyT6JBaoXScRuxbl8xSmNXUo1PAct1FNbcwynXSxhicSxFxHg8sQuz1dicP4hKfnzpBictBgkQ0ichibzChNXgg8CauZbrspXibMzM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1ec98de10106e5a3a76ee4201a882fb6.webp)
 
 ## 52/53 系列
 
@@ -134,7 +137,7 @@ AMR 架构，3×3 QFN 小封装，离轴线性校准，多点非线性补偿，�
 
 这一串参数单独看都挺能打，但放在一起看，真正显眼的是它们全都围着同一件事转：复杂结构不是客户自己的麻烦，而是芯片设计者必须提前吞掉的麻烦。很多公司最喜欢在最好做的场景里证明自己。真正有点狠劲的公司，反而会主动去啃最容易翻车的结构。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX2hLwaLff5B0nNHDeO9gTPY2JhuicFnDPxWXEVCOnic1metAOKe5KHw8hxw4CtrhA660onBspDeZf92NftFU1QWADHkXZbSwdYI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/118e42b1c95d02eddca6c8704becdab8.webp)
 
 ## 55 系列
 
@@ -154,7 +157,7 @@ AMR 架构，3×3 QFN 小封装，离轴线性校准，多点非线性补偿，�
 
 不花哨，但很硬。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUTVoJbb6RzG0OQEBxzox8FDZpukAg8ib9a0U2KiaPmibtgsHtfk4D6rX80Ov9HsNlpwpoYpazZ4X5haGDXhYh3eeNJ4mqFibYrKPg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8ad9284fb48acf7c4f18ea722da811db.webp)
 
 ## 昆泰芯最不一样的地方
 
@@ -218,7 +221,7 @@ AMR 架构，3×3 QFN 小封装，离轴线性校准，多点非线性补偿，�
 
 而在编码器这行，最后决定你能走多远的，往往不是掌声，是工程师愿不愿意信你。因为他们见过太多“参数漂亮，一装就废”的东西了。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWcwMqoh2eo7LvgBFLVarSZX6qUTCbOadkMVoWYK9YEjRRmI7xxQxnAuChY988QibJTLZxCibibQ9SkMzSxVibs2Iib2zrsJ2ErLCog/640?wx_fmt=png&from=appmsg)
+![](/images/wx/65e0d3683d2c5d6f3591e158679a3503.webp)
 
 再说一句。
 
@@ -226,8 +229,8 @@ AMR 架构，3×3 QFN 小封装，离轴线性校准，多点非线性补偿，�
 
 现场照片
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWN38K1EicstnHj3ia3puRib1t8AsRRmiasPDeyB90W78nNowpSjrYdSaWsSTs8iaoEEic3ibw6pay9tcCxZY09Usjibt7jF5EMqDXX104/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/ab6dcc7d47e56ea09b25b9342c757c54.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWdcyXn0p9Rv80ygR0iarmeUDOadjUOuHsI2icRA4NjF98h7zCibb0N1wA6Jvln1GQYmfatkR3UQvib6T9XQ8fhCuHwyU6gw9iaAyM8/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/8d64b510dbc54fe2edf4bc165345f94f.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXEtwpUtGg1uCnWrYCpLGYHwx4zWdIEgqRqQa7z0ZbVa4IMMCFrLL5tl6tn7xxcb0MBDmMojkzNibZQDYgaxZeD9Lx3eoziaDa9c/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3bfebf2acfe90ad6ba84ebb087fdf215.webp)

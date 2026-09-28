@@ -4,9 +4,11 @@ date: 2026-07-04T00:00:00+08:00
 slug: "wWOrHyf_CUOlN2sAy5bO4g"
 description: "KTO9512 的数据手册里，有个不太起眼的数：暗电平 770 mV。"
 original: "https://mp.weixin.qq.com/s/wWOrHyf_CUOlN2sAy5bO4g"
+models: ["KTO9512"]
+tags: ["光电编码器", "ADC"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU5BLOYz2M5DwXhXxAia6Q18YmjibJUO1WkBFKkPUibGbHibrAPtKzt0n30OlPWFxcvnEYHZWB8tf6ibarEmmIfQX5T4e9eURE4r2YA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/498a959f590957028452e069a25d31fd.webp)
 
 ## KTO9512 七百七十毫伏暗电平，会先卡住 ADC 动态范围
 
@@ -20,7 +22,7 @@ KTO9512 的数据手册里，有个不太起眼的数：暗电平 770 mV。
 
 先看它的系统框图（手册原图）：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWORnGIla3ice7lDptuCse9MrX4iaZbicM7iaM6xHqHKLCeQ8ry2akPyUOKHtHq7rSgV9mgfVSmovKcEomdNZEepWTW9hyUWMY8hLQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ad5719b5176811bde19c17c780d3939a.png)
 
 图：KTO9512 系统框图（差分 TIA 与三码道）
 
@@ -252,7 +254,7 @@ ton
 
 一旦工况让摆幅变大——温度升、码盘反射率高、电源纹波叠上来——波峰先顶到 2.0 V 被削平，波谷再触 0 V 被截断：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUWM9s6tE5h6OibbVicEnkEK44cfdAYgWXPTWdPwTclP9zGHuEXNyEMpvrB2kzicQgzu2fa8Yv5Ta3GWm4Z13oyKrwiaicWDmtGMv0k/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b23e0716834a6ac909c1f14baa2c8bd7.png)
 
 灰虚线是本该有的摆幅，红的是被切掉的两截
 
@@ -266,7 +268,7 @@ ton
 
 差分接就是后级取 (+COS) − (−COS)。两路都绕 770 mV 反相摆，一相减，770 mV 这个共模自己就抵消没了，剩下的是翻了倍的干净摆幅：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW6XeEmFYic1qzwpABwY5Bro9h3OcF02VYuSpVhbUiagJZic7PmdahicNlE7FneFL4uQPD6MnibmJ6LdLNI0gMFLhxLOM9JAZ1pRJpY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9d341d7bac8068f030ed97277a575b79.png)
 
 共模消失，动态范围翻倍
 

@@ -4,9 +4,11 @@ date: 2026-09-09T10:20:00+08:00
 slug: "2lNx2tNyhVb8qnn3XxpHFQ"
 description: "九月初，实验室。小推车把一台伺服转台送进来，电机壳还留着点温度——跑了一整天才返修的。工单上客户只写了一行字："
 original: "https://mp.weixin.qq.com/s/2lNx2tNyhVb8qnn3XxpHFQ"
+models: ["KTM5800", "KTM5200"]
+companies: ["昆泰芯"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWzgCgpsm4GgQBLDuicia2nFNZS2QUE4eBWAw3GZibz8M6q5lia0qOHr0buRHeAXiaJQeZoxhKRQZerrteeKzE9mjD9eX4aX9YpX6jI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d8dd3681a756187fd2e8f8a129e93e0d.webp)
 
 ##
 
@@ -64,11 +66,11 @@ KTM5200 的公开资料里，ABZ 支持最高 65,536 脉冲/圈；标准 AB 正�
 
 也就是说，1000 PPR 的 A/B 信号，不是每圈只有 1000 个 quadrature count，而是：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVlrtn43IY9u8sYlt2fOIm9Vgkg6e0m83iaKsNJSynu8kiagQ1PWCfcPByfOPhTfdI3Qib3kktmyialA50nTvicSlSrgjleRKibecianc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4ba327ec452335ab316dba45fe807c84.png)
 
 所以 1000 PPR 对应：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6jR8hYVsyCIetyBQp8mcENnrW3OoqiamqD4QE9Mlo3cBuRDBCdnW4YkkrSpeB7LORaIGDCCGnUboQpTyl9nxHQo2YUpkdjhqpQz3cwfN7ePIA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e0cd931c18bb2eeb0f8a761977452a2d.svg)
 
 如果 Z_WIDTH=0x2 对应 4 个 AB 计数 LSB，那么这个 Z 占的机械角不是：
 
@@ -76,17 +78,17 @@ KTM5200 的公开资料里，ABZ 支持最高 65,536 脉冲/圈；标准 AB 正�
 
 而是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4Wdw79TdKXxKkkBlVB4nBuhSwUKKwA6W88DIq7hemq2FwxYU31DaYvOibTVJXBr1Qx4zZrcS84K0wadzqrzKdibKcgvNj7nEvu344ZQArnUqbQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3067d9a87e766fbd945a2d0e15f286d1.svg)
 
 得到：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6720O4ia4Jtq47f1JibvM85Ce6DkRlfSGN6jVrWDP7TSeauZYtnOWKiabA3lYRJBm6KujCWgwwHmxLBrO0aBo8NBicrgcGGHWMxtgPxMEHsGKwNA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/6e5a4c992548db50dc0f9aaeaefc2bff.svg)
 
 3000 rpm 时，一圈只要 20 ms。
 
 于是 Z 在时间轴上的宽度就是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5hxKibgM5W8qKl1mAd1YesMKDyemX71p2fictFnuiaTHrBx6iadPMeejb2MF1n0fpHE66DaRP0jU3AN0bXEBHuuK2GeIqptnssPD6vaxghh6MmVQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/519870ea5f3bb30d8da717a63febde89.svg)
 
 这里时间单位是 ms。
 
@@ -122,19 +124,19 @@ Z_WIDTH
 
 但 8192 PPR 已经意味着：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4QdbtKHI3LMwCKqvqCxU3w1LntwJWQy3fthLZWeEXDSHWOD7dD7LHTXicUVudN0Is1WyeVphiaib5t1Zu430j1VqSsD1kjhzJZGElN4Zdfw1Dibg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/d584b89287be48849aa339d687b3e5c6.svg)
 
 所以：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6OBPpNBN5yrbMdjLJxN02RB4IQYSbcJYiadCsYuY2YE3R6shEDGWnRHPQGdsxxUZyYnTuP6UgGDJOgvRyhj0dHQOW8bDs9ffIMbibxqu9Fibv7Q/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/a722eca23632689e3d5af44bb09e1c8b.svg)
 
 同样 4 个 count 的 Z，现在只占：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7H7FhcZzuM2sGGd8Q3FeRjvUFuDFdibHXy0YZuYNQHHahklqjicMwTXbGxY656zUgjehqRFibB6EADcNbcGuj8vVO3DrmaZTxNRXaE9ian6UetibA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/09183e6d4d01629f49dab479d5956b5c.svg)
 
 得到大约：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6YcDIewgn1JnVQSSxoiaGs76bialB86ic9ujIehn1FWRB3ZU9zw27rWW42Ytiaf90fuvLs8OjlECVrM05ZJvourqyWmh9CKN9j9lwRIr1TjibX3WQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/8ee1ddf86291657420ac507bca1b113f.svg)
 
 转速仍然是 3000 rpm。
 
@@ -142,7 +144,7 @@ Z_WIDTH
 
 所以：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5q5GhibPFqFtiaec03ACP3M7sJ131YtfToyZOXkdjIv5o1XL1U0QT7bibo0M2EVViaHt9D7k7tibibfiaBR9ic5ZFzibqWt4CBOypk66TldQXz5QLEf4A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/eb0de3518edcbfd13fda74a42c2aff7b.svg)
 
 结果只剩：
 
@@ -236,7 +238,7 @@ MCU 输入滤波；
 
 -
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5q5uWo2faSMibOrmxyznU2siaT8uX9nibfY6ddDCRAHCcob68cmDxX4aDjzdFyxicN9X69wT41ibQUZviaia3wJFY3ewq2yA1mLJHqfH9A8BILRVBGQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/ed1983fd419e8f32b92db2f97c3ebeb1.svg)
 
  是 PPR；
 
@@ -250,17 +252,17 @@ n 是 rpm；
 
 那么 Z 脉宽为：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7jFDxrYlJGuTvLlko2nlYicAibZrLboiaoiauFKib7fe951zC5ibqjBW0b6yag8aoQ6dCMtZZn0wUjdxjicODqv5tn7tFx7V2g7YZic4ibUATtxptLAjw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/aeb6cc6fc8fdc251e1fa7b2883c3dc31.svg)
 
 结果单位是 µs。
 
 对于 8192 PPR、4 count：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4Wdw79TdKXxBBEAySSpnvlmf0XT5fpAv7EfRCvM09QkynAxrDvNnkpM0Is8gCxeVlqzmcqZyH5HnL59BnibuIf5w7pyicM3vCpgIVyjlibS1BKA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/0e29962387ce061a69e4e3242c8cb222.svg)
 
 如果接收端最低要求是 10 µs，那么临界转速约为：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6erialA0bCAibJ1LU7VhJaahL6bEMxhazq7QDtAcxbia1yzNM3Z7tBH3yBLHQ1xRLT1JFVfLktwZAtBE7IBrYic6Vo4ux04DDMJhkm8WVun69shg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/f14a4e0bae6347fa85b6561ec18c5642.svg)
 
 这一下就把客户的现象解释通了。
 
@@ -348,11 +350,11 @@ KTM52 这类器件的 Z 宽度配置里，还会看到 60°、120°、180° 这�
 
 一种是机械一圈：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6Dqssclat6xUAgmDgDiac0jxrMcic9NftjhLWLzib4DHUib2eX13zGUktUxcrDEF3RkYZg5pe8NA8ooBFFG165yy7AroJRMwvibXkQIG4VSJmVXsQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/4b38a16268efba71eca3df30a8738363.svg)
 
 另一种是一个 A/B 电周期：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5EWRRVSAicibcJH1djtZjsrJKXpeBS2tOsRtOvjSpPcicITO10dJm8aEgv403dKhZiaNmdoQZia3MCPKYvynoiaOmD7mtET0VUsQgG5iap9013BmXRQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/ee7a7a7e6514a26c4ea6f733b12e14c8.svg)
 
 符号完全一样。
 

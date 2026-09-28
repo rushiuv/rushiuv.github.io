@@ -4,13 +4,14 @@ date: 2026-05-04T00:00:00+08:00
 slug: "X5FlKzZObwIkkuDhkT0doQ"
 description: "最早把 AMR 推上产业舞台的，不是“材料革命”这四个字，而是非常现实的工程困境：信号太弱、环境太脏、霍尔方案在低场灵敏度上先吃力，工程师只好回到磁阻这条更灵敏的路上。AMR 先在硬盘读头、汽车位置检测这些场景里证明了自己，后来 GMR、T…"
 original: "https://mp.weixin.qq.com/s/X5FlKzZObwIkkuDhkT0doQ"
+tags: ["磁编码器", "TMR", "AMR"]
 ---
 
 ## AMR为什么越来越像一条“被物理天花板顶住”的老路线
 
 最早把 AMR 推上产业舞台的，不是“材料革命”这四个字，而是非常现实的工程困境：信号太弱、环境太脏、霍尔方案在低场灵敏度上先吃力，工程师只好回到磁阻这条更灵敏的路上。AMR 先在硬盘读头、汽车位置检测这些场景里证明了自己，后来 GMR、TMR 再接棒往上走，这条历史线其实很清楚。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXaYDnxpBBmIoyAvYuFLXpcMhvnyGV1XIn5FD7MctiaxnLvBg2k6ibOpxDSXVFJyoAy2jlxia0byNavIVPtrKX3gnOfnIeCrt8HU0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/3c8ce8bb2761a7d799d1dad8ca8617ae.webp)
 
 AMR 最值得讲的，不是“它也能测磁场”，而是它把**磁化方向**直接变成了**电阻变化**。它的基础关系通常写成
 

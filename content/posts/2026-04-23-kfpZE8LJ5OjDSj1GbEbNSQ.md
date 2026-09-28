@@ -4,6 +4,7 @@ date: 2026-04-23T22:03:00+08:00
 slug: "kfpZE8LJ5OjDSj1GbEbNSQ"
 description: "纳芯微收购麦歌恩，不是一场简单的技术并购，而是国产芯片行业一场血淋淋的“牌桌抬高”——当单点替代的红利被吃干抹净，行业终于撕下“性价比内卷”的遮羞布，用一场并购宣告：单器件的时代，结束了。"
 original: "https://mp.weixin.qq.com/s/kfpZE8LJ5OjDSj1GbEbNSQ"
+companies: ["纳芯微", "麦歌恩"]
 ---
 
 纳芯微收购麦歌恩，不是一场简单的技术并购，而是国产芯片行业一场血淋淋的“牌桌抬高”——当单点替代的红利被吃干抹净，行业终于撕下“性价比内卷”的遮羞布，用一场并购宣告：单器件的时代，结束了。
@@ -14,8 +15,8 @@ original: "https://mp.weixin.qq.com/s/kfpZE8LJ5OjDSj1GbEbNSQ"
 
 这场并购给行业的警示是残酷的：还在死守单器件的厂商，终将被时代抛弃。未来的竞争，拼的不是单颗芯片的参数，而是系统整合的能力、全链条的协同效率、以及与客户深度绑定的生态壁垒。当牌桌抬高，只有能提供“系统级价值”的玩家，才有资格留在桌上。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIW5FfPypRRHfRkUT6yqIL81uu0NIcV3dPicBhwGbOgbCKr2nicIiaPg1bR1S7f6Uwmp6bD1EsBAibja7EURNnzVWAN3MsMcGpRTTy4/0?wx_fmt=jpeg)
+![](/images/wx/7c01cde99a96f73f9eecc9532995a996.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWzhCsEGqoMXpZibjjxODwcIm1wiaQFLAvtpSpXUgzoC8BMVE59ndVNBGokkZ5lcxpJNnrswTHzic7icXibb47P1eI34Sk6qBkTaLxo/0?wx_fmt=jpeg)
+![](/images/wx/1cb7e5ecd2b0554de027d2f8520c391b.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWxCdJibOKpa3HaQwL4Nl0M4NDdptqhElSQ6ic5LCsxrACg8eZFiaFOHlUVt9TiawvHHticCxo05pyx1hqtpVcKWHLcQib6g6UjLZHqs/0?wx_fmt=jpeg)
+![](/images/wx/76c856ac6e4ad3dae2ad36d6c015ad22.webp)

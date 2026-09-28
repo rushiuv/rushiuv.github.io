@@ -4,6 +4,9 @@ date: 2026-04-07T18:07:00+08:00
 slug: "gc45uvv9HFhMG9I4SGHzSw"
 description: "盯着CN224074404U专利，总浮现出滑稽画面：外部人形机器人追求轻量化、集成化，内部却藏着一圈小齿轮慢吞吞“记账”，恰似赛博骨头里藏了只老式怀表。这份专利，核心很直白：编码器定子、齿轮组等沿轴向排布，靠齿轮组和内齿圈实现多圈断电记忆。"
 original: "https://mp.weixin.qq.com/s/gc45uvv9HFhMG9I4SGHzSw"
+models: ["KTH78"]
+companies: ["昆泰芯", "钛虎"]
+tags: ["多圈编码器", "霍尔", "人形机器人", "机器人关节", "专利"]
 ---
 
 盯着CN224074404U专利，总浮现出滑稽画面：外部人形机器人追求轻量化、集成化，内部却藏着一圈小齿轮慢吞吞“记账”，恰似赛博骨头里藏了只老式怀表。这份专利，核心很直白：编码器定子、齿轮组等沿轴向排布，靠齿轮组和内齿圈实现多圈断电记忆。
@@ -24,76 +27,76 @@ original: "https://mp.weixin.qq.com/s/gc45uvv9HFhMG9I4SGHzSw"
 
 多圈绝对值编码器从不缺解法，缺的是愿为人形关节狭窄、恶劣、控成本的场景妥协的方案。钛虎的妥协够彻底，但其价值需等量产、寿命、边界工况的实测数据来验证，目前尚无法定论。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVWhzkLGcYPdhibNMbbUswAoCwJ9uW8MXj2aicYXuYbXtkg9GGOgNEEWPUZv3A95BUUNWGn87Gqjq5AgDdRoMw2V5ekhsvtY2DKs/0?wx_fmt=png&from=appmsg)
+![](/images/wx/a2e02cdfde2e736935db291f9c5b9e72.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUeiagWN8reDGH58XCPSWJY1XHg5omEBwPbz3n2TT4nwXpQNEFABWyFJuTt7HKHjRkaeq2OIQ3a5pfQKM155YqF9icJlyNYNQJwg/0?wx_fmt=png)
+![](/images/wx/f8e89021e53291e31168a579680fdff6.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVhBuuPWUJE7sB9e8eTJr3tywkgsXmrwa7yGjEbm8wRPDUZSN2jgoYbVVtPS2cey74ZHTMribykFmJ0zVUxjcvBqYpPnBRcQ0SU/0?wx_fmt=jpeg)
+![](/images/wx/a4178b17f5b8d4177a47fa7f750861a1.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVJlBRjSn8mQtibzqbM8HiagSLKKztwvEDeoDYy94vhxbia1c4Ov1KumPy2Sto85jhlmaC216ia57LsU8aUKRJCoEEEhlqj8SOPCJI/0?wx_fmt=png&from=appmsg)
+![](/images/wx/c3ffcee7304212b69912b503b1be2b2b.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWvHRKKsRwL9EiaON3lzMmeou60vUqIXkNq8Yu9aW1ysnzS8WEYcOrGxdq7mJJOibkI178t4KflhjjgwDFVVgywdkPewn4aVicDqM/0?wx_fmt=png)
+![](/images/wx/631cf63819936e4e3d7ff1ecca61cd0c.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVV3jSF7koVdkzte7YQEPs67xxOPibicfQgDGGDFR93Tr0vvddhvRZibic4H92mrHHZ6Ml9J0B9l2kcRcxAMTPxicJtyGfN1vAXs0Vc/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/e21618028829c69e629a743bde324179.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIU7HMFGQxpoLoBlgrn7GZlZAp51TUOgI6seLmpOxySqZ06HOGMicic5maXtwibiawIOEPic7GsAoNrWUoS6Via3PlJic7auwSnKRC07Ts/0?wx_fmt=jpeg)
+![](/images/wx/e2f345a727c15af35d6a493b7544f250.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUcibtPwpZqRbvAobgc465MFD8RHvI7l17mVDoicj4qIwIBVjYksuKcCLiaCxVYkjCzqmQ9yicibq1JaHfvkoFwu2AmQJBQkiaImsL6U/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/ff872f9a6f108203e655a10277ea36f3.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXEfXN4MPFgen3L3lnIa7N9MJrEZL0ya4TaOpTtaKynp6ZNE0tbRVDSqzBxN7CgPic5fqI45C6FwhsrpoE43FMOA3yqbXG9WN1g/0?wx_fmt=jpeg)
+![](/images/wx/bd20d6cd931e9951d8fb5c9497d2a5ea.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVu0Uad1mVEl8ClC9T5BOjtHROnCEr9gORl7QoQeardhicJjicx8vZAjqjoGulhYGWlhyRREDjXHBqt88PGxK6N1kRFIKWd0eqWM/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/5bfca7bac38aca4c55f11aed21284982.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXbs9E5uEh1RIvUbph2UDhFCaTaLbaqQBop5KXArBQpOmtXUmNOFlic7cEmLfsHibWcU6icUkpUfHoa8q67L6sXfZGqe1OFWnAB3s/0?wx_fmt=jpeg)
+![](/images/wx/3ee5fbea03419238332c869d24e61945.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIX44uHcf0wC7OpOFwxv3GGeicicw47P11rO7LETy86fibnrEhb2l6RcKZGMfIKuPu5K5ayF6uoWQR26icH5Wm7icXkpwhYP9Gszyiccc/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/631f980915c276cde0fff22eed26099b.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUSqHeSiacFaPAAlRfoVuZgXmNb488glMK0x99jZpj7TdBgwlpSmrt8k5eILaY4QicjGzbWzjGwRiawzhg58kFJ4vHNarokV4hZeQ/0?wx_fmt=jpeg)
+![](/images/wx/6a609710f7efee86f2bafd22658ad410.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIU1EWaDIqCibxlewpChnqO7dTsj5xuutvVw8RNxIIiasghxqIUzv1dZThIA1ia4icaV1sib8az5qbr90uauSRDjWnoLFicD6fbj0Y3Ow/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/2c78b0382b17ef4322b3ce99f64b875b.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVjl3mGrmgsmsInQI0KPWDU8fWJkaXhQxFIh0HVvWLN9zSWa9ibRpYDUCz70OG2I3QciczNUpc3ORjaeURzbySqO2Vzmsk1NIdqo/0?wx_fmt=jpeg)
+![](/images/wx/79c7272ed1ce3f5b5a56e4677a721096.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVbQ4NNTFN94DUY9c0mmicfjibFzqnMqvhA8AjIkngDQ1dApC9eC81Gkh0ZKfqdicicC7ibkVrHHfEAv82wZfJT405dxKAIC1eyG41k/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/454576d9cd9de99aac2af842078dfda8.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUlRcZb7fdGIy5YibV9fWsgRGSAcA8caLrLico3W60lTWJibJFYvOQPbAC9cddbpSPpmaBnSJicqibsZgKW20TgqsOYzVfkR61uL108/0?wx_fmt=jpeg)
+![](/images/wx/ffd513ea687fa3ca74ba85db0bfc14b9.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIW6gkIBohdEO29zxm4sjQduhWlTvq2NxKpE9FPg1hoTYvW0qNPLBGnmLT1AwoezVuL7qVhibG4bqTcqNE8GqiagEjdUdZaOzBd88/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/adef9e24e727c4380b1c08dd0118dcf7.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUicbtmP4vKibjAdK0WF9mP4t19fptCzA0iaeSc9tbUaqia1aljGhvrFVYjRtPeW28lIiacpXRSGiaSC0Rn2bnbA5MTUYb4LrrOfhM6k/0?wx_fmt=jpeg)
+![](/images/wx/1e3c0a0013ed4f022c93ba5df5979185.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIV1dCemH7MSJDOT8URDkbOOv3vbByvEF9KzL3P4qzX33iazaV1aiadPGr1YDNQnuEGd1JJULmgqQJLkk407qaMGVWSmK7IeH64MY/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/a1e79303e9421549aa03cb48e8a139f3.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWw7PdhQylslfpcPSmYTJn2A255pxeXwibkXeEiaevm6Tiay49DRRzURjTFdicelzAgsJImQVe1Lyc3tjJlyzgbpbHomPu6iaZAPyE8/0?wx_fmt=jpeg)
+![](/images/wx/a46dc67fa006ca58b682b78bbdce4b2b.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIV3f16nqRTbVAPgXGTuee6dRXRjoERr4AmDAibwCyYEDDOsN4fkvnunfCp7fgWyrplGvFtCqO7M1RScq7HveKO51JZKPFEHwgas/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/33c9926b65ac35af9d33645df3cbc6ed.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUGy2gG6I4gIrJKTynRMg8gBISztibBdYibowftnrq4cibDcsNvNDxyMIlWsiaeKeQuRPOkEElhImlyOqAcibY85DrfP9nRQkicyoJ1Y/0?wx_fmt=jpeg)
+![](/images/wx/ae2287885ab8343a09cfaa8ed8eb542f.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXUSSxLtYdjZqaQMQO2v0eb5Ywlp337Pf5HuKnYZvFfrGmPUWJxANtia2cIu42I9aOfL7T6Yo4KsrYlPmEYlApdfauDgTVsiaMAQ/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/9e9218b7f26b834ff75edbc63e4bcf14.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIW2nJkO5DKXG61KxaruZcOzyfHzvdUaL8IibbxuMfc9j2wSkh6DRUica0wvf4EZ4s1WU0KDdZbgc0Wiah31HLl5acHhWSjbUO1V7A/0?wx_fmt=jpeg)
+![](/images/wx/84ed3ea6c8e2a7efd5f948c01a6d5a10.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUE8Ice5RZAdw3A9FISHvtOBdnU4TbbE02IDwApY3s28BHbiaGJklLzYKsiaxiaF5TfTg9sc8hhgUfsdMKT64XEbfCibQ5ViaVG0GbY/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/f68570edd5b080985e01c0aeb57ed0b6.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWCadevKcegaDWQhGdPwXqr3ATRFkWqdvFw5tRUMUYB2KBqpqQsiaF6SvhP6yuSNl1FLibJx4sVw9iaFiahtnOfup5oc9UrE0mNYmc/0?wx_fmt=jpeg)
+![](/images/wx/1273feb1bd27d3800aac75fbd78497ba.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUUR3ouT9FDXHibsrkNnvZxA0bz9O2wVX7s1qnia7L6PBOHSlj8Xic6aLsh7kKs1lFKbVYhxVCcaiczmUmbiahxIDTTngSDnHGAuNog/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/7ab490f8d8cef1c24368915f26fbd77f.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUXYgSib1mg8YheIwibBsfSXlvK3gknmtgt47QQ17KEibfMSejCicVHzf1FnLneNIjcibc0QsnfZOc2S6psyRNr6v7icSfCtB5ZoyplQ/0?wx_fmt=jpeg)
+![](/images/wx/d4475161b9fbc6e1ca96b730028d599d.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVcslpqRJYhB3C1DDRP6MyT5E7Mq1SnLjw3rBQr2khPwdM4N5ThUACJljqhH2RvHpulf0u3er3PbPWeENf9J3I7bkRQ8aYX9bE/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/327259937d5c6da5bc01c41934a73589.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXuwRP8gZrSRQdLGI3hM3fDFrj14ribLTS0aj0EHzvxeJJp5pcIq7xIoDibbY5kNt34f7vlvvzMIwerqZ5g8R5WIeBibuoM0fEWnw/0?wx_fmt=jpeg)
+![](/images/wx/c7655e7889a5bad1fd578722c5c80622.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXNvq7vibX2iaM315kGJ4tqQVXYVNiamhqcB0ZI7XAltSBNTJGibu6qffr7NQTmibh4lpMEzqjLSKeZfPVIseNUmCicdq1X0Nl7QHhP8/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/92bf09a36ed6d6444128279a09007e49.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWd8SEeibSibhETB2vG65m1xK9TtOyPAcK3efHpjFfIOO92oJBwib5iafP8iaH2BwRRicxCC6GBpLlmpJzFBiaarakfuUFic39ZYvXzVek/0?wx_fmt=jpeg)
+![](/images/wx/32fb4247529df434f4394d637a80851d.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWDynECeicHiccP44icibGthM3iaOiaJdD9LSr3bvVFD9qCLOLh1eUiaJ2ymvIv1yECzI5o57eYcKSH6cR7MQvLFs78YuwJMAYaueL9b0/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/9cb8c13113c7da9711eb2f50e45c970a.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX7SqhYowRDgDgt7VZNA56skxgyvrQuZt3GYuQiaKnkIDwJMDhhRFv2CEhdtQw5GpK7qxicUkvc7kpIx2Micqa6Xo32es8YdShztM/0?wx_fmt=jpeg)
+![](/images/wx/264578cb46b4b45e2a94abceb118f614.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX8VhH5s7wCic1tt4FtIPAxay7m5JKNtaAdCLe8M21RUdVOcXiaSyEwKKlyY0SfYviaMcYfW7FTLLsc9kU7ac61fV4siaXbG0Rjgnk/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c1a59f744821c2c25c0cbdbd891651f5.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWA4QBBpnbbGRKialgbZ6SLVM9A8gBSbRE16qCd4RC7KXLgh6vBOiakMiagJ7pNg9TSfbeiclCxdq4A1O1cIp8ht62YFlD5ibCctIAw/0?wx_fmt=jpeg)
+![](/images/wx/29abafb142ce1b27ab6d3438df1d58d4.jpg)

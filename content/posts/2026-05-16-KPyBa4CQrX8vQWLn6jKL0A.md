@@ -4,6 +4,9 @@ date: 2026-05-16T00:00:00+08:00
 slug: "KPyBa4CQrX8vQWLn6jKL0A"
 description: "title: \"Renishaw把RXMA30做成多自由度光栅后，光编重新值钱的地方不是进关节，是给系统当裁判\" summary: \"光学编码器在机器人里不是简单输给磁编和电感编，而是位置发生了变化。Renishaw 的 RXMA30 1.…"
 original: "https://mp.weixin.qq.com/s/KPyBa4CQrX8vQWLn6jKL0A"
+models: ["RXMA30"]
+companies: ["昆泰芯", "雷尼绍"]
+tags: ["磁编码器", "光电编码器", "机器人关节"]
 ---
 
 ```
@@ -16,7 +19,7 @@ news_hook: "Renishaw 于 2026 年 3 月宣布将在 2026 年 3 月 18 日至 20 
 source_count: 5
 ```
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUjmUAjByLqSIv92Hnybm0LOa57GrtYkicbvicxKWkQzT2dvQhYQBmaX5eSbxicOVnjMUk1sNFykbMDlB4ibsF4mwWdeZ1aRG98rkc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8e7193ddeab6c9f41586e5f24644106f.webp)
 
 ## Renishaw把RXMA30做成多自由度光栅后，光编重新值钱的地方不是进关节，是给系统当裁判
 
@@ -24,7 +27,7 @@ source_count: 5
 
 Renishaw 2026年3月推出的 RXMA30 1.5D 多自由度绝对光栅，应该放在这个场景里看。官方资料说，这套系统由一个或多个 RXMA30 1.5D 低膨胀玻璃标尺和 RESOLUTE 绝对读头组成，最多可以组合测量 6 个自由度；它的标尺上有独立的 X、Y 方向轨道，机器设计者可以直接测量 X、Y 两个方向，而不是靠复杂信号处理去“猜”另一个方向；官方还强调，它能帮助检测并补偿直线导轨直线度、小平移偏差和旋转误差。这个方向很关键，因为它不再只是回答“这个轴走到哪儿了”，而是在回答“这个运动平台和基准之间的几何关系有没有变坏”。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXNGTDZb8LvibOicicR9A1pAEAZqF8pIGCRK3SXuF1jTzsoMuRrhWdLb1cBpLDJXn2iaH3v7SAYLwpbIyxBvicyUZ4qay9vJY3dkc4c/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4c0b984238dc696349205a33fea90dc1.webp)
 
 ### RXMA30的重点不是“又一个高精度光栅”，而是把误差从一维位置里拆出来
 

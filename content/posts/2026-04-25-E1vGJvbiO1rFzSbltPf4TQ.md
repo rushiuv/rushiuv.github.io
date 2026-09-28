@@ -4,11 +4,14 @@ date: 2026-04-25T00:00:00+08:00
 slug: "E1vGJvbiO1rFzSbltPf4TQ"
 description: "4月21日，Melexis 和 OYMotion 宣布把 Tactaxis 磁触觉传感技术推进到下一代机器人手的工业化指尖模组里。表面上看，这是一条机器人触觉新闻；真正刺人的地方在于，它把传感器竞争从“单颗器件参数”推向了“系统入口定义权”…"
 original: "https://mp.weixin.qq.com/s/E1vGJvbiO1rFzSbltPf4TQ"
+models: ["KTH5701"]
+companies: ["昆泰芯", "英飞凌", "Melexis", "TI"]
+tags: ["磁编码器", "霍尔"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXpWZd6rTD0qkmrKTRoGsiasbRic06icmQiaeeQpiaE0spciaeD7Gxu51AVwYQIBec8HRz5J3Py87kib4qMQEDW9ubYLM65ex3ktfGPd0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/32f60a1902497c2d908d2db57e0fe026.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWbkpK73pL0C4ggWnsBxc2EJ31zAYdUeFOwibGEzmYxkAOib8KBCdSDXDcdgzfNZxooBJkCz90HZ3HH3UNBOGhBaBCzA7RibsvVAI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/780322ded039d951d38ac986f5d4a718.webp)
 
 4月21日，Melexis 和 OYMotion 宣布把 Tactaxis 磁触觉传感技术推进到下一代机器人手的工业化指尖模组里。表面上看，这是一条机器人触觉新闻；真正刺人的地方在于，它把传感器竞争从“单颗器件参数”推向了“系统入口定义权”。
 
@@ -16,19 +19,19 @@ original: "https://mp.weixin.qq.com/s/E1vGJvbiO1rFzSbltPf4TQ"
 
 结构怎么装？线怎么走？标定怎么做？温漂怎么补？批量一致性怎么保证？客户换了手指材料，数据还能不能用？现场出了问题，是芯片问题、磁体问题、结构问题，还是算法问题？传感器厂商想卖“我的芯片很好”，机器人厂真正想买的是“**这东西我能不能直接用，而且出了问题能不能查清楚**”(这事在我公众号里面已经叨叨好多次了)。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVo5VaCXPTnIJzdjUz4ibnbgia4FdMSpIibmWD4cb30S2XeF4AUGcbqrTH1acwVMv3f4ThfD2IiaJsDKUkdJ6Lw8q9PUCDv5LMBMZQ/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c3cb64d32ddefa7772f49e03dbb02508.jpg)
 
 ### 一、Tactaxis不是在卖“能摸”，而是在卖“能被机器人手使用”
 
 Tactaxis 的公开资料里有几个关键数字：尺寸约 ，可以输出作用在表面的 3D 力矢量，采用磁感应原理，强调 fully integrated，并计划用半导体工艺量产，同时主打对杂散磁场和温度变化的鲁棒性。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUzypIib2q6bTK6OSJTTXibZp3JtEmLXMh3CicBmjNHVUzHp9nIb0ZQwibCanrYA4rI46SNOIAxFfLl2oCicLibbujCEKP7Uy9ZufUXU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/bc79cc496c1869a2af9830099a57f5f6.webp)
 
 普通开关只能告诉你“碰了”还是“没碰”。普通压力传感器大多只能告诉你“压得轻”还是“压得重”。但机器人手抓东西时，真正需要的是更细的信息：**力从哪个方向来，有没有侧向滑移，物体是不是快掉了，手指是不是压得太狠。**
 
 所谓**3D力矢量**，说白了就是把接触力拆成几个方向来看。比如一个杯子被机器人手拿着，竖直方向是重力，手指正向要提供夹持力，侧向变化可能意味着杯子开始滑。人手能抓稳东西，不是因为皮肤会喊“我要掉了”，而是皮肤在很早的时候就感到了微小滑移和剪切力变化。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVxbOrE66pjCF5nTibY4ibCZqq3o1qiaDCbqWnnPqMDpeIh5Ut0bK6OSKFhBrhACQSEQcT0cp26YeR0lzdxuXtGMhUib2uIPgia1lXk/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/13f8797a0b3970a0657c1c884d1f7862.jpg)
 
 Tactaxis 最值得看的地方，不是它把触觉讲得多玄，而是 Melexis 在强调小型化、集成化、可量产、抗干扰、抗温度变化。这些词不炫，但很工业。它针对的不是展会上摸一下就完事的样机，而是机器人手未来能不能批量交付。
 
@@ -52,7 +55,7 @@ Tactaxis 最值得看的地方，不是它把触觉讲得多玄，而是 Melexis
 
 OYMotion 的意义也不只是提供一只机器人手。它公开资料里已经有 ROHand 的固件、协议、ROS/ROS2 包、URDF 和 demo 例程, 很多已经开源。也就是说，Melexis 不是把 Tactaxis 塞进一个孤立硬件里，而是把触觉传感接进一个已经有开发接口和机器人软件入口的平台里。触觉数据一旦进入控制、仿真和开发工具链，就不再只是芯片输出，而开始变成系统能力。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVIqPN3bHN2wRGzMJ8EQa6wQupQLUZR3cUIqmMcBBoXNib8kRiaElk9MAUNNTUkAusRialaPQwocDGq5dPBf9VneBVibj5lFyRw0NM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1cc990ead90ca1eaaae7b57253b50e59.webp)
 
 硬件做出来，只是第一步。客户能顺利用起来，才是第二步。客户以后默认按你的接口和流程设计系统，才是第三步。
 
@@ -62,11 +65,11 @@ OYMotion 的意义也不只是提供一只机器人手。它公开资料里已�
 
 很多人一听机器人触觉，脑子里容易出现“电子皮肤”“仿生神经”“柔性阵列”这些词，听起来很高级，但也容易飘。Tactaxis 这类磁触觉路线，其实很朴素。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIU3r7sxicu8EZMS9U9UrotsT3l0icVib4bF1QY6sSS1aCtibTJQKZKPrj7k49Q2U8dj2NZRdFdW4BicvodA2RpndSvJTRcNO2Uv1jrM/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/763680a94504619fe221d6bf032d2fab.jpg)
 
 在机器人指尖里放一个小磁体，再放一个三轴磁传感器。外面包一层软胶或者弹性结构。手指碰到物体以后，软结构变形，小磁体的位置也跟着发生极小变化。磁体一动，传感器读到的 、、 三轴磁场就变了。算法再把这些变化翻译成按压力、侧向力、滑移趋势和接触方向。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIV0lMSOAcKPOkQ192Ar0N9oddbeGhKWN7EycsgP45NY55c4rhKCWDKlDB66c8dkQSqXOMBK2lCjSpBISHm4z0CGHvlFslOpOJM/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/826ab9c4fbcf81166213c353a5222c25.jpg)
 
 手指受力不是直接被芯片“摸到”的，而是先让一个小磁体微微动了一下；芯片测到磁场变化，再反推出手指受了什么力。
 
@@ -78,27 +81,27 @@ OYMotion 的意义也不只是提供一只机器人手。它公开资料里已�
 
 ### 四、从TI、Infineon到昆泰芯：三轴磁传感正在走向“微位移反推”
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV3Qrnv52LJTjEXy4WrxE4wrSdjMlwwa2Rh5UXs9wsS7fs3CeNsZ1L3JACZABlKQToudOrcCFKuHcmtrSwlqae49kb1uzXsAmo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9c7ee200d9aae5a665bcc5f3139b725b.webp)
 
 TI 的 TMAG5170 是一颗高精度三轴线性霍尔传感器，单轴转换速率可达 ，支持 SPI 接口，内置温度传感器，线性测量总误差在  下最大为 ，还带 CORDIC 角度计算能力。它并不是专门为机器人触觉定义的芯片，但三轴磁传感器早就不只是“感应有没有磁铁”，而是在往高速、高精度、位置解算方向走。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXiaTTmAYqsJYC29MS4kjUB8Xz7cbeRzCSRbXWV0eJIcF3nvwOic1FFRSias6PYms3lZq1qwN7GgqgfZ6icUZPtZR9ZXqYeA71icUv0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3e38dfa8bf231a1bf94cd5f323342248.png)
 
 Infineon 的 TLI493D-W2BW 也是三轴磁传感器，可以测量 、、 三个方向的磁通密度，量程到 ，封装尺寸约 ，每个方向提供  数据分辨率，掉电模式典型功耗只有 。这类芯片适合小空间、低功耗、接近检测、滑块、旋钮、摇杆等应用。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWib0JxFgyOEmbR4bcRDe4cOavKp9GIT9icwY5WhA8zUrsysJSS6tortmp02sHkTiaU2ej7sG4gC2uSoBxwLDjnQD2lHfe7mWic1ias/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8f21c19d1c273d7d578e591db2a8f6fb.webp)
 
 这些芯片不等于触觉模组，但它们说明同一类底层能力已经成熟：小封装三轴磁场检测、高速采样、低功耗和温度补偿。磁触觉真正要完成的，是把这些能力从“磁体运动检测”推进到“接触状态识别”。
 
 昆泰芯 KTH5701 同样属于这条技术线上。它是数字输出型三轴线性霍尔传感器芯片，可以测量 、、 三个方向的磁场分量，支持 I2C 和 SPI 通信。昆泰芯官网还写到，用户可以开启一轴或多轴组合的磁场测量，获取磁场原始数据后，结合软件算法提取磁铁的运动信息，适用于摇杆、旋钮、位移测量等应用场景。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU8HTDS6rltvs1DB1R4vmfpMlyGAUwibhBA1CflHDasF2dYicyoMdxr3tfNoynpa7YIGXSDTtWWZYzE589GqOV0l8jeVe4eU70k0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e02eb86dd76f45ec32143e57c6ae5006.png)
 
 摇杆是什么？小磁体相对芯片移动，芯片读出三轴磁场变化。位移测量是什么？磁体位置变化，带来磁场变化。机器人指尖触觉是什么？工程上翻译一下，也可以是软结构受力后，小磁体发生微位移，芯片读出三轴磁场变化，再由算法反推出接触状态。
 
 三者底层都是“磁体位置变化—磁场变化—算法反推”。区别在于，摇杆和旋钮的运动比较规则，机器人手指里的触觉变化更小、更乱、更容易受温度、结构、材料和装配影响。所以前者更像芯片应用，后者更像系统工程。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUlibpIB7DVFIUtTZzSKTkn9FqRN8b2HJZ96orcRfQTRhz0VT62AgFQ7Vbp72KiaYPMRicwJApSkZDTJXWncfWtTeTr4RqjNQB2icc/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/0862115260a02c59ef2cbfa99f985767.jpg)
 
 KTH5701 的一些数字放在机器人末端小型化场景里很值得看：QFN  小封装，供电范围 ，三轴  测量，待机功耗 ，典型工作频率 ，工作温度范围 。这些数字说明它不是只能做一个粗糙开关，而是有机会捕捉比较细的磁体运动变化。
 
@@ -124,7 +127,7 @@ KTH5701 符合 Tactaxis 路线的地方，不是“它已经等于 Tactaxis”�
 
 **第五，它已经明确面向“磁铁运动信息提取”**。官网没有只把 KTH5701 写成“测磁场强度”的芯片，而是明确提到结合软件算法提取磁铁运动信息。磁触觉的核心也不是测磁场本身，而是用磁场变化反推出结构运动，再进一步反推出接触力。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVQbj9jT6perg4scoicqefoicIUGNAnMX7mtgwQKsCUfQJk8CuOGtsggKibDCWibB0ZkQtTRgG5DylJA92VSA63ibUoCsp90yADhicn8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/30b56765f132228251e86c7151176a0e.png)
 
 但必须说清楚：KTH5701 不能直接等同于一个完整的机器人指尖触觉模组。公开资料能证明的是，它具备三轴磁感知和磁体运动检测的底层能力；还不能直接说昆泰芯已经发布了一个 Tactaxis 式的工业化指尖模组。
 
@@ -136,11 +139,11 @@ KTH5701 符合 Tactaxis 路线的地方，不是“它已经等于 Tactaxis”�
 
 **第三，缺抗杂散场体系**。Tactaxis 特别强调 robust against stray field and temperature changes。KTH5701 有温度补偿基础，但机器人手指靠近电机、线束、磁编码器、永磁体时，外部磁场干扰会很复杂。要做到工业化触觉模组，可能需要差分结构、参考传感器、磁场梯度算法，甚至机械屏蔽。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVRHGwcQVfqUSJsLT7Ms8Og1vaudYA4aB4YHFSBoLmke02oPmrShZ1Cu5pjL4ww2pkaFxhMVqlcIZoxvtOdJkialMZLLnUiaILz8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b442f8f4c499b7b93ef5c33831b03eac.png)
 
 KTH5701 站在通往磁触觉模组的第一块地基上。真正要补的，不是再讲一遍“三轴霍尔”，而是把这颗芯片推进机器人手指的系统链条里。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUW03Y8NtAhBbXh4A9URic53v50VnLHsf0coCR96YJVhUg7LKv6DYhuviaiaLc2Yet9jcVHC3fNP9sfUtGyP9Go1qN1qpYUaeu39g/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/9cd8b94ee964b6c739ccb348c32242ed.webp)
 
 ### 五、传感器厂商下一步卖的，是客户少踩坑
 
@@ -158,4 +161,4 @@ Melexis 用 Tactaxis 往前走了一步，**把触觉从一个传感器功能，
 
 一旦规则被别人先写好，后面很多单点参数优势，就未必还能换来同等的话语权。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUhb8KdtDukkQQzTvlAs69gqWq1ibr7eiaUtr4yZEnLGOxiboCPiceOOytWG6EA1LS0LksdtVqwQfX3ictdNhNYoDfMobK51f2PNu3o/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d45f92fe18e2d44c5e40c3d5cc37ce5a.webp)

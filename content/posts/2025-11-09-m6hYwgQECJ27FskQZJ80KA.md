@@ -6,7 +6,7 @@ description: "窗台上那只杯子又裂了一条细缝，像一句话没说完
 original: "https://mp.weixin.qq.com/s/m6hYwgQECJ27FskQZJ80KA"
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQFZxQUBW7Gs9T72O74xedFL1mIYMUb6vvz1MO4PCp0FFIqK0ZOqeIywadwicC1zyNweFmlTDHpWiaQ/640?wx_fmt=jpeg)
+![](/images/wx/c5dccd540a578e5dbf8cfe2823f52d1c.webp)
 
 窗台上那只杯子又裂了一条细缝，像一句话没说完的尾音。人们照例在手机上忙，油价“微调”，房子“以价换量”，失业“灵活”，每个词都像从旧衣柜里挑出来的丝巾，颜色不新，可系在不同人的脖子上，扭一扭就显得合身。楼下红薯摊的烟往上走，像某种沉默要长出形状。卖红薯的男人喊价，总比秤砣诚实一点。
 

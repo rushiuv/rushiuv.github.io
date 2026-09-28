@@ -4,9 +4,12 @@ date: 2026-04-23T00:00:00+08:00
 slug: "GepEpLLB78zJzWDfae5i2Q"
 description: "写汇川，最偷懒的办法，就是把17.2亿元伺服收入拎出来，往标题上一挂，再配几句“国产替代”“高端突破”“全面崛起”，文章就差不多了。"
 original: "https://mp.weixin.qq.com/s/GepEpLLB78zJzWDfae5i2Q"
+models: ["KTM5900", "KTM5800", "iC-TW29", "IS620N"]
+companies: ["昆泰芯", "iC-Haus", "安川", "汇川"]
+tags: ["多圈编码器", "非线性校准", "编码器接口", "EtherCAT", "人形机器人", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWaxlJoIzkgYPbeHFyy3rOJkob49PPRY795IPIBTAjkibjGquvibYp026mVdOrnKHkMzZpKhhaj8hG6VhFCuKm6CQiaDgKSUeKRq0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/e957e5303cfc7a3abc5d0afe953cb44a.jpg)
 
 ## 汇川最值钱的，不是17亿伺服收入，而是它正在收回运动控制的话语权
 
@@ -20,7 +23,7 @@ original: "https://mp.weixin.qq.com/s/GepEpLLB78zJzWDfae5i2Q"
 
 很多人到今天还在用“汇川替代安川”这套旧句子理解它。 说浅一点，这叫份额变化； 说深一点，这其实是系统语法在换人写。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXJDaeU5e0Vx7MC8EHGliauibgO0rias09ibnWibQwHemC4PcweiaheWqwEiaiaZ8DibvssEGGxb6Vicn4aiaeNJyBxWjs2XZ7hayVvtjZDwc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/39581d929ad17ad342900b5af5d768ee.webp)
 
 安川这些年守的，也早已不是一台伺服那么简单。Sigma-X公开讲的是3.5kHz频响、最高7000RPM、26位编码器、以及“Digital data solutions starting with servo”；iC-Haus的iC-TW29也不是单纯的插值芯片，官方直接把它定义为“26-Bit Encoder Processor with Interpolation and BiSS Interface”，而且ABZ、UVW、BiSS分辨率可以独立配置。
 
@@ -52,7 +55,7 @@ original: "https://mp.weixin.qq.com/s/GepEpLLB78zJzWDfae5i2Q"
 
 要把汇川写实，先别急着喊口号，先看型号。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXKkWFQw8s7a6TMcjDPPn9r0dylJUvtC74Wl9367IX464W2mWzJpSQibcLhJTnicXBvJWibahNoRBuiattsTw1Uldc4ica3UIeYHcz0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/44fb26f3a47476e5d5306338ef31492d.png)
 
 SV660这一代之所以在市场上存在感强，不是因为名字响，而是因为它刚好卡在很多设备厂最敏感的那条线上： 既要动态性能，又不能太难调； 既要布线和安装别太折腾，又不能为了好装把性能做塌。
 
@@ -98,7 +101,7 @@ IS620N和AM600这类东西之所以有存在感，恰恰是因为它们让“接
 
 如果只看宣传册，谁都能把自己写成平台公司。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV3iciaqygfetPtpRltl5uDsH7to7bzvhCNEYlrL4Mibmg8hMNaBLug3ZbHnQDibgyVVsFlHVXuBIkEthibsmxiaFiaQgibcLia8Ihkbu4k/640?wx_fmt=png&from=appmsg)
+![](/images/wx/922950b3d2e5dc197b026fe9346fe23c.webp)
 
 **可平台这两个字，最怕一上现场就散。**
 
@@ -132,7 +135,7 @@ IS620N和AM600这类东西之所以有存在感，恰恰是因为它们让“接
 
 再往上看一层，SV670这种型号更能看出汇川心里在想什么。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU9ZVccKwZDBPgogxC0gDxsuiblsOI9BlVRMw0mGzCADlSMHblSPdaMeNZ1LrBQ2JCABbkQAziaCKA8fdYh48F462ekcJIsKL3fU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e432ca22fb2d43aec149f4c369df0e2e.png)
 
 官方资料里，SV670P/C/A支持脉冲、CANopen、CANlink等变体；23位单圈/多圈绝对值编码器可在断电保存多圈信息，避免每次上电都回原点；有第二编码器输入，支持全闭环；带STO SIL3；部分型号还有USB-C用于参数上传下载和固件升级。
 
@@ -226,7 +229,7 @@ SV660、IS620、SV670、AC800这些型号往里收的是电控语法；
 
 单看每一家公司，都只像是在扩产品；连起来看，才会发现整条链条都在做一件事：把原来分散在外资体系里的解释权、接口权和模块定义权，慢慢搬回中国供应链。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVtyGZvgaTPTdoYkmSmZdG4q1ibkj1Ejuwe1jFNTXicQyEcSCibrdSMB8h903GFgsfSFcucLR3rSe4AaozjbyUE5qg2JVSqx9qR6U/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/6062ccd631fa9a49b167d3aa1a51ef03.jpg)
 
 ### 它不像项羽，更像曹操
 
@@ -280,7 +283,7 @@ SV660、IS620、SV670、AC800这些型号往里收的是电控语法；
 
 这件事成了，份额只是表面结果。 这件事没成，17亿也只是一个好看的数字。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVYfUhQgBv7ZOXEQICOS8b0FQfzxYLwuX8yQwW5RN8pKlEzNp6x1b6MLvCJFeqS8Qhbr73HIeMMvibnj11zibQqdBhSd6X98uTFM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/58d0c1b9a89cdcb033c481ea86e5c169.webp)
 
 ###
 

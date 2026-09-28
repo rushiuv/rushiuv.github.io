@@ -1,7 +1,28 @@
+{{ define "hero" }}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="kicker">RU SHI YOU WEI · FIELD NOTES</p>
+      <h1>如是有为</h1>
+      <p class="subtitle">{{ site.Params.subtitle }}</p>
+      <p class="lead">编码器、磁传感器、机器人关节——一个芯片工程师在工位和产线之间记下的东西。至今 {{ len (where site.RegularPages "Section" "posts") }} 篇。</p>
+      <div class="hero-links"><a class="btn" href="{{ "/archives/" | relURL }}">浏览归档</a><a class="btn ghost" href="{{ "/models/" | relURL }}">按芯片型号找</a></div>
+    </div>
+    <figure class="hero-figure">
+      <div class="package"><img src="{{ "images/site/hero.webp" | relURL }}" alt="主人公与人形机器人" width="1103" height="941"></div>
+    </figure>
+    <p class="sutra-vertical">{{ site.Params.sutra }}<span>《金刚经》</span></p>
+  </div>
+</section>
+{{ end }}
 {{ define "main" }}
-<p class="tagline">{{ site.Params.description }} · 共 {{ len (where site.RegularPages "Section" "posts") }} 篇</p>
-{{ $pages := (where site.RegularPages "Section" "posts").ByDate.Reverse }}
-{{ $pager := .Paginate $pages }}
-{{ range $pager.Pages }}{{ partial "card.html" . }}{{ end }}
-{{ partial "pager.html" $pager }}
+<div class="layout">
+  <section class="posts">
+    <h2 class="section-title"><span>最新文章</span></h2>
+    {{ $pager := .Paginate (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+    {{ range $pager.Pages }}{{ partial "post-item.html" . }}{{ end }}
+    {{ partial "pager.html" $pager }}
+  </section>
+  {{ partial "sidebar.html" . }}
+</div>
 {{ end }}

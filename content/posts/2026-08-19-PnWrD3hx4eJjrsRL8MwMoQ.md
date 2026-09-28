@@ -4,9 +4,12 @@ date: 2026-08-19T07:37:00+08:00
 slug: "PnWrD3hx4eJjrsRL8MwMoQ"
 description: "我们平时看到风机，三片巨大的叶片一直围着中心旋转。"
 original: "https://mp.weixin.qq.com/s/PnWrD3hx4eJjrsRL8MwMoQ"
+models: ["KTM5900", "KTM5800", "iC-TW29"]
+companies: ["昆泰芯", "iC-Haus"]
+tags: ["多圈编码器", "TMR"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXN9tFS8etBv9AURDxPyBrJakARuLPto1qt2LA3ET0za2e1XXVeicwBAEYrO8zgWG8Layy8tAe1TuJc2FQnD0uyAYUa7HMnIuP0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9af77654c4e4b8c0c3d8c8ddfa6a6556.webp)
 
 工程师一线手记 · 风电变桨位置反馈
 
@@ -18,11 +21,11 @@ original: "https://mp.weixin.qq.com/s/PnWrD3hx4eJjrsRL8MwMoQ"
 
 不是绕着风机中心转，而是像拧螺丝一样，绕着叶片自己的长轴转。风电行业把这个动作叫做**变桨**。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWZViaRLK5QIUpZ1v3Afg7Y6ZEgDmzTL7KlcLLRp3QM7p6qAajVIHImvVwfqtYCyPNl5op29O11j5AZOPTQR0abnyhZObfiby8kg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/ac973b631945b824ec309181685fbf47.jpg)
 
 变桨其实很好理解：风小时让叶片多“吃风”，风大时把叶片拧开一点；需要停机时，再把叶片转到几乎兜不住风的位置。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWIxl8VAYaicTb6mkmsQib9E3h6kHBoXoVNaUGrtKuh7Xh404A3nDvvyBGSYEh4gf9p9YadSnFWmlfYw5D8VIia0wNlqlYo3vuw1Q/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/fcb288e9f4205ca0ca3c73e9d7f43982.jpg)
 
 叶片不只绕轮毂转，它还会绕自己的长轴改变迎风角度。
 
@@ -51,7 +54,7 @@ original: "https://mp.weixin.qq.com/s/PnWrD3hx4eJjrsRL8MwMoQ"
 | **电机端**看的是电机转了多少，再根据减速比推算叶片理论上应该到哪里。 |
 | **叶根端**更靠近最终输出端，回答的是叶片实际上到了哪里。 |
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWW6iblNE7FJwpO0daJEohI5UeGbXXiasiaUprbO5Mrn7bICv5MwgWRxIDYBUEbdGofrkmEIp84yqsokCWZnOkVexUUQIsGicqWTFU/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/e7739d4d6a2f9c7168027ba5e705200e.jpg)
 
 正常的时候，两边当然应该基本对得上。比如电机端换算后认为叶片是 **15.1°**，叶根侧读到 **15.3°**，这很正常。
 
@@ -69,7 +72,7 @@ original: "https://mp.weixin.qq.com/s/PnWrD3hx4eJjrsRL8MwMoQ"
 
 但这个数字特别有意思。因为它意味着超过某条线以后，工程师关心的已经不是“±0.1° 还是 ±0.2°”，而是：**我还能不能继续相信现在这个叶片位置？**
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVb0OggxNxrS5kdDrPuBH1Y8J4iaW6JXpDF5FBYNAy6TiavSqg4Eb5aaC8mcqzCojBTH0iaibiaaiaf7FGCSAmUWoqa42J0Zbzrato9Y/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/fe8e4fd76c674c84803afa83a25b7407.jpg)
 
 ### 最麻烦的不是一颗死了，而是两颗都活着
 
@@ -135,7 +138,7 @@ original: "https://mp.weixin.qq.com/s/PnWrD3hx4eJjrsRL8MwMoQ"
 
 到了编码器芯片这一层，我反而不会先和风电客户聊 24 bit、26 bit 还是 30 bit。因为这里首先要弄清楚的是：**这颗芯片在整条位置链里负责哪一段？**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIViaFpsP0zmIWZR8UuGqhbMgcchGUibUDX2qpjibpdBiaOgdo5IqxIiapWibWbHFoKRdGEawfweqsicUtdUgt8qB2CnoeQQPzaopn4Hrs/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/81b4d5aa4b1ba4f75d1775bdc318e63e.jpg)
 
 这里比较的是器件在系统里的“角色”，不是把文章写成参数排行榜。
 

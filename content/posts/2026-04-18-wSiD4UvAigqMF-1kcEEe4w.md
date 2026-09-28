@@ -4,11 +4,13 @@ date: 2026-04-18T00:00:00+08:00
 slug: "wSiD4UvAigqMF-1kcEEe4w"
 description: "很多工程师第一次看AMR角度传感器，看到输出里有谐波，第一反应都是一样的：是不是放大器失真了，是不是桥臂不匹配，是不是磁环偏心了，是不是算法没调好。"
 original: "https://mp.weixin.qq.com/s/wSiD4UvAigqMF-1kcEEe4w"
+companies: ["昆泰芯"]
+tags: ["AMR", "专利"]
 ---
 
 ## AMR角度传感器里的谐波，不是后端算坏了，而是前端材料把它带歪了
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWsxNa5wD5zFjogQWb085d5aYX3yoy1O0AknGlibABSP9rDscGVR94WUxLApR7I9FYriaKIfh2XDYQ7T8hwiaDqPFicGljY4q7qicnU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4d2470fd8e2838919b1c4e25281b5929.webp)
 
 很多工程师第一次看AMR角度传感器，看到输出里有谐波，第一反应都是一样的：是不是放大器失真了，是不是桥臂不匹配，是不是磁环偏心了，是不是算法没调好。
 
@@ -80,7 +82,7 @@ AMR里4次谐波之所以显眼，不是巧合，而是“双角响应 + 前端�
 
 这时候，昆泰芯最近那件已经授权的AMR图形专利，正好可以作为一个工程例子来看。公开专利信息显示，昆泰芯微电子科技有限公司的发明专利“**AMR磁阻单元、AMR磁阻模块、角度传感器及芯片**”，对应公开号为CN121230609A，已于**2026年3月6日**进入授权公告状态，授权号为**CN121230609B**，当前法律状态显示为Active。专利摘要写得也很直接：其AMR磁阻条并不是普通直条，而是**围绕圆心、沿径向分布的60度弧形条状结构**；目标是**更好地消除谐波，尤其是6次谐波，同时减小磁畴集体迟滞与噪声，提高抗偏心能力**。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWnUCTQ3r4V2Szppag7RFPKcKzKP4jyvO6qWVeQurYqqaztwJUkcpD2rLuicWT2hzbick5a4GHlBPFGJkxm4fbsfqY6j4LSh7P0g/640?wx_fmt=png&from=appmsg)
+![](/images/wx/602935b918b48e86fe64e2fda2f8e73b.png)
 
 这件事为什么值得在这里提一句？
 

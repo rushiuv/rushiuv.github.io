@@ -1,12 +1,17 @@
 {{ define "main" }}
 <article class="post">
-  <h1 class="post-title">{{ .Title }}</h1>
-  <div class="meta"><time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date.Format "2006-01-02 15:04" }}</time>
-  {{ with .Params.original }} · <a href="{{ . }}" rel="noopener" target="_blank">公众号原文</a>{{ end }}</div>
+  <header class="post-head">
+    <time class="date">{{ .Date.Format "2006.01.02 15:04" }}</time>
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ partial "chips.html" (dict "page" .) }}
+    {{ with .Params.original }}<p class="muted orig">首发于公众号「如是有为」 · <a href="{{ . }}" rel="noopener" target="_blank">查看原文</a></p>{{ end }}
+  </header>
   <div class="content">{{ .Content }}</div>
+  <div class="end-mark"><span>应作如是观</span></div>
+  {{ partial "qr-card.html" . }}
 </article>
 <nav class="prevnext">
-  {{ with .PrevInSection }}<a class="next" href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
-  {{ with .NextInSection }}<a class="prev" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+  {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><small>上一篇</small>{{ .Title }}</a>{{ else }}<span></span>{{ end }}
+  {{ with .PrevInSection }}<a class="r" href="{{ .RelPermalink }}"><small>下一篇</small>{{ .Title }}</a>{{ end }}
 </nav>
 {{ end }}

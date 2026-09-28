@@ -4,11 +4,12 @@ date: 2026-04-16T00:00:00+08:00
 slug: "Ti12WYS1EmgF50KX6wjjDA"
 description: "最近，光码未来发了一款产品：可定制到8毫米外径起步的17位光学绝对式微型编码器，目标直指空心杯电机，还把话说得很明白——这是“磁编码器之外的国产高端替代方案”。"
 original: "https://mp.weixin.qq.com/s/Ti12WYS1EmgF50KX6wjjDA"
+tags: ["磁编码器", "光电编码器"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWHMH8c9oGdhrxluYLia6y65YEibAK6sWk08S4gD4iaMwyhCvXjuE0leJaoUicEQJGmbLv1baeHKSFQicXJZ3Q1CjFk0047OaYxiaEJo/640?wx_fmt=jpeg)
+![](/images/wx/547502e716d71336a91a050a8351c109.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXXMf4zdtnaiaCdxfnkFLFyXM4ibASBzEH043sonicA8aMvARb6vibA4UpIj1QLKyScnseISfBgPv77zic1QNoPiaSPxSfDtiahx5zNzA/640?wx_fmt=jpeg)
+![](/images/wx/9380752998ccca95ba12319bad632b5c.jpg)
 
 最近，光码未来发了一款产品：可定制到8毫米外径起步的17位光学绝对式微型编码器，目标直指空心杯电机，还把话说得很明白——这是“磁编码器之外的国产高端替代方案”。
 
@@ -72,7 +73,7 @@ original: "https://mp.weixin.qq.com/s/Ti12WYS1EmgF50KX6wjjDA"
 
 所以，光学编码器杀回8毫米，我一点也不觉得意外。这个方向值得尊重，也说明国内厂商在微型编码器上确实开始往更高端的地方打了。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIX6bNBxzjXicG2qiaTw9cKaibbgBBh4CpudQ6oT28R4VaLia8lwysWjuuG0Yr5iaPbeKjtum1wnqmMAqmaUicIpRrusDrZ1sICQU3dK0/640?wx_fmt=jpeg)
+![](/images/wx/eaccea337650b1251fbc1562a0fe785b.webp)
 
 但如果问题是：8毫米微型关节、空心杯电机、量产集成、真实工况下，到底选谁更像工业上的优解？
 

@@ -4,9 +4,11 @@ date: 2026-05-13T09:33:00+08:00
 slug: "k-BnlcSCgrstBqbH6dShNA"
 description: "很多人第一次接触磁编码器，最容易被一个直觉骗住：没有光学码盘，没有镜头，没有读头，磁铁一转，芯片一算，角度自然就出来了。"
 original: "https://mp.weixin.qq.com/s/k-BnlcSCgrstBqbH6dShNA"
+companies: ["TDK"]
+tags: ["磁编码器", "离轴", "TMR", "ADC", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWThQyqPJu1e2ZpCtYu7vEHPQLsBKQ1wmdP4zJh0HrFL9ljLLKmOwNwbXyO7FnbjB1479Os2StsiaIxb8jRM1JbR2nt8OE2icbXo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/518a0d5dd67ed38b71e80de55f7eaa7b.webp)
 
 ## TDK TMR角度传感器杂散场补偿深度解析：从结构假设、专利路线到离轴磁编码器的校准边界
 
@@ -16,7 +18,7 @@ original: "https://mp.weixin.qq.com/s/k-BnlcSCgrstBqbH6dShNA"
 
 两页放在一起看，信号已经非常明确：主流厂商现在公开讨论的重点，不再只是裸芯片精度，而是系统里的杂散场、结构磁路、机械失准和运行历史如何共同改写角度结果。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUjDBcnsWVVsGjkdicWngzooMW2afMQYYWclxfjLVw7z4rPRtEbsgrVgNheDcdgH4TibeqYUNB2A6npJ4CmaH6UhtC6Uv01duVaI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/44cafe2269d8e1f89029f48aef0aedea.webp)
 
 ### 一、磁编码器真正测到的，不是角度，而是局部磁场方向
 
@@ -24,7 +26,7 @@ original: "https://mp.weixin.qq.com/s/k-BnlcSCgrstBqbH6dShNA"
 
 然后再由芯片或 MCU 做：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX27x2JMJticUV7957nyqqr9icZYJC5kl92dCiaz2icac1nbStfsdGVPNGiars06Rk8pwEzHZdJCA6VM85ibBhWpnUQ89FbY2xORnLOM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1ff61546fb9416f276089f4cd3011880.png)
 
 这一步看着简单，后面所有麻烦都藏在这里。因为只要传感器位置的总磁场被改写，哪怕机械角度没变，最后算出来的角度也会变。TDK 这次把杂散场补偿单独拿出来讲，本身就说明它默认的误差模型，已经不是“单一芯片误差”，而是“信号场 + 外扰场 + 结构畸变 + 温度/寿命效应”的叠加问题。Selection Guide 里也已经把数字产品的 pre-calibration、in-application calibration、static compensation、dynamic compensation 明确分层写出来了。
 
@@ -38,7 +40,7 @@ original: "https://mp.weixin.qq.com/s/k-BnlcSCgrstBqbH6dShNA"
 
  是外部附加杂散场， 则是钢轴、轴承、螺丝、支架、铁芯端部等铁磁件把磁路二次改写后的结果。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWFU1SYGBebVljFIV8tNLpia57uyuUukE8d1RfWadvoHLGmb2oR0SJeGCM6rWibUutQ3aP6n5WsVhXV5IOBqQrre8SAEUOcww6FU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1d6aa2f3c718991ab27ff7af05afc2de.webp)
 
 TDK 相关专利已经把这个点写得很清楚：铁磁轴会把原本外部“均匀”的杂散场，在局部空间里扭成“不均匀”的分量。也就是说，系统最麻烦的地方，常常不是多了一个固定偏场，而是外界干扰被结构重新塑形成了位置相关的局部场。
 
@@ -48,13 +50,13 @@ TDK 相关专利已经把这个点写得很清楚：铁磁轴会把原本外部�
 
 很多人盯着 TDK 那页杂散场补偿，第一眼只看公式。其实这次最值钱的，不是式子，而是它先把“结构怎么摆”说穿了。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXssG2Qrb0ny5MKCJICrvNsufm4C9qZsdzyyAEaLic4m7edKVMwic55g5S1bkKC0bpnOrE8N1grDmQ1f1uQgOrLjBlo2Cib3NiaWLY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e44c7a1c7e2fd0fe7c3c895dfb661914.png)
 
 在同轴方案里，TDK 明确写到：两颗传感器布在 PCB 两侧，并与旋转磁体共轴；这样两颗传感器看到的 stray-field noise 基本同相、同级别。然后再通过板厚，让两颗传感器接收到的目标磁体场强形成固定比例，并建议
 
 ，TDK 直接把这叫作 gradiometer design。更关键的是，它还给了一个具体仿真例子：在 Br=330 mT、单极对圆柱磁体  mm、杂散场 4 kA/m（约等效 5 mT）、 mT、 mT、间隙 1.0 mm、 的条件下，角度误差从单传感器的  压到双传感器补偿后的 。这不是“调一调权重”，而是结构先把问题变成可消元的样子，算法才有意义。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV4dIzpw2QViaI1gsUjI5IoeILUS1b49k02LqN0D0hke6IjEtGb4ibQ4gNm3bVbwsNXTDs4ZX5mAh0SmfsicZaMMJeHKv0ialGtL0s/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0fb324732565787838fe6368bc1063aa.webp)
 
 离轴方案里，TDK 说得同样直接：把两个传感器放在相对于目标磁信号 180° 反相的位置，此时两者对 stray field 的响应仍近似同相同级别；再通过 differential output 增强信号、压制杂散场噪声。换句话说，离轴补偿也不是“多放几个点，再让算法神奇收尾”，而是先让目标信号走差模、让干扰尽量走共模。
 
@@ -102,7 +104,7 @@ TDK 这次公开的主线仍然是多传感器几何与差分补偿。但从专�
 
 US12215973B2 的做法很典型。它把一个 operating in saturation 的角度传感器，和一个 operating in linear operation 的磁场传感器放在同一系统里。前者负责测转角，后者负责直接估计外部 stray field；然后控制器基于线性通道测出来的外扰信息，去补偿饱和角度通道的角度误差。专利里还明确提到 quasi-static stray field、autocalibration、以及由线性传感器提取的 offset information 和 amplitude information。它已经不是“我猜有干扰，再去差分抹掉”，而是“我先把干扰测出来，再把它作为状态量喂进补偿链”。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXW4ELT4a9k3N3xtFwLhlB6ABZH0q7dCo14YiaOmjkluCGKRsmfqzjSogibXyLicghpaeGHwH5HOpVsMT0kr65STkW2N3WYuMcv8U/640?wx_fmt=png&from=appmsg)
+![](/images/wx/bb16c677a1c432259fad5780b8fe83f3.webp)
 
 这条路线的意义非常大。因为它意味着未来高端磁角度系统的竞争，越来越不像“谁家 xMR 单点精度更漂亮”，而更像“谁能更早把外扰提升为可观测、可建模、可验证的系统变量”。从系统工程角度看，这比再卷半位分辨率更值钱。
 
@@ -114,7 +116,7 @@ US12215973B2 的做法很典型。它把一个 operating in saturation 的角度
 
 ，全温区 standard angle accuracy 也给到了  到  这一档。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUIGYMZMS9qQBfMM3tjPbB5YWClG0vYHD5PAO8Xic0KAchCu43V4lJSnHiak14u7RCTVN7jKSmkYsic24k9gWiaMIorZZAuyRamHl8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6bc1a95c58095cf9f64bb669c1819e07.webp)
 
 这条演进线翻译成人话其实很简单：
 

@@ -4,9 +4,12 @@ date: 2026-04-22T00:00:00+08:00
 slug: "ZwkGubXL5a3eJP7kyFBqGg"
 description: "工业现场里，“电感编码器不能快”这句话流传很久，不是因为它完全错误，而是因为它抓住了一个真实现象：电感编码器一旦进入高速工况，动态误差往往比磁编码器更早暴露出来。HEIDENHAIN在电感编码器资料里把这种现象叫作 Data Age。"
 original: "https://mp.weixin.qq.com/s/ZwkGubXL5a3eJP7kyFBqGg"
+models: ["KTH7111"]
+companies: ["昆泰芯", "TI", "Renesas", "海德汉"]
+tags: ["磁编码器", "电感编码器"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVxia8RHsNBOf91UcBSByLeHNK1T83m4zGNrX94dd2jxOu2cp73oRJZOKkrNzWuVd2XjJ2aggc5sMD5SaD7twIkWgSxlLuc9JibA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2b7e1b73151a01c46f6b968ccb7e0399.webp)
 
 ## 电感编码器“不能快”的真相：它和磁编码器相比，吃亏在信号形成这一步更长
 
@@ -14,7 +17,7 @@ original: "https://mp.weixin.qq.com/s/ZwkGubXL5a3eJP7kyFBqGg"
 
 工业现场里，“电感编码器不能快”这句话流传很久，不是因为它完全错误，而是因为它抓住了一个真实现象：电感编码器一旦进入高速工况，动态误差往往比磁编码器更早暴露出来。HEIDENHAIN在电感编码器资料里把这种现象叫作 **Data Age**。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWUrvu0YWYt4Az6a6ariboeB6psKMeIM7HBu38uNtg466BseIPV6yFbbicvSMvCwOh9lYOyb7iavEWQgQPQ61Nd8ibOiabdQOTR1JWM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/219941da66467bfcec3f53844cd3902c.png)
 
 意思很直接：位置值从形成到送出去，要经过电子链路、模数转换和接口传输，这个过程会带来一个随速度增加而变大的位置偏差。也就是说，转得越快，这个“慢半拍”越容易被看出来。
 
@@ -24,7 +27,7 @@ original: "https://mp.weixin.qq.com/s/ZwkGubXL5a3eJP7kyFBqGg"
 
 磁编码器的物理过程比较短。像昆泰芯的KTH71这类磁编码器，外面放一个旋转磁铁，磁铁一转，芯片表面的磁场方向就跟着转。芯片内部的霍尔阵列直接去读这个磁场，再算出当前角度。它的资料里把自己定义成适合全高速角度测量的磁旋转位置传感器，最高可以到。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVoNleic3GgibBR3ibbg5jSOCVkVfosnhmiayvu2IEny5lz6Y4iaNmibicQEmpA8hHmqO7tQ2nxXnGCEO1jrL26Kk57jNMXmSE0g4Y64U/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ebfddcf409c45aa3fc6702636d8e270b.png)
 
 这件事最关键的地方在于：磁编码器面对的是一个已经存在的物理量，也就是磁场方向。磁铁已经**把角度信息“写”在空气里了**，芯片做的是把它读出来。它当然也会受磁铁偏心、温漂、安装误差影响，但至少在最根上，它不需要先“制造信号”，再“解释信号”。这就是磁编码器在高速时更省事的原因。
 
@@ -32,11 +35,11 @@ original: "https://mp.weixin.qq.com/s/ZwkGubXL5a3eJP7kyFBqGg"
 
 电感编码器的工作方式完全不同。它没有磁铁，下面是一组线圈。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWLVCicic9eYMwaxiaLknJhydB6ABmk1nl7pDp4uAbicZ4On9oBNkk4dAQoUItj4V8QibpwYydiczOdVu3HsIPw56waKhC4MwG2IPsicI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e9b35b59e3ad5d8a9b83f8fb3ba4b885.png)
 
 IPS2200用的是一发两收的结构：一个发射线圈，两个接收线圈。发射线圈先产生高频交变磁场，金属靶盘从上面转过时，表面会形成涡流；这些涡流再反过来改变两个接收线圈里的信号，芯片最后把这组高频信号解调、处理，才得到位置值。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU8H8kuypa19zVWkNIUibP5uSGLXOpdzibibpCPWDUHR0swLxSlEPyUMeicBeV9IPdUbDBfJBsiacicK87AMtR0lBiaa8JwyTHM2jCUKw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ca5e7647e6917cc93f318e6d92595b7a.webp)
 
 这里最容易被忽略的一点是，电感编码器真正测的不是“角度本身”，而是“这块金属现在怎样影响线圈”。
 

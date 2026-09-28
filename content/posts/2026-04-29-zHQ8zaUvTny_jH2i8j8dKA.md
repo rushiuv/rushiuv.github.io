@@ -4,9 +4,11 @@ date: 2026-04-29T00:00:00+08:00
 slug: "zHQ8zaUvTny_jH2i8j8dKA"
 description: "上回发了一篇介绍中科无线GaN产品的公众号文章, 反响不错, 中科有位老哥还给我打赏了, 回头看他们产品, 又有点感悟, 所以我得再写篇文章感谢感谢。"
 original: "https://mp.weixin.qq.com/s/zHQ8zaUvTny_jH2i8j8dKA"
+models: ["CT-21X"]
+tags: ["磁编码器", "TMR", "GaN", "人形机器人", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWuic2sP60U4K8p2hq9uCnicyAqCcc8xUNYtPUwdupvE3sdLh84KZPN64flugB2Wp1eT77N8FAicBK9zqwiaffLN8HpiaCVsKpDbDa0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/777078d26f034a8bdc53453b8541529a.webp)
 
 上回发了一篇介绍中科无线GaN产品的公众号文章, 反响不错, 中科有位老哥还给我打赏了, 回头看他们产品, 又有点感悟, 所以我得再写篇文章感谢感谢。
 

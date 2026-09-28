@@ -4,9 +4,11 @@ date: 2026-04-12T19:07:00+08:00
 slug: "wG7DMxcRqOCyjebn7EBU7A"
 description: "编码器圈子里，有一句话被说得太顺了，顺到很多人已经不觉得它有问题：“我们这是m序列编码器。”"
 original: "https://mp.weixin.qq.com/s/wG7DMxcRqOCyjebn7EBU7A"
+companies: ["特斯拉"]
+tags: ["专利"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXK8ibmibMjoE07Az3XnTOQ4q8cNPLwAaozmxOByibbPk6FDiaO44WJJVNmzhmlUibibFxfV07pntSzHic6iaeB7ibP8vrNa6LqUjFThiaJA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/67bac806265b97836936f4457b596c67.webp)
 
 ## 一、这句行话，听着顺耳，看着丢人
 
@@ -16,7 +18,7 @@ original: "https://mp.weixin.qq.com/s/wG7DMxcRqOCyjebn7EBU7A"
 
 说得再难听一点，这就像把加了涡轮、改了电控、换了传动、最后勉强跑得很快的奥拓，硬叫成“特斯拉”。奥拓当然可以改，改完也可能真能跑，这不丢人。丢人的是，真正让它能跑起来的，是后面那一大堆改装；可这些改装你一句不提，反而抓着最开始那台奥拓不放，逢人就说自己开的就是特斯拉。很多“m序列编码器”的说法，味道就是这个味道：前面拿一个听起来很高级的旧名词镇场，后面真正让东西可用的那些脏活累活，却被一句行话抹平了。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW7icHrrVfPVydxZljNlnX2AZR6VqatqH9kx3bVrtWzxtdJs5b3KwrvEnlJzGMeKTVkRJvZMDRWpYR9opRAXeM2smSN4eXyq5Qc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/09cc45b98d623ad0f73468e0f5e6d720.webp)
 
 ## 二、真m序列到底是什么，这件事先别装糊涂
 
@@ -34,13 +36,13 @@ original: "https://mp.weixin.qq.com/s/wG7DMxcRqOCyjebn7EBU7A"
 
 这不是我在抬杠，早期单轨绝对编码专利就是这么写的。US4947166A 明确说，对于N位码，每N个相邻bit必须代表一个唯一的N位字；US5563408A 也在单轨绝对图样的上下文里，用具体序列来说明如何通过连续读取窗口得到位置相关信息。只要把这件事抓住，很多行业里云山雾罩的话，其实一下就散了。因为你马上就能看出来：绝对编码器真正的数学要求，是连续窗口唯一定位，不是“先找一个听起来很像数学的名字”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVMFarwxJRIPiaMVPmicrrRr5jo2QRtEz51Iy4WaTb6ENV0kZbuicqvQYS15LNP5m58xj9XLxHYcjHKVzB01yEsQ7cn7Vf7H4gMWY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/79ada82d059d2aa0c6a457157ae03355.webp)
 
 顺着这个要求往下走，真正正对题面的对象，其实是de Bruijn 序列。debruijnsequence.org 对它的定义很直接：长度为n的所有字符串，在一个循环序列里都恰好出现一次。
 
 更重要的是，它给出的构造路线本来就很多：图方法与Euler环、LFSR、递归、贪心、cycle joining、拼接都可以；在图方法那一页，它甚至直接写到，所有二元de Bruijn序列都可以通过考虑所有可能的 spanning in-trees 来生成。换句话说，de Bruijn 回答的是“如何得到一个所有窗口都唯一出现一次的循环码”；它当然可以和LFSR发生关系，但它绝不等于“本原多项式那一套话”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV0qmv2X6fFQE2Xo4Gh6sH8wHkicNpLHANVjZPtibY1mB4ib8xiaE1RBOz3B8p9N6sVQb8Wc10B0eEZblImxbrsibclvs2WKiaH0Fd1A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/347fa23e1f12d94f87b10b2bc5968236.webp)
 
 这也就解释了一个很多人嘴上轻飘飘带过、实际上却极要命的问题：补一个零，不等于事情就结束了。
 
@@ -52,7 +54,7 @@ original: "https://mp.weixin.qq.com/s/wG7DMxcRqOCyjebn7EBU7A"
 
 2009年一篇专门讨论单轨轴编码器序列设计的论文，在一开始就把问题挑破了：要做单轨编码器，本质上是要找到一条长度为e的循环序列，使得由连续n个符号组成的所有子字都彼此不同。紧接着作者马上承认：这个问题一般来说并不容易；虽然这些序列总是存在，但对任意给定的q和e，并没有已知的高效算法来找到其中一条。只有在一个很特殊的情形下，也就是当 e 等于 q的n次方减1，且 q 是素数幂时，最大LFSR序列才已知能生成这样的序列。作者后面做的事，也不是一句“本原多项式”就完了，而是给出一个面向更一般情形的算法，甚至在结论里明确写到：它呈现的是一套穷举搜索式的算法，用来设计任意期望分辨率的单轨编码器。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXucSKicIu14ZibYueAEhkfWiaC1viaHJC1GxUNecYOWlJrAicWKyhzbDhN6jeyjoyN2Yib1wk321ZpFhkf9FcaUiccCe6UsGGspuu2rw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a59524dd74487110366e235993856f3a.png)
 
 这段话的杀伤力很大，因为它正好戳穿了很多行业里的表演。
 
@@ -64,7 +66,7 @@ original: "https://mp.weixin.qq.com/s/wG7DMxcRqOCyjebn7EBU7A"
 
 也就是说，围绕“窗口唯一”去穷举、去搜索、去筛选，本来就是这类问题的正经方法之一。丢人的从来不是“筛出来”，丢人的是明明靠筛、靠试、靠改、靠验证才得到可用解，最后却把整个成品按“m序列”三个字一把打包。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVzhKe5Crgu3TPxO3GVda4OyQM6miaZDXa4XPMFtmpU1fHtUNZlPibgkFKcJUpgvWN4cVgibnM6iaLGLNfxxia3t5RKbQnE4P0eIyGA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/eba02c2ad44107bfbc17b087dca91d23.webp)
 
 ## 五、公开专利自己都承认：原始m序列不够，最后还得改、还得算、还得查
 
@@ -76,7 +78,7 @@ CN107314780A 也一样。它一边讲“对于使用LFSR编码的光学尺，在
 
 CN112947895B 再往前走了一步，它直接把“基于本原多项式获得伪随机序列和多个冗余位，再基于本原多项式获得预测位，之后对冗余位和预测位进行比对，并在必要时利用预设结果对照表定位错误位”的整套流程写出来了。这里已经不是“我有一条m序列”这么简单了，而是伪随机序列、冗余、预测、比对、查表纠错一起上。也就是说，到了工程现场，大家都知道后面还得缝缝补补、加校验、做容错。可嘴上却还是喜欢把整个成品一口叫成“m序列编码器”。这不是不会做事，这是懒得把事说清楚。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXkIE0uicG1CkusngD2yPhciaVCFytTfxXZMbd45lgMFzS8RYUEamxeRyF0DHKBGn04HEqWPKLTet2zgjylREAGDGyXAAoh3X7H8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9c3e45a57e894609003172a4708ce9f7.webp)
 
 ## 六、最难看的地方，是很多东西根本就是抄来的，连错误的解释都是一代代抄下来的
 
@@ -84,7 +86,7 @@ CN112947895B 再往前走了一步，它直接把“基于本原多项式获得�
 
 先说公开能坐实的部分。1996年的 US5563408A，已经把单轨绝对图样里使用的一个15位 M-sequence 例子公开摆出来了：000100110101111。它不是只讲原理，而是直接把具体序列写出来，说明怎样把0和1替换成不同读出单元来构成单轨绝对图样。这意味着什么？意味着至少在公开层面，行业里很多“单轨M序列图样”的基本样板，三十年前就已经亮给所有人看了。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWZ8EuYrrCIJFic96N6bCPicFoTnNPtojXYkYMicTb32fuSwgqiaDZRwtWKDN2vV4C4gKYWxV0fEblPSpY8GWalgNlcMsN2sib2zcTw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8fbee0baa81aaf9c489f1bcd5df9e001.webp)
 
 再往后看，产品宣传把这层口径继续固化。Nikon 长期公开使用 “M-sequence one-track absolute pattern” 这个名字，并强调“单轨就能生成绝对值数据”“上电立即输出全绝对数据”“尺寸更小、可靠性更高”。产品这么叫，专利这么叫，培训材料再照着抄，最后 “m序列编码器” 四个字就越来越像行业口头禅。问题是，产品口径不是数学定义，宣传名词也不是严格分类。一个名字在市场里好用，不等于它在技术上就完全干净。
 

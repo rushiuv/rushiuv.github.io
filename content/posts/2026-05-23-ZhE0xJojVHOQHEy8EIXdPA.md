@@ -4,6 +4,8 @@ date: 2026-05-23T00:00:00+08:00
 slug: "ZhE0xJojVHOQHEy8EIXdPA"
 description: "title: 编码器客户最怕的不是精度不够，而是换了国产以后，现场问题解释不清 date: 2026-05-15 tags: - 磁编码器 - 供应链 - 客户痛点 - FAE - 技术支持 category: 行业观察 descripti…"
 original: "https://mp.weixin.qq.com/s/ZhE0xJojVHOQHEy8EIXdPA"
+companies: ["昆泰芯", "Melexis", "ams OSRAM", "iC-Haus", "海德汉", "雷尼绍"]
+tags: ["磁编码器", "机器人关节"]
 ---
 
 ```
@@ -19,7 +21,7 @@ category: 行业观察
 description: 客户换供应商的最大障碍不是精度，而是"出问题后解释不清，谁来背锅"。
 ```
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWZbdy5bkBcRSVNStFVHia6Ke5S6qRmnTIg4fUTWPibxia8Jslbg009cvKgksuPnhggUdKBiavYiaS3y93XQibS9rH3MDhSx0ouL81IM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/90cb9487634b462c1497dc10639176be.webp)
 
 ## 编码器客户最怕的不是精度不够，而是换了国产以后，现场问题解释不清
 

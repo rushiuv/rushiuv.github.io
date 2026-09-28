@@ -4,9 +4,10 @@ date: 2026-05-09T00:00:00+08:00
 slug: "pq-NblkYCclPmTqeAl5pIA"
 description: "公司里讨论电感编码器高速精度的时候，经常会出现一种熟悉的场面。"
 original: "https://mp.weixin.qq.com/s/pq-NblkYCclPmTqeAl5pIA"
+tags: ["磁编码器", "电感编码器", "ADC"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWTHrYGTqlqj5qkwyjAMqjkJ8CLZHyLYlhrWX6gaI60UhRXcyeJlSwZZXms6r1F6vaqgPAfuWUeuZmGRsqYczd6uYmUhibph4bM/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/a8410887a74ed6618ddab73d92686414.webp)
 
 ## 同步误差不是处理延迟
 

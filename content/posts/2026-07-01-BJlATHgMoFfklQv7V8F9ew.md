@@ -4,9 +4,11 @@ date: 2026-07-01T10:48:00+08:00
 slug: "BJlATHgMoFfklQv7V8F9ew"
 description: "一颗人形机器人关节要稳，不是先看TOPS，而是先看编码器数据能不能准时、干净地进到电流环。编码器采到角度，MCU读数，FOC计算电流矢量，PWM再去驱动MOSFET，这条链路里只要几十微秒级延迟抖一下，表面看是一个角度值晚到了，现场看到的就…"
 original: "https://mp.weixin.qq.com/s/BJlATHgMoFfklQv7V8F9ew"
+companies: ["英飞凌", "TI", "ST", "Renesas", "iC-Haus", "OpenAI", "优必选"]
+tags: ["磁编码器", "FOC", "人形机器人", "机器人关节", "AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW6OP9iaIibibUxp4v072nIqJYtIf5zTGLX9HhloDfYxRKH237yyc3FkRIcZ5JWw3qnmIwNeyUcMJ4tbdn9CtNIvpic9PoT3cGqqLo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/aa151ee9db66c49508c1f1aebcb20921.webp)
 
 一颗人形机器人关节要稳，不是先看TOPS，而是先看编码器数据能不能准时、干净地进到电流环。编码器采到角度，MCU读数，FOC计算电流矢量，PWM再去驱动MOSFET，这条链路里只要几十微秒级延迟抖一下，表面看是一个角度值晚到了，现场看到的就是关节发抖、力矩突变、报警停机，严重时整机动作直接失控。
 

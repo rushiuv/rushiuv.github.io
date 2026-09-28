@@ -4,11 +4,14 @@ date: 2026-04-24T15:54:00+08:00
 slug: "FqGY0fCga9W3cKj-13U2mQ"
 description: "做 FOC 写到后面，很多人都会碰到一个很拧巴的现实：磁编码器不是不能用，也不是精度表上不好看，而是一旦真的进环路，它最折磨人的往往不是“准不准”，而是“慢不慢、抖不抖”。"
 original: "https://mp.weixin.qq.com/s/FqGY0fCga9W3cKj-13U2mQ"
+models: ["KTH5701", "AS5600"]
+companies: ["昆泰芯"]
+tags: ["磁编码器", "霍尔", "FOC"]
 ---
 
 ##
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXuYsHvlnPnYvcKyrbMX6gtaFbNTNmrxUN7MxMHxRpdd5K0lGSZRaiaVvmSGWeDYB5Xu2ZGI1ncvicubt5w0mDtUZojnTxUcmDus/640?wx_fmt=png&from=appmsg)
+![](/images/wx/31300c3ebddd7ac3d8bbe7429dc8410b.webp)
 
 ## FOC里最恶心的事，不是磁编码器不准，而是你永远在“低速安静”和“高速不迟”之间二选一
 
@@ -40,7 +43,7 @@ AS5600 这类器件本身就带可编程的快/慢数字后处理滤波；类似
 
 先说客观事实：AS5600 支持 Fast-mode Plus I²C，从 datasheet 看，最大 SCL 频率是 ，纸面上并不算慢。可 FOC 里真正要命的，不是“总线理论最高能跑多快”，而是**角度链路是不是足够确定**。内部角度更新节奏、主控轮询时刻、任务调度、总线事务长度、速度差分窗口，这些东西只要凑在一起不够稳，最后都会在速度估计和相位滞后上体现出来。开发社区里对 AS5600 的一句非常典型的话就是：I2C is slow and will limit your performance compared to using a SPI based sensor。这个说法不算严谨的学术结论，但非常符合一线开发者的实际体感。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVPwE6RHIwyCMicel2qnZsJaxFTDVxknNC3ryhKEGPEwiar2eMLa1sH3rf7oF3ZiaSSyRp3wT32OZAm0mzCrENB4Pv01JDia5wicBAQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/391a6dea76521edc1270f8a353b9b6af.webp)
 
 所以真正该说的是：**I2C 不是不能闭环，而是它更容易把“角度更新不够确定、低速差分更脏、高速链路更迟”这些问题摊开来。** 你拿它做旋钮、做慢速位置环、做人机输入，体验可能很好；你拿它硬扛高动态 FOC，链路里那些原本就存在的小毛病，马上就会被放大。这个差别，不在“有没有角度”，而在“这条角度链路能不能又快又稳地喂给控制器”。
 
@@ -50,7 +53,7 @@ AS5600 这类器件本身就带可编程的快/慢数字后处理滤波；类似
 
 这当然比最简角度器件更有空间。按昆泰芯公开口径，KTH5701 是数字输出三轴线性 Hall 芯片，支持 I2C 或 SPI，从原始磁场数据里结合软件算法提取运动信息；datasheet 也写了 continuous sensing mode、single mode、wake-up & sleep mode 等多种模式。问题是，这不代表它天然就是一条“零等待、零抖动、专为高带宽 FOC 准备好的角度流”。官方应用描述里，它更明确地提到的是 joystick、knob、displacement measurement 这类场景。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXO9icsczt21ic6X7jVpymELtzBAHwy721Wg3sYLVz6D9ObfZicbeTUhZnnHbeiarThKINhVpKrRCPIwYF41YprsVwrMH3AydPXtwQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d12c4c5063abee6e6186bb258b9dcf2a.webp)
 
 更关键的是它的读取机制。KTH5701 的 datasheet 写得很明白：在 continuous sensing mode 下，INT 低的时候芯片正在测量，这时主机不能读回结果；必须等 INT 拉高，表示一次测量完成后，才能 read back；而且测量之间的间隔由  控制，测量时长又受 、、 等参数影响。换句话说，这是一条“测量—完成—读回”的链路，而不是你想什么时候取角度，就一定能在同一时刻拿到一个最新样本的链路。
 

@@ -4,9 +4,11 @@ date: 2026-08-14T00:00:00+08:00
 slug: "oq5La2n7FcN5tLvz1ajfpA"
 description: "前几天翻英飞凌的新公开专利时，我差点把它划过去。"
 original: "https://mp.weixin.qq.com/s/oq5La2n7FcN5tLvz1ajfpA"
+companies: ["多维科技", "英飞凌"]
+tags: ["TMR", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUOAmbN6rhpEzmibtXMsLibgP9zu4mJy9YvUTrO4ogbnWbrIXtf48mSmY8FwAJns9zVL5j8cYib3bibGYwn0EKvCuboEUfItqo4uibk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/41cc6935eb1dbc2d4b6b39ed3b9d9f38.webp)
 
 前几天翻英飞凌的新公开专利时，我差点把它划过去。
 
@@ -20,7 +22,7 @@ original: "https://mp.weixin.qq.com/s/oq5La2n7FcN5tLvz1ajfpA"
 
 这次撞墙的指标，不是大家最爱写在宣传页上的灵敏度，也不是 TMR 比，而是一个做位置和角度传感时更隐蔽的参数：**线性范围。**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWLLYTcJPpaEIssyKVEf04EibzjQy4Tg72lunfV2gN3cWV4z7kY9dKVlUOTw62y4Sz74ccWvrkFgm7TicVVzENurqAgG1Gzq3Ciag/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3ff8dbe1eb2336bc54acc20d413d3b83.webp)
 
 ### 01｜TMR 真正工作的，是自由层里的磁化分布
 
@@ -96,6 +98,6 @@ US20260029492A1 最值得看的，不是“多层”两个字，而是它暴露�
 
 对编码器行业来说，这件专利真正传递的信息是：TMR 的优势从来不是“灵敏度高”四个字就能概括。自由层结构背后的线性范围，正在决定下一代磁路能获得多少设计余量，也决定国产 TMR 最终要在什么层面与国际一线正面竞争。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXpLt0AyDibEkxyfhy5eX6QD14KoJRF17laPiaNh2reFx3oh81UKicwubIWiaohb6QDOp3mmvbOlicUAOibzBfQVfbuHJCQ3bdYPANVk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3eb4b699715fecdfd4e33721ad08cb21.webp)
 
 **资料说明：**本文依据英飞凌公开的 XENSIV Vortex TMR 技术资料、公开申请 US20260029492A1，以及多维科技公开产品资料进行器件路线分析。专利公开不等于最终授权，文中示意图用于解释技术逻辑，不代表具体产品的精确层数、尺寸和材料参数。

@@ -4,11 +4,13 @@ date: 2026-05-30T06:00:00+08:00
 slug: "wdnRdTWV5fxFt2rsJakutQ"
 description: "包装线现场最容易把人逼急的故障，是箱子已经乱了，机器人已经空抓了，编码器监控界面还显示角度正常。"
 original: "https://mp.weixin.qq.com/s/wdnRdTWV5fxFt2rsJakutQ"
+companies: ["西门子"]
+tags: ["多圈编码器", "编码器接口", "EtherCAT"]
 ---
 
 ##
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUbib67ibCpefFhbNyruWhrDXtDrFxkdqCgOsIOnW7fqkCBZd1K1HMdmkIxEfr8ykRS6y45q5hBA7m8xHDtK9pTE28y8bMiaAyzg0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/e2d4f7f82f3feb7ef0033eb8aa7939c0.webp)
 
 ## 箱子乱了、机器人空抓，编码器公司还只会说“角度没问题”？
 

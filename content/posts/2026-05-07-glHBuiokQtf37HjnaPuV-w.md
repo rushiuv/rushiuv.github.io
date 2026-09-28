@@ -6,11 +6,11 @@ description: "这次享界S9冲上热榜，很多人吵的是责任。"
 original: "https://mp.weixin.qq.com/s/glHBuiokQtf37HjnaPuV-w"
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIW1vymDAr7xZNUhfbZicqeQod6zO5xqZuiaTXgB74E4IQONxfr4QKjQQwQqBibA2x4iaPnZU9fVRwTibWibFicYMsDdMIGGcWKxn6FMkM/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/2d92aef62c0cf7b682885be67b987c51.webp)
 
 ## 享界S9争议冲上热榜， 智能汽车已经开始让传感器替结构兜底
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVK12eLAfwB0hHaCLiam3U2KE0WfzTzNl2cjwRDO1TOkKz6KeRj2iazunasGvq4WDdvz04eVf7j2HaZibo2qk4mxBHaQKXr6X245Q/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6feb38f99f2247bc8d21baac4570b334.png)
 
 这次享界S9冲上热榜，很多人吵的是责任。
 
@@ -18,11 +18,11 @@ original: "https://mp.weixin.qq.com/s/glHBuiokQtf37HjnaPuV-w"
 
 鸿蒙智行这次的回应很典型：网传视频场景**未达到防夹功能触发阈值**；副驾如果检测到占位信号，或者已经插入安全带，就不会折叠；语音开启零重力座椅时会提醒注意乘客和物品安全，用户需再次确认；展开过程中按物理按键会立即停止。官方这段话其实已经把问题说透了：不是系统完全没有保护，而是这次场景没有进入它认定的危险状态。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW23feJq6IOiaFIbBCo2yZubPKWu552Ul0z5UIUjBsnwicszlUiaUxWgNy8cdfJ7Q6ibRMibnobIgsBXzwvonbsx2am0tjUPlmynzNY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/06204c5c122574e2620e8678bf4130b9.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWZzWd1wU9icFIABKuwomshhJbdUia9kWXKnLqB4acOEupcv8mEN3HN4ap3WvNksT1G5I0XLobu0cc6nsyQzouiaECkQ9raBKor2I/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ad64928381f476404310f4cdc14a9102.png)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWEia1HtJLAtEeOznibbBicSvEUTEicC28SVgg2nicr5tlo2AcdymXUZPnSJs7LacHeuSrDwVggfTYJ8usmfKBamx90OZZVthwGzBlw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1c2d7bd55a2585000801ac28990617eb.webp)
 
 ### 不是“防夹没做”，而是系统没把人认出来
 
@@ -50,7 +50,7 @@ original: "https://mp.weixin.qq.com/s/glHBuiokQtf37HjnaPuV-w"
 
 线控转向这几年已经不是概念了。耐世特今年4月公开表示，其线控转向已经上了量产乘用车，并把它放在“全球首款完整全线控底盘量产乘用车”的语境里来讲；博世也在北京车展期间公开提到，自己的EMB计划今年在中国量产，线控转向也已经和多家主机厂合作，准备在新车型上落地。另一边，博世官方对 act-by-wire 的定义也很直白：制动和转向都在用电气连接替代原有机械连接。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWW8N6DNXLHvwbXznatAiaLq2QRc0dOr3V4icdzUVeQbBepXbJ6VoclhP3mdaSR6OOUYLQMP0gdFzvlicuWUN1eGQV4yFicXUBOnSo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/92407caf7236b8329facee127b5700f0.webp)
 
 这件事真正的分量在于，一旦机械连接被拿掉，控制权就不再掌握在那根钢杆上，而掌握在“系统现在信什么”上。
 

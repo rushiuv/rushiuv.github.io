@@ -4,6 +4,8 @@ date: 2026-03-28T16:52:00+08:00
 slug: "-u0jR_oddZix0LA2qTKA7Q"
 description: "在很多设备里，系统是否稳定，往往取决于一个很不起眼的东西——角度测量。"
 original: "https://mp.weixin.qq.com/s/-u0jR_oddZix0LA2qTKA7Q"
+companies: ["昆泰芯", "maxon"]
+tags: ["磁编码器"]
 ---
 
 在很多设备里，系统是否稳定，往往取决于一个很不起眼的东西——角度测量。
@@ -12,7 +14,7 @@ original: "https://mp.weixin.qq.com/s/-u0jR_oddZix0LA2qTKA7Q"
 
 磁编码器就是用来提供这个数字的。它通过感知旋转磁场，把连续变化的磁信号转换成角度值，作为控制系统的“眼睛”。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUMCqmBqkdAh0PznTjia2gC5zoHwWLKlx2Ytw2NZXm5C31TXeiagnia8kTic1yRuXKr9wLGlia24Com8gWza3RpdnE8UAnGbibcrfIeY/640?wx_fmt=jpeg)
+![](/images/wx/31871114370212f1dcf56ab417d7b472.jpg)
 
 问题在于，这只“眼睛”并不完美。
 
@@ -24,7 +26,7 @@ original: "https://mp.weixin.qq.com/s/-u0jR_oddZix0LA2qTKA7Q"
 
 很多人会本能地选择更高精度的芯片来解决问题，但很快会发现一个现实：这些误差中，有相当一部分并不来自芯片本身，而来自信号本身的结构问题。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVg1kqBAEOLR2RkAVmhFrfhiaBmBwsibPeIrTLg2fYibbTs6icyT0KPSxyqoz83wntvKvRY8WX6jpTbCkIJQUvVcuMj9jQiaudr7MibE/640?wx_fmt=jpeg)
+![](/images/wx/4915c822bdd1b3cd4b753c3fad6fba3b.webp)
 
 这时候，引入第二颗编码器，事情就开始发生变化。
 
@@ -34,7 +36,7 @@ original: "https://mp.weixin.qq.com/s/-u0jR_oddZix0LA2qTKA7Q"
 
 这种改善并不是因为“多了一份平均”，而是因为误差被分解了。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVfz58HSibBtAaH27y4ficytyWTVu3Uc1Wib7ePnBCa2MVr659rmfd1zk5BNwUUyWD8KX1r7Qib5fHcqxDoboNDQQo5rsNy92QuqjE/640?wx_fmt=jpeg)
+![](/images/wx/047adeb8a5dbdeeae3ce2c9730e0948f.jpg)
 
 要理解这一点，需要往信号本身看一层。
 
@@ -78,11 +80,11 @@ original: "https://mp.weixin.qq.com/s/-u0jR_oddZix0LA2qTKA7Q"
 
 行业中已经有不少类似思路的应用。maxon 在 EPOS4 中采用电机侧与负载侧双编码器反馈，用于提升位置精度与动态性能；Synapticon 和 Ingenia 的驱动系统中也支持双编码器结构，用于提高控制稳定性；学术界在机器人关节控制中，也广泛使用双编码器来抑制减速器带来的误差和振动。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUWfwa1IiaUR9MBpeRUhgfKmR2EIGgH8AAgeeaP6tVtXwg7YQicBxRbdOK94Z7ZA9RdV4lnyYYykybwJF6oGh9nsFa7G6FPBniamU/640?wx_fmt=jpeg)
+![](/images/wx/7ff665e765882bcfed74f650267b1eb6.jpg)
 
 在磁编码器领域，像昆泰芯微电子这样的厂商，也在单芯片内部加入非线性校准与误差补偿机制，本质上也是在做同一件事：识别误差结构并修正它。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXxDQ4myIb9qNTDmjmt38NfEMoCkfM5p1t6Z84b5ibOvicibRlGomzXa4picSvEQzIVPMuRLe6NUKiata2RSGphDFVgFuibODibTgBbJE/640?wx_fmt=jpeg)
+![](/images/wx/1941fcec9a3b268b6ff790137a6c981c.jpg)
 
 只是单芯片是在“内部做”，双传感器是在“系统层做”。
 
@@ -98,4 +100,4 @@ original: "https://mp.weixin.qq.com/s/-u0jR_oddZix0LA2qTKA7Q"
 
 有兴趣加作者朋友聊聊：
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIW3nl7Chw6rHETibswaHO2gmDvvFP9uHvThjmYpMxlA9py8YiarcNw70BSaESwwhPU6HPE8ibIk3Z8s9ucq72MkxM8oQ1f7xzqgJ0/640?wx_fmt=jpeg)
+![](/images/wx/1301794e2ee08cf3e489a3172f245f65.jpg)

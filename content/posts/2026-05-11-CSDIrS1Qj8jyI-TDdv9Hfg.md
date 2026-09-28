@@ -4,6 +4,7 @@ date: 2026-05-11T23:28:00+08:00
 slug: "CSDIrS1Qj8jyI-TDdv9Hfg"
 description: "AGI从一开始就走错了——我们一直在教一个“永生者”如何死亡，却从没让它体会过“时间不够了”。"
 original: "https://mp.weixin.qq.com/s/CSDIrS1Qj8jyI-TDdv9Hfg"
+tags: ["AI"]
 ---
 
 AGI从一开始就走错了——我们一直在教一个“永生者”如何死亡，却从没让它体会过“时间不够了”。
@@ -48,8 +49,8 @@ AGI从一开始就走错了——我们一直在教一个“永生者”如何�
 
 你说，如果给GPT-7装上“关机倒计时”，它会先骂开发者，还是先突然变聪明？
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVzwkWCITsSibB2mlMUKYIokN3LnSYAib1edXeq11IOYTTXfRiaT1wXcvPtQS6K1rpD4wPlChHfwyphM3ZvDrnpCQlyIzKku9ibfAA/0?wx_fmt=jpeg)
+![](/images/wx/a10e41f51a2b977643af7d3258668c4a.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWibZ9jicAUYdJwicAr37QCRh7ocde9SBbJr81R5N5qZfqcObhPibXiaEVtJ1mwcyDBxhx4oxGHQ9u99icw6ka6qraw5kMxypY9E3eicE/0?wx_fmt=jpeg)
+![](/images/wx/56af5a9aed103cd5f66e459c48b3ae79.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUpsmDIbloic0p2sKd46Hq6jYQ4iaXCR5p5FSeeiaLmHdOVMdkOuKY4ic7ic5e4dyl86B0AI9lwuAna2sCzZT8UmDRksicb1TVR7KLwE/0?wx_fmt=jpeg)
+![](/images/wx/89ff3be201ea82e9b2ed97945c302785.webp)

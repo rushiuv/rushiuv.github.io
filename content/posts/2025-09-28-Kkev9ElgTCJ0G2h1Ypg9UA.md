@@ -4,6 +4,8 @@ date: 2025-09-28T00:00:00+08:00
 slug: "Kkev9ElgTCJ0G2h1Ypg9UA"
 description: "先不忙着骂人也别忙着洗白，盯盘的人都知道，昨天尾盘有人把火点得很旺，今天一开门风就变了，卖盘像电风扇，呼啦啦地刮过。看似一句“利好出尽”，本质是一场叙事的换挡：手机这条线没把“技术红利”点燃，汽车那条线又没在发布会当天给到现金流的强确认，结…"
 original: "https://mp.weixin.qq.com/s/Kkev9ElgTCJ0G2h1Ypg9UA"
+companies: ["小米"]
+tags: ["投资"]
 ---
 
 ## 舞台灯一打，背屏亮起，观众的第一反应不是“卧槽这也太酷了”，而是摸了摸口袋里的那张打新归来的交割单，手心出汗，嗓子发干，心里只剩一个问题：
@@ -16,7 +18,7 @@ original: "https://mp.weixin.qq.com/s/Kkev9ElgTCJ0G2h1Ypg9UA"
 
 ##
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyT4N7fSZzhY6c28nicReKgxibfiaosEX4MQoxaxydgAjujnHibld7PPiaaIHyXKTUx249AS8lEMRchpIsg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/26c44977a07d40af39d911a1f9c83c69.webp)
 
 ##
 
@@ -34,7 +36,7 @@ original: "https://mp.weixin.qq.com/s/Kkev9ElgTCJ0G2h1Ypg9UA"
 
 有人问，那是不是“过去一直如此”？还真不是总跌。新品给出超预期的那几次，市场也试过用真金白银鼓掌；这次8%的力度更像是“前夜涨幅+预期透支”叠在一起的回魂针。发布会不是法术，它只是把预期密度聚在一个晚上，第二天市场用价格把预期拨回现实。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyT4N7fSZzhY6c28nicReKgxibAxEPcHibJqBbzcMPkMnlPYibESWKlQovBc12Qk21nN7hCm879Dib1x51g/640?wx_fmt=png&from=appmsg)
+![](/images/wx/868d2dd3b6b5a01efc0dd7193bedfbab.webp)
 
 说到这里，该谈谈盘面之外的路了。造车这条线已经没有退路，产能爬坡、车型矩阵、服务溢价、海外节奏，每一个词后面都是钢筋水泥。好消息是订单滚烫，坏消息是交付在追着订单跑，等不及的用户开始计算时间成本；好消息是第二款车切中了家庭场景，坏消息是供应链的每一颗螺丝都在抢人、抢产能、抢良率；好消息是车主社区正在自发发电，坏消息是任何一次安全事故都会放大十倍。资本市场懂这些，所以才会把“惊喜缺位”的那一晚，用一根大阴线扣下来。
 
@@ -44,4 +46,4 @@ original: "https://mp.weixin.qq.com/s/Kkev9ElgTCJ0G2h1Ypg9UA"
 
 最后一句丢给每一个在键盘边咬牙的人：别跟发布会谈恋爱，跟现金流结婚。台上话筒再烫，台下算出来的数才是冰。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyT4N7fSZzhY6c28nicReKgxibktpMHOGVyHkRHS9QN53N2NRT9HyZFpCV7ibic9Zvyh4VOuDibm3Nb9dgg/640?wx_fmt=jpeg)
+![](/images/wx/3a3bf1829e23b4838deee8d838ab8027.jpg)

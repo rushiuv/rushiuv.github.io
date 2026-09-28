@@ -1,0 +1,6 @@
+{{- $p := .page -}}{{- $max := .max | default 99 -}}
+{{- $items := slice -}}
+{{- range $p.GetTerms "models" }}{{ $items = $items | append (dict "t" .LinkTitle "u" .RelPermalink "k" "model") }}{{ end -}}
+{{- range $p.GetTerms "companies" }}{{ $items = $items | append (dict "t" .LinkTitle "u" .RelPermalink "k" "company") }}{{ end -}}
+{{- range $p.GetTerms "tags" }}{{ $items = $items | append (dict "t" .LinkTitle "u" .RelPermalink "k" "tag") }}{{ end -}}
+{{- with $items }}<div class="chips">{{ range first $max . }}<a class="chip {{ .k }}" href="{{ .u }}">{{ .t }}</a>{{ end }}{{ if gt (len .) $max }}<span class="chip more">+{{ sub (len .) $max }}</span>{{ end }}</div>{{ end -}}

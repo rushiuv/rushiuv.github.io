@@ -4,9 +4,12 @@ date: 2026-08-16T08:56:00+08:00
 slug: "oiyApDmU-0_pkURu0ZxAsQ"
 description: "2024年12月6日中午12点27分05秒，一位同事在内部项目群里丢了个文件：MLX90382-Datasheet-Melexis.pdf。"
 original: "https://mp.weixin.qq.com/s/oiyApDmU-0_pkURu0ZxAsQ"
+models: ["KTM5900", "KTM5800", "KTM5200", "KTO9512", "KTH7823", "MLX90382"]
+companies: ["Melexis", "锐鹰"]
+tags: ["磁编码器", "自校准", "AMR", "ADC"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVUfrHfCbCalen19Ug37NoEGefPAbWt9R7TknKYibAucg2xNaGIRicjRzvIlJ6SMwnBAp8feM4EMs5RiaESOCdLsQQFm7Zj2rSlKk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/82e9e4a13ba2e0987dd6e46e8c51aa23.webp)
 
 2024年12月6日中午12点27分05秒，一位同事在内部项目群里丢了个文件：MLX90382-Datasheet-Melexis.pdf。
 
@@ -66,7 +69,7 @@ Melexis这套逻辑挺完整：先印一个难看的裸机数，同时给你一�
 
 问题出在读的人身上。选型表一列写"竞品A：±0.5°"，下一列写"我们：±0.01°"——一个标定前，一个标定后，**放一列比，第一行就错了。**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVVFvMTtOZzqBkK0KMx1ehBGOaU4JtBMe8icfQdQbEMDSfVco4sYI7hVyDmUWjgLFU2bbeTb9iaiaDszvFzqWZhhu08ClQYWVY2Rc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3937d7fc240df5f63bc2639504efc577.webp)
 
 ### 自校准的收敛单位不是毫秒，是"转了几个电周期"
 
@@ -146,7 +149,7 @@ The compensation of the 2nd harmonic in the angular signal **converges to its op
 
 这里得说一句：AGC回路上电收敛要十几到几十毫秒的说法（见 自动增益控制AGC），是按一阶RC模型
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6klCb3grBQiaZRoOnzWGOVlcibtEU2bNqaco9l7f06GsfsiciaJGS9D3JOXuAeuDP5G8qoshxLH1iayOwr1iaSNkwQgCibE0ClupstMvSEIdDlzhgAA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/f9ab38e41e2ac05598171521195bb04a.svg)
 
  做的量级估算，截止频率是假设值，**我们没有对应的实测**。真正拿到实测数字的是上面那条PGA闩锁的链路，两者别混一起。
 

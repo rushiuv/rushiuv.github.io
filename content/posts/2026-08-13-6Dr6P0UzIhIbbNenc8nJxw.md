@@ -4,15 +4,18 @@ date: 2026-08-13T00:00:00+08:00
 slug: "6Dr6P0UzIhIbbNenc8nJxw"
 description: "不是争论“AI 能不能跑”，而是把参数、乘法、激活函数、训练真值和 0.5 μs 时序预算逐项摊开。"
 original: "https://mp.weixin.qq.com/s/6Dr6P0UzIhIbbNenc8nJxw"
+models: ["KTM5800"]
+companies: ["Melexis"]
+tags: ["光电编码器", "非线性校准", "霍尔", "ADC", "专利", "AI"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXAXPu70yhejLIvCtHu9AJ6u7t5eu4PBVUR7CIoLHeiarQwIP1ODwfMXzib1tOqYVkdcJGrSUuEstIMalw6CICQCYicDnxFHGdseg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ed13af3f4a38d8760e202d6928a81275.webp)
 
 ## Melexis 用 *51 参数 GRU* 算磁位置，KTM5800 为何仍用固定流水线
 
 不是争论“AI 能不能跑”，而是把参数、乘法、激活函数、训练真值和 0.5 μs 时序预算逐项摊开。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV4V7ExuW0F584Cz62nkOLgU2LnLjvxkLaZTVjCIbibM4j9kSkkE6evgia2k0CRKpOkHIngAp8ib7z4QiaW9dxXhsjloxatjIurtsE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/34135154687cb69637fdbe215388bb33.png)
 
 电机驱动器每一个控制周期都要知道转子角度。装编码器时，角度由传感器测出来；无感 FOC 则用电压、电流和电机模型估出来。
 
@@ -26,7 +29,7 @@ WO2024013043A1 的申请人为 **Melexis Technologies SA** 与 **Vrije Universit
 
 独立权利要求限定了至少两个磁传感器，并用循环神经网络根据磁场信号求 1、2 或 3 自由度位置；每个自由度最多 300 个可训练参数。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW56OqkUVTdibsbm2jeNwzk2UoCkNcra1SOKGJkScOWcpCSfwAWsHVYKDRial5mYiaswOexkx76oLAcpRwebkLf5JDa8tIIInwbr8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8df6f95e63dfbe34a4855812ebcc921d.png)
 
 *图1：专利图 4B。磁传感器、前端和训练后的 ANN 位于同一传感器装置内；ANN 可由模拟加速器、数字协处理器或可编程处理器执行。原专利 PDF 第 54 页。*
 
@@ -120,7 +123,7 @@ MathWorks 的 ARNN 每拍输入 6 个量：Vα、Vβ、Iα、Iβ、sinθe[k−1]
 
 可训练参数：51 个。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUcM7zvgtI4ZK4zM6OQBsfZkxQw7La8WxibVBW0Gk3icW85r5q3sagwK7PZUTBREyh9l04ibFvk363HaeaGMaz8dickx3H6WBkJkj0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/463c1d110bff24979d92646cefdecaa3.png)
 
 *图3：专利图 14A/14B。4 个 Hall 元件配 GRU2 时为 51 个参数；9 个 Hall 元件为 81 个；16 个 Hall 元件为 123 个。原专利 PDF 第 66 页。*
 

@@ -4,9 +4,11 @@ date: 2026-08-30T06:06:00+08:00
 slug: "EjhL4JAYXG76Qy8GkHoAHQ"
 description: "总有人问我，一个要加角度/位置检测的码盘，要不要再往上堆一颗更贵的。我通常就一句话：霍尔够用了。磁轴键盘那种场合，一颗 SS49E 一类的小线性霍尔，几毛钱，SOT-23 一个小管子，输出接主控的 ADC 扫一圈，就到头了——没必要上磁编。"
 original: "https://mp.weixin.qq.com/s/EjhL4JAYXG76Qy8GkHoAHQ"
+models: ["AS5047P", "SS49E"]
+tags: ["磁编码器", "AMR", "霍尔", "ADC", "磁轴键盘"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVv4nDeHkwkAtWbgZfqfzBWYQ2a1b0x4CyOT4xQQaS5Aq6DgzULZ9bojr7KibMaAhEvjIDicf8jpJkrnCnE9NdFGhK4yWfb2BoXA/640?wx_fmt=jpeg)
+![](/images/wx/08f77c0b3245dec5e0af6d37fb500412.jpg)
 
 ## 「霍尔够用了」这四个字有四条前提
 

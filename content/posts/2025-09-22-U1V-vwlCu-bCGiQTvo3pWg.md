@@ -4,13 +4,15 @@ date: 2025-09-22T16:02:00+08:00
 slug: "U1V-vwlCu-bCGiQTvo3pWg"
 description: "坐下就读到新闻是西人马破产了( 新闻连接: 21ic电子网 报道: 唏嘘！估值36亿的国产传感器巨头，破产清算) , 喝杯酒, 让我也来说说西人马, 可能废话比较多。"
 original: "https://mp.weixin.qq.com/s/U1V-vwlCu-bCGiQTvo3pWg"
+companies: ["中芯国际", "台积电"]
+tags: ["专利", "投资"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySBGM4KG6pmSgY5iciauANHI43E1ZrsEZfGOGo2NXCHDJ0JicdbkaYFkU58AVLd5RX69uJ0TVtPIjhUw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/98ef381a500c46d21ef75df5c44e5225.jpg)
 
 坐下就读到新闻是西人马破产了( 新闻连接: [21ic电子网 报道: 唏嘘！估值36亿的国产传感器巨头，破产清算](https://mp.weixin.qq.com/s?__biz=MjM5NDQ0NjM5Mg==&mid=2650606887&idx=1&sn=98482c2f30909ea8609dc00c5ed6a13b&scene=21＃wechat_redirect)) , 喝杯酒, 让我也来说说西人马, 可能废话比较多。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySBGM4KG6pmSgY5iciauANHI4ViaGENcCicG3UrJUaTZ1EOIpMroaQoHVXBTOSNyxGVxibHfPTCv8QbFEw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/373924741628f983b7b4fc840c4e8584.webp)
 
 第一杯酒：你大爷还是你大爷
 
@@ -36,7 +38,7 @@ original: "https://mp.weixin.qq.com/s/U1V-vwlCu-bCGiQTvo3pWg"
 
 ####
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySBGM4KG6pmSgY5iciauANHI4kRn0rA2XCjqcD3fuJ67KvbXnBWPH6h7yp1iaibm7aQHBR4boib5dEkowA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/db91de9394261ffd8d847e00f92cc8b8.webp)
 
 ####
 
@@ -57,7 +59,7 @@ MEMS/ASIC 的专利战很少一招定胜负，往往是按天计费的时间黑�
 你赢了法理，也可能输了窗口期；**判决书能进新闻，回款才能进账。
 **
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySBGM4KG6pmSgY5iciauANHI4ADDetQbFPnB8icIX9UPuAEWTcu5OicRibcyc2hfZHIwQXmLESbesXxbJA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2c1d492f4a83f937eca678e029544dad.webp)
 
 #### 第三杯酒：没开始就结束了的烂尾大戏
 
@@ -74,7 +76,7 @@ MEMS/ASIC 的专利战很少一招定胜负，往往是按天计费的时间黑�
 你翻开账，光“厂房—动力—人”的固定成本就是一个昼夜不眠的计时器。这八个字，翻译成人话就是：闭环没起来，固定成本在燃烧；燃烧的是现金，不是激情。**你把IDM当护城河，对手把“轻资产+外协产能+绑定两家头部客户”当作跨河的桥。护城河没水，城先渴死；桥修好了，车先过河。
 **
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySBGM4KG6pmSgY5iciauANHI4CLe2cMRtvQhpeQFB5IOO1BFrD2oevHjwD4dIMASSibaSzqA7jBvq9Qw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e0d3b46ae8deaf674fd7acbf7a0135d6.webp)
 
 #### 第四杯酒：一地鸡毛，结局是「江湖再见」
 
@@ -110,7 +112,7 @@ MEMS/ASIC 的专利战很少一招定胜负，往往是按天计费的时间黑�
 
 ####
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySBGM4KG6pmSgY5iciauANHI4C2G2lVuGa3dp8Bjlr3xIHsENkwskgGF1HUW2duUzGnXKrUVS4VMkeg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5e6ba7d733b8ddafa6406d7fd22d310f.webp)
 
 #### 第五杯酒：407个人的食堂，最后只剩守灵的灯
 
@@ -124,7 +126,7 @@ MEMS/ASIC 的专利战很少一招定胜负，往往是按天计费的时间黑�
 
 我的推理在这儿再往里扎一寸：参保骤减不是单点事件，它意味着产线班组解散、工装保养节拍停摆、良率迭代中断。良率这种东西，连续性比绝对值还要命；你把班组拆了再拼，产线恢复要经历再训练的“笨拙期”，这又会反过来推高单位成本、进一步降低接单竞争力，形成“人散—线停—成本升—更难接单—再散”的负反馈环。纸面上四个数字，现实里是一条拧成绳的脖颈。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySBGM4KG6pmSgY5iciauANHI4k9HYGHqxuY0NicVJkoDqlSfH9DzuqJyGCibPicjbdibGywxxhwibfW893lA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1543cdd0796f10fc9a5df4a83b99081a.webp)
 
 第六杯酒：最疼的那一下，是自己人递来的
 
@@ -146,7 +148,7 @@ MEMS/ASIC 的专利战很少一招定胜负，往往是按天计费的时间黑�
 
 ####
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySBGM4KG6pmSgY5iciauANHI48N3pOj1q9Gk7CiauYZ5XF9W1UrIicWGJZiao4BUPvTZXu4aROxq8o0mmw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e41244007261ac94db6f31c1c3e3fda5.webp)
 
 #### 第七杯酒：这不是失败，这是一份尸检
 
@@ -164,7 +166,7 @@ MEMS/ASIC 的专利战很少一招定胜负，往往是按天计费的时间黑�
 
 **
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySBGM4KG6pmSgY5iciauANHI4J6S4QL6NVicQsLicn3LTWMZHps2yIEibgScdRzxxiaEQ1rqQLmLhkKibkicA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/dbf0bcb43abc1813df5fa9e0e59aa743.webp)
 
 **第八杯酒：死得体面，不如活得龌龊**
 

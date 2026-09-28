@@ -4,9 +4,12 @@ date: 2026-09-12T08:29:00+08:00
 slug: "_7IfYuHvJFSpoQPfkBSqOQ"
 description: "刚看完满度科技这篇《12万转、1μs延时、16位输出，昆泰芯 KTH7815 对比 AS5047P 优势在哪》。"
 original: "https://mp.weixin.qq.com/s/_7IfYuHvJFSpoQPfkBSqOQ"
+models: ["KTH7815", "AS5047P"]
+companies: ["昆泰芯", "ams OSRAM"]
+tags: ["离轴", "非线性校准"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWNUic8MpxVsW7HdSIAcZ1M3AVHXYLrDpjSwVP6nWnUxmqbDJSpbWKCtHXoh40wQmiaxCDI54icxLsn9aS7zZDVjcU8vXAUV7OJEg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8274f535cc6d772c3fcf88941f666f49.webp)
 
 ## 12万转、1μs、16位：读完 KTH7815 对比 AS5047P，几个规格表之外的现场问题
 
@@ -205,15 +208,15 @@ TSSOP-14（本体约 5×4.4mm）
 
 120000 rpm 时，一圈机械角只有 500μs。因此 1μs 对应的机械角位移是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM41d1kW0icLEbqoeEYEUdG9zW6E8RAbD306eLicicKyRrWuvRfuSkwWwvsdTlXciaZrIgjF8cJeNcEhoEiaW5Fh1SjflfYmY5SXFquMmY8VVAqdqVw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/ee9c14502e051b93755b837ce935aa8d.svg)
 
 而 16 位输出的一个码值只有：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5GTfpRdIpTcO3yuLHvG5VmgnaQoH8u7ciczXQMUpGbwibjCpeuib6iajmrPiatepYemsj8As8iczmZVvGibWibfQp1gUP49rRMxIvYJ5bOib3YRsvrBqQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/daa88992baf4fc88b686b8709745610a.svg)
 
 两者相除：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4weUHwh47ySHedibWoVXG7yPEmpRzJnheZKYV8qibXB0tyuOgBFmtON8f1aWLK0oniaBaqu2Vu0VRzPBc7kZ21hJN9R0JMrU5PsqN0iaWIOk81rg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/26924d4ea8672eff5404029b05091d0e.svg)
 
 转子在这 1μs 里已经走过了大约 131 个 16 位 LSB。
 
@@ -235,7 +238,7 @@ AS5047P 的 DAEC 又是另一层含义。DAEC 会根据速度，对固定延时�
 
 如果只拿 AS5047P 的 90–110μs 去除以另一颗芯片的 1μs，很容易得到一个漂亮的“100倍”结论，但这个比较未必处在同一个测量边界上。更合理的比较方式，是给每颗芯片画出同一条时间链：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5QzUTKYQozFGWq6kHqYJdPftbyfp9O6hQtS9KdRPImhDKiaDGghmCcOv81kVV1g0NJ79KJBia20EDkuhQYASZN4fBzqFkM31iawpR9MAIh1UbdA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/41979e4a23ae3339f8669818a54c8b8f.svg)
 
 真正进入控制环的，是这段数据年龄，而不是宣传页上孤立的一个 delay 数字。
 
@@ -243,11 +246,11 @@ AS5047P 的 DAEC 又是另一层含义。DAEC 会根据速度，对固定延时�
 
 对于一个延时为 τ 的角度测量，真实位置差可以近似写成：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5O6wwtZIMShVyZCDZ3wjlaTrp3DtyeSwQbmWtJKtaia1mN2MkNqdk7wLPrBuDkpKmfUZVAGibichYiaq5Ih9LF3bAc8veXicib7DkJoicPlZVkvkgQg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/7362f5857c91ffb9097d6494bc4e1913.svg)
 
 第一项是速度造成的角度滞后，第二项就是加速度带来的动态残差。如果补偿器只使用当前速度，而速度估计本身又有误差，残差还会增加：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7H7FhcZzuM2pqXP9Re0yMwl30mhicHtIphrpy3qj5icSzT8PbcKPc7HeGiaIhW29XArbkAfibibIKO92sIyWB1HxibYoLgR4vNzicrsjlic6hm6HUoHg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/425bfd3084d4e957269a01be26a7db1e.svg)
 
 这解释了一个现场里很常见的现象：匀速测试看起来很漂亮，启停、换向、加减速时角度却开始抖。
 
@@ -255,11 +258,11 @@ AS5047P 的 DAEC 又是另一层含义。DAEC 会根据速度，对固定延时�
 
 如果延时没有被补偿，高速下它直接变成角度：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4GDCeHQO1ictibiaYrzExkOF6XibhD5zGdXQNz5VBVvrx1dic5qDfPgqVYh4Z5mu6icHuQfhI0ibK9DM7QeAqGjYlXibnrVYJF6z3O1IOCZibHHFKoUqA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3ea971f0c25a5ccab3d79b4ae07c4bb3.svg)
 
 如果转子还有较高极对数，换算到电角度以后还要继续放大：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7z45gpuicvL3lMHLTq899iclPUHibAR5GjGLOFYjv0DjWiaH15Ekq0lvnibSw3BGjCCYxINMbc5Wia4GC9eeTnr7v8ibj6hyGhVYeV4n87tRvMkICqg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/25cf90429802a5224c5ba7009fd832f6.svg)
 
 机械角看起来不到一度，到了换相和电流环里，可能已经是更大的电角滞后。
 
@@ -269,11 +272,11 @@ ABZ 是接口形式，PPR 是每转输出多少个周期，四倍频是接收端
 
 如果 A、B 每转输出 N 个周期，理想四倍频后的计数是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5dnpFkhIaNt2bibG0Pw3JW9fRUibwVJnspYyVj3KVmMgzgL5hPzvbFZhBic3lycZN1EK1zJ8t40cAFCBIbAbLEI6vE5Gc2ic3oFecZLtRl2OOhNw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/82eb58ae28494cd136014267e49cfa15.svg)
 
 每个计数对应的机械角为：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5q5uWo2faSM2ticOhk7ydIGicv91dbvYibHDFHiayweR3NQdF1Y2rNYSzoYdUMJA2Y9JlE3MZXalq4CY9mwAiaM1sgaZpNtz38iaibQvG7sk0z2G9tQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/0cb487cd88674bbe6d019b35d083609b.svg)
 
 Z 相通常是一转一个索引脉冲，用于回零、校准或建立机械参考。它不是把 AB 两路再增加一个角度分辨率位。
 
@@ -301,7 +304,7 @@ MTP 和 OTP 的差别，不能只写成“一个能改，一个不能改”。�
 
 尤其不能把“写入动作完成”当成“参数已经可靠生效”。至少要做：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6qOceglOMSRvloQl9qiavnNnBibJOgWrW2JZYqkFlf8X8n2XDA5N9XokLhznzE9jGuRh2TfZKF4ibNc1icq9Oko3icwVo7XLpQWES6kW2FGtXHceg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/07062de98169ff9d11562633d3c74c8b.svg)
 
 如果校准表写错，芯片可能不会报通信错误，输出仍然是合法的角度数据，只是角度已经不属于真实转子位置。这类故障最难查，因为 CRC 可以全过，状态字也可以正常。
 
@@ -311,13 +314,13 @@ MTP 和 OTP 的差别，不能只写成“一个能改，一个不能改”。�
 
 理想信号可以写成：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7p0aGulTfiaEGupYuArZlDzYKvtMhXVicPELOtG0gzvglQW0KZMzbfcib4s7CxFBWuMvsfQrCUtFZgyKCDfSIq8DbzehuTOXgEumrY6WbibHib2Cw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/1a5468eb9df399668c9d7cc3f2f5bca6.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6sBDEiaW9edzQ7gC1SQ3VnRBWN8heCAMYx765ZGDvcEqR1GiaowMKhb9xqIcHcmLudE7orxk05dfWp9PoGSnMwh3IicVUH6fKhekk0bbJoa5ZPg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/3a2ff8a6f80d18c899bb1aae8d619c13.svg)
 
 实际信号更接近：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX8sEhNQL0AR5lHhfNiaGjicYKkHtHRwK8J6O6sNPavZdKXge0ZkTQ0GfsxCn9xRmc11REAWlXoahWV3xNrthLkKI16rFHGBoxDU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/73eee4018ef6a0baaf9c476f2d3675a4.png)
 
 圆心偏移、X/Y 增益不一致和正交误差，通常还能通过 offset、gain、phase 这类线性校准处理。画出来的 Lissajous 图可能是偏心、椭圆或倾斜椭圆。
 

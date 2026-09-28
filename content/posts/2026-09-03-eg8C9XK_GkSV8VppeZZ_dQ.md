@@ -4,6 +4,8 @@ date: 2026-09-03T08:25:00+08:00
 slug: "eg8C9XK_GkSV8VppeZZ_dQ"
 description: "同一颗电机端编码器，在关节位置那边被减速比压小；到了FOC，机械角误差却乘极对数，延迟再乘电角速度。"
 original: "https://mp.weixin.qq.com/s/eg8C9XK_GkSV8VppeZZ_dQ"
+companies: ["宇树"]
+tags: ["磁编码器", "非线性校准", "霍尔", "FOC", "人形机器人"]
 ---
 
 如是有为 · 编码器工程手记
@@ -13,7 +15,7 @@ original: "https://mp.weixin.qq.com/s/eg8C9XK_GkSV8VppeZZ_dQ"
 
 同一颗电机端编码器，在关节位置那边被减速比压小；到了FOC，机械角误差却乘极对数，延迟再乘电角速度。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUWNaL4T6DYUbZgX0baYKtCcbmicSw3BoVfCRibibHyp3VMYCQHK6CzfEkq5VuEgecOPicbE5wn0V3sVq0FwGic6AiaoKDgY3dKeVcJg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/e3d1d2dc7e7d81b77c0cf43565e573b9.jpg)
 
 《财经》那篇宇树长文里，我最先停下来的不是上市，也不是王兴兴。
 
@@ -38,11 +40,11 @@ original: "https://mp.weixin.qq.com/s/eg8C9XK_GkSV8VppeZZ_dQ"
 
 宇树没有公开《财经》所说那颗“普通霍尔”的位数。我就拿一个普通的12 bit做示例。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWNBupicKNCdMhPE9TvISt253Tpw97Sic3CFrkx96oGVphWgSdgdpMSCrd4ErHL1jl7UBBbiaCTe8u8gib4PLP0QZA7ibrruiaibZdXlg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/69939a116b03479f8aa0d7a3931c8712.png)
 
 12 bit 的量化步距
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW4McG5d1V8rvhib06kicrsiaDqN4PqR5nyyqSnQ2vdkstyxhQFzpNYI9eUnBvRC3CqGu8eVAcxvtdfK5Z5ptXia07ZMmd11RwR8sM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/19356e204ff7e109eebb6bce152bfb41.png)
 
 经过20.58:1折算后的量化步距
 
@@ -50,17 +52,17 @@ original: "https://mp.weixin.qq.com/s/eg8C9XK_GkSV8VppeZZ_dQ"
 
 当然，0.00427°不是编码器精度，只是量化步距折算。实际磁编码器还有INL、偏心、磁场误差、零位和温漂。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXOKl98Hia5EzjzA5OHYczf7nZjZt63yJ94xUrxQ4oENuRC7IMX9aPtibS5SeY18CSK6Yj1See06aQ7CEfrndWkibLKbtB4GaAxEM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c2a65c3b633cd4badf4a6e111f20ef71.png)
 
 假设电机端机械角误差为0.5°
 
 如果为了把电机端从0.5°做到0.1°，磁场、装配、标定、温漂一路往上堆，前面辛辛苦苦砍掉0.4°，真正落到关节端少掉的是：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVOJbmtBkYQlQzJep7AC36beBBN57V6S7uWvFWNRXkJ75SEswNjaQaPoEENF20b4XRjGV4eegRVPOurcKckiasC4vvlibeI1Hrls/640?wx_fmt=png&from=appmsg)
+![](/images/wx/cf634ce96071baeeba56c3d773e8dfa4.png)
 
 钱当然可以继续花。只是算到这里，我通常会先把头抬起来，看一眼减速器后面。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXcgUSV3pVSTb4l9XD0tKiatwic5E4b08AnoJyhicGZRcoANFZ7icEy3HhvvfrBQ3ibrdLC6QR9jE2RHMnoIga0QY4CPJlMOocagbIg/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/8ecf59c549fa673766cb233ab4a224dc.jpg)
 
 02
 
@@ -70,7 +72,7 @@ original: "https://mp.weixin.qq.com/s/eg8C9XK_GkSV8VppeZZ_dQ"
 
 一加负载，味道就变了。电机端角度没觉得跑掉多少，输出法兰已经让了一截。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXVfbnwdv6EznhGQcb3UILAHtmk6A47QtysY1Zec5e1b74POpfRbnQctiaFddK8eRKravCB9OWV5pavrmKmQtWsDawUqyxoyibLM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/38ae9bc8f64c947fa8345f2da75b8579.png)
 
 传动误差与负载弹性扭转，发生在编码器后面
 
@@ -86,7 +88,7 @@ original: "https://mp.weixin.qq.com/s/eg8C9XK_GkSV8VppeZZ_dQ"
 
 但这句话只要往FOC里带一步，就会出事。FOC要的不是关节输出角，它要的是转子电角度。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXhQgcHO4AJOhqDic3gXv2ClS9O8t9Vtt3WRNUejjYdn1R0opm7gdTER77ca2MfibCZfcluicbQ0IfVduNWNmiamYfFCZlGWaCVghM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6dbc7fbe4818d89116a73e9a41b93941.png)
 
 刚才在关节位置那边，我们还在把机械角误差除以减速比；到了换相这里，机械角误差却直接乘上极对数。
 
@@ -101,9 +103,9 @@ original: "https://mp.weixin.qq.com/s/eg8C9XK_GkSV8VppeZZ_dQ"
 
 公开拆解资料把这类G1小关节电机描述在3000～5000 rpm级别。那就取5000 rpm看一眼。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU37NyWznszx9C229NvMBzzRQTCANJQ1glmnUoJcCzCf3OnYKlv3OwIPkxqo28AU5l1SLH2xk3dlFWoIg1icYvqCib7xNPibl4eaE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/db4d88ad999bc7075c34bbcee46159ef.png)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWs06A8CfN4f4Z6ZDcBCCckD5gAHMRWLYGWLJicYCkwQJqL3MgPNpBPHLYrCJGkBbxQlhAhYkP89Em0PhicyZox2Xd6dv9CH1ibUU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/008037045eb93eac3b58fecf82fced2b.png)
 
 5000 rpm时，角度链每晚10微秒，机械角已经落后0.3°；进入FOC以后，再按极对数往上乘。
 
@@ -121,11 +123,11 @@ bit数最好找，INL通常也能找到。latency有时候得翻半天。可电�
 
 同一颗编码器，两套完全不同的尺度
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXr4VefbGNuIOKcbL1T3bIcLd2icuAibP6WeNiaick0XI0giclqLjAtoOfzNWqOcspaFYeCAP3icymRoVUDicWlREb5bCY4qRR3Sq1AoU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7498a91eb6b8ee1eb050cc6758c757a3.png)
 
 Position loop
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU0ETmlrjZnqHerErgvEoiaqLxuwnZn3lW4Mwjm27kiccdZoqlPM2nBMWmiaa2o5nSBhgQ9owgrTqa3cOAv4ibc3juxj1OicAJ4HFiaQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c2f3444ed53030fbce5b9960fe512313.png)
 
 FOC
 
@@ -139,7 +141,7 @@ FOC
 
 但“双编码器”本身已经很有意思。只要测量点不同，看到的东西就不同。靠前的传感器可以把高速转子运动看得很清楚，却看不见后面机械链自己发生的变化；越靠近最终输出的测量点，越有机会直接看到那些减速器前编码器看不到的东西。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVjlcKlrnjTvlRfVObj5dk4RCT6EtJC9oicP2fHqib6FLy3MYNvuTmicFxnRUiapPmJORfGwV3A2XU1ib8upiaibOMQiczvO2cCfcNucibE/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/43935986cc412d4e8470e8f09002f12e.jpg)
 
 06
 

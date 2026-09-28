@@ -4,6 +4,8 @@ date: 2026-04-24T17:58:00+08:00
 slug: "AtQ3p3xO9DRTgSBpa1nC2w"
 description: "前臂集中驱动、腕部过线和腱绳传动成为机器人手新路线"
 original: "https://mp.weixin.qq.com/s/AtQ3p3xO9DRTgSBpa1nC2w"
+companies: ["特斯拉"]
+tags: ["专利"]
 ---
 
 前臂集中驱动、腕部过线和腱绳传动成为机器人手新路线
@@ -28,60 +30,60 @@ original: "https://mp.weixin.qq.com/s/AtQ3p3xO9DRTgSBpa1nC2w"
 
 未来机器人手需要的不只是一个角度值。前臂执行器走了多少，不等于手指真实动了多少，中间还有腱绳弹性、摩擦、腕部串扰、柔性关节形变和指尖接触状态。真正有价值的反馈系统，要能判断腱绳有没有松，腕部有没有影响手指，关节有没有老化，抓取有没有滑移。灵巧手的竞争，正在从堆电机、堆自由度，转向结构、传动、传感和控制的一体化竞争。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWO8Z0z7vKSibGyRnyjI0ITib4RA8d2EU5yiclWfB9iandK6l47ogZzQaEfKhKyKFYAf2N0ler75DxFOR02ymwyAcNOyWhnAibFeC1E/0?wx_fmt=png&from=appmsg)
+![](/images/wx/2b0c2afaa72b623b2c304d91947a6954.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW1lh5VqrALtG8jK4MX14By4h8SYKsjR4MoyMxLXXiapmR9w8ibuzaRS6vQGy3MCRXK3o0d8MjroibZmwRW2N437T5vP4dewxCIr8/0?wx_fmt=png)
+![](/images/wx/15f2f2bcd2f38a70b0ac7107b8c4ad33.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUesEWQ7K5DGy4ufVBqTU1ZrPbDfPUvTPDv0b3Cu2Bt0lgl7vVjCzD2AK9NcdQVCZUkNFCamLDgOlBmOUfpJZqHcLib4Jm4Ph2U/0?wx_fmt=jpeg)
+![](/images/wx/7b031d4aa77864f56d70e3fc682d3ee6.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVT4Y3OQRFPRGAEaIq49Z0a4PdfL4WGCqfspk6HEibZc3pSO4WYSNDd7DhHNADtm0VlSttrepyqPic3EKb4He3X6Hq1bCS4GvISA/0?wx_fmt=png&from=appmsg)
+![](/images/wx/a0270c1cf2dabcbaff3b9f804368ff39.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUJ240bKXmr1UjuTt2VQ3kPVUVOraaDuqjiaZ7hLmouJExKmE7aD9BbnGRmO49OiayA7mtmLRic8XDh8l1U4skia16GqtPGCjfCzoE/0?wx_fmt=png)
+![](/images/wx/c77458762a789bd6717bee66b330dc45.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWaDAeljhF7vnyibOy6BYwLK1tlrtU2tvCSyn2xwL3FRib2DedtILDyibbRO7zqSLrNKUFfKn7UrkUCXVFB4v5iaRiawlNC0qhewicFo/0?wx_fmt=png&from=appmsg)
+![](/images/wx/ab45f1aff190a0efe1a6cab1037ea4b3.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXichu3G5VWQE297tn1cTbEyKB7qC1lHrkCyOBJEDusJCwUrmmfKph4hiaM8PTytnAF9OSBLcStff5YMTaxKwhR7crsc7472yC2A/0?wx_fmt=png)
+![](/images/wx/af2e25779ff7ab9d276c2154009b7725.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXr7PNNhg7ORYz0NMbLW498zY6w235VsfWfgVDRxHRJLTy6yiaBOceXVVRgOvZ0phdAQGvj6HAunaZNz2OpSdYHZ25q3EwNOVjw/0?wx_fmt=png&from=appmsg)
+![](/images/wx/6bdb8b51eb8b28399b79011555387b84.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWViaSNiaCNTw5GIYPP0iaQ3Icsc5xTLd99ib5Hz9BY6CIuMib0n7CcNdwCbSQVWiae5G2xlgzG3OqiaoEKU1xOumx2CGY2yZ8QiccKTRI/0?wx_fmt=png)
+![](/images/wx/13a9b232664cb858cc128abd8c6f61d7.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVc5ibvUR0Ruoo8tGwDjQ5N7fbUC5JCUw3Mf2t3mkic2V8XcxZx1gckIDW4QEVZBec7gDY5e9jnq3KjYDHzicF4TkjDgmEAKT0iaWI/0?wx_fmt=png&from=appmsg)
+![](/images/wx/bb7482ccc360de2fabda56c1cb8cbf7e.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUh2YB6h6NlZ1FxNbsw8eXicldr0drAibDfkMOZNoLiaaWCHOkJOoPdsds08SudbbeYfhX6EDHWQyO6hklSYic3VfIeROZBM5ENgwU/0?wx_fmt=png)
+![](/images/wx/eabd67bf7294bf88d94c487e3c8bbc85.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU1ut65rFAnE95CcZ3DJfpAxWfZ7lm9aCE3dem8ngj8lrD6B5VYNbJ7es7zQdg5TEFFra372IvL3yPhicMbSXJsn4v4jLCPzhJo/0?wx_fmt=png&from=appmsg)
+![](/images/wx/d34db54b0dc4030a58c9af264a760bdf.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXjrUFQ24kENKGFQVoP9funftTxD3n5BFa0H20aXJpaEZYdqZJWMrIPTnRoZxibctUc5yJQgLDKVZPiajfDQBrXTS4IKXGIqicibH8/0?wx_fmt=png)
+![](/images/wx/bbbba3782f37aaa9466d889e03808197.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWPTWEFlJia2EbRUtRCxwfzd8C4m0e8BS3EzW8B88IbKJiaASG10dha1PRdTEW4In80niaaAmGpaw1MvUNff8jib2bjvFtb8vffMVs/0?wx_fmt=png&from=appmsg)
+![](/images/wx/7ea5cbb4f6389bab294692886766a784.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVTrVnmgrkYAoNY6joUhn7nkLfetxSgDA3sj0JJFtYCydlKWfZUdIxcmQZDibAicT17uib5Mon7tQNdp2rrgZiaJS4TRJibWJTYXZXg/0?wx_fmt=png)
+![](/images/wx/01d750a9461e09f52a821c777c75a973.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVvGDibGcVl0yicSv3cAsx2jnNVgvm7XUhSgNQyAiatOU9f2SKJrVibIibqic7S2OqrLMH6wdrK0KOomLXtf3tfF1fdA1TQ0hfEoRctQ/0?wx_fmt=png&from=appmsg)
+![](/images/wx/4de38eac276280090c3a631679ceecbe.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVAMDV66lj1dboiblzYKg6xCBibIkbag3DBibjlibYias1NibVT6B58UdY9cFhx18lT70mTVphDmAlib1taeXHRtco5wiaIFQsKXnYF0To/0?wx_fmt=png)
+![](/images/wx/9d1ad84725db8ff52f6e03127995a65d.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWSIlwicYTo92oXsyIKdzaIUoe9ps1lCbcujN75PSX0QJyibIEMXKGuOjQPOelKsAK0y4Q1pgwLAsSTlvqlkgOOo083CADhdZNKY/0?wx_fmt=png&from=appmsg)
+![](/images/wx/a4c2fee4a91eabd51b923b7a54f60a43.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVYBlibBTyfopiawibtX6sbeENiap4Ve7dpMIftslbLJT1OLgWL3YWkDiav6fXBlNyPQXELgFqa2cNQP7DWJEBuvwUOaUOLsBxTnOVE/0?wx_fmt=png)
+![](/images/wx/1452df2f9ecdcce8eb59be67c1434562.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWTRTGuVZ2cPuw3JyKnU1mWtQt7LXIaq7a5iauOlwJ6MOQQLfB0o4r4EAZWsBZJDCQyFicInibC510Oyxb1sT0OvibaKE4VkibuJAAk/0?wx_fmt=png&from=appmsg)
+![](/images/wx/941f320b4a22f51a361b0c08d49d7659.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW4Y89Ik4iby9UFkp1OOlcsibia6cvbQaQcadErrZAMBY4mcTn47gIZHajicQzsAHzKxjtibWGgBdLCtDQw4yx7QFibu25715PAmAHG8/0?wx_fmt=png)
+![](/images/wx/763f550bca6a02480f1e590b7a7e375d.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWoJX8PLZMOuxcPSbtx6E0EQqw5dldiaRId6l9rHyCm8ic0TxdZVEHQgsaHP71PLflyDKg5rbv77Qa3CzK8BSVlFHR0hwVMpfVxc/0?wx_fmt=png&from=appmsg)
+![](/images/wx/ddd5242925dcf18879947e9751608dbf.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU55IsRfnyJjlic6UDeTghPcH6P7uhiaPHeeHTHvWm7iayJL2JkhTM4QOjOa0TtoiaRqhq2MmFlQCQVZl1iaQezmtHCzrxqPN264EbU/0?wx_fmt=png)
+![](/images/wx/c0bde2a45dc582bb012051b976bc6582.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXJ8N1ibmdOHKaKcD64ONNWYmllNZtZbEpxfTO09jvQONSNtvp0yCudXiaNf6wyjhavWDUNIrYdFSiadkv871kMKe0EX2vvD8r108/0?wx_fmt=png&from=appmsg)
+![](/images/wx/bcc3dcc89ff79875268ba833b59d9af2.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUZfrGXIQtznz8loR7Ipsic1ia9mfNWS86vmWQxJdK0VkMdarckYTCwkwWG7r8TcWgteg8pic7DuwKLTsyfj8Snprd3icj7mC7o3lQ/0?wx_fmt=png)
+![](/images/wx/6721575b68c7484a5af70f579fb2f4aa.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWqfNkw9Z9zhTtRx450W4sicbLfmZO3xWrbALHAU40prFMXC8tibepHRsmXGGaqII5Uyf1JLYc8Lb9GZoUTiaeAqHjyWTMDc1KVbI/0?wx_fmt=png&from=appmsg)
+![](/images/wx/317d732566c7796788b8654a1961b93b.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW7cFVEOq64ZXRzkk4DsTN0RKcXqVUsfXO5knds5Z1n9KzicoeLbRQmhfx2psxyy7dVQGicl1Fu78tZWYG2vPpfSOibRp47Q8K3Bg/0?wx_fmt=png)
+![](/images/wx/8bdd05fb6445ab4e358be3e5e9dee34a.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWQtzNHic5n1SZTPywuOsdrfMbwUQEAl1gjC9ib15QHz0icKoiasqRTiaZxnXI9o1qWy4Pd92hJp2DuybQaAibbXh3mZMvERyfKHAO54/0?wx_fmt=png&from=appmsg)
+![](/images/wx/1a66af48b44a3554e55bbfec41570af4.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWMP7Ze8K44o8XmGB4shzl9LzlQxfX8tECicUASWLbsYMmQ954b20IwKFliaHsfTlogIlw4QdADjjbODgLtnfV8dLTreJRsVs59k/0?wx_fmt=png)
+![](/images/wx/65321b4d5e71027dad7a39378e441fd8.webp)

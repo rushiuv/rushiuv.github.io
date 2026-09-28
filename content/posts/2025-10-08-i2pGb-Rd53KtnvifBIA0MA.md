@@ -4,11 +4,13 @@ date: 2025-10-08T00:00:00+08:00
 slug: "i2pGb-Rd53KtnvifBIA0MA"
 description: "公司做大之后，权力的反转人人都能理解。组织从混乱走向秩序，从依赖个人走向依赖系统，这就是成长的代价。"
 original: "https://mp.weixin.qq.com/s/i2pGb-Rd53KtnvifBIA0MA"
+companies: ["中芯国际"]
+tags: ["AI", "投资"]
 ---
 
 ###
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRVVvCpbq33TgbKviaRTac7lE7taia4G0cmrHc9MOhGCnmua52BBn5T8DialQA6zPfAiahGQeN5KZWs5Q/640?wx_fmt=jpeg)
+![](/images/wx/6982e12fed5ea260e67b78a2f0a9a2c9.jpg)
 
 ### 权力反转的合理性
 
@@ -80,4 +82,4 @@ DeepMind的创始人被“休假”时，新闻稿写得温柔，说是“调整
 
 真正的悲哀，是当一个人开始用资本的语言解释自己的委屈时，说明他已经被那套逻辑驯化。那一刻，他不再问公平，只问还能不能继续留在这艘船上。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyRVVvCpbq33TgbKviaRTac7l0CbkqAq5fb3xUicoeslmpo8f4kNHzicIqiafjsBzzzvoLAjuAw8MOBDkg/640?wx_fmt=jpeg)
+![](/images/wx/d8f97a04a7de67c3cca40c6aa58998c2.jpg)

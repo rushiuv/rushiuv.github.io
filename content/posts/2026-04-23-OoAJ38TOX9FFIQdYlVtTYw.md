@@ -4,6 +4,7 @@ date: 2026-04-23T22:16:00+08:00
 slug: "OoAJ38TOX9FFIQdYlVtTYw"
 description: "STK-636TMF是希磁科技推出的TMR芯片级电流传感器，专为第三代半导体（SiC/GaN）高频电力电子系统设计，以极致响应速度解决行业痛点。"
 original: "https://mp.weixin.qq.com/s/OoAJ38TOX9FFIQdYlVtTYw"
+companies: ["希磁"]
 ---
 
 高频电流检测的国产速度标杆
@@ -26,8 +27,8 @@ STK-636TMF是希磁科技推出的TMR芯片级电流传感器，专为第三代�
 
 这款传感器不仅实现了关键性能的国产替代，更以“快到先一步”的响应速度，打破了进口产品在高频电流检测领域的垄断，为国产第三代半导体的规模化应用补上了关键一环。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWyzOsXFlf4LHRfv3B2OUTmFibicWVOteSHl4mNqld59wzGzq4laiaB0oAWYzV6elf1h2F1iaDNmB6KsIdomc0lX1tsUmTNuUWQrdc/0?wx_fmt=jpeg)
+![](/images/wx/27da1e28af78e632842a3b176b3fd62c.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXWx4k5KAQdrpzxeDvkz8RWVdgdj6MibdOVSUV7GnQciaE8Ae2pS1vyibANlpNY6en5oouEpH3vyfgn9ynpnDXgHGD7r0uS1lchhc/0?wx_fmt=jpeg)
+![](/images/wx/9a83773f8a78a2c12bf8941f12289f11.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVmMibZzmWasgbssNfBxpuiaIXibwqI91nYYkqFFmoPQZ2GehWILibQibo8GkbKMCRZbXQEVCVGDFoZW73ibUu7ZwEuk0uoZuf8sX0r0/0?wx_fmt=jpeg)
+![](/images/wx/7085456ffbda873808ac181fcf3f3fd2.webp)

@@ -4,11 +4,14 @@ date: 2026-04-03T18:10:00+08:00
 slug: "bUKUWjtbsKjAI_soBETl_w"
 description: "这几年看编码器路线之争，越来越像技术圈版宫斗剧。有人把光学捧成正统皇帝，有人把磁性说成量产世界唯一真神，还有人拿着电感路线的 19-bit、22-bit、<100ns，恨不得当天就给行业改朝换代。可真到了工业现场，客户根本不认这种排位法。客…"
 original: "https://mp.weixin.qq.com/s/bUKUWjtbsKjAI_soBETl_w"
+models: ["KTM5900", "KTO9512", "KTH5701", "KTH78", "KTH7101", "KTH7111", "MLX90520"]
+companies: ["昆泰芯", "Melexis", "Renesas", "iC-Haus", "海德汉"]
+tags: ["磁编码器", "非线性校准", "TMR", "霍尔", "车规", "编码器接口"]
 ---
 
 这几年看编码器路线之争，越来越像技术圈版宫斗剧。有人把光学捧成正统皇帝，有人把磁性说成量产世界唯一真神，还有人拿着电感路线的 19-bit、22-bit、<100ns，恨不得当天就给行业改朝换代。可真到了工业现场，客户根本不认这种排位法。客户最后买的，不是哪条路线听起来更高级，而是谁能把精度、延迟、污染、温漂、安装容差、量产节拍、返修闭环和客户导入这些证据，拿得更全、写得更厚、撑得更久。谁能做到，谁就在那个场景里赢。做不到，再漂亮的原理，也只是会议室里的幻觉。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXsv8jNmcg7wTTicnaGBXOFQKZZRkpAKicvePkjnoshC3YdZzB2wR1Vo5uOQkwIOh1rRKTziaB0F0TN6QEcX6OyAwV8iaibR6SWocyQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6d13c88c36dbd2723e0baa67579b83af.webp)
 
 ## 一、光学没死，死的是那种“光学只会怕灰”的老黄历
 

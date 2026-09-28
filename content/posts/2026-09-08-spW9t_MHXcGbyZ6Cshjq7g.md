@@ -4,9 +4,11 @@ date: 2026-09-08T14:26:00+08:00
 slug: "spW9t_MHXcGbyZ6Cshjq7g"
 description: "今年上半年，人形机器人出货 2.2 万台。"
 original: "https://mp.weixin.qq.com/s/spW9t_MHXcGbyZ6Cshjq7g"
+companies: ["TI", "智元"]
+tags: ["磁编码器", "人形机器人"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXeoia3W2scic6UoMV9YDsWg1Rmjt4HMwoSxeAxqKUgHmSZMgTNOJOdOWjkSpCIiav4nglh7tOlogRmlf4shA4sibJ4T5Hgwy3BeUQ/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/b8e7d730cedf6d6114026a0264124160.jpg)
 
 ## 六成都还在表演：人形机器人真正的门槛，还不是智能
 

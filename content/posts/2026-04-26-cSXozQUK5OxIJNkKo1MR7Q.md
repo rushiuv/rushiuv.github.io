@@ -4,15 +4,18 @@ date: 2026-04-26T00:00:00+08:00
 slug: "cSXozQUK5OxIJNkKo1MR7Q"
 description: "雷赛智能最近这波动静，表面看是财报好看，深一层看，是运动控制真技术开始兑现。中国基金报报道，雷赛智能 2026 年一季度营收约 亿元，同比增长 ；归母净利润约 万元，同比增长 ；伺服系统收入约 亿元，同比增长 ，无框力矩电机等机器人业务持续…"
 original: "https://mp.weixin.qq.com/s/cSXozQUK5OxIJNkKo1MR7Q"
+models: ["KTM5900", "KTM5200", "KTH7111"]
+companies: ["昆泰芯", "雷赛"]
+tags: ["磁编码器", "光电编码器", "多圈编码器", "自校准", "非线性校准", "ADC", "EtherCAT", "人形机器人", "机器人关节", "专利"]
 ---
 
 ### 雷赛真正需要的，不是更准的编码器，而是能一起解释关节抖动的反馈伙伴
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXIEBEDOicmU9y5sFW7b4SKKbibLPlouSHmGRXMKZfb3A5PtnxD8eJTpNHkbaJ401Qvp4BXcOFWfmb5IYJXic1VS88XSayAials8Lk/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c07662dc92877258bcc690dd36d55f0b.webp)
 
 **雷赛智能**最近这波动静，表面看是财报好看，深一层看，是**运动控制真技术开始兑现**。中国基金报报道，雷赛智能 2026 年一季度营收约  亿元，同比增长 ；归母净利润约  万元，同比增长 ；伺服系统收入约  亿元，同比增长 ，无框力矩电机等机器人业务持续放量。这个增长不是靠讲故事撑起来的，它背后是运动控制、伺服驱动、电机、关节模组、机器人核心部件这些硬东西在往前推。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXPjqPDof6X7hh2Jibs9xSmntzTEOpBy9M1ddiaH6zMl0JiczENA6t3Rb3cObTjHSAd49URyawberFpEQYXE9Pf8Pct3tibFzCckYQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6d56fc6d11dc03be0881a818f4c90d79.webp)
 
 雷赛厉害的地方，不是单独拿某一个参数吓人，而是**它越来越靠近真实运动现场**。
 
@@ -20,9 +23,9 @@ original: "https://mp.weixin.qq.com/s/cSXozQUK5OxIJNkKo1MR7Q"
 
 **雷赛的人形机器人关节模组方案**，又进一步把超薄谐波减速器、无刷力矩电机、高精度多圈绝对值编码器、驱动器、负载自适应、温度保护、过载保护放进一个关节系统里。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWlXAjtGfgRia3Vh3zOibcQibqGoTDPaAMuV3UVA6PAzmU59Wvu3GNqB5bo08rFEjj7h9bpR6AjGvoWGFrMwBVHMOHSgicdAc205ibs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e092baa765f604bd8a6d12e7901cbf3b.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIX52THHKM1Ig5sq4Pib1XPKUJtibqFfjbEJFfTmwibPk1nCtXlkpphRQT3zBvV8EFMnhLHsTgKz0SRSs4LcjfxfbjicicIfVuGY0kvE/640?wx_fmt=jpeg)
+![](/images/wx/a36952ede284123f1d94261953a5366d.jpg)
 
 它不是“买个器件装上去”的生意，而是**把机器人关节从纸面参数拉到真实现场**：
 
@@ -74,7 +77,7 @@ original: "https://mp.weixin.qq.com/s/cSXozQUK5OxIJNkKo1MR7Q"
 
 到了客户现场，它就变成一句很朴素、也很要命的话：“**这条腿怎么又不对劲？**”
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUAO6auB09na9R1EP7fnicfSn1Xxg3alPFxA8JyqT0oQYCibiaQegau5vSYI1sVsICtArrAz09KsWzwMNyqFZ61AmYgXADVp0icKEs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4f5fe6568165a20f2f51d50b6510ee2b.webp)
 
 更麻烦的是，速度往往来自角度差分：
 
@@ -82,13 +85,13 @@ original: "https://mp.weixin.qq.com/s/cSXozQUK5OxIJNkKo1MR7Q"
 
 所以，雷赛的现场会提醒编码器公司一件事：客户说“噪声能不能再低一点”，未必原始问题真是噪声。它可能是**编码器残差、速度估计、机械柔性、负载扰动和控制参数**一起搅出来的一锅粥。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXWicde2FSPW3J486rO0EicnTAJeYwejuPhE2KWEoywzKTgO705Czxdmmq76WcjEYxRcVFgwXedicvLDNh5fDhoflBDRGQY70aE08/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d4d1b15099b3e44c9c387ae42c9d268c.webp)
 
 如果编码器公司只听到“噪声低一点”，然后回去继续卷噪声，那就像病人发烧，你给他换了一个更高级的体温计。体温计没错，但病不只在体温计。
 
 ### 雷赛把角度推进速度环、位置环和黑匣子，编码器才知道自己缺什么
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUyIWjbf5oNrnp8iaYZ8WStgwS1gpXFAEzI02yeaibXLFELZeegZHiauLdgAqiaTPeCXD941MIQiaJfwltQMKyHjtZCxTGNvmCcF9PE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/bb7ae95728ac07ac5d0a7b55a8be9206.webp)
 
 **L8EC**这类系统，对编码器公司的启发，不在于“它用了多少位编码器”这么简单。真正关键的是，雷赛已经把角度值推进了速度环、位置环、振动抑制、全闭环和黑匣子。
 
@@ -116,7 +119,7 @@ L8EC 的 3.5kHz 速度环带宽、125μs 总线通讯周期、黑匣子、振动
 
 **L8P** 也能说明同一个问题。它不是 EtherCAT 场景，而是脉冲和 RS485 场景，但同样把 3.5kHz 速度环带宽、全闭环、振动抑制、一键自整定、超级跟踪、ACM3 系列高响应交流伺服电机和 26 位多圈绝对值编码器放在一起。这说明雷赛不是在某一个通信方式下堆参数，而是在不同控制形态里，都围绕“**让运动更稳、让问题更好查**”组织产品能力。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU82ZdjjRKhIkNFI6JJEKSrelUX4TqXTACgicgV8hd8FibfwbGI9iczSsWmRUXkcMZkIvGH8sx7gtqgOicjcSy4PMBZM4FDYbpdNU0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f5183a3298e2eaf827fae63ac9de92d1.webp)
 
 没有这种场景，编码器公司很容易只优化“芯片输出端看起来漂亮”的指标；有了这种场景，编码器公司才知道**哪些指标会在系统里被放大，哪些信息必须从芯片层开放出来**。
 
@@ -134,7 +137,7 @@ L8EC 的 3.5kHz 速度环带宽、125μs 总线通讯周期、黑匣子、振动
 
 工程现场就这么不讲武德，实验室里大家都是绅士，到了客户产线，谁让机器抖，谁就是坏人。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVMrAKOe8qrWhZ7BsUqVnb34TibCrj8pEFPEprDK3dLAFudoC3GCWEkejKa7n1TTr5oP0sI2gpqXsqymgzh4Ura04kr913nwvGo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/922e9305aa964db0c0d02582ce2bdbab.webp)
 
 ### 雷赛的同步专利说明，角度准还不够，用错时间照样抖
 
@@ -142,13 +145,13 @@ L8EC 的 3.5kHz 速度环带宽、125μs 总线通讯周期、黑匣子、振动
 
 雷赛的 **CN105824275B《一种控制从站伺服驱动器同步主站的方法》** 处理的是 EtherCAT 从站伺服驱动器同步主站的问题。专利说明里讲到，从站伺服驱动器内部有 ESC 控制器和双核 MCU，PWM 中断处理模块产生 PWM 三角载波；方法是在检测到 SYNC 同步信号后获取 CNT 当前值，并比较 CNT 与 K/2，再根据计数方向设置 CNT，使 PWM 中断与同步信号对齐，从而避免不同步导致的实时指令接收异常和伺服电机抖动。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVrhSib8qe5ydvOA1F6dEYibic0rfhiabtPx9NRMwtWmMlkMPibVvGibQTAY1eLYTxfYUneK3CcP4PMnYFafmlhsqNq9pcJJhB9ssxwk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6d1d0b5a728a6e4ae127b0121e6e6cd2.png)
 
 **这件事和编码器有什么关系？** 关系很大。编码器公司说“我的角度延迟低”，这只是器件语言。雷赛这种系统会继续追问：这个角度值进了 EtherCAT 以后，和 SYNC 对齐了吗？和 PWM 中断对齐了吗？和位置环、速度环的执行周期对齐了吗？
 
 **CN106788852B《一种EtherCAT电机驱动器与主站时钟的同步方法》** 同样围绕 EtherCAT 电机驱动器与主站时钟同步展开。其摘要写到，EtherCAT 电机驱动器包括从站控制器和主控 MCU，主控 MCU 包括并口模块、同步模块和 PWM 模块；方案在 SYNC 同步信号中断触发时将 PWM 模块计数器清零，并根据从站控制器与主站参考时钟的漂移值调整 PWM 模块周期计数。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWPXIYqAJeRiaUUkWdqbKaxP98ddVMmouTDBd9ffvUGpHd9Faib8TH5zU23R4c3lOcRxFaxTyia2dOXOrP5k2Pp7RXd9RPuLiagD3k/640?wx_fmt=png&from=appmsg)
+![](/images/wx/35e7c8cd03370f56b1b432e355a45180.png)
 
 这说明雷赛揭示的不是一个简单“**角度值**”的世界，而是一个“**角度值何时被系统使用**”的世界。
 
@@ -162,7 +165,7 @@ L8EC 的 3.5kHz 速度环带宽、125μs 总线通讯周期、黑匣子、振动
 
 雷赛中文官网写到，这套方案搭载超薄谐波减速器，结构紧凑，有无刷力矩电机和高精度多圈绝对值编码器，是面向人形机器人研发的核心零部件；方案融合减速器、电机、驱动器于一体，电机采用集中绕组无刷直流方案，并通过优化极弧系数降低齿槽转矩；配套驱动器可自适应不同负载，并具备温度保护、过载保护等机制。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVOTnzCjEgYqWDTI2Cg588CiaMMYG7trrOPRueb6cF7Gm416FOGQTiagVSVjH4HO6E9pddicuEgg4icW4BLsCBlgdyicfWrs9icJBdxU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/226e9a8c65caf7fdd87105492513def7.webp)
 
 这类场景对编码器公司特别重要，因为它告诉你，**误差不是从芯片开始**的。它可能从磁体装配开始，从气隙变化开始，从轴承和减速器尺寸链开始，从齿槽转矩开始，从温升和结构热变形开始，从驱动器自适应负载开始，从关节模组的整体机械关系开始。
 
@@ -182,13 +185,13 @@ L8EC 的 3.5kHz 速度环带宽、125μs 总线通讯周期、黑匣子、振动
 
 WO2024087589A1《磁性编码器的自校准方法、电机及校准角度检测值的方法》公开的思路，是在转轴匀速转动条件下，对检测值进行低通滤波，在  内设置多个参考点，选取每周期最接近参考点的检测值，计算修调值并多周期均化，最后形成修调参考表，从而降低磁性编码器校准成本。昆泰芯围绕非线性校准一路推进，从传统光编对拖，到一键匀速自校准，再到闭环自校准、非匀速自校准，最终推出了 KTH58/59 系列产品。这条线索本质上是在把校准从实验室往真实工况推。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIViaCVQWCJyfJliaz1n8w8rtriaexMniaK20ibCIbxaq2ClgOJK730pGK95oOlMkce72SOBLVCYc4smm5IMHZLj1ibic336IicrfEbZkkQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9f9a79d5fefd4e360990b2cbdcc4f17a.webp)
 
 #### 第三层，是闭环自校准
 
 这一步开始贴近雷赛的世界。因为电机已经在闭环里跑，控制环本身会影响误差表现。校准不再只是“电机被外部系统稳定带着转”，而是要面对驱动器、速度环、负载扰动和机械弹性共同作用下的运行状态。闭环里能不能提取有效误差，是编码器从产线功能走向系统功能的分界线。昆泰芯的 KTH71 系列产品已经实现功能。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV6icGyUnVSj2KtOrENXNF2vbYic1rpywSsaKrqiceyRDqGYueZLuGnH6UwTckFibqicNtGZRkTOQBWua8qsAESvkyG0hF8r5ic6RblQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/21c0b08412e0a2ca14d3f4bd69323374.png)
 
 #### 第四层，非匀速自校准
 
@@ -254,7 +257,7 @@ KTM5900 的公开资料显示，它是一款  绝对角度 TMR 磁性编码器�
 
 这句话不一定错，但太粗了。如果编码器公司只围着这句话优化，就会继续卷噪声、卷位数、卷延迟。卷完以后，现场可能还是抖。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXqn2EBRDm7vmg6IgkSCibhbw3RiaSqa0TSanvrNeCuOW68iaqUe8uCZnpFpDDE9GCU80w4hdjAH9O93jge3ZOHX0d945w0YjCnKA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ca0ac553b3bd0319e93949c1d4d32f0d.webp)
 
 **雷赛提供的场景能把需求还原成原始问题**。驱动器日志能告诉你：速度环里是不是有周期性波动；黑匣子能告诉你：故障前后位置偏差、速度、报警状态如何变化；关节模组能告诉你：温升、负载、减速器、齿槽转矩怎么影响反馈；EtherCAT 同步和伺服周期能告诉你：角度值是不是在正确时间被使用。
 

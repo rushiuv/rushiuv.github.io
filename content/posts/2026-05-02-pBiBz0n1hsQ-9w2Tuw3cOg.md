@@ -4,9 +4,11 @@ date: 2026-05-02T00:00:00+08:00
 slug: "pBiBz0n1hsQ-9w2Tuw3cOg"
 description: "客户现场最难处理的一句话，不是“你这个编码器精度不够”。"
 original: "https://mp.weixin.qq.com/s/pBiBz0n1hsQ-9w2Tuw3cOg"
+companies: ["小米", "宇树", "特斯拉"]
+tags: ["人形机器人", "机器人关节", "瑞士"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVFNa1YlKEyUfy4WkF0ZBPGHVrZKjTCVuib6NBxWjiaY3IJAGTGlBCCEYol8qLS7B4HgZqOdpQ1J0ZZr8vIdyfnPDTcF6vIzDg2s/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/7d660872610cdcc9bd1386c78ae5b4db.webp)
 
 ## 客户说关节抖，国产编码器不能只回一句“我芯片没问题”：从瑞士机器人供应链看误差解释能力
 
@@ -92,7 +94,7 @@ Hexagon (海克斯康) 就是一个典型例子。它长期做测量技术、传
 
 因为在这套体系里，编码器不再只是一个角度传感器，而是反馈链条上的一个责任接口。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWoxdphJwEBkfosZhU37hZdYv8KDYDS76CaCqqhcLe20x0VeyqlDluVHUDic0OQLqGD9HbfKNnkJYsTkJhdKqqXmJycicCDkaAibA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c08b9a5cc026a87ddfc68c80bf3c1c59.webp)
 
 ### Schaeffler 和 Hexagon 这组动作，讲的不是样机，是工厂部署
 
@@ -118,7 +120,7 @@ Schaeffler（舍弗勒集团）对国内编码器读者来说，可能没有特�
 
 **它改变的不是某一个零件，而是把编码器从独立器件拖进了执行器系统责任链。**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUw15g1ThafqJlDQ8SM3gedLH3NNO95LiaYicEiaRczzdS81OsficvxwXVtKILTOz6Yjgwjl4SsgSD9ukgxG921icNOoadId6MyCJNc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d547251311673934940550a30255954f.webp)
 
 2026 年 4 月，Schaeffler 的人形机器人高集成执行器平台获得 Hannover Messe 的 Hermes Award。相关资料提到，这个平台面向人形机器人关节，包含高效伺服电机、集成功率电子和编码器，并可根据需求配置不同齿轮方案。
 
@@ -140,7 +142,7 @@ demo 机器最重要的是能不能动、能不能拍视频、能不能拿融资
 
 角度值背后的状态信息、误差来源、校准记录和异常证据，才真正开始变值钱。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUnfF4nnGf3o6tXpATIfOnfGeNDRaSYb1CLK33NZXKgjTEpCw2Cz2rajGOIYIiaQian5GhZz60BmY4Qk2ePHCujlnRpJa774tph0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/fe36d722505b762e1988d6b315d238cd.jpg)
 
 ### 关节抖的时候，客户要的不是免责，而是定位路径
 
@@ -280,13 +282,13 @@ Schaeffler 这类高集成执行器平台，对编码器行业真正有压力的
 
 这些问题看起来不如“24 位”性感，但它们会决定客户现场能不能快速定位问题。国产编码器下一步真正要补的，不是把参数表写得更猛，而是把这些责任字段补齐。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXI9tjEIYELkIOKHRxPbbD1ZqNrCwkqvTJHiaeqia0GVPyWiav34xUlJlmk7lQUM1rEyiaLIib9lPDfj1pRUHpv2Sm1UkUYvJpgnrxw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/855ed57e475e96afd90a7602e701b3c1.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXibY7D6YmYyUUg7g1zxQicGE1icbzy0ydrWS7acz9JAc3vC1XW74ibIuHYib7zA3VtQQRHm4WqykicgaB3T5Jx5I6iaX7OEHZibUWA1EM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/61988a5d756de5fa634099641e6e7faa.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVuI965uCDzrc1icldg1ibSmPYtxlALqNZd5iaPWlIGFL01ueRMzH6icOdRsF0XvpY32W20JYS3koc3slxGMG84frmegR7kB2doeTA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/79ef3ba362a9bed5f5d6becc9be8b0eb.png)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVfpBWibGuPGFkkW7n4h48PAUnDPslg3CQNJS2UaniaAHcW3WFL8Kh1bf39TDy281icrMXDcLaSkuNCEib1A4dylv6C2jBvNqmbib0U/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1791cd9d115cb8e1dd9f15b5e7021bc5.png)
 
 (Schaeffler 在 CES 展示的人形机器人局部/整机照片，可以看到胸腔和关节位置有较强的模块化展示意味，适合说明“它不是单个零件，而是在展示整套 humanoid motion technology”。)
 

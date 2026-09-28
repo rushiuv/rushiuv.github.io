@@ -4,9 +4,10 @@ date: 2026-04-30T00:00:00+08:00
 slug: "cOCK7ijrx8WeCgSeUte6ng"
 description: "很多人第一次接触绝对式编码器，最容易被“单圈”和“多圈”这两个词绕住。"
 original: "https://mp.weixin.qq.com/s/cOCK7ijrx8WeCgSeUte6ng"
+tags: ["多圈编码器"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXZQV5DS6N8qvhr3hwic28VlpMmt1FxdibC3RgAVEMM86KxxPsnW0fibFlToTAyns29iaZZvsBTy6GBzjibf06CHW8CAlPA3GQicPd0I/640?wx_fmt=png&from=appmsg)
+![](/images/wx/70f28a9b54d4c8352722a898224c213b.webp)
 
 ##
 

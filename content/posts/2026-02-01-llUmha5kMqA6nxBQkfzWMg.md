@@ -4,6 +4,7 @@ date: 2026-02-01T20:52:00+08:00
 slug: "llUmha5kMqA6nxBQkfzWMg"
 description: "这两天贵金属市场血流成河，很多人又开始怀疑人生了。黄金跌、白银崩，连带着比特币和美股一起跳水。评论里全是焦虑：“逻辑是不是变了？”“美元是不是又行了？”"
 original: "https://mp.weixin.qq.com/s/llUmha5kMqA6nxBQkfzWMg"
+tags: ["黄金"]
 ---
 
 这两天贵金属市场血流成河，很多人又开始怀疑人生了。黄金跌、白银崩，连带着比特币和美股一起跳水。评论里全是焦虑：“逻辑是不是变了？”“美元是不是又行了？”
@@ -14,7 +15,7 @@ original: "https://mp.weixin.qq.com/s/llUmha5kMqA6nxBQkfzWMg"
 
 只要你看懂了这点，你就会明白为什么我反复强调这八个字：坚定看多，勿用杠杆。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQW6oPkw5C3dDIsQufPgKDlv5dOskBdgSqPKia4NiadtqDzMLpGwSicibqVzXqDB0PyIYsleKq1UdfcUQ/640?wx_fmt=jpeg)
+![](/images/wx/9382d123d55dbabc8862679eac5d81db.jpg)
 
 一、 暴跌的真相：庄家交不出货了
 

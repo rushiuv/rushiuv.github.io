@@ -4,9 +4,12 @@ date: 2026-06-11T00:10:00+08:00
 slug: "Fse-QQr255a1auxCqQOt4Q"
 description: "看到 Melexis 发布 MLX90520，很多人的第一反应会被“22-bit 分辨率”吸住。电感式编码器，面向机器人、大型机械关节和工业应用，官方还提到 SPI/SSI 输出、旋转与最长 400mm 线性运动检测、超薄模块、板载数字处理…"
 original: "https://mp.weixin.qq.com/s/Fse-QQr255a1auxCqQOt4Q"
+models: ["KTM5900", "KTH78", "MLX90520"]
+companies: ["昆泰芯", "Melexis"]
+tags: ["磁编码器", "电感编码器", "光电编码器", "自校准", "TMR", "编码器接口"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUPbBqfAoQyvE7aCB3h3XNFpjTgXwy3gD39v6nkg4KyJDHg4QLicBXgzeHy07GiavCXNVpxpCPnSb9O4qiceasqfcumOredibTY9r4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2b3ef3628b15428c146892db0178175a.webp)
 
 ##
 
@@ -14,7 +17,7 @@ original: "https://mp.weixin.qq.com/s/Fse-QQr255a1auxCqQOt4Q"
 
 看到 Melexis 发布 MLX90520，很多人的第一反应会被“22-bit 分辨率”吸住。电感式编码器，面向机器人、大型机械关节和工业应用，官方还提到 SPI/SSI 输出、旋转与最长 400mm 线性运动检测、超薄模块、板载数字处理等特性。单看这些参数，很容易让人想到一句话：电感编码器是不是又往光编的地盘里打了一步？
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWC225D6piaADpFhMicFkfTzIwbgFdOibzYKzv5WR4axcWodyV8Vr8fvicqs9w9DYtgzg7HAfpRMR57x2Tzo1kgYtxRxfl0qesvkIA/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/5440022be855471a675d75d750ad3d7f.jpg)
 
 这个问题可以讨论，但如果从量产导入的一线看，我觉得它还不是最关键的问题。客户在实验室阶段会问你：“分辨率能做到多少？”到了产线、售后、现场停机的时候，他问的第一句话往往会变成：“出事的时候，你能不能解释清楚？”
 
@@ -82,4 +85,4 @@ original: "https://mp.weixin.qq.com/s/Fse-QQr255a1auxCqQOt4Q"
 
 这才是 22-bit 之后更难、也更值钱的竞争。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVCxGsVIpJV4wR4HoibhwjVVjtRHh2yOe2hU95sp2XN9Po6WXXlRo6tjXWuSNbDc2vxqZABiciaRPIzx0HP7I1uUMjYtQsa1ibpOxQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/be404523cb27b62694e3402e3f43f67d.webp)

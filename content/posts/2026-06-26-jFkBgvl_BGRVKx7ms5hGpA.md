@@ -4,9 +4,12 @@ date: 2026-06-26T00:00:00+08:00
 slug: "jFkBgvl_BGRVKx7ms5hGpA"
 description: "凌晨一点，我盯着两张温度扫描曲线，脑子有点转不过来。"
 original: "https://mp.weixin.qq.com/s/jFkBgvl_BGRVKx7ms5hGpA"
+models: ["KTM5900"]
+companies: ["昆泰芯"]
+tags: ["离轴", "非线性校准"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXCvPUY5cjxJFQZ89e5aIBIuXEGQcbPH94s8MVNjPqZhJNicKUyffgG5kRuDhfuEK1pXbBbpPDYUCb5KtvjG8cwBxq628Ufndcg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/7ab56648d877be6c0a86a9b9891d9603.webp)
 
 ## KTM5900 同批次芯片两台设备温漂差了 10 倍。我把芯片、磁铁、电源全查了一遍，最后查到联轴器安装扭矩
 

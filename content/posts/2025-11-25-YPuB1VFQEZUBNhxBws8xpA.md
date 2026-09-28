@@ -4,13 +4,16 @@ date: 2025-11-25T20:12:00+08:00
 slug: "YPuB1VFQEZUBNhxBws8xpA"
 description: "德国纽伦堡，2025年11月27日电——为期三天的全球工业自动化顶级盛会SPS 2025（Smart Production Solutions）于纽伦堡展览中心正式落下帷幕。来自中国泉州的昆泰芯微电子有限公司（下称“昆泰芯”），在4号馆17…"
 original: "https://mp.weixin.qq.com/s/YPuB1VFQEZUBNhxBws8xpA"
+models: ["KTM5900", "KTH5701", "KTH78", "KTH7111"]
+companies: ["昆泰芯", "雷尼绍", "安川", "西门子"]
+tags: ["磁编码器", "离轴", "车规", "瑞士"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWjLRm3cqNhiaP4fDxzxOXd22vBiaeia9u6o7wdnNARndjiaB5nc4Pzvt1gmA/640?wx_fmt=jpeg)
+![](/images/wx/202d8d98429e4a5dac7d7b0921fa2f6d.jpg)
 
 德国纽伦堡，2025年11月27日电——为期三天的全球工业自动化顶级盛会SPS 2025（Smart Production Solutions）于纽伦堡展览中心正式落下帷幕。来自中国泉州的昆泰芯微电子有限公司（下称“昆泰芯”），在4号馆174号展位携全系列高端磁编码器芯片重磅亮相，其全球首创的ANLC（自动非线性校准）技术及±0.05°离轴超高精度突破，引发西门子、安川、博世等国际工业巨头技术团队密集驻足交流，现场达成超30项合作意向，标志着国产高端磁传感器正式跻身国际第一梯队，为全球工业自动化领域注入“中国芯”力量。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWjIZvBjgwBpXG2dqLRmINO7V7Q89Lo6U578FE94OoJvAzXN0AdicqoiaYg/640?wx_fmt=jpeg)
+![](/images/wx/9cb1d91096618620b4304af441c20534.jpg)
 
 核心技术引轰动：ANLC终结精密装配“卡脖子”难题
 
@@ -32,7 +35,7 @@ original: "https://mp.weixin.qq.com/s/YPuB1VFQEZUBNhxBws8xpA"
 
 除核心产品KTH71系列外，昆泰芯还同步展出了KTM59系列一键自校准Demo、KTH57系列3D霍尔传感器EVM套件，全面覆盖伺服电机、机器人、新能源汽车电驱系统等主流应用场景，展现了其在磁传感领域的全产业链技术布局。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyTYdeUWSWamURuvKia1jvibWjibQNjOPVgicQicLJcVTJA3lhzAME3t0DgXjFlMriaPTgv1ia5DULk9zYlxA/640?wx_fmt=jpeg)
+![](/images/wx/0245929efad438d045ed4ae66e95eddc.jpg)
 
 国际格局生变：中国“芯”撕开欧美垄断缺口
 

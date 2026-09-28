@@ -4,6 +4,9 @@ date: 2025-10-01T16:34:00+08:00
 slug: "wj3Fo7fSItH-gDt8tr5XSA"
 description: "举起手机拍照，画面从一瞬间的“朦胧诗”秒变“高清大片”，快到你以为是自己的错觉。"
 original: "https://mp.weixin.qq.com/s/wj3Fo7fSItH-gDt8tr5XSA"
+models: ["KTM5900"]
+companies: ["昆泰芯", "TDK", "Apple"]
+tags: ["TMR", "霍尔", "车规"]
 ---
 
 花三秒钟回想一下这几个瞬间：
@@ -38,7 +41,7 @@ original: "https://mp.weixin.qq.com/s/wj3Fo7fSItH-gDt8tr5XSA"
 
 它能瞬间“听”到磁场里最微弱的风吹草动，然后立刻把这种变化翻译成电信号，告诉系统：“嘿，伙计，那个东西动了！它现在在这里！”
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicAyAsDibGSkeYuVJECfAx9u5vz0Km9D3nHHIgvCmS7WEIFLGDekjvJ6g/640?wx_fmt=png&from=appmsg)
+![](/images/wx/805cd4868851ded52f75d1949d8612e7.webp)
 
 相机镜头前后移动了头发丝直径的百分之一，它知道。
 
@@ -62,7 +65,7 @@ original: "https://mp.weixin.qq.com/s/wj3Fo7fSItH-gDt8tr5XSA"
 
 音圈马达（VCM）推着镜头在一根小滑轨上前后移动，旁边粘着一块小磁铁。镜头一动，磁场就变。而T-M-R这个“侦探”，就死死盯着这点变化，给对焦系统提供“我在这！我在这！”的实时坐标。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicYdz5jM1toOF0ZTCGwPFEnKLzic1397M313EBKxLYEnZMhzvBeJRCtzg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/46b05d4e79c8e5219052d27770b200c2.webp)
 
 所以，自动对焦（AF）和光学防抖（OIS）才能那么快、那么稳，抓住那几微米的窗口，把你的照片从“手抖”的边缘拯救回来。iPhone 12 Pro Max上那个酷炫的“传感器位移式防抖”，更是把TMR这种高灵敏的位移感知能力用到了极致。
 
@@ -92,7 +95,7 @@ TMR的另一个战场，就在你手里的游戏手柄。
 
 现在，“T-M-R摇杆”来了！
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicPF9erVpgL1Y4I9XdS6wd6GsH17tkbZcxxDqkERJeK6icRjU3WDvLTJA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c340f626a2b1d930b191bf7c45466980.png)
 
 像GuliKit（谷粒科技）、GameSir（盖世小鸡）这些品牌，已经把“TMR电磁摇杆”写在了封面上。玩家圈子里，“Hall VS TMR”的手感大战也已经开打。
 
@@ -110,7 +113,7 @@ TMR的另一个战场，就在你手里的游戏手柄。
 
 这其中的典型代表，就是**昆泰芯**。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMiciaRSwXLeyBJFiaJibcJcpovQmv9p6NsF8TVlY8DyPyiaANPibok515W8Umw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/0f01eefec26e2503802f73fa8b2c8b87.webp)
 
 昆泰芯的玩法很接地气：
 

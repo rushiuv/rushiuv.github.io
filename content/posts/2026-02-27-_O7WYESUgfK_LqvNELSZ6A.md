@@ -4,9 +4,11 @@ date: 2026-02-27T22:58:00+08:00
 slug: "_O7WYESUgfK_LqvNELSZ6A"
 description: "凌晨两点，终端黑底绿字在跳，Claude Code 像个没睡过觉的人，自己进仓库、自己翻目录、自己改文件、自己跑命令、自己回头对一遍测试结果，你坐那儿端着咖啡，眼神里写着四个字：时代变了。"
 original: "https://mp.weixin.qq.com/s/_O7WYESUgfK_LqvNELSZ6A"
+companies: ["Anthropic"]
+tags: ["AI", "Claude Code"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXpbPmhar4d9gOWmyFBjJUb7RMKibSvkssagcTbia8EMMX7TgrGAbYk97blzuXTOpx6WtqvV2wc5SCPbjPAxIR5j5AoXuMBKlgicw/640?wx_fmt=jpeg)
+![](/images/wx/6b31559f2b376d3faacf9ab1a212d9be.jpg)
 
 凌晨两点，终端黑底绿字在跳，Claude Code 像个没睡过觉的人，自己进仓库、自己翻目录、自己改文件、自己跑命令、自己回头对一遍测试结果，你坐那儿端着咖啡，眼神里写着四个字：时代变了。
 

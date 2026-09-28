@@ -4,9 +4,10 @@ date: 2026-06-22T07:38:00+08:00
 slug: "7np31VWfa8dntu0txarxQg"
 description: "我越来越不相信“省掉一个除法器就赢了”这种胜利。"
 original: "https://mp.weixin.qq.com/s/7np31VWfa8dntu0txarxQg"
+tags: ["专利"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUtjjEqphTzkf7Cs0pibdhrfyw8MdG8yg99aX5dAANrCqckVLwA8xricgP8PbT4Vt398lMlkIZBQujLIZrBJzNkh2SnBAjz5ibpPI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/051bed718d851398bd463e5364cac6ce.webp)
 
 ## 编码器芯片为什么会算错角度？
 
@@ -16,7 +17,7 @@ original: "https://mp.weixin.qq.com/s/7np31VWfa8dntu0txarxQg"
 
 先不讲芯片，讲一个更容易想象的画面：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXQvc3meLHNt6nmamxB4nakWYpUibaE4CnLRJibcklk7hTJrCXkqbA7pzgicQ53dmkhl2CBCGULIEFHLNk6J4pRoVuYyLI5S2egTg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/99b40812a87f06316202508d2e6fc5b5.webp)
 
 一个点本来应该绕着中心转圈，像钟表指针的端点一样。如果横向和纵向的比例完全一致，它走出来的轨迹就是圆；你只要看这个点在圆上的位置，就能判断角度。但如果横向被压扁一点，或者纵向被拉长一点，甚至中心还偏了一点，那么你记录到的轨迹就不再是圆，而是一条椭圆。这时候你还按“圆”的规则去算角度，结果一定会在某些位置稳定出错。
 
@@ -94,7 +95,7 @@ y = B sinθ
 
 比如昆泰芯的授权专利CN116358619B《信号误差修调方法、磁性编码器及光学编码器》。这个专利很适合放在这篇文章里，不是因为它“用了某个很炫的角度算法”，而是因为它把问题放在了更前面：角度解算之前，两路分量信号本身可能已经错了。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWPb6HaMbfElRMnbMhIWvEQnyokUbsn3HrrCoYP0GQZdb2uKUgH3n2Vk8ztdaWiaJc1ibvMUWTVG0jQMlEiaKkj7ZqvMEl9Sc9qJ4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/03bd3dcc4116dea8c0066fd3787855f8.png)
 
 这才是工程味很重的地方。磁性编码器也好，光学编码器也好，两路正交信号理想情况下应该构成一个圆。但现实中，点云可能会因为 offset、幅值差和正交误差变成椭圆，甚至是倾斜椭圆。这时如果后级还直接按理想圆去解角度，本质上是在做一件危险的事：把输入侧的几何畸变，伪装成角度解算误差。
 
@@ -110,7 +111,7 @@ y' = Ky · (y_in - y_0)
 
 这一步处理的是中心和幅值。但如果正交误差明显，还要考虑两路之间的耦合关系。更一般地看，可以把它理解成一个二维线性变换：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUT7JhOjbicqtBPCLQibYnRyibYokFbTFYmvwIcHCt2t8NhNsSZicbNE1RtVWojibkx63vIyEhJ4eWVIQ16jTgw1icibkicuiah6BSOInwM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9244130909ad08f14a41a9a0eba533c2.png)
 
 这里的 a、b、c、d，就不只是简单的幅值缩放，而是在同时处理轴向比例和非正交带来的混合。这就是为什么我说，编码器里的校准不是“调几个寄存器”那么简单。它背后真正要解决的是：如何从一个偏心、拉伸、倾斜的椭圆，恢复出一个尽量接近理想单位圆的坐标系。
 

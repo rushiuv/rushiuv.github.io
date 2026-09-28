@@ -4,9 +4,12 @@ date: 2026-07-27T00:00:00+08:00
 slug: "h5dI_S_tAKrhoq0V_fqcKg"
 description: "TAMA-ED真正改的不是传输速率，而是把“角度”升级成一份包含多圈与状态上下文的周期反馈包。"
 original: "https://mp.weixin.qq.com/s/h5dI_S_tAKrhoq0V_fqcKg"
+models: ["SROA48", "KIN60"]
+companies: ["多摩川", "锐鹰"]
+tags: ["多圈编码器", "编码器接口"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIU85mjeuoI9ZS8IyWu5KH3wDUZOGlof75T345cDbf4QaYtCqvzVqCs3IzN9smnamiadhq2gjgAQkk4bwyoKE121no3ps9rLo4dY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/dbfe2d93511b48ed489276f7f64de112.webp)
 
 编码器 · 多摩川 · 机器人协议
 
@@ -42,7 +45,7 @@ TAMA 并不是锐鹰从零发明的协议。锐鹰公开规格书把它直接称
 
 既然标准多摩川已经能传位置，锐鹰为什么又在机器人编码器上推出一个 TAMA-ED？
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXvmE443aUljx3Dy26u61uTPnRibooWwWyZn4RlD1pxmhsDyiawTK9BOsJCID4Nicfic22Y4VBtUoW4yNWne3KOicl9pl1DTak3e76c/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/589d8b8c9e5ea06c78b609aa7dcbc321.jpg)
 
 图片按原始完整比例插入，不裁剪、不拉伸。
 
@@ -126,7 +129,7 @@ TAMA-ED 想做的，正是把这些信息组织成一份完整的反馈包。
 
 而对于一条量产线来说，“更快知道坏在哪里”，往往比“分辨率再提高一位”更值钱。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWXMFfpXmpmzAibllTMaasEANwets3TqLSCoibjicicv2YXMOHa1zmWr2jvkGXt6lfh87SiauQgMfKBn4I0NYmSG8PCWljELN2Gick20/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c02e9c5292b16392b6d421b8516c04b4.jpg)
 
 协议的价值最终要落到日志、控制策略和返修效率。
 
@@ -172,7 +175,7 @@ TAMA-ED 想做的，正是把这些信息组织成一份完整的反馈包。
 
 做一只编码器，是交付一个产品；做一套协议，是试图让不同产品都通过同一个入口进入客户系统。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIUpiculVMfeTxsfkGpovib6DLWgEQD3sQoUsvQmXJ7eF9vMw6CRrnVtPPKH14XVBgibWLTVQLf0DjgDukO8Me6IrGCkda23icx4P2M/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/90bac90afce04cbe5a43b324ec9762b9.jpg)
 
 公开事实与待正式协议书确认的部分必须分开写。
 
@@ -214,6 +217,6 @@ TAMA-ED 再往前走了一步。
 
 而是开始定义，客户的控制系统以后应该怎样理解你。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVnqljWUnhVHgTMw5JH9BpMe1UHTqQE1H1pRBzgfJ1FK1dlCf7rkKt8KR9qKmfCeicgbg4vrWJE4I2bShTRU9ukzSKRdFqvxC7Y/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/301acf9625dfe1ce4aad7aca61775a32.jpg)
 
 资料边界：KIN60、SROA48及TAMA-STD参数依据锐鹰公开规格书；TAMA-ED的2.5Mbps及ABS／ABM／ALM多字段依据锐鹰机器人编码器公开宣传资料。完整帧结构、CRC定义、ALM逐位含义及与标准多摩川的兼容边界，仍以锐鹰正式协议书为准。

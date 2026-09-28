@@ -1,14 +1,18 @@
-# 部署前把 baseURL 改成真实域名
-baseURL = "https://example.com/"
+# GitHub Pages：rushiuv.github.io
+baseURL = "https://rushiuv.github.io/"
 locale = "zh-CN"
 defaultContentLanguage = "zh"
 title = "如是有为"
 hasCJKLanguage = true
+capitalizeListTitles = false  # 标签原样显示（ams OSRAM、iC-Haus 不被改大写）
 enableRobotsTXT = true
 
 [params]
   description = "公众号「如是有为」文章存档"
   author = "如是有为"
+  subtitle = "芯片 · 传感器 · 机器人"
+  sutra = "一切有为法，如梦幻泡影，如露亦如电，应作如是观。"
+  sutraFoot = "凡所有相，皆是虚妄。若见诸相非相，即见如来。"
 
 [pagination]
   pagerSize = 20
@@ -21,6 +25,9 @@ enableRobotsTXT = true
   hardWraps = true   # 公众号正文大量单换行，保持原排版
 
 [taxonomies]
+  model = "models"
+  company = "companies"
+  tag = "tags"
 
 [outputs]
   home = ["HTML", "RSS"]

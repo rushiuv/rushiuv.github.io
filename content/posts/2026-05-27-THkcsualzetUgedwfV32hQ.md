@@ -4,9 +4,12 @@ date: 2026-05-27T01:30:00+08:00
 slug: "THkcsualzetUgedwfV32hQ"
 description: "机器人、工业自动化、国产替代、高端传感器。"
 original: "https://mp.weixin.qq.com/s/THkcsualzetUgedwfV32hQ"
+models: ["KTH7101", "KTH7111", "KTH7112"]
+companies: ["昆泰芯"]
+tags: ["磁编码器", "霍尔", "编码器接口", "瑞士"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUhPaNdPsDl1DflDsmE3Bz6fkg7HoOUpTviccic0cSZ2OTICpSQ8q1n82cDmf0tSFjW9Nuo5k98FjRVDuEmkib3ia7Zn9icGC424Wdg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9fa4a52c61442d20fbbb2c08f1d4232e.webp)
 
 ## KTH71这种国产磁编码器参数已经能打，但瑞士客户真正卡的是批次追溯和8D闭环
 
@@ -64,7 +67,7 @@ original: "https://mp.weixin.qq.com/s/THkcsualzetUgedwfV32hQ"
 
 Thermoplan 官方介绍里，Black&White4 面向中高日需求，单日可到500杯，应用场景包括餐厅、酒店、烘焙店、便利店和快餐店。Eversys 官网的表达更直接：从第1杯到第1000杯，味道不能变，而且要在高流量咖啡馆、快餐和办公室场景下保持一致性、速度和可靠性。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUAiboZdibQ1IicwWXl9Y38P9xibRUibhOI4YTvBmAG3hBquoU9WQnajS6qxHeHtDel9y1fE5J690gLicjMo79dnar1Lu2jygocu1Nmw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/01db62beded508ea851b065e11136465.webp)
 
 所以客户关注的不是：
 
@@ -118,7 +121,7 @@ Thermoplan 官方介绍里，Black&White4 面向中高日需求，单日可到50
 
 公开维修资料也能看到类似位置反馈问题。Jura Error 8 的维修说明里提到，冲煮单元如果不能初始化、完成循环或回到 home position，可能与密封圈、咖啡残渣、齿轮电机、编码器等有关；其中编码器松动或损坏会导致与 CPU 的通信/反馈异常。([jura-parts.com][5])
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWoItTjKiaOESVCNCjyolzGb8hZmlIFHfchKy3y7rzotNFt69CNUl38IQahZuunOPeKBsNeibtmibmKMbSt3uX7n75Fmg8JSQ1z7c/640?wx_fmt=png&from=appmsg)
+![](/images/wx/581d8ddd3198685f973affc707db6bf6.webp)
 
 这些不是为了说某个品牌有问题。
 
@@ -802,4 +805,4 @@ Zug会议室里的客户问的是：
 
 差的是一整套工业供应链能力。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXibvfq24YP5Oib6JUFqj2DIDlSx7EST7R13WA0vYUGB6BT3bks0NJpyKP2L7VrM6MFUfVVYfQNSXFnskVaibkWIyMMicdxhLjsEW8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f18d4fb695bcc93a18ea8fab78a8e427.webp)

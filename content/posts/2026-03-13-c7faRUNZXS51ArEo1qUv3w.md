@@ -4,11 +4,12 @@ date: 2026-03-13T17:36:00+08:00
 slug: "c7faRUNZXS51ArEo1qUv3w"
 description: "我真正意识到这个世界很多事情其实是“草台班子”，是在 AI 出现之后。原因并不是 AI 突然变得多么聪明，而是 AI 把很多事情做得太快了。快到你开始怀疑：原来那些看起来复杂、严肃、流程严密的工作，其实并没有那么复杂。"
 original: "https://mp.weixin.qq.com/s/c7faRUNZXS51ArEo1qUv3w"
+tags: ["AI"]
 ---
 
 我真正意识到这个世界很多事情其实是“草台班子”，是在 AI 出现之后。原因并不是 AI 突然变得多么聪明，而是 AI 把很多事情做得太快了。快到你开始怀疑：原来那些看起来复杂、严肃、流程严密的工作，其实并没有那么复杂。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWM50SJE6HFmRiapDxkLiaohpibRrOicO2zRnIW7lHVawTEHC4hhvk0iaPZtn8gxhJqBDlPO70uK2nyIagXBJ3TEu8Qyn5Q9ZibLhdFI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/82a5c8729b66e8ba98a7132311dff01c.webp)
 
 有一次公司做一个行业研究。流程非常标准：先开一个会确定方向，再开一个会细化框架，然后每个人分一部分资料，各自去整理数据和观点。两周之后再开一次会，把内容汇总起来，最后做成 PPT。整个过程差不多三周，最后做出来一个六十多页的报告。大家都觉得，这是一次非常专业的研究。
 

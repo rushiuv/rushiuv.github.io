@@ -4,9 +4,12 @@ date: 2026-06-21T07:09:00+08:00
 slug: "VR5OBgiNpdIO6FMywh9FYg"
 description: "凌晨两点的伺服测试台，最怕看到三份日志都“对”，但拼不到一起。"
 original: "https://mp.weixin.qq.com/s/VR5OBgiNpdIO6FMywh9FYg"
+models: ["LAN8841"]
+companies: ["TI", "倍福"]
+tags: ["EtherCAT", "人形机器人", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXv0C4vCAkuWVOmrIqrUBTPyLWmUa5COTQtFTujFayWs7jP21CXhpH3AaEsDrvmR2oEfs9OcNrwAk9DJrVkQqVicseiac48libc5k/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1462e5e46323f8fbd796c19c13258604.webp)
 
 ## 机器人关节下一个硬门槛：不是更高分辨率，而是每一帧数据到底发生在什么时候
 

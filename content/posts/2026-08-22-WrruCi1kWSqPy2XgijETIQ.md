@@ -4,11 +4,12 @@ date: 2026-08-22T07:41:00+08:00
 slug: "WrruCi1kWSqPy2XgijETIQ"
 description: "现在讲人形机器人关节，几乎都会出现一个配置：电机端一颗高速编码器，减速器输出端再放一颗编码器，做“双编码器全闭环”。"
 original: "https://mp.weixin.qq.com/s/WrruCi1kWSqPy2XgijETIQ"
+tags: ["非线性校准", "人形机器人", "机器人关节"]
 ---
 
 ##
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWgiaaKQDI43lpR9YPhnXicBDSUyu8wc5L1cGfJUXbWsf6EP4PPZ3ibsAFsiaZqXLNFO0EgZmsAl3dib7aD1onXEKG6ChIU9IddNwTs/640?wx_fmt=jpeg)
+![](/images/wx/c75badc7d64fd8093021ec02115414e3.webp)
 
 ##
 

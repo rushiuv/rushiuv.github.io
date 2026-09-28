@@ -4,11 +4,14 @@ date: 2026-07-09T00:10:00+08:00
 slug: "SerXQr_YNR0iUdislFpuJw"
 description: "磁编码器芯片 · Datasheet 拆解 · 机器人关节现场"
 original: "https://mp.weixin.qq.com/s/SerXQr_YNR0iUdislFpuJw"
+models: ["AS5047P"]
+companies: ["ams OSRAM"]
+tags: ["磁编码器", "机器人关节"]
 ---
 
 磁编码器芯片 · Datasheet 拆解 · 机器人关节现场
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUPygxsF2DHoHvDZsrcuwmhlOtc1FsWvXaIfnby6czpkxeV6JFCnUjmMnXsicFoh4TkJ1X2tebmn3hObk8gUZicCb5vP53Fx0ngY/640?wx_fmt=jpeg)
+![](/images/wx/f0d672b8f11229cdaca04ec55238c845.jpg)
 
 ##
 

@@ -4,9 +4,10 @@ date: 2026-08-29T00:09:00+08:00
 slug: "lhz_zB6IGSUR6wLvzkFuzw"
 description: "我干的活就是跟磁传感、编码器打交道的，所以英飞凌和纳芯微两笔收购前后被同行转过来的时候，后面经常跟着一句："
 original: "https://mp.weixin.qq.com/s/lhz_zB6IGSUR6wLvzkFuzw"
+companies: ["纳芯微", "麦歌恩", "英飞凌", "ams OSRAM"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXImtokO9RibVib2Eg3TtEXhFszW5MkHZ39WeTJFAINsCs6HnXhVT8KFfjiattYgnLhwLUaQxxibkia6cNOIa8L0oEF3kpOUhFGiabkI/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/139b02a3f8cd98918a4219388c714aa4.webp)
 
 ## 英飞凌和纳芯微都吃下传感器业务,买的却不是一种能力，“传感器并购”这个词，几乎没告诉你任何东西
 
@@ -38,7 +39,7 @@ original: "https://mp.weixin.qq.com/s/lhz_zB6IGSUR6wLvzkFuzw"
 
 如果只粗略拿交易价格除一下预期收入：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4goiaRfNc6iadTXorGia0wfpz6EicibHWyP1qJh3W7NwAU7iahJWyzNaaxLxc10PPwleWRRX2zJg7grvtc5Rp0xIGWEM1sqic0FWokNnU9HfNgN3bug/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/1aac64fb8935f0e94f84962b9599c984.svg)
 
 大约 2.5 倍预期年收入。
 

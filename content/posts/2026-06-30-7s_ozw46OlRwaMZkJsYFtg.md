@@ -4,9 +4,11 @@ date: 2026-06-30T00:00:00+08:00
 slug: "7s_ozw46OlRwaMZkJsYFtg"
 description: "读博那会儿，我一直以为磁传感器数据手册里的“最小工作磁场”是一个保守数字。供应商写 20mT，工程上也许 15mT 还能跑；供应商写 12mT，也许 10mT 只是裕量少一点。只要信号幅值还能出来，后面靠标定、查表、滤波，总能把误差压下去。"
 original: "https://mp.weixin.qq.com/s/7s_ozw46OlRwaMZkJsYFtg"
+companies: ["ADI", "TI", "iC-Haus"]
+tags: ["AMR", "ADC"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUTt1nnrDaNmoq84gwZTpDJTHAvJdyVDDJsliaT78YjlNj1Q9JWLVZtRo6LH54eQLg5tIzn1wiaLQjVuRSxibw04b58iaXnn3ywxRc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/713d213d3bf678ad45ea91e2598b0b67.webp)
 
 读博那会儿，我一直以为磁传感器数据手册里的“最小工作磁场”是一个保守数字。供应商写 20mT，工程上也许 15mT 还能跑；供应商写 12mT，也许 10mT 只是裕量少一点。只要信号幅值还能出来，后面靠标定、查表、滤波，总能把误差压下去。
 

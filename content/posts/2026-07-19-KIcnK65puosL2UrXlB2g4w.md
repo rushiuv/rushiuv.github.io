@@ -4,11 +4,14 @@ date: 2026-07-19T00:00:00+08:00
 slug: "KIcnK65puosL2UrXlB2g4w"
 description: "前几天有个朋友在调试一台伺服关节，选的是 AMS 的 AS5147。参数表上写得清清楚楚：14 位分辨率，SPI 接口，360° 全范围角度输出。"
 original: "https://mp.weixin.qq.com/s/KIcnK65puosL2UrXlB2g4w"
+models: ["KTM5900", "AS5147", "iC-MU"]
+companies: ["ams OSRAM", "iC-Haus"]
+tags: ["磁编码器", "非线性校准", "TMR", "AMR", "ADC", "稀土"]
 ---
 
 |
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWU9wu4eBjB1fMzPkR2V1oMcFPDeu9rIV9RE8JLad90gGEAb5CWlzIofsgBBb1uSQQ5S7IuZ47MgaWfJftw6oZNglUugb2KwGs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/849476ed0922b045e1b82bb037d1f3b7.webp)
 
 |
 
@@ -90,7 +93,7 @@ THE LAST GATE
 
 每一级都在往信号里塞噪声。ADC 只是其中一级。门再宽，屋里吵，录出来还是糊的。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXkibHkHMufO3ibPO4ib2PCCYiaZMoqXZ3BXDU7TDTLFJ9SkkKrhg3JFMwggFqGkPCLEhOYIJaEqv2KFAjOUXR8Lh6G689S5ML6aAs/640?wx_fmt=jpeg)
+![](/images/wx/c1eab191f4d20ed54c76aae19a1a0f1c.jpg)
 
 从磁铁到 SPI，信号要过五级——每一级都往信号里塞噪声（红箭头）。门再宽（14 位），屋里一吵，出来只剩 11 位。（原创示意图）
 
@@ -110,7 +113,7 @@ THE PHYSICAL FLOOR
 
 磁编码器的核心是下面这张图。两列正交的磁阻条（AMR）或隧道结（TMR）铺在硅片上，转轴上的永磁体在面内转一个角度 θ，AMR 条的电阻跟着 cos²θ 变、TMR 跟着 cosθ 变。把电阻变化搭成惠斯通电桥，差分管脚就输出两路正比于 sinθ 和 cosθ 的电压。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWbe2IRR9rbEgZWWq27BdLfSYPJez7GkQq57JBrDicgGgsT16lVvfKGBZiaBiaJxOrTVxxM6Ng0mPSBcUqNibTwLXS4pEABQvpzkYc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/1bd9cb971a916b03b780c83e02b4708b.webp)
 
 磁编码器怎么把角度变成电压：永磁体转角 θ，AMR/TMR 电阻桥输出两路正比于 sinθ、cosθ 的电压。（原创示意图）
 
@@ -198,9 +201,9 @@ CASE STUDY · AS5147
 
 现在回头看 AS5147。从磁铁到 SPI 寄存器，噪声怎么一层层咬的：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXlQiaZ5I8OUFLCe97ZLOj5ZIN6Zgic7z3ZAia47KBN1KhiaDaFKdDWLcespV0IgVzDKYHueibsQCSicAlbWj5fnVZ9sKhfxQoJZzXcA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a89304eb35d0e3e4435a5da16705e783.png)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVV7XNuj8N4PJNPbh1MQZazIl93CJCW1srMosWhsTd2rXO8HGOxUltPIlxRLpJh1E9icImF8IicKK23LQbG19Fl3FkNrePFCplSU/640?wx_fmt=jpeg)
+![](/images/wx/d1667a61e8ca46e62641ba1796f0c5ff.jpg)
 
 14 位是怎么被啃成 11.3 位的：AMR 桥噪声、放大器噪声、ADC 量化+kTC 各咬掉一口。（原创示意图；数字为典型量级示例，非实测）
 
@@ -226,4 +229,4 @@ KNOWLEDGE CARD
 
 ### 知识卡片
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXaPvkv5KmAGYEzIfmQLibKSUYGJlPVYvbpFmD5zLXKH6wz3lwJTraXic55CZ8tibWTRbVJ4AgEQKDkv52qFLeUID9vYHPO9JIHes/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ab9f7a6cc60ca5845abc15fe1e04b1a0.webp)

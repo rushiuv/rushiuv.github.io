@@ -4,9 +4,11 @@ date: 2026-08-10T00:30:00+08:00
 slug: "qxZg_5qP73aXrJaMZE2YCQ"
 description: "霍尔开关回答\"转子在第几个 60° 区间\"，TMR 角度传感器回答\"磁场现在指向多少度\"——这不是低配和高配，是两种完全不同的位置反馈。"
 original: "https://mp.weixin.qq.com/s/qxZg_5qP73aXrJaMZE2YCQ"
+companies: ["TDK", "TI"]
+tags: ["TMR", "AMR", "霍尔", "ADC", "FOC"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIU1w7IPzYiag9M3vBQ6tvPTU0rflfGeKb7hIuRCibb9WLOibpRdnO9HWSsEprfGpHVvwkFEZeDrZ25plHYFQzHO3K48SNU9OEVEVo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/13b34d2ee535f8f0b2589f9225811cef.webp)
 
 工程手记 · 汽车电子
 
@@ -57,21 +59,21 @@ TMR 角度传感器告诉控制器：**磁场现在指向多少度。**
 
 TMR 角度传感器走的是另一条路线。芯片内部通常布置两组互相正交的惠斯通电桥。当轴端磁铁旋转时，芯片所在位置的平面磁场方向也随之旋转，两组桥分别产生近似正弦和余弦的差分信号：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIViak1lPRdtmbAn5rSgLAnsEgjoQVibJozpl2ibLuvXtd523SCibnAh4rlN8bViaqdEt5ga2DFNIM7IictKricuT4BWr0uhicmzwBqvGuU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6cc80d6e4d3585a6937c25c29013d8a8.png)
 
 其中 **A、B** 是两路幅值；**Osin、Ocos** 是直流偏移；**Φ** 是两路相对于理想 90° 正交关系的相位误差。
 
 经过偏移、增益和相位补偿后，控制器用 atan2 解算磁场方向：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXg8SUGCpwC2E1WOIl4hcsh4IrGVPUx0uslpplj9x5bShx3qCDcccBApKLK9SbKxhjUVF6wgM1hKhCWVnAYdcIzqtP6WZl6NtE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5a95c627086e2bd6b9a59a76696e1efe.png)
 
 如果轴端使用一颗对径二极充磁磁铁，这个角度通常对应转轴的机械角度。电机控制所需的电角度，还要根据极对数和零位关系换算：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWV7AVtFGiaqbYJXDngNydSlwgOmrZyL1sU2p1icASaLCicDzgehsnlAlUeen0VIwgK3aYCibeeYHD0T0SFFfBol2QEZjEJRXf1ZfU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4d2fd26b21dfeaf48b56684d25e0312e.png)
 
 **p** 是电机极对数，**θ0** 是磁铁零位、传感器零位与电机磁极零位之间的安装偏置。这一步很重要：TMR 并不是把"绝对电角度"直接从芯片里吐出来，它先测磁场方向，系统再把磁场方向翻译成机械角度或电角度。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXjllAgWUgLH9VJI4trXdb3TgO1erZZM5zGYOyb1zKRjHWYQNdyRMFGzfQatZcEiaEwPmGlKOyPj5czK66XD4Rtibb83g2hARuFk/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/a67dbac050cbe877665eb3db8e2a48da.jpg)
 
 图：TMR 自由层磁化方向跟随外部磁场旋转，实现连续 360° 角度检测（来源：TDK）
 
@@ -81,7 +83,7 @@ TMR 的物理基础是磁隧道结。两层铁磁材料之间夹着极薄的绝�
 
 在简化的 Jullière 模型下，TMR 比率可以写成：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVpPYancgiaUkpHEzKG8u4onfO7BIPOsYQSC1zZsGfCpRT4ySfzqpJ9iaUB7xyMg2kIIXwCABBQc4SEs6AJGtXfIuGIXbkjSCGJo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/a1c89a75bd9b05a025bfa94a3b61039e.png)
 
 真正落到产品上，TMR 最直观的优势不是公式，而是**输出幅度**。以 TDK TAS2142-AAAC 为例，其内部包含两组全桥，直接输出差分 sin/cos 信号：
 
@@ -92,7 +94,7 @@ TMR 的物理基础是磁隧道结。两层铁磁材料之间夹着极薄的绝�
 
 TDK 的对比资料给出的典型结果是：其 TMR 输出约为 AMR 的 20 倍、GMR 的 6 倍。这里比较的是特定 TDK 产品与其选取的传统器件，不应外推成所有产品的统一比例，但足以解释为什么 TMR 可以获得如此大的桥路输出。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIXYpaUMYfBzxnVNHA8zD2iaWlHHuT8vRZWYNzTUoX9CibzN7BCicVBUwfEELsI7157Y10aGM718MYoEicSLN6HV9jX5H8PfkibJwOTw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/4a62a8d643f87ca0b84fc73f4653d786.jpg)
 
 图：TDK 对 AMR、GMR、TMR 的结构、输出及温度特性比较（来源：TDK）
 
@@ -108,7 +110,7 @@ TDK 的对比资料给出的典型结果是：其 TMR 输出约为 AMR 的 20 �
 
 TDK 官方给出的一个特定轴端布局案例中，当传感器与磁铁端面间隙为 2.0 mm 时，允许旋转轴偏移达到 ±1.8 mm，角度误差仍能控制在 0.1° 以内。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWhyJiaDKHrcFyUqPc3hur3OVzcNVcqdib0Qg11z5vF90V9IBdtlTibhSKLTvz00ykichJTVeCkjwsU0sBeo2pybnNsP9KkNH12Dtw/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/9ba55679feda6ccc6dceb44d55cf56c2.jpg)
 
 图：TDK 给出的轴端磁铁布置示例（该结果只对相应磁铁、气隙和结构成立，不能直接移植到其他设计）
 
@@ -126,11 +128,11 @@ TDK 官方给出的一个特定轴端布局案例中，当传感器与磁铁端�
 
 但对于连续角度反馈，这几度误差会直接进入电角度：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVYOboMQic5abcStkrADqGiaLENsRItFKEic7r88SicLnUT6A9iczn5VAiauH8ic3SLHqwDl6rxdSMNhBiabDGSac9MJf96dbjfukFiajOk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9992440e325a6aee726ea23c00549081.png)
 
 假设电机有 7 对极，机械角度误差 0.5°，对应的电角度误差就是：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVZdjJPkG0xibojQficKqDpXFaBY9ibEiaqY934nHQAjmvjznI0gVtIckN5aDbdaaZuDZGdmcGqgOJca0DxUqbSJibeAB0mGY3sJVnM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/62acf9e2b0bd0d730ff620393c39d740.png)
 
 这个误差进入 Park 变换后，会使原本应该落在 q 轴上的电流投影到 d 轴，带来额外损耗、转矩下降和转矩纹波。
 
@@ -140,7 +142,7 @@ TDK 官方给出的一个特定轴端布局案例中，当传感器与磁铁端�
 
 面对 sin/cos 畸变，最常见的第一步是做 Offset 和 Gain 校准。电机慢速、稳定地旋转一圈，分别记录两路信号的最大值和最小值：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVpFicMMK6KUdtM1T1YLQiaWiaFsb0RmgS3ZESGiaMyvQ4L6tnia7pjH79xicONMqIApNQ6phvdQu89DViajicJPicsJvPPJuUibHWrMAAf4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/49e3888e80140ac9addbb3b55c7096f6.png)
 
 余弦通道同理，随后归一化。如果两路不严格正交，还要进一步估计相位误差 Φ。这套方法可以把偏移的圆拉回原点，把椭圆拉回接近圆形，并修正一部分稳定的低阶畸变。
 
@@ -186,6 +188,6 @@ TMR 的大磁阻变化率带来了更高输出、更好的信噪比和较低的�
 
 如是有为 · 编码器芯片研发工程师手记
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXFSZIXcp9SHNjpKwz68oj9eVLoY8W0un85VHRrh6ZDiaZFv9gds8TCwHcDwawNnJwfG7IlOwQKPYeMPFD6UvNdnXBia5sT0icCNQ/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/c5bb07ddbd35466646bc9c735b60b8da.jpg)
 
 图：轴端磁铁旋转，TMR 芯片输出随磁场方向变化的 sin/cos 信号

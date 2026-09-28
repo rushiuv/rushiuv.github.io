@@ -4,6 +4,7 @@ date: 2026-04-08T19:03:00+08:00
 slug: "vFsKhyliPHMvbj_2BtehNg"
 description: "最近看到零差云控一组参数，确实很抓眼球："
 original: "https://mp.weixin.qq.com/s/vFsKhyliPHMvbj_2BtehNg"
+tags: ["人形机器人", "机器人关节"]
 ---
 
 最近看到零差云控一组参数，确实很抓眼球：
@@ -18,7 +19,7 @@ original: "https://mp.weixin.qq.com/s/vFsKhyliPHMvbj_2BtehNg"
 
 1角秒 =1/3600°。也就是说，7角秒大约只有 0.00194°，15角秒也才 0.00417°。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVImktommeqQibkPUINjnOIxmupicoibZtUViahsNk0y0ysbgn3QP5ZYfrLibaLAHcqyLTbic3b6UwCVpIyLppmVvwNGWKIK4icT1Lv5I/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c1f1f2237a41dab961a785ea841166c3.webp)
 
 这个数字已经不是“还不错”了，是那种会让很多做伺服、做机器人、做编码器的人下意识停一下的级别。因为零差云控官网自己也是按这个口径在宣传，而且明确配套的是双绝对值编码器、全闭环控制。
 
@@ -108,4 +109,4 @@ original: "https://mp.weixin.qq.com/s/vFsKhyliPHMvbj_2BtehNg"
 
 这才是懂行的人会追着问的地方。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWA0fRwszzLqx6u1iaHmqQJiaRp18dFmZk3bM9ia96icgnqxkE3YKWNgJgJfhm1rBl8uSgJXfPiaSoIkeSk7IuR7VZal166Kuory7FY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2a68a050b7fbd057bcfb19d61e6c6f16.webp)

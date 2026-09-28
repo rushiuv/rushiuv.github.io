@@ -4,6 +4,8 @@ date: 2026-04-13T00:00:00+08:00
 slug: "IlCBBrJRyTBXDLH-X68Ohw"
 description: "可一提编码器，很多人的理解还停在一个很老的层面：无非就是“测角度”那颗东西，谁分辨率高一点，谁精度高一点，谁就更高级。"
 original: "https://mp.weixin.qq.com/s/IlCBBrJRyTBXDLH-X68Ohw"
+companies: ["堡盟"]
+tags: ["磁编码器", "人形机器人", "瑞士"]
 ---
 
 ## 很多人聊机器人，最爱聊灵巧手，聊大模型，聊具身智能，聊量产节奏。再往下一层，开始聊减速器、电机、丝杠。再往下一层，才轮到编码器。
@@ -15,7 +17,7 @@ original: "https://mp.weixin.qq.com/s/IlCBBrJRyTBXDLH-X68Ohw"
 至少这两年去看瑞士几条很有代表性的编码器路线，会发现一个很反直觉、但又非常刺眼的变化：**高价值编码器正在悄悄从“位置测量器件”，变成“机械退化预警器件”。**它最值钱的时候，不再是把角度测得多漂亮，而是更早告诉你：**这台机器的机械关系，已经开始偷偷变坏了。
 **
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXajPyLBJQ6MbiaaibS6ReoOSSTybichDPthRmUV0ibrKOadIBGfrrRkvHBne2rDdWqE21fWHeOib4xp6CByrPGwIu1ViaEZtibZOSBj4/640?wx_fmt=png&from=appmsg)
+![](/images/wx/5353778f351fc54a9fe0843a280fc8e8.webp)
 
 这句话如果放在几年前，很多人会觉得有点夸张。但今天再看，就一点都不夸张了。
 
@@ -35,7 +37,7 @@ original: "https://mp.weixin.qq.com/s/IlCBBrJRyTBXDLH-X68Ohw"
 
 ### 然后才“变坏”
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIW7KZEQiceribjVXA6bpZo59m11jicp47Dyqe5IDHhRibkg2ZsalFSjXXHo6feyeZGBKhl4zbRaq2ys6OicWBdQa3WDarqjRKrfFFibE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/9fad756be2ca4cb277868cb6c66ea606.webp)
 
 这是很多技术文章都没抓住的一点。
 
@@ -107,7 +109,7 @@ original: "https://mp.weixin.qq.com/s/IlCBBrJRyTBXDLH-X68Ohw"
 
 ### 它开始让编码器兼任“机械前哨站”
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWQnDPbgghXoSjuVbBqYwxBFStp0RCSFrW8MR1fGknFzZFHpxErs4S6puZlGwjepxHiaaZJGXY8MUPZ6SCSQ5FibAWrWJ6XEQUd0/640?wx_fmt=jpeg)
+![](/images/wx/df36cdded713c78f3728173fed42a90f.jpg)
 
 这个判断，不是空想出来的，是产品自己写在说明书里的。
 
@@ -141,7 +143,7 @@ original: "https://mp.weixin.qq.com/s/IlCBBrJRyTBXDLH-X68Ohw"
 
 ### 它不是在测角度
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVMWWFyO7l4LHbYjWL7WdXtM5vWZer5X4jJJEeoesdHNAlI23Kbwy2bYea5lCT13kA5AEJwjv2xZ0OmBcfKwpiazWicNcibdZhc0E/640?wx_fmt=jpeg)
+![](/images/wx/8a66cb23e222345211a7d6c48eb3cd4d.jpg)
 
 ###
 
@@ -199,7 +201,7 @@ Baumer 官方的说法非常直接：EB260 可以持续记录传感器与磁转�
 
 ###
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX8Edic0w4jHfjbnd55ictiaqcwYtiaLaLDaOx4fVYribrkdgNLCAcqPbRCPjTKDloz3SplLXtA1EL6eiaSuTficxw9WbfMxfSIdhVyMM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/661d9f74199264fa51f75bc87c73d750.webp)
 
 因为分辨率好看，退化管理难看。
 
@@ -257,7 +259,7 @@ Baumer 官方的说法非常直接：EB260 可以持续记录传感器与磁转�
 
 ### 而不是昨天的机床
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXIvBHrxrZWFT09HbUohNtHNB1EwGDeCPNHicOicRR5oic0UUVObgmvWDTJiaggolQwRwAKLnsAib9vacCpSszSCCpib6lvMnrAu1RZk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/fed3ace206d59c358e92641e651157f8.webp)
 
 因为今天的人形机器人和高动态关节系统，有一个很残酷的特点：
 
@@ -357,7 +359,7 @@ Baumer 官方的说法非常直接：EB260 可以持续记录传感器与磁转�
 
 ### 而是工程判断
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVvia62icgfnricXHtEThldCVlfT9b8pOYib303q9V96LmXdc7YQhHpMGvYpLGGKlpjOjQk4qia2gHInAa1EESia9ql9TDrMAGwGzqPA/640?wx_fmt=jpeg)
+![](/images/wx/9338dd32e7f3d92900a035459c49b580.jpg)
 
 如果只把这件事理解成“Baumer 又发了个新产品”，那就太浅了。
 

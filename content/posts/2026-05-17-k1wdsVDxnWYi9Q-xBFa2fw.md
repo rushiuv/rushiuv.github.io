@@ -4,9 +4,12 @@ date: 2026-05-17T00:00:00+08:00
 slug: "k1wdsVDxnWYi9Q-xBFa2fw"
 description: "2026年4月，B站科普博主“耿同学讲故事”把同济大学一篇《Nature》论文推到了舆论中心。他做的事情说起来并不复杂：翻论文、看补充数据、对比表格、检查图片，然后找出数据里“不像真实实验”的地方。事情后来越闹越大。同济大学在5月6日发布通…"
 original: "https://mp.weixin.qq.com/s/k1wdsVDxnWYi9Q-xBFa2fw"
+models: ["KTH5701", "CT-21X"]
+companies: ["昆泰芯"]
+tags: ["磁编码器", "霍尔", "人形机器人", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWRayTM4IGT5LLRZMB0ByHliakM4oEe7uzmAbgMokmeVMDu992KtB9qwTEplgUSCy9v1gSLn92A5Qu8ttGoj9BibicQUaKmY8DtUA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/cec88f99270b674d65220d6900db9a45.webp)
 
 ## 数据太整齐，现场就要出事：耿同学找数据异常的方法论，和传感器故障诊断是同一套逻辑
 
@@ -24,9 +27,9 @@ original: "https://mp.weixin.qq.com/s/k1wdsVDxnWYi9Q-xBFa2fw"
 
 在传感器行业，FAE最核心的能力之一，就是从数据里看出问题。客户不会一上来就把问题说清楚。客户通常只会说：“角度不准”“高速以后位置偏了”“低速会抖”“换向时跳一下”“温度上去以后误差变大”“你们芯片是不是有问题”。这些话本身没有诊断价值。真正有经验的FAE到现场以后，一定会先抓原始数据。看角度，看正余弦，看磁场幅值，看温度，看电源，看通信状态，看电机电流，看运动模式。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVG22icSHicQjPUVyHrzzIkYy0NAmcXq4H56icfkXPw8bBmw8uicY5ibGuDGC6uVY7NrkmBRibFJmeRicBtN0cReGrtmKhK1zFZuTqiceQ/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d509e20e54ab2fa40105f74771839971.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVvKWYjthR3icCsicGSa02TiagqeEicExniaIfFSNGvn8gic5KWdYWahL7ibDwqra5bySnhHjvGRyvlVFGG70zc2htKgKicGlpJFMaDujE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/bfa364dddffca123fa224657083f03fc.webp)
 
 用昆泰芯KTH5701来理解，这件事会更直观。KTH5701是一款数字输出型三轴线性霍尔传感器，可以测量
 
@@ -50,13 +53,13 @@ original: "https://mp.weixin.qq.com/s/k1wdsVDxnWYi9Q-xBFa2fw"
 
 这就是传感器FAE的“耿同学时刻”。看到一个异常，先不急着下结论。先问：这个异常自然吗？如果自然，它应该对应某种物理机制；如果不自然，它可能来自数据处理、采样链路、软件滤波、通信错误，甚至人为整理过的测试数据。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV7Dt0UdHENHYZ9u17xsKmTy8FtEKUdvDvmugdPACmwzvAVsMkoKoiamCpvcPYPR3NlNf546rl38CnwvV1I5SstkhKa5tbGYk5M/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e7b6b6fdce6efe470b717b6497246dab.webp)
 
 ### 三、两个案例，同一个逻辑
 
 耿同学看论文数据，先找“不自然”，再追溯原因。FAE看编码器数据，也是这个顺序。一个典型现场场景是：客户使用一颗磁编码器芯片做机器人关节位置反馈，在常温低速下表现正常，但在高速运行一段时间后，角度误差逐渐变大。外行很容易一句话带过去：芯片温漂不好。但真正诊断不能这么粗。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWPUBnMolvgkgNv56ujW76L4XnO5zhib4icGmFjwZ4vFwklCtUrwGDiaribO5oZuyzW82jbGuHopdTeNtDK9y4VZ1unKicqFru37Ut8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/8568ca420e1f944c84fa5aa81ba75ea9.webp)
 
 如果用KTH5701这种三轴霍尔芯片的思路去看，第一步不是直接看角度误差，而是把
 
@@ -70,7 +73,7 @@ original: "https://mp.weixin.qq.com/s/k1wdsVDxnWYi9Q-xBFa2fw"
 
 很多编码器现场问题，最后都被客户压缩成一句“角度不准”。这句话最害人，因为“角度不准”只是最后的表现，不是根因。以三轴磁场数据来看，至少可以拆成几类完全不同的异常。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWAQVEZCsERS7ASHicwmlhd9LIkvQSgwfIFJgW6ABB8jCTntjHsoYDLibicYeDktHwknpc4x8iaJ0U51FicUQSyazCqKjBXNaC8TrO0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c686549f3194f3dcfa18dcea7bff7518.webp)
 
 **第一类是圆变椭圆**。正常情况下，
 

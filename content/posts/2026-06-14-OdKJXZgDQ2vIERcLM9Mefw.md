@@ -4,9 +4,12 @@ date: 2026-06-14T02:53:00+08:00
 slug: "OdKJXZgDQ2vIERcLM9Mefw"
 description: "很多年轻创客第一次做机器人小车、轮速测量、云台控制，都会遇到一个看起来很简单的问题：我能不能自己打印一个光学编码器码盘？"
 original: "https://mp.weixin.qq.com/s/OdKJXZgDQ2vIERcLM9Mefw"
+models: ["PNH3348", "TCRT5000", "QRD1114"]
+companies: ["iC-Haus"]
+tags: ["光电编码器"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVOE6OTSnWKQ3UQHYuricDf6Xy40uC1H2icHjHaKG2icOazZ63dIOWjVyuf12TFRc7LqCuibFLCk505YKvoCC5VniaKQnM3YAFDsK5A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e99124f56f20b5acdd873018023840ba.webp)
 
 ## 你打印的光学编码器黑白码盘，为什么红外传感器读不出来？
 
@@ -68,7 +71,7 @@ original: "https://mp.weixin.qq.com/s/OdKJXZgDQ2vIERcLM9Mefw"
 
 这个问题不是凭空想象出来的。早年 Parallax 论坛上有一个很典型的创客案例：有人用 **QRD1114 反射式红外传感器**做自制光学编码器码盘，图案是喷墨打印的黑白条纹。他在台架上测试时发现，传感器和图案本身看起来都没问题，示波器上也能看到变化，但喷墨打印出来的黑区“不够黑”，无法可靠地让传感器关断；他还提到，黑色电工胶带做的图案在高速下工作很好，而喷墨打印在卡纸上的“黑色”被传感器看得像白色一样，因为它依然反射大量红外。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUGJ6HFf7kIALdpxH4iauGicQfJdbGoQp0ePWbnPtUnzMYiaIOIFmkQTuPtf2jJHdlnoz5og4PmTuyTXFT82LWT4CeHJlQOIzrCGM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/18507190a8da1f812e5885310720992f.webp)
 
 这个案例很适合拿来理解反射式编码器的第一层问题。
 
@@ -142,7 +145,7 @@ original: "https://mp.weixin.qq.com/s/OdKJXZgDQ2vIERcLM9Mefw"
 
 这里可以看一个成熟工业产品例子：iC-Haus 的 **iC-PNH3348**。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX8GQfoPqibI3HAhvXziczzY4833ZHhcQEb7ZDiaBHkopSN1qWIyNbbrGic5sYv1x7IIYAkh4DO6vedfyPwzdtmicMUwGry5OTCfZvI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/c0dde3b5772eda9317b1ad4f9fcb2e20.png)
 
 公开资料里，iC-PNH 系列被定义为 **Phased Array Nonius Encoder**，面向紧凑型高分辨率绝对编码器，可通过 Nonius 插值实现很高的单圈分辨率，并使用单片 3 通道 HD Phased Array 来获得较好的信号匹配。PNH3348 相关资料还明确把它列为 **EncoderBlue® Phased Array Nonius Encoder**。
 
@@ -190,7 +193,7 @@ PNH3348 还有一个很值得注意的点：它不是前面 QRD1114 例子里那
 
 公开资料把 PNH3348 放在 EncoderBlue® 路线下。很多人一听“光学编码器”，脑子里默认就是红外，但成熟工业产品不一定都用红外。有的用红外，有的用红光，有的用蓝光。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUEpDg7gSO5HrYAEicbUxw3aEnypOqEBzxGCgosXCV5pvsbryYN5K0KKKRibEV7uGdJWqZRzdqtvc1XSQpzTPzl2rEZKicT4KEvTE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/f3c560a4c019d393ab361e96eb5b8f8f.png)
 
 波长一变，码盘材料的判断标准也要变。
 

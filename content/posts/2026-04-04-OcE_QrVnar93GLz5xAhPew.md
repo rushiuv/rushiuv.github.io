@@ -4,9 +4,10 @@ date: 2026-04-04T16:21:00+08:00
 slug: "OcE_QrVnar93GLz5xAhPew"
 description: "同样是芯片公司，同样挂着“高端制造”“国产替代”“AI浪潮”这些词，会议室里讲得热气腾腾，招聘网站上年包看着也还像模像样，可你真去问里面的人，味道已经不一样了。有人还在涨，有人已经横着走了，有人名义年包没怎么动，奖金开始变得像盲盒，股权像空…"
 original: "https://mp.weixin.qq.com/s/OcE_QrVnar93GLz5xAhPew"
+tags: ["芯片设计", "AI", "投资"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWUN0NLvNpyM2ibUMZfRUicnJ6GYaxCnqZVKXTNAicjmO8ia7TVjhUtKOrmhWqrUcYzRr1DeXLdXGaMvnCle06ACPOJqb3QQKG9x4I/640?wx_fmt=jpeg)
+![](/images/wx/3bccbcd241d7454be7ab8baf206367a3.jpg)
 
 ## 这两年有个很有意思的场面
 

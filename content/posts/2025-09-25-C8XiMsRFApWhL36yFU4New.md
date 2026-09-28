@@ -4,9 +4,10 @@ date: 2025-09-25T20:29:00+08:00
 slug: "C8XiMsRFApWhL36yFU4New"
 description: "在硬件的世界里，有些数字会让人当场愣住。一个 32 位浮点乘法器，需要大约八千个晶体管；而在随机计算（Stochastic Computing，简称 SC）里，只要一个最普通的 AND 门，六个晶体管，就能算出同样的乘法结果。八千对六，这种…"
 original: "https://mp.weixin.qq.com/s/C8XiMsRFApWhL36yFU4New"
+tags: ["AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyTRgficscqelNft92FRoxibZoNDXnExtuBskIjNEUJs22uYIoTogR58B0IwLApTLoia91uRZQ8lzEOdg/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d5ccac2799cf624a9b45696207a22e3a.webp)
 
 八千对六：最离谱的计算差距
 
@@ -51,7 +52,7 @@ original: "https://mp.weixin.qq.com/s/C8XiMsRFApWhL36yFU4New"
 
 NOT 门更直白，输入流有多少概率是 1，输出就有多少概率是 0。XOR 门则算的是差异度，当两股流不同时才输出 1，转化成概率，就是 pA(1−pB)+(1−pA)pB。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyTRgficscqelNft92FRoxibZogwlX8tR39WotZyr5T7hyfYpxUTr1ViadwAkwzIL73VKJGmsZbbp2CDA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/76a4af80ff052e30448ddae4089c9911.png)
 
 连 AI 里最经典的非线性激活函数 Sigmoid，都能用多项式逼近后拼出来。在 [-2,2] 的区间里，Sigmoid 可以写成 0.5 + x/4 - x^3/48。常数 0.5 用固定流表示，x/4 让 MUX 稀释输入，x^3 让 AND 门连三次再稀释。几颗门电路拼起来，就画出了那条平滑的 S 型曲线。
 
@@ -87,4 +88,4 @@ GPU 是工厂。每一颗乘法器都要用掉上千晶体管，数万台机器�
 
 ###
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2QbjyqiceuyQmzP7KIoasJttub3Wl1vGxnZ2gBNDIcRMsCIs0icy4xJHgEN5VsDibepU0roIXcZe6aRRS89IYcg8A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/88029d0e022db03effe122b36e9950ac.webp)

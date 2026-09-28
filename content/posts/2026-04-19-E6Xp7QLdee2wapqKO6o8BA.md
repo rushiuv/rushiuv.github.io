@@ -4,13 +4,15 @@ date: 2026-04-19T10:42:00+08:00
 slug: "E6Xp7QLdee2wapqKO6o8BA"
 description: "下一代编码器最狠的升级，不是继续卷 bit 数，而是把 FAE 做进芯片里。"
 original: "https://mp.weixin.qq.com/s/E6Xp7QLdee2wapqKO6o8BA"
+models: ["AS5147", "AS5247", "MT6835", "TLE5012B"]
+companies: ["麦歌恩", "英飞凌", "ams OSRAM", "Allegro", "堡盟"]
 ---
 
 下一代编码器最狠的升级，不是继续卷 bit 数，而是把 FAE 做进芯片里。
 
 总有人说这是句空话。不是。你把市场上已经在卖的型号摊开看，就会发现，这事其实已经开始了，只是很多人还在拿“更高 bit 数”当主线，没意识到真正值钱的升级，正在从“更会测”转向“更会自检、更会自校、更会报警、更会告诉系统我现在到底靠不靠谱”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUbzWBRqpV4YATe2KusWjgHjNCTWnuTdK1PyUvGZZIPrlKMEar4xGIJoczyBibzmrwes92hgDRjICIexrZWWLUIiaSeWoia7QUj2A/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d8d0ec55c36d9cad7a9f1135b2a07225.webp)
 
 最像“把 FAE 直接塞进产品里”的一个例子，是 Baumer 的EB260。这东西已经不是传统意义上的“给你一串脉冲”的编码器了。Baumer 官方直接写了两件事：一是它的LowHarmonics auto-calibration会自动消掉安装、温度、老化和机械因素带来的信号误差；二是它带Airgap Monitor，会持续监控磁转子和传感头之间的距离变化，哪怕机械系统有了很小的损伤，也会往上位系统报告。再加上 IO-Link 的 condition monitoring，这个产品干的事已经很像一个老 FAE 在现场盯着你：气隙是不是变了，机械是不是开始松了，当前误差到底是装配问题还是纯信号问题。以前这些事靠人拿工装、看波形、猜装配；现在它自己先盯上了。
 
@@ -22,7 +24,7 @@ Allegro 那条线更像把“体检医生”做进芯片里。官方讲 built-in
 
 你要说这是不是国外大厂才玩得起，国内也不是没动。MagnTek 的 MT6521，官方页面已经把诊断能力摆出来了：过压、过流、断线、弱磁场等诊断模式都在上面。对应的数据手册还能看到更细的故障项，包括磁场过弱、磁场过强、模拟信号链检查失败、数字信号链检查失败、供电断线、地线断线等。再看它家MT6835和MT6826S，官方直接写user auto-calibration and distortion compensation，目标 INL 写到±0.07°。这说明什么？说明国内产品也已经不满足于“给你一个原始角度”，而是在往“自己先做失真补偿、自己先识别异常工况”这个方向走。只是很多人还把它当成参数页上的一个附属功能，没有把它上升到产品定义。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWc2mQZ9sw35lWU4yF7NXkqUrdInj38KFr9PEibEXuTMcMSqkDiaCq1SzibciadHgUfULwibJQ09mhWl9YNcHIH4Pt9biaGBwwzhDOAA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/31515d09f3e31f30d539fc1f9a208f24.webp)
 
 所以“把 FAE 做进芯片里”到底是什么意思？不是一句玄学口号，而是四件很实的事：
 

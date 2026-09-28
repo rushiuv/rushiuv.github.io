@@ -4,6 +4,7 @@ date: 2026-08-02T18:16:00+08:00
 slug: "FbxQqASMlYdM3Kzi8eh2kw"
 description: "很多人相信，只要不断学习新的投资方法，就能提高长期收益。今天研究价值投资，明天研究技术分析，后天再加入量化因子、情绪指标和宏观模型，方法越来越复杂，收益似乎也应该越来越高。"
 original: "https://mp.weixin.qq.com/s/FbxQqASMlYdM3Kzi8eh2kw"
+tags: ["投资"]
 ---
 
 很多人相信，只要不断学习新的投资方法，就能提高长期收益。今天研究价值投资，明天研究技术分析，后天再加入量化因子、情绪指标和宏观模型，方法越来越复杂，收益似乎也应该越来越高。
@@ -24,48 +25,48 @@ original: "https://mp.weixin.qq.com/s/FbxQqASMlYdM3Kzi8eh2kw"
 
 所以，真正改变长期结果的，不是方法数量，而是有效信息、合理风险、低成本和长期纪律。没有新增有效信息，就没有新增预期超额收益。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXSGV7UiaUjEZ1l21uM331Txics15o73wAhXxUdRx1SNtkae5zoOQKGGCNAxWONjw37gnYxtNp5HIREhxrsV9jqH1Zbxzw50j1KI/0?wx_fmt=png&from=appmsg)
+![](/images/wx/8ec0b3fe0a77d135ae71e1a82dc6a78e.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXMJsMm4AxpmUY7gz66C1oYicf5WDBotyqhDMSFF0oqaMQe7Pfv92hNJZNFXtP8uia0r6SrpzaHNz5WWela00eMDWrmWuoEImib1s/0?wx_fmt=png)
+![](/images/wx/c9fc6465f78f55cec8ce862bd658c6ab.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUibw8O4DeJghysicHmVBrbaibJfpLXYv9yqnzubkxfd82kqU9Zj12AD3DQm2haWG8Rozh0TFX8Q7TALu7fwXdsWVRiaVOso5T73bE/0?wx_fmt=jpeg)
+![](/images/wx/44b54d9c84a4f9b4cf673d29bd8d9c58.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWpcHUCMHIGyKfjP9BZa5KicLBDVK4jcKKJVic2bXoHvBmpDyzL0DoLMzV0DqrEzwT8Nn3WxkesTm8En7Suvj1uKLv2ZkmF3xqf8/0?wx_fmt=png&from=appmsg)
+![](/images/wx/86e238c21434365c7d14781567502645.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWr3IXiaNeSUYRmMotl9cv4pPSjBIe4ZVzult6rz8bkrOxFtGztib1pbhia18Wx3B8icCXc8ZMxaj8dSpwsNY0qMZlBtGSbpoMzsick/0?wx_fmt=png)
+![](/images/wx/35824b80a8bed013093a163c542b7171.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVMuKnhFTg8jvh9HafWK2YV2um2SOiaRQYKma9WCRc6XdLCFzX4icJlX3A5K3zLia5ic8q7PNthm7eXD4xLUFWElS2NUicZPiccvicoPc/0?wx_fmt=png&from=appmsg)
+![](/images/wx/b3d38181a7d241eda0dcd21d48cf2bee.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWWaMa6LY7iawPNk8AMiaWicdW7uy5Yrg1yJUKjEnc8QclTSc0wa85r4TACM2bPpSxqjbvOfVy2icicWp4QZ9ltic40mlroU4aiasyBog/0?wx_fmt=png)
+![](/images/wx/54aca3218bb3cae0248a4cf4fe9c4a79.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVRLsCHgBicQvAB96WSwiaiaIpRZOAia3WpDKSOaFPvia9xDbLPZPCeuNpz0heFiaEajvAc3MabyzdN4iaBLANdbmA0XXegzgHlv8lRJk/0?wx_fmt=png&from=appmsg)
+![](/images/wx/0983fffdbbc5ccbc44746ae9ada5fcf6.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWRHp7qFIKFhWV6lvrY0JzMoLTRTbl3mtntoic2TAm28yzk9ic8gVQ3xLEBbO4XibTicaGibRQmEPhIXT2CvY9PX74wAjJj4EUjBGe0/0?wx_fmt=png)
+![](/images/wx/375740bf17913dd9bbda229723ae3753.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWuiamr9jSIlcxwBDNCGnDR8x5uDda8nHPDk9Dex0OC26K5ibphdmnQIDf7Z1L03TOO9Le3Hm1jLURv9UeEwcQ3TrUHEuTPIjndk/0?wx_fmt=png&from=appmsg)
+![](/images/wx/bc3f84ac6a1b94e0e355809c9c7708d0.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUzqA5LwdgIBEfuNUdhkTia6TXxy3HUw9PZ2XA6SjxMlWWuo4aZNYGYeBkxXWWFQlgfV8y9CuqoFv3WfwdD52zQ8gDlA3Qiaw1UQ/0?wx_fmt=png)
+![](/images/wx/6fbbc3d1f5ab00b4d228c35415786f17.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV4riaaPaU4wThlSc8ANXRaEWIUSs1GsUNAGbKeuibHa5fvvytvthw9giaakw844tDUicqIrYkw5AsN2rDSficQzia6P2tn0HgtYj65g/0?wx_fmt=png&from=appmsg)
+![](/images/wx/77f56da7734d2d4a42f8b8f87dc60462.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUNnfMBwZ5eoylSrNorcyYibxUXibMQ8jkODuFia0ePCIXNvlXHO8xibtpQ4hCOPp16eMhSO0DnQz1t8zn4IE7ia0ib1Hiaibc4L0bCoaw/0?wx_fmt=png)
+![](/images/wx/665158c30fa41e4427ca390fca7c5cdd.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUHmVNdHuJFjfolsh2pERrhKia2I9Ea7NLMS03n40gb4C00cNfO6GDtHl0SDIb2AvrOa6ibLIGHyDdNhVjYub5xnHG6kPOmGPSzM/0?wx_fmt=png&from=appmsg)
+![](/images/wx/ae05ab972e1890b5ec321443b5857398.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWkBBMWUfsutYFPZWibdibvDicmEhT0oXtAmALmziaicXIUXLT42vW5CyO9WnqQibiabIZ6gnk5CvO1ymeecCd2yEJzR15L95NQSp1dSI/0?wx_fmt=png)
+![](/images/wx/7beb5633e4d37201455e2eec8dcf3452.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXv3SiaOOy9WgO0KicibzynuhfXGJ2cXogKWibuLB1SI2GgrSfMs5hJqwDtgIe3hj9h1LbcCS24r55j4zHw5gxZfISMnAFiae0ianb40/0?wx_fmt=png&from=appmsg)
+![](/images/wx/15db6e152b8649de3f6bb86f6093e36f.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUknuF5vtzPfcicKT18x5v8XQkkSib0fgcDXsO6E8sCaZbe7Yh8fib0TMHeGo1XLCRn02mBG5VJlI1BpeibAK57n2YOVCtn4ibIAqdk/0?wx_fmt=png)
+![](/images/wx/2861a7fdf47a730762b1bad469688a87.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXn1MAictYYsKZkQkcJibKic8KolJlKvNs1f2fK4I0F4uiaSaU5YWdMAecNAibFKx1PDjbNBrovV6gI962a1J8qOib7ss7rtVlpGIiaWQ/0?wx_fmt=png&from=appmsg)
+![](/images/wx/efb860c3510224efee591e882144393f.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWefwHDDXiaJ43kuSqlSeqB5eqrn09caY4I4jCRTxwPfs6GxD1J5ZmwgNmObdj6A2EribjMoE0KBA4ibHjk9q6DPpOwuhianRiaZKRs/0?wx_fmt=png)
+![](/images/wx/cfdb5981212337cfb4095c0d7f4b09b6.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVkYW4SmTsT3cNlofv3L1tRFZrWj7BC8beibtezSziaHwJXhLT787Onwl9j1UIvsQSthpMiakabPM7IbrnLe8gZxfQOOXFcTjS6ag/0?wx_fmt=png&from=appmsg)
+![](/images/wx/26817fe47c85519991490c7f8b26a0c9.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXKhjkEyMibTb6guLxsprUWibhjPiaAv50IPh3WtXsBaeDK7HgPQib3ncHl3aWQSA397TYxOGic6qV99N1TbLjPTSUQrVogkicdGuUhY/0?wx_fmt=png)
+![](/images/wx/cb5469a010c4bb882a0895aeaf759332.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXKO4QiaRJ44Z1LialP2Jicqmj5kOL2Iq369SMVGlBWYBTTAgdDJFGKzwzqAvWI0YicmCUMRA9fIoic3481lXeghDHWE1lJowynBm88/0?wx_fmt=png&from=appmsg)
+![](/images/wx/ffee1b55a06fa5700982836c9e665a78.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXwGXD8s1SSUzjROFxULQE0NIdGjAibCtK5dUWmdqfPUxXnONjBcnricQmrLTPxqkIVlgkJOsLNewbN82LDd2sAyX7x2dson7BUs/0?wx_fmt=png)
+![](/images/wx/ae6376153f6f1d6351bccd2b717c8b35.webp)

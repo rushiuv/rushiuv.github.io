@@ -4,6 +4,8 @@ date: 2026-07-09T19:42:00+08:00
 slug: "GyZerzZGMJlIuihNdmT8Mw"
 description: "智能家居真正的升级，并不只体现在屏幕更大、联网更快、App 功能更多，而是藏在每一次开门、每一次转动、每一次电机启动和每一次设备待机背后的感知能力。对用户来说，理想的智能家居应该是“无感”的：门窗状态自动识别，锁体动作精准反馈，摄像头转动平…"
 original: "https://mp.weixin.qq.com/s/GyZerzZGMJlIuihNdmT8Mw"
+models: ["KTM5900", "KTM1301", "KTH5701", "KTH1701", "KTH7812"]
+tags: ["霍尔"]
 ---
 
 智能家居真正的升级，并不只体现在屏幕更大、联网更快、App 功能更多，而是藏在每一次开门、每一次转动、每一次电机启动和每一次设备待机背后的感知能力。对用户来说，理想的智能家居应该是“无感”的：门窗状态自动识别，锁体动作精准反馈，摄像头转动平滑，扫地机和风扇安静运行，设备长期待机却几乎不需要频繁换电池。对工程师来说，这背后依赖的不是简单开关，而是一整套稳定、低功耗、可量产的磁传感底层。
@@ -16,40 +18,40 @@ original: "https://mp.weixin.qq.com/s/GyZerzZGMJlIuihNdmT8Mw"
 
 第四个问题，是电机控制的安静与能效。扫地机、智能风扇和白电电机不只需要“能转”，更需要低噪声、低震动、低功耗。KTH7812 与 KTM5900 面向电机控制场景，通过极低群延迟帮助 FOC 算法始终踩准节拍，把传感器反馈、控制算法和电机动作紧密对齐，减少震动噪声，提高运行效率，让工业级的安静控制能力进入家庭场景。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVe1MdWoribsAalL4h2IAth1icUFOAjIQSUdOR2DiaQXz1ZdPyFg4S8iaHeWuUUbUKWIJFkXYMKbwiantBrFrKTaDDTFSk3InyYA3hw/0?wx_fmt=png&from=appmsg)
+![](/images/wx/87b82d9783e76225eaa4c9c9c3e28572.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWBDEIeDiaUzibWBO4Fgf6LX2HIhGFCicEoH1ztne8uzjgrNOcHJx0txdUsjP9d17glQrOdbho7B6ibNWSJWbNL5kuqSsMoM0akfUs/0?wx_fmt=png)
+![](/images/wx/e8c33a238160bdef04aefbf41c776197.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWOZiaS54YnZu91yNI4z2iaUBwfMGpzeGSYDK5BJmvicl8dJciaibicPyICer2SItg97R5rXxZKKb6h4rT17aicpClDlcuCIwM3Ql30Uk/0?wx_fmt=jpeg)
+![](/images/wx/7d95321a5a34aa49517b38c3810acc1c.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIW54CAVu73gBFO43x0I3Kv8ksRZkGibDgbbc7WbWiacqWJDglaYHMsJo504lVs0fb42RGibDC0nuymDYRh2ZkDuposEMHaTtrbqVY/0?wx_fmt=png&from=appmsg)
+![](/images/wx/c9e72a56baca75df52056f00a84a3b7f.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVSOKvKRPPgW8OhF81uXicJrXZ4M9ibWTcib45CnXKzYjMYRgN81t75TWkX7L7FsyPibNktT2lSW7LyeUPM9Sib1M8p5HNv7WOlc7K8/0?wx_fmt=png)
+![](/images/wx/9db65cdd228d6007d97b260d2e709c86.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUttBqWevXbEFyhwm5TbJVrfrLzwhbZqD7jTrQ2o9bBUNo7TYxOvvE33kfHka2Pbe68t4ia3GKv2x86JoN9PS2RBOvBgK6alWUw/0?wx_fmt=png&from=appmsg)
+![](/images/wx/9c67e67bf575066fab7c315b90a18da1.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWiao4MlDDyO3obTL05g5D5ibKe2MAib79qeKtBZhiafvm9DJjbicMecueVYZmbDysRn0Z9wluhWa1WIDjk2g2gBjvUkOuAxHQfzSJs/0?wx_fmt=png)
+![](/images/wx/3aac03718d6f61373a6b6de071d62500.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVNhDFRfKzKiblAbpgKRdlQ10ElUGnO3cKNNRD1G7GAY9xyzY53f5ibCUdTrqpWumfleeND5JZPsgv8bsACELJad4EpVuHNfHa3I/0?wx_fmt=png&from=appmsg)
+![](/images/wx/2e77ee6a9c1912ef51a69d77f2e6b478.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUL5ic26iaUB5mvpoLKC3K95uTA4HyCUicX9OF8I9JUGYjIYnx5exWLaQlgIH1tTjuEZM5Pav0uu803lGT12qdHc5lViaud7xK7keM/0?wx_fmt=png)
+![](/images/wx/c71459257263ff4c28066a6b20378857.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVsUpllSuAdCsespKDCDb1XeKgxiaL1LSwCibHf7Aic7DzV0Ysjse48v40hhBO71Iic3eZ8KjrYTWkIIC20vEcs3eVLf61MSwgPz3I/0?wx_fmt=png&from=appmsg)
+![](/images/wx/1d9ae6f98e7d78a2f2b4dad13197fb32.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWvcu5xE69Htj0icTXaIC8NVtll5qNJno9xTibENdp1aAJS74GWQosC5YEqQaSfv1ycgibdiciaGJfy0475uUYBFh3Q60c6euHhq04o/0?wx_fmt=png)
+![](/images/wx/4b934ee3739e62dbdc3eb625f3a36d4d.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVsE5S3TxHhQrU1uBwnPnVCgVz0KV8OY6NqXxnyXIZy4Mq8iaUjWsjXm4VWgmwfdQwJK9b4vsvOUyj561Gtovy20w8xicDicEdZUk/0?wx_fmt=png&from=appmsg)
+![](/images/wx/f0f2bcfebdd0a061a041ceb76c11e5ea.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUHYCFu2owyfxfQ1evKwA78VQ1nEHEh0wYnO9rWSmGU196laT8fUn2LciaomOyVf53gL8icdeB5ALkgeqsydcXCkaMl7yfGerOhc/0?wx_fmt=png)
+![](/images/wx/492fa087f45cb37d50c635bf0ac4be53.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIX821ibSn1BpLdtTLkRhShStPpdhL4iarzCp5tRkqMhxibBjkma2YX5gKNLuwXW7VGaV33fYicEVWCMAhyqtxwsicdq4ydfNrc5Dvls/0?wx_fmt=png&from=appmsg)
+![](/images/wx/bc3e0eb75a3f252fd09ed31b6ebfb018.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUb2ibOUsu6WecIk6G9ora93p1g06eWsV5bDuVcTdibUq98icjxep53oZ3JyOHktBYrA1fYVId7JVJOHsJHHibfx95MdITcASkdCp0/0?wx_fmt=png)
+![](/images/wx/2a716ebd142feb71598748a1d38cf639.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVp3IHAL7GLGlLIMkr648IX47OtOJCWggFzMqB3Eyxx5HEHqK8OB3raRgo1YB6M6jcgCGnBVP2sjUVNPcDDQrhQKd6ia76pS5SQ/0?wx_fmt=png&from=appmsg)
+![](/images/wx/807133717b8a29391b56f93332426df3.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUsxaicSJrCVgfYnwmAuOb33ewU45onvurKmILe8Cy3RjZRoSd1xibK0fsKODpEaY9SiaZicOVUMTdfiakoIemAW8rj503HwOwHHRTk/0?wx_fmt=png)
+![](/images/wx/a1ebd10cc510c900c3cc7a9dc600ec16.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXshRXfnyq7z6nhVmwaErtibWJ9rXMmebzzGyULKMxVtVDsB7xClFQjIibsicBic87Piay1wIkqsJjR8EveKiaVhXeQgiavd35Z4ExmLE/0?wx_fmt=png&from=appmsg)
+![](/images/wx/849935450a1f02be51415d8ef814c824.webp)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWfibkgt8JFxg2QE8XNeV6icib9eNt3xIEfHpeTPaSr2HT3qzz4DAia7E3XBkvd2v7qHGOjmGYIVgNGG098tNVbhHHwazQia7RB3xq0/0?wx_fmt=png)
+![](/images/wx/6e8ae0153241f10235030d114c3b4174.webp)

@@ -4,9 +4,12 @@ date: 2026-08-06T00:15:00+08:00
 slug: "7tij-wiN0uDTBG5Xp1BBYA"
 description: "双编码器关节的“不一致预算”，很多人从来没有真正算过"
 original: "https://mp.weixin.qq.com/s/7tij-wiN0uDTBG5Xp1BBYA"
+models: ["KTM5900"]
+companies: ["昆泰芯"]
+tags: ["磁编码器", "非线性校准", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXXzMgIuZibopian8hzsuiaib44kuk3AyFwjkbe8gm8hcwwg0VVt7onJbsIuOITpIIMLJzbjeEkrvQo0I5nNdTjZ2eRl8fmQY2p4ag/640?wx_fmt=jpeg)
+![](/images/wx/ddd277ae2aed094148d70b03adc4fe4b.webp)
 
 机器人关节 · 双编码器诊断
 

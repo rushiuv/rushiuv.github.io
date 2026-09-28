@@ -4,9 +4,11 @@ date: 2026-06-28T11:54:00+08:00
 slug: "7xMYByOkh7_NF9fsudO8mQ"
 description: "上个月帮一个伺服驱动器客户排查编码器通信问题。客户一上来就说：“这批 AS5047P 可能有问题，我们已经换了 5 片，现象都一样。”"
 original: "https://mp.weixin.qq.com/s/7xMYByOkh7_NF9fsudO8mQ"
+models: ["AS5047P"]
+companies: ["ams OSRAM", "TI", "Qualcomm"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWAfYZNKHl8A6WoG58V8287YVNuUAncA9EwrbWfpibAXBBAEcuzlwbbp6Fn0Yd79AqNVMcV8FRTOJBAUiamvZat3sBS9SOZzGcicw/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d719055098ffd9617993b2d79771072a.webp)
 
 ##
 

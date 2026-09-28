@@ -34,12 +34,12 @@ Freeman Dyson 有句很狠的话：“I’m very proud of not having a Ph.D.” 
 
 芯片不会因为你有博士学位，就少一个 bug。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIVGcB1cicWV49VDzVLuooKXgpgXMrImsZBGOiaYwfzpK0ZGWGxqpt21xQibdp2M89J8eicd8iao6fdqB2SaTYqVDvCQVnUtUE0Zy4LQ/0?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/ef4acf49b0a4fc9fbf7061293b447e62.jpg)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWRVxKNibbUKITufRWTLsruUubLuonttic5HzRKwCqoRBrrCFTT6aMqjiaAFthoUic56tEWTgu4PAarzHPrA2KbPZKc0E2iaaeaoyWQ/0?wx_fmt=jpeg)
+![](/images/wx/d53c51c71f8907457b60fbca0d004248.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIX1DRBO1GeDQiatu48khcDcheq5vjb5n5SOh5NRGKCynbnPPWb3gHvL3ep9p0tvbq6SOqmQyrgmEn9XOvhHa5pqQFiaovzmUKfU4/0?wx_fmt=jpeg)
+![](/images/wx/a59365308c55362c142bd6ca9ec3dcbd.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXo46iaWAib7BXUcaSuxu7YjLvqdELgn3QFg6NaibWjSpacvGTBJn0ibcjqc5tgq3iaic3yJBgMO7jdLahsx6d8TvI28mvEPV3knBk9w/0?wx_fmt=png&from=appmsg)
+![](/images/wx/86441bb9988a8bf0726be062480fee22.webp)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUxM8KjAiccqWOIqZh8ayd7ZP7iaW6k0FmSz4VrztvbQUiafibd0p7ZXlIXbib6Mb81BXNG7J8ibXqK7ANZEpxb86LchUNIyCUhibrfSc/0?wx_fmt=png)
+![](/images/wx/c7a06d6bb89f6cf189dcd4b3afaf07fe.webp)

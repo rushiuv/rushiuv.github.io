@@ -4,9 +4,10 @@ date: 2026-07-21T00:00:00+08:00
 slug: "kpAN-Jd3Yzh58NFeBrJ9PA"
 description: "但 8 个采样点分不出 5 次谐波，3 mm 芯片也未必塞得进 8 mm 编码器。"
 original: "https://mp.weixin.qq.com/s/kpAN-Jd3Yzh58NFeBrJ9PA"
+tags: ["磁编码器", "霍尔", "ADC", "机器人关节", "专利"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWfNYiaznW7TTmvCdLOyKMerwVp8XA2dUWYsKP9wMWHBDaoNvqfOK9Nv4DaKcjsEZbzXLtGAK0ziciciboOkicziaficq9Wqz1eYmrxO8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/6e5eee63462bc6df9498a6d188ff214d.webp)
 
 专利拆解 · 微型磁编码器
 
@@ -14,7 +15,7 @@ original: "https://mp.weixin.qq.com/s/kpAN-Jd3Yzh58NFeBrJ9PA"
 
 但 8 个采样点分不出 5 次谐波，3 mm 芯片也未必塞得进 8 mm 编码器。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXTRBSbKz3LUsJko5TkkNj1UHsFQV9gloicqWYToAgSKsyNG0a6O4IgzMSoMrfSkJ7x9dhtCeyCyv7tQ2jsjWiaIlMYHZzIoR9V8/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ca6057df7414b914f440bf6599f3501e.webp)
 
 一颗异形微型磁体、8 个空间采样点，在数字域合成 SIN/COS 与机械角度。示意图。
 
@@ -48,7 +49,7 @@ C1 = Σ wiVi cos φi
 S1 = Σ wiVi sin φi
 **θ = atan2(S1, C1)**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIViboonibl0yDJnPQgayt9PiarZEFMac2W8y11LudoiaoMfiaVN77oqPZGmL6X1ibrEbord6JTsebKia50cVgYfd6TmDnSLm4IZzdiaHzI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4235bf2dd61300349b6eafda363a882d.png)
 
 图 1｜8 个固定空间采样点经过正交加权，合成虚拟 SIN/COS，再由 atan2 得到角度。它更像“软件旋变”，不是模板相关匹配。
 
@@ -62,7 +63,7 @@ S1 = Σ wiVi sin φi
 
 **一句话：**基波负责告诉系统“转到哪”，高次谐波主要负责修正“算得准不准”。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWUpn7SaZUEMWOOwTGibcDfrdO1yYQ29s64RiamBkVlCuTL9ibWtibeLr7Buh6GfrwmVzgX8oot8vPnuVF6384w4tNibY4j8FHnJdUs/640?wx_fmt=png&from=appmsg)
+![](/images/wx/45fbc4b1af96863d6a4dc6bf41413355.png)
 
 图 2｜专利原始附图：磁场生成模块 → 传感阵列 → 信号调理 → 核心处理 → 输出接口。来源：CN121898492A 说明书附图。
 
@@ -74,7 +75,7 @@ S1 = Σ wiVi sin φi
 
 8 个采样点意味着 8 个方程。直流加到三次谐波一共 7 个参数，尚可求解；如果一直分到五次，就有 11 个未知量，单帧数据已经不够。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVj1N7ibxEQ4BWQN7Fq4rquv6Pz0y9UsoDZ94DibzghNaianRGia37GeAH3Ulo2wfXxwtSjcicRdW12tJJicaxSBhibssQoEpNbJJpLaE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/56b26d3a09eec4c8f4482213c6ee9ef6.png)
 
 图 3｜8 点采样可完整描述直流到三次谐波；若直接扩展到五次，未知量超过采样数。等间隔 8 点下，五次还会与反向三次发生空间混叠。
 
@@ -98,7 +99,7 @@ d = 2R sin(π/8) ≈ 2.30 mm
 
 如果每颗芯片本身约 3 mm，相邻封装已经重叠。即使把中心圆放大到刚好不撞，整体外缘也会超过 10 mm，还没算焊盘、走线和 PCB 边缘。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVzMqvvnOuLVibyTbINmWcGuBN7rswIwqlkCRrHCZD92fHBibTEA5vSOl4OFdgRlPWfgt4n3AzSCcm5mz0uicXicHSTaS3rtLSIUKo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ccef1bf6924dae512666f8649d2a76da.png)
 
 图 4｜在 6 mm 中心圆上排 8 颗约 3 mm 封装，相邻中心仅 2.30 mm，几何上已经重叠。要实现 ≤8 mm，更可能依赖裸片、晶圆级封装或专用多霍尔 ASIC。
 

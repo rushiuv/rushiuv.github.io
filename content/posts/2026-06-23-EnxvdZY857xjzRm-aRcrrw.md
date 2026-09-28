@@ -4,9 +4,12 @@ date: 2026-06-23T07:01:00+08:00
 slug: "EnxvdZY857xjzRm-aRcrrw"
 description: "可逆退磁和不可逆退磁没分清，你做的高温老化等于白做"
 original: "https://mp.weixin.qq.com/s/EnxvdZY857xjzRm-aRcrrw"
+models: ["MT6816", "MT6835", "TMR3107", "TMR3108"]
+companies: ["麦歌恩", "多维科技", "雷赛", "RLS"]
+tags: ["磁编码器", "TMR", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV73ic7e4bcRNIzs5JXsO1yL2VFKFfARwBBfPice5rpS54WqTl5ohy5DYIMaj8qRI0AEMzAOaIBbEe5r69Ffm86JT9Gbv5Z4l7qc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/04a394ca6e326214217d14b1aa5f57ba.webp)
 
 [可逆退磁和不可逆退磁没分清，你做的高温老化等于白做](https://mp.weixin.qq.com/s?__biz=MjM5ODMyOTkyNA==&mid=2647875699&idx=1&sn=624e6a2d97f1049cb53d13f2a35dc70b&scene=21＃wechat_redirect)
 
@@ -30,7 +33,7 @@ original: "https://mp.weixin.qq.com/s/EnxvdZY857xjzRm-aRcrrw"
 
 真实系统里，角度是这样出来的：磁钢或磁环提供磁场，传感器前端感知磁场方向和幅值，模拟前端或内部 ASIC 做放大、调理、补偿，再由角度解算算法输出位置，最后进入电机控制器、伺服驱动器或者机器人关节控制环。任何一个环节在高温下发生变化，最后都可能表现成角度问题。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIX6y53Vn7JFQ48RMCP7f51FXTQMmJQx89IRibXsz6OLAII4zEDGQvOadNbZibyWLcLj1QmNxlqTF2kwJNGCFcZdTliakJ4KLRb54k/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d28a5c837a77078c562ab4603e734805.webp)
 
 比如麦歌恩 MT6835 这类磁性角度编码器 IC，公开资料里写得很清楚，它基于 AMR 技术，做 0° 到 360° 绝对角度检测，支持 21 位核心角度分辨率，也支持 ABZ、UVW、PWM 和 SPI 等输出；多维科技 TMR3107/TMR3108 则是基于 TMR 技术的 17 位磁性旋转编码器芯片，公开资料中提到集成 TMR 传感器、信号调理、角度解算和多种输出接口。到了更下游，雷赛也有分体磁电系列绝对值旋转编码器，公开页面介绍其面向自动化设备、机器人、物流设备等工业场景。
 
@@ -82,7 +85,7 @@ RLS 的 AksIM-2 就是一个很典型的参照案例。它是离轴绝对式磁�
 
 第四类是异常状态和诊断信息。如果芯片或模块提供幅值诊断、磁场过强/过弱报警、CRC、通讯错误、状态位、校准状态等信息，高温验证时都应该同步记录。因为很多时候角度还没完全坏，诊断信号已经开始提示边界状态。只记录最终角度，不记录状态信息，会丢掉很多提前预警的线索。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXLG3UQaubvFqSmfQJprYOW9ntIku06B21RC8KWp6FZD8wlBK1xVrJichNMmFbiaiatX20qxT8svglFGeB1l7KQYVLPQUAlfgWicJo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/3038973784e312dfbfe5f60d6e633175.webp)
 
 ## 不要让磁钢供应商替系统背锅，也不要让系统问题伪装成磁钢问题
 

@@ -6,7 +6,7 @@ description: "最刺耳的真相是：很多中国创业公司，根本没分清
 original: "https://mp.weixin.qq.com/s/YMoAcvnL8drCXgHiqmp_ug"
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuyQTAngoic38BOuV9M85k8iafoY2QgkHkic68Gv42npxuA0T9E26WKdqxmhnzhObJAtaibLjiaOHnj2z8aw/640?wx_fmt=jpeg)
+![](/images/wx/51c40d328e96605f3697e5cdf05621a2.jpg)
 
 最刺耳的真相是：很多中国创业公司，根本没分清楚自己在干什么。嘴上说“产品化”，身体却扑在客户那边做服务；融资路演讲“平台”，后台却全是人盯人项目；招的不是产品经理，而是驻场工程师。你自己心里可能还觉得挺光鲜，实际上已经沦为别人链条里的外包。
 

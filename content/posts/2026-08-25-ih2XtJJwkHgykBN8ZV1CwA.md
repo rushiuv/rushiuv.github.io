@@ -4,13 +4,15 @@ date: 2026-08-25T10:03:00+08:00
 slug: "ih2XtJJwkHgykBN8ZV1CwA"
 description: "八月，美新半导体在芜湖办了一场产线启动、研究院揭牌暨新品发布会，发了一颗基于 AMR 的磁编码器。"
 original: "https://mp.weixin.qq.com/s/ih2XtJJwkHgykBN8ZV1CwA"
+companies: ["美新半导体"]
+tags: ["磁编码器", "非线性校准", "AMR", "人形机器人", "芯片设计"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUwNMlKymANWHb9PVov0iccfNRsvakdAB3EzB2BCxMJucfQFHRCibdCE8tjibibgqhQyzmDhiaCR85BU74iaVWCfsnf3LESxPG5WykaE/640?wx_fmt=png&from=appmsg)
+![](/images/wx/367e969f950eee5c8f1f49a293592d94.webp)
 
 八月，美新半导体在芜湖办了一场产线启动、研究院揭牌暨新品发布会，发了一颗基于 AMR 的磁编码器。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIV80hoJ4BVQgIpRw15pyWYialIpt1elr33hREPwE4tsnIpAU8AaTSpsGRicwmbT6de1xbX2fx49ibGVP4Zib7bOJiaenU3RfHbaj9GU/640?wx_fmt=png&from=appmsg)
+![](/images/wx/2c482e6c9c10fd63e9fe4d1c823f7cab.webp)
 
 行业号转的基本都是同样几行参数：角度 INL 小于 ±0.07°，最大测量转速 12 万 RPM，3×3 mm 封装；官网产品页上写着 21 bit SPI 10 MHz、12 bit PWM、ABZ 1–16384 PPR、UVW，VDD 3–5.5 V。
 
@@ -65,7 +67,7 @@ INL 小于 ±0.07°，首先说明的是器件能力。
 
 如果为了估量级，暂时假设一年有效运行 250 天，每天连续运行 24 小时：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6TVrCTvSibicT249MRygA2juEoQXicSYkIK8wDetADC8DA20J90n4fGlKsqSf44JPpIejtWCGL2WT5jShygick5s29MrOymNWLibq9YCiaXDdVUdCA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/b394aaba2e84e24b65395977ec22c079.svg)
 
 也就是说：
 
@@ -75,11 +77,11 @@ INL 小于 ±0.07°，首先说明的是器件能力。
 
 如果实际有效设备时间更少，例如一年只有 5000 小时，那么平均吞吐还会更高：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7rxUPpZIJsiaqbnEqItM66lsPezTwM8vCfIM9iaMwxx5QFJRfNA3GQdopfOZdZJ2YyXrwn0rKFoYjWA3pLwfeiaGLGEiaSUDk2s9icmzW2zL5j0mA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/5d546e5be257283609c966fda349a7ef.svg)
 
 如果只有 4000 小时：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM44OddTRaYEwL64iagz8qR5sVynicBuW0p7LWqGJhJVCNic7iabWNJ4k2Vy2BLISSfcsIO2b0fSguXPSAMrAnj7seQEKTncUrfqa3m3YkWWX7ypaQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/7e6d040decb79c39f1bc15c1a9b90770.svg)
 
 所以不管具体班次怎么排，1200 万片这个数字背后对应的，都不是“小批量实验室标定”。
 
@@ -103,19 +105,19 @@ INL 小于 ±0.07°，首先说明的是器件能力。
 
 那么按照稳态生产中的 Little's Law：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6OBPpNBN5yrZ6RFrVUlOhkCVZRKcE07xp4hL8D80enS2svRI2Uh2yzTAtpmR5prucW2mDicRJicBcBzNj7RdynB3TNEmJjwo2gDauLGzbtSzOg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/cfa17be34d167d6d7afd1e99987271ad.svg)
 
 如果平均吞吐为：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7Fno25L19bicdC3Hh15Dt0ezEIu1qQ9n8AjSxOE1aD5LLHGK3AC4csn97gTzsPtibVWjQyccEA4BBE7UupPmicLSQLbLKWK3gIibBxBib9ibUpRakg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/1f4daae6ba4c37fa385f2f5c449fe138.svg)
 
 平均流程时间为：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4rGuDF35Eoia7nRibK4onpPTicHlbd7LIClNMHFPgibbkwSnLxHZE8bCib2Uc9trTjSyCgia6Ff5pwOYt85iaMY708R2y9IN2DCricPuCMagThibfZunA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/0b6955f65a1bab46ef9c20aa2918e376.svg)
 
 那么：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7VkgOLlwlicAAzofjfABljZd4mlujPNg18q8rianP0LdCEXicEFbsn8SEicutZokkwSM2PlDvwic1FEqX95DWsQOzR9WUCcgFjPLRgpibbElniaQdibw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/b5d08e925608c9c5135c34e832c8a7b5.svg)
 
 也就是说，在这个假设下：
 
@@ -153,15 +155,15 @@ MCU 算得慢，就把计算搬到 FPGA。
 
 可以把一炉的时间粗略拆成：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4V3PTwbzsu0iaiaVEs5yVMQbI7ic8eEh6WbWAVaJfo0qyk9vy2B90qPCypgYgWibCsdsGfsXnZ0EO7pibnX7edKuCy2UtkeY4ItXudzD0XGdcJKUA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/cf831911a3fe66ec14cf3697e3bc4ebc.svg)
 
 如果真正占大头的是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5GUxskRvhFyjXQ5WAQ1prvnriaz4HBmVkVAgM7KmHzByjMJkKPLn9icsZUjXRDhg894w1Zias6RHib4N4s4pDLUibseicESXnBhw18JAxDjzricrmNA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/9cb8d4d45adac3f40097811a188afcfb.svg)
 
 那么你优化：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5EUicjzDdMuSzFhCaLcUQevHAYT5DYZqkSnSBRGibqxIXGoLtaMiaB6anJfnicEsuyI3vb3anAqXCTu0eYlMrK3FuWpSOBkgo7BMbo3ic5rYx2azQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/919ab899455875cf822dc484c541ecca.svg)
 
 边际收益就会越来越小。
 
@@ -315,23 +317,23 @@ soak 条件；
 
 如果平均每台使用 40 颗：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4cpvZukH2KeD0L4j4QIdB1shoeLNh1yj6uTY71xKjxo1xic8LsarA8rEmbL5IficYQxYCJKlVYIibZcdvywweIe9WNsvmyicpmXsSUQAJkibEiaBrg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/a9eca7b5202e3c9586eab2424ca78ea6.svg)
 
 十万台机器人就是 400 万颗。
 
 如果部分关节采用电机侧和输出侧双位置反馈，平均数量进一步上升到 80 颗：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6Gvic6MaLuFsHmkYaNDJO5VAKEX6Ms3jNsr1fCX7TSibEC1vCoIGibCsib3EnPozZyezcjfBqlJBLMNeHvjlUF8y87SJ1faAz4hU54jwOsAFF4Fw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/8550b338d40b7cd9f8e6fc3f61e4c46e.svg)
 
 就是 800 万颗。
 
 对一条名义三温标定能力 1200 万片/年的产线来说：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4t5zlTQnFETdUKmcBWUxPeLdxGcHLHY6yWxbopS1LXNtf6PxqPqLjhpMGy5hY0HfhwzRy19vZqvS761dFFo27icofNtPUIyfPdwibJjkxbJFPw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/cce5e9fa79cf78fb61bb5fa46ec1ee2c.svg)
 
 以及：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5GTfpRdIpTcKa4y8VUSAYo6wrSkCh6DAlVcCTr7xVVJVYESKHs1DMsBBZggwic5Jet9KTDee6Q9wkrib5v8vpwDpLia2mkQ5aH33AH9U5sLVGbg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/6075da3eaf6e7c08b5c994084e700919.svg)
 
 当然，这只是量级演算，不代表某一家机器人厂真实会下这样的订单，也不代表真实 BOM 就是 40 或 80 颗。
 

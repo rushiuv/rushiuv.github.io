@@ -4,11 +4,13 @@ date: 2026-03-25T19:06:00+08:00
 slug: "O7Q7AWw76ngIEaPxHacgUw"
 description: "会议室里聊机器人，最容易把人聊上头的词有两个，一个叫灵巧，一个叫精度。灵巧像武侠，精度像宗教，谁把位数往上再拧两圈，空气里立刻就有种“高级”的味道。22位，一圈四百多万个位置，听着都不需要解释，像一辆车刚启动，排气声里都带着身价。"
 original: "https://mp.weixin.qq.com/s/O7Q7AWw76ngIEaPxHacgUw"
+companies: ["海德汉", "多摩川"]
+tags: ["磁编码器", "光电编码器", "人形机器人"]
 ---
 
 会议室里聊机器人，最容易把人聊上头的词有两个，一个叫灵巧，一个叫精度。灵巧像武侠，精度像宗教，谁把位数往上再拧两圈，空气里立刻就有种“高级”的味道。22位，一圈四百多万个位置，听着都不需要解释，像一辆车刚启动，排气声里都带着身价。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIWW4IYKlM7G2AY1HvicicDduDdNbHxwTxY37dFBvicINu9icv1TrvQxy8iapm7HIEQqFf2giaibDL51L7yKRPed08UZVYqTDS2FdesQA0/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/142f8861809bc383aab8892cefe8716d.jpg)
 
 可人形机器人这东西，身上长的不是实验室的骨头，是工地、车间、厨房、仓库、物流线那套命。它得跑，得摔，得扛，得被装配线上的师傅用很普通的手法拧上去，得在温差、油气、粉尘、震动里一口气活很久。到了这个地界，参数表上那种高贵劲儿，常常会变成另一种东西——负重。
 

@@ -4,9 +4,12 @@ date: 2026-06-05T02:42:00+08:00
 slug: "ogc83t36aAbzonOJP8TXUQ"
 description: "大家聊得最多的，是大模型、SoC、摄像头、显示模组、端侧AI算力，好像只要把这些东西堆上去，AI眼镜就能成为下一个爆款终端。"
 original: "https://mp.weixin.qq.com/s/ogc83t36aAbzonOJP8TXUQ"
+models: ["KTM1305"]
+companies: ["昆泰芯"]
+tags: ["TMR", "霍尔", "AI"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIVibWE9WxvcPV8o9ic5sWWB9kl6qS70t6UQRM6De3zgcL5ibJXibgNcv6QylC42HnSP2MjCBz2icAniaRpP94Wwz5SrB3ku6c0BS1fYk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/46bd83cd4314442547565adcab674670.webp)
 
 ## 为什么AI眼镜越先进，越依赖那些不起眼的小芯片？
 
@@ -22,7 +25,7 @@ original: "https://mp.weixin.qq.com/s/ogc83t36aAbzonOJP8TXUQ"
 
 这次昆泰芯微提到的TMR磁开关KTM1305，就是一个很典型的例子。它不是AI眼镜里的主控，也不是显示，也不是摄像头，但它解决的是一个非常关键的问题：**设备什么时候该醒，什么时候该睡。**
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXVWhBmL7K8O8pcLhOnCwHFQPcJc1IXFPrC8e0qzIibgDsqcXfK0sjDplPM8EX2sNQpedjXmmjyoFCuS0MP4Za0KcMx6N9kD1jo/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4b693aa759f99f1e8b0c71d5890be1c6.webp)
 
 很多人会低估这个问题。因为在普通用户眼里，AI眼镜最重要的是“能不能回答问题”“能不能拍照”“能不能显示信息”。但在工程师眼里，AI眼镜真正难的不是让它工作，而是让它在绝大多数时间里正确地不工作。
 
@@ -42,7 +45,7 @@ AI眼镜面临一个典型的不可能三角：轻量化、长续航、高性能
 
 昆泰芯微这颗KTM1305，按公开信息看，是一颗基于TMR技术的超低功耗磁开关芯片。它最值得关注的参数有几个：几十nA量级功耗、5Gs到7Gs级别灵敏度、全极检测、锁存输出、小型封装。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUPbkwSXXxU31vGRN9DJrT3LgI6qrOdCeYeriakNg3R1Hxo5b5SF490gSibAoZ7rY1t8sKClXDicQHicakVBCBfU02IwdHMeogg0qY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/af09cdfe0bcf093de816fd021f83befe.webp)
 
 这些参数单独看都不复杂，但放到AI眼镜里，意义就不一样了。
 
@@ -62,7 +65,7 @@ AI眼镜面临一个典型的不可能三角：轻量化、长续航、高性能
 
 磁传感方案大致可以分成几类：干簧管、霍尔、AMR/GMR/TMR等磁阻类传感器。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX7scEWBw4s8dWhOv2fZe4UMKeIW4CedibicS5rdVOibXnrcicMOLINEwHCM8qawsBExAjbibic1B9npLicNvMkliamGsTAIJbcuiau0LTY/640?wx_fmt=png&from=appmsg)
+![](/images/wx/797b9fd5cc48e2439d0c4044a51070fa.webp)
 
 干簧管是老方案，优点是简单，但体积、机械可靠性、寿命和一致性都不太适合现在的智能穿戴。
 
@@ -72,7 +75,7 @@ TMR的关键优势在于高磁阻变化率和高灵敏度。简单说，它更�
 
 这就是为什么这类技术会在AI眼镜、TWS耳机、智能门锁、CGM、水表、折叠屏铰链等场景里越来越有价值。它们共同点不是“高算力”，而是都需要一个长期在线、低功耗、可靠判断状态的开关。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXVxDibZHUP6ibSEuPFBL4LAicP8k7I9IoancOue6BgiaN40knaKXOqlbZ5kVjfTT01pftrLWvWQNxAqeM0UOM9VngKefM1smfQtYM/640?wx_fmt=png&from=appmsg)
+![](/images/wx/86a8d488c6b1607401b956604388b110.webp)
 
 ### 这件事对编码器和位置传感芯片有什么启发？
 

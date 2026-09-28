@@ -4,19 +4,36 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+<meta name="color-scheme" content="light">
+<title>{{ if .IsHome }}{{ site.Title }} · {{ site.Params.subtitle }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-<link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+<link rel="icon" href="{{ "images/site/favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ "css/site.css" | relURL }}?v={{ now.Unix }}">
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
 </head>
 <body>
 <header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
-    <nav><a href="{{ "/" | relURL }}">首页</a><a href="{{ "/archives/" | relURL }}">归档</a><a href="{{ "/index.xml" | relURL }}">RSS</a></nav>
+  <div class="wrap bar">
+    <a class="brand" href="{{ "/" | relURL }}">{{ partial "logo.html" . }}<span>{{ site.Title }}</span></a>
+    <nav>
+      <a href="{{ "/" | relURL }}">首页</a>
+      <a href="{{ "/archives/" | relURL }}">归档</a>
+      <a href="{{ "/models/" | relURL }}">型号</a>
+      <a href="{{ "/companies/" | relURL }}">公司</a>
+      <a href="{{ "/tags/" | relURL }}">主题</a>
+    </nav>
   </div>
 </header>
+{{ block "hero" . }}{{ end }}
 <main class="wrap">{{ block "main" . }}{{ end }}</main>
-<footer class="site-footer"><div class="wrap">© {{ now.Year }} {{ site.Params.author }} · 文章首发于微信公众号「如是有为」</div></footer>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">{{ site.Params.sutraFoot }}</p>
+      <p class="muted">© {{ now.Year }} {{ site.Params.author }} · 文章首发于微信公众号「如是有为」 · <a href="{{ "/index.xml" | relURL }}">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="{{ "images/site/qrcode.png" | relURL }}" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
 </body>
 </html>

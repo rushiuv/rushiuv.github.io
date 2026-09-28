@@ -8,13 +8,13 @@ original: "https://mp.weixin.qq.com/s/UcFYIp86dpVC-XRV0NJaxw"
 
 说穿了，婚姻就是一出神话，被我们当成战时的应急补丁用到现在，还被抬成全民宗教。神话该在心里供着，法律偏要伸手去管，结果把爱撕成票据，把人心撕成证据。要想从根上解套，就得把神话还给神话，把世俗还给世俗：该用合同的用合同，该用仪式的用仪式，别拿民政窗口当神龛。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicGCZjWbAzibkOpysvsSlHnribibYD8JtgeR0JS7c8VLoVXgKOQCIK1icR5Q/640?wx_fmt=jpeg)
+![](/images/wx/b45154b1adffa22d72b24265b0dec2c3.jpg)
 
 民政局的门口总是热闹，领证那天像进庙上香，红本子一亮，亲戚朋友齐声“百年好合”。可你仔细看，那两枚小红本更像是世俗的手，伸进神话里抓信徒：爱不爱，法律先盖个章；散不散，法律先收个税。神话是雾，法律是尺子，拿尺子量雾，量着量着只剩一地水汽和难堪。
 
 最早这东西就不是为了浪漫，它是社会崩得七零八落时的止血带。粮食紧，地盘小，血脉财产不能乱跑，于是把两个人捆在最小生产单位里，稳住户口、稳住田地、稳住继承。战时苟且用着顺手，和平了却懒得撤，像宵禁铃被当成晚安曲。于是你看到今天的怪相：登记的人一年比一年少，2024年全国只剩六百一十来万对，硬生生比前一年少了两成多，这不是“大家不想爱”，这是“大家不想再把爱交给制度”。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicfhpowtQnOZyum5sXvbYmq5oALTqqTRic7Uo80iagLvcXTg9zOuGsp6rg/640?wx_fmt=jpeg)
+![](/images/wx/e531bf7f347bc8b3bd051a1ede020f34.jpg)
 
 低头看看街景就懂了。一个人住的窗户越来越多，外卖在门口候着，工作在手机里装着，孤独可以“加购”，亲密可以“按需”。2020年全国独居户高达一亿二千五百万，四分之一的家庭是一个人，社会早就学会了“把两人的功能拆成社会的服务”。你非要用“必须成双”的老钥匙开这把新门，只会把钥匙折在锁里。
 
@@ -26,7 +26,7 @@ original: "https://mp.weixin.qq.com/s/UcFYIp86dpVC-XRV0NJaxw"
 
 回到我们这片土地，非婚生育仍旧敏感，社会偏好把生育绑定婚姻——这就是“神话—政策”双保险。问题是，当婚姻注册量连年探底、独居大军膨胀、年轻人推迟或拒绝结婚，这个双保险就变成双重锁。越是把通道做成“唯婚论”，越把年轻人推到门外，连“试着爱一下”的勇气都被成本吓退。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicqcc0x7EcTsHPgiaDvG4Wgsqvufc1W2HY8ZoJOsrMpXs2zU0c9Xaq9sw/640?wx_fmt=jpeg)
+![](/images/wx/bf6c6a1e1b62c9f53cd907f605c8284c.jpg)
 
 “那就更多婚礼，让大家重回神坛？”这招更像给幻觉加灯光。婚庆产业滚到天花板，狭义市场两万八千多亿、广义十四万亿的盘子，摄像、布景、钻戒、跟拍、跟妆，一条龙把神话做成流水线。一日豪华梦，十年等额供。你以为在补心，其实在补台。神话越商业化，信众越疲惫。
 
@@ -40,8 +40,8 @@ original: "https://mp.weixin.qq.com/s/UcFYIp86dpVC-XRV0NJaxw"
 
 ——等风声安静下来，爱还能爱，散也能散。神话继续美，法律不再拧。人把心收回来，日子才算回到人间。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMict0t02szb5TmqvTc9LDkyRdE5kgeGoXaibRXO0IcobbiccHwfZkznDRBg/640?wx_fmt=jpeg)
+![](/images/wx/1ba5e03e234e6fafae20e241b9aee65b.jpg)
 
 如果这篇击中了你，评论区留一句“把神话还给神话”我就能找到你；想看“伴侣合同怎么写、非婚育儿如何兜底、分手如何不血崩”的实操版，点个关注，后面我把合同条款模板、国内外样本和踩坑清单一股脑儿丢给你。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2QbjyqiceuySD8QBeS8ib19v6F9XXanmMicrwpu30iaBtnNfuzXxseMxasHMb3q2q1X73QG35ywlkZ1YkdPYtJMKmA/640?wx_fmt=jpeg)
+![](/images/wx/602a84c52ea5bb6e45f9555b3f9402c8.jpg)

@@ -4,9 +4,12 @@ date: 2026-03-26T21:40:00+08:00
 slug: "YVpJVQxYpMQeXKGVNhkXgQ"
 description: "很多人一听高精度编码器，直觉就是一件事：把磁铁做得更强，把磁极做得更多，把信号做得更细。"
 original: "https://mp.weixin.qq.com/s/YVpJVQxYpMQeXKGVNhkXgQ"
+models: ["iC-MU"]
+companies: ["昆泰芯", "iC-Haus", "RLS"]
+tags: ["磁编码器"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIU7ichcyGX9l0RHEe0FfbSwFPr1pq6auyANibsIcbFOABT0MbmdjUVebbQicmXqkZmlibh7YkVqIYG4kDU6ZhtUSKw7uLVNn1IUufk/640?wx_fmt=jpeg)
+![](/images/wx/0e18d3bc2dc0b3487a29d8fa585a9dfa.jpg)
 
 很多人一听高精度编码器，直觉就是一件事：把磁铁做得更强，把磁极做得更多，把信号做得更细。
 
@@ -14,7 +17,7 @@ original: "https://mp.weixin.qq.com/s/YVpJVQxYpMQeXKGVNhkXgQ"
 
 单对极磁环，一圈只有一个磁周期，上电就知道绝对位置，但精度上不去。多对极磁环，比如32对极、64对极，局部角度可以切得很细，但问题马上反过来——你知道自己在某个位置里，却不知道这是整圈里的第几个位置。精度和绝对位置，开始互相打架。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIXyFqrVcjV5Z3b2pVDBiar7qZ2qC2u0VlsfjE2MZvASU8fIicwS3mQDeHLHqF3LvicTGWAyJpGicR5dOMIgzILwRTre4v37M2Q5icGk/640?wx_fmt=jpeg)
+![](/images/wx/e16add1bcb15b713d94b95894e3b23f4.jpg)
 
 很多方案就在这一步停住了。
 
@@ -32,7 +35,7 @@ original: "https://mp.weixin.qq.com/s/YVpJVQxYpMQeXKGVNhkXgQ"
 
 精度不再来自单条信号的“更细”，而来自两条信号之间“不会重复”。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWnRzqFPBk8TBvYW6JUEHUD4PuDG91lMwhVO9epoMJgj6m8LIe1KuUOztJrcqboQymtq7ano65Y4OpDDTmVpcKt6zdO24Tftibc/640?wx_fmt=jpeg)
+![](/images/wx/79ff734f7b77deec1a826fc27d702a7e.jpg)
 
 RLS 很早就把这套东西做成了标准产品。它的 Nonius 磁环，直接就是32/31、64/63这样的组合，本质就是主轨+游标轨。不是实验室方案，是可以直接买的工业件。
 
@@ -82,4 +85,4 @@ RLS 很早就把这套东西做成了标准产品。它的 Nonius 磁环，直�
 
 游标磁编码器厉害的地方，不是它有多极致，而是它很克制。它承认单体有天花板，于是换了一种方式，把“差一点”变成了“刚刚好”。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWNQp2gYgAREKS1Csibib5pXQkic1T3piaMkpv5nr5ZkD4W8iajDI2I9GZj6SkmnZVsUialIztaHdgRhxr069TfuiclP420Xco65l9LLU/640?wx_fmt=jpeg)
+![](/images/wx/c94d7e1d848d355bfe346938599cef61.jpg)

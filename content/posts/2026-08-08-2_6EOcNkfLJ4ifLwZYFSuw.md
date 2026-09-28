@@ -4,19 +4,21 @@ date: 2026-08-08T19:08:00+08:00
 slug: "2_6EOcNkfLJ4ifLwZYFSuw"
 description: "读到 汽车鼓风机迈入无感FOC新时代，ADM32F036A3如何定义静谧与高效？ 公众号\"汽车电机之芯\"文章介绍进芯科技在 ADM32F036A3 汽车鼓风机方案里写了一句话："
 original: "https://mp.weixin.qq.com/s/2_6EOcNkfLJ4ifLwZYFSuw"
+models: ["ADM32F036A3"]
+tags: ["霍尔", "FOC"]
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIWu0QXhY968KKt4eLJQIL4baPI3P4s5Ov2IsPkdno2lsH1y2OR5vXgkPvqS3pyBIbwobwEgOPO0kKsdNIliam1WFe0sGiab2oibak/640?wx_fmt=jpeg&from=appmsg)
+![](/images/wx/d42ffdc4984546b91752ef0f1c7c93eb.webp)
 
 ## 进芯科技ADM32F036A3为何绕开三霍尔？5°电角错位恐怕先让鼓风机嗡起来
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWciamJKPhyP3Wbmz0ogMiayNv5bUbEDXYCegN1BvcefIFqTviaasj4T62icSn7BTRjrsKpLVqJL1Eov3PB6PYm5ekyXriaukFakkRI/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e6df0138b779e3469e17b3a77799794f.png)
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWgB7GTHF87icAqtCAkDYWkplEtCj3EjwNfrcYcfoqzcOPiblpzgXYL4WpOah9MbLquaCRFcuqT6ZiaiabFFAx0rWyAcTS8mp7eqjc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/d582db0a6447cdc8d4d3050a124a7db0.webp)
 
 读到 [汽车鼓风机迈入无感FOC新时代，ADM32F036A3如何定义静谧与高效？](https://mp.weixin.qq.com/s?__biz=MzU2MjQxMTA4OA==&mid=2247484096&idx=1&sn=915a1f7e1a6f5f7aa6c4ff9f89b56c09&scene=21＃wechat_redirect) 公众号"汽车电机之芯"文章介绍进芯科技在 ADM32F036A3 汽车鼓风机方案里写了一句话：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWCcYQlUm9XcJ9BwrtOqEibgTGeT4Y7P21cAvEZcKiaPorG7FxmJYOrISNEIuYld3ibTE0as0MkeIhOW5P5k9xRTGnZQmLpOEPFBk/640?wx_fmt=png&from=appmsg)
+![](/images/wx/54bd3ec92950b38af48cc104c22e50b2.png)
 
 我第一次读到这里，觉得哪里不对。
 
@@ -42,7 +44,7 @@ original: "https://mp.weixin.qq.com/s/2_6EOcNkfLJ4ifLwZYFSuw"
 
 这里最容易写错的是“机械角”和“电角度”。若电机有 p 对极，两者关系为：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4rGuDF35Eoia8rWMpP5xR0aR0FibaZ7Fnw3N3eIIuWZ7GKRGQ7ESXz4JbFfpia3l80eRFjnmGFt6toXy412n2fM1vMb9LWul1vQ6K3W0cBiaX9OA/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/0f858c08e3feac6737952b7936d5fc33.svg)
 
 也就是说，文中说“偏了5°”时，必须先交代是机械角还是电角度。对四对极电机，1.25°机械安装误差就会表现成5°电角误差。
 
@@ -52,17 +54,17 @@ original: "https://mp.weixin.qq.com/s/2_6EOcNkfLJ4ifLwZYFSuw"
 
 假设某一个霍尔翻转边界相对理想位置偏了
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5qicfFqDfpSNqz2V8ffynYatxRKrSOjsgxIzknEPO9AVtbjTjR0icYHJ3Tn5RDfP7Yic1fEVaj6nDliaUZqz8Hiano1U1r33DP5h4NiabTIqkicv8ww/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/ab71a32fd34a8d5e0adf8900d10e4418.svg)
 
 ，它两侧的区间会一窄一宽：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5jzgrh4c6fYFk84pwCNojswnG1jykP8p6nYvRUVz6a7lJUXKUu2VQZR0kvtpdJHpvRo9cJTyTv1ib6RDOjaQdhW5YjkPkrOG1BmYX4llAiaXCw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/bb08fa8ae379703c1a36b45bda40a5a1.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM66m7RJJ6dJRRdolNQ35XniaJicmhRNqomhZULHO8ckAVlVX6RHWfI81nAxW21icHNn2Eic64XwbiaEZhDjiaOugAxIhZicVNZHeML5ySO8NO2saLNMg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/fea9f358614996c6cb966e86aad7f1b6.svg)
 
 取
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5ElmsL1o8h9Gzlibjuu1JVenyibVKxqmV3GRwdY5WRoeiayvj1ROVctOBfUHEt2fDplo8ahVOjdMNFYf1uW3PNIcwzVSZ0d400tEjgALKhh4pyg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/bbec000cac3d8e562d9cf2f9cbf70af4.svg)
 
 ，就是55°和65°。
 
@@ -128,7 +130,7 @@ original: "https://mp.weixin.qq.com/s/2_6EOcNkfLJ4ifLwZYFSuw"
 
 最后验收的不是一句“霍尔耐温到多少摄氏度”，而是六个数：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM43p9oGjS5XCm1ialv9XOE0zIYc0V9Rcz1jCFFyb9uJv5ICW7MoYHGaqrc2B6sWRwuibYQ1Et9uncgvTYd2ibrEplzsgtNJLZibQIsNgPlIxQwxlw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/1486e897f0c049e0f5825cb6112ac465.svg)
 
 它们是否在全温、正反转和批次变化后，仍围绕60°落在允许窗口内。
 
@@ -156,17 +158,17 @@ original: "https://mp.weixin.qq.com/s/2_6EOcNkfLJ4ifLwZYFSuw"
 
 所需工位数约为：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7DwjZxE17sYFlmBCqLXO1WiaAPwR3DYzrzfbOuQ5l6Iriaa0O5er08GzPiaT32iaV75Q4BVuqfiabYiccg9sKFicDtjLpG9dfngQ7VnPtiaWYHLm7yVw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/361229df56d683872850dbcfb646e4b2.svg)
 
 也就是约67个，工程规划时通常要按70个量级准备。
 
 而且“10分钟”已经是乐观假设。如果真要覆盖
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5XuBWMqc3dCXGM4QicN9eA44Y6eup62AcvIOJmNEsSicLKKchMfcicF3ibVCKtia3JJBpgI4FYeTkaibVPzjf5zvcvzRsibmKVasicSJZCgoQDib5eLTw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/b46851b2266fc48db2f2995eb717629b.svg)
 
  到
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6jR8hYVsyCIctQdYwOEkln2kkBGRqj5LQlFYowU4tWZVuUhSSfUDXggYhGdaEffh5MrsiaLp32r2dNFVLL1vEPMmt82XestM8ibjCSLknuDN8g/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/e1cfdfc746adaf6102ca640b994cadc1.svg)
 
  的多温点并等待热稳定，节拍只会更长。旧稿中“单台标定成本可能超过10元”也应理解为包含转台、温箱、采集、软件、折旧和人工的项目估算，不是所有工厂都成立的固定价格。
 

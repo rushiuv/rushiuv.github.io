@@ -4,9 +4,12 @@ date: 2026-06-17T00:00:00+08:00
 slug: "DygPHZKjiHqbFNpoXe-Jgg"
 description: "第一份是宇树 GO-M8010-6。公开参数里写得很清楚：型号 GO-M8010-6，最大扭矩 23.7N·m，减速比 1:6.33，通信控制频率 6000Hz，Motor Encoder Resolution 为 15bit。第二份是机器…"
 original: "https://mp.weixin.qq.com/s/DygPHZKjiHqbFNpoXe-Jgg"
+models: ["GO-M8010"]
+companies: ["宇树"]
+tags: ["人形机器人", "机器人关节"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIV1yNichhNdlOOibnhO6szuhIAG5eMtictpzQq9UjHRl7mJXv276osibEUwYicCfuYLXGLlo5p8VQTbK7vTxjngD3nyfjfC690CgWYA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/e63cc1c2a24327d5df8e13aab9e41980.webp)
 
 ### 宇树 GO-M8010-6 标称 15bit 电机编码器和 1:6.33 减速比，但国产关节如果只靠电机端角度推输出角，会导致负载换向时位置漂移
 
@@ -180,4 +183,4 @@ original: "https://mp.weixin.qq.com/s/DygPHZKjiHqbFNpoXe-Jgg"
 
 **两颗。**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWF7jIUibo1ibtKTGEmJ6UtOIkW7Owdfj0tRq7jqI7E7Jd63UTMDiac1CobFDib4vibjq4Ezu1IbX9EWm7ic8EURZNrDwGrZbogsxd0s/640?wx_fmt=png&from=appmsg)
+![](/images/wx/ae6aa90a638d48abfab3c3e9461c5708.webp)

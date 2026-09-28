@@ -4,9 +4,11 @@ date: 2026-05-24T00:00:00+08:00
 slug: "X98YJfDZno0KlQKZhG9HjQ"
 description: "读博那几年，我一直觉得校准证书挺像一种仪式。实验室里每台设备旁边都贴着一张，高精度光栅尺有，温箱有，信号源也有。上面写着基准编号、校准日期、复校周期、测量不确定度。导师要求论文里必须加一节“测量装置不确定度评估”，我当时怎么干的？翻设备证书…"
 original: "https://mp.weixin.qq.com/s/X98YJfDZno0KlQKZhG9HjQ"
+companies: ["Melexis", "ams OSRAM", "iC-Haus"]
+tags: ["磁编码器", "自校准"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUmqUuuvzp1OSlWhIkSib9Wg2jKibCDIsXZNNH0CCuXgSvFld9OTxR9sFPZUuxicu5wkKwfzVpicaERibia6dibPpGSXxBXuLQqjFOpz0/640?wx_fmt=png&from=appmsg)
+![](/images/wx/b6fe27e1787dfa39aedb88e0a269a498.webp)
 
 ##
 
@@ -50,4 +52,4 @@ original: "https://mp.weixin.qq.com/s/X98YJfDZno0KlQKZhG9HjQ"
 
 博士时我没认真上这一课。现在补，还不算晚。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIWYuvqu3hEwS674AnqjTkJrhpGgAaxgBQOkCR84Q95brAZ6NCibB4Upgn413tWz94CicDJCzo8RIWnpUZV19tmoXAykS7GlAicNnA/640?wx_fmt=png&from=appmsg)
+![](/images/wx/4ca0acd20ce5d65cc3bfe8181a14948c.webp)

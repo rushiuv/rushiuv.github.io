@@ -4,9 +4,10 @@ date: 2026-09-13T14:16:00+08:00
 slug: "xOoe1Qq7H9ylmBMjNq4ojA"
 description: "如果你是一家上海做磁传感芯片、磁编码器芯片的国产供应商，客户是一家杭州正在冲上市、或者刚上市的人形机器人公司，接下来最先发生的事情，往往不是订单突然变多，而是客户开始把你的工厂看得更细了。"
 original: "https://mp.weixin.qq.com/s/xOoe1Qq7H9ylmBMjNq4ojA"
+tags: ["磁编码器"]
 ---
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXzx5wrCOh7yCbDKG92KgGsaNxpSl3HFDZ9RwFlKbdOIDibkLacUUJ2Y8mgWbInVPichy5WMnOe2mWkIJd0q2bPLQO77A3ic8HGLc/640?wx_fmt=png&from=appmsg)
+![](/images/wx/100299c4e6cd22d623b0748e88677be7.webp)
 
 ## 机器人客户上市以后，做磁传感芯片的供应商会先遇到什么
 
@@ -60,25 +61,25 @@ original: "https://mp.weixin.qq.com/s/xOoe1Qq7H9ylmBMjNq4ojA"
 
 理想的磁角度传感器可以先抽象成两路正交信号：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM79ySL8Ys0QMuIibAtvtVn4HMdmVuqsKtnYQKXyGqgavmDibPpsRZBhV4BIyxVHpJ0l7l07DnoR7MyrFjRTDAicibP7f4m2zqz8Gd7BV93ibNVmJ1A/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/b66bd01b25a52517379e0bea2afc1958.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7DwjZxE17sYIniaNE8N5y265mZKXIRjkmCSPWxMIc3WUbekxcoXbx4dSpGO0VVfyK79ibhOgiae6SfIgNh2Sm8ZeQ9jia89Pn0Uf37LIiadOCTx7w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/26c79fa150e1bb277be56f97a6410023.svg)
 
 最后得到：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4gfJSc3yRO34yicCibTA0qdTWbBooB9qpCHacDyCTstkmsMzUgIcPvuCnALdIqGwS2bSWcLvxbetJavtcOmmGPwpVnNibfib5ALHcKhZKtaVDtCw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/c357a84274cef6912bf203e323c07db2.svg)
 
 实际产品当然不会这么漂亮。两路会有 offset、增益不一致和正交误差。先只保留一阶小量，可以写成：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM43dwX1oFaFuPrgdOXaficB4WvhI9BPfZWR1w8KAiccuDkticqR13XXia2HHiabpqWsQjIvYmWD2pcVtVuANRvxy9hibjOrGneIyq1XVpNba3DcwpsQ/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/20112d56729d5ce3854da708d06c0778.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM64v0fC3TeWaB0ekBGTiahz5VMicAYsGq4nhuyU5TBXpQu8bScC0Cbq6PAQtsTQkXH2aqafXCkxoEod1a4STD1f48Yln9xc66PhTrtnotp9KUibg/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/d864b55cb905001efa6c6e4e49071553.svg)
 
 这里最有意思的不是公式本身，而是把它送进 atan2 以后会发生什么。
 
 对于小扰动，角度误差近似是：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4kb9iapwuG1OhcV2SOv9Q3zVsAk9OoYwAxs14U0YcRMLxTvHsyvicD2SZ7aTjh7lcqwfZc7QITflMLmmwIM2uibj2ExWOZMib0fLy2QxXw45R19w/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/4e8d7ac543b876307df3f5ff2dc324d7.svg)
 
 最后那个常数项通常可以被零位校准拿掉。真正值得看的是前面几项。
 
@@ -112,13 +113,13 @@ original: "https://mp.weixin.qq.com/s/xOoe1Qq7H9ylmBMjNq4ojA"
 
 有些误差项本身也是温度的函数：
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM482lgxibIrktq8tbvNianhibo2icHDrMWDNRRtXgqvymdiaYqwf3CVuFV3HhMkNTtH9ZZFZ4aP5R8AuXUPeLRE1ibzQsdeaRzD16Cjop5hxpTsdJfw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/774f7ded9f9caccce1c1ef6e4053b140.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM6Gvic6MaLuFsLf6cE54nySSEWHPkLAQabNIiby4fFIyhQa6ksoicJCjdejuBiaYM7cwNEicRPt1XPtkquiadbtVtNWlWNH4mO8LGqllEHmCNWNj4Vw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/46e38a889411b21edd3847f1e1833248.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM5QzUTKYQozFA5QUt7FX2nPwzso5DzMicjzxX4hoPL4iaMPvuPhwMac130EicCSJxE4TeicC6NCdhgh2Wn9icuYic0prCic18bicy8icx6mTwqjRGY8kww/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/f89cb8a3452ac7f30b7fe30b888cb830.svg)
 
-![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM7z45gpuicvL3qOCBicicCh28Ty7VLiaWpianoXPFK1KPaExU7cDyHvnrebdC1NSVn9DeX32FyEaxTasXHeGhRzUibW62ndsMNib7nwvXYGSCCd9Qyuw/640?wx_fmt=svg&from=appmsg)
+![](/images/wx/cb6f4ce01f596541f3b280e871aeaba4.svg)
 
 更麻烦的是，系统层面的机械参数也在变。
 
