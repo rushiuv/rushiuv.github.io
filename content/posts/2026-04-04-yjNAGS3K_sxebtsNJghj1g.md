@@ -17,5 +17,3 @@ original: "https://mp.weixin.qq.com/s/yjNAGS3K_sxebtsNJghj1g"
 ＃编码器分辨率解析 ＃编码器精度详解 ＃最小角度变化揭秘 
 
 ![](/images/wx/7d14dd31bb3fb0e7bd97036cc025926f.webp)
-
-![](/images/wx/c1003aca7dd93fdffc2bdc0c099864ef.webp)

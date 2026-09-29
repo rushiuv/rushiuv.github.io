@@ -50,7 +50,3 @@ AGI从一开始就走错了——我们一直在教一个“永生者”如何�
 你说，如果给GPT-7装上“关机倒计时”，它会先骂开发者，还是先突然变聪明？
 
 ![](/images/wx/a10e41f51a2b977643af7d3258668c4a.webp)
-
-![](/images/wx/56af5a9aed103cd5f66e459c48b3ae79.webp)
-
-![](/images/wx/89ff3be201ea82e9b2ed97945c302785.webp)

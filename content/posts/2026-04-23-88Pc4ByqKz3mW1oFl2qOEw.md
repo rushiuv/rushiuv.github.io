@@ -18,7 +18,3 @@ tags: ["TMR", "AMR", "霍尔"]
 从霍尔到TMR，三代技术并非简单的替代关系，而是形成了覆盖高中低端市场的完整矩阵。
 
 ![](/images/wx/933893b4a21f81fb8fd9cc5778a31cad.webp)
-
-![](/images/wx/ad3e94a94d7636b3d7861a945c345295.webp)
-
-![](/images/wx/0bfdbf618153fc9660bd42d2923997c3.webp)

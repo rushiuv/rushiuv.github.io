@@ -52,7 +52,3 @@ DFT/Scan 链最后怎么排？ —— SCANDEF
 而是慢慢看懂：从 RTL 到 GDS，工具每往前走一步，都在向你索取一部分更接近真实硅片的信息。
 
 ![](/images/wx/12d37d68dd9f7042266f311547ba7313.webp)
-
-![](/images/wx/2e5edc38cdafc41ec5156318f618c99b.webp)
-
-![](/images/wx/ffbf98dddf6b185d032cbc8f575a9494.webp)

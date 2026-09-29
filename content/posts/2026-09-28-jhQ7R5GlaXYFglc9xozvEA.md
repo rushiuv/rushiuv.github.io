@@ -19,7 +19,3 @@ original: "https://mp.weixin.qq.com/s/jhQ7R5GlaXYFglc9xozvEA"
 所以以后看到“某国人均财富全球第几”，先别急着羡慕。真正应该继续问一句：这是平均数，还是中位数？平均值告诉你这个国家有多富，中位数才更接近告诉你——这个国家普通人到底过得怎么样。
 
 ![](/images/wx/d9ecd8f469fc379b1ee2cd528ca7901a.webp)
-
-![](/images/wx/04aae46bb2121b56a416f48c53d3e7f7.webp)
-
-![](/images/wx/372da8f7317de6957672a45a12124bf5.webp)

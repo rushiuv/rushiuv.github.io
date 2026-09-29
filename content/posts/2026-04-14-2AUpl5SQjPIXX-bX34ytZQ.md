@@ -51,18 +51,8 @@ AI时代，芯片最贵的不是生成代码的算力，而是为了敢拍板、
 
 ![](/images/wx/878e91b5e6410000e2fbee763af6dead.webp)
 
-![](/images/wx/f2b9502de01027e838bd7e7aa3fab1a9.webp)
-
-![](/images/wx/544a989d373dd5af0c574fca7f697f25.webp)
-
 ![](/images/wx/0562dc54ac774b579cd7d7f1927ad215.webp)
-
-![](/images/wx/c6971df0e919d189a6e0376a5a5496c3.webp)
 
 ![](/images/wx/25062105cd52ae8d45dc6bd311ff3ec0.webp)
 
-![](/images/wx/a0327d86da85c042eb74c0a9ccca2df8.webp)
-
 ![](/images/wx/62e8eae8f2e1959858bee264f923b12f.webp)
-
-![](/images/wx/782e226ede7418473d74af03bc9aa339.webp)

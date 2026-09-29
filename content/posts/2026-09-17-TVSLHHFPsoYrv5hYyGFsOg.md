@@ -36,10 +36,4 @@ Freeman Dyson 有句很狠的话：“I’m very proud of not having a Ph.D.” 
 
 ![](/images/wx/ef4acf49b0a4fc9fbf7061293b447e62.jpg)
 
-![](/images/wx/d53c51c71f8907457b60fbca0d004248.jpg)
-
-![](/images/wx/a59365308c55362c142bd6ca9ec3dcbd.jpg)
-
 ![](/images/wx/86441bb9988a8bf0726be062480fee22.webp)
-
-![](/images/wx/c7a06d6bb89f6cf189dcd4b3afaf07fe.webp)

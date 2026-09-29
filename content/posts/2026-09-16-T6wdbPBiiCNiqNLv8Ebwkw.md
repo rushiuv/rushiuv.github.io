@@ -25,7 +25,3 @@ iC-Haus 就是其中很典型的一家。
 有时候看展会照片，比看“机器人又融资多少亿”更容易看到这个行业真正卖了很多年的东西。
 
 ![](/images/wx/1873517229fe9cbb09d83838ce327a32.webp)
-
-![](/images/wx/387905fb5c5c2f71f08648bcc6b9e6e9.webp)
-
-![](/images/wx/d58d59a1a6dee36265c159152f11f786.jpg)

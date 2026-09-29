@@ -11,10 +11,4 @@ tags: ["投资", "瑞士"]
 
 ![](/images/wx/b554926d7cfccacd294e3a2687e9a138.jpg)
 
-![](/images/wx/1c80517b2bde3bcad941634de24279f5.jpg)
-
-![](/images/wx/5620cac52c7ecfc28d3afc2deed6bc91.jpg)
-
 ![](/images/wx/9dce41134c44a3aa9060186f5b8043c8.jpg)
-
-![](/images/wx/9e5e7085815b3426cdbc270a841c5535.jpg)

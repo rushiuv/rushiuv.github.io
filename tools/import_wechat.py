@@ -232,6 +232,16 @@ def main():
         fm.append("---\n")
         (POSTS / f"{day}-{slug}.md").write_text("\n".join(fm) + "\n" + body, encoding="utf-8")
         n += 1
+    # 不再被任何文章引用的微信配图删掉（例如 2026-09-29 修掉的贴图水印版、封面版）
+    referenced = set()
+    for f in POSTS.glob("*.md"):
+        referenced.update(re.findall(r"/images/wx/([^)\s\"']+)", f.read_text(encoding="utf-8")))
+    orphans = [f for f in WX_DST.iterdir() if f.is_file() and f.name not in referenced]
+    for f in orphans:
+        f.unlink()
+    if orphans:
+        print(f"删除未被引用的配图 {len(orphans)} 张")
+
     missing = []
     for name in sorted(used_images):
         src = IMG_SRC / name

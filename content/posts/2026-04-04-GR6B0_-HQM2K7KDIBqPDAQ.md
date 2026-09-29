@@ -20,5 +20,3 @@ tags: ["磁编码器", "霍尔"]
 4. 震动漂移：机械震动会加剧安装偏心带来的气隙波动，进一步放大角度测量误差。
 
 ![](/images/wx/4ede52d4e87dec36a4c695ee0c99806c.webp)
-
-![](/images/wx/0ed4342b5b65c6f0973a1d5e11241ddb.webp)
