@@ -1,7 +1,7 @@
 """压缩 static/images/wx 下的大图：宽度限到 1600 像素、转 WebP（质量 82），删掉原文件。
 
 文件名的主干（URL 的 md5）不变，import_wechat.py 按主干找图，所以压缩后重跑导入即可改好链接。
-GIF（可能是动图）和 SVG 不动；已经小于 200 KB 的也不动。
+GIF（可能是动图）、SVG、已经是 WebP 的都不动；小于 200 KB 的也不动。
 """
 import sys
 from pathlib import Path
@@ -17,7 +17,7 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8")
     before = after = n = 0
     for f in sorted(WX.iterdir()):
-        if f.suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp"):
+        if f.suffix.lower() not in (".png", ".jpg", ".jpeg"):  # 已是 WebP 的不再重压，避免二次有损
             continue
         size = f.stat().st_size
         if size < MIN_BYTES:
