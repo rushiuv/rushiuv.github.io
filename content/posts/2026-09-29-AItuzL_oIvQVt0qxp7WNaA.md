@@ -1,6 +1,6 @@
 ---
 title: "我在德国听 iC-Haus 讲掉电多圈编码器：真正让我记住的，是 140 nJ"
-date: 2026-09-29T00:31:00+08:00
+date: 2026-09-29T00:32:00+08:00
 slug: "AItuzL_oIvQVt0qxp7WNaA"
 description: "MAGSENSE 2026 · JENA"
 original: "https://mp.weixin.qq.com/s/AItuzL_oIvQVt0qxp7WNaA"
