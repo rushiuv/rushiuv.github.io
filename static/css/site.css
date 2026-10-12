@@ -38,7 +38,11 @@ img{max-width:100%}
 .bar{display:flex;align-items:center;justify-content:space-between;height:60px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--blue);font:700 20px/1 var(--serif);letter-spacing:.12em}
 .brand:hover{text-decoration:none}
-.brand span{color:var(--ink)}
+.brand-text{display:flex;flex-direction:row;align-items:baseline;gap:8px;flex-wrap:wrap}
+.brand-title{color:var(--ink);font:700 20px/1 var(--serif);letter-spacing:.12em}
+.brand-sub{font:500 15px/1 var(--serif);letter-spacing:.14em;color:var(--gold);white-space:nowrap}
+.brand-sub::before{content:"·";margin-right:8px;color:var(--muted);font-weight:400}
+.brand .brand-sub{color:var(--gold)}
 .logo{width:30px;height:30px}
 nav{display:flex;gap:4px}
 nav a{color:var(--ink-2);padding:6px 10px;border-radius:6px;font-size:15px}
