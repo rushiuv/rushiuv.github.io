@@ -37,6 +37,10 @@ Hugo 静态博客，内容是公众号「如是有为」已发表文章的存档
 4. 发布后**核一遍线上**：文章地址里的 slug 是**小写**的（Hugo 会把网址转小写），
    `https://rushiuv.github.io/posts/<小写slug>/`；Actions 那次运行记录在仓库 Actions 页，
    推送 main 之后才会出现。
+5. **IndexNow 会报「密钥文件还没上线」**（2026-10-13 实测）：GitHub Pages（Fastly）对
+   `Python-urllib/x.y` 这个默认 UA 直接回 **403**，脚本的前置校验于是永远不通过、五个 5 分钟重试跑完就退出
+   ——文件其实早就在线了。`tools/indexnow.py` 已给校验和提交都带上浏览器 UA；**以后新写这类外部校验脚本，
+   只要目标在 GitHub Pages 上，就要带 UA**。
 
 ## 主题
 

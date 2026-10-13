@@ -14,6 +14,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 HOST = "rushiuv.github.io"
 ENDPOINT = "https://api.indexnow.org/indexnow"
+# GitHub Pages（Fastly）会对 python-urllib 的默认 UA 回 403，必须伪装成浏览器，否则校验永远失败
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/126 Safari/537.36")
 
 
 def main():
@@ -27,7 +30,8 @@ def main():
     # 密钥文件必须先上线，否则 IndexNow 会拒绝
     for _ in range(30):
         try:
-            with urllib.request.urlopen(key_url, timeout=15) as r:
+            req = urllib.request.Request(key_url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=15) as r:
                 if r.read().decode().strip() == key:
                     break
         except Exception:
@@ -41,7 +45,8 @@ def main():
     urls = [u for u in dict.fromkeys(urls) if u.startswith(f"https://{HOST}/")]
     body = json.dumps({"host": HOST, "key": key, "keyLocation": key_url, "urlList": urls}).encode()
     req = urllib.request.Request(ENDPOINT, data=body, method="POST",
-                                 headers={"Content-Type": "application/json; charset=utf-8"})
+                                 headers={"Content-Type": "application/json; charset=utf-8",
+                                          "User-Agent": UA})
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             print(f"IndexNow：提交 {len(urls)} 个网址，HTTP {r.status}")
