@@ -4,6 +4,7 @@ date: 2026-10-09T14:30:00+08:00
 slug: "Ljvs6x5fAY7eQ4vnuSZLxg"
 description: "诺贝尔奖正在奖励一种越来越稀缺的能力：活得够久"
 original: "https://mp.weixin.qq.com/s/Ljvs6x5fAY7eQ4vnuSZLxg"
+tags: ["科研"]
 ---
 
 诺贝尔奖正在奖励一种越来越稀缺的能力：活得够久

@@ -5,7 +5,7 @@ slug: "fmEPPJCwX3aFj_XZyojY1w"
 description: "前几天看到 ABB 发了一条机器人仿真的新闻，说 RobotStudio HyperReality 可以让虚拟机器人和真实机器人的行为相关性最高达到 99%。这句话翻译成人话就是：以后客户在电脑里调好的机器人，搬到真实产线上，应该越来越像。"
 original: "https://mp.weixin.qq.com/s/fmEPPJCwX3aFj_XZyojY1w"
 companies: ["NVIDIA", "ABB"]
-tags: ["磁编码器", "自校准", "机器人关节"]
+tags: ["磁编码器", "光电编码器", "自校准", "机器人关节"]
 ---
 
 ![](/images/wx/b892c2fad5a3241b4635934265647e2e.webp)

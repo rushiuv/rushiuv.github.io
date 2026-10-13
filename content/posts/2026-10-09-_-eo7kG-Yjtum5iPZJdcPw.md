@@ -5,7 +5,7 @@ slug: "_-eo7kG-Yjtum5iPZJdcPw"
 description: "ENCODER / PRECISION MOTION / 2026.10"
 original: "https://mp.weixin.qq.com/s/_-eo7kG-Yjtum5iPZJdcPw"
 companies: ["雷尼绍"]
-tags: ["ADC"]
+tags: ["光电编码器", "ADC"]
 ---
 
 ![](/images/wx/4b3bdd4ed5bb03934ffefaad779edff2.webp)
