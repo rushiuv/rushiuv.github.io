@@ -4,7 +4,7 @@ date: 2026-09-10T08:00:00+08:00
 slug: "mlx2d4R84ZvSEWhB10GgzQ"
 description: "苏黎世先是一座具体的城市。它在苏黎世湖北端，是瑞士最大的城市；老城、银行总部、ETH Zürich 和工业区挤在并不大的范围里。但机器人从业者说“苏黎世”，往往不只指市界。地图上的 Bubble Robotics 在 Dübendorf，更…"
 original: "https://mp.weixin.qq.com/s/mlx2d4R84ZvSEWhB10GgzQ"
-companies: ["ABB", "宇树", "ANYbotics", "ETH"]
+companies: ["ABB", "宇树", "ANYbotics", "ETH", "舍弗勒"]
 tags: ["EtherCAT", "瑞士"]
 ---
 

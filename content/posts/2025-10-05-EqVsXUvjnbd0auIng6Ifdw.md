@@ -4,7 +4,7 @@ date: 2025-10-05T00:00:00+08:00
 slug: "EqVsXUvjnbd0auIng6Ifdw"
 description: "一家公司要是真没威胁，根本轮不到“挨骂”的待遇。小米这两年骂声骤然变密，不是它变差，而是它把三张最肥的桌子同时推开了：手机守住现金，大家电猛冲，汽车直上高毛利。财报和对手的报表都在同一页纸上——谁的增长停了、谁的毛利被压了、谁在回避价格战，…"
 original: "https://mp.weixin.qq.com/s/EqVsXUvjnbd0auIng6Ifdw"
-companies: ["小米"]
+companies: ["小米", "比亚迪"]
 ---
 
 >

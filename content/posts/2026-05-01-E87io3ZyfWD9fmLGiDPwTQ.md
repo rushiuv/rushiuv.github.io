@@ -5,7 +5,7 @@ slug: "E87io3ZyfWD9fmLGiDPwTQ"
 description: "我是做编码器芯片的。这活说白了，就跟舞台后面的电工差不多。灯亮了没人夸你，灯灭了全场第一个骂你。"
 original: "https://mp.weixin.qq.com/s/E87io3ZyfWD9fmLGiDPwTQ"
 models: ["MT6901", "SV660ND", "CT-21X"]
-companies: ["纳芯微", "Melexis", "NVIDIA", "汇川", "雷赛", "宇树", "优必选", "特斯拉"]
+companies: ["纳芯微", "Melexis", "NVIDIA", "汇川", "雷赛", "宇树", "优必选", "特斯拉", "保隆科技", "中科无线"]
 tags: ["离轴", "人形机器人", "AI"]
 ---
 

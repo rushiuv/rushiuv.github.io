@@ -4,7 +4,7 @@ date: 2025-09-29T00:00:00+08:00
 slug: "2o6FE5MEjJXr46nPVxyxTg"
 description: "香港这次不是救市，而是改造自己，把全球资本硬生生接进中国核心资产。恒生科技疯涨、中资蓄力、半导体企业排队赴港，资金南下破纪录，投行纷纷回流……这一切全都在说明，资本水管已经接好，水压正越来越大。对于普通投资者，A股的恒生ETF是钥匙，而港股…"
 original: "https://mp.weixin.qq.com/s/2o6FE5MEjJXr46nPVxyxTg"
-companies: ["希磁", "中芯国际", "华虹"]
+companies: ["希磁", "中芯国际", "华虹", "比亚迪"]
 tags: ["AI", "投资"]
 ---
 

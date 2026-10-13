@@ -4,6 +4,7 @@ date: 2026-10-03T00:28:00+08:00
 slug: "N6qXfG7kTm5ldo8gHx6nCw"
 description: "ENCODER · OPTICS · METROLOGY"
 original: "https://mp.weixin.qq.com/s/N6qXfG7kTm5ldo8gHx6nCw"
+companies: ["传周科技"]
 tags: ["光电编码器"]
 ---
 

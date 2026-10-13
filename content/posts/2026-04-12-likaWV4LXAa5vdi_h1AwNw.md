@@ -5,7 +5,7 @@ slug: "likaWV4LXAa5vdi_h1AwNw"
 description: "中科无线半导体发布 CT-21X 系列氮化镓磁编码芯片。"
 original: "https://mp.weixin.qq.com/s/likaWV4LXAa5vdi_h1AwNw"
 models: ["CT-21X"]
-companies: ["昆泰芯", "Allegro"]
+companies: ["昆泰芯", "Allegro", "中科无线"]
 tags: ["磁编码器", "TMR", "霍尔", "GaN", "ADC", "人形机器人", "机器人关节"]
 ---
 

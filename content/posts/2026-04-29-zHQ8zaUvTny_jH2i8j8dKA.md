@@ -5,6 +5,7 @@ slug: "zHQ8zaUvTny_jH2i8j8dKA"
 description: "上回发了一篇介绍中科无线GaN产品的公众号文章, 反响不错, 中科有位老哥还给我打赏了, 回头看他们产品, 又有点感悟, 所以我得再写篇文章感谢感谢。"
 original: "https://mp.weixin.qq.com/s/zHQ8zaUvTny_jH2i8j8dKA"
 models: ["CT-21X"]
+companies: ["中科无线"]
 tags: ["磁编码器", "TMR", "GaN", "人形机器人", "机器人关节"]
 ---
 

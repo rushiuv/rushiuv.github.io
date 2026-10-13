@@ -5,7 +5,7 @@ slug: "5g7s0Fl5bOqrJ_ojm6WOOw"
 description: "2026年5月15日，黄仁勋在北京南锣鼓巷刷屏。他穿着标志性的黑色皮衣，出现在胡同、炸酱面、蜜雪冰城、豆汁这些极生活化的场景里。媒体报道称，他走进方砖厂69号炸酱面、稻香村等门店，店员还介绍那碗招牌黑猪肉炸酱面原价38元，是店里请他免费品尝…"
 original: "https://mp.weixin.qq.com/s/5g7s0Fl5bOqrJ_ojm6WOOw"
 models: ["KTM5900", "KTM5200", "KTM5300"]
-companies: ["昆泰芯", "NVIDIA"]
+companies: ["昆泰芯", "NVIDIA", "传周科技"]
 tags: ["多圈编码器", "自校准", "非线性校准", "机器人关节", "AI"]
 ---
 

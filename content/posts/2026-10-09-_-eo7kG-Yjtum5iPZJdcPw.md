@@ -4,7 +4,7 @@ date: 2026-10-09T09:31:00+08:00
 slug: "_-eo7kG-Yjtum5iPZJdcPw"
 description: "ENCODER / PRECISION MOTION / 2026.10"
 original: "https://mp.weixin.qq.com/s/_-eo7kG-Yjtum5iPZJdcPw"
-companies: ["雷尼绍"]
+companies: ["雷尼绍", "传周科技"]
 tags: ["光电编码器", "ADC"]
 ---
 

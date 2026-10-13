@@ -5,7 +5,7 @@ slug: "TWEcHy_ioXS1VBSSTFS8tg"
 description: "一线编码器工程师视角：五条国产路线，五种不同的上车逻辑"
 original: "https://mp.weixin.qq.com/s/TWEcHy_ioXS1VBSSTFS8tg"
 models: ["KTM5900", "MT6701", "MT6835", "TMR3111"]
-companies: ["昆泰芯", "纳芯微", "麦歌恩", "希磁", "多维科技", "Sensitec", "小鹏"]
+companies: ["昆泰芯", "纳芯微", "麦歌恩", "希磁", "多维科技", "Sensitec", "小鹏", "传周科技", "比亚迪", "英达森斯"]
 tags: ["磁编码器", "电感编码器", "多圈编码器", "离轴", "TMR", "AMR", "霍尔", "编码器接口", "人形机器人", "机器人关节"]
 ---
 

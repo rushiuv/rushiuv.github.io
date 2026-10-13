@@ -4,7 +4,7 @@ date: 2026-05-02T00:00:00+08:00
 slug: "pBiBz0n1hsQ-9w2Tuw3cOg"
 description: "客户现场最难处理的一句话，不是“你这个编码器精度不够”。"
 original: "https://mp.weixin.qq.com/s/pBiBz0n1hsQ-9w2Tuw3cOg"
-companies: ["小米", "宇树", "特斯拉"]
+companies: ["小米", "宇树", "特斯拉", "舍弗勒"]
 tags: ["人形机器人", "机器人关节", "瑞士"]
 ---
 
