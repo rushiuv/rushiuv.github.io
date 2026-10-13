@@ -18,6 +18,13 @@ Hugo 静态博客，内容是公众号「如是有为」已发表文章的存档
 导入时在标题和正文里匹配。型号和公司出现 1 次就打标签，主题词要出现 2 次（标题里出现算 2 次）。
 加标签就往词表里加一行，再重跑导入。
 
+## 手写稿（不是公众号存档来的）
+
+`posts_extra/*.md` 是手工写/从公众号精排 HTML 转来的文章，格式与 `content/posts/*.md` 一样
+（frontmatter：title / date / slug / description / tags，不要写 `original`）。
+`python tools/import_wechat.py` 在重建 `content/posts` 之后会把它们原样复制进去，
+所以重导不会冲掉——**新增这类文章只要往 `posts_extra/` 放一个 md，再跑导入 + 发布即可**。
+
 ## 发布时的坑（2026-10-09 实测，本机 t14p）
 
 `bash tools/deploy.sh` 在这台机器的 Hermes bash（MSYS）下有几处会咬人的地方，报错都不好认：

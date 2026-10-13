@@ -232,6 +232,14 @@ def main():
         fm.append("---\n")
         (POSTS / f"{day}-{slug}.md").write_text("\n".join(fm) + "\n" + body, encoding="utf-8")
         n += 1
+    # 手写稿（不来自公众号存档）：posts_extra/*.md 原样复制进 content/posts，可在重导后存活
+    n_extra = 0
+    extra = ROOT / "posts_extra"
+    if extra.is_dir():
+        for f in sorted(extra.glob("*.md")):
+            shutil.copy2(f, POSTS / f.name)
+            n_extra += 1
+
     # 不再被任何文章引用的微信配图删掉（例如 2026-09-29 修掉的贴图水印版、封面版）
     referenced = set()
     for f in POSTS.glob("*.md"):
@@ -249,7 +257,7 @@ def main():
             shutil.copy2(src, IMG_DST / name)
         else:
             missing.append(name)
-    print(f"导入 {n} 篇；库内本地图 {len(used_images) - len(missing)} 张；"
+    print(f"导入 {n} 篇；手写稿 {n_extra} 篇；库内本地图 {len(used_images) - len(missing)} 张；"
           f"微信配图 {len(urls) - len(failed)}/{len(urls)} 张已本地化")
     if failed:
         print("微信配图下载失败（保留外链）：", *failed, sep="\n  ")
