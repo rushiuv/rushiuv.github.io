@@ -3,7 +3,7 @@
   <header class="post-head">
     <time class="date">{{ .Date.Format "2006.01.02 15:04" }}</time>
     <h1 class="post-title">{{ .Title }}</h1>
-    {{ with .Params.original }}<p class="muted orig">首发于公众号「如是有为」 · <a href="{{ . }}" rel="noopener" target="_blank">查看原文</a></p>{{ end }}
+    {{ with .Params.original }}{{ $label := $.Params.original_from | default "首发于公众号「如是有为」" }}<p class="muted orig">{{ $label }} · <a href="{{ . }}" rel="noopener" target="_blank">查看原文</a></p>{{ end }}
   </header>
   <div class="content">{{ .Content }}</div>
   <div class="end-mark"><span>应作如是观</span></div>

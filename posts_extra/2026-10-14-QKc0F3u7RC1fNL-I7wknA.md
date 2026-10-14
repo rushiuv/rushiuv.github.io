@@ -1,10 +1,12 @@
 ---
 title: "从体系合规到产品安全：昆泰芯获ISO 26262汽车功能安全产品证书"
-date: 2026-09-22T18:09:00+08:00
+date: 2026-10-14T12:19:00+08:00
 slug: "QKc0F3u7RC1fNL-I7wknA"
 description: "近日，TÜV北德（TÜV NORD）正式向昆泰芯微电子颁发 ISO 26262:2018 汽车功能安全产品证书"
 companies: ["昆泰芯"]
 tags: ["功能安全", "车规"]
+original: "https://mp.weixin.qq.com/s/QKc0F3u7RC1fNL-I7wknA"
+original_from: "转载自公众号「昆泰芯微电子」"
 ---
 
 <strong>近日，TÜV北德（TÜV NORD）正式向昆泰芯微电子颁发 ISO 26262:2018 汽车功能安全产品证书。</strong>TÜV北德功能安全总监郑威、昆泰芯CTO陈宏雷及项目核心团队共同参与证书颁发仪式，共同见证这一国产车规传感芯片领域的重要里程碑。
@@ -157,85 +159,3 @@ ISO 26262 是国际通用标准，不是「国产标准」。昆泰芯走通产�
 对国产芯片而言，这件事的意义或许更为朴素：<strong>当「安全」可以被证明，国产替代才真正进入深水区。</strong>
 
 ![](/images/wx/643770d73eb5ea00f8b95ab2f269116f.gif)
-
-昆泰芯微电子科技有限公司
-
--专注于<strong>传感器芯片</strong>研发、生产及销售的高新技术企业。
-
--2017年成立至今，以“<strong>智能感知世界，传递美好生活</strong>”为使命，主要提供高性能低功耗传感器芯片产品，产品以<strong>磁性传感器芯片</strong>为龙头。-产品线包括磁性传感器芯片、高性能传感信号调理芯片、温度传感器芯片以及光学传感器芯片等，其中3D HALL编码器芯片、TMR近零功耗磁性开关、超高速磁性电流传感器ASIC以及高精度磁性编码器等芯片均为世界领先水平。-产品广泛应用于<strong>智能IOT设备、光伏新能源、工业自动化、汽车</strong>等领域，产品性能一流，已得到众多工业级和消费级知名品牌认可。-公司具备国内最完备的磁传感器技术开发能力，拥有<strong>超百项授权专利</strong>，实现了多个行业第一。
-
-![](/images/wx/58421400946efbe4390fc8aeea43577b.webp)
-
-![](/images/wx/5b21ff788a8a453257f3785f97466790.gif)
-
-销售服务/SALES & SERVICES:‍
-
-<strong>技术支持</strong>
-
-联系电话：<strong>0755-86006609</strong>
-
-产品销售：<strong>周女士</strong>
-
-联系电话：<strong>18680680959</strong>
-
-销售邮箱：sales@conntek.com.cn
-
-座机电话：+86-0755-86186696
-
-![](/images/wx/a19ce76457191c2236ba056c8f347791.webp)
-
-![](/images/wx/a136cbdf2c7610d17d40a4c9bba6d971.gif)
-
-总部/HEAD QUARTER‍S:
-
-泉州公司：福建省泉州市丰泽区华大街道体育街华创园B501室
-
-![](/images/wx/7777ce57b1c74d2b29ce978b04325cac.webp)
-
-![](/images/wx/539e988664b58684c621d687f494f685.gif)
-
-研发中心/R & D CEN‍TER:
-
-苏州：苏州工业园区唯新路63号 联东U谷阳澄半岛科技园3号楼五楼
-
-上海：上海市浦东新区盛夏路608号3幢201室
-
-南京：南京市雨花台区雨花客厅2栋12楼
-
-杭州：杭州市滨江区浦沿街道江南大道3888号信雅达科技大厦7楼729室
-
-![](/images/wx/5c48dbf8ad896c776193d68d56a85557.webp)
-
-![](/images/wx/85aed776b9861445e2cdc2bc7614c75d.gif)
-
-运营中心/OPERATION CENTER:
-
-深圳公司：深圳市南山区留仙大道4168号众冠时代广场A座3108~3111室
-
-![](/images/wx/ac1a51bf2b68b788a948888dcb121639.webp)
-
-![](/images/wx/4a03220be36ec9ae6290b26678f4aabb.gif)
-
-全球服务中心/GLOBAL SERVICES CENTER:
-
-Conntek/KTsense Microelectronics Co.,Ltd.
-
-Sinserstrasse 2
-
-6330 Cham,Switzerland
-
-![](/images/wx/97099285f86b85fc67d353d6cd1f6440.webp)
-
-![](/images/wx/7e5c0b75e6d9dd0e1e1825203f65518f.gif)
-
-技术支持/TECHNICAL SUPPORT:‍
-
-support@conntek.com.cn
-
-+86-0755-86006609
-
-- ![](/images/wx/825a1d7c59e243a214d4a8f2c56f20ea.gif)
-
-扫码关注昆泰芯订阅号
-
- 了解更多信息

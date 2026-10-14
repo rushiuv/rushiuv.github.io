@@ -15,6 +15,7 @@ import sys
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from boilerplate import find_tail_cut, KEEP_LINE
 from readability import normalize
 
 SRC = Path(r"D:\VerySync\VerySync_notes\2-Resources\2K-公众号-如是有为")
@@ -61,6 +62,20 @@ def parse(path: Path):
         return None
     body = text[i + len("## 正文"):].strip("\n")
     return day, title.strip(), stats, body
+
+
+def strip_boiler(body: str):
+    """去掉采集文末尾的固定套路块（联系信息 / 公司简介 / 扫码关注 / 往期推荐 / 免责版权）。
+    统一规律：2026-10-14 王超定（采集文里的统一注释与广告信息一律不入稿）。返回 (正文, 命中的标记)。"""
+    pos, why = find_tail_cut(body)
+    if pos is None:
+        return body, ""
+    cut = body[pos:].strip()
+    keep = [ln.strip() for ln in cut.splitlines() if KEEP_LINE.match(ln.strip())]
+    kept = body[:pos].rstrip()
+    if keep:
+        kept += "\n\n" + "\n\n".join(keep)
+    return kept + "\n", why
 
 
 def clean_body(body: str, used_images: set) -> str:
@@ -190,6 +205,7 @@ def main():
     used_images: set = set()
     n = 0
     skipped = []
+    removed = []
     posts = []
     vocab = load_vocab()
     for path in sorted(SRC.glob("*.md")):
@@ -198,7 +214,10 @@ def main():
             skipped.append(path.name)
             continue
         day, title, stats, body = r
-        body = clean_body(body, used_images)
+        stripped, why = strip_boiler(body)
+        if why:
+            removed.append((day, title, why, len(body) - len(stripped)))
+        body = clean_body(stripped, used_images)
         posts.append((day, title, stats, body))
 
     urls = sorted({u for p in posts for u in WX_RE.findall(p[3])})
@@ -239,14 +258,22 @@ def main():
     extra = ROOT / "posts_extra"
     if extra.is_dir():
         for f in sorted(extra.glob("*.md")):
-            shutil.copy2(f, POSTS / f.name)
+            text = f.read_text(encoding="utf-8")
+            _, fm, body = text.split("---", 2)
+            clean, why = strip_boiler(body)
+            if clean != body:
+                print(f"  手写稿 {f.name} 尾部还有套路块（{why}）——复制进 content/posts 时已去掉；"
+                      f"建议对源稿跑一次 tools/boilerplate.py --fix")
+            (POSTS / f.name).write_text("---" + fm + "---" + clean, encoding="utf-8", newline="\n")
             n_extra += 1
 
     # 不再被任何文章引用的微信配图删掉（例如 2026-09-29 修掉的贴图水印版、封面版）
     referenced = set()
     for f in POSTS.glob("*.md"):
         referenced.update(re.findall(r"/images/wx/([^)\s\"']+)", f.read_text(encoding="utf-8")))
-    orphans = [f for f in WX_DST.iterdir() if f.is_file() and f.name not in referenced]
+    orphans = [f for f in WX_DST.iterdir()
+               if f.is_file() and f.name not in referenced and f.suffix.lower() != ".svg"]
+    # .svg 一律不删：公式的原始 MathJax SVG 是源文件，正文已改用 MathML，它本来就不再被引用
     for f in orphans:
         f.unlink()
     if orphans:
@@ -261,6 +288,12 @@ def main():
             missing.append(name)
     print(f"导入 {n} 篇；手写稿 {n_extra} 篇；库内本地图 {len(used_images) - len(missing)} 张；"
           f"微信配图 {len(urls) - len(failed)}/{len(urls)} 张已本地化")
+    if removed:
+        print(f"文末套路块已去除 {len(removed)} 篇（联系信息/公司简介/扫码关注/免责版权）：")
+        for day, title, why, ln in removed[:12]:
+            print(f"  -{ln:>5} 字 {day} {title[:26]} [{why[:26]}]")
+        if len(removed) > 12:
+            print(f"  …另有 {len(removed) - 12} 篇")
     if failed:
         print("微信配图下载失败（保留外链）：", *failed, sep="\n  ")
     if skipped:
