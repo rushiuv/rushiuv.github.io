@@ -7,9 +7,7 @@ original: "https://mp.weixin.qq.com/s/RhUwXCd_wkJ3jtvSDfM4mw"
 models: ["SR3511N"]
 companies: ["峰岹", "ADI", "多摩川"]
 tags: ["磁编码器", "电感编码器", "FOC"]
----
-
-![](/images/wx/a61e5d2fa215c05f5df37032dcfe91bc.webp)
+---![](/images/wx/a61e5d2fa215c05f5df37032dcfe91bc.webp)
 
 <strong>44°、40°、90°。</strong>
 
@@ -18,8 +16,6 @@ tags: ["磁编码器", "电感编码器", "FOC"]
 <strong>44°</strong>——ADI AD2S1210 的相位范围，超出这个窗口，解调就不保证了。
 
 <strong>40°</strong>——ADI 自家 CN0276 参考设计，EXC 到 SIN 的实测总相移。<strong>一块设计得当、器件全部正常的参考板，把 44° 的预算花掉了 40°。只剩 4°。90°</strong>——峰岹 6 月 1 日发布的国产 RDC SR3511N，公开宣称：实时相位校正，"<strong>能自动纠正任意大小的相位延迟，即使超过 90°</strong>"。
-
-![](/images/wx/b470caabaa288aeb46a7ee4e59df058e.jpg)
 
 <strong>峰岹这一枪，精准打在 ADI 最薄的那 4° 上。</strong>
 

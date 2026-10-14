@@ -7,9 +7,7 @@ original: "https://mp.weixin.qq.com/s/_7IfYuHvJFSpoQPfkBSqOQ"
 models: ["KTH7815", "AS5047P"]
 companies: ["昆泰芯", "ams OSRAM"]
 tags: ["离轴", "非线性校准"]
----
-
-![](/images/wx/8274f535cc6d772c3fcf88941f666f49.webp)
+---![](/images/wx/8274f535cc6d772c3fcf88941f666f49.webp)
 
 刚看完满度科技这篇《[12万转、1μs延时、16位输出，昆泰芯 KTH7815 对比 AS5047P 优势在哪](http://mp.weixin.qq.com/s?__biz=MzkzODk0NDQ2Mw==&mid=2247485043&idx=1&sn=d4ef5decf9a8c267a051295dc3d60f71&chksm=c3288b8a2f05882c405fdac38d3663c98e37fc2a4321cea42151188bd14243e3195f047929bb&scene=21&xtrack=1＃wechat_redirect)》。
 
@@ -150,8 +148,6 @@ MTP 和 OTP 的差别，不能只写成“一个能改，一个不能改”。�
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>𝑦</mi><mo>=</mo><mi>𝐴</mi><mi>sin</mi><mo>⁡</mo><mi>𝜃</mi></math>
 
 实际信号更接近：
-
-![](/images/wx/73eee4018ef6a0baaf9c476f2d3675a4.png)
 
 圆心偏移、X/Y 增益不一致和正交误差，通常还能通过 offset、gain、phase 这类线性校准处理。画出来的 Lissajous 图可能是偏心、椭圆或倾斜椭圆。
 

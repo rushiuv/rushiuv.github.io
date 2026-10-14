@@ -6,9 +6,7 @@ description: "九月初，实验室。小推车把一台伺服转台送进来，
 original: "https://mp.weixin.qq.com/s/2lNx2tNyhVb8qnn3XxpHFQ"
 models: ["KTM5800", "KTM5200"]
 companies: ["昆泰芯"]
----
-
-![](/images/wx/d8dd3681a756187fd2e8f8a129e93e0d.webp)
+---![](/images/wx/d8dd3681a756187fd2e8f8a129e93e0d.webp)
 
 九月初，实验室。小推车把一台伺服转台送进来，电机壳还留着点温度——跑了一整天才返修的。工单上客户只写了一行字：
 
@@ -61,8 +59,6 @@ companies: ["昆泰芯"]
 KTM5200 的公开资料里，ABZ 支持最高 65,536 脉冲/圈；标准 AB 正交如果按四边沿计数，对应的 position count 是脉冲数的 4 倍。官方产品页也明确把 ABZ 能力写成 1～65,536 脉冲/圈。
 
 也就是说，1000 PPR 的 A/B 信号，不是每圈只有 1000 个 quadrature count，而是：
-
-![](/images/wx/4ba327ec452335ab316dba45fe807c84.png)
 
 所以 1000 PPR 对应：
 

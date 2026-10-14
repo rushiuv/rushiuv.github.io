@@ -6,9 +6,7 @@ description: "如是有为 · 编码器观察编码器把误差补没了，轴�
 original: "https://mp.weixin.qq.com/s/SUnP66apcJKm6mJCCXzVQA"
 companies: ["ADI", "雷尼绍", "堡盟"]
 tags: ["AI"]
----
-
-![](/images/wx/dac9ca24c08c1311cc0fe8f75be83151.jpg)
+---![](/images/wx/dac9ca24c08c1311cc0fe8f75be83151.jpg)
 
 如是有为 · 编码器观察
 
@@ -60,11 +58,7 @@ RESM 圆光栅与两颗 SiGNUM SR 读头。来自 DSi 双读头接口发布资�
 
 先把两颗读头换算到相同的机械角度坐标，并假设同步采样。对于某一方向的小幅轴心平移，一阶近似下，两颗相对读头的角度误差符号相反：
 
-![](/images/wx/c08bd12abce15790a29a9f336e0a8284.png)
-
 取平均：
-
-![](/images/wx/08b1300e9f4e5f2237bee57557c70f67.png)
 
 误差消掉了。非常漂亮。
 

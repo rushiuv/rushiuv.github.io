@@ -6,17 +6,13 @@ description: "艾为超高带宽 UWB 开关芯片，助力红旗G919国产数字
 original: "https://mp.weixin.qq.com/s/79q5z1ObtOUlMmfOs1m2Vg"
 original_from: "转载自公众号「艾为之家」"
 companies: ["艾为"]
----
-
-![](/images/wx/019181f4c48ef7690c14f22b8db69922.png)
+---![](/images/wx/019181f4c48ef7690c14f22b8db69922.png)
 
 产品图片来源：中国一汽红旗官方网站，版权归原作者所有
 
 ![](/images/wx/853ecf2b9c7834b101a9d312795b77db.png)
 
 **产品介绍**
-
-![](/images/wx/047337f3a258dcea5169479f34bfe87e.gif)
 
 超高带宽UWB开关
 

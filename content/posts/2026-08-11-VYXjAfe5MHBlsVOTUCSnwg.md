@@ -7,9 +7,7 @@ original: "https://mp.weixin.qq.com/s/VYXjAfe5MHBlsVOTUCSnwg"
 models: ["KTM5900", "KTM5200", "KTM5300", "KTH78"]
 companies: ["昆泰芯"]
 tags: ["离轴", "非线性校准", "TMR", "AMR", "ADC"]
----
-
-![](/images/wx/e639f51d6e06b2f01fa43fd926e21f6b.webp)
+---![](/images/wx/e639f51d6e06b2f01fa43fd926e21f6b.webp)
 
 读完一篇振镜伺服文章，[北四环德彪 ](https://mp.weixin.qq.com/s?__biz=MzAxOTc1MDE2Ng==&mid=2650274144&idx=1&sn=17aacffdc4dd5f9e9820cf9997d7b53c&scene=21＃wechat_redirect)写的, 我没有先盯 PID、陷波和前馈，反而盯住了最不起眼的那只“眼睛”：<strong>位置传感器。</strong>
 
@@ -123,13 +121,9 @@ KTM5900 真正吸引我的，不是“24 bit”三个字，而是它背后的高
 
 第二张图，我会测最低延迟模式下的角度噪声功率谱：
 
-![](/images/wx/f59a60dd9b8093f56aa437bc80b2e98e.png)
-
 重点盯 0–5 kHz。振镜位置环真正会“吃进去”的，是这个频段里的噪声，不是一个脱离带宽定义的单独 noise 数字。
 
 第三张图测温升过程里的零位漂移：
-
-![](/images/wx/1af9b4d5583a073aac794eb0bbaedf34.png)
 
 这三张图如果漂亮，才有资格继续谈“昆泰芯能不能做振镜”。
 

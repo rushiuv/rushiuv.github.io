@@ -15,7 +15,7 @@ import sys
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from boilerplate import find_tail_cut, KEEP_LINE
+from boilerplate import find_tail_cut, KEEP_LINE, find_small_images, drop_images
 from readability import normalize
 
 SRC = Path(r"D:\VerySync\VerySync_notes\2-Resources\2K-公众号-如是有为")
@@ -65,17 +65,21 @@ def parse(path: Path):
 
 
 def strip_boiler(body: str):
-    """去掉采集文末尾的固定套路块（联系信息 / 公司简介 / 扫码关注 / 往期推荐 / 免责版权）。
-    统一规律：2026-10-14 王超定（采集文里的统一注释与广告信息一律不入稿）。返回 (正文, 命中的标记)。"""
+    """去掉采集文末尾的固定套路块（联系信息/公司简介/关于XX/扫码关注/往期推荐/免责版权），
+    再去掉正文里的小图（表情包、装饰符号）。统一规律：2026-10-14 王超定。
+    返回 (正文, 命中的标记)。"""
     pos, why = find_tail_cut(body)
-    if pos is None:
-        return body, ""
-    cut = body[pos:].strip()
-    keep = [ln.strip() for ln in cut.splitlines() if KEEP_LINE.match(ln.strip())]
-    kept = body[:pos].rstrip()
-    if keep:
-        kept += "\n\n" + "\n\n".join(keep)
-    return kept + "\n", why
+    if pos is not None:
+        cut = body[pos:].strip()
+        keep = [ln.strip() for ln in cut.splitlines() if KEEP_LINE.match(ln.strip())]
+        kept = body[:pos].rstrip()
+        if keep:
+            kept += "\n\n" + "\n\n".join(keep)
+        body = kept + "\n"
+    small = find_small_images(body)
+    if small:
+        body = drop_images(body, small)
+    return body, why
 
 
 def clean_body(body: str, used_images: set) -> str:

@@ -4,9 +4,7 @@ date: 2026-08-02T00:00:00+08:00
 slug: "uPx1kud3SVlGbQaNxYyhjg"
 description: "当工具无法给出答案，我们最容易犯的错误，是用更多人的参与来替代更可靠的证据。"
 original: "https://mp.weixin.qq.com/s/uPx1kud3SVlGbQaNxYyhjg"
----
-
-芯片研发方法论
+---芯片研发方法论
 
 ## 一群人开会做人肉 LVS，最后验证了什么？
 
@@ -147,8 +145,6 @@ original: "https://mp.weixin.qq.com/s/uPx1kud3SVlGbQaNxYyhjg"
 当输入材料本身混乱、检查规则没有定义、每个人掌握的上下文不同，增加参与者只会增加新的解释路径。
 
 人数从 5 增加到 10，潜在的沟通关系从
-
-![](/images/wx/d3a121cbacbf5307550d925af4a385b6.png)
 
 增加到
 

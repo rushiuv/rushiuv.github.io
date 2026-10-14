@@ -12,8 +12,18 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-HOST = "rushiuv.github.io"
 ENDPOINT = "https://api.indexnow.org/indexnow"
+
+
+def site_host():
+    """站点域名从 hugo.toml 的 baseURL 取（2026-10-14 起正式域名是 sensor.fans，写死会在
+    「sitemap 里全是新域名、脚本还在过滤旧域名」时静默提交 0 条）。"""
+    cfg = (ROOT / "hugo.toml").read_text(encoding="utf-8")
+    m = re.search(r'baseURL\s*=\s*"https?://([^/"]+)', cfg)
+    return m.group(1) if m else "rushiuv.github.io"
+
+
+HOST = site_host()
 # GitHub Pages（Fastly）会对 python-urllib 的默认 UA 回 403，必须伪装成浏览器，否则校验永远失败
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126 Safari/537.36")
