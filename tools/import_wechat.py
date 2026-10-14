@@ -16,6 +16,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from boilerplate import find_tail_cut, KEEP_LINE, find_small_images, drop_images
+from format_fixes import fix_body
 from readability import normalize
 
 SRC = Path(r"D:\VerySync\VerySync_notes\2-Resources\2K-公众号-如是有为")
@@ -243,6 +244,7 @@ def main():
         if not slug:
             slug = hashlib.md5((day + title).encode("utf-8")).hexdigest()[:10]
         body = normalize(body, title, filename=f"{day}-{slug}.md")
+        body, _fmt = fix_body(body)      # 加粗锚点/孤立列表符号/孤立竖线：与手写稿同一条固定工序
         pub = stats.get("发布时间", "") or day
         date = pub.replace(" ", "T") + (":00+08:00" if " " in pub else "T12:00:00+08:00")
         fm = ["---", f"title: {yaml_str(title)}", f"date: {date}", f"slug: {yaml_str(slug)}"]
@@ -265,9 +267,10 @@ def main():
             text = f.read_text(encoding="utf-8")
             _, fm, body = text.split("---", 2)
             clean, why = strip_boiler(body)
+            clean, kinds = fix_body(clean)
             if clean != body:
-                print(f"  手写稿 {f.name} 尾部还有套路块（{why}）——复制进 content/posts 时已去掉；"
-                      f"建议对源稿跑一次 tools/boilerplate.py --fix")
+                print(f"  手写稿 {f.name} 复制时修正：套路块[{why or '-'}] 格式[{','.join(kinds) or '-'}]；"
+                      f"建议对源稿跑一次 tools/boilerplate.py --fix 与 tools/format_fixes.py --fix")
             (POSTS / f.name).write_text("---" + fm + "---" + clean, encoding="utf-8", newline="\n")
             n_extra += 1
 
