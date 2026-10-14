@@ -1,5 +1,5 @@
 # GitHub Pages：rushiuv.github.io
-baseURL = "https://rushiuv.github.io/"
+baseURL = "https://sensor.fans/"
 locale = "zh-CN"
 defaultContentLanguage = "zh"
 title = "如是有为"
@@ -27,6 +27,12 @@ enableRobotsTXT = true
 [markup.goldmark.renderer]
   unsafe = true      # 公众号原文里夹带少量内联 HTML
   hardWraps = true   # 公众号正文大量单换行，保持原排版
+
+[markup.goldmark.extensions.passthrough]
+  enable = true
+  [markup.goldmark.extensions.passthrough.delimiters]
+    block = [['\[', '\]'], ['$$', '$$']]
+    inline = [['\(', '\)']]
 
 [taxonomies]
   model = "models"

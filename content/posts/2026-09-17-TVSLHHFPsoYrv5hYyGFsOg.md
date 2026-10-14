@@ -6,8 +6,6 @@ description: "我读完博士以后，反而越来越理解 Dyson 为什么讨�
 original: "https://mp.weixin.qq.com/s/TVSLHHFPsoYrv5hYyGFsOg"
 ---
 
-我读完博士以后，反而越来越理解 Dyson 为什么讨厌 Ph.D. 制度
-
 Freeman Dyson 有句很狠的话：“I’m very proud of not having a Ph.D.” 他甚至把 Ph.D. 制度称为一种“abomination”。
 
 以前看到这种话，我大概会觉得是天才的特权。现在自己读完博士，又做了这些年芯片，反而越来越理解他在说什么。

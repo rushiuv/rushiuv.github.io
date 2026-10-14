@@ -21,7 +21,7 @@ tags: ["磁编码器", "离轴"]
 
 于是客户最后总会问到一句：
 
-**「能不能让角度芯片正好对着圆心，中间这根轴又继续穿过去？」**
+<strong>「能不能让角度芯片正好对着圆心，中间这根轴又继续穿过去？」</strong>
 
 这个问题听起来像是在讨论磁场。
 
@@ -35,11 +35,11 @@ tags: ["磁编码器", "离轴"]
 
 这就是典型的 End-of-Shaft。
 
-注意，磁铁、轴和芯片当然可以在**同一条轴线**上，因为它们沿轴向分布在不同位置。
+注意，磁铁、轴和芯片当然可以在<strong>同一条轴线</strong>上，因为它们沿轴向分布在不同位置。
 
 真正冲突发生在另一种情况：
 
-**那根轴必须继续穿过传感器所在的截面。**
+<strong>那根轴必须继续穿过传感器所在的截面。</strong>
 
 这时候，截面中心只能二选一：
 
@@ -51,7 +51,7 @@ tags: ["磁编码器", "离轴"]
 
 所以很多所谓“中空轴为什么做不了在轴”，真正的答案不是磁场不够强，而是：
 
-**圆心已经被机械结构占了。**
+<strong>圆心已经被机械结构占了。</strong>
 
 TI 对 on-axis 的定义也是传感器与磁体旋转轴准确对准；而 Melexis 直接把 End-of-Shaft 和 Through-Shaft 分别归到 on-axis 与 off-axis 两类。
 
@@ -59,7 +59,7 @@ TI 对 on-axis 的定义也是传感器与磁体旋转轴准确对准；而 Mele
 
 而是：
 
-**这根轴在传感器这一侧，到底还要不要继续存在？**
+<strong>这根轴在传感器这一侧，到底还要不要继续存在？</strong>
 
 如果不要，事情最好办。
 
@@ -71,7 +71,7 @@ TI 对 on-axis 的定义也是传感器与磁体旋转轴准确对准；而 Mele
 
 最麻烦的是第三种：
 
-**轴真的必须把扭矩、线束、液体或者其他功能带到另外一侧。**
+<strong>轴真的必须把扭矩、线束、液体或者其他功能带到另外一侧。</strong>
 
 那就别再追经典的在轴结构了。
 
@@ -91,13 +91,13 @@ TI 对 on-axis 的定义也是传感器与磁体旋转轴准确对准；而 Mele
 
 理想情况下，两路磁场可以写成正交正弦：
 
-![](/images/wx/760567e9653813376d1a5cb070c30382.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝐵</mi><mi>𝑥</mi></msub><mo>=</mo><mi>𝐴</mi><mi>cos</mi><mo>⁡</mo><mi>𝜃</mi></math>
 
-![](/images/wx/9a51993af7c171ccc2db7aee2524c711.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝐵</mi><mi>𝑦</mi></msub><mo>=</mo><mi>𝐴</mi><mi>sin</mi><mo>⁡</mo><mi>𝜃</mi></math>
 
 于是：
 
-![](/images/wx/b7f1adc044cb6e4c12dbf3bb7ba317e2.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msubsup><mi>𝐵</mi><mn>2</mn><mi>𝑥</mi></msubsup><mo>+</mo><msubsup><mi>𝐵</mi><mn>2</mn><mi>𝑦</mi></msubsup><mo>=</mo><msup><mi>𝐴</mi><mn>2</mn></msup></math>
 
 把两路信号画出来，就是一个圆。
 
@@ -107,7 +107,7 @@ TI 对 on-axis 的定义也是传感器与磁体旋转轴准确对准；而 Mele
 
 Melexis 对这个区别有一句很形象的描述：
 
-End-of-Shaft 更像是**一直看着同一组磁力线旋转**；Through-Shaft 则会**不断穿过不同的磁力线**。因此磁场幅度、磁力线曲率以及机械误差带来的影响都会更明显。
+End-of-Shaft 更像是<strong>一直看着同一组磁力线旋转</strong>；Through-Shaft 则会<strong>不断穿过不同的磁力线</strong>。因此磁场幅度、磁力线曲率以及机械误差带来的影响都会更明显。
 
 于是正余弦可能出现幅值不等、零偏、正交误差和更高次失真。
 
@@ -115,11 +115,11 @@ End-of-Shaft 更像是**一直看着同一组磁力线旋转**；Through-Shaft �
 
 所以真正的分界不是：
 
-**圆还是椭圆。**
+<strong>圆还是椭圆。</strong>
 
 而是：
 
-**你还能不能继续使用那个最简单的轴对称磁场模型。**
+<strong>你还能不能继续使用那个最简单的轴对称磁场模型。</strong>
 
 ### 但「离轴」也不是一句坏消息
 
@@ -129,11 +129,11 @@ End-of-Shaft 更像是**一直看着同一组磁力线旋转**；Through-Shaft �
 
 也不是。
 
-Through-Shaft 本来就是成熟的量产架构。Melexis 的 MLX90381 甚至可以在 End-of-Shaft 和 Through-Shaft 配置之间重新编程；TI 也专门讨论了 off-axis、in-plane 等不同磁体与传感器布局。([Melexis][3])
+Through-Shaft 本来就是成熟的量产架构。Melexis 的 MLX90381 甚至可以在 End-of-Shaft 和 Through-Shaft 配置之间重新编程；TI 也专门讨论了 off-axis、in-plane 等不同磁体与传感器布局。(Melexis)
 
 真正的问题是：
 
-**不要拿 End-of-Shaft 的假设，去要求 Through-Shaft 的磁场。**
+<strong>不要拿 End-of-Shaft 的假设，去要求 Through-Shaft 的磁场。</strong>
 
 离轴以后，该做的是重新定义磁体、传感器位置、工作气隙、幅值归一化以及最终的标定模型。
 
@@ -147,19 +147,19 @@ Through-Shaft 本来就是成熟的量产架构。Melexis 的 MLX90381 甚至可
 
 这句话只说对了一半。
 
-如果磁环有 (p) 对极，同一个机械位置扰动映射到**电角度**以后，确实会乘上极对数：
+如果磁环有 (p) 对极，同一个机械位置扰动映射到<strong>电角度</strong>以后，确实会乘上极对数：
 
-![](/images/wx/cc827a2b85f39bb3247055dbe26813ac.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>Δ</mi><msub><mi>𝜃</mi><mi>𝑒</mi></msub><mo>≈</mo><mi>𝑝</mi><mfrac><mi>𝛿</mi><mi>𝑟</mi></mfrac><mi>sin</mi><mo>⁡</mo><mo>(</mo><mi>𝜃</mi><mo>−</mo><mi>𝜙</mi><mo>)</mo></math>
 
 但如果最后还原的是机械角：
 
-![](/images/wx/5dc2ed19056d2e864cc9ba4c5c0b5123.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>Δ</mi><msub><mi>𝜃</mi><mi>𝑚</mi></msub><mo>≈</mo><mfrac><mi>𝛿</mi><mi>𝑟</mi></mfrac><mi>sin</mi><mo>⁡</mo><mo>(</mo><mi>𝜃</mi><mo>−</mo><mi>𝜙</mi><mo>)</mo></math>
 
 极对数会再除回来。
 
 所以真正应该说的是：
 
-**极对数越多，机械偏心越容易吃掉电角度预算；但不能因此直接断言机械角误差也放大 (p) 倍。**
+<strong>极对数越多，机械偏心越容易吃掉电角度预算；但不能因此直接断言机械角误差也放大 (p) 倍。</strong>
 
 磁极尺寸、磁化一致性、工作气隙以及局部场畸变，还会另外叠加进去。
 
@@ -167,11 +167,11 @@ Through-Shaft 本来就是成熟的量产架构。Melexis 的 MLX90381 甚至可
 
 ### 所以结构阶段只需要问三个问题
 
-第一，那根轴到了传感器这一侧，**还必须继续干活吗？**
+第一，那根轴到了传感器这一侧，<strong>还必须继续干活吗？</strong>
 
-第二，如果必须贯通，**是不是应该一开始就按 Through-Shaft / Off-Axis 设计？**
+第二，如果必须贯通，<strong>是不是应该一开始就按 Through-Shaft / Off-Axis 设计？</strong>
 
-第三，如果精度不够，问题到底来自**几何偏心、磁场畸变，还是还在错误地使用 End-of-Shaft 模型？**
+第三，如果精度不够，问题到底来自<strong>几何偏心、磁场畸变，还是还在错误地使用 End-of-Shaft 模型？</strong>
 
 这三个问题在结构阶段回答，可能只是一条尺寸线。
 
@@ -179,10 +179,10 @@ Through-Shaft 本来就是成熟的量产架构。Melexis 的 MLX90381 甚至可
 
 ### 总结
 
-**很多旋转结构不是“磁编码器做不到在轴”，而是机械系统早已经把圆心分配给了别的功能。**
+<strong>很多旋转结构不是“磁编码器做不到在轴”，而是机械系统早已经把圆心分配给了别的功能。</strong>
 
 轴必须贯通，就接受 Through-Shaft。
 
 圆心能让出来，再做 End-of-Shaft。
 
-**最贵的不是离轴，而是结构已经决定离轴以后，还一直按照在轴的模型做产品。**
+<strong>最贵的不是离轴，而是结构已经决定离轴以后，还一直按照在轴的模型做产品。</strong>

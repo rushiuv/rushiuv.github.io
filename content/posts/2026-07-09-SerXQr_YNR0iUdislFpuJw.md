@@ -9,25 +9,17 @@ companies: ["ams OSRAM"]
 tags: ["磁编码器", "机器人关节"]
 ---
 
-磁编码器芯片 · Datasheet 拆解 · 机器人关节现场
-
 ![](/images/wx/f0d672b8f11229cdaca04ec55238c845.jpg)
-
-##
-
-## ams OSRAM AS5047P 标称可抑制 homogenous 外部杂散磁场，但机器人关节非均匀外场会导致角度平滑带偏
 
 磁编码器芯片 AS5047P Datasheet 里的一个单词，决定了磁场免疫算法什么时候开始“骗”你。
 
 AS5047P 的英文 Datasheet 里有一句话，我每次读到都觉得不对味。
 
->
-
-This sensor suppresses the influence of any homogenous external stray magnetic field.
+> This sensor suppresses the influence of any homogenous external stray magnetic field.
 
 注意到那个词了吗？
 
-**homogenous。**
+<strong>homogenous。</strong>
 
 它把整个磁场免疫算法的前提条件，藏在一个谁都懒得细读的定语里。
 
@@ -43,7 +35,7 @@ This sensor suppresses the influence of any homogenous external stray magnetic f
 
 算法没报错，角度没跳，输出平滑——但偏了。
 
-### 01 算法做了什么，以及它偷偷假设了什么
+## 01 算法做了什么，以及它偷偷假设了什么
 
 把原理用一句话说清楚：磁场免疫算法在中心传感器周围对称布置了几颗辅助传感器，利用目标磁场在对称两点方向相反、外场在两点大体一致的特点，先把外场的 Z 分量算出来，再按比例反推出 X 和 Y 分量，最后从中心传感器读数里扣掉。
 
@@ -61,7 +53,7 @@ B_ext(t)=|B_ext(t)|·B̂_ext
 B̂_ext = const
 ```
 
-这就是 **homogenous** 的数学含义。
+这就是 <strong>homogenous</strong> 的数学含义。
 
 它并不是简单地表示“磁场均匀”，而是意味着在整个传感器阵列的空间范围内，外场可以近似看成同一个向量场。方向保持一致，各个采样点之间几乎没有空间梯度。
 
@@ -71,7 +63,7 @@ B̂_ext = const
 
 整个数学模型，实际上都建立在这个不起眼的定语上。
 
-### 02 真正的问题：机器人关节里的磁场，从来都不是 homogeneous
+## 02 真正的问题：机器人关节里的磁场，从来都不是 homogeneous
 
 真正的问题在于，机器人关节里的外场并不是一束平行光。
 
@@ -119,11 +111,11 @@ B_target = B_center - B̂_ext
 
 问题就在这里。
 
-由于估计出来的 **B̂_ext** 本身已经带着误差，最终被扣掉的，不只是外场。
+由于估计出来的 <strong>B̂_ext</strong> 本身已经带着误差，最终被扣掉的，不只是外场。
 
 连目标磁场的一部分，也被一起扣掉了。
 
-### 03 最危险的地方，不是算法崩了，而是算法还在认真工作
+## 03 最危险的地方，不是算法崩了，而是算法还在认真工作
 
 很多人第一次接触这种失效，会以为系统应该出现磁场报警、角度跳变或者 CRC 错误。
 
@@ -155,7 +147,7 @@ SPI 通信正常。
 
 因此，输出不会出现剧烈异常，而会表现为一种更隐蔽、更危险的失效方式。
 
-### 04 为什么这种误差最难发现
+## 04 为什么这种误差最难发现
 
 对于伺服控制来说，真正麻烦的并不是偶尔跳一下。
 
@@ -187,21 +179,19 @@ SPI 通信正常。
 
 因为跳变会提醒你系统出了问题，而模型误差只会让系统在“一切正常”的假象下持续输出错误的数据。
 
-### 05 Datasheet 里真正值得读懂的，不是 suppress，而是 homogenous
+## 05 Datasheet 里真正值得读懂的，不是 suppress，而是 homogenous
 
 很多人第一次读到这句话：
 
->
+> This sensor suppresses the influence of any homogenous external stray magnetic field.
 
-This sensor suppresses the influence of any homogenous external stray magnetic field.
-
-注意力都会放在 **suppresses** 上。
+注意力都会放在 <strong>suppresses</strong> 上。
 
 于是理解成：
 
 “这个芯片具有很强的抗磁场干扰能力。”
 
-但真正决定这句话边界条件的，其实不是 **suppresses**，而是 **homogenous**。
+但真正决定这句话边界条件的，其实不是 <strong>suppresses</strong>，而是 <strong>homogenous</strong>。
 
 它告诉你的并不是算法有多强，而是算法在什么条件下才成立。
 
@@ -219,6 +209,6 @@ This sensor suppresses the influence of any homogenous external stray magnetic f
 
 它是在自己最信任的那个假设崩塌之后，依然忠实地执行了一套已经不再适用的数学分离。
 
-而 **homogenous**，正是整个模型成立的边界。
+而 <strong>homogenous</strong>，正是整个模型成立的边界。
 
 也是 Datasheet 用一个不起眼的定语，悄悄告诉你的全部前提。

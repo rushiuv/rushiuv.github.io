@@ -15,6 +15,7 @@ import sys
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from readability import normalize
 
 SRC = Path(r"D:\VerySync\VerySync_notes\2-Resources\2K-公众号-如是有为")
 IMG_SRC = Path(r"D:\VerySync\VerySync_notes\2-Resources\_source")
@@ -218,6 +219,7 @@ def main():
         slug = link.rsplit("/", 1)[-1] if "mp.weixin.qq.com/s/" in link else ""
         if not slug:
             slug = hashlib.md5((day + title).encode("utf-8")).hexdigest()[:10]
+        body = normalize(body, title, filename=f"{day}-{slug}.md")
         pub = stats.get("发布时间", "") or day
         date = pub.replace(" ", "T") + (":00+08:00" if " " in pub else "T12:00:00+08:00")
         fm = ["---", f"title: {yaml_str(title)}", f"date: {date}", f"slug: {yaml_str(slug)}"]

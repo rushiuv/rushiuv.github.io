@@ -10,19 +10,15 @@ companies: ["昆泰芯"]
 
 ![](/images/wx/d8dd3681a756187fd2e8f8a129e93e0d.webp)
 
-##
-
-## 机器转得越快反而越找不到家，回零信号被转速压薄了，Z_WIDTH 没变，Z 脉冲却缩了 8 倍：高速回零失败，我最后查的是这 2.44 µs
-
 九月初，实验室。小推车把一台伺服转台送进来，电机壳还留着点温度——跑了一整天才返修的。工单上客户只写了一行字：
 
-**低速找零正常，3000 转偶尔找不到 Z。**
+<strong>低速找零正常，3000 转偶尔找不到 Z。</strong>
 
 做位置传感芯片的，第一眼看这种字，手已经习惯往磁铁方向伸了。Z 点抖动、磁铁偏心、气隙、线缆、接地……这种"找 Z 偶发失败"的案子，我查出来过不止一桩。
 
 但这次，客户在工单下面多跟了一句：
 
-**"以前好的，换了高分辨率以后才开始。"**
+<strong>"以前好的，换了高分辨率以后才开始。"</strong>
 
 就是这句话，让我把伸向磁铁的手收了回来，把上面那台转台上那颗昆泰芯 KTM5200 的配置读了出来。
 
@@ -30,7 +26,7 @@ companies: ["昆泰芯"]
 
 干净，正常。
 
-可我眼睛没停在这格上，滑到旁边——AB 分辨率，已经从 **1000 PPR 改成了 8192 PPR**。
+可我眼睛没停在这格上，滑到旁边——AB 分辨率，已经从 <strong>1000 PPR 改成了 8192 PPR</strong>。
 
 心口一紧。
 
@@ -38,19 +34,19 @@ companies: ["昆泰芯"]
 
 我把这两个配置代进去，算了一遍。
 
-同样的 0x2，同样 3000 转——原来 Z 有 **20 微秒**。
+同样的 0x2，同样 3000 转——原来 Z 有 <strong>20 微秒</strong>。
 
-改成 8192 PPR 以后，只剩 **2.44 微秒**。
+改成 8192 PPR 以后，只剩 <strong>2.44 微秒</strong>。
 
 寄存器一个 bit 都没动。
 
-窄了 **8.2 倍**。
+窄了 <strong>8.2 倍</strong>。
 
-我盯着屏幕上那个数，客户那句话又浮上来：**"以前好的，换了高分辨率以后才开始。"**
+我盯着屏幕上那个数，客户那句话又浮上来：<strong>"以前好的，换了高分辨率以后才开始。"</strong>
 
 这一下，全对上了。
 
-### 第一笔账就很容易算错：1000 PPR 不是一圈 1000 个 count
+## 第一笔账就很容易算错：1000 PPR 不是一圈 1000 个 count
 
 这类问题最容易踩坑的地方，不是公式。
 
@@ -58,7 +54,7 @@ companies: ["昆泰芯"]
 
 增量编码器里经常同时出现：
 
-**PPR、line、pulse、count、step、LSB。**
+<strong>PPR、line、pulse、count、step、LSB。</strong>
 
 这些词工程师天天说，但不同 datasheet 未必在说同一个东西。
 
@@ -70,7 +66,7 @@ KTM5200 的公开资料里，ABZ 支持最高 65,536 脉冲/圈；标准 AB 正�
 
 所以 1000 PPR 对应：
 
-![](/images/wx/e0cd931c18bb2eeb0f8a761977452a2d.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑁</mi><mi>𝑐</mi></msub><mo>=</mo><mn>4000</mn></math>
 
 如果 Z_WIDTH=0x2 对应 4 个 AB 计数 LSB，那么这个 Z 占的机械角不是：
 
@@ -78,23 +74,23 @@ KTM5200 的公开资料里，ABZ 支持最高 65,536 脉冲/圈；标准 AB 正�
 
 而是：
 
-![](/images/wx/3067d9a87e766fbd945a2d0e15f286d1.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝜃</mi><mi>𝑍</mi></msub><mo>=</mo><mfrac><mn>4</mn><mn>4000</mn></mfrac><mo>×</mo><msup><mn>360</mn><mo>∘</mo></msup></math>
 
 得到：
 
-![](/images/wx/6e5a4c992548db50dc0f9aaeaefc2bff.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝜃</mi><mi>𝑍</mi></msub><mo>=</mo><msup><mn>0.36</mn><mo>∘</mo></msup></math>
 
 3000 rpm 时，一圈只要 20 ms。
 
 于是 Z 在时间轴上的宽度就是：
 
-![](/images/wx/519870ea5f3bb30d8da717a63febde89.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑡</mi><mi>𝑍</mi></msub><mo>=</mo><mfrac><msup><mn>0.36</mn><mo>∘</mo></msup><msup><mn>360</mn><mo>∘</mo></msup></mfrac><mo>×</mo><mn>20</mn></math>
 
 这里时间单位是 ms。
 
 结果：
 
-**20 µs。**
+<strong>20 µs。</strong>
 
 这一笔如果把 PPR 直接当 count，会算成 80 µs。
 
@@ -102,9 +98,9 @@ KTM5200 的公开资料里，ABZ 支持最高 65,536 脉冲/圈；标准 AB 正�
 
 所以看到 datasheet 里的"1 LSB"，我现在第一反应已经不是代公式，而是先问一句：
 
-**这个 LSB，到底是哪一级的 LSB？**
+<strong>这个 LSB，到底是哪一级的 LSB？</strong>
 
-### 然后把 1000 PPR 改成 8192 PPR
+## 然后把 1000 PPR 改成 8192 PPR
 
 真正有意思的事情从这里开始。
 
@@ -120,23 +116,23 @@ Z_WIDTH
 
 只看 register dump，这一项甚至可以直接打勾：
 
-**一致。**
+<strong>一致。</strong>
 
 但 8192 PPR 已经意味着：
 
-![](/images/wx/d584b89287be48849aa339d687b3e5c6.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑁</mi><mi>𝑐</mi></msub><mo>=</mo><mn>4</mn><mo>×</mo><mn>8192</mn></math>
 
 所以：
 
-![](/images/wx/a722eca23632689e3d5af44bb09e1c8b.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑁</mi><mi>𝑐</mi></msub><mo>=</mo><mn>32768</mn></math>
 
 同样 4 个 count 的 Z，现在只占：
 
-![](/images/wx/09183e6d4d01629f49dab479d5956b5c.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝜃</mi><mi>𝑍</mi></msub><mo>=</mo><mfrac><mn>4</mn><mn>32768</mn></mfrac><mo>×</mo><msup><mn>360</mn><mo>∘</mo></msup></math>
 
 得到大约：
 
-![](/images/wx/8ee1ddf86291657420ac507bca1b113f.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝜃</mi><mi>𝑍</mi></msub><mo>=</mo><msup><mn>0.044</mn><mo>∘</mo></msup></math>
 
 转速仍然是 3000 rpm。
 
@@ -144,11 +140,11 @@ Z_WIDTH
 
 所以：
 
-![](/images/wx/eb0de3518edcbfd13fda74a42c2aff7b.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑡</mi><mi>𝑍</mi></msub><mo>=</mo><mfrac><msup><mn>0.044</mn><mo>∘</mo></msup><msup><mn>360</mn><mo>∘</mo></msup></mfrac><mo>×</mo><mn>20</mn></math>
 
 结果只剩：
 
-**2.44 µs。**
+<strong>2.44 µs。</strong>
 
 于是同一个：
 
@@ -156,7 +152,7 @@ Z_WIDTH = 0x2
 
 在机器里经历了这么一个变化：
 
-**20 µs → 2.44 µs**
+<strong>20 µs → 2.44 µs</strong>
 
 差了 8.2 倍。
 
@@ -166,9 +162,9 @@ Z_WIDTH = 0x2
 
 参数根本没错。
 
-**错的是把寄存器值当成了物理量。**
+<strong>错的是把寄存器值当成了物理量。</strong>
 
-### 2.44 µs 到了驱动器输入端，问题就不再属于"编码器精度"
+## 2.44 µs 到了驱动器输入端，问题就不再属于"编码器精度"
 
 如果驱动器 Z 输入要求有效脉宽至少 10 µs，那么事情已经很简单了。
 
@@ -178,9 +174,7 @@ Z_WIDTH = 0x2
 
 但这里有一句现场上经常听到的话，我觉得值得单独纠正：
 
->
-
-光耦有几微秒延迟，所以 Z 被吃掉了。
+> 光耦有几微秒延迟，所以 Z 被吃掉了。
 
 不完全对。
 
@@ -188,7 +182,7 @@ Z_WIDTH = 0x2
 
 只是整体往后挪了。
 
-**纯延迟不等于脉宽损失。**
+<strong>纯延迟不等于脉宽损失。</strong>
 
 真正会杀死这种窄脉冲的是接收链。
 
@@ -214,7 +208,7 @@ MCU 输入滤波；
 
 我要看三层：
 
-**编码器 Z 输出 → 隔离/输入电路后 → 控制器真正识别到的 Z。**
+<strong>编码器 Z 输出 → 隔离/输入电路后 → 控制器真正识别到的 Z。</strong>
 
 很可能第一层还有一个漂亮的 2.44 µs 方波。
 
@@ -224,7 +218,7 @@ MCU 输入滤波；
 
 这时候再去调磁铁，没有意义。
 
-### 为什么低速永远像是好的
+## 为什么低速永远像是好的
 
 这一点也可以直接从公式里看出来。
 
@@ -236,33 +230,25 @@ MCU 输入滤波；
 
 如果：
 
--
+- <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>𝑁</mi><mi>𝑝</mi></msub></math>是 PPR；
 
-![](/images/wx/ed1983fd419e8f32b92db2f97c3ebeb1.svg)
+- k 是 Z 占的 quadrature count；
 
- 是 PPR；
-
--
-
-k 是 Z 占的 quadrature count；
-
--
-
-n 是 rpm；
+- n 是 rpm；
 
 那么 Z 脉宽为：
 
-![](/images/wx/aeb6cc6fc8fdc251e1fa7b2883c3dc31.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑡</mi><mi>𝑍</mi></msub><mo>=</mo><mfrac><mrow><mn>15</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup><mi>𝑘</mi></mrow><mrow><msub><mi>𝑁</mi><mi>𝑝</mi></msub><mi>𝑛</mi></mrow></mfrac></math>
 
 结果单位是 µs。
 
 对于 8192 PPR、4 count：
 
-![](/images/wx/0e29962387ce061a69e4e3242c8cb222.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑡</mi><mi>𝑍</mi></msub><mo>=</mo><mfrac><mrow><mn>60</mn><mo>×</mo><msup><mn>10</mn><mn>6</mn></msup></mrow><mrow><mn>8192</mn><mi>𝑛</mi></mrow></mfrac></math>
 
 如果接收端最低要求是 10 µs，那么临界转速约为：
 
-![](/images/wx/f14a4e0bae6347fa85b6561ec18c5642.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>𝑛</mi><mo>≈</mo><mn>732</mn></math>
 
 这一下就把客户的现象解释通了。
 
@@ -278,21 +264,21 @@ n 是 rpm；
 
 3000 rpm：
 
-**2.44 µs。**
+<strong>2.44 µs。</strong>
 
 所以所谓：
 
-**"低速百分之百正常，高速偶发找不到零。"**
+<strong>"低速百分之百正常，高速偶发找不到零。"</strong>
 
 并不神秘。
 
 它甚至未必是一个真正意义上的"偶发故障"。
 
-只是某个本来按**角度格数**定义的东西，经过转速以后变成了一个**时间脉冲**。
+只是某个本来按<strong>角度格数</strong>定义的东西，经过转速以后变成了一个<strong>时间脉冲</strong>。
 
 而你的接收电路只认后者。
 
-### 我现在看 Z_WIDTH，已经不会只看 0x2
+## 我现在看 Z_WIDTH，已经不会只看 0x2
 
 以前核配置可能是这样的：
 
@@ -322,27 +308,27 @@ Z_WIDTH = 0x2
 
 因为芯片里存的是：
 
-**配置。**
+<strong>配置。</strong>
 
 机械系统运动的是：
 
-**角度。**
+<strong>角度。</strong>
 
 驱动器输入端接收到的是：
 
-**时间。**
+<strong>时间。</strong>
 
 这中间隔了两次单位变换。
 
 很多配置坑，就藏在这两次变换里面。
 
-### 还有一种特别容易误读的"180°"
+## 还有一种特别容易误读的"180°"
 
 KTM52 这类器件的 Z 宽度配置里，还会看到 60°、120°、180° 这样的值。
 
 这种地方我现在不会直接看到"180°"就理解成：
 
-**机械半圈。**
+<strong>机械半圈。</strong>
 
 一定先看 waveform definition。
 
@@ -350,13 +336,9 @@ KTM52 这类器件的 Z 宽度配置里，还会看到 60°、120°、180° 这�
 
 一种是机械一圈：
 
-![](/images/wx/4b38a16268efba71eca3df30a8738363.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mn>360</mn><mo>∘</mo></msup></math>另一种是一个 A/B 电周期：
 
-另一种是一个 A/B 电周期：
-
-![](/images/wx/ee7a7a7e6514a26c4ea6f733b12e14c8.svg)
-
-符号完全一样。
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mn>360</mn><mo>∘</mo></msup></math>符号完全一样。
 
 物理意义差得非常远。
 
@@ -368,11 +350,11 @@ KTM5800 官方资料明确支持 1～65,536 线可编程 ABZ 输出，其产品�
 
 所以碰到这种寄存器，我现在会先问一句：
 
-**这个 360°，到底是哪一个 360°？**
+<strong>这个 360°，到底是哪一个 360°？</strong>
 
 这句话比直接背寄存器表有用。
 
-### 所以高速找不到 Z，我现在先算 µs，再拆磁铁
+## 所以高速找不到 Z，我现在先算 µs，再拆磁铁
 
 以后再遇到：
 
@@ -394,7 +376,7 @@ rpm
 
 把它们一直换算到最后一个单位：
 
-**µs。**
+<strong>µs。</strong>
 
 然后跟驱动器 minimum pulse width 比。
 
@@ -404,7 +386,7 @@ rpm
 
 恰恰是一个：
 
-**从头到尾都没有变过的 0x2。**
+<strong>从头到尾都没有变过的 0x2。</strong>
 
 它没变。
 
@@ -414,12 +396,8 @@ rpm 一上去。
 
 最后到驱动器眼里的那个 Z，已经完全不是原来的东西了。
 
-### 公开来源
+## 公开来源
 
--
+- 昆泰芯 KTM5200 公开产品页 / datasheet：ABZ 支持最高 65,536 脉冲/圈；标准 AB 正交按四边沿计数时，position count = 脉冲数 × 4（官方同时给出 65,536 脉冲/圈对应 262,144 步/圈）。
 
-昆泰芯 KTM5200 公开产品页 / datasheet：ABZ 支持最高 65,536 脉冲/圈；标准 AB 正交按四边沿计数时，position count = 脉冲数 × 4（官方同时给出 65,536 脉冲/圈对应 262,144 步/圈）。
-
--
-
-昆泰芯 KTM5800 公开手册 ABZ 章节：Z 的位置、宽度与 A/B 波形直接相关；ABZ 支持 1～65,536 线可编程，产品定位为多极输入细分器——Z 定义须结合 AB 输出周期（AB 周期域）理解，不能只看寄存器数值。
+- 昆泰芯 KTM5800 公开手册 ABZ 章节：Z 的位置、宽度与 A/B 波形直接相关；ABZ 支持 1～65,536 线可编程，产品定位为多极输入细分器——Z 定义须结合 AB 输出周期（AB 周期域）理解，不能只看寄存器数值。

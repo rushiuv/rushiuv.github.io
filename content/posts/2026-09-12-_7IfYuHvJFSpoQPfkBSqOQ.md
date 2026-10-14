@@ -11,192 +11,23 @@ tags: ["离轴", "非线性校准"]
 
 ![](/images/wx/8274f535cc6d772c3fcf88941f666f49.webp)
 
-## 12万转、1μs、16位：读完 KTH7815 对比 AS5047P，几个规格表之外的现场问题
-
 刚看完满度科技这篇《[12万转、1μs延时、16位输出，昆泰芯 KTH7815 对比 AS5047P 优势在哪](http://mp.weixin.qq.com/s?__biz=MzkzODk0NDQ2Mw==&mid=2247485043&idx=1&sn=d4ef5decf9a8c267a051295dc3d60f71&chksm=c3288b8a2f05882c405fdac38d3663c98e37fc2a4321cea42151188bd14243e3195f047929bb&scene=21&xtrack=1＃wechat_redirect)》。
 
-|
-
-参数
-
- |
-
-昆泰芯 KTH7815
-
- |
-
-ams AS5047P
-
- |
-|
-
-核心分辨率
-
- |
-
-16 位（65536 点/圈）
-
- |
-
-14 位（16384 点/圈）
-
- |
-|
-
-非线性误差 INL
-
- |
-
-±0.35°（典型）
-
- |
-
-±0.8°（25°C 最佳摆放），全温区最高 ±1.2°
-
- |
-|
-
-数据刷新/延时
-
- |
-
-1μs
-
- |
-
-SPI 读取路径 90–110μs（ABI/UVW 经 DAEC 后 1.5–1.9μs）
-
- |
-|
-
-最高转速
-
- |
-
-120000rpm
-
- |
-
-28000rpm
-
- |
-|
-
-工作磁场
-
- |
-
-30–150mT
-
- |
-
-35–70mT（低于 35mT 噪声变差）
-
- |
-|
-
-输出噪声（1σ）
-
- |
-
-0.24°
-
- |
-
-0.068°
-
- |
-|
-
-ABZ 分辨率
-
- |
-
-4–4096 步/圈，任意整数可编程
-
- |
-
-固定档位（25–1000 ppr 及 1024/512/256）
-
- |
-|
-
-ABZ 输出形式
-
- |
-
-差分 A/~A、B/~B、Z/~Z
-
- |
-
-单端
-
- |
-|
-
-配置存储
-
- |
-
-MTP，125℃ 下 1000 次写入
-
- |
-
-OTP，仅一次
-
- |
-|
-
-磁场诊断
-
- |
-
-MGH/MGL 独立报警引脚，阈值可编程
-
- |
-
-需经 SPI 读取诊断标志
-
- |
-|
-
-启动时间
-
- |
-
-1ms（典型）
-
- |
-
-最长 10ms
-
- |
-|
-
-ESD（HBM）
-
- |
-
-±5kV
-
- |
-
-±2kV
-
- |
-|
-
-封装
-
- |
-
-QFN-16L 3×3mm / SOP-8
-
- |
-
-TSSOP-14（本体约 5×4.4mm）
-
- |
+| 参数 | 昆泰芯 KTH7815 | ams AS5047P |
+| --- | --- | --- |
+| 核心分辨率 | 16 位（65536 点/圈） | 14 位（16384 点/圈） |
+| 非线性误差 INL | ±0.35°（典型） | ±0.8°（25°C 最佳摆放），全温区最高 ±1.2° |
+| 数据刷新/延时 | 1μs | SPI 读取路径 90–110μs（ABI/UVW 经 DAEC 后 1.5–1.9μs） |
+| 最高转速 | 120000rpm | 28000rpm |
+| 工作磁场 | 30–150mT | 35–70mT（低于 35mT 噪声变差） |
+| 输出噪声（1σ） | 0.24° | 0.068° |
+| ABZ 分辨率 | 4–4096 步/圈，任意整数可编程 | 固定档位（25–1000 ppr 及 1024/512/256） |
+| ABZ 输出形式 | 差分 A/~A、B/~B、Z/~Z | 单端 |
+| 配置存储 | MTP，125℃ 下 1000 次写入 | OTP，仅一次 |
+| 磁场诊断 | MGH/MGL 独立报警引脚，阈值可编程 | 需经 SPI 读取诊断标志 |
+| 启动时间 | 1ms（典型） | 最长 10ms |
+| ESD（HBM） | ±5kV | ±2kV |
+| 封装 | QFN-16L 3×3mm / SOP-8 | TSSOP-14（本体约 5×4.4mm） |
 
 原文已经把 16 位对 14 位、120000 rpm 对 28000 rpm、MTP 对 OTP、差分 ABZ 对单端 ABI 这些规格拆得很清楚了。下面不重复这些参数，只顺着其中几个数字，补一点规格表之外的工程语义。
 
@@ -204,19 +35,19 @@ TSSOP-14（本体约 5×4.4mm）
 
 因为参数表里一行字，到了现场，可能就是一次返工、一轮重新布线，或者一整晚查不出原因。
 
-### 1μs真正要追的是测量时刻
+## 1μs真正要追的是测量时刻
 
 120000 rpm 时，一圈机械角只有 500μs。因此 1μs 对应的机械角位移是：
 
-![](/images/wx/ee9c14502e051b93755b837ce935aa8d.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>Δ</mi><mi>𝜃</mi><mo>=</mo><msup><mn>360</mn><mo>∘</mo></msup><mo>×</mo><mfrac><mn>1</mn><mn>500</mn></mfrac><mo>=</mo><msup><mn>0.72</mn><mo>∘</mo></msup></math>
 
 而 16 位输出的一个码值只有：
 
-![](/images/wx/daa88992baf4fc88b686b8709745610a.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>Δ</mi><msub><mi>𝜃</mi><mrow><mrow><mi>LSB</mi></mrow></mrow></msub><mo>=</mo><mfrac><msup><mn>360</mn><mo>∘</mo></msup><mn>65536</mn></mfrac><mo>=</mo><msup><mn>0.00549</mn><mo>∘</mo></msup></math>
 
 两者相除：
 
-![](/images/wx/26924d4ea8672eff5404029b05091d0e.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mfrac><mn>0.72</mn><mn>0.00549</mn></mfrac><mo>≈</mo><mn>131</mn></math>
 
 转子在这 1μs 里已经走过了大约 131 个 16 位 LSB。
 
@@ -226,7 +57,7 @@ TSSOP-14（本体约 5×4.4mm）
 
 没有边界定义的延时数字，不能直接拿去和另一颗芯片的内部传播延迟比较。
 
-### AS5047P 的 90–110μs，不能直接和 1μs做100倍对比
+## AS5047P 的 90–110μs，不能直接和 1μs做100倍对比
 
 AS5047P 公开资料里的 90–110μs，首先要看它描述的是哪一段。它更接近芯片内部的 core propagation delay，不等于主控从发出 SPI 命令到拿到数据的全部年龄。
 
@@ -238,19 +69,19 @@ AS5047P 的 DAEC 又是另一层含义。DAEC 会根据速度，对固定延时�
 
 如果只拿 AS5047P 的 90–110μs 去除以另一颗芯片的 1μs，很容易得到一个漂亮的“100倍”结论，但这个比较未必处在同一个测量边界上。更合理的比较方式，是给每颗芯片画出同一条时间链：
 
-![](/images/wx/41979e4a23ae3339f8669818a54c8b8f.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑡</mi><mrow><mrow><mi>age</mi></mrow></mrow></msub><mo>=</mo><msub><mi>𝑡</mi><mrow><mrow><mi>read</mi></mrow></mrow></msub><mo>−</mo><msub><mi>𝑡</mi><mrow><mrow><mi>epoch</mi></mrow></mrow></msub></math>
 
 真正进入控制环的，是这段数据年龄，而不是宣传页上孤立的一个 delay 数字。
 
-### 恒速时补得漂亮，加减速时还要看残差
+## 恒速时补得漂亮，加减速时还要看残差
 
 对于一个延时为 τ 的角度测量，真实位置差可以近似写成：
 
-![](/images/wx/7362f5857c91ffb9097d6494bc4e1913.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>𝜃</mi><mo>(</mo><mi>𝑡</mi><mo>)</mo><mo>−</mo><mi>𝜃</mi><mo>(</mo><mi>𝑡</mi><mo>−</mo><mi>𝜏</mi><mo>)</mo><mo>=</mo><mi>𝜔</mi><mo>(</mo><mi>𝑡</mi><mo>)</mo><mi>𝜏</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>𝛼</mi><mo>(</mo><mi>𝑡</mi><mo>)</mo><msup><mi>𝜏</mi><mn>2</mn></msup><mo>+</mo><mo>⋯</mo></math>
 
 第一项是速度造成的角度滞后，第二项就是加速度带来的动态残差。如果补偿器只使用当前速度，而速度估计本身又有误差，残差还会增加：
 
-![](/images/wx/425bfd3084d4e957269a01be26a7db1e.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑒</mi><mrow><mi>𝛼</mi></mrow></msub><mo>≈</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>𝛼</mi><msup><mi>𝜏</mi><mn>2</mn></msup><mo>+</mo><mi>𝜏</mi><msub><mi>𝑒</mi><mrow><mi>𝜔</mi></mrow></msub></math>
 
 这解释了一个现场里很常见的现象：匀速测试看起来很漂亮，启停、换向、加减速时角度却开始抖。
 
@@ -258,25 +89,25 @@ AS5047P 的 DAEC 又是另一层含义。DAEC 会根据速度，对固定延时�
 
 如果延时没有被补偿，高速下它直接变成角度：
 
-![](/images/wx/3ea971f0c25a5ccab3d79b4ae07c4bb3.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>Δ</mi><mi>𝜃</mi><mo>=</mo><mi>𝜔</mi><mi>𝜏</mi></math>
 
 如果转子还有较高极对数，换算到电角度以后还要继续放大：
 
-![](/images/wx/25cf90429802a5224c5ba7009fd832f6.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>Δ</mi><msub><mi>𝜃</mi><mrow><mrow><mi>e</mi></mrow></mrow></msub><mo>=</mo><mi>𝑝</mi><mi>Δ</mi><msub><mi>𝜃</mi><mrow><mrow><mi>m</mi></mrow></mrow></msub></math>
 
 机械角看起来不到一度，到了换相和电流环里，可能已经是更大的电角滞后。
 
-### ABZ 的 PPR、四倍频和 16 位，根本不是一回事
+## ABZ 的 PPR、四倍频和 16 位，根本不是一回事
 
 ABZ 是接口形式，PPR 是每转输出多少个周期，四倍频是接收端如何利用 A、B 两路边沿计数，16 位则是绝对角度编码的码值数量。
 
 如果 A、B 每转输出 N 个周期，理想四倍频后的计数是：
 
-![](/images/wx/82eb58ae28494cd136014267e49cfa15.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>𝑁</mi><mrow><mrow><mi>count</mi></mrow></mrow></msub><mo>=</mo><mn>4</mn><mi>𝑁</mi></math>
 
 每个计数对应的机械角为：
 
-![](/images/wx/0cb487cd88674bbe6d019b35d083609b.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>Δ</mi><mi>𝜃</mi><mo>=</mo><mfrac><msup><mn>360</mn><mo>∘</mo></msup><mrow><mn>4</mn><mi>𝑁</mi></mrow></mfrac></math>
 
 Z 相通常是一转一个索引脉冲，用于回零、校准或建立机械参考。它不是把 AB 两路再增加一个角度分辨率位。
 
@@ -284,7 +115,7 @@ Z 相通常是一转一个索引脉冲，用于回零、校准或建立机械参
 
 ABZ 输出的是位置变化事件，绝对式接口输出的是某个测量时刻的角度状态。系统选择哪一种，取决于控制器需要边沿累计、同步锁存，还是直接读取绝对位置。
 
-### 差分 ABZ 的价值，在线束和 PWM 旁边才真正显出来
+## 差分 ABZ 的价值，在线束和 PWM 旁边才真正显出来
 
 在实验室里，一根短线接到示波器，单端 ABI 往往已经够用。但真实电机系统不是这样。编码器线束可能和 PWM、栅极驱动、电机制动线、母线电流采样线并行走线。
 
@@ -294,7 +125,7 @@ ABZ 输出的是位置变化事件，绝对式接口输出的是某个测量时�
 
 如果是 AB 相本身被干扰，通常表现为多边沿、少边沿或相位关系错误。如果是计数器、DMA 或软件读取时序出问题，波形可能完全正常，但最终位置已经错了。
 
-### MTP 的真实价值，是给产线留一条返工路径
+## MTP 的真实价值，是给产线留一条返工路径
 
 MTP 和 OTP 的差别，不能只写成“一个能改，一个不能改”。对磁编码器来说，磁体、气隙、芯片偏置、封装应力和装配误差叠在一起，最终参数往往要在接近成品状态下才能确定。
 
@@ -304,19 +135,19 @@ MTP 和 OTP 的差别，不能只写成“一个能改，一个不能改”。�
 
 尤其不能把“写入动作完成”当成“参数已经可靠生效”。至少要做：
 
-![](/images/wx/07062de98169ff9d11562633d3c74c8b.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>write</mi></mrow><mo>→</mo><mrow><mi>readback</mi></mrow><mo>→</mo><mrow><mi>power</mi><mtext> </mtext><mi>cycle</mi></mrow><mo>→</mo><mrow><mi>verify</mi></mrow></math>
 
 如果校准表写错，芯片可能不会报通信错误，输出仍然是合法的角度数据，只是角度已经不属于真实转子位置。这类故障最难查，因为 CRC 可以全过，状态字也可以正常。
 
-### 离轴不是打开几个 XY 参数就结束了
+## 离轴不是打开几个 XY 参数就结束了
 
 离轴安装时，传感器看到的 X、Y 信号通常会同时受到偏置、幅值不一致、正交误差、相位误差和磁场非线性的影响。
 
 理想信号可以写成：
 
-![](/images/wx/1a5468eb9df399668c9d7cc3f2f5bca6.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>𝑥</mi><mo>=</mo><mi>𝐴</mi><mi>cos</mi><mo>⁡</mo><mi>𝜃</mi></math>
 
-![](/images/wx/3a2ff8a6f80d18c899bb1aae8d619c13.svg)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>𝑦</mi><mo>=</mo><mi>𝐴</mi><mi>sin</mi><mo>⁡</mo><mi>𝜃</mi></math>
 
 实际信号更接近：
 
