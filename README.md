@@ -24,6 +24,12 @@ Hugo 静态博客，现有 290 篇文章（2025-09-22 ~ 2026-10-13，含手写�
 
 ## 日常操作
 
+### 数学公式视觉回归（2026-10-14）
+
+不要对 MathML 根元素设置普通 `display:block`：这会覆盖浏览器的 `block math`，使变量逐个拆行、分数线撑满正文。块公式用 `<math display="block">`，保留浏览器原生数学布局；不需要新增 LaTeX 插件。
+
+`check_readability.py` 现在会拒绝这种 CSS 覆盖，但结构检查仍不等于视觉验收。用本地 HTTP 服务打开 `tools/math-layout-regression.html`（引用实际 `static/css/site.css`），在桌面及 360px 窄屏确认 `passed: true`，目视检查短等式、行内上下标、分数、矩阵与长公式。发布前后还需检查实际文章 `_7ifyuhvjfspoqpfkbsqoq` 中的三组公式；记录浏览器引擎、视口和前后对照。
+
 - 本地预览：`hugo server`，打开 http://localhost:1313/
 - 重新导入文章：`python tools/import_wechat.py`
   - 来源：`D:\VerySync\VerySync_notes\2-Resources\2K-公众号-如是有为`

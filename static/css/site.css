@@ -139,7 +139,8 @@ nav a:hover{background:var(--blue-soft);color:var(--blue);text-decoration:none}
 .content th{background:#f6f4ee;font-weight:650}
 .content tbody tr:nth-child(even){background:#fcfbf8}
 .content math{font-family:"STIX Two Math","Cambria Math","Latin Modern Math",math;font-size:1.08em;line-height:normal}
-.content math[display="block"]{display:block;max-width:100%;overflow-x:auto;padding:12px 4px;margin:1.2em 0;overflow-wrap:normal}
+/* Preserve the UA's block math layout; plain display:block breaks the inferred row. */
+.content math[display="block"]{max-width:100%;overflow-x:auto;padding:12px 4px;margin:1.2em 0;overflow-wrap:normal}
 .content sub,.content sup{font-size:.75em;line-height:0;position:relative;vertical-align:baseline}
 .content sub{bottom:-.25em}.content sup{top:-.5em}
 .content hr{border:0;height:1px;background:var(--line);margin:2em 0}

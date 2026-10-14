@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MathML 实际布局回归</title>
+<link rel="stylesheet" href="../static/css/site.css">
+<style>body{padding:20px}.content{max-width:760px;margin:auto}#result{white-space:pre-wrap;overflow-wrap:anywhere}.fixture{margin:24px 0;border:1px solid #ccc;padding:8px}</style>
+<main class="content">
+<h1>MathML 实际布局回归</h1>
+<p>必须在浏览器中运行；读取生产 CSS，不只检查数学节点是否存在。调整窗口宽度会重新检查。</p>
+<pre id="result">检查中</pre>
+<div class="fixture" id="short">
+<p>机械角位移：</p>
+<math display="block"><mi>Δ</mi><mi>θ</mi><mo>=</mo><msup><mn>360</mn><mo>∘</mo></msup><mo>×</mo><mfrac><mn>1</mn><mn>500</mn></mfrac><mo>=</mo><msup><mn>0.72</mn><mo>∘</mo></msup></math>
+<p>16 位一个码值：</p>
+<math display="block"><mi>Δ</mi><msub><mi>θ</mi><mtext>LSB</mtext></msub><mo>=</mo><mfrac><msup><mn>360</mn><mo>∘</mo></msup><mn>65536</mn></mfrac><mo>≈</mo><msup><mn>0.00549</mn><mo>∘</mo></msup></math>
+<p>两者相除：</p>
+<math display="block"><mfrac><mn>0.72</mn><mn>0.00549</mn></mfrac><mo>≈</mo><mn>131</mn></math>
+</div>
+<div class="fixture"><p>行内上下标：<math><msub><mi>θ</mi><mi>m</mi></msub><mo>=</mo><mfrac><msub><mi>θ</mi><mi>e</mi></msub><mi>N</mi></mfrac></math>，以及 <math><msup><mi>x</mi><mn>2</mn></msup></math>，不应把本段撑成整页。</p>
+<p>矩阵：</p><math display="block"><mo>(</mo><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo>)</mo></math>
+<p>长公式，窄屏应在公式内部滚动而不是撑开页面：</p><math display="block"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi>∞</mi></munderover><mfrac><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>+</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow></msup><mo>+</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>4</mn></mrow></msup></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>+</mo><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>cos</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>tan</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></div>
+</main>
+<script>
+function checkLayout() {
+  const failures = [];
+  const rect = e => e.getBoundingClientRect();
+  const short = [...document.querySelectorAll('#short math')];
+  for (const [i, math] of [...document.querySelectorAll('math')].entries()) {
+    if (!getComputedStyle(math).display.includes('math')) failures.push(`math ${i}: lost mathematical display`);
+  }
+  for (const [i, math] of short.entries()) {
+    const frac = math.querySelector('mfrac'), f = rect(frac);
+    if (f.width > rect(math).width * .6) failures.push(`short ${i}: stretched fraction`);
+    const centers = [...math.children].map(e => rect(e).top + rect(e).height / 2);
+    if (Math.max(...centers) - Math.min(...centers) > 24) failures.push(`short ${i}: tokens on separate lines`);
+    if (rect(frac.children[0]).top >= rect(frac.children[1]).top) failures.push(`short ${i}: fraction not stacked`);
+  }
+  if (document.documentElement.scrollWidth > innerWidth + 1) failures.push('page horizontal overflow');
+  document.querySelector('#result').textContent = JSON.stringify({passed: !failures.length, viewport: innerWidth, failures}, null, 2);
+}
+addEventListener('load', checkLayout); addEventListener('resize', checkLayout);
+</script>
+</html>

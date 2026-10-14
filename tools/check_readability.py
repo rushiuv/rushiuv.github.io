@@ -21,6 +21,15 @@ def signature(s):
 def check(root):
     counts = collections.Counter()
     issues = []
+    # Guard the regression that DOM arity alone cannot detect: ordinary block
+    # layout on <math> destroys its inferred row, stacking tokens vertically.
+    css = (root / 'css/site.css').read_text()
+    css = re.sub(r'/\*.*?\*/', '', css, flags=re.S)
+    for selector, declarations in re.findall(r'([^{}]+)\{([^{}]*)\}', css):
+        if re.search(r'\bmath\b', selector):
+            for value in re.findall(r'(?:^|;)\s*display\s*:\s*([^;]+)', declarations):
+                if 'math' not in value.lower().split():
+                    issues.append({'kind': 'math_css_layout', 'detail': selector.strip() + ': display:' + value})
     for page in sorted((root / 'posts').glob('*/index.html')):
         soup = BeautifulSoup(page.read_text(), 'html.parser')
         content = soup.select_one('.content')
