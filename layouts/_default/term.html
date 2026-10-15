@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ $pager := .Paginate .Pages.ByDate.Reverse }}
+{{ if .Params.wiki }}
+<div class="wiki-layout">
+  <article class="wiki-article">
+    <header class="wiki-head">
+      <p class="kicker">如是有为 · {{ if eq .Params.wiki_type "model" }}芯片档案{{ else }}公司与品牌{{ end }}</p>
+      <h1 class="page-title">{{ .Title }}</h1>
+      <p class="wiki-description">{{ .Description }}</p>
+      <p class="muted wiki-meta">资料核对 <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006.01.02" }}</time> · <a href="#related-posts">{{ len .Pages }} 篇相关文章</a></p>
+      {{ if eq $pager.PageNumber 1 }}
+      <div class="wiki-actions">
+        {{ with .Params.official_url }}<a class="btn ghost" href="{{ . }}" target="_blank" rel="noopener">官方{{ if eq $.Params.wiki_type "model" }}产品页{{ else }}网站{{ end }} ↗</a>{{ end }}
+        {{ with .Params.datasheet_url }}<a class="btn" href="{{ . }}" target="_blank" rel="noopener">{{ $.Params.datasheet_label }} ↓</a>{{ end }}
+      </div>
+      {{ end }}
+    </header>
+    {{ if eq $pager.PageNumber 1 }}
+    <div class="content wiki-content">{{ .Content }}</div>
+    {{ partial "wiki-relations.html" . }}
+    {{ else }}
+    <p class="wiki-return"><a href="{{ .RelPermalink }}">← 返回 {{ .Title }} 词条正文</a></p>
+    {{ end }}
+  </article>
+  {{ if eq $pager.PageNumber 1 }}
+  <aside class="wiki-toc"><div class="card"><h2 class="card-title">词条目录</h2>{{ .TableOfContents }}<a class="wiki-posts-link" href="#related-posts">相关文章 ↓</a></div></aside>
+  {{ end }}
+</div>
+<section class="wiki-related posts" id="related-posts">
+  <header class="page-head"><p class="kicker">延伸阅读</p><h2>与 {{ .Title }} 相关的文章</h2><p class="muted">共 {{ len .Pages }} 篇，按文章日期排序</p></header>
+  {{ range $pager.Pages }}{{ partial "post-item.html" . }}{{ end }}
+  {{ partial "pager.html" $pager }}
+</section>
+{{ else }}
+<div class="layout"><section class="posts"><header class="page-head"><h1 class="page-title">{{ .Title }}</h1><p class="muted">共 {{ len .Pages }} 篇</p></header>
+{{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+{{ range $pager.Pages }}{{ partial "post-item.html" . }}{{ end }}{{ partial "pager.html" $pager }}</section>{{ partial "sidebar.html" . }}</div>
+{{ end }}
+{{ end }}

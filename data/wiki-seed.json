@@ -1,0 +1,108 @@
+{
+  "post_count": 311,
+  "metric": "associated post count, once per post",
+  "tie_break": "name.casefold() ascending",
+  "terms": [
+    {
+      "kind": "companies",
+      "name": "昆泰芯",
+      "count": 84
+    },
+    {
+      "kind": "models",
+      "name": "KTM5900",
+      "count": 34
+    },
+    {
+      "kind": "companies",
+      "name": "iC-Haus",
+      "count": 27
+    },
+    {
+      "kind": "companies",
+      "name": "ams OSRAM",
+      "count": 24
+    },
+    {
+      "kind": "companies",
+      "name": "Melexis",
+      "count": 24
+    },
+    {
+      "kind": "companies",
+      "name": "纳芯微",
+      "count": 20
+    },
+    {
+      "kind": "companies",
+      "name": "TI",
+      "count": 19
+    },
+    {
+      "kind": "companies",
+      "name": "麦歌恩",
+      "count": 17
+    },
+    {
+      "kind": "models",
+      "name": "KTH78",
+      "count": 16
+    },
+    {
+      "kind": "companies",
+      "name": "英飞凌",
+      "count": 16
+    },
+    {
+      "kind": "models",
+      "name": "KTM5800",
+      "count": 15
+    },
+    {
+      "kind": "companies",
+      "name": "宇树",
+      "count": 15
+    },
+    {
+      "kind": "companies",
+      "name": "海德汉",
+      "count": 15
+    },
+    {
+      "kind": "models",
+      "name": "KTM5200",
+      "count": 13
+    },
+    {
+      "kind": "companies",
+      "name": "特斯拉",
+      "count": 13
+    },
+    {
+      "kind": "models",
+      "name": "AS5047P",
+      "count": 12
+    },
+    {
+      "kind": "models",
+      "name": "KTO9512",
+      "count": 12
+    },
+    {
+      "kind": "companies",
+      "name": "多维科技",
+      "count": 12
+    },
+    {
+      "kind": "companies",
+      "name": "雷尼绍",
+      "count": 11
+    },
+    {
+      "kind": "models",
+      "name": "KTH7111",
+      "count": 10
+    }
+  ],
+  "selected_at": "2026-10-15"
+}

@@ -5,6 +5,6 @@
 </header>
 {{ $k := "tag" }}{{ if eq .Data.Plural "models" }}{{ $k = "model" }}{{ else if eq .Data.Plural "companies" }}{{ $k = "company" }}{{ end }}
 <div class="chips big">
-  {{ range .Data.Terms.ByCount }}<a class="chip {{ $k }}" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<small>{{ .Count }}</small></a>{{ end }}
+  {{ range .Data.Terms.ByCount }}<a class="chip {{ $k }}" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<small>{{ .Count }}{{ if .Page.Params.wiki }} · 词条{{ end }}</small></a>{{ end }}
 </div>
 {{ end }}

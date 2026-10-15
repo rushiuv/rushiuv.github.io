@@ -100,3 +100,16 @@ python3.11 tools/boilerplate.py --fix     # 真切（content/posts 与 posts_ext
 
 `layouts/` 和 `static/css/site.css` 是自带的模板，只做亮色，没有外部依赖。
 主图、头像、二维码在 `static/images/site/`；《金刚经》引句写在 `hugo.toml` 的 `params` 里。
+
+
+## 芯片与公司词条（2026-10-15）
+
+`/wiki/` 为词条入口，型号与公司仍沿用 `/models/<term>/`、`/companies/<term>/`。词条写在相应目录的 `_index.md`，不复制成独立文章、不改旧文章标签。`layouts/_default/term.html` 在第一页显示正文和官方资料，后面自动列相关文章；分页页只显示文章并提供返回词条链接。
+
+首批从311篇文章中按现有型号／公司标签关联篇数合并取前20条，每篇只计一次；同篇数按名称 `casefold()` 排序，因此第20条为KTH7111，MT6835同为10篇、排第21条。运行 `python3.11 tools/wiki_inventory.py` 可复算，初始快照在 `data/wiki-seed.json`。后续新增文章不会由导入器删除这些词条。
+
+型号采用基本介绍、工作原理与功能、关键规格、应用与使用条件、官方资料模块；公司采用公司与品牌、相关业务与技术路线、产品系列与代表方向、与编码器应用的关系、如何查找资料、官方资料模块。约2000字按资料量调整，参数保留条件。型号专用手册优先于系列汇总表，KTH78按系列管理。
+
+本次7个型号／系列均提供已取回并核对的官方PDF地址，KTH78链接KTH7812代表型号手册；图片为官方功能框图局部或产品示意，附来源，WebP仅压缩与裁取原图，不重画电气关系。图片与文档来源保存在 `data/wiki-sources.json`。AS5047P使用英飞凌当前产品与手册地址，注明2026年7月业务迁移。
+
+构建：`hugo --minify --destination <独立输出目录>`。结构检查沿用 `tools/check_readability.py`，词条还需检查目录、下载按钮、关联词条、文章分页与窄屏表格。发布时正常推送源码到source；静态部署以远端main为父提交生成新提交，保留 `.github/workflows/pages.yml` 与 `.nojekyll`，禁止使用旧部署脚本的强推路径。

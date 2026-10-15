@@ -1,0 +1,12 @@
+{{ $related := slice }}
+{{ range .Params.related_companies }}
+  {{ $name := . }}{{ range site.Taxonomies.companies }}{{ if eq .Page.LinkTitle $name }}{{ $related = $related | append .Page }}{{ end }}{{ end }}
+{{ end }}
+{{ range .Params.related_models }}
+  {{ $name := . }}{{ range site.Taxonomies.models }}{{ if eq .Page.LinkTitle $name }}{{ $related = $related | append .Page }}{{ end }}{{ end }}
+{{ end }}
+{{ with $related }}
+<section class="wiki-relations"><h2>相关词条</h2><div class="chips big">
+{{ range . }}<a class="chip {{ if eq .Params.wiki_type "model" }}model{{ else }}company{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+</div></section>
+{{ end }}

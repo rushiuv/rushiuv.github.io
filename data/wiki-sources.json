@@ -1,0 +1,111 @@
+{
+  "checked_at": "2026-10-15",
+  "documents": [
+    {
+      "key": "ktm5900",
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf",
+      "status": 200,
+      "bytes": 2309487,
+      "pages": 44,
+      "header": "PAGE 1\nKTM5900\n24bit 绝对角度磁性编码器\n集成高精度 TMR 传感器与一键非线性自校准\n集成双 16bit 2M SAR ADC\n技术支持\n邮箱：support@conntek.com.cn\n电话：+86(0)755-8"
+    },
+    {
+      "key": "ktm5800",
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5800%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "bytes": 774496,
+      "pages": 43,
+      "header": "PAGE 1\nKTM5800\n30bit 绝对角度细分器\n支持最多 4096 对极与一键非线性自校准\n集成双 16bit 2M SAR ADC\n技术支持\n邮箱：support@conntek.com.cn\n电话：+86(0)755-8600"
+    },
+    {
+      "key": "ktm5200",
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5200%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "bytes": 708034,
+      "pages": 35,
+      "header": "PAGE 1\nKTM5200\n21 位高分辨率、高精度在轴磁性角度编码器 IC\n可编程 ABZ/UVW/PWM/SPI 多模式输出角度传感器\n技术支持\nsupport@conntek.com.cn\n+86(0)755-86006609\n\nP"
+    },
+    {
+      "key": "kth7812",
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "bytes": 6443362,
+      "pages": 32,
+      "header": "PAGE 1\nKTH7812\n16 位高精度低延时霍尔磁编码器\n可编程 ABZ 和 UVW 输出模式角度传感器\n技术支持\nsupport@conntek.com.cn\n+86(0)755-86006609\n\nPAGE 2\n目录\n1 产品信息"
+    },
+    {
+      "key": "kth7111",
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7111%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "bytes": 3163482,
+      "pages": 33,
+      "header": "PAGE 1\nKTH7111\n16 位高速高精度离轴磁编码器\n可编程 ABZ/UVW/PWM/SPI/SSI 多模式输出角\n度传感器\n技术支持\nsupport@conntek.com.cn\n+86(0)755-86006609\n\nPAGE "
+    },
+    {
+      "key": "kto9512",
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTO9512-D26-QN32%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "bytes": 342295,
+      "pages": 10,
+      "header": "PAGE 1\nKTO9512\n相位阵游标编码器芯片\n技术支持\nsales.global@conntek.com.cn\nsales@conntek.com.cn\n2025 年 8 月 14 日\n\nPAGE 2\n免责声明\n本文件中的信息由泉州昆"
+    },
+    {
+      "key": "as5047p",
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5047p-datasheet-en.pdf",
+      "status": 200,
+      "bytes": 1259040,
+      "pages": 42,
+      "header": "PAGE 1\n \nI\nmportant \n n\notice \non \nams\n-\nOSRAM \nd\nocuments  \n \nAs part of the acquisition of the \n non\n-\noptical analog/"
+    }
+  ],
+  "website_images": [
+    {
+      "file": "ktm5900.png",
+      "url": "https://website.obs.icheer.cn/eiker-web/www.conntek.com.cn/hshrTMPA.png",
+      "bytes": 4083523,
+      "mime": "image/png"
+    },
+    {
+      "file": "ktm5800.png",
+      "url": "https://www.conntek.com.cn/upload/1/cms/content/1760693879963.png",
+      "bytes": 2727667,
+      "mime": "image/png"
+    },
+    {
+      "file": "ktm5200.png",
+      "url": "https://www.conntek.com.cn/template/1/conntekCompany/Picture/KTM52XX.png",
+      "bytes": 136588,
+      "mime": "image/png"
+    },
+    {
+      "file": "kth78.jpg",
+      "url": "https://www.conntek.com.cn/template/1/conntekCompany/Picture/hshrMagneticCodedAngleSensor.jpg",
+      "bytes": 188231,
+      "mime": "image/jpeg"
+    },
+    {
+      "file": "kth7111.png",
+      "url": "https://www.conntek.com.cn/upload/1/cms/content/1760937016155.png",
+      "bytes": 212808,
+      "mime": "image/png"
+    },
+    {
+      "file": "kto9512.jpg",
+      "url": "https://www.conntek.com.cn/upload/1/cms/content/1760936805032.jpg",
+      "bytes": 184220,
+      "mime": "image/jpeg"
+    },
+    {
+      "file": "as5047p.png",
+      "url": "https://assets.infineon.com/is/image/infineon/pg-tssop-14-01-va.png",
+      "bytes": 145466,
+      "mime": "image/jpeg"
+    }
+  ],
+  "figure_extraction": {
+    "ktm5900-diagram.webp": "KTM5900 PDF page 5, Figure 1",
+    "ktm5800-diagram.webp": "KTM5800 PDF page 5, Figure 1",
+    "kth7111-diagram.webp": "KTH7111 PDF page 5, Figure 1",
+    "kth78-diagram.webp": "KTH7812 PDF page 5, Figure 1; representative only"
+  }
+}
