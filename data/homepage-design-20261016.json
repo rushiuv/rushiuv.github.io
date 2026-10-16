@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Use case: identity-preserve and illustration-story. Create a refined homepage editorial illustration on a TRUE TRANSPARENT background (alpha), no rectangular backdrop. Image 1 is the authoritative protagonist identity reference; Image 2 is only a technical illustration reference if a diagram is needed. Must depict the SAME man from Image 1: oval face, short slightly spiky black hair, characteristic hairline, straight dark eyebrows, black rectangular glasses, light skin, dark navy unbuttoned shirt over a white T-shirt. Preserve his recognizable face, hairstyle and glasses, do not replace with a generic engineer. Translate his likeness into Chrome OS / Google Material friendly flat vector-like cartoon, fine cobalt/navy outlines, simple clean solid fills, restrained blue, muted teal, tiny warm orange accent. NOT photorealistic, NOT 3D, no painterly textures. Main character is large and the visual focus, shown seated at a simple slim work desk in a calm three-quarter view, attentively reading an open encoder datasheet while holding a pencil, natural purposeful pose. One modest laptop on the desk left, its screen has just a tiny blue table and grey lines; open datasheet in his hand; no cup, no extra gadgets, no gears, no wires, no levitating UI cards, no speed lines, no labels/text/logos. If showing a technical diagram on the datasheet, reproduce only the simple diametric red/blue disk above sensor arrangement from Image 2, without inventing additional physical components. Composition: balanced compact freestanding vignette, ample transparent negative space around silhouette, all hands, hair, laptop and desk fully inside canvas, no cropped edges, no heavy container or frame. Subject occupies most of the middle, elegant quiet professional website illustration. Horizontal 4:3 composition.",
+  "transparent_background": true,
+  "identity_reference": "D:/VerySync/VerySync_notes/2-Resources/_source/主人公发现资料散落.png",
+  "technical_reference": "assets/basics-source/magnetic-on-axis.png",
+  "generated_file": "exec-0226a5dd-b5fd-4035-80a5-1ee043556bbd.png",
+  "asset": "/images/site/home-protagonist-v2.webp",
+  "original": "assets/basics-source/home-protagonist-v2.png",
+  "sha256": "db17d772029b86f43b3c460759de22ac3c31158fa74232fcf997cfd542debe4f",
+  "identity_scope": "Existing Rushi Youwei protagonist. Not a newly invented generic engineer.",
+  "design": {
+    "layout": "editorial grid; transparent character vignette; no dark illustration card; no separate basics banner",
+    "toc": "always visible",
+    "status": "local preview"
+  }
+}

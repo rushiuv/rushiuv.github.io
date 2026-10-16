@@ -1,29 +1,21 @@
 {{ define "hero" }}
 {{ $posts := where site.RegularPages "Section" "posts" }}
-<section class="portal-hero">
-  <div class="wrap portal-hero-grid">
-    <div class="portal-intro">
-      <p class="portal-eyebrow"><span></span> 编码器研发与应用资料</p>
+<section class="home-hero">
+  <div class="wrap home-hero-grid">
+    <div class="home-intro">
+      <p class="home-eyebrow"><span></span>如是有为 · 编码器研发与应用</p>
       <h1>从选型开始，<br>把位置反馈<span>看清楚。</span></h1>
-      <p class="portal-lead">查型号与数据手册，读原理、接口和应用。<br class="wide-break">给做编码器的人，也给使用编码器的人。</p>
+      <p class="home-lead">编码器原理、芯片型号与工程应用。<br>把基础概念、官方手册和技术文章连起来。</p>
       <form class="portal-search" id="portal-search-form" role="search">
         <label class="sr-only" for="portal-search-input">搜索型号、公司或技术文章</label>
-        <span class="search-icon" aria-hidden="true"></span><input id="portal-search-input" type="search" placeholder="搜索型号、公司或技术问题" autocomplete="off"><button type="submit">搜索 <span aria-hidden="true">↗</span></button>
+        <span class="search-icon" aria-hidden="true"></span><input id="portal-search-input" type="search" placeholder="型号、品牌，或一个技术问题" autocomplete="off"><button type="submit">搜索 <span aria-hidden="true">↗</span></button>
       </form>
       <div class="portal-hot"><span>试着搜</span>{{ range slice "MT6835" "AS5047P" "多圈" "校准" }}<button type="button" data-query="{{ . }}">{{ . }}</button>{{ end }}</div>
-      <div class="portal-stats"><span><strong>{{ len site.Taxonomies.models }}</strong> 型号与产品</span><span><strong>{{ len site.Taxonomies.companies }}</strong> 公司与机构</span><span><strong>{{ len $posts }}</strong> 篇文章</span></div>
+      <div class="home-stats"><span><strong>{{ len site.Taxonomies.models }}</strong> 型号</span><i></i><span><strong>{{ len site.Taxonomies.companies }}</strong> 公司</span><i></i><span><strong>{{ len $posts }}</strong> 篇文章</span></div>
     </div>
-    <aside class="portal-desk">
-      <a class="portal-desk-art" href="{{ "wiki/basics/" | relURL }}" aria-label="阅读编码器基础知识"><img src="{{ "images/site/encoder-library-cartoon.webp" | relURL }}" alt="磁体与芯片，以及参数表和技术资料卡片的漫画插图" width="1672" height="941" loading="eager" fetchpriority="high"></a>
-      <div class="desk-head"><span>型号资料速览</span><span class="desk-symbol" aria-hidden="true">＋</span></div>
-      <p class="desk-desc">从具体器件，找到官方资料与延伸阅读。</p>
-      {{ range $name := slice "MT6835" "AS5047P" "KTM5900" "iC-MU" }}
-      {{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}
-      <a class="desk-row" href="{{ .Page.RelPermalink }}"><div><strong>{{ $name }}</strong><span>{{ .Page.Params.wiki_category | default "角度测量" }} · {{ .Count }} 篇相关文章</span></div><span class="desk-arrow" aria-hidden="true">↗</span></a>
-      {{ end }}{{ end }}{{ end }}
-      <a class="desk-bottom" href="{{ "wiki/" | relURL }}?kind=model">浏览全部型号与资料 <span>→</span></a>
-    </aside>
+    <a class="home-hero-art" href="{{ "wiki/basics/" | relURL }}" aria-label="从编码器基础知识开始阅读"><img src="{{ "images/site/home-protagonist-v2.webp" | relURL }}" alt="如是有为主人公在工作台前阅读编码器资料" width="1448" height="1086" loading="eager" fetchpriority="high"></a>
   </div>
+  <div class="wrap"><div class="home-models"><span class="home-models-label">常用型号</span><div>{{ range $name := slice "MT6835" "AS5047P" "KTM5900" "iC-MU" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><strong>{{ $name }}</strong><span>{{ .Count }} 篇</span><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div><a class="home-models-all" href="{{ "wiki/" | relURL }}?kind=model">全部型号 →</a></div></div>
 </section>
 {{ end }}
 
@@ -34,30 +26,35 @@
   <p class="search-count" id="portal-search-count"></p><div id="portal-search-list" class="search-list"></div><button class="search-more" id="portal-search-more" type="button" hidden>显示更多结果 ↓</button>
 </section>
 
-<section class="wiki-basics-banner portal-basics-entry"><div><p class="basics-kicker">编码器基础知识</p><h2>先把概念弄明白，再看型号。</h2><p>分辨率与精度、增量与绝对、磁光电感原理、安装和接口。</p></div><a href="{{ "wiki/basics/" | relURL }}">阅读 {{ len (site.GetPage "/wiki/basics").RegularPages }} 个基础词条 →</a></section>
 
-<section class="portal-section" id="topics">
-  <div class="portal-section-head"><div><p class="portal-overline">按技术方向阅读</p><h2>找到你正在研究的问题</h2></div><a class="section-more" href="{{ "topics/" | relURL }}">全部技术专题 ↗</a></div>
-  <div class="portal-topics">{{ range hugo.Data.portal.topics }}{{ partial "portal-topic.html" . }}{{ end }}</div>
+<nav class="home-paths" aria-label="资料阅读入口">
+  <a href="{{ "wiki/basics/" | relURL }}"><span class="home-path-num">01 / 从概念开始</span><h2>编码器基础知识 <b>↗</b></h2><p>12 个词条，读懂原理、参数与接口。</p></a>
+  <a href="{{ "wiki/" | relURL }}"><span class="home-path-num">02 / 从器件开始</span><h2>型号与官方资料 <b>↗</b></h2><p>找具体芯片、核心性能和数据手册。</p></a>
+  <a href="{{ "topics/" | relURL }}"><span class="home-path-num">03 / 从问题开始</span><h2>技术专题与应用 <b>↗</b></h2><p>沿着磁路、校准与伺服反馈继续深入。</p></a>
+</nav>
+
+<section class="home-section" id="topics">
+  <header class="home-section-head"><div><p class="home-overline">EXPLORE / 技术方向</p><h2>你正在研究什么？</h2></div><a href="{{ "topics/" | relURL }}">全部专题 <span>↗</span></a></header>
+  <div class="home-topics">{{ range hugo.Data.portal.topics }}{{ $item := . }}{{ range site.Taxonomies.tags.ByCount }}{{ if eq .Page.LinkTitle $item.tag }}<a class="home-topic" href="{{ .Page.RelPermalink }}"><span class="home-topic-num">{{ $item.number }}</span><div><h3>{{ $item.title }} <b>↗</b></h3><p>{{ $item.desc }}</p><span class="home-topic-meta">{{ .Count }} 篇文章 <i>·</i> {{ $item.short }}</span></div></a>{{ end }}{{ end }}{{ end }}</div>
 </section>
 
-<section class="portal-reading portal-section">
-  <div class="portal-section-head"><div><p class="portal-overline">研发与应用阅读</p><h2>从一个具体问题开始</h2></div><span class="section-note">选自已有文章</span></div>
-  <div class="reading-grid">{{ range hugo.Data.portal.reading }}{{ $item := . }}{{ with site.GetPage (printf "/posts/%s" .file) }}<a class="reading-card" href="{{ .RelPermalink }}"><span class="reading-label">{{ $item.label }}</span><h3>{{ $item.heading }}</h3><p>{{ .Description | plainify | truncate 85 }}</p><span class="reading-bottom">阅读全文 <span>↗</span></span></a>{{ end }}{{ end }}</div>
+<section class="home-section home-reading">
+  <header class="home-section-head"><div><p class="home-overline">READ / 精选阅读</p><h2>把一个问题，真正读明白。</h2></div><span class="home-section-note">选自已有文章</span></header>
+  <div class="home-reading-grid">{{ range $i,$item := hugo.Data.portal.reading }}{{ with site.GetPage (printf "/posts/%s" .file) }}<a class="home-reading-item{{ if eq $i 0 }} home-reading-feature{{ end }}" href="{{ .RelPermalink }}"><span class="home-reading-label">{{ $item.label }}</span><h3>{{ $item.heading }}</h3><p>{{ .Description | plainify | truncate 95 }}</p><span class="home-reading-end">阅读全文 <b aria-hidden="true">↗</b></span></a>{{ end }}{{ end }}</div>
 </section>
 
-<section class="portal-section portal-library">
-  <div class="library-intro"><p class="portal-overline">型号与公司词条</p><h2>原理之外，<br>把资料接起来。</h2><p>型号页连接官方产品与数据手册，公司页串起产品线与相关文章。</p><a class="btn" href="{{ "wiki/" | relURL }}">进入资料库 ↗</a></div>
-  <div class="library-links">{{ range $name := slice "MT6835" "AS5047P" "MLX90382" "TLE5012B" "KTH78" "MT6901" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><strong>{{ $name }}</strong><span>{{ .Page.Description | plainify | truncate 64 }}</span><i aria-hidden="true">↗</i></a>{{ end }}{{ end }}{{ end }}</div>
+<section class="home-section home-library">
+  <div class="home-library-intro"><p class="home-overline">REFERENCE / 型号资料</p><h2>落到器件，<br>找到可靠的资料。</h2><p>简短的型号知识卡片，连接官方产品页、数据手册和相关文章。</p><a href="{{ "wiki/" | relURL }}">浏览资料库 <span>→</span></a></div>
+  <div class="home-library-list">{{ range $name := slice "MT6835" "AS5047P" "MLX90382" "TLE5012B" "KTH78" "MT6901" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><div><strong>{{ $name }}</strong><span>{{ .Page.Params.wiki_category | default "角度测量" }}</span></div><p>{{ .Page.Description | plainify | truncate 65 }}</p><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div>
 </section>
 
-<section class="portal-section portal-journal">
-  <div class="portal-section-head"><div><p class="portal-overline">持续记录与观察</p><h2>最近更新</h2></div><a class="section-more" href="{{ "archives/" | relURL }}">全部文章 ↗</a></div>
+<section class="home-section home-journal">
+  <header class="home-section-head"><div><p class="home-overline">JOURNAL / 持续记录</p><h2>最近的文章</h2></div><a href="{{ "archives/" | relURL }}">全部归档 <span>↗</span></a></header>
   {{ $updates := slice }}{{ range (where site.RegularPages "Section" "posts").ByDate.Reverse }}{{ if intersect (.Params.tags | default slice) (slice "磁编码器" "电感编码器" "光电编码器" "编码器接口" "非线性校准" "多圈编码器" "机器人关节" "AMR" "TMR" "离轴" "FOC") }}{{ $updates = $updates | append . }}{{ end }}{{ end }}
-  <div class="journal-grid">{{ range first 6 $updates }}<article class="journal-card"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description | plainify | truncate 90 }}</p><div class="journal-tags">{{ range first 2 (.GetTerms "tags") }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div></article>{{ end }}</div>
+  <div class="home-journal-list">{{ range first 5 $updates }}<article><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time><div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description | plainify | truncate 100 }}</p></div><a class="home-journal-arrow" href="{{ .RelPermalink }}" aria-label="阅读{{ .Title }}">↗</a></article>{{ end }}</div>
 </section>
 
-<section class="portal-about"><div><p class="portal-overline">关于如是有为</p><h2>沿着位置反馈，理解器件与系统。</h2><p>一个芯片工程师的持续记录。写编码器、磁传感器、伺服与机器人关节，也讨论这一行里的人和事。</p><a href="{{ "companies/" | relURL }}">浏览公司与品牌 ↗</a></div><img src="{{ "images/site/qrcode.png" | relURL }}" alt="微信公众号如是有为二维码" width="112" height="112"></section>
+<section class="home-about"><div><p class="home-overline">ABOUT / 如是有为</p><h2>沿着位置反馈，理解器件与系统。</h2></div><p>一个芯片工程师的持续记录。写编码器、磁传感器、伺服与机器人关节，也讨论这一行里的人和事。<a href="{{ "companies/" | relURL }}">浏览公司与品牌 →</a></p></section>
 
 {{ $index := slice }}
 {{ range where site.Pages "Params.wiki" true }}{{ $aliases := delimit (.Params.related_companies | default slice) " " }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" (.Description | plainify) "kind" .Params.wiki_type "keywords" (printf "%s %s" (.Params.wiki_category | default "") $aliases)) }}{{ end }}
