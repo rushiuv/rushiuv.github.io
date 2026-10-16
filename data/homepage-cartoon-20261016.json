@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Use case: illustration-story, homepage editorial illustration. Use the supplied approved engineering illustration as the strict structural and style reference. Create a wide 1536x864 Chrome OS inspired cartoon for an encoder knowledge website. Warm ivory background, rounded flat shapes, clean navy contours, cobalt blue, coral red, mint and soft yellow. Center-left keep EXACTLY the reference's single blue/red diametrically magnetized disk floating horizontally above a single black gull-wing sensor IC, aligned vertically with a visible gap. Keep the SAME turquoise field loop shape and directions from the reference. No shaft, motor, gears, PCB, wires, changed pole arrangement or added physical components. Right-hand side: two clearly separate floating DOCUMENT CARDS (editorial UI objects, not physical parts of the encoder), one has a tiny tidy blue table with short grey placeholder lines, the other a folded page corner and a yellow bookmark. No connector arrows between documents and hardware. The cards simply communicate a technical reference library. Remove Chinese callout labels from reference; no text, letters, logos or numbers anywhere. Spacious balanced landscape composition with all objects within safe margins. Friendly precise technical comic look, no photorealism, no glossy 3D, no invented sensing principle. Do not crop any hardware.",
+  "source_reference": "assets/basics-source/magnetic-on-axis.png",
+  "principle_reference": "https://www.ti.com/lit/pdf/slya085",
+  "original_generated": "exec-093efa56-1b6d-455c-ae32-995655467cba.png",
+  "asset": "/images/site/encoder-library-cartoon.webp",
+  "original": "assets/basics-source/home-encoder-library.png"
+}

@@ -14,6 +14,7 @@
       <div class="portal-stats"><span><strong>{{ len site.Taxonomies.models }}</strong> 型号与产品</span><span><strong>{{ len site.Taxonomies.companies }}</strong> 公司与机构</span><span><strong>{{ len $posts }}</strong> 篇文章</span></div>
     </div>
     <aside class="portal-desk">
+      <a class="portal-desk-art" href="{{ "wiki/basics/" | relURL }}" aria-label="阅读编码器基础知识"><img src="{{ "images/site/encoder-library-cartoon.webp" | relURL }}" alt="磁体与芯片，以及参数表和技术资料卡片的漫画插图" width="1672" height="941" loading="eager" fetchpriority="high"></a>
       <div class="desk-head"><span>型号资料速览</span><span class="desk-symbol" aria-hidden="true">＋</span></div>
       <p class="desk-desc">从具体器件，找到官方资料与延伸阅读。</p>
       {{ range $name := slice "MT6835" "AS5047P" "KTM5900" "iC-MU" }}

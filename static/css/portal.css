@@ -169,3 +169,6 @@ button:focus-visible,a:focus-visible{outline:2px solid #416cc5;outline-offset:4p
 @media(max-width:640px){.model-card-overview{grid-template-columns:1fr;gap:12px}.model-card-visual{position:static;max-width:520px;justify-self:center;width:100%;box-sizing:border-box}.model-card-visual img{max-height:260px}}
 
 .model-card .wiki-content>ul:has(>li>strong)>li>strong{background:none;box-shadow:none;padding:0}
+
+/* Home illustration follows the reference-based basics artwork. */
+.portal-desk-art{display:block;margin:-6px -8px 18px;background:#fffdf7;border:1px solid #f1eddf;border-radius:16px;overflow:hidden}.portal-desk-art img{display:block;width:100%;height:auto;max-height:210px;object-fit:contain}.portal-desk .desk-row{padding-top:10px;padding-bottom:10px}@media(max-width:760px){.portal-desk-art img{max-height:230px}}
