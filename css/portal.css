@@ -145,3 +145,27 @@ button:focus-visible,a:focus-visible{outline:2px solid #416cc5;outline-offset:4p
 .topic-posts .item h2{font-family:var(--sans);font-size:18px}
 .topic-return{padding:15px 34px;font-size:13px}
 @media(max-width:760px){.topic-guide{margin-top:20px}.topic-guide-head{padding:22px}.topic-guide-head h1{font-size:28px}.topic-guide-deck{font-size:12px}.topic-guide-grid{grid-template-columns:1fr;padding:22px;gap:25px}.topic-guide-body{font-size:13px}.topic-guide-aside{border-left:0;border-top:1px solid #e7edf4;padding:19px 0 0}.topic-guide-aside p{margin-top:15px}.topic-guide-aside>a{max-width:100%}.topic-guide-body h2{font-size:17px}.topic-posts .item h2{font-size:16px}.topic-posts h2{font-size:21px}.topic-guide-meta{gap:11px}.topic-guide-meta>span+span{padding-left:11px}.topic-return{padding-left:22px}}
+
+/* Model cards: a short product summary, concrete features and original sources. */
+.model-card .wiki-head{padding-bottom:20px}
+.model-card .wiki-description{font-size:18px;line-height:1.7;max-width:54em}
+.model-card .wiki-content{font-size:16px;line-height:1.7}
+.model-card .wiki-content>h2:first-child{margin-top:12px}
+.model-card .wiki-content>ul:has(>li>strong){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;list-style:none;padding:0;margin:12px 0 24px}
+.model-card .wiki-content>ul:has(>li>strong)>li{margin:0;padding:13px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.model-card .wiki-content>ul:has(>li>strong)>li>strong{display:block;font-size:12px;color:var(--muted);font-weight:500;letter-spacing:.03em;margin-bottom:4px}
+.model-card .wiki-content img{max-height:360px;object-fit:contain;width:auto;max-width:100%;margin:12px auto;display:block}
+.model-card .wiki-content>p:has(>em){font-size:12px;color:var(--muted);line-height:1.5;text-align:center}
+@media(max-width:640px){.model-card .wiki-content>ul:has(>li>strong){grid-template-columns:1fr}.model-card .wiki-description{font-size:16px}.model-card .wiki-content img{max-height:280px}}
+
+.model-card{grid-template-columns:1fr}
+.model-card .wiki-toc{display:none}
+.model-card .wiki-article{max-width:none}
+.model-card-overview{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(230px,.8fr);gap:28px;align-items:start}
+.model-card-overview.no-visual{grid-template-columns:1fr;max-width:900px}
+.model-card-visual{margin:12px 0 24px;padding:20px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:100px}
+.model-card-visual img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain}
+.model-card-visual figcaption{font:12px/1.6 var(--sans);color:var(--muted);margin-top:14px}
+@media(max-width:640px){.model-card-overview{grid-template-columns:1fr;gap:12px}.model-card-visual{position:static;max-width:520px;justify-self:center;width:100%;box-sizing:border-box}.model-card-visual img{max-height:260px}}
+
+.model-card .wiki-content>ul:has(>li>strong)>li>strong{background:none;box-shadow:none;padding:0}
