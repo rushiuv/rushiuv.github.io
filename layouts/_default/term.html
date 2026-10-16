@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $pager := .Paginate .Pages.ByDate.Reverse }}
 {{ if .Params.wiki }}
-<div class="wiki-layout">
+<div class="wiki-layout{{ if .Params.model_card }} model-card{{ end }}">
   <article class="wiki-article">
     <header class="wiki-head">
       <p class="kicker">如是有为 · {{ if eq .Params.wiki_type "model" }}型号与产品{{ else }}公司与机构{{ end }}</p>
@@ -16,7 +16,12 @@
       {{ end }}
     </header>
     {{ if eq $pager.PageNumber 1 }}
-    <div class="content wiki-content">{{ .Content }}</div>
+    {{ if .Params.model_card }}
+    <div class="model-card-overview{{ if not .Params.product_image }} no-visual{{ end }}">
+      <div class="content wiki-content">{{ .Content }}</div>
+      {{ with .Params.product_image }}<figure class="model-card-visual"><img src="{{ . | relURL }}" alt="{{ $.Title }} 原厂产品或应用示意" loading="eager" decoding="async"><figcaption>{{ $.Params.product_image_caption }}{{ with $.Params.product_image_source }} · <a href="{{ . }}" target="_blank" rel="noopener">原图出处 ↗</a>{{ end }}</figcaption></figure>{{ end }}
+    </div>
+    {{ else }}<div class="content wiki-content">{{ .Content }}</div>{{ end }}
     {{ partial "wiki-relations.html" . }}
     {{ else }}
     <p class="wiki-return"><a href="{{ .RelPermalink }}">← 返回 {{ .Title }} 词条正文</a></p>
