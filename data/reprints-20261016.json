@@ -1,0 +1,423 @@
+{
+  "imported_at": "2026-10-16",
+  "new_articles": 5,
+  "updated_articles": 1,
+  "format": "原题、原始发布日期、公众号出处和原文入口；仅删除固定推广尾部和装饰，不改技术正文",
+  "articles": [
+    {
+      "id": "3hhKM1EvH53ALqEQqPMx2A",
+      "title": "把大芯片切开，是在给良率买保险",
+      "account": "数字芯片实验室",
+      "author": "learn vlsi",
+      "date": "2026-10-16T07:09:51+08:00",
+      "source_url": "https://mp.weixin.qq.com/s/3hhKM1EvH53ALqEQqPMx2A",
+      "slug": "3hhKM1EvH53ALqEQqPMx2A",
+      "updated_existing": false,
+      "source_path": "posts_extra/2026-10-16-3hhKM1EvH53ALqEQqPMx2A.md",
+      "post_path": "content/posts/2026-10-16-3hhKM1EvH53ALqEQqPMx2A.md",
+      "post_url": "https://sensor.fans/posts/3hhkm1evh53alqeqqpmx2a/",
+      "images": [
+        "/images/wx/8fda404c05ac9db9140c932be23df7ff.jpg",
+        "/images/wx/fa5971ae1b5366c6743db19840c3a428.jpg"
+      ],
+      "source_html_sha256": "fbf138e620fe1b70df19a137f5ca8b8616119fd545f21933f2bd5e106943e257",
+      "body_characters": 1627,
+      "tags": {
+        "models": [],
+        "companies": [
+          "中芯国际"
+        ],
+        "tags": [
+          "芯片设计",
+          "半导体产业"
+        ]
+      }
+    },
+    {
+      "id": "7aFt5SBJpek2S4ruADxIZg",
+      "title": "VCE2765：高精度自校准离轴磁编码器",
+      "account": "圣邦微电子",
+      "author": "圣邦微电子",
+      "date": "2025-07-29T16:08:00+08:00",
+      "source_url": "https://mp.weixin.qq.com/s/7aFt5SBJpek2S4ruADxIZg",
+      "slug": "b6173ae023e80c28",
+      "updated_existing": true,
+      "source_path": "posts_extra/2025-07-29-b6173ae023e80c28.md",
+      "post_path": "content/posts/2025-07-29-b6173ae023e80c28.md",
+      "post_url": "https://sensor.fans/posts/b6173ae023e80c28/",
+      "images": [],
+      "source_html_sha256": "3486b391d7c05c74a1794947b7f0245da9edfd8e255d01e82c6ffb46dedee3d6",
+      "body_characters": 986,
+      "tags": {
+        "models": [],
+        "companies": [
+          "圣邦微"
+        ],
+        "tags": [
+          "磁编码器",
+          "离轴",
+          "自校准",
+          "AMR"
+        ]
+      }
+    },
+    {
+      "id": "ojAZ4UddFxG92t1GqJT3yg",
+      "title": "江苏多维科技推出用于机器人关节的磁编码器方案",
+      "account": "多维科技",
+      "author": "MDT",
+      "date": "2025-03-13T20:00:00+08:00",
+      "source_url": "https://mp.weixin.qq.com/s/ojAZ4UddFxG92t1GqJT3yg",
+      "slug": "ojAZ4UddFxG92t1GqJT3yg",
+      "updated_existing": false,
+      "source_path": "posts_extra/2025-03-13-ojAZ4UddFxG92t1GqJT3yg.md",
+      "post_path": "content/posts/2025-03-13-ojAZ4UddFxG92t1GqJT3yg.md",
+      "post_url": "https://sensor.fans/posts/ojaz4uddfxg92t1gqjt3yg/",
+      "images": [
+        "/images/wx/53259c55297986e5d379c92681256e38.jpg",
+        "/images/wx/c9bf9e2acf4e1ab491998348625947aa.jpg",
+        "/images/wx/24dd8c7002b54d19dcbd7e8d458db1b1.jpg",
+        "/images/wx/0276ab1129f8746e13f917f3284d234a.jpg",
+        "/images/wx/fb3100336fed70275c4cde8c198de6d2.jpg",
+        "/images/wx/f46d6d8c3a8b63c74c2bf3a84b5d278d.jpg",
+        "/images/wx/a06c319ca11e1cfcf48c4d8d42a7aefe.jpg",
+        "/images/wx/097b07e221660c07e79a4bcd3e120334.jpg"
+      ],
+      "source_html_sha256": "7daa106a396a29ea03999080fceb03c42e7266c9eea7b77e0009f83ed170617b",
+      "body_characters": 1831,
+      "tags": {
+        "models": [
+          "TMR3110",
+          "TMR3111"
+        ],
+        "companies": [
+          "多维科技"
+        ],
+        "tags": [
+          "磁编码器",
+          "离轴",
+          "自校准",
+          "TMR",
+          "AMR",
+          "机器人关节"
+        ]
+      }
+    },
+    {
+      "id": "DQ702dxbiBUz42t2xCegGA",
+      "title": "机器人关节设计中光电编码器、磁编码器和电感编码器到底有什么区别？",
+      "account": "Zane Hub",
+      "author": "Zane Zhang",
+      "date": "2026-09-23T08:00:00+08:00",
+      "source_url": "https://mp.weixin.qq.com/s/DQ702dxbiBUz42t2xCegGA",
+      "slug": "DQ702dxbiBUz42t2xCegGA",
+      "updated_existing": false,
+      "source_path": "posts_extra/2026-09-23-DQ702dxbiBUz42t2xCegGA.md",
+      "post_path": "content/posts/2026-09-23-DQ702dxbiBUz42t2xCegGA.md",
+      "post_url": "https://sensor.fans/posts/dq702dxbibuz42t2xcegga/",
+      "images": [
+        "/images/wx/fe382026508c1975dcfd62e6297478b9.png",
+        "/images/wx/cbf33565af4e242aedb09d6f9ef2c5c0.jpg",
+        "/images/wx/302e85547eddf8cff2e3302e6d222cc3.png",
+        "/images/wx/c1e4184a4dac94297edcfad5db265d02.jpg"
+      ],
+      "source_html_sha256": "6e01500228417c7687b634019eb8a78fab059467b21d4a8468f3e6fd60da6b91",
+      "body_characters": 5408,
+      "tags": {
+        "models": [
+          "AS5600",
+          "AS5047P",
+          "TLE5012B"
+        ],
+        "companies": [
+          "海德汉",
+          "多摩川",
+          "RLS"
+        ],
+        "tags": [
+          "磁编码器",
+          "电感编码器",
+          "光电编码器",
+          "多圈编码器",
+          "离轴",
+          "霍尔",
+          "FOC",
+          "机器人关节",
+          "稀土"
+        ]
+      }
+    },
+    {
+      "id": "DV2kHc4BjozPO7Wc4sJsng",
+      "title": "新品发布 | 多维科技推出17位高速TMR磁编码器芯片 — TMR3107和TMR3108",
+      "account": "多维科技",
+      "author": "MDT",
+      "date": "2023-08-27T10:00:00+08:00",
+      "source_url": "https://mp.weixin.qq.com/s/DV2kHc4BjozPO7Wc4sJsng",
+      "slug": "DV2kHc4BjozPO7Wc4sJsng",
+      "updated_existing": false,
+      "source_path": "posts_extra/2023-08-27-DV2kHc4BjozPO7Wc4sJsng.md",
+      "post_path": "content/posts/2023-08-27-DV2kHc4BjozPO7Wc4sJsng.md",
+      "post_url": "https://sensor.fans/posts/dv2khc4bjozpo7wc4sjsng/",
+      "images": [
+        "/images/wx/b9f0b67699e3c042d334e80fa13007c4.jpg",
+        "/images/wx/3e430f7c46e00c3e10672b2da638aa29.jpg",
+        "/images/wx/0581b653ea23badd3a3cadb40d7bdc33.jpg",
+        "/images/wx/c59f5ef84b577fb1a3bc6b44bd6c4e94.jpg",
+        "/images/wx/10c5614695b4657155bd58b62475d6f2.jpg",
+        "/images/wx/ca7a6237a877379c05521500ae8ffa9a.png",
+        "/images/wx/b2c005fb6f518259e86b251031cbdfff.png",
+        "/images/wx/726de32123495e8522601f12c81447c3.jpg"
+      ],
+      "source_html_sha256": "5ab89cca56f12de97caeb097d86d3473ac588b5e01194f9e05da10d87bb24b34",
+      "body_characters": 1433,
+      "tags": {
+        "models": [
+          "TMR3107",
+          "TMR3108"
+        ],
+        "companies": [
+          "多维科技"
+        ],
+        "tags": [
+          "磁编码器",
+          "TMR"
+        ]
+      }
+    },
+    {
+      "id": "BcwVaXl_MnqJNNTX8PMQHQ",
+      "title": "编码器原理（Encoder）——伺服系统是如何“看见位置”的",
+      "account": "工程学习笔记",
+      "author": "工程学习笔记",
+      "date": "2026-03-21T19:36:54+08:00",
+      "source_url": "https://mp.weixin.qq.com/s/BcwVaXl_MnqJNNTX8PMQHQ",
+      "slug": "BcwVaXl_MnqJNNTX8PMQHQ",
+      "updated_existing": false,
+      "source_path": "posts_extra/2026-03-21-BcwVaXl_MnqJNNTX8PMQHQ.md",
+      "post_path": "content/posts/2026-03-21-BcwVaXl_MnqJNNTX8PMQHQ.md",
+      "post_url": "https://sensor.fans/posts/bcwvaxl_mnqjnntx8pmqhq/",
+      "images": [
+        "/images/wx/754dd25126f64dd9623354f4d0650381.jpg"
+      ],
+      "source_html_sha256": "bda10ce5f35aac05079ecd16f3fb071669f1d9256fa82484d33ad56ce707eacd",
+      "body_characters": 2074,
+      "tags": {
+        "models": [],
+        "companies": [],
+        "tags": [
+          "编码器接口"
+        ]
+      }
+    }
+  ],
+  "images": [
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/57Q4MfeLoyAG9d5icFneibAlF79DZxib74lP6zLm9E1GtkCDcMwPstH4CrF6AzUP2IT1APNfTK6DYaiaSehLa42rypgImY9AficMabqW20dLvmvg/640?wx_fmt=other&from=appmsg",
+      "file": "static/images/wx/cbf33565af4e242aedb09d6f9ef2c5c0.jpg",
+      "width": 1080,
+      "height": 1053,
+      "bytes": 54115,
+      "sha256": "789444b788c6d009dc320f4c57df45dad4031413adbabfb7a08ad5288fbcec71",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/K8SbU1k3vokBSibQORrCyWWLpYUN2icB6sZyHskic1sXtVWiczfiaGj1mLG3af0RUDbdn6ZLRdx7tQl2JNsc03yRaLqBGxxDRG5TqicJ0UGmy33TA/640?from=appmsg",
+      "file": "static/images/wx/8fda404c05ac9db9140c932be23df7ff.jpg",
+      "width": 1080,
+      "height": 608,
+      "bytes": 42574,
+      "sha256": "9d3fe2580602409e079370e13dbfec0a506dedda113b2342d4c8973992340c23",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/K8SbU1k3vokWqUrEH4pgjBKz7pbptf23yCbndgoIEavaBc9ZPMrSTwqOiaThGOe5mYmydndPT0CJicbfLYdBfaMePuHnzbhFLIBYt1fayGXNc/640?from=appmsg",
+      "file": "static/images/wx/fa5971ae1b5366c6743db19840c3a428.jpg",
+      "width": 1080,
+      "height": 608,
+      "bytes": 57756,
+      "sha256": "8bfcb8d42b5801b4c86e6291b852b4de23c5fc63299b6a05311661c64d81b59a",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oM3G9mcr7jKico2cxVTjRsiaYA9Ottka5fU84icGCibvX3jgJKs6bDlO5ZFqeTaCshvibMJXBTf1uEsl5Q/640?wx_fmt=jpeg",
+      "file": "static/images/wx/0581b653ea23badd3a3cadb40d7bdc33.jpg",
+      "width": 900,
+      "height": 376,
+      "bytes": 45155,
+      "sha256": "83e00a704ec2677ca94bff0e065cc2c7c80a08786b6d8d6773bb3f2e7ebd2c75",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oM3G9mcr7jKico2cxVTjRsiaYCJg15LKAibxkHNOPCzuj2EJTWB4YiaDdsVRKlcwZ6RmOjicdsyibcS6qzQ/640?wx_fmt=jpeg",
+      "file": "static/images/wx/10c5614695b4657155bd58b62475d6f2.jpg",
+      "width": 898,
+      "height": 521,
+      "bytes": 63439,
+      "sha256": "1884c63b6dc88fd6b5acd8f4aff99a602293f2a7cb4f4f3f56b0d7223403d654",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oM3G9mcr7jKico2cxVTjRsiaYcP9fKz3clssaD7KcSGohibvj5RELfTP8bGj0vYeeB3cR2oRqvv0YIRg/640?wx_fmt=jpeg",
+      "file": "static/images/wx/726de32123495e8522601f12c81447c3.jpg",
+      "width": 1000,
+      "height": 416,
+      "bytes": 70578,
+      "sha256": "6a0bae4216415f1e0b9fda659f4a912bbe31210f61bd1df7594616b66b8a296a",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oM3G9mcr7jKico2cxVTjRsiaYfjZmFMQXpekc9iannwicsOicLevCiaUBEBRs9pWSu12b7I4Aib0ic9eh4iceA/640?wx_fmt=jpeg",
+      "file": "static/images/wx/b9f0b67699e3c042d334e80fa13007c4.jpg",
+      "width": 1080,
+      "height": 460,
+      "bytes": 65669,
+      "sha256": "7663e253fb9f9ac1012b9115be9aba7aa41600c498f9ebed701c18940604f193",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oM3G9mcr7jKico2cxVTjRsiaYnbsyQmfcyAMiblm2Jd6aWhuSraIkRIQqFACbgY2AJRx1SmAlNjcpLmA/640?wx_fmt=jpeg",
+      "file": "static/images/wx/c59f5ef84b577fb1a3bc6b44bd6c4e94.jpg",
+      "width": 1080,
+      "height": 442,
+      "bytes": 18330,
+      "sha256": "2d04d97dd64013da08adb7f71fd01a9d4b741a7956a32710de0eeaa199c2a915",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oM3G9mcr7jKico2cxVTjRsiaYqj6SpTH9sXQaAHsdqLuGtBoO8nuMnZEnkib5ePguEPBBkzBmHYtXJXw/640?wx_fmt=jpeg",
+      "file": "static/images/wx/3e430f7c46e00c3e10672b2da638aa29.jpg",
+      "width": 896,
+      "height": 323,
+      "bytes": 37490,
+      "sha256": "bb3299900fc49b75a32e4d8f3c95c892e9c4a59b25d54d21302e0a352077a804",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oMo4fPAJ3QscKyvbMibVcAMp6PwSX3Sxrw4mHslKn453OYHN0tTN6vynWnjH0pmPNDAsvvFCrtR1Gw/640?wx_fmt=jpeg&from=appmsg",
+      "file": "static/images/wx/0276ab1129f8746e13f917f3284d234a.jpg",
+      "width": 800,
+      "height": 480,
+      "bytes": 28828,
+      "sha256": "224bcedadd046122d1acda9d87a31a3f11abfb0f0f48e0fc180f08c1386b31c5",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oMo4fPAJ3QscKyvbMibVcAMpAx8GYPia7Zge5ibGPF1GwEIlY74XaTOREsibF1YLm7Qzu2Zz7hACXOhpA/640?wx_fmt=jpeg&from=appmsg",
+      "file": "static/images/wx/a06c319ca11e1cfcf48c4d8d42a7aefe.jpg",
+      "width": 1080,
+      "height": 355,
+      "bytes": 28993,
+      "sha256": "36f51add889d31c470ef01762174d121ec8b4d6be273c80261655720316a2df8",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oMo4fPAJ3QscKyvbMibVcAMpLjQibgTPkVfzBuPDb9gtRXPmf1qE3mHD29ksectOpYRK260TsePmJug/640?wx_fmt=jpeg&from=appmsg",
+      "file": "static/images/wx/c9bf9e2acf4e1ab491998348625947aa.jpg",
+      "width": 1063,
+      "height": 600,
+      "bytes": 55295,
+      "sha256": "0088663daaa718da59269fd1a9f2b0545e2aabbbd0dd6b83f8c9a0754bda5c85",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oMo4fPAJ3QscKyvbMibVcAMpTlnafAvE5E9LibgILicDemxsjmPica1EFWPJoX4mkLuMvTwf7ClXh1RPA/640?wx_fmt=jpeg&from=appmsg",
+      "file": "static/images/wx/f46d6d8c3a8b63c74c2bf3a84b5d278d.jpg",
+      "width": 1080,
+      "height": 548,
+      "bytes": 45425,
+      "sha256": "bf7e134615e3698a0bf0654e958fdde13cbbefc42a857e2e471aa8b5913845a8",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/lXyZJJy42oMo4fPAJ3QscKyvbMibVcAMpn5nnfxDtI91NaF7beRB5u2Kjlz9ib5z38mhryNdXEBhQ9gaa5RMWYvw/640?wx_fmt=jpeg&from=appmsg",
+      "file": "static/images/wx/fb3100336fed70275c4cde8c198de6d2.jpg",
+      "width": 1080,
+      "height": 355,
+      "bytes": 23689,
+      "sha256": "983dc978f082b15d9578105bfecd8267cb4cc5869346e69861fc479d178a846a",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/57Q4MfeLoyBXuN1sOYQsDYPIuQOXrW0L99Rak2REnxyydwCRJl9HZbAf1sxzw2wF5sNA8ib0C05rc1BCSEOZAkibA8WZf78Vzk7yOz1uQ11ibU/640?wx_fmt=png&from=appmsg",
+      "file": "static/images/wx/302e85547eddf8cff2e3302e6d222cc3.png",
+      "width": 550,
+      "height": 504,
+      "bytes": 260634,
+      "sha256": "2d74ae87cf78d6baa7c091c9a38caa85b31db722b760b2e850c79c6b19315f03",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/lXyZJJy42oM3G9mcr7jKico2cxVTjRsiaYAfhGt1SGBicXUoau5P1RSdno5lwnSiatnEjXeWUprMFQ8ib2eBZ0nZMkQ/640?wx_fmt=png",
+      "file": "static/images/wx/ca7a6237a877379c05521500ae8ffa9a.png",
+      "width": 1000,
+      "height": 605,
+      "bytes": 19119,
+      "sha256": "2c03c12c97eac5512a5328acc73872bc66d1d7c2acedc2d1493a5cb2863c1f31",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/lXyZJJy42oM3G9mcr7jKico2cxVTjRsiaYpickKggsGDGko5CVeSc6YUicsx5CrBB4TxfazvoNpGiafRQNPcjy9MrIQ/640?wx_fmt=png",
+      "file": "static/images/wx/b2c005fb6f518259e86b251031cbdfff.png",
+      "width": 1000,
+      "height": 598,
+      "bytes": 21937,
+      "sha256": "11dc53a51629ea7d5b836d3f6bbca82184f07ec7a348fdcc3eac8806bfabb989",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/57Q4MfeLoyCU1ZLEaaAmB9XJxa5zFrznhoAY7sws1Zibtvwwxy9TfLz1ibpDoj8MnHQGicBbeQm78ZLh18ic0LBwBsia87AlsIIWVLAynopQErKg/640?wx_fmt=jpeg&from=appmsg",
+      "file": "static/images/wx/c1e4184a4dac94297edcfad5db265d02.jpg",
+      "width": 700,
+      "height": 640,
+      "bytes": 31863,
+      "sha256": "04ee5195b5413644d974d219a11431ee8fb2189880558e609c6c1cf4969bef49",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/hJPOkDYMtflIdMyTp6RWKuFwCSzC8jD3TiaMYvSnUXmXnfRg7DPalTNfsM9t77HdAQ7K23g5y4QOib7aibItsENs5rZY12ickPlKbnLUxuWvQuY/640?wx_fmt=jpeg",
+      "file": "static/images/wx/754dd25126f64dd9623354f4d0650381.jpg",
+      "width": 1080,
+      "height": 589,
+      "bytes": 111802,
+      "sha256": "2c141d4b3af22543d212c58f5704cee59f25291bb204e5a3731df959872f0f93",
+      "new": true
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/57Q4MfeLoyDMl9JXI3GSjcklKR0Dfl5BzwwkicrFxeWPFov2sqKSiaWUb7PJwuQYKtRxVxjc3K6Eerg1A7eLN14HT8ugDwRFDaYicIQBIh9aZQ/640?wx_fmt=png&from=appmsg",
+      "file": "static/images/wx/fe382026508c1975dcfd62e6297478b9.png",
+      "width": 600,
+      "height": 600,
+      "bytes": 51008,
+      "sha256": "13ac8ecb50674b53f6f10148a37af94f806084c2fc12d1e458349901753910ab",
+      "new": true
+    },
+    {
+      "url": "https://mmecoa.qpic.cn/mmecoa_jpg/lXyZJJy42oMo4fPAJ3QscKyvbMibVcAMpGiagnYf3aYB5AZM9kFylibITcdJhad5SqNkzKnXa9vmTAqbIiaM4YBuXA/640?wx_fmt=jpeg&from=appmsg",
+      "file": "static/images/wx/53259c55297986e5d379c92681256e38.jpg",
+      "width": 1080,
+      "height": 460,
+      "bytes": 86963,
+      "sha256": "758b9a08ce0c16a993e3b6a1868734fba9398107330e5648ee68cd7b45a772bb",
+      "new": true
+    },
+    {
+      "url": "https://mmecoa.qpic.cn/mmecoa_jpg/lXyZJJy42oMo4fPAJ3QscKyvbMibVcAMpW1V6bmW5TbklOvibOraMDK6znMyy6UFGmZcptibe5QWcWJWrgfLjWYaA/640?wx_fmt=jpeg&from=appmsg",
+      "file": "static/images/wx/097b07e221660c07e79a4bcd3e120334.jpg",
+      "width": 1080,
+      "height": 355,
+      "bytes": 38702,
+      "sha256": "4b00fc3c47349114f7e9e191013354e5ff4f1bcfd61b4f2ff431bc114a5ae415",
+      "new": true
+    },
+    {
+      "url": "https://mmecoa.qpic.cn/mmecoa_jpg/lXyZJJy42oMo4fPAJ3QscKyvbMibVcAMpnCoxkibCQvgaxKhYOVic5fL9Bl8RicSIWabAqxQZMqfmA3pLhWX4hcGgg/640?wx_fmt=jpeg&from=appmsg",
+      "file": "static/images/wx/24dd8c7002b54d19dcbd7e8d458db1b1.jpg",
+      "width": 1080,
+      "height": 355,
+      "bytes": 23302,
+      "sha256": "c4b92289c2c72f78aaf657e6e3196ab176a986e3a1a80d7505de9fc0232e205b",
+      "new": true
+    }
+  ]
+}
