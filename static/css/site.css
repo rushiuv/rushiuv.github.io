@@ -180,7 +180,7 @@ nav a:hover{background:var(--blue-soft);color:var(--blue);text-decoration:none}
 @media (max-width:640px){
   .wrap{padding:0 16px}
   .bar{height:54px}
-  .brand span{display:none}
+  .brand-title{white-space:nowrap}
   nav a{padding:6px 7px;font-size:14px}
   .hero h1{font-size:44px}
   .subtitle{font-size:17px;letter-spacing:.2em}
