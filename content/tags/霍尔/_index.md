@@ -12,4 +12,12 @@ related_topics: ["磁编码器", "AMR", "磁轴键盘"]
 
 选型要确认敏感方向、磁场范围、输出与带宽。角度测量还受磁体尺寸、方向、气隙和偏心影响；键盘行程检测也需要明确磁场到位移的对应关系。下方文章按不同应用展示霍尔器件的使用问题。
 
-参考：[英飞凌磁角度传感器技术介绍](https://www.infineon.com/products/sensor/magnetic-position-sensors/angle-sensors)。
+## 传感器看到的是合成磁场
+
+对用两个磁场分量求角度的理想模型，输出为atan2(By,Bx)。若外部场叠加进来，参与解算的就是Bx+bx与By+by，而非原先的磁体场。要分析角度为什么变了，需要看磁场方向、幅值及传感器量程，而不只看角度字。
+
+这一模型也不能机械套到所有霍尔器件：开关、线性测量和多元件差分结构的输出机制不同。应先确认具体产品测哪一分量、是否补偿外场，以及适用磁路条件。
+
+## 参考资料
+
+- [英飞凌磁角度传感器技术介绍](https://www.infineon.com/products/sensor/magnetic-position-sensors/angle-sensors)

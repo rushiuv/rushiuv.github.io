@@ -14,4 +14,14 @@ related_topics: ["ADC", "非线性校准", "编码器接口"]
 
 本专题汇集光学结构、芯片与编码器系统的讨论。涉及某一产品的性能时，请保留码盘、读头、接口和安装配置。
 
-参考：[雷尼绍光栅工作原理](https://www.renishaw.com.cn/zh/how-renishaw-optical-encoders-work--36979)、[编码器系统简介](https://www.renishaw.com.cn/zh/introduction-to-encoder-systems--47256)。
+## 细分和安装误差是两本账
+
+电子细分让一个信号周期内的刻度更细，却不会自动修正码盘刻线、安装偏心或轴系误差。分辨率足够之后，应继续看整圈误差与细分误差各自的来源。
+
+在小偏心理想圆光栅模型中，偏心带来的角误差量级随e/R变化：e为偏心量，R为读数半径，角度以弧度计。这个几何关系解释了为什么同一偏心放到不同直径上影响不同；具体产品还要结合读头光学与安装条件。可重复的误差图可以标定，随载荷和运动变化的轴系误差不能只用一张固定表概括。
+
+## 参考资料
+
+- [雷尼绍光栅工作原理](https://www.renishaw.com.cn/zh/how-renishaw-optical-encoders-work--36979)
+- [编码器系统简介](https://www.renishaw.com.cn/zh/introduction-to-encoder-systems--47256)
+- [雷尼绍旋转编码器精度说明](https://www.renishaw.com/en/the-accuracy-of-rotary-encoders--47130)

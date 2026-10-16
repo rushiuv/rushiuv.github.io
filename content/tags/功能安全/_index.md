@@ -14,4 +14,13 @@ related_topics: ["编码器接口", "车规", "多圈编码器"]
 
 本专题讨论安全机制与工程边界；具体项目按适用标准和正式安全设计流程开展。
 
-参考：[TI功能安全资料与安全文档说明](https://www.ti.com/technologies/functional-safety.html)、[BiSS Safety官方资料](https://biss-interface.com/downloads/)。
+## 两路一致也可能一起偏
+
+用一个反例就能看出双路互比的边界：若共享因素让两路角度都增加同一个偏移δ，两路相减后δ被消掉，差值仍正常。通道数量和物理独立性因此需要分别说明。
+
+工程验证应区分单路故障与共同原因，记录发现时间、系统反应和恢复条件。角度差超限也不能自动指定哪一路正确；还需依照设计使用状态信息、其他观测与预先定义的处置规则。本段是诊断思路，不构成任何产品安全等级声明。
+
+## 参考资料
+
+- [TI功能安全资料与安全文档说明](https://www.ti.com/technologies/functional-safety.html)
+- [BiSS Safety官方资料](https://biss-interface.com/downloads/)

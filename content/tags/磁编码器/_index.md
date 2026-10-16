@@ -14,4 +14,13 @@ related_topics: ["霍尔", "AMR", "TMR", "离轴"]
 
 本专题从器件原理延伸到磁路、校准与伺服使用。查具体参数时，进入型号页核对对应版本的原厂手册。
 
-参考：[英飞凌磁角度传感器技术与产品](https://www.infineon.com/products/sensor/magnetic-position-sensors/angle-sensors)、[RLS编码器常见问题](https://www.rls.si/eng/faq)。
+## 把三个容易混淆的量分开
+
+**位数是刻度，误差是偏离，重复性是离散。** 以一圈为1，B位输出的步距是1/2ᴮ圈。16位对应360°/65536，约0.00549°；这只是步距，不是精度承诺。重复读到同一个数，也不能证明这个数等于真实位置。
+
+**平均不自动消除偏差。** 若同一位置每次都固定偏0.1°，读100次再平均仍偏0.1°。只有在零均值、独立同分布噪声等条件下，平均N次的标准差才按1/√N降低；滤波后样本相关时，需要重新计算。这里是数学示例，不是某型号的实测。
+
+## 参考资料
+
+- [英飞凌磁角度传感器技术与产品](https://www.infineon.com/products/sensor/magnetic-position-sensors/angle-sensors)
+- [RLS编码器常见问题](https://www.rls.si/eng/faq)

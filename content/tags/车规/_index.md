@@ -14,4 +14,13 @@ related_topics: ["功能安全", "霍尔", "芯片设计"]
 
 阅读下方文章时，把发布信息与可直接用于设计的正式文件分开。
 
-参考：[英飞凌汽车及工业角度传感器资料](https://www.infineon.com/products/sensor/magnetic-position-sensors/angle-sensors)、[TI功能安全文档说明](https://www.ti.com/technologies/functional-safety.html)。
+## 把条件表带进比较与验证
+
+对一个角度误差数字，至少追问温度、供电、磁路、带宽和校准状态，以及它是典型结果还是规定条件下的上限。不同条件的数字不能直接排高低。
+
+资格材料、器件诊断与整机使用结果分别保留依据。芯片在某条件下完成测试，不能跳过电源、安装、接口和环境变化就承诺整机表现；更换料号后也应重新核对这些条件，而不是只对齐封装和位数。
+
+## 参考资料
+
+- [英飞凌汽车及工业角度传感器资料](https://www.infineon.com/products/sensor/magnetic-position-sensors/angle-sensors)
+- [TI功能安全文档说明](https://www.ti.com/technologies/functional-safety.html)

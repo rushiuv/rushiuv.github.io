@@ -14,4 +14,13 @@ EtherCAT用于工业实时通信，连接控制器、驱动器和I/O等设备。
 
 下方文章讨论接口生态与运动系统。具体接入以设备描述、固件版本和主站配置为准。
 
-参考：[EtherCAT技术概览](https://www.ethercat.org/en/technology.html)、[ETG技术资料汇编](https://www.ethercat.org/en/compendium.htm)。
+## 同步时钟之后，还要对齐采样动作
+
+网络设备拥有一致的时钟，是安排同步采样的基础；还需要确认传感器怎样触发、处理需要多久、数据什么时候进入过程报文，以及控制器何时使用。只对齐接收时刻，不能自动对齐实际测量时刻。
+
+多轴比较可沿“有效采样—内部处理—发送—接收—使用”记录时间关系。把固定延迟、变化的等待时间和时钟偏差分别处理，才能判断相位差来自运动还是链路。
+
+## 参考资料
+
+- [EtherCAT技术概览](https://www.ethercat.org/en/technology.html)
+- [ETG技术资料汇编](https://www.ethercat.org/en/compendium.htm)
