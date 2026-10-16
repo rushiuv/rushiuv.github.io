@@ -6,3 +6,5 @@
 
 .basic-sidebar nav,.basic-article nav{display:block;width:auto;white-space:normal}.basic-article nav a{white-space:normal}.basic-toc nav a{padding:3px 0;font-size:13px}.basic-sidebar nav a{white-space:normal}
 @media(max-width:620px){.basic-sidebar nav{display:none}}
+
+.basic-toc-title{margin:0;font-size:12px;font-weight:600;color:#68778b}.basic-toc #TableOfContents ul{margin-top:8px;margin-bottom:0}
