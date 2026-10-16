@@ -10,6 +10,7 @@
 <link rel="icon" href="{{ "images/site/favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="stylesheet" href="{{ "css/site.css" | relURL }}?v={{ now.Unix }}">
 <link rel="stylesheet" href="{{ "css/wiki.css" | relURL }}?v={{ now.Unix }}">
+{{ if or (eq .Section "wiki") .IsHome }}<link rel="stylesheet" href="{{ "css/basics.css" | relURL }}?v=20261016">{{ end }}
 <link rel="stylesheet" href="{{ "css/portal.css" | relURL }}?v=20261016">
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
 </head>

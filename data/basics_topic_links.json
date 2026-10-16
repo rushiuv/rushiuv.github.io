@@ -1,0 +1,12 @@
+{
+  "磁编码器": "magnetic-encoder",
+  "光电编码器": "optical-encoder",
+  "电感编码器": "inductive-encoder",
+  "编码器接口": "interfaces",
+  "非线性校准": "resolution-accuracy",
+  "离轴": "mounting",
+  "多圈编码器": "singleturn-multiturn",
+  "FOC": "latency",
+  "AMR": "magnetic-encoder",
+  "TMR": "magnetic-encoder"
+}

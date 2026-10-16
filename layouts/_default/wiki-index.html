@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $entries := sort (where site.Pages "Params.wiki" true) "Params.wiki_rank" }}
 <header class="page-head"><p class="kicker">如是有为 · WIKI</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div></header>
+<section class="wiki-basics-banner"><div><p class="basics-kicker">先把概念弄明白</p><h2>编码器基础知识</h2><p>从位置反馈、性能参数到检测原理、安装与接口，{{ len (site.GetPage "/wiki/basics").RegularPages }} 个词条逐个讲清。</p></div><a href="{{ "wiki/basics/" | relURL }}">开始阅读 →</a></section>
 <section class="wiki-index">
   <h2>从型号与品牌开始查找</h2>
   <p class="muted">已整理 {{ len $entries }} 个词条 · 覆盖现有全部型号与公司标签 · 按关联文章篇数排序</p>

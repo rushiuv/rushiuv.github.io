@@ -1,0 +1,39 @@
+{
+  "mode": "built-in image_gen",
+  "style": "Chrome OS漫画风；按官方图结构重绘",
+  "prompts": [
+    {
+      "key": "optical",
+      "prompt": "Edit the attached official Renishaw RESOLUTE optical encoder cutaway into a clean Chrome OS inspired engineering cartoon for a Chinese technical wiki. This is a STRICT STYLE REDRAW, not a redesign. Preserve the reference's exact topology and relative placement: absolute scale horizontal at very top; housing below it; light source at bottom-left with collimating lens directly above; beam-splitter at upper middle; detector lens at middle-right and custom detector array directly below it at bottom-right. Preserve the original illumination and imaging light paths with their routing, bends and arrow directions exactly. The scale stays above both source and detector; all optics and detector remain below scale inside housing. Do not substitute a transmissive encoder, rotating disc, motor shaft, PCB coils or any new components. Redraw in flat rounded shapes, crisp navy outline, warm ivory background, blue and mint optics, yellow illumination accents, restrained coral arrows. Remove metallic photorealistic textures. Keep all 7 existing Chinese labels legible and semantically unchanged: 绝对式栅尺, 分光棱镜, 准直透镜, 读数头窗口, 探测器透镜, 高强度光源, 高速定制探测器阵列. No extra text, no logo, no invented arrows. Preserve source aspect ratio in a high resolution landscape composition. Technical fidelity takes priority over decorative style.",
+      "reference": "https://www.renishaw.com.cn/media/img/zh/4fef5f7f1f5848fe94e6cec18af2442d.jpg",
+      "file": "exec-40093e3d-8d94-4b0c-b2d0-64dd167f28a8.png",
+      "asset": "/images/basics/optical-reflective.webp",
+      "original": "assets/basics-source/optical-reflective.png",
+      "sha256": "3b004f67cf07709c864044c5214fb776a250817b5b3a67b4a28be842295889c2"
+    },
+    {
+      "key": "magnetic",
+      "prompt": "Use case scientific-educational. Use ONLY Figure 3-1 'Correct Rotation Alignment' near the bottom of the attached official TI PDF page as the reference. Ignore all other page content. Redraw that figure as a large clean original Chrome OS inspired flat cartoon illustration, landscape 1536x1024, warm ivory background, rounded shapes, navy contours, blue/coral magnet, muted grey sensor and restrained turquoise magnetic-field curves. Strictly preserve its physical geometry: a single short cylindrical diametrically magnetized disk floats horizontally directly ABOVE a single black gull-wing IC package with clear air gap. The magnet top and side are divided into left blue and right red halves, not top/bottom poles. The magnet center is vertically aligned with the IC sensing center. Preserve the same magnetic field loop topology and directions as the reference. No shaft, no PCB, no ring magnet, no motor, no connector, no sensor that is not in the figure, no added rotation arrows. Keep magnet, IC, field loops in the same relative positions. Add only two small callouts with exact Chinese labels '径向充磁磁体' pointing to magnet and '磁敏芯片' pointing to IC. No TI logo, no simulated data plot, no chart, no page text. This is an accurate stylistic redraw of Figure 3-1, not a new mechanical design.",
+      "reference": "https://www.ti.com/lit/pdf/slya085",
+      "figure": "Figure 3-1, PDF page4",
+      "file": "exec-de3332a1-d0cc-4ba9-999b-7f4c05b61f74.png",
+      "asset": "/images/basics/magnetic-on-axis.webp",
+      "original": "assets/basics-source/magnetic-on-axis.png",
+      "sha256": "cbc9f4ae1d6cfaa4cbc498c05d7561e1f482e07ae5e4dcdcd8c1502ba1693b85"
+    },
+    {
+      "key": "incremental",
+      "prompt": "Strict style redraw of the attached Renishaw incremental encoder position diagram. Keep EXACT diagram logic, do not add a readhead, electronics, gears, discs or wires. Landscape 1536x768, Chrome OS inspired rounded flat editorial cartoon, ivory background, navy contours, blue scale, yellow/orange arrows, clean labels. Preserve horizontal uniformly striped incremental scale in middle, single distinct reference mark near left, vertical datum line through that reference mark, a circled reading location about two thirds along scale, horizontal double-headed distance arrow from datum to reading location above scale, left-pointing arrow outside left end, right-pointing arrow outside right end, small +1/-1 circle below reading location. Replace numbered callouts with these exact short Chinese labels, each correctly associated: above distance arrow '相对基准的计数'; at vertical datum '基准位置'; pointing at unique mark '参考标记'; left arrow '计数减小'; right arrow '计数增大'; by +1/-1 circle '计数变化'. Do not turn the repeated scale into absolute code, do not show arbitrary absolute angles or confusing coordinates. Preserve original positions and relationships, only improve typography, spacing, palette and rounded cartoon look. All labels legible, no original logos, no other text.",
+      "reference": "https://www.renishaw.com.cn/media/img/gen/d34abd0f73d4415ebd103ab6988bf137.jpg",
+      "file": "exec-31f8aafb-f094-44ba-bf78-4bcf0a5683b9.png",
+      "asset": "/images/basics/incremental-position.webp",
+      "original": "assets/basics-source/incremental-position.png",
+      "sha256": "64f9d31c3f27e9cd8893d696320a8eea6185cb898ad146894e91b6a5d1e37927"
+    }
+  ],
+  "rejected": [
+    "首张光路穿过转轴",
+    "第二张光源与探测器安装关系会误导",
+    "无官方参考的在轴离轴拼图未采用"
+  ]
+}

@@ -43,3 +43,6 @@ html{scroll-padding-top:90px}
 @media(max-width:640px){.wiki-layout{padding-top:28px}.wiki-head .page-title{font-size:29px}.wiki-description{font-size:16px}.wiki-content{font-size:16px}.wiki-actions{gap:8px}.wiki-actions .btn{padding:9px 13px}.wiki-index{padding:18px}.wiki-index-grid{grid-template-columns:1fr}.wiki-related h2{font-size:21px}.wiki-content img{padding:8px;max-height:300px}}
 
 .wiki-kind-label{display:block;margin-top:12px;color:var(--muted)}#wiki-kind{max-width:100%;margin-left:8px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;font:inherit;color:inherit;background:var(--card)}
+
+/* Parameter definitions linked from model cards. */
+.model-basic-links{display:flex;gap:8px 16px;flex-wrap:wrap;align-items:center;margin:18px 0;font-size:12px}.model-basic-links>span{color:var(--muted)}

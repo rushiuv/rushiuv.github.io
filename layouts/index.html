@@ -29,9 +29,11 @@
 {{ define "main" }}
 <section class="portal-results" id="portal-results" hidden aria-live="polite">
   <div class="portal-section-head"><div><p class="portal-overline">站内检索</p><h2 id="portal-results-title">搜索结果</h2></div><button class="text-button" id="portal-search-clear" type="button">收起结果 ×</button></div>
-  <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button></div>
+  <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button><button type="button" data-search-kind="basic">基础知识</button></div>
   <p class="search-count" id="portal-search-count"></p><div id="portal-search-list" class="search-list"></div><button class="search-more" id="portal-search-more" type="button" hidden>显示更多结果 ↓</button>
 </section>
+
+<section class="wiki-basics-banner portal-basics-entry"><div><p class="basics-kicker">编码器基础知识</p><h2>先把概念弄明白，再看型号。</h2><p>分辨率与精度、增量与绝对、磁光电感原理、安装和接口。</p></div><a href="{{ "wiki/basics/" | relURL }}">阅读 {{ len (site.GetPage "/wiki/basics").RegularPages }} 个基础词条 →</a></section>
 
 <section class="portal-section" id="topics">
   <div class="portal-section-head"><div><p class="portal-overline">按技术方向阅读</p><h2>找到你正在研究的问题</h2></div><a class="section-more" href="{{ "topics/" | relURL }}">全部技术专题 ↗</a></div>
@@ -59,6 +61,7 @@
 {{ $index := slice }}
 {{ range where site.Pages "Params.wiki" true }}{{ $aliases := delimit (.Params.related_companies | default slice) " " }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" (.Description | plainify) "kind" .Params.wiki_type "keywords" (printf "%s %s" (.Params.wiki_category | default "") $aliases)) }}{{ end }}
 {{ range where site.RegularPages "Section" "posts" }}{{ $tags := slice }}{{ range .GetTerms "tags" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ range .GetTerms "models" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ range .GetTerms "companies" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" (.Description | plainify | truncate 160) "kind" "post" "keywords" (delimit $tags " ")) }}{{ end }}
+{{ range where site.RegularPages "Params.basic_entry" true }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" .Description "kind" "basic" "keywords" .Params.basic_group) }}{{ end }}
 <script type="application/json" id="portal-search-data">{{ $index | jsonify | safeJS }}</script>
 <script src="{{ "js/portal.js" | relURL }}" defer></script>
 {{ end }}

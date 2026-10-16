@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-16",
+  "entries": [
+    {
+      "slug": "what-is-an-encoder",
+      "title": "编码器是什么：从运动到位置反馈",
+      "group": "认识编码器",
+      "description": "分清码盘、读头、芯片和整机；用三个独立维度理解编码器分类。",
+      "related": [
+        "absolute-incremental",
+        "resolution-accuracy",
+        "magnetic-encoder"
+      ]
+    },
+    {
+      "slug": "absolute-incremental",
+      "title": "增量与绝对：上电后知道什么",
+      "group": "认识编码器",
+      "description": "用断电移动与重新上电的例子，讲清增量位置、绝对位置和机器零点。",
+      "related": [
+        "abz",
+        "singleturn-multiturn",
+        "interfaces"
+      ]
+    },
+    {
+      "slug": "singleturn-multiturn",
+      "title": "单圈与多圈：掉电后怎样知道转过几圈",
+      "group": "认识编码器",
+      "description": "把圈内角度与圈数拆开，区分存储、备用电源、齿轮与自供能计圈。",
+      "related": [
+        "absolute-incremental",
+        "resolution-accuracy",
+        "interfaces"
+      ]
+    },
+    {
+      "slug": "resolution-accuracy",
+      "title": "分辨率、准确度与重复性：三件不同的事",
+      "group": "看懂性能参数",
+      "description": "用16位刻度和固定偏差示例，判断更高位数究竟改善了什么。",
+      "related": [
+        "angle-noise",
+        "latency",
+        "mounting"
+      ]
+    },
+    {
+      "slug": "angle-noise",
+      "title": "角度噪声：静止读数为何还在跳",
+      "group": "看懂性能参数",
+      "description": "理解RMS、带宽、平均与速度差分；避免把读数稳定误认成准确。",
+      "related": [
+        "resolution-accuracy",
+        "latency",
+        "abz"
+      ]
+    },
+    {
+      "slug": "latency",
+      "title": "更新率、延迟与带宽：读得快是否跟得上",
+      "group": "看懂性能参数",
+      "description": "用6000 rpm与10 μs算例，将数据刷新、信息年龄和动态跟踪分开。",
+      "related": [
+        "angle-noise",
+        "interfaces",
+        "resolution-accuracy"
+      ]
+    },
+    {
+      "slug": "magnetic-encoder",
+      "title": "磁编码器：霍尔、AMR与TMR怎样读角度",
+      "group": "检测原理与安装",
+      "description": "从磁场分量和磁阻方向响应出发，区分传感原理、周期与单圈绝对信息。",
+      "related": [
+        "mounting",
+        "absolute-incremental",
+        "optical-encoder"
+      ]
+    },
+    {
+      "slug": "optical-encoder",
+      "title": "光电编码器：从刻线、码道到角度",
+      "group": "检测原理与安装",
+      "description": "区分透射与反射、增量周期与绝对编码；理解电子细分怎样获得细刻度。",
+      "related": [
+        "resolution-accuracy",
+        "abz",
+        "inductive-encoder"
+      ]
+    },
+    {
+      "slug": "inductive-encoder",
+      "title": "电感编码器：线圈和金属靶怎样测位置",
+      "group": "检测原理与安装",
+      "description": "聚焦PCB发射—接收耦合路线，讲清激励、涡流、接收信号与靶片位置的关系。",
+      "related": [
+        "magnetic-encoder",
+        "mounting",
+        "absolute-incremental"
+      ]
+    },
+    {
+      "slug": "mounting",
+      "title": "在轴、离轴、气隙与偏心：先把几何关系说清",
+      "group": "检测原理与安装",
+      "description": "分清读头位置、感应中心与旋转轴，避免用一个气隙数字概括安装质量。",
+      "related": [
+        "magnetic-encoder",
+        "resolution-accuracy",
+        "inductive-encoder"
+      ]
+    },
+    {
+      "slug": "abz",
+      "title": "ABZ：正交计数、四倍频与零位索引",
+      "group": "接口与应用",
+      "description": "通过四个状态解释方向与四倍计数，并用1000 PPR算清计数频率。",
+      "related": [
+        "absolute-incremental",
+        "interfaces",
+        "singleturn-multiturn"
+      ]
+    },
+    {
+      "slug": "interfaces",
+      "title": "SPI、SSI与BiSS：角度如何交给控制器",
+      "group": "接口与应用",
+      "description": "把协议、帧格式和电气层分开，读懂时钟、锁存、状态位与CRC的关系。",
+      "related": [
+        "abz",
+        "latency",
+        "absolute-incremental"
+      ]
+    }
+  ],
+  "references_for_structure": [
+    "https://conntek.github.io/basics/",
+    "https://encoder.wiki/"
+  ],
+  "image_policy": "按官方原理图重绘，保留结构与信号关系，仅改变漫画风格；技术审查不合格的生成图弃用。"
+}
