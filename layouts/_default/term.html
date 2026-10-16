@@ -31,6 +31,16 @@
   {{ range $pager.Pages }}{{ partial "post-item.html" . }}{{ end }}
   {{ partial "pager.html" $pager }}
 </section>
+{{ else if .Params.topic_guide }}
+<section class="topic-guide" aria-labelledby="topic-guide-title">
+  <header class="topic-guide-head"><a class="topic-back" href="{{ "topics/" | relURL }}">技术专题 /</a><h1 id="topic-guide-title">{{ .Title }}</h1><p class="topic-guide-deck">{{ .Description }}</p><div class="topic-guide-meta"><span>主题导读</span><span>{{ len .Pages }} 篇相关文章</span><a href="#related-posts">直接阅读文章 ↓</a></div></header>
+  {{ if eq $pager.PageNumber 1 }}
+  <div class="topic-guide-grid"><article class="content topic-guide-body">{{ .Content }}</article><aside class="topic-guide-aside"><h2>相关主题</h2>{{ range $name := .Params.related_topics }}{{ range site.Taxonomies.tags.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} <span>↗</span></a>{{ end }}{{ end }}{{ end }}<p>具体器件参数，请继续查对应型号与官方资料。</p><a class="topic-library-link" href="{{ "wiki/" | relURL }}">进入型号与公司资料库 →</a></aside></div>
+  {{ else }}
+  <p class="topic-return"><a href="{{ .RelPermalink }}">← 返回 {{ .Title }} 的主题导读</a></p>
+  {{ end }}
+</section>
+<section class="posts topic-posts" id="related-posts"><header class="portal-section-head"><div><p class="portal-overline">延伸阅读</p><h2>{{ .Title }}相关文章</h2></div><span class="section-note">{{ len .Pages }} 篇 · 按发表时间排序</span></header>{{ range $pager.Pages }}{{ partial "post-item.html" . }}{{ end }}{{ partial "pager.html" $pager }}</section>
 {{ else }}
 <div class="layout"><section class="posts"><header class="page-head"><h1 class="page-title">{{ .Title }}</h1><p class="muted">共 {{ len .Pages }} 篇</p></header>
 {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}

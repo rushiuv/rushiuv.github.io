@@ -115,3 +115,33 @@ button:focus-visible,a:focus-visible{outline:2px solid #416cc5;outline-offset:4p
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.topic-card{transition:none}}
 
 .search-more{display:block;margin:20px auto 0;padding:9px 20px;border:1px solid #d6dfed;background:#f5f8fc;color:#49658e;border-radius:6px;font:12px var(--sans);cursor:pointer}
+
+
+/* 标签页导读：正文只在第一页显示，文章继续由标签关系维护。 */
+.topic-guide{margin-top:30px;background:#fff;border:1px solid #e0e6ef;border-radius:10px;overflow:hidden}
+.topic-guide-head{padding:27px 34px 23px;border-bottom:1px solid #e8edf3}
+.topic-back{font-size:11px;color:#8293aa}
+.topic-guide-head h1{font:650 33px/1.4 var(--sans);letter-spacing:-.03em;margin:11px 0 8px;color:#213955}
+.topic-guide-deck{font-size:14px;color:#7b899b;line-height:1.9;margin:0;max-width:58em}
+.topic-guide-meta{display:flex;flex-wrap:wrap;gap:15px;font-size:10px;color:#8c99aa;margin-top:17px}
+.topic-guide-meta>span+span{border-left:1px solid #dfe6ef;padding-left:15px}
+.topic-guide-meta a{color:#647eaa}
+.topic-guide-grid{display:grid;grid-template-columns:minmax(0,1fr) 205px;gap:44px;padding:25px 34px 30px}
+.topic-guide-body{font-family:var(--sans);font-size:14px;color:#4a5c72;min-width:0}
+.topic-guide-body>p:first-child{margin-top:0}
+.topic-guide-body p{line-height:2;margin-bottom:15px}
+.topic-guide-body h2{font:600 18px/1.6 var(--sans);margin:23px 0 10px;padding:0;border:0;color:#304d73;scroll-margin-top:100px}
+.topic-guide-body a{font-size:12px;text-decoration:underline;text-decoration-color:#b9c8e3;text-underline-offset:3px}
+.topic-guide-body p:last-child{margin-bottom:0}
+.topic-guide-aside{border-left:1px solid #e7edf4;padding-left:23px;align-self:start}
+.topic-guide-aside h2{font:500 11px var(--sans);letter-spacing:.1em;color:#91a0b4;margin:3px 0 15px}
+.topic-guide-aside>a{display:flex;justify-content:space-between;gap:8px;font-size:12px;padding:9px 0;border-bottom:1px solid #eef1f6;color:#526f98}
+.topic-guide-aside>a>span{color:#a0b1ca}
+.topic-guide-aside p{font-size:10px;line-height:1.9;color:#96a2b3;margin-top:24px}
+.topic-guide-aside .topic-library-link{font-size:10px;border:0}
+.topic-posts{padding:32px 0 45px;max-width:880px;scroll-margin-top:100px}
+.topic-posts .portal-section-head{margin-bottom:2px}
+.topic-posts h2{font:600 23px/1.5 var(--sans);margin:0;color:#2c405d}
+.topic-posts .item h2{font-family:var(--sans);font-size:18px}
+.topic-return{padding:15px 34px;font-size:13px}
+@media(max-width:760px){.topic-guide{margin-top:20px}.topic-guide-head{padding:22px}.topic-guide-head h1{font-size:28px}.topic-guide-deck{font-size:12px}.topic-guide-grid{grid-template-columns:1fr;padding:22px;gap:25px}.topic-guide-body{font-size:13px}.topic-guide-aside{border-left:0;border-top:1px solid #e7edf4;padding:19px 0 0}.topic-guide-aside p{margin-top:15px}.topic-guide-aside>a{max-width:100%}.topic-guide-body h2{font-size:17px}.topic-posts .item h2{font-size:16px}.topic-posts h2{font-size:21px}.topic-guide-meta{gap:11px}.topic-guide-meta>span+span{padding-left:11px}.topic-return{padding-left:22px}}
