@@ -113,3 +113,13 @@ python3.11 tools/boilerplate.py --fix     # 真切（content/posts 与 posts_ext
 本次7个型号／系列均提供已取回并核对的官方PDF地址，KTH78链接KTH7812代表型号手册；图片为官方功能框图局部或产品示意，附来源，WebP仅压缩与裁取原图，不重画电气关系。图片与文档来源保存在 `data/wiki-sources.json`。AS5047P使用英飞凌当前产品与手册地址，注明2026年7月业务迁移。
 
 构建：`hugo --minify --destination <独立输出目录>`。结构检查沿用 `tools/check_readability.py`，词条还需检查目录、下载按钮、关联词条、文章分页与窄屏表格。发布时正常推送源码到source；静态部署以远端main为父提交生成新提交，保留 `.github/workflows/pages.yml` 与 `.nojekyll`，禁止使用旧部署脚本的强推路径。
+
+
+### 2026-10-16 全部型号与公司标签词条
+
+- 311篇文章现有models 78个、companies 91个，共169条；在首批20条基础上补齐149条。
+- 完整排名与统计口径在data/wiki-inventory.json；首批选择记录data/wiki-seed.json保留。
+- 新增来源、文档摘要、资料核对日期与正文路径在data/wiki-expansion-sources.json。
+- 非芯片产品保留实际类别；学校、金融和软件机构保留真实身份。不得将一般机理解释当成型号实测。
+- 更新范围使用tools/wiki_inventory.py --limit 10000重新盘点，再按对应taxonomy的_index.md维护，不自动修改文章标签。
+- 官网资料缺失时保留正式入口和明确边界，不使用邻近型号参数填空；参考文档或相关后缀需明确标注。

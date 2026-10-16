@@ -1,0 +1,852 @@
+{
+  "post_count": 311,
+  "metric": "associated post count, once per post",
+  "tie_break": "name.casefold() ascending",
+  "terms": [
+    {
+      "kind": "companies",
+      "name": "昆泰芯",
+      "count": 84
+    },
+    {
+      "kind": "models",
+      "name": "KTM5900",
+      "count": 34
+    },
+    {
+      "kind": "companies",
+      "name": "iC-Haus",
+      "count": 27
+    },
+    {
+      "kind": "companies",
+      "name": "ams OSRAM",
+      "count": 24
+    },
+    {
+      "kind": "companies",
+      "name": "Melexis",
+      "count": 24
+    },
+    {
+      "kind": "companies",
+      "name": "纳芯微",
+      "count": 20
+    },
+    {
+      "kind": "companies",
+      "name": "TI",
+      "count": 19
+    },
+    {
+      "kind": "companies",
+      "name": "麦歌恩",
+      "count": 17
+    },
+    {
+      "kind": "models",
+      "name": "KTH78",
+      "count": 16
+    },
+    {
+      "kind": "companies",
+      "name": "英飞凌",
+      "count": 16
+    },
+    {
+      "kind": "models",
+      "name": "KTM5800",
+      "count": 15
+    },
+    {
+      "kind": "companies",
+      "name": "宇树",
+      "count": 15
+    },
+    {
+      "kind": "companies",
+      "name": "海德汉",
+      "count": 15
+    },
+    {
+      "kind": "models",
+      "name": "KTM5200",
+      "count": 13
+    },
+    {
+      "kind": "companies",
+      "name": "特斯拉",
+      "count": 13
+    },
+    {
+      "kind": "models",
+      "name": "AS5047P",
+      "count": 12
+    },
+    {
+      "kind": "models",
+      "name": "KTO9512",
+      "count": 12
+    },
+    {
+      "kind": "companies",
+      "name": "多维科技",
+      "count": 12
+    },
+    {
+      "kind": "companies",
+      "name": "雷尼绍",
+      "count": 11
+    },
+    {
+      "kind": "models",
+      "name": "KTH7111",
+      "count": 10
+    },
+    {
+      "kind": "models",
+      "name": "MT6835",
+      "count": 10
+    },
+    {
+      "kind": "models",
+      "name": "KTH5701",
+      "count": 9
+    },
+    {
+      "kind": "companies",
+      "name": "Renesas",
+      "count": 9
+    },
+    {
+      "kind": "companies",
+      "name": "TDK",
+      "count": 9
+    },
+    {
+      "kind": "companies",
+      "name": "ADI",
+      "count": 8
+    },
+    {
+      "kind": "companies",
+      "name": "Allegro",
+      "count": 8
+    },
+    {
+      "kind": "companies",
+      "name": "多摩川",
+      "count": 8
+    },
+    {
+      "kind": "companies",
+      "name": "希磁",
+      "count": 8
+    },
+    {
+      "kind": "companies",
+      "name": "NVIDIA",
+      "count": 7
+    },
+    {
+      "kind": "companies",
+      "name": "小米",
+      "count": 7
+    },
+    {
+      "kind": "companies",
+      "name": "汇川",
+      "count": 7
+    },
+    {
+      "kind": "models",
+      "name": "MT6901",
+      "count": 6
+    },
+    {
+      "kind": "models",
+      "name": "TLE5012B",
+      "count": 6
+    },
+    {
+      "kind": "models",
+      "name": "TMR3111",
+      "count": 6
+    },
+    {
+      "kind": "companies",
+      "name": "堡盟",
+      "count": 6
+    },
+    {
+      "kind": "companies",
+      "name": "西门子",
+      "count": 6
+    },
+    {
+      "kind": "companies",
+      "name": "Anthropic",
+      "count": 5
+    },
+    {
+      "kind": "models",
+      "name": "CT-21X",
+      "count": 5
+    },
+    {
+      "kind": "models",
+      "name": "iC-MU",
+      "count": 5
+    },
+    {
+      "kind": "models",
+      "name": "KTH7101",
+      "count": 5
+    },
+    {
+      "kind": "models",
+      "name": "KTM5300",
+      "count": 5
+    },
+    {
+      "kind": "models",
+      "name": "KTM5910",
+      "count": 5
+    },
+    {
+      "kind": "companies",
+      "name": "RLS",
+      "count": 5
+    },
+    {
+      "kind": "companies",
+      "name": "传周科技",
+      "count": 5
+    },
+    {
+      "kind": "companies",
+      "name": "美新半导体",
+      "count": 5
+    },
+    {
+      "kind": "models",
+      "name": "AS5600",
+      "count": 4
+    },
+    {
+      "kind": "companies",
+      "name": "Broadcom",
+      "count": 4
+    },
+    {
+      "kind": "companies",
+      "name": "Intel",
+      "count": 4
+    },
+    {
+      "kind": "companies",
+      "name": "MPS",
+      "count": 4
+    },
+    {
+      "kind": "companies",
+      "name": "OpenAI",
+      "count": 4
+    },
+    {
+      "kind": "companies",
+      "name": "中芯国际",
+      "count": 4
+    },
+    {
+      "kind": "companies",
+      "name": "比亚迪",
+      "count": 4
+    },
+    {
+      "kind": "companies",
+      "name": "锐鹰",
+      "count": 4
+    },
+    {
+      "kind": "companies",
+      "name": "雷赛",
+      "count": 4
+    },
+    {
+      "kind": "models",
+      "name": "AS5048A",
+      "count": 3
+    },
+    {
+      "kind": "models",
+      "name": "AS5147",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "EPFL",
+      "count": 3
+    },
+    {
+      "kind": "models",
+      "name": "KTH5900",
+      "count": 3
+    },
+    {
+      "kind": "models",
+      "name": "KTM5220",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "maxon",
+      "count": 3
+    },
+    {
+      "kind": "models",
+      "name": "MLX90520",
+      "count": 3
+    },
+    {
+      "kind": "models",
+      "name": "MT6701",
+      "count": 3
+    },
+    {
+      "kind": "models",
+      "name": "MT6816",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "Qualcomm",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "Sensitec",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "ST",
+      "count": 3
+    },
+    {
+      "kind": "models",
+      "name": "TMR3108",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "中科无线",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "优必选",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "倍福",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "安川",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "艾为",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "金力永磁",
+      "count": 3
+    },
+    {
+      "kind": "companies",
+      "name": "ABB",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "ADMT4000",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "AM26C32",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "Apple",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "AS5048B",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "D435i",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "Figure AI",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "iC-TW29",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "IS620N",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "KTH1701",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "KTH7812",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "KTH7823",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "KTM1305",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "MA600",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "MID-360",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "MLX90316",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "MLX90382",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "NSM350x",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "NXP",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "PNH3348",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "POSITAL",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "SROA48",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "STM32",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "SV660ND",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "TMR3107",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "华为",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "华虹",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "厦门钨业",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "圣邦微",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "小鹏",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "弓望",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "智元",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "海康",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "美敦力",
+      "count": 2
+    },
+    {
+      "kind": "companies",
+      "name": "舍弗勒",
+      "count": 2
+    },
+    {
+      "kind": "models",
+      "name": "ADM32F036A3",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "AEDR-850x",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "Akko",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "AKM",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "ANYbotics",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "AS5247",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "CD4051",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "Cloudflare",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "EAM1010",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "ENX 22 EMT",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "ETH",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "GO-M8010",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "HAL9303R",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "Hengstler",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "KIN60",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "KMZ60",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "KTH3105",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "KTH7112",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "KTH7815",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "KTM1301",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "KTM13XX",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "LAN8841",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "MLX90380",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "MLX90381",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "MS1000",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "MX6800",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "MXC3638AL",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "nRF52832",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "PixArt",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "PMW3389",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "QRD1114",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "RXMA30",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "SR3511N",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "SS49E",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "TCRT5000",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "TLE5502",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "TMR2617S",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "TMR3110",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "UBS",
+      "count": 1
+    },
+    {
+      "kind": "models",
+      "name": "WIN48",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "Wooting",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "他山",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "众擎",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "保隆科技",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "光鉴",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "台积电",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "图漾",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "奥比中光",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "宝马",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "峰岹",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "帕西尼",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "康诺思腾",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "易德龙",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "矽睿",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "禹衡",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "禾川",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "英达森斯",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "达尔优",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "追觅",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "钛虎",
+      "count": 1
+    },
+    {
+      "kind": "companies",
+      "name": "长鑫",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,1769 @@
+{
+  "checked_at": "2026-10-16",
+  "entries": [
+    {
+      "name": "MT6835",
+      "kind": "models",
+      "rank": 21,
+      "count": 10,
+      "path": "content/models/mt6835/_index.md",
+      "characters": 1643,
+      "official_url": "https://www.magntek.com.cn/",
+      "datasheet_url": "https://www.magntek.com.cn/upload/pdf/202312/MT6835_Rev.1.3_%E4%B8%AD%E6%96%87%E7%89%88.pdf"
+    },
+    {
+      "name": "KTH5701",
+      "kind": "models",
+      "rank": 22,
+      "count": 9,
+      "path": "content/models/kth5701/_index.md",
+      "characters": 1579,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/57xilie/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5701AQ2AQ3_DS_CN.pdf"
+    },
+    {
+      "name": "Renesas",
+      "kind": "companies",
+      "rank": 23,
+      "count": 9,
+      "path": "content/companies/renesas/_index.md",
+      "characters": 1698,
+      "official_url": "https://www.renesas.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "TDK",
+      "kind": "companies",
+      "rank": 24,
+      "count": 9,
+      "path": "content/companies/tdk/_index.md",
+      "characters": 1704,
+      "official_url": "https://www.tdk.com/en/index.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "ADI",
+      "kind": "companies",
+      "rank": 25,
+      "count": 8,
+      "path": "content/companies/adi/_index.md",
+      "characters": 1708,
+      "official_url": "https://www.analog.com/en/products/admt4000.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "Allegro",
+      "kind": "companies",
+      "rank": 26,
+      "count": 8,
+      "path": "content/companies/allegro/_index.md",
+      "characters": 1675,
+      "official_url": "https://www.allegromicro.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "多摩川",
+      "kind": "companies",
+      "rank": 27,
+      "count": 8,
+      "path": "content/companies/多摩川/_index.md",
+      "characters": 1683,
+      "official_url": "https://www.tamagawa-seiki.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "希磁",
+      "kind": "companies",
+      "rank": 28,
+      "count": 8,
+      "path": "content/companies/希磁/_index.md",
+      "characters": 1670,
+      "official_url": "https://www.sinomags.com/Index/index.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "NVIDIA",
+      "kind": "companies",
+      "rank": 29,
+      "count": 7,
+      "path": "content/companies/nvidia/_index.md",
+      "characters": 1667,
+      "official_url": "https://www.nvidia.com/en-us/industries/robotics/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "小米",
+      "kind": "companies",
+      "rank": 30,
+      "count": 7,
+      "path": "content/companies/小米/_index.md",
+      "characters": 1610,
+      "official_url": "https://www.mi.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "汇川",
+      "kind": "companies",
+      "rank": 31,
+      "count": 7,
+      "path": "content/companies/汇川/_index.md",
+      "characters": 1671,
+      "official_url": "https://www.inovance.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "MT6901",
+      "kind": "models",
+      "rank": 32,
+      "count": 6,
+      "path": "content/models/mt6901/_index.md",
+      "characters": 1590,
+      "official_url": "https://www.novosns.com/",
+      "datasheet_url": "https://mgmt.novosns.com/Public/Uploads/uploadfile3/files/20251106/NOVOSENSE%20Industrial%20Control%20Solution_202510.pdf"
+    },
+    {
+      "name": "TLE5012B",
+      "kind": "models",
+      "rank": 33,
+      "count": 6,
+      "path": "content/models/tle5012b/_index.md",
+      "characters": 1635,
+      "official_url": "https://www.infineon.com/part/TLE5012B-E5000",
+      "datasheet_url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-tle5012b-exxxx-datasheet-en.pdf"
+    },
+    {
+      "name": "TMR3111",
+      "kind": "models",
+      "rank": 34,
+      "count": 6,
+      "path": "content/models/tmr3111/_index.md",
+      "characters": 1644,
+      "official_url": "https://www.dowaytech.com/TMR3111-TMR-Angle-Sensors.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "堡盟",
+      "kind": "companies",
+      "rank": 35,
+      "count": 6,
+      "path": "content/companies/堡盟/_index.md",
+      "characters": 1681,
+      "official_url": "https://www.baumer.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "西门子",
+      "kind": "companies",
+      "rank": 36,
+      "count": 6,
+      "path": "content/companies/西门子/_index.md",
+      "characters": 1653,
+      "official_url": "https://www.siemens.com/global/en/products/drives.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "Anthropic",
+      "kind": "companies",
+      "rank": 37,
+      "count": 5,
+      "path": "content/companies/anthropic/_index.md",
+      "characters": 1611,
+      "official_url": "https://www.anthropic.com/company",
+      "datasheet_url": ""
+    },
+    {
+      "name": "CT-21X",
+      "kind": "models",
+      "rank": 38,
+      "count": 5,
+      "path": "content/models/ct-21x/_index.md",
+      "characters": 1641,
+      "official_url": "https://www.ctunite.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "iC-MU",
+      "kind": "models",
+      "rank": 39,
+      "count": 5,
+      "path": "content/models/ic-mu/_index.md",
+      "characters": 1584,
+      "official_url": "https://www.ichaus.de/product/ic-mu/",
+      "datasheet_url": "https://www.ichaus.de/product/ic-mu/"
+    },
+    {
+      "name": "KTH7101",
+      "kind": "models",
+      "rank": 40,
+      "count": 5,
+      "path": "content/models/kth7101/_index.md",
+      "characters": 1646,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+    },
+    {
+      "name": "KTM5300",
+      "kind": "models",
+      "rank": 41,
+      "count": 5,
+      "path": "content/models/ktm5300/_index.md",
+      "characters": 1639,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM53XX/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5300%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+    },
+    {
+      "name": "KTM5910",
+      "kind": "models",
+      "rank": 42,
+      "count": 5,
+      "path": "content/models/ktm5910/_index.md",
+      "characters": 1645,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5910%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf"
+    },
+    {
+      "name": "RLS",
+      "kind": "companies",
+      "rank": 43,
+      "count": 5,
+      "path": "content/companies/rls/_index.md",
+      "characters": 1668,
+      "official_url": "https://www.rls.si/eng/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "传周科技",
+      "kind": "companies",
+      "rank": 44,
+      "count": 5,
+      "path": "content/companies/传周科技/_index.md",
+      "characters": 1667,
+      "official_url": "https://www.time-vision.com/about/overview",
+      "datasheet_url": ""
+    },
+    {
+      "name": "美新半导体",
+      "kind": "companies",
+      "rank": 45,
+      "count": 5,
+      "path": "content/companies/美新半导体/_index.md",
+      "characters": 1677,
+      "official_url": "https://www.memsic.com/cn",
+      "datasheet_url": ""
+    },
+    {
+      "name": "AS5600",
+      "kind": "models",
+      "rank": 46,
+      "count": 4,
+      "path": "content/models/as5600/_index.md",
+      "characters": 1617,
+      "official_url": "https://www.infineon.com/part/AS5600",
+      "datasheet_url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf"
+    },
+    {
+      "name": "Broadcom",
+      "kind": "companies",
+      "rank": 47,
+      "count": 4,
+      "path": "content/companies/broadcom/_index.md",
+      "characters": 1676,
+      "official_url": "https://www.broadcom.com/products/motion-control-encoders",
+      "datasheet_url": ""
+    },
+    {
+      "name": "Intel",
+      "kind": "companies",
+      "rank": 48,
+      "count": 4,
+      "path": "content/companies/intel/_index.md",
+      "characters": 1630,
+      "official_url": "https://www.intel.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "MPS",
+      "kind": "companies",
+      "rank": 49,
+      "count": 4,
+      "path": "content/companies/mps/_index.md",
+      "characters": 1689,
+      "official_url": "https://www.monolithicpower.com/en/products/sensors.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "OpenAI",
+      "kind": "companies",
+      "rank": 50,
+      "count": 4,
+      "path": "content/companies/openai/_index.md",
+      "characters": 1622,
+      "official_url": "https://openai.com/about/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "中芯国际",
+      "kind": "companies",
+      "rank": 51,
+      "count": 4,
+      "path": "content/companies/中芯国际/_index.md",
+      "characters": 1572,
+      "official_url": "https://www.smics.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "比亚迪",
+      "kind": "companies",
+      "rank": 52,
+      "count": 4,
+      "path": "content/companies/比亚迪/_index.md",
+      "characters": 1601,
+      "official_url": "https://www.bydglobal.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "锐鹰",
+      "kind": "companies",
+      "rank": 53,
+      "count": 4,
+      "path": "content/companies/锐鹰/_index.md",
+      "characters": 1715,
+      "official_url": "https://www.reagles.cn/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "雷赛",
+      "kind": "companies",
+      "rank": 54,
+      "count": 4,
+      "path": "content/companies/雷赛/_index.md",
+      "characters": 1624,
+      "official_url": "https://www.leadshine.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "AS5048A",
+      "kind": "models",
+      "rank": 55,
+      "count": 3,
+      "path": "content/models/as5048a/_index.md",
+      "characters": 1597,
+      "official_url": "https://www.infineon.com/part/AS5048A",
+      "datasheet_url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf"
+    },
+    {
+      "name": "AS5147",
+      "kind": "models",
+      "rank": 56,
+      "count": 3,
+      "path": "content/models/as5147/_index.md",
+      "characters": 1619,
+      "official_url": "https://www.infineon.com/part/AS5147",
+      "datasheet_url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5147-datasheet-en.pdf"
+    },
+    {
+      "name": "EPFL",
+      "kind": "companies",
+      "rank": 57,
+      "count": 3,
+      "path": "content/companies/epfl/_index.md",
+      "characters": 1574,
+      "official_url": "https://www.epfl.ch/about/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "KTH5900",
+      "kind": "models",
+      "rank": 58,
+      "count": 3,
+      "path": "content/models/kth5900/_index.md",
+      "characters": 495,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "KTM5220",
+      "kind": "models",
+      "rank": 59,
+      "count": 3,
+      "path": "content/models/ktm5220/_index.md",
+      "characters": 1629,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM52XX/index.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "maxon",
+      "kind": "companies",
+      "rank": 60,
+      "count": 3,
+      "path": "content/companies/maxon/_index.md",
+      "characters": 1559,
+      "official_url": "https://www.maxongroup.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "MLX90520",
+      "kind": "models",
+      "rank": 61,
+      "count": 3,
+      "path": "content/models/mlx90520/_index.md",
+      "characters": 1534,
+      "official_url": "https://www.melexis.com/en/product/MLX90520/22-bit-Inductive-position-sensor-dual-input",
+      "datasheet_url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90520-datasheet-melexis.pdf"
+    },
+    {
+      "name": "MT6701",
+      "kind": "models",
+      "rank": 62,
+      "count": 3,
+      "path": "content/models/mt6701/_index.md",
+      "characters": 1640,
+      "official_url": "https://www.magntek.com.cn/",
+      "datasheet_url": "https://www.magntek.com.cn/upload/pdf/202312/MT6701_Rev.1.8_%E4%B8%AD%E6%96%87%E7%89%88.pdf"
+    },
+    {
+      "name": "MT6816",
+      "kind": "models",
+      "rank": 63,
+      "count": 3,
+      "path": "content/models/mt6816/_index.md",
+      "characters": 1621,
+      "official_url": "https://www.magntek.com.cn/136/105",
+      "datasheet_url": "https://www.magntek.com.cn/upload/pdf/202312/MT6816_Rev.2.1_%E4%B8%AD%E6%96%87%E7%89%88.pdf"
+    },
+    {
+      "name": "Qualcomm",
+      "kind": "companies",
+      "rank": 64,
+      "count": 3,
+      "path": "content/companies/qualcomm/_index.md",
+      "characters": 1647,
+      "official_url": "https://www.qualcomm.com/internet-of-things/applications/robotics-processors",
+      "datasheet_url": ""
+    },
+    {
+      "name": "Sensitec",
+      "kind": "companies",
+      "rank": 65,
+      "count": 3,
+      "path": "content/companies/sensitec/_index.md",
+      "characters": 1668,
+      "official_url": "https://www.sensitec.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "ST",
+      "kind": "companies",
+      "rank": 66,
+      "count": 3,
+      "path": "content/companies/st/_index.md",
+      "characters": 1685,
+      "official_url": "https://www.st.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "TMR3108",
+      "kind": "models",
+      "rank": 67,
+      "count": 3,
+      "path": "content/models/tmr3108/_index.md",
+      "characters": 1637,
+      "official_url": "https://www.dowaytech.com/TMR3108-TMR-Angle-Sensors.html",
+      "datasheet_url": "https://www.dowaytech.com/en/res/202310/12/219e5842f1299a33.pdf"
+    },
+    {
+      "name": "中科无线",
+      "kind": "companies",
+      "rank": 68,
+      "count": 3,
+      "path": "content/companies/中科无线/_index.md",
+      "characters": 1683,
+      "official_url": "https://www.ctunite.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "优必选",
+      "kind": "companies",
+      "rank": 69,
+      "count": 3,
+      "path": "content/companies/优必选/_index.md",
+      "characters": 1586,
+      "official_url": "https://www.ubtrobot.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "倍福",
+      "kind": "companies",
+      "rank": 70,
+      "count": 3,
+      "path": "content/companies/倍福/_index.md",
+      "characters": 1624,
+      "official_url": "https://www.beckhoff.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "安川",
+      "kind": "companies",
+      "rank": 71,
+      "count": 3,
+      "path": "content/companies/安川/_index.md",
+      "characters": 1607,
+      "official_url": "https://www.yaskawa-global.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "艾为",
+      "kind": "companies",
+      "rank": 72,
+      "count": 3,
+      "path": "content/companies/艾为/_index.md",
+      "characters": 1675,
+      "official_url": "https://www.awinic.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "金力永磁",
+      "kind": "companies",
+      "rank": 73,
+      "count": 3,
+      "path": "content/companies/金力永磁/_index.md",
+      "characters": 1574,
+      "official_url": "https://www.jlmag.com.cn/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "ABB",
+      "kind": "companies",
+      "rank": 74,
+      "count": 2,
+      "path": "content/companies/abb/_index.md",
+      "characters": 1620,
+      "official_url": "https://global.abb/group/en",
+      "datasheet_url": ""
+    },
+    {
+      "name": "ADMT4000",
+      "kind": "models",
+      "rank": 75,
+      "count": 2,
+      "path": "content/models/admt4000/_index.md",
+      "characters": 1533,
+      "official_url": "https://www.analog.com/en/products/admt4000.html",
+      "datasheet_url": "https://www.analog.com/media/en/technical-documentation/data-sheets/admt4000.pdf"
+    },
+    {
+      "name": "AM26C32",
+      "kind": "models",
+      "rank": 76,
+      "count": 2,
+      "path": "content/models/am26c32/_index.md",
+      "characters": 1485,
+      "official_url": "https://www.ti.com/product/AM26C32",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/am26c32.pdf"
+    },
+    {
+      "name": "Apple",
+      "kind": "companies",
+      "rank": 77,
+      "count": 2,
+      "path": "content/companies/apple/_index.md",
+      "characters": 1604,
+      "official_url": "https://www.apple.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "AS5048B",
+      "kind": "models",
+      "rank": 78,
+      "count": 2,
+      "path": "content/models/as5048b/_index.md",
+      "characters": 1607,
+      "official_url": "https://www.infineon.com/part/AS5048B",
+      "datasheet_url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf"
+    },
+    {
+      "name": "D435i",
+      "kind": "models",
+      "rank": 79,
+      "count": 2,
+      "path": "content/models/d435i/_index.md",
+      "characters": 1549,
+      "official_url": "https://www.realsenseai.com/products/depth-camera-d435i/",
+      "datasheet_url": "https://www.realsenseai.com/wp-content/uploads/2022/04/Intel-RealSense-D400-Series-Datasheet-April-2022-v2.pdf"
+    },
+    {
+      "name": "Figure AI",
+      "kind": "companies",
+      "rank": 80,
+      "count": 2,
+      "path": "content/companies/figure-ai/_index.md",
+      "characters": 1592,
+      "official_url": "https://www.figure.ai/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "iC-TW29",
+      "kind": "models",
+      "rank": 81,
+      "count": 2,
+      "path": "content/models/ic-tw29/_index.md",
+      "characters": 1570,
+      "official_url": "https://www.ichaus.de/product/ic-tw29/",
+      "datasheet_url": "https://www.ichaus.de/product/ic-tw29/"
+    },
+    {
+      "name": "IS620N",
+      "kind": "models",
+      "rank": 82,
+      "count": 2,
+      "path": "content/models/is620n/_index.md",
+      "characters": 1498,
+      "official_url": "https://www.inovance.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "KTH1701",
+      "kind": "models",
+      "rank": 83,
+      "count": 2,
+      "path": "content/models/kth1701/_index.md",
+      "characters": 1505,
+      "official_url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH1701%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+    },
+    {
+      "name": "KTH7812",
+      "kind": "models",
+      "rank": 84,
+      "count": 2,
+      "path": "content/models/kth7812/_index.md",
+      "characters": 1635,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+    },
+    {
+      "name": "KTH7823",
+      "kind": "models",
+      "rank": 85,
+      "count": 2,
+      "path": "content/models/kth7823/_index.md",
+      "characters": 1620,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7823%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+    },
+    {
+      "name": "KTM1305",
+      "kind": "models",
+      "rank": 86,
+      "count": 2,
+      "path": "content/models/ktm1305/_index.md",
+      "characters": 1540,
+      "official_url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "MA600",
+      "kind": "models",
+      "rank": 87,
+      "count": 2,
+      "path": "content/models/ma600/_index.md",
+      "characters": 1656,
+      "official_url": "https://www.monolithicpower.com/en/products/ma600.html",
+      "datasheet_url": "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA600GQ/"
+    },
+    {
+      "name": "MID-360",
+      "kind": "models",
+      "rank": 88,
+      "count": 2,
+      "path": "content/models/mid-360/_index.md",
+      "characters": 1499,
+      "official_url": "https://www.livoxtech.com/mid-360",
+      "datasheet_url": ""
+    },
+    {
+      "name": "MLX90316",
+      "kind": "models",
+      "rank": 89,
+      "count": 2,
+      "path": "content/models/mlx90316/_index.md",
+      "characters": 1619,
+      "official_url": "https://www.melexis.com/en/product/MLX90316/Triaxis-mainstream-rotary-position-sensor-IC-Analog-PWM-SPI",
+      "datasheet_url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90316-datasheet-melexis.pdf"
+    },
+    {
+      "name": "MLX90382",
+      "kind": "models",
+      "rank": 90,
+      "count": 2,
+      "path": "content/models/mlx90382/_index.md",
+      "characters": 1644,
+      "official_url": "https://www.melexis.com/en/product/mlx90382/triaxis-magnetic-high-speed-encoder",
+      "datasheet_url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf"
+    },
+    {
+      "name": "NSM350x",
+      "kind": "models",
+      "rank": 91,
+      "count": 2,
+      "path": "content/models/nsm350x/_index.md",
+      "characters": 1531,
+      "official_url": "https://www.novosns.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "NXP",
+      "kind": "companies",
+      "rank": 92,
+      "count": 2,
+      "path": "content/companies/nxp/_index.md",
+      "characters": 1660,
+      "official_url": "https://www.nxp.com/company/about-nxp:ABOUT-NXP",
+      "datasheet_url": ""
+    },
+    {
+      "name": "PNH3348",
+      "kind": "models",
+      "rank": 93,
+      "count": 2,
+      "path": "content/models/pnh3348/_index.md",
+      "characters": 1555,
+      "official_url": "https://www.ichauschina.com/PNH_factsheet_CN",
+      "datasheet_url": "https://www.ichauschina.com/PNH_factsheet_CN"
+    },
+    {
+      "name": "POSITAL",
+      "kind": "companies",
+      "rank": 94,
+      "count": 2,
+      "path": "content/companies/posital/_index.md",
+      "characters": 1683,
+      "official_url": "https://www.posital.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "SROA48",
+      "kind": "models",
+      "rank": 95,
+      "count": 2,
+      "path": "content/models/sroa48/_index.md",
+      "characters": 1504,
+      "official_url": "https://www.reagles.cn/",
+      "datasheet_url": "https://www.reagles.cn/en/uploads/Download/20241108/1658028d0cd2258.pdf"
+    },
+    {
+      "name": "STM32",
+      "kind": "models",
+      "rank": 96,
+      "count": 2,
+      "path": "content/models/stm32/_index.md",
+      "characters": 1530,
+      "official_url": "https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "SV660ND",
+      "kind": "models",
+      "rank": 97,
+      "count": 2,
+      "path": "content/models/sv660nd/_index.md",
+      "characters": 1499,
+      "official_url": "https://www.inovance.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "TMR3107",
+      "kind": "models",
+      "rank": 98,
+      "count": 2,
+      "path": "content/models/tmr3107/_index.md",
+      "characters": 1637,
+      "official_url": "https://www.dowaytech.com/en/res/202310/12/219e5842f1299a33.pdf",
+      "datasheet_url": ""
+    },
+    {
+      "name": "华为",
+      "kind": "companies",
+      "rank": 99,
+      "count": 2,
+      "path": "content/companies/华为/_index.md",
+      "characters": 1588,
+      "official_url": "https://www.huawei.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "华虹",
+      "kind": "companies",
+      "rank": 100,
+      "count": 2,
+      "path": "content/companies/华虹/_index.md",
+      "characters": 1542,
+      "official_url": "https://www.huahonggrace.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "厦门钨业",
+      "kind": "companies",
+      "rank": 101,
+      "count": 2,
+      "path": "content/companies/厦门钨业/_index.md",
+      "characters": 1562,
+      "official_url": "https://www.cxtc.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "圣邦微",
+      "kind": "companies",
+      "rank": 102,
+      "count": 2,
+      "path": "content/companies/圣邦微/_index.md",
+      "characters": 1647,
+      "official_url": "https://www.sg-micro.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "小鹏",
+      "kind": "companies",
+      "rank": 103,
+      "count": 2,
+      "path": "content/companies/小鹏/_index.md",
+      "characters": 1584,
+      "official_url": "https://www.xpeng.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "弓望",
+      "kind": "companies",
+      "rank": 104,
+      "count": 2,
+      "path": "content/companies/弓望/_index.md",
+      "characters": 1673,
+      "official_url": "https://www.gw-sensor.com/h-col-101.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "智元",
+      "kind": "companies",
+      "rank": 105,
+      "count": 2,
+      "path": "content/companies/智元/_index.md",
+      "characters": 1597,
+      "official_url": "https://www.agibot.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "海康",
+      "kind": "companies",
+      "rank": 106,
+      "count": 2,
+      "path": "content/companies/海康/_index.md",
+      "characters": 1558,
+      "official_url": "https://www.hikrobotics.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "美敦力",
+      "kind": "companies",
+      "rank": 107,
+      "count": 2,
+      "path": "content/companies/美敦力/_index.md",
+      "characters": 1560,
+      "official_url": "https://www.medtronic.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "舍弗勒",
+      "kind": "companies",
+      "rank": 108,
+      "count": 2,
+      "path": "content/companies/舍弗勒/_index.md",
+      "characters": 1556,
+      "official_url": "https://www.schaeffler.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "ADM32F036A3",
+      "kind": "models",
+      "rank": 109,
+      "count": 1,
+      "path": "content/models/adm32f036a3/_index.md",
+      "characters": 1544,
+      "official_url": "https://www.advancechip.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "AEDR-850x",
+      "kind": "models",
+      "rank": 110,
+      "count": 1,
+      "path": "content/models/aedr-850x/_index.md",
+      "characters": 1508,
+      "official_url": "https://www.broadcom.com/products/motion-control-encoders/incremental-encoders/reflective-encoders/aedr-8500-102",
+      "datasheet_url": ""
+    },
+    {
+      "name": "Akko",
+      "kind": "companies",
+      "rank": 111,
+      "count": 1,
+      "path": "content/companies/akko/_index.md",
+      "characters": 1554,
+      "official_url": "https://en.akkogear.com/about/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "AKM",
+      "kind": "companies",
+      "rank": 112,
+      "count": 1,
+      "path": "content/companies/akm/_index.md",
+      "characters": 1641,
+      "official_url": "https://www.akm.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "ANYbotics",
+      "kind": "companies",
+      "rank": 113,
+      "count": 1,
+      "path": "content/companies/anybotics/_index.md",
+      "characters": 1595,
+      "official_url": "https://www.anybotics.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "AS5247",
+      "kind": "models",
+      "rank": 114,
+      "count": 1,
+      "path": "content/models/as5247/_index.md",
+      "characters": 1597,
+      "official_url": "https://www.infineon.com/part/AS5247",
+      "datasheet_url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5247-datasheet-en.pdf"
+    },
+    {
+      "name": "CD4051",
+      "kind": "models",
+      "rank": 115,
+      "count": 1,
+      "path": "content/models/cd4051/_index.md",
+      "characters": 1492,
+      "official_url": "https://www.ti.com/product/CD4051B",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/cd4051b.pdf"
+    },
+    {
+      "name": "Cloudflare",
+      "kind": "companies",
+      "rank": 116,
+      "count": 1,
+      "path": "content/companies/cloudflare/_index.md",
+      "characters": 1581,
+      "official_url": "https://www.cloudflare.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "EAM1010",
+      "kind": "models",
+      "rank": 117,
+      "count": 1,
+      "path": "content/models/eam1010/_index.md",
+      "characters": 1526,
+      "official_url": "https://www.enavigate.cn/ypsq.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "ENX 22 EMT",
+      "kind": "models",
+      "rank": 118,
+      "count": 1,
+      "path": "content/models/enx-22-emt/_index.md",
+      "characters": 1513,
+      "official_url": "https://www.maxongroup.com/",
+      "datasheet_url": "https://www.maxongroup.com/medias/sys_master/root/9257532456990/enx-emt-en-04-2024.pdf"
+    },
+    {
+      "name": "ETH",
+      "kind": "companies",
+      "rank": 119,
+      "count": 1,
+      "path": "content/companies/eth/_index.md",
+      "characters": 1561,
+      "official_url": "https://ethz.ch/en.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "GO-M8010",
+      "kind": "models",
+      "rank": 120,
+      "count": 1,
+      "path": "content/models/go-m8010/_index.md",
+      "characters": 1512,
+      "official_url": "https://www.unitree.com/cn/mobile/go1/motor/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "HAL9303R",
+      "kind": "models",
+      "rank": 121,
+      "count": 1,
+      "path": "content/models/hal9303r/_index.md",
+      "characters": 1491,
+      "official_url": "https://www.szhall.cn/products/250.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "Hengstler",
+      "kind": "companies",
+      "rank": 122,
+      "count": 1,
+      "path": "content/companies/hengstler/_index.md",
+      "characters": 1651,
+      "official_url": "https://www.hengstler.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "KIN60",
+      "kind": "models",
+      "rank": 123,
+      "count": 1,
+      "path": "content/models/kin60/_index.md",
+      "characters": 1598,
+      "official_url": "https://reagles.cn/en/index.php/index/product_detail/content/10133.html",
+      "datasheet_url": "https://www.reagles.cn/uploads/Download/20231206/154034849925524.pdf"
+    },
+    {
+      "name": "KMZ60",
+      "kind": "models",
+      "rank": 124,
+      "count": 1,
+      "path": "content/models/kmz60/_index.md",
+      "characters": 1509,
+      "official_url": "https://www.nxp.com/products/KMZ60",
+      "datasheet_url": ""
+    },
+    {
+      "name": "KTH3105",
+      "kind": "models",
+      "rank": 125,
+      "count": 1,
+      "path": "content/models/kth3105/_index.md",
+      "characters": 1486,
+      "official_url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "KTH7112",
+      "kind": "models",
+      "rank": 126,
+      "count": 1,
+      "path": "content/models/kth7112/_index.md",
+      "characters": 1613,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7112%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+    },
+    {
+      "name": "KTH7815",
+      "kind": "models",
+      "rank": 127,
+      "count": 1,
+      "path": "content/models/kth7815/_index.md",
+      "characters": 1611,
+      "official_url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7815%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+    },
+    {
+      "name": "KTM1301",
+      "kind": "models",
+      "rank": 128,
+      "count": 1,
+      "path": "content/models/ktm1301/_index.md",
+      "characters": 1517,
+      "official_url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html",
+      "datasheet_url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM1301%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+    },
+    {
+      "name": "KTM13XX",
+      "kind": "models",
+      "rank": 129,
+      "count": 1,
+      "path": "content/models/ktm13xx/_index.md",
+      "characters": 1509,
+      "official_url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "LAN8841",
+      "kind": "models",
+      "rank": 130,
+      "count": 1,
+      "path": "content/models/lan8841/_index.md",
+      "characters": 1494,
+      "official_url": "https://www.microchip.com/en-us/product/LAN8841",
+      "datasheet_url": ""
+    },
+    {
+      "name": "MLX90380",
+      "kind": "models",
+      "rank": 131,
+      "count": 1,
+      "path": "content/models/mlx90380/_index.md",
+      "characters": 1526,
+      "official_url": "https://www.melexis.com/en/product/MLX90380/Preprogrammed-Magnetic-Resolver",
+      "datasheet_url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90380-datasheet-melexis.pdf"
+    },
+    {
+      "name": "MLX90381",
+      "kind": "models",
+      "rank": 132,
+      "count": 1,
+      "path": "content/models/mlx90381/_index.md",
+      "characters": 1555,
+      "official_url": "https://www.melexis.com/en/product/mlx90381/triaxis-magnetic-pico-resolver",
+      "datasheet_url": "https://www.melexis.com/en/documents/documentation/datasheets/datasheet-mlx90381"
+    },
+    {
+      "name": "MS1000",
+      "kind": "models",
+      "rank": 133,
+      "count": 1,
+      "path": "content/models/ms1000/_index.md",
+      "characters": 1539,
+      "official_url": "https://www.safran-group.com/products-services/ms1000-tactical-grade-mems-accelerometer",
+      "datasheet_url": ""
+    },
+    {
+      "name": "MX6800",
+      "kind": "models",
+      "rank": 134,
+      "count": 1,
+      "path": "content/models/mx6800/_index.md",
+      "characters": 1517,
+      "official_url": "https://www.orbbec.com/products/stereo-vision-camera/gemini-330-series/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "MXC3638AL",
+      "kind": "models",
+      "rank": 135,
+      "count": 1,
+      "path": "content/models/mxc3638al/_index.md",
+      "characters": 1540,
+      "official_url": "https://www.memsic.com/cn/capacitive-accelerometer-85",
+      "datasheet_url": "https://www.memsic.com/Public/Uploads/uploadfile/files/20220119/MXC3638ALDatasheet.pdf"
+    },
+    {
+      "name": "nRF52832",
+      "kind": "models",
+      "rank": 136,
+      "count": 1,
+      "path": "content/models/nrf52832/_index.md",
+      "characters": 1563,
+      "official_url": "https://www.nordicsemi.com/Products/nRF52832",
+      "datasheet_url": "https://docs.nordicsemi.com/r/bundle/ps_nrf52832/page/nrf52832_ps.html"
+    },
+    {
+      "name": "PixArt",
+      "kind": "companies",
+      "rank": 137,
+      "count": 1,
+      "path": "content/companies/pixart/_index.md",
+      "characters": 1573,
+      "official_url": "https://www.pixart.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "PMW3389",
+      "kind": "models",
+      "rank": 138,
+      "count": 1,
+      "path": "content/models/pmw3389/_index.md",
+      "characters": 1502,
+      "official_url": "https://www.pixart.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "QRD1114",
+      "kind": "models",
+      "rank": 139,
+      "count": 1,
+      "path": "content/models/qrd1114/_index.md",
+      "characters": 1501,
+      "official_url": "https://www.onsemi.com/pdf/datasheet/qrd1113-d.pdf",
+      "datasheet_url": "https://www.onsemi.com/pdf/datasheet/qrd1113-d.pdf"
+    },
+    {
+      "name": "RXMA30",
+      "kind": "models",
+      "rank": 140,
+      "count": 1,
+      "path": "content/models/rxma30/_index.md",
+      "characters": 1493,
+      "official_url": "https://www.renishaw.com/en/renishaw-introduces-true-absolute-multi-dof-encoder-system-featuring-new-rxma30-15d-scale--50008",
+      "datasheet_url": "https://www.renishaw.com/resourcecentre/download/rxma30-15d--146447?userLanguage=zh"
+    },
+    {
+      "name": "SR3511N",
+      "kind": "models",
+      "rank": 141,
+      "count": 1,
+      "path": "content/models/sr3511n/_index.md",
+      "characters": 1491,
+      "official_url": "https://www.fortiortech.com/en/news/detail/40",
+      "datasheet_url": ""
+    },
+    {
+      "name": "SS49E",
+      "kind": "models",
+      "rank": 142,
+      "count": 1,
+      "path": "content/models/ss49e/_index.md",
+      "characters": 1504,
+      "official_url": "https://automation.honeywell.com/us/en/products/sensing-solutions/sensors/magnetic-sensors/linear-and-angle-sensor-ics",
+      "datasheet_url": ""
+    },
+    {
+      "name": "TCRT5000",
+      "kind": "models",
+      "rank": 143,
+      "count": 1,
+      "path": "content/models/tcrt5000/_index.md",
+      "characters": 1498,
+      "official_url": "https://www.vishay.com/zh/product/83760/",
+      "datasheet_url": "https://www.vishay.com/docs/83760/tcrt5000.pdf"
+    },
+    {
+      "name": "TLE5502",
+      "kind": "models",
+      "rank": 144,
+      "count": 1,
+      "path": "content/models/tle5502/_index.md",
+      "characters": 1557,
+      "official_url": "https://www.infineon.com/technology-news/2026/infpss202606-102",
+      "datasheet_url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-tle5502d-datasheet-en.pdf"
+    },
+    {
+      "name": "TMR2617S",
+      "kind": "models",
+      "rank": 145,
+      "count": 1,
+      "path": "content/models/tmr2617s/_index.md",
+      "characters": 1506,
+      "official_url": "https://www.dowaytech.com/TMR2617S-AAC-TMR-Linear-Sensors.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "TMR3110",
+      "kind": "models",
+      "rank": 146,
+      "count": 1,
+      "path": "content/models/tmr3110/_index.md",
+      "characters": 1613,
+      "official_url": "https://www.dowaytech.com/TMR3110-TMR-Angle-Sensors.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "UBS",
+      "kind": "companies",
+      "rank": 147,
+      "count": 1,
+      "path": "content/companies/ubs/_index.md",
+      "characters": 1521,
+      "official_url": "https://www.ubs.com/global/en.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "WIN48",
+      "kind": "models",
+      "rank": 148,
+      "count": 1,
+      "path": "content/models/win48/_index.md",
+      "characters": 1501,
+      "official_url": "https://www.reagles.cn/",
+      "datasheet_url": "https://www.reagles.cn/uploads/Download/20240723/092834205ac8885.pdf"
+    },
+    {
+      "name": "Wooting",
+      "kind": "companies",
+      "rank": 149,
+      "count": 1,
+      "path": "content/companies/wooting/_index.md",
+      "characters": 1591,
+      "official_url": "https://wooting.io/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "他山",
+      "kind": "companies",
+      "rank": 150,
+      "count": 1,
+      "path": "content/companies/他山/_index.md",
+      "characters": 1531,
+      "official_url": "https://www.tashantec.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "众擎",
+      "kind": "companies",
+      "rank": 151,
+      "count": 1,
+      "path": "content/companies/众擎/_index.md",
+      "characters": 1576,
+      "official_url": "https://www.engineai.com.cn/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "保隆科技",
+      "kind": "companies",
+      "rank": 152,
+      "count": 1,
+      "path": "content/companies/保隆科技/_index.md",
+      "characters": 1638,
+      "official_url": "https://www.baolong.biz/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "光鉴",
+      "kind": "companies",
+      "rank": 153,
+      "count": 1,
+      "path": "content/companies/光鉴/_index.md",
+      "characters": 1594,
+      "official_url": "https://www.deptrum.com/site/index",
+      "datasheet_url": ""
+    },
+    {
+      "name": "台积电",
+      "kind": "companies",
+      "rank": 154,
+      "count": 1,
+      "path": "content/companies/台积电/_index.md",
+      "characters": 1556,
+      "official_url": "https://www.tsmc.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "图漾",
+      "kind": "companies",
+      "rank": 155,
+      "count": 1,
+      "path": "content/companies/图漾/_index.md",
+      "characters": 1542,
+      "official_url": "https://www.percipio.xyz/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "奥比中光",
+      "kind": "companies",
+      "rank": 156,
+      "count": 1,
+      "path": "content/companies/奥比中光/_index.md",
+      "characters": 1568,
+      "official_url": "https://www.orbbec.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "宝马",
+      "kind": "companies",
+      "rank": 157,
+      "count": 1,
+      "path": "content/companies/宝马/_index.md",
+      "characters": 1577,
+      "official_url": "https://www.bmwgroup.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "峰岹",
+      "kind": "companies",
+      "rank": 158,
+      "count": 1,
+      "path": "content/companies/峰岹/_index.md",
+      "characters": 1672,
+      "official_url": "https://www.fortiortech.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "帕西尼",
+      "kind": "companies",
+      "rank": 159,
+      "count": 1,
+      "path": "content/companies/帕西尼/_index.md",
+      "characters": 1519,
+      "official_url": "https://www.paxini.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "康诺思腾",
+      "kind": "companies",
+      "rank": 160,
+      "count": 1,
+      "path": "content/companies/康诺思腾/_index.md",
+      "characters": 1569,
+      "official_url": "https://www.csrbtx.com/about-us",
+      "datasheet_url": ""
+    },
+    {
+      "name": "易德龙",
+      "kind": "companies",
+      "rank": 161,
+      "count": 1,
+      "path": "content/companies/易德龙/_index.md",
+      "characters": 1493,
+      "official_url": "https://www.etron.cn/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "矽睿",
+      "kind": "companies",
+      "rank": 162,
+      "count": 1,
+      "path": "content/companies/矽睿/_index.md",
+      "characters": 1628,
+      "official_url": "https://www.qstcorp.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "禹衡",
+      "kind": "companies",
+      "rank": 163,
+      "count": 1,
+      "path": "content/companies/禹衡/_index.md",
+      "characters": 1631,
+      "official_url": "https://www.yu-heng.cn/about_1.html",
+      "datasheet_url": ""
+    },
+    {
+      "name": "禾川",
+      "kind": "companies",
+      "rank": 164,
+      "count": 1,
+      "path": "content/companies/禾川/_index.md",
+      "characters": 1586,
+      "official_url": "https://www.hcfa.cn/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "英达森斯",
+      "kind": "companies",
+      "rank": 165,
+      "count": 1,
+      "path": "content/companies/英达森斯/_index.md",
+      "characters": 1643,
+      "official_url": "https://www.induxense.com/?a=index&c=Lists&m=home&tid=2",
+      "datasheet_url": ""
+    },
+    {
+      "name": "达尔优",
+      "kind": "companies",
+      "rank": 166,
+      "count": 1,
+      "path": "content/companies/达尔优/_index.md",
+      "characters": 1560,
+      "official_url": "https://www.dareu.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "追觅",
+      "kind": "companies",
+      "rank": 167,
+      "count": 1,
+      "path": "content/companies/追觅/_index.md",
+      "characters": 1579,
+      "official_url": "https://www.dreametech.com/",
+      "datasheet_url": ""
+    },
+    {
+      "name": "钛虎",
+      "kind": "companies",
+      "rank": 168,
+      "count": 1,
+      "path": "content/companies/钛虎/_index.md",
+      "characters": 1576,
+      "official_url": "https://ti5robot.com/index/news/detail?id=46",
+      "datasheet_url": ""
+    },
+    {
+      "name": "长鑫",
+      "kind": "companies",
+      "rank": 169,
+      "count": 1,
+      "path": "content/companies/长鑫/_index.md",
+      "characters": 1553,
+      "official_url": "https://www.cxmt.com/",
+      "datasheet_url": ""
+    }
+  ],
+  "documents": [
+    {
+      "url": "https://www.magntek.com.cn/upload/pdf/202312/MT6701_Rev.1.8_中文版.pdf",
+      "key": "0133dc37f14be6",
+      "bytes": 1371684,
+      "pages": 37,
+      "sha256": "3775dd049418cf4e1c4d5536ea120d80fe69accdcfdb4e02da56ed84c40265c6",
+      "header": "www.magntek.com.cn | 磁技术带来美妙变革 1.8版本  2022.12\nMT6701\n基于差分霍尔的磁性角度传感器芯片\n特性和优势\n￭ 基于霍尔技术，0~360°绝对角度位置检测\n￭ 3.3V~5.0V工作电压 ，内置EEPROM（烧写\n时需要保证VDD>4.5V）\n￭ 独立输出接口： : I2C, SSI, ABZ，UVW, 模\n拟电压、PWM以及Z轴按压检测\n￭ 支持最高转速55,000 转/分钟\n￭ 角度输出的系统延时<5 us\n￭ 增量ABZ输出支持1~1024脉冲/圈，任意整\n数分辨率客户可编程\n￭ 增量UVW输出支持1~16对极，任意整数对\n极客户可编程\n￭ 优"
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7112%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "key": "0e704075c0d7fc",
+      "bytes": 1993630,
+      "pages": 32,
+      "sha256": "f98c22e6e7162af4f1766a98d120bed4d046fdfedd1eacf4238857aa060b3a43",
+      "header": "KTH7112\n16 位高速高精度磁编码器\n可编程 ABZ/UVW/PWM/SPI/SSI 多模式输出角\n度传感器\n技术支持\nsupport@conntek.com.cn\n+86(0)755-86006609\n目录\n1 产品信息 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n1.1 产品特点. . . . . . . . . . . . . . . . . . . . . . . . . ."
+    },
+    {
+      "url": "https://www.vishay.com/docs/83760/tcrt5000.pdf",
+      "key": "18c34572b08779",
+      "bytes": 176657,
+      "pages": 7,
+      "sha256": "fbf04bfbc82a74ab339756fd0c975522bef64c75cdbd78ea97b348166c2b61b4",
+      "header": " \nDocument Number: 83760 For technical questions, contact: sensorstechsupport@vishay.com\nwww.vishay.com\nRev. 1.7, 17-Aug-09 1\nReflective Optical Sensor with Transistor Output\nTCRT5000, TCRT5000L\nVishay Semiconductors\n \nDESCRIPTION\nThe TCRT5000 and TCRT5000L are reflective sensors\nwhich include an in"
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7823%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "key": "21d8c5a223a3eb",
+      "bytes": 6465199,
+      "pages": 31,
+      "sha256": "3ebc20e404700dc050ee6b10e3792a6a28038b5fa737ab688f0f41ad59e6fa52",
+      "header": "KTH7823\n16 位高精度低延时霍尔磁编码器\n可编程 ABZ 和 PWM 输出模式角度传感器\n技术支持\nsupport@conntek.com.cn\n+86(0)755-86006609\n目录\n1 产品信息 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1\n1.1 产品特点. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf",
+      "key": "2a10265815210c",
+      "bytes": 1464781,
+      "pages": 45,
+      "sha256": "548490c8a9a6bac0137d360062f98fcba9d7edbf4ee552c99c3e713aea773d7a",
+      "header": " \nI\nmportant \n n\notice \non \nams\n-\nOSRAM \nd\nocuments  \n \nAs part of the acquisition of the \n non\n-\noptical analog/mixed\n -\nsignal sensor portfolio \n from \nams\n-\nOSRAM by Infineon, \nInfineon is  \nin the process of rebranding all relevant documents.  \nDue to the large volume of documents, this process "
+    },
+    {
+      "url": "https://www.magntek.com.cn/upload/pdf/202312/MT6835_Rev.1.3_%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+      "key": "2a71d9601ff07a",
+      "bytes": 1311989,
+      "pages": 42,
+      "sha256": "bb34b972ed228cf98bc3b83aca01eb1e0fff02655a8be7262466b120f5604840",
+      "header": "www.magntek.com.cn  | 磁技术带来美妙变革 1.3版  2022年12月\nMT6835\n21位高分辨率、高精度磁性角度编码器IC\n特性和优势\n￭ 基于先进的AMR各向异性磁阻技术，0~360°绝\n对角度位置检测\n￭ 21位核心角度分辨率，支持最高120,000转/分\n钟的转速\n￭ 角度输出延时2微秒~10微秒\n￭ 提供客户端的自动非线性校准模式，无数据交互、\n自动计算补偿，实现<±0.07°的INL\n￭ -40~125℃ 温度范围内均可工作\n￭ 可同时支持增量ABZ、增量UVW、 PWM绝对\n值和4线SPI总线输出\n￭ 增量ABZ输出支持1~16,384脉冲/圈，任意整数\n"
+    },
+    {
+      "url": "https://www.realsenseai.com/wp-content/uploads/2022/04/Intel-RealSense-D400-Series-Datasheet-April-2022-v2.pdf",
+      "key": "42f54be158cbf6",
+      "bytes": 4968433,
+      "pages": 153,
+      "sha256": "f11acd053d9f6f4aac5da4a8c745e768f681aba10d72742c5ce1223310f04867",
+      "header": " \n Document Number: 337029-013 \n \n \nIntel® RealSenseTM  \nProduct Family D400 Series \n \nDatasheet \n \nIntel® RealSense™ Vision Processor D4, Intel® RealSense™ Vision \nProcessor D4 Board, Intel® RealSense™ Vision Processor D4 Board V3, \nIntel® RealSense™ Depth Module D410, Intel® RealSense™ Depth Modul"
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf",
+      "key": "45491e0e39d105",
+      "bytes": 1387354,
+      "pages": 43,
+      "sha256": "9b7779278a9c4baa0406199c6be07d81aec83e0473c048afb84ecb4d448a4f1f",
+      "header": " \nI\nmportant \n n\notice \non \nams\n-\nOSRAM \nd\nocuments  \n \nAs part of the acquisition of the \n non\n-\noptical analog/mixed\n -\nsignal sensor portfolio \n from \nams\n-\nOSRAM by Infineon, \nInfineon is  \nin the process of rebranding all relevant documents.  \nDue to the large volume of documents, this process "
+    },
+    {
+      "url": "https://www.ichauschina.com/PNH_factsheet_CN",
+      "key": "5753a374cd0924",
+      "bytes": 540791,
+      "pages": 2,
+      "sha256": "a05283aee97016886e4a962d3fdac4bb17feae6353e7557f541561b4bb618337",
+      "header": "• 适用于紧凑型高分辨率绝对位置编码器\n• 具有出色信号匹配的单片  3 通道相位阵列\n• 通过 2 位格雷码扫描实现嵌入式扇区检测\n• 超低暗电流，适用于高温操作\n• 适中的码道间距以减少串扰\n• 具有 1 M Ω 互阻增益的低噪声光电流放大器\n• 短路保护差分电压输出\n• 由于输出阻抗低，增强了  EMI 抗干扰性\n• 4.1 V 以上工作电压，数字部分  1.8 V 以上\n• 工作温度范围为  -40°C 至 +125°C\n• 节省空间、符合  RoHS 标准的 optoQFN 封装\n• 绝对位置编码器\n• 交流伺服反馈\n• 使用评估板和码盘进行采样\niC-PNH 系列\n相位阵游标编码器"
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5910%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf",
+      "key": "662fb618980910",
+      "bytes": 1317833,
+      "pages": 42,
+      "sha256": "7e3be2130696f7592753f866aa2e9d25dfb490a3a83af209b9e3018e6d93dd9e",
+      "header": "KTM5910\n24bit 绝对角度磁性编码器\n集成高精度 TMR 传感器与一键非线性自校准\n集成双 16bit 2M SAR ADC\n技术支持\n邮箱：support@conntek.com.cn\n电话：+86(0)755-86006609\nTable of Contents\n1 产品信息 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1\n1.1 产品特点. . . . . . . . . . . . . . . . . "
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5247-datasheet-en.pdf",
+      "key": "6a65288e91967a",
+      "bytes": 1365002,
+      "pages": 43,
+      "sha256": "570c87e83938c6d2451ebf56be94ef4f7c3519e4d0fa7d088079397ed6e7c463",
+      "header": " \nI\nmportant \n n\notice \non \nams\n-\nOSRAM \nd\nocuments  \n \nAs part of the acquisition of the \n non\n-\noptical analog/mixed\n -\nsignal sensor portfolio \n from \nams\n-\nOSRAM by Infineon, \nInfineon is  \nin the process of rebranding all relevant documents.  \nDue to the large volume of documents, this process "
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/cd4051b.pdf",
+      "key": "756b7caa33244e",
+      "bytes": 1725638,
+      "pages": 39,
+      "sha256": "4c95679dd28077e26a50e8a2b9e6b887df2ec463d173a83b80bdf0d7586dfabf",
+      "header": "CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer\nWith Logic-Level Conversion\n1 Features\n• Wide range of digital and analog signal levels:\n– Digital: 3V to 20V\n– Analog: ≤ 20VP-P\n• Single supply range : 3V to 20V (performance \ndegrades for VDD < 3V)\n• Dual Supply range: ± 3V to ± 10V"
+    },
+    {
+      "url": "https://www.renishaw.com/resourcecentre/download/rxma30-15d--146447?userLanguage=zh",
+      "key": "75f7a9054c9fa1",
+      "bytes": 813536,
+      "pages": 13,
+      "sha256": "c51a667036bfccb19d1925ec8c9664c516bef03951e6be9b1421efa5e05af4f4",
+      "header": "#雷尼绍\nRXMA30 1.5D绝对式多自由度光栅栅尺\nwww.renishaw.com.cn/resolutedownloads\n规格手册\nL-9518-0128-01-E\nRXMA30是一款用于测量多个自由度 (multi-DoF) \n的1.5D栅尺。 采用多自由度光栅系统， 有利于机器设计 \n人员控制附加的自由度， 实现对动态运动系统中误差\n机制的掌控。 \nRXMA30 1.5D 栅尺的热膨胀系数较小， 具有出色的 \n热稳定性和重复精度。 RXMA30 栅尺与 RESOLUTE ™  \n绝 对 式 光 栅 兼 容 。这 一 组 合 可 在X、Y双轴上实现真正的  \n绝 对 位 置 反 馈"
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5147-datasheet-en.pdf",
+      "key": "96309e73cd423a",
+      "bytes": 1269404,
+      "pages": 42,
+      "sha256": "1cdfa320aca37828540cf65b19451a70e1a6fd607ce71ec1f3c8accb58cd6da8",
+      "header": " \nI\nmportant \n n\notice \non \nams\n-\nOSRAM \nd\nocuments  \n \nAs part of the acquisition of the \n non\n-\noptical analog/mixed\n -\nsignal sensor portfolio \n from \nams\n-\nOSRAM by Infineon, \nInfineon is  \nin the process of rebranding all relevant documents.  \nDue to the large volume of documents, this process "
+    },
+    {
+      "url": "https://www.reagles.cn/en/uploads/Download/20241108/1658028d0cd2258.pdf",
+      "key": "9c30f95fbce848",
+      "bytes": 1783049,
+      "pages": 12,
+      "sha256": "8e62a28f51f6b02f89f05ffc305b62d10599634bdcee59da222aa22758c916e0",
+      "header": " \n \n \n \nIntegral Gear Multi-turn Absolute \nEncoder \nSROA48-G12S□Bit-□C-C-5V-□ \nSPECIFICATION \n  \n\nDedicated to sensing technology \nAdvancing industrial civilization \npage 1  \n \nContents \n1. Summary Info.................................................................................................."
+    },
+    {
+      "url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf",
+      "key": "9c5944ca509b2f",
+      "bytes": 3108764,
+      "pages": 74,
+      "sha256": "356d14a3ebcf4a7583de82c1d85777846e3aca7d5b24bdfd0944cff3f9aadc67",
+      "header": "MLX90382    \n16-Bit Triaxis® High Speed Position Sensor IC \nDatasheet \n \n \nRevision 1.0  17-Nov-2025  Page 1 of 74 \n3901090382   \n \n1 General description \n1.1 Features and benefits \n▪ Absolute Angle Position and Speed Tracking \nup to 200,000 rpm \n▪ On-Chip Signal Processing with Latency Com-\npensati"
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "key": "a05baf01651730",
+      "bytes": 6443362,
+      "pages": 32,
+      "sha256": "62cadc1ac96bad5859d0ef0c7c3057746f8666206e525cf8eb9c8287edbff11a",
+      "header": "KTH7812\n16 位高精度低延时霍尔磁编码器\n可编程 ABZ 和 UVW 输出模式角度传感器\n技术支持\nsupport@conntek.com.cn\n+86(0)755-86006609\n目录\n1 产品信息 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1\n1.1 产品特点. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5701AQ2AQ3_DS_CN.pdf",
+      "key": "a49fd4f9ec4069",
+      "bytes": 7255527,
+      "pages": 44,
+      "sha256": "462afd7ad3a3784a14ccf519244c77d59789d7c286fcf00a76b215e4d22d93c6",
+      "header": "KTH5701 系列\n低功耗、高精度 3D 霍尔传感器\n1\n1 产品特点\n 3D (X轴、Y轴、Z轴)磁场输出\n CORDIC算法角度输出\n注1\n XY 轴典型工作范围±130mT\n Z 轴典型工作范围±80mT\n T（温度）输出\n 支持绝对位置检测\n XY XZ YZ 轴平面角度输出\n 高精度16 bit ADC 输出\n 支持按键检测功能\n SPI或I2C可选通信接口\n 支持唤醒和测量触发模式\n 工作电压 2.8V ~ 5.5V\n IO供电电压可低至1.8V\n AQ2工业级工作温度 -40℃ ~ +105℃\n AQ3消费级工作温度 -40℃ ~ +85℃\n2 典"
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM1301%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "key": "ae5d6203b40c1c",
+      "bytes": 5369354,
+      "pages": 15,
+      "sha256": "705409fba63c48e0f22e100085537d2d2257ce98221eb3c463949f349835b9a7",
+      "header": "KTM1301 系列\n高性能、低功耗、全极磁场检测 TMR 开关传感器\n昆泰芯微电子科技有限公司 1\n1 产品特点\n 超低功耗\n- 50Hz版本： 160nA@3.0V\n- 1.6KHz版本： 600nA@3.0V\n- 连续工作版本：1.9uA@3.0V\n 宽工作电压范围：1.8V~5.5V\n 磁场阈值可选（Bop）\n- BOP=±45Gs BRP=±36Gs\n- BOP=±30Gs BRP=±21Gs\n- BOP=±18Gs BRP=±12Gs\n- BOP=±9 Gs BRP=±6 Gs\n- BOP=±7 Gs BRP=±4 Gs\n 全极磁场检测\n CMOS推挽输出\n 封装：SO"
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-tle5012b-exxxx-datasheet-en.pdf",
+      "key": "af051f5420ee23",
+      "bytes": 1153871,
+      "pages": 51,
+      "sha256": "9c7f6b66713734620255309f15ff67fed389d28381e43d74e7e6dc958f77e674",
+      "header": "Data Sheet 1 Rev. 2.1\nwww.infineon.com  2018-06-20\n \nTLE5012B\nGMR-Based Angle Sensor\n1 Overview\nFeatures\n• Giant Magneto Resistance (GMR)-based principle\n• Integrated magnetic field sensing for angle measurement\n• 360° angle measurement with revo lution counter and angle speed \nmeasurement\n• Two sep"
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-tle5502d-datasheet-en.pdf",
+      "key": "bc202a6619c109",
+      "bytes": 518492,
+      "pages": 23,
+      "sha256": "c21a47a32d9685d8537e9e53664c109c6ad9a47f56415756018d9a8874f1f2d2",
+      "header": "XENSIV™  TMR-based magnetic angle sensor\nFeatures\n• Tunneling Magneto Resistance (TMR)-based principle\n• 360° angle measurement\n• Large output signals of up to 0.33 V/V for direct microcontroller connection\n• Discrete bridge with differential  sine and cosine output\n• Ratiometric output signals\n• Tw"
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "key": "bd34b7aa208589",
+      "bytes": 1990094,
+      "pages": 26,
+      "sha256": "7520117a3ba998f7af4b868ceb635df9419d222372209ea15a361cba69731508",
+      "header": "KTH7101\n16 位高速高精度磁编码器\n可编程 SPI/ABZ 输出模式角度传感器\n技术支持\nsupport@conntek.com.cn\n+86(0)755-86006609\n目录\n1 产品信息 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n1.1 产品特点. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/am26c32.pdf",
+      "key": "c2997f976e60df",
+      "bytes": 1964329,
+      "pages": 35,
+      "sha256": "3aad0953b69d94ba3e4100431456deae7847d9a4706cc351d0d2dd1846179f63",
+      "header": "AM26C32 Quadruple Differential Line Receiver\n1 Features\n• Meets or exceeds the requirements of \nANSI TIA/EIA-422-B, TIA/EIA-423-B, and ITU \nrecommendation V.10 and V.11\n• Low power, ICC = 10 mA typical\n• ±7-V Common-mode range with ±200-mV \nsensitivity\n• Input hysteresis: 60 mV typical\n• tpd = 17 ns"
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7815%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "key": "c855f8f86e762a",
+      "bytes": 6407369,
+      "pages": 31,
+      "sha256": "318718ce27ee7dc1d1b599a48cadc4bcb7e18869cb8b433117d3ac2ffb594132",
+      "header": "KTH7815\n16 位高精度低延时霍尔磁编码器\n可编程 ABZ 差分输出模式角度传感器\n技术支持\nsupport@conntek.com.cn\n+86(0)755-86006609\n目录\n1 产品信息 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1\n1.1 产品特点. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+    },
+    {
+      "url": "https://www.reagles.cn/uploads/Download/20231206/154034849925524.pdf",
+      "key": "c871fd3c939d32",
+      "bytes": 2407803,
+      "pages": 13,
+      "sha256": "c7abf61ccbde313a83851ea040d3952bb8294066df0b02f7e6f0a9edf4a5af68",
+      "header": "  \n \n \n \n \nKIN60-17ST00-SEC0V5 \nKIN60-23ST00-SEC0V5 \nKIN60-21BS20-SEC0V5 \n  \n\n 1 \n  \n \n1\n  ......................................................................................................................... 2 \n2\n  ................................................................................"
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5300%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "key": "ca10e530ba5e01",
+      "bytes": 1882976,
+      "pages": 36,
+      "sha256": "0e9cad8e7b7ff9557b8f90335b08570ad676bb2aee1b885210bff74f2da4efac",
+      "header": "KTM5300\n21 位高分辨率、高精度离轴磁性角度编码器 IC\n可编程 ABZ/UVW/PWM/SPI 多模式输出角度传感器\n技术支持\nsupport@conntek.com.cn\n+86(0)755-86006609\n目录\n产品特性 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1\n典型应用 . . . . . . . . . . . . . . . . . . "
+    },
+    {
+      "url": "https://www.dowaytech.com/en/res/202310/12/219e5842f1299a33.pdf",
+      "key": "cf0859edaeada0",
+      "bytes": 1362103,
+      "pages": 16,
+      "sha256": "99da20aade097d6fe55be67b5581ec38d423d0954cbc1686be9a8d6d6f620cd2",
+      "header": "01\n17-bit High-speed TMR Magnetic Rotary Encoder\nTMR3108\nDescription\nThe TMR3108 is a contactless, high-precision, and \nhigh-speed magnetic rotary encoder sensor that \nintegrates tunnel magnetoresistance (TMR) sensors \nand 17-bit signal processing ASIC. It provides options \nfor parameter programming"
+    },
+    {
+      "url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90380-datasheet-melexis.pdf",
+      "key": "d46d62239b9495",
+      "bytes": 966752,
+      "pages": 29,
+      "sha256": "9a8ca3d75b98380576582788e4e852c04808053f22469cc16b489ad57af2a815",
+      "header": "MLX90380 - Triaxis® Resolver \nDatasheet  \n \nREVISION 11 – 8 JUNE 2021 \n3901090380 \n \n1. Features and Benefits \n Triaxis® Hall Technology  \n Sine and Cosine Analog Outputs  \n Output Refresh Rate 4µs  \n 3.3V and 5 V Operating Supply Voltage  \n Operating Temperature Range from - 40°C to \n150°C  \n"
+    },
+    {
+      "url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90520-datasheet-melexis.pdf",
+      "key": "d86cf2e5e9d0fa",
+      "bytes": 5435751,
+      "pages": 62,
+      "sha256": "b018fcffc9752b99191f9d5d2261c178f3e81a06c70958392c27c640d2e83671",
+      "header": "MLX90520\n22‐bit High Speed Inductive Encoder\nDatasheet\nGeneral description\nFeatures and benefits\n• High resolution inductive encoder with synchro‐\nnized dual input channel readout\n• On‐chip Vernier angle calculation with high reso‐\nlution (22‐bit)\n• High accuracy: maximum error ±0.36 °electrical\nfor"
+    },
+    {
+      "url": "https://www.magntek.com.cn/upload/pdf/202312/MT6816_Rev.2.1_中文版.pdf",
+      "key": "df0ba02e3b3a12",
+      "bytes": 1006797,
+      "pages": 30,
+      "sha256": "eaae0e53655427f8c1f215813b44ea31d1c931f3c3d28f91d9161457b3893912",
+      "header": "MT6816\n高分辨率、高速磁性角度编码器IC\nwww.magntek.com.cn | 磁技术带来美妙变革 版本2.1    2022.12\n特性和优势\n￭ 基于先进的AMR各向异性磁阻技术，\n0~360°绝对角度位置检测\n￭ 输出分辨率为14位的绝对角度数据\n￭ 支持最高转速25,000 RPM\n￭ 角度输出的系统延时<2 us\n￭ -40~125℃ 温度范围内均可工作\n￭ 可支持增量ABZ、增量UVW、PWM绝对值\n和SPI总线输出\n￭ 增量ABZ输出支持1~1024脉冲/圈，任意整\n数分辨率客户可编程\n￭ 增量UVW输出支持1~16对极任意整数对极\n客户可编程\n￭ AECQ-100认证"
+    },
+    {
+      "url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90316-datasheet-melexis.pdf",
+      "key": "e18c7f1a58134d",
+      "bytes": 904013,
+      "pages": 48,
+      "sha256": "8c422a1033680b85f826b440763fa916546bfd520522a153cf7e07524d11134a",
+      "header": "MLX90316 Rotary Position Sensor IC  \nDatasheet  \n \n \nFeatures and Benefits \n Absolute Rotary Position Sensor IC  \n Simple & Robust Magnetic Design  \n Tria⊗is® Hall Technology  \n Programmable Angular Range up to 360 \nDegrees  \n Programmable Linear Transfer Characteristic  \n Selectable Analog (R"
+    },
+    {
+      "url": "https://www.reagles.cn/uploads/Download/20240723/092834205ac8885.pdf",
+      "key": "e81bc71d186e04",
+      "bytes": 1602794,
+      "pages": 14,
+      "sha256": "ce116af0476a54bc0082d68cb452d988e49b237e725ab804248de96d3a9443b7",
+      "header": "  \n \n \n \n \n分体式齿轮多圈绝对值编码器 \nWIN48-G12S17□□-HA6C0V5 \n规格书 \n \n \n           \n  \n\n锐意如鹰·传感未来 \n第 1 页 \n \n目录 \n1．概要信息 ......................................................................................................................... 2 \n2．命名规则 .............................................................."
+    },
+    {
+      "url": "https://www.memsic.com/Public/Uploads/uploadfile/files/20220119/MXC3638ALDatasheet.pdf",
+      "key": "e96153d632a049",
+      "bytes": 1840708,
+      "pages": 84,
+      "sha256": "e34281c6412b15ba13605cf4306b396ab23ce0f7396e3c681f48e01821adbea2",
+      "header": " \nMXC3638AL 3-Axis Automotive Grade Accelerometer \nMEMSIC MXC3638AL Page 1 of 84 2023/08\n  \n \nGENERAL DESCRIPTION \nThe MXC3638AL is an automotive grade \nultra-low power, low-noise, integrated digital \noutput 3-axis accelerometer. Low noise and \nlow power are inherent in the monolithic \nfabrication a"
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH1701%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "key": "f3b19b557e3cfb",
+      "bytes": 2652322,
+      "pages": 15,
+      "sha256": "b80fff479c54dc3117c874f17ee463287af84e891e6c5eec32323537d2c61098",
+      "header": "                                    KTH1701 系列 \n高性能、低功耗、全极磁场检测霍尔开关传感器 \n昆泰芯微电子科技有限公司                                                                   1\n                         \n \n1 产品特点 \n 低功耗 \n-  25Hz版本：0.9uA@1.8V \n-  100Hz版本：2.4uA@1.8V \n-  500Hz版本：10.4uA@1.8V \n-  40KHz版本：2.3mA@1.8V \n 宽工作电压范围：1.8"
+    }
+  ]
+}

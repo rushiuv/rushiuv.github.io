@@ -4,7 +4,7 @@
 <div class="wiki-layout">
   <article class="wiki-article">
     <header class="wiki-head">
-      <p class="kicker">如是有为 · {{ if eq .Params.wiki_type "model" }}芯片档案{{ else }}公司与品牌{{ end }}</p>
+      <p class="kicker">如是有为 · {{ if eq .Params.wiki_type "model" }}型号与产品{{ else }}公司与机构{{ end }}</p>
       <h1 class="page-title">{{ .Title }}</h1>
       <p class="wiki-description">{{ .Description }}</p>
       <p class="muted wiki-meta">资料核对 <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006.01.02" }}</time> · <a href="#related-posts">{{ len .Pages }} 篇相关文章</a></p>
