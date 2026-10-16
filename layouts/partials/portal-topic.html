@@ -1,0 +1,9 @@
+{{ $topic := . }}
+{{ range site.Taxonomies.tags.ByCount }}
+{{ if eq .Page.LinkTitle $topic.tag }}
+<a class="topic-card" href="{{ .Page.RelPermalink }}">
+  <div class="topic-top"><span>{{ $topic.number }}</span><span>{{ .Count }} 篇文章 ↗</span></div>
+  <h3>{{ $topic.title }}</h3><p>{{ $topic.desc }}</p><span class="topic-code">{{ $topic.short }}</span>
+</a>
+{{ end }}
+{{ end }}

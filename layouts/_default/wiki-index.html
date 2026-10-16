@@ -17,6 +17,11 @@
 <div class="hero-links"><a class="btn ghost" href="{{ "models/" | relURL }}">全部型号标签</a><a class="btn ghost" href="{{ "companies/" | relURL }}">全部公司标签</a></div>
 <script>
 function filterWiki(){const q=document.getElementById('wiki-search').value.trim().toLocaleLowerCase();const kind=document.getElementById('wiki-kind').value;let n=0;document.querySelectorAll('.wiki-index-card').forEach(a=>{a.hidden=!(a.dataset.search.includes(q)&&(!kind||a.dataset.kind===kind));if(!a.hidden)n++});document.getElementById('wiki-empty').hidden=n>0;}
+const wikiParams = new URLSearchParams(location.search);
+const initialWikiKind = wikiParams.get('kind');
+if (initialWikiKind === 'model' || initialWikiKind === 'company') document.getElementById('wiki-kind').value = initialWikiKind;
+document.getElementById('wiki-search').value = wikiParams.get('q') || '';
+filterWiki();
 document.getElementById('wiki-search').addEventListener('input',filterWiki);
 document.getElementById('wiki-kind').addEventListener('change',filterWiki);
 </script>

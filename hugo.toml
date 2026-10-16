@@ -8,13 +8,13 @@ capitalizeListTitles = false  # 标签原样显示（ams OSRAM、iC-Haus 不被�
 enableRobotsTXT = true
 
 [params]
-  description = "如是有为：一个芯片工程师的技术手记，写磁编码器、磁传感器、TMR/霍尔芯片、机器人关节与人形机器人，以及半导体这一行的人和事。"
+  description = "如是有为：面向编码器研发与应用的资料站，查芯片型号、官方数据手册与公司产品，阅读磁、光、电感编码器、接口、校准和伺服反馈技术文章。"
   # 在 Google Search Console / Bing / 百度站长后台拿到验证码后填这里
   googleVerification = ""
   bingVerification = ""
   baiduVerification = ""
   author = "如是有为"
-  subtitle = "芯片 · 传感器 · 机器人"
+  subtitle = "编码器 · 位置反馈 · 研发与应用"
   sutra = "一切有为法，如梦幻泡影，如露亦如电，应作如是观。"
   sutraFoot = "凡所有相，皆是虚妄。若见诸相非相，即见如来。"
 

@@ -1,0 +1,5 @@
+{{ define "main" }}
+<header class="page-head"><p class="portal-overline">研发与应用</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div></header>
+<div class="portal-topics topics-page">{{ range hugo.Data.portal.topics }}{{ partial "portal-topic.html" . }}{{ end }}</div>
+<section class="portal-section"><div class="portal-section-head"><div><p class="portal-overline">继续探索</p><h2>更多技术主题</h2></div></div><div class="chips big">{{ range site.Taxonomies.tags.ByCount }}{{ if in (slice "霍尔" "TMR" "AMR" "ADC" "离轴" "专利" "芯片设计" "自校准" "多圈编码器" "车规" "FOC" "功能安全" "EtherCAT") .Page.LinkTitle }}<a class="chip" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<small>{{ .Count }}</small></a>{{ end }}{{ end }}</div></section>
+{{ end }}

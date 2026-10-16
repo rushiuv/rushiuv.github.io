@@ -1,0 +1,15 @@
+{
+  "topics": [
+    {"tag":"磁编码器","number":"01","title":"磁编码器","desc":"从霍尔、AMR 到 TMR，查芯片、磁路与位置反馈。","short":"HALL / AMR / TMR"},
+    {"tag":"电感编码器","number":"02","title":"电感编码器","desc":"线圈与靶体、离轴结构，以及设计中的误差来源。","short":"COIL / TARGET"},
+    {"tag":"光电编码器","number":"03","title":"光电编码器","desc":"码盘、读头与细分，理解光学位置测量链。","short":"OPTICAL / SCALE"},
+    {"tag":"编码器接口","number":"04","title":"接口与通信","desc":"从角度数据到控制器，阅读协议、时序与接入讨论。","short":"BiSS / SSI / SPI"},
+    {"tag":"非线性校准","number":"05","title":"误差与校准","desc":"偏心、非线性与校准条件，理解数字背后的边界。","short":"ERROR / CALIBRATION"},
+    {"tag":"机器人关节","number":"06","title":"伺服与机器人关节","desc":"电机侧、负载侧与双编码器，沿应用理解反馈。","short":"SERVO / ROBOTICS"}
+  ],
+  "reading": [
+    {"file":"2026-04-04-yjNAGS3K_sxebtsNJghj1g","label":"先读懂参数","heading":"分辨率和精度，到底差在哪？"},
+    {"file":"2026-04-30-cOCK7ijrx8WeCgSeUte6ng","label":"理解位置保持","heading":"单圈、多圈与掉电后的位置信息"},
+    {"file":"2026-07-29-rNfXzjlMUoeZO1TUSEyk1Q","label":"从选型到设计","heading":"换一颗芯片，还要重新看哪些磁路条件？"}
+  ]
+}

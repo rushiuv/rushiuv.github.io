@@ -1,28 +1,64 @@
 {{ define "hero" }}
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-text">
-      <p class="kicker">RU SHI YOU WEI · FIELD NOTES</p>
-      <h1>如是有为</h1>
-      <p class="subtitle">{{ site.Params.subtitle }}</p>
-      <p class="lead">编码器、磁传感器、机器人关节——一个芯片工程师在工位和产线之间记下的东西。至今 {{ len (where site.RegularPages "Section" "posts") }} 篇。</p>
-      <div class="hero-links"><a class="btn" href="{{ "/archives/" | relURL }}">浏览归档</a><a class="btn ghost" href="{{ "/models/" | relURL }}">按芯片型号找</a></div>
+{{ $posts := where site.RegularPages "Section" "posts" }}
+<section class="portal-hero">
+  <div class="wrap portal-hero-grid">
+    <div class="portal-intro">
+      <p class="portal-eyebrow"><span></span> 编码器研发与应用资料</p>
+      <h1>从选型开始，<br>把位置反馈<span>看清楚。</span></h1>
+      <p class="portal-lead">查型号与数据手册，读原理、接口和应用。<br class="wide-break">给做编码器的人，也给使用编码器的人。</p>
+      <form class="portal-search" id="portal-search-form" role="search">
+        <label class="sr-only" for="portal-search-input">搜索型号、公司或技术文章</label>
+        <span class="search-icon" aria-hidden="true"></span><input id="portal-search-input" type="search" placeholder="搜索型号、公司或技术问题" autocomplete="off"><button type="submit">搜索 <span aria-hidden="true">↗</span></button>
+      </form>
+      <div class="portal-hot"><span>试着搜</span>{{ range slice "MT6835" "AS5047P" "多圈" "校准" }}<button type="button" data-query="{{ . }}">{{ . }}</button>{{ end }}</div>
+      <div class="portal-stats"><span><strong>{{ len site.Taxonomies.models }}</strong> 型号与产品</span><span><strong>{{ len site.Taxonomies.companies }}</strong> 公司与机构</span><span><strong>{{ len $posts }}</strong> 篇文章</span></div>
     </div>
-    <figure class="hero-figure">
-      <div class="package"><img src="{{ "images/site/hero.webp" | relURL }}" alt="主人公与人形机器人" width="1103" height="941"></div>
-    </figure>
-    <p class="sutra-vertical">{{ site.Params.sutra }}<span>《金刚经》</span></p>
+    <aside class="portal-desk">
+      <div class="desk-head"><span>型号资料速览</span><span class="desk-symbol" aria-hidden="true">＋</span></div>
+      <p class="desk-desc">从具体器件，找到官方资料与延伸阅读。</p>
+      {{ range $name := slice "MT6835" "AS5047P" "KTM5900" "iC-MU" }}
+      {{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}
+      <a class="desk-row" href="{{ .Page.RelPermalink }}"><div><strong>{{ $name }}</strong><span>{{ .Page.Params.wiki_category | default "角度测量" }} · {{ .Count }} 篇相关文章</span></div><span class="desk-arrow" aria-hidden="true">↗</span></a>
+      {{ end }}{{ end }}{{ end }}
+      <a class="desk-bottom" href="{{ "wiki/" | relURL }}?kind=model">浏览全部型号与资料 <span>→</span></a>
+    </aside>
   </div>
 </section>
 {{ end }}
+
 {{ define "main" }}
-<div class="layout">
-  <section class="posts">
-    <h2 class="section-title"><span>最新文章</span></h2>
-    {{ $pager := .Paginate (where site.RegularPages "Section" "posts").ByDate.Reverse }}
-    {{ range $pager.Pages }}{{ partial "post-item.html" . }}{{ end }}
-    {{ partial "pager.html" $pager }}
-  </section>
-  {{ partial "sidebar.html" . }}
-</div>
+<section class="portal-results" id="portal-results" hidden aria-live="polite">
+  <div class="portal-section-head"><div><p class="portal-overline">站内检索</p><h2 id="portal-results-title">搜索结果</h2></div><button class="text-button" id="portal-search-clear" type="button">收起结果 ×</button></div>
+  <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button></div>
+  <p class="search-count" id="portal-search-count"></p><div id="portal-search-list" class="search-list"></div><button class="search-more" id="portal-search-more" type="button" hidden>显示更多结果 ↓</button>
+</section>
+
+<section class="portal-section" id="topics">
+  <div class="portal-section-head"><div><p class="portal-overline">按技术方向阅读</p><h2>找到你正在研究的问题</h2></div><a class="section-more" href="{{ "topics/" | relURL }}">全部技术专题 ↗</a></div>
+  <div class="portal-topics">{{ range hugo.Data.portal.topics }}{{ partial "portal-topic.html" . }}{{ end }}</div>
+</section>
+
+<section class="portal-reading portal-section">
+  <div class="portal-section-head"><div><p class="portal-overline">研发与应用阅读</p><h2>从一个具体问题开始</h2></div><span class="section-note">选自已有文章</span></div>
+  <div class="reading-grid">{{ range hugo.Data.portal.reading }}{{ $item := . }}{{ with site.GetPage (printf "/posts/%s" .file) }}<a class="reading-card" href="{{ .RelPermalink }}"><span class="reading-label">{{ $item.label }}</span><h3>{{ $item.heading }}</h3><p>{{ .Description | plainify | truncate 85 }}</p><span class="reading-bottom">阅读全文 <span>↗</span></span></a>{{ end }}{{ end }}</div>
+</section>
+
+<section class="portal-section portal-library">
+  <div class="library-intro"><p class="portal-overline">型号与公司词条</p><h2>原理之外，<br>把资料接起来。</h2><p>型号页连接官方产品与数据手册，公司页串起产品线与相关文章。</p><a class="btn" href="{{ "wiki/" | relURL }}">进入资料库 ↗</a></div>
+  <div class="library-links">{{ range $name := slice "MT6835" "AS5047P" "MLX90382" "TLE5012B" "KTH78" "MT6901" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><strong>{{ $name }}</strong><span>{{ .Page.Description | plainify | truncate 64 }}</span><i aria-hidden="true">↗</i></a>{{ end }}{{ end }}{{ end }}</div>
+</section>
+
+<section class="portal-section portal-journal">
+  <div class="portal-section-head"><div><p class="portal-overline">持续记录与观察</p><h2>最近更新</h2></div><a class="section-more" href="{{ "archives/" | relURL }}">全部文章 ↗</a></div>
+  {{ $updates := slice }}{{ range (where site.RegularPages "Section" "posts").ByDate.Reverse }}{{ if intersect (.Params.tags | default slice) (slice "磁编码器" "电感编码器" "光电编码器" "编码器接口" "非线性校准" "多圈编码器" "机器人关节" "AMR" "TMR" "离轴" "FOC") }}{{ $updates = $updates | append . }}{{ end }}{{ end }}
+  <div class="journal-grid">{{ range first 6 $updates }}<article class="journal-card"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description | plainify | truncate 90 }}</p><div class="journal-tags">{{ range first 2 (.GetTerms "tags") }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div></article>{{ end }}</div>
+</section>
+
+<section class="portal-about"><div><p class="portal-overline">关于如是有为</p><h2>沿着位置反馈，理解器件与系统。</h2><p>一个芯片工程师的持续记录。写编码器、磁传感器、伺服与机器人关节，也讨论这一行里的人和事。</p><a href="{{ "companies/" | relURL }}">浏览公司与品牌 ↗</a></div><img src="{{ "images/site/qrcode.png" | relURL }}" alt="微信公众号如是有为二维码" width="112" height="112"></section>
+
+{{ $index := slice }}
+{{ range where site.Pages "Params.wiki" true }}{{ $aliases := delimit (.Params.related_companies | default slice) " " }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" (.Description | plainify) "kind" .Params.wiki_type "keywords" (printf "%s %s" (.Params.wiki_category | default "") $aliases)) }}{{ end }}
+{{ range where site.RegularPages "Section" "posts" }}{{ $tags := slice }}{{ range .GetTerms "tags" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ range .GetTerms "models" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ range .GetTerms "companies" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" (.Description | plainify | truncate 160) "kind" "post" "keywords" (delimit $tags " ")) }}{{ end }}
+<script type="application/json" id="portal-search-data">{{ $index | jsonify | safeJS }}</script>
+<script src="{{ "js/portal.js" | relURL }}" defer></script>
 {{ end }}
