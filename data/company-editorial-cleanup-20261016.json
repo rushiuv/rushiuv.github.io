@@ -1,0 +1,1077 @@
+{
+  "date": "2026-10-16",
+  "scope": "91 company/organization term pages; existing factual descriptions retained except Conntek newly condensed against official homepage",
+  "pages": [
+    {
+      "file": "content/companies/abb/_index.md",
+      "title": "ABB",
+      "before_chars": 1758,
+      "after_chars": 206,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/adi/_index.md",
+      "title": "ADI",
+      "before_chars": 1889,
+      "after_chars": 286,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/akko/_index.md",
+      "title": "Akko",
+      "before_chars": 1699,
+      "after_chars": 184,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/akm/_index.md",
+      "title": "AKM",
+      "before_chars": 1765,
+      "after_chars": 184,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/allegro/_index.md",
+      "title": "Allegro",
+      "before_chars": 1818,
+      "after_chars": 230,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/ams-osram/_index.md",
+      "title": "ams OSRAM",
+      "before_chars": 2141,
+      "after_chars": 1288,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/anthropic/_index.md",
+      "title": "Anthropic",
+      "before_chars": 1761,
+      "after_chars": 234,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/anybotics/_index.md",
+      "title": "ANYbotics",
+      "before_chars": 1731,
+      "after_chars": 201,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/apple/_index.md",
+      "title": "Apple",
+      "before_chars": 1734,
+      "after_chars": 196,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/broadcom/_index.md",
+      "title": "Broadcom",
+      "before_chars": 1874,
+      "after_chars": 279,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/cloudflare/_index.md",
+      "title": "Cloudflare",
+      "before_chars": 1719,
+      "after_chars": 220,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/epfl/_index.md",
+      "title": "EPFL",
+      "before_chars": 1710,
+      "after_chars": 203,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/eth/_index.md",
+      "title": "ETH",
+      "before_chars": 1692,
+      "after_chars": 191,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/figure-ai/_index.md",
+      "title": "Figure AI",
+      "before_chars": 1722,
+      "after_chars": 192,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/hengstler/_index.md",
+      "title": "Hengstler",
+      "before_chars": 1787,
+      "after_chars": 196,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/ic-haus/_index.md",
+      "title": "iC-Haus",
+      "before_chars": 2074,
+      "after_chars": 1225,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/intel/_index.md",
+      "title": "Intel",
+      "before_chars": 1758,
+      "after_chars": 197,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/maxon/_index.md",
+      "title": "maxon",
+      "before_chars": 1699,
+      "after_chars": 209,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/melexis/_index.md",
+      "title": "Melexis",
+      "before_chars": 2421,
+      "after_chars": 1574,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/mps/_index.md",
+      "title": "MPS",
+      "before_chars": 1887,
+      "after_chars": 292,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/nvidia/_index.md",
+      "title": "NVIDIA",
+      "before_chars": 1849,
+      "after_chars": 278,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/nxp/_index.md",
+      "title": "NXP",
+      "before_chars": 1838,
+      "after_chars": 251,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/openai/_index.md",
+      "title": "OpenAI",
+      "before_chars": 1756,
+      "after_chars": 221,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/pixart/_index.md",
+      "title": "PixArt",
+      "before_chars": 1703,
+      "after_chars": 199,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/posital/_index.md",
+      "title": "POSITAL",
+      "before_chars": 1815,
+      "after_chars": 204,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/qualcomm/_index.md",
+      "title": "Qualcomm",
+      "before_chars": 1883,
+      "after_chars": 311,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/renesas/_index.md",
+      "title": "Renesas",
+      "before_chars": 1830,
+      "after_chars": 226,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/rls/_index.md",
+      "title": "RLS",
+      "before_chars": 1798,
+      "after_chars": 197,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/sensitec/_index.md",
+      "title": "Sensitec",
+      "before_chars": 1802,
+      "after_chars": 211,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/st/_index.md",
+      "title": "ST",
+      "before_chars": 1807,
+      "after_chars": 212,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/tdk/_index.md",
+      "title": "TDK",
+      "before_chars": 1854,
+      "after_chars": 252,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/ti/_index.md",
+      "title": "TI",
+      "before_chars": 2170,
+      "after_chars": 1278,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/ubs/_index.md",
+      "title": "UBS",
+      "before_chars": 1673,
+      "after_chars": 208,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/wooting/_index.md",
+      "title": "Wooting",
+      "before_chars": 1715,
+      "after_chars": 188,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/中科无线/_index.md",
+      "title": "中科无线",
+      "before_chars": 1815,
+      "after_chars": 216,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/中芯国际/_index.md",
+      "title": "中芯国际",
+      "before_chars": 1700,
+      "after_chars": 192,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/他山/_index.md",
+      "title": "他山",
+      "before_chars": 1667,
+      "after_chars": 191,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/众擎/_index.md",
+      "title": "众擎",
+      "before_chars": 1716,
+      "after_chars": 195,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/优必选/_index.md",
+      "title": "优必选",
+      "before_chars": 1720,
+      "after_chars": 192,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/传周科技/_index.md",
+      "title": "传周科技",
+      "before_chars": 1835,
+      "after_chars": 240,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/保隆科技/_index.md",
+      "title": "保隆科技",
+      "before_chars": 1770,
+      "after_chars": 188,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/倍福/_index.md",
+      "title": "倍福",
+      "before_chars": 1760,
+      "after_chars": 204,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/光鉴/_index.md",
+      "title": "光鉴",
+      "before_chars": 1750,
+      "after_chars": 238,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/华为/_index.md",
+      "title": "华为",
+      "before_chars": 1718,
+      "after_chars": 196,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/华虹/_index.md",
+      "title": "华虹",
+      "before_chars": 1684,
+      "after_chars": 188,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/厦门钨业/_index.md",
+      "title": "厦门钨业",
+      "before_chars": 1688,
+      "after_chars": 182,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/台积电/_index.md",
+      "title": "台积电",
+      "before_chars": 1682,
+      "after_chars": 173,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/图漾/_index.md",
+      "title": "图漾",
+      "before_chars": 1676,
+      "after_chars": 182,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/圣邦微/_index.md",
+      "title": "圣邦微",
+      "before_chars": 1782,
+      "after_chars": 190,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/堡盟/_index.md",
+      "title": "堡盟",
+      "before_chars": 1811,
+      "after_chars": 203,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/多摩川/_index.md",
+      "title": "多摩川",
+      "before_chars": 1830,
+      "after_chars": 218,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/多维科技/_index.md",
+      "title": "多维科技",
+      "before_chars": 2130,
+      "after_chars": 1304,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/奥比中光/_index.md",
+      "title": "奥比中光",
+      "before_chars": 1700,
+      "after_chars": 194,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/宇树/_index.md",
+      "title": "宇树",
+      "before_chars": 2108,
+      "after_chars": 1117,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/安川/_index.md",
+      "title": "安川",
+      "before_chars": 1753,
+      "after_chars": 212,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/宝马/_index.md",
+      "title": "宝马",
+      "before_chars": 1712,
+      "after_chars": 188,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/小米/_index.md",
+      "title": "小米",
+      "before_chars": 1732,
+      "after_chars": 192,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/小鹏/_index.md",
+      "title": "小鹏",
+      "before_chars": 1712,
+      "after_chars": 187,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/峰岹/_index.md",
+      "title": "峰岹",
+      "before_chars": 1812,
+      "after_chars": 215,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/希磁/_index.md",
+      "title": "希磁",
+      "before_chars": 1836,
+      "after_chars": 253,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/帕西尼/_index.md",
+      "title": "帕西尼",
+      "before_chars": 1649,
+      "after_chars": 180,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/康诺思腾/_index.md",
+      "title": "康诺思腾",
+      "before_chars": 1716,
+      "after_chars": 222,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/弓望/_index.md",
+      "title": "弓望",
+      "before_chars": 1837,
+      "after_chars": 230,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/昆泰芯/_index.md",
+      "title": "昆泰芯",
+      "before_chars": 2097,
+      "after_chars": 811,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/易德龙/_index.md",
+      "title": "易德龙",
+      "before_chars": 1619,
+      "after_chars": 170,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/智元/_index.md",
+      "title": "智元",
+      "before_chars": 1727,
+      "after_chars": 193,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/比亚迪/_index.md",
+      "title": "比亚迪",
+      "before_chars": 1737,
+      "after_chars": 203,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/汇川/_index.md",
+      "title": "汇川",
+      "before_chars": 1805,
+      "after_chars": 214,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/海康/_index.md",
+      "title": "海康",
+      "before_chars": 1698,
+      "after_chars": 206,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/海德汉/_index.md",
+      "title": "海德汉",
+      "before_chars": 2288,
+      "after_chars": 1332,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/特斯拉/_index.md",
+      "title": "特斯拉",
+      "before_chars": 2092,
+      "after_chars": 1125,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/矽睿/_index.md",
+      "title": "矽睿",
+      "before_chars": 1760,
+      "after_chars": 178,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/禹衡/_index.md",
+      "title": "禹衡",
+      "before_chars": 1785,
+      "after_chars": 187,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/禾川/_index.md",
+      "title": "禾川",
+      "before_chars": 1710,
+      "after_chars": 176,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/纳芯微/_index.md",
+      "title": "纳芯微",
+      "before_chars": 2584,
+      "after_chars": 1741,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/美敦力/_index.md",
+      "title": "美敦力",
+      "before_chars": 1696,
+      "after_chars": 194,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/美新半导体/_index.md",
+      "title": "美新半导体",
+      "before_chars": 1811,
+      "after_chars": 201,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/舍弗勒/_index.md",
+      "title": "舍弗勒",
+      "before_chars": 1694,
+      "after_chars": 207,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/艾为/_index.md",
+      "title": "艾为",
+      "before_chars": 1805,
+      "after_chars": 209,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/英达森斯/_index.md",
+      "title": "英达森斯",
+      "before_chars": 1837,
+      "after_chars": 254,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/英飞凌/_index.md",
+      "title": "英飞凌",
+      "before_chars": 2402,
+      "after_chars": 1503,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/西门子/_index.md",
+      "title": "西门子",
+      "before_chars": 1845,
+      "after_chars": 282,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/达尔优/_index.md",
+      "title": "达尔优",
+      "before_chars": 1689,
+      "after_chars": 174,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/追觅/_index.md",
+      "title": "追觅",
+      "before_chars": 1717,
+      "after_chars": 189,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/金力永磁/_index.md",
+      "title": "金力永磁",
+      "before_chars": 1708,
+      "after_chars": 193,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/钛虎/_index.md",
+      "title": "钛虎",
+      "before_chars": 1748,
+      "after_chars": 232,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/锐鹰/_index.md",
+      "title": "锐鹰",
+      "before_chars": 1846,
+      "after_chars": 193,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/长鑫/_index.md",
+      "title": "长鑫",
+      "before_chars": 1679,
+      "after_chars": 176,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/雷尼绍/_index.md",
+      "title": "雷尼绍",
+      "before_chars": 2337,
+      "after_chars": 1513,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    },
+    {
+      "file": "content/companies/雷赛/_index.md",
+      "title": "雷赛",
+      "before_chars": 1760,
+      "after_chars": 210,
+      "removed_sections": [
+        "相关业务与技术路线",
+        "与位置反馈和机器人应用的关系",
+        "资料查找与阅读",
+        "如何理解这类企业的技术信息"
+      ]
+    },
+    {
+      "file": "content/companies/麦歌恩/_index.md",
+      "title": "麦歌恩",
+      "before_chars": 2421,
+      "after_chars": 1468,
+      "removed_sections": [
+        "与编码器应用的关系",
+        "如何查找资料"
+      ]
+    }
+  ],
+  "removed_recurring_paragraphs": [],
+  "official_recheck": [
+    "https://www.conntek.com.cn/"
+  ],
+  "not_claimed": "Other company facts were not freshly audited against all official websites."
+}
