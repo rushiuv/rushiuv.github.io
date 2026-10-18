@@ -1,0 +1,6 @@
+[
+  {"id":"consumer","title":"消费电子","code":"01","image":"/images/editorial/chromeos-consumer-20261018.webp","short":"摇杆、穿戴与便携设备：功耗、尺寸和交互的一起取舍。","description":"位置、方向、行程与待机唤醒，先分清芯片到底输出哪一种量。"},
+  {"id":"home","title":"智能家居","code":"02","image":"/images/editorial/chromeos-home-apps-20261018.webp","short":"旋钮、水位与温度：从机构状态走到完整信号链。","description":"磁检测、模拟前端、温度与液位路径各有边界，不把每个任务都套成角度测量。"},
+  {"id":"industrial","title":"工业与运动","code":"03","image":"/images/editorial/chromeos-industrial-20261018.webp","short":"电机、机器人与表计：反馈、计数和诊断各司其职。","description":"安装、动态、干扰与寿命条件，决定芯片在系统里能承担哪一段工作。"},
+  {"id":"automotive","title":"汽车与交通","code":"04","image":"/images/editorial/chromeos-automotive-20261018.webp","short":"执行器与车身位置：区分角度读数、诊断和系统安全。","description":"器件资格、接口、故障反应与整机验证分开核对，不以型号名称代替安全论证。"}
+]

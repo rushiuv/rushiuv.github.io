@@ -1,0 +1,345 @@
+{
+  "reference_date": "2026-10-18",
+  "basics_source": "https://conntek.github.io/basics/",
+  "applications_source": "https://conntek.github.io/applications/",
+  "scope": "Reference sites supply topic coverage only. Text is independently authored and device examples are candidates, not verified production adoption.",
+  "basics": [
+    {
+      "topic": "在轴检测",
+      "slug": "in-axis"
+    },
+    {
+      "topic": "离轴检测",
+      "slug": "off-axis"
+    },
+    {
+      "topic": "安装偏心",
+      "slug": "eccentricity"
+    },
+    {
+      "topic": "气隙",
+      "slug": "air-gap"
+    },
+    {
+      "topic": "磁体",
+      "slug": "magnets"
+    },
+    {
+      "topic": "极对数",
+      "slug": "pole-pairs"
+    },
+    {
+      "topic": "抗杂散磁场",
+      "slug": "stray-field"
+    },
+    {
+      "topic": "分辨率",
+      "slug": "resolution-accuracy"
+    },
+    {
+      "topic": "INL",
+      "slug": "inl"
+    },
+    {
+      "topic": "噪声",
+      "slug": "angle-noise"
+    },
+    {
+      "topic": "延迟",
+      "slug": "latency"
+    },
+    {
+      "topic": "自校准",
+      "slug": "self-calibration"
+    },
+    {
+      "topic": "游标",
+      "slug": "vernier"
+    },
+    {
+      "topic": "增量与绝对",
+      "slug": "absolute-incremental"
+    },
+    {
+      "topic": "ABZ",
+      "slug": "abz"
+    },
+    {
+      "topic": "UVW",
+      "slug": "uvw"
+    },
+    {
+      "topic": "SPI与SSI",
+      "slug": "spi-ssi"
+    },
+    {
+      "topic": "CRC",
+      "slug": "crc"
+    },
+    {
+      "topic": "I2C",
+      "slug": "i2c"
+    },
+    {
+      "topic": "PWM",
+      "slug": "pwm"
+    },
+    {
+      "topic": "霍尔效应",
+      "slug": "hall-effect"
+    },
+    {
+      "topic": "霍尔斩波技术",
+      "slug": "chopper"
+    },
+    {
+      "topic": "垂直霍尔",
+      "slug": "vertical-hall"
+    },
+    {
+      "topic": "三维霍尔",
+      "slug": "3d-hall"
+    },
+    {
+      "topic": "AMR",
+      "slug": "amr"
+    },
+    {
+      "topic": "TMR",
+      "slug": "tmr"
+    },
+    {
+      "topic": "单极与全极开关",
+      "slug": "switch-polarity"
+    },
+    {
+      "topic": "锁存开关",
+      "slug": "latch"
+    },
+    {
+      "topic": "BOP与BRP",
+      "slug": "bop-brp"
+    },
+    {
+      "topic": "线性霍尔",
+      "slug": "linear-hall"
+    }
+  ],
+  "applications": [
+    {
+      "topic": "触控笔",
+      "slug": "stylus",
+      "group": "消费电子"
+    },
+    {
+      "topic": "电子棋盘",
+      "slug": "electronic-chessboard",
+      "group": "消费电子"
+    },
+    {
+      "topic": "轮椅摇杆",
+      "slug": "wheelchair-joystick",
+      "group": "消费电子"
+    },
+    {
+      "topic": "洗衣机",
+      "slug": "washing-machine",
+      "group": "消费电子"
+    },
+    {
+      "topic": "游戏手柄",
+      "slug": "game-controller",
+      "group": "消费电子"
+    },
+    {
+      "topic": "掌机摇杆",
+      "slug": "handheld-joystick",
+      "group": "消费电子"
+    },
+    {
+      "topic": "智能手表",
+      "slug": "smartwatch",
+      "group": "消费电子"
+    },
+    {
+      "topic": "无人机旋翼",
+      "slug": "drone-rotor",
+      "group": "消费电子"
+    },
+    {
+      "topic": "笔记本与平板合盖检测",
+      "slug": "laptop-lid",
+      "group": "消费电子"
+    },
+    {
+      "topic": "咖啡机",
+      "slug": "coffee-machine",
+      "group": "智能家居"
+    },
+    {
+      "topic": "陪伴机器人",
+      "slug": "companion-robot",
+      "group": "智能家居"
+    },
+    {
+      "topic": "燃气灶-旋钮",
+      "slug": "stove-knob",
+      "group": "智能家居"
+    },
+    {
+      "topic": "扫地机器人-真空吸尘器",
+      "slug": "vacuum-cleaner",
+      "group": "智能家居"
+    },
+    {
+      "topic": "扫地机-水位监测",
+      "slug": "robot-cleaner-water-level",
+      "group": "智能家居"
+    },
+    {
+      "topic": "太阳能光电转换器",
+      "slug": "photovoltaic-signal-chain",
+      "group": "智能家居"
+    },
+    {
+      "topic": "智能马桶-枢轴检测",
+      "slug": "toilet-hinge",
+      "group": "智能家居"
+    },
+    {
+      "topic": "燃气灶-温度检测",
+      "slug": "stove-temperature",
+      "group": "智能家居"
+    },
+    {
+      "topic": "扫地机器人-尘盒检测",
+      "slug": "robot-cleaner-dustbin",
+      "group": "智能家居"
+    },
+    {
+      "topic": "智能马桶-旋钮",
+      "slug": "toilet-knob",
+      "group": "智能家居"
+    },
+    {
+      "topic": "智能马桶-水位监测",
+      "slug": "toilet-water-level",
+      "group": "智能家居"
+    },
+    {
+      "topic": "电表",
+      "slug": "electricity-meter",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "断路器",
+      "slug": "circuit-breaker",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "燃气表",
+      "slug": "gas-meter",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "旋钮操控",
+      "slug": "industrial-knob",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "闸机",
+      "slug": "turnstile",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "机械电表",
+      "slug": "mechanical-electricity-meter",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "伺服电机",
+      "slug": "servo-motor",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "直线电机",
+      "slug": "linear-motor",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "机器人关节",
+      "slug": "robot-joint",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "夹爪",
+      "slug": "gripper",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "齿轮箱",
+      "slug": "gearbox",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "缝纫机",
+      "slug": "sewing-machine",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "无刷直流电机",
+      "slug": "brushless-dc-motor",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "步进闭环",
+      "slug": "closed-loop-stepper",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "空心杯电机",
+      "slug": "coreless-motor",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "电梯",
+      "slug": "elevator",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "屏蔽门",
+      "slug": "platform-screen-door",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "AGV 搬运机器人",
+      "slug": "agv",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "水表",
+      "slug": "water-meter",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "热量表",
+      "slug": "heat-meter",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "气缸位置检测",
+      "slug": "pneumatic-cylinder",
+      "group": "工业与运动"
+    },
+    {
+      "topic": "电子节气门",
+      "slug": "electronic-throttle",
+      "group": "汽车与交通"
+    },
+    {
+      "topic": "汽车角度控制",
+      "slug": "automotive-angle",
+      "group": "汽车与交通"
+    }
+  ]
+}

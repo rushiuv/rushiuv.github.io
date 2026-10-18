@@ -4,7 +4,7 @@
   <div class="wrap home-hero-grid">
     <div class="home-intro">
       <p class="home-eyebrow"><span></span>如是有为 · 编码器研发与应用</p>
-      <h1>从选型开始，<br>把位置反馈<span>看清楚。</span></h1>
+      <h1>从选型开始，<br>把位置反馈<span>看清楚</span>。</h1>
       <p class="home-lead">编码器原理、芯片型号与工程应用。<br>把基础概念、官方手册和技术文章连起来。</p>
       <form class="portal-search" id="portal-search-form" role="search">
         <label class="sr-only" for="portal-search-input">搜索型号、公司或技术文章</label>
@@ -13,7 +13,7 @@
       <div class="portal-hot"><span>试着搜</span>{{ range slice "MT6835" "AS5047P" "多圈" "校准" }}<button type="button" data-query="{{ . }}">{{ . }}</button>{{ end }}</div>
       <div class="home-stats"><span><strong>{{ len site.Taxonomies.models }}</strong> 型号</span><i></i><span><strong>{{ len site.Taxonomies.companies }}</strong> 公司</span><i></i><span><strong>{{ len $posts }}</strong> 篇文章</span></div>
     </div>
-    <a class="home-hero-art" href="{{ "wiki/basics/" | relURL }}" aria-label="从编码器基础知识开始阅读"><span class="art-caption" aria-hidden="true"><span>POSITION FEEDBACK</span><span>器件 · 磁路 · 信号链</span></span><img src="{{ "images/site/home-protagonist-v2.webp" | relURL }}" alt="如是有为主人公在工作台前阅读编码器资料" width="1448" height="1086" loading="eager" fetchpriority="high"></a>
+    <a class="home-hero-art" href="{{ "wiki/basics/" | relURL }}" aria-label="从编码器基础知识开始阅读"><span class="art-register" aria-hidden="true"></span><span class="art-caption" aria-hidden="true"><span>POSITION FEEDBACK</span><span>器件 · 磁路 · 信号链</span></span><img src="{{ "images/editorial/chromeos-home-20261018.webp" | relURL }}" alt="轻漫画工程场景：工程师比较电机、芯片与笔记，非安装示意图" width="1536" height="1024" loading="eager" fetchpriority="high"></a>
   </div>
   <div class="wrap"><div class="home-models"><span class="home-models-label">常用型号</span><div>{{ range $name := slice "MT6835" "AS5047P" "KTM5900" "iC-MU" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><strong>{{ $name }}</strong><span>{{ .Count }} 篇</span><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div><a class="home-models-all" href="{{ "wiki/" | relURL }}?kind=model">全部型号 →</a></div></div>
 </section>
@@ -30,16 +30,21 @@
 {{ end }}
 <section class="portal-results" id="portal-results" hidden aria-live="polite">
   <div class="portal-section-head"><div><p class="portal-overline">站内检索</p><h2 id="portal-results-title">搜索结果</h2></div><button class="text-button" id="portal-search-clear" type="button">收起结果 ×</button></div>
-  <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button><button type="button" data-search-kind="basic">基础知识</button></div>
+  <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button><button type="button" data-search-kind="basic">基础知识</button><button type="button" data-search-kind="application">应用场景</button></div>
   <p class="search-count" id="portal-search-count"></p><div id="portal-search-list" class="search-list"></div><button class="search-more" id="portal-search-more" type="button" hidden>显示更多结果 ↓</button>
 </section>
 
 
 <nav class="home-paths" aria-label="资料阅读入口">
-  <a href="{{ "wiki/basics/" | relURL }}"><span class="home-path-num">01 / 从概念开始</span><h2>编码器基础知识 <b>↗</b></h2><p>12 个词条，读懂原理、参数与接口。</p></a>
-  <a href="{{ "wiki/" | relURL }}"><span class="home-path-num">02 / 从器件开始</span><h2>型号与官方资料 <b>↗</b></h2><p>找具体芯片、核心性能和数据手册。</p></a>
-  <a href="{{ "topics/" | relURL }}"><span class="home-path-num">03 / 从问题开始</span><h2>技术专题与应用 <b>↗</b></h2><p>沿着磁路、校准与伺服反馈继续深入。</p></a>
+  <a href="{{ "wiki/basics/" | relURL }}"><span class="home-path-num">01 / 从概念开始</span>{{ partial "path-icon.html" "basics" }}<h2>编码器基础知识 <b>↗</b></h2><p>{{ len (site.GetPage "/wiki/basics").RegularPages }} 个词条，读懂原理、参数与接口。</p></a>
+  <a href="{{ "wiki/" | relURL }}"><span class="home-path-num">02 / 从器件开始</span>{{ partial "path-icon.html" "model" }}<h2>型号与官方资料 <b>↗</b></h2><p>找具体芯片、核心性能和数据手册。</p></a>
+  <a href="{{ "topics/" | relURL }}"><span class="home-path-num">03 / 从问题开始</span>{{ partial "path-icon.html" "topic" }}<h2>技术专题与应用 <b>↗</b></h2><p>沿着磁路、校准与伺服反馈继续深入。</p></a>
 </nav>
+
+<section class="home-section home-applications" aria-labelledby="home-applications-title">
+  <header class="home-section-head"><div><p class="home-overline">APPLICATIONS / 从场景出发</p><h2 id="home-applications-title">芯片放进系统，先要回答什么？</h2></div><a href="{{ "applications/" | relURL }}">全部应用 <span>↗</span></a></header>
+  <div class="home-app-grid">{{ range hugo.Data.applications }}{{ $group := . }}{{ $pages := where (where site.RegularPages "Params.application_entry" true) "Params.application_group" .title }}<a class="home-app-card" href="{{ "applications/" | relURL }}#{{ .id }}"><img src="{{ .image | relURL }}" alt="{{ .title }}应用场景插画，非器件结构图" width="1536" height="1024" loading="lazy"><div><span class="app-category-label">{{ .code }} / {{ len $pages }} 个场景</span><h3>{{ .title }} <b aria-hidden="true">↗</b></h3><p>{{ .short }}</p></div></a>{{ end }}</div>
+</section>
 
 <section class="home-section" id="topics">
   <header class="home-section-head"><div><p class="home-overline">EXPLORE / 技术方向</p><h2>你正在研究什么？</h2></div><a href="{{ "topics/" | relURL }}">全部专题 <span>↗</span></a></header>
@@ -67,7 +72,8 @@
 {{ $index := slice }}
 {{ range where site.Pages "Params.wiki" true }}{{ $aliases := delimit (.Params.related_companies | default slice) " " }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" (.Description | plainify) "kind" .Params.wiki_type "keywords" (printf "%s %s" (.Params.wiki_category | default "") $aliases)) }}{{ end }}
 {{ range where site.RegularPages "Section" "posts" }}{{ $tags := slice }}{{ range .GetTerms "tags" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ range .GetTerms "models" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ range .GetTerms "companies" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" (.Description | plainify | truncate 160) "kind" "post" "keywords" (delimit $tags " ")) }}{{ end }}
-{{ range where site.RegularPages "Params.basic_entry" true }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" .Description "kind" "basic" "keywords" .Params.basic_group) }}{{ end }}
+{{ range where site.RegularPages "Params.basic_entry" true }}{{ $page := . }}{{ $keywords := slice .Params.basic_group }}{{ range hugo.Data.reference_coverage.basics }}{{ if eq .slug $page.File.ContentBaseName }}{{ $keywords = $keywords | append .topic }}{{ end }}{{ end }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" .Description "kind" "basic" "keywords" (delimit $keywords " ")) }}{{ end }}
+{{ range where site.RegularPages "Params.application_entry" true }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" .Description "kind" "application" "keywords" (printf "%s %s" .Params.application_group (.Params.reference_topic | default ""))) }}{{ end }}
 <script type="application/json" id="portal-search-data">{{ $index | jsonify | safeJS }}</script>
-<script src="{{ "js/portal.js" | relURL }}" defer></script>
+<script src="{{ "js/portal.js" | relURL }}?v={{ readFile "static/js/portal.js" | crypto.SHA256 | truncate 12 "" }}" defer></script>
 {{ end }}

@@ -4,10 +4,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MathML 实际布局回归</title>
 <link rel="stylesheet" href="../static/css/site.css">
+<link rel="stylesheet" href="../static/css/wiki.css">
+<link rel="stylesheet" href="../static/css/portal.css">
+<link rel="stylesheet" href="../static/css/refined.css">
 <style>body{padding:20px}.content{max-width:760px;margin:auto}#result{white-space:pre-wrap;overflow-wrap:anywhere}.fixture{margin:24px 0;border:1px solid #ccc;padding:8px}</style>
 <main class="content">
 <h1>MathML 实际布局回归</h1>
-<p>必须在浏览器中运行；读取生产 CSS，不只检查数学节点是否存在。调整窗口宽度会重新检查。</p>
+<p>必须在浏览器中运行；按实际文章顺序加载 site.css、wiki.css、portal.css、refined.css，不只检查数学节点是否存在。文章不加载首页的 home.css 或基础页的 basics.css。调整窗口宽度会重新检查，本页不能代替实际文章验收。</p>
 <pre id="result">检查中</pre>
 <div class="fixture" id="short">
 <p>机械角位移：</p>
@@ -37,7 +40,7 @@ function checkLayout() {
     if (rect(frac.children[0]).top >= rect(frac.children[1]).top) failures.push(`short ${i}: fraction not stacked`);
   }
   if (document.documentElement.scrollWidth > innerWidth + 1) failures.push('page horizontal overflow');
-  document.querySelector('#result').textContent = JSON.stringify({passed: !failures.length, viewport: innerWidth, failures}, null, 2);
+  document.querySelector('#result').textContent = JSON.stringify({passed: !failures.length, viewport: innerWidth, stylesheets: [...document.querySelectorAll('link[rel="stylesheet"]')].map(link => link.getAttribute('href')), failures}, null, 2);
 }
 addEventListener('load', checkLayout); addEventListener('resize', checkLayout);
 </script>
