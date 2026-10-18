@@ -24,8 +24,8 @@ jobs:
           from curl_cffi import requests
           from bs4 import BeautifulSoup
           from markdownify import markdownify
-          url = 'https://mp.weixin.qq.com/s/x5LuzjMoF5XzbglbtRpMDg'
-          out = pathlib.Path('.wechat-import/x5LuzjMoF5XzbglbtRpMDg')
+          url = 'https://mp.weixin.qq.com/s/s687llXCto0W4WHVFixVFA'
+          out = pathlib.Path('.wechat-import/s687llXCto0W4WHVFixVFA')
           attempts = []
           document = None
           headers = {'Accept-Language':'zh-CN,zh;q=0.9,en;q=0.5','Referer':'https://mp.weixin.qq.com/'}
