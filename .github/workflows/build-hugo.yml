@@ -1,0 +1,59 @@
+name: Build Hugo source and publish static main
+on:
+  push:
+    branches: [source]
+    paths:
+      - 'content/**'
+      - 'layouts/**'
+      - 'assets/**'
+      - 'static/**'
+      - 'data/**'
+      - 'hugo.toml'
+      - '.github/workflows/build-hugo.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: hugo-build-publish
+  cancel-in-progress: false
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: source
+          fetch-depth: 1
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.147.6'
+          extended: true
+      - name: Build
+        run: |
+          hugo --gc --minify --destination /tmp/rushiuv-site
+          touch /tmp/rushiuv-site/.nojekyll
+          test -s /tmp/rushiuv-site/index.html
+          test -s /tmp/rushiuv-site/posts/wechat-ezLZtznHzE3-08Xvy1JR5Q/index.html
+          grep -q '径向外转子' /tmp/rushiuv-site/posts/wechat-ezLZtznHzE3-08Xvy1JR5Q/index.html
+          test -s /tmp/rushiuv-site/posts/wechat-ezLZtznHzE3-08Xvy1JR5Q/images/001-1f9ce63e66.png
+      - name: Publish static files to main without force push
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          BASE=$(git rev-parse origin/main)
+          mkdir -p /tmp/rushiuv-deploy
+          git worktree add --detach /tmp/rushiuv-deploy "$BASE"
+          cd /tmp/rushiuv-deploy
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/rushiuv-site/. .
+          mkdir -p .github/workflows
+          git show "$BASE":.github/workflows/pages.yml > .github/workflows/pages.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then echo 'No static changes'; exit 0; fi
+          git commit -m "deploy: build Hugo from source ${GITHUB_SHA:0:12}"
+          git push origin HEAD:main
