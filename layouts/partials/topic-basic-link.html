@@ -1,1 +1,1 @@
-{{ $map := hugo.Data.basics_topic_links }}{{ with index $map .Title }}{{ with site.GetPage (printf "/wiki/basics/%s" .) }}<a class="topic-library-link" href="{{ .RelPermalink }}">基础知识：{{ .Title }} →</a>{{ end }}{{ end }}
+{{ $map := site.Data.basics_topic_links }}{{ with index $map .Title }}{{ with site.GetPage (printf "/wiki/basics/%s" .) }}<a class="topic-library-link" href="{{ .RelPermalink }}">基础知识：{{ .Title }} →</a>{{ end }}{{ end }}
