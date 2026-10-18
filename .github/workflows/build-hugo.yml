@@ -37,8 +37,12 @@ jobs:
           hugo --gc --minify --destination /tmp/rushiuv-site
           touch /tmp/rushiuv-site/.nojekyll
           test -s /tmp/rushiuv-site/index.html
-          ARTICLE=/tmp/rushiuv-site/posts/wechat-ezLZtznHzE3-08Xvy1JR5Q
-          test -s "$ARTICLE/index.html" || { echo 'Article HTML missing'; exit 1; }
+          ARTICLE=$(find /tmp/rushiuv-site/posts -mindepth 1 -maxdepth 1 -type d -iname 'wechat-ezlztznhze3-08xvy1jr5q' -print -quit)
+          echo "Resolved Hugo article output: $ARTICLE"
+          if [ -z "$ARTICLE" ] || [ ! -s "$ARTICLE/index.html" ]; then
+            find /tmp/rushiuv-site/posts -maxdepth 2 -iname '*ezlztzn*' -print
+            echo 'Article HTML missing'; exit 1
+          fi
           grep -q '径向外转子' "$ARTICLE/index.html"
           mkdir -p "$ARTICLE/images"
           cp -a content/posts/wechat-ezLZtznHzE3-08Xvy1JR5Q/images/. "$ARTICLE/images/"
