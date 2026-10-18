@@ -13,13 +13,21 @@
       <div class="portal-hot"><span>试着搜</span>{{ range slice "MT6835" "AS5047P" "多圈" "校准" }}<button type="button" data-query="{{ . }}">{{ . }}</button>{{ end }}</div>
       <div class="home-stats"><span><strong>{{ len site.Taxonomies.models }}</strong> 型号</span><i></i><span><strong>{{ len site.Taxonomies.companies }}</strong> 公司</span><i></i><span><strong>{{ len $posts }}</strong> 篇文章</span></div>
     </div>
-    <a class="home-hero-art" href="{{ "wiki/basics/" | relURL }}" aria-label="从编码器基础知识开始阅读"><img src="{{ "images/site/home-protagonist-v2.webp" | relURL }}" alt="如是有为主人公在工作台前阅读编码器资料" width="1448" height="1086" loading="eager" fetchpriority="high"></a>
+    <a class="home-hero-art" href="{{ "wiki/basics/" | relURL }}" aria-label="从编码器基础知识开始阅读"><span class="art-caption" aria-hidden="true"><span>POSITION FEEDBACK</span><span>器件 · 磁路 · 信号链</span></span><img src="{{ "images/site/home-protagonist-v2.webp" | relURL }}" alt="如是有为主人公在工作台前阅读编码器资料" width="1448" height="1086" loading="eager" fetchpriority="high"></a>
   </div>
   <div class="wrap"><div class="home-models"><span class="home-models-label">常用型号</span><div>{{ range $name := slice "MT6835" "AS5047P" "KTM5900" "iC-MU" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><strong>{{ $name }}</strong><span>{{ .Count }} 篇</span><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div><a class="home-models-all" href="{{ "wiki/" | relURL }}?kind=model">全部型号 →</a></div></div>
 </section>
 {{ end }}
 
 {{ define "main" }}
+{{ with site.GetPage "/posts/2026-10-18-kth7111-1us-vs-510us.md" }}
+<section class="home-latest" aria-label="最新文章：KTH7111动态响应">
+  <a class="home-latest-link" href="{{ .RelPermalink }}">
+    <div class="latest-copy"><p class="latest-label"><span></span>最新工程笔记 <i>2026.10.18 / 编码器动态响应</i></p><h2><span>KTH7111 每 <em>1 μs</em> 更新，</span><span>为什么滤波时间常数却有 <em>510 μs</em>？</span></h2><p class="latest-description">数据更新周期不等于动态延迟：从跟踪滤波到伺服相位响应，拆解两个时间参数真正的意义。</p><span class="latest-more">阅读全文 <b aria-hidden="true">↗</b></span></div>
+    <div class="latest-visual" aria-hidden="true"><span class="timing-orbit"></span><span class="timing-value">1 <small>μs</small></span><span class="timing-separator">≠</span><span class="timing-value">510 <small>μs</small></span><span class="timing-caption">更新周期 / 滤波时间常数</span></div>
+  </a>
+</section>
+{{ end }}
 <section class="portal-results" id="portal-results" hidden aria-live="polite">
   <div class="portal-section-head"><div><p class="portal-overline">站内检索</p><h2 id="portal-results-title">搜索结果</h2></div><button class="text-button" id="portal-search-clear" type="button">收起结果 ×</button></div>
   <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button><button type="button" data-search-kind="basic">基础知识</button></div>
@@ -40,7 +48,7 @@
 
 <section class="home-section home-reading">
   <header class="home-section-head"><div><p class="home-overline">READ / 精选阅读</p><h2>把一个问题，真正读明白。</h2></div><span class="home-section-note">选自已有文章</span></header>
-  <div class="home-reading-grid">{{ range $i,$item := hugo.Data.portal.reading }}{{ with site.GetPage (printf "/posts/%s" .file) }}<a class="home-reading-item{{ if eq $i 0 }} home-reading-feature{{ end }}" href="{{ .RelPermalink }}"><span class="home-reading-label">{{ $item.label }}</span><h3>{{ $item.heading }}</h3><p>{{ .Description | plainify | truncate 95 }}</p><span class="home-reading-end">阅读全文 <b aria-hidden="true">↗</b></span></a>{{ end }}{{ end }}</div>
+  <div class="home-reading-grid">{{ with site.GetPage "/posts/2026-10-18-kth7111-1us-vs-510us.md" }}<a class="home-reading-item home-reading-new" href="{{ .RelPermalink }}"><span class="home-reading-label">KTH7111 · 新文章</span><h3>1 μs 更新，为什么滤波时间常数却有 510 μs？</h3><p>数据更新不等于测量延迟：从一阶低通、跟踪滤波到加减速与伺服相位。</p><span class="home-reading-end">阅读全文 <b aria-hidden="true">↗</b></span></a>{{ end }}{{ range $i,$item := hugo.Data.portal.reading }}{{ with site.GetPage (printf "/posts/%s" .file) }}<a class="home-reading-item{{ if eq $i 0 }} home-reading-feature{{ end }}" href="{{ .RelPermalink }}"><span class="home-reading-label">{{ $item.label }}</span><h3>{{ $item.heading }}</h3><p>{{ .Description | plainify | truncate 95 }}</p><span class="home-reading-end">阅读全文 <b aria-hidden="true">↗</b></span></a>{{ end }}{{ end }}</div>
 </section>
 
 <section class="home-section home-library">

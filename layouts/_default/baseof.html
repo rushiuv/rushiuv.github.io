@@ -13,9 +13,12 @@
 {{ if or (eq .Section "wiki") .IsHome }}<link rel="stylesheet" href="{{ "css/basics.css" | relURL }}?v=20261016-open-toc">{{ end }}
 <link rel="stylesheet" href="{{ "css/portal.css" | relURL }}?v=20261016-home-cartoon">
 {{ if .IsHome }}<link rel="stylesheet" href="{{ "css/home.css" | relURL }}?v=20261016-refine-2">{{ end }}
+{{ $refinedVersion := substr (crypto.SHA256 (readFile "static/css/refined.css")) 0 12 }}
+<link rel="stylesheet" href="{{ "css/refined.css" | relURL }}?v={{ $refinedVersion }}">
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
 </head>
 <body{{ if .IsHome }} class="is-home"{{ end }}>
+<a class="skip-link" href="#main-content">跳到正文</a>
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href="{{ "/" | relURL }}">{{ partial "logo.html" . }}<span class="brand-text"><span class="brand-title">{{ site.Title }}</span><span class="brand-sub">{{ site.Params.subtitle }}</span></span></a>
@@ -29,7 +32,7 @@
   </div>
 </header>
 {{ block "hero" . }}{{ end }}
-<main class="wrap">{{ block "main" . }}{{ end }}</main>
+<main class="wrap" id="main-content" tabindex="-1">{{ block "main" . }}{{ end }}</main>
 <footer class="site-footer">
   <div class="wrap foot">
     <div>
