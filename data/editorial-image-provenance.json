@@ -29,6 +29,7 @@
     },
     {
       "id": "signals",
+      "additional_uses": ["/topics/ 技术专题总览，作为阅读场景装饰插画，不作为实测波形或技术示意证据"],
       "public_path": "/images/editorial/chromeos-signals-20261018.webp",
       "original_filename": "chromeos-signals-20261018.png",
       "width": 1536,

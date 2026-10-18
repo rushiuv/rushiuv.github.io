@@ -2,6 +2,8 @@
 title: "RXMA30"
 wiki: true
 wiki_type: "model"
+catalog_type: "线性编码"
+catalog_form: "编码模块"
 wiki_rank: 140
 seed_count: 1
 lastmod: "2026-10-16"

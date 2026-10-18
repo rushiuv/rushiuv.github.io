@@ -1,5 +1,23 @@
 {{ define "main" }}
-<header class="page-head"><p class="portal-overline">研发与应用</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div></header>
-<div class="portal-topics topics-page">{{ range hugo.Data.portal.topics }}{{ partial "portal-topic.html" . }}{{ end }}</div>
+<header class="topic-hub-hero">
+  <div><p class="portal-overline">FIELD GUIDE / 研发与应用</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div><div class="topic-hub-stats"><span><strong>06</strong> 条问题导读</span><span><strong>12</strong> 篇精选阅读</span><span><strong>{{ len (where site.Pages "Params.topic_guide" true) }}</strong> 个主题档案</span></div></div>
+  <figure><img src="{{ "images/editorial/chromeos-signals-20261018.webp" | relURL }}" alt="位置反馈信号与工程阅读的轻漫画场景插画" width="1536" height="1024" fetchpriority="high"></figure>
+</header>
+<nav class="topic-hub-nav" aria-label="选择工程问题">{{ range hugo.Data.topic_paths.tracks }}<a href="#{{ .id }}"><span>{{ .number }}</span>{{ .title }}<b aria-hidden="true">↓</b></a>{{ end }}</nav>
+{{ with site.GetPage "/posts/2026-10-18-kth7111-1us-vs-510us.md" }}
+<aside class="topic-spotlight"><div><p class="portal-overline">先读这一篇 / 动态响应</p><h2>1 μs更新，为什么滤波时间常数却有510 μs？</h2><p>先把更新周期、数据年龄与动态响应分开，后面的选型、接口和双编码器问题才有共同的时间基准。</p></div><a class="btn" href="{{ .RelPermalink }}">从具体型号读起 <span aria-hidden="true">↗</span></a></aside>
+{{ end }}
+<section class="topic-dossiers" aria-label="六条工程问题导读">
+{{ range hugo.Data.topic_paths.tracks }}{{ $track := . }}
+<article class="topic-dossier" id="{{ .id }}">
+  <header><p class="portal-overline"><span>{{ .number }}</span> / {{ .code }}</p><h2>{{ .title }}</h2><p class="topic-question">{{ .question }}</p><p>{{ .intro }}</p></header>
+  <div class="topic-reading-path"><h3>建议这样读</h3><ol>{{ range .reads }}{{ $read := . }}{{ with site.GetPage (printf "/posts/%s" .file) }}<li><a href="{{ .RelPermalink }}"><h4>{{ $read.title }}</h4><p>{{ $read.note }}</p><span aria-hidden="true">↗</span></a></li>{{ else }}{{ errorf "Missing topic reading: %s" .file }}{{ end }}{{ end }}</ol></div>
+  <p class="topic-check"><strong>阅读时带着这个检查项</strong>{{ .check }}</p>
+  <div class="topic-resources"><div><h3>补基础</h3><div class="chips">{{ range .basics }}{{ with site.GetPage (printf "/wiki/basics/%s" .) }}<a class="chip" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}{{ errorf "Missing topic basic: %s" . }}{{ end }}{{ end }}</div></div><div><h3>对照型号与模块</h3><div class="chips">{{ range .models }}{{ with site.GetPage (printf "/models/%s" .) }}<a class="chip model" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}{{ errorf "Missing topic model: %s" . }}{{ end }}{{ end }}</div></div></div>
+  {{ range site.Taxonomies.tags }}{{ if eq .Page.LinkTitle $track.tag }}<footer><a href="{{ .Page.RelPermalink }}">进入{{ $track.title }}主题档案 <span aria-hidden="true">→</span></a><span>{{ .Count }} 篇相关文章</span></footer>{{ end }}{{ end }}
+</article>
+{{ end }}
+</section>
+<section class="topic-hub-bottom"><div><p class="portal-overline">从读文章，到查器件</p><h2>知道问题属于哪一层，再去找参数。</h2><p>精选文章提供问题与分析路径；具体参数、版本和使用条件，继续查型号页及原厂资料。</p></div><div><a class="btn" href="{{ "wiki/" | relURL }}?kind=model">查芯片与编码模块 →</a><a class="btn ghost" href="{{ "applications/" | relURL }}">按应用场景继续读 →</a></div></section>
 <section class="portal-section"><div class="portal-section-head"><div><p class="portal-overline">继续探索</p><h2>更多技术主题</h2></div></div><div class="chips big">{{ range site.Taxonomies.tags.ByCount }}{{ if in (slice "霍尔" "TMR" "AMR" "ADC" "离轴" "专利" "芯片设计" "自校准" "多圈编码器" "车规" "FOC" "功能安全" "EtherCAT") .Page.LinkTitle }}<a class="chip" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<small>{{ .Count }}</small></a>{{ end }}{{ end }}</div></section>
 {{ end }}

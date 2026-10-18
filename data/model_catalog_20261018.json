@@ -1,0 +1,1260 @@
+{
+  "checked": "2026-10-18",
+  "scope": "重点厂商首批公开资料扩充；非全球或各厂商全量目录。系列与成员可共存，不计封装及卷带后缀。",
+  "entries": [
+    {
+      "slug": "kth5502",
+      "title": "KTH5502",
+      "type": "数字角度",
+      "members": [
+        "KTH5502"
+      ],
+      "description": "集成XYZ霍尔检测的16位磁角度芯片，适合低压旋钮与位置检测。",
+      "url": "https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/kth5502/index.html",
+      "features": [
+        "角度编码|16位；不是16位系统精度保证",
+        "信号输出|I²C、SPI、AB、PWM与模拟输出，具体引脚配置见手册",
+        "供电|1.7～3.6V",
+        "温度／封装|−40～125°C；SOP-8、DFN2×2-8"
+      ],
+      "vendor": "昆泰芯"
+    },
+    {
+      "slug": "kth16",
+      "title": "KTH16系列",
+      "type": "磁开关",
+      "members": [
+        "KTH1604",
+        "KTH1631"
+      ],
+      "description": "包含双输出单极开关与高速锁存器；型号相近，检测逻辑和功耗并不相同。",
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html",
+      "features": [
+        "KTH1604|双输出单极开关，1.6～5.5V，5Hz／20Hz版本",
+        "KTH1631|双极锁存，1.8～5.5V，40kHz",
+        "输出|目录列为CMOS输出",
+        "选型区别|KTH1631目录电流为2.25mA@1.8V，不能套用其他成员的微安级指标"
+      ],
+      "vendor": "昆泰芯"
+    },
+    {
+      "slug": "kth17",
+      "title": "KTH17系列",
+      "type": "磁开关",
+      "members": [
+        "KTH1701",
+        "KTH1702"
+      ],
+      "description": "全极霍尔开关系列，用于磁体靠近、盖合与低功耗位置事件检测。",
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html",
+      "features": [
+        "成员|KTH1701、KTH1702；检测阈值与订货配置按各手册确认",
+        "KTH1701供电|1.8～5.5V",
+        "KTH1701采样|25／100／500Hz，对应0.9／2.4／10.4µA@1.8V",
+        "输出量|开关状态，不提供连续角度或位移值"
+      ],
+      "vendor": "昆泰芯"
+    },
+    {
+      "slug": "kth25",
+      "title": "KTH25系列",
+      "type": "磁开关",
+      "members": [
+        "KTH2502"
+      ],
+      "description": "高压双极锁存霍尔系列，适合转子磁极切换与位置事件检测。",
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/automotiveHvdlHallEffectSensor/index.html",
+      "features": [
+        "检测方式|双极锁存，不能当全极靠近开关使用",
+        "输出|开漏；页面标注最大30mA灌电流，按负载条件核对",
+        "阈值版本|QA／QB／QC在目录中分列，不同开关点不可混用",
+        "供电边界|官网介绍与参数表上限存在32V／36V差异，选型以具体手册为准"
+      ],
+      "vendor": "昆泰芯"
+    },
+    {
+      "slug": "ktm28",
+      "title": "KTM28系列",
+      "type": "磁开关",
+      "members": [
+        "KTM2801",
+        "KTM2802"
+      ],
+      "description": "AMR与ASIC组合的气缸位置检测芯片，提供二线或三线开关应用路径。",
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/hvcpDetectionSensor/index.html",
+      "features": [
+        "成员|KTM2801、KTM2802；用于气缸端位检测",
+        "输出|开漏，可适配上拉／下拉负载",
+        "频率／温度|目录4kHz，−40～105°C",
+        "供电边界|介绍3～30V，表格3～32V；不把较大值当全系列保证"
+      ],
+      "vendor": "昆泰芯"
+    },
+    {
+      "slug": "kth31",
+      "title": "KTH31系列",
+      "type": "线性磁场",
+      "members": [
+        "KTH3101",
+        "KTH3102",
+        "KTH3103",
+        "KTH3105"
+      ],
+      "description": "比例输出线性霍尔系列，按灵敏度选择磁场量程，再由磁路转换为位移。",
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html",
+      "features": [
+        "测量输出|与磁场成比例的模拟电压，不直接输出毫米位移",
+        "成员区别|3101／3102／3103／3105在5V下典型灵敏度分别1.5／2.5／3.4／5.0mV/Gs",
+        "工作条件|3～5.5V，−40～125°C",
+        "量程选择|较高灵敏度对应较小场强量程，不能只比较mV/Gs"
+      ],
+      "vendor": "昆泰芯"
+    },
+    {
+      "slug": "kth4603",
+      "title": "KTH4603系列",
+      "type": "磁开关",
+      "members": [
+        "KTH4603"
+      ],
+      "description": "XYZ三轴全极霍尔开关，用于多方向磁体接近检测，而非三轴场强采样。",
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highlysensitive3dhallswitch/index.html",
+      "features": [
+        "检测量|三轴磁场触发的开关事件",
+        "版本|AA-STx目录2.5Hz；AB-STx目录5Hz",
+        "电源／输出|2.25～5.5V，开漏",
+        "温度／封装|−40～125°C；SOT23-3／SOT23-6按型号选"
+      ],
+      "vendor": "昆泰芯"
+    },
+    {
+      "slug": "kth462",
+      "title": "KTH462系列",
+      "type": "磁开关",
+      "members": [
+        "KTH4621",
+        "KTH4622"
+      ],
+      "description": "二维锁存霍尔系列，分别提供独立轴状态或速度与方向输出。",
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highsensitive2Dhallswitch/index.html",
+      "features": [
+        "KTH4621|独立X／Y轴锁存状态",
+        "KTH4622|速度与方向双输出",
+        "供电／输出|2.5～5.5V，开漏，SOT23-6",
+        "采样版本|30Hz低功耗和1.7kHz版本分列，不能同时套用最低电流与最高频率"
+      ],
+      "vendor": "昆泰芯"
+    },
+    {
+      "slug": "kth7801",
+      "title": "KTH7801",
+      "type": "数字角度",
+      "members": [
+        "KTH7801"
+      ],
+      "description": "KTH7801是KTH78霍尔角度系列成员；接口和编码格式按具体封装及后缀区分。",
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html",
+      "vendor": "昆泰芯",
+      "features": [
+        "编码格式|16位，或12位+4位CRC，依后缀",
+        "输出版本|QN16版本支持SSI／PWM／SPI／ABZ；SOP8版本为PWM／SPI",
+        "供电|官网对应行列出3.0～5.5V",
+        "选型区别|N与C后缀编码格式不同"
+      ],
+      "series": "kth78"
+    },
+    {
+      "slug": "kth7803",
+      "title": "KTH7803",
+      "type": "数字角度",
+      "members": [
+        "KTH7803"
+      ],
+      "description": "KTH7803是KTH78霍尔角度系列成员；接口和编码格式按具体封装及后缀区分。",
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html",
+      "vendor": "昆泰芯",
+      "features": [
+        "编码格式|16位",
+        "输出版本|目录QN16版本：SSI／PWM／SPI／ABZ",
+        "供电|官网对应行列出3.0～5.5V",
+        "选型区别|不据型号数字推断与7801引脚或寄存器完全兼容"
+      ],
+      "series": "kth78"
+    },
+    {
+      "slug": "kth7813",
+      "title": "KTH7813",
+      "type": "数字角度",
+      "members": [
+        "KTH7813"
+      ],
+      "description": "KTH7813是KTH78霍尔角度系列成员；接口和编码格式按具体封装及后缀区分。",
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html",
+      "vendor": "昆泰芯",
+      "features": [
+        "编码格式|16位",
+        "输出版本|目录QN16版本：SPI／ABZ／UVW",
+        "供电|官网对应行列出3.0～5.5V",
+        "选型区别|与7812噪声项目分列，不能套用其全部性能"
+      ],
+      "series": "kth78"
+    },
+    {
+      "slug": "kth7814",
+      "title": "KTH7814",
+      "type": "数字角度",
+      "members": [
+        "KTH7814"
+      ],
+      "description": "KTH7814是KTH78霍尔角度系列成员；接口和编码格式按具体封装及后缀区分。",
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html",
+      "vendor": "昆泰芯",
+      "features": [
+        "编码格式|12位+4位CRC",
+        "输出版本|目录C-QN16版本：SPI／ABZ及反相增量输出",
+        "供电|官网对应行列出3.0～5.5V",
+        "选型区别|CRC帧长度不能直接当有效角度位数"
+      ],
+      "series": "kth78"
+    },
+    {
+      "slug": "kth7816",
+      "title": "KTH7816",
+      "type": "数字角度",
+      "members": [
+        "KTH7816"
+      ],
+      "description": "KTH7816是KTH78霍尔角度系列成员；接口和编码格式按具体封装及后缀区分。",
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html",
+      "vendor": "昆泰芯",
+      "features": [
+        "编码格式|16位或12位+4位CRC，依后缀",
+        "输出版本|N-QN16：SSI／PWM／SPI／ABZ；SOP8：PWM／SPI",
+        "供电|官网对应行列出3.0～5.5V",
+        "选型区别|SOP8的N／C版本编码不同，接口数量也不等于QN16"
+      ],
+      "series": "kth78"
+    },
+    {
+      "slug": "ma330",
+      "title": "MA330",
+      "type": "数字角度",
+      "members": [
+        "MA330"
+      ],
+      "description": "14位MagAlpha角度芯片，面向同时需要绝对角度、增量反馈与电机换相的设计。",
+      "features": [
+        "角度编码|14位绝对角度",
+        "输出|SPI、ABZ、UVW",
+        "安装|支持轴端和离轴布置，磁路与参数须匹配",
+        "换相边界|UVW是电气换相信号，不是另一套独立角度传感器"
+      ],
+      "url": "https://www.monolithicpower.com/en/ma330.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "ma730",
+      "title": "MA730",
+      "type": "数字角度",
+      "members": [
+        "MA730"
+      ],
+      "description": "14位MagAlpha磁角度芯片，以SPI、ABZ和PWM连接控制器。",
+      "features": [
+        "角度编码|14位绝对角度",
+        "输出|SPI、ABZ、PWM",
+        "安装|轴端及离轴，依原厂应用条件",
+        "选型边界|14位输出码宽不等于14位绝对精度"
+      ],
+      "url": "https://www.monolithicpower.com/en/ma730.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "ma732",
+      "title": "MA732",
+      "type": "数字角度",
+      "members": [
+        "MA732"
+      ],
+      "description": "14位磁角度芯片，带可配置滤波与磁场诊断，适合按带宽和噪声折衷配置。",
+      "features": [
+        "角度编码|14位",
+        "输出|SPI、ABZ、PWM",
+        "信号链|滤波设置影响响应及噪声，使用同一配置比较",
+        "安装|在轴与离轴性能分别验证"
+      ],
+      "url": "https://www.monolithicpower.com/en/ma732.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "ma734",
+      "title": "MA734",
+      "type": "数字角度",
+      "members": [
+        "MA734"
+      ],
+      "description": "标称3µs低延时的MagAlpha角度芯片，分辨率随工作配置变化。",
+      "features": [
+        "分辨率|8～12.5位，按工作配置",
+        "时延|3µs指匀速旋转条件下的指标，不能外推到所有动态过程",
+        "输出|SPI读取角度与配置；不是ABZ增量输出型号",
+        "定位|速度响应与角度噪声应一起比较"
+      ],
+      "url": "https://www.monolithicpower.com/en/ma734.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "ma735",
+      "title": "MA735",
+      "type": "数字角度",
+      "members": [
+        "MA735"
+      ],
+      "description": "采用小型UTQFN-14封装的MagAlpha角度芯片，提供ABZ及PWM输出。",
+      "features": [
+        "分辨率|9～13位，依配置",
+        "输出|SPI、ABZ、PWM",
+        "封装|UTQFN-14",
+        "选型边界|带宽、噪声和有效分辨率不是独立最大值"
+      ],
+      "url": "https://www.monolithicpower.com/en/ma735.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "ma736",
+      "title": "MA736",
+      "type": "数字角度",
+      "members": [
+        "MA736"
+      ],
+      "description": "小型低延时数字磁角度芯片，供对封装和响应时间敏感的设计比较。",
+      "features": [
+        "分辨率|8～12.5位，依配置",
+        "时延|官网产品定位3µs低延时",
+        "形式|小型数字磁角度IC，不含磁体和机械轴承",
+        "验证|同一滤波配置下核对时延和角度抖动"
+      ],
+      "url": "https://www.monolithicpower.com/en/ma736.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "ma780",
+      "title": "MA780",
+      "type": "数字角度",
+      "members": [
+        "MA780"
+      ],
+      "description": "带角度变化唤醒检测的低功耗磁角度芯片，适合间歇读数。",
+      "features": [
+        "角度编码|8～12位，依配置",
+        "低功耗功能|角度变化检测可触发唤醒",
+        "模式区别|睡眠或周期唤醒电流不能当连续高速工作电流",
+        "测量对象|永磁体方向变化，不是触点式机械编码器"
+      ],
+      "url": "https://www.monolithicpower.com/en/ma780.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "ma782",
+      "title": "MA782",
+      "type": "数字角度",
+      "members": [
+        "MA782"
+      ],
+      "description": "小型低功耗角度芯片，保留SPI读数及角度变化唤醒能力。",
+      "features": [
+        "角度编码|8～12位",
+        "接口／封装|SPI；QFN-14（2×2mm）",
+        "供电|3.3V标称",
+        "功耗条件|空闲低于0.5µA，活动状态约10mA；两者不是同一工作点"
+      ],
+      "url": "https://www.monolithicpower.com/en/products/ma782.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "ma600a",
+      "title": "MA600A",
+      "type": "数字角度",
+      "members": [
+        "MA600A"
+      ],
+      "description": "MPS用于新设计的高精度磁角度器件，是MA600官网给出的后续选择。",
+      "features": [
+        "分辨率|12～15位可配置",
+        "校准|32点校准表",
+        "INL|出厂小于0.6°；用户校准可小于0.1°，须满足相应手册条件",
+        "资料版本|官方数据手册Rev.1.0，2025-06-05"
+      ],
+      "url": "https://www.monolithicpower.com/en/ma600a.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "maq473",
+      "title": "MAQ473",
+      "type": "数字角度",
+      "members": [
+        "MAQ473"
+      ],
+      "description": "车规MagAlpha角度芯片，提供ABZ及PWM，按配置折衷分辨率与带宽。",
+      "features": [
+        "分辨率|9～14位，依配置",
+        "输出|SPI、ABZ、PWM",
+        "产品定位|汽车磁角度传感器",
+        "认证边界|车规器件不自动使整机满足功能安全要求"
+      ],
+      "url": "https://www.monolithicpower.com/en/maq473.html",
+      "vendor": "MPS"
+    },
+    {
+      "slug": "maq8xx",
+      "title": "MAQ800／820／850系列",
+      "type": "数字角度",
+      "members": [
+        "MAQ800",
+        "MAQ820",
+        "MAQ850"
+      ],
+      "description": "带磁性按压检测的8位角度器件组，三款输出选择不同。",
+      "features": [
+        "共同功能|8位角度与按压检测",
+        "成员区别|MAQ820带ABZ；MAQ850带PWM",
+        "车规|官方标注AEC-Q100；不等于整机安全认证",
+        "比较方法|按所需输出选型号，不把三款接口合成单款能力"
+      ],
+      "url": "https://www.monolithicpower.com/en/maq800.html",
+      "vendor": "MPS",
+      "sources": [
+        "https://www.monolithicpower.com/en/maq820.html",
+        "https://www.monolithicpower.com/en/maq850.html"
+      ]
+    },
+    {
+      "slug": "ma900",
+      "title": "MA900",
+      "type": "数字角度",
+      "members": [
+        "MA900"
+      ],
+      "vendor": "MPS",
+      "url": "https://www.monolithicpower.com/en/products/sensors/ma900.html",
+      "description": "差分磁场架构的角度芯片，主打杂散磁场抑制；官网当前标为Pre-Release。",
+      "features": [
+        "产品状态|Pre-Release，不能据此认定已量产或稳定供货",
+        "输出|SPI或I²C、ABZ、UVW，按配置",
+        "供电／封装|3.3V／5V；QFN-16",
+        "噪声口径|±0.02° RMS@3kHz是噪声项目，不能当绝对精度"
+      ],
+      "status": "Pre-Release"
+    },
+    {
+      "slug": "tmr300x",
+      "title": "TMR3002／3004／3005",
+      "type": "模拟角度",
+      "members": [
+        "TMR3002",
+        "TMR3004",
+        "TMR3005"
+      ],
+      "description": "双桥模拟角度器件组，主要区别是桥阻、适用磁场与封装选项。",
+      "url": "https://www.dowaytech.com/sensor/angle_sensors.html",
+      "features": [
+        "测量范围|360°磁场方向，模拟差分输出，后端须采样解算",
+        "桥阻区别|TMR3002目录350kΩ；TMR3004为15kΩ；3005另有多阻值版本",
+        "工作场强|3002：70～400Gs；3004：150～1100Gs；3005：200～800Gs",
+        "边界|不是内部输出数字角度的编码器ASIC"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "tmr301x",
+      "title": "TMR3014～3017系列",
+      "type": "模拟角度",
+      "members": [
+        "TMR3014",
+        "TMR3015",
+        "TMR3016",
+        "TMR3017"
+      ],
+      "description": "覆盖差分与单端输出的TMR模拟角度器件，需按型号选后端采集方式。",
+      "url": "https://www.dowaytech.com/sensor/angle_sensors.html",
+      "features": [
+        "输出区别|3014／3016为差分；3015／3017为单端",
+        "桥阻区别|3014目录1kΩ，3016为2.5kΩ，3017为200kΩ",
+        "TMR3015|目录列3～5.5V，DFN4／SOT23-5",
+        "测量链|模拟角度相关信号仍需ADC及角度计算"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "tmr3081",
+      "title": "TMR3081",
+      "type": "模拟角度",
+      "members": [
+        "TMR3081"
+      ],
+      "description": "双全桥TMR角度传感芯片，输出差分正余弦，不内置数字角度接口。",
+      "url": "https://www.dowaytech.com/TMR3081-TMR-Angle-Sensors.html",
+      "features": [
+        "输出|SIN／COS模拟差分，360°方向测量",
+        "电源／桥阻|1.0～5.5V；目录5kΩ",
+        "适用磁场|200～800Gs",
+        "封装|TSSOP-8"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "tmr3109",
+      "title": "TMR3109",
+      "type": "数字角度",
+      "members": [
+        "TMR3109"
+      ],
+      "description": "集成TMR与23位信号处理ASIC，支持对轴、离轴及客户端自校准。",
+      "url": "https://www.dowaytech.com/TMR3109-TMR-Angle-Sensors.html",
+      "features": [
+        "角度／接口|360°；23位绝对位置，三线／四线SPI",
+        "电源／封装|3.3～5V；SOP-8",
+        "校准|支持客户端自校准，安装误差须按校准条件验证",
+        "精度口径|网页表格±0.5°，特性区小于±0.05°；未明确统一条件，不合并成保证值"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "amr30xx",
+      "title": "AMR30xx模拟角度系列",
+      "type": "模拟角度",
+      "members": [
+        "AMR3001",
+        "AMR3003",
+        "AMR3008",
+        "AMR3013"
+      ],
+      "description": "多维的AMR模拟角度产品组，与TMR数字编码器使用不同信号处理链。",
+      "url": "https://www.dowaytech.com/sensor/angle_sensors.html",
+      "features": [
+        "成员|AMR3001、AMR3003、AMR3008、AMR3013",
+        "输出形式|官网列入模拟角度类，不直接输出SPI角度码",
+        "解算边界|AMR方向周期与机械360°绝对角应分别核对，不从系列名推断消歧能力",
+        "选型|按具体桥路、磁场及封装手册选择"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "tmr2602",
+      "title": "TMR2602",
+      "type": "线性磁场",
+      "members": [
+        "TMR2602"
+      ],
+      "description": "集成可编程调理ASIC的TMR线性场传感器，支持调节零点与灵敏度。",
+      "url": "https://www.dowaytech.com/TMR2602-TMR-Linear-Sensors.html",
+      "features": [
+        "磁场范围|目录±25Gs，X轴敏感",
+        "供电／封装|3.3V／5V；SOP-8",
+        "配置|零场电压、灵敏度可配置，内置OTP",
+        "测量边界|输出反映磁场，位移测量还需磁路映射"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "tmr265xdd",
+      "title": "TMR265xDD系列",
+      "type": "线性磁场",
+      "members": [
+        "TMR2651DD",
+        "TMR2652DD",
+        "TMR2653DD"
+      ],
+      "description": "带信号调理与温度补偿配置的TMR线性场系列，按成员区分量程。",
+      "url": "https://www.dowaytech.com/TMR2651DD-TMR-Linear-Sensors.html",
+      "features": [
+        "共同方向|经调理的磁场相关电压输出",
+        "TMR2651DD|官网列±1000Gs，DC～2MHz，典型3.3V／5V",
+        "可编程项目|灵敏度、零偏、温度补偿",
+        "参数边界|2651DD的量程和频响不能直接套到2652DD／2653DD"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "tmr208x",
+      "title": "TMR2083／2084",
+      "type": "线性磁场",
+      "members": [
+        "TMR2083",
+        "TMR2084"
+      ],
+      "description": "大磁场量程TMR全桥器件组，适合由外部电路读取模拟桥压。",
+      "url": "https://www.dowaytech.com/sensor/linear_magnetic_field_sensors.html",
+      "features": [
+        "结构|全桥，X轴敏感",
+        "场强范围|2083目录±500Gs；2084目录±400Gs",
+        "TMR2083封装|SOT23-5",
+        "电源边界|被动桥路驱动条件不等于带ADC数字芯片的工作条件"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "tmr210x",
+      "title": "TMR2102／2103／2104",
+      "type": "线性磁场",
+      "members": [
+        "TMR2102",
+        "TMR2103",
+        "TMR2104"
+      ],
+      "description": "中等量程TMR线性全桥器件，成员灵敏度与工作场强不同。",
+      "url": "https://www.dowaytech.com/sensor/linear_magnetic_field_sensors.html",
+      "features": [
+        "结构|X轴敏感全桥输出",
+        "场强范围|2102／2103目录±30Gs；2104目录±80Gs",
+        "TMR2102封装|SOP-8／DFN-8",
+        "系统接口|须外部放大、采样与标定，不直接输出位移码"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "tmr11xx",
+      "title": "TMR1102／1148／1162",
+      "type": "磁开关",
+      "members": [
+        "TMR1102",
+        "TMR1148",
+        "TMR1162"
+      ],
+      "description": "单极TMR位置开关器件组，连续感测和占空比采样版本需分开选择。",
+      "url": "https://www.dowaytech.com/sensor/switch_sensors.html",
+      "features": [
+        "输出区别|1102为推挽；1148和1162为开漏",
+        "连续模式|1102／1148目录典型1.5µA，1.8～5.5V",
+        "间歇模式|1162为占空比采样，目录200nA；不是连续同频响条件",
+        "检测方向|按磁场敏感轴及磁体极性布置"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "tmr1202",
+      "title": "TMR1202系列",
+      "type": "磁开关",
+      "members": [
+        "TMR1202",
+        "TMR1202D",
+        "TMR1202H",
+        "TMR1202HT"
+      ],
+      "description": "连续感测的TMR锁存开关，不同后缀对应轴向和阈值选项。",
+      "url": "https://www.dowaytech.com/sensor/switch_sensors.html",
+      "features": [
+        "检测逻辑|双极锁存，不是全极接近开关",
+        "敏感方向|1202为X轴；1202D为Y轴",
+        "输出／电流|目录推挽，典型1.5µA",
+        "后缀区别|H／HT需核对阈值及温度条件，不据名称假定互换"
+      ],
+      "vendor": "多维科技"
+    },
+    {
+      "slug": "vce1715",
+      "title": "VCE1715",
+      "type": "模拟角度",
+      "members": [
+        "VCE1715"
+      ],
+      "description": "双饱和模式电桥的AMR角度器件，原生方向测量周期为180°。",
+      "url": "https://www.sg-micro.com/product/VCE1715",
+      "features": [
+        "角度范围|180°，不能单独当360°绝对编码器使用",
+        "输出链|被动双桥模拟信号，后端需采样与解算",
+        "电源／桥阻|官网手册推荐1～9V，桥阻典型1050Ω",
+        "封装／温度|SOIC-8，−40～125°C"
+      ],
+      "vendor": "圣邦微"
+    },
+    {
+      "slug": "vce2755",
+      "title": "VCE2755",
+      "type": "数字角度",
+      "members": [
+        "VCE2755"
+      ],
+      "description": "集成AMR与ASIC的18位编码器，提供360°绝对角度及多种位置输出。",
+      "url": "https://www.sg-micro.com/rect/assets/db119b16-8eeb-40df-8fd5-74e92fd603fd/VCE2755.pdf",
+      "features": [
+        "角度编码|18位，0～360°",
+        "输出|SPI、SSI、ABZ、UVW、PWM，具体引脚组合依封装和订货配置",
+        "供电／温度|3.0～5.5V，−40～125°C",
+        "动态指标|手册标注延时小于2µs、最高18000rpm；系统按相应条件验证",
+        "资料版本|2026年1月Rev.A.3，30页"
+      ],
+      "vendor": "圣邦微"
+    },
+    {
+      "slug": "vcs238x",
+      "title": "VCS2381／2382／2383",
+      "type": "磁开关",
+      "members": [
+        "VCS2381",
+        "VCS2382",
+        "VCS2383"
+      ],
+      "description": "二维全极AMR开关组，以不同磁阈值区分，输出都是开关状态。",
+      "url": "https://www.sg-micro.com/product/VCS2381",
+      "features": [
+        "感应／输出|平面二维全极感应，推挽输出",
+        "阈值区别|2381：±7／±5Gs；2382：±15／±12Gs；2383：±10／±8Gs（动作／释放）",
+        "电源／采样|2～5.5V，15Hz，典型0.2µA",
+        "封装／温度|SOT23-3，−40～125°C"
+      ],
+      "vendor": "圣邦微"
+    },
+    {
+      "slug": "vcs2395",
+      "title": "VCS2395",
+      "type": "磁开关",
+      "members": [
+        "VCS2395"
+      ],
+      "description": "平面二维全极AMR开关，采用开漏输出，采样频率与VCS238x不同。",
+      "url": "https://www.sg-micro.com/product/VCS2395",
+      "features": [
+        "输出|开漏，外部上拉条件须匹配",
+        "采样／电流|60Hz，典型0.45µA",
+        "供电|2～5.5V",
+        "封装／温度|SOT23-3，−40～125°C"
+      ],
+      "vendor": "圣邦微"
+    },
+    {
+      "slug": "mt6826s",
+      "title": "MT6826S",
+      "type": "数字角度",
+      "members": [
+        "MT6826S"
+      ],
+      "description": "AMR磁角度编码器，提供15位绝对角度及可编程增量输出。",
+      "url": "https://www.magntek.com.cn/upload/pdf/202404/MT6826S_Datasheet_Rev.1.1_%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+      "features": [
+        "角度编码|0～360°，15位绝对角度",
+        "输出|四线SPI、ABZ、UVW、PWM",
+        "ABZ|1～4096线可编程，线数不等于绝对精度",
+        "校准|支持客户端自校准，精度提升依原厂流程与磁路条件",
+        "手册|Rev.1.1，2024年1月"
+      ],
+      "vendor": "麦歌恩",
+      "companies": [
+        "麦歌恩",
+        "纳芯微"
+      ]
+    },
+    {
+      "slug": "mt6521",
+      "title": "MT6521",
+      "type": "数字角度",
+      "members": [
+        "MT6521"
+      ],
+      "description": "汽车角度传感器，支持选择XYZ中的感应平面，并可用于相应直线位移磁路。",
+      "url": "https://www.magntek.com.cn/upload/pdf/202406/MT652x_Datasheet_Rev.1.0_%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+      "features": [
+        "感应配置|可选择XY、XZ、YZ平面",
+        "输出|Analog、PWM、SENT及SPI，具体模式和引脚复用见手册",
+        "编程|官网说明输出曲线可8点或17点编程",
+        "通道边界|单路与双路封装能力须分别核对，两个输出不自动等于系统冗余"
+      ],
+      "vendor": "麦歌恩",
+      "companies": [
+        "麦歌恩",
+        "纳芯微"
+      ]
+    },
+    {
+      "slug": "mt6620",
+      "title": "MT6620",
+      "type": "数字角度",
+      "members": [
+        "MT6620"
+      ],
+      "description": "麦歌恩面向离轴角度与位置检测的固定感应磁极霍尔器件。",
+      "url": "https://www.magntek.com.cn/46/54",
+      "features": [
+        "原理|固定磁极霍尔磁感应",
+        "几何|面向离轴位置检测，需匹配磁环／磁极结构",
+        "物料识别|此处为MagnTek磁传感器，不是同名联发科无线连接芯片",
+        "资料边界|本卡依据官方发布页；未把其他型号分辨率与接口移植到本型号"
+      ],
+      "vendor": "麦歌恩",
+      "companies": [
+        "麦歌恩",
+        "纳芯微"
+      ]
+    },
+    {
+      "slug": "mt910x",
+      "title": "MT910x系列",
+      "type": "线性磁场",
+      "members": [
+        "MT9101",
+        "MT9102",
+        "MT9103",
+        "MT9105"
+      ],
+      "description": "模拟比例输出线性霍尔系列，适用于磁场检测及磁路辅助的位移测量。",
+      "url": "https://www.magntek.com.cn/upload/pdf/202404/%E7%A3%81%E6%80%A7%E7%94%B5%E6%B5%81-%E7%BA%BF%E6%80%A7%E9%9C%8D%E5%B0%94%E8%8A%AF%E7%89%87MT9102%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6.pdf",
+      "features": [
+        "成员|MT9101／9102／9103／9105",
+        "输出|随供电比例变化的模拟电压，零场输出约VCC/2",
+        "灵敏度|5V、25°C典型值依次1.5／2.5／3.4／5.0mV/Gs",
+        "供电条件|手册磁特性表3.0～5.5V；灵敏度与场强范围须按供电一起核对"
+      ],
+      "vendor": "麦歌恩",
+      "companies": [
+        "麦歌恩",
+        "纳芯微"
+      ]
+    },
+    {
+      "slug": "mt935x",
+      "title": "MT935x系列",
+      "type": "线性磁场",
+      "members": [
+        "MT935X"
+      ],
+      "description": "带可控休眠的低压线性霍尔系列，正常工作时输出与磁场成比例的电压。",
+      "url": "https://www.magntek.com.cn/136/95",
+      "features": [
+        "供电|1.7～3.6V",
+        "模式|SLEEP引脚控制正常和休眠",
+        "电流条件|官方发布页约2mA工作、50µA休眠",
+        "休眠边界|休眠时输出高阻且不响应磁场，不能视为持续测量"
+      ],
+      "vendor": "麦歌恩",
+      "companies": [
+        "麦歌恩",
+        "纳芯微"
+      ]
+    },
+    {
+      "slug": "nsm101x",
+      "title": "NSM101x系列",
+      "type": "磁开关",
+      "members": [
+        "NSM1011",
+        "NSM1012",
+        "NSM1013"
+      ],
+      "vendor": "纳芯微",
+      "description": "三线霍尔开关与锁存器系列，三款成员的触发逻辑不同。",
+      "url": "https://www.novosns.com/Public/Uploads/uploadfile/files/20240628/-494.pdf",
+      "features": [
+        "成员区别|NSM1011单极、NSM1012全极、NSM1013锁存",
+        "供电|常规版2.7～28V；低功耗版3.1～28V，依具体版本",
+        "输出|开漏，需外部上拉",
+        "温度|−40～150°C；阈值、极性、输出相位及封装须逐项选"
+      ]
+    },
+    {
+      "slug": "nsm301x",
+      "title": "NSM3011／3012／3013",
+      "type": "数字角度",
+      "members": [
+        "NSM3011",
+        "NSM3012",
+        "NSM3013"
+      ],
+      "vendor": "纳芯微",
+      "description": "带片内增益与零位配置的霍尔角度器件组，按成员选择输出功能。",
+      "url": "https://www.novosns.com/Public/Uploads/uploadfile3/files/20220726/NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+      "features": [
+        "角度读数|手册列14位有效分辨率及SPI通信",
+        "配置|自动增益、旋转方向和零位可设置",
+        "NSM3013|SON可用于Z向场强阈值检测；使用SON时需按手册关闭AGC",
+        "资料边界|依据官方EN1.0历史手册；不据此保证当前交期及新版本配置"
+      ]
+    },
+    {
+      "slug": "ic-ma",
+      "title": "iC-MA",
+      "type": "数字角度",
+      "members": [
+        "iC-MA"
+      ],
+      "description": "可级联的8位霍尔角度器件，支持多种模拟或数字输出模式。",
+      "url": "https://www.ichaus.de/product/ic-ma/",
+      "features": [
+        "角度细分|每周期最多256步",
+        "感应结构|四霍尔阵列及差分检测",
+        "配置|引脚选择工作模式，可级联读取多轴",
+        "输出边界|模拟模式与数字模式按配置选择，不是所有输出同时启用"
+      ],
+      "vendor": "iC-Haus"
+    },
+    {
+      "slug": "ic-ma3",
+      "title": "iC-MA3",
+      "type": "模拟角度",
+      "members": [
+        "iC-MA3"
+      ],
+      "description": "带增益调节的霍尔角度前端，向后端提供正余弦模拟信号。",
+      "url": "https://www.ichauschina.com/products/enc_mag.htm",
+      "features": [
+        "输出|模拟正余弦，非SPI绝对角度码",
+        "电源|3.0～5.5V",
+        "信号链|四霍尔阵列、自动增益及失磁提示",
+        "资料范围|采用官方中文产品摘要，完整规格以原厂授权手册为准"
+      ],
+      "vendor": "iC-Haus"
+    },
+    {
+      "slug": "ic-mh16",
+      "title": "iC-MH16",
+      "type": "数字角度",
+      "members": [
+        "iC-MH16"
+      ],
+      "description": "集成霍尔传感阵列的12位角度编码器，兼有增量与换相输出。",
+      "url": "https://www.ichaus.de/product/ic-mh16/",
+      "features": [
+        "角度细分|12位，4096步",
+        "输出|ABZ、UVW、BiSS／SSI，按配置",
+        "换相|UVW最多16对极仿真",
+        "资料边界|公开产品特性可查，完整规格下载可能需原厂授权"
+      ],
+      "sources": [
+        "https://www.ichauschina.com/products/enc_mag.htm"
+      ],
+      "vendor": "iC-Haus"
+    },
+    {
+      "slug": "ic-mhl",
+      "title": "iC-MHL系列",
+      "type": "线性编码",
+      "members": [
+        "iC-MHL100",
+        "iC-MHL200"
+      ],
+      "description": "用于磁栅或离轴磁环的12位霍尔编码器系列，按磁极宽度选择成员。",
+      "url": "https://www.ichaus.de/wp-content/uploads/MHL_factsheet_rev4.pdf",
+      "features": [
+        "磁栅匹配|MHL100单极宽1mm、周期2mm；MHL200单极宽2mm、周期4mm",
+        "细分|每磁周期最多4096步；对应约0.5µm／1µm",
+        "输出|ABZ及BiSS-C等，依成员配置",
+        "速度条件|全分辨率下MHL100为4m/s、MHL200为8m/s；不是整尺绝对精度"
+      ],
+      "vendor": "iC-Haus"
+    },
+    {
+      "slug": "ic-mhm",
+      "title": "iC-MHM",
+      "type": "数字角度",
+      "members": [
+        "iC-MHM"
+      ],
+      "description": "支持外部多圈数据接入的霍尔单圈角度编码器，分辨率与最高跟踪速度需折衷。",
+      "url": "https://www.ichauschina.com/products/enc_mag.htm",
+      "features": [
+        "单圈|最高14位；更高转速可用较低分辨率配置",
+        "接口|BiSS／SSI、SPI模式，按配置",
+        "多圈边界|可处理外部多圈数据，不等于芯片断电后自行计圈",
+        "信号链|增益监控及可选精校准"
+      ],
+      "vendor": "iC-Haus"
+    },
+    {
+      "slug": "ic-mu128",
+      "title": "iC-MU128",
+      "type": "数字角度",
+      "members": [
+        "iC-MU128"
+      ],
+      "description": "双磁道离轴绝对位置器件，需配套主磁道与游标磁道。",
+      "url": "https://www.ichaus.de/product/ic-mu128/",
+      "features": [
+        "磁栅几何|主磁道单极宽1.28mm",
+        "结构|集成双磁道霍尔扫描",
+        "信号调理|偏置、幅值和相位校正",
+        "资料边界|原厂公开页确认结构；完整规格需申请权限，不填未经核对的保证值"
+      ],
+      "sources": [
+        "https://www.ichauschina.com/products/enc_mag.htm"
+      ],
+      "vendor": "iC-Haus"
+    },
+    {
+      "slug": "ic-pz",
+      "title": "iC-PZ系列",
+      "type": "光学编码",
+      "members": [
+        "iC-PZ0974",
+        "iC-PZ2656",
+        "iC-PZ205"
+      ],
+      "description": "集成蓝光LED、反射式光学检测和细分功能的绝对编码器芯片系列。",
+      "url": "https://de-shop.ichaus.com/encoder-solutions/optical-encoder-ics/ic-pz-series/",
+      "features": [
+        "成员区别|PZ0974／PZ2656面向小直径码盘；PZ205也适配较大码盘及直线码尺",
+        "集成范围|蓝光LED、光学接收及细分信号处理",
+        "输出选择|BiSS／SSI、ABZ、UVW、SPI等，依成员和配置",
+        "光机边界|配套码盘、间隙和光学几何仍须按原厂设计"
+      ],
+      "vendor": "iC-Haus"
+    },
+    {
+      "slug": "gw-rt",
+      "title": "弓望RT系列",
+      "type": "完整编码器",
+      "members": [
+        "RT-D036",
+        "RT-D040",
+        "RT-D046",
+        "RT-D055",
+        "RT-D061",
+        "RT-D067",
+        "RT-D070",
+        "RT-D080",
+        "RT-D087",
+        "RT-D090",
+        "RT-M035",
+        "RT-M045",
+        "RT-M055"
+      ],
+      "description": "面向机器人关节的电感编码器产品系列，目录涵盖双编码器和单编码器形态。",
+      "url": "https://www.gw-sensor.com/en/h-col-103.html",
+      "features": [
+        "产品形态|完整编码器／模块，不是公开裸芯片订货型号",
+        "结构选择|目录有异侧双编码器、同侧双编码器与电池多圈单编码器",
+        "代表成员|RT-D036～RT-D090、RT-M035／045／055；尺寸及接口逐款确认",
+        "选型边界|双编码器输出不直接等于已标定的扭矩输出"
+      ],
+      "vendor": "弓望",
+      "form": "编码器／模块"
+    },
+    {
+      "slug": "gw-gc",
+      "title": "弓望GC系列",
+      "type": "完整编码器",
+      "members": [
+        "GC-C035",
+        "GC-C045",
+        "GC-C060",
+        "GC-C080",
+        "GC-C100",
+        "GC-C140"
+      ],
+      "description": "通用电感编码器系列，按安装空间与机械尺寸选择具体规格。",
+      "url": "https://www.gw-sensor.com/en/h-col-103.html",
+      "features": [
+        "产品形态|完整编码器／模块",
+        "目录成员|GC-C035、045、060、080、100、140",
+        "应用范围|官网归类通用单编码器，不据此推定所有成员同精度同接口",
+        "资料边界|公开目录确认系列和型号；未取得逐型号完整手册，不填推测参数"
+      ],
+      "vendor": "弓望",
+      "form": "编码器／模块"
+    },
+    {
+      "slug": "gw-sv",
+      "title": "弓望SV系列",
+      "type": "完整编码器",
+      "members": [
+        "SV-48M17C",
+        "SV-48M17O"
+      ],
+      "description": "面向伺服反馈的编码器系列，官网目录列有多圈产品。",
+      "url": "https://www.gw-sensor.com/en/h-col-103.html",
+      "features": [
+        "产品形态|完整伺服编码器／模块",
+        "代表成员|SV-48M17C、SV-48M17O",
+        "功能方向|多圈位置反馈，具体计圈方式与断电条件需核对手册",
+        "资料边界|型号字母不能替代接口、精度和供电参数说明"
+      ],
+      "vendor": "弓望",
+      "form": "编码器／模块"
+    },
+    {
+      "slug": "reagles-kid",
+      "title": "锐鹰KID系列",
+      "type": "旋转编码模块",
+      "members": [
+        "KID"
+      ],
+      "description": "异侧中空双编码器，集成双读头并通过单接口传输两路位置。",
+      "url": "https://www.reagles.cn/index/product_detail/content/10159.html",
+      "features": [
+        "结构|异侧双编码器模块，面向机器人关节",
+        "输出码宽|23bit；官网另列有效分辨率大于17bit，两种口径分开",
+        "通信|RS485，2.5Mbps",
+        "重复定位|技术表电机端≤±10角秒、减速机端≤±8角秒；不等于绝对精度"
+      ],
+      "vendor": "锐鹰",
+      "form": "编码模块"
+    },
+    {
+      "slug": "reagles-kit",
+      "title": "锐鹰KIT系列",
+      "type": "旋转编码模块",
+      "members": [
+        "KIT"
+      ],
+      "description": "同侧中空电感双编码器，以两个转子与读头构成紧凑反馈模块。",
+      "url": "https://www.reagles.cn/index/product_detail/content/10158.html",
+      "features": [
+        "结构|非接触电感检测，官网称最薄小于8mm",
+        "角度／通信|两端23bit，RS485、2.5Mbps",
+        "重复定位|官网±10角秒，不能当扭矩精度",
+        "工况|表列≤6000rpm、−20～105°C；装配后仍需验证"
+      ],
+      "vendor": "锐鹰",
+      "form": "编码模块"
+    },
+    {
+      "slug": "kin52",
+      "title": "KIN52系列",
+      "type": "旋转编码模块",
+      "members": [
+        "KIN52"
+      ],
+      "description": "感应式中空绝对编码器，适合轴贯穿、空间紧凑的运动反馈。",
+      "url": "https://www.reagles.cn/index/product_detail/content/10138.html",
+      "features": [
+        "产品形态|中空编码模块，不是裸芯片",
+        "分辨率|技术表单圈23bit（兼容17bit）、多圈16bit；计圈配置另核对",
+        "接口|简介列RS485／SSI／BiSS；当前技术表为RS485配置，不能当同时具备",
+        "电源／温度|5V±5%，−40～85°C"
+      ],
+      "vendor": "锐鹰",
+      "form": "编码模块"
+    },
+    {
+      "slug": "sin60",
+      "title": "SIN60系列",
+      "type": "线性编码",
+      "members": [
+        "SIN60"
+      ],
+      "description": "非光学直线编码器，由读头和尺配合进行行程反馈。",
+      "url": "https://www.reagles.cn/index/product_detail/content/10137.html",
+      "features": [
+        "形态|直线编码模块，不是线性霍尔裸芯片",
+        "分辨率／重复定位|技术表0.5µm／±0.75µm；栅尺精度另列±10µm/m，三者分开",
+        "安装间隙|目录给出读头与尺0.3～0.9mm",
+        "通信／电源|RS485、支持BiSS，5Mbps；DC5V±5%"
+      ],
+      "vendor": "锐鹰",
+      "form": "编码模块"
+    },
+    {
+      "slug": "srma34",
+      "title": "SRMA34系列",
+      "type": "旋转编码模块",
+      "members": [
+        "SRMA34"
+      ],
+      "description": "分体式磁电绝对编码器，公开资料包含单圈与多圈配置。",
+      "url": "https://www.reagles.cn/index/product_detail/content/10121.html",
+      "features": [
+        "形态|分体磁电编码模块",
+        "单圈配置|官方规格书目录列17bit单圈版本",
+        "多圈配置|目录另列M16S17Bit版本，不能把多圈位数写成单圈精度",
+        "资料版本|官网资料中心列系列规格书V2.0；具体供电、协议依订货号"
+      ],
+      "vendor": "锐鹰",
+      "form": "编码模块",
+      "sources": [
+        "https://www.reagles.cn/index/specification.html"
+      ]
+    },
+    {
+      "slug": "srmi34",
+      "title": "SRMI34系列",
+      "type": "旋转编码模块",
+      "members": [
+        "SRMI34"
+      ],
+      "description": "分体式磁电增量编码器，用于电机位置与速度脉冲反馈。",
+      "url": "https://www.reagles.cn/index/product_detail/content/10117.html",
+      "features": [
+        "编码方式|增量型，不等于上电即得单圈绝对位置",
+        "形态|薄型分体模块，需要配套转动磁体与安装条件",
+        "输出配置|技术表2500C/T或1024C/T；26C31线驱动，5V±5%",
+        "资料范围|官网产品页及资料中心列有SRMI34规格书V1.1"
+      ],
+      "vendor": "锐鹰",
+      "form": "编码模块",
+      "sources": [
+        "https://www.reagles.cn/index/specification.html"
+      ]
+    },
+    {
+      "slug": "din58",
+      "title": "DIN58系列",
+      "type": "完整编码器",
+      "members": [
+        "DIN58"
+      ],
+      "description": "感应式工业旋转编码器系列，按工业网络和机械接口选择配置。",
+      "url": "https://www.reagles.cn/index/product_detail/content/10142.html",
+      "features": [
+        "绝对定位|官网目录±40角秒；重复定位±7角秒，两者分开",
+        "协议区别|目录列CANopen、PROFINET、EtherCAT、SSI；当前技术表为RS485／CANopen配置，订货时逐项确认",
+        "防护|官网目录IP65，须按连接器及安装条件确认",
+        "形态|带机械安装结构的完整编码器，不是信号调理芯片"
+      ],
+      "vendor": "锐鹰",
+      "form": "完整编码器"
+    },
+    {
+      "slug": "kth1604",
+      "title": "KTH1604",
+      "series": "kth16",
+      "type": "磁开关",
+      "vendor": "昆泰芯",
+      "members": [
+        "KTH1604"
+      ],
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html",
+      "description": "双输出单极霍尔开关，用于判定磁体靠近与离开事件。",
+      "features": [
+        "检测逻辑|双输出单极，不是双极锁存",
+        "供电|1.6～5.5V",
+        "采样版本|5Hz与20Hz，按订货配置",
+        "输出|CMOS状态输出，不提供连续位置值"
+      ]
+    },
+    {
+      "slug": "kth3101",
+      "title": "KTH3101",
+      "series": "kth31",
+      "type": "线性磁场",
+      "vendor": "昆泰芯",
+      "members": [
+        "KTH3101"
+      ],
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html",
+      "description": "低灵敏度档线性霍尔器件，适合较大场强范围的模拟检测。",
+      "features": [
+        "输出|与供电成比例的磁场相关模拟电压",
+        "灵敏度|典型1mV/Gs@3.3V、1.5mV/Gs@5V",
+        "范围|目录典型±1400Gs@3.3V、±1500Gs@5V",
+        "供电／温度|3～5.5V，−40～125°C"
+      ]
+    }
+    ,
+    {
+      "slug": "ma302",
+      "title": "MA302",
+      "vendor": "MPS",
+      "type": "数字角度",
+      "members": [
+        "MA302"
+      ],
+      "description": "MPS MagAlpha 12位磁角度芯片，兼有SPI绝对角度、ABZ增量和UVW换相信号，支持在轴及离轴布置。",
+      "url": "https://www.monolithicpower.com/en/ma302.html",
+      "features": [
+        "绝对角度|12位，通过SPI读取；分辨率不等于系统精度",
+        "增量／换相|ABZ每通道1～256脉冲／圈；UVW支持1～8对极仿真",
+        "安装|支持轴端与离轴；离轴性能依磁路与配置确认",
+        "供电／封装|3.0～3.6V，QFN-16（3×3mm）",
+        "工作温度|−40～125°C"
+      ]
+    }
+  ]
+}

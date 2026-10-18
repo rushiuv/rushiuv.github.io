@@ -3,26 +3,41 @@
 <header class="page-head"><p class="kicker">如是有为 · WIKI</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div></header>
 <section class="wiki-index">
   <h2>从型号与品牌开始查找</h2>
-  <p class="muted">已整理 {{ len $entries }} 个词条 · 覆盖现有全部型号与公司标签 · 按关联文章篇数排序</p>
+  <p class="muted">已整理 {{ len $entries }} 个词条 · 芯片、模块与完整编码器分开标记 · 系列和具体型号均可查</p>
   <label for="wiki-search">搜索词条</label>
   <label class="wiki-kind-label" for="wiki-kind">查看范围 <select id="wiki-kind"><option value="">全部</option><option value="model">型号与产品</option><option value="company">公司与机构</option></select></label>
   <input id="wiki-search" type="search" placeholder="型号、公司或技术关键词" style="display:block;width:100%;margin-top:8px;padding:12px;border:1px solid var(--line);border-radius:8px;font:inherit" autocomplete="off">
+  {{ $vendors := slice }}{{ $types := slice }}
+  {{ range where $entries "Params.wiki_type" "model" }}{{ range .Params.related_companies }}{{ $vendors = $vendors | append . }}{{ end }}{{ $types = $types | append (.Params.catalog_type | default "其他既有型号") }}{{ end }}
+  <div class="catalog-filters">
+    <label for="wiki-vendor">厂商<select id="wiki-vendor"><option value="">全部厂商</option>{{ range sort (uniq $vendors) }}<option>{{ . }}</option>{{ end }}</select></label>
+    <label for="wiki-type">器件类别<select id="wiki-type"><option value="">全部类别</option>{{ range sort (uniq $types) }}<option>{{ . }}</option>{{ end }}</select></label>
+    <label for="wiki-form">产品形态<select id="wiki-form"><option value="">全部形态</option><option>芯片</option><option>编码模块</option><option>编码器／模块</option><option>完整编码器</option><option>既有产品（待细分）</option></select></label>
+    <button type="button" id="wiki-reset" class="btn ghost">重置筛选</button>
+  </div>
+  <p id="wiki-count" class="muted" role="status" aria-live="polite"></p>
   <div class="wiki-index-grid" id="wiki-entries">
   {{ range $entries }}
-    <a class="wiki-index-card" href="{{ .RelPermalink }}" data-kind="{{ .Params.wiki_type }}" data-search="{{ printf "%s %s %s" .Title .Description (.Params.wiki_category | default "") | lower }}"><small>{{ if eq .Params.wiki_type "model" }}型号／产品{{ else }}公司／机构{{ end }} · {{ len .Pages }} 篇相关文章</small><strong>{{ .Title }}</strong><p>{{ .Description }}</p></a>
+    {{ $aliases := delimit (.Params.search_aliases | default slice) " " }}
+    {{ $vendors := delimit (.Params.related_companies | default slice) "|" }}
+    {{ if eq .Params.wiki_type "company" }}{{ $vendors = printf "%s|%s" $vendors .LinkTitle }}{{ end }}
+    <a class="wiki-index-card" href="{{ .RelPermalink }}" data-kind="{{ .Params.wiki_type }}" data-vendors="{{ $vendors }}" data-type="{{ .Params.catalog_type | default "其他既有型号" }}" data-form="{{ .Params.catalog_form | default "既有产品（待细分）" }}" data-search="{{ printf "%s %s %s %s %s" .Title .Description (.Params.wiki_category | default "") $aliases $vendors | lower }}"><small>{{ if eq .Params.wiki_type "model" }}{{ .Params.catalog_form | default "型号／产品" }} · {{ .Params.catalog_type | default .Params.wiki_category | default "资料卡" }}{{ else }}公司／机构{{ end }}</small><strong>{{ .Title }}</strong><p>{{ .Description }}</p></a>
   {{ end }}
   </div>
   <p id="wiki-empty" class="muted" hidden>当前词条中没有匹配项，可继续浏览全部型号或公司。</p>
 </section>
 <div class="hero-links"><a class="btn ghost" href="{{ "models/" | relURL }}">全部型号标签</a><a class="btn ghost" href="{{ "companies/" | relURL }}">全部公司标签</a></div>
 <script>
-function filterWiki(){const q=document.getElementById('wiki-search').value.trim().toLocaleLowerCase();const kind=document.getElementById('wiki-kind').value;let n=0;document.querySelectorAll('.wiki-index-card').forEach(a=>{a.hidden=!(a.dataset.search.includes(q)&&(!kind||a.dataset.kind===kind));if(!a.hidden)n++});document.getElementById('wiki-empty').hidden=n>0;}
+function filterWiki(){const tokens=document.getElementById('wiki-search').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);const kind=document.getElementById('wiki-kind').value;const vendor=document.getElementById('wiki-vendor').value;const type=document.getElementById('wiki-type').value;const form=document.getElementById('wiki-form').value;let n=0;document.querySelectorAll('.wiki-index-card').forEach(a=>{a.hidden=!(tokens.every(t=>a.dataset.search.includes(t))&&(!kind||a.dataset.kind===kind)&&(!vendor||a.dataset.vendors.split('|').includes(vendor))&&(!type||a.dataset.type===type)&&(!form||a.dataset.form===form));if(!a.hidden)n++});document.getElementById('wiki-empty').hidden=n>0;document.getElementById('wiki-count').textContent='当前显示 '+n+' 个词条';}
 const wikiParams = new URLSearchParams(location.search);
 const initialWikiKind = wikiParams.get('kind');
 if (initialWikiKind === 'model' || initialWikiKind === 'company') document.getElementById('wiki-kind').value = initialWikiKind;
 document.getElementById('wiki-search').value = wikiParams.get('q') || '';
+for(const key of ['vendor','type','form']){const el=document.getElementById('wiki-'+key);const v=wikiParams.get(key);if(v&&Array.from(el.options).some(o=>o.value===v))el.value=v;}
 filterWiki();
 document.getElementById('wiki-search').addEventListener('input',filterWiki);
 document.getElementById('wiki-kind').addEventListener('change',filterWiki);
+for(const key of ['vendor','type','form'])document.getElementById('wiki-'+key).addEventListener('change',filterWiki);
+document.getElementById('wiki-reset').addEventListener('click',()=>{for(const key of ['search','kind','vendor','type','form'])document.getElementById('wiki-'+key).value='';history.replaceState(null,'',location.pathname);filterWiki();});
 </script>
 {{ end }}

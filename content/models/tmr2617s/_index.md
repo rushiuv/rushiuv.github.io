@@ -2,6 +2,8 @@
 title: "TMR2617S"
 wiki: true
 wiki_type: "model"
+catalog_type: "线性磁场"
+catalog_form: "芯片"
 wiki_rank: 145
 seed_count: 1
 lastmod: "2026-10-16"

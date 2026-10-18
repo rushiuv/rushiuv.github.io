@@ -2,6 +2,8 @@
 title: "KMZ60"
 wiki: true
 wiki_type: "model"
+catalog_type: "模拟角度"
+catalog_form: "芯片"
 wiki_rank: 124
 seed_count: 1
 lastmod: "2026-10-16"

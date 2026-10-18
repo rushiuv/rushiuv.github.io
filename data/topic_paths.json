@@ -1,0 +1,195 @@
+{
+  "updated": "2026-10-18",
+  "tracks": [
+    {
+      "id": "magnetic",
+      "tag": "磁编码器",
+      "title": "磁场与磁编码",
+      "code": "HALL / AMR / TMR",
+      "question": "同样输出角度，为什么换芯片后，磁铁也得重新看？",
+      "intro": "从感应分量、磁体布置到后端角度计算，把“接口能接上”和“测量条件成立”分开。先确定在轴还是离轴，再比较器件。",
+      "check": "先查磁场方向与强度，再看气隙、偏心和校准配置。",
+      "basics": [
+        "magnetic-encoder",
+        "mounting"
+      ],
+      "models": [
+        "as5047p",
+        "kth7111",
+        "ktm5900",
+        "ma730"
+      ],
+      "reads": [
+        {
+          "file": "2026-07-29-rNfXzjlMUoeZO1TUSEyk1Q",
+          "title": "替代一颗芯片，为什么要重看磁路？",
+          "note": "沿Hall与TMR的感应差异，回到磁体和安装条件。"
+        },
+        {
+          "file": "2026-04-05-Z6tRNlSqclroGA8FaRMF6A",
+          "title": "滤波开大一点，会丢掉什么？",
+          "note": "从AS5600与KTH78的比较，区分角度平稳和动态响应。"
+        }
+      ],
+      "number": "01"
+    },
+    {
+      "id": "inductive",
+      "tag": "电感编码器",
+      "title": "电感、线圈与靶体",
+      "code": "COIL / TARGET",
+      "question": "信号幅度变大了，角度误差为什么不一定变小？",
+      "intro": "电感反馈不是一颗芯片的独角戏。线圈、靶体、气隙与解调链共同决定信号，把材料替换和动态性能放在同一条链里看。",
+      "check": "把幅值、相位、谐波和转速条件一起记录，不只看波形高度。",
+      "basics": [
+        "inductive-encoder",
+        "air-gap"
+      ],
+      "models": [
+        "mt6901",
+        "mlx90520",
+        "gw-rt",
+        "kin52"
+      ],
+      "reads": [
+        {
+          "file": "2026-06-09-4nfJ9hnjtbi8RKYKO60Uow",
+          "title": "铝靶换成铜靶：先追哪条误差链？",
+          "note": "用材料变化这个具体问题，阅读信号形成与角度解算。"
+        },
+        {
+          "file": "2026-04-22-ZwkGubXL5a3eJP7kyFBqGg",
+          "title": "电感测角的动态时间花在哪里？",
+          "note": "把激励、感应和处理链拆开，不只比较输出更新率。"
+        }
+      ],
+      "number": "02"
+    },
+    {
+      "id": "optical",
+      "tag": "光电编码器",
+      "title": "光学读头与细分",
+      "code": "LIGHT / SCALE",
+      "question": "角度误差，发生在光电流产生之前，还是细分之后？",
+      "intro": "沿着光源、码盘、探测器、模拟前端和细分器逐级读。先看几何与信号质量，再讨论最后输出多少位。",
+      "check": "分清光学接收前端、细分芯片和完整读头，别把它们当可互换器件。",
+      "basics": [
+        "optical-encoder",
+        "vernier"
+      ],
+      "models": [
+        "kto9512",
+        "pnh3348",
+        "ic-pz",
+        "ktm5800"
+      ],
+      "reads": [
+        {
+          "file": "2026-10-12-91wDKa0-Ab5MzUYTJ9xqyA",
+          "title": "误差为什么可能在光电流之前形成？",
+          "note": "从光学编码器文章进入码盘与读头的空间关系。"
+        },
+        {
+          "file": "2026-09-26-Pp66W5WFgDU79Fy35X4xMg",
+          "title": "编码器里的“光电池”到底做什么？",
+          "note": "先区分光检测信号与给系统供电，再看后级处理。"
+        }
+      ],
+      "number": "03"
+    },
+    {
+      "id": "interfaces",
+      "tag": "编码器接口",
+      "title": "接口、帧与采样时刻",
+      "code": "BiSS / SSI / SPI",
+      "question": "波形已经有了，为什么控制器还是不认这个角度？",
+      "intro": "把电气层、帧格式、状态位和数据对应的采样时刻分开检查。名字一样的接口，也不能省掉具体版本与主从配置核对。",
+      "check": "先留完整原始帧与时钟，再核对长度、位序、CRC和超时。",
+      "basics": [
+        "interfaces",
+        "crc"
+      ],
+      "models": [
+        "am26c32",
+        "ma302",
+        "reagles-kit"
+      ],
+      "reads": [
+        {
+          "file": "2026-05-05-UU86a4I4eJETf4TBRrRqrA",
+          "title": "按BiSS接好了，为什么仍然不通？",
+          "note": "从接入问题回到设备实际发送的帧，而非只认协议名称。"
+        },
+        {
+          "file": "2026-09-01-1XA6GvDIcGQvtKSEbvtI9g",
+          "title": "接口除了传一个数，还承担什么？",
+          "note": "继续看诊断、故障追溯与系统接口生态。"
+        }
+      ],
+      "number": "04"
+    },
+    {
+      "id": "calibration",
+      "tag": "非线性校准",
+      "title": "误差、校准与温度",
+      "code": "INL / NOISE / DRIFT",
+      "question": "室温一圈校准好了，换温度、转速和寿命条件还算数吗？",
+      "intro": "先分清周期误差、零位漂移、噪声和动态滞后。校准表解决的是指定条件下的一部分误差，不是所有工况的统一答案。",
+      "check": "比较校准前后时，固定温度、磁路、速度和滤波配置。",
+      "basics": [
+        "inl",
+        "self-calibration"
+      ],
+      "models": [
+        "ktm5300",
+        "mlx90382",
+        "tle5012b"
+      ],
+      "reads": [
+        {
+          "file": "2026-07-08-4wI2vLUkLLREXRp3tvUZ9A",
+          "title": "校准点越加越多，为什么温漂仍在？",
+          "note": "围绕校准维度阅读，不把插值点数当全温性能。"
+        },
+        {
+          "file": "2026-07-16-ia3f1v1jGsynRP5mvT983g",
+          "title": "出厂校准为什么也会“过期”？",
+          "note": "继续追问温度回程、装配变化和长期漂移。"
+        }
+      ],
+      "number": "05"
+    },
+    {
+      "id": "robotics",
+      "tag": "机器人关节",
+      "title": "双编码器与关节反馈",
+      "code": "MOTOR / LOAD / TORQUE",
+      "question": "两个角度的差值，在说扭矩、温漂，还是采样不同步？",
+      "intro": "从电机端与负载端的位置关系入手，再讨论减速比、机械弹性和同步。多一路观测带来了新信息，也带来了需要解释的不一致。",
+      "check": "先统一角度与时间基准，再判断差值；双编码器不自动等于扭矩传感器。",
+      "basics": [
+        "latency",
+        "singleturn-multiturn"
+      ],
+      "models": [
+        "reagles-kit",
+        "reagles-kid",
+        "gw-rt",
+        "win48"
+      ],
+      "reads": [
+        {
+          "file": "2026-05-03-19dRZ2lB7yX0xif6ccU0fQ",
+          "title": "从两个角度，到关节扭矩的距离",
+          "note": "先看双编码器的系统位置，再审查差值成立的条件。"
+        },
+        {
+          "file": "2026-08-06-7tij-wiN0uDTBG5Xp1BBYA",
+          "title": "两颗都合格，为什么读数还能不一致？",
+          "note": "把单颗误差、安装与温度放进差值预算。"
+        }
+      ],
+      "number": "06"
+    }
+  ]
+}

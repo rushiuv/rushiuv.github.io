@@ -3,6 +3,8 @@ title: "KTH7111"
 description: "KTH7111 是支持离轴测量的 16 位霍尔磁编码器，集成 ANLC 自动非线性校准，适用于磁饼、磁环位置反馈。"
 wiki: true
 wiki_type: "model"
+catalog_type: "数字角度"
+catalog_form: "芯片"
 wiki_rank: 20
 seed_count: 10
 lastmod: "2026-10-16"

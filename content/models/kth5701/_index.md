@@ -2,6 +2,8 @@
 title: "KTH5701"
 wiki: true
 wiki_type: "model"
+catalog_type: "线性磁场"
+catalog_form: "芯片"
 wiki_rank: 22
 seed_count: 9
 lastmod: "2026-10-16"

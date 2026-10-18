@@ -2,6 +2,8 @@
 title: "SROA48"
 wiki: true
 wiki_type: "model"
+catalog_type: "完整编码器"
+catalog_form: "完整编码器"
 wiki_rank: 95
 seed_count: 2
 lastmod: "2026-10-16"

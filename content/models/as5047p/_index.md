@@ -3,6 +3,8 @@ title: "AS5047P"
 description: "AS5047P 是 14 位在轴霍尔磁角度传感器，集成 DAEC 动态角度补偿，提供 SPI 绝对位置、ABI 增量及 UVW 换向输出。"
 wiki: true
 wiki_type: "model"
+catalog_type: "数字角度"
+catalog_form: "芯片"
 wiki_rank: 16
 seed_count: 12
 lastmod: "2026-10-16"

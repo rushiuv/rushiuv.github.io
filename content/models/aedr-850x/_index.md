@@ -2,6 +2,8 @@
 title: "AEDR-850x"
 wiki: true
 wiki_type: "model"
+catalog_type: "光学编码"
+catalog_form: "芯片"
 wiki_rank: 110
 seed_count: 1
 lastmod: "2026-10-16"
