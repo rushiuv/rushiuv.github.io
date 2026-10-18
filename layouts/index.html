@@ -20,10 +20,16 @@
 {{ end }}
 
 {{ define "main" }}
+<section class="home-section home-journal">
+  <header class="home-section-head"><div><p class="home-overline">JOURNAL / 最近入站</p><h2>最近发布</h2></div><a href="{{ "archives/" | relURL }}">全部归档 <span>↗</span></a></header>
+  {{ $updates := (where site.RegularPages "Section" "posts").ByLastmod.Reverse }}
+  <div class="home-journal-list">{{ range first 5 $updates }}<article><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006.01.02" }}</time><div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description | plainify | truncate 100 }}</p></div><a class="home-journal-arrow" href="{{ .RelPermalink }}" aria-label="阅读{{ .Title }}">↗</a></article>{{ end }}</div>
+</section>
+
 {{ with site.GetPage "/posts/2026-10-18-kth7111-1us-vs-510us.md" }}
-<section class="home-latest" aria-label="最新文章：KTH7111动态响应">
+<section class="home-latest" aria-label="精选工程笔记：KTH7111动态响应">
   <a class="home-latest-link" href="{{ .RelPermalink }}">
-    <div class="latest-copy"><p class="latest-label"><span></span>最新工程笔记 <i>2026.10.18 / 编码器动态响应</i></p><h2><span>KTH7111 每 <em>1 μs</em> 更新，</span><span>为什么滤波时间常数却有 <em>510 μs</em>？</span></h2><p class="latest-description">数据更新周期不等于动态延迟：从跟踪滤波到伺服相位响应，拆解两个时间参数真正的意义。</p><span class="latest-more">阅读全文 <b aria-hidden="true">↗</b></span></div>
+    <div class="latest-copy"><p class="latest-label"><span></span>精选工程笔记 <i>2026.10.18 / 编码器动态响应</i></p><h2><span>KTH7111 每 <em>1 μs</em> 更新，</span><span>为什么滤波时间常数却有 <em>510 μs</em>？</span></h2><p class="latest-description">数据更新周期不等于动态延迟：从跟踪滤波到伺服相位响应，拆解两个时间参数真正的意义。</p><span class="latest-more">阅读全文 <b aria-hidden="true">↗</b></span></div>
     <div class="latest-visual" aria-hidden="true"><span class="timing-orbit"></span><span class="timing-value">1 <small>μs</small></span><span class="timing-separator">≠</span><span class="timing-value">510 <small>μs</small></span><span class="timing-caption">更新周期 / 滤波时间常数</span></div>
   </a>
 </section>
@@ -61,11 +67,7 @@
   <div class="home-library-list">{{ range $name := slice "MT6835" "AS5047P" "MLX90382" "TLE5012B" "KTH78" "MT6901" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><div><strong>{{ $name }}</strong><span>{{ .Page.Params.wiki_category | default "角度测量" }}</span></div><p>{{ .Page.Description | plainify | truncate 65 }}</p><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div>
 </section>
 
-<section class="home-section home-journal">
-  <header class="home-section-head"><div><p class="home-overline">JOURNAL / 持续记录</p><h2>最近的文章</h2></div><a href="{{ "archives/" | relURL }}">全部归档 <span>↗</span></a></header>
-  {{ $updates := slice }}{{ range (where site.RegularPages "Section" "posts").ByDate.Reverse }}{{ if intersect (.Params.tags | default slice) (slice "磁编码器" "电感编码器" "光电编码器" "编码器接口" "非线性校准" "多圈编码器" "机器人关节" "AMR" "TMR" "离轴" "FOC") }}{{ $updates = $updates | append . }}{{ end }}{{ end }}
-  <div class="home-journal-list">{{ range first 5 $updates }}<article><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time><div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description | plainify | truncate 100 }}</p></div><a class="home-journal-arrow" href="{{ .RelPermalink }}" aria-label="阅读{{ .Title }}">↗</a></article>{{ end }}</div>
-</section>
+
 
 <section class="home-about"><div><p class="home-overline">ABOUT / 如是有为</p><h2>沿着位置反馈，理解器件与系统。</h2></div><p>一个芯片工程师的持续记录。写编码器、磁传感器、伺服与机器人关节，也讨论这一行里的人和事。<a href="{{ "companies/" | relURL }}">浏览公司与品牌 →</a></p></section>
 

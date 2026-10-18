@@ -1,6 +1,7 @@
 ---
 title: "机器人关节，怎样再薄一点？——径向外转子与轴向磁通的两条集成路线"
 date: 2026-10-14T20:00:00+08:00
+lastmod: 2026-10-18T20:02:14+08:00
 slug: "wechat-ezLZtznHzE3-08Xvy1JR5Q"
 description: "径向外转子与轴向磁通两条机器人关节薄型化集成路线。"
 original: "https://mp.weixin.qq.com/s/ezLZtznHzE3-08Xvy1JR5Q"

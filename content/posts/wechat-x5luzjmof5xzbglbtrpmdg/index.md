@@ -1,6 +1,7 @@
 ---
 title: "纳芯微电流传感器：车上要测大电流，为什么还要盯着发热？"
 date: 2026-10-17T11:14:00+08:00
+lastmod: 2026-10-18T20:27:13+08:00
 slug: "wechat-x5luzjmof5xzbglbtrpmdg"
 description: "纳芯微 NSM2019 车规级集成式电流传感器：车载大电流测量的导体损耗、隔离与过流保护。"
 original: "https://mp.weixin.qq.com/s/x5LuzjMoF5XzbglbtRpMDg"

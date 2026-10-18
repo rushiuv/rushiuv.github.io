@@ -1,6 +1,7 @@
 ---
 title: "一支没有数字的尺子，凭什么量到纳米？"
 date: 2026-09-19T15:08:39+08:00
+lastmod: 2026-10-18T20:31:57+08:00
 slug: "wechat-s687llxcto0w4whvfixvfa"
 description: "光栅尺如何利用莫尔条纹、正交相位和信号细分实现纳米级分辨率，以及分辨率与精度之间的区别。"
 original: "https://mp.weixin.qq.com/s/s687llXCto0W4WHVFixVFA"
