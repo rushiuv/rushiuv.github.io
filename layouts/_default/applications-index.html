@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ $pages := where .RegularPages "Params.application_entry" true }}
 <div class="applications-home">
-  <header class="applications-hero"><p class="basics-kicker">APPLICATIONS / 芯片与系统</p><h1>从应用出发，<br><span>找到合适的测量路径。</span></h1><p class="applications-lead">{{ .Content | plainify }}</p><p class="applications-count"><strong>{{ len $pages }}</strong> 个场景 <i>·</i> 四类应用 <i>·</i> 多厂商公开资料</p><nav class="application-jump" aria-label="应用分类">{{ range hugo.Data.applications }}<a href="#{{ .id }}">{{ .title }} <span>↓</span></a>{{ end }}</nav></header>
-  {{ range hugo.Data.applications }}{{ $group := . }}{{ $items := where $pages "Params.application_group" .title }}
+  <header class="applications-hero"><p class="basics-kicker">APPLICATIONS / 芯片与系统</p><h1>从应用出发，<br><span>找到合适的测量路径。</span></h1><p class="applications-lead">{{ .Content | plainify }}</p><p class="applications-count"><strong>{{ len $pages }}</strong> 个场景 <i>·</i> 四类应用 <i>·</i> 多厂商公开资料</p><nav class="application-jump" aria-label="应用分类">{{ range site.Data.applications }}<a href="#{{ .id }}">{{ .title }} <span>↓</span></a>{{ end }}</nav></header>
+  {{ range site.Data.applications }}{{ $group := . }}{{ $items := where $pages "Params.application_group" .title }}
   <section class="application-group" id="{{ .id }}"><header><div><p class="home-overline">{{ .code }} / {{ len $items }} 个场景</p><h2>{{ .title }}</h2><p>{{ .description }}</p></div><figure><img src="{{ .image | relURL }}" alt="{{ .title }}场景插画" width="1536" height="1024" loading="lazy"></figure></header><div class="application-grid">{{ range $items.ByWeight }}<a class="application-card" href="{{ .RelPermalink }}"><span class="application-card-kicker">芯片应用 / {{ .Params.reference_topic }}</span><h3>{{ .Title }}</h3><p>{{ .Description }}</p><span class="application-card-end">看测量任务与选型边界 <b aria-hidden="true">↗</b></span></a>{{ end }}</div></section>
   {{ end }}
   <div class="basics-footlinks"><a href="{{ "wiki/basics/" | relURL }}">先把原理和参数读清楚 →</a><a href="{{ "wiki/" | relURL }}">继续查芯片型号与原厂资料 →</a></div>

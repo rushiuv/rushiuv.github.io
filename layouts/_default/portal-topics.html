@@ -3,12 +3,12 @@
   <div><p class="portal-overline">FIELD GUIDE / 研发与应用</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div><div class="topic-hub-stats"><span><strong>06</strong> 条问题导读</span><span><strong>12</strong> 篇精选阅读</span><span><strong>{{ len (where site.Pages "Params.topic_guide" true) }}</strong> 个主题档案</span></div></div>
   <figure><img src="{{ "images/editorial/chromeos-signals-20261018.webp" | relURL }}" alt="位置反馈信号与工程阅读的轻漫画场景插画" width="1536" height="1024" fetchpriority="high"></figure>
 </header>
-<nav class="topic-hub-nav" aria-label="选择工程问题">{{ range hugo.Data.topic_paths.tracks }}<a href="#{{ .id }}"><span>{{ .number }}</span>{{ .title }}<b aria-hidden="true">↓</b></a>{{ end }}</nav>
+<nav class="topic-hub-nav" aria-label="选择工程问题">{{ range site.Data.topic_paths.tracks }}<a href="#{{ .id }}"><span>{{ .number }}</span>{{ .title }}<b aria-hidden="true">↓</b></a>{{ end }}</nav>
 {{ with site.GetPage "/posts/2026-10-18-kth7111-1us-vs-510us.md" }}
 <aside class="topic-spotlight"><div><p class="portal-overline">先读这一篇 / 动态响应</p><h2>1 μs更新，为什么滤波时间常数却有510 μs？</h2><p>先把更新周期、数据年龄与动态响应分开，后面的选型、接口和双编码器问题才有共同的时间基准。</p></div><a class="btn" href="{{ .RelPermalink }}">从具体型号读起 <span aria-hidden="true">↗</span></a></aside>
 {{ end }}
 <section class="topic-dossiers" aria-label="六条工程问题导读">
-{{ range hugo.Data.topic_paths.tracks }}{{ $track := . }}
+{{ range site.Data.topic_paths.tracks }}{{ $track := . }}
 <article class="topic-dossier" id="{{ .id }}">
   <header><p class="portal-overline"><span>{{ .number }}</span> / {{ .code }}</p><h2>{{ .title }}</h2><p class="topic-question">{{ .question }}</p><p>{{ .intro }}</p></header>
   <div class="topic-reading-path"><h3>建议这样读</h3><ol>{{ range .reads }}{{ $read := . }}{{ with site.GetPage (printf "/posts/%s" .file) }}<li><a href="{{ .RelPermalink }}"><h4>{{ $read.title }}</h4><p>{{ $read.note }}</p><span aria-hidden="true">↗</span></a></li>{{ else }}{{ errorf "Missing topic reading: %s" .file }}{{ end }}{{ end }}</ol></div>
