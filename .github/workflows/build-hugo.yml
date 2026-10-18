@@ -30,25 +30,35 @@ jobs:
         with:
           hugo-version: '0.147.6'
           extended: true
-      - name: Build and validate new article
+      - name: Build and validate articles
         shell: bash
         run: |
           set -euo pipefail
           hugo --gc --minify --destination /tmp/rushiuv-site
           touch /tmp/rushiuv-site/.nojekyll
           test -s /tmp/rushiuv-site/index.html
-          ARTICLE=$(find /tmp/rushiuv-site/posts -mindepth 1 -maxdepth 1 -type d -iname 'wechat-ezlztznhze3-08xvy1jr5q' -print -quit)
-          echo "Resolved Hugo article output: $ARTICLE"
-          if [ -z "$ARTICLE" ] || [ ! -s "$ARTICLE/index.html" ]; then
-            find /tmp/rushiuv-site/posts -maxdepth 2 -iname '*ezlztzn*' -print
-            echo 'Article HTML missing'; exit 1
-          fi
-          grep -q '径向外转子' "$ARTICLE/index.html"
-          mkdir -p "$ARTICLE/images"
-          cp -a content/posts/wechat-ezLZtznHzE3-08Xvy1JR5Q/images/. "$ARTICLE/images/"
-          test -s "$ARTICLE/images/001-1f9ce63e66.png"
-          echo "Page bundle image assets copied into final static output."
-          echo "Hugo generated article and local image successfully."
+          # Hugo's page-bundle files are not automatically copied into the static Pages directory.
+          # Copy every published article's bundled images without hardcoding a single article.
+          while IFS= read -r -d '' IMAGE_DIR; do
+            DIR_NAME=$(basename "$(dirname "$IMAGE_DIR")" | tr '[:upper:]' '[:lower:]')
+            TARGET="/tmp/rushiuv-site/posts/$DIR_NAME"
+            if [ -s "$TARGET/index.html" ]; then
+              mkdir -p "$TARGET/images"
+              cp -a "$IMAGE_DIR/." "$TARGET/images/"
+              echo "Copied bundled images for $DIR_NAME"
+            else
+              echo "Skipped non-published bundle $DIR_NAME"
+            fi
+          done < <(find content/posts -mindepth 2 -maxdepth 2 -type d -name images -print0)
+          test -s /tmp/rushiuv-site/posts/wechat-ezlztznhze3-08xvy1jr5q/index.html
+          test -s /tmp/rushiuv-site/posts/wechat-ezlztznhze3-08xvy1jr5q/images/001-1f9ce63e66.png
+          NEW_ARTICLE="/tmp/rushiuv-site/posts/wechat-s687llxcto0w4whvfixvfa"
+          test -s "$NEW_ARTICLE/index.html" || { echo "New article HTML missing"; exit 1; }
+          grep -Fq '一支没有数字的尺子' "$NEW_ARTICLE/index.html"
+          test -s "$NEW_ARTICLE/images/001-57fc83e017.gif"
+          test -s "$NEW_ARTICLE/images/002-6ed61306c8.gif"
+          test -s "$NEW_ARTICLE/images/003-b97ef5e847.gif"
+          echo "Validated original text and three local GIF images."
       - name: Update static main safely
         shell: bash
         run: |
