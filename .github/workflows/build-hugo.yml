@@ -38,9 +38,12 @@ jobs:
           touch /tmp/rushiuv-site/.nojekyll
           test -s /tmp/rushiuv-site/index.html
           ARTICLE=/tmp/rushiuv-site/posts/wechat-ezLZtznHzE3-08Xvy1JR5Q
-          test -s "$ARTICLE/index.html"
+          test -s "$ARTICLE/index.html" || { echo 'Article HTML missing'; exit 1; }
           grep -q '径向外转子' "$ARTICLE/index.html"
+          mkdir -p "$ARTICLE/images"
+          cp -a content/posts/wechat-ezLZtznHzE3-08Xvy1JR5Q/images/. "$ARTICLE/images/"
           test -s "$ARTICLE/images/001-1f9ce63e66.png"
+          echo "Page bundle image assets copied into final static output."
           echo "Hugo generated article and local image successfully."
       - name: Update static main safely
         shell: bash
