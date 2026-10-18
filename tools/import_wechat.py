@@ -271,7 +271,9 @@ def main():
             if clean != body:
                 print(f"  手写稿 {f.name} 复制时修正：套路块[{why or '-'}] 格式[{','.join(kinds) or '-'}]；"
                       f"建议对源稿跑一次 tools/boilerplate.py --fix 与 tools/format_fixes.py --fix")
-            (POSTS / f.name).write_text("---" + fm + "---" + clean, encoding="utf-8", newline="\n")
+            # fix_body trims leading blank lines; keep the YAML terminator on
+            # its own line instead of joining it directly to the first paragraph.
+            (POSTS / f.name).write_text("---" + fm.rstrip() + "\n---\n\n" + clean.lstrip("\n"), encoding="utf-8", newline="\n")
             n_extra += 1
 
     # 不再被任何文章引用的微信配图删掉（例如 2026-09-29 修掉的贴图水印版、封面版）
