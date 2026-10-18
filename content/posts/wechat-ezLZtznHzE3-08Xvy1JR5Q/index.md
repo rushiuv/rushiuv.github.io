@@ -1,9 +1,10 @@
 ---
-title: "【008】机器人关节，怎样再薄一点？——径向外转子与轴向磁通的两条集成路线"
+title: "机器人关节，怎样再薄一点？——径向外转子与轴向磁通的两条集成路线"
 date: 2026-10-14T20:00:00+08:00
 slug: "wechat-ezLZtznHzE3-08Xvy1JR5Q"
 description: "径向外转子与轴向磁通两条机器人关节薄型化集成路线。"
 original: "https://mp.weixin.qq.com/s/ezLZtznHzE3-08Xvy1JR5Q"
+original_from: "首发于公众号「电机产品技术前哨」"
 tags: ["机器人关节", "轴向磁通", "外转子电机"]
 ---
 
@@ -134,4 +135,3 @@ VMD电机多物理场设计与优化软件
 
 ![](images/015-d7173802f4.png)
 
-原文：https://mp.weixin.qq.com/s/ezLZtznHzE3-08Xvy1JR5Q
