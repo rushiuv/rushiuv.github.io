@@ -1,0 +1,107 @@
+name: Read requested WeChat article
+on:
+  push:
+    branches: ['import/wechat-ezLZtznHzE3']
+    paths: ['.github/workflows/import-one-wechat.yml']
+permissions:
+  contents: write
+jobs:
+  read-article:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: import/wechat-ezLZtznHzE3
+          fetch-depth: 1
+      - name: Install article extraction libraries
+        run: python -m pip install --quiet curl_cffi beautifulsoup4 markdownify
+      - name: Read public article and preserve its content
+        run: |
+          python - <<'PY'
+          import json, re, hashlib, pathlib, datetime, subprocess
+          from urllib.parse import urlparse
+          from curl_cffi import requests
+          from bs4 import BeautifulSoup
+          from markdownify import markdownify
+          url = 'https://mp.weixin.qq.com/s/ezLZtznHzE3-08Xvy1JR5Q'
+          out = pathlib.Path('.wechat-import/ezLZtznHzE3-08Xvy1JR5Q')
+          attempts = []
+          document = None
+          headers = {'Accept-Language':'zh-CN,zh;q=0.9,en;q=0.5','Referer':'https://mp.weixin.qq.com/'}
+          for name, address, browser in [('direct-chrome',url,'chrome'),('direct-safari',url,'safari'),('http-chrome',url.replace('https:','http:'),'chrome')]:
+              try:
+                  r=requests.get(address,impersonate=browser,headers=headers,timeout=25)
+                  soup=BeautifulSoup(r.content,'html.parser')
+                  body=soup.select_one('#js_content')
+                  title=soup.select_one('#activity-name') or soup.select_one('meta[property="og:title"]') or soup.title
+                  title_text=(title.get('content') or title.get_text(' ',strip=True)) if title else ''
+                  info={'method':name,'status':r.status_code,'bytes':len(r.content),'title':title_text,'body_chars':len(body.get_text()) if body else 0}
+                  attempts.append(info); print(json.dumps(info,ensure_ascii=False))
+                  if body is not None and len(body.get_text(strip=True))>150 and title_text:
+                      document=(soup,body,title_text,r.text,name); break
+              except Exception as e:
+                  attempts.append({'method':name,'error':str(e)[:300]}); print(name,str(e)[:300])
+          if document is None:
+              for name,address in [('jina','https://r.jina.ai/'+url),('defuddle','https://defuddle.md/'+url)]:
+                  try:
+                      r=requests.get(address,impersonate='chrome',timeout=55)
+                      text=r.text
+                      print(name,r.status_code,len(text),text[:1500])
+                      attempts.append({'method':name,'status':r.status_code,'bytes':len(r.content),'preview':text[:1500]})
+                      valid=r.status_code==200 and len(text)>1500 and '访问过于频繁' not in text and '完成验证' not in text and ('Markdown Content:' in text or text.startswith('---'))
+                      if valid:
+                          out.mkdir(parents=True,exist_ok=True)
+                          (out/'article.md').write_text(text,encoding='utf-8')
+                          (out/'metadata.json').write_text(json.dumps({'source_url':url,'method':name,'attempts':attempts},ensure_ascii=False,indent=2),encoding='utf-8')
+                          print('ARTICLE_MARKDOWN_BEGIN\n'+text+'\nARTICLE_MARKDOWN_END')
+                          document='markdown'; break
+                  except Exception as e: print(name,str(e)[:300])
+          if document is None:
+              raise SystemExit('No validated article body returned. All read attempts are logged above.')
+          if document!='markdown':
+              soup,body,title,raw,method=document
+              out.mkdir(parents=True,exist_ok=True)
+              (out/'images').mkdir(exist_ok=True)
+              image_map=[]
+              for index,img in enumerate(body.find_all('img')):
+                  src=img.get('data-src') or img.get('src') or ''
+                  if src.startswith('//'): src='https:'+src
+                  if not src.startswith(('https://','http://')): continue
+                  item={'source_url':src}
+                  host=(urlparse(src).hostname or '').lower()
+                  if not (host.endswith('.qpic.cn') or host.endswith('.qlogo.cn') or host=='mp.weixin.qq.com'):
+                      img['src']=src; item['status']='external-reference'; image_map.append(item); continue
+                  try:
+                      rr=requests.get(src,impersonate='chrome',headers={'Referer':url},timeout=25)
+                      rr.raise_for_status()
+                      if not rr.headers.get('content-type','').startswith('image/') or len(rr.content)>15000000: raise ValueError('Not a supported image response')
+                      ct=rr.headers.get('content-type','').split(';')[0]
+                      ext={'image/jpeg':'jpg','image/png':'png','image/gif':'gif','image/webp':'webp','image/svg+xml':'svg'}.get(ct,'img')
+                      filename=f'images/{index+1:03d}-{hashlib.sha256(rr.content).hexdigest()[:10]}.{ext}'
+                      (out/filename).write_bytes(rr.content)
+                      img['src']=filename
+                      item.update(local_path=filename,bytes=len(rr.content),status='downloaded')
+                  except Exception as e:
+                      img['src']=src; item.update(status='download-failed',error=str(e)[:150])
+                  img.attrs.pop('data-src',None)
+                  image_map.append(item)
+              for tag in body.find_all(['script','style','iframe']): tag.decompose()
+              author=soup.select_one('#js_name')
+              author=author.get_text(' ',strip=True) if author else ''
+              match=re.search(r'var\s+(?:ct|publish_time)\s*=\s*[\x22\x27]?(\d{10})',raw)
+              stamp=int(match.group(1)) if match else None
+              md='# '+title+'\n\n'+markdownify(str(body),heading_style='ATX')+'\n\n原文：'+url+'\n'
+              metadata={'title':title,'author':author,'source_url':url,'method':method,'publish_timestamp':stamp,'text_characters':len(body.get_text()),'images':image_map,'attempts':attempts}
+              (out/'article.md').write_text(md,encoding='utf-8')
+              (out/'article.html').write_text(str(body),encoding='utf-8')
+              (out/'metadata.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding='utf-8')
+              print('ARTICLE_METADATA_BEGIN\n'+json.dumps(metadata,ensure_ascii=False,indent=2)+'\nARTICLE_METADATA_END')
+              print('ARTICLE_MARKDOWN_BEGIN\n'+md+'\nARTICLE_MARKDOWN_END')
+          subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+          subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+          subprocess.run(['git','add',str(out)],check=True)
+          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
+              subprocess.run(['git','commit','-m','Preserve requested WeChat article and images on import branch'],check=True)
+              subprocess.run(['git','push','origin','HEAD:refs/heads/import/wechat-ezLZtznHzE3'],check=True)
+          PY
