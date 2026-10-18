@@ -1,0 +1,109 @@
+{
+  "title": "【008】机器人关节，怎样再薄一点？——径向外转子与轴向磁通的两条集成路线",
+  "author": "电机产品技术前哨",
+  "source_url": "https://mp.weixin.qq.com/s/ezLZtznHzE3-08Xvy1JR5Q",
+  "method": "direct-chrome",
+  "publish_timestamp": 1791979200,
+  "text_characters": 3522,
+  "images": [
+    {
+      "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/icQtnqJYGRIkFGaLAmB1dQoN3TKI24DjZG8cXxyr7YLApIqsMqexykeSz5icOGmEFxTN8mMuiczuOicDLMBchXJtX53wtga7f5OMmW0tniaZhHibQ/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/001-1f9ce63e66.png",
+      "bytes": 524827,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/icQtnqJYGRIliaWGZ0HGBXBrdF6ELy9jcBVE9IZfeJ0pv7N3PoKFicZrlmIEXN8icNhFRfOaFm2QsBiaRVXBmHgmhib3iaKceJV37PCXiaCoMqUBqhY/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/002-4a9c23080c.png",
+      "bytes": 523002,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/mmbiz_png/icQtnqJYGRIkt6gs40s2iaGW4kAER1gPSuJFdutHMuiaJIzkxYwSUG5IHqLCtZiaUrscXTUjfYbkOtU9hbA7YosNBlibvYP3mGWYdppWQ163a4jw/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/003-2915bf7829.png",
+      "bytes": 366583,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/icQtnqJYGRInJx3lbsPoCVljI5kopq8icAAPsU8JwRSFnELxqSW71eIWA99bzEEvZYXU4EQm5fGCREETXQuso3snAjU7V8udqym14xrWMzIibc/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/004-997aa3be35.png",
+      "bytes": 367806,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/icQtnqJYGRIkia5epSSEgBdFRjhOArBRwtbtyv8382WwibN5Dltia9Z3FnDTZOEqMV9bc4T2ld73C9eHDEAChMBsZfnCNgXhCVTqu3Owjn4lRXc/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/005-6b3684c360.png",
+      "bytes": 317175,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/mmbiz_png/icQtnqJYGRIlziasP6AibvL0BzctSTOibRwWqLtJZuSmkWzPd8wdqicfL4qvOibWlk3WAovSYI9DsVD3jQIyAXXfIdC5B1oSgRibiatibKtH37rR9qLM/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/006-f193a46769.png",
+      "bytes": 527077,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/mmbiz_png/icQtnqJYGRIlrxrlTicolgxuzT16ibvniciczyXvMkGzoJwjVxHXxHhLVSOtSX7IibF0icS6zQVGChY1nIvcHWYmHibE0icDfzZjbAXeIVcTAck4fS8g/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/007-5933a39ebb.png",
+      "bytes": 335226,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/mmbiz_png/icQtnqJYGRInxaWFX6pIDDb98rduGXKG9V6AJB0ibUT2lTqlRYG3S42WEKzcuGBtec4QH1FZ5RL61HvB8Qm9O6AcicYCRy51XTLzE5Kzedia9Ns/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/008-38d6cc1f8d.png",
+      "bytes": 319358,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/icQtnqJYGRIla5xmPxicNfjMc5KCaicJcOYxUczeS24EzgxMJ2LLnIICc7suM5lbVc9DYfibNnboPNQ1Yf1WVmkwJOFAAicLOdPf73V0IhBcgZEk/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/009-e0222a9732.png",
+      "bytes": 237436,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/mmbiz_png/icQtnqJYGRIlWjU1DryOoB3vib8Ix8S1P92OxfZLYZz5aQic82rgVtUsbAw4bL30JL0sk2jN5ZR7fib76BIUhV2HuiahiaFOYkqTd0hW4ozGSichbg/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/010-520e6346ab.png",
+      "bytes": 568316,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/mmbiz_png/icQtnqJYGRIl1mZB5K2o6Vyft1XjYnlW63icBbicCnkl3FB95OGDwZAsN9PDMtZ5jaaxyXJCeibPhzzpZdPptUYP7xq7EpBUfuW2icicMRyTQvFNw/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/011-825c32ea80.png",
+      "bytes": 432737,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/icQtnqJYGRInwSouIDK8wDFHUVBgc3tdic0LMScVPNJ3Tia1LQBO2Yp7osYZibI7KK8oIqykiaS2PqibPWzhGiceqvGERibXUL4IAYfUaMDVMjQNouA/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/012-a23e1b560b.png",
+      "bytes": 389753,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/mmbiz_png/icQtnqJYGRInLgGaLDABvPj5ByzX9OTqIR0vGXWpAjIHibIdtsf0V1ibwpxZGlgmvSscZsogsUudHpabyIuf8OXqA5hibvBbLicP4ytsHO0Otbib8/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/013-ebc09a4eb4.png",
+      "bytes": 404705,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/icQtnqJYGRIkpeKSGMy9icEXYX1MUmrNOHM1NcP1ocnnL49LmQ0wQFAJd4ibHSFcAV2GrK8WBhic8Mpey1Norbl7WWibsbV25xJZFjPHUIKYo6A8/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/014-755cc49edd.png",
+      "bytes": 334355,
+      "status": "downloaded"
+    },
+    {
+      "source_url": "https://mmbiz.qpic.cn/mmbiz_png/icQtnqJYGRIllyx3mzvibl6zR1rsb2quBh0bwx7hoAYOAvJXZ12jd0tGcadVvEia5QdGgzeFiafYHduialz1QzMJIySmnekE8M4I0LPYuF3Y3f1g/640?wx_fmt=png&from=appmsg",
+      "local_path": "images/015-d7173802f4.png",
+      "bytes": 214385,
+      "status": "downloaded"
+    }
+  ],
+  "attempts": [
+    {
+      "method": "direct-chrome",
+      "status": 200,
+      "bytes": 3557205,
+      "title": "【008】机器人关节，怎样再薄一点？——径向外转子与轴向磁通的两条集成路线",
+      "body_chars": 3522
+    }
+  ]
+}
