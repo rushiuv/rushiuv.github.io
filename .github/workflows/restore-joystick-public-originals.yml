@@ -1,0 +1,136 @@
+name: Restore approved joystick illustrations
+on:
+  push:
+    branches: [source]
+    paths: ['.github/workflows/restore-joystick-public-originals.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: source
+          fetch-depth: 1
+      - name: Install image verification dependencies
+        run: python3 -m pip install --quiet requests Pillow beautifulsoup4
+      - name: Recover and verify the four approved original illustrations
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -u - <<'PY'
+          import hashlib, html, io, json, re
+          from pathlib import Path
+          from urllib.parse import urlparse
+          import requests
+          from PIL import Image
+          from bs4 import BeautifulSoup
+
+          original = 'https://mp.weixin.qq.com/s/A3QpLffTPYz7gs3mmrQPYg'
+          expected = ['80e19239e9d8ded6', '6a9882a699aae242', 'c890969249b6c6c8', '9892933055b3f2c6']
+          names = ['薄型磁摇杆内部结构与三维磁场', '交叉轴耦合与对角线误差', '圆形归一化与内部位置误差', '机械回中散布与整机磁场干扰']
+          session = requests.Session()
+          urls = []
+          diagnostics = []
+          agents = [
+              'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36',
+              'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Mobile Safari/537.36 MicroMessenger/8.0.50',
+          ]
+          for agent in agents:
+              response = session.get(original, headers={'User-Agent': agent}, timeout=45)
+              response.encoding = 'utf-8'
+              text = response.text
+              soup = BeautifulSoup(text, 'html.parser')
+              diagnostics.append({'status': response.status_code, 'length': len(text), 'title': soup.title.get_text() if soup.title else '', 'image_count': len(soup.find_all('img'))})
+              print('PUBLIC_ARTICLE_READ', diagnostics[-1], flush=True)
+              for image in soup.find_all('img'):
+                  for attribute in ['data-src', 'src']:
+                      value = image.get(attribute, '')
+                      if value.startswith('//'):
+                          value = 'https:' + value
+                      if urlparse(value).hostname == 'mmbiz.qpic.cn' and value not in urls:
+                          urls.append(value)
+              for value in re.findall(r'https?://mmbiz\.qpic\.cn/[^\s<>"\']+', html.unescape(text)):
+                  value = value.replace('\\/', '/').rstrip('\\')
+                  if value not in urls:
+                      urls.append(value)
+              if urls:
+                  break
+          print('PUBLIC_CANDIDATE_IMAGES', len(urls), flush=True)
+          Path('/tmp/joystick-restore-report.json').write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2))
+          if not urls:
+              raise SystemExit('No public article images returned. Existing article and images left unchanged.')
+
+          def dhash(image):
+              a = list(image.convert('L').resize((9, 8), Image.Resampling.LANCZOS).getdata())
+              bits = [a[y*9+x] > a[y*9+x+1] for y in range(8) for x in range(8)]
+              return sum(int(b) << (63-i) for i, b in enumerate(bits))
+
+          recovered = {}
+          for value in urls[:50]:
+              try:
+                  response = session.get(value, headers={'User-Agent': agents[0], 'Referer': original}, timeout=30)
+                  response.raise_for_status()
+                  image = Image.open(io.BytesIO(response.content))
+                  if image.width < 900 or image.height < 1100:
+                      continue
+                  actual = dhash(image)
+                  distances = [(actual ^ int(v, 16)).bit_count() for v in expected]
+                  index = min(range(4), key=lambda i: distances[i])
+                  print('CANDIDATE_MATCH', image.size, distances, flush=True)
+                  if distances[index] <= 4 and index not in recovered:
+                      recovered[index] = (response.content, image.format, value, distances[index], image.size)
+              except Exception as error:
+                  print('CANDIDATE_SKIPPED', type(error).__name__, flush=True)
+          if len(recovered) != 4:
+              raise SystemExit(f'Only {len(recovered)}/4 approved illustrations verified. Existing article left unchanged.')
+
+          post = Path('content/posts/2026-10-19-wechat-a3qplfftpyz7gs3mmrqpyg.md')
+          before = post.read_text()
+          pattern = r'<div style="background:#fffefa;[^>]*>\s*<svg\b.*?</svg>\s*</div>'
+          matches = list(re.finditer(pattern, before, re.S))
+          assert len(matches) == 4, f'Expected exactly four temporary illustrations, found {len(matches)}'
+          destination = Path('static/images/joystick-original')
+          destination.mkdir(parents=True, exist_ok=True)
+          figures = []
+          manifest = []
+          for index in range(4):
+              raw, format_name, public_url, distance, size = recovered[index]
+              extension = {'PNG': 'png', 'JPEG': 'jpg', 'WEBP': 'webp'}[format_name]
+              filename = f'joystick_{index+1:02d}.{extension}'
+              (destination / filename).write_bytes(raw)
+              figures.append(f'<figure style="margin:26px 0"><img src="/images/joystick-original/{filename}" alt="{names[index]}" width="{size[0]}" height="{size[1]}" loading="lazy" style="display:block;width:100%;height:auto;border-radius:12px"></figure>')
+              manifest.append({'file': filename, 'sha256': hashlib.sha256(raw).hexdigest(), 'dimensions': size, 'public_source': public_url, 'perceptual_distance': distance})
+          it = iter(figures)
+          after, count = re.subn(pattern, lambda _: next(it), before, flags=re.S)
+          assert count == 4 and '<svg' not in after
+          assert re.sub(pattern, '', before, flags=re.S) == re.sub(r'<figure style="margin:26px 0">.*?</figure>', '', after, flags=re.S), 'Unexpected body change'
+          after = after.replace('https://mp.weixin.qq.com/s/A3QpLffTPYz7gs3mmrqPYg', original)
+          post.write_text(after)
+          Path('/tmp/joystick-restore-report.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
+          print('VERIFIED_FOUR_ORIGINALS', json.dumps(manifest, ensure_ascii=False), flush=True)
+          PY
+      - name: Commit only the restored images and article
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/posts/2026-10-19-wechat-a3qplfftpyz7gs3mmrqpyg.md static/images/joystick-original
+          git rm .github/workflows/restore-joystick-public-originals.yml
+          git commit -m 'fix: restore the four approved original joystick comic images'
+          git push origin HEAD:source
+      - name: Run the existing Hugo publisher
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run build-hugo.yml --ref source
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: joystick-restore-report
+          path: /tmp/joystick-restore-report.json
+          if-no-files-found: ignore
