@@ -3,7 +3,8 @@ title: 一块磁铁周围的磁场，究竟是什么样子的？
 date: '2026-10-19T19:54:00+08:00'
 slug: wechat-zcce5eonptzr6uempxjblq
 description: 一块磁铁周围的磁场如何分布：等效磁极模型、轴向距离衰减、位置与方向以及磁路设计。
-source_url: https://mp.weixin.qq.com/s/zCCe5EONpTZR6ueMpxjBLQ
+original: "https://mp.weixin.qq.com/s/zCCe5EONpTZR6ueMpxjBLQ"
+original_from: "首发于公众号「磁荟」"
 tags:
 - 磁场
 - 永磁体
@@ -11,12 +12,6 @@ tags:
 - 磁传感器
 source_date: '2026-09-28T12:00:00+08:00'
 ---
-
-![文章插图 1](images/001-6b03c5d962.gif)
-
-**点击蓝字关注我们吧！**
-
-![文章插图 2](images/002-e61e7b1cfe.gif)
 
 把一块磁铁放在白纸下面，撒上铁粉，轻敲纸面，铁粉就会排成一条条弧线，从一极绕向另一极。这张图很多人在中学课本里都见过，它给了我们对磁铁周围磁场最直观的印象。
 
@@ -136,17 +131,3 @@ source_date: '2026-09-28T12:00:00+08:00'
 *1. E. P. Furlani, Permanent Magnet and Electromechanical Devices, Academic Press, 2001.*
 
 *2. N. Derby, S. Olbert, "Cylindrical magnets and ideal solenoids," American Journal of Physics 78, 229 (2010).*
-
-  
-  
-
-**感谢您的阅读**
-
-  
-  
-
-更多磁知识，敬请持续关注我们。
-
-图片来源于网络，如有侵权请私信联系删除
-
-#NdFeB #N35 #N42 #N52 #N35AH #N40SH #N42SH #N35UH #N38UH #N38EH #N45UH #N48UH #N50UH #N42EH #N45EH #SmCo #Magnets #NeodymiumMagnets #稀土永磁 #钕铁硼 #烧结钕铁硼 #粘接钕铁硼 #辐射环#钕磁铁 #钐钴#烧结钐钴 #粘接钐钴  #耐温永磁材料#粘接磁体 #磁组件 #磁性组件 #磁性器件 #仿真设计 #强磁 #磁性材料 #铁氧体永磁 #铁氧体软磁 #铝镍钴  #磁铁 #磁体 #磁钢 #永磁材料  #磁性材料解决方案
