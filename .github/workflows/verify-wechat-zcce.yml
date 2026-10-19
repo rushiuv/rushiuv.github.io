@@ -1,0 +1,93 @@
+name: Verify published magnetic-field article and originals
+on:
+  push:
+    branches: [source]
+    paths: ['.github/workflows/verify-wechat-zcce.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: source
+      - name: Validate the live article, homepage and 10 original image bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet requests beautifulsoup4 Pillow lxml
+          python3 -u - <<'PY'
+          import requests,time,hashlib,json,io
+          from pathlib import Path
+          from urllib.parse import urljoin
+          from bs4 import BeautifulSoup
+          from PIL import Image
+          slug='wechat-zcce5eonptzr6uempxjblq'
+          title='一块磁铁周围的磁场，究竟是什么样子的？'
+          base='https://sensor.fans/'
+          article_url=base+'posts/'+slug+'/'
+          directory=Path('content/posts')/slug/'images'
+          expected=sorted(directory.iterdir())
+          assert len(expected)==10, f'10 original images required, got {len(expected)}'
+          session=requests.Session()
+          headers={'User-Agent':'Mozilla/5.0 (compatible; SitePublishVerification/1.0)'}
+          last=''
+          for attempt in range(1,13):
+              try:
+                  article=session.get(article_url,timeout=20,headers=headers)
+                  home=session.get(base,timeout=20,headers=headers)
+                  site_map=session.get(base+'sitemap.xml',timeout=20,headers=headers)
+                  article.encoding='utf-8';home.encoding='utf-8';site_map.encoding='utf-8'
+                  print('ATTEMPT',attempt,'ARTICLE',article.status_code,'HOME',home.status_code,'SITEMAP',site_map.status_code,flush=True)
+                  if article.status_code==200 and home.status_code==200 and site_map.status_code==200 and title in article.text and slug in home.text and slug in site_map.text:
+                      break
+                  last=f'Online page or home/sitemap not updated yet: {article.status_code} {home.status_code} {site_map.status_code}'
+              except requests.RequestException as e:
+                  last=str(e)
+                  print('WAIT',last[:200],flush=True)
+              time.sleep(20)
+          else:
+              raise SystemExit('LIVE SITE NOT VERIFIED: '+last)
+          soup=BeautifulSoup(article.text,'lxml')
+          tags=soup.find_all('img')
+          referenced=[]
+          for tag in tags:
+              src=tag.get('src') or ''
+              if 'images/' in src and Path(src).name in {x.name for x in expected}:
+                  referenced.append((Path(src).name,urljoin(article_url,src)))
+          assert [x[0] for x in referenced]==[x.name for x in expected], f'Image missing or out of order: {[x[0] for x in referenced]}'
+          report=[]
+          for index,(filename,image_url) in enumerate(referenced,1):
+              loaded=session.get(image_url,timeout=25,headers=headers)
+              loaded.raise_for_status()
+              saved=(directory/filename).read_bytes()
+              sha_saved=hashlib.sha256(saved).hexdigest()
+              sha_remote=hashlib.sha256(loaded.content).hexdigest()
+              assert sha_saved==sha_remote, f'Byte mismatch at {filename}'
+              original=Image.open(io.BytesIO(saved))
+              served=Image.open(io.BytesIO(loaded.content))
+              assert original.size==served.size and original.format==served.format
+              report.append({'index':index,'file':filename,'sha256':sha_remote,'size':list(served.size),'format':served.format,'frames':getattr(served,'n_frames',1)})
+              print('VERIFIED_IMAGE',index,filename,served.format,served.size,'frames',getattr(served,'n_frames',1),flush=True)
+          assert title in BeautifulSoup(home.text,'lxml').get_text(' ',strip=True)
+          Path('/tmp/live-wechat-zcce-verified.json').write_text(json.dumps({'article':article_url,'homepage':base,'image_count':10,'images':report},ensure_ascii=False,indent=2))
+          print('LIVE_PUBLISH_VERIFIED',article_url,flush=True)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-magnetic-field-article-verification
+          path: /tmp/live-wechat-zcce-verified.json
+          if-no-files-found: ignore
+      - name: Remove this one-time verification workflow
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm .github/workflows/verify-wechat-zcce.yml
+          git commit -m 'ci: finish verification of published original magnetic-field article'
+          git push origin HEAD:source
