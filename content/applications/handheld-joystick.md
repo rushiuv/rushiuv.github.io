@@ -25,3 +25,7 @@ Infineon TLE493D-W2B6-A1、Melexis MLX90393与[昆泰芯KTH5701](https://www.con
 - [Infineon TLE493D-W2B6-A1](https://www.infineon.com/part/TLE493D-W2B6-A1)
 - [Infineon 3D磁传感摇杆评估附件](https://www.infineon.com/product-information/sensors-2go)
 - [Melexis MLX90393](https://www.melexis.com/en/product/MLX90393/Triaxis-Micropower-Magnetometer)
+
+## 延伸阅读
+
+- [摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深](/posts/wechat-a3qplfftpyz7gs3mmrqpyg/)：从三轴磁场、交叉轴耦合、回中迟滞到整机外场，逐条拆解薄型磁摇杆的误差来源与验证顺序。
