@@ -1,0 +1,43 @@
+name: Inspect WeChat article zCCe5EON
+on:
+  push:
+    branches: [source]
+    paths: ['.github/workflows/inspect-wechat-zcce.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: source
+      - name: Read public article and inspect headings, text, images
+        shell: bash
+        run: |
+          python3 -m pip install --quiet requests beautifulsoup4 lxml
+          python3 - <<'PY'
+          import requests,re,json,html,datetime
+          from bs4 import BeautifulSoup
+          url='https://mp.weixin.qq.com/s/zCCe5EONpTZR6ueMpxjBLQ'
+          agents=['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36','Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Mobile Safari/537.36 MicroMessenger/8.0.50']
+          for a in agents:
+            try:
+              r=requests.get(url,headers={'User-Agent':a},timeout=35)
+              r.encoding='utf-8'
+              doc=BeautifulSoup(r.text,'lxml')
+              main=doc.select_one('#js_content') or doc.select_one('.rich_media_content')
+              print('HTTP',r.status_code,'LEN',len(r.content),'TITLE_TAG',doc.title.get_text(' ',strip=True) if doc.title else '',flush=True)
+              print('META',[(x.get('property') or x.get('name'),x.get('content','')[:140]) for x in doc.select('meta[property],meta[name]') if 'og:' in (x.get('property') or '') or 'description' in (x.get('name') or '')][:7],flush=True)
+              print('ACCOUNT',[(x,doc.select_one(x).get_text(' ',strip=True)[:150] if doc.select_one(x) else '') for x in ['#js_name','#activity-name','#publish_time']],flush=True)
+              print('CT',re.findall(r'(?:ct|publish_time)\s*[:=]\s*["\']?(\d{10})',r.text)[:6],flush=True)
+              print('MAIN',bool(main),'CHARS',len(main.get_text(' ',strip=True)) if main else 0,flush=True)
+              if main:
+                print('HEADINGS',[(x.name,x.get_text(' ',strip=True)[:140]) for x in main.select('h1,h2,h3,h4')][:30],flush=True)
+                print('PARAS',[(x.name,x.get_text(' ',strip=True)[:280]) for x in main.find_all(['p','section','blockquote'],recursive=True) if 35<len(x.get_text(' ',strip=True))<1600][:14],flush=True)
+                print('IMAGES',[(x.get('data-src') or x.get('src') or '')[:125] for x in main.select('img')][:30],flush=True)
+                print('COUNTS',{'img':len(main.select('img')),'table':len(main.select('table')),'video':len(main.select('video,iframe,mpvideo'))},flush=True)
+              if main and len(main.get_text(' ',strip=True))>500:break
+            except Exception as e:print('REQUEST_ERROR',type(e).__name__,str(e)[:200],flush=True)
+          PY
