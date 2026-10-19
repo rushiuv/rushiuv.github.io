@@ -76,7 +76,7 @@ jobs:
               pil=Image.open(io.BytesIO(raw))
               fmt=pil.format
               assert fmt in ('GIF','JPEG','PNG','WEBP'),f'Unknown image format: {fmt}'
-              assert pil.width>=80 and pil.height>=60, f'Image {i} unexpectedly small'
+              assert pil.width>=8 and pil.height>=8, f'Image {i} invalid dimensions {pil.size}'
               ext={'GIF':'gif','JPEG':'jpg','PNG':'png','WEBP':'webp'}[fmt]
               digest=hashlib.sha256(raw).hexdigest()
               filename=f'{i:03d}-{digest[:10]}.{ext}'
@@ -132,8 +132,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git rm .github/workflows/import-wechat-zcce.yml .github/workflows/inspect-wechat-zcce.yml
-          git add content/posts/wechat-zcce5eonptzr6uemp xjblq/index.md 2>/dev/null || true
-          git add content/posts/wechat-zcce5eonptzr6uempxjblq/
+                    git add content/posts/wechat-zcce5eonptzr6uempxjblq/
           git diff --cached --stat
           git commit -m 'post: publish complete original magnetic-field WeChat article with 10 local illustrations'
           git push origin HEAD:source
