@@ -4,7 +4,7 @@ date: 2026-10-19
 lastmod: 2026-10-19T12:45:00+08:00
 slug: "wechat-a3qplfftpyz7gs3mmrqpyg"
 description: "从三轴磁场、交叉轴耦合、对角线非线性、回中迟滞到整机外场与延迟链路，拆解薄型磁摇杆为什么仍然会漂，以及该验证什么。"
-original: "https://mp.weixin.qq.com/s/A3QpLffTPYz7gs3mmrqPYg"
+original: "https://mp.weixin.qq.com/s/A3QpLffTPYz7gs3mmrQPYg"
 original_from: "首发于公众号「如是有为」"
 tags: ["磁传感器", "霍尔", "游戏手柄", "摇杆", "应用分析"]
 models: ["KTH5701", "MLX90393", "TLE493D-W2B6-A1"]
@@ -59,7 +59,7 @@ $$
 
 所以，摇杆真正要解决的是一个反问题：**如何从测到的三维磁场，准确恢复玩家希望输入的二维运动？** 这个问题比读两个 ADC 数字复杂得多。
 
-<div style="background:#fffefa;border:2px solid #24558e;border-radius:18px;padding:14px;margin:24px 0;max-width:630px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="磁摇杆测量的是三维磁场" style="width:100%;height:auto;display:block"><rect width="600" height="340" rx="20" fill="#f6f8f7"/><text x="25" y="45" font-size="25" font-weight="bold" fill="#24558e">磁摇杆测量的是三维磁场</text><rect x="75" y="91" width="185" height="44" rx="22" fill="#273e5c"/><rect x="158" y="133" width="23" height="54" rx="6" fill="#92b4c4"/><circle cx="171" cy="207" r="34" fill="#e57068"/><path d="M137 207a34 34 0 0 1 68 0" fill="#319bb8"/><rect x="65" y="255" width="218" height="17" rx="6" fill="#6ab2a6"/><rect x="153" y="235" width="40" height="22" rx="5" fill="#25466b"/><g fill="none" stroke="#08a9c0" stroke-width="4" stroke-dasharray="8 7"><path d="M118 222q-45-95 49-101"/><path d="M230 220q30-85-45-100"/></g><path d="M322 190h120" stroke="#24558e" stroke-width="4"/><path d="M435 180l17 10-17 10" fill="#24558e"/><text x="333" y="144" font-size="23" fill="#24558e">Bx  By  Bz</text><text x="326" y="229" font-size="20" fill="#24558e">二维位移 ≠ 二维磁场</text><rect x="15" y="284" width="570" height="44" rx="12" fill="#dceff0"/><text x="30" y="312" font-size="19" font-weight="bold" fill="#24558e">先看磁路和机构，再谈算法。</text></svg></div>
+<figure style="margin:26px 0"><img src="/images/joystick-original/joystick_01.jpg" alt="薄型磁摇杆内部结构与三维磁场" width="1080" height="1350" loading="lazy" style="display:block;width:100%;height:auto;border-radius:12px"></figure>
 
 ## 02｜摇杆向右推动，为什么画面里的角色还会往上走？
 
@@ -85,7 +85,7 @@ $$
 
 也就是说：**只测上下左右都很准，完全不能保证左上、右下也很准。** 一款摇杆在工程测试中沿着十字方向表现优秀，却可能在游戏里斜向瞄准时出现明显的方向误差。这不是传感器分辨率不足，而是整个磁路和解算模型没有被充分验证。
 
-<div style="background:#fffefa;border:2px solid #24558e;border-radius:18px;padding:14px;margin:24px 0;max-width:630px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="只测十字方向会漏掉什么？" style="width:100%;height:auto;display:block"><rect width="600" height="340" rx="20" fill="#f6f8f7"/><text x="25" y="45" font-size="25" font-weight="bold" fill="#24558e">只测十字方向会漏掉什么？</text><circle cx="170" cy="185" r="84" stroke="#24558e" stroke-width="4" fill="#fff"/><path d="M73 185h194M170 89v194" stroke="#6e9fba" stroke-width="3"/><g fill="#24558e"><circle cx="170" cy="101" r="10"/><circle cx="170" cy="269" r="10"/><circle cx="86" cy="185" r="10"/><circle cx="254" cy="185" r="10"/></g><g fill="#e77868"><circle cx="228" cy="124" r="11"/><circle cx="110" cy="126" r="11"/><circle cx="114" cy="244" r="11"/><circle cx="226" cy="246" r="11"/></g><text x="308" y="135" font-size="23" fill="#24558e">蓝点：上下左右</text><text x="308" y="190" font-size="23" fill="#bd514b">红点：四个对角</text><text x="308" y="240" font-size="20" fill="#24558e">交叉轴误差在对角暴露</text><rect x="15" y="284" width="570" height="44" rx="12" fill="#dceff0"/><text x="30" y="312" font-size="19" font-weight="bold" fill="#24558e">X方向推动，Y输出也可能变化。</text></svg></div>
+<figure style="margin:26px 0"><img src="/images/joystick-original/joystick_02.jpg" alt="交叉轴耦合与对角线误差" width="1080" height="1350" loading="lazy" style="display:block;width:100%;height:auto;border-radius:12px"></figure>
 
 ## 03｜画出来是一个完美的圆，就说明摇杆很准吗？
 
@@ -109,7 +109,7 @@ $$
 
 只看第一项，远远不够。
 
-<div style="background:#fffefa;border:2px solid #24558e;border-radius:18px;padding:14px;margin:24px 0;max-width:630px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="圆形边界不代表内部准确" style="width:100%;height:auto;display:block"><rect width="600" height="340" rx="20" fill="#f6f8f7"/><text x="25" y="45" font-size="25" font-weight="bold" fill="#24558e">圆形边界不代表内部准确</text><ellipse cx="133" cy="180" rx="80" ry="48" transform="rotate(-20 133 180)" stroke="#df655c" stroke-width="6" fill="none"/><path d="M250 180h78m-16-14 16 14-16 14" stroke="#24558e" stroke-width="5" fill="none"/><circle cx="448" cy="176" r="79" stroke="#24558e" stroke-width="6" fill="none"/><g fill="#e16b63"><circle cx="412" cy="143" r="8"/><circle cx="451" cy="132" r="7"/><circle cx="472" cy="194" r="9"/><circle cx="417" cy="202" r="7"/><circle cx="449" cy="228" r="7"/></g><text x="62" y="266" font-size="20" fill="#24558e">原始椭圆</text><text x="380" y="266" font-size="20" fill="#24558e">外圈已拉圆</text><rect x="15" y="284" width="570" height="44" rx="12" fill="#dceff0"/><text x="30" y="312" font-size="19" font-weight="bold" fill="#24558e">漂亮的外圈无法证明中间点准确。</text></svg></div>
+<figure style="margin:26px 0"><img src="/images/joystick-original/joystick_03.jpg" alt="圆形归一化与内部位置误差" width="1080" height="1350" loading="lazy" style="display:block;width:100%;height:auto;border-radius:12px"></figure>
 
 ## 04｜最讨厌的漂移，可能来自一根小小的弹簧
 
@@ -133,7 +133,7 @@ $$
 
 真正需要优化的，不是一个孤立的死区数字，而是整个回中位置的统计分布。测试时应该反复从不同方向释放摇杆，记录中心落点，再根据误触发风险与操控精度要求确定死区。**这也是为什么摇杆中心性能不能只靠一次归零校准来评价。**
 
-<div style="background:#fffefa;border:2px solid #24558e;border-radius:18px;padding:14px;margin:24px 0;max-width:630px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="为什么松手后仍然有读数？" style="width:100%;height:auto;display:block"><rect width="600" height="340" rx="20" fill="#f6f8f7"/><text x="25" y="45" font-size="25" font-weight="bold" fill="#24558e">为什么松手后仍然有读数？</text><circle cx="183" cy="184" r="100" stroke="#24558e" stroke-width="3" fill="#fff"/><circle cx="183" cy="184" r="45" fill="#f5d8d5" stroke="#dc7169" stroke-width="3"/><path d="M78 184h210M183 80v210" stroke="#a1bac5" stroke-width="2"/><g fill="#24558e"><circle cx="167" cy="178" r="6"/><circle cx="183" cy="195" r="6"/><circle cx="193" cy="167" r="6"/><circle cx="207" cy="203" r="6"/><circle cx="154" cy="191" r="6"/><circle cx="189" cy="218" r="6"/></g><text x="325" y="130" font-size="23" fill="#24558e">回中散布</text><text x="325" y="181" font-size="21" fill="#24558e">死区不是越小越好</text><text x="325" y="231" font-size="20" fill="#bd514b">还需检查扬声器、振动电机</text><rect x="15" y="284" width="570" height="44" rx="12" fill="#dceff0"/><text x="30" y="312" font-size="19" font-weight="bold" fill="#24558e">机械回中、外场和温度应整机验证。</text></svg></div>
+<figure style="margin:26px 0"><img src="/images/joystick-original/joystick_04.jpg" alt="机械回中散布与整机磁场干扰" width="1080" height="1350" loading="lazy" style="display:block;width:100%;height:auto;border-radius:12px"></figure>
 
 ## 05｜掌机越薄，磁摇杆反而可能越难做
 
