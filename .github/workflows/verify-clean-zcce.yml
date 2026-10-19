@@ -1,0 +1,81 @@
+name: Verify clean WeChat article on live Pages
+on:
+  push:
+    branches: [source]
+    paths: ['.github/workflows/verify-clean-zcce.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: source
+      - name: Check production article and original technical images
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet requests beautifulsoup4 Pillow
+          python3 -u - <<'PY'
+          from pathlib import Path
+          import hashlib,io,time,requests
+          from bs4 import BeautifulSoup
+          from urllib.parse import urljoin
+          from PIL import Image
+          article_url='https://sensor.fans/posts/wechat-zcce5eonptzr6uempxjblq/'
+          session=requests.Session()
+          directory=Path('content/posts/wechat-zcce5eonptzr6uempxjblq/images')
+          expected=sorted(p for p in directory.iterdir() if p.name[:3] in ['003','004','005','006','007','008','009','010'])
+          assert len(expected)==8
+          for attempt in range(1,16):
+              try:
+                  r=session.get(article_url,timeout=20)
+                  r.encoding='utf-8'
+                  home=session.get('https://sensor.fans/',timeout=20)
+                  home.encoding='utf-8'
+                  doc=BeautifulSoup(r.text,'html.parser')
+                  visible=doc.get_text(' ',strip=True)
+                  imgs=[i for i in doc.find_all('img') if '/images/' in (i.get('src') or '') or (i.get('src') or '').startswith('images/')]
+                  article_imgs=[i for i in imgs if Path(i.get('src','')).name in {p.name for p in expected}]
+                  good=(r.status_code==200 and home.status_code==200
+                      and '首发于公众号「磁荟」' in visible
+                      and 'zCCe5EONpTZR6ueMpxjBLQ' in r.text
+                      and '一块磁铁周围的磁场' in home.text
+                      and len(article_imgs)==8
+                      and '点击蓝字关注我们吧' not in visible
+                      and '感谢您的阅读' not in visible
+                      and '更多磁知识' not in visible
+                      and '图片来源于网络' not in visible
+                      and '#NdFeB' not in visible
+                      and 'E. P. Furlani' in visible)
+                  print('CHECK',attempt,'article',r.status_code,'home',home.status_code,'images',len(article_imgs),'clean',good,flush=True)
+                  if good: break
+              except Exception as e:
+                  print('TRY_AGAIN',attempt,type(e).__name__,str(e)[:120],flush=True)
+              time.sleep(12)
+          else:
+              raise SystemExit('The cleaned article is not yet verifiable at the production URL.')
+          names=[Path(i.get('src')).name for i in article_imgs]
+          assert names==[p.name for p in expected],f'Image order mismatch: {names}'
+          for i,(img,p) in enumerate(zip(article_imgs,expected),1):
+              link=urljoin(article_url,img.get('src'))
+              response=session.get(link,timeout=25)
+              response.raise_for_status()
+              assert hashlib.sha256(response.content).digest()==hashlib.sha256(p.read_bytes()).digest(),f'Image {i} differs from source'
+              image=Image.open(io.BytesIO(response.content))
+              image.verify()
+              print('IMAGE_OK',i,p.name,len(response.content),flush=True)
+          print('PRODUCTION_CLEAN_ARTICLE_VERIFIED',article_url,flush=True)
+          PY
+      - name: Remove temporary verification workflow
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm .github/workflows/verify-clean-zcce.yml
+          git commit -m 'ci: complete production verification of cleaned article'
+          git push origin HEAD:source
