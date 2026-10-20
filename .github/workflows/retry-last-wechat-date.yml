@@ -1,0 +1,37 @@
+name: Retry article original timestamp
+on:
+  push:
+    branches: [source]
+    paths: ['.github/workflows/retry-last-wechat-date.yml']
+permissions:
+  contents: read
+jobs:
+  original:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - run: |
+          python3 -m pip install -q curl_cffi
+          python3 -u - <<'PY'
+          import re,time,datetime,requests
+          from zoneinfo import ZoneInfo
+          from curl_cffi import requests as cr
+          url="https://mp.weixin.qq.com/s/qzeVfb98UsskLX-7mxCM-Q"
+          for i in range(1,10):
+              try:
+                  if i%3==1:
+                      r=cr.get(url,impersonate="chrome",timeout=23,headers={"Accept-Language":"zh-CN,zh;q=0.9","Referer":"https://mp.weixin.qq.com/"})
+                  elif i%3==2:
+                      r=requests.get(url,timeout=23,headers={"User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.50"})
+                  else:
+                      r=cr.get(url,impersonate="chrome",timeout=23)
+                  doc=r.text
+                  ct=re.search(r"(?<![a-z_])ct\s*[:=]\s*['\"]?([12]\d{9})",doc)
+                  send=re.search(r"ori_send_time\s*[:=]\s*['\"]?([12]\d{9})",doc)
+                  print("TRY",i,r.status_code,len(doc),"CT",ct.group(1) if ct else "none","SEND",send.group(1) if send else "none",flush=True)
+                  if ct:
+                      print("CONFIRMED_ORIGINAL_DATE",datetime.datetime.fromtimestamp(int(ct.group(1)),ZoneInfo("Asia/Shanghai")).isoformat(),flush=True)
+                      break
+              except Exception as e:print("ERROR",i,str(e)[:160],flush=True)
+              time.sleep(3)
+          PY
