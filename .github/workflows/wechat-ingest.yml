@@ -1,0 +1,72 @@
+name: One-time WeChat Article Ingest
+on:
+  push:
+    paths:
+      - '.github/workflows/wechat-ingest.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install parsing dependencies
+        run: python -m pip install -q requests beautifulsoup4 curl_cffi
+      - name: Fetch six article sources
+        shell: bash
+        run: |
+          python - <<'PY'
+          import os, json, re, html, time, requests
+          from bs4 import BeautifulSoup
+          try:
+              from curl_cffi import requests as cr
+          except Exception:
+              cr = None
+          ids = ["xb_1-RnJ2q4bopwS0Go1-g","hPMIYOi4WDUB2cOHexarqA","_qeWfmjppoJFfVnkF9OCuw","C7SsdYMjnsStYrpSEJtp-g","q9cMO5NaMLGnKUu6ghrQfA","qzeVfb98UsskLX-7mxCM-Q"]
+          out=[]
+          os.makedirs('.incoming_wechat',exist_ok=True)
+          for i,aid in enumerate(ids):
+              url='https://mp.weixin.qq.com/s/'+aid
+              record={'id':aid,'url':url,'candidates':[],'success':False}
+              candidates=[('wechat_chrome',url),('wechat_requests',url),('jina','https://r.jina.ai/'+url)]
+              for method,target in candidates:
+                  try:
+                      hdr={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36','Accept-Language':'zh-CN,zh;q=0.9,en;q=0.8'}
+                      if method=='wechat_chrome' and cr: r=cr.get(target,headers=hdr,timeout=30,impersonate='chrome')
+                      else: r=requests.get(target,headers=hdr,timeout=30)
+                      doc=r.text
+                      soup=BeautifulSoup(doc,'html.parser')
+                      article=soup.select_one('#js_content') or soup.select_one('.rich_media_content') or soup.select_one('#img-content')
+                      body=(article.get_text('\n',strip=True) if article else '')
+                      title=(soup.select_one('h1#activity-name') or soup.select_one('#activity-name') or soup.select_one('meta[property="og:title"]'))
+                      title=(title.get('content','') if title and title.name=='meta' else title.get_text(' ',strip=True) if title else '')
+                      if not title:
+                          m=re.search(r'var\s+msg_title\s*=\s*["\x27](.*?)["\x27]',doc)
+                          if m:title=html.unescape(m.group(1))
+                      record['candidates'].append({'method':method,'status':r.status_code,'len':len(doc),'title':title[:150],'body_len':len(body),'head':doc[:180]})
+                      if method=='jina' and (len(doc)>1100 and 'Title:' in doc and 'Markdown Content:' in doc):
+                          record.update({'success':True,'title':title,'source':'jina','text':doc,'html':''})
+                          break
+                      if article and len(body)>300 and ('验证码' not in body[:300]) and ('环境异常' not in body[:300]):
+                          for tag in article.select('img'):
+                              if tag.get('data-src') and not tag.get('src','').startswith('http'):
+                                  tag['src']=tag['data-src']
+                          record.update({'success':True,'title':title,'source':method,'text':body,'html':str(article)})
+                          break
+                  except Exception as e:
+                      record['candidates'].append({'method':method,'error':str(e)[:180]})
+              print(aid, 'OK' if record['success'] else 'FAIL',record.get('title',''), 'text',len(record.get('text','')),flush=True)
+              with open('.incoming_wechat/'+aid+'.json','w',encoding='utf-8') as f:
+                  json.dump(record,f,ensure_ascii=False,indent=2)
+              out.append({'id':aid,'success':record['success'],'title':record.get('title',''),'candidates':record['candidates']})
+          with open('.incoming_wechat/report.json','w',encoding='utf-8') as f:json.dump(out,f,ensure_ascii=False,indent=2)
+          PY
+      - name: Commit extracted source for review
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .incoming_wechat/
+          git diff --cached --quiet || (git commit -m 'Stage fetched article sources for publishing' && git push)
