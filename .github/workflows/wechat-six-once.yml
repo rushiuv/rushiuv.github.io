@@ -1,0 +1,64 @@
+name: Import six complete WeChat articles to Hugo source
+on:
+  push:
+    branches: [source]
+    paths: ['.github/workflows/wechat-six-once.yml']
+permissions:
+  contents: write
+  actions: write
+jobs:
+  import-and-trigger-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: source
+          fetch-depth: 1
+      - name: Install article processing dependencies
+        run: python3 -m pip install --quiet requests beautifulsoup4 markdownify Pillow PyYAML lxml
+      - name: Import exact article bodies and original images
+        run: python3 -u tools/import_wechat_six_once.py
+      - name: Validate imported article files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(find content/posts -mindepth 2 -maxdepth 2 -type d -name images | grep -c 'wechat-' | cat)" -ge 6
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('/tmp/wechat-six-publish-report.json').read_text())
+          assert len(d)==6
+          for x in d:
+              p=Path(x['path'])
+              txt=p.read_text(encoding='utf-8')
+              assert len(txt)>1300 and 'original_from' in txt
+              assert x['title'] in txt and x['original'] in txt
+              assert len(list((p.parent/'images').iterdir()))==x['images']
+              print('VERIFIED',x['slug'],x['images'])
+          PY
+      - name: Commit Hugo source and remove one-time scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/posts/
+          git rm -f .github/workflows/wechat-six-once.yml tools/import_wechat_six_once.py
+          git diff --cached --stat
+          git commit -m 'post: faithfully import six WeChat articles and their local images'
+          git push origin HEAD:source
+      - name: Dispatch established Hugo source-to-main pipeline
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh workflow run build-hugo.yml --ref source
+          echo 'HUGO_BUILD_DISPATCHED'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: import-six-verification-report
+          path: /tmp/wechat-six-publish-report.json
+          if-no-files-found: ignore
