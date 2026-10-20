@@ -1,6 +1,6 @@
 ---
 title: 电感编码器的精度，为什么可能败在一颗过孔上？
-date: '2026-10-20T09:50:00+08:00'
+date: '2026-10-20T09:59:53+08:00'
 slug: wechat-xb-1-rnj2q4bopws0go1-g
 description: 电感编码器双码道耦合、PCB过孔对称性和偏心误差的工程分析。
 original: https://mp.weixin.qq.com/s/xb_1-RnJ2q4bopwS0Go1-g

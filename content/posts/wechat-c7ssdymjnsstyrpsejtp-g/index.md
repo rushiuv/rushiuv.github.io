@@ -1,6 +1,6 @@
 ---
 title: 从磁到电涡流：同一家芯片公司为什么同时押两条技术路线
-date: '2026-10-20T09:53:00+08:00'
+date: '2026-10-19T11:00:00+08:00'
 slug: wechat-c7ssdymjnsstyrpsejtp-g
 description: 磁编码器与电感式编码器在磁干扰和金属耦合等工况中的取舍。
 original: https://mp.weixin.qq.com/s/C7SsdYMjnsStYrpSEJtp-g

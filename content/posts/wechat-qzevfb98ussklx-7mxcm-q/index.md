@@ -1,6 +1,6 @@
 ---
 title: 精度是在 25℃ 标出来的，机上 120℃ 还准吗？
-date: '2026-10-20T09:55:00+08:00'
+date: '2026-10-16T11:00:00+08:00'
 slug: wechat-qzevfb98ussklx-7mxcm-q
 description: 磁编码器的常温精度、全温漂移、永磁体退磁及整机误差预算。
 original: https://mp.weixin.qq.com/s/qzeVfb98UsskLX-7mxCM-Q

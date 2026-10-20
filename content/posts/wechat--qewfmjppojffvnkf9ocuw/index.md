@@ -1,6 +1,6 @@
 ---
 title: 工业伺服 / 协作机器人 / 人形关节：三种工况的选型分歧点
-date: '2026-10-20T09:52:00+08:00'
+date: '2026-10-20T11:00:00+08:00'
 slug: wechat--qewfmjppojffvnkf9ocuw
 description: 工业伺服、协作机器人与人形关节的编码器选型硬约束。
 original: https://mp.weixin.qq.com/s/_qeWfmjppoJFfVnkF9OCuw

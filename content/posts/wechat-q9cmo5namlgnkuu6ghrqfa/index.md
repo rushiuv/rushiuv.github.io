@@ -1,6 +1,6 @@
 ---
 title: 管脚兼容替代实战：TMR 芯片对标 AMR，迁移到底要改什么
-date: '2026-10-20T09:54:00+08:00'
+date: '2026-10-18T11:00:00+08:00'
 slug: wechat-q9cmo5namlgnkuu6ghrqfa
 description: 从封装管脚、通信协议到零位、磁场与温漂验证的TMR对标AMR芯片迁移。
 original: https://mp.weixin.qq.com/s/q9cMO5NaMLGnKUu6ghrQfA
