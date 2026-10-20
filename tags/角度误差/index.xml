@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>角度误差 on 如是有为</title><link>https://sensor.fans/tags/%E8%A7%92%E5%BA%A6%E8%AF%AF%E5%B7%AE/</link><description>Recent content in 角度误差 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Tue, 20 Oct 2026 09:50:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E8%A7%92%E5%BA%A6%E8%AF%AF%E5%B7%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>电感编码器的精度，为什么可能败在一颗过孔上？</title><link>https://sensor.fans/posts/wechat-xb-1-rnj2q4bopws0go1-g/</link><pubDate>Tue, 20 Oct 2026 09:50:00 +0800</pubDate><guid>https://sensor.fans/posts/wechat-xb-1-rnj2q4bopws0go1-g/</guid><description>&lt;p>&lt;img src="images/001-afa11cf2fa.png" alt="文章插图 1" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>如是有为 · 编码器结构深读&lt;/p>
+&lt;h1 id="电感编码器的精度为什么可能败在一颗过孔上">电感编码器的精度，为什么可能败在一颗过孔上？&lt;/h1>
+&lt;p>从双码道金属耦合、PCB 圆周对称性到转子偏心：那些隐藏在 SIN/COS 背后的结构误差。&lt;/p>
+&lt;p>一颗普通 PCB 过孔，可能改变一颗电感编码器的测角精度。它不直接测角，也不输出 SIN/COS，却可能改变接收线圈周围的电磁分布。&lt;/p></description></item></channel></rss>
