@@ -1,0 +1,50 @@
+name: Inspect original WeChat publishing dates
+on:
+  push:
+    branches: [source]
+    paths: ['.github/workflows/check-wechat-dates-once.yml']
+permissions:
+  contents: read
+jobs:
+  datecheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Retrieve original publish timestamps
+        run: |
+          python3 -m pip install -q curl_cffi beautifulsoup4
+          python3 - <<'PY'
+          import re,json,datetime,html
+          from zoneinfo import ZoneInfo
+          from bs4 import BeautifulSoup
+          from curl_cffi import requests
+          ids=["xb_1-RnJ2q4bopwS0Go1-g","hPMIYOi4WDUB2cOHexarqA","_qeWfmjppoJFfVnkF9OCuw","C7SsdYMjnsStYrpSEJtp-g","q9cMO5NaMLGnKUu6ghrQfA","qzeVfb98UsskLX-7mxCM-Q"]
+          pats=[
+           r'(?:var\s+)?ct\s*[:=]\s*["\x27]?([12]\d{9})',
+           r'(?:var\s+)?publish_time\s*[:=]\s*["\x27]?([12]\d{9})',
+           r'(?:var\s+)?publish_time\s*[:=]\s*["\x27](20\d\d[-/]\d\d[-/]\d\d[^"\x27]*)',
+           r'property=["\x27]article:published_time["\x27][^>]*content=["\x27]([^"\x27]+)',
+           r'(?:var\s+)?ori_send_time\s*[:=]\s*["\x27]?([12]\d{9})',
+           r'(?:var\s+)?createTime\s*[:=]\s*["\x27]?([12]\d{9})'
+          ]
+          for id in ids:
+              url="https://mp.weixin.qq.com/s/"+id
+              try:
+                  r=requests.get(url,impersonate="chrome",timeout=40,headers={"Accept-Language":"zh-CN,zh;q=0.9"})
+                  doc=r.text
+                  print("\nORIGINAL",id,"status",r.status_code,"length",len(doc),flush=True)
+                  for pat in pats:
+                      found=re.findall(pat,doc,re.I)
+                      vals=list(dict.fromkeys(found))[:8]
+                      if vals:
+                          readable=[]
+                          for v in vals:
+                              if re.fullmatch(r'[12]\d{9}',v):
+                                  dt=datetime.datetime.fromtimestamp(int(v),ZoneInfo('Asia/Shanghai'))
+                                  readable.append(str(dt))
+                              else:readable.append(v)
+                          print("DATE_MATCH",pat[:44],json.dumps(readable,ensure_ascii=False),flush=True)
+                  m=re.findall(r'.{0,70}(?:publish_time|ori_send_time|createTime|var ct|data-publish|article:published_time).{0,120}',doc,re.I)
+                  for line in m[:6]:print("CONTEXT",re.sub(r'\s+',' ',line)[:190],flush=True)
+              except Exception as e:print("ERROR",id,str(e),flush=True)
+          PY
