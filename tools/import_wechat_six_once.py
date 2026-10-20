@@ -113,7 +113,7 @@ for artidx,(aid,expected_title,account,description,tags) in enumerate(IDS):
     clean_text=BeautifulSoup(str(root),'lxml').get_text(' ',strip=True)
     assert len(clean_text)>=1100 and len(body)>=1300
     # Date is the date published to this blog; original URL is preserved separately.
-    publish_time=f'2026-10-20T12:{50+artidx:02d}:00+08:00'
+    publish_time=f'2026-10-20T09:{50+artidx:02d}:00+08:00'
     front={
         'title':expected_title,
         'date':publish_time,
