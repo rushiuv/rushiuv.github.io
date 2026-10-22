@@ -566,3 +566,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .wiki-toc nav a:hover { color: var(--blue); background: transparent; }
 .wiki-toc nav a:hover::before { color: var(--blue); }
 .wiki-toc .wiki-posts-link { display: block; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 12.5px; }
+
+/* 侧栏目录必须能换行：portal.css 的 nav 规则已收窄到主导航，这里再加一道兜底（2026-10-22） */
+.wiki-toc nav, .wiki-toc nav a, .wiki-toc nav ul, .wiki-toc nav li { white-space: normal; }
+.wiki-toc nav a { overflow-wrap: anywhere; }
+.wiki-content, .wiki-description { overflow-wrap: break-word; }
