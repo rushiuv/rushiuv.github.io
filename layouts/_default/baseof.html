@@ -21,7 +21,7 @@
     <a class="brand" href="{{ "/" | relURL }}">{{ partial "logo.html" . }}<span class="brand-text"><span class="brand-title">{{ site.Title }}</span><span class="brand-sub">{{ site.Params.subtitle }}</span></span></a>
     <nav aria-label="主导航">
       <a href="{{ "/" | relURL }}"{{ if .IsHome }} aria-current="page"{{ end }}>首页</a>
-      <a href="{{ "/wiki/" | relURL }}"{{ if eq .Section "wiki" }} aria-current="page"{{ end }}>资料库</a>
+      <a href="{{ "/wiki/" | relURL }}"{{ if eq .Section "wiki" }} aria-current="page"{{ end }}>型号资料</a>
       <a href="{{ "/topics/" | relURL }}"{{ if eq .Section "topics" }} aria-current="page"{{ end }}>技术专题</a>
       <a href="{{ "/companies/" | relURL }}"{{ if eq .Data.Plural "companies" }} aria-current="page"{{ end }}>公司品牌</a>
       <a href="{{ "/archives/" | relURL }}"{{ if eq .Section "archives" }} aria-current="page"{{ end }}>文章归档</a>

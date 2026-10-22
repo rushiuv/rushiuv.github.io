@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ if eq .Data.Plural "companies" }}
+{{ partial "company-index.html" . }}
+{{ else }}
 <header class="page-head">
   <h1 class="page-title">{{ .Title }}</h1>
   <p class="muted">共 {{ len .Data.Terms }} 个，按出现篇数排序</p>
@@ -7,4 +10,5 @@
 <div class="chips big">
   {{ range .Data.Terms.ByCount }}<a class="chip {{ $k }}" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<small>{{ .Count }}{{ if .Page.Params.wiki }} · 词条{{ end }}</small></a>{{ end }}
 </div>
+{{ end }}
 {{ end }}

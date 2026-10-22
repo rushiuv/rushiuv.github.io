@@ -1,29 +1,20 @@
 {{ define "main" }}
-{{ $entries := sort (where site.Pages "Params.wiki" true) "Params.wiki_rank" }}
-<header class="page-head"><p class="kicker">如是有为 · WIKI</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div></header>
+{{ $entries := sort (where (where site.Pages "Params.wiki" true) "Params.wiki_type" "model") "Params.wiki_rank" }}
+<header class="page-head"><p class="kicker">如是有为 · 型号资料</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div></header>
 <section class="wiki-basics-banner"><div><p class="basics-kicker">先把概念弄明白</p><h2>编码器基础知识</h2><p>从位置反馈、性能参数到检测原理、安装与接口，{{ len (site.GetPage "/wiki/basics").RegularPages }} 个词条逐个讲清。</p></div><a href="{{ "wiki/basics/" | relURL }}">开始阅读 →</a></section>
 <section class="wiki-index">
-  <h2>从型号与品牌开始查找</h2>
-  <p class="muted">已整理 {{ len $entries }} 个词条 · 覆盖现有全部型号与公司标签 · 按关联文章篇数排序</p>
-  <label for="wiki-search">搜索词条</label>
-  <label class="wiki-kind-label" for="wiki-kind">查看范围 <select id="wiki-kind"><option value="">全部</option><option value="model">型号与产品</option><option value="company">公司与机构</option></select></label>
-  <input id="wiki-search" type="search" placeholder="型号、公司或技术关键词" style="display:block;width:100%;margin-top:8px;padding:12px;border:1px solid var(--line);border-radius:8px;font:inherit" autocomplete="off">
+  <h2>查型号、参数与官方文档</h2>
+  <p class="muted">已整理 {{ len $entries }} 个型号与产品词条</p>
+  <label for="wiki-search">搜索型号、产品或技术关键词</label>
+  <input id="wiki-search" type="search" placeholder="例如 KTH7111、磁编码器、SPI" style="display:block;box-sizing:border-box;width:100%;margin-top:8px;padding:12px;border:1px solid var(--line);border-radius:8px;font:inherit" autocomplete="off">
   <div class="wiki-index-grid" id="wiki-entries">
   {{ range $entries }}
-    <a class="wiki-index-card" href="{{ .RelPermalink }}" data-kind="{{ .Params.wiki_type }}" data-search="{{ printf "%s %s %s" .Title .Description (.Params.wiki_category | default "") | lower }}"><small>{{ if eq .Params.wiki_type "model" }}型号／产品{{ else }}公司／机构{{ end }} · {{ len .Pages }} 篇相关文章</small><strong>{{ .Title }}</strong><p>{{ .Description }}</p></a>
+    <a class="wiki-index-card" href="{{ .RelPermalink }}" data-kind="model" data-search="{{ printf "%s %s %s" .Title .Description (.Params.wiki_category | default "") | lower }}"><small>型号／产品{{ if gt (len .Pages) 0 }} · {{ len .Pages }} 篇相关文章{{ end }}</small><strong>{{ .Title }}</strong><p>{{ .Description }}</p></a>
   {{ end }}
   </div>
-  <p id="wiki-empty" class="muted" hidden>当前词条中没有匹配项，可继续浏览全部型号或公司。</p>
+  <p id="wiki-empty" class="muted" hidden>没有匹配的型号，请尝试其他产品名称或技术关键词。</p>
 </section>
-<div class="hero-links"><a class="btn ghost" href="{{ "models/" | relURL }}">全部型号标签</a><a class="btn ghost" href="{{ "companies/" | relURL }}">全部公司标签</a></div>
 <script>
-function filterWiki(){const q=document.getElementById('wiki-search').value.trim().toLocaleLowerCase();const kind=document.getElementById('wiki-kind').value;let n=0;document.querySelectorAll('.wiki-index-card').forEach(a=>{a.hidden=!(a.dataset.search.includes(q)&&(!kind||a.dataset.kind===kind));if(!a.hidden)n++});document.getElementById('wiki-empty').hidden=n>0;}
-const wikiParams = new URLSearchParams(location.search);
-const initialWikiKind = wikiParams.get('kind');
-if (initialWikiKind === 'model' || initialWikiKind === 'company') document.getElementById('wiki-kind').value = initialWikiKind;
-document.getElementById('wiki-search').value = wikiParams.get('q') || '';
-filterWiki();
-document.getElementById('wiki-search').addEventListener('input',filterWiki);
-document.getElementById('wiki-kind').addEventListener('change',filterWiki);
+(()=>{const search=document.getElementById('wiki-search'),cards=[...document.querySelectorAll('#wiki-entries .wiki-index-card')];search.value=new URLSearchParams(location.search).get('q')||'';function filter(){const q=search.value.trim().toLocaleLowerCase();let n=0;cards.forEach(a=>{a.hidden=!a.dataset.search.includes(q);if(!a.hidden)n++});document.getElementById('wiki-empty').hidden=n>0;}search.addEventListener('input',filter);filter();})();
 </script>
 {{ end }}

@@ -1,0 +1,20 @@
+{{ $entries := sort (where (where site.Pages "Params.wiki" true) "Params.wiki_type" "company") "Title" }}
+{{ $categories := slice }}{{ range $entries }}{{ with .Params.wiki_category }}{{ $categories = $categories | append . }}{{ end }}{{ end }}
+<header class="page-head"><p class="kicker">如是有为 · 企业 WIKI</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div></header>
+<section class="wiki-index" aria-label="企业词条目录">
+  <h2>查公司，找产品与公开资料</h2>
+  <p class="muted">共 {{ len $entries }} 个企业、品牌与机构词条</p>
+  <label for="company-search">搜索名称、产品或技术方向</label>
+  <input id="company-search" type="search" placeholder="例如 ABB、机器人、编码器" style="display:block;box-sizing:border-box;width:100%;margin-top:8px;padding:12px;border:1px solid var(--line);border-radius:8px;font:inherit" autocomplete="off">
+  <label class="wiki-kind-label" for="company-category">业务方向 <select id="company-category" style="max-width:100%;padding:6px 10px;font:inherit"><option value="">全部方向</option>{{ range sort (uniq $categories) }}<option value="{{ . }}">{{ . }}</option>{{ end }}</select></label>
+  <p class="muted" id="company-result-count" role="status" aria-live="polite">显示 {{ len $entries }} 个词条</p>
+  <div class="wiki-index-grid" id="company-entries">
+  {{ range $entries }}
+    <a class="wiki-index-card" href="{{ .RelPermalink }}" data-category="{{ .Params.wiki_category | default "" }}" data-search="{{ printf "%s %s %s" .Title .Description (.Params.wiki_category | default "") | lower }}"><small>{{ .Params.wiki_category }}{{ if gt (len .Pages) 0 }}{{ if .Params.wiki_category }} · {{ end }}{{ len .Pages }} 篇相关文章{{ end }}</small><strong>{{ .Title }}</strong><p>{{ .Description }}</p></a>
+  {{ end }}
+  </div>
+  <p id="company-empty" class="muted" hidden>没有匹配的企业词条，请尝试其他名称或技术方向。</p>
+</section>
+<script>
+(()=>{const search=document.getElementById('company-search'),category=document.getElementById('company-category'),cards=[...document.querySelectorAll('#company-entries .wiki-index-card')],params=new URLSearchParams(location.search);search.value=params.get('q')||'';if([...category.options].some(o=>o.value===params.get('category')))category.value=params.get('category');function filter(){const q=search.value.trim().toLocaleLowerCase();let n=0;cards.forEach(a=>{a.hidden=!(a.dataset.search.includes(q)&&(!category.value||a.dataset.category===category.value));if(!a.hidden)n++});document.getElementById('company-empty').hidden=n>0;document.getElementById('company-result-count').textContent='显示 '+n+' / '+cards.length+' 个词条';}search.addEventListener('input',filter);category.addEventListener('change',filter);filter();})();
+</script>
