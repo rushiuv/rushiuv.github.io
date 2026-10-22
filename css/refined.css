@@ -545,3 +545,29 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .model-family h2 { margin: 0 0 12px; font-size: 18px; }
 .wiki-index-card[hidden] { display: none !important; }
 @media(max-width: 600px) { .catalog-filters label { flex-basis: calc(50% - 12px); min-width: 0; } .catalog-filters button { width: 100%; } }
+
+/* 词条目录：长论断标题排成可扫的列表，不让它读成一坨段落（2026-10-22） */
+.wiki-toc .card { padding: 20px 18px 12px; }
+.wiki-toc .card-title { margin: 0 0 10px; font-size: 15px; letter-spacing: .04em; }
+.wiki-toc nav ul { margin: 0; }
+.wiki-toc nav li { border-top: 1px solid var(--line-soft); }
+.wiki-toc nav li:first-child { border-top: 0; }
+.wiki-toc nav ul ul { border-top: 0; }
+.wiki-toc nav a {
+  display: block;
+  padding: 7px 0 7px 13px;
+  text-indent: -13px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-2);
+  transition: color var(--motion);
+}
+.wiki-toc nav a::before { content: "·"; display: inline-block; width: 13px; color: var(--editorial-border); }
+.wiki-toc nav a:hover { color: var(--blue); background: transparent; }
+.wiki-toc nav a:hover::before { color: var(--blue); }
+.wiki-toc .wiki-posts-link { display: block; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 12.5px; }
+
+/* 侧栏目录必须能换行：portal.css 的 nav 规则已收窄到主导航，这里再加一道兜底（2026-10-22） */
+.wiki-toc nav, .wiki-toc nav a, .wiki-toc nav ul, .wiki-toc nav li { white-space: normal; }
+.wiki-toc nav a { overflow-wrap: anywhere; }
+.wiki-content, .wiki-description { overflow-wrap: break-word; }
