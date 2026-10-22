@@ -4,20 +4,55 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 213
 lastmod: "2026-10-22"
-description: "通过Gravis RACK和传感器改装工程机械，实现土方作业自主化。"
+description: "苏黎世 Gravis Robotics 用屋顶式改装套件 Gravis RACK 把挖掘机与装载机变成机器人：靠 EH 先导阀接管手柄指令、GNSS RTK 加 3D 激光雷达看地形，官方称产能提升最高 30%。"
 wiki_category: "工程机械自动化"
 official_url: "https://www.gravisrobotics.com/"
 ---
 
-## 产品与集成
+Gravis Robotics 站在"工程机械自动化"这一层，做的是**改装**不是造机：一套装在驾驶室顶部的模块化套件 Gravis RACK，加传感器与平板界面，把客户现有的挖掘机与轮式装载机变成自主作业机。对做角度测量的人，它的架构很关键——臂的姿态靠发出的指令与地形扫描推出来，不是靠关节上的编码器测出来的。这类整机原本就没有关节角反馈，改装方也不会加。
 
-Gravis Robotics为现有工程机械加装Gravis RACK、传感器及触屏控制界面，使设备具备自主土方作业能力。 [Gravis官方产品介绍](https://www.gravisrobotics.com/)
+## 公司与产品：一套屋顶套件适配十几家品牌
 
-## 工作场景
+公司总部在苏黎世，另设美国奥斯汀与英国牛津两处。核心产品是 Gravis RACK，官方描述为"模块化屋顶自主控制套件"，兼容多种挖掘机与轮式装载机，覆盖 10 吨到 100 吨以上，从 S 到 XL 四档尺寸都用同一套学习型控制；官方称已装到十几个不同品牌上，部分型号通过经销商集成。界面是平板叫 Slate，任务配置包括"倒土到土堆、料斗或卡车"，感知栈会自己找卡车位置。[首页](https://www.gravisrobotics.com/)；[Gravis RACK](https://www.gravisrobotics.com/rack)
 
-公开业务围绕挖掘与土方施工，重点是机械改装、现场感知与作业控制的结合。Gravis RACK是其自主挖掘机系统的硬件入口。 [公司介绍](https://www.gravisrobotics.com/about-us)
+公开的商业进展：2026 年 8 月宣布融资 2 亿美元做建筑自主化；2025 年 11 月融资 2,300 万美元进英国、美国与欧盟；2025 年 11 月拿到 Construction Startup Challenge 金奖。[新闻页](https://www.gravisrobotics.com/news)
 
-## 公开资料
+## 接管方式是阀，不是伺服
 
-- [Gravis官方产品介绍](https://www.gravisrobotics.com/)
-- [公司介绍](https://www.gravisrobotics.com/about-us)
+官方把集成条件写得非常直白，这一段是整页最有用的话：**要让机器自主，机器必须能被电子控制**。很多现代机型已经把手柄指令送到电液（EH）先导阀，因此与 Gravis RACK 是"干净的直接集成"；带老式机械先导阀的机器，要加装改装 EH 阀，可以找本地液压店或它的合作网络。
+
+这段话的含义是：套件接的是**控制指令通道**，不是测量通道。它能命令臂动，但没有一条线把臂的实际角度读回来。
+
+## 感知：RTK 加激光雷达，把"测关节"换成"测地形"
+
+后部两根智能桅杆集成 GNSS RTK、广角 HDR 相机、3D 激光雷达、远距 WiFi 与状态灯；360° 激光覆盖加多传感器融合给出实时三维地形、挖填可视化与作业后实测；边缘计算车规级、可离线。官方给的效果口径是地形感知挖掘使吞吐提升最高 30%。
+
+| 模块 | 公开配置 |
+| --- | --- |
+| 控制接口 | EH 先导阀接管手柄指令；机械先导阀需加装改装 EH 阀 |
+| 定位 | 桅杆 GNSS RTK |
+| 地形感知 | 3D 激光雷达 360° 覆盖，前视相机加激光雷达 |
+| 视觉 | 广角 HDR、环视、低延时视频流 |
+| 计算 | 车规级边缘计算，支持离线 |
+| 界面 | Slate 平板，含无线急停 |
+
+以上取自 RACK 页。[Gravis RACK](https://www.gravisrobotics.com/rack)
+
+## 在编码器链上的位置
+
+挖掘机的动臂、斗杆、铲斗、回转、行走，全是液压执行，原厂通常不给这些轴装角度传感器（部分高端机型有臂角传感用于辅助作业，但不是标配，也不是改装套件的依赖项）。Gravis 的做法是：**命令液压阀、用地形扫描校核结果**，把"关节角"这个量从闭环里消掉。
+
+所以对它不能推的部分要说清楚：它不读臂角，也不公开是否利用原厂已有的臂角信号；任何"改装套件里有编码器"的说法在官网找不到依据。它对器件侧的真实意义是另一个方向——这类客户把角度需求转成了位姿需求（RTK 与点云），角度器件的机会只可能出现在它自研的机械结构里，比如桅杆的转动机构或平板支架，量与价值都很小。
+
+## 公开资料的边界
+
+公开页面给的是兼容吨位、集成条件、传感器配置、界面与产能口径。**没有公开**：支持的机型清单、控制环频率、定位精度数值、IMU 型号、液压阀的型号与响应、改装工时与价格、单机产能提升的测试条件。这些要商务接触，本页不填没有来源的数字。
+
+## 官方资料
+
+- [Gravis Robotics 首页](https://www.gravisrobotics.com/)
+- [Gravis RACK 硬件页](https://www.gravisrobotics.com/rack)
+- [Slate 平板界面](https://www.gravisrobotics.com/slate)
+- [新闻页](https://www.gravisrobotics.com/news)
+- [关于我们](https://www.gravisrobotics.com/about-us)
+- [融资公告页](https://www.gravisrobotics.com/series-a)

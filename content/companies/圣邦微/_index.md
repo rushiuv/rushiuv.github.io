@@ -4,21 +4,49 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 102
 seed_count: 2
-lastmod: "2026-10-16"
-description: "圣邦微电子（SG Micro）提供高性能模拟芯片，产品覆盖信号链与电源管理，服务于工业、汽车和消费等应用。"
+lastmod: "2026-10-22"
+description: "圣邦微（SGMICRO）：北京的无晶圆模拟芯片厂，AMR 磁编码芯片 VCE2755/VCE2758 公开 18 位、全温 ±0.3°、延时 <2 µs，另有模拟正余弦的 VCE1715。"
 official_url: "https://www.sg-micro.com/"
 wiki_category: "芯片与信号链"
 related_models: []
 ---
 
-## 公司与品牌
+圣邦微在编码器链上有两个身份：老本行是模拟信号链——运放、比较器、ADC、基准、电源，这些是编码器电路板上的通用件；新身份是 AMR 磁传感器，官网把「磁编码」「角度位置传感器」「磁开关」三个子类挂在同一个 AMR 目录下，编码子类里现在是两颗带数字接口的 18 位芯片。读它的资料最该看两处：AMR 目录的参数表（一次把位数、延时、ppr、转速、温度、封装列全）和 VCE2755 的产品页（给了全温精度与 MTP）。
 
-圣邦微电子（SG Micro）提供高性能模拟芯片，产品覆盖信号链与电源管理，服务于工业、汽车和消费等应用。 [官网介绍](https://www.sg-micro.com/)
+## 北京起家的无晶圆模拟厂，六年两地上市
 
-## 产品与业务
+SG Micro Corp（SGMICRO），总部北京，自述由工程背景的创始人团队创办，走 fabless 路线，代工伙伴公开列的是台积电、DB HiTek、Tower Semi、中芯国际、力积电与 VIS，封测列长电、通富、华天等。2017 年 6 月 6 日在深交所创业板上市（300661.SZ），2026 年 6 月 26 日在港交所主板上市（03661.HK）。官网 Key Facts 给的是：员工 1800 余人，其中 1300 余人做新产品开发；十个技术中心分布在北京、哈尔滨、上海、深圳、苏州、成都、大连、香港等地；2025 年净销售额约 5.46 亿美元。中文常叫「圣邦微」或「圣邦微电子」。[About SGMICRO](https://www.sg-micro.com/about-us)
 
-放大器、比较器、ADC、接口和电源管理器件。
+## AMR 目录下三档产品，编码子类两颗 18 位
 
-## 官方入口
+官网 AMR 传感器目录写明共 7 颗在售，分三个子类：磁编码 2 颗、角度位置传感器 1 颗、磁开关 4 颗。下表数值抄自参数表，属「这一档大概什么水平」，逐型号的 INL 与迟滞仍要下手册。
 
-- [访问圣邦微官方介绍或产品目录](https://www.sg-micro.com/)
+| 系列 | 类型 | 公开分辨率/关键指标 | 其他公开参数 |
+| --- | --- | --- | --- |
+| [VCE2755](https://www.sg-micro.com/product/VCE2755) | AMR 磁编码，数字角度 | 18 位角分辨率；全温精度 ±0.3°；角度输出延时 <2 µs | SPI/PWM/ABZ/UVW/SSI/差分 ABZ；ABZ 1~1024 ppr；UVW 1~16 极对；最高跟踪 18000 rpm；3.0~5.5 V；−40~+125 °C；SOIC-8 与 TQFN-3×3-16；内置 MTP |
+| [VCE2758](https://www.sg-micro.com/products/magnetic-encoder) | AMR 磁编码，数字角度 | 18 位；ABZ 1~4096 ppr | 同上接口集与 1~16 极对 UVW；18000 rpm；PWM 971.1/485.6 Hz；−40~+125 °C；3.3/5 V |
+| [VCE1715](https://www.sg-micro.com/products/angular-position-sensors) | AMR 角度，模拟正余弦 | 分辨率 0.01°；灵敏度 2.1 mV/°；角度范围 180° | 噪声密度 6 nV/√Hz；桥偏置 ±3 mV/V；饱和场 >80 Gs；桥阻 1050 Ω；1~9 V 供电；−40~+125 °C；SOIC-8 |
+| [VCS2381 / 2382 / 2383 / 2395](https://www.sg-micro.com/products/amr-sensor) | 磁开关与锁存 | 官网归在 Magnetic Switches 子类，共 4 颗 | 阈值、输出形式与封装按各型号页查 |
+
+三档的分工要看清楚：VCE2755/VCE2758 是「片上解算」，出 SPI 或 ABZ/UVW，客户 MCU 直接读；VCE1715 只出 AMR 桥的模拟正余弦，ADC 与角度解算要客户自己做，好处是把采样时刻与滤波放在自己的信号链里。这个差别直接决定选型时算力与延迟预算落在谁头上。
+
+## 在编码器链上的位置
+
+它在链上是「敏感元件加信号链」这一层：自己做 AMR 桥与解算，往上买的是 AMR 薄膜与晶圆代工（膜的供应方官网未公开），往下卖芯片与参考设计，不卖磁体、不卖码盘、不做整机。同一条产品线里还有电机栅极驱动（如 SGM42560Q）与电流检测放大器（SGM875），这些是编码器之外但同一块板上的器件，代理商常一起报。
+
+能推理的是它的打法：用 18 位、18000 rpm、<2 µs 这一组指标正面进入伺服与云台市场，用一颗模拟输出的 VCE1715 覆盖「客户已有 ADC 与算法」的场景。**不能推理的是它的膜从哪来、片上校准能做到什么程度、以及哪些整机厂在用**——官网不公布供应链，也不公布设计导入。
+
+## 公开资料的边界
+
+参数表与产品页给的是分辨率、延时、ppr、极对数、转速、温度、封装、供电与 MTP 可重复编程这些「能验收的项」。**没有公开**的是逐型号的 INL 曲线、迟滞、重复性、抗外场强度（只写饱和场 >80 Gs）、长期漂移与可靠性数据；供应商只有 RoHS、无卤、MSL 等级这些环保项。因此跨品牌比较时必须先把口径对齐：±0.3° 是「全温精度」，和 ±LSB、INL、重复性不是同一件事。价格按量分级，页面只给「Unit Resale Price」入口，实际报价与交期要走销售。
+
+## 官方资料
+
+- [SGMICRO 官网](https://www.sg-micro.com/)
+- [About SGMICRO（沿革、上市、代工与封测伙伴）](https://www.sg-micro.com/about-us)
+- [AMR 传感器目录](https://www.sg-micro.com/products/amr-sensor)
+- [磁编码子类参数表](https://www.sg-micro.com/products/magnetic-encoder)
+- [角度位置传感器子类](https://www.sg-micro.com/products/angular-position-sensors)
+- [VCE2755 产品页](https://www.sg-micro.com/product/VCE2755)
+- [VCS2395 产品页](https://www.sg-micro.com/product/VCS2395)
+- [放大器目录](https://www.sg-micro.com/products/amplifiers)

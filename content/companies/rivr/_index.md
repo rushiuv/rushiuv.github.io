@@ -4,21 +4,47 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 218
 lastmod: "2026-10-22"
-description: "以轮腿机器人和物理AI面向送货上门，前身为Swiss-Mile。"
+description: "苏黎世轮腿配送机器人公司，前身 Swiss-Mile，2026 年 3 月被亚马逊收购；RIVR ONE 最高 14 km/h，官方未公开关节数。"
 wiki_category: "移动机器人与巡检"
 official_url: "https://rivr.ai/"
 ---
 
-## 公司与方向
+RIVR 站在**移动整机**这一层：轮腿结合的送货机器人，做最后一段路和门口最后一百码。它值得关注的原因不是它自己的产品规格（官网几乎没给），而是它把"轮 + 腿"这套构型做成了商业产品——这种构型下每条腿至少要有髋、膝两个关节角，加上轮子的驱动，一台机器的受控轴比轮式底盘多出一截，而且腿关节要求上电即绝对。
 
-RIVR前身为Swiss-Mile，业务围绕送货上门与最后一段配送，将轮腿机器人硬件、自主软件与运营数据结合。 [公司介绍](https://rivr.ai/about-rivr)
+## 从 Swiss-Mile 改名，2026 年 3 月归入亚马逊
 
-## 机器人与学习
+公司现名 RIVR Technologies AG，总部苏黎世，前身是苏黎世联邦理工（ETH Zurich）的衍生公司 Swiss-Mile，官网 about 页自己写了这段改名。2026 年 3 月 23 日，瑞士资讯（swissinfo，Keystone-SDA 供稿）报道亚马逊已完成对 Rivr 的收购，CEO Marko Bjelonic 在 LinkedIn 上确认交易但未披露金额；报道同时提到该公司 2024 年在一轮融资中的估值约为 1.1 亿美元（8600 万瑞郎），亚马逊此前已通过 Industrial Innovation Fund 投资，贝索斯个人投资公司亦在其投资人名单中（该条转引自 The Information）。[亚马逊收购报道](https://www.swissinfo.ch/eng/workplace/amazon-acquires-swiss-delivery-robot-start-up-rivr/91144826)
 
-RIVR ONE的公开工作模式包括从取货点直接配送，以及与配送车辆协同。技术路线结合仿真强化学习与真实部署数据，轮腿结构用于兼顾道路移动和门前复杂地形。 [技术路线](https://rivr.ai/technology.html)
+同一篇报道给了两条与硬件无关但很有用的背景：RIVR 的机器人在苏黎世做过路测后被瑞士联邦道路局（FEDRO）认定为道路车辆，测试一度叫停；之后拿到临时豁免许可到 2025 年底，条件是只能远程操控并在人工监督下运行。这解释了它为什么把"自主"讲得比"上路"更谨慎。
 
-## 公开资料
+## 公开的产品口径
 
-- [公司介绍](https://rivr.ai/about-rivr)
-- [技术路线](https://rivr.ai/technology.html)
-- [RIVR ONE](https://rivr.ai/product)
+| 公开项 | 官方口径 | 出处 |
+| --- | --- | --- |
+| 构型 | 轮式与四足结合的移动平台 | swissinfo 报道与官网 |
+| 最高速度 | 14 km/h，约为步行速度两倍以上 | 产品页 |
+| 作业模式 | 从取货点直达门口；或与配送车协同并行投递 | 产品页 |
+| 越障 | 人行道、自行车道、斑马线、小台阶与路缘；门口大台阶与开门 | 产品页 |
+| 学习方式 | 仿真强化学习 + 真实数据监督学习（含远程接管） | 技术页 |
+| 商业模式 | 自持全栈：硬件、软件、运营数据 | 官网首页 |
+| 人力兜底 | 24/7 远程支持团队随时接管 | 产品页 |
+
+技术页把数据飞轮讲得很清楚：部署越多、远程干预越少、能跑的场景越大，这一圈是它融资叙事的核心。[技术页](https://rivr.ai/technology.html) [产品页](https://rivr.ai/product)
+
+## 在编码器链上的位置
+
+它买电机、驱动、减速器与传感器，自己做整机与自主软件，卖给配送与零售运营方。被亚马逊收购之后的含义是采购口的位置变了：器件评估与定点的决策会往收购方的体系里走，苏黎世团队保留研发，但供应链话语权不在本地。
+
+轮腿构型决定了它的角度需求分成两档：腿上的髋膝关节要的是上电即绝对、能扛冲击的单圈绝对角度；轮毂直驱那一档只要电角度，够换相与测速就行。这两档在分辨率、温漂和成本上差一个数量级，混着报价一定亏。
+
+## 公开资料的边界
+
+官网没有公开：关节数量与轴数、执行器与减速器型号、编码器类型与位数、电池与续航、载重与货箱容积、单机成本、部署台数。技术页只有学习方法，没有任何硬件参数表。用"轮腿四足"去推"大概 16 个轴"是合理工程估算，但不是公开事实，本页不写成数字。
+
+## 官方资料
+
+- [RIVR 官网](https://rivr.ai/)
+- [RIVR ONE 产品页](https://rivr.ai/product)
+- [技术页（仿真强化学习与真实数据）](https://rivr.ai/technology.html)
+- [关于 RIVR 与前身 Swiss-Mile](https://rivr.ai/about-rivr)
+- [亚马逊收购报道（swissinfo，2026-03-23）](https://www.swissinfo.ch/eng/workplace/amazon-acquires-swiss-delivery-robot-start-up-rivr/91144826)

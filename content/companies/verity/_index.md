@@ -4,21 +4,45 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 221
 lastmod: "2026-10-22"
-description: "利用室内自主无人机进行仓库库存核查的机器人企业。"
+description: "2014 年从 ETH 苏黎世衍生的仓库盘点无人机公司，创始人 Raffaello D'Andrea，整机不到 2 磅，全自主起降与回充。"
 wiki_category: "无人机与空中作业"
 official_url: "https://www.verity.net/"
 ---
 
-## 产品与工作流
+Verity 是**室内自主无人机**这一层：机器在仓库货架之间飞，扫条码、点库存、自己回巢充电，卖的是"库存准确率"这个结果。它的可动件只有四个桨轴，官方没有任何关于转子位置反馈的公开说明——这正是它在这个话题上的价值：一台把"角度预算"全花在定位上的飞行器，桨轴上不设位置传感。
 
-Verity的仓库方案通过自主飞行无人机执行库存检查，将采集的信息用于库存追踪与作业管理。其公开资料围绕仓储与第三方物流工作流展开。 [Verity官网](https://www.verity.net/)
+## 2014 年从 ETH 苏黎世起飞
 
-## 资料入口
+官网公司页给的沿革很清楚：2014 年从苏黎世联邦理工（ETH Zurich）成立，创始团队里有 Raffaello D'Andrea——Kiva Systems 的共同创办人（2003 年成立，2012 年被亚马逊以 7.75 亿美元收购，后成为 Amazon Robotics）、ETH 教授、四旋翼编队与 Cubli 的作者。公司 2016 年正式露面，在 TED 舞台上做过无人机编队飞行。规模写的是 180 人以上、40 多个国籍、20 位博士、150 多项专利。CEO 自 2026 年 10 月起是 Anders Martens，此前十二年经营北欧快递公司 Link Logistics。[公司页](https://www.verity.net/company)
 
-产品白皮书分别讨论第三方物流库存跟踪和库存检查生产率，可用于了解无人机盘库的部署与数据流。 [第三方物流库存追踪白皮书](https://assets3.verity.net/app/uploads/2024/02/Whitepaper-Autonomous-inventory-tracking-for-3PLs.pdf)
+客户与规模：官网写技术部署在 100 多个仓库（首页另称 150 多个站点），客户里点名 IKEA、Maersk、UPS。
 
-## 公开资料
+## 公开的产品口径
 
-- [Verity官网](https://www.verity.net/)
-- [第三方物流库存追踪白皮书](https://assets3.verity.net/app/uploads/2024/02/Whitepaper-Autonomous-inventory-tracking-for-3PLs.pdf)
-- [生产率白皮书](https://assets3.verity.net/app/uploads/2024/03/Maximizing-value-Productivity-Whitepaper.pdf)
+| 公开项 | 官方口径 | 出处 |
+| --- | --- | --- |
+| 整机重量 | 平台低于 2 磅（约 0.9 kg） | 技术页 |
+| 传感 | 通用传感器与相机 | 技术页 |
+| 作业 | 全自主起飞、扫描、降落、充电，无需人工 | 方案页 |
+| 输出 | 数字孪生、库存准确率、位置核查、空库位扫描、循环盘点 | 方案页 |
+| 宣称效果 | 库存准确率 99.9%、缺货减少 60%、OTIF 95% | 首页 impact 区 |
+| 安全 | 在人员与设备间自主飞行 | 方案页 |
+
+表里 99.9% 与 60% 是官网 impact 区自己给的宣传口径，没有第三方复核，引用时必须标成官方宣称。真正对工程有意义的是"平台低于 2 磅"：这个重量级别决定了电机与桨的尺寸，也决定了整机不可能带多少传感器。[技术页](https://www.verity.net/technology) [方案页](https://www.verity.net/solution)
+
+## 在编码器链上的位置
+
+它买机体、电机、电调、相机与定位模块，自己做飞行控制、扫描与数据处理，卖给第三方物流与大型零售商。四个桨轴按行业惯例用无感 FOC 驱动，不设转子位置传感；它真正依赖的"位姿"来自室内定位与视觉，官方没公开用什么实现。所以这台机器对角度类器件的需求接近零，对"定位"的需求极高——这是典型的把预算从关节挪到导航的产品。
+
+## 公开资料的边界
+
+官网没有公开：机体与电机型号、电调方案、室内定位技术（UWB、视觉标记还是视觉惯性）、单机飞行时长与续航、载荷、单站点部署台数、价格。白皮书（3PL 库存追踪、盘点生产率）讲的是流程与收益，不讲硬件。用"四个桨轴"推"四颗编码器"是不成立的，本页不写这种推断。
+
+## 官方资料
+
+- [Verity 官网](https://www.verity.net/)
+- [技术页](https://www.verity.net/technology)
+- [方案页（自主盘点流程）](https://www.verity.net/solution)
+- [公司页（沿革、团队与客户）](https://www.verity.net/company)
+
+官网另有 3PL 库存追踪与盘点生产率两份白皮书，作为 PDF 直链本次未取到正文，故本页不引用其内容。

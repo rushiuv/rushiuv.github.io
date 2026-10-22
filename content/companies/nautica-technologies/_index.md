@@ -4,19 +4,47 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 216
 lastmod: "2026-10-22"
-description: "开发HYDRA常驻船体防污机器人系统的瑞士企业。"
+description: "苏黎世海事机器人公司，HYDRA 是常驻船上自主爬行清刷船体的 rAFS 系统，专利待审，CTO 出身为 ETH 无人机研究者。"
 wiki_category: "水下与海事机器人"
 official_url: "https://nauticatechnologies.com/"
 ---
 
-## 产品定位
+Nautica Technologies 做的是**海事整机应用**：一台常驻在船上的机器人，在船不起坞、不停租的情况下持续爬行清刷船底，用机械方式替代毒性防污漆。它不是编码器相关公司，但对角度传感有一个明确的抬升作用——船体表面爬行要自主化，轮子上那几路原来只当换相用的反馈，就得变成导航件。
 
-HYDRA是Nautica Technologies公开的机器人防污系统，机器人常驻船舶，通过持续处理船体表面来抑制生物附着。 [HYDRA与公司介绍](https://nauticatechnologies.com/)
+## 苏黎世起家，ETH 与 EPFL 背景
 
-## 运行方式
+官网自述是瑞士初创，团队根在苏黎世联邦理工（ETH Zürich）与洛桑联邦理工（EPFL），法律主体写为 Nautica Technologies AG。公开的管理层两人：CEO 是 Cédric Portmann，CTO 是 Mina Kamel。产品名 HYDRA，定位为 autonomous robotic antifouling system，缩写 rAFS，官网注明专利待审（patent pending）。[HYDRA 与公司介绍](https://nauticatechnologies.com/)
 
-官网将流程分为船上安装、自主运行和船体状态核验；每次运行产生船体状态报告。其业务对象是船东与航运运营方，重点在船体维护及防污管理。 [HYDRA与公司介绍](https://nauticatechnologies.com/)
+商业模式写得很清楚：不做一次性服务，而是把整台装置装到船上，按船东的航线节奏定期跑，每次跑完出一份可审计的船体状态报告，给船东、租家与船级社看。这条"每次运行都有报告"的闭环，是它和传统水下清刷服务的分界。
 
-## 公开资料
+## 公开的产品口径与它替代的东西
 
-- [HYDRA与公司介绍](https://nauticatechnologies.com/)
+| 公开项 | 官方口径 | 备注 |
+| --- | --- | --- |
+| 系统形态 | 常驻船上的自主爬行机器人系统 | 官网 How It Works |
+| 作业节奏 | 按航线与靠港规律定期跑，安装、运行、核验三步 | 官网 |
+| 安装方式 | 随船安装，不需进干船坞 | 官网称 no retrofit downtime |
+| 输出物 | 每次运行生成船体状态报告 | 给船东、租家、船级社 |
+| 官方宣称的收益 | 最高可挽回 20% 燃油（按船建模，非实测承诺） | 官网 *modeled per vessel* |
+| 合规指向 | CII、FuelEU Maritime、EU ETS | 官网 |
+| 团队来源 | ETH Zürich 与 EPFL | 官网 |
+
+表里"20%"必须按官方口径读：官网自己在旁边标了 modelled per vessel，是按单船模型算出来的数，不是第三方实测。把它当结论引用就错了。
+
+它替代的是防污漆的化学路线——官网的论证是常规涂料靠向海水释放杀生物剂工作，且从第一天起就在衰减；HYDRA 的思路是不让附着开始。这套论证是它自己的，本页不当成行业共识。
+
+## 在编码器链上的位置
+
+它买电机、驱动、传感与密封件，做整机与船队服务，卖给船东与航运运营方。可动件集中在两处：贴着船体走的驱动轮（或驱动脚）与刷辊。这两处本来只需要换相级的反馈，一旦要做自主路径与覆盖率的核验，轮上的角度就变成里程与位姿的输入，对分辨率、温漂与长期一致性的要求整体抬一档。
+
+但公开资料到此为止：官网没有给驱动方式、轮数、刷辊数量、吸附方式、通信接口。它值多少颗编码器，只能靠现场或拆机确认，不能从宣传页推。
+
+## 公开资料的边界
+
+没有公开：整机自由度与驱动构型、电机与减速器型号、编码器类型与分辨率、水下通信方式、续航与作业速度、单船部署台数、报价与交期。官网是 GitHub Pages 单页站，除首页无独立公司页或技术页；唯一外部入口是 LinkedIn。本页因此不写任何关于轴数的推断。
+
+## 官方资料
+
+- [Nautica Technologies 官网（HYDRA 与公司介绍）](https://nauticatechnologies.com/)
+
+官网是单页站，除首页外没有独立的公司页、技术页或产品页；本次核对只取到这一页正文，页面内 "Company" 段落给出的是团队来源、两位管理层与 patent pending 的说明。

@@ -1,45 +1,52 @@
 ---
 title: "Melexis"
-description: "迈来芯：磁性 Triaxis 位置传感器与电感位置接口芯片，覆盖模拟正余弦及数字角度输出。"
+description: "迈来芯（Melexis）：磁与电感两条前端路线同时供的芯片厂，MLX90380 出模拟正余弦、MLX90382 直追 200,000 rpm，MLX90520 是 22 位双通道电感编码器。"
 wiki: true
 wiki_type: "company"
 wiki_rank: 5
 seed_count: 24
-lastmod: "2026-10-16"
+lastmod: "2026-10-22"
 official_url: "https://www.melexis.com/"
 related_models: []
 related_companies: []
 ---
 
-## 公司与品牌
+Melexis 在这条链上值得单独读，是因为它同时供两条互相竞争的前端路线：磁的走 Triaxis® 霍尔，从只有模拟正余弦的 MLX90380 一直到片上自校准、ASIL-B 的 MLX90382；电感的走 MLX90520，片内 LC 振荡器加 DSP，双通道还能算游标角。对整机厂而言这不是「买哪家」而是「买哪条路线」，代价分别落在磁体与 PCB 线圈上。读它的资料要从 datasheet 入手，产品页对本次抓取不可达。
 
-Melexis 中文常称迈来芯，其位置传感产品同时覆盖磁感应与电感测量。对于电机和机器人读者，值得区分的是两类产品：输出模拟正余弦信号的 resolver 器件，以及在芯片内计算位置并提供数字接口的编码器或接口芯片。
+## 公司与品牌：官网不可达，本页不填沿革数字
 
-官网产品描述较明确地给出各型号的测量对象、输出与应用条件。理解品牌时，沿着具体产品的信号流阅读，比将所有器件统一理解成“磁编码器”更准确。MLX90380 和 MLX90520 就分别体现了两种差异明显的系统分工。
+中文常叫「迈来芯」，型号前缀是 MLX-。**本次核对 melexis.com 的首页、产品页与投资者站点全部返回 FETCH_FAILED**（站点对抓取侧不可达），所以成立年份、注册地址、员工数、股权结构这些官网口径都没有取到，本页一律不填。能确认的只有两件事：产品定义与手册以 Melexis 名义发布；MLX90520 手册的免责声明写明适用比利时法、争议由布鲁塞尔法院专属管辖——这只说明法律属地，不等于注册地址。
 
-## 相关业务与技术路线
+## 五颗能核对的料，磁与电感各成一条线
 
-Triaxis 是 Melexis 的磁位置技术品牌。MLX90380 采用该技术，检测磁场相关分量并输出模拟正弦和余弦，面向无刷电机等需要快速位置反馈的场景。可选择的磁场轴组合为不同安装方式提供空间，输出仍需要后端采集和角度计算。[MLX90380 产品页](https://www.melexis.com/en/product/MLX90380/Preprogrammed-Magnetic-Resolver)
+下表数值取自各自 datasheet 的首页特性表，属于「这一档什么水平」，逐型号的误差曲线仍要看手册正文。
 
-电感路线的 MLX90520 则配合发射线圈、目标件和两组接收线圈工作。片内激励产生电磁场，目标件的位置改变接收信号，模拟前端、ADC 与 DSP 将其转换为位置数据。它支持两路同步读取，也可结合通道信息计算游标角度。[MLX90520 产品页](https://www.melexis.com/en/product/MLX90520/22-bit-Inductive-position-sensor-dual-input)
+| 型号 | 类型 | 公开关键指标 | 其他公开参数 |
+| --- | --- | --- | --- |
+| [MLX90381](https://www.melexis.com/-/media/files/documents/datasheets/mlx90381-datasheet-melexis.pdf) | 磁角度，模拟比率输出 | 中磁场 10~70 mT、高磁场 40~160 mT 两档 | 端轴与穿轴两种装法；比率输出；AEC-Q100；I²C 在线编程；DFN-6 单die |
+| [MLX90380](https://www.melexis.com/-/media/files/documents/datasheets/mlx90380-datasheet-melexis.pdf) | 磁旋变，双路模拟正余弦 | 输出刷新率 4 µs；满量程按变体 10~70 mT | Triaxis® 霍尔；可选 X/Y、X/Z、Z/Y 磁轴；灵敏度与滤波带宽经 4 个应用脚编程；3.3 V/5 V；SOIC-8 与 TSSOP-16 |
+| [MLX90316](https://www.melexis.com/-/media/files/documents/datasheets/mlx90316-datasheet-melexis.pdf) | 磁角度，模拟/PWM/SPI | 12 位模拟与 12 位 PWM，3 线 SPI 可读 14 位 | 片内 IMC 聚磁；360°；传输特性可编程（偏移、增益、钳位、线性度、温漂、滤波）；SOIC-8 与 TSSOP-16 |
+| [MLX90382](https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf) | 磁角度，数字输出 | 绝对角与转速跟踪到 200,000 rpm；片内延时补偿 | 片内自校准（末端与在线，最多 16 点）；ASIL-B，双die 可做 ASIL-D；AEC-Q100 Grade 0；SPI/SSI/PWM 与单端/差分 ABI、UVW；多器件同步读 |
+| [MLX90520](https://www.melexis.com/-/media/files/documents/datasheets/mlx90520-datasheet-melexis.pdf) | 电感编码，双通道 | 22 位分辨率；可算高分辨率游标角 | 双输入同步测量两个位置；片内 LC 振荡器激励发射线圈；每通道一套 DSP；SPI 与 SSI；TSSOP-16；手册 Rev 001（2026-01-20） |
+| [MLX90333](https://www.melexis.com/-/media/files/documents/datasheets/mlx90333-datasheet-melexis.pdf) | 3D 位置（Alpha、Beta） | 12 位角度、10 位角度两档 | 可选比率模拟、PWM 与串行协议输出；摇杆、滚轮键等 3D 输入场景；SOIC-8 与 TSSOP-16 |
 
-两类器件的机械配套不同：磁方案需要匹配磁体，电感方案需要设计线圈和导电目标件。后者可以利用 PCB 形成感应结构，适合围绕中空空间设计，但实际性能依赖线圈、气隙、目标几何和信号处理配置。
+分工的界线很清楚：MLX90380 与 MLX90381 只把磁场变成正余弦或比率电压，采样与解算交给客户 MCU；MLX90382 与 MLX90316 把解算做进片内，出 SPI、ABI、UVW、PWM；MLX90520 换掉了感应原理，要客户自己设计发射与接收线圈，芯片负责激励、采集与角度计算。
 
-## 产品系列与代表型号
+## 在编码器链上的位置
 
-| 方向 | 代表型号 | 主要系统分工 |
-| --- | --- | --- |
-| 磁性 resolver | MLX90380 | 磁感应后输出模拟正余弦 |
-| 紧凑磁性 resolver | MLX90381 | 作为磁位置产品线的另一个成员查阅 |
-| 数字磁位置 | MLX90382 等 | 按具体型号确认角度计算与输出 |
-| 电感编码接口 | MLX90520 | 双输入采集、片内位置处理、SPI／SSI |
-| 开发工具 | 对应 EVB、编程器和设计资料 | 验证磁路或线圈与器件配置 |
+它在链上是「前端芯片 + 参考方案」这一层：往上买晶圆代工与磁传感薄膜工艺，往下卖芯片、编程器与评估板，客户是编码器厂、电机厂、Tier1 与机器人关节厂。磁方案里，磁体的直径、极距、充磁质量与气隙由客户定，芯片只保证在给定磁场范围内线性；电感方案里，线圈层数、接收线圈相位与目标件形状由客户定，芯片保证激励稳定与通道同步。
 
-MLX90520 官方页给出 22 位分辨率和片内游标角度计算。这里的位数描述数据表达能力，不能直接用于推导某种直径、某种线圈下的整机精度。通道电角误差与机械角误差也需要结合刻度周期理解。
+由此可推：Melexis 把「客户侧的可设计量」看得很清楚——磁路线卖的是磁路容差，电感路线卖的是线圈与靶的设计自由度。**不能推的是哪个整机厂、哪台编码器用了哪颗**：官网与手册都不公布设计导入，把「某关节模组用了 Melexis」当成推理结论是没有依据的。
+
+## 公开资料的边界
+
+产品页不可达，**未取到**的是价格、交期、评估板清单与在线参数筛选；**手册里也未公开**的包括：整机级的 ±角秒精度、重复性、长期漂移，以及不同磁体或不同线圈几何下的误差分布——手册给的是电气与磁学规格、编程项与诊断，不给整机保证值。因此跨品牌比较时，必须先把口径对齐：MLX90382 的 200,000 rpm 是跟踪上限，不等于该转速下的角度误差；MLX90520 的 22 位是数据分辨率，不等于机械精度。
 
 ## 官方资料
 
-- [MLX90380 产品页与资料下载](https://www.melexis.com/en/product/MLX90380/Preprogrammed-Magnetic-Resolver)
-- [MLX90380 官方数据手册](https://www.melexis.com/-/media/files/documents/datasheets/mlx90380-datasheet-melexis.pdf)
-- [MLX90520 产品页与资料下载](https://www.melexis.com/en/product/MLX90520/22-bit-Inductive-position-sensor-dual-input)
-- [MLX90520 官方数据手册](https://www.melexis.com/-/media/files/documents/datasheets/mlx90520-datasheet-melexis.pdf)
+- [MLX90381 数据手册（磁角度，DFN-6）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90381-datasheet-melexis.pdf)
+- [MLX90380 数据手册（Triaxis 磁旋变，模拟正余弦）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90380-datasheet-melexis.pdf)
+- [MLX90316 数据手册（12 位模拟/PWM、SPI 14 位）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90316-datasheet-melexis.pdf)
+- [MLX90382 数据手册（200,000 rpm、ASIL-B）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf)
+- [MLX90520 数据手册（22 位双通道电感编码）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90520-datasheet-melexis.pdf)
+- [MLX90333 数据手册（3D 位置 Alpha/Beta）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90333-datasheet-melexis.pdf)

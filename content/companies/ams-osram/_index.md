@@ -1,45 +1,50 @@
 ---
 title: "ams OSRAM"
-description: "光与传感器品牌；本站保留 ams 磁角度产品历史，并注明 2026 年非光学传感器业务转移。"
+description: "奥地利 Premstaetten 的光与传感器公司：2026-07-01 把非光学模拟/混合信号传感业务（含 AS5047P 类磁角度）以 5.7 亿欧元卖给英飞凌，自身只剩光发射与光感知。"
 wiki: true
 wiki_type: "company"
 wiki_rank: 4
 seed_count: 24
-lastmod: "2026-10-16"
+lastmod: "2026-10-22"
 official_url: "https://ams-osram.com/"
 related_models: ["AS5047P"]
 related_companies: ["英飞凌"]
 ---
 
-## 公司与品牌
+读 ams OSRAM 现在必须带一个时间点：它在 2026 年 7 月 1 日把非光学的模拟与混合信号传感业务整体卖给了英飞凌。这意味着本站保留的 AS5047P、AS5600 这类磁角度资料，法律主体与技术支持已经换了东家；而 ams OSRAM 自己退回「光」——LED、激光、光电探测器与光学传感。对做编码器的人来说，它如今是光编码器光源与接收端的候选供应方，不再是磁角度芯片的同台竞争者。
 
-ams OSRAM 提供光源与传感器相关产品，官网当前以 Digital Photonics 描述其业务重点，将光发射、光学感知及电子电路结合起来。对于编码器读者，这个名字还与 AS5047P、AS5048 和 AS5600 等历史磁位置传感器资料密切相关。
+## 奥地利 Premstaetten 起家，120 年的品牌与一场主动收缩
 
-这里需要保留一个明确的时间点：ams OSRAM 官方公告确认，于 2026 年 7 月 1 日完成向英飞凌出售非光学模拟／混合信号传感器业务。产品资料、品牌标识和官网入口因此处于过渡过程中。[交割公告](https://ams-osram.com/news/press-releases/infineon-closing)
+ams-OSRAM AG，注册地与总部在奥地利 8141 Premstaetten（格拉茨附近），同时在慕尼黑设联合总部，SIX 瑞士交易所上市（ISIN AT0000A3EPA4），2025 年营收 33 亿欧元，员工约 18,500 人，专利约 12,000 项；官网提到 OSRAM 品牌 120 周年。2026 年 2 月 4 日公司宣布战略聚焦「Digital Photonics」，即把光发射与光感知数字化、像素化；2026 年 7 月 1 日完成向英飞凌出售非光学模拟/混合信号传感业务，现金对价 5.7 亿欧元，CEO Aldo Kamper 的表述是把资源集中到核心业务、同时强化资产负债表。[交割公告](https://ams-osram.com/news/press-releases/infineon-closing)；[公司地址与简介](https://ams-osram.com/company/about-ams-osram)
 
-## 相关业务与技术路线
+## 磁角度业务已经出手，剩下的目录里只有光
 
-从历史磁位置产品看，ams 的一类典型路线是把霍尔感应、模拟前端、角度计算与接口集成，配合轴端磁体完成非接触旋转位置测量。它减少外部模拟处理，允许控制器通过 SPI 等方式读取角度，或者通过增量与换向信号接入电机系统。
+| 对象 | 类型 | 公开事实 | 官方入口 |
+| --- | --- | --- | --- |
+| 非光学模拟/混合信号传感业务 | 磁与其他非光学传感 | 2026-07-01 交割，现金对价 5.7 亿欧元，买方英飞凌 | [交割公告](https://ams-osram.com/news/press-releases/infineon-closing) |
+| AS5047P | 磁角度传感器 | 现列于英飞凌官网，页面标题为 "AS5047P - Angle sensors" | [infineon.com/part/AS5047P](https://www.infineon.com/part/AS5047P) |
+| Digital Photonics | 光发射 + 光感知 | 官方定义为光的发射与感知的数字化，像素化发射器与传感器加电子电路 | [公司简介](https://ams-osram.com/company/about-ams-osram) |
+| 光电探测器 | 光编码器的接收端 | 产品区含 photodiodes、phototransistors、multi chips | [Photodetectors 目录](https://ams-osram.com/products/photodetectors) |
+| 激光与 LED | 光编码器的光源端 | 产品区含 color/IR lasers（EEL、VCSEL）与各类 LED | [Lasers 目录](https://ams-osram.com/products/lasers) |
 
-AS5047P 是这一方向的代表。它提供 14 位绝对角度和多种输出，并以 DAEC 动态角度补偿面向高速旋转。旧手册上的 ams 标识反映文档与产品的历史来源；当前查阅和支持入口则需要跟随业务转移更新。
+这张表要读成「谁现在负什么责」：磁角度那条线在英飞凌，ams OSRAM 这边只剩光源、探测器与光学传感。旧手册上的 ams 标识只反映文档来源，不等于当前供货主体。
 
-在光学方向，公司当前公告强调光发射与光感知技术的结合。对于光编码器系统，光源波长、功率稳定性、发光面积和驱动方式会影响感光信号，但光源企业的整体业务不能直接等同于某款完整编码器方案。具体能否采用某个光源，仍要核对对应料号。
+## 在编码器链上的位置
 
-## 产品系列与资料归属
+在光编码器这条路上，ams OSRAM 的位置是光源与接收器件的供应方：光源的波长、功率稳定性、发光面积与驱动方式会改变光斑与对比度，光电探测器的响应度与暗电流决定前端信噪比。但这些器件的可用性要落到具体料号，不能由「这家公司做光」推出「某款编码器的光源就是它」——那是 BOM 层面的事，官网不公布。
 
-| 对象 | 在本词条中的位置 |
-| --- | --- |
-| ams／ams OSRAM | 历史磁位置产品与技术文档中的品牌标识 |
-| AS5047P | 已建档的在轴霍尔角度传感器 |
-| AS5xxx 等历史资料 | 按具体型号确认现行厂商入口 |
-| 非光学传感器业务 | 官方确认 2026-07-01 完成交割给英飞凌 |
-| Digital Photonics | ams OSRAM 当前公告描述的战略与业务重点 |
+在磁角度这条路上，它已经退出：AS5xxx 归英飞凌。所以看到「ams 的 AS5047P 精度多少」这类问题时，答案要去英飞凌的文档里找；本站的 [AS5047P 型号页](/models/as5047p/) 保留历史口径，但当前入口指向新东家。**不能推理的是各整机厂、编码器厂当前用谁家的 LED 或 PD**，也不能把业务交割理解为产品停产——两者是不同的事。
 
-业务转移后，旧网址可能重定向到公司公告。搜索结果能找到旧产品标题，并不保证旧链接仍然是有效产品页。对于需要持续维护的 wiki，应保留型号名、原品牌和当前入口这三个信息。
+## 公开资料的边界
+
+官网公开的是业务结构、财务口径、公司地址与产品区分类。**没有公开**的是：交割后各型号的料号归属清单（要靠英飞凌逐型号页确认）、光学器件在具体编码器结构里的实测对比度与温漂、以及任何整机厂的设计导入。本次核对 ams OSRAM 站点的产品区，未见磁角度传感器子类；AS5047P 的英飞凌页面只取到页面框架与标题，未取到参数表，因此本页不写它的位数、接口精度与延时。报价与交期不公开。
 
 ## 官方资料
 
 - [ams OSRAM 官网](https://ams-osram.com/)
-- [2026-07-01 非光学传感器业务交割公告](https://ams-osram.com/news/press-releases/infineon-closing)
-- [AS5047P 当前官方产品页](https://www.infineon.com/part/AS5047P)
-- [AS5047P 官方 PDF，含归属说明](https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5047p-datasheet-en.pdf)
+- [公司地址与简介](https://ams-osram.com/company/about-ams-osram)
+- [2026-07-01 非光学传感业务交割公告](https://ams-osram.com/news/press-releases/infineon-closing)
+- [光电探测器产品区](https://ams-osram.com/products/photodetectors)
+- [激光产品区（EEL / VCSEL）](https://ams-osram.com/products/lasers)
+- [产品选择器](https://ams-osram.com/products/product-selector)
+- [AS5047P 当前官方页（英飞凌）](https://www.infineon.com/part/AS5047P)
