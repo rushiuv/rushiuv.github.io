@@ -27,11 +27,11 @@ related_companies: []
 | --- | --- | --- | --- |
 | [KTH78xx](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html) | 霍尔绝对角，在轴与离轴 | 16 位 | INL ±0.35°（在轴）、±1° 左右（离轴），噪声 0.007–0.015°、系统延时 1 µs、SPI／SSI／ABZ 4–4096 步／UVW 1–8 对极／PWM、AEC-Q100、QFN16 3×3 或 SOP8、−40…150 °C、120000 rpm |
 | [KTH71xx](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html) | 霍尔绝对角，带 ANLC 自动非线性校准 | 16 位 | 校准后在轴 ±0.1°、离轴 ±0.2°，SOP-8 4.9×6 mm、1 µs 更新、SPI 最高 10 Mbps、ABZ 1–4096 线、PWM 120 Hz–3.8 kHz、启动 1–100 ms 可调、120000 rpm |
-| [KTM5200／5220](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM52XX/index.html) | AMR 在轴 | 21 位 | 校准后 INL ±0.015°（典型）、噪声 0.005°、输出延时 2–10 µs、SPI／ABZ 1–65536 线／UVW 1–64 对极／PWM、3–5.5 V、25 mA、TSSOP16、磁场 20–150 mT、60000 rpm |
-| [KTM5300](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM53XX/index.html) | AMR 离轴，配垂直霍尔与算法 | 21 位 | 校准后 INL ±0.03°（典型）、QFN3×3-16L、60000 rpm、其余口径同 52 系列 |
-| [KTM5800](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/absoluteangledivider/index.html) | 30 位绝对角度细分器，吃外部正余弦 | 单对极细分最高 18 位 | 最大 4096 对极输入、双 16 位 2 M SAR ADC、36 M SPI、ABZ 1–65536 线与 UVW 1–256 对极、INL ≤±0.025°、180000 rpm、40 mA、QFN32 5×5、80 M 主频 |
-| [KTM5900／5910](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html) | TMR 磁编码器，在轴与离轴 | 24 位角度 | 有效位 16 bit、在轴 ±0.02°、离轴 ±0.05°、双 16 位 2 M SAR ADC、36 M SPI、±ABZ／±UVW／PWM、180000 rpm、QFN32 5×5、磁场 30–150 mT |
-| [KTO9512](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/cursorabsoluteencoder/index.html) | 光学游标，3 码道相位阵列 | 单圈 24 位（Nonius 插值） | 26 mm 码盘、512/510/480 CPR、2 bit 格雷码扇区、6 对模拟差分输出、32-pin optoQFN 5×5×0.9 mm、9.5–15 mA、光谱 400–950 nm、−40…125 °C |
+| [KTM5200／5220](/models/ktm5200/) | AMR 在轴 | 21 位 | 校准后 INL ±0.015°（典型）、噪声 0.005°、输出延时 2–10 µs、SPI／ABZ 1–65536 线／UVW 1–64 对极／PWM、3–5.5 V、25 mA、TSSOP16、磁场 20–150 mT、60000 rpm |
+| [KTM5300](/models/ktm5300/) | AMR 离轴，配垂直霍尔与算法 | 21 位 | 校准后 INL ±0.03°（典型）、QFN3×3-16L、60000 rpm、其余口径同 52 系列 |
+| [KTM5800](/models/ktm5800/) | 30 位绝对角度细分器，吃外部正余弦 | 单对极细分最高 18 位 | 最大 4096 对极输入、双 16 位 2 M SAR ADC、36 M SPI、ABZ 1–65536 线与 UVW 1–256 对极、INL ≤±0.025°、180000 rpm、40 mA、QFN32 5×5、80 M 主频 |
+| [KTM5900／5910](/models/ktm5900/) | TMR 磁编码器，在轴与离轴 | 24 位角度 | 有效位 16 bit、在轴 ±0.02°、离轴 ±0.05°、双 16 位 2 M SAR ADC、36 M SPI、±ABZ／±UVW／PWM、180000 rpm、QFN32 5×5、磁场 30–150 mT |
+| [KTO9512](/models/kto9512/) | 光学游标，3 码道相位阵列 | 单圈 24 位（Nonius 插值） | 26 mm 码盘、512/510/480 CPR、2 bit 格雷码扇区、6 对模拟差分输出、32-pin optoQFN 5×5×0.9 mm、9.5–15 mA、光谱 400–950 nm、−40…125 °C |
 
 官网给到系列级的分辨率、INL 典型或最大值、噪声、延时、温区、封装与磁场范围，且多数参数标了“典型值”或“校准后”。方案级数字（如离轴 ±1°）必须连同磁铁与校准条件一起引用，不能单独摘出来做对比。
 
@@ -45,7 +45,7 @@ TMR 与细分器路线（KTM59、KTM5800）付的是系统复杂度：KTM59 是 
 
 光学路线（KTO9512）是另一条赛道：26 mm 码盘、三条码道做游标、单圈 24 位，输出的是 6 对模拟差分而不是数字角，后级要自己插值。它和磁编的区别不在位数，而在码盘、对准容差与温漂的来源完全不同。
 
-另有一支容易被漏掉的产品：3D 霍尔（KTH57xx、KTH55xx）。KTH5701 官方给的是三轴数字输出，XYZ 三轴 16 位、I2C 或 SPI 从机、XY 轴典型工作范围 ±130 mT、Z 轴 ±80 mT、工作频率 1000 Hz、QFN3×3-16L 与 DFN2×2.5-8L 两种封装、待机功耗 1.4 µA。它本身不做角度解算，官方定位是摇杆、旋钮与位移这类要拿原始磁场再由软件算运动信息的场合。看昆泰芯的目录时把这一支和编码器分开：前者卖的是“三个方向的场”，后者卖的是“一个角度”。
+另有一支容易被漏掉的产品：3D 霍尔（KTH57xx、KTH55xx）。[KTH5701](/models/kth5701/) 官方给的是三轴数字输出，XYZ 三轴 16 位、I2C 或 SPI 从机、XY 轴典型工作范围 ±130 mT、Z 轴 ±80 mT、工作频率 1000 Hz、QFN3×3-16L 与 DFN2×2.5-8L 两种封装、待机功耗 1.4 µA。它本身不做角度解算，官方定位是摇杆、旋钮与位移这类要拿原始磁场再由软件算运动信息的场合。看昆泰芯的目录时把这一支和编码器分开：前者卖的是“三个方向的场”，后者卖的是“一个角度”。
 
 ## 在编码器链上的位置
 
@@ -62,6 +62,6 @@ TMR 与细分器路线（KTM59、KTM5800）付的是系统复杂度：KTM59 是 
 - [KTH71 系列 16 位自校准磁编码器](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html)
 - [KTM52 系列在轴 AMR 角度编码器](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM52XX/index.html)
 - [KTM53 系列离轴 AMR 角度编码器](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM53XX/index.html)
-- [KTM5800 30 位绝对角度细分器](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/absoluteangledivider/index.html)
+- KTM5800 30 位绝对角度细分器
 - [KTM59 系列 24 位 TMR 磁编码器](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html)
 - [KTO95 系列游标绝对值光学编码器芯片](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/cursorabsoluteencoder/index.html)

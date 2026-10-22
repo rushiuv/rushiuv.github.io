@@ -36,7 +36,7 @@ Intel Foundry 的工艺页把节点、晶体管结构与相对提升一起写，
 
 多轴设备的控制柜通常是 x86 加实时系统，跑运动控制与 EtherCAT 主站；角度值以总线帧的形式进来，周期由总线决定，与传感器本身的接口无关。所以 Intel 的位置是"读角度的人"，不是"产生角度的人"。把 x86 平台换成别家，编码器的接口与精度都不变，变的只是插补周期与可达轴数。
 
-RealSense 是另一条线：深度相机与 IMU，不含旋转测量。官网现存入口已转到独立站点，产品按 D430、D450、D555、D585 Pro、D405 等系列列；本站的 `D435i` 型号页属于这一族，与编码器无交集。[realsenseai.com](https://www.realsenseai.com/)
+RealSense 是另一条线：深度相机与 IMU，不含旋转测量。官网现存入口已转到独立站点，产品按 D430、D450、D555、D585 Pro、D405 等系列列；本站的 `[D435i](/models/d435i/)` 型号页属于这一族，与编码器无交集。[realsenseai.com](https://www.realsenseai.com/)
 
 节点页给相对提升，不给晶圆价格、产能、良率与客户名单；处理器侧不给具体型号的工业温度等级与长期供货承诺，要查产品规格书。
 
@@ -47,4 +47,4 @@ RealSense 是另一条线：深度相机与 IMU，不含旋转测量。官网现
 - [Intel Foundry 总览](https://www.intel.com/content/www/us/en/foundry/overview.html)
 - [代工工艺节点（14A、18A、Intel 3）](https://www.intel.com/content/www/us/en/foundry/process.html)
 - [RealSense 现站点](https://www.realsenseai.com/)
-- [本站 D435i 型号页](/models/d435i/)
+- 本站 D435i 型号页

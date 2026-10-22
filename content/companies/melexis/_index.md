@@ -11,7 +11,7 @@ related_models: []
 related_companies: []
 ---
 
-Melexis 在这条链上值得单独读，是因为它同时供两条互相竞争的前端路线：磁的走 Triaxis® 霍尔，从只有模拟正余弦的 MLX90380 一直到片上自校准、ASIL-B 的 MLX90382；电感的走 MLX90520，片内 LC 振荡器加 DSP，双通道还能算游标角。对整机厂而言这不是「买哪家」而是「买哪条路线」，代价分别落在磁体与 PCB 线圈上。读它的资料要从 datasheet 入手，产品页对本次抓取不可达。
+Melexis 在这条链上值得单独读，是因为它同时供两条互相竞争的前端路线：磁的走 Triaxis® 霍尔，从只有模拟正余弦的 [MLX90380](/models/mlx90380/) 一直到片上自校准、ASIL-B 的 MLX90382；电感的走 MLX90520，片内 LC 振荡器加 DSP，双通道还能算游标角。对整机厂而言这不是「买哪家」而是「买哪条路线」，代价分别落在磁体与 PCB 线圈上。读它的资料要从 datasheet 入手，产品页对本次抓取不可达。
 
 ## 公司与品牌：官网不可达，本页不填沿革数字
 
@@ -23,11 +23,11 @@ Melexis 在这条链上值得单独读，是因为它同时供两条互相竞争
 
 | 型号 | 类型 | 公开关键指标 | 其他公开参数 |
 | --- | --- | --- | --- |
-| [MLX90381](https://www.melexis.com/-/media/files/documents/datasheets/mlx90381-datasheet-melexis.pdf) | 磁角度，模拟比率输出 | 中磁场 10~70 mT、高磁场 40~160 mT 两档 | 端轴与穿轴两种装法；比率输出；AEC-Q100；I²C 在线编程；DFN-6 单die |
-| [MLX90380](https://www.melexis.com/-/media/files/documents/datasheets/mlx90380-datasheet-melexis.pdf) | 磁旋变，双路模拟正余弦 | 输出刷新率 4 µs；满量程按变体 10~70 mT | Triaxis® 霍尔；可选 X/Y、X/Z、Z/Y 磁轴；灵敏度与滤波带宽经 4 个应用脚编程；3.3 V/5 V；SOIC-8 与 TSSOP-16 |
-| [MLX90316](https://www.melexis.com/-/media/files/documents/datasheets/mlx90316-datasheet-melexis.pdf) | 磁角度，模拟/PWM/SPI | 12 位模拟与 12 位 PWM，3 线 SPI 可读 14 位 | 片内 IMC 聚磁；360°；传输特性可编程（偏移、增益、钳位、线性度、温漂、滤波）；SOIC-8 与 TSSOP-16 |
-| [MLX90382](https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf) | 磁角度，数字输出 | 绝对角与转速跟踪到 200,000 rpm；片内延时补偿 | 片内自校准（末端与在线，最多 16 点）；ASIL-B，双die 可做 ASIL-D；AEC-Q100 Grade 0；SPI/SSI/PWM 与单端/差分 ABI、UVW；多器件同步读 |
-| [MLX90520](https://www.melexis.com/-/media/files/documents/datasheets/mlx90520-datasheet-melexis.pdf) | 电感编码，双通道 | 22 位分辨率；可算高分辨率游标角 | 双输入同步测量两个位置；片内 LC 振荡器激励发射线圈；每通道一套 DSP；SPI 与 SSI；TSSOP-16；手册 Rev 001（2026-01-20） |
+| [MLX90381](/models/mlx90381/) | 磁角度，模拟比率输出 | 中磁场 10~70 mT、高磁场 40~160 mT 两档 | 端轴与穿轴两种装法；比率输出；AEC-Q100；I²C 在线编程；DFN-6 单die |
+| MLX90380 | 磁旋变，双路模拟正余弦 | 输出刷新率 4 µs；满量程按变体 10~70 mT | Triaxis® 霍尔；可选 X/Y、X/Z、Z/Y 磁轴；灵敏度与滤波带宽经 4 个应用脚编程；3.3 V/5 V；SOIC-8 与 TSSOP-16 |
+| [MLX90316](/models/mlx90316/) | 磁角度，模拟/PWM/SPI | 12 位模拟与 12 位 PWM，3 线 SPI 可读 14 位 | 片内 IMC 聚磁；360°；传输特性可编程（偏移、增益、钳位、线性度、温漂、滤波）；SOIC-8 与 TSSOP-16 |
+| [MLX90382](/models/mlx90382/) | 磁角度，数字输出 | 绝对角与转速跟踪到 200,000 rpm；片内延时补偿 | 片内自校准（末端与在线，最多 16 点）；ASIL-B，双die 可做 ASIL-D；AEC-Q100 Grade 0；SPI/SSI/PWM 与单端/差分 ABI、UVW；多器件同步读 |
+| [MLX90520](/models/mlx90520/) | 电感编码，双通道 | 22 位分辨率；可算高分辨率游标角 | 双输入同步测量两个位置；片内 LC 振荡器激励发射线圈；每通道一套 DSP；SPI 与 SSI；TSSOP-16；手册 Rev 001（2026-01-20） |
 | [MLX90333](https://www.melexis.com/-/media/files/documents/datasheets/mlx90333-datasheet-melexis.pdf) | 3D 位置（Alpha、Beta） | 12 位角度、10 位角度两档 | 可选比率模拟、PWM 与串行协议输出；摇杆、滚轮键等 3D 输入场景；SOIC-8 与 TSSOP-16 |
 
 分工的界线很清楚：MLX90380 与 MLX90381 只把磁场变成正余弦或比率电压，采样与解算交给客户 MCU；MLX90382 与 MLX90316 把解算做进片内，出 SPI、ABI、UVW、PWM；MLX90520 换掉了感应原理，要客户自己设计发射与接收线圈，芯片负责激励、采集与角度计算。
@@ -42,9 +42,9 @@ Melexis 在这条链上值得单独读，是因为它同时供两条互相竞争
 
 ## 官方资料
 
-- [MLX90381 数据手册（磁角度，DFN-6）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90381-datasheet-melexis.pdf)
-- [MLX90380 数据手册（Triaxis 磁旋变，模拟正余弦）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90380-datasheet-melexis.pdf)
-- [MLX90316 数据手册（12 位模拟/PWM、SPI 14 位）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90316-datasheet-melexis.pdf)
-- [MLX90382 数据手册（200,000 rpm、ASIL-B）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf)
-- [MLX90520 数据手册（22 位双通道电感编码）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90520-datasheet-melexis.pdf)
+- MLX90381 数据手册（磁角度，DFN-6）
+- MLX90380 数据手册（Triaxis 磁旋变，模拟正余弦）
+- MLX90316 数据手册（12 位模拟/PWM、SPI 14 位）
+- MLX90382 数据手册（200,000 rpm、ASIL-B）
+- MLX90520 数据手册（22 位双通道电感编码）
 - [MLX90333 数据手册（3D 位置 Alpha/Beta）](https://www.melexis.com/-/media/files/documents/datasheets/mlx90333-datasheet-melexis.pdf)

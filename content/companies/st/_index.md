@@ -15,14 +15,14 @@ ST 在这条链上不在敏感元件那一头。它的位置是主控与驱动�
 
 ## 1987 年两家国营半导体合出来的公司
 
-STMicroelectronics NV，注册在荷兰，总部在瑞士 Plan-les-Ouates（日内瓦近郊）。1987 年由意大利 SGS Microelettronica 与法国 Thomson Semiconducteurs 合并成立，1994 年在巴黎与纽约上市，四年后在意大利挂牌。中文常叫"意法半导体"。产品面以 STM8/STM32 微控制器、模拟、功率与 MEMS 著称，公开记录里 2024 年员工数 49,602 人。上述沿革与人数取自维基百科 STMicroelectronics 条目（引用公司 2024 年 20-F 年报）；官网首页可核对现行产品分类。[官网](https://www.st.com/)；[维基条目](https://en.wikipedia.org/wiki/STMicroelectronics)
+STMicroelectronics NV，注册在荷兰，总部在瑞士 Plan-les-Ouates（日内瓦近郊）。1987 年由意大利 SGS Microelettronica 与法国 Thomson Semiconducteurs 合并成立，1994 年在巴黎与纽约上市，四年后在意大利挂牌。中文常叫"意法半导体"。产品面以 STM8/[STM32](/models/stm32/) 微控制器、模拟、功率与 MEMS 著称，公开记录里 2024 年员工数 49,602 人。上述沿革与人数取自维基百科 STMicroelectronics 条目（引用公司 2024 年 20-F 年报）；官网首页可核对现行产品分类。[官网](https://www.st.com/)；[维基条目](https://en.wikipedia.org/wiki/STMicroelectronics)
 
 ## 编码器接口在主控侧，定时器的正交输入就是入口
 
 | 对象 | 类型 | 公开关键指标 | 其他公开参数 |
 | --- | --- | --- | --- |
 | [STM32F407VG](https://www.st.com/en/microcontrollers-microprocessors/stm32f407vg.html) | MCU | 产品页原文：定时器"each with up to 4 IC/OC/PWM or pulse counter and quadrature (incremental) encoder input" | Cortex-M4 带 FPU 与 DSP 指令，168 MHz，1 MB Flash，192 KB SRAM，3 个 12 位 ADC，最多 17 个定时器 |
-| [STM32 系列目录](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html) | MCU 产品族 | 页面标题即 STM32 Microcontrollers (MCUs)，按 Cortex-M 核分系列 | 编码器接口的具体数量与分辨率随系列与封装变化，要按型号查 |
+| STM32 系列目录 | MCU 产品族 | 页面标题即 STM32 Microcontrollers (MCUs)，按 Cortex-M 核分系列 | 编码器接口的具体数量与分辨率随系列与封装变化，要按型号查 |
 | [MEMS and Sensors 目录](https://www.st.com/en/mems-and-sensors.html) | 传感器 | 目录以 MEMS 惯性、磁力计、压力、温度与 ToF 为主 | 本次核对未在该目录查到面向旋转编码的专用角度 IC 系列条目 |
 | [Motor drivers 目录](https://www.st.com/en/motor-drivers.html) | 驱动 | 站点设独立电机驱动目录 | 与编码器配套出现在同一套电机控制方案里，具体型号按目录查 |
 
@@ -39,7 +39,7 @@ ST 站在控制器这一侧：编码器整机厂把 STM32 当主控，整机厂�
 ## 官方资料
 
 - [STMicroelectronics 官网](https://www.st.com/)
-- [STM32 32-bit Arm Cortex MCUs 目录](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html)
+- STM32 32-bit Arm Cortex MCUs 目录
 - [STM32F407VG 产品页（正交编码输入原文）](https://www.st.com/en/microcontrollers-microprocessors/stm32f407vg.html)
 - [MEMS and Sensors 目录](https://www.st.com/en/mems-and-sensors.html)
 - [Motor drivers 目录](https://www.st.com/en/motor-drivers.html)

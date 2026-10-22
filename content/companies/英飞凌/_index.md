@@ -25,16 +25,16 @@ related_companies: ["ams OSRAM"]
 
 | 系列 | 原理与 die 配置 | 输出形式 | 公开角度误差 | 其他公开参数 |
 | --- | --- | --- | --- | --- |
-| [TLE5012B(D)／TLI5012B](https://www.infineon.com/part/TLE5012B-E5000) | GMR，单 die 与双 die | SSC(SPI) 角度 + sin/cos，另给 PWM／IIF／SPC／HSM | 1.0°（双 die）／1.9°（TLI5012B） | 工业版按 JEDEC JESD47，车规版 ISO 26262-ready，DSO-8 与 TDSO-16 |
+| [TLE5012B(D)／TLI5012B](/models/tle5012b/) | GMR，单 die 与双 die | SSC(SPI) 角度 + sin/cos，另给 PWM／IIF／SPC／HSM | 1.0°（双 die）／1.9°（TLI5012B） | 工业版按 JEDEC JESD47，车规版 ISO 26262-ready，DSO-8 与 TDSO-16 |
 | TLE5009／TLE5009A16D | GMR，单 die／双 die | 模拟 sin/cos | 0.9° | ISO 26262-ready，DSO-8／TDSO-16 |
 | TLE5014 C16／P16／S16／SP16(D) | GMR，单 die 与双 die | SPC／PWM／SENT／SPI | 1.0° | 单 die 到 ASIL C，双 die 到 ASIL D，TDSO-16 |
 | TLE5501 | TMR，单 die | 模拟 sin/cos | 1.0° | 磁场 20–100 mT、输出至 0.37 V/V 可直连 MCU、约 2 mA、AEC-Q100 grade 0（−40…150 °C）、DSO-8 |
-| TLE5502(D) | TMR，单 die 与双 die | 模拟 sin/cos | 0.8° | 单封装最多 4 路 ASIL-D 传感器、QFN-16 3×3 mm |
+| [TLE5502](/models/tle5502/)(D) | TMR，单 die 与双 die | 模拟 sin/cos | 0.8° | 单封装最多 4 路 ASIL-D 传感器、QFN-16 3×3 mm |
 | TLE5109A16D | AMR，双 die | 模拟 sin/cos | 0.5° | 带温漂补偿，TDSO-16 |
 | TLE5309D | AMR + GMR 双 die | 模拟 sin/cos | AMR 0.5°／GMR 0.9° | 两种原理同封装，TDSO-16 |
 | TLx49012 | 霍尔，单 die | SPI | 0.8° | 最高 16 位、30000 rpm、25000 rad/s²、对轴与离轴、VSON-8 |
 
-TLE5012B 的独立手册把细节写得更细：15 位绝对角表示（分辨率 0.01°）、接口上给 16 位 sin/cos、开启自动校准后全寿命与全温区最大角度误差 1.0°、双向 SSC 到 8 Mbit/s、0.25 µm CMOS、结温 −40…150 °C、ESD 大于 4 kV，带 CRC 与上电自检。[TLE5012B 数据手册](https://www.infineon.com/dgdl/Infineon-TLE5012B_Exxxx-DataSheet-v02_01-EN.pdf?fileId=db3a304334fac4c601350f31c43c433f)
+TLE5012B 的独立手册把细节写得更细：15 位绝对角表示（分辨率 0.01°）、接口上给 16 位 sin/cos、开启自动校准后全寿命与全温区最大角度误差 1.0°、双向 SSC 到 8 Mbit/s、0.25 µm CMOS、结温 −40…150 °C、ESD 大于 4 kV，带 CRC 与上电自检。TLE5012B 数据手册
 
 官网给的是选型表口径的角度误差、接口、封装与安全等级，以及单颗器件手册里的分辨率与电气参数。选型表里的 0.5°／0.8°／1.0° 是最大误差口径，和“典型值”不可混用。另外，某些具体订购号在产品页上标为“not for new design”，那是单条目的状态，不能扩大成整个系列停产，也不能忽略后继续推荐。
 
@@ -59,5 +59,5 @@ die 配置是另一个独立维度。同一个型号的单 die 与双 die 版本
 - [英飞凌官网](https://www.infineon.com/)
 - [XENSIV 磁位置传感器选型指南（PDF）](https://www.infineon.com/assets/row/public/documents/24/66/infineon-xensiv-magnetic-position-sensors-productselectionguide-en.pdf)
 - [磁位置传感器产品门类](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/)
-- [TLE5012B-E5000 产品页](https://www.infineon.com/part/TLE5012B-E5000)
-- [TLE5012B 数据手册（PDF）](https://www.infineon.com/dgdl/Infineon-TLE5012B_Exxxx-DataSheet-v02_01-EN.pdf?fileId=db3a304334fac4c601350f31c43c433f)
+- TLE5012B-E5000 产品页
+- TLE5012B 数据手册（PDF）

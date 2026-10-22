@@ -11,7 +11,7 @@ related_models: []
 related_companies: []
 ---
 
-iC-Haus 是那种「编码器厂背后的人」：它不做整机，卖的是感应前端、插值处理器、多圈计数与接口芯片，还能按客户规格做定制 ASIC。所以它的产品目录读起来像一条测量链的分解图——霍尔角度前端（iC-MA、iC-MA3、iC-MH16、iC-MHM）、离轴磁绝对位置（iC-MU128）、编码器处理器与 BiSS 接口（iC-TW29）。读它的资料要先认「这颗片子在哪一段」：传感器、插值、接口分属不同层，不能拿目录名当功能等价。
+iC-Haus 是那种「编码器厂背后的人」：它不做整机，卖的是感应前端、插值处理器、多圈计数与接口芯片，还能按客户规格做定制 ASIC。所以它的产品目录读起来像一条测量链的分解图——霍尔角度前端（[iC-MA](/models/ic-ma/)、[iC-MA3](/models/ic-ma3/)、[iC-MH16](/models/ic-mh16/)、iC-MHM）、离轴磁绝对位置（[iC-MU128](/models/ic-mu128/)）、编码器处理器与 BiSS 接口（iC-TW29）。读它的资料要先认「这颗片子在哪一段」：传感器、插值、接口分属不同层，不能拿目录名当功能等价。
 
 ## 1984 年两位工程师在 Bodenheim 创办，BiSS 从这里出去
 
@@ -23,12 +23,12 @@ iC-Haus GmbH 成立于 1984 年，创始人是 Dr. Heiner Flocke 与 Manfred Her
 
 | 型号 | 类型 | 官方描述原文 | 其他可核对信息 |
 | --- | --- | --- | --- |
-| [iC-MU128](https://www.ichaus.de/product/ic-mu128/) | 离轴磁绝对位置编码器 | Magnetic Off-Axis Absolute Position Encoder，极距 1.28 mm | 片内集成霍尔用于双轨扫描；霍尔针对 1.28 mm 极距的主轨优化；片内做偏移、幅值与相位调理 |
-| [iC-MHM](https://www.ichaus.de/product/ic-mhm/) | 霍尔角度编码器 | 14-Bit Absolute Angle Hall Encoder | 绝对角度输出，14 位 |
-| [iC-MH16](https://www.ichaus.de/product/ic-mh16/) | 霍尔角度编码器 | 12-Bit Angular Hall Encoder, FlexCount® | 12 位；带 FlexCount 功能 |
-| [iC-MA](https://www.ichaus.de/product/ic-ma/) | 霍尔角度编码器 | 8-Bit Angular Hall Encoder, Cascadable | 8 位；可级联 |
-| [iC-MA3](https://www.ichaus.de/product/ic-ma3/) | 霍尔角度传感器 | Angular Hall Sensor with Sin/Cos Output, Cascadable | 输出正余弦；可级联 |
-| [iC-TW29](https://www.ichaus.de/product/ic-tw29/) | 编码器处理器 | 26-Bit Encoder Processor with Interpolation and BiSS Interface | 26 位；带插值；带 BiSS 接口 |
+| iC-MU128 | 离轴磁绝对位置编码器 | Magnetic Off-Axis Absolute Position Encoder，极距 1.28 mm | 片内集成霍尔用于双轨扫描；霍尔针对 1.28 mm 极距的主轨优化；片内做偏移、幅值与相位调理 |
+| [iC-MHM](/models/ic-mhm/) | 霍尔角度编码器 | 14-Bit Absolute Angle Hall Encoder | 绝对角度输出，14 位 |
+| iC-MH16 | 霍尔角度编码器 | 12-Bit Angular Hall Encoder, FlexCount® | 12 位；带 FlexCount 功能 |
+| iC-MA | 霍尔角度编码器 | 8-Bit Angular Hall Encoder, Cascadable | 8 位；可级联 |
+| iC-MA3 | 霍尔角度传感器 | Angular Hall Sensor with Sin/Cos Output, Cascadable | 输出正余弦；可级联 |
+| [iC-TW29](/models/ic-tw29/) | 编码器处理器 | 26-Bit Encoder Processor with Interpolation and BiSS Interface | 26 位；带插值；带 BiSS 接口 |
 
 这六颗的顺序本身就是一条链：iC-MA3 只出模拟正余弦，iC-MA 出 8 位数字角，iC-MH16 出 12 位，iC-MHM 出 14 位绝对角，iC-MU128 换成离轴磁轨的双轨扫描，iC-TW29 则站在最末端做插值与 BiSS 输出。客户可以整条链都买，也可以只买其中一段接自己的前端。
 
@@ -45,9 +45,9 @@ iC-Haus GmbH 成立于 1984 年，创始人是 Dr. Heiner Flocke 与 Manfred Her
 - [iC-Haus 官网](https://www.ichaus.de/)
 - [公司介绍与历史（1984 年创办、BiSS、奖项）](https://www.ichaus.de/about-us/)
 - [磁性编码器 IC 产品组](https://www.ichaus.de/productgroup/magnetic-encoder-ics/)
-- [iC-MU128 产品页](https://www.ichaus.de/product/ic-mu128/)
-- [iC-MHM 产品页](https://www.ichaus.de/product/ic-mhm/)
-- [iC-MH16 产品页](https://www.ichaus.de/product/ic-mh16/)
-- [iC-MA 产品页](https://www.ichaus.de/product/ic-ma/)
-- [iC-MA3 产品页](https://www.ichaus.de/product/ic-ma3/)
-- [iC-TW29 产品页](https://www.ichaus.de/product/ic-tw29/)
+- iC-MU128 产品页
+- iC-MHM 产品页
+- iC-MH16 产品页
+- iC-MA 产品页
+- iC-MA3 产品页
+- iC-TW29 产品页

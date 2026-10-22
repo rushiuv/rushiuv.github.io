@@ -23,9 +23,9 @@ related_companies: []
 
 | 系列 | 类型 | 公开精度口径 | 其他公开参数 |
 | --- | --- | --- | --- |
-| [TMR3081](https://www.dowaytech.com/TMR3081-TMR-Angle-Sensors-Automotive-Electronics.html) | 车规 TMR 角度，模拟 sin/cos 差分 | 全温区角度误差 < 0.8°（−40…+150 °C） | 工作磁场 200–800 Gs、TSSOP8、对轴与离轴、AEC-Q100 与 NEVC 认证、上电即输出有效角度 |
-| [TMR3015](https://www.dowaytech.com/TMR3015-TMR-Angle-Sensors-High-Precision.html) | 高精度 TMR 角度，模拟单端 sin/cos | 官方表述为配合磁路与闭环可做到微米级重复定位 | 双半桥四元件、3–5.5 V、−40…+85 °C、DFN4L 0.8×0.4×0.23 mm 与 1.6×1.6×0.5 mm、SOT23-5 三种封装 |
-| TMR3110／TMR3111 | 数字角度，用于对轴关节编码器方案 | 自校准配合单对极磁铁 0.05° | 40000 rpm、SPI／ABZ／PWM、TMR3111D 封装 DFN10L 3×3×0.75 mm |
+| [TMR3081](/models/tmr3081/) | 车规 TMR 角度，模拟 sin/cos 差分 | 全温区角度误差 < 0.8°（−40…+150 °C） | 工作磁场 200–800 Gs、TSSOP8、对轴与离轴、AEC-Q100 与 NEVC 认证、上电即输出有效角度 |
+| [TMR3015](/models/tmr301x/) | 高精度 TMR 角度，模拟单端 sin/cos | 官方表述为配合磁路与闭环可做到微米级重复定位 | 双半桥四元件、3–5.5 V、−40…+85 °C、DFN4L 0.8×0.4×0.23 mm 与 1.6×1.6×0.5 mm、SOT23-5 三种封装 |
+| [TMR3110](/models/tmr3110/)／[TMR3111](/models/tmr3111/) | 数字角度，用于对轴关节编码器方案 | 自校准配合单对极磁铁 0.05° | 40000 rpm、SPI／ABZ／PWM、TMR3111D 封装 DFN10L 3×3×0.75 mm |
 | TMR2615 + MDT3259 | 线性 TMR 四颗按 90° 排布，加角度运算芯片 | 离轴方案 ±0.15° | 3000 rpm 以上、TMR2615 为 DFN3L 1.6×1.6×0.5 mm、MDT3259 为 DFN24L 4×4×0.75 mm、带多阶谐波校准 |
 
 三条要分开读。TMR3081 与 TMR3015 是芯片级口径，0.8° 是“全温区最大角度误差”，TMR3015 干脆没有给度数。0.05° 与 ±0.15° 是方案级口径，含磁铁、气隙、排布与校准，不能当成裸芯片精度去和别人的单颗数字直接比。[关节编码器方案](https://www.dowaytech.com/Dowaytech-Magnetic-Encoder-Solution-for-Robot-Goints.html)
@@ -43,7 +43,7 @@ related_companies: []
 ## 官方资料
 
 - [多维科技官网](https://www.dowaytech.com/)
-- [TMR3081 车规角度传感器芯片发布](https://www.dowaytech.com/TMR3081-TMR-Angle-Sensors-Automotive-Electronics.html)
-- [TMR3015 高精度角度传感器芯片发布](https://www.dowaytech.com/TMR3015-TMR-Angle-Sensors-High-Precision.html)
+- TMR3081 车规角度传感器芯片发布
+- TMR3015 高精度角度传感器芯片发布
 - [机器人关节磁编码器方案（对轴、离轴、双对轴）](https://www.dowaytech.com/Dowaytech-Magnetic-Encoder-Solution-for-Robot-Goints.html)
 - [磁性器件晶圆定制及代工](https://www.dowaytech.com/foundry.html)

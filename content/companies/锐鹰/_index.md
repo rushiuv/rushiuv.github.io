@@ -29,7 +29,7 @@ related_models: ["SROA48", "KIN60", "WIN48"]
 | --- | --- | --- | --- |
 | [SROA42-17Bit / 23Bit / 25Bit](https://www.reagles.cn/Index/specification.html) | 光电整体式，锥轴与直轴，单圈 | 17 / 23 / 25 位 | 同一外径 42 mm 下分锥轴（SC）与直轴（SS），另有超矮款（SC2） |
 | [SROA42-M16S17Bit / 23Bit / 25Bit](https://www.reagles.cn/Index/specification.html) | 光电整体式，多圈 | 单圈 17/23/25 位 + 多圈 16 位 | M16S 指 16 位多圈；分 SC、SS、SSA 三种接口变体 |
-| [SROA48-G12S■Bit](https://www.reagles.cn/Index/specification.html) | 整体式齿轮多圈绝对值 | 按型号填位数 | G12S 指 12 位齿轮多圈；另有低温款 SROAE48 |
+| [SROA48-G12S■Bit](/models/sroa48/) | 整体式齿轮多圈绝对值 | 按型号填位数 | G12S 指 12 位齿轮多圈；另有低温款 SROAE48 |
 | [SROA79-M16S23Bit / 25Bit](https://www.reagles.cn/Index/specification.html) | 光电十字联轴多圈 | 23 / 25 位 + 16 位多圈 | 有通用版与"TAMA 协议"版两个规格书 |
 | [SROA105-M16S23Bit](https://www.reagles.cn/Index/specification.html) | 光电整体式多圈，外径 105 mm | 23 位 + 16 位多圈 | S5CSA5-A 接口变体 |
 | [SROA13-17Bit / SROA20-17Bit](https://www.reagles.cn/Index/specification.html) | 超小型光电分体式单圈 | 17 位 | 外径 13 mm 与 20 mm |

@@ -11,7 +11,7 @@ wiki_category: "芯片与信号链"
 related_models: ["SR3511N"]
 ---
 
-峰岹（Fortior）本来是被当作"电机驱动芯片厂"读的：MCU、ASIC、IPM、HVIC 一整套围着无刷电机转。但 SR3511N 与它配套的双磁式旋变，把这家公司推到了位置反馈的解算侧——RDC 负责把旋变的正余弦解成角度，双磁式旋变则把"旋变"从绕线结构搬到更薄、更便宜的载体上。所以读它要看两页：SENSOR 产品线讲它怎么测转子位置，SR3511N 的发布稿讲它怎么解算。
+峰岹（Fortior）本来是被当作"电机驱动芯片厂"读的：MCU、ASIC、IPM、HVIC 一整套围着无刷电机转。但 [SR3511N](/models/sr3511n/) 与它配套的双磁式旋变，把这家公司推到了位置反馈的解算侧——RDC 负责把旋变的正余弦解成角度，双磁式旋变则把"旋变"从绕线结构搬到更薄、更便宜的载体上。所以读它要看两页：SENSOR 产品线讲它怎么测转子位置，SR3511N 的发布稿讲它怎么解算。
 
 ## 2010 年在深圳起家，A 股与港股两地上市
 
@@ -21,7 +21,7 @@ related_models: ["SR3511N"]
 
 | 系列 | 类型 | 公开分辨率/关键指标 | 其他公开参数 |
 | --- | --- | --- | --- |
-| [SR3511N](https://www.fortiortech.com/en/news/detail/40) | 旋变数字转换器（RDC） | 官方原文：10 到 16 位分辨率可调，驱动旋变并读取角度与速度 | 自动带宽调节、实时相位校正（官方称可补超过 90° 的相位延迟）、插值校正与误差消除；面向工业伺服、电驱、机器人关节 |
+| SR3511N | 旋变数字转换器（RDC） | 官方原文：10 到 16 位分辨率可调，驱动旋变并读取角度与速度 | 自动带宽调节、实时相位校正（官方称可补超过 90° 的相位延迟）、插值校正与误差消除；面向工业伺服、电驱、机器人关节 |
 | [双磁式旋变](https://www.fortiortech.com/en/news/detail/40) | 无绕组磁旋变 | 官方原文：绝对或增量两种检测模式、双通道角度检测、超低延时 | 官方称"业界最薄最紧凑"；抗杂散磁场；与 SR3511N 配套成方案 |
 | [SENSOR 产品线](https://www.fortiortech.com/en/product/sensor) | 转子位置与电流检测 | 官方定位：为电机控制系统精确检测转子位置与电流信号 | 主打高性能、低功耗、低成本；具体料号在站点的产品选择器里，页面文本没有给出型号表 |
 | [MCU 产品线](https://www.fortiortech.com/en/product/mcu) | 双核电机控制器 | 集成高速电机控制引擎与 8051 核，片内含预驱、LDO、运放、比较器、高速 ADC、乘除法器 | 支持 CRC、SPI、I2C、UART、定时器、PWM；面向方波、SVPWM 与 FOC |
@@ -41,7 +41,7 @@ related_models: ["SR3511N"]
 - [Fortior 官网](https://www.fortiortech.com/)
 - [公司简介 Who We Are](https://www.fortiortech.com/en/about/index)
 - [发展历程（含 2025 港股上市）](https://www.fortiortech.com/en/about/history)
-- [SR3511N 与双磁式旋变发布稿](https://www.fortiortech.com/en/news/detail/40)
+- SR3511N 与双磁式旋变发布稿
 - [SENSOR 产品线](https://www.fortiortech.com/en/product/sensor)
 - [MCU 产品线](https://www.fortiortech.com/en/product/mcu)
 - [投资者关系](https://www.fortiortech.com/en/investor)

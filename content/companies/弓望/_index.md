@@ -25,12 +25,12 @@ related_models: []
 
 | 系列 | 类型 | 公开分辨率 | 其他公开参数 |
 | --- | --- | --- | --- |
-| [RT-D036](https://www.gw-sensor.com/sys-pd/15.html) | 异侧双编，外径 36 mm | 17 位（电机端）+ 19 位（减速机端） | RS485、5 V±5%、空载 ≤200 mA、最高 6,000 rpm、−40…+105 °C、推荐气隙 0.5~0.9 mm（典型 0.7） |
-| [RT-D040](https://www.gw-sensor.com/sys-pd/16.html) | 异侧双编，外径 40 mm | 17 位 + 19 位 | 与 D036 同族参数，定子/转子尺寸随外径变 |
-| [RT-D046](https://www.gw-sensor.com/sys-pd/17.html) | 异侧双编，外径 46 mm | 17 位 + 19 位 | 同上 |
-| [RT-D055](https://www.gw-sensor.com/sys-pd/18.html) | 异侧双编，外径 55 mm | 17 位 + 19 位 | 同上 |
-| [RT-D061 / D067 / D070](https://www.gw-sensor.com/sys-pd/19.html) | 异侧双编，外径 61/67/70 mm | 17 位 + 19 位 | 同上 |
-| [RT-D080 / D087 / D090](https://www.gw-sensor.com/sys-pd/23.html) | 异侧双编，外径 80/87/90 mm | 17 位 + 19 位 | 同上 |
+| [RT-D036](/models/gw-rt/) | 异侧双编，外径 36 mm | 17 位（电机端）+ 19 位（减速机端） | RS485、5 V±5%、空载 ≤200 mA、最高 6,000 rpm、−40…+105 °C、推荐气隙 0.5~0.9 mm（典型 0.7） |
+| RT-D040 | 异侧双编，外径 40 mm | 17 位 + 19 位 | 与 D036 同族参数，定子/转子尺寸随外径变 |
+| RT-D046 | 异侧双编，外径 46 mm | 17 位 + 19 位 | 同上 |
+| RT-D055 | 异侧双编，外径 55 mm | 17 位 + 19 位 | 同上 |
+| RT-D061 / D067 / D070 | 异侧双编，外径 61/67/70 mm | 17 位 + 19 位 | 同上 |
+| RT-D080 / D087 / D090 | 异侧双编，外径 80/87/90 mm | 17 位 + 19 位 | 同上 |
 | [RT-B/T 单/双编码器](https://www.gw-sensor.com/h-col-104.html) | 窄码道单编与双编 | 官方新闻未给位数 | 主打"超大中空"与"超窄码道"，中空通道可让动力线与信号线穿过 |
 | [GC 通用系列](https://www.gw-sensor.com/h-col-103.html) | 单编码器 | 页面未给具体位数值 | 面向通用工业与自动化 |
 | [SV 伺服电机编码器系列](https://www.gw-sensor.com/h-col-103.html) | 伺服配套单编 | 页面未给具体位数值 | 2024 年发布 |
@@ -50,7 +50,7 @@ related_models: []
 
 - [公司概况与历程（融资、产能、专利数）](https://www.gw-sensor.com/h-col-101.html)
 - [产品中心（四个系列与结构分类）](https://www.gw-sensor.com/h-col-103.html)
-- [RT-D036 性能参数表](https://www.gw-sensor.com/sys-pd/15.html)
-- [RT-D055 性能参数表](https://www.gw-sensor.com/sys-pd/18.html)
-- [RT-D087 性能参数表](https://www.gw-sensor.com/sys-pd/23.html)
+- RT-D036 性能参数表
+- RT-D055 性能参数表
+- RT-D087 性能参数表
 - [资讯中心（RT-B/T 新品与获奖公告）](https://www.gw-sensor.com/h-col-104.html)

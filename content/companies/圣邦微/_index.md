@@ -11,7 +11,7 @@ wiki_category: "芯片与信号链"
 related_models: []
 ---
 
-圣邦微在编码器链上有两个身份：老本行是模拟信号链——运放、比较器、ADC、基准、电源，这些是编码器电路板上的通用件；新身份是 AMR 磁传感器，官网把「磁编码」「角度位置传感器」「磁开关」三个子类挂在同一个 AMR 目录下，编码子类里现在是两颗带数字接口的 18 位芯片。读它的资料最该看两处：AMR 目录的参数表（一次把位数、延时、ppr、转速、温度、封装列全）和 VCE2755 的产品页（给了全温精度与 MTP）。
+圣邦微在编码器链上有两个身份：老本行是模拟信号链——运放、比较器、ADC、基准、电源，这些是编码器电路板上的通用件；新身份是 AMR 磁传感器，官网把「磁编码」「角度位置传感器」「磁开关」三个子类挂在同一个 AMR 目录下，编码子类里现在是两颗带数字接口的 18 位芯片。读它的资料最该看两处：AMR 目录的参数表（一次把位数、延时、ppr、转速、温度、封装列全）和 [VCE2755](/models/vce2755/) 的产品页（给了全温精度与 MTP）。
 
 ## 北京起家的无晶圆模拟厂，六年两地上市
 
@@ -23,10 +23,10 @@ SG Micro Corp（SGMICRO），总部北京，自述由工程背景的创始人团
 
 | 系列 | 类型 | 公开分辨率/关键指标 | 其他公开参数 |
 | --- | --- | --- | --- |
-| [VCE2755](https://www.sg-micro.com/product/VCE2755) | AMR 磁编码，数字角度 | 18 位角分辨率；全温精度 ±0.3°；角度输出延时 <2 µs | SPI/PWM/ABZ/UVW/SSI/差分 ABZ；ABZ 1~1024 ppr；UVW 1~16 极对；最高跟踪 18000 rpm；3.0~5.5 V；−40~+125 °C；SOIC-8 与 TQFN-3×3-16；内置 MTP |
+| VCE2755 | AMR 磁编码，数字角度 | 18 位角分辨率；全温精度 ±0.3°；角度输出延时 <2 µs | SPI/PWM/ABZ/UVW/SSI/差分 ABZ；ABZ 1~1024 ppr；UVW 1~16 极对；最高跟踪 18000 rpm；3.0~5.5 V；−40~+125 °C；SOIC-8 与 TQFN-3×3-16；内置 MTP |
 | [VCE2758](https://www.sg-micro.com/products/magnetic-encoder) | AMR 磁编码，数字角度 | 18 位；ABZ 1~4096 ppr | 同上接口集与 1~16 极对 UVW；18000 rpm；PWM 971.1/485.6 Hz；−40~+125 °C；3.3/5 V |
-| [VCE1715](https://www.sg-micro.com/products/angular-position-sensors) | AMR 角度，模拟正余弦 | 分辨率 0.01°；灵敏度 2.1 mV/°；角度范围 180° | 噪声密度 6 nV/√Hz；桥偏置 ±3 mV/V；饱和场 >80 Gs；桥阻 1050 Ω；1~9 V 供电；−40~+125 °C；SOIC-8 |
-| [VCS2381 / 2382 / 2383 / 2395](https://www.sg-micro.com/products/amr-sensor) | 磁开关与锁存 | 官网归在 Magnetic Switches 子类，共 4 颗 | 阈值、输出形式与封装按各型号页查 |
+| [VCE1715](/models/vce1715/) | AMR 角度，模拟正余弦 | 分辨率 0.01°；灵敏度 2.1 mV/°；角度范围 180° | 噪声密度 6 nV/√Hz；桥偏置 ±3 mV/V；饱和场 >80 Gs；桥阻 1050 Ω；1~9 V 供电；−40~+125 °C；SOIC-8 |
+| [VCS2381 / 2382 / 2383 / 2395](/models/vcs238x/) | 磁开关与锁存 | 官网归在 Magnetic Switches 子类，共 4 颗 | 阈值、输出形式与封装按各型号页查 |
 
 三档的分工要看清楚：VCE2755/VCE2758 是「片上解算」，出 SPI 或 ABZ/UVW，客户 MCU 直接读；VCE1715 只出 AMR 桥的模拟正余弦，ADC 与角度解算要客户自己做，好处是把采样时刻与滤波放在自己的信号链里。这个差别直接决定选型时算力与延迟预算落在谁头上。
 
@@ -45,6 +45,6 @@ SG Micro Corp（SGMICRO），总部北京，自述由工程背景的创始人团
 - [AMR 传感器目录](https://www.sg-micro.com/products/amr-sensor)
 - [磁编码子类参数表](https://www.sg-micro.com/products/magnetic-encoder)
 - [角度位置传感器子类](https://www.sg-micro.com/products/angular-position-sensors)
-- [VCE2755 产品页](https://www.sg-micro.com/product/VCE2755)
-- [VCS2395 产品页](https://www.sg-micro.com/product/VCS2395)
+- VCE2755 产品页
+- [VCS2395 产品页](/models/vcs2395/)
 - [放大器目录](https://www.sg-micro.com/products/amplifiers)

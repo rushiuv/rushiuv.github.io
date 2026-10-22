@@ -11,7 +11,7 @@ wiki_category: "芯片与信号链"
 related_models: ["ADMT4000"]
 ---
 
-ADI 在编码器链上占两格：一格是把多圈与角度做进一颗的磁传感（ADMT4000），一格是旋变路线（AD2S1210 / AD2S83 旋变数字转换器、AD2S99 激励振荡器、ADA4571 AMR 角度前端）。前者回答"掉电后圈数怎么记住"，后者回答"不用光学码盘怎么把角度读出来、怎么给出激励"。读 ADI 的资料，价值几乎全在数据手册：器件级指标写得比任何系列页都细。
+ADI 在编码器链上占两格：一格是把多圈与角度做进一颗的磁传感（[ADMT4000](/models/admt4000/)），一格是旋变路线（AD2S1210 / AD2S83 旋变数字转换器、AD2S99 激励振荡器、ADA4571 AMR 角度前端）。前者回答"掉电后圈数怎么记住"，后者回答"不用光学码盘怎么把角度读出来、怎么给出激励"。读 ADI 的资料，价值几乎全在数据手册：器件级指标写得比任何系列页都细。
 
 ## 公司与品牌
 
@@ -25,7 +25,7 @@ Analog Devices, Inc.（ADI），中文常称亚德诺半导体，总部在美国
 
 | 型号 | 类型 | 公开指标 | 其他公开参数 |
 | --- | --- | --- | --- |
-| [ADMT4000](https://www.analog.com/media/en/technical-documentation/data-sheets/ADMT4000.pdf) | 真上电多圈磁传感（GMR 计圈 + GMR 象限 + AMR 测角） | 0~46 圈、角度精度 ±0.25° | SPI（VDRIVE 1.7~5 V）、结温 −40~150 °C、绝对范围 0~16560°、12 位 SAR ADC、片上 1/2/3 次谐波校准、24 引脚封装 |
+| ADMT4000 | 真上电多圈磁传感（GMR 计圈 + GMR 象限 + AMR 测角） | 0~46 圈、角度精度 ±0.25° | SPI（VDRIVE 1.7~5 V）、结温 −40~150 °C、绝对范围 0~16560°、12 位 SAR ADC、片上 1/2/3 次谐波校准、24 引脚封装 |
 | [AD2S1210](https://www.analog.com/media/en/technical-documentation/data-sheets/AD2S1210.pdf) | 旋变数字转换器（R/D） | 10/12/14/16 位可选、角精度 ±2.5′+1 LSB（B/D 级）、最大跟踪 3125 rps | 内置可编程正弦激励、输入 3.15 Vpp ±27%、2~20 kHz、II 型伺服环、可编程故障阈值、编码器仿真输出 |
 | [AD2S83](https://www.analog.com/media/en/technical-documentation/data-sheets/AD2S83.pdf) | 可变分辨率旋变数字转换器 | 10/12/14/16 位由用户设定、10 位时最大跟踪 1040 rps（约 62400 rpm） | 参考频率 0~20 kHz、44 引脚 PLCC、并行三态输出可配 8/16 位总线、模拟速度输出、带宽与跟踪率由外部阻容决定 |
 | [AD2S1205](https://www.analog.com/media/en/technical-documentation/data-sheets/AD2S1205.pdf) | 12 位 R/D（含参考振荡器） | 12 位、精度 ±11 角分、最大跟踪 1250 rps | 并行与串行数据口、内置参考振荡器、II 型跟踪环、故障检测与编码器仿真输出 |
@@ -34,7 +34,7 @@ Analog Devices, Inc.（ADI），中文常称亚德诺半导体，总部在美国
 
 ADMT4000 的多圈机制要单独说：手册写明它靠一条铁磁纳米线做的螺旋，磁畴壁沿螺旋传播，GMR 叠层测出局部电阻变化来定位畴壁，从而解码转数。它既不是齿轮也不是电池，掉电时物理状态还在。但手册同时写明一条硬边界——**只有 0~46 圈区间里"真上电"能力成立**，掉电期间转过这个范围，上电后角度可能错且 FAULT 位不一定置起；AMR 推算出的 −9~54 圈只用于系统校准，不应作为正常工作范围。
 
-旋变那一路的组合关系也值得记清：AD2S99 负责给旋变提供激励与同步参考，AD2S83 或 AD2S1210 负责把 sin/cos 解成数字角，ADA4571 则是完全不同的路线——AMR 桥直接测磁场方向，输出模拟 sin/cos 交给下游 ADC。同一个系统里用哪一条，取决于电机端装的是旋变、磁铁还是光学码盘。[ADMT4000 数据手册](https://www.analog.com/media/en/technical-documentation/data-sheets/ADMT4000.pdf)
+旋变那一路的组合关系也值得记清：AD2S99 负责给旋变提供激励与同步参考，AD2S83 或 AD2S1210 负责把 sin/cos 解成数字角，ADA4571 则是完全不同的路线——AMR 桥直接测磁场方向，输出模拟 sin/cos 交给下游 ADC。同一个系统里用哪一条，取决于电机端装的是旋变、磁铁还是光学码盘。ADMT4000 数据手册
 
 手册给的是器件级指标，不是整机指标：ADMT4000 的 ±0.25°、ADA4571 的 0.5°、AD2S1210 的 ±2.5′、AD2S1205 的 ±11′ 都不含装配偏心、磁铁不均匀、线圈不对称带来的误差。分辨率与精度必须分开看：ADMT4000 用 12 位 SAR ADC，手册没给等效角度分辨率；ADA4571 是模拟输出，位数由下游 ADC 决定。
 
@@ -47,7 +47,7 @@ ADI 卖芯片，客户是编码器厂、伺服驱动厂与汽车 Tier1。几个�
 ## 官方资料
 
 - [公司概览](https://www.analog.com/en/about-adi.html)
-- [ADMT4000 数据手册（真上电多圈）](https://www.analog.com/media/en/technical-documentation/data-sheets/ADMT4000.pdf)
+- ADMT4000 数据手册（真上电多圈）
 - [AD2S1210 数据手册（16 位旋变数字转换）](https://www.analog.com/media/en/technical-documentation/data-sheets/AD2S1210.pdf)
 - [AD2S83 数据手册（可变分辨率 R/D）](https://www.analog.com/media/en/technical-documentation/data-sheets/AD2S83.pdf)
 - [AD2S1205 数据手册（12 位 R/D 含振荡器）](https://www.analog.com/media/en/technical-documentation/data-sheets/AD2S1205.pdf)

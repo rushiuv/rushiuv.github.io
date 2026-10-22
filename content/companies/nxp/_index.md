@@ -11,7 +11,7 @@ wiki_category: "芯片与信号链"
 related_models: ["KMZ60"]
 ---
 
-NXP 在编码器链上的位置是"车规磁角度前端 + 汽车控制器与接口"。它的 AMR 角度传感器 KMZ 系列曾是 BLDC 换相与 EPS 转角测量里的常见件，但 KMZ60 在官网已标注 Archived（停产/归档），这条信息对选型比任何参数都重要——参数再好，料号生命周期结束了就得换方案。
+NXP 在编码器链上的位置是"车规磁角度前端 + 汽车控制器与接口"。它的 AMR 角度传感器 KMZ 系列曾是 BLDC 换相与 EPS 转角测量里的常见件，但 [KMZ60](/models/kmz60/) 在官网已标注 Archived（停产/归档），这条信息对选型比任何参数都重要——参数再好，料号生命周期结束了就得换方案。
 
 ## 公司与品牌
 
@@ -25,9 +25,9 @@ NXP Semiconductors N.V.（中文常称恩智浦），2006 年从飞利浦分拆�
 
 | 型号 | 类型 | 公开指标 | 其他公开参数 |
 | --- | --- | --- | --- |
-| [KMZ60](https://www.nxp.com/products/KMZ60) | AMR 角度传感器 + 集成仪表放大器 | 静态场角误差 ±0.1°、磁场旋转频率 0~25000 r/min、外部磁场 ≥25 kA/m | VCC 2.7~5.5 V、cos/sin 双通道模拟输出 + 温度参考输出、幅值温补可开关、Power-down 模式、Tamb −40~150 °C、SO8（SOT96-1，4.9×3.9×1.75 mm）、车规认证 |
+| KMZ60 | AMR 角度传感器 + 集成仪表放大器 | 静态场角误差 ±0.1°、磁场旋转频率 0~25000 r/min、外部磁场 ≥25 kA/m | VCC 2.7~5.5 V、cos/sin 双通道模拟输出 + 温度参考输出、幅值温补可开关、Power-down 模式、Tamb −40~150 °C、SO8（SOT96-1，4.9×3.9×1.75 mm）、车规认证 |
 
-三点要看清。**它输出的是模拟 sin/cos 加温度参考，不是数字角**：后面的 ADC 与角度解算在客户自己的 MCU 里，这也是它与现代集成式磁编芯片最大的差别。**±0.1° 是静态场条件下的角误差**，手册同时给的是 25 kA/m 的外部磁场下限——磁场弱了或磁铁远了，这个数不成立。**料号状态是 Archived**：官网产品页明确标注，替代方案需向 NXP 确认。[KMZ60 产品页](https://www.nxp.com/products/KMZ60)；[数据手册](https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf)
+三点要看清。**它输出的是模拟 sin/cos 加温度参考，不是数字角**：后面的 ADC 与角度解算在客户自己的 MCU 里，这也是它与现代集成式磁编芯片最大的差别。**±0.1° 是静态场条件下的角误差**，手册同时给的是 25 kA/m 的外部磁场下限——磁场弱了或磁铁远了，这个数不成立。**料号状态是 Archived**：官网产品页明确标注，替代方案需向 NXP 确认。KMZ60 产品页；[数据手册](https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf)
 
 手册框图里还有几件客户画板时必须对上的事：cos 与 sin 两路各走两级增益约 6 与 7 的缓冲，输出以 VCC/2 为共模；片上带断线检测与温度传感器，幅值温补可由 TCC_EN 脚开关；输出串阻 50~150 Ω、外部负载不低于 5 kΩ、外部去耦电容不低于 100 nF。这些不是选型参数，但决定了第二颗料能不能直接替上去。
 
@@ -44,8 +44,8 @@ NXP 在这个位置卖的是"前端 + 车规资质 + 汽车前装渠道"：KMZ60
 ## 官方资料
 
 - [NXP 公司概况](https://www.nxp.com/company/about-nxp:ABOUT-NXP)
-- [KMZ60 产品页（英文）](https://www.nxp.com/products/KMZ60)
-- [KMZ60 产品页（中文）](https://www.nxp.com.cn/products/KMZ60)
-- [KMZ60 数据手册](https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf)
+- KMZ60 产品页（英文）
+- KMZ60 产品页（中文）
+- KMZ60 数据手册
 - [SOT96-1 封装图](https://www.nxp.com/docs/en/package-information/SOT96-1.pdf)
 - [NXP 公司条目（沿革与规模）](https://en.wikipedia.org/wiki/NXP_Semiconductors)
