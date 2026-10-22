@@ -3,6 +3,8 @@ title: "KTM5900"
 description: "KTM5900 是集成 TMR 磁敏元件的绝对角度编码器，单对极角度最高 24 位，支持数字位置、增量及换向输出。"
 wiki: true
 wiki_type: "model"
+catalog_type: "数字角度"
+catalog_form: "芯片"
 wiki_rank: 2
 seed_count: 34
 lastmod: "2026-10-16"

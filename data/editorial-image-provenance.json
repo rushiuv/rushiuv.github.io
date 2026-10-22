@@ -1,0 +1,87 @@
+{
+  "created": "2026-10-18",
+  "generator": "built-in image_gen",
+  "style": "Chrome OS / Material inspired editorial light cartoon",
+  "scope": "Conceptual editorial scenes; not scale drawings, schematics, simulations, component adoption evidence or measured data.",
+  "originals_directory": "/Users/mac/Documents/VerySync_Works/如是有为博客-设计素材-20261018",
+  "assets": [
+    {
+      "id": "home",
+      "public_path": "/images/editorial/chromeos-home-20261018.webp",
+      "original_filename": "chromeos-home-20261018.png",
+      "width": 1536,
+      "height": 1024,
+      "png_sha256": "859fb06cd8a37f2ef89c7f806306e3d7c240ee944a681cc301b5ffc7ab7f0d60",
+      "webp_sha256": "e0a4ec7bf3a6c8b0591208088f15903f4fac746d0b8ac53c74ad9561ac2d4746",
+      "webp_bytes": 81110,
+      "prompt": "Use case: illustration-story. Asset type: production website editorial illustration for a Chinese magnetic sensor engineering knowledge website. Style: Chrome OS / Google Material inspired flat editorial cartoon, precise rounded outlines, large clear geometric color blocks, friendly understated light comic, NOT anime, NOT 3D, NOT photorealistic. Cohesive restrained palette warm ivory #f7f2e7 background, deep navy #19384c, desaturated teal #578b91, muted mustard #ccaa6c and a tiny coral accent. Landscape 3:2, generous 8% safe margin, no readable text, no letters, no numbers, no logos, no trademarks, no watermark. This is an editorial scene illustration, not a validated scientific schematic. Do not draw detailed wiring, magnetic field arrows, plotted performance data, or engineering dimensions. Scene: a friendly young adult East Asian engineer with short black hair and round glasses, navy shirt, seated at a tidy workbench calmly comparing a small motor shaft assembly, a sensor circuit board and an open notebook with simple unlabeled geometric sketches. One cohesive scene, clear silhouette, warm paper background, relaxed focused expression, polished editorial composition suitable beside a large headline. Hands anatomically natural. No speech bubbles."
+    },
+    {
+      "id": "basics",
+      "public_path": "/images/editorial/chromeos-basics-20261018.webp",
+      "original_filename": "chromeos-basics-20261018.png",
+      "width": 1536,
+      "height": 1024,
+      "png_sha256": "77e10bebeb2665e474537e30d52dcae5646292d9f4fe546c4cb4c164857d3c8f",
+      "webp_sha256": "60a9102eac83c80e9a9af5a88e3896a765868747fb9f16d7be970ae0461b22ed",
+      "webp_bytes": 52206,
+      "prompt": "Use case: illustration-story. Asset type: production website editorial illustration for a Chinese magnetic sensor engineering knowledge website. Style: Chrome OS / Google Material inspired flat editorial cartoon, precise rounded outlines, large clear geometric color blocks, friendly understated light comic, NOT anime, NOT 3D, NOT photorealistic. Cohesive restrained palette warm ivory #f7f2e7 background, deep navy #19384c, desaturated teal #578b91, muted mustard #ccaa6c and a tiny coral accent. Landscape 3:2, generous 8% safe margin, no readable text, no letters, no numbers, no logos, no trademarks, no watermark. This is an editorial scene illustration, not a validated scientific schematic. Do not draw detailed wiring, magnetic field arrows, plotted performance data, or engineering dimensions. Scene: a welcoming tabletop still life explaining position sensing as an introductory visual: a simple motor with shaft, a separate small magnet, a compact sensor PCB and a graduated circular ring with no numbers, arranged with lots of breathing space. Objects separated visibly, not claiming an actual wiring or installation specification. A hand with a pencil enters at one edge. Flat Chrome OS cartoon, elegant shapes."
+    },
+    {
+      "id": "signals",
+      "additional_uses": ["/topics/ 技术专题总览，作为阅读场景装饰插画，不作为实测波形或技术示意证据"],
+      "public_path": "/images/editorial/chromeos-signals-20261018.webp",
+      "original_filename": "chromeos-signals-20261018.png",
+      "width": 1536,
+      "height": 1024,
+      "png_sha256": "68967e737af12bd1ef78e62dc2f9d619640a8df87747fc76f95dfb869465943a",
+      "webp_sha256": "0aa9bd66406383a27dc325b73b1d9f9d3b2c7769193ade874aa84c62caa85d2a",
+      "webp_bytes": 79378,
+      "prompt": "Use case: illustration-story. Asset type: production website editorial illustration for a Chinese magnetic sensor engineering knowledge website. Style: Chrome OS / Google Material inspired flat editorial cartoon, precise rounded outlines, large clear geometric color blocks, friendly understated light comic, NOT anime, NOT 3D, NOT photorealistic. Cohesive restrained palette warm ivory #f7f2e7 background, deep navy #19384c, desaturated teal #578b91, muted mustard #ccaa6c and a tiny coral accent. Landscape 3:2, generous 8% safe margin, no readable text, no letters, no numbers, no logos, no trademarks, no watermark. This is an editorial scene illustration, not a validated scientific schematic. Do not draw detailed wiring, magnetic field arrows, plotted performance data, or engineering dimensions. Scene: a friendly engineer studying two small abstract readout screens at a desk, a rotary knob and a microcontroller circuit board connected by a single simple cable. Screens contain only a few smooth abstract geometric paths with no axes, no numeric performance claims, no text. Visual theme is understanding measurement and communication rather than a real circuit."
+    },
+    {
+      "id": "consumer",
+      "public_path": "/images/editorial/chromeos-consumer-20261018.webp",
+      "original_filename": "chromeos-consumer-20261018.png",
+      "width": 1536,
+      "height": 1024,
+      "png_sha256": "d37d3d3578d00da35522dab86091fdf24355eb670af1e4d9934415bce383ef06",
+      "webp_sha256": "e8538a9880dba3bb60237213c870d95d580dc80aae9e33550a2285bfefd3989a",
+      "webp_bytes": 61368,
+      "prompt": "Use case: illustration-story. Asset type: production website editorial illustration for a Chinese magnetic sensor engineering knowledge website. Style: Chrome OS / Google Material inspired flat editorial cartoon, precise rounded outlines, large clear geometric color blocks, friendly understated light comic, NOT anime, NOT 3D, NOT photorealistic. Cohesive restrained palette warm ivory #f7f2e7 background, deep navy #19384c, desaturated teal #578b91, muted mustard #ccaa6c and a tiny coral accent. Landscape 3:2, generous 8% safe margin, no readable text, no letters, no numbers, no logos, no trademarks, no watermark. This is an editorial scene illustration, not a validated scientific schematic. Do not draw detailed wiring, magnetic field arrows, plotted performance data, or engineering dimensions. Scene: a carefully composed group of consumer electronic devices on a warm ivory tabletop: a handheld game controller with two joysticks, a stylus beside a small tablet, a smartwatch and an earbud charging case. Rounded accessible forms and subtle flat shadows, one balanced visual cluster rather than a product advertisement. No logos or labels."
+    },
+    {
+      "id": "home-apps",
+      "public_path": "/images/editorial/chromeos-home-apps-20261018.webp",
+      "original_filename": "chromeos-home-apps-20261018.png",
+      "width": 1536,
+      "height": 1024,
+      "png_sha256": "55cbf138552de3a8d7a7657786741df677baa08ed473f87575c9be3f6a9e0694",
+      "webp_sha256": "3a8aa1e851ec2fc687d009a38a3a2be0909e4036c4aef6a6906b17c4ac548b54",
+      "webp_bytes": 63022,
+      "prompt": "Use case: illustration-story. Asset type: production website editorial illustration for a Chinese magnetic sensor engineering knowledge website. Style: Chrome OS / Google Material inspired flat editorial cartoon, precise rounded outlines, large clear geometric color blocks, friendly understated light comic, NOT anime, NOT 3D, NOT photorealistic. Cohesive restrained palette warm ivory #f7f2e7 background, deep navy #19384c, desaturated teal #578b91, muted mustard #ccaa6c and a tiny coral accent. Landscape 3:2, generous 8% safe margin, no readable text, no letters, no numbers, no logos, no trademarks, no watermark. This is an editorial scene illustration, not a validated scientific schematic. Do not draw detailed wiring, magnetic field arrows, plotted performance data, or engineering dimensions. Scene: a calm smart-home corner with a compact coffee machine, a robot vacuum beside its removable water tank, and a stove knob as an isolated enlarged foreground object. Clear tidy arrangement. Friendly modern domestic forms. Avoid combustion flames, unsafe behavior, diagrams or brand claims. Flat Chrome OS cartoon."
+    },
+    {
+      "id": "industrial",
+      "public_path": "/images/editorial/chromeos-industrial-20261018.webp",
+      "original_filename": "chromeos-industrial-20261018.png",
+      "width": 1536,
+      "height": 1024,
+      "png_sha256": "1d48953ac5f0ee1bc4d629dd76052a0822cf00b8793ef1b24cbe553c7b222fbc",
+      "webp_sha256": "55dd37d886197c0a2ef944ff034101ea03271ff2a28f0aea5a419e2c32011c9d",
+      "webp_bytes": 56232,
+      "prompt": "Use case: illustration-story. Asset type: production website editorial illustration for a Chinese magnetic sensor engineering knowledge website. Style: Chrome OS / Google Material inspired flat editorial cartoon, precise rounded outlines, large clear geometric color blocks, friendly understated light comic, NOT anime, NOT 3D, NOT photorealistic. Cohesive restrained palette warm ivory #f7f2e7 background, deep navy #19384c, desaturated teal #578b91, muted mustard #ccaa6c and a tiny coral accent. Landscape 3:2, generous 8% safe margin, no readable text, no letters, no numbers, no logos, no trademarks, no watermark. This is an editorial scene illustration, not a validated scientific schematic. Do not draw detailed wiring, magnetic field arrows, plotted performance data, or engineering dimensions. Scene: compact factory workbench with a small articulated robot arm holding a simple block, a motor shaft assembly and a closed electrical cabinet with abstract status dots. Friendly precise engineering editorial scene, uncluttered, no workers near moving hazards, no safety certification badges or quantitative graphs. Flat Chrome OS cartoon."
+    },
+    {
+      "id": "automotive",
+      "public_path": "/images/editorial/chromeos-automotive-20261018.webp",
+      "original_filename": "chromeos-automotive-20261018.png",
+      "width": 1536,
+      "height": 1024,
+      "png_sha256": "fd6f7a0b996cf0087d622af5cd0d45f29583666192115205a8b23e1fba5dabcf",
+      "webp_sha256": "22faaa63b4afc23ad12543cb3a2be0921ad474af549a7694839493e74ec6b168",
+      "webp_bytes": 55352,
+      "prompt": "Use case: illustration-story. Asset type: production website editorial illustration for a Chinese magnetic sensor engineering knowledge website. Style: Chrome OS / Google Material inspired flat editorial cartoon, precise rounded outlines, large clear geometric color blocks, friendly understated light comic, NOT anime, NOT 3D, NOT photorealistic. Cohesive restrained palette warm ivory #f7f2e7 background, deep navy #19384c, desaturated teal #578b91, muted mustard #ccaa6c and a tiny coral accent. Landscape 3:2, generous 8% safe margin, no readable text, no letters, no numbers, no logos, no trademarks, no watermark. This is an editorial scene illustration, not a validated scientific schematic. Do not draw detailed wiring, magnetic field arrows, plotted performance data, or engineering dimensions. Scene: a parked simplified electric car with an adjacent small abstract sensor circuit board and a hand turning a separate rotary control knob, a conceptual visual about sensing vehicle position and controls. Not a self-driving claim, no public road hazards, no wiring schematic. Flat Chrome OS cartoon with muted navy teal mustard palette."
+    }
+  ]
+}

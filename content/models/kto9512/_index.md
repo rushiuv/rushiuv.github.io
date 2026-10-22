@@ -3,6 +3,8 @@ title: "KTO9512"
 description: "KTO9512 是三通道相位阵游标光学编码器前端，读取匹配码盘，输出差分正余弦和分区信号，供后级细分与绝对位置解算。"
 wiki: true
 wiki_type: "model"
+catalog_type: "光学编码"
+catalog_form: "芯片"
 wiki_rank: 17
 seed_count: 12
 lastmod: "2026-10-16"

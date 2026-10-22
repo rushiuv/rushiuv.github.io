@@ -1,0 +1,97 @@
+name: Build Hugo and deploy GitHub Pages
+on:
+  push:
+    branches: [source]
+    paths:
+      - 'content/**'
+      - 'layouts/**'
+      - 'assets/**'
+      - 'static/**'
+      - 'data/**'
+      - 'hugo.toml'
+      - '.github/workflows/build-hugo.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: hugo-build-publish
+  cancel-in-progress: false
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.147.6'
+          extended: true
+      - name: Build and validate articles
+        shell: bash
+        run: |
+          set -euo pipefail
+          hugo --gc --minify --destination /tmp/rushiuv-site
+          touch /tmp/rushiuv-site/.nojekyll
+          test -s /tmp/rushiuv-site/index.html
+          # Hugo's page-bundle files are not automatically copied into the static Pages directory.
+          # Copy every published article's bundled images without hardcoding a single article.
+          while IFS= read -r -d '' IMAGE_DIR; do
+            DIR_NAME=$(basename "$(dirname "$IMAGE_DIR")" | tr '[:upper:]' '[:lower:]')
+            TARGET="/tmp/rushiuv-site/posts/$DIR_NAME"
+            if [ -s "$TARGET/index.html" ]; then
+              mkdir -p "$TARGET/images"
+              cp -a "$IMAGE_DIR/." "$TARGET/images/"
+              echo "Copied bundled images for $DIR_NAME"
+            else
+              echo "Skipped non-published bundle $DIR_NAME"
+            fi
+          done < <(find content/posts -mindepth 2 -maxdepth 2 -type d -name images -print0)
+          test -s /tmp/rushiuv-site/posts/wechat-ezlztznhze3-08xvy1jr5q/index.html
+          test -s /tmp/rushiuv-site/posts/wechat-ezlztznhze3-08xvy1jr5q/images/001-1f9ce63e66.png
+          NEW_ARTICLE="/tmp/rushiuv-site/posts/wechat-s687llxcto0w4whvfixvfa"
+          test -s "$NEW_ARTICLE/index.html" || { echo "New article HTML missing"; exit 1; }
+          grep -Fq '一支没有数字的尺子' "$NEW_ARTICLE/index.html"
+          test -s "$NEW_ARTICLE/images/001-57fc83e017.gif"
+          test -s "$NEW_ARTICLE/images/002-6ed61306c8.gif"
+          test -s "$NEW_ARTICLE/images/003-b97ef5e847.gif"
+          echo "Validated original text and three local GIF images."
+      - name: Update static main safely
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          BASE=$(git rev-parse origin/main)
+          TMP=$(mktemp -d)
+          rmdir "$TMP"
+          git worktree add --detach "$TMP" "$BASE"
+          cd "$TMP"
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/rushiuv-site/. .
+          mkdir -p .github/workflows
+          git show "$BASE":.github/workflows/pages.yml > .github/workflows/pages.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Main already contains identical static output."
+          else
+            git commit -m "deploy: build Hugo from source ${GITHUB_SHA:0:12}"
+            git push origin HEAD:main
+          fi
+      - name: Trigger existing Pages deploy workflow on main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail-with-body --retry 2 -X POST \
+            -H 'Accept: application/vnd.github+json' \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H 'X-GitHub-Api-Version: 2022-11-28' \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/pages.yml/dispatches" \
+            -d '{"ref":"main"}'
+          echo 'Requested the existing main-branch Pages workflow.'

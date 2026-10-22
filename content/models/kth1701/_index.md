@@ -1,7 +1,10 @@
 ---
 title: "KTH1701"
+series_parent: "kth17"
 wiki: true
 wiki_type: "model"
+catalog_type: "磁开关"
+catalog_form: "芯片"
 wiki_rank: 83
 seed_count: 2
 lastmod: "2026-10-16"

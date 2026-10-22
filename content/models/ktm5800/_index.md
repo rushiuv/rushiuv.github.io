@@ -3,6 +3,8 @@ title: "KTM5800"
 description: "KTM5800 是外接正余弦信号的角度细分器，集成双通道 ADC、校准和角度计算，可连接磁阻桥或光电读头。"
 wiki: true
 wiki_type: "model"
+catalog_type: "信号处理"
+catalog_form: "芯片"
 wiki_rank: 11
 seed_count: 15
 lastmod: "2026-10-16"

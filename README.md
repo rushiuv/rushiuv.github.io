@@ -1,7 +1,51 @@
 # 如是有为博客
 
-Hugo 静态博客，现有 290 篇文章（2025-09-22 ~ 2026-10-13，含手写稿）。
+Hugo 静态博客；文章数量以当前源码与构建检查输出为准，不沿用历史快照数字。
 线上地址：https://sensor.fans/
+
+## 发布安全约定：旧 deploy.sh 禁用
+
+**不要运行 `bash tools/deploy.sh`。** 该历史脚本仍含 orphan 分支和 `git push -f main`，会改写部署历史；本轮未实现安全部署 CLI，下面的约定不是对旧脚本的认可。
+
+先完成独立目录构建、结构回归和桌面/360px实际浏览器验收，再按王超本轮授权集中发布。源码提交到 `source`；静态提交必须以已核对的远端 `main` 为父提交，保留 `.github/workflows/pages.yml` 和 `.nojekyll`。发布只允许正常的 fast-forward 更新，并将 `source` 与 `main` 作为同一次原子 push 的目标；远端已前进、分支不再是预期父提交，或服务不支持原子更新时应停止并重核，不强推、不改写历史、不把两分支半发布当成功。
+
+本地构建成功、静态检查通过、浏览器通过、push成功、Pages工作流成功和线上实际页面一致，是不同验收状态。没有对应证据就保持“未验收/未发布”，不能据此宣称搜索排名、阅读量或收入增长。调试只用本地预览，不以反复 push 试样式。
+
+## 视觉系统与本地预览（2026-10-18）
+
+最终共用样式层在 `static/css/refined.css`，页头以文件内容哈希作版本号，加载在现有样式之后。
+暖纸色底、墨蓝重点区与少量赭金细节共用颜色、圆角、阴影和动效变量；说明文字不靠浅灰和极小字号区分层级。
+首页保留搜索、三条资料路径、专题、精选与型号索引；最新横幅指向已公开的 KTH7111 动态响应文章。
+文章维持约760px正文阅读宽度，表格局部滚动；MathML 不设置普通 `display:block`。
+支持键盘焦点、跳至正文及 reduced-motion。手机导航两行，操作项最小高度44px。
+
+调试只用独立构建目录与127.0.0.1预览，不反复推送线上。
+在桌面和360px视口检查首页、搜索结果、型号与公式文章；视觉通过后再按授权集中发布。
+运行 `python3.11 -B tools/check_site_release.py <构建目录>` 检查本次两处内容修复、已公开KTH文章保留及待审稿未泄漏。
+该检查不等于浏览器验收，也不证明阅读量提升。
+
+### ChromeOS风格与原图保留
+
+首页和四类应用采用 ChromeOS / Material 友好的轻漫画场景、清楚轮廓与克制配色；工程资料的文字与型号关系优先，不把场景画画成芯片内部结构或真实接线。场景图不能充当器件结构、实测或量产采用证据，来源与用途保存在provenance；按王超2026-10-18要求，不在装饰图下逐张重复“AI场景插画、不按比例”等啰嗦注释。技术图保留有信息价值的短说明和来源。
+
+批准稿和生成原图应单独保留，不用压缩图覆盖原图；网站使用独立命名的WebP发布副本，记录原图位置、发布副本和用途。已有首页人物身份参考、批准插画及KTH正文SVG不得在换风格时被覆盖或无记录删除。只有WebP存在时，只能记“发布副本已存”，不能写“原图已归档”。当前7张WebP位于 `static/images/editorial/chromeos-*-20261018.webp`，7张原PNG在独立目录 `/Users/mac/Documents/VerySync_Works/如是有为博客-设计素材-20261018`；`data/editorial-image-provenance.json`保存完整提示词、用途和双份哈希。
+
+### 导航与厂商比较
+
+“基础知识”与“型号资料”是两个顶层菜单，分别到 `/wiki/basics/` 与 `/wiki/`；不再以大块基础banner混在型号目录。保留公司品牌、应用、专题和文章归档。窄屏导航允许两行，仍需逐项点击和当前页状态验收。
+
+“不限于昆泰芯”不是删除或回避昆泰芯。已有公司和型号页保留；应用候选按同一测量任务、几何、输出、限制和官方出处比较，适配处充分展开昆泰芯及其他厂商，不机械等量，也不为凑昆泰芯数量加入错误器件。候选、条件式另一测量结构、明确不适配三种状态分开写；品牌数量不是技术正确性的证据。
+
+搜索交互回归：运行 `node tools/test_portal_search.cjs`；另在浏览器实操“搜索→应用筛选→收起×→新搜TLE5012 离轴”，收起须清除查询、URL、结果、分页和分类状态，不能遗留隐形筛选。
+
+### 基础与应用覆盖回归
+
+当前目标是37个基础条目和43个应用场景；其中参考站的30个基础主题映射到本站canonical条目，而不是强迫标题、结构或正文照搬。覆盖表在 `data/reference_coverage.json`；参考站仅用于主题覆盖，正文独立编写，器件事实采用原厂/论文主源。候选器件不得写成已量产采用、直接替代或整机安全保证；测光与光伏供电、热电偶温度链与磁位置链等任务必须分开。
+
+`check_site_release.py`核对源码数量、参考主题映射、生成页、单一H1、分类总览/侧栏及首页搜索入口，保留AI文清理、TLE5012离轴多词AND搜索、KTH文章与5个SVG以及待审稿不泄漏的回归。它不会联网确认厂商链接或判断技术论断，也不证明图片布局、触摸、焦点与移动端显示已经验收。内容不设置机械字数填充门槛，是否覆盖测量对象、原理路径、误差、验证和边界应逐篇审阅。
+
+KTH7111 原页曾只存在静态main分支，现已回流为content/posts和posts_extra源稿，保留原正文及SVG。
+AI标定文的手工清理也同步到posts_extra，避免重导时重新引入内部工作流字段。
 
 ## 正文排版与发布前检查
 
@@ -19,8 +63,9 @@ Hugo 静态博客，现有 290 篇文章（2025-09-22 ~ 2026-10-13，含手写�
 逐篇修订规则在 `tools/readability_fixes.py`，可核对修复过的公式、变量和采集缺口。
 
 先用 Hugo 构建到独立目录，再运行 `python3.11 tools/check_readability.py <构建目录绝对路径>`。
-检查器需要 `beautifulsoup4`，只用于校验，不是网站运行依赖；检查全部正文的标题、
-表格列数与空单元格、数学节点、图片、内部链接以及未渲染标记。
+检查器需要 `beautifulsoup4`，只用于校验，不是网站运行依赖；默认覆盖 `posts/`、`wiki/basics/` 和 `applications/` 的已生成内容页，检查标题、表格列数与空单元格、数学节点、图片、内部链接以及未渲染标记。CSS检查收集全局样式表，包括最后加载的 `refined.css`，做保守的声明扫描，不计算选择器优先级和完整级联；早层的普通 `display:block` 即使被后层修复也会报警，须在实际浏览器核对计算样式。缺失页面不能靠遍历被发现，因此还要运行 `check_site_release.py`，不能只看扫描返回值。
+
+保留旧文章诊断范围时运行 `python3.11 -B tools/check_readability.py <构建目录> --posts-only`；记录构建目录、文章数量、问题列表和范围，再与历史文章基线比较。历史遗留问题、这轮新增问题和本轮已修问题分开列，单项release通过不等于全站排版零问题。
 
 ## 日常操作
 
@@ -28,14 +73,14 @@ Hugo 静态博客，现有 290 篇文章（2025-09-22 ~ 2026-10-13，含手写�
 
 不要对 MathML 根元素设置普通 `display:block`：这会覆盖浏览器的 `block math`，使变量逐个拆行、分数线撑满正文。块公式用 `<math display="block">`，保留浏览器原生数学布局；不需要新增 LaTeX 插件。
 
-`check_readability.py` 现在会拒绝这种 CSS 覆盖，但结构检查仍不等于视觉验收。用本地 HTTP 服务打开 `tools/math-layout-regression.html`（引用实际 `static/css/site.css`），在桌面及 360px 窄屏确认 `passed: true`，目视检查短等式、行内上下标、分数、矩阵与长公式。发布前后还需检查实际文章 `_7ifyuhvjfspoqpfkbsqoq` 中的三组公式；记录浏览器引擎、视口和前后对照。
+`check_readability.py` 会保守扫描全局CSS中的这种声明，但结构检查仍不等于视觉验收。用本地 HTTP 服务打开 `tools/math-layout-regression.html`，按实际文章页的顺序加载 `static/css/site.css`、`wiki.css`、`portal.css`、`refined.css`；文章不加载基础页的 `basics.css` 或首页的 `home.css`。在桌面及360px窄屏确认 `passed: true`，目视检查短等式、行内上下标、分数、矩阵与长公式。发布前后还需检查实际文章 `_7ifyuhvjfspoqpfkbsqoq` 中的三组公式；记录浏览器引擎、视口和前后对照，检查计算样式保留 `block math` / `inline math`，且长公式只在局部滚动。
 
 - 本地预览：`hugo server`，打开 http://localhost:1313/
 - 重新导入文章：`python tools/import_wechat.py`
   - 来源：`D:\VerySync\VerySync_notes\2-Resources\2K-公众号-如是有为`
   - 会清空并重建 `content/posts/`；新出现的微信配图自动下载到 `static/images/wx/`，已下载的不重复下
 - 压缩新下载的大图：`python tools/optimize_images.py`，然后再跑一次导入改好链接
-- 发布：`bash tools/deploy.sh`（`main` 分支放构建产物给 GitHub Pages，`source` 分支放源码）
+- 发布：遵守本文开头的正常父提交、fast-forward及原子更新约定；旧 `tools/deploy.sh` 禁用，不作为日常命令。
 
 ## 标签
 
@@ -48,7 +93,7 @@ Hugo 静态博客，现有 290 篇文章（2025-09-22 ~ 2026-10-13，含手写�
 `posts_extra/*.md` 是手工写、从公众号精排 HTML 转来、或从别的号转载来的文章，格式与
 `content/posts/*.md` 一样，frontmatter：title / date / slug / description / original /（companies / tags）。
 `python tools/import_wechat.py` 在重建 `content/posts` 之后会把它们复制进去，所以重导不会冲掉
-——**新增这类文章只要往 `posts_extra/` 放一个 md，再跑导入 + 发布即可**。
+——新增这类文章先维护 `posts_extra/` 源稿，再按需导入、独立构建、检查和预览；验收与发布授权完成后才进入安全发布流程。
 
 三条硬规矩（2026-10-14 王超定）：
 
@@ -79,15 +124,14 @@ python3.11 tools/boilerplate.py --fix     # 真切（content/posts 与 posts_ext
 横幅图会自然落成"未被引用"、被导入时的孤儿图清理删掉），导入结束会打印「文末套路块已去除 N 篇」。
 手写稿复制进 `content/posts` 时也会过一遍，源稿漏了会提示跑 `--fix`。
 
-## 发布时的坑（2026-10-09 实测，本机 t14p）
+## 历史部署故障（2026-10-09，本机t14p；不是当前操作指引）
 
-`bash tools/deploy.sh` 在这台机器的 Hermes bash（MSYS）下有几处会咬人的地方，报错都不好认：
+以下记录用于追溯旧脚本的问题。旧 `tools/deploy.sh` 仍含强推路径，已经禁用；不得为复现这些故障而运行旧脚本、删除分支或清理未知worktree：
 
-1. **`TMPDIR` 要给一个双方都认的 Windows 路径。** MSYS 的 `mktemp -d` 返回 `/tmp/...`，而 bash 的 `/tmp` 与原生 git 认的 `/tmp`（＝`D:\tmp`）不是同一个目录：脚本在子 shell 里 `cd` 进了一个非仓库目录，`git checkout --orphan` 静默失败（stderr 被脚本重定向掉了），**只剩一个 exit 128、什么错误都不打印**。写成
-   `TMPDIR="C:/Users/wangc/AppData/Local/hermes/cache/scratch/tmpd" bash tools/deploy.sh` 即可。
-2. **上一次死在 push 的残留会毒死下一次。** `deploy-tmp` 分支或 `D:/tmp/tmp.*` worktree 还在时，下一次一定在脚本开头 `git checkout --orphan` 撞名失败。跑之前先 `git worktree list` 与 `git branch -D deploy-tmp` 清一遍。
-3. **GitHub 的 HTTPS 凭据会失效**，报 `remote: Invalid username or token. Password authentication is not supported`。本机 SSH 通的是 `neurusuv`、对该仓库有写权限，所以发布用
-   `REMOTE=git@github.com:rushiuv/rushiuv.github.io.git bash tools/deploy.sh`；也可以重新登录一次 HTTPS 凭据，两种都行。
+1. **当时MSYS与原生Git的临时路径不一致。** MSYS 的 `mktemp -d` 返回 `/tmp/...`，而 bash 的 `/tmp` 与原生 git 认的 `/tmp`（＝`D:\tmp`）不是同一个目录：脚本在子 shell 里 `cd` 进了一个非仓库目录，`git checkout --orphan` 静默失败（stderr 被脚本重定向掉了），**只剩一个 exit 128、什么错误都不打印**。
+   当时通过显式Windows临时目录规避了路径不一致；这没有修复旧脚本的强推问题，不能作为继续使用它的理由。
+2. **旧脚本的push中断会留下冲突入口。** `deploy-tmp` 分支或 `D:/tmp/tmp.*` worktree 残留时，旧脚本的orphan创建会撞名。现行处理先只读确认归属和可恢复性，不能照历史脚本直接删除分支或未知worktree。
+3. **当时GitHub的HTTPS凭据失效**，报 `remote: Invalid username or token. Password authentication is not supported`。历史处理是核对SSH身份或重新授权HTTPS；凭据可用不等于分支状态、发布范围或本轮授权已经核对。
 4. 发布后**核一遍线上**：文章地址里的 slug 是**小写**的（Hugo 会把网址转小写），
    `https://rushiuv.github.io/posts/<小写slug>/`；Actions 那次运行记录在仓库 Actions 页，
    推送 main 之后才会出现。
@@ -106,9 +150,11 @@ python3.11 tools/boilerplate.py --fix     # 真切（content/posts 与 posts_ext
 
 ### 2026-10-22 企业Wiki与型号资料分流
 
+以GitHub source提交bfae79bc为同步基线，保留其新版视觉、基础/应用入口和完整型号目录。
+
 - 顶级菜单“公司品牌”直达`/companies/`企业Wiki主页，自动收录全部`wiki_type: company`词条，支持名称、产品和技术关键词搜索及业务方向筛选。机构与品牌保持各自实际身份。
 - 本轮新增41个企业词条，补充ANYbotics与钛虎两页；企业、品牌和机构目录共132条。正文引用公开官网、机构公告、企业发布或公开报道，不从私有业务记录补充事实。
-- “型号资料”`/wiki/`仅列78个型号与产品，不再混排企业卡片，也不再提供企业类型筛选。旧型号和企业网址保留。
+- “型号资料”`/wiki/`仅列145个型号与产品，不再混排企业卡片，也不再提供企业类型筛选；保留GitHub最新版的厂商、器件类别、产品形态筛选、多词AND搜索、型号别名和重置功能。旧型号和企业网址保留。
 - 新词条直接维护`content/companies/<名称或slug>/_index.md`，企业主页自动更新；无需给旧文章补造企业标签。
 
 `/wiki/` 为词条入口，型号与公司仍沿用 `/models/<term>/`、`/companies/<term>/`。词条写在相应目录的 `_index.md`，不复制成独立文章、不改旧文章标签。`layouts/_default/term.html` 在第一页显示正文和官方资料，后面自动列相关文章；分页页只显示文章并提供返回词条链接。
@@ -135,3 +181,13 @@ python3.11 tools/boilerplate.py --fix     # 真切（content/posts 与 posts_ext
 ### 2026-10-16 型号知识卡修订
 
 型号页采用产品 Feature 页形式：页头摘要、核心性能列表、原厂图片与官方资料。取消约2000字目标；禁止复用通用长段落。参数保留典型值、配置、温度、校准与版本条件，脉冲数和四倍频步数分开。缺少型号依据时缩短卡片，不以系列或相邻型号填空。图片下载到static/images/wiki/，注明原厂来源；共用应用图需说明覆盖型号，不能用示意图证明未公开内部结构。清单在data/wiki-model-cards.json。
+
+### 2026-10-18 重点厂商扩充与专题阅读路径
+
+新增67张短卡，型号／产品页78→145，公司页仍91。范围含昆泰芯、MPS、纳芯微／麦歌恩、多维、圣邦微、iC-Haus，以及弓望、锐鹰的模块／完整编码器；这不是全球或各厂商全量目录。系列与具体型号可共存，不拆遍所有封装和卷带后缀；KTH78显示系列名但保留原URL、LinkTitle关联键和相关文章。缺完整公开手册时明确证据范围，不把官网不同口径拼成统一保证值。
+
+新批次来源与成员名在data/model_catalog_20261018.json。`catalog_type`区分类别，`catalog_form`区分芯片／模块／完整编码器，`search_aliases`使未单独建页的成员也能被搜到，`series_parent`连接成员与系列。旧的非位置产品保留原页面，尚未细分的明确显示为既有产品，不强塞进编码器类别。厂商页自动连接相关型号卡。
+
+技术专题总览使用data/topic_paths.json：6条具体问题导读、12篇不同的已发表精选文章，连接基础、型号和原主题档案。不是另写12篇新文，也没有发布两份待审公众号稿；历史文章不取代型号页的官方规格证据。专题插画复用signals，新增用途记录在editorial-image-provenance，不增加重复AI图注。
+
+构建后运行`python3.11 -B tools/check_model_catalog.py <build> <旧静态基线>`、`python3.11 -B tools/check_topic_hub.py <build>`及既有release/readability/portal交互检查。资料检查器核对元数据、生成页、搜索成员与内链，不联网证明手册仍可下载，也不能自动证明数值正确。桌面及360px实际浏览器验收后再发布。

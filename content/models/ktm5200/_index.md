@@ -3,6 +3,8 @@ title: "KTM5200"
 description: "KTM5200 是 21 位在轴 AMR 磁角度编码器，集成磁敏元件与角度处理，提供 SPI、ABZ、UVW 和 PWM 输出，支持用户校准。"
 wiki: true
 wiki_type: "model"
+catalog_type: "数字角度"
+catalog_form: "芯片"
 wiki_rank: 14
 seed_count: 13
 lastmod: "2026-10-16"

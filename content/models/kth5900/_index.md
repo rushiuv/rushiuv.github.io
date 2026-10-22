@@ -2,6 +2,8 @@
 title: "KTH5900"
 wiki: true
 wiki_type: "model"
+catalog_type: "命名辨析"
+catalog_form: "既有产品（待细分）"
 wiki_rank: 58
 seed_count: 3
 lastmod: "2026-10-16"

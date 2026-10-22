@@ -2,6 +2,8 @@
 title: "ENX 22 EMT"
 wiki: true
 wiki_type: "model"
+catalog_type: "完整编码器"
+catalog_form: "完整编码器"
 wiki_rank: 118
 seed_count: 1
 lastmod: "2026-10-16"

@@ -6,7 +6,7 @@
   <p class="muted">共 {{ len $entries }} 个企业、品牌与机构词条</p>
   <label for="company-search">搜索名称、产品或技术方向</label>
   <input id="company-search" type="search" placeholder="例如 ABB、机器人、编码器" style="display:block;box-sizing:border-box;width:100%;margin-top:8px;padding:12px;border:1px solid var(--line);border-radius:8px;font:inherit" autocomplete="off">
-  <label class="wiki-kind-label" for="company-category">业务方向 <select id="company-category" style="max-width:100%;padding:6px 10px;font:inherit"><option value="">全部方向</option>{{ range sort (uniq $categories) }}<option value="{{ . }}">{{ . }}</option>{{ end }}</select></label>
+  <div class="catalog-filters"><label for="company-category">业务方向 <select id="company-category"><option value="">全部方向</option>{{ range sort (uniq $categories) }}<option value="{{ . }}">{{ . }}</option>{{ end }}</select></label></div>
   <p class="muted" id="company-result-count" role="status" aria-live="polite">显示 {{ len $entries }} 个词条</p>
   <div class="wiki-index-grid" id="company-entries">
   {{ range $entries }}

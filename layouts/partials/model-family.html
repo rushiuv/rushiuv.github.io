@@ -1,0 +1,11 @@
+{{ $current := . }}
+{{ $children := slice }}
+{{ range where site.Pages "Params.wiki_type" "model" }}
+  {{ $candidate := . }}{{ with .Params.series_parent }}{{ if eq (printf "/models/%s/" .) $current.RelPermalink }}{{ $children = $children | append $candidate }}{{ end }}{{ end }}
+{{ end }}
+{{ if or $children .Params.series_parent }}
+<section class="model-family"><h2>系列与具体型号</h2><div class="chips big">
+{{ with .Params.series_parent }}{{ with site.GetPage (printf "/models/%s" .) }}<a class="chip model" href="{{ .RelPermalink }}">{{ .Title }} · 系列总览</a>{{ end }}{{ end }}
+{{ range sort $children "Title" }}<a class="chip model" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+</div></section>
+{{ end }}

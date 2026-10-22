@@ -1,11 +1,16 @@
 ---
-title: "KTH78"
+title: "KTH78系列"
+linkTitle: "KTH78"
+catalog_vendor: "昆泰芯"
+catalog_type: "数字角度"
+catalog_form: "芯片"
+search_aliases: ["KTH7801", "KTH7803", "KTH7812", "KTH7813", "KTH7814", "KTH7815", "KTH7816", "KTH7823"]
 description: "KTH78 是 KTH78xx 霍尔角度编码器系列简称，覆盖 KTH7801、KTH7812、KTH7813、KTH7814、KTH7815、KTH7816、KTH7823 等成员。下列具体数值仅标注其对应型号。"
 wiki: true
 wiki_type: "model"
 wiki_rank: 9
 seed_count: 16
-lastmod: "2026-10-16"
+lastmod: "2026-10-18"
 related_companies: ["昆泰芯"]
 official_url: "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
 datasheet_url: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
@@ -27,6 +32,7 @@ product_image_source: "https://www.conntek.com.cn/api/resource/freeDownload?name
 - **KTH7812 温度** −40～125°C
 - **KTH7812 封装** QFN-16L
 - **状态功能** 磁场诊断、阈值配置与 MTP，按型号确认
+- **接口版本** KTH7815公开资料存在不同接口口径，单独记录于其型号页；不把系列全部接口当作每个型号共有
 - **KTH7812 数据更新** 1 µs，依对应手册条件
 - **KTH7812 INL** ±0.35°，依对应校准及测试条件
 

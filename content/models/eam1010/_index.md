@@ -2,6 +2,8 @@
 title: "EAM1010"
 wiki: true
 wiki_type: "model"
+catalog_type: "其他既有型号"
+catalog_form: "既有产品（待细分）"
 wiki_rank: 117
 seed_count: 1
 lastmod: "2026-10-16"

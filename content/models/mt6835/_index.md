@@ -2,6 +2,8 @@
 title: "MT6835"
 wiki: true
 wiki_type: "model"
+catalog_type: "数字角度"
+catalog_form: "芯片"
 wiki_rank: 21
 seed_count: 10
 lastmod: "2026-10-16"
