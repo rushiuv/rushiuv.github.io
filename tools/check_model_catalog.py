@@ -40,6 +40,7 @@ assert len(rows) == len({r["slug"] for r in rows}) == 67
 directory = soup("/wiki/")
 cards = {a["href"]: a for a in directory.select(".wiki-index-card")}
 home = soup("/")
+assert [int(n.get_text()) for n in home.select('.home-stats strong')][:2] == [145, 132]
 index = json.loads(home.select_one("#portal-search-data").string)
 models = [fm(p) for p in (ROOT / "content/models").glob("*/_index.md")]
 assert len(models) == 145

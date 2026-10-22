@@ -11,7 +11,7 @@
         <span class="search-icon" aria-hidden="true"></span><input id="portal-search-input" type="search" placeholder="型号、品牌，或一个技术问题" autocomplete="off"><button type="submit">搜索 <span aria-hidden="true">↗</span></button>
       </form>
       <div class="portal-hot"><span>试着搜</span>{{ range slice "MT6835" "AS5047P" "多圈" "校准" }}<button type="button" data-query="{{ . }}">{{ . }}</button>{{ end }}</div>
-      <div class="home-stats"><span><strong>{{ len site.Taxonomies.models }}</strong> 型号</span><i></i><span><strong>{{ len site.Taxonomies.companies }}</strong> 公司</span><i></i><span><strong>{{ len $posts }}</strong> 篇文章</span></div>
+      <div class="home-stats"><span><strong>{{ len (where (where site.Pages "Params.wiki" true) "Params.wiki_type" "model") }}</strong> 型号</span><i></i><span><strong>{{ len (where (where site.Pages "Params.wiki" true) "Params.wiki_type" "company") }}</strong> 公司与机构</span><i></i><span><strong>{{ len $posts }}</strong> 篇文章</span></div>
     </div>
     <a class="home-hero-art" href="{{ "wiki/basics/" | relURL }}" aria-label="从编码器基础知识开始阅读"><span class="art-register" aria-hidden="true"></span><span class="art-caption" aria-hidden="true"><span>POSITION FEEDBACK</span><span>器件 · 磁路 · 信号链</span></span><img src="{{ "images/editorial/chromeos-home-20261018.webp" | relURL }}" alt="轻漫画工程场景：工程师比较电机、芯片与笔记，非安装示意图" width="1536" height="1024" loading="eager" fetchpriority="high"></a>
   </div>
