@@ -571,3 +571,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .wiki-toc nav, .wiki-toc nav a, .wiki-toc nav ul, .wiki-toc nav li { white-space: normal; }
 .wiki-toc nav a { overflow-wrap: anywhere; }
 .wiki-content, .wiki-description { overflow-wrap: break-word; }
+
+/* Detailed model parameter tables must not enlarge their grid column. */
+.model-card-overview > .wiki-content { min-width: 0; }
+.model-card .wiki-content table { width: 100%; }
+.model-card .wiki-content th, .model-card .wiki-content td { overflow-wrap: anywhere; }
