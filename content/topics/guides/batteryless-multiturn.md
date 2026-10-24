@@ -25,7 +25,10 @@ related_guides:
 keywords:
 - 免电池多圈记住了圈数
 - 校准与配置
+editorial_image: images/editorial/chromeos-magnetic-20261024.webp
+editorial_image_alt: 位置反馈器件的装配场景示意
 ---
+
 
 “断电还能记圈”指某条状态链在没有主供电时继续工作，不意味着角度测量、处理和串行通信都持续获得电源。选型要分别检查圈数怎样更新、单圈怎样读取、上电后怎样对齐。
 

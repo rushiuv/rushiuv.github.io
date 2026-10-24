@@ -18,7 +18,11 @@ search_aliases:
 official_url: https://www.npc.co.jp/products/438
 document_version: 日文DE220185-J002，2024.04，第1/3/4页
 model_card: true
+product_image: images/wiki/global-smd-01b-20261024.webp
+product_image_source: https://www.npc.co.jp/products/438
+product_image_caption: 原厂SMD-01B封装图
 ---
+
 
 ## 核心参数
 

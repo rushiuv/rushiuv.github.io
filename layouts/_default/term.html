@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $pager := .Paginate .Pages.ByDate.Reverse }}
 {{ if .Params.wiki }}
-<div class="wiki-layout{{ if .Params.model_card }} model-card{{ end }}">
+<div class="wiki-layout{{ if .Params.model_card }} model-card{{ end }}{{ if eq .Params.wiki_type "company" }} company-profile{{ end }}">
   <article class="wiki-article">
     <header class="wiki-head">
       <p class="kicker">如是有为 · {{ if eq .Params.wiki_type "model" }}型号与产品{{ else }}公司与机构{{ end }}</p>
@@ -16,6 +16,7 @@
       {{ end }}
     </header>
     {{ if eq $pager.PageNumber 1 }}
+    {{ if eq .Params.wiki_type "company" }}{{ $slug := path.Base (strings.TrimSuffix "/" .File.Dir) }}{{ with index site.Data.editorial_context_images.companies $slug }}<figure class="company-illustration"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="1536" height="1024" loading="lazy" decoding="async"><figcaption>{{ .caption }}</figcaption></figure>{{ end }}{{ end }}
     {{ if .Params.model_card }}
     <div class="model-card-overview{{ if not .Params.product_image }} no-visual{{ end }}">
       <div class="content wiki-content">{{ .Content }}</div>

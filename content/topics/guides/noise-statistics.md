@@ -65,3 +65,5 @@ R^2=\mu^2+\sigma_N^2.
 实际对比先保存同一窗口的原始数据，同时报告均值、样本量、标准差分母、峰峰值、采样率和滤波配置。再检查时间曲线，确认没有缓慢漂移或明显周期项。只抄一个最小RMS，无法说明改进发生在哪一层。
 
 [下载这四个合成读数](/downloads/noise-statistics-four-points.csv)，取数值列后可用[统计工具](/topics/guides/measurement-tools/)复算。
+
+<figure class="technical-figure"><div class="technical-diagram-scroll" role="region" aria-label="可横向查看的技术图" tabindex="0"><img src="/images/technical/noise-statistics-comparison.svg" alt="同一组设定读数：均值、波动与RMS分别回答不同问题。" loading="lazy" decoding="async"></div><figcaption>同一组设定读数：均值、波动与RMS分别回答不同问题。</figcaption></figure>

@@ -30,7 +30,10 @@ keywords:
 aliases:
 - /wiki/engineering/optical-signal-chain/
 topic_method: true
+editorial_image: images/editorial/chromeos-optical-20261024.webp
+editorial_image_alt: 光学测量的场景示意
 ---
+
 
 
 

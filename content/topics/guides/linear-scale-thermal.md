@@ -23,7 +23,10 @@ related_guides:
 keywords:
 - 直线尺装在铝梁上
 - 环境与验收
+editorial_image: images/editorial/chromeos-optical-20261024.webp
+editorial_image_alt: 直线测量的场景示意
 ---
+
 
 读数每次只跳1nm，机器工作点仍会随温度移动。分辨率描述数字刻度；长尺热变形取决于材料、温差、固定点及尺与基体怎样传力。
 

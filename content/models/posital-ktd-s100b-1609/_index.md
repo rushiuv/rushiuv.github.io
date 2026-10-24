@@ -18,7 +18,11 @@ search_aliases:
 official_url: https://www.posital.com/en/products/kit-encoders/KTD-S100B-1609-LP2A-BAQ/3440429
 document_version: 原厂英/德文订货型号页，核对2026-10-24
 model_card: true
+product_image: images/wiki/global-posital-ktd-s100b-1609-20261024.webp
+product_image_source: https://www.posital.com/en/products/kit-encoders/KTD-S100B-1609-LP2A-BAQ/3440429
+product_image_caption: 原厂为该订货配置展示的产品图
 ---
+
 
 ## 核心参数
 

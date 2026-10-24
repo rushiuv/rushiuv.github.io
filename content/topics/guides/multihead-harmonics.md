@@ -64,3 +64,5 @@ G_n=\left|\frac{1+e^{-j2\pi n\Delta u}}2\right|
 
 - [Renishaw：多读头与旋转测量误差](https://www.renishaw.com/en/the-accuracy-of-rotary-encoders--47130)，介绍对径读头与奇次重复误差。
 - [RLS：准确度、分辨率和重复性](https://www.rls.si/eng/faq/what-do-accuracy-resolution-and-repeatability-mean)，说明刻度与读头对误差的不同贡献。上式和100角秒例子为本文理想模型。
+
+<figure class="technical-figure"><div class="technical-diagram-scroll" role="region" aria-label="可横向查看的技术图" tabindex="0"><img src="/images/technical/multihead-harmonics.svg" alt="等幅、等权且同采样时刻时，90°与180°的空间阶次响应。" loading="lazy" decoding="async"></div><figcaption>等幅、等权且同采样时刻时，90°与180°的空间阶次响应。</figcaption></figure>

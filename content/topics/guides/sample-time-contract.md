@@ -65,3 +65,5 @@ topic_method: true
 先用共同参考运动，同时记录两路物理触发、报文和任务使用事件。改变总线负载与读取顺序，再比较时间偏差分布。随后加入上电首帧、停更与超时，检查状态和帧号能否区分有效新样本、旧样本与无效数据。
 
 不能直接观察有效测量事件时，应通过有时间基准的已知输入变化辨认响应，并保留无法分离的误差。把“接收完成”当成“测量发生”，即使主机时钟完全同步，也会把链路差异重新写进角差。
+
+<figure class="technical-figure"><div class="technical-diagram-scroll" role="region" aria-label="可横向查看的技术图" tabindex="0"><img src="/images/technical/sample-time-contract.svg" alt="按设定事件顺序区分采样、到达与使用；实际链路可以重叠。" loading="lazy" decoding="async"></div><figcaption>按设定事件顺序区分采样、到达与使用；实际链路可以重叠。</figcaption></figure>

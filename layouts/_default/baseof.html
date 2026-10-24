@@ -16,6 +16,7 @@
 {{ $refinedVersion := substr (crypto.SHA256 (readFile "static/css/refined.css")) 0 12 }}
 <link rel="stylesheet" href="{{ "css/refined.css" | relURL }}?v={{ $refinedVersion }}">
 {{ if or .Params.engineering_entry (eq .Layout "engineering-index") .IsHome (eq .Layout "portal-topics") .Params.basic_entry .Params.application_entry .Params.model_card (eq .Layout "wiki-index") }}{{ $gv := substr (crypto.SHA256 (readFile "static/css/engineering.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/engineering.css" | relURL }}?v={{ $gv }}">{{ end }}
+{{ if eq .Params.wiki_type "company" }}{{ $cv := substr (crypto.SHA256 (readFile "static/css/company-editorial.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/company-editorial.css" | relURL }}?v={{ $cv }}">{{ end }}
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
 </head>
 <body{{ if .IsHome }} class="is-home"{{ end }}>
