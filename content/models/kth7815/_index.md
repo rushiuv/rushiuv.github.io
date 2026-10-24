@@ -31,7 +31,7 @@ product_image_source: "https://www.conntek.com.cn/api/resource/freeDownload?name
 | 下载PDF SOP8引脚 | PWM、SPI；不能沿用QN16增量输出 |
 | 工作供电 | 手册3.3V模式3.0～3.6V；5V模式4.5～5.5V，分别使用 |
 | 磁场条件 | 关键表30～150mT，典型60mT |
-| 典型工作电流 | 11.6mA@3.3V；5V表另核对 |
+| 典型工作电流 | 11.6mA（3.3V）；5V表另核对 |
 | 启动时间 | 典型1ms，关键表 |
 | 数据更新/表列延时 | 1µs；匀速补偿与加减速响应不能混用 |
 | INL | 手册关键表±0.35°，按安装和校准条件 |

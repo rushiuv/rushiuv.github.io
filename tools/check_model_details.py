@@ -45,6 +45,9 @@ for path in paths:
         continue
     if len(soup.select('h1')) != 1:
         errors.append(f'{slug}: expected one H1')
+    # CDN email protection mistakes compact current@voltage notation for email.
+    if re.search(r'@\d', content.get_text()):
+        errors.append(f'{slug}: compact @condition can be hidden by CDN email protection')
     tables = content.select('table')
     rows = 0
     for table in tables:

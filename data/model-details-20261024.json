@@ -262,8 +262,8 @@
       "title": "GO-M8010",
       "path": "content/models/go-m8010/_index.md",
       "parameter_rows": 15,
-      "body_characters": 996,
-      "sha256": "6a1c0d6ff7a24fe25c1d50134fef32bcfff5546984fd23b4b09858a5fc4c84f7",
+      "body_characters": 997,
+      "sha256": "98ae646e959da36b0b6eca6b9d99e1cf10de52596369f6465963da7e4abdd583",
       "sources": [
         "https://www.unitree.com/cn/mobile/go1/motor/"
       ],
@@ -520,8 +520,8 @@
       "title": "KTH16系列",
       "path": "content/models/kth16/_index.md",
       "parameter_rows": 9,
-      "body_characters": 1055,
-      "sha256": "b52c1b99f1b0bd4068a886389017a390c2fbc84bc4b757a57f5d22dbc2416da0",
+      "body_characters": 1056,
+      "sha256": "43cd1d11cc53808303a0505db2ecff611cf65953f8daef2c78b8121078025758",
       "sources": [
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
       ],
@@ -534,8 +534,8 @@
       "title": "KTH1604",
       "path": "content/models/kth1604/_index.md",
       "parameter_rows": 10,
-      "body_characters": 1156,
-      "sha256": "06a10228622ffc589673397566796e07471216f5fbcd464aa2e64595f241b8f1",
+      "body_characters": 1158,
+      "sha256": "33a93d5db2567a86564e4d3fb4a4dddbd7da7115a6286b385e8414a39a95900e",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH1604%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
@@ -549,8 +549,8 @@
       "title": "KTH17系列",
       "path": "content/models/kth17/_index.md",
       "parameter_rows": 9,
-      "body_characters": 1034,
-      "sha256": "4cac4403ebd24b0b7da9128fc70251437d5a9d08df8041465587c6650097c678",
+      "body_characters": 1035,
+      "sha256": "dea1622beaed64435a85fea8efd7332c3102ade18bb01e8b01e23c7d7aff2962",
       "sources": [
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
       ],
@@ -563,8 +563,8 @@
       "title": "KTH1701",
       "path": "content/models/kth1701/_index.md",
       "parameter_rows": 9,
-      "body_characters": 1083,
-      "sha256": "2264d00df17c47b968b419e06eeb3e6d5aa0b21e26e56714a1c5b9e9b7979c73",
+      "body_characters": 1084,
+      "sha256": "77fcfa98b366b701e947f2c43cb375041a8d0661572076488350525c71bfe5a6",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH1701%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
@@ -592,8 +592,8 @@
       "title": "KTH31系列",
       "path": "content/models/kth31/_index.md",
       "parameter_rows": 11,
-      "body_characters": 1443,
-      "sha256": "f2bd7165cb4443cebde2d43e5fad7512e56d25dae01ec320f18de68506a5903f",
+      "body_characters": 1445,
+      "sha256": "ffc6b25c568e0d20136eebcc9e98c3a160aabb77cc20807c139937dddd38f39a",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH31%20Series%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html"
@@ -607,8 +607,8 @@
       "title": "KTH3101",
       "path": "content/models/kth3101/_index.md",
       "parameter_rows": 8,
-      "body_characters": 1066,
-      "sha256": "c69364cc4a477eac8bd0c02776a973f01a00bb2ac0727751bb60256da8f811f6",
+      "body_characters": 1072,
+      "sha256": "dced79e9ed1d70ac9f9030c595bc204e0192e943382a637f0fdd1ae0d2a5680c",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH31%20Series%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html"
@@ -622,8 +622,8 @@
       "title": "KTH3105",
       "path": "content/models/kth3105/_index.md",
       "parameter_rows": 8,
-      "body_characters": 1182,
-      "sha256": "692d2b892aa738eaa7d707443b8ff0a15f2ea6ec47a1067abcdcb766a98bb533",
+      "body_characters": 1188,
+      "sha256": "1058bf4315b8836c7b6c1fd058c7acf5bd7d3f7dc125a6e931bfdb35a17beb9e",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH31%20Series%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html"
@@ -637,8 +637,8 @@
       "title": "KTH4603系列",
       "path": "content/models/kth4603/_index.md",
       "parameter_rows": 8,
-      "body_characters": 896,
-      "sha256": "d48d103cab6ba3887a3419a9d0c39046fcbc1917bc5271355709e78a91e211ce",
+      "body_characters": 898,
+      "sha256": "da067f971aa9f4fd5d5ce51c4ff27430a6251c94b88080a83fec733a4d74f80f",
       "sources": [
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highlysensitive3dhallswitch/index.html"
       ],
@@ -651,8 +651,8 @@
       "title": "KTH462系列",
       "path": "content/models/kth462/_index.md",
       "parameter_rows": 8,
-      "body_characters": 903,
-      "sha256": "a35ef2fba916e0c81e9e18eaa41eb2df543b86aa3ca8efdbb3f522f8c315a1e1",
+      "body_characters": 905,
+      "sha256": "7177dd5c9ad938463cb6745db74adb07fb8d52b2576cc807a5772047b9ea44d5",
       "sources": [
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highsensitive2Dhallswitch/index.html"
       ],
@@ -709,8 +709,8 @@
       "title": "KTH7101",
       "path": "content/models/kth7101/_index.md",
       "parameter_rows": 14,
-      "body_characters": 1285,
-      "sha256": "69b87151298cc1a69591f012f3046365b425557e3e17ab20478a1ebf529a405c",
+      "body_characters": 1286,
+      "sha256": "4cf948a80266e26322ef5194054d7c3181d066a290d6c6bcf7b93c4e4a9e93f7",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html"
@@ -724,8 +724,8 @@
       "title": "KTH7111",
       "path": "content/models/kth7111/_index.md",
       "parameter_rows": 16,
-      "body_characters": 1683,
-      "sha256": "ab48df148bb438853abfe746d427102c75d59772084e0e4514b564f9ce3ab664",
+      "body_characters": 1684,
+      "sha256": "bc2b4cd0b29031f6e7b0176dcc297bf58253415719347859cb739f53918ccf71",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7111%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html"
@@ -739,8 +739,8 @@
       "title": "KTH7112",
       "path": "content/models/kth7112/_index.md",
       "parameter_rows": 17,
-      "body_characters": 1378,
-      "sha256": "a3423aa828847541255d008c04041bb4ede5e3f4a06a8954fcfea6cb97298e3c",
+      "body_characters": 1379,
+      "sha256": "005a730a172e09faca1389b3dbd66e9a4fdca09dacde29142ec06d0cbc69bcd2",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7112%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html"
@@ -754,8 +754,8 @@
       "title": "KTH78系列",
       "path": "content/models/kth78/_index.md",
       "parameter_rows": 12,
-      "body_characters": 1616,
-      "sha256": "86f62149a0da793cb4ff7c380ebfac6210e54034e53a12235cb6587175182143",
+      "body_characters": 1617,
+      "sha256": "91a11208572c5c2244132d9f923b1d606719248c4be4af3dec91d49613b08d15",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
@@ -769,8 +769,8 @@
       "title": "KTH7801",
       "path": "content/models/kth7801/_index.md",
       "parameter_rows": 13,
-      "body_characters": 1305,
-      "sha256": "548ae89ca2417ba0355fb20d8c4c5fadeb63eb40867bc4ce84b45f8d24695b57",
+      "body_characters": 1306,
+      "sha256": "d7244aec4406a76fe9f0269c4d59becd914c6912b63280785ff643a980073ed2",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7801%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
@@ -798,8 +798,8 @@
       "title": "KTH7812",
       "path": "content/models/kth7812/_index.md",
       "parameter_rows": 14,
-      "body_characters": 1269,
-      "sha256": "d48578c7d501b7981a19788ffabfa5071095a63dba34fa61a95a06a9dd9453c8",
+      "body_characters": 1270,
+      "sha256": "e1906eb558ca64cc2ea1cabc068cbd724f7b453a99e5dbe3f3de6c13f7925618",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
@@ -813,8 +813,8 @@
       "title": "KTH7813",
       "path": "content/models/kth7813/_index.md",
       "parameter_rows": 10,
-      "body_characters": 1191,
-      "sha256": "5c5f8132761b66a246899549537f58dc3afbb0c52fb599b725db421328cefe97",
+      "body_characters": 1192,
+      "sha256": "9032c463903a2e47c6d002a0f7beb620d5959e8014b5faa1aabd85e2793dd034",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7813%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
@@ -828,8 +828,8 @@
       "title": "KTH7814",
       "path": "content/models/kth7814/_index.md",
       "parameter_rows": 10,
-      "body_characters": 1136,
-      "sha256": "dbb54300e0d28f8cf96529abcc3aefd4cdb44d8ca06bdf5246fb5cef7f080b58",
+      "body_characters": 1137,
+      "sha256": "037543939694799d70215b2113ae535c4f4e33a32d5b353bec88d26de84fb5e8",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7814%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
@@ -843,8 +843,8 @@
       "title": "KTH7815",
       "path": "content/models/kth7815/_index.md",
       "parameter_rows": 15,
-      "body_characters": 1476,
-      "sha256": "36f8abe12db9e8b0add02a2aaedab8ec9e2398837448b9960ba35de9674e11dc",
+      "body_characters": 1477,
+      "sha256": "ea6c5290893ed972f3fab19c1fc3cfcb0a058a1c85bc9b65073f054e43af886d",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7815%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
@@ -858,8 +858,8 @@
       "title": "KTH7816",
       "path": "content/models/kth7816/_index.md",
       "parameter_rows": 14,
-      "body_characters": 1263,
-      "sha256": "b524926d1c3270c089a1591b0ee704e22bdee37352afc51042f1dcd9b14d3271",
+      "body_characters": 1264,
+      "sha256": "f3d516140961749a6db8320e9c0c428f0b38d56efa4ea0aedeba205518078c46",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7816%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
@@ -873,8 +873,8 @@
       "title": "KTH7823",
       "path": "content/models/kth7823/_index.md",
       "parameter_rows": 14,
-      "body_characters": 1299,
-      "sha256": "782e2262c08bc05e5516d52ccc0da31f84513f09c4d627bcad18f4b2b46f1891",
+      "body_characters": 1300,
+      "sha256": "66fe5115469fd9c34ca23c805dee2c198f94757ca6728f1fbf2caf74643aafeb",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7823%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
@@ -888,8 +888,8 @@
       "title": "KTM1301",
       "path": "content/models/ktm1301/_index.md",
       "parameter_rows": 10,
-      "body_characters": 1136,
-      "sha256": "a6a03c7d1fed8f41f15b9e156a2cb798548a4cccd22f88a2603347799bbe98da",
+      "body_characters": 1139,
+      "sha256": "12ce436bec376c797d316468dd2b69a0e7184b413e99edfd6897639fbcc7b8ec",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM1301%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html"
@@ -917,8 +917,8 @@
       "title": "KTM13XX",
       "path": "content/models/ktm13xx/_index.md",
       "parameter_rows": 9,
-      "body_characters": 1061,
-      "sha256": "a0395606596878294a6de39c8c3e5d94ec46caba6bf9c5d861b6d6d64b671305",
+      "body_characters": 1063,
+      "sha256": "c1bd8e2d29088ae5db55c524a38a3bb39fe59157c10e59aaa238d96e76a83d37",
       "sources": [
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html"
       ],
@@ -1220,8 +1220,8 @@
       "title": "MA900",
       "path": "content/models/ma900/_index.md",
       "parameter_rows": 4,
-      "body_characters": 626,
-      "sha256": "119ec82cdf3b0630df3c53bdd070f906bad19c94a83f9d0f84c66f46badb1710",
+      "body_characters": 628,
+      "sha256": "ab7e54f1c5fdab3a51c669e294952f08d22f17697bfe5e7a23a3b479a2e4a669",
       "sources": [
         "https://www.monolithicpower.com/en/products/sensors/ma900.html"
       ],
@@ -1262,8 +1262,8 @@
       "title": "MID-360",
       "path": "content/models/mid-360/_index.md",
       "parameter_rows": 17,
-      "body_characters": 1160,
-      "sha256": "e0a70bb55b3a26bd867078375269f04087c5b51ecd4f0fb5062cd9385e8d0d6b",
+      "body_characters": 1162,
+      "sha256": "001346d237eb6d4ec32e1fe597490d2ab3883978e1975d4af440d55c29d2109f",
       "sources": [
         "https://www.livoxtech.com/mid-360",
         "https://www.livoxtech.com/mid-360/specs"
@@ -1511,8 +1511,8 @@
       "title": "MXC3638AL",
       "path": "content/models/mxc3638al/_index.md",
       "parameter_rows": 14,
-      "body_characters": 984,
-      "sha256": "b26318134a309a5a6cdaa0dc09fd80bc9b378771ad7f5ecaf58f75305002e281",
+      "body_characters": 988,
+      "sha256": "6f369ed58401cd1a076ad01cfee02871c012d745485a26f772cb4260b3446c81",
       "sources": [
         "https://www.memsic.com/Public/Uploads/uploadfile/files/20220119/MXC3638ALDatasheet.pdf",
         "https://www.memsic.com/cn/capacitive-accelerometer-85"
@@ -1613,8 +1613,8 @@
       "title": "QRD1114",
       "path": "content/models/qrd1114/_index.md",
       "parameter_rows": 8,
-      "body_characters": 969,
-      "sha256": "64fef331496759fb38f53b04a8c9d2cf7480a14f7745c8d234487e6b78adcf7d",
+      "body_characters": 970,
+      "sha256": "8e58d90173af57a9196ac4a7d8dd7f08a7bde34616c250014d5294a78bc765f4",
       "sources": [
         "https://www.onsemi.com/pdf/datasheet/qrd1113-d.pdf",
         "https://www.onsemi.com/pdf/datasheet/qrd1114-d.pdf"
@@ -3413,5 +3413,6 @@
     "remote_source": "38d420eae8909a1e5f54ac571615416ad08f9dd8",
     "local_source": "3b704330d2fce996ffa634fd5624b05b498c27b4",
     "method": "Three-way editorial reconciliation by model; retain detailed parameter tables and absorb unique verified facts and corrected official links; omit duplicated generic prose."
-  }
+  },
+  "publication_format_fix": "Write measurement conditions in parentheses rather than compact numeric@numeric notation, which the site CDN misidentifies as email addresses."
 }
