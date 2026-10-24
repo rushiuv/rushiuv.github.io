@@ -1580,7 +1580,47 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>参数来源：&lt;a href="https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf">NXP KMZ60 Rev.2数据手册&lt;/a>第1～4页及&lt;a href="https://www.nxp.com/part/KMZ60">NXP产品页&lt;/a>。生命周期另见&lt;a href="https://www.nxp.com/products/KMZ60">原厂归档页&lt;/a>。&lt;/p></description></item><item><title>KTH1604</title><link>https://sensor.fans/models/kth1604/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1604/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>参数来源：&lt;a href="https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf">NXP KMZ60 Rev.2数据手册&lt;/a>第1～4页及&lt;a href="https://www.nxp.com/part/KMZ60">NXP产品页&lt;/a>。生命周期另见&lt;a href="https://www.nxp.com/products/KMZ60">原厂归档页&lt;/a>。&lt;/p></description></item><item><title>KTD-S100B-1609-LP2A-BAQ</title><link>https://sensor.fans/models/posital-ktd-s100b-1609/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/posital-ktd-s100b-1609/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>参数&lt;/th>
+ &lt;th>数值、功能与适用条件&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>产品状态&lt;/td>
+ &lt;td>页面生命周期列Lab Sample；不能按已量产可采购承诺介绍&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>单圈／多圈&lt;/td>
+ &lt;td>此订货号单圈9bit、多圈16bit；不是25bit角度准确度&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>技术／接口&lt;/td>
+ &lt;td>TMR磁测量；SSI with Preset，RS422输出；页面列错误/警告位和寄存器诊断&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>接口周期&lt;/td>
+ &lt;td>≥50µs；不等于所有内部测量都在该周期完成&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>供电／功耗&lt;/td>
+ &lt;td>4.5～5.5VDC；57mA（5V），功耗≤0.3W&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>INL条件&lt;/td>
+ &lt;td>页面列±0.0878°（≤12bit），室温校准后；该9bit成员仍需区分码宽与INL定义&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>环境／结构&lt;/td>
+ &lt;td>−40～105°C，IP30，轮毂式套件；整机EMC由集成方案确认&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="产品功能与测量链">产品功能与测量链&lt;/h2>
+&lt;p>这是POSITAL免电池多圈套件的一种明确订货配置。原厂系列说明Wiegand脉冲给断电计圈供能；正常位置接口仍有供电要求，不能把“免电池”理解成整条串行接口无需电源。&lt;/p></description></item><item><title>KTH1604</title><link>https://sensor.fans/models/kth1604/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1604/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -5794,7 +5834,91 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>参数依据：&lt;a href="https://www.onsemi.com/pdf/datasheet/qrd1114-d.pdf">原厂产品页或对应资料&lt;/a>。&lt;/p></description></item><item><title>RXMA30</title><link>https://sensor.fans/models/rxma30/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/rxma30/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>参数依据：&lt;a href="https://www.onsemi.com/pdf/datasheet/qrd1114-d.pdf">原厂产品页或对应资料&lt;/a>。&lt;/p></description></item><item><title>RESOLUTE RL</title><link>https://sensor.fans/models/resolute-rl/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/resolute-rl/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>参数&lt;/th>
+ &lt;th>数值、功能与适用条件&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>形态&lt;/td>
+ &lt;td>开放式绝对光学直线读头，需配RTLA/RTLA-S/RELA/RSLA等相应码尺&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>分辨率&lt;/td>
+ &lt;td>BiSS配置可选1/5/50nm；其它协议与特殊版本分别核订货号&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>速度&lt;/td>
+ &lt;td>原厂系列/选型页给最高100m/s；可用速度须核协议、分辨率和控制器配置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>温度／防护&lt;/td>
+ &lt;td>标准RL工作0～80°C、IP64；不要移用RA旋转ETR版本温区&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>读数间隙&lt;/td>
+ &lt;td>RTLA-S/RSLA/RELA：0.8±0.15mm；RTLA配FASTRACK：0.6±0.15mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>外形&lt;/td>
+ &lt;td>18×36×16.5mm（高×长×宽）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>精度层次&lt;/td>
+ &lt;td>系列标注SDE±40nm、抖动&amp;lt;10nm RMS；码尺精度、系统长度误差与具体配置另核&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="产品功能与测量链">产品功能与测量链&lt;/h2>
+&lt;p>RESOLUTE RL负责沿绝对码尺读取直线位置。纳米输出格式、周期内细分误差和每米长度准确度分属不同层，不能把1nm分辨率写成整段行程1nm准确度。&lt;/p></description></item><item><title>ROD 280 / ROD 280C</title><link>https://sensor.fans/models/rod-280/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/rod-280/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>参数&lt;/th>
+ &lt;th>数值、功能与适用条件&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>形态&lt;/td>
+ &lt;td>内置轴承、外置联轴器的增量角度编码器；非裸读头&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>线数／输出&lt;/td>
+ &lt;td>18000线，约1Vpp正弦接口；不移用相邻ROD270的TTL倍频参数&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>系统精度&lt;/td>
+ &lt;td>±5角秒；一个信号周期内位置误差≤±0.7角秒&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>频率&lt;/td>
+ &lt;td>−3dB截止频率≥180kHz，不等价于任意精度目标下的最高机械转速&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>原点&lt;/td>
+ &lt;td>ROD280为一个原点；ROD280C为距离编码参考标记，仍需移动重建参考&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>供电&lt;/td>
+ &lt;td>5V±0.5V，空载电流≤150mA&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>机械边界&lt;/td>
+ &lt;td>实心轴10mm，机械允许转速≤10000rpm；使用转速还受电气与处理链限制&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>环境&lt;/td>
+ &lt;td>固定电缆−20～70°C；反复弯折−10～70°C；IP64按安装条件&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="产品功能与测量链">产品功能与测量链&lt;/h2>
+&lt;p>ROD 280以模拟增量信号给出角运动，具体位置还依赖下游细分与参考恢复。ROD 280C的距离编码原点缩短寻找参考的移动，不等于上电静止即获得绝对位置。&lt;/p></description></item><item><title>RXMA30</title><link>https://sensor.fans/models/rxma30/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/rxma30/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -5874,7 +5998,47 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>参数依据：&lt;a href="https://www.reagles.cn/index/product_detail/content/10137.html">原厂产品页或对应资料&lt;/a>。&lt;/p></description></item><item><title>SR3511N</title><link>https://sensor.fans/models/sr3511n/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/sr3511n/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>参数依据：&lt;a href="https://www.reagles.cn/index/product_detail/content/10137.html">原厂产品页或对应资料&lt;/a>。&lt;/p></description></item><item><title>SMD-01B</title><link>https://sensor.fans/models/smd-01b/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/smd-01b/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>参数&lt;/th>
+ &lt;th>数值、功能与适用条件&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>形态&lt;/td>
+ &lt;td>LED与OEIC同封装的反射式增量光编码器IC，需配码尺&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>信号&lt;/td>
+ &lt;td>模拟A/B及反相信号；20µm信号周期，不是20µm整机精度&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>供电&lt;/td>
+ &lt;td>SWV=H时3.13～5.25V；其它配置按推荐条件表，不笼统写所有模式可3.3V&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>速度／温度&lt;/td>
+ &lt;td>推荐条件0～2m/s、−20～60°C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>电流&lt;/td>
+ &lt;td>12.2mA典型：5V、27°C、SWL1=H且SWL2=H；亮度设置会改变电流&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>封装&lt;/td>
+ &lt;td>HCOB14，5.3×4.3×1.68mm；完整公差另见尺寸图&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>细分边界&lt;/td>
+ &lt;td>手册首页5µm由20µm周期与A/B构成；更细分辨率依赖外部插值，不自动提高准确度&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="产品功能与测量链">产品功能与测量链&lt;/h2>
+&lt;p>SMD-01B把光源和光检测/模拟处理封在一起，以反射码尺的相对运动形成模拟周期信号。它连接的是光学前端与外部细分链，不是开机即给全行程绝对位置的完整编码器。&lt;/p></description></item><item><title>SR3511N</title><link>https://sensor.fans/models/sr3511n/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/sr3511n/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>

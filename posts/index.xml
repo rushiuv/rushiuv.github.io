@@ -273,6 +273,7 @@
 &lt;p>台架上一台伺服电机，指令给了 10 A，电流环正常，转速也稳。&lt;strong>可它就是比旁边那台更烫。&lt;/strong>&lt;/p>
 &lt;p>先查磁钢，没问题；再查绕线，也没问题；规格书上的角度精度看着也够高。兜了一圈，落到一个平时最容易被忽略的量上：&lt;strong>编码器链路延迟&lt;/strong>。&lt;/p></description></item><item><title>二十年了，编码器接口还是那两家说了算</title><link>https://sensor.fans/posts/1xa6gvdicgqvtksebvti9g/</link><pubDate>Tue, 01 Sep 2026 07:33:00 +0800</pubDate><guid>https://sensor.fans/posts/1xa6gvdicgqvtksebvti9g/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/e3420e8bde5cd4a9911e44d9bcecab63.webp" alt="二十年了，编码器接口还是那两家说了算" loading="lazy" decoding="async">
 &lt;/p>
+&lt;p>本地修订于2026-10-24：以下已订正SSI附加状态、BiSS速率与线长组合、协议采样事件三处技术判断；原发布日期保留。&lt;/p>
 &lt;h2 id="我那张十五年前的时序图只画对了一半">我那张十五年前的时序图，只画对了一半&lt;/h2>
 &lt;p>我翻出十五年前画的第一张编码器接口时序图，纸边还压着当时记的页码。一根时钟、一根数据，我拿示波器两根探头分别戳上去，数了一个下午，自认为看懂了这套接口。后来才反应过来，我看懂的只是它怎么把数据抖出来，不是它怎么活到今天。&lt;/p></description></item><item><title>不是芯片不够准：中空轴为什么把磁编码器逼成离轴</title><link>https://sensor.fans/posts/c_-hccdybj-pja-ivkefwa/</link><pubDate>Mon, 31 Aug 2026 09:25:00 +0800</pubDate><guid>https://sensor.fans/posts/c_-hccdybj-pja-ivkefwa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/183a83503d9e9d621d67513b80d2fbc2.jpg" alt="不是芯片不够准：中空轴为什么把磁编码器逼成离轴" loading="lazy" decoding="async">
 &lt;/p>
