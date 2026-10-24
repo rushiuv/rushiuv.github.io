@@ -22,6 +22,7 @@
       {{ with .Params.product_image }}<figure class="model-card-visual"><img src="{{ . | relURL }}" alt="{{ $.Title }} 原厂产品或应用示意" loading="eager" decoding="async"><figcaption>{{ $.Params.product_image_caption }}{{ with $.Params.product_image_source }} · <a href="{{ . }}" target="_blank" rel="noopener">原图出处 ↗</a>{{ end }}</figcaption></figure>{{ end }}
     </div>
     {{ else }}<div class="content wiki-content">{{ .Content }}</div>{{ end }}
+    {{ partial "engineering-backlinks.html" . }}
     {{ partial "model-family.html" . }}
     {{ partial "wiki-relations.html" . }}
     {{ if .Params.model_card }}<nav class="model-basic-links" aria-label="参数基础知识"><span>看懂参数</span><a href="{{ "wiki/basics/resolution-accuracy/" | relURL }}">分辨率与精度</a><a href="{{ "wiki/basics/latency/" | relURL }}">延迟与带宽</a><a href="{{ "wiki/basics/interfaces/" | relURL }}">输出接口</a></nav>{{ end }}

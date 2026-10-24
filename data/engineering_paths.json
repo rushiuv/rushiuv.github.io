@@ -1,0 +1,36 @@
+{
+  "readers": [
+    {
+      "title": "正在选型",
+      "result": "读完得到一张带条件的候选与验收表。",
+      "steps": [
+        "parameter-conditions",
+        "eccentricity-budget",
+        "calibration-evidence",
+        "system-acceptance-record"
+      ]
+    },
+    {
+      "title": "正在点亮样机",
+      "result": "从供电和接口，走到可使用、可追溯的位置数据。",
+      "steps": [
+        "first-power-interface",
+        "mixed-voltage-backpower",
+        "spi-data-age",
+        "calibration-data-integrity",
+        "position-validity-state"
+      ]
+    },
+    {
+      "title": "正在准备验收",
+      "result": "把采样时刻、误差、环境与恢复行为写入同一份记录。",
+      "steps": [
+        "sample-time-contract",
+        "noise-statistics",
+        "calibration-validation",
+        "cold-start-validation",
+        "system-acceptance-record"
+      ]
+    }
+  ]
+}

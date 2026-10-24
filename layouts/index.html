@@ -30,7 +30,7 @@
 {{ end }}
 <section class="portal-results" id="portal-results" hidden aria-live="polite">
   <div class="portal-section-head"><div><p class="portal-overline">站内检索</p><h2 id="portal-results-title">搜索结果</h2></div><button class="text-button" id="portal-search-clear" type="button">收起结果 ×</button></div>
-  <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button><button type="button" data-search-kind="basic">基础知识</button><button type="button" data-search-kind="application">应用场景</button></div>
+  <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button><button type="button" data-search-kind="basic">基础知识</button><button type="button" data-search-kind="application">应用场景</button><button type="button" data-search-kind="guide">工程指南</button></div>
   <p class="search-count" id="portal-search-count"></p><div id="portal-search-list" class="search-list"></div><button class="search-more" id="portal-search-more" type="button" hidden>显示更多结果 ↓</button>
 </section>
 
@@ -40,6 +40,7 @@
   <a href="{{ "wiki/" | relURL }}"><span class="home-path-num">02 / 从器件开始</span>{{ partial "path-icon.html" "model" }}<h2>型号与官方资料 <b>↗</b></h2><p>找具体芯片、核心性能和数据手册。</p></a>
   <a href="{{ "topics/" | relURL }}"><span class="home-path-num">03 / 从问题开始</span>{{ partial "path-icon.html" "topic" }}<h2>技术专题与应用 <b>↗</b></h2><p>沿着磁路、校准与伺服反馈继续深入。</p></a>
 </nav>
+<aside class="guide-banner"><div><h2>从看懂参数，到做出一次验证</h2><p>工程指南提供计算、测点、失败分支与可下载记录表。</p></div><a class="btn" href="{{ "wiki/engineering/" | relURL }}">按问题开始 →</a></aside>
 
 <section class="home-section home-applications" aria-labelledby="home-applications-title">
   <header class="home-section-head"><div><p class="home-overline">APPLICATIONS / 从场景出发</p><h2 id="home-applications-title">芯片放进系统，先要回答什么？</h2></div><a href="{{ "applications/" | relURL }}">全部应用 <span>↗</span></a></header>
@@ -74,6 +75,7 @@
 {{ range where site.RegularPages "Section" "posts" }}{{ $tags := slice }}{{ range .GetTerms "tags" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ range .GetTerms "models" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ range .GetTerms "companies" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" (.Description | plainify | truncate 160) "kind" "post" "keywords" (delimit $tags " ")) }}{{ end }}
 {{ range where site.RegularPages "Params.basic_entry" true }}{{ $page := . }}{{ $keywords := slice .Params.basic_group }}{{ range site.Data.reference_coverage.basics }}{{ if eq .slug $page.File.ContentBaseName }}{{ $keywords = $keywords | append .topic }}{{ end }}{{ end }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" .Description "kind" "basic" "keywords" (delimit $keywords " ")) }}{{ end }}
 {{ range where site.RegularPages "Params.application_entry" true }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" .Description "kind" "application" "keywords" (printf "%s %s" .Params.application_group (.Params.reference_topic | default ""))) }}{{ end }}
+{{ range where site.RegularPages "Params.engineering_entry" true }}{{ $index = $index | append (dict "title" .Title "url" .RelPermalink "description" .Description "kind" "guide" "keywords" (printf "%s %s" .Params.guide_group (delimit (.Params.keywords | default slice) " "))) }}{{ end }}
 <script type="application/json" id="portal-search-data">{{ $index | jsonify | safeJS }}</script>
 <script src="{{ "js/portal.js" | relURL }}?v={{ readFile "static/js/portal.js" | crypto.SHA256 | truncate 12 "" }}" defer></script>
 {{ end }}

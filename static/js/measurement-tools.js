@@ -1,0 +1,10 @@
+(() => {
+'use strict';
+const fmt = value => new Intl.NumberFormat('zh-CN',{maximumSignificantDigits:9}).format(value);
+function wire(id,calc){const form=document.getElementById(id);if(!form)return;const run=()=>{const out=form.querySelector('output');try{out.textContent=calc(form);}catch(e){out.textContent=e.message;}};form.addEventListener('submit',e=>{e.preventDefault();run();});run();}
+function num(f,name,{integer=false,min=0}={}){const raw=f.elements.namedItem(name).value.trim();const n=Number(raw);if(!raw||!Number.isFinite(n)||n<min||(integer&&!Number.isSafeInteger(n)))throw new Error('请输入范围内的有限数值；周期数与对极数须为正整数。');return n;}
+function output(n){if(!Number.isFinite(n))throw new Error('数值超出计算范围，请减小输入。');return fmt(n);}
+wire('frequency-tool',f=>{const p=num(f,'ppr',{integer:true,min:1}),r=num(f,'rpm'),n=num(f,'cycles',{integer:true,min:1});return 'AB基波：'+output(p*r/60)+' Hz\n四倍频合计：'+output(4*p*r/60)+' 次/s\n模拟信号输入：'+output(n*r/60)+' Hz';});
+wire('latency-tool',f=>{const r=num(f,'rpm'),t=num(f,'age')*1e-6,p=num(f,'poles',{integer:true,min:1}),u=r*t/60;return '归一化位置：'+output(u)+' 圈\n机械角：'+output(u*360)+'°\n电角度：'+output(u*360*p)+'°';});
+wire('statistics-tool',f=>{const text=f.elements.namedItem('values').value.trim();if(!text||/(^|[,，;；])\s*([,，;；]|$)/.test(text))throw new Error('请输入完整数值列，不要留空字段。');const tokens=text.split(/[\s,，;；]+/);if(tokens.length>100000)throw new Error('请限制在100000个数值以内。');const vals=tokens.map(x=>{if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?$/i.test(x))throw new Error('只接受数值；请移除表头并只保留一列。');const n=Number(x);if(!Number.isFinite(n))throw new Error('只接受有限数值。');return n;});let mean=0,m2=0,lo=Infinity,hi=-Infinity;vals.forEach((v,i)=>{const d=v-mean;mean+=d/(i+1);m2+=d*(v-mean);lo=Math.min(lo,v);hi=Math.max(hi,v);});const sigma=Math.sqrt(Math.max(0,m2/vals.length)),rms=Math.hypot(mean,sigma);return 'N：'+vals.length+'\n均值：'+output(mean)+'\n含均值RMS：'+output(rms)+'\n总体σ（N）：'+output(sigma)+'\n样本s（N−1）：'+(vals.length>1?output(Math.sqrt(Math.max(0,m2/(vals.length-1)))):'未定义（至少两个样本）')+'\n峰峰值：'+output(hi-lo);});
+})();

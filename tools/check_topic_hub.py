@@ -13,7 +13,7 @@ html = BeautifulSoup((build / "topics/index.html").read_text(), "html.parser")
 assert len(html.select("h1")) == 1
 assert len(tracks) == len(html.select(".topic-dossier")) == 6
 assert len(html.select(".topic-reading-path li")) == 12
-assert len({r["file"] for t in tracks for r in t["reads"]}) == 12
+assert len({r["path"] for t in tracks for r in t["reads"]}) == 12
 assert len(html.select(".topic-hub-nav a")) == 6
 for t in tracks:
     article = html.select_one("#" + t["id"])
@@ -31,4 +31,4 @@ for a in html.select("main a[href]"):
 for image in html.select(".topic-hub-hero img"):
     assert (build / image["src"].lstrip("/")).is_file()
 assert "双编码器估扭矩，空载差值曲线能不能直接扣掉" not in html.get_text()
-print("PASS topic hub: 6 question paths, 12 distinct published readings, basics/model links, 6 archives, local illustration, no broken internal links or unpublished draft.")
+print("PASS topic hub: 6 question paths, 12 distinct engineering readings, basics/model links, 6 archives, local illustration, no broken internal links or unpublished draft.")

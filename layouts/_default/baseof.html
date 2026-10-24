@@ -15,6 +15,7 @@
 {{ if .IsHome }}<link rel="stylesheet" href="{{ "css/home.css" | relURL }}?v=20261016-refine-2">{{ end }}
 {{ $refinedVersion := substr (crypto.SHA256 (readFile "static/css/refined.css")) 0 12 }}
 <link rel="stylesheet" href="{{ "css/refined.css" | relURL }}?v={{ $refinedVersion }}">
+{{ if or .Params.engineering_entry (eq .Layout "engineering-index") .IsHome (eq .Layout "portal-topics") .Params.basic_entry .Params.application_entry .Params.model_card (eq .Layout "wiki-index") }}{{ $gv := substr (crypto.SHA256 (readFile "static/css/engineering.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/engineering.css" | relURL }}?v={{ $gv }}">{{ end }}
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
 </head>
 <body{{ if .IsHome }} class="is-home"{{ end }}>
@@ -27,7 +28,7 @@
       <a href="{{ "/wiki/basics/" | relURL }}"{{ if or .Params.basic_entry (eq .Layout "basics-index") }} aria-current="page"{{ end }}>基础知识</a>
       <a href="{{ "/wiki/" | relURL }}"{{ if or (eq .Layout "wiki-index") (eq .Params.wiki_type "model") (eq .Data.Plural "models") }} aria-current="page"{{ end }}>型号资料</a>
       <a href="{{ "/applications/" | relURL }}"{{ if eq .Section "applications" }} aria-current="page"{{ end }}>应用场景</a>
-      <a href="{{ "/topics/" | relURL }}"{{ if eq .Section "topics" }} aria-current="page"{{ end }}>技术专题</a>
+      <a href="{{ "/topics/" | relURL }}"{{ if or (eq .Section "topics") .Params.engineering_entry (eq .Layout "engineering-index") }} aria-current="page"{{ end }}>技术专题</a>
       <a href="{{ "/companies/" | relURL }}"{{ if eq .Data.Plural "companies" }} aria-current="page"{{ end }}>公司品牌</a>
       <a href="{{ "/archives/" | relURL }}"{{ if or (eq .Layout "archives") (eq .Section "posts") }} aria-current="page"{{ end }}>文章归档</a>
     </nav>

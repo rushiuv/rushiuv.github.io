@@ -198,3 +198,13 @@ python3.11 tools/boilerplate.py --fix     # 真切（content/posts 与 posts_ext
 技术专题总览使用data/topic_paths.json：6条具体问题导读、12篇不同的已发表精选文章，连接基础、型号和原主题档案。不是另写12篇新文，也没有发布两份待审公众号稿；历史文章不取代型号页的官方规格证据。专题插画复用signals，新增用途记录在editorial-image-provenance，不增加重复AI图注。
 
 构建后运行`python3.11 -B tools/check_model_catalog.py <build> <旧静态基线>`、`python3.11 -B tools/check_topic_hub.py <build>`及既有release/readability/portal交互检查。资料检查器核对元数据、生成页、搜索成员与内链，不联网证明手册仍可下载，也不能自动证明数值正确。桌面及360px实际浏览器验收后再发布。
+
+## 2026-10-24 工程指南本地待验收
+
+本地分支codex/content-depth-20261024新增31篇计划内方法页（按王超要求不写D10/E04），另有参数条件与三个小计算的2页，共33页。内容位于content/wiki/engineering；保留原七项导航，由首页、专题、基础、型号与应用链接进入。首页搜索新增工程指南分类。
+
+六条专题的12篇推荐改用本批工程指南，旧文章URL与档案保留；2026-09-01接口旧文已本地订正SSI状态、BiSS速率/线长与采样事件三处判断。其余旧文的未核事实记录在Notes审阅档案，不把本批新增的来源检查扩称全站审计。
+
+本轮只完成本地构建与验收，不push、不部署。预览产物放.local-preview（已忽略），静态预览服务仅绑定127.0.0.1:18780。
+
+新增检查：python3 tools/check_engineering_guides.py <build>；真实Chrome检查：NODE_PATH=<bundled-node-modules> node tools/check_engineering_browser.cjs http://127.0.0.1:18780 <review-output>。33页每页有简洁问题、条件、算例或测法及公开依据；合成数据和真实规格分开。
