@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-24",
   "baseline_source_commit": "dd860066d297",
-  "scope": "All 145 existing model/product pages; expanded parameter tables and model-specific guidance. No new product pages, no publication in this task.",
+  "scope": "All 145 existing model/product pages; expanded parameter tables and model-specific guidance. No new product pages; publication integrates concurrent source changes.",
   "boundary": "Structural and retrieval checks do not establish numerical accuracy. Historical archived official handbooks are labelled by revision; inaccessible or conflicting sources remain explicit in the page.",
   "entries": [
     {
@@ -52,8 +52,8 @@
       "title": "AM26C32",
       "path": "content/models/am26c32/_index.md",
       "parameter_rows": 12,
-      "body_characters": 813,
-      "sha256": "bda34dbc49cf109351e921861d4562892b56167dd6706be41fe5e4c2e75b1b5c",
+      "body_characters": 861,
+      "sha256": "3ba410b2aac939cc40f0bf8c2bf0841f5ea0fbba8bbd1d4ad91009a09f0a69e2",
       "sources": [
         "https://www.ti.com/lit/ds/symlink/am26c32.pdf",
         "https://www.ti.com/product/AM26C32"
@@ -81,8 +81,8 @@
       "title": "AS5047P",
       "path": "content/models/as5047p/_index.md",
       "parameter_rows": 20,
-      "body_characters": 1589,
-      "sha256": "1362e41530fc9407f1ccdbc53e3e50c565648cc82136d0d64e80c26ea0fd441a",
+      "body_characters": 1677,
+      "sha256": "f64412da83743d7349cbd8015b17471b30d00aec239cbd9806a4afbe9f85c902",
       "sources": [
         "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5047p-datasheet-en.pdf",
         "https://www.infineon.com/part/AS5047P"
@@ -171,8 +171,8 @@
       "title": "CD4051",
       "path": "content/models/cd4051/_index.md",
       "parameter_rows": 10,
-      "body_characters": 772,
-      "sha256": "14d51d7f3f5a2b13ca72a7bd8864534911b7bcbaa58ec8b07a0ba5090f0127f8",
+      "body_characters": 822,
+      "sha256": "0d56fe628f1db8125b4ab96c1e25c4d9b1094c3620c64b4929be9e95032f87ed",
       "sources": [
         "https://www.ti.com/lit/ds/symlink/cd4051b.pdf",
         "https://www.ti.com/product/CD4051B"
@@ -231,8 +231,8 @@
       "title": "EAM1010",
       "path": "content/models/eam1010/_index.md",
       "parameter_rows": 3,
-      "body_characters": 565,
-      "sha256": "13da1347c77d83c90f4c5784c7dee663063e09552b6c6d75ef3b1ba1bb9a11bf",
+      "body_characters": 619,
+      "sha256": "89cd16919ae165bad57c9a5aa50d1f3f1268563b93d33cc2039eb2ba8792798c",
       "sources": [
         "https://www.enavigate.cn/ypsq.html"
       ],
@@ -318,8 +318,8 @@
       "title": "HAL9303R",
       "path": "content/models/hal9303r/_index.md",
       "parameter_rows": 10,
-      "body_characters": 659,
-      "sha256": "d26b918d307517eab551e2100ce4185665d92c946d932afc39df42bf6d6bcafc",
+      "body_characters": 804,
+      "sha256": "fef039f30c97cbcd021c1572a7f8a67b9751b67cd482fa33a13c7f46169bed5e",
       "sources": [
         "https://www.szhall.cn/products/250.html"
       ],
@@ -503,14 +503,16 @@
       "slug": "kmz60",
       "title": "KMZ60",
       "path": "content/models/kmz60/_index.md",
-      "parameter_rows": 4,
-      "body_characters": 518,
-      "sha256": "e83f5399262349134600551576d92f6f15599f774117b3bc61fc03413bcb4340",
+      "parameter_rows": 9,
+      "body_characters": 1378,
+      "sha256": "9a02a8e99eae22efdb785967a752f7625dc0c861cc0109b59f4312278e9afa92",
       "sources": [
+        "https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf",
+        "https://www.nxp.com/part/KMZ60",
         "https://www.nxp.com/products/KMZ60"
       ],
-      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
-      "source_gap": "现行产品页未给出完整历史料号的推荐供电、电流、磁场与精度条件。",
+      "source_sections": "NXP KMZ60 Rev.2 (2014-02-07), pages 1-4; current NXP product/archive pages",
+      "source_gap": false,
       "source_conflicts": false
     },
     {
@@ -620,8 +622,8 @@
       "title": "KTH3105",
       "path": "content/models/kth3105/_index.md",
       "parameter_rows": 8,
-      "body_characters": 1070,
-      "sha256": "ed10e40b6155a4173e2ecf2842cadbbfaff71e523666f0fa14e5de80ae3ae66a",
+      "body_characters": 1182,
+      "sha256": "692d2b892aa738eaa7d707443b8ff0a15f2ea6ec47a1067abcdcb766a98bb533",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH31%20Series%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html"
@@ -678,8 +680,8 @@
       "title": "KTH5701",
       "path": "content/models/kth5701/_index.md",
       "parameter_rows": 11,
-      "body_characters": 1127,
-      "sha256": "1390899bc95ecfd6b6a276a2e23ffcab74ad81fe67e3e2f0e469c86ab0289f23",
+      "body_characters": 1264,
+      "sha256": "709b9825b292cc2ce1d4190ca2c04081be2266ba0bedfa7db53eadaf9e07f7a1",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5701AQ2AQ3_DS_CN.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/57xilie/index.html"
@@ -722,8 +724,8 @@
       "title": "KTH7111",
       "path": "content/models/kth7111/_index.md",
       "parameter_rows": 16,
-      "body_characters": 1411,
-      "sha256": "41c5337d09b5441dd5d03c4bf30429d2a5d99f7850528189a4205b8bad0a5bb2",
+      "body_characters": 1683,
+      "sha256": "ab48df148bb438853abfe746d427102c75d59772084e0e4514b564f9ce3ab664",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7111%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html"
@@ -752,8 +754,8 @@
       "title": "KTH78系列",
       "path": "content/models/kth78/_index.md",
       "parameter_rows": 12,
-      "body_characters": 1444,
-      "sha256": "dafc3e1049087c691805dc2e6292b0b00128d2150e1648a7c9658bdb9eb85e43",
+      "body_characters": 1616,
+      "sha256": "86f62149a0da793cb4ff7c380ebfac6210e54034e53a12235cb6587175182143",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
@@ -943,8 +945,8 @@
       "title": "KTM5200",
       "path": "content/models/ktm5200/_index.md",
       "parameter_rows": 21,
-      "body_characters": 1698,
-      "sha256": "54b31f8362e786501b17948a31961f2a30cb9c83b5d861dd08f57b5db208bb66",
+      "body_characters": 1882,
+      "sha256": "9246f8a085b184690fcc6724a821a6d559f92535a6cfd2aff51308ef08ee8aa3",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5200%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM52XX/index.html"
@@ -988,8 +990,8 @@
       "title": "KTM5800",
       "path": "content/models/ktm5800/_index.md",
       "parameter_rows": 13,
-      "body_characters": 1391,
-      "sha256": "aeb0a42ae429b5906ffd211ab358cf175c6366561045fde01854af2a9b7e53ab",
+      "body_characters": 1670,
+      "sha256": "65e41d59292707453ea63a8757f3aeb81ac373a3d9ed8c38b91551612599f683",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5800%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/absoluteangledivider/index.html"
@@ -1003,8 +1005,8 @@
       "title": "KTM5900",
       "path": "content/models/ktm5900/_index.md",
       "parameter_rows": 18,
-      "body_characters": 1721,
-      "sha256": "612f72f095b17afc1c61b9a98eb8d38abd64c3c5fa683f5eeccd4667e79cca91",
+      "body_characters": 2114,
+      "sha256": "e56f0da80bcb261f3b2abb12f3f87c6b25d0c65341d579e370eebb6d1000b8e2",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html"
@@ -1033,8 +1035,8 @@
       "title": "KTO9512",
       "path": "content/models/kto9512/_index.md",
       "parameter_rows": 13,
-      "body_characters": 1381,
-      "sha256": "bac71f3eb88aacb9b62c9747c72c87e7abb06388dc391c6e0e534c16d301bc26",
+      "body_characters": 1615,
+      "sha256": "aa3dcd98ee1dcae27e69c59e96754f7fc85bd21d5511f074c0f5de39360575c3",
       "sources": [
         "https://www.conntek.com.cn/api/resource/freeDownload?name=KTO9512-D26-QN32%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
         "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/cursorabsoluteencoder/index.html"
@@ -1260,8 +1262,8 @@
       "title": "MID-360",
       "path": "content/models/mid-360/_index.md",
       "parameter_rows": 17,
-      "body_characters": 1102,
-      "sha256": "6b03bbf17c43de65864589b9aa85e4ef9fd50265e08db89678f6c2e7d5506d1c",
+      "body_characters": 1160,
+      "sha256": "e0a70bb55b3a26bd867078375269f04087c5b51ecd4f0fb5062cd9385e8d0d6b",
       "sources": [
         "https://www.livoxtech.com/mid-360",
         "https://www.livoxtech.com/mid-360/specs"
@@ -1437,8 +1439,8 @@
       "title": "MT6835",
       "path": "content/models/mt6835/_index.md",
       "parameter_rows": 18,
-      "body_characters": 1495,
-      "sha256": "d6ebc54d235beb2924a9efbee5b2e580ce2a45238126a1f78b4c2ffc235a5c94",
+      "body_characters": 1553,
+      "sha256": "da0d29abe498cddef6120401656f03a797d581e83653a63df64348935ef63227",
       "sources": [
         "https://www.magntek.com.cn/",
         "https://www.magntek.com.cn/upload/pdf/202312/MT6835_Rev.1.3_%E4%B8%AD%E6%96%87%E7%89%88.pdf"
@@ -1495,8 +1497,8 @@
       "title": "MX6800",
       "path": "content/models/mx6800/_index.md",
       "parameter_rows": 3,
-      "body_characters": 722,
-      "sha256": "fb3f790d4b9c104f53e7ae55d346c16c14b0ca8d210413005dec839fb34ace23",
+      "body_characters": 774,
+      "sha256": "96de6d63d14a7cf47fc3efbb31072dd5d547a29e1716673ef43daa00ee925c03",
       "sources": [
         "https://www.orbbec.com/products/stereo-vision-camera/gemini-330-series/"
       ],
@@ -1540,10 +1542,11 @@
       "title": "NSM101x系列",
       "path": "content/models/nsm101x/_index.md",
       "parameter_rows": 4,
-      "body_characters": 637,
-      "sha256": "96640deeb221fa18e372027479dc85cdd6771ceff6087b34cbe340c6169038a7",
+      "body_characters": 702,
+      "sha256": "c3d91613f515eba06ea2398c6ebc7b4c038aacff41dbcecd6d6019c48c8f1483",
       "sources": [
-        "https://www.novosns.com/Public/Uploads/uploadfile/files/20240628/-494.pdf"
+        "https://www.novosns.com/Public/Uploads/uploadfile/files/20240628/-494.pdf",
+        "https://www.novosns.com/en/datasheet/NSM1011-BNLCA-Q0STDR/NSM101x.pdf"
       ],
       "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
       "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
@@ -1582,8 +1585,8 @@
       "title": "PMW3389",
       "path": "content/models/pmw3389/_index.md",
       "parameter_rows": 3,
-      "body_characters": 590,
-      "sha256": "5a2fb08209dd2f0000b714d0611a86f1bbe60ecdf9002a44a1a65e7821d27d05",
+      "body_characters": 651,
+      "sha256": "27442acdc1c9cd6da64e7eb83e01fe24b3b01639df9152abca4768547ab333ae",
       "sources": [
         "https://www.pixart.com/"
       ],
@@ -1610,8 +1613,8 @@
       "title": "QRD1114",
       "path": "content/models/qrd1114/_index.md",
       "parameter_rows": 8,
-      "body_characters": 922,
-      "sha256": "64d5b9f1f7cfa5aee9c3a16f46baf5e8bbeedf39ebd92522c0494758b304324b",
+      "body_characters": 969,
+      "sha256": "64fef331496759fb38f53b04a8c9d2cf7480a14f7745c8d234487e6b78adcf7d",
       "sources": [
         "https://www.onsemi.com/pdf/datasheet/qrd1113-d.pdf",
         "https://www.onsemi.com/pdf/datasheet/qrd1114-d.pdf"
@@ -1682,8 +1685,8 @@
       "title": "SR3511N",
       "path": "content/models/sr3511n/_index.md",
       "parameter_rows": 7,
-      "body_characters": 610,
-      "sha256": "ff8741d18daf072a4ff70166738035bbf9814d4b4b4f76e9e821dc52425f8adb",
+      "body_characters": 661,
+      "sha256": "1d2e2dbcbbc9e60f34545bfd5290026b717a2bac868ca23bb7914d6fbd898bf7",
       "sources": [
         "https://www.fortiortech.com/en/news/detail/40"
       ],
@@ -1768,8 +1771,8 @@
       "title": "SV660ND",
       "path": "content/models/sv660nd/_index.md",
       "parameter_rows": 3,
-      "body_characters": 571,
-      "sha256": "b3ccb3bb3df23ee60d77e98e4f7c2c011d6690cbf7b437955505f6d005569057",
+      "body_characters": 618,
+      "sha256": "192f98177809cf8d932680d6cb5c1668b7680ed73019962ca62a1984d8c28638",
       "sources": [
         "https://www.inovance.com/"
       ],
@@ -1782,8 +1785,8 @@
       "title": "TCRT5000",
       "path": "content/models/tcrt5000/_index.md",
       "parameter_rows": 10,
-      "body_characters": 833,
-      "sha256": "b3e4e9bae5e60d98913ffd1109c12996b200f22f8492b137078a88ad061e7e93",
+      "body_characters": 880,
+      "sha256": "95d3fa09032cd55ca6c28b9e788d85d53c8e3953bbb5ac9b0eddb44a43dd1606",
       "sources": [
         "https://www.vishay.com/docs/83760/tcrt5000.pdf",
         "https://www.vishay.com/zh/product/83760/"
@@ -3405,5 +3408,10 @@
       "retrieved_document": true,
       "blocked_or_soft_error": false
     }
-  ]
+  ],
+  "integration": {
+    "remote_source": "38d420eae8909a1e5f54ac571615416ad08f9dd8",
+    "local_source": "3b704330d2fce996ffa634fd5624b05b498c27b4",
+    "method": "Three-way editorial reconciliation by model; retain detailed parameter tables and absorb unique verified facts and corrected official links; omit duplicated generic prose."
+  }
 }

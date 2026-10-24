@@ -58,6 +58,10 @@ ANLC完成后保存配置，再用独立参考记录全圈正反转误差。静�
 
 三线SPI的双向线换向、帧长度和CRC需按手册实现；总线速率不是内部刷新率。典型启动20ms也不意味着上电第一帧立即可用。磁场、温度、气隙和输出模式应与验收记录一起保存。
 
+## 多芯片三线SPI怎样连接
+
+[公开手册第4个PDF页面](https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7111%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf#page=4)明确提示该三线SPI不支持并联CS选通。多芯片系统需按原厂推荐的数据线与选通方案设计，而不是照搬独立MOSI/MISO的四线拓扑。命令和返回共用SDA，MCU应在规定时刻切换数据方向，避免两端同时驱动；还要检查上电、重试和异常恢复时的引脚状态。
+
 ## 官方资料
 
 - [官方产品介绍](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html)

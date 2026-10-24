@@ -42,7 +42,8 @@ cards = {a["href"]: a for a in directory.select(".wiki-index-card")}
 home = soup("/")
 # Company pages can be removed in later editorial releases; derive the current
 # expected inventory from source instead of the superseded October 18 snapshot.
-expected_companies = len(list((ROOT / "content/companies").glob("*/_index.md")))
+expected_companies = sum(fm(p).get("wiki_type") == "company"
+                         for p in (ROOT / "content/companies").glob("*/_index.md"))
 assert [int(n.get_text()) for n in home.select('.home-stats strong')][:2] == [145, expected_companies]
 index = json.loads(home.select_one("#portal-search-data").string)
 models = [fm(p) for p in (ROOT / "content/models").glob("*/_index.md")]

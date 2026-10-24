@@ -60,6 +60,12 @@ KTM5900支持对应在轴与离轴应用，但官网和下载PDF在场强上限�
 
 自动线性校准、非线性补偿与256点表作用不同，置零也不是精度校准。MTP写入有专用供电要求，成功后应重新上电复核。输入幅值异常、欠压和CRC错误分别处理，不能用某一种报警覆盖整个反馈链。
 
+## 磁感中心和控制器启动基准
+
+[公开手册第8—9个PDF页面](https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf#page=8)特别指出封装中心与传感器敏感中心并不重合。磁体对准和PCB机械定位应以标注的敏感中心为准，不能默认对准封装几何中心。
+
+绝对角度可用于上电位置读取，AB累计值则取决于接收器何时初始化及如何建立参考。系统同时使用两路时，需要统一零点、方向和启动时刻。它们共享磁体和角度链，不能因此构成独立冗余；配置和校准记录还应保留磁体、机械基准、手册版本与输出设置，以便复装后判断是否需要重新校准。
+
 ## 官方资料
 
 - [官方产品介绍](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html)

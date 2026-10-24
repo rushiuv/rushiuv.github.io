@@ -49,6 +49,10 @@ KTH3105的5V典型灵敏度为5.0mV/Gs，约为3101的3.33倍。该比值来自�
 
 确认ADC输入负载和参考电压，并测全温零点、端点、迟滞及重复性。替换不同灵敏度成员时需更新标定系数和量程判断，原有软件阈值不能因为引脚相似而沿用。
 
+## 单路输出的可观测范围
+
+同一模拟电压会同时受到磁体距离、姿态与背景场影响。只有先限定机构运动自由度并标定磁路，才能把读数解释成目标行程。比较不同模拟链的噪声时，应把电压噪声换算到相同磁场灵敏度，并使用相同测量带宽。
+
 ## 官方资料
 
 - [KTH3105 原厂资料入口](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html)
