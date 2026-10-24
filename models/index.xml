@@ -954,7 +954,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>最大扭矩&lt;/td>
- &lt;td>23.7 N·m；最大速度：30 rad/s@24V，原厂示例温度24°C，两个最大值不表示同时连续输出&lt;/td>
+ &lt;td>23.7 N·m；最大速度：30 rad/s（24V），原厂示例温度24°C，两个最大值不表示同时连续输出&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>工作电压&lt;/td>
@@ -1603,7 +1603,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>平均电流&lt;/td>
- &lt;td>1.6µA@1.8V、5Hz；3.3µA@1.8V、20Hz，官网目录&lt;/td>
+ &lt;td>1.6µA（1.8V）、5Hz；3.3µA（1.8V）、20Hz，官网目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>TH/SH动作与释放&lt;/td>
@@ -1662,7 +1662,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>KTH1631响应/电流&lt;/td>
- &lt;td>40kHz；2.25mA@1.8V，官网目录口径&lt;/td>
+ &lt;td>40kHz；2.25mA（1.8V），官网目录口径&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>输出&lt;/td>
@@ -1701,7 +1701,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>对应平均电流&lt;/td>
- &lt;td>10.4/2.4/0.9µA@1.8V，官网目录&lt;/td>
+ &lt;td>10.4/2.4/0.9µA（1.8V），官网目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>H档动作/释放&lt;/td>
@@ -1748,7 +1748,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>KTH1701频率/电流&lt;/td>
- &lt;td>25/100/500Hz；0.9/2.4/10.4µA@1.8V&lt;/td>
+ &lt;td>25/100/500Hz；0.9/2.4/10.4µA（1.8V）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>KTH1701阈值档&lt;/td>
@@ -1834,15 +1834,15 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型灵敏度&lt;/td>
- &lt;td>&lt;a href="mailto:1.00mV/Gs@3.3V">1.00mV/Gs@3.3V&lt;/a>；1.5mV/Gs@5V&lt;/td>
+ &lt;td>1.00mV/Gs（3.3V）；1.5mV/Gs（5V）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>目录场强范围&lt;/td>
- &lt;td>±1400Gs@3.3V；±1500Gs@5V&lt;/td>
+ &lt;td>±1400Gs（3.3V）；±1500Gs（5V）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>典型电流&lt;/td>
- &lt;td>&lt;a href="mailto:4.5mA@3.3V">4.5mA@3.3V&lt;/a>；5.4mA@5V，系列目录&lt;/td>
+ &lt;td>4.5mA（3.3V）；5.4mA（5V），系列目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>工作温度&lt;/td>
@@ -1877,15 +1877,15 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型灵敏度&lt;/td>
- &lt;td>&lt;a href="mailto:3.30mV/Gs@3.3V">3.30mV/Gs@3.3V&lt;/a>；5.0mV/Gs@5V，官网KTH3105行&lt;/td>
+ &lt;td>3.30mV/Gs（3.3V）；5.0mV/Gs（5V），官网KTH3105行&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>目录场强范围&lt;/td>
- &lt;td>±420Gs@3.3V；±450Gs@5V&lt;/td>
+ &lt;td>±420Gs（3.3V）；±450Gs（5V）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>典型电流&lt;/td>
- &lt;td>&lt;a href="mailto:4.5mA@3.3V">4.5mA@3.3V&lt;/a>；5.4mA@5V，系列目录&lt;/td>
+ &lt;td>4.5mA（3.3V）；5.4mA（5V），系列目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>输出&lt;/td>
@@ -1920,7 +1920,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型电流&lt;/td>
- &lt;td>&lt;a href="mailto:4.5mA@3.3V">4.5mA@3.3V&lt;/a>；5.4mA@5V，官网目录&lt;/td>
+ &lt;td>4.5mA（3.3V）；5.4mA（5V），官网目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>KTH3101灵敏度与场强范围&lt;/td>
@@ -1975,11 +1975,11 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>AA-STx版本&lt;/td>
- &lt;td>2.5Hz；5.5µA@3.3V，官网目录&lt;/td>
+ &lt;td>2.5Hz；5.5µA（3.3V），官网目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>AB-STx版本&lt;/td>
- &lt;td>5.0Hz；8.0µA@3.3V，官网目录&lt;/td>
+ &lt;td>5.0Hz；8.0µA（3.3V），官网目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>动作/释放阈值&lt;/td>
@@ -2018,11 +2018,11 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>AT版本频率/电流&lt;/td>
- &lt;td>1.7kHz；1.9mA@2.5V&lt;/td>
+ &lt;td>1.7kHz；1.9mA（2.5V）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>AM版本频率/电流&lt;/td>
- &lt;td>30Hz；33µA@2.5V&lt;/td>
+ &lt;td>30Hz；33µA（2.5V）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>目录动作/释放&lt;/td>
@@ -2206,7 +2206,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型电流&lt;/td>
- &lt;td>&lt;a href="mailto:16mA@3.3V">16mA@3.3V&lt;/a>，关键指标表&lt;/td>
+ &lt;td>16mA（3.3V），关键指标表&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>典型启动&lt;/td>
@@ -2273,7 +2273,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型电流&lt;/td>
- &lt;td>&lt;a href="mailto:16mA@3.3V">16mA@3.3V&lt;/a>，关键指标表&lt;/td>
+ &lt;td>16mA（3.3V），关键指标表&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>典型启动&lt;/td>
@@ -2348,7 +2348,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型电流&lt;/td>
- &lt;td>&lt;a href="mailto:16mA@3.3V">16mA@3.3V&lt;/a>，关键指标表&lt;/td>
+ &lt;td>16mA（3.3V），关键指标表&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>典型启动&lt;/td>
@@ -2435,7 +2435,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>KTH7812电流/启动&lt;/td>
- &lt;td>&lt;a href="mailto:11.6mA@3.3V">11.6mA@3.3V&lt;/a>典型；1ms典型&lt;/td>
+ &lt;td>11.6mA（3.3V）典型；1ms典型&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>KTH7812磁场&lt;/td>
@@ -2486,7 +2486,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型工作电流&lt;/td>
- &lt;td>&lt;a href="mailto:11.6mA@3.3V">11.6mA@3.3V&lt;/a>；5V表另核对&lt;/td>
+ &lt;td>11.6mA（3.3V）；5V表另核对&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>启动时间&lt;/td>
@@ -2604,7 +2604,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型工作电流&lt;/td>
- &lt;td>&lt;a href="mailto:11.6mA@3.3V">11.6mA@3.3V&lt;/a>；5V表另核对&lt;/td>
+ &lt;td>11.6mA（3.3V）；5V表另核对&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>启动时间&lt;/td>
@@ -2663,7 +2663,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型工作电流&lt;/td>
- &lt;td>13.6mA@5V，公开PDF关键表&lt;/td>
+ &lt;td>13.6mA（5V），公开PDF关键表&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>磁场条件&lt;/td>
@@ -2714,7 +2714,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型电流&lt;/td>
- &lt;td>13.6mA@5V，PDF关键表&lt;/td>
+ &lt;td>13.6mA（5V），PDF关键表&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>磁场条件&lt;/td>
@@ -2777,7 +2777,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型工作电流&lt;/td>
- &lt;td>&lt;a href="mailto:11.6mA@3.3V">11.6mA@3.3V&lt;/a>；5V表另核对&lt;/td>
+ &lt;td>11.6mA（3.3V）；5V表另核对&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>启动时间&lt;/td>
@@ -2844,7 +2844,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型工作电流&lt;/td>
- &lt;td>&lt;a href="mailto:11.6mA@3.3V">11.6mA@3.3V&lt;/a>；5V表另核对&lt;/td>
+ &lt;td>11.6mA（3.3V）；5V表另核对&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>启动时间&lt;/td>
@@ -2911,7 +2911,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>典型工作电流&lt;/td>
- &lt;td>&lt;a href="mailto:11.6mA@3.3V">11.6mA@3.3V&lt;/a>；5V表另核对&lt;/td>
+ &lt;td>11.6mA（3.3V）；5V表另核对&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>启动时间&lt;/td>
@@ -2966,15 +2966,15 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>T档&lt;/td>
- &lt;td>5000Hz；1.9µA@3V，官网目录&lt;/td>
+ &lt;td>5000Hz；1.9µA（3V），官网目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>M档&lt;/td>
- &lt;td>1600Hz；600nA@3V，官网目录&lt;/td>
+ &lt;td>1600Hz；600nA（3V），官网目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>S档&lt;/td>
- &lt;td>50Hz；160nA@3V，官网目录&lt;/td>
+ &lt;td>50Hz；160nA（3V），官网目录&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>A/B/C/D/E动作场&lt;/td>
@@ -3056,7 +3056,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>1301采样/电流&lt;/td>
- &lt;td>50/1600/5000Hz；160nA/600nA/1.9µA@3V&lt;/td>
+ &lt;td>50/1600/5000Hz；160nA/600nA/1.9µA（3V）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>1302输出&lt;/td>
@@ -3064,7 +3064,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>1304配置&lt;/td>
- &lt;td>目录50Hz、160nA@3V；CMOS；DFN 2×2mm-3L&lt;/td>
+ &lt;td>目录50Hz、160nA（3V）；CMOS；DFN 2×2mm-3L&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>1301阈值例&lt;/td>
@@ -4471,7 +4471,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>噪声口径&lt;/td>
- &lt;td>±0.02° RMS@3kHz是噪声项目，不能当绝对精度&lt;/td>
+ &lt;td>±0.02° RMS（3kHz）是噪声项目，不能当绝对精度&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -4612,7 +4612,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>探测距离&lt;/td>
- &lt;td>100klx条件：40m@10%反射率；70m@80%反射率&lt;/td>
+ &lt;td>100klx条件：40m（10%反射率）；70m（80%反射率）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>测距精密度(1σ)&lt;/td>
@@ -5539,7 +5539,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>低功耗条件&lt;/td>
- &lt;td>Sniff 0.4µA@6Hz；Wake 0.9µA@25Hz，模式不同不可并用&lt;/td>
+ &lt;td>Sniff 0.4µA（6Hz）；Wake 0.9µA（25Hz），模式不同不可并用&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>接口速率&lt;/td>
@@ -5782,7 +5782,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>发射正向电压&lt;/td>
- &lt;td>最大1.7V@20mA、25°C；不是推荐供电值&lt;/td>
+ &lt;td>最大1.7V（20mA）、25°C；不是推荐供电值&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>响应时间&lt;/td>
