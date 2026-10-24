@@ -2,7 +2,7 @@
 """Read-only checks for the October 2026 sensor.fans release.
 
 Usage: python3.11 -B tools/check_site_release.py /absolute/path/to/hugo/build
-Requires the project's existing beautifulsoup4 dependency. Does not build, fetch,
+Requires the project's existing beautifulsoup4 and PyYAML dependencies. Does not build, fetch,
 publish, write reports, or claim that browser/mobile rendering has been tested.
 The previously published KTH7111 article contained five inline SVG illustrations.
 Also checks the current 37 basics / 43 applications and the explicit reference
@@ -17,6 +17,8 @@ import sys
 import unicodedata
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+
+import yaml
 
 try:
     from bs4 import BeautifulSoup, Tag
@@ -144,8 +146,8 @@ def source_entries(checks, source_root, folder, flag):
             text = path.read_text(encoding="utf-8")
             if not text.startswith("---"):
                 raise ValueError("missing front matter")
-            # These release entries deliberately use JSON in YAML front matter.
-            params = json.loads(text.split("---", 2)[1])
+            # Hugo accepts YAML front matter, including the older JSON objects.
+            params = yaml.safe_load(text.split("---", 2)[1])
             if not isinstance(params, dict):
                 raise ValueError("front matter must be an object")
             if not params.get(flag):
@@ -155,7 +157,7 @@ def source_entries(checks, source_root, folder, flag):
                 raise ValueError("unexpected slug: " + str(slug))
             entries.append({"slug": slug, "url": "/" + folder + "/" + slug + "/",
                             "params": params, "file": path})
-        except (OSError, ValueError, TypeError) as error:
+        except (OSError, ValueError, TypeError, yaml.YAMLError) as error:
             errors.append(str(path.relative_to(source_root)) + ": " + str(error))
     checks.record(folder + "_source_format", not errors, "errors=" + repr(errors))
     return entries
