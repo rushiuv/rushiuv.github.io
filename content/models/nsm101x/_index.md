@@ -5,28 +5,54 @@ wiki: true
 wiki_type: "model"
 wiki_rank: 246
 seed_count: 0
-lastmod: "2026-10-18"
+lastmod: "2026-10-24"
 related_companies: ["纳芯微"]
 wiki_category: "磁开关"
 catalog_vendor: "纳芯微"
 catalog_type: "磁开关"
 catalog_form: "芯片"
 search_aliases: ["NSM1011","NSM1012","NSM1013"]
-official_url: "https://www.novosns.com/Public/Uploads/uploadfile/files/20240628/-494.pdf"
-document_version: "官方公开PDF，核对：2026-10-18；版本见下文"
+official_url: "https://www.novosns.com/en/datasheet/NSM1011-BNLCA-Q0STDR/NSM101x.pdf"
+document_version: "官方公开 PDF，英文版 V1.0；核对：2026-10-24"
 model_card: true
-datasheet_url: "https://www.novosns.com/Public/Uploads/uploadfile/files/20240628/-494.pdf"
-datasheet_label: "官方公开PDF"
+datasheet_url: "https://www.novosns.com/en/datasheet/NSM1011-BNLCA-Q0STDR/NSM101x.pdf"
+datasheet_label: "NSM101x 官方数据手册（英文版 V1.0）"
 ---
 
 ## 核心性能
+
+### 产品介绍
+
+三线霍尔开关与锁存器系列，三款成员的触发逻辑不同。
+
+本页只写入能够由 NSM101x系列 当前官方入口、下载件或站内已核对来源支持的内容。资料口径为“官方公开PDF，核对：2026-10-18；版本见下文”。系列名、相近料号和不同后缀的参数不自动并入本型号；典型值、可配置上限与保证范围也分别理解。
+
+### 核心参数
 
 - **成员区别** NSM1011单极、NSM1012全极、NSM1013锁存
 - **供电** 常规版2.7～28V；低功耗版3.1～28V，依具体版本
 - **输出** 开漏，需外部上拉
 - **温度** −40～150°C；阈值、极性、输出相位及封装须逐项选
 
+### 接口与输出
+
+NSM101x系列 与主控或驱动器的连接应以完整订货号、引脚表和时序章节为准。下面保留官方公开页已经确认的输出与编码信息；没有列出的接口不据系列习惯补写。
+
+- **输出** 开漏，需外部上拉
+- **温度** −40～150°C；阈值、极性、输出相位及封装须逐项选
+
+### 工作原理
+
+NSM101x系列 把磁场变化转换成离散状态，而不是连续角度值。其工作链路是：磁敏单元检测目标磁体产生的场，比较与迟滞电路判定阈值，输出级再给出逻辑状态；磁场越过置位与复位阈值后保持对应状态，直到相反极性的磁场触发翻转。动作点、释放点、采样频率和输出拓扑必须按具体版本理解。
+
+### 典型应用与使用条件
+
+三线霍尔开关与锁存器系列，三款成员的触发逻辑不同。
+
+把 NSM101x系列 放入样机前，至少应核对：目标磁极与运动方向、动作／释放阈值及迟滞、采样频率与最高运动速度、输出上拉、灌电流和上电状态。典型应用只是选型入口，不等于原厂对任意整机结构的性能承诺；最终应在目标装配和控制周期下保留可复现的原始数据。
+
+本页只写入能够由 NSM101x系列 当前官方入口、下载件或站内已核对来源支持的内容。资料口径为“官方公开PDF，核对：2026-10-18；版本见下文”。系列名、相近料号和不同后缀的参数不自动并入本型号；典型值、可配置上限与保证范围也分别理解。
+
 ## 官方资料
 
-- [NSM101x系列 官方资料](https://www.novosns.com/Public/Uploads/uploadfile/files/20240628/-494.pdf)
-
+- [NSM101x 系列官方数据手册（PDF）](https://www.novosns.com/en/datasheet/NSM1011-BNLCA-Q0STDR/NSM101x.pdf)
