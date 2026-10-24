@@ -1,24 +1,28 @@
 ---
-{
-  "title": "单圈与多圈：掉电后怎样知道转过几圈",
-  "description": "把圈内角度与圈数拆开，区分存储、备用电源、齿轮与自供能计圈。",
-  "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-16",
-  "layout": "basic-single",
-  "basic_entry": true,
-  "basic_group": "认识编码器",
-  "weight": 3,
-  "related_basics": [
-    "absolute-incremental",
-    "resolution-accuracy",
-    "interfaces"
-  ],
-  "related_topics": [
-    "多圈编码器"
-  ],
-  "related_model_slugs": []
-}
+title: 单圈与多圈：掉电后怎样知道转过几圈
+description: 把圈内角度与圈数拆开，区分存储、备用电源、齿轮与自供能计圈。
+date: '2026-10-16T10:00:00+08:00'
+lastmod: '2026-10-24'
+layout: basic-single
+basic_entry: true
+basic_group: 认识编码器
+weight: 3
+related_basics:
+- absolute-incremental
+- resolution-accuracy
+- interfaces
+related_topics:
+- 多圈编码器
+related_model_slugs: []
+related_guides:
+- calibration-data-integrity
+- sample-time-contract
+- batteryless-multiturn
+related_applications:
+- gearbox
+- robot-joint
 ---
+
 
 
 单圈编码器描述一圈内的位置。轴从30°转到390°，单圈结果仍是30°。多圈系统需要同时给出圈内角度和圈数，才能区分这两个机械位置。
@@ -50,3 +54,7 @@
 若多圈编码器位于减速器电机侧，总角度经过传动比换算后才能对应输出端。传动背隙与弹性不会因为圈数被保存而消失。
 
 [POSITAL：多圈Kit编码器与Wiegand供能](https://www.posital.com/en/products/kit-encoders)；[SSI Kit编码器手册](https://dms.posital.com/pdf/manual-kit-ktd-s1.pdf)给出了具体产品的接口和计圈实现。
+
+## 验收要包含无主电源时的运动
+
+[POSITAL德文Wiegand说明](https://www.posital.com/media/posital_media/documents/flyer_wiegand_sensor/flyer_Wiegand-Sensors_de.pdf)介绍Wiegand脉冲用于信号及能量采集，并用于免电池多圈；这不等于任意存储器都会自行计圈。可做合成验收动作：记录12.25圈，切主电源后再正转两圈，恢复后检查是否为14.25圈，同时测试产品规定的反转边界。若仍回到12.25圈，最多说明读到了旧值，尚未证明断电期间正确计圈。结合[配置完整性](/topics/guides/calibration-data-integrity/)及[减速器坐标](/applications/gearbox/)分别验证记录、计圈与传动换算。

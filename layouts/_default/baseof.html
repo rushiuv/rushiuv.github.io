@@ -10,7 +10,7 @@
 <link rel="icon" href="{{ "images/site/favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="stylesheet" href="{{ "css/site.css" | relURL }}?v={{ now.Unix }}">
 <link rel="stylesheet" href="{{ "css/wiki.css" | relURL }}?v={{ now.Unix }}">
-{{ if or (eq .Section "wiki") (eq .Section "applications") .IsHome }}<link rel="stylesheet" href="{{ "css/basics.css" | relURL }}?v=20261016-open-toc">{{ end }}
+{{ if or (eq .Section "wiki") (eq .Section "applications") .Params.engineering_entry .IsHome }}<link rel="stylesheet" href="{{ "css/basics.css" | relURL }}?v=20261016-open-toc">{{ end }}
 <link rel="stylesheet" href="{{ "css/portal.css" | relURL }}?v=20261016-home-cartoon">
 {{ if .IsHome }}<link rel="stylesheet" href="{{ "css/home.css" | relURL }}?v=20261016-refine-2">{{ end }}
 {{ $refinedVersion := substr (crypto.SHA256 (readFile "static/css/refined.css")) 0 12 }}

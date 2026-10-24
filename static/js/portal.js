@@ -7,7 +7,7 @@
   const list = document.getElementById('portal-search-list');
   const count = document.getElementById('portal-search-count');
   const data = JSON.parse(document.getElementById('portal-search-data').textContent);
-  const labels = {model:'型号资料', company:'公司与品牌', post:'文章', basic:'基础知识', application:'应用场景', guide:'工程指南'};
+  const labels = {model:'型号资料', company:'公司与品牌', post:'文章', basic:'基础知识', application:'应用场景', guide:'专题方法'};
   const normalize = value => value.normalize('NFKC').toLocaleLowerCase().replace(/[\s\-‐‑–—_·]/g, '');
   let kind = '';
   let limit = 24;

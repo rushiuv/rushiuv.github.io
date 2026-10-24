@@ -3,7 +3,7 @@
   "title": "角度噪声：静止读数为何还在跳",
   "description": "理解RMS、带宽、平均与速度差分；避免把读数稳定误认成准确。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-16",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "看懂性能参数",
@@ -17,7 +17,15 @@
     "ADC",
     "非线性校准"
   ],
-  "related_model_slugs": []
+  "related_model_slugs": [],
+  "related_guides": [
+    "noise-statistics",
+    "independent-samples",
+    "velocity-noise"
+  ],
+  "related_applications": [
+    "closed-loop-stepper"
+  ]
 }
 ---
 
@@ -47,3 +55,9 @@
 角度跨过0°时，先做圆周求差。例如359.9°到0.1°是正向0.2°，不能按普通减法得到−359.8°。滤波、速度估计与过圈处理都要使用一致的角度约定。
 
 [雷尼绍编码器术语：Jitter与Filtering](https://www.renishaw.com/en/optical-and-inductive-encoders-glossary--27382)。上述平均和差分关系由列明的独立噪声模型推导。
+
+## 先排除重复读取制造的样本量
+
+合成设100个独立新样本的标准差为0.0001圈，平均后为0.00001圈，即0.0036°；把每点复制100遍，文件虽有一万行，却不再改善十倍。[海德汉ATS德文手册](https://product.heidenhain.de/JPBC/image/HWP.EN/hlr-system/ATS_539862-xx_BHB_543734_Ver19_01_de.pdf)也将采样率与每信号周期的采样点数分别检查。测试时保存新数据标志及时间，再按[独立样本](/topics/guides/independent-samples/)核算；若还要差分求速度，应另看[速度噪声](/topics/guides/velocity-noise/)，而非只追求显示稳定。
+
+固定数值不跳也可能来自量化台阶；须把静止时间统计与整圈误差记录分开保存。

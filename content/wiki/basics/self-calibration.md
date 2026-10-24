@@ -3,14 +3,30 @@
   "title": "自校准：先问它在修正哪种误差",
   "description": "把出厂校准、在线幅相修正和整机查表分开，明确无参考校准所依赖的运动条件。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "看懂性能参数",
   "weight": 142,
-  "related_basics": ["inl", "magnetic-encoder", "mounting", "angle-noise"],
-  "related_topics": ["自校准", "非线性校准"],
-  "related_model_slugs": []
+  "related_basics": [
+    "inl",
+    "magnetic-encoder",
+    "mounting",
+    "angle-noise"
+  ],
+  "related_topics": [
+    "自校准",
+    "非线性校准"
+  ],
+  "related_model_slugs": [],
+  "related_guides": [
+    "calibration-evidence",
+    "calibration-validation",
+    "calibration-data-integrity"
+  ],
+  "related_applications": [
+    "robot-joint"
+  ]
 }
 ---
 
@@ -31,3 +47,9 @@
 测试前保存原参数与原始数据，记录运动方向、速度、温度和磁路状态。观察完成标志之外，还要用未参与建表的记录复测；换向、重新上电和更换磁体后的结果应分别检查。失败后应保留有效旧参数，不能把一次中断留下的半张表当正式结果。
 
 选型时直接问：它修哪几项、需要什么参考、怎样触发与保存、哪些条件下拒绝更新，以及能否读取校准状态。完成时间短只是效率指标，不能替代校准后的整机误差证据。
+
+## 确认校准改了信号，还是改了角度映射
+
+[MLX90382手册第21页](https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf#page=21)分别描述I/Q相对灵敏度、正交度自校准和16点线性化，不能合成一项“自动消除所有误差”。合成设信号相位为u+0.001sin(2πu)，轨迹即使完全成圆，机械角仍有最大0.36°偏差。验收要保留校准前后的独立参考残差，并在重启后复测；[校准证据](/topics/guides/calibration-evidence/)解释为何圆形轨迹不是[INL](/wiki/basics/inl/)合格证明。
+
+如果机械运动覆盖不到手册要求的区域，先核对适用条件，不能由完成标志推断全圈已经校准。

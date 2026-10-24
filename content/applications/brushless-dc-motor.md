@@ -3,13 +3,26 @@
   "title": "无刷直流电机：先把转子位置换成正确电角度",
   "description": "比较换相霍尔与连续磁角度路径，核对极对数、零位、动态延迟和实际电流干扰。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "application-single",
   "application_entry": true,
   "application_group": "工业与运动",
   "weight": 213,
-  "related_basics": ["uvw", "latency", "magnetic-encoder"],
-  "reference_topic": "无刷直流电机"
+  "related_basics": [
+    "uvw",
+    "latency",
+    "magnetic-encoder"
+  ],
+  "reference_topic": "无刷直流电机",
+  "related_guides": [
+    "magnetic-field-coordinates",
+    "sample-time-contract"
+  ],
+  "related_model_slugs": [
+    "ma330",
+    "tle5012b",
+    "kth7812"
+  ]
 }
 ---
 
@@ -37,3 +50,10 @@
 ## 先验证相序，再谈效率
 
 用设备批准的限流方式确认极对数、电零位和转向，随后测试静止启动、低速加载、快速加减速和反转。记录位置时间戳、电流与故障状态，检查掉线后驱动器是否按要求停止或降级。芯片位数和UVW可用，只是控制链的一部分，不等于整机调试完成。
+
+
+## 六种霍尔状态，先对准电周期再看机械一圈
+
+[maxon EC frameless安装手册3.5.2节](https://www.maxongroup.com/medias/sys_master/root/8873283846174/ecXXframeless-en-21-03.pdf)给出三路霍尔每极对形成六种组合的换相图。先读[UVW换相](/wiki/basics/uvw/)与[磁极对数](/wiki/basics/pole-pairs/)，不要直接拿机械一圈当一个电周期。
+
+自设4对极、6000rpm，电频率400Hz，理想60°电角区间约417µs，对应15°机械角；这些只作时序换算，不是霍尔安装容差。调试时采用驱动器批准的限流流程，同时记录三路状态、独立机械位置和相电流，先确认序列与电零位，再评价转矩波动。角度芯片替换霍尔时，用[磁场坐标核对](/topics/guides/magnetic-field-coordinates/)检查实际感应分量，并按[采样时间约定](/topics/guides/sample-time-contract/)核数据对应时刻；有角度数值不代表换相坐标已对齐。

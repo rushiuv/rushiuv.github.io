@@ -3,13 +3,22 @@
   "title": "气缸位置检测：到位开关与连续行程是两种任务",
   "description": "从活塞磁体、缸筒与外部读头建立测量路径，检查有效行程、重复位置和钢结构影响。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "application-single",
   "application_entry": true,
   "application_group": "工业与运动",
   "weight": 221,
-  "related_basics": ["magnetic-encoder", "mounting", "self-calibration"],
-  "reference_topic": "气缸位置检测"
+  "related_basics": [
+    "magnetic-encoder",
+    "mounting",
+    "self-calibration"
+  ],
+  "reference_topic": "气缸位置检测",
+  "related_guides": [
+    "parameter-conditions",
+    "velocity-noise"
+  ],
+  "related_model_slugs": []
 }
 ---
 
@@ -36,3 +45,10 @@
 ## 验证包含伸出与缩回两条轨迹
 
 用独立位移参考，检查全行程、两方向、不同压力负载和温度下的误差，保留磁场原始量与状态。再测磁体松动、旁边气缸动作与线路中断。到位信号只能证明规定观测成立，不能代替夹伤防护、机械锁定或设备的安全停机功能。
+
+
+## 到位灯亮，活塞可能还在一个窗口内
+
+[Festo SDBT-MSX说明](https://press.festo.com/en-gb/industry-segments/first-programmable-proximity-switch)列出可设切换窗口；窗口属于该产品功能，不能当所有气缸开关的重复精度。结合[动作与释放阈值](/wiki/basics/bop-brp/)及[安装关系](/wiki/basics/mounting/)，先区分触发边界和机械端点。
+
+在受控慢速伸缩中，用独立位移尺记录亮灯、熄灯位置，并保持压力和负载。自设一次伸出在98mm亮灯、缩回在97mm熄灯，1mm差值只是这次观测的方向相关切换间隔，不能直接叫重复定位误差；须在同一接近条件重复后比较散布。按[参数条件核对](/topics/guides/parameter-conditions/)写清读头位置和缸筒版本；若连续位移用于求速度，再按[速度差分噪声](/topics/guides/velocity-noise/)选采样间隔，避免把触发跳变解释成真实速度尖峰。

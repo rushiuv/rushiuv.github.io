@@ -3,14 +3,28 @@
   "title": "CRC：帧正确不等于角度正确",
   "description": "理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "接口与应用",
   "weight": 146,
-  "related_basics": ["spi-ssi", "interfaces", "latency", "i2c"],
-  "related_topics": ["编码器接口"],
-  "related_model_slugs": []
+  "related_basics": [
+    "spi-ssi",
+    "interfaces",
+    "latency",
+    "i2c"
+  ],
+  "related_topics": [
+    "编码器接口"
+  ],
+  "related_model_slugs": [],
+  "related_guides": [
+    "sample-time-contract",
+    "calibration-data-integrity"
+  ],
+  "related_applications": [
+    "servo-motor"
+  ]
 }
 ---
 
@@ -31,3 +45,7 @@ CRC把规定比特序列按既定多项式计算成校验值，接收端重新�
 ## 选型要问完整的数据可信链
 
 除了CRC，还要读状态位、量程或磁场标志、更新时间与失联判据。CRC不是身份认证或加密，不能阻止知道算法的人构造另一份合法帧；有限校验长度也不表示绝无漏检。只有明确错误模型与系统响应，校验功能才从一项参数变成可验证的行为。
+
+## 把状态位纳入真实测试向量
+
+[BiSS AN3 Rev E3](https://biss-interface.com/wp-content/uploads/2025/07/BiSS_AN3_appnote_E3en.pdf)指出典型过程数据CRC覆盖数据通道中的传感器值、状态及生命计数，且发送前取反。只校验位置字段，会把不同的受保护消息当成相同输入。调试时先保存一帧原始比特，再分别翻转状态位与位置位，确认接收器确实拒收；不要用“收到六位校验”代替算法验证。[时间约定](/topics/guides/sample-time-contract/)还要检查重试后数据是否过旧，[配置完整性](/topics/guides/calibration-data-integrity/)则处理保存过程的另一类损坏。

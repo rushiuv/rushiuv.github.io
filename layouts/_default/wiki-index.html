@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $entries := sort (where (where site.Pages "Params.wiki" true) "Params.wiki_type" "model") "Params.wiki_rank" }}
 <header class="page-head"><p class="kicker">如是有为 · 型号资料</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div></header>
-<p class="guide-directory-link"><a href="{{ "wiki/engineering/parameter-conditions/" | relURL }}">先读参数条件 →</a> · <a href="{{ "wiki/engineering/system-acceptance-record/" | relURL }}">再做整机验收记录 →</a></p>
+<p class="guide-directory-link"><a href="{{ "topics/guides/parameter-conditions/" | relURL }}">先读参数条件 →</a> · <a href="{{ "topics/guides/system-acceptance-record/" | relURL }}">再做整机验收记录 →</a></p>
 <section class="wiki-index">
   <h2>查型号、参数与官方文档</h2>
   <p class="muted">已整理 {{ len $entries }} 个型号与产品词条 · 芯片、模块与完整编码器分开标记 · 系列和具体型号均可查</p>

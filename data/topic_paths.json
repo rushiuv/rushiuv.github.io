@@ -21,12 +21,12 @@
       ],
       "reads": [
         {
-          "path": "/wiki/engineering/eccentricity-budget",
+          "path": "/topics/guides/eccentricity-budget",
           "title": "偏心量怎样换成角误差",
           "note": "定义读数半径和图案轴，再算适用结构下的误差。"
         },
         {
-          "path": "/wiki/engineering/magnetic-field-coordinates",
+          "path": "/topics/guides/magnetic-field-coordinates",
           "title": "对径磁场：坐标变了，物理量变了吗",
           "note": "区分全局场矢量、局部坐标和器件敏感分量。"
         }
@@ -58,12 +58,12 @@
       ],
       "reads": [
         {
-          "path": "/wiki/engineering/inductive-error-definition",
+          "path": "/topics/guides/inductive-error-definition",
           "title": "芯片INL与机械角误差如何分层",
           "note": "先确认被测量，避免把通道线性度当整机角精度。"
         },
         {
-          "path": "/wiki/engineering/rate-budget",
+          "path": "/topics/guides/rate-budget",
           "title": "输入频率、刷新率与帧速率各管什么",
           "note": "把周期数、转速和输出事件放回同一条时序。"
         }
@@ -91,16 +91,19 @@
         "kto9512",
         "pnh3348",
         "ic-pz",
-        "ktm5800"
+        "ktm5800",
+        "resolute-rl",
+        "smd-01b",
+        "rod-280"
       ],
       "reads": [
         {
-          "path": "/wiki/engineering/optical-signal-chain",
+          "path": "/topics/guides/optical-signal-chain",
           "title": "光电流之前、之后分别查什么",
           "note": "沿光学权重、TIA、ADC和解算分配测点。"
         },
         {
-          "path": "/wiki/engineering/optical-tolerance-evidence",
+          "path": "/topics/guides/optical-tolerance-evidence",
           "title": "理论零谐波遇到公差会怎样",
           "note": "用公开积分模型重算，理想值与制造偏差分开。"
         }
@@ -109,7 +112,9 @@
       "guides": [
         "optical-signal-chain",
         "channel-angle-harmonics",
-        "reflective-code-validation"
+        "reflective-code-validation",
+        "linear-scale-thermal",
+        "reference-recovery"
       ]
     },
     {
@@ -131,12 +136,12 @@
       ],
       "reads": [
         {
-          "path": "/wiki/engineering/spi-data-age",
+          "path": "/topics/guides/spi-data-age",
           "title": "一帧数据到底属于哪一次读取",
           "note": "用公开时序定义寄存器快照与主控使用之间的年龄。"
         },
         {
-          "path": "/wiki/engineering/sample-time-contract",
+          "path": "/topics/guides/sample-time-contract",
           "title": "采样到使用，逐段约定事件",
           "note": "锁存、处理和传输分开记录，别只看报文时间戳。"
         }
@@ -168,12 +173,12 @@
       ],
       "reads": [
         {
-          "path": "/wiki/engineering/calibration-evidence",
+          "path": "/topics/guides/calibration-evidence",
           "title": "自校准修什么，依靠什么条件",
           "note": "按修正对象、参考来源和运动要求比较。"
         },
         {
-          "path": "/wiki/engineering/calibration-validation",
+          "path": "/topics/guides/calibration-validation",
           "title": "验证参考也要独立",
           "note": "同一运动假设下自洽，不代表已恢复真实角度。"
         }
@@ -202,16 +207,17 @@
         "reagles-kit",
         "reagles-kid",
         "gw-rt",
-        "win48"
+        "win48",
+        "posital-ktd-s100b-1609"
       ],
       "reads": [
         {
-          "path": "/wiki/engineering/dual-encoder-difference-budget",
+          "path": "/topics/guides/dual-encoder-difference-budget",
           "title": "角差估扭矩，先算同步误差",
           "note": "以明确设定的刚度重算量化与时间预算。"
         },
         {
-          "path": "/wiki/engineering/multihead-harmonics",
+          "path": "/topics/guides/multihead-harmonics",
           "title": "同尺度双读头能压掉哪一阶",
           "note": "用空间阶次响应区分读头平均与电机/负载两端反馈。"
         }
@@ -220,7 +226,8 @@
       "guides": [
         "dual-encoder-difference-budget",
         "multihead-harmonics",
-        "system-acceptance-record"
+        "system-acceptance-record",
+        "batteryless-multiturn"
       ]
     }
   ]

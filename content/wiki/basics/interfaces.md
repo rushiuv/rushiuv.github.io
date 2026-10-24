@@ -3,7 +3,7 @@
   "title": "SPI、SSI与BiSS：角度如何交给控制器",
   "description": "把协议、帧格式和电气层分开，读懂时钟、锁存、状态位与CRC的关系。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "接口与应用",
@@ -19,6 +19,13 @@
   "related_model_slugs": [
     "as5047p",
     "mlx90382"
+  ],
+  "related_guides": [
+    "sample-time-contract",
+    "spi-data-age"
+  ],
+  "related_applications": [
+    "robot-joint"
   ]
 }
 ---
@@ -53,3 +60,9 @@ CRC检查规定比特范围内的数据是否满足校验关系，用于发现�
 先确认数据在哪一刻锁存，再确认状态位是否有效，最后校验帧。若接口读得比内部更新更快，重复结果不等于每次都发生了新采样。控制器需要能区分正常静止、旧数据和故障帧。
 
 [BiSS协会：协议、Profile 3与CRC应用说明](https://biss-interface.com/downloads/)；[POSITAL SSI Kit手册](https://dms.posital.com/pdf/manual-kit-ktd-s1.pdf)提供了一个具体SSI实现，不能代替其他器件的手册。
+
+## 连接成功后，还要配对采样事件
+
+串行帧能解码，不代表两路位置属于同一刻。[MLX90382原厂手册](https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf)单独提供多器件同步读取能力，不能由“都支持SPI”推断同步。合成设两路有效时刻差3µs，在50圈/秒下便混入0.00015圈，即0.054°运动量。接入[机器人关节](/applications/robot-joint/)前，应把锁存、返回与使用时刻逐一标注，再用[采样时间约定](/topics/guides/sample-time-contract/)判定该角差是否可用。
+
+建议在逻辑分析仪记录中给两路锁存事件分别编号，避免只凭接收缓冲区顺序配对。

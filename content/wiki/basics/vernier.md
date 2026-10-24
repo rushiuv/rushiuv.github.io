@@ -3,14 +3,29 @@
   "title": "游标编码：两条周期怎样确定绝对位置",
   "description": "从相邻周期的相位差理解游标与Nonius，区分判区能力、细分位数和实际精度。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "看懂性能参数",
   "weight": 143,
-  "related_basics": ["absolute-incremental", "singleturn-multiturn", "inl", "optical-encoder"],
-  "related_topics": ["游标编码器"],
-  "related_model_slugs": []
+  "related_basics": [
+    "absolute-incremental",
+    "singleturn-multiturn",
+    "inl",
+    "optical-encoder"
+  ],
+  "related_topics": [
+    "游标编码器"
+  ],
+  "related_model_slugs": [],
+  "related_applications": [
+    "robot-joint",
+    "gearbox"
+  ],
+  "related_guides": [
+    "vernier-uniqueness",
+    "three-track-observability"
+  ]
 }
 ---
 
@@ -31,3 +46,7 @@
 ## 验证要故意接近歧义边界
 
 用独立参考遍历整圈，观察上电、正反转、低速微动和不同气隙下有无整周期跳变。保留各轨原始相位，而不只存最终角度。游标通常给出某一有限范围内的绝对位置；断电后能否保留机械多圈，必须另查结构与计数方案。
+
+## 互质不等于差相位只转一圈
+
+自设两轨7与4周期，完整相位组合一圈内唯一，但差相位为\(\operatorname{wrap}(3u)\)，在u=0、1/3、2/3相同。因此“互质即可直接用相位差当机械角”是反例；8与6则连完整组合也每半圈重复。以上只讨论理想相位且零点方向已确定，实际还要量判区裕量。[iC-MN原厂页](https://www.ichaus.de/product/ic-mn/)给出多轨Nonius解算器件入口。沿[绝对位置范围](/wiki/basics/absolute-incremental/)和[唯一性推导](/topics/guides/vernier-uniqueness/)核对后，再定义[减速器](/applications/gearbox/)的断电移动测试。

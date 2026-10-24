@@ -3,12 +3,25 @@
   "title": "TMR：隧道结的高响应不等于整机高精度",
   "description": "从自由层、参考层与隧穿电阻解释TMR，区分材料响应和角度系统指标。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "磁敏机理与开关",
   "weight": 126,
-  "related_basics": ["amr", "magnetic-encoder", "mounting", "resolution-accuracy"]
+  "related_basics": [
+    "amr",
+    "magnetic-encoder",
+    "mounting",
+    "resolution-accuracy"
+  ],
+  "related_applications": [
+    "robot-joint",
+    "servo-motor"
+  ],
+  "related_guides": [
+    "amplitude-temperature-error",
+    "magnetic-field-coordinates"
+  ]
 }
 ---
 
@@ -31,3 +44,7 @@ TMR 是隧道磁阻。两个磁性层之间夹着很薄的绝缘势垒，电流�
 选型先确认工作磁场范围、测量平面、输出接口、启动时间及延迟，再比较规定条件下的角度误差。样机应覆盖磁体批次、偏移、气隙与温度，并同时记录静态误差和运动误差。模拟桥路还要把外部放大器与采样误差计入；数字角度芯片则要检查配置、诊断和数据时序。
 
 来源：[TDK TMR 原理说明](https://www.micronas.tdk.com/en/products/tmr-angle-sensors)、[TDK TAD2141 数据手册](https://product.tdk.com/info/en/documents/datasheet/tmr-angle/ds_sensor_tmr-angle_tad2141_en.pdf)。
+
+## 信号变大之后，剩下哪项误差
+
+自设理想两路峰值100mV、残余单通道偏置1mV，小扰动角误差幅值约\(1/100=0.01\)rad，即0.573°；峰值加倍且偏置不变时约减半。这只是信号链算例，不是TMR产品精度。[TDK原理说明](https://product.tdk.cn/zh/techlibrary/productoverview/tmr-angle-sensors.html)介绍自由层与固定层；这种结构本身不能消去外部放大器偏置。测试应分别保存偏置、峰值和角误差，详见[幅值与温度误差](/topics/guides/amplitude-temperature-error/)。再与[AMR](/wiki/basics/amr/)按同磁路比较，并覆盖[机器人关节](/applications/robot-joint/)工作电流造成的附加磁场。

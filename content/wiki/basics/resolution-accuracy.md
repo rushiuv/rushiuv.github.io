@@ -3,7 +3,7 @@
   "title": "分辨率、准确度与重复性：三件不同的事",
   "description": "用16位刻度和固定偏差示例，判断更高位数究竟改善了什么。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-16",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "看懂性能参数",
@@ -18,6 +18,13 @@
   ],
   "related_model_slugs": [
     "mt6835"
+  ],
+  "related_guides": [
+    "atan2-quantization",
+    "noise-statistics"
+  ],
+  "related_applications": [
+    "servo-motor"
   ]
 }
 ---
@@ -54,3 +61,9 @@ q=\frac{360^\circ}{2^N}
 验收时分别写三项：输出步距、规定条件下的位置误差、规定运动流程下的重复性。固定偏差可以通过适用的标定纠正，随机波动要从信噪比和带宽处理。
 
 [雷尼绍：旋转编码器精度与误差预算](https://www.renishaw.com/en/the-accuracy-of-rotary-encoders--47130)。
+
+## 把刻度和检验方法分开
+
+合成设16位输出步距为1/65536圈，即0.005493°，但整圈误差峰值仍为0.2°；把输出改成20位，只让台阶变细，不会使这条误差曲线缩小。先用独立参考扫描整圈，再固定位置测波动。[海德汉德文测量准确度说明](https://content.heidenhain.de/presentation/LMG/de/index/N10D9F/N10D9F.html)把刻线、扫描和处理电子学分开讨论。对照[量化推导](/topics/guides/atan2-quantization/)与[整圈非线性](/wiki/basics/inl/)，才能知道升级位数有没有碰到当前瓶颈。
+
+比较两档输出时保持磁体、参考和带宽不变，才有条件把变化归给数字刻度。

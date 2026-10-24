@@ -44,11 +44,12 @@ home = soup("/")
 # expected inventory from source instead of the superseded October 18 snapshot.
 expected_companies = sum(fm(p).get("wiki_type") == "company"
                          for p in (ROOT / "content/companies").glob("*/_index.md"))
-assert [int(n.get_text()) for n in home.select('.home-stats strong')][:2] == [145, expected_companies]
+expected_models = sum(fm(p).get("wiki_type") == "model" for p in (ROOT / "content/models").glob("*/_index.md"))
+assert [int(n.get_text()) for n in home.select('.home-stats strong')][:2] == [expected_models, expected_companies]
 index = json.loads(home.select_one("#portal-search-data").string)
 models = [fm(p) for p in (ROOT / "content/models").glob("*/_index.md")]
-assert len(models) == 145
-assert len(cards) == 145  # Model directory no longer mixes in company entries.
+assert len(models) == expected_models and len(models) >= 145
+assert len(cards) == expected_models  # Model directory no longer mixes in company entries.
 assert all(url.startswith('/models/') for url in cards)
 company_cards = soup('/companies/').select('#company-entries .wiki-index-card')
 assert len(company_cards) == expected_companies
@@ -109,6 +110,6 @@ if len(sys.argv) > 2:
     missing = [str(p.relative_to(baseline)) for p in baseline.rglob("*")
                if p.is_file() and not (BUILD / p.relative_to(baseline)).exists()]
     assert not missing, missing[:10]
-print("PASS: 67 catalog additions; 145 model/product pages; separate company directory matching source; filters preserved; family/member links; official source metadata; all member search aliases; company backlinks; old static paths preserved.")
+print("PASS: 67 catalog additions; source-derived model/product pages; separate company directory matching source; filters preserved; family/member links; official source metadata; all member search aliases; company backlinks; old static paths preserved.")
 print("New cards by manufacturer:", dict(Counter(r["vendor"] for r in rows)))
 print("Member names (including series aliases; NOT unique new IC count):", len({m for r in rows for m in r["members"]}))

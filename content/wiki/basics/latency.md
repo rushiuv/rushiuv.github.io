@@ -3,7 +3,7 @@
   "title": "更新率、延迟与带宽：读得快是否跟得上",
   "description": "用6000 rpm与10 μs算例，将数据刷新、信息年龄和动态跟踪分开。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-16",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "看懂性能参数",
@@ -19,6 +19,13 @@
   ],
   "related_model_slugs": [
     "as5047p"
+  ],
+  "related_guides": [
+    "spi-data-age",
+    "dynamic-latency-test"
+  ],
+  "related_applications": [
+    "servo-motor"
   ]
 }
 ---
@@ -53,3 +60,9 @@
 确认角度在哪一刻采样、是否有时间戳、读操作是否锁存、连续读取是否会拿到同一结果，以及滤波设置怎样改变响应。控制器最终使用数据的时刻，才是系统信息年龄的终点。
 
 [Allegro：A31315信号链延迟说明](https://www.allegromicro.com/-/media/files/application-notes/an296263-a31315-signal-path-delay-for-a31315-3d-sensor.pdf?sc_lang=en)区分了器件内部不同延迟；[RLS AksIM-2手册](https://www.rls.si/ko/fileuploader/download/download/?d=1&file=custom%2Fupload%2FMBD01_10EN_datasheet_bookmark.pdf)给出了其具体锁存和输出定义。
+
+## 把使用时刻也标到图上
+
+合成设一帧对应的寄存器快照比控制使用早100µs，转速50圈/秒，则这段运动为0.005圈，即1.8°。[AS5047P手册](https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5047p-datasheet-en.pdf#page=14)说明读操作的流水返回；它并未把SPI快照沿定义成模拟采样沿。实测应同时记录片选与任务使用标记，先算已知数据年龄，再核内部链路。详见[SPI数据年龄](/topics/guides/spi-data-age/)和[动态外推试验](/topics/guides/dynamic-latency-test/)，用于[伺服反馈](/applications/servo-motor/)时尤其需要此时间关系。
+
+若提高总线时钟后角差不再缩小，接着查内部转换和控制任务等待，别只看帧长。

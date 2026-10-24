@@ -30,7 +30,7 @@
 {{ end }}
 <section class="portal-results" id="portal-results" hidden aria-live="polite">
   <div class="portal-section-head"><div><p class="portal-overline">站内检索</p><h2 id="portal-results-title">搜索结果</h2></div><button class="text-button" id="portal-search-clear" type="button">收起结果 ×</button></div>
-  <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button><button type="button" data-search-kind="basic">基础知识</button><button type="button" data-search-kind="application">应用场景</button><button type="button" data-search-kind="guide">工程指南</button></div>
+  <div class="search-kinds" role="group" aria-label="搜索范围"><button type="button" class="active" data-search-kind="">全部</button><button type="button" data-search-kind="model">型号资料</button><button type="button" data-search-kind="company">公司与品牌</button><button type="button" data-search-kind="post">文章</button><button type="button" data-search-kind="basic">基础知识</button><button type="button" data-search-kind="application">应用场景</button><button type="button" data-search-kind="guide">专题方法</button></div>
   <p class="search-count" id="portal-search-count"></p><div id="portal-search-list" class="search-list"></div><button class="search-more" id="portal-search-more" type="button" hidden>显示更多结果 ↓</button>
 </section>
 
@@ -40,7 +40,7 @@
   <a href="{{ "wiki/" | relURL }}"><span class="home-path-num">02 / 从器件开始</span>{{ partial "path-icon.html" "model" }}<h2>型号与官方资料 <b>↗</b></h2><p>找具体芯片、核心性能和数据手册。</p></a>
   <a href="{{ "topics/" | relURL }}"><span class="home-path-num">03 / 从问题开始</span>{{ partial "path-icon.html" "topic" }}<h2>技术专题与应用 <b>↗</b></h2><p>沿着磁路、校准与伺服反馈继续深入。</p></a>
 </nav>
-<aside class="guide-banner"><div><h2>从看懂参数，到做出一次验证</h2><p>工程指南提供计算、测点、失败分支与可下载记录表。</p></div><a class="btn" href="{{ "wiki/engineering/" | relURL }}">按问题开始 →</a></aside>
+<aside class="guide-banner"><div><h2>从看懂参数，到做出一次验证</h2><p>技术专题提供计算、测点、失败分支与可下载记录表。</p></div><a class="btn" href="{{ "topics/" | relURL }}#methods">按问题开始 →</a></aside>
 
 <section class="home-section home-applications" aria-labelledby="home-applications-title">
   <header class="home-section-head"><div><p class="home-overline">APPLICATIONS / 从场景出发</p><h2 id="home-applications-title">芯片放进系统，先要回答什么？</h2></div><a href="{{ "applications/" | relURL }}">全部应用 <span>↗</span></a></header>

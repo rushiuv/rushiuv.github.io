@@ -3,7 +3,7 @@
   "title": "磁编码器：霍尔、AMR与TMR怎样读角度",
   "description": "从磁场分量和磁阻方向响应出发，区分传感原理、周期与单圈绝对信息。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-16",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "检测原理与安装",
@@ -21,6 +21,14 @@
   "related_model_slugs": [
     "mlx90382",
     "tle5012b"
+  ],
+  "related_applications": [
+    "brushless-dc-motor",
+    "robot-joint"
+  ],
+  "related_guides": [
+    "magnetic-field-coordinates",
+    "amplitude-temperature-error"
   ]
 }
 ---
@@ -51,3 +59,7 @@
 沿圆周排列多个磁极，能够增加局部信号变化次数；周期信号重复也会让单一路径出现位置歧义。需要粗码道、参考信息或组合解算，才能得到规定范围内的绝对位置。磁极对数也不总等于电信号周期数，AMR等响应机理还会改变周期关系。
 
 [TI：线性霍尔与角度测量](https://www.ti.com/product-category/sensors/magnetic/linear-hall-effect/overview.html)；[ADI AN-1314：AMR周期与双桥](https://www.analog.com/en/resources/app-notes/an-1314.html)；[TDK：TMR检测原理](https://product.tdk.com/ja/techlibrary/productoverview/tmr-angle-sensors.html)。
+
+## 加强磁场之前，先检查方向误差
+
+自设目标场沿x为20mT，另叠加恒定y向1mT，当前位置方向偏转为\(\arctan(1/20)=2.86^\circ\)。这是单一角度的向量算例，不能当整圈误差上限。目标场增至40mT时同点偏转约1.43°，但仍须满足器件场强与磁路条件。[TDK日文产品说明](https://product.tdk.com/ja/products/sensor/angle/tmr-angle/index.html)将外乱磁场列为需处理的问题，并未承诺材料天然免疫外场。结合[安装关系](/wiki/basics/mounting/)与[坐标检查](/topics/guides/magnetic-field-coordinates/)，在[无刷电机](/applications/brushless-dc-motor/)样机上同步记录通电与断电场轨迹。

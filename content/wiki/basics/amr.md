@@ -3,12 +3,25 @@
   "title": "AMR：方向响应与半圈歧义要一起理解",
   "description": "解释饱和型AMR角度双桥、180度重复及完整一圈位置所需的额外信息。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "磁敏机理与开关",
   "weight": 125,
-  "related_basics": ["magnetic-encoder", "tmr", "absolute-incremental", "mounting"]
+  "related_basics": [
+    "magnetic-encoder",
+    "tmr",
+    "absolute-incremental",
+    "mounting"
+  ],
+  "related_applications": [
+    "servo-motor",
+    "brushless-dc-motor"
+  ],
+  "related_guides": [
+    "channel-angle-harmonics",
+    "amplitude-temperature-error"
+  ]
 }
 ---
 
@@ -31,3 +44,7 @@ AMR 是各向异性磁阻。磁性薄膜的电阻随磁化方向与电流方向�
 裸桥、带放大器双桥和集成角度输出器件，要求的外部电路不同。模拟路线要检查偏置、幅度、正交误差、采样同步及输入范围。测试应覆盖全角度、最低工作磁场、装配偏移和温度；还要专门在两组半圈等价位置断电重启，确认系统的绝对位置需求是否真的满足。
 
 来源：[ADI AN-1314](https://www.analog.com/en/resources/app-notes/an-1314.html)、[ADI ADA4571](https://www.analog.com/en/products/ada4571.html)。
+
+## 用半圈等价点检查上电能力
+
+对已处于规定饱和磁场的理想AMR双桥，自设\(x=A\cos(4\pi u),y=A\sin(4\pi u)\)。u=0.1与0.6产生相同输出，即机械36°与216°不能只靠双桥区分。[ADI AN-1314](https://www.analog.com/en/resources/app-notes/an-1314.html)说明这种180°重复。台架应在两点分别断电重启，核查额外判别通道，而非仅连续转动看曲线平滑。与[TMR](/wiki/basics/tmr/)比较时要对齐完整器件功能；模拟误差另看[通道到角度谐波](/topics/guides/channel-angle-harmonics/)，[伺服应用](/applications/servo-motor/)不能将连续解包误认作上电绝对。

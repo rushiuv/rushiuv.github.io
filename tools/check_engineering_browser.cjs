@@ -7,10 +7,11 @@ const fs=require('fs');
  const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const data=JSON.parse(fs.readFileSync(out+'/engineering-check.json','utf8'));
  const checks=[];
+ const extraRoutes=['/','/wiki/','/companies/seiko-npc/',...['smd-01b','resolute-rl','rod-280','posital-ktd-s100b-1609'].map(x=>'/models/'+x+'/'),...['resolution-accuracy','inl','latency','self-calibration','angle-noise','interfaces','crc','spi-ssi','abz','pole-pairs','singleturn-multiturn','mounting','magnetic-encoder','inductive-encoder','vernier','amr','tmr','vertical-hall','optical-encoder','absolute-incremental','eccentricity'].map(x=>'/wiki/basics/'+x+'/'),...['servo-motor','robot-joint','linear-motor','gearbox','water-meter','pneumatic-cylinder','closed-loop-stepper','brushless-dc-motor'].map(x=>'/applications/'+x+'/')];
  for(const width of [1440,360]){
   await page.setViewportSize({width,height:1000});
   for(const slug of [''].concat(data.items.map(x=>x.slug))){
-   const route='/wiki/engineering/'+(slug?slug+'/':'');
+   const route=slug?'/topics/guides/'+slug+'/':'/topics/';
    await page.goto(base+route,{waitUntil:'networkidle'});
    const result=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,h1:document.querySelectorAll('h1').length,math:[...document.querySelectorAll('.content math')].map(x=>({width:x.getBoundingClientRect().width,display:getComputedStyle(x).display})),font:getComputedStyle(document.querySelector('.content')).fontSize}));
    if(result.scroll>width+1)throw Error('page overflow '+width+' '+slug+' '+result.scroll);
@@ -19,8 +20,9 @@ const fs=require('fs');
    checks.push({width,route,...result});
    if(['','velocity-noise','system-acceptance-record','optical-tolerance-evidence','measurement-tools'].includes(slug))await page.screenshot({path:out+'/'+(slug||'index')+'-'+width+'.png',fullPage:true});
   }
+  for(const route of extraRoutes){await page.goto(base+route,{waitUntil:'networkidle'});const res=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,h1:document.querySelectorAll('h1').length}));if(res.scroll>width+1||res.h1!==1)throw Error('extended layout '+width+' '+route+' '+JSON.stringify(res));checks.push({width,route,...res});}
  }
- await page.goto(base+'/wiki/engineering/measurement-tools/',{waitUntil:'networkidle'});
+ await page.goto(base+'/topics/guides/measurement-tools/',{waitUntil:'networkidle'});
  const text=async id=>page.locator('#'+id+' output').innerText();
  let s=await text('frequency-tool');if(!s.includes('409,600')||!s.includes('102,400'))throw Error('frequency defaults '+s);
  s=await text('latency-tool');if(!s.includes('2.52')||!s.includes('0.36'))throw Error('latency defaults '+s);

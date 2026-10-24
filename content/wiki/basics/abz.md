@@ -3,7 +3,7 @@
   "title": "ABZ：正交计数、四倍频与零位索引",
   "description": "通过四个状态解释方向与四倍计数，并用1000 PPR算清计数频率。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-16",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "接口与应用",
@@ -18,6 +18,13 @@
   ],
   "related_model_slugs": [
     "mt6835"
+  ],
+  "related_guides": [
+    "rate-budget",
+    "sample-time-contract"
+  ],
+  "related_applications": [
+    "closed-loop-stepper"
   ]
 }
 ---
@@ -49,3 +56,9 @@ PPR与CPR的缩写在不同厂家资料中用法不统一，必须回到定义�
 Z常见为每机械圈一次，但也存在可配置周期、门控和相位。必须确认宽度、与AB的关系以及控制器在哪个事件锁存。Z不能记录掉电期间转过了多少整圈。
 
 [TI eQEP接口文档](https://software-dl.ti.com/C2000/docs/C2000_driverlib_api_guide/f2838x/build/html/modules/eqep.html)；[雷尼绍数字正交信号FAQ](https://www.renishaw.com/en/optical-encoders-frequently-asked-questions--34674)。表中的方向与数字为本文定义和计算示例。
+
+## 应答频率与机械转速同时验算
+
+[欧姆龙日文选型表](https://www.fa.omron.co.jp/product/selection/34/func_spec.html)将分辨率、最高应答频率和允许最高转速分列；其中任一项合格都不能替代其余项。合成设1000周期/圈、应答上限100kHz，电信号容量对应6000rpm；x4接收端此时需处理400000边沿/秒。应先用慢速整圈核对计数，再提高速度查是否欠计。[速率预算](/topics/guides/rate-budget/)区分三种频率；[闭环步进](/applications/closed-loop-stepper/)还须把计数方向与控制坐标一致。
+
+若达到机械允许转速前便开始丢边沿，继续提高输出分辨率会使容量缺口更大。

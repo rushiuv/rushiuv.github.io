@@ -1,5 +1,27 @@
 ---
-{"title":"偏心误差：先分清哪个中心偏离了哪个轴","description":"磁体偏心、读头固定偏移和转动跳动不是同一个量，补偿前要保留几何与温度条件。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"basic-single","basic_entry":true,"basic_group":"检测原理与安装","weight":103,"related_basics":["mounting","magnetic-encoder","resolution-accuracy"]}
+{
+  "title": "偏心误差：先分清哪个中心偏离了哪个轴",
+  "description": "磁体偏心、读头固定偏移和转动跳动不是同一个量，补偿前要保留几何与温度条件。",
+  "date": "2026-10-18T10:00:00+08:00",
+  "lastmod": "2026-10-24",
+  "layout": "basic-single",
+  "basic_entry": true,
+  "basic_group": "检测原理与安装",
+  "weight": 103,
+  "related_basics": [
+    "mounting",
+    "magnetic-encoder",
+    "resolution-accuracy"
+  ],
+  "related_applications": [
+    "servo-motor",
+    "gearbox"
+  ],
+  "related_guides": [
+    "eccentricity-budget",
+    "multihead-harmonics"
+  ]
+}
 ---
 
 说“偏心0.1毫米”前，先确定它描述磁体中心相对转轴、读头相对转轴，还是旋转件表面的径向跳动。三者可能同时出现，但测量工具和传感器看到的运动不同，不能把同一个公差数填满全部误差预算。
@@ -24,3 +46,7 @@
 
 - [ADI AN-1314：磁体对准与偏移测试](https://www.analog.com/en/resources/app-notes/an-1314.html)
 - [TI SBAA539A：机械误差来源](https://www.ti.com/lit/an/sbaa539a/sbaa539a.pdf)
+
+## 同一个偏心量，在不同半径代价不同
+
+仅在圆形刻线几何的小偏心近似下，自设e=0.01mm、R=20mm，幅值约\(e/R=0.0005\)rad，即103角秒；半径增至40mm约减半。[Renishaw旋转编码器精度说明](https://www.renishaw.com/en/the-accuracy-of-rotary-encoders--47130)将偏心与系统安装联系起来，不能据此推导任意轴端磁体的误差。实际测点需同时留径向跳动和参考角差，并按[安装变量](/wiki/basics/mounting/)区分固定偏移。进入[双读头谐波预算](/topics/guides/multihead-harmonics/)前，还须确认同轴同步；[减速器](/applications/gearbox/)负载变形另立工况。

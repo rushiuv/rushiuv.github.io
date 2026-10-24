@@ -208,3 +208,9 @@ python3.11 tools/boilerplate.py --fix     # 真切（content/posts 与 posts_ext
 本轮只完成本地构建与验收，不push、不部署。预览产物放.local-preview（已忽略），静态预览服务仅绑定127.0.0.1:18780。
 
 新增检查：python3 tools/check_engineering_guides.py <build>；真实Chrome检查：NODE_PATH=<bundled-node-modules> node tools/check_engineering_browser.cjs http://127.0.0.1:18780 <review-output>。33页每页有简洁问题、条件、算例或测法及公开依据；合成数据和真实规格分开。
+
+### 用户追加整合（2026-10-24）
+
+工程方法已并入技术专题：总入口/topics/，36篇正文位于content/topics/guides与/topics/guides/<slug>/。/wiki/engineering/及旧33篇本地URL保留跳转。补强21基础与8应用，方法/基础/型号/应用互链；增加来自日、德、英一手资料的3篇方法、4型号及Seiko NPC厂商页。配图继续使用已确认的暖纸/墨蓝/青绿轻漫画原图，没有替换风格。
+
+具体新型号为SMD-01B、RESOLUTE RL、ROD280/280C与明确订货号的POSITAL Kit；POSITAL页标注Lab Sample，不假称量产供货。来源台账data/global_encoder_sources_20261024.json。本轮仍仅本地，不push、不部署。

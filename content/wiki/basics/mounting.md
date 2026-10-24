@@ -3,7 +3,7 @@
   "title": "在轴、离轴、气隙与偏心：先把几何关系说清",
   "description": "分清读头位置、感应中心与旋转轴，避免用一个气隙数字概括安装质量。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-16",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "检测原理与安装",
@@ -19,6 +19,14 @@
   ],
   "related_model_slugs": [
     "mlx90382"
+  ],
+  "related_applications": [
+    "robot-joint",
+    "servo-motor"
+  ],
+  "related_guides": [
+    "eccentricity-budget",
+    "magnetic-field-coordinates"
   ]
 }
 ---
@@ -51,3 +59,7 @@
 安装评估应在整圈检查误差和有效信号，而非只在某一角度读到一个“正常”幅值。温度、轴向移动与允许装配公差也要覆盖。
 
 [ADI AN-1314：轴端磁体、感应中心与气隙](https://www.analog.com/en/resources/app-notes/an-1314.html)展示了特定AMR系统的布置和测量条件，不能将其尺寸与容差套到其他型号。
+
+## 把一次安装扫描变成可比记录
+
+自设一套轴端样机，保持同一磁体与PCB，分别在标称气隙及轴向增加0.2mm时采整圈；每组同时存参考角、两路原始信号和幅值范围。0.2mm只是试验步长，不能当容差结论。若均值场强仍合格而角误差增大，应继续检查分量轨迹，不能仅凭“有磁场”放行。[ADI的特定AMR布置研究](https://www.analog.com/en/resources/app-notes/an-1314.html)同样把磁体和偏移条件一起给出。先按[偏心分类](/wiki/basics/eccentricity/)明确变量，再用[几何预算](/topics/guides/eccentricity-budget/)安排测点；[机器人关节](/applications/robot-joint/)还应覆盖实际轴承负载。

@@ -1,5 +1,26 @@
 ---
-{"title":"磁极对数：机械一圈与信号一周期不是同一个单位","description":"先数磁极对，再核对敏感元件的周期；局部相位越细，不代表单圈绝对位置越完整。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"basic-single","basic_entry":true,"basic_group":"检测原理与安装","weight":106,"related_basics":["magnetic-encoder","abz","absolute-incremental"]}
+{
+  "title": "磁极对数：机械一圈与信号一周期不是同一个单位",
+  "description": "先数磁极对，再核对敏感元件的周期；局部相位越细，不代表单圈绝对位置越完整。",
+  "date": "2026-10-18T10:00:00+08:00",
+  "lastmod": "2026-10-24",
+  "layout": "basic-single",
+  "basic_entry": true,
+  "basic_group": "检测原理与安装",
+  "weight": 106,
+  "related_basics": [
+    "magnetic-encoder",
+    "abz",
+    "absolute-incremental"
+  ],
+  "related_guides": [
+    "rate-budget",
+    "vernier-uniqueness"
+  ],
+  "related_applications": [
+    "brushless-dc-motor"
+  ]
+}
 ---
 
 一对磁极包含一个N极与一个S极。磁环有16个磁极，不等于16对极；若N、S交替且各8个，它是8对极。机械转一圈经过多少磁周期，决定了速度换算、边沿计数和绝对位置歧义，必须在图纸与软件中使用相同定义。
@@ -24,3 +45,9 @@ AB两通道按单边沿计数、双边沿计数或四倍频，结果也不相同
 
 - [ADI AN-1314：磁角与机械角的周期关系](https://www.analog.com/en/resources/app-notes/an-1314.html)
 - [TI TMAG5115：双极锁存输出](https://www.ti.com/product/TMAG5115)
+
+## 电机对极数不能代替传感器周期数
+
+[AS5047P手册](https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5047p-datasheet-en.pdf)将绝对测角、ABI步数及UVW可编程电机对极数分别列项，三者不是同一个数字。合成设电机7对极，机械位置u=0.1圈时换相电角为mod(7u,1)=0.7圈；编码器若另有8个信号周期，其原始相位却为mod(8u,1)=0.8圈。调试[无刷电机](/applications/brushless-dc-motor/)时分别记录这两个映射，再按[速率预算](/topics/guides/rate-budget/)换算频率，不能共用一个“极数”变量。
+
+改变转速后同时检查机械频率与各路输出频率的比例，可以直接暴露周期数配置错误。

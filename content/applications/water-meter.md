@@ -3,13 +3,24 @@
   "title": "水表：磁脉冲能记转数，体积还要靠计量关系",
   "description": "比较低功耗磁计数与超声路线，检查启动小流量、漏脉冲、反流和外磁干扰。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "application-single",
   "application_entry": true,
   "application_group": "工业与运动",
   "weight": 219,
-  "related_basics": ["magnetic-encoder", "abz", "mounting"],
-  "reference_topic": "水表"
+  "related_basics": [
+    "magnetic-encoder",
+    "abz",
+    "mounting"
+  ],
+  "reference_topic": "水表",
+  "related_guides": [
+    "rate-budget",
+    "position-validity-state"
+  ],
+  "related_model_slugs": [
+    "ktm1301"
+  ]
 }
 ---
 
@@ -36,3 +47,10 @@
 ## 验证用体积参照闭环
 
 在启动小流量、最大流量、反向流动和温度变化下，同时核对原始事件与已知体积，检查停水摆动、掉电保存和电池末期表现。磁体更换或计量机构变化后需要重新验证。芯片可用只是计量链的一环，整表的法定计量检验与环境要求仍需分别满足。
+
+
+## 最大流量先量磁事件持续多久
+
+[TI DRV5032原厂资料](https://www.ti.com/product/DRV5032)提供不同采样率、阈值和输出版本，因此低功耗比较必须带订货号。先读[动作与释放阈值](/wiki/basics/bop-brp/)及[AB相方向判别](/wiki/basics/abz/)，再按[速率预算](/topics/guides/rate-budget/)检查事件宽度。
+
+自设磁场越过动作阈值仅持续6ms，而理想周期采样间隔为50ms；即使平均脉冲频率很低，也可能整段落在两次观测之间。此例只说明漏观测可能，不推算具体芯片漏计率。最大流量台架上同步留磁场/开关边沿、时间和体积参考，分别核正流、反流与停水摆动；若边沿数偏少，先检查持续时间和气隙，不先改体积系数。按[位置数据有效性](/topics/guides/position-validity-state/)的分层思想区分事件缺失与记录冻结，未知流向不能直接计正向体积。

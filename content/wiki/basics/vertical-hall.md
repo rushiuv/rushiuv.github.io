@@ -3,12 +3,25 @@
   "title": "垂直霍尔：让敏感方向进入芯片平面",
   "description": "垂直霍尔描述敏感结构的取向，不是把普通封装立起来，也不自动等于三轴测量。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "磁敏机理与开关",
   "weight": 123,
-  "related_basics": ["hall-effect", "3d-hall", "mounting", "chopper"]
+  "related_basics": [
+    "hall-effect",
+    "3d-hall",
+    "mounting",
+    "chopper"
+  ],
+  "related_applications": [
+    "brushless-dc-motor",
+    "water-meter"
+  ],
+  "related_guides": [
+    "magnetic-field-coordinates",
+    "rate-budget"
+  ]
 }
 ---
 
@@ -31,3 +44,7 @@ Infineon TLE4966V 的公开说明给出了一个具体例子：两片垂直霍�
 样机验证先固定磁铁轨迹，扫过气隙与偏移范围，再观察目标分量和干扰分量。对双元件测速，还要检查低速边沿顺序、反转与最大转速。旧产品资料可用于理解原理，采购状态和具体订货后缀须另行核实。
 
 来源：[Infineon TLE4966V 垂直双霍尔说明](https://www.infineon.com/dgdl/Infineon-Hall_Switches_TLE4966V-PB-v1.0-en.pdf.PDF?fileId=db3a3043429a38690142c312e8272ca0)、[Melexis MLX90316](https://www.melexis.com/en/product/MLX90316/Triaxis-mainstream-rotary-position-sensor-IC-Analog-PWM-SPI)。
+
+## 封装转向之后，正负号也要重测
+
+自设器件敏感轴沿板内x方向，磁场仅沿全局x；若PCB在平面内转90°，同一磁场对新敏感轴的理想投影变为零，而非原幅值。[Infineon TLE4966V原厂说明](https://www.infineon.com/dgdl/Infineon-Hall_Switches_TLE4966V-PB-v1.0-en.pdf.PDF?fileId=db3a3043429a38690142c312e8272ca0)限定的是具体面内双霍尔路线。装板后应先用已知极性磁场核轴向和边沿先后，再测反转。与[三轴霍尔](/wiki/basics/3d-hall/)区分，并按[磁场坐标](/topics/guides/magnetic-field-coordinates/)记录方向；[水表](/applications/water-meter/)低速往返不能只统计总脉冲。

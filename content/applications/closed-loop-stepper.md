@@ -3,13 +3,26 @@
   "title": "步进闭环：反馈看见失步，不代表轴端没有误差",
   "description": "区分指令微步、电机实角和负载位置，验证低速振动、失步恢复与上电参考。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "application-single",
   "application_entry": true,
   "application_group": "工业与运动",
   "weight": 214,
-  "related_basics": ["resolution-accuracy", "abz", "angle-noise"],
-  "reference_topic": "步进闭环"
+  "related_basics": [
+    "resolution-accuracy",
+    "abz",
+    "angle-noise"
+  ],
+  "reference_topic": "步进闭环",
+  "related_guides": [
+    "position-validity-state",
+    "measurement-tools"
+  ],
+  "related_model_slugs": [
+    "ma730",
+    "tle5012b",
+    "ktm5200"
+  ]
 }
 ---
 
@@ -36,3 +49,10 @@
 ## 验收不只看是否报失步
 
 用独立量具检查低速匀速、定位往返、负载突变和急停后的实际位置。故意模拟计数丢失、磁体错位与传感器断线，确认恢复策略不会突然追赶危险位置。若目标是平台直线精度，应在末端测量，不把电机轴闭环通过直接写成整机精度保证。
+
+
+## 细分指令更细，末端是否真的多走了一格
+
+[东方马达日文技术报告](https://www.orientalmotor.co.jp/ja/tech/renga/2502_cvdf)描述了用外部传感器修正机械端位置的具体控制方式；不能把它外推成所有闭环步进都持续采用同一反馈策略。先核[分辨率与准确度](/wiki/basics/resolution-accuracy/)以及[ABZ计数](/wiki/basics/abz/)。
+
+自设1.8°整步、16细分，指令格距0.1125°；若轴端AB每相1000脉冲、四倍频，则反馈格距0.09°。两者不同并不自动错误，但比例和舍入必须明确。命令小步往返时同时留指令计数、反馈计数和末端量具读数，按[测量工具分工](/topics/guides/measurement-tools/)辨别“未运动”与“量具未分辨”。验收要检查末端残差及恢复动作；报警没触发不等于到位，再按[位置有效性](/topics/guides/position-validity-state/)确认新鲜度和状态。

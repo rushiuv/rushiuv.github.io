@@ -1,5 +1,29 @@
 ---
-{"title":"伺服电机：换向角与负载位置不能混成一个指标","description":"轴端磁编码器和旋变解码是不同反馈路线，选型要同时看时间、机械误差和故障行为。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"application-single","application_entry":true,"application_group":"工业与运动","weight":207,"related_basics":["latency","resolution-accuracy","interfaces"],"reference_topic":"伺服电机"}
+{
+  "title": "伺服电机：换向角与负载位置不能混成一个指标",
+  "description": "轴端磁编码器和旋变解码是不同反馈路线，选型要同时看时间、机械误差和故障行为。",
+  "date": "2026-10-18T10:00:00+08:00",
+  "lastmod": "2026-10-24",
+  "layout": "application-single",
+  "application_entry": true,
+  "application_group": "工业与运动",
+  "weight": 207,
+  "related_basics": [
+    "latency",
+    "resolution-accuracy",
+    "interfaces"
+  ],
+  "reference_topic": "伺服电机",
+  "related_guides": [
+    "sample-time-contract",
+    "dynamic-latency-test"
+  ],
+  "related_model_slugs": [
+    "as5047p",
+    "ktm5200",
+    "ktm5900"
+  ]
+}
 ---
 
 伺服电机的角度首先服务转子换向和速度控制；机器最终工作点的位置，还会经过减速器、丝杆或皮带。电机端反馈准确，并不自动保证负载端同样准确。选型前先确定闭环测点，才能解释一颗传感器究竟负责什么。
@@ -33,3 +57,10 @@ KTM5200与KTM5900增加了AMR、TMR两类磁反馈候选，不是仅按标称位
 
 - [ams AS5047P数据手册](https://look.ams-osram.com/m/d05ee39221f9857/original/AS5047P-DS000324.pdf)
 - [ADI AD2S1210](https://www.analog.com/en/products/ad2s1210.html)
+
+
+## 末端不到位，先比较两处测点
+
+[欧姆龙日文技术解说](https://www.fa.omron.co.jp/guide/technicalguide/14/186/index.html)按检测器安装位置区分半闭环与全闭环。排查“驱动器显示到位，工件却未到位”时，同时记录电机反馈和末端独立量具，先分清[分辨率与准确度](/wiki/basics/resolution-accuracy/)及[数据延迟](/wiki/basics/latency/)。
+
+设丝杆导程5mm/圈，电机端剩余偏差0.002圈，理想对应10µm；这是自设换算，不包含丝杆、联轴器与安装误差。若末端偏差超过项目预算而电机端已收敛，先检查两测点间的传动关系；运动中偏差随速度增大，再按[采样时间约定](/topics/guides/sample-time-contract/)与[动态延迟测试](/topics/guides/dynamic-latency-test/)分离时间项。判据须以末端任务及参考不确定度制定，不能用驱动器到位位代替。
