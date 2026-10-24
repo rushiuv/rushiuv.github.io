@@ -57,7 +57,7 @@
 </section>
 
 <section class="home-section home-library">
-  <div class="home-library-intro"><p class="home-overline">REFERENCE / 型号资料</p><h2>落到器件，<br>找到可靠的资料。</h2><p>简短的型号知识卡片，连接官方产品页、数据手册和相关文章。</p><a href="{{ "wiki/" | relURL }}">浏览资料库 <span>→</span></a></div>
+  <div class="home-library-intro"><p class="home-overline">REFERENCE / 型号资料</p><h2>落到器件，<br>找到可靠的资料。</h2><p>核心参数、安装接入与校准条件，连接官方手册和相关文章。</p><a href="{{ "wiki/" | relURL }}">浏览资料库 <span>→</span></a></div>
   <div class="home-library-list">{{ range $name := slice "MT6835" "AS5047P" "MLX90382" "TLE5012B" "KTH78" "MT6901" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><div><strong>{{ $name }}</strong><span>{{ .Page.Params.wiki_category | default "角度测量" }}</span></div><p>{{ .Page.Description | plainify | truncate 65 }}</p><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div>
 </section>
 

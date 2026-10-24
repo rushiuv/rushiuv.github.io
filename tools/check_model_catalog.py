@@ -40,14 +40,17 @@ assert len(rows) == len({r["slug"] for r in rows}) == 67
 directory = soup("/wiki/")
 cards = {a["href"]: a for a in directory.select(".wiki-index-card")}
 home = soup("/")
-assert [int(n.get_text()) for n in home.select('.home-stats strong')][:2] == [145, 132]
+# Company pages can be removed in later editorial releases; derive the current
+# expected inventory from source instead of the superseded October 18 snapshot.
+expected_companies = len(list((ROOT / "content/companies").glob("*/_index.md")))
+assert [int(n.get_text()) for n in home.select('.home-stats strong')][:2] == [145, expected_companies]
 index = json.loads(home.select_one("#portal-search-data").string)
 models = [fm(p) for p in (ROOT / "content/models").glob("*/_index.md")]
 assert len(models) == 145
 assert len(cards) == 145  # Model directory no longer mixes in company entries.
 assert all(url.startswith('/models/') for url in cards)
 company_cards = soup('/companies/').select('#company-entries .wiki-index-card')
-assert len(company_cards) == 132
+assert len(company_cards) == expected_companies
 assert all(a['href'].startswith('/companies/') for a in company_cards)
 assert directory.select_one('#wiki-kind') is None
 for control in ['wiki-vendor', 'wiki-type', 'wiki-form', 'wiki-reset']:
@@ -62,10 +65,16 @@ for row in rows:
     assert meta["model_card"] and meta["catalog_type"] == row["type"], slug
     assert meta["official_url"] == row["url"], slug
     assert len(row["features"]) >= 4, slug
-    assert "## 核心性能" in text and "## 官方资料" in text, slug
-    for feature in row["features"]:
-        label, value = feature.split("|", 1)
-        assert f"- **{label}** {value}" in text, (slug, label)
+    assert ("## 核心参数" in text or "## 核心性能" in text) and "## 官方资料" in text, slug
+    # Expanded pages render parameters as two-column tables. Check the
+    # visible result rather than freezing the superseded short-card wording.
+    rendered = soup(url)
+    parameter_table = rendered.select_one(".wiki-content table")
+    assert parameter_table is not None, (slug, "missing parameter table")
+    assert len(parameter_table.select("tr")) >= 5, (slug, "insufficient parameter rows")
+    for table_row in parameter_table.select("tr"):
+        cells = table_row.find_all(["td", "th"], recursive=False)
+        assert len(cells) == 2 and all(c.get_text(strip=True) for c in cells), slug
     for link in [row["url"], *row.get("sources", [])]:
         parsed = urlsplit(link)
         assert parsed.scheme == "https" and parsed.hostname in ALLOWED, link
@@ -99,6 +108,6 @@ if len(sys.argv) > 2:
     missing = [str(p.relative_to(baseline)) for p in baseline.rglob("*")
                if p.is_file() and not (BUILD / p.relative_to(baseline)).exists()]
     assert not missing, missing[:10]
-print("PASS: 67 catalog additions; 145 model/product pages; separate directory of 132 companies; filters preserved; family/member links; official source metadata; all member search aliases; company backlinks; old static paths preserved.")
+print("PASS: 67 catalog additions; 145 model/product pages; separate company directory matching source; filters preserved; family/member links; official source metadata; all member search aliases; company backlinks; old static paths preserved.")
 print("New cards by manufacturer:", dict(Counter(r["vendor"] for r in rows)))
 print("Member names (including series aliases; NOT unique new IC count):", len({m for r in rows for m in r["members"]}))

@@ -1,0 +1,3409 @@
+{
+  "updated": "2026-10-24",
+  "baseline_source_commit": "dd860066d297",
+  "scope": "All 145 existing model/product pages; expanded parameter tables and model-specific guidance. No new product pages, no publication in this task.",
+  "boundary": "Structural and retrieval checks do not establish numerical accuracy. Historical archived official handbooks are labelled by revision; inaccessible or conflicting sources remain explicit in the page.",
+  "entries": [
+    {
+      "slug": "adm32f036a3",
+      "title": "ADM32F036A3",
+      "path": "content/models/adm32f036a3/_index.md",
+      "parameter_rows": 2,
+      "body_characters": 588,
+      "sha256": "aea69e86bc73efcbef01146d3d163f1d8c49b2e084772e0279d40728849ee0fd",
+      "sources": [
+        "https://www.advancechip.com/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "尚缺可核对的主频、Flash/RAM、ADC采样率与位数、PWM资源、工作电压、温度及封装。已知“用于电机控制”不够支撑具体硬件设计，正式选型应以该完整型号规格书和勘误为依据。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "admt4000",
+      "title": "ADMT4000",
+      "path": "content/models/admt4000/_index.md",
+      "parameter_rows": 11,
+      "body_characters": 1181,
+      "sha256": "5a5ca3e703fef7318c1d39f34280bb79cf63518061a08f6773c073907853c0f8",
+      "sources": [
+        "https://www.analog.com/en/products/admt4000.html",
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/admt4000.pdf"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "本次按原厂Rev.C（2026年7月）重读表1，纠正把典型±0.25°当成完整精度范围的读法；SPI电平下限由旧卡的1.8V更新为当前手册的1.7V。磁场窗口也带温度系数，不应把25°C磁场条件无条件扩展到全温。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "aedr-850x",
+      "title": "AEDR-850x",
+      "path": "content/models/aedr-850x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 665,
+      "sha256": "c59a7a1c93fbe8e602d9c003fb056fa9b60b762a813e40fc962b4d1acb712194",
+      "sources": [
+        "https://www.broadcom.com/products/motion-control-encoders/incremental-encoders/reflective-encoders/aedr-8500-102"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "am26c32",
+      "title": "AM26C32",
+      "path": "content/models/am26c32/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 813,
+      "sha256": "bda34dbc49cf109351e921861d4562892b56167dd6706be41fe5e4c2e75b1b5c",
+      "sources": [
+        "https://www.ti.com/lit/ds/symlink/am26c32.pdf",
+        "https://www.ti.com/product/AM26C32"
+      ],
+      "source_sections": "TI Product details与Features；数据手册RevM入口",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "amr30xx",
+      "title": "AMR30xx模拟角度系列",
+      "path": "content/models/amr30xx/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 672,
+      "sha256": "2354bba707a731a5e98dbeb50e8bce5eee9804b167cf4d129f8bc507f6244a97",
+      "sources": [
+        "https://www.dowaytech.com/sensor/angle_sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "as5047p",
+      "title": "AS5047P",
+      "path": "content/models/as5047p/_index.md",
+      "parameter_rows": 20,
+      "body_characters": 1589,
+      "sha256": "1362e41530fc9407f1ccdbc53e3e50c565648cc82136d0d64e80c26ea0fd441a",
+      "sources": [
+        "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5047p-datasheet-en.pdf",
+        "https://www.infineon.com/part/AS5047P"
+      ],
+      "source_sections": "AS5047P v2-00正文第6～8页，物理第9页系统表已渲染目视核Min/Typ/Max；0.068°为Max，不是典型",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "as5048a",
+      "title": "AS5048A",
+      "path": "content/models/as5048a/_index.md",
+      "parameter_rows": 18,
+      "body_characters": 1351,
+      "sha256": "e781bda52f95fc1fb61d4d53c077a97837830aebe906558034d69a5bf952b72e",
+      "sources": [
+        "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf",
+        "https://www.infineon.com/part/AS5048A"
+      ],
+      "source_sections": "AS5048A/AS5048B v1-11（2018-01-29）正文第7～8页工作条件/系统表、第10页供电图；当前PDF前置两页英飞凌说明。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "as5048b",
+      "title": "AS5048B",
+      "path": "content/models/as5048b/_index.md",
+      "parameter_rows": 18,
+      "body_characters": 1326,
+      "sha256": "1a0e9f89855466323d28c5fb3b39147a82106f1b3ae85ca2fd06acbafbc5a07c",
+      "sources": [
+        "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf",
+        "https://www.infineon.com/part/AS5048B"
+      ],
+      "source_sections": "AS5048A/AS5048B v1-11（2018-01-29）正文第7～8页工作条件/系统表、第10页供电图；当前PDF前置两页英飞凌说明。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "as5147",
+      "title": "AS5147",
+      "path": "content/models/as5147/_index.md",
+      "parameter_rows": 14,
+      "body_characters": 1141,
+      "sha256": "5fcf542d4ff9e3f7a06dac7f12b1202f94c18f2d1ed64532e1ce9b47ff9187bb",
+      "sources": [
+        "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5147-datasheet-en.pdf",
+        "https://www.infineon.com/part/AS5147"
+      ],
+      "source_sections": "AS5147 v2-00（2021-07-22）正文第1、7～8页，供电扩展温度条件不得省略。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "as5247",
+      "title": "AS5247",
+      "path": "content/models/as5247/_index.md",
+      "parameter_rows": 14,
+      "body_characters": 1158,
+      "sha256": "ffbf1992faa8ed527bc9e51927ddb88362f159f67d45c73383fc45e34eccb018",
+      "sources": [
+        "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5247-datasheet-en.pdf",
+        "https://www.infineon.com/part/AS5247"
+      ],
+      "source_sections": "AS5247 v1-10（2016-12-05）正文第1、7～8页，供电扩展温度条件不得省略。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "as5600",
+      "title": "AS5600",
+      "path": "content/models/as5600/_index.md",
+      "parameter_rows": 21,
+      "body_characters": 1474,
+      "sha256": "dcb6cf6da2fcf75174924efdfd42d09fed2494b05d0b90ec4ef0b34da467fa7e",
+      "sources": [
+        "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf",
+        "https://www.infineon.com/part/AS5600"
+      ],
+      "source_sections": "AS5600 v1-06（2018-06-20）正文第7～8页和第28页滤波表；阶跃延迟与噪声逐档配对。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "cd4051",
+      "title": "CD4051",
+      "path": "content/models/cd4051/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 772,
+      "sha256": "14d51d7f3f5a2b13ca72a7bd8864534911b7bcbaa58ec8b07a0ba5090f0127f8",
+      "sources": [
+        "https://www.ti.com/lit/ds/symlink/cd4051b.pdf",
+        "https://www.ti.com/product/CD4051B"
+      ],
+      "source_sections": "TI Product details与Features；Ron=125Ω为VDD15V条件",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ct-21x",
+      "title": "CT-21X",
+      "path": "content/models/ct-21x/_index.md",
+      "parameter_rows": 2,
+      "body_characters": 571,
+      "sha256": "36128002dd3d25f42598c32d5d4843a54758aa595b29039668b1c12981b843c8",
+      "sources": [
+        "https://www.ctunite.com/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "尚缺成员级分辨率、INL条件、噪声、延时、供电、功耗、工作磁场、温度、封装和通信帧资料。官网公司介绍确认CT-21X名称，但其他关节驱控芯片的GaN工艺、结温和功率信息不能移植到磁编码系列。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "d435i",
+      "title": "D435i",
+      "path": "content/models/d435i/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 1424,
+      "sha256": "30fce640b90b876cc411baf5d605a588c4a90e510812f6090f00c6cf4514c4da",
+      "sources": [
+        "https://realsenseai.com/wp-content/uploads/2025/08/Intel-RealSense-D400-Series-Datasheet-August-2025.pdf",
+        "https://www.intel.com/content/www/us/en/products/sku/190004/intel-realsense-depth-camera-d435i/specifications.html",
+        "https://www.realsenseai.com/products/depth-camera-d435i/",
+        "https://www.realsenseai.com/wp-content/uploads/2022/04/Intel-RealSense-D400-Series-Datasheet-April-2022-v2.pdf"
+      ],
+      "source_sections": "D400 Rev020(2025-08)第67页相机规格表、第75～76页表4-2；Intel D435i独立规格页",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "din58",
+      "title": "DIN58系列",
+      "path": "content/models/din58/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 871,
+      "sha256": "7281dd4a0ef7e9a66f1241b2961fe83998bced55ecefc6ecb46b705f953d06d1",
+      "sources": [
+        "https://www.reagles.cn/index/product_detail/content/10142.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "eam1010",
+      "title": "EAM1010",
+      "path": "content/models/eam1010/_index.md",
+      "parameter_rows": 3,
+      "body_characters": 565,
+      "sha256": "13da1347c77d83c90f4c5784c7dee663063e09552b6c6d75ef3b1ba1bb9a11bf",
+      "sources": [
+        "https://www.enavigate.cn/ypsq.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "当前官网可确认系列与量程覆盖，不能确认每个后缀的全部电气参数。需要继续核对敏感轴、模拟或数字输出、供电、噪声密度、零偏、带宽及封装；系列上下限不代替成员参数。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "enx-22-emt",
+      "title": "ENX 22 EMT",
+      "path": "content/models/enx-22-emt/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 1272,
+      "sha256": "260cbd990a83e8853776caace21a753a929d69b1dd00ac1f69d3e4e0ab6c4340",
+      "sources": [
+        "https://support.maxongroup.com/hc/en-us/articles/4406420812434-EPOS4-SSI-configuration-of-maxon-s-EMT-multi-turn-encoder",
+        "https://www.maxongroup.com/",
+        "https://www.maxongroup.com/medias/sys_master/root/9257532456990/enx-emt-en-04-2024.pdf",
+        "https://www.maxongroup.com/medias/sys_master/root/9416689156126/Brosch-IDX-70-BLDC-Motor-0525-EN.pdf"
+      ],
+      "source_sections": "maxon目录ENX22 EMT页Key data；maxon Support SSI配置§1、§2.2",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "go-m8010",
+      "title": "GO-M8010",
+      "path": "content/models/go-m8010/_index.md",
+      "parameter_rows": 15,
+      "body_characters": 996,
+      "sha256": "6a1c0d6ff7a24fe25c1d50134fef32bcfff5546984fd23b4b09858a5fc4c84f7",
+      "sources": [
+        "https://www.unitree.com/cn/mobile/go1/motor/"
+      ],
+      "source_sections": "宇树GO-M8010-6官网产品参数全表；30rad/s为24V，环境−5～40°C；极值分开。",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "gw-gc",
+      "title": "弓望GC系列",
+      "path": "content/models/gw-gc/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 662,
+      "sha256": "13cc7c51167485e40e1941a03922f1a61d80c46bf4a4be9092d6967a2242a700",
+      "sources": [
+        "https://www.gw-sensor.com/en/h-col-103.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "GC-C035、045、060、080、100、140是目录成员清单，不是六个尺寸已被逐项核对的证明。当前公开目录不足以填出每款的电源、精度、速率和温度；同一页中不同产品的参数不得跨型号拼接。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "gw-rt",
+      "title": "弓望RT系列",
+      "path": "content/models/gw-rt/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 670,
+      "sha256": "f96127cc0516f0a1f3307d866dc59a6535a471379bc2532cea6a6b14d0678543",
+      "sources": [
+        "https://www.gw-sensor.com/en/h-col-103.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "目前RT-D与RT-M成员的具体尺寸图、两路采样同步、电源、接口帧和重复定位条件仍需独立规格书。电池多圈描述也不能推到双编码器版本，用户应按所需功能锁定完整订货号。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "gw-sv",
+      "title": "弓望SV系列",
+      "path": "content/models/gw-sv/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 614,
+      "sha256": "8e2a4ffd85f8047d7e095036b4ff176149fa716394ff0fd4de708a35dbb7c1f8",
+      "sources": [
+        "https://www.gw-sensor.com/en/h-col-103.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "SV-48M17C与SV-48M17O的接口、位数解释、供电范围、工作电流和温度尚需成员手册确认。本页不按字母猜测闭源协议，也不把“多圈”直接解释成无电池计圈。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "hal9303r",
+      "title": "HAL9303R",
+      "path": "content/models/hal9303r/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 659,
+      "sha256": "d26b918d307517eab551e2100ce4185665d92c946d932afc39df42bf6d6bcafc",
+      "sources": [
+        "https://www.szhall.cn/products/250.html"
+      ],
+      "source_sections": "深圳霍尔官网产品详情特点(1)～(7)及封装感应极性正文",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ic-ma",
+      "title": "iC-MA",
+      "path": "content/models/ic-ma/_index.md",
+      "parameter_rows": 7,
+      "body_characters": 687,
+      "sha256": "925d285310df869f8593b247af74a0cfc99fca17142c11dad2b58a5de7b06df4",
+      "sources": [
+        "https://www.ichaus.de/product/ic-ma/",
+        "https://www.ichauschina.com/products/enc_mag.htm"
+      ],
+      "source_sections": "原厂中文产品摘要本型号分节",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ic-ma3",
+      "title": "iC-MA3",
+      "path": "content/models/ic-ma3/_index.md",
+      "parameter_rows": 8,
+      "body_characters": 651,
+      "sha256": "e7afea059af533c40b616bad296c766b1cd8a23b23bef73b4227126e897a604d",
+      "sources": [
+        "https://www.ichauschina.com/products/enc_mag.htm"
+      ],
+      "source_sections": "原厂中文产品摘要本型号分节",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ic-mh16",
+      "title": "iC-MH16",
+      "path": "content/models/ic-mh16/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 781,
+      "sha256": "26794302b8d5b977e11f701e8055cc9649a1e6ac52fd155cc3b8e5a64662aea1",
+      "sources": [
+        "https://www.ichaus.de/product/ic-mh16/",
+        "https://www.ichauschina.com/products/enc_mag.htm"
+      ],
+      "source_sections": "原厂中文产品摘要本型号分节",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ic-mhl",
+      "title": "iC-MHL系列",
+      "path": "content/models/ic-mhl/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 818,
+      "sha256": "b924d09ada2a7dff573a0f8e0396b4c9727d5e5811a5217fde3d620792c9b464",
+      "sources": [
+        "https://www.ichaus.de/wp-content/uploads/MHL_factsheet_rev4.pdf"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ic-mhm",
+      "title": "iC-MHM",
+      "path": "content/models/ic-mhm/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 758,
+      "sha256": "8ef6d989f59255d0e1ca7c7fdae3d76cbbb1b0f39765d2fed392a9933eefbbf4",
+      "sources": [
+        "https://www.ichauschina.com/products/enc_mag.htm"
+      ],
+      "source_sections": "原厂中文产品摘要本型号分节",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ic-mu",
+      "title": "iC-MU",
+      "path": "content/models/ic-mu/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 601,
+      "sha256": "69504db8a7ec8794b9c5d81b51983e43c5739075749fd75dce0be0fbff8398c4",
+      "sources": [
+        "https://www.ichaus.de/product/ic-mu/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ic-mu128",
+      "title": "iC-MU128",
+      "path": "content/models/ic-mu128/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 814,
+      "sha256": "cd38f2cb4ac7bc734aa4e17570220b79bc793591994bf2ee3696626f4f486a2c",
+      "sources": [
+        "https://www.ichaus.de/product/ic-mu128/",
+        "https://www.ichauschina.com/products/enc_mag.htm"
+      ],
+      "source_sections": "原厂中文产品摘要本型号分节",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ic-pz",
+      "title": "iC-PZ系列",
+      "path": "content/models/ic-pz/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 651,
+      "sha256": "b39a836996d1c19c56c4118ddc39726395c6ab2d2fc01e4c7949cc956e9ce463",
+      "sources": [
+        "https://de-shop.ichaus.com/encoder-solutions/optical-encoder-ics/ic-pz-series/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ic-tw29",
+      "title": "iC-TW29",
+      "path": "content/models/ic-tw29/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 588,
+      "sha256": "919e4dcd6752ebb4e23f00ae9281a77b5b05adec9adc19f8a51ef5e56f95d85f",
+      "sources": [
+        "https://www.ichaus.de/product/ic-tw29/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "is620n",
+      "title": "IS620N",
+      "path": "content/models/is620n/_index.md",
+      "parameter_rows": 3,
+      "body_characters": 603,
+      "sha256": "4cc37cf0a6362c2a11caeec0f441b878bd1b1ea4a7730a39911de1243dfa9a38",
+      "sources": [
+        "https://www.inovance.com/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "本轮原厂首页仅返回动态页面入口，未形成可核对的完整系列参数表。待补项为具体电源档、额定与峰值电流、功率段、制动电阻、反馈兼容表及命令接口，不用旧文章中的应用举例代替。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "kin52",
+      "title": "KIN52系列",
+      "path": "content/models/kin52/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 816,
+      "sha256": "41c8adb476155cc9e5873130026d1f8b2a85eb5af711b91fbd84ce0a0a6e37ca",
+      "sources": [
+        "https://www.reagles.cn/index/product_detail/content/10138.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "kin60",
+      "title": "KIN60",
+      "path": "content/models/kin60/_index.md",
+      "parameter_rows": 11,
+      "body_characters": 1074,
+      "sha256": "6858105dcdec23d7bbe7dd32a9198c4a0cbf41261172eb10bcdd033f5c0a14fb",
+      "sources": [
+        "https://reagles.cn/en/index.php/index/product_detail/content/10133.html",
+        "https://www.reagles.cn/uploads/Download/20231206/154034849925524.pdf"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "kmz60",
+      "title": "KMZ60",
+      "path": "content/models/kmz60/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 518,
+      "sha256": "e83f5399262349134600551576d92f6f15599f774117b3bc61fc03413bcb4340",
+      "sources": [
+        "https://www.nxp.com/products/KMZ60"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "现行产品页未给出完整历史料号的推荐供电、电流、磁场与精度条件。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth16",
+      "title": "KTH16系列",
+      "path": "content/models/kth16/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 1055,
+      "sha256": "b52c1b99f1b0bd4068a886389017a390c2fbc84bc4b757a57f5d22dbc2416da0",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth1604",
+      "title": "KTH1604",
+      "path": "content/models/kth1604/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 1156,
+      "sha256": "06a10228622ffc589673397566796e07471216f5fbcd464aa2e64595f241b8f1",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH1604%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth17",
+      "title": "KTH17系列",
+      "path": "content/models/kth17/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 1034,
+      "sha256": "4cac4403ebd24b0b7da9128fc70251437d5a9d08df8041465587c6650097c678",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth1701",
+      "title": "KTH1701",
+      "path": "content/models/kth1701/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 1083,
+      "sha256": "2264d00df17c47b968b419e06eeb3e6d5aa0b21e26e56714a1c5b9e9b7979c73",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH1701%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth25",
+      "title": "KTH25系列",
+      "path": "content/models/kth25/_index.md",
+      "parameter_rows": 8,
+      "body_characters": 941,
+      "sha256": "07aa59cfd6c059504c3e0bf4df2e806673df81f02c62d0be649a28363fb04ac0",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/automotiveHvdlHallEffectSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": true
+    },
+    {
+      "slug": "kth31",
+      "title": "KTH31系列",
+      "path": "content/models/kth31/_index.md",
+      "parameter_rows": 11,
+      "body_characters": 1443,
+      "sha256": "f2bd7165cb4443cebde2d43e5fad7512e56d25dae01ec320f18de68506a5903f",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH31%20Series%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth3101",
+      "title": "KTH3101",
+      "path": "content/models/kth3101/_index.md",
+      "parameter_rows": 8,
+      "body_characters": 1066,
+      "sha256": "c69364cc4a477eac8bd0c02776a973f01a00bb2ac0727751bb60256da8f811f6",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH31%20Series%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth3105",
+      "title": "KTH3105",
+      "path": "content/models/kth3105/_index.md",
+      "parameter_rows": 8,
+      "body_characters": 1070,
+      "sha256": "ed10e40b6155a4173e2ecf2842cadbbfaff71e523666f0fa14e5de80ae3ae66a",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH31%20Series%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth4603",
+      "title": "KTH4603系列",
+      "path": "content/models/kth4603/_index.md",
+      "parameter_rows": 8,
+      "body_characters": 896,
+      "sha256": "d48d103cab6ba3887a3419a9d0c39046fcbc1917bc5271355709e78a91e211ce",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highlysensitive3dhallswitch/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth462",
+      "title": "KTH462系列",
+      "path": "content/models/kth462/_index.md",
+      "parameter_rows": 8,
+      "body_characters": 903,
+      "sha256": "a35ef2fba916e0c81e9e18eaa41eb2df543b86aa3ca8efdbb3f522f8c315a1e1",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highsensitive2Dhallswitch/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth5502",
+      "title": "KTH5502",
+      "path": "content/models/kth5502/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 1074,
+      "sha256": "2eec63fe6b54ef6a6f1a25ac4bdc9b37f222f6a66b4bb4f01dbed1de156466bd",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5502%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/kth5502/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth5701",
+      "title": "KTH5701",
+      "path": "content/models/kth5701/_index.md",
+      "parameter_rows": 11,
+      "body_characters": 1127,
+      "sha256": "1390899bc95ecfd6b6a276a2e23ffcab74ad81fe67e3e2f0e469c86ab0289f23",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5701AQ2AQ3_DS_CN.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/57xilie/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth5900",
+      "title": "KTH5900",
+      "path": "content/models/kth5900/_index.md",
+      "parameter_rows": 6,
+      "body_characters": 981,
+      "sha256": "cd2721d9cbb231484afa477558e94c39568ab04e1af9e4491dd85f25acd6999e",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth7101",
+      "title": "KTH7101",
+      "path": "content/models/kth7101/_index.md",
+      "parameter_rows": 14,
+      "body_characters": 1285,
+      "sha256": "69b87151298cc1a69591f012f3046365b425557e3e17ab20478a1ebf529a405c",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth7111",
+      "title": "KTH7111",
+      "path": "content/models/kth7111/_index.md",
+      "parameter_rows": 16,
+      "body_characters": 1411,
+      "sha256": "41c5337d09b5441dd5d03c4bf30429d2a5d99f7850528189a4205b8bad0a5bb2",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7111%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth7112",
+      "title": "KTH7112",
+      "path": "content/models/kth7112/_index.md",
+      "parameter_rows": 17,
+      "body_characters": 1378,
+      "sha256": "a3423aa828847541255d008c04041bb4ede5e3f4a06a8954fcfea6cb97298e3c",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7112%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth78",
+      "title": "KTH78系列",
+      "path": "content/models/kth78/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 1444,
+      "sha256": "dafc3e1049087c691805dc2e6292b0b00128d2150e1648a7c9658bdb9eb85e43",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": true
+    },
+    {
+      "slug": "kth7801",
+      "title": "KTH7801",
+      "path": "content/models/kth7801/_index.md",
+      "parameter_rows": 13,
+      "body_characters": 1305,
+      "sha256": "548ae89ca2417ba0355fb20d8c4c5fadeb63eb40867bc4ce84b45f8d24695b57",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7801%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": true
+    },
+    {
+      "slug": "kth7803",
+      "title": "KTH7803",
+      "path": "content/models/kth7803/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 1000,
+      "sha256": "2556f097c518fc705c8b7a2e42a655e2c7972b6b185733790a04461d4329521c",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth7812",
+      "title": "KTH7812",
+      "path": "content/models/kth7812/_index.md",
+      "parameter_rows": 14,
+      "body_characters": 1269,
+      "sha256": "d48578c7d501b7981a19788ffabfa5071095a63dba34fa61a95a06a9dd9453c8",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth7813",
+      "title": "KTH7813",
+      "path": "content/models/kth7813/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 1191,
+      "sha256": "5c5f8132761b66a246899549537f58dc3afbb0c52fb599b725db421328cefe97",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7813%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": true
+    },
+    {
+      "slug": "kth7814",
+      "title": "KTH7814",
+      "path": "content/models/kth7814/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 1136,
+      "sha256": "dbb54300e0d28f8cf96529abcc3aefd4cdb44d8ca06bdf5246fb5cef7f080b58",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7814%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth7815",
+      "title": "KTH7815",
+      "path": "content/models/kth7815/_index.md",
+      "parameter_rows": 15,
+      "body_characters": 1476,
+      "sha256": "36f8abe12db9e8b0add02a2aaedab8ec9e2398837448b9960ba35de9674e11dc",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7815%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": true
+    },
+    {
+      "slug": "kth7816",
+      "title": "KTH7816",
+      "path": "content/models/kth7816/_index.md",
+      "parameter_rows": 14,
+      "body_characters": 1263,
+      "sha256": "b524926d1c3270c089a1591b0ee704e22bdee37352afc51042f1dcd9b14d3271",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7816%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "kth7823",
+      "title": "KTH7823",
+      "path": "content/models/kth7823/_index.md",
+      "parameter_rows": 14,
+      "body_characters": 1299,
+      "sha256": "782e2262c08bc05e5516d52ccc0da31f84513f09c4d627bcad18f4b2b46f1891",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7823%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "ktm1301",
+      "title": "KTM1301",
+      "path": "content/models/ktm1301/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 1136,
+      "sha256": "a6a03c7d1fed8f41f15b9e156a2cb798548a4cccd22f88a2603347799bbe98da",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM1301%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "ktm1305",
+      "title": "KTM1305",
+      "path": "content/models/ktm1305/_index.md",
+      "parameter_rows": 6,
+      "body_characters": 1000,
+      "sha256": "85680ac19db2711af94dc084c6da1d980d022e05d890a8c1d5cb84b3281dd8b3",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": true,
+      "source_conflicts": false
+    },
+    {
+      "slug": "ktm13xx",
+      "title": "KTM13XX",
+      "path": "content/models/ktm13xx/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 1061,
+      "sha256": "a0395606596878294a6de39c8c3e5d94ec46caba6bf9c5d861b6d6d64b671305",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "ktm28",
+      "title": "KTM28系列",
+      "path": "content/models/ktm28/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 924,
+      "sha256": "b56e560647b33fdd01f952c221cfb0e01dda0fe0b2dcc5de2bdc1de4bd467395",
+      "sources": [
+        "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/hvcpDetectionSensor/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "ktm5200",
+      "title": "KTM5200",
+      "path": "content/models/ktm5200/_index.md",
+      "parameter_rows": 21,
+      "body_characters": 1698,
+      "sha256": "54b31f8362e786501b17948a31961f2a30cb9c83b5d861dd08f57b5db208bb66",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5200%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM52XX/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": true
+    },
+    {
+      "slug": "ktm5220",
+      "title": "KTM5220",
+      "path": "content/models/ktm5220/_index.md",
+      "parameter_rows": 22,
+      "body_characters": 1684,
+      "sha256": "865a225df4abc92b85129ea2bd0f08f41922fd8fe9bd9d73903a41dbd2ef4c6c",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5220%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM52XX/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "ktm5300",
+      "title": "KTM5300",
+      "path": "content/models/ktm5300/_index.md",
+      "parameter_rows": 21,
+      "body_characters": 1559,
+      "sha256": "b9fc5cd9711aed18f64ef92cf0fac0a6ddf8f6e57fcae04386a0b73d8d2356ed",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5300%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM53XX/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "ktm5800",
+      "title": "KTM5800",
+      "path": "content/models/ktm5800/_index.md",
+      "parameter_rows": 13,
+      "body_characters": 1391,
+      "sha256": "aeb0a42ae429b5906ffd211ab358cf175c6366561045fde01854af2a9b7e53ab",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5800%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/absoluteangledivider/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "ktm5900",
+      "title": "KTM5900",
+      "path": "content/models/ktm5900/_index.md",
+      "parameter_rows": 18,
+      "body_characters": 1721,
+      "sha256": "612f72f095b17afc1c61b9a98eb8d38abd64c3c5fa683f5eeccd4667e79cca91",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": true
+    },
+    {
+      "slug": "ktm5910",
+      "title": "KTM5910",
+      "path": "content/models/ktm5910/_index.md",
+      "parameter_rows": 17,
+      "body_characters": 1612,
+      "sha256": "27b9dfcaa99c8d3e489418b09c0e41b8e32c30d7c4501a236851c3becd8d4ac1",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5910%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": true
+    },
+    {
+      "slug": "kto9512",
+      "title": "KTO9512",
+      "path": "content/models/kto9512/_index.md",
+      "parameter_rows": 13,
+      "body_characters": 1381,
+      "sha256": "bac71f3eb88aacb9b62c9747c72c87e7abb06388dc391c6e0e534c16d301bc26",
+      "sources": [
+        "https://www.conntek.com.cn/api/resource/freeDownload?name=KTO9512-D26-QN32%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+        "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/cursorabsoluteencoder/index.html"
+      ],
+      "source_sections": "PDF page/section stated alongside the parameter in the page",
+      "source_gap": false,
+      "source_conflicts": false
+    },
+    {
+      "slug": "lan8841",
+      "title": "LAN8841",
+      "path": "content/models/lan8841/_index.md",
+      "parameter_rows": 7,
+      "body_characters": 811,
+      "sha256": "e400d1430921688785ed6c56bbfdfab90d5f103cf4fc7b9c57cc16607303752e",
+      "sources": [
+        "https://www.microchip.com/en-us/development-tool/EV19G28A",
+        "https://www.microchip.com/en-us/product/LAN8841"
+      ],
+      "source_sections": "Microchip产品页；EVB-LAN8841官方Overview PHY/MAC/PTP说明",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma302",
+      "title": "MA302",
+      "path": "content/models/ma302/_index.md",
+      "parameter_rows": 13,
+      "body_characters": 907,
+      "sha256": "ab7c028849a36b7b105ba1b019cc07f44048f106723cae7fc58b56dcfb51f0d8",
+      "sources": [
+        "https://www.monolithicpower.com/en/ma302.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma330",
+      "title": "MA330",
+      "path": "content/models/ma330/_index.md",
+      "parameter_rows": 17,
+      "body_characters": 991,
+      "sha256": "6e01a0320b0599d916cdbd196a5945d16b2281cf8c9005a4f9834afecb225a99",
+      "sources": [
+        "https://www.monolithicpower.com/en/ma330.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma600",
+      "title": "MA600",
+      "path": "content/models/ma600/_index.md",
+      "parameter_rows": 6,
+      "body_characters": 1036,
+      "sha256": "2acefd390c558afc7cda40479b94e8d0c44f251a4c99345d484a1ac6b7e79f96",
+      "sources": [
+        "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA600GQ/",
+        "https://www.monolithicpower.com/en/products/ma600.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma600a",
+      "title": "MA600A",
+      "path": "content/models/ma600a/_index.md",
+      "parameter_rows": 14,
+      "body_characters": 917,
+      "sha256": "39f4cfbff58116e6e3c1a3c47c35b5b209a77deb643a461df1f899b00df9049e",
+      "sources": [
+        "https://www.monolithicpower.com/en/ma600a.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma730",
+      "title": "MA730",
+      "path": "content/models/ma730/_index.md",
+      "parameter_rows": 17,
+      "body_characters": 990,
+      "sha256": "e093c1e92c247bea5cd8e7e6b47bf9f2674802967db2a016700695d54d817df5",
+      "sources": [
+        "https://www.monolithicpower.com/en/ma730.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma732",
+      "title": "MA732",
+      "path": "content/models/ma732/_index.md",
+      "parameter_rows": 18,
+      "body_characters": 1034,
+      "sha256": "e133d41f360b3c126bfceffddf5273abe8d005af261c60bf9e3d5db42e914b7a",
+      "sources": [
+        "https://www.monolithicpower.com/en/ma732.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma734",
+      "title": "MA734",
+      "path": "content/models/ma734/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 770,
+      "sha256": "04fe6a3c5ad667966a975dc0f8c6c00125f5a592a9a2a8b441e6fbc35d2b1b04",
+      "sources": [
+        "https://www.monolithicpower.com/en/ma734.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma735",
+      "title": "MA735",
+      "path": "content/models/ma735/_index.md",
+      "parameter_rows": 15,
+      "body_characters": 911,
+      "sha256": "89668985f3a44e4d5a47b0a670d646bb6e4d58c19a58db15de043569f5fad435",
+      "sources": [
+        "https://www.monolithicpower.com/en/ma735.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma736",
+      "title": "MA736",
+      "path": "content/models/ma736/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 761,
+      "sha256": "76ad57f6a16d18ed7cd41a2c47469cb8da7297919439c4906128a12ccfbf59b2",
+      "sources": [
+        "https://www.monolithicpower.com/en/ma736.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma780",
+      "title": "MA780",
+      "path": "content/models/ma780/_index.md",
+      "parameter_rows": 11,
+      "body_characters": 764,
+      "sha256": "973ef9aa8abd4701b58acdfd99a8938d005b6066dc731491f40c38897ddb0b53",
+      "sources": [
+        "https://www.monolithicpower.com/en/ma780.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma782",
+      "title": "MA782",
+      "path": "content/models/ma782/_index.md",
+      "parameter_rows": 11,
+      "body_characters": 764,
+      "sha256": "95d65d9a9e6bb8580ab33e3fd28114c41c36f52ed40e33b16e0917e177f8dad7",
+      "sources": [
+        "https://www.monolithicpower.com/en/products/ma782.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ma900",
+      "title": "MA900",
+      "path": "content/models/ma900/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 626,
+      "sha256": "119ec82cdf3b0630df3c53bdd070f906bad19c94a83f9d0f84c66f46badb1710",
+      "sources": [
+        "https://www.monolithicpower.com/en/products/sensors/ma900.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "maq473",
+      "title": "MAQ473",
+      "path": "content/models/maq473/_index.md",
+      "parameter_rows": 15,
+      "body_characters": 873,
+      "sha256": "36d3d031303e1ca61f47eebb32d15adbbfe8e8997833767bc412b47b4c6fcc6d",
+      "sources": [
+        "https://www.monolithicpower.com/en/maq473.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "maq8xx",
+      "title": "MAQ800／820／850系列",
+      "path": "content/models/maq8xx/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 709,
+      "sha256": "fbdee82b91b613bae77cfd9172897265c7a2280b7878afa0b78cbd5dcc233b6c",
+      "sources": [
+        "https://www.monolithicpower.com/en/maq800.html"
+      ],
+      "source_sections": "MPS official Parameters Description / Features & Benefits checked 2026-10-24 via web",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mid-360",
+      "title": "MID-360",
+      "path": "content/models/mid-360/_index.md",
+      "parameter_rows": 17,
+      "body_characters": 1102,
+      "sha256": "6b03bbf17c43de65864589b9aa85e4ef9fd50265e08db89678f6c2e7d5506d1c",
+      "sources": [
+        "https://www.livoxtech.com/mid-360",
+        "https://www.livoxtech.com/mid-360/specs"
+      ],
+      "source_sections": "Specs全表与脚注2～8，尤其精密度脚注4/5及冷启动功率脚注8",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mlx90316",
+      "title": "MLX90316",
+      "path": "content/models/mlx90316/_index.md",
+      "parameter_rows": 3,
+      "body_characters": 749,
+      "sha256": "43f9d2f85d6192fc1674d8c85f4af529f799add02151e3ea7bfef17eb590b339",
+      "sources": [
+        "https://www.melexis.com/-/media/files/documents/datasheets/mlx90316-datasheet-melexis.pdf",
+        "https://www.melexis.com/en/product/MLX90316/Triaxis-mainstream-rotary-position-sensor-IC-Analog-PWM-SPI"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mlx90380",
+      "title": "MLX90380",
+      "path": "content/models/mlx90380/_index.md",
+      "parameter_rows": 13,
+      "body_characters": 1155,
+      "sha256": "7e96031e241650a7fa2d4e3f87e4faa139413c452039c31a4eee7154c40e4cf9",
+      "sources": [
+        "https://www.melexis.com/-/media/files/documents/datasheets/mlx90380-datasheet-melexis.pdf",
+        "https://www.melexis.com/en/product/MLX90380/Preprogrammed-Magnetic-Resolver"
+      ],
+      "source_sections": "MLX90380 Rev.11（2021-06）第1、13～15页；刷新周期和跟踪延迟分别列出。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mlx90381",
+      "title": "MLX90381",
+      "path": "content/models/mlx90381/_index.md",
+      "parameter_rows": 14,
+      "body_characters": 1365,
+      "sha256": "ac12fcb7f9f54f8558fae457b5f59bb3c1dad99d793c2adca7becfbbd5bb5b78",
+      "sources": [
+        "https://www.melexis.com/en/documents/documentation/datasheets/datasheet-mlx90381",
+        "https://www.melexis.com/en/product/mlx90381/triaxis-magnetic-pico-resolver"
+      ],
+      "source_sections": "MLX90381 Rev.003（2026-09-03）第1、10～15页。5V版本为后续扩充；旧Rev.002仅3.3V，不混写。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mlx90382",
+      "title": "MLX90382",
+      "path": "content/models/mlx90382/_index.md",
+      "parameter_rows": 17,
+      "body_characters": 1480,
+      "sha256": "ec0d30af6597dea2ef5441f992f31591eb797bb9ad5234cd78c033c51921d75c",
+      "sources": [
+        "https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf",
+        "https://www.melexis.com/en/product/mlx90382/triaxis-magnetic-high-speed-encoder"
+      ],
+      "source_sections": "MLX90382 Rev.1.0（2025-11-17）第9～16页、第6.6节；标称精度是EoL校准前且限定磁场/温度/速度，不是最终整机误差。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mlx90520",
+      "title": "MLX90520",
+      "path": "content/models/mlx90520/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 1161,
+      "sha256": "2f914461cd3d45147b64dd501c902999b1d03935be44e83d60fc1584d7ecb0c2",
+      "sources": [
+        "https://www.melexis.com/-/media/files/documents/datasheets/mlx90520-datasheet-melexis.pdf",
+        "https://www.melexis.com/en/product/MLX90520/22-bit-Inductive-position-sensor-dual-input"
+      ],
+      "source_sections": "MLX90520 Rev.001（2026-01-20）第1、9～10页；特别保留°electrical，不改写为机械整圈误差。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ms1000",
+      "title": "MS1000",
+      "path": "content/models/ms1000/_index.md",
+      "parameter_rows": 11,
+      "body_characters": 966,
+      "sha256": "0ff9014738d6be95e2ee2ecf532872ae71e4a0ec67aab817697b71542be955b4",
+      "sources": [
+        "https://www.safran-group.com/download/media/413479",
+        "https://www.safran-group.com/products-services/ms1000-tactical-grade-mems-accelerometer"
+      ],
+      "source_sections": "30S.MS1000.H.08.23，第1页系列摘要、第2页MS1002/第3页MS1005电气表",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mt6521",
+      "title": "MT6521",
+      "path": "content/models/mt6521/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 696,
+      "sha256": "f13c8dd4c9bcc2eccfc1d2be983cc2c0268dc0f49b0b6a0939c90bb91f16eda0",
+      "sources": [
+        "https://www.magntek.com.cn/upload/pdf/202406/MT652x_Datasheet_Rev.1.0_%E4%B8%AD%E6%96%87%E7%89%88.pdf"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mt6620",
+      "title": "MT6620",
+      "path": "content/models/mt6620/_index.md",
+      "parameter_rows": 5,
+      "body_characters": 595,
+      "sha256": "ff3565c7d3dc9e430a93c1d5fbfcd35e287493f554d543258b22558835de64d3",
+      "sources": [
+        "https://www.magntek.com.cn/46/54"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "当前缺对应正式版本的分辨率、数字接口、供电电流及保证误差表。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mt6701",
+      "title": "MT6701",
+      "path": "content/models/mt6701/_index.md",
+      "parameter_rows": 15,
+      "body_characters": 1145,
+      "sha256": "0f0fac659b3abf0d438ee91eff260fe2337dba36189f2b32f0ae85133110f692",
+      "sources": [
+        "https://www.magntek.com.cn/",
+        "https://www.magntek.com.cn/upload/pdf/202312/MT6701_Rev.1.8_%E4%B8%AD%E6%96%87%E7%89%88.pdf"
+      ],
+      "source_sections": "MT6701 Rev.1.8（2022-12）第1、7页；参数中的典型/最大和上电斜率按原表保留。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mt6816",
+      "title": "MT6816",
+      "path": "content/models/mt6816/_index.md",
+      "parameter_rows": 11,
+      "body_characters": 922,
+      "sha256": "23345d44e88078a856d8eb51fe1cad34cabf605d62f4dd8e2f7cd08a12483959",
+      "sources": [
+        "https://www.magntek.com.cn/136/105",
+        "https://www.magntek.com.cn/upload/pdf/202312/MT6816_Rev.2.1_%E4%B8%AD%E6%96%87%E7%89%88.pdf"
+      ],
+      "source_sections": "MT6816 Rev.2.1（2022-12）第1、8页。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mt6826s",
+      "title": "MT6826S",
+      "path": "content/models/mt6826s/_index.md",
+      "parameter_rows": 15,
+      "body_characters": 1206,
+      "sha256": "ec9c9c8d83f9a21a44dea4fc383a078b5226d8caacc5d2ac8abdc35b02c6cbfb",
+      "sources": [
+        "https://www.magntek.com.cn/upload/pdf/202404/MT6826S_Datasheet_Rev.1.1_%E4%B8%AD%E6%96%87%E7%89%88.pdf"
+      ],
+      "source_sections": "MT6826S Rev.1.1（2024-01）第1、8～9页；正常工作磁场行误写MT6835，故未据该行给本型号确定场强保证。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mt6835",
+      "title": "MT6835",
+      "path": "content/models/mt6835/_index.md",
+      "parameter_rows": 18,
+      "body_characters": 1495,
+      "sha256": "d6ebc54d235beb2924a9efbee5b2e580ce2a45238126a1f78b4c2ffc235a5c94",
+      "sources": [
+        "https://www.magntek.com.cn/",
+        "https://www.magntek.com.cn/upload/pdf/202312/MT6835_Rev.1.3_%E4%B8%AD%E6%96%87%E7%89%88.pdf"
+      ],
+      "source_sections": "MT6835 Rev.1.3（2022-12）第5～9页、第9章；匀速自校准和EEPROM流程另见原厂自校准应用说明Rev.1.2。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mt6901",
+      "title": "MT6901",
+      "path": "content/models/mt6901/_index.md",
+      "parameter_rows": 17,
+      "body_characters": 1431,
+      "sha256": "76e4986c4e37a1c23c64791396f9941531dfa4d0b64bd6b17f7effc66c90f25b",
+      "sources": [
+        "https://mgmt.novosns.com/Public/Uploads/uploadfile3/files/20251106/NOVOSENSE%20Industrial%20Control%20Solution_202510.pdf",
+        "https://www.novosns.com/"
+      ],
+      "source_sections": "归档原厂MT6901中文Rev.0.2（2025-02）第1、6、8～9、36～37页；独立原厂直链未取得，页面显式注明版本和公开链接缺口",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mt910x",
+      "title": "MT910x系列",
+      "path": "content/models/mt910x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 904,
+      "sha256": "5ab30f599a33a91550f66179f749d1640aa9822e6a496eaa9693b83001c74cda",
+      "sources": [
+        "https://www.magntek.com.cn/upload/pdf/202404/%E7%A3%81%E6%80%A7%E7%94%B5%E6%B5%81-%E7%BA%BF%E6%80%A7%E9%9C%8D%E5%B0%94%E8%8A%AF%E7%89%87MT9102%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6.pdf"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mt935x",
+      "title": "MT935x系列",
+      "path": "content/models/mt935x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 535,
+      "sha256": "156a04cbbec51323c24fca0cddf6fef8985e3ec210bf199a395447cb6a452a01",
+      "sources": [
+        "https://www.magntek.com.cn/136/95"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mx6800",
+      "title": "MX6800",
+      "path": "content/models/mx6800/_index.md",
+      "parameter_rows": 3,
+      "body_characters": 722,
+      "sha256": "fb3f790d4b9c104f53e7ae55d346c16c14b0ca8d210413005dec839fb34ace23",
+      "sources": [
+        "https://www.orbbec.com/products/stereo-vision-camera/gemini-330-series/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "待补的裸芯片资料包括供电轨、封装引脚、图像输入带宽、外部存储、同步接口和公开软件支持。配套相机成品的SDK可用，不表示裸芯片参考设计或全部内部接口已公开。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "mxc3638al",
+      "title": "MXC3638AL",
+      "path": "content/models/mxc3638al/_index.md",
+      "parameter_rows": 14,
+      "body_characters": 984,
+      "sha256": "b26318134a309a5a6cdaa0dc09fd80bc9b378771ad7f5ecaf58f75305002e281",
+      "sources": [
+        "https://www.memsic.com/Public/Uploads/uploadfile/files/20220119/MXC3638ALDatasheet.pdf",
+        "https://www.memsic.com/cn/capacitive-accelerometer-85"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "nrf52832",
+      "title": "nRF52832",
+      "path": "content/models/nrf52832/_index.md",
+      "parameter_rows": 11,
+      "body_characters": 1232,
+      "sha256": "e0ac7ec98c7d14a0adc2278d3c7fb174f0e94eee32777feff807670de098a3f5",
+      "sources": [
+        "https://docs.nordicsemi.com/r/bundle/ps_nrf52832/page/nrf52832_ps.html",
+        "https://docs.nordicsemi.com/r/bundle/ps_nrf52832/page/nrf52832_ps.html?contentId=96Da0Nf4VS5ePLinBRUs8g",
+        "https://www.nordicsemi.com/Products/nRF52832"
+      ],
+      "source_sections": "Product Specification Key features；Memory Table1；Ordering information",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "nsm101x",
+      "title": "NSM101x系列",
+      "path": "content/models/nsm101x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 637,
+      "sha256": "96640deeb221fa18e372027479dc85cdd6771ceff6087b34cbe340c6169038a7",
+      "sources": [
+        "https://www.novosns.com/Public/Uploads/uploadfile/files/20240628/-494.pdf"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "nsm301x",
+      "title": "NSM3011／3012／3013",
+      "path": "content/models/nsm301x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 715,
+      "sha256": "8939e00682c1a9bafc7094ecce2900956fb4f802d0c47e3af970373d0e90067d",
+      "sources": [
+        "https://www.novosns.com/Public/Uploads/uploadfile3/files/20220726/NSM3011_3012_3013_DatasheetV1.0EN.pdf"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "nsm350x",
+      "title": "NSM350x",
+      "path": "content/models/nsm350x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 555,
+      "sha256": "ee933752f1c4fa6139d30d8bf396cfc08252be55030eb640f70c5655e728f570",
+      "sources": [
+        "https://www.novosns.com/"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "供电、电流、温度、接口速率、磁环极数及整圈精度尚未取得可复核的成员级正式表。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "pmw3389",
+      "title": "PMW3389",
+      "path": "content/models/pmw3389/_index.md",
+      "parameter_rows": 3,
+      "body_characters": 590,
+      "sha256": "5a2fb08209dd2f0000b714d0611a86f1bbe60ecdf9002a44a1a65e7821d27d05",
+      "sources": [
+        "https://www.pixart.com/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "本轮未获得原厂公开的完整后缀规格书，保留型号与原理说明。常见鼠标宣传中的16000DPI、450ips、50g没有在此作为芯片保证值，因为它们需要确认具体后缀、固件与测试表面。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "pnh3348",
+      "title": "PNH3348",
+      "path": "content/models/pnh3348/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 706,
+      "sha256": "618bd89e5fcb4e5756134d0afa2c0645db2b44254dad5b7d28247b6b41176cd1",
+      "sources": [
+        "https://www.ichauschina.com/PNH_factsheet_CN"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "当前公开factsheet支持前端定位与信号结构；需要按实际光学几何取得完整电气条件。发光驱动、供电、响应频率和输出负载尚不能仅从三通道名称推算。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "qrd1114",
+      "title": "QRD1114",
+      "path": "content/models/qrd1114/_index.md",
+      "parameter_rows": 8,
+      "body_characters": 922,
+      "sha256": "64d5b9f1f7cfa5aee9c3a16f46baf5e8bbeedf39ebd92522c0494758b304324b",
+      "sources": [
+        "https://www.onsemi.com/pdf/datasheet/qrd1113-d.pdf",
+        "https://www.onsemi.com/pdf/datasheet/qrd1114-d.pdf"
+      ],
+      "source_sections": "QRD1113/QRD1114 Rev6(2026-06)第2页光电特性及脚注5/7",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "reagles-kid",
+      "title": "锐鹰KID系列",
+      "path": "content/models/reagles-kid/_index.md",
+      "parameter_rows": 7,
+      "body_characters": 680,
+      "sha256": "535c76f52d367e9c6fdad59804151c6bb43509e331041469cf1b58162309c619",
+      "sources": [
+        "https://www.reagles.cn/index/product_detail/content/10159.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "reagles-kit",
+      "title": "锐鹰KIT系列",
+      "path": "content/models/reagles-kit/_index.md",
+      "parameter_rows": 6,
+      "body_characters": 666,
+      "sha256": "4376650f6f66893087c79cd3db2195689bc438bed531ec08b98a49a75d1d5157",
+      "sources": [
+        "https://www.reagles.cn/index/product_detail/content/10158.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "rxma30",
+      "title": "RXMA30",
+      "path": "content/models/rxma30/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 884,
+      "sha256": "b0b05ca19328e5061f19ea8b474f4ede51726c1e56ed7ac14f99df5eb6dedfb5",
+      "sources": [
+        "https://www.renishaw.com/en/renishaw-introduces-true-absolute-multi-dof-encoder-system-featuring-new-rxma30-15d-scale--50008",
+        "https://www.renishaw.com/resourcecentre/download/rxma30-15d--146447?userLanguage=zh"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "原厂公告说明多自由度测量结构，不给本页假定统一的六自由度精度。完整系统还需对应RESOLUTE读头、接口选件及安装设计资料；线性分辨率与姿态角误差应分别给单位。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "sin60",
+      "title": "SIN60系列",
+      "path": "content/models/sin60/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 798,
+      "sha256": "ea5c9a4f8fac47fb8a721a50ff146330212059293dc40035acbe1884b33c5075",
+      "sources": [
+        "https://www.reagles.cn/index/product_detail/content/10137.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "sr3511n",
+      "title": "SR3511N",
+      "path": "content/models/sr3511n/_index.md",
+      "parameter_rows": 7,
+      "body_characters": 610,
+      "sha256": "ff8741d18daf072a4ff70166738035bbf9814d4b4b4f76e9e821dc52425f8adb",
+      "sources": [
+        "https://www.fortiortech.com/en/news/detail/40"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "srma34",
+      "title": "SRMA34系列",
+      "path": "content/models/srma34/_index.md",
+      "parameter_rows": 9,
+      "body_characters": 832,
+      "sha256": "94e19a3ff101d2d8cabadb38fa26950c6aa01e8581dcbfa0da243fe71e877787",
+      "sources": [
+        "https://www.reagles.cn/index/product_detail/content/10121.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "srmi34",
+      "title": "SRMI34系列",
+      "path": "content/models/srmi34/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 880,
+      "sha256": "7077366a183440f839d91721148ed4b4c179eb2942fde34d8fdd3eb1397a070e",
+      "sources": [
+        "https://www.reagles.cn/index/product_detail/content/10117.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "sroa48",
+      "title": "SROA48",
+      "path": "content/models/sroa48/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 580,
+      "sha256": "57633f80b874baed45baa1aae2e900dd8dcc2a95da301c82d8f7a054e2505b7e",
+      "sources": [
+        "https://www.reagles.cn/",
+        "https://www.reagles.cn/en/uploads/Download/20241108/1658028d0cd2258.pdf"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "ss49e",
+      "title": "SS49E",
+      "path": "content/models/ss49e/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 1600,
+      "sha256": "a52f360946fb8676dd2a4665ec0994131d38e5891e13b11b2f835e074da6a4ea",
+      "sources": [
+        "https://automation.honeywell.com/us/en/products/sensing-solutions/sensors/magnetic-sensors/ss39et-ss49e-ss59et-linear-hall-effect-sensor-ic",
+        "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-ca/products/sensors/magnetic-sensors/linear-and-angle-sensor-ics/common/documents/sps-siot-ss39et-ss49e-ss59et-product-sheet-005850-3-en-ciid-50359.pdf"
+      ],
+      "source_sections": "Honeywell Issue4 005850，第2页型号/封装和第3页Table1 Operating Characteristics",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "stm32",
+      "title": "STM32",
+      "path": "content/models/stm32/_index.md",
+      "parameter_rows": 3,
+      "body_characters": 637,
+      "sha256": "92cacc66ac12490b5d1160d6ad587749925beebaf08216ee41595d9462e6b8df",
+      "sources": [
+        "https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "sv660nd",
+      "title": "SV660ND",
+      "path": "content/models/sv660nd/_index.md",
+      "parameter_rows": 3,
+      "body_characters": 571,
+      "sha256": "b3ccb3bb3df23ee60d77e98e4f7c2c011d6690cbf7b437955505f6d005569057",
+      "sources": [
+        "https://www.inovance.com/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "当前缺的是完整后缀对应的电压、电流、功率、制动、总线与反馈规格，不是器件工作原理。补证时应对到硬件版本及手册修订号，避免把同系列不同电源档的最大值混在一起。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tcrt5000",
+      "title": "TCRT5000",
+      "path": "content/models/tcrt5000/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 833,
+      "sha256": "b3e4e9bae5e60d98913ffd1109c12996b200f22f8492b137078a88ad061e7e93",
+      "sources": [
+        "https://www.vishay.com/docs/83760/tcrt5000.pdf",
+        "https://www.vishay.com/zh/product/83760/"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tle5012b",
+      "title": "TLE5012B",
+      "path": "content/models/tle5012b/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 2401,
+      "sha256": "023e0dbf4408b4931b576c77f341db39849498818ec30ddfa367af10e8a4a93a",
+      "sources": [
+        "https://www.infineon.com/assets/row/public/documents/30/49/infineon-tle5012b-exxxx-datasheet-en.pdf",
+        "https://www.infineon.com/part/TLE5012B-E5000"
+      ],
+      "source_sections": "TLE5012B Rev.2.1（2018-06-20）第1、16～17页及原有本页SSC/校准引用。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tle5502",
+      "title": "TLE5502",
+      "path": "content/models/tle5502/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 1103,
+      "sha256": "46d025f05e3550c3989f17d71c628b3167a508bedaa6e713d06eb94908b01cdc",
+      "sources": [
+        "https://www.infineon.com/assets/row/public/documents/24/49/infineon-tle5502d-datasheet-en.pdf",
+        "https://www.infineon.com/technology-news/2026/infpss202606-102"
+      ],
+      "source_sections": "TLE5502D Rev.1.10（2026-03-09）第1、9～10页；S0002解耦P/N桥与S0003 SIN/COS桥引脚不同。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr11xx",
+      "title": "TMR1102／1148／1162",
+      "path": "content/models/tmr11xx/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 624,
+      "sha256": "74fed8fe4e6f95a3ad4fcf95dfbc1575c56a3ea56dd55f7fe048ad80b1be3845",
+      "sources": [
+        "https://www.dowaytech.com/sensor/switch_sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr1202",
+      "title": "TMR1202系列",
+      "path": "content/models/tmr1202/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 576,
+      "sha256": "becb933846ff06d5cfe1657bf176479a779b2c9fc114314b5bed9388b5cf12df",
+      "sources": [
+        "https://www.dowaytech.com/sensor/switch_sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr208x",
+      "title": "TMR2083／2084",
+      "path": "content/models/tmr208x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 613,
+      "sha256": "ed503add762ee6de8dbce94bc57255d14ba464bb60e45ecd51e31158bb2fe15f",
+      "sources": [
+        "https://www.dowaytech.com/sensor/linear_magnetic_field_sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr210x",
+      "title": "TMR2102／2103／2104",
+      "path": "content/models/tmr210x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 624,
+      "sha256": "779bb54a4820a9a68b631df55b8905d102e9338685c61dac6d287b4d05f1023c",
+      "sources": [
+        "https://www.dowaytech.com/sensor/linear_magnetic_field_sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr2602",
+      "title": "TMR2602",
+      "path": "content/models/tmr2602/_index.md",
+      "parameter_rows": 8,
+      "body_characters": 714,
+      "sha256": "b74ca118685f1213c54fb371b15aada3f4548070b33dd9e444f8544be9f8ded7",
+      "sources": [
+        "https://www.dowaytech.com/TMR2602-TMR-Linear-Sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr2617s",
+      "title": "TMR2617S",
+      "path": "content/models/tmr2617s/_index.md",
+      "parameter_rows": 10,
+      "body_characters": 725,
+      "sha256": "417f7f09f3c4a2740b80a7819ce44feb111949379d9b11e5e53b64fd496f6821",
+      "sources": [
+        "https://www.dowaytech.com/TMR2617S-AAC-TMR-Linear-Sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr265xdd",
+      "title": "TMR265xDD系列",
+      "path": "content/models/tmr265xdd/_index.md",
+      "parameter_rows": 7,
+      "body_characters": 727,
+      "sha256": "b2d11fe53b18de5cb3b9dfb1f25435aedd77f63ab9a43b4f06dedbdf6cfff340",
+      "sources": [
+        "https://www.dowaytech.com/TMR2651DD-TMR-Linear-Sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr300x",
+      "title": "TMR3002／3004／3005",
+      "path": "content/models/tmr300x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 648,
+      "sha256": "882259b9713014826405b365e27e2815b1f039133c8aed59bb4804d1305440dc",
+      "sources": [
+        "https://www.dowaytech.com/sensor/angle_sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr301x",
+      "title": "TMR3014～3017系列",
+      "path": "content/models/tmr301x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 611,
+      "sha256": "53bf02b35d8ea64cb287f6ad191bfaa1cedb99327815b28d64d8967e1c94bd6c",
+      "sources": [
+        "https://www.dowaytech.com/sensor/angle_sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr3081",
+      "title": "TMR3081",
+      "path": "content/models/tmr3081/_index.md",
+      "parameter_rows": 6,
+      "body_characters": 641,
+      "sha256": "8bbdcee737a50865580de095a683f961c38d70cf5c96b2deb32c868f87c49da0",
+      "sources": [
+        "https://www.dowaytech.com/TMR3081-TMR-Angle-Sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr3107",
+      "title": "TMR3107",
+      "path": "content/models/tmr3107/_index.md",
+      "parameter_rows": 5,
+      "body_characters": 701,
+      "sha256": "0c785a39b6a69b157a18628c57ca38c9f2f0e6438fb0f6d020bd452216578a0b",
+      "sources": [
+        "https://www.dowaytech.com/en/res/202310/12/219e5842f1299a33.pdf"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "该完整型号的供电、电流、温度、磁场及精度尚无可核对的正式规格。",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr3108",
+      "title": "TMR3108",
+      "path": "content/models/tmr3108/_index.md",
+      "parameter_rows": 5,
+      "body_characters": 710,
+      "sha256": "f787436d86406053e8d09cd5dc753e9a4c7f3ce2d0e1aec6be4220ef428037bb",
+      "sources": [
+        "https://www.dowaytech.com/TMR3108-TMR-Angle-Sensors.html",
+        "https://www.dowaytech.com/en/res/202310/12/219e5842f1299a33.pdf"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr3109",
+      "title": "TMR3109",
+      "path": "content/models/tmr3109/_index.md",
+      "parameter_rows": 12,
+      "body_characters": 972,
+      "sha256": "05600b9781c8065be8c557b9cfb41a08fbfb17816fe29292b115ba624331e610",
+      "sources": [
+        "https://www.dowaytech.com/TMR3109-TMR-Angle-Sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr3110",
+      "title": "TMR3110",
+      "path": "content/models/tmr3110/_index.md",
+      "parameter_rows": 18,
+      "body_characters": 1049,
+      "sha256": "46403f5c9e031a44feed15477972fe9bacc424de76743b7eacfd9f71c5bb3ab9",
+      "sources": [
+        "https://www.dowaytech.com/TMR3110-TMR-Angle-Sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "tmr3111",
+      "title": "TMR3111",
+      "path": "content/models/tmr3111/_index.md",
+      "parameter_rows": 18,
+      "body_characters": 1152,
+      "sha256": "a957d020d3c7120f1a7c7c8683692e1a605b3d8f2913454ee5ffc1a2626b87fa",
+      "sources": [
+        "https://www.dowaytech.com/TMR3111-TMR-Angle-Sensors.html"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "vce1715",
+      "title": "VCE1715",
+      "path": "content/models/vce1715/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 562,
+      "sha256": "6a3a20c0c12873efa41fe59982a0eafd5761ad325dcea88d6da648627d1cf06a",
+      "sources": [
+        "https://www.sg-micro.com/product/VCE1715"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "vce2755",
+      "title": "VCE2755",
+      "path": "content/models/vce2755/_index.md",
+      "parameter_rows": 13,
+      "body_characters": 1068,
+      "sha256": "962c67bb1045a6b77787e9dee7667e4c389853c1a0fe1073fc4f620232b79752",
+      "sources": [
+        "https://www.sg-micro.com/rect/assets/db119b16-8eeb-40df-8fd5-74e92fd603fd/VCE2755.pdf"
+      ],
+      "source_sections": "VCE2755 Rev.A.3（2026-01）第1、5页及第7页接线图；18位码宽与14位有效角度口径分开。",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "vcs238x",
+      "title": "VCS2381／2382／2383",
+      "path": "content/models/vcs238x/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 603,
+      "sha256": "0d14ade4aa9e7cb057094a79ddc8e55cd20587b72a50acad06ad53c34537b1dd",
+      "sources": [
+        "https://www.sg-micro.com/product/VCS2381"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "vcs2395",
+      "title": "VCS2395",
+      "path": "content/models/vcs2395/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 525,
+      "sha256": "99b362af8ecac4ecd63dc635e66e0ca03ed21a2cd343d3fb8321d0625677c8c1",
+      "sources": [
+        "https://www.sg-micro.com/product/VCS2395"
+      ],
+      "source_sections": "existing model source + current official product table; local V1.0.1 calibration chapters for TMR3109/3110/3111",
+      "source_gap": "完整引脚、电气保证值及全部配置仍应查对应正式手册",
+      "source_conflicts": false
+    },
+    {
+      "slug": "win48",
+      "title": "WIN48",
+      "path": "content/models/win48/_index.md",
+      "parameter_rows": 4,
+      "body_characters": 648,
+      "sha256": "34e39ca461b063a6a638f4c1aeecabcba8a3ace5fda4766134f4a832f982d7ca",
+      "sources": [
+        "https://www.reagles.cn/",
+        "https://www.reagles.cn/uploads/Download/20240723/092834205ac8885.pdf"
+      ],
+      "source_sections": "原厂产品页技术规格与特性分节；保留原手册来源",
+      "source_gap": "",
+      "source_conflicts": false
+    }
+  ],
+  "initial_official_url_retrieval": [
+    {
+      "url": "https://automation.honeywell.com/us/en/products/sensing-solutions/sensors/magnetic-sensors/linear-and-angle-sensor-ics",
+      "status": 200,
+      "pdf": false,
+      "sha256": "783e3561029a8321e2305f1dcc03955369ac2ae6f7167e494dc59f42ba49bc52",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://de-shop.ichaus.com/encoder-solutions/optical-encoder-ics/ic-pz-series/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "93e13659367339335ead017fd8a6de8830b3cb9b62902f07027d520550a52edd",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://docs.nordicsemi.com/r/bundle/ps_nrf52832/page/nrf52832_ps.html",
+      "status": 403,
+      "pdf": false,
+      "sha256": "cb449d0a73afe43ea5c7d0027d44624340534545ddbb87498c0e6cd02f48ad65",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://mgmt.novosns.com/Public/Uploads/uploadfile3/files/20251106/NOVOSENSE%20Industrial%20Control%20Solution_202510.pdf",
+      "error": "HTTPSConnectionPool(host='mgmt.novosns.com', port=443): Max retries exceeded with url: /Public/Uploads/uploadfile3/files/20251106/NOVOSENSE%20Industrial%20Control%20Solution_202510.pdf (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://reagles.cn/en/index.php/index/product_detail/content/10133.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "af10ff515e84567c99eacfbcf49272cf0edb3255e2a6f04c7e281b04dc981a1c",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.advancechip.com/",
+      "error": "HTTPSConnectionPool(host='www.advancechip.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1129)')))",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.analog.com/en/products/admt4000.html",
+      "error": "HTTPSConnectionPool(host='www.analog.com', port=443): Read timed out. (read timeout=25)",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/admt4000.pdf",
+      "error": "HTTPSConnectionPool(host='www.analog.com', port=443): Read timed out. (read timeout=25)",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.broadcom.com/products/motion-control-encoders/incremental-encoders/reflective-encoders/aedr-8500-102",
+      "status": 200,
+      "pdf": false,
+      "sha256": "4c0aa2fd52db39d4bf9b3c941a9a8b16490936ee16763feba59bc1d5fba8d7e7",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH1701%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "b80fff479c54dc3117c874f17ee463287af84e891e6c5eec32323537d2c61098",
+      "pages": 15,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5701AQ2AQ3_DS_CN.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "462afd7ad3a3784a14ccf519244c77d59789d7c286fcf00a76b215e4d22d93c6",
+      "pages": 44,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "7520117a3ba998f7af4b868ceb635df9419d222372209ea15a361cba69731508",
+      "pages": 26,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7111%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "119a3064965fe7ef5bb848e7eadd62082978f1f954dcc93706c670905f70cf90",
+      "pages": 33,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7112%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "f98c22e6e7162af4f1766a98d120bed4d046fdfedd1eacf4238857aa060b3a43",
+      "pages": 32,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "62cadc1ac96bad5859d0ef0c7c3057746f8666206e525cf8eb9c8287edbff11a",
+      "pages": 32,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7815%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "318718ce27ee7dc1d1b599a48cadc4bcb7e18869cb8b433117d3ac2ffb594132",
+      "pages": 31,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7823%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "3ebc20e404700dc050ee6b10e3792a6a28038b5fa737ab688f0f41ad59e6fa52",
+      "pages": 31,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM1301%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "705409fba63c48e0f22e100085537d2d2257ce98221eb3c463949f349835b9a7",
+      "pages": 15,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5200%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "9700eb1402e74e2158828da73e5d9a65dbf64c92560661d8b77ca6e83e464ffe",
+      "pages": 35,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5300%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "0e9cad8e7b7ff9557b8f90335b08570ad676bb2aee1b885210bff74f2da4efac",
+      "pages": 36,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5800%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "784381067250d7c819cb15700857951187e92d66648d824e19a9506f2887baf2",
+      "pages": 43,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "8230cbe513abb7cd2146f1ec1d18c409f9ecacdd99a96c7f659bff8791128258",
+      "pages": 44,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5910%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "7e3be2130696f7592753f866aa2e9d25dfb490a3a83af209b9e3018e6d93dd9e",
+      "pages": 42,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/api/resource/freeDownload?name=KTO9512-D26-QN32%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "b3fc19101a3ab6083c3d32342045167fd977f01eb40fad9e5243bf1a506d4690",
+      "pages": 10,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/57xilie/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "82fd0a02a6738d9cbf26862a759cedda9fbfb773891ed2e024c24545cb631f88",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/kth5502/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "0fdc2b59cc0e835679d9941f7b6812f306749d76836877630cda9e2e773ba37d",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM52XX/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "5b6a63a485600a422b6aec03eaf45a6b4f29bbb2a378f93e0bb8642873f12a84",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/KTM53XX/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "0f0784edead59c351e9c99e479a8883f9041a5f8379cb10446176018b5d9ceac",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/absoluteangledivider/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "f4dca68c06cdc30ebbd4f7962d1aa79d676499d68ea2e1e13fb1c620850306b3",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/cursorabsoluteencoder/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "164e0161e9700913d3f5a6a66b3bc715f7c78da58adfdfa87b24680fb12247ec",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "4b1013e713addeb66729976436141ad95daf82315400f8dd7afb77aecfbf593b",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "1d8a6bbdf45b268007cfce52c21060270e63cf0a9e055e12faf1ab2a8353bc6d",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "2d043394b4226bfbb5c8be069a849cc28e3b2354b0e39b2ac48a26da1df628db",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/automotiveHvdlHallEffectSensor/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "08e1b32b6d632706c18e14a86dcb56029dd8878c57247390428892de4a30beb6",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highlysensitive3dhallswitch/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "53594ad0ab75a620cac732f10076fa2e8eaff26f74d0ee641d561531663f2e7a",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highsensitive2Dhallswitch/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "313b883013c0e6fe622cd73495f057fc7e19e44dc46ff05798412d5f47517bf7",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/hvcpDetectionSensor/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "c5e97210d147feed6b0b56a9d1a41fc239d9dc763586e46a5ca901f359edfda7",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "d8c01b7227cf4fae64e3167d87d6f5ebcbb5400b13259165ef05a89b279a6ac6",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "4bfb43d3540fdecd9edf06b77e7460ff0a11d5745d2769f1a46d04f2f741d5b8",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/proportionallinerhalleffectsensor/index.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "b87cce67a2d2545e92a5b253f580ed38c72c174cce493c7516ecb5ebd1fbd1b1",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ctunite.com/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "3453a5919af11a2a0f5e5d32975c37fe1e275f6bc90171c360bac2a30d7071d5",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/TMR2602-TMR-Linear-Sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "6a2d5031d382fb34725feb8663baf65a09ac1ac0308e1db65d31d06c8960719c",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/TMR2617S-AAC-TMR-Linear-Sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "78d0cef16ba93a38d2b43fa297144e426e9ee63bda42febe3a01b67fd71d7d3d",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/TMR2651DD-TMR-Linear-Sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "77f6f57a23f62d01ad7f2bba895142b0aa6a7c60df566013cc130df5ab2655b9",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/TMR3081-TMR-Angle-Sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "0d010c7c8e95bcb66c6905dfee90da8cba4b04a67c3b6b40ff62b55825d43720",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/TMR3108-TMR-Angle-Sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "e36efd5fcce3ada99c1328102a2dc3462ac3114b7cb4e0346d74b4ffd1c6cd3e",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/TMR3109-TMR-Angle-Sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "70d348bebe8e6648ce7d9db9c4b5e1238720e309eb030683f82456eb5701f1ad",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/TMR3110-TMR-Angle-Sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "1600e4aa26b877df11c40f8e9626375a7b55134677fd9651f9e991aec3d1053b",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/TMR3111-TMR-Angle-Sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "d1865566bc4416bb733ba8a6fcffdaa2c9e7274feee8535f3619c8843cd4afec",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/en/res/202310/12/219e5842f1299a33.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "99da20aade097d6fe55be67b5581ec38d423d0954cbc1686be9a8d6d6f620cd2",
+      "pages": 16,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/sensor/angle_sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "729d4b918b970f8a6701b926ba65b9633b3e3afcd5a48ba4d6ead4daecdac6d4",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/sensor/linear_magnetic_field_sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "3aa5b70f8cfea331b60c7bec89b6244e850379cca3f9bad61dad1aef0dbf7f93",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.dowaytech.com/sensor/switch_sensors.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "94b48cc928c5ca213c7253a9aff7c65489374c7b7113c6ec0a98e550ed7e34c3",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.enavigate.cn/ypsq.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "3655e408bb074de7a943618afce9608c323f870de987d1d5e2b7f9920f34b577",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.fortiortech.com/en/news/detail/40",
+      "status": 200,
+      "pdf": false,
+      "sha256": "bde4301bd87d3b815eb993e8ff50971f5c9e01dfdf4d05eedcb60105d005a157",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.gw-sensor.com/en/h-col-103.html",
+      "status": 204,
+      "pdf": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ichaus.de/product/ic-ma/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "d091f3de5d2e835933a8454fadd8dfce92b51a7d3fa57440bb7fc761c9dd8f8f",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ichaus.de/product/ic-mh16/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "3f723ebc7a0405b98d1495cff711fac84a71e07509e0753ebc064adc9e33275f",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ichaus.de/product/ic-mu/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "2996d7563cbaf17caaafeac0b2c215a55d6df9e5fdcd3ec7b54705f490ddaf71",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ichaus.de/product/ic-mu128/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "e1fbe1264a18cf9d735806403695101c2588ca77831d2695dbd1efb7fb1c99bb",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ichaus.de/product/ic-tw29/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "7253c6119ec6a346c7b44dec58387a6eedfda95237d80c4e94c860eb06abdcf3",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ichaus.de/wp-content/uploads/MHL_factsheet_rev4.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "f8d66f2e5b2e8fd7b72d59a050e59c2c0c0dae36fd01cefd7a5ed1bc9f94da78",
+      "pages": 2,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ichauschina.com/PNH_factsheet_CN",
+      "status": 200,
+      "pdf": true,
+      "sha256": "a05283aee97016886e4a962d3fdac4bb17feae6353e7557f541561b4bb618337",
+      "pages": 2,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ichauschina.com/products/enc_mag.htm",
+      "status": 200,
+      "pdf": false,
+      "sha256": "f9afb7b178899be7c3ed426f2dafdb40f92120d561176eb41922f66ccb1a5f02",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-tle5502d-datasheet-en.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "c21a47a32d9685d8537e9e53664c109c6ad9a47f56415756018d9a8874f1f2d2",
+      "pages": 23,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5047p-datasheet-en.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "8de2e15ef332373c8f78e03cd4bfb9aa520b098b091d04e90ffb9aebb0e14c90",
+      "pages": 42,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "9b7779278a9c4baa0406199c6be07d81aec83e0473c048afb84ecb4d448a4f1f",
+      "pages": 43,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5147-datasheet-en.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "1cdfa320aca37828540cf65b19451a70e1a6fd607ce71ec1f3c8accb58cd6da8",
+      "pages": 42,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5247-datasheet-en.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "570c87e83938c6d2451ebf56be94ef4f7c3519e4d0fa7d088079397ed6e7c463",
+      "pages": 43,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "548490c8a9a6bac0137d360062f98fcba9d7edbf4ee552c99c3e713aea773d7a",
+      "pages": 45,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-tle5012b-exxxx-datasheet-en.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "9c7f6b66713734620255309f15ff67fed389d28381e43d74e7e6dc958f77e674",
+      "pages": 51,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/part/AS5047P",
+      "status": 200,
+      "pdf": false,
+      "sha256": "35e6d746cce7bc5a0a1aee6955c4f738eed165bf22aeb25a23e62fecfb471273",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/part/AS5048A",
+      "status": 200,
+      "pdf": false,
+      "sha256": "b42f999a4a34da5bcf93c2a9333f3ea8da630fc8afbe4683d515f0b29b898c02",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/part/AS5048B",
+      "status": 200,
+      "pdf": false,
+      "sha256": "151a364456475a5b638376dc92d6cb93c8b25f441ed0e49b1c9af6228ff3733f",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/part/AS5147",
+      "status": 200,
+      "pdf": false,
+      "sha256": "ff2663c0ad9f19aee8aa92a54609e99c85bacb2a7ac9b5f162058fe3d7f581b6",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/part/AS5247",
+      "status": 200,
+      "pdf": false,
+      "sha256": "fed940fcc4de292374150380837c30b74adff5d2f86d993e6ed9562a1852e3e1",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/part/AS5600",
+      "status": 200,
+      "pdf": false,
+      "sha256": "e99ef36d9ae61e7fbd7bdf16be2ed12abb623a1b3f1033fbae8a5d95529508e8",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/part/TLE5012B-E5000",
+      "status": 200,
+      "pdf": false,
+      "sha256": "34c525de2be2f1a723e7a82aefc1da5352e5198cc177e44a830a13140a8cc0ee",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.infineon.com/technology-news/2026/infpss202606-102",
+      "status": 200,
+      "pdf": false,
+      "sha256": "008d8265df61d91350cdd66de298cfb9b0a0f9961f58bcfa829182911d41d0cb",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.inovance.com/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "f33c17acb669d6b4ca058876553aef724c96c9f7fe8f79c2518c2a7805ade375",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.livoxtech.com/mid-360",
+      "status": 200,
+      "pdf": false,
+      "sha256": "f14f5a42d39145f8abee124614b755c216db874cbe45af3a5de381d6d69ac59e",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "add990c9232bf425fd8ac4c6ccd2631d8bc0f80bbd2f5431bdacf9f254e23835",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/136/105",
+      "status": 200,
+      "pdf": false,
+      "sha256": "75bf7bad68f54aeb79f970f57e926593515f5cffb6068ce000de105e6212b6dd",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/136/95",
+      "status": 200,
+      "pdf": false,
+      "sha256": "8c409b7791f9f660a529023289f2ad41731aea3348e7e1374a5f7a2ce62babfd",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/46/54",
+      "status": 200,
+      "pdf": false,
+      "sha256": "ae6acf3cdebc98c11009a0b1968e2d0030c8e8558e97f75cea3a8c063deaa1da",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/upload/pdf/202312/MT6701_Rev.1.8_%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "3775dd049418cf4e1c4d5536ea120d80fe69accdcfdb4e02da56ed84c40265c6",
+      "pages": 37,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/upload/pdf/202312/MT6816_Rev.2.1_%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "eaae0e53655427f8c1f215813b44ea31d1c931f3c3d28f91d9161457b3893912",
+      "pages": 30,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/upload/pdf/202312/MT6835_Rev.1.3_%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "bb34b972ed228cf98bc3b83aca01eb1e0fff02655a8be7262466b120f5604840",
+      "pages": 42,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/upload/pdf/202404/%E7%A3%81%E6%80%A7%E7%94%B5%E6%B5%81-%E7%BA%BF%E6%80%A7%E9%9C%8D%E5%B0%94%E8%8A%AF%E7%89%87MT9102%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "b39e8b982aba7360728222a7c5e60626a2b77b778054ecdd840fea767da87fc7",
+      "pages": 13,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/upload/pdf/202404/MT6826S_Datasheet_Rev.1.1_%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "f3b282a641a223e90973660a2e2cb88d3ca44ab7f7b5e0b1248fd38f63382622",
+      "pages": 47,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.magntek.com.cn/upload/pdf/202406/MT652x_Datasheet_Rev.1.0_%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "f62c76a4d0c324789fdc73ec6067f7b6bf155a638f0fd969addb9f7bfcb1de46",
+      "pages": 47,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.maxongroup.com/",
+      "status": 403,
+      "pdf": false,
+      "sha256": "37df05f9e87fab3d41be4cca630605f980886ff832611384c781c69290995909",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.maxongroup.com/medias/sys_master/root/9257532456990/enx-emt-en-04-2024.pdf",
+      "status": 403,
+      "pdf": false,
+      "sha256": "e44183022594cb770c8ee9c026ca6fe88c1156294cef62083f123d5f56d9b20e",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90316-datasheet-melexis.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "8c422a1033680b85f826b440763fa916546bfd520522a153cf7e07524d11134a",
+      "pages": 48,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90380-datasheet-melexis.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "9a8ca3d75b98380576582788e4e852c04808053f22469cc16b489ad57af2a815",
+      "pages": 29,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90382-datasheet-melexis.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "356d14a3ebcf4a7583de82c1d85777846e3aca7d5b24bdfd0944cff3f9aadc67",
+      "pages": 74,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.melexis.com/-/media/files/documents/datasheets/mlx90520-datasheet-melexis.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "b018fcffc9752b99191f9d5d2261c178f3e81a06c70958392c27c640d2e83671",
+      "pages": 62,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.melexis.com/en/documents/documentation/datasheets/datasheet-mlx90381",
+      "status": 403,
+      "pdf": false,
+      "sha256": "58c9441b02327b8c0d9a5f003a249efade58e3a40c8cc32b2bc84e7ab42b5ed9",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.melexis.com/en/product/MLX90316/Triaxis-mainstream-rotary-position-sensor-IC-Analog-PWM-SPI",
+      "status": 403,
+      "pdf": false,
+      "sha256": "2572766e653979b0d084321ac19ee3a9f4ea27abc2bf3e0d5a69e43a286e05a3",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.melexis.com/en/product/MLX90380/Preprogrammed-Magnetic-Resolver",
+      "status": 403,
+      "pdf": false,
+      "sha256": "70982f83a54a3ed31b56111bc89f1b0c4b3984b1f087301ecfb6cf25c47c870a",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.melexis.com/en/product/MLX90520/22-bit-Inductive-position-sensor-dual-input",
+      "status": 403,
+      "pdf": false,
+      "sha256": "69e636a0af54528a17c5d8fa39d81c2adc0c3961a0bbe9450d6266e486075be2",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.melexis.com/en/product/mlx90381/triaxis-magnetic-pico-resolver",
+      "status": 403,
+      "pdf": false,
+      "sha256": "a25d561e82eebe103b21f721d847e503e72b890dcbc49e739fad855625899858",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.melexis.com/en/product/mlx90382/triaxis-magnetic-high-speed-encoder",
+      "status": 403,
+      "pdf": false,
+      "sha256": "9d3401d92a6daa5ded787c05787c4584ffeb6dfb31d8759297ac8d4739784bf3",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.memsic.com/Public/Uploads/uploadfile/files/20220119/MXC3638ALDatasheet.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "e34281c6412b15ba13605cf4306b396ab23ce0f7396e3c681f48e01821adbea2",
+      "pages": 84,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.memsic.com/cn/capacitive-accelerometer-85",
+      "status": 200,
+      "pdf": false,
+      "sha256": "a5c48ea8b872e48380726937feac2fcd1df30732b380d1d88e07c10212e8b62f",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.microchip.com/en-us/product/LAN8841",
+      "status": 403,
+      "pdf": false,
+      "sha256": "cf8f9f88442f5f26cfb799d4b31388c3c245825a498073d7de2816c1e39d742b",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MA600GQ/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/ma302.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/ma330.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/ma600a.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/ma730.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/ma732.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/ma734.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/ma735.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/ma736.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/ma780.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/maq473.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/maq800.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/products/ma600.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/products/ma782.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.monolithicpower.com/en/products/sensors/ma900.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.nordicsemi.com/Products/nRF52832",
+      "status": 403,
+      "pdf": false,
+      "sha256": "9d3cc545dda161b0ffd305ac2efbee3152425b07e637f45f6ee4e7494c0cd1cc",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.novosns.com/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "96cd91ac074a4cb93c6123a51b3fb25f7e0e5071dfbe34ea44dce58b2272ceab",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.novosns.com/Public/Uploads/uploadfile/files/20240628/-494.pdf",
+      "status": 404,
+      "pdf": false,
+      "sha256": "c7ab5848485a7ce5ee9e599923e155f945b60d327218c07eab3e0f90dff727cf",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.novosns.com/Public/Uploads/uploadfile3/files/20220726/NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+      "status": 404,
+      "pdf": false,
+      "sha256": "c7ab5848485a7ce5ee9e599923e155f945b60d327218c07eab3e0f90dff727cf",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.nxp.com/products/KMZ60",
+      "status": 404,
+      "pdf": false,
+      "sha256": "c034e8e488d00aceb611eac70e0d001305308b8592a4b2d2267726a0b71c5f69",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.onsemi.com/pdf/datasheet/qrd1113-d.pdf",
+      "status": 403,
+      "pdf": false,
+      "sha256": "a900652e17e4a3f0520c24a35a749e1cf5be777653a0d6ae268cfc65a88fc293",
+      "retrieved_document": false,
+      "blocked_or_soft_error": true
+    },
+    {
+      "url": "https://www.orbbec.com/products/stereo-vision-camera/gemini-330-series/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "f680e7de24c9a90a00357cbed5d6802ad8b84e77b7986b0532b9ec171c2bf073",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.pixart.com/",
+      "status": 403,
+      "pdf": false,
+      "sha256": "9d4818b772b5adb0dc6f2bc541ceb85a7291a5e4d1a6ccf8ae219f4da770f655",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "5a6b36b2b461c71a9942ba03be418874eaa5d3831e35b82c24b81cf7ced053bd",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/en/uploads/Download/20241108/1658028d0cd2258.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "8e62a28f51f6b02f89f05ffc305b62d10599634bdcee59da222aa22758c916e0",
+      "pages": 12,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/index/product_detail/content/10117.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "6a40316de72376a2ff982fe8f603235824edc16ca6b59b2ec022c6e5b560849c",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/index/product_detail/content/10121.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "76fa6a4379ab98256ff2dc8d9d7ff682c597981332dd11441a3aece19705e1db",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/index/product_detail/content/10137.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "8966871e3a41424d28e932cb29aa98142637dc41d404a1326900d817afbc31bd",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/index/product_detail/content/10138.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "9ff41e48ff6aee5e83bf5bce291f73cf10236c57c46caf238a40fa185c3857e6",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/index/product_detail/content/10142.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "8ae2d8c9a9c58dae43db688c0cb3477db5aff68ea005756056e21553dafd8a09",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/index/product_detail/content/10158.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "0be7de2873061333b29c22852ad1fb43a0a4b90bd46f43e8cd6bd7005d439c83",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/index/product_detail/content/10159.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "b305be5fc56fd6a3f8a965c8ca76857a53a07717401fb4b1fdf47605910024e6",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/uploads/Download/20231206/154034849925524.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "c7abf61ccbde313a83851ea040d3952bb8294066df0b02f7e6f0a9edf4a5af68",
+      "pages": 13,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.reagles.cn/uploads/Download/20240723/092834205ac8885.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "ce116af0476a54bc0082d68cb452d988e49b237e725ab804248de96d3a9443b7",
+      "pages": 14,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.realsenseai.com/products/depth-camera-d435i/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "dfcf55e9cfdbfedb250f69ff87abc3b25beed2a0302a1b5484276218d29d481a",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.realsenseai.com/wp-content/uploads/2022/04/Intel-RealSense-D400-Series-Datasheet-April-2022-v2.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "f11acd053d9f6f4aac5da4a8c745e768f681aba10d72742c5ce1223310f04867",
+      "pages": 153,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.renishaw.com/en/renishaw-introduces-true-absolute-multi-dof-encoder-system-featuring-new-rxma30-15d-scale--50008",
+      "status": 200,
+      "pdf": false,
+      "sha256": "ba45c8dde1de8ea7e9e201ffa15a3f8aae75e4431f602ad1104430afe40499bf",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.renishaw.com/resourcecentre/download/rxma30-15d--146447?userLanguage=zh",
+      "status": 200,
+      "pdf": true,
+      "sha256": "c51a667036bfccb19d1925ec8c9664c516bef03951e6be9b1421efa5e05af4f4",
+      "pages": 13,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.safran-group.com/products-services/ms1000-tactical-grade-mems-accelerometer",
+      "status": 403,
+      "pdf": false,
+      "sha256": "bba74d90a3d8a1baa29ac34ad26074b755bee2ec1938baf69a90cf71066151f7",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.sg-micro.com/product/VCE1715",
+      "status": 200,
+      "pdf": false,
+      "sha256": "d2b52dd0c6fff4b1266a48019018bd6f3e5331cf6585c32f554958378231e8f5",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.sg-micro.com/product/VCS2381",
+      "status": 200,
+      "pdf": false,
+      "sha256": "c56049b33fb2721868eaf252efd2246b17a75ab1787e90bc40c91e73bb7da9a2",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.sg-micro.com/product/VCS2395",
+      "status": 200,
+      "pdf": false,
+      "sha256": "253707e9a1eebe17f9c50de652f91de0f5ebf8607443b39ceaa16f4b52fc4a51",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.sg-micro.com/rect/assets/db119b16-8eeb-40df-8fd5-74e92fd603fd/VCE2755.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "ce1716e06453c2700cbed77fe27356a5a4202405b28a734cc922e6301233698e",
+      "pages": 30,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html",
+      "error": "HTTPSConnectionPool(host='www.st.com', port=443): Read timed out. (read timeout=25)",
+      "retrieved_document": false,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.szhall.cn/products/250.html",
+      "status": 200,
+      "pdf": false,
+      "sha256": "21e0663b6d3d8c2af2f93c4ff4cc4bc9104b146ffe25c6c6c49756a2c543aca1",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/am26c32.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "3aad0953b69d94ba3e4100431456deae7847d9a4706cc351d0d2dd1846179f63",
+      "pages": 35,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/cd4051b.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "4c95679dd28077e26a50e8a2b9e6b887df2ec463d173a83b80bdf0d7586dfabf",
+      "pages": 39,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ti.com/product/AM26C32",
+      "status": 200,
+      "pdf": false,
+      "sha256": "711ae7c2f9d312ec60d9169f68b103a76a646091e03eef75a89e60e452f64ec8",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.ti.com/product/CD4051B",
+      "status": 200,
+      "pdf": false,
+      "sha256": "45d69119c1043d46d8e26a4563c38f9d6fe657d3d87e9852561f871e53ec6db0",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.unitree.com/cn/mobile/go1/motor/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "bd2c655da956c3ff98241fd4f4c261cb86840a7d2c81286dd41d3707dcc439a1",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.vishay.com/docs/83760/tcrt5000.pdf",
+      "status": 200,
+      "pdf": true,
+      "sha256": "fbf04bfbc82a74ab339756fd0c975522bef64c75cdbd78ea97b348166c2b61b4",
+      "pages": 7,
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    },
+    {
+      "url": "https://www.vishay.com/zh/product/83760/",
+      "status": 200,
+      "pdf": false,
+      "sha256": "72ecc0b1b28de1c28b951014c6aa7ed8bc408047a6f2338ec0feabc9a0126c55",
+      "retrieved_document": true,
+      "blocked_or_soft_error": false
+    }
+  ]
+}
