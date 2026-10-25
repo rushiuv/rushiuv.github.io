@@ -3,19 +3,19 @@
 <section class="home-hero">
   <div class="wrap home-hero-grid">
     <div class="home-intro">
-      <p class="home-eyebrow"><span></span>如是有为 · 编码器研发与应用</p>
+      <p class="home-eyebrow">{{ partial "home-mark.html" "disk" }}如是有为 · 编码器研发与应用</p>
       <h1>从选型开始，<br>把位置反馈<span>看清楚</span>。</h1>
       <p class="home-lead">编码器原理、芯片型号与工程应用。<br>把基础概念、官方手册和技术文章连起来。</p>
       <form class="portal-search" id="portal-search-form" role="search">
         <label class="sr-only" for="portal-search-input">搜索型号、公司或技术文章</label>
         <span class="search-icon" aria-hidden="true"></span><input id="portal-search-input" type="search" placeholder="型号、品牌，或一个技术问题" autocomplete="off"><button type="submit">搜索 <span aria-hidden="true">↗</span></button>
       </form>
-      <div class="portal-hot"><span>试着搜</span>{{ range slice "MT6835" "AS5047P" "多圈" "校准" }}<button type="button" data-query="{{ . }}">{{ . }}</button>{{ end }}</div>
+      <div class="portal-hot"><span>试着搜</span>{{ range slice "KTM5300" "AS5047P" "多圈" "校准" }}<button type="button" data-query="{{ . }}">{{ . }}</button>{{ end }}</div>
       <div class="home-stats"><span><strong>{{ len (where (where site.Pages "Params.wiki" true) "Params.wiki_type" "model") }}</strong> 型号</span><i></i><span><strong>{{ len (where (where site.Pages "Params.wiki" true) "Params.wiki_type" "company") }}</strong> 公司与机构</span><i></i><span><strong>{{ len $posts }}</strong> 篇文章</span></div>
     </div>
-    <a class="home-hero-art" href="{{ "wiki/basics/" | relURL }}" aria-label="从编码器基础知识开始阅读"><span class="art-register" aria-hidden="true"></span><span class="art-caption" aria-hidden="true"><span>POSITION FEEDBACK</span><span>器件 · 磁路 · 信号链</span></span><img src="{{ "images/editorial/chromeos-home-20261018.webp" | relURL }}" alt="轻漫画工程场景：工程师比较电机、芯片与笔记，非安装示意图" width="1536" height="1024" loading="eager" fetchpriority="high"></a>
+    <div class="home-art-shell"><a class="home-hero-art" href="{{ "wiki/basics/" | relURL }}" aria-label="从编码器基础知识开始阅读"><span class="art-register" aria-hidden="true"></span><span class="art-caption" aria-hidden="true"><span>POSITION FEEDBACK</span><span>器件 · 磁路 · 信号链</span></span><img src="{{ "images/editorial/chromeos-home-20261018.webp" | relURL }}" alt="轻漫画工程场景：工程师比较电机、芯片与笔记，非安装示意图" width="1536" height="1024" loading="eager" fetchpriority="high"><span class="home-art-foot"><span>从器件到系统</span>{{ partial "home-mark.html" "signal" }}<span aria-hidden="true">↗</span></span></a></div>
   </div>
-  <div class="wrap"><div class="home-models"><span class="home-models-label">常用型号</span><div>{{ range $name := slice "MT6835" "AS5047P" "KTM5900" "iC-MU" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><strong>{{ $name }}</strong><span>{{ .Count }} 篇</span><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div><a class="home-models-all" href="{{ "wiki/" | relURL }}?kind=model">全部型号 →</a></div></div>
+  <div class="wrap"><div class="home-models"><span class="home-models-label">常用型号</span><div>{{ range $name := slice "KTM5300" "MT6835" "AS5047P" "KTM5900" "iC-MU" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><strong>{{ $name }}</strong><span>{{ .Count }} 篇</span><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div><a class="home-models-all" href="{{ "wiki/" | relURL }}?kind=model">全部型号 →</a></div></div>
 </section>
 {{ end }}
 
@@ -23,7 +23,7 @@
 {{ with site.GetPage "/posts/2026-10-18-kth7111-1us-vs-510us.md" }}
 <section class="home-latest" aria-label="最新文章：KTH7111动态响应">
   <a class="home-latest-link" href="{{ .RelPermalink }}">
-    <div class="latest-copy"><p class="latest-label"><span></span>最新工程笔记 <i>2026.10.18 / 编码器动态响应</i></p><h2><span>KTH7111 每 <em>1 μs</em> 更新，</span><span>为什么滤波时间常数却有 <em>510 μs</em>？</span></h2><p class="latest-description">数据更新周期不等于动态延迟：从跟踪滤波到伺服相位响应，拆解两个时间参数真正的意义。</p><span class="latest-more">阅读全文 <b aria-hidden="true">↗</b></span></div>
+    <div class="latest-copy"><p class="latest-label"><span></span>精选工程笔记 <i>2026.10.18 / 编码器动态响应</i></p><h2><span>KTH7111 每 <em>1 μs</em> 更新，</span><span>为什么滤波时间常数却有 <em>510 μs</em>？</span></h2><p class="latest-description">数据更新周期不等于动态延迟：从跟踪滤波到伺服相位响应，拆解两个时间参数真正的意义。</p><span class="latest-more">阅读全文 <b aria-hidden="true">↗</b></span></div>
     <div class="latest-visual" aria-hidden="true"><span class="timing-orbit"></span><span class="timing-value">1 <small>μs</small></span><span class="timing-separator">≠</span><span class="timing-value">510 <small>μs</small></span><span class="timing-caption">更新周期 / 滤波时间常数</span></div>
   </a>
 </section>
@@ -40,7 +40,7 @@
   <a href="{{ "wiki/" | relURL }}"><span class="home-path-num">02 / 从器件开始</span>{{ partial "path-icon.html" "model" }}<h2>型号与官方资料 <b>↗</b></h2><p>找具体芯片、核心性能和数据手册。</p></a>
   <a href="{{ "topics/" | relURL }}"><span class="home-path-num">03 / 从问题开始</span>{{ partial "path-icon.html" "topic" }}<h2>技术专题与应用 <b>↗</b></h2><p>沿着磁路、校准与伺服反馈继续深入。</p></a>
 </nav>
-<aside class="guide-banner"><div><h2>从看懂参数，到做出一次验证</h2><p>技术专题提供计算、测点、失败分支与可下载记录表。</p></div><a class="btn" href="{{ "topics/" | relURL }}#methods">按问题开始 →</a></aside>
+<aside class="guide-banner"><span class="home-guide-seal">{{ partial "home-mark.html" "calibration" }}</span><div><h2>从看懂参数，到做出一次验证</h2><p>技术专题提供计算、测点、失败分支与可下载记录表。</p></div><a class="btn" href="{{ "topics/" | relURL }}#methods">按问题开始 →</a></aside>
 
 <section class="home-section home-applications" aria-labelledby="home-applications-title">
   <header class="home-section-head"><div><p class="home-overline">APPLICATIONS / 从场景出发</p><h2 id="home-applications-title">芯片放进系统，先要回答什么？</h2></div><a href="{{ "applications/" | relURL }}">全部应用 <span>↗</span></a></header>
@@ -49,21 +49,21 @@
 
 <section class="home-section" id="topics">
   <header class="home-section-head"><div><p class="home-overline">EXPLORE / 技术方向</p><h2>你正在研究什么？</h2></div><a href="{{ "topics/" | relURL }}">全部专题 <span>↗</span></a></header>
-  <div class="home-topics">{{ range site.Data.portal.topics }}{{ $item := . }}{{ range site.Taxonomies.tags.ByCount }}{{ if eq .Page.LinkTitle $item.tag }}<a class="home-topic" href="{{ .Page.RelPermalink }}"><span class="home-topic-num">{{ $item.number }}</span><div><h3>{{ $item.title }} <b>↗</b></h3><p>{{ $item.desc }}</p><span class="home-topic-meta">{{ .Count }} 篇文章 <i>·</i> {{ $item.short }}</span></div></a>{{ end }}{{ end }}{{ end }}</div>
+  <div class="home-topics">{{ range site.Data.portal.topics }}{{ $item := . }}{{ range site.Taxonomies.tags.ByCount }}{{ if eq .Page.LinkTitle $item.tag }}<a class="home-topic" href="{{ .Page.RelPermalink }}">{{ $topicArt := index (dict "磁编码器" "magnetic" "电感编码器" "inductive" "光电编码器" "optical" "编码器接口" "interface" "非线性校准" "calibration" "机器人关节" "robot") $item.tag }}<span class="home-topic-visual"><img src="{{ printf "images/editorial/topic-%s-20261025.webp" $topicArt | relURL }}" width="1254" height="1254" loading="lazy" decoding="async" alt="{{ $item.title }}主题插画"><span class="home-topic-number">{{ $item.number }}</span></span><div><h3>{{ $item.title }} <b>↗</b></h3><p>{{ $item.desc }}</p><span class="home-topic-meta">{{ .Count }} 篇文章 <i>·</i> {{ $item.short }}</span></div></a>{{ end }}{{ end }}{{ end }}</div>
 </section>
 
 <section class="home-section home-reading">
   <header class="home-section-head"><div><p class="home-overline">READ / 精选阅读</p><h2>把一个问题，真正读明白。</h2></div><span class="home-section-note">选自已有文章</span></header>
-  <div class="home-reading-grid">{{ with site.GetPage "/posts/2026-10-18-kth7111-1us-vs-510us.md" }}<a class="home-reading-item home-reading-new" href="{{ .RelPermalink }}"><span class="home-reading-label">KTH7111 · 新文章</span><h3>1 μs 更新，为什么滤波时间常数却有 510 μs？</h3><p>数据更新不等于测量延迟：从一阶低通、跟踪滤波到加减速与伺服相位。</p><span class="home-reading-end">阅读全文 <b aria-hidden="true">↗</b></span></a>{{ end }}{{ range $i,$item := site.Data.portal.reading }}{{ with site.GetPage (printf "/posts/%s" .file) }}<a class="home-reading-item{{ if eq $i 0 }} home-reading-feature{{ end }}" href="{{ .RelPermalink }}"><span class="home-reading-label">{{ $item.label }}</span><h3>{{ $item.heading }}</h3><p>{{ .Description | plainify | truncate 95 }}</p><span class="home-reading-end">阅读全文 <b aria-hidden="true">↗</b></span></a>{{ end }}{{ end }}</div>
+  <div class="home-reading-grid">{{ with site.GetPage "/posts/2026-10-18-kth7111-1us-vs-510us.md" }}<a class="home-reading-item home-reading-new" href="{{ .RelPermalink }}"><span class="home-reading-label">KTH7111 · 动态响应</span><img class="home-reading-art" src="{{ "images/editorial/chromeos-signal-desk-20261025.webp" | relURL }}" width="1536" height="1024" loading="lazy" decoding="async" alt="示波器、编码器与电机的工程场景插画"><h3>1 μs 更新，为什么滤波时间常数却有 510 μs？</h3><p>数据更新不等于测量延迟：从一阶低通、跟踪滤波到加减速与伺服相位。</p><span class="home-reading-end">阅读全文 <b aria-hidden="true">↗</b></span></a>{{ end }}{{ range $i,$item := site.Data.portal.reading }}{{ with site.GetPage (printf "/posts/%s" .file) }}<a class="home-reading-item{{ if eq $i 0 }} home-reading-feature{{ end }}" href="{{ .RelPermalink }}"><span class="home-reading-label">{{ $item.label }}</span>{{ $art := index (slice "chromeos-basics-20261018.webp" "chromeos-magnetic-desk-20261025.webp" "chromeos-magnetic-20261024.webp") $i }}<img class="home-reading-art" src="{{ printf "images/editorial/%s" $art | relURL }}" width="1536" height="1024" loading="lazy" decoding="async" alt="{{ $item.label }}的工程场景插画"><h3>{{ $item.heading }}</h3><p>{{ .Description | plainify | truncate 95 }}</p><span class="home-reading-end">阅读全文 <b aria-hidden="true">↗</b></span></a>{{ end }}{{ end }}</div>
 </section>
 
 <section class="home-section home-library">
-  <div class="home-library-intro"><p class="home-overline">REFERENCE / 型号资料</p><h2>落到器件，<br>找到可靠的资料。</h2><p>核心参数、安装接入与校准条件，连接官方手册和相关文章。</p><a href="{{ "wiki/" | relURL }}">浏览资料库 <span>→</span></a></div>
-  <div class="home-library-list">{{ range $name := slice "MT6835" "AS5047P" "MLX90382" "TLE5012B" "KTH78" "MT6901" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><div><strong>{{ $name }}</strong><span>{{ .Page.Params.wiki_category | default "角度测量" }}</span></div><p>{{ .Page.Description | plainify | truncate 65 }}</p><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div>
+  <div class="home-library-intro"><p class="home-overline">REFERENCE / 型号资料</p><h2>落到器件，<br>找到可靠的资料。</h2><p>核心参数、安装接入与校准条件，连接官方手册和相关文章。</p><a href="{{ "wiki/" | relURL }}">浏览资料库 <span>→</span></a><figure class="home-library-art"><img src="{{ "images/editorial/chromeos-reference-desk-20261025.webp" | relURL }}" width="1536" height="1024" loading="lazy" decoding="async" alt="码盘、传感器、量具与工程笔记的静物插画"><figcaption>器件 · 磁路 · 测量</figcaption></figure></div>
+  <div class="home-library-list">{{ range $name := slice "KTM5300" "MT6835" "AS5047P" "MLX90382" "TLE5012B" "KTH78" }}{{ range site.Taxonomies.models.ByCount }}{{ if eq .Page.LinkTitle $name }}<a href="{{ .Page.RelPermalink }}"><span class="home-library-symbol" aria-hidden="true">{{ partial "home-mark.html" "chip" }}</span><div><strong>{{ $name }}</strong><span>{{ .Page.Params.wiki_category | default "角度测量" }}</span></div><p>{{ .Page.Description | plainify | truncate 65 }}</p><b aria-hidden="true">↗</b></a>{{ end }}{{ end }}{{ end }}</div>
 </section>
 
 <section class="home-section home-journal">
-  <header class="home-section-head"><div><p class="home-overline">JOURNAL / 持续记录</p><h2>最近的文章</h2></div><a href="{{ "archives/" | relURL }}">全部归档 <span>↗</span></a></header>
+  <header class="home-section-head"><div><p class="home-overline">JOURNAL / 持续记录</p><h2>最近的文章</h2></div><a href="{{ "archives/" | relURL }}">浏览博客 <span>↗</span></a></header>
   {{ $updates := (where site.RegularPages "Section" "posts").ByLastmod.Reverse }}
   <div class="home-journal-list">{{ range first 5 $updates }}<article><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006.01.02" }}</time><div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description | plainify | truncate 100 }}</p></div><a class="home-journal-arrow" href="{{ .RelPermalink }}" aria-label="阅读{{ .Title }}">↗</a></article>{{ end }}</div>
 </section>

@@ -1,3 +1,4 @@
+{{ $isHub := or (in (slice "wiki-index" "basics-index" "portal-topics" "applications-index" "archives") .Layout) (and (eq .Data.Plural "companies") (eq .Kind "taxonomy")) }}
 <!doctype html>
 <html lang="zh-CN">
 <head>
@@ -17,9 +18,12 @@
 <link rel="stylesheet" href="{{ "css/refined.css" | relURL }}?v={{ $refinedVersion }}">
 {{ if or .Params.engineering_entry (eq .Layout "engineering-index") .IsHome (eq .Layout "portal-topics") .Params.basic_entry .Params.application_entry .Params.model_card (eq .Layout "wiki-index") }}{{ $gv := substr (crypto.SHA256 (readFile "static/css/engineering.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/engineering.css" | relURL }}?v={{ $gv }}">{{ end }}
 {{ if eq .Params.wiki_type "company" }}{{ $cv := substr (crypto.SHA256 (readFile "static/css/company-editorial.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/company-editorial.css" | relURL }}?v={{ $cv }}">{{ end }}
+{{ if .IsHome }}{{ $hv := substr (crypto.SHA256 (readFile "static/css/home-editorial.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/home-editorial.css" | relURL }}?v={{ $hv }}">{{ end }}
+{{ if or .IsHome $isHub }}{{ $cv := substr (crypto.SHA256 (readFile "static/css/circuit-paper.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/circuit-paper.css" | relURL }}?v={{ $cv }}">{{ end }}
+{{ if $isHub }}{{ range slice "hub-directories" "hub-overviews" }}{{ $path := printf "static/css/%s.css" . }}{{ if fileExists $path }}{{ $dv := substr (crypto.SHA256 (readFile $path)) 0 12 }}<link rel="stylesheet" href="{{ printf "css/%s.css" . | relURL }}?v={{ $dv }}">{{ end }}{{ end }}{{ end }}
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
 </head>
-<body{{ if .IsHome }} class="is-home"{{ end }}>
+<body{{ if .IsHome }} class="is-home"{{ else if $isHub }} class="is-hub"{{ end }}>
 <a class="skip-link" href="#main-content">跳到正文</a>
 <header class="site-header">
   <div class="wrap bar">
@@ -31,7 +35,7 @@
       <a href="{{ "/applications/" | relURL }}"{{ if eq .Section "applications" }} aria-current="page"{{ end }}>应用场景</a>
       <a href="{{ "/topics/" | relURL }}"{{ if or (eq .Section "topics") .Params.engineering_entry (eq .Layout "engineering-index") }} aria-current="page"{{ end }}>技术专题</a>
       <a href="{{ "/companies/" | relURL }}"{{ if eq .Data.Plural "companies" }} aria-current="page"{{ end }}>公司品牌</a>
-      <a href="{{ "/archives/" | relURL }}"{{ if or (eq .Layout "archives") (eq .Section "posts") }} aria-current="page"{{ end }}>文章归档</a>
+      <a href="{{ "/archives/" | relURL }}"{{ if or (eq .Layout "archives") (eq .Section "posts") }} aria-current="page"{{ end }}>博客</a>
     </nav>
   </div>
 </header>

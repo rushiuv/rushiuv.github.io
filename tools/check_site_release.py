@@ -328,7 +328,7 @@ def check_release(root, forbidden_titles, forbidden_slugs, minimum_svg, baseline
     required_nav = [("首页", "/"), ("基础知识", "/wiki/basics/"),
                     ("型号资料", "/wiki/"), ("应用场景", "/applications/"),
                     ("技术专题", "/topics/"), ("公司品牌", "/companies/"),
-                    ("文章归档", "/archives/")]
+                    ("博客", "/archives/")]
     for path, active in (("/", "/"), ("/wiki/", "/wiki/"),
                          ("/wiki/basics/", "/wiki/basics/"),
                          ("/applications/", "/applications/"),

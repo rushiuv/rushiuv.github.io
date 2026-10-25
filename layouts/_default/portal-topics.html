@@ -1,7 +1,8 @@
 {{ define "main" }}
+<div class="hub-directory hub-directory-topics">
 <header class="topic-hub-hero">
-  <div><p class="portal-overline">FIELD GUIDE / 研发与应用</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div><div class="topic-hub-stats"><span><strong>06</strong> 条问题导读</span><span><strong>12</strong> 篇精选阅读</span><span><strong>{{ len (where site.Pages "Params.topic_guide" true) }}</strong> 个主题档案</span></div></div>
-  <figure><img src="{{ "images/editorial/chromeos-signals-20261018.webp" | relURL }}" alt="位置反馈信号与工程阅读的轻漫画场景插画" width="1536" height="1024" fetchpriority="high"></figure>
+  <div><p class="portal-overline">FIELD GUIDE / 研发与应用</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div><div class="topic-hub-stats"><span><strong>06</strong> 条问题导读</span><span><strong>12</strong> 篇精选阅读</span><span><strong>{{ len (where site.Pages "Params.topic_guide" true) }}</strong> 个主题档案</span><span><strong>{{ len (where site.RegularPages "Params.engineering_entry" true) }}</strong> 篇专题方法</span></div></div>
+  <figure><img src="{{ "images/editorial/chromeos-signals-20261018.webp" | relURL }}" alt="位置反馈信号与工程阅读的轻漫画场景插画" width="1536" height="1024" fetchpriority="high"><figcaption>问题 → 阅读路径 → 算与测</figcaption></figure>
 </header>
 <nav class="topic-hub-nav" aria-label="选择工程问题">{{ range site.Data.topic_paths.tracks }}<a href="#{{ .id }}"><span>{{ .number }}</span>{{ .title }}<b aria-hidden="true">↓</b></a>{{ end }}</nav>
 {{ with site.GetPage "/posts/2026-10-18-kth7111-1us-vs-510us.md" }}
@@ -10,7 +11,7 @@
 <section class="topic-dossiers" aria-label="六条工程问题导读">
 {{ range site.Data.topic_paths.tracks }}{{ $track := . }}
 <article class="topic-dossier" id="{{ .id }}">
-  <header><p class="portal-overline"><span>{{ .number }}</span> / {{ .code }}</p><h2>{{ .title }}</h2><p class="topic-question">{{ .question }}</p><p>{{ .intro }}</p></header>
+  {{ $imageKey := .id }}{{ if eq .id "interfaces" }}{{ $imageKey = "interface" }}{{ end }}{{ if eq .id "robotics" }}{{ $imageKey = "robot" }}{{ end }}<figure class="hub-topic-art"><img src="{{ printf "images/editorial/topic-%s-20261025.webp" $imageKey | relURL }}" alt="{{ .title }}主题轻漫画插画，非安装或器件结构图" width="1536" height="1024" loading="lazy"></figure><header><p class="portal-overline"><span>{{ .number }}</span> / {{ .code }}</p><h2>{{ .title }}</h2><p class="topic-question">{{ .question }}</p><p>{{ .intro }}</p></header>
   <div class="topic-reading-path"><h3>建议这样读</h3><ol>{{ range .reads }}{{ $read := . }}{{ with site.GetPage $read.path }}<li><a href="{{ .RelPermalink }}"><h4>{{ $read.title }}</h4><p>{{ $read.note }}</p><span aria-hidden="true">↗</span></a></li>{{ else }}{{ errorf "Missing topic reading: %s" $read.path }}{{ end }}{{ end }}</ol></div>
   {{ with .guides }}<div class="topic-methods"><h3>继续算与测</h3><ul>{{ range . }}{{ with site.GetPage (printf "/topics/guides/%s" .) }}<li><a href="{{ .RelPermalink }}">{{ .Title }} →</a></li>{{ else }}{{ errorf "Missing topic guide %s" . }}{{ end }}{{ end }}</ul></div>{{ end }}
   <p class="topic-check"><strong>阅读时带着这个检查项</strong>{{ .check }}</p>
@@ -25,4 +26,5 @@
 
 <section class="topic-hub-bottom"><div><p class="portal-overline">从读文章，到查器件</p><h2>知道问题属于哪一层，再去找参数。</h2><p>精选文章提供问题与分析路径；具体参数、版本和使用条件，继续查型号页及原厂资料。</p></div><div><a class="btn" href="{{ "wiki/" | relURL }}?kind=model">查芯片与编码模块 →</a><a class="btn ghost" href="{{ "applications/" | relURL }}">按应用场景继续读 →</a></div></section>
 <section class="portal-section"><div class="portal-section-head"><div><p class="portal-overline">继续探索</p><h2>更多技术主题</h2></div></div><div class="chips big">{{ range site.Taxonomies.tags.ByCount }}{{ if in (slice "霍尔" "TMR" "AMR" "ADC" "离轴" "专利" "芯片设计" "自校准" "多圈编码器" "车规" "FOC" "功能安全" "EtherCAT") .Page.LinkTitle }}<a class="chip" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<small>{{ .Count }}</small></a>{{ end }}{{ end }}</div></section>
+</div>
 {{ end }}

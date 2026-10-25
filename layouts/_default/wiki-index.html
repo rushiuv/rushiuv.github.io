@@ -1,12 +1,13 @@
 {{ define "main" }}
+<div class="hub-directory hub-directory-models">
 {{ $entries := sort (where (where site.Pages "Params.wiki" true) "Params.wiki_type" "model") "Params.wiki_rank" }}
-<header class="page-head"><p class="kicker">如是有为 · 型号资料</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div></header>
+<header class="page-head hub-directory-hero"><div><p class="kicker">REFERENCE INDEX / 型号资料</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div><div class="hub-directory-stats"><span><strong>{{ len $entries }}</strong> 型号与产品</span><span>芯片 / 模块 / 完整编码器</span></div></div><figure class="hub-directory-art"><img src="{{ "images/editorial/chromeos-reference-desk-20261025.webp" | relURL }}" alt="暖纸轻漫画中的编码器、芯片与资料查阅场景，非产品结构图" width="1536" height="1024" fetchpriority="high"><figcaption>器件 → 参数条件 → 官方原件</figcaption></figure></header>
 <p class="guide-directory-link"><a href="{{ "topics/guides/parameter-conditions/" | relURL }}">先读参数条件 →</a> · <a href="{{ "topics/guides/system-acceptance-record/" | relURL }}">再做整机验收记录 →</a></p>
 <section class="wiki-index">
-  <h2>查型号、参数与官方文档</h2>
+  <div class="hub-index-heading"><span aria-hidden="true">01 / INDEX</span><h2>查型号、参数与官方文档</h2></div>
   <p class="muted">已整理 {{ len $entries }} 个型号与产品词条 · 芯片、模块与完整编码器分开标记 · 系列和具体型号均可查</p>
   <label for="wiki-search">搜索词条</label>
-  <input id="wiki-search" type="search" placeholder="型号、产品或技术关键词" style="display:block;width:100%;margin-top:8px;padding:12px;border:1px solid var(--line);border-radius:8px;font:inherit" autocomplete="off">
+  <input id="wiki-search" type="search" placeholder="型号、产品或技术关键词" autocomplete="off">
   {{ $vendors := slice }}{{ $types := slice }}
   {{ range where $entries "Params.wiki_type" "model" }}{{ range .Params.related_companies }}{{ $vendors = $vendors | append . }}{{ end }}{{ $types = $types | append (.Params.catalog_type | default "其他既有型号") }}{{ end }}
   <div class="catalog-filters">
@@ -37,4 +38,5 @@ document.getElementById('wiki-search').addEventListener('input',filterWiki);
 for(const key of ['vendor','type','form'])document.getElementById('wiki-'+key).addEventListener('change',filterWiki);
 document.getElementById('wiki-reset').addEventListener('click',()=>{for(const key of ['search','vendor','type','form'])document.getElementById('wiki-'+key).value='';history.replaceState(null,'',location.pathname);filterWiki();});
 </script>
+</div>
 {{ end }}
