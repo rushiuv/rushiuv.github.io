@@ -72,3 +72,10 @@
 @media(max-width:1000px){.hub-directory .hub-directory-hero,.hub-directory .basics-hero,.hub-directory .topic-hub-hero{gap:26px}.hub-directory .wiki-index-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.hub-directory{padding-top:8px}.hub-directory .hub-directory-hero,.hub-directory .basics-hero,.hub-directory .topic-hub-hero{grid-template-columns:minmax(0,1fr);gap:23px;padding:20px 0 26px}.hub-directory .page-title,.hub-directory .basics-hero h1{font-size:33px}.hub-directory .hub-directory-art,.hub-directory .basics-hero-art,.hub-directory .topic-hub-hero>figure{max-width:480px;width:100%;margin:0 auto}.hub-directory .hub-directory-art img,.hub-directory .basics-hero-art img,.hub-directory .topic-hub-hero>figure img{aspect-ratio:1.9/1;object-fit:cover}.hub-directory .wiki-index{padding:19px 16px}.hub-directory .wiki-index-grid{grid-template-columns:minmax(0,1fr)}.hub-directory .hub-index-heading h2{font-size:21px}.hub-directory .hub-directory-jump{gap:7px}.hub-directory .hub-directory-jump a{font-size:12px;min-height:44px}.hub-directory .topic-dossiers{grid-template-columns:minmax(0,1fr)}.hub-directory .topic-dossier{padding:22px}.hub-directory .hub-topic-art{margin:-22px -22px 20px}.hub-directory .topic-dossier h2{font-size:23px}.hub-directory .topic-hub-stats{gap:12px 20px}.hub-directory .topic-hub-stats strong{font-size:25px}.hub-directory .basics-card{padding:21px}.hub-directory .basics-card h3{font-size:18px}.hub-directory .topic-method-directory{padding:17px}.hub-directory .topic-hub-bottom{padding:23px}}
 @media(prefers-reduced-motion:reduce){.hub-directory .wiki-index-card{transition:none}}
+
+/* 2026-10-25 framed basics hero: shared unframed directory headers use zero
+   horizontal padding; this inherited paper card needs its own inner gutter. */
+.hub-directory .basics-hero { padding:34px 36px; }
+@media(max-width:1000px) { .hub-directory .basics-hero { padding:30px 28px; } }
+@media(max-width:700px) { .hub-directory .basics-hero { padding:26px 22px; } }
+@media(max-width:370px) { .hub-directory .basics-hero { padding:24px 20px; } }
