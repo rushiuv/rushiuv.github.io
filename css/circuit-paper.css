@@ -1,0 +1,5 @@
+/* The circuit is a decorative generated texture, not an engineering drawing. */
+body:is(.is-home,.is-hub) { position:relative; isolation:isolate; background-color:#f5f2eb; }
+body:is(.is-home,.is-hub)::before { content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; background:url('/images/editorial/circuit-paper-20261025.webp') center top / 1500px auto repeat-y; opacity:.28; }
+body.is-hub #main-content { padding-bottom:30px; }
+@media(max-width:760px) { body:is(.is-home,.is-hub)::before { background-size:1000px auto; opacity:.21; } }

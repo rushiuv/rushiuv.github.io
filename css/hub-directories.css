@@ -1,0 +1,81 @@
+/* Directory pages only: warm paper, ink and small brass index marks. */
+.hub-directory{--hub-paper:#fffefa;--hub-ink:#1d2f43;--hub-muted:#4e6070;--hub-line:#deded5;--hub-teal:#356c72;--hub-brass:#90612c;padding:20px 0 48px;min-width:0;color:var(--hub-ink)}
+.hub-directory *{box-sizing:border-box}
+.hub-directory .hub-directory-hero,.hub-directory .basics-hero,.hub-directory .topic-hub-hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:48px;align-items:center;padding:26px 0 36px;margin:0 0 24px;border-bottom:1px solid var(--hub-line)}
+.hub-directory .page-title,.hub-directory .basics-hero h1{font-size:clamp(32px,3.6vw,46px);line-height:1.4;letter-spacing:-.025em;color:var(--hub-ink);margin:14px 0 18px}
+.hub-directory .kicker,.hub-directory .basics-kicker,.hub-directory .portal-overline{color:var(--hub-brass);font-size:11px;letter-spacing:.09em}
+.hub-directory .hub-directory-hero .content,.hub-directory .topic-hub-hero .content,.hub-directory .basics-lead{color:var(--hub-muted);font-size:15px;line-height:1.95;max-width:38em}
+.hub-directory .hub-directory-art,.hub-directory .basics-hero-art,.hub-directory .topic-hub-hero>figure{position:relative;margin:0;border:1px solid #cbd3c6;border-radius:18px;background:var(--hub-paper);overflow:hidden;transform:none;box-shadow:0 8px 25px -24px #1d2f4370}
+.hub-directory .hub-directory-art img,.hub-directory .basics-hero-art img,.hub-directory .topic-hub-hero>figure img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.hub-directory figure figcaption{border-top:1px solid var(--hub-line);padding:10px 15px;font-size:11px;color:#5b6c61;letter-spacing:.06em}
+.hub-directory .hub-directory-stats,.hub-directory .topic-hub-stats{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 25px;margin:24px 0 0;font-size:12px;color:var(--hub-muted)}
+.hub-directory .hub-directory-stats strong,.hub-directory .topic-hub-stats strong{display:inline;font:500 28px/1.2 var(--mono);color:var(--hub-teal);margin-right:6px}
+.hub-directory .guide-directory-link{padding:14px 18px;margin:0 0 30px;border:1px solid #d4dccc;border-left:3px solid #749b92;border-radius:4px 12px 12px 4px;background:#edf2e9;font-size:14px;line-height:1.9}
+.hub-directory .guide-directory-link a{color:#315e62}
+.hub-directory .wiki-index{padding:25px;border:1px solid var(--hub-line);border-radius:17px;background:#faf8f1}
+.hub-directory .hub-index-heading{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
+.hub-directory .hub-index-heading>span{font:11px var(--mono);color:var(--hub-brass)}
+.hub-directory .hub-index-heading h2{font-size:24px;margin:0 0 12px;line-height:1.5}
+.hub-directory .wiki-index>.muted{font-size:14px;line-height:1.8;color:var(--hub-muted)}
+.hub-directory .wiki-index>label{display:block;font-size:13px;margin-top:21px;color:var(--hub-muted)}
+.hub-directory #wiki-search{display:block;width:100%;margin-top:8px;padding:13px 15px;min-height:49px;border:1px solid #aebcb6;border-radius:9px;font:inherit;color:var(--hub-ink);background:var(--hub-paper)}
+.hub-directory .catalog-filters{gap:12px;margin-top:18px}
+.hub-directory .catalog-filters label{font-size:12px;min-width:0}
+.hub-directory .catalog-filters select{border-color:#d3d8cd;background:var(--hub-paper);font-size:14px}
+.hub-directory #wiki-count{font-size:12px;padding:13px 0;border-top:1px solid var(--hub-line);margin-top:20px}
+.hub-directory .wiki-index-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.hub-directory .wiki-index-card{position:relative;display:block;min-width:0;padding:20px 23px 19px 20px;border:1px solid var(--hub-line);border-radius:11px;background:var(--hub-paper);text-decoration:none;box-shadow:0 2px 0 #1d2f4303;transition:border-color 180ms,background 180ms}
+.hub-directory .wiki-index-card::after{content:'↗';position:absolute;right:13px;top:17px;color:#71958b;font-size:14px}
+.hub-directory .wiki-index-card small{display:block;font-size:11px;line-height:1.7;color:#7a674b;padding-right:10px}
+.hub-directory .wiki-index-card strong{display:block;margin:12px 0 8px;font-size:18px;line-height:1.5;color:#244f5d;overflow-wrap:anywhere}
+.hub-directory .wiki-index-card p{margin:0;font-size:13px;line-height:1.85;color:var(--hub-muted);overflow-wrap:anywhere}
+.hub-directory .wiki-index-card:hover{border-color:#8ca99d;background:#f5f8ef}
+.hub-directory .wiki-index-card[hidden]{display:none!important}
+.hub-directory .hub-directory-jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 32px;padding-bottom:24px;border-bottom:1px solid var(--hub-line)}
+.hub-directory .hub-directory-jump a{display:inline-flex;align-items:center;gap:9px;min-height:42px;padding:9px 13px;background:var(--hub-paper);border:1px solid var(--hub-line);border-radius:8px;color:#315565;font-size:12px;text-decoration:none}
+.hub-directory .hub-directory-jump span{color:var(--hub-brass);font:11px var(--mono)}
+.hub-directory .basics-group{margin-bottom:42px;scroll-margin-top:110px}
+.hub-directory .basics-group>header{padding-bottom:17px;border-bottom:1px solid var(--hub-line);margin-bottom:17px;align-items:start}
+.hub-directory .basics-number{font:500 25px/1.4 var(--mono);color:#ab8b57;background:transparent}
+.hub-directory .basics-group h2{font-size:23px;line-height:1.5;color:#254654}
+.hub-directory .basics-group>header p{font-size:14px;line-height:1.8;color:var(--hub-muted)}
+.hub-directory .basics-grid{gap:14px}
+.hub-directory .basics-card{position:relative;background:var(--hub-paper);border:1px solid var(--hub-line);border-radius:12px;padding:23px;box-shadow:0 2px 0 #1d2f4303}
+.hub-directory .basics-card h3{font-size:18px;line-height:1.7;color:#254b5a;margin:0 0 10px}
+.hub-directory .basics-card p{font-size:14px;line-height:1.85;color:var(--hub-muted)}
+.hub-directory .basics-card>span{border-top:1px solid #e8e8dd;padding-top:13px;color:#49716e;font-size:12px}
+.hub-directory .basics-card:hover{border-color:#8ca99d;background:#f5f8ef}
+.hub-directory .basics-hero-links a{font-size:14px;color:#356c72}
+.hub-directory .basics-count{display:block;color:var(--hub-muted);font-size:12px;line-height:1.9;margin-top:22px}
+.hub-directory .topic-hub-nav{gap:9px;margin-bottom:26px}
+.hub-directory .topic-hub-nav a{background:var(--hub-paper);border-color:var(--hub-line);min-height:54px;font-size:14px}
+.hub-directory .topic-spotlight{border-color:#d1dbc8;background:#edf2e9;border-left:3px solid #749b92;padding:25px 29px;border-radius:4px 16px 16px 4px}
+.hub-directory .topic-spotlight h2{font-size:23px}
+.hub-directory .topic-dossiers{gap:22px}
+.hub-directory .topic-dossier{padding:26px;border-radius:16px;border:1px solid var(--hub-line);background:var(--hub-paper);overflow:hidden;min-width:0}
+.hub-directory .hub-topic-art{margin:-26px -26px 22px;border-bottom:1px solid var(--hub-line);background:#f0eee1}
+.hub-directory .hub-topic-art img{display:block;width:100%;height:auto;aspect-ratio:2.7/1;object-fit:cover;object-position:center}
+.hub-directory .topic-dossier h2{font-size:25px;line-height:1.5;margin:10px 0}
+.hub-directory .topic-question{font-size:17px;line-height:1.8}
+.hub-directory .topic-dossier header>p:last-child{font-size:14px;line-height:1.9}
+.hub-directory .topic-reading-path h4{font-size:16px;line-height:1.75}
+.hub-directory .topic-reading-path p{font-size:13px;line-height:1.85}
+.hub-directory .topic-check{background:#f1eee4;border-left:2px solid #b99b6a;border-radius:0 8px 8px 0;font-size:13px}
+.hub-directory .topic-resources .chip{background:#f6f5ed;border-color:#e0e2d4;color:#31545a;font-size:12px;line-height:1.6;padding:8px 11px;white-space:normal}
+.hub-directory .topic-methods-hub{margin-top:38px;padding-top:26px;border-top:1px solid var(--hub-line)}
+.hub-directory .topic-methods-hub .portal-section-head{gap:15px;flex-wrap:wrap}
+.hub-directory .guide-path{background:var(--hub-paper);border:1px solid var(--hub-line);border-radius:12px;padding:22px}
+.hub-directory .topic-method-directory{border:1px solid var(--hub-line);border-radius:12px;background:var(--hub-paper);padding:19px 22px;margin-top:20px}
+.hub-directory .topic-method-directory summary{font-size:16px;color:#31545a;cursor:pointer}
+.hub-directory .topic-method-groups a{line-height:1.8}
+.hub-directory .topic-hub-bottom{background:#edf2e9;border-color:#d1dbc8;border-radius:16px}
+@media(max-width:1000px){.hub-directory .hub-directory-hero,.hub-directory .basics-hero,.hub-directory .topic-hub-hero{gap:26px}.hub-directory .wiki-index-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.hub-directory{padding-top:8px}.hub-directory .hub-directory-hero,.hub-directory .basics-hero,.hub-directory .topic-hub-hero{grid-template-columns:minmax(0,1fr);gap:23px;padding:20px 0 26px}.hub-directory .page-title,.hub-directory .basics-hero h1{font-size:33px}.hub-directory .hub-directory-art,.hub-directory .basics-hero-art,.hub-directory .topic-hub-hero>figure{max-width:480px;width:100%;margin:0 auto}.hub-directory .hub-directory-art img,.hub-directory .basics-hero-art img,.hub-directory .topic-hub-hero>figure img{aspect-ratio:1.9/1;object-fit:cover}.hub-directory .wiki-index{padding:19px 16px}.hub-directory .wiki-index-grid{grid-template-columns:minmax(0,1fr)}.hub-directory .hub-index-heading h2{font-size:21px}.hub-directory .hub-directory-jump{gap:7px}.hub-directory .hub-directory-jump a{font-size:12px;min-height:44px}.hub-directory .topic-dossiers{grid-template-columns:minmax(0,1fr)}.hub-directory .topic-dossier{padding:22px}.hub-directory .hub-topic-art{margin:-22px -22px 20px}.hub-directory .topic-dossier h2{font-size:23px}.hub-directory .topic-hub-stats{gap:12px 20px}.hub-directory .topic-hub-stats strong{font-size:25px}.hub-directory .basics-card{padding:21px}.hub-directory .basics-card h3{font-size:18px}.hub-directory .topic-method-directory{padding:17px}.hub-directory .topic-hub-bottom{padding:23px}}
+@media(prefers-reduced-motion:reduce){.hub-directory .wiki-index-card{transition:none}}
+
+/* 2026-10-25 framed basics hero: shared unframed directory headers use zero
+   horizontal padding; this inherited paper card needs its own inner gutter. */
+.hub-directory .basics-hero { padding:34px 36px; }
+@media(max-width:1000px) { .hub-directory .basics-hero { padding:30px 28px; } }
+@media(max-width:700px) { .hub-directory .basics-hero { padding:26px 22px; } }
+@media(max-width:370px) { .hub-directory .basics-hero { padding:24px 20px; } }
