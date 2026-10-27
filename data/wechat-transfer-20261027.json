@@ -1,0 +1,322 @@
+{
+  "date": "2026-10-27",
+  "articles": [
+    {
+      "id": "maJYjYWgf1wH4Q5c4gBU9g",
+      "title": "AI已经会思考了，为什么连一颗螺丝都拧不好？",
+      "original_title": "AI 已经会思考了， 为什么连一颗螺丝 都拧不好？",
+      "date": "2026-10-25T13:14:30+08:00",
+      "slug": "wechat-majyjywgf1wh4q5c4gbu9g",
+      "original": "https://mp.weixin.qq.com/s/maJYjYWgf1wH4Q5c4gBU9g",
+      "account": "如是有为",
+      "author": "如是有为",
+      "source_snapshot_sha256": "356e79600159dbd0b5ae38abf3261f5087a70fb89a9df7b1e234ec35b2e67b2b",
+      "body_text_sha256": "ced939470dc9cae43c298ce73ba569b78391935bca0ff36f9b25c564f59b89df",
+      "body_text_chars": 3796,
+      "body_images": 6,
+      "headings": 7,
+      "tables": 1,
+      "tags": {
+        "models": [],
+        "companies": [
+          "NVIDIA"
+        ],
+        "tags": [
+          "AI"
+        ]
+      },
+      "edits": [
+        "移除无对应图片的图注：NVIDIA 机器人相关现场报道配图，来自第三方新闻图床，需联网显示"
+      ],
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXzyNE1X341Iyg5Rn3cfpRXh0cpu34FaPSnWs5HgjMUqNF3HKkkYueicVCXKXcTTicDbCv6OBxaJYNWgnLz1PcpmdcAtR23icicF8M/640?wx_fmt=png&from=appmsg",
+          "sha256": "9aca452b00cb05838680dd9ee5621154041b3b8e3c78ab66f56abcdb85e58077",
+          "bytes": 845505,
+          "size": [
+            1080,
+            594
+          ],
+          "alt": "",
+          "path": "/images/wx/b908b8b3eda59cb0125e7eb92a9943b1.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXAycZZpT7zcebbj2sUk5YmXV1s9fAmzkV7JSu6gLhEibtNNg9Z2y3pkO3Y9v9Dnx8SeickJ2gYU4CDacX6uic2BNlycO3aIjqR5Q/640?wx_fmt=png&from=appmsg",
+          "sha256": "918762b08969a712c331dae09c488fbdb057be62cf887acc616d001851e10007",
+          "bytes": 57844,
+          "size": [
+            1080,
+            594
+          ],
+          "alt": "3000 rpm 时，1、5、10 和 20 毫秒内对应的实际转角",
+          "path": "/images/wx/d7d04f0384a8205f50d33ca35ba840d0.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUl1pYcuviapIGHNhDibbe5MJ8OcUFkELD5j1p45dJmnPcZmRopicLq92jfLmaiaqgK81dNwh3RhBfPPEKdBj3OyGaIX60BDcrXyxI/640?wx_fmt=png&from=appmsg",
+          "sha256": "386c8d1ff7f206a45e31c5f0e5f4a677e2b0fae743b9ddef8dd198455ca79178",
+          "bytes": 73078,
+          "size": [
+            1080,
+            594
+          ],
+          "alt": "视觉、编码器、电流、触觉和惯性传感器分别提供不同的物理约束",
+          "path": "/images/wx/cd83b228e01286aab25ea944ea979189.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUwlF2Kvmaz4hE2yXjcf3ZnNTibL2JE9v8CXdPSq99qHUMAQIiaT0njeF9Ggb1Va3iaib5d6iasIYh4qxlTN8wPyuUJOqXmazykmrVQ/640?wx_fmt=png&from=appmsg",
+          "sha256": "8c29323447beefa5c026880430d876ca930f260cc67cf60f78cadb5375f41adc",
+          "bytes": 66091,
+          "size": [
+            1080,
+            594
+          ],
+          "alt": "触觉采样点数与原始带宽的关系",
+          "path": "/images/wx/fb8e3f0c359cf971619ee808ac895c8f.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXf6F0G8Zo5DYnic87iaFoic9JRCwLxU1a4ZI3IJPg3l930bozOLqx4iajLy03Fequ4tVU6U06FArajQz4YKAvicmUfIlJCv0ib1TPVk/640?wx_fmt=png&from=appmsg",
+          "sha256": "473a7133a51ddb3a5f68a4151b3e4ebd1fcd7c09dccb1e118059c396512bd607",
+          "bytes": 79542,
+          "size": [
+            1080,
+            594
+          ],
+          "alt": "编码器工程中，分辨率之外仍需处理的关键误差",
+          "path": "/images/wx/a4ca0105bdff9f373c5adedf70822fe9.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWcsHXJUXGCEEoC8iapWKungHE2xs8C60tGZiarpBicTurJurcaiaiamK9Xfxy6WPSEy2I4Wo0ib4eBd26raU00n3glWxgOeK6l4BtaU/640?wx_fmt=png&from=appmsg",
+          "sha256": "a6ec788e533c1c592db3166801bbc60041fb75d01c46ad9ae6cd64c24f20561a",
+          "bytes": 87356,
+          "size": [
+            1080,
+            594
+          ],
+          "alt": "大模型、动作策略、控制与传感器之间的分层关系示意",
+          "path": "/images/wx/1b046bcae1857c067e0cc64061756516.png"
+        }
+      ]
+    },
+    {
+      "id": "bePQshigyvYIxeB0zixvmw",
+      "title": "触控笔的8192级压感，究竟是怎么测出来的？",
+      "original_title": "触控笔的 8192 级压感，究竟是怎么测出来的？",
+      "date": "2026-10-26T14:59:15+08:00",
+      "slug": "wechat-bepqshigyvyixeb0zixvmw",
+      "original": "https://mp.weixin.qq.com/s/bePQshigyvYIxeB0zixvmw",
+      "account": "如是有为",
+      "author": "如是有为",
+      "source_snapshot_sha256": "03f723fbbb95ffd469b1edd1dd06f04d064a8e27fd8dfa5adb9ead1f46eaf62e",
+      "body_text_sha256": "df75497c933f93c962fe6356ca1fe2036cb15e7affceab64671e873b9f38a10a",
+      "body_text_chars": 3305,
+      "body_images": 9,
+      "headings": 12,
+      "tables": 0,
+      "tags": {
+        "models": [
+          "KTH3105"
+        ],
+        "companies": [
+          "昆泰芯",
+          "Melexis",
+          "TI",
+          "Apple"
+        ],
+        "tags": [
+          "霍尔",
+          "ADC",
+          "专利"
+        ]
+      },
+      "edits": [
+        "移除公众号页眉/尾部：如是有为 · 消费电子传感器应用",
+        "移除公众号页眉/尾部：技术深读 ｜ 2026.10.26 ｜ 公开资料与工程分析",
+        "移除公众号页眉/尾部：如是有为·用数据认识传感世界",
+        "移除公众号页眉/尾部：欢迎点击下面按钮打赏作者",
+        "末尾主人公主题封面移到正文开头，保留全部9图"
+      ],
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIXrbRFXzYB5okibYyeibrv34lWB03MfeicdBen20Udy4PETm0gFYpgv4sKXcSLaGn5VaIWbtAj1GsGy1ib1jciaELHUwjIpKwKvicRuc/640?wx_fmt=png&from=appmsg",
+          "sha256": "b564f88af2b39b084c7d63ae40c0d5ca53c481cb30460ba10fd27f545740d42d",
+          "bytes": 868430,
+          "size": [
+            1080,
+            608
+          ],
+          "alt": "",
+          "path": "/images/wx/f56379d5b07c40483532c5d6b9587122.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXgA8JHShKoKhW68HDm7BDCUoBVGzORgicQpuNicJiarWZaVe14Qkc4lUy2D6jYyTRibXMRSN4EjGaHqmSjb5OoiaicS2mWbbTAric6pw/640?wx_fmt=png&from=appmsg",
+          "sha256": "5f35d11a42fef49e639d206696f9a5a6aa1bb49c9bb67a931e6b860c3c0db8d4",
+          "bytes": 127837,
+          "size": [
+            1080,
+            612
+          ],
+          "alt": "如是有为 · 触控笔压感传感结构的工程深读",
+          "path": "/images/wx/2775925d95cd0f05348661541e513131.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUQWWicA91JS7fUukpn1s8dibdbJicTgrza8rcL0dhfI8BCgyv29xjF5EicZMY0hbic93U0Ml1h0c9eRSP7UtjGjTZO4w3qmpRODDro/640?wx_fmt=png&from=appmsg",
+          "sha256": "9ca627d9215023791ddccf5622aef5aee20bf797990523b96d8985ada1c712ad",
+          "bytes": 66738,
+          "size": [
+            1080,
+            612
+          ],
+          "alt": "不同输入维度：线条变宽，可能是倾斜而不是压力。产品造型为示意重绘。",
+          "path": "/images/wx/598b53b77a9a0147096284f0361e0307.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWbpIaR5q7JrnEKq7KeOlOyicYC7nUabofCJPlvYFDuT7xg7JGE0iblyXziaV1YiaIGS1jz1vqc4txqesBHOAZeKZeT4ucvNFniafW8/640?wx_fmt=png&from=appmsg",
+          "sha256": "ef37e348880608726d167a15475f2fa355aa096a010211190ffbae659046b2b0",
+          "bytes": 80376,
+          "size": [
+            1080,
+            612
+          ],
+          "alt": "根据 iFixit 第一代 Apple Pencil 拆解观察重绘：弹性机构、导电结构与笔芯微动的关系。非实物拆解照片。",
+          "path": "/images/wx/3ac65366a3abc1652a1f9a69dde44e7a.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIVCJjnTnC7K2O9TFaUJiaWibqFw3wiamcZUgdkicmpj08mUQtwdcEe5Zr7WSKeR2R15xRiaOAStHdelNzz03u4qxQzazYREbqLcXUVE/640?wx_fmt=png&from=appmsg",
+          "sha256": "99bd9d3213f4b303d949019224d0098d92376b99cbe3e19a1dece24109e21bd1",
+          "bytes": 75182,
+          "size": [
+            1080,
+            612
+          ],
+          "alt": "Wacom EMR 系统工作方式的简化示意重绘：数位板电磁场与笔内部共振结构耦合，不代表 Wacom 专用笔尖的具体内部电路。",
+          "path": "/images/wx/6880124f42e2899d27f7890227335f29.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIUibt0IUcCiaJhW9Af9YMpBDkznd77Y8IwfwPkvp62vOSoI2MvUDvteNj0TOlfThYlcj4gOwK1XL7t9msMvDYbtLMlLCkkHe1ffc/640?wx_fmt=png&from=appmsg",
+          "sha256": "5844dadd9651218f9429bbb19ada503f0d290c890e424e5fa7013e15aa9dbf86",
+          "bytes": 88616,
+          "size": [
+            1080,
+            612
+          ],
+          "alt": "根据 WO2018148943A1 公开文字重绘的原理示意：弹性组件、移动磁体、磁感器件和限位结构；非专利原图。",
+          "path": "/images/wx/b37e037b670a0805766f3cd46735250d.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIXeupcZlWwUnoIfacxXibIibJVP4DH8RicPVja8BDgOZgdtpnUOHLiabjH7YibjeZMLK0pwLEmjJxFNbN7LHKCMwZ0N9EDE0KaNLxmk/640?wx_fmt=png&from=appmsg",
+          "sha256": "1bb710724580e70476c81882ebb00e229ecfcb87d299b4ffb935ff7adfe9d921",
+          "bytes": 82522,
+          "size": [
+            1080,
+            612
+          ],
+          "alt": "示例计算：0.5 mm 的总行程如果平均映射为 4096 个编码间隔，每级对应约 0.122 微米位移。数值是假设，并非特定量产笔指标。",
+          "path": "/images/wx/fbcf77c9970371b67afa61c77858a48e.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIX34KhoLcfLqFH9OB9T6HF4SXd2CD5BRyojwSLJg1KZM9ibFpeGW1ahXT0z2IeFFiblbSK4WsLwsPwfFg3pk3HGy0OGZMQ1DpX5k/640?wx_fmt=png&from=appmsg",
+          "sha256": "d62d5213906f2f430a4d39cc3199b0e4597b0058164058952f8b8995df04d639",
+          "bytes": 79820,
+          "size": [
+            1080,
+            612
+          ],
+          "alt": "三类典型验证工况：倾斜造成轴向/侧向位移混合；外部磁场扰动；快速点按时的滤波与回程拖尾。技术示意重绘。",
+          "path": "/images/wx/c2d29b93f2001476492d85773cce9550.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIX6icVk2tpy6JOOd5vAmHSdp1EqZxxRSOE8siaib5s9MZYYkLufGdwazByEY56jOHLicXAlue6Uo34wJTTJds61dJz0mxjuf4hkzWI/640?wx_fmt=png&from=appmsg",
+          "sha256": "4459ff70b775ad82b6edcbfe99426b4f90293ad37fcdbdf1dee03e75bdc0bee6",
+          "bytes": 78224,
+          "size": [
+            1080,
+            612
+          ],
+          "alt": "三种候选磁场测量前端的系统定位示意：数字多轴方案与模拟单轴方案；都不是无需标定的直接压力传感器。",
+          "path": "/images/wx/87a951a1351bc00b1b5f6fb131682b70.png"
+        }
+      ]
+    },
+    {
+      "id": "K-Mqwkmq-xzndz6PsqY9fA",
+      "title": "磁编码器读准了角度，还要看磁铁跟着谁动——从石头S8 MaxV Ultra滤网磁铁说起",
+      "original_title": "磁编码器读准了角度， 还要看磁铁跟着谁动 ——从石头 S8 MaxV Ultra  滤网磁铁说起",
+      "date": "2026-10-27T12:34:26+08:00",
+      "slug": "wechat-k-mqwkmq-xzndz6psqy9fa",
+      "original": "https://mp.weixin.qq.com/s/K-Mqwkmq-xzndz6PsqY9fA",
+      "account": "如是有为",
+      "author": "如是有为",
+      "source_snapshot_sha256": "75cd600d4730da9e1c8b009880c09616e7e2bd035958ee45022cc42f778e9765",
+      "body_text_sha256": "e646dcc7eefc3fb13be4ca4e528f9072e2fa0961f5ee3b1c9df925a3ca64eee0",
+      "body_text_chars": 3630,
+      "body_images": 4,
+      "headings": 6,
+      "tables": 0,
+      "tags": {
+        "models": [],
+        "companies": [
+          "TI",
+          "RLS"
+        ],
+        "tags": [
+          "磁编码器",
+          "霍尔",
+          "机器人关节"
+        ]
+      },
+      "edits": [
+        "移除公众号页眉/尾部：如是有为 · 工程手记",
+        "移除公众号页眉/尾部：磁位置传感 / 机械关系 / 系统验证",
+        "移除公众号页眉/尾部：如是有为",
+        "按作者本地原稿恢复8个公开来源链接",
+        "参考编号改为可点击的页内上标，并给八个来源段落加定位锚点"
+      ],
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/DBrlpXS1RIUiaYEc8SI6ZIJOOyanbOpibjgKYNgUOUzJA2xxKbZ1icD1Z5qCV1UM3jHgQrDlRYva4PelbBsNzfcwiaymHmOIhBHTfE7PPp0JX1Q/640?wx_fmt=png&from=appmsg",
+          "sha256": "f594a5e19f896b16e7c513b276969c66bd84073e606ae3ff263896916dc62b47",
+          "bytes": 793323,
+          "size": [
+            1080,
+            487
+          ],
+          "alt": "磁编码器读准了角度，还要看磁铁跟着谁动——AI生成主题横幅",
+          "path": "/images/wx/2e3bb1903a0153d094a81f78a6990be3.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/DBrlpXS1RIUiciabEYj7TBR7ibD8WHemBPOSNpQnSDOBlibpdUibic3XQmopa6oZicjM49VtdGd2lltsCiaiaNH6MZssIBGhsia0wx5FdfXbyOteJYJ9E/640?wx_fmt=jpeg&from=appmsg",
+          "sha256": "2f10ccb4c4829a6947fadf60e4ed453ce2d3dd83e9f5874530cf1b1c7cd45f3c",
+          "bytes": 50620,
+          "size": [
+            1080,
+            720
+          ],
+          "alt": "石头S8 MaxV Ultra官方新闻图片",
+          "path": "/images/wx/d636413c95485290dcf0b3222567ff5d.jpg"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/DBrlpXS1RIWyibmbISQTjE5icYJ8whYe96CLKniaFyibCicsghbdHjxkXoIOqZNSqOql2KMy6g0VKWSRrUA1bXuAl7cRv7hH6toeAEPT6dn0bicRQ/640?wx_fmt=png&from=appmsg",
+          "sha256": "fb348f79e77608934dfa25748ae56788a8fc7204937f5c6d6f34d26f5c39b925",
+          "bytes": 102173,
+          "size": [
+            1080,
+            639
+          ],
+          "alt": "TI磁轮增量编码原理图",
+          "path": "/images/wx/c4c73511a84116a524e578d51f5390bf.png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_jpg/DBrlpXS1RIVmqrwkcrCuKae0QGnUkhhg43TXXzDGgyNCCGcFrQYhsaz6Eu87C05LrvEREysgKJeF7rFm2cMYpu57FdX6kAgUaalUUZvnEUg/640?wx_fmt=jpeg&from=appmsg",
+          "sha256": "26a937cab2afe6a66a638eefb8a5231d717b922081e6ebba5c3d62d409a50fc0",
+          "bytes": 56593,
+          "size": [
+            800,
+            800
+          ],
+          "alt": "RLS双绝对磁编码器官方产品图片",
+          "path": "/images/wx/59f405838877694c11aedceb9420f405.jpg"
+        }
+      ]
+    }
+  ]
+}
