@@ -1,50 +1,47 @@
 ---
 {
-  "title": "AMR：方向响应与半圈歧义要一起理解",
-  "description": "解释饱和型AMR角度双桥、180度重复及完整一圈位置所需的额外信息。",
+  "title": "AMR：同一种磁阻，怎样做角度与开关",
+  "description": "分清AMR材料响应、饱和双桥的半圈周期，以及三端AMR开关的阈值输出。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "磁敏机理与开关",
-  "weight": 125,
+  "basic_group": "磁敏机理与器件",
+  "weight": 307,
   "related_basics": [
-    "magnetic-encoder",
+    "gmr",
     "tmr",
-    "absolute-incremental",
-    "mounting"
+    "bop-brp",
+    "absolute-incremental"
   ],
   "related_applications": [
-    "servo-motor",
-    "brushless-dc-motor"
+    "laptop-lid",
+    "servo-motor"
   ],
   "related_guides": [
-    "channel-angle-harmonics",
-    "amplitude-temperature-error"
+    "channel-angle-harmonics"
   ]
 }
 ---
+AMR（各向异性磁阻）描述电阻随**磁化方向与电流方向的夹角**变化的现象。材料名称还不能回答器件输出什么：模拟桥路可以测方向，桥路加比较器也可以只报“磁体到了”。
 
-AMR 是各向异性磁阻。磁性薄膜的电阻随磁化方向与电流方向的夹角而变化。它不是靠霍尔电压感知磁场，因此磁场强度、方向和信号周期之间的关系，不能照搬霍尔器件的解释。
+![暖纸配色的AMR、GMR与TMR材料结构概念插图](/images/learning/mr-family-v2-20261027.webp)
 
-## 饱和角度模式主要读方向
 
-当外加磁场足以让薄膜磁化方向跟随目标磁场，AMR 可在规定范围内用于方向测量。这里的“饱和”是磁性工作状态，不是指模拟输出撞到电源轨。磁场不足时，内部磁各向异性等因素仍会影响跟随；磁场很强也不意味着所有系统误差消失。
+<figure class="basic-figure technical-figure"><div class="diagram-viewport" tabindex="0" role="region" aria-label="工程示意图，可左右滑动查看"><img src="/images/learning/amr-angle-20261027.svg" alt="饱和双桥的理想二倍频模型；半圈等价不代表所有AMR成品都只有半圈功能。" width="960" height="630" loading="lazy"></div><figcaption>饱和双桥的理想二倍频模型；半圈等价不代表所有AMR成品都只有半圈功能。<a href="/images/learning/amr-angle-20261027.svg" target="_blank" rel="noopener">查看原图 ↗</a></figcaption></figure>
 
-常见角度结构用两个电桥产生正交信号。对这种饱和型双桥，磁场方向反转后响应相同，磁铁旋转一整圈会重复两次。ADI 的 AN-1314 与 ADA4571 资料明确说明了这一半圈特性。
+## 饱和双桥的方向信号每半圈重复
 
-## 半圈读数不能凭软件凭空补成整圈
+在足以使磁化方向跟随外场的条件下，可用 \(R=R_\perp+(R_\parallel-R_\perp)\cos^2(2\pi u)\) 理解理想响应。这里 \(u\) 是磁化方向相对电流方向的归一化转角，一圈为1；代入 \(u+0.5\) 电阻不变。
 
-只看这两路重复信号，两个相差半圈的位置无法区分。连续运动时可借助历史状态解包，但掉电后停在未知位置，历史不再存在。需要整圈上电绝对位置的系统，应增加极性、粗位置或其他独立判别信息，并核查具体集成器件已经提供了什么。
+对经过布置的理想正交双桥，信号可写成 \(x=A\cos(4\pi u),y=A\sin(4\pi u)\)。自设 \(u=0.1\) 与0.6，读数相同。连续运动可借历史解包，但上电未知位置无法仅凭这两路区分36°和216°。要获得整圈绝对位置，须核对额外极性或粗位置信息；不能泛化成“所有AMR成品只能测半圈”。[ADI AN-1314](https://www.analog.com/en/resources/app-notes/an-1314.html)讨论的是这种高场角度模式。
 
-这也不是“所有写着 AMR 的芯片只能测半圈”。完整产品能组合其他感知与处理通道；应按框图、输出定义及启动行为判断，而不是从材料名称推出最终功能。
+## 三端AMR开关输出的是阈值事件
 
-## 选型与验证关注完整信号链
+村田教程展示的是另一条信号链：磁阻元件组成桥路，桥中点差分电压经电路判断，超过设定条件后改变OUT状态；三端封装提供电源、地和输出，并可通过间歇采样降低平均功耗。这里的OUT不是正余弦角度数据。[村田AMR工作原理](https://www.murata.com/products/sensor/amr/overview/basic/principle)
 
-裸桥、带放大器双桥和集成角度输出器件，要求的外部电路不同。模拟路线要检查偏置、幅度、正交误差、采样同步及输入范围。测试应覆盖全角度、最低工作磁场、装配偏移和温度；还要专门在两组半圈等价位置断电重启，确认系统的绝对位置需求是否真的满足。
+因此“有电桥”不能推出“有连续角度”。做[合盖检测](/applications/laptop-lid/)时，应看敏感方向、动作区和释放区；做[伺服反馈](/applications/servo-motor/)时，要看周期、启动歧义和模拟采样。
 
-来源：[ADI AN-1314](https://www.analog.com/en/resources/app-notes/an-1314.html)、[ADI ADA4571](https://www.analog.com/en/products/ada4571.html)。
+## 磁饱和、输出限幅与回差不能混称
 
-## 用半圈等价点检查上电能力
-
-对已处于规定饱和磁场的理想AMR双桥，自设\(x=A\cos(4\pi u),y=A\sin(4\pi u)\)。u=0.1与0.6产生相同输出，即机械36°与216°不能只靠双桥区分。[ADI AN-1314](https://www.analog.com/en/resources/app-notes/an-1314.html)说明这种180°重复。台架应在两点分别断电重启，核查额外判别通道，而非仅连续转动看曲线平滑。与[TMR](/wiki/basics/tmr/)比较时要对齐完整器件功能；模拟误差另看[通道到角度谐波](/topics/guides/channel-angle-harmonics/)，[伺服应用](/applications/servo-motor/)不能将连续解包误认作上电绝对。
+AMR角度模式的“饱和”指磁化状态；输出撞到电源轨是电路限幅；开关防抖依赖的是动作与释放阈值不同。三者的修复办法不同。角度路线先保证全温度、全气隙下满足工作磁场，再查[通道误差](/topics/guides/channel-angle-harmonics/)；开关路线则按[BOP/BRP](/wiki/basics/bop-brp/)验证容差窗口。

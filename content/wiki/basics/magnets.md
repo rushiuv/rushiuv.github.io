@@ -1,7 +1,20 @@
 ---
-{"title":"编码器磁体：材料、充磁方向与工作点要一起选","description":"剩磁更高不等于角度更准，磁体应提供适合读头的空间磁场，而非只提供吸力。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"basic-single","basic_entry":true,"basic_group":"检测原理与安装","weight":105,"related_basics":["magnetic-encoder","mounting","resolution-accuracy"]}
+{
+  "title": "编码器磁体：材料、充磁方向与工作点要一起选",
+  "description": "剩磁更高不等于角度更准，磁体应提供适合读头的空间磁场，而非只提供吸力。",
+  "date": "2026-10-18T10:00:00+08:00",
+  "lastmod": "2026-10-27",
+  "layout": "basic-single",
+  "basic_entry": true,
+  "basic_group": "磁路与机械安装",
+  "weight": 700,
+  "related_basics": [
+    "magnetic-encoder",
+    "mounting",
+    "resolution-accuracy"
+  ]
+}
 ---
-
 磁编码器需要的是规定位置处可解释的磁场，不是吸力最大的磁铁。材料牌号、外形尺寸、充磁方向、安装间距和周围钢件共同决定读头看到的磁场。只把其中一个参数写进采购单，通常不足以保证另一批磁体读起来一样。
 
 ## 直径方向与轴向充磁不能互换

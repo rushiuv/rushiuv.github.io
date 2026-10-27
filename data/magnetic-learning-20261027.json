@@ -1,0 +1,80 @@
+{
+  "task": "magnetic-learning-20261027",
+  "date": "2026-10-27",
+  "authorship": "Chinese original multi-source explanations and independent analytical diagrams; not official translations",
+  "basic_count": 54,
+  "application_count": 47,
+  "basic_groups": 8,
+  "learning_paths": 4,
+  "new_content": [
+    "content/wiki/basics/fluxgate.md",
+    "content/wiki/basics/gmr.md",
+    "content/wiki/basics/hall-biasing.md",
+    "content/wiki/basics/hall-element-materials.md",
+    "content/wiki/basics/hall-element-vs-ic.md",
+    "content/wiki/basics/hall-temperature-drift.md",
+    "content/wiki/basics/inductive-magnetic-sensing.md",
+    "content/wiki/basics/magnetic-bridge.md",
+    "content/wiki/basics/magnetic-field-quantities.md",
+    "content/wiki/basics/magnetic-hysteresis.md",
+    "content/wiki/basics/magnetic-sensor-types.md",
+    "content/wiki/basics/magnetoresistance-ratio.md",
+    "content/wiki/basics/reed-switch.md",
+    "content/wiki/basics/semiconductor-mr.md",
+    "content/wiki/basics/sensor-noise-bandwidth.md",
+    "content/wiki/basics/sensor-transfer-function.md",
+    "content/wiki/basics/squid.md",
+    "content/applications/camera-lens-position.md",
+    "content/applications/current-sensing.md",
+    "content/applications/electronic-compass.md",
+    "content/applications/gear-speed.md"
+  ],
+  "body_revised_content": [
+    "content/wiki/basics/amr.md",
+    "content/wiki/basics/bop-brp.md",
+    "content/wiki/basics/hall-effect.md",
+    "content/wiki/basics/latch.md",
+    "content/wiki/basics/linear-hall.md",
+    "content/wiki/basics/pole-pairs.md",
+    "content/wiki/basics/switch-polarity.md",
+    "content/wiki/basics/tmr.md",
+    "content/applications/brushless-dc-motor.md",
+    "content/applications/closed-loop-stepper.md",
+    "content/applications/electronic-throttle.md",
+    "content/applications/laptop-lid.md",
+    "content/applications/toilet-water-level.md",
+    "content/applications/water-meter.md"
+  ],
+  "svg_count": 9,
+  "active_editorial_images": 5,
+  "rejected_editorial_images": 2,
+  "public_source_groups": [
+    {
+      "name": "AKM",
+      "scope": "10 chapters and FAQ, mapped to existing Hall principles/materials/bias/output and application pages"
+    },
+    {
+      "name": "MPS",
+      "scope": "measurement routes, components, parameters, design constraints and applications; no technology ranking"
+    },
+    {
+      "name": "ESM2024",
+      "scope": "65-page coverage map; selected public concepts independently re-sourced; historical market/clinical material excluded"
+    },
+    {
+      "name": "Murata",
+      "scope": "AMR bridge to digital output, threshold hysteresis, Hall/reed distinction"
+    }
+  ],
+  "original_urls_preserved": true,
+  "publish_status": "local only; not pushed",
+  "engineering_checks": "hand-authored SVG node/axis conventions, peer review, analytic numerical checks; not measured data",
+  "exclusions": [
+    "D10 and E04 remain excluded",
+    "ESM page41 AMR constant term not copied",
+    "ESM page61 inconsistent atan2 numeric example not copied",
+    "No universal MR-ratio/technology performance ranking",
+    "No historical market chart update or clinical instructions"
+  ],
+  "baseline_source_commit": "c34a5c9355f49f7af0440771e97640a09f7f68f2"
+}

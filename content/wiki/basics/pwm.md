@@ -3,17 +3,23 @@
   "title": "PWM角度输出：占空比、周期与故障区间",
   "description": "用输入捕获解码位置PWM，避免把角度编码波形、功率驱动PWM和磁极脉冲混为一谈。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "接口与应用",
-  "weight": 148,
-  "related_basics": ["interfaces", "latency", "uvw", "i2c"],
-  "related_topics": ["编码器接口"],
+  "basic_group": "接口与读数",
+  "weight": 803,
+  "related_basics": [
+    "interfaces",
+    "latency",
+    "uvw",
+    "i2c"
+  ],
+  "related_topics": [
+    "编码器接口"
+  ],
   "related_model_slugs": []
 }
 ---
-
 位置传感器的PWM通常把角度编码在占空比或规定的脉宽里。它与驱动电机功率的PWM不是同一件事，也不同于转得越快、脉冲越密的测速输出。主控需要根据手册解码波形，不能仅凭看到方波就按边沿数量累计位置。
 
 ## 占空比要按有效区间换算

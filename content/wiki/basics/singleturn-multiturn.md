@@ -1,30 +1,33 @@
 ---
-title: 单圈与多圈：掉电后怎样知道转过几圈
-description: 把圈内角度与圈数拆开，区分存储、备用电源、齿轮与自供能计圈。
-date: '2026-10-16T10:00:00+08:00'
-lastmod: '2026-10-24'
-layout: basic-single
-basic_entry: true
-basic_group: 认识编码器
-weight: 3
-related_basics:
-- absolute-incremental
-- resolution-accuracy
-- interfaces
-related_topics:
-- 多圈编码器
-related_model_slugs: []
-related_guides:
-- calibration-data-integrity
-- sample-time-contract
-- batteryless-multiturn
-related_applications:
-- gearbox
-- robot-joint
+{
+  "title": "单圈与多圈：掉电后怎样知道转过几圈",
+  "description": "把圈内角度与圈数拆开，区分存储、备用电源、齿轮与自供能计圈。",
+  "date": "2026-10-16T10:00:00+08:00",
+  "lastmod": "2026-10-27",
+  "layout": "basic-single",
+  "basic_entry": true,
+  "basic_group": "认识编码器",
+  "weight": 102,
+  "related_basics": [
+    "absolute-incremental",
+    "resolution-accuracy",
+    "interfaces"
+  ],
+  "related_topics": [
+    "多圈编码器"
+  ],
+  "related_model_slugs": [],
+  "related_guides": [
+    "calibration-data-integrity",
+    "sample-time-contract",
+    "batteryless-multiturn"
+  ],
+  "related_applications": [
+    "gearbox",
+    "robot-joint"
+  ]
+}
 ---
-
-
-
 单圈编码器描述一圈内的位置。轴从30°转到390°，单圈结果仍是30°。多圈系统需要同时给出圈内角度和圈数，才能区分这两个机械位置。
 
 ## 总位置由两部分组成

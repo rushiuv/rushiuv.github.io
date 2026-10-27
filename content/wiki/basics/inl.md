@@ -3,11 +3,11 @@
   "title": "INL：位数之外的整圈角度偏差",
   "description": "区分角度非线性、零位与静止噪声，按参考轴和温度条件比较校准前后的误差。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "看懂性能参数",
-  "weight": 141,
+  "basic_group": "参数与误差",
+  "weight": 501,
   "related_basics": [
     "resolution-accuracy",
     "angle-noise",
@@ -27,7 +27,6 @@
   ]
 }
 ---
-
 一颗芯片输出十六位，不代表磁铁转到每个位置时都同样准确。位数规定数字台阶，INL描述测量关系偏离理想关系的程度。角度传感器的误差还包含磁体、安装和参考轴的贡献，不能只拿一个位数替代整圈检查。
 
 ## 先说明误差怎样定义

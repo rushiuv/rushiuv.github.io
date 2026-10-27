@@ -3,11 +3,11 @@
   "title": "SPI、SSI与BiSS：角度如何交给控制器",
   "description": "把协议、帧格式和电气层分开，读懂时钟、锁存、状态位与CRC的关系。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "接口与应用",
-  "weight": 12,
+  "basic_group": "接口与读数",
+  "weight": 800,
   "related_basics": [
     "abz",
     "latency",
@@ -29,8 +29,6 @@
   ]
 }
 ---
-
-
 “支持串行绝对值输出”还不足以决定两端能否连接。协议定义怎样交换数据，电气层决定信号怎样沿引脚或线缆传输；相同数量的线不代表兼容。
 
 <figure><img src="/images/editorial/chromeos-signals-20261018.webp" alt="工程师比较控制器、芯片和信号的概念插画" width="1536" height="1024" loading="lazy"></figure>

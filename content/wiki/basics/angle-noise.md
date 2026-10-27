@@ -3,11 +3,11 @@
   "title": "角度噪声：静止读数为何还在跳",
   "description": "理解RMS、带宽、平均与速度差分；避免把读数稳定误认成准确。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "看懂性能参数",
-  "weight": 5,
+  "basic_group": "参数与误差",
+  "weight": 502,
   "related_basics": [
     "resolution-accuracy",
     "latency",
@@ -28,8 +28,6 @@
   ]
 }
 ---
-
-
 轴固定不动，角度读数仍会波动。传感器前端、电源干扰、量化和机械微振动都能进入结果。要比较两颗器件的噪声，先让它们处在相同的采样、滤波和机械条件下。
 
 ## 一个噪声数字，至少配三项条件

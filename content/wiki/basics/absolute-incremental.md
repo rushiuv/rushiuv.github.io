@@ -1,31 +1,35 @@
 ---
-title: 增量与绝对：上电后知道什么
-description: 用断电移动与重新上电的例子，讲清增量位置、绝对位置和机器零点。
-date: '2026-10-16T10:00:00+08:00'
-lastmod: '2026-10-24'
-layout: basic-single
-basic_entry: true
-basic_group: 认识编码器
-weight: 2
-related_basics:
-- abz
-- singleturn-multiturn
-- interfaces
-related_topics:
-- 编码器接口
-related_model_slugs:
-- as5047p
-related_applications:
-- closed-loop-stepper
-- robot-joint
-related_guides:
-- position-validity-state
-- vernier-uniqueness
-- reference-recovery
+{
+  "title": "增量与绝对：上电后知道什么",
+  "description": "用断电移动与重新上电的例子，讲清增量位置、绝对位置和机器零点。",
+  "date": "2026-10-16T10:00:00+08:00",
+  "lastmod": "2026-10-27",
+  "layout": "basic-single",
+  "basic_entry": true,
+  "basic_group": "认识编码器",
+  "weight": 101,
+  "related_basics": [
+    "abz",
+    "singleturn-multiturn",
+    "interfaces"
+  ],
+  "related_topics": [
+    "编码器接口"
+  ],
+  "related_model_slugs": [
+    "as5047p"
+  ],
+  "related_applications": [
+    "closed-loop-stepper",
+    "robot-joint"
+  ],
+  "related_guides": [
+    "position-validity-state",
+    "vernier-uniqueness",
+    "reference-recovery"
+  ]
+}
 ---
-
-
-
 增量输出告诉控制器“又走了几步”；绝对输出告诉控制器“当前在测量范围的哪个位置”。区别在位置信息如何建立，不能只看接口插头或输出位数。
 
 <figure class="basic-figure"><img src="/images/basics/incremental-position.webp" alt="增量位置图：从参考标记建立基准，再累计到当前位置的计数" loading="lazy"><figcaption>按雷尼绍增量位置图重绘：重复刻线提供位移变化，参考标记用于建立基准。图中直线尺说明的信息关系同样适用于旋转计数。<a href="https://www.renishaw.com.cn/zh/introduction-to-encoder-systems--47256" target="_blank" rel="noopener">原理图来源 ↗</a></figcaption></figure>

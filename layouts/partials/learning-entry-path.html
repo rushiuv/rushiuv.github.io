@@ -1,0 +1,2 @@
+{{ $page := . }}{{ $slug := .File.ContentBaseName }}{{ $found := false }}
+{{ range site.Data.learning_paths }}{{ if and (not $found) (in .slugs $slug) }}{{ $found = true }}<nav class="learning-entry-path" aria-label="当前阅读路径"><span>{{ .title }}</span><ol>{{ range .slugs }}{{ with site.GetPage (printf "/wiki/basics/%s" .) }}<li><a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $page.RelPermalink }} aria-current="step"{{ end }}>{{ .Title | replaceRE "[：:].*$" "" }}</a></li>{{ end }}{{ end }}</ol></nav>{{ end }}{{ end }}

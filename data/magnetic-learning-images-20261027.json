@@ -1,0 +1,105 @@
+{
+  "common": "Original cream/teal/navy/brass flat editorial conceptual illustrations, landscape 3:2, no text/logos. AI is scene only, not engineering evidence.",
+  "images": [
+    {
+      "name": "hall-foundations",
+      "source": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-a21f5a41-1963-4ef4-9d91-9a47941a0083.png",
+      "output": "static/images/learning/hall-foundations-20261027.webp",
+      "sha256": "cee161a773b1d8bd98309127640f146cb0140609b6250948d73359b25020bfa8",
+      "original_sha256": "df605a6039503eac6b079279d4fc4e0b8927de2be6505df8a02f1ef88e44ddd6",
+      "size": [
+        1536,
+        1024
+      ],
+      "role": "conceptual editorial scene; not a circuit diagram or measurement",
+      "status": "rejected: decorative scene could be mistaken for unverified mechanism",
+      "replaced_by": "hall-foundations-v2",
+      "prompt": "Create an original educational editorial illustration for sensor.fans, a Chinese encoder and magnetic sensing engineering knowledge site. Landscape 3:2 aspect ratio. Match a warm cream paper background, muted teal, deep navy, brass gold, small restrained coral details; flat painted vector-like shapes, subtle paper grain, softly modeled isometric objects, elegant calm composition, 1960s scientific magazine illustration meets Chrome OS editorial cartoon. No glossy photography, no sci-fi neon, no company logos, no title or text or formula anywhere. Main objects large enough for a phone. Original composition independent of existing vendor tutorial diagrams. This is a conceptual illustration, not wiring instructions. Show a simple square semiconductor Hall plate as a large elegant teal tile floating over a tiny navy circuit board; two opposite coral and navy magnetic pole pieces above and below it with soft curved magnetic field lines passing through the plate. Fine brass contacts on four tile edges, a small simple analog meter at right. Composition should visually distinguish the thin sensing plate from the small signal conditioning chip nearby. Realistic conceptual geometry, no random wire tangles."
+    },
+    {
+      "name": "mr-family",
+      "source": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-ac1b6332-0c4e-4dc2-a80a-e61be2850774.png",
+      "output": "static/images/learning/mr-family-20261027.webp",
+      "sha256": "28812ac75b331c0346f2bae8fd475d5ffbe19b0bccfcda935290968f3b988af8",
+      "original_sha256": "77d18c6ed58168cd3f738d45d463d00a0d323983ed0537d93a1e0ca314f57d03",
+      "size": [
+        1536,
+        1024
+      ],
+      "role": "conceptual editorial scene; not a circuit diagram or measurement",
+      "status": "rejected: decorative scene could be mistaken for unverified mechanism",
+      "replaced_by": "mr-family-v2",
+      "prompt": "Create an original educational editorial illustration for sensor.fans, a Chinese encoder and magnetic sensing engineering knowledge site. Landscape 3:2 aspect ratio. Match a warm cream paper background, muted teal, deep navy, brass gold, small restrained coral details; flat painted vector-like shapes, subtle paper grain, softly modeled isometric objects, elegant calm composition, 1960s scientific magazine illustration meets Chrome OS editorial cartoon. No glossy photography, no sci-fi neon, no company logos, no title or text or formula anywhere. Main objects large enough for a phone. Original composition independent of existing vendor tutorial diagrams. This is a conceptual illustration, not wiring instructions. A scientific materials desk containing three separate clearly separated original cutaway material specimens, left a single patterned teal ferromagnetic strip, middle a navy/teal multilayer stack with a visible brass metallic spacer, right a similar stack with an extremely thin cream insulating barrier. Tiny clean directional arrows embedded on top magnetic layers, larger disc magnet above. Clear three-group organization, no lettering. Convey different magnetic resistance structures without a universal performance ranking."
+    },
+    {
+      "name": "magnetic-sensing-landscape",
+      "source": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-7c66f173-6537-4281-9667-a232654a41dc.png",
+      "output": "static/images/learning/magnetic-sensing-landscape-20261027.webp",
+      "sha256": "b414754ad2f0035ca56cbe3b78d24d8e6f4e9da409dec4362001ab7390e532b6",
+      "original_sha256": "ecee9cf6f60e1de37e41885d2d75a2b557c25b1a90ffd82b92240b433c0c3d6e",
+      "size": [
+        1536,
+        1024
+      ],
+      "role": "conceptual editorial scene; not a circuit diagram or measurement",
+      "prompt": "Create an original educational editorial illustration for sensor.fans, a Chinese encoder and magnetic sensing engineering knowledge site. Landscape 3:2 aspect ratio. Match a warm cream paper background, muted teal, deep navy, brass gold, small restrained coral details; flat painted vector-like shapes, subtle paper grain, softly modeled isometric objects, elegant calm composition, 1960s scientific magazine illustration meets Chrome OS editorial cartoon. No glossy photography, no sci-fi neon, no company logos, no title or text or formula anywhere. Main objects large enough for a phone. Original composition independent of existing vendor tutorial diagrams. This is a conceptual illustration, not wiring instructions. An elegant museum-like desktop display of four distinct magnetic sensing concepts: large copper pickup coil with a moving small magnet at left; central square semiconductor sensing plate; small ring-shaped core with neatly wound copper excitation coils; far-right slender metallic low-temperature cryostat silhouette, visually separate. Soft teal and brass field motifs and an encoder ring set on cream paper below. No connecting arrows implying an actual circuit.",
+      "status": "used: scene only, not engineering evidence"
+    },
+    {
+      "name": "magnetic-applications",
+      "source": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-a4820598-cfe9-429d-9726-79800a4a294e.png",
+      "output": "static/images/learning/magnetic-applications-20261027.webp",
+      "sha256": "ffb8721043dd48a1e0387103321e969fbe7fe55403cf6cc4e6fe5901370cd770",
+      "original_sha256": "5869ecc0e1a68a9f76ceef2f901f06d5099a3a204a738ca1a11c01c967500641",
+      "size": [
+        1536,
+        1024
+      ],
+      "role": "conceptual editorial scene; not a circuit diagram or measurement",
+      "prompt": "Create an original educational editorial illustration for sensor.fans, a Chinese encoder and magnetic sensing engineering knowledge site. Landscape 3:2 aspect ratio. Match a warm cream paper background, muted teal, deep navy, brass gold, small restrained coral details; flat painted vector-like shapes, subtle paper grain, softly modeled isometric objects, elegant calm composition, 1960s scientific magazine illustration meets Chrome OS editorial cartoon. No glossy photography, no sci-fi neon, no company logos, no title or text or formula anywhere. Main objects large enough for a phone. Original composition independent of existing vendor tutorial diagrams. This is a conceptual illustration, not wiring instructions. A warm flat editorial scene of three distinct noncontact magnetic measurement tasks on a clean engineering desk: at left a partly opened laptop with a tiny magnet and sensor near its hinge; middle an industrial gear wheel facing a small sensor, with a small bias magnet behind the sensor; at right a thick copper busbar passing through a ring core with an air gap containing a tiny sensor. Compact natural objects, no text or displayed numbers. Three objects visually separated, readable and precise.",
+      "status": "used: scene only, not engineering evidence"
+    },
+    {
+      "name": "signal-quality",
+      "source": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-2b93223b-335a-4eb6-a3b5-3e7f1025281a.png",
+      "output": "static/images/learning/signal-quality-20261027.webp",
+      "sha256": "9c1b2c4216acb051c8db893a7a3b00ce2cd576fb0c93eb0a19e5c6e278252789",
+      "original_sha256": "2c9654555827c88f273847b750f694dbaab0cb7fc5c5de95a32a236746bfd7ec",
+      "size": [
+        1536,
+        1024
+      ],
+      "role": "conceptual editorial scene; not a circuit diagram or measurement",
+      "prompt": "Create an original educational editorial illustration for sensor.fans, a Chinese encoder and magnetic sensing engineering knowledge site. Landscape 3:2 aspect ratio. Match a warm cream paper background, muted teal, deep navy, brass gold, small restrained coral details; flat painted vector-like shapes, subtle paper grain, softly modeled isometric objects, elegant calm composition, 1960s scientific magazine illustration meets Chrome OS editorial cartoon. No glossy photography, no sci-fi neon, no company logos, no title or text or formula anywhere. Main objects large enough for a phone. Original composition independent of existing vendor tutorial diagrams. This is a conceptual illustration, not wiring instructions. A calm engineering measurement desk with a large oscilloscope screen showing two clean smooth unlabelled navy and teal traces with a small amount of subtle random noise, next to a tiny magnetic angle sensor board, a gold disc magnet over the board, and a plain cream notebook showing two unlabelled curves, one noisy one smooth. Gentle lighting and flat painted editorial forms. Show the idea of measuring signal quality, no actual product logo, no illegible labels.",
+      "status": "used: scene only, not engineering evidence"
+    },
+    {
+      "name": "hall-foundations-v2",
+      "source": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-7112b597-523f-45bb-a138-7b5768a18784.png",
+      "prompt": "Original landscape 3:2 warm cream/navy/muted teal/brass editorial illustration, flat painted scientific-magazine style with soft paper grain, elegant quiet engineering desk, match sensor.fans existing palette. This is decorative editorial artwork, NOT a technical schematic. STRICTLY no magnetic field lines, no vector arrows, no electrons, no scientific symbols, no wires or electrical connections, no schematic circuits, no text, no numbers, no company logos. Do not show anything claiming an electrical or magnetic operating principle. A beautiful tiny square teal evaluation board with an unmarked small four-terminal ceramic chip, with four clearly separate gold contact pads visible. A separate small cylindrical bar magnet resting on the desk, navy half and muted coral half, lying to the left, not touching the board. A cream notebook, brass caliper, and a small potted plant. Macro close view of inert desk objects. No meter, no wiring.",
+      "output": "static/images/learning/hall-foundations-v2-20261027.webp",
+      "sha256": "a88019ebc0cf81851dedb885e59929908fb4f22572c2a948c4c9b3c0c4d4ce52",
+      "original_sha256": "cf720fd8b878c87c65e45ee4ad748cd1f6129729b3ec0be943def925ebee3a06",
+      "size": [
+        1536,
+        1024
+      ],
+      "role": "decorative material scene without physical field arrows or circuit connections",
+      "status": "used: scene only, not engineering evidence"
+    },
+    {
+      "name": "mr-family-v2",
+      "source": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-4382dbe9-bf54-4812-975c-3d590fdf818f.png",
+      "prompt": "Original landscape 3:2 warm cream/navy/muted teal/brass editorial illustration, flat painted scientific-magazine style with soft paper grain, elegant quiet engineering desk, match sensor.fans existing palette. This is decorative editorial artwork, NOT a technical schematic. STRICTLY no magnetic field lines, no vector arrows, no electrons, no scientific symbols, no wires or electrical connections, no schematic circuits, no text, no numbers, no company logos. Do not show anything claiming an electrical or magnetic operating principle. A scientific materials collection displayed as three inert abstract specimen blocks on cream ceramic stands: one a thin teal patterned metallic film; one a layered stack of teal and navy plates separated by a visible brass metallic sheet; the third a navy and teal layered stack separated by a very thin cream insulating sheet. No magnet, no field lines, no arrows or directional marks anywhere. This is a stylized materials display, not a diagram or specification.",
+      "output": "static/images/learning/mr-family-v2-20261027.webp",
+      "sha256": "eba3f10874635bdf4966f056234a0684bb992b687c72527cf890e011d779fa57",
+      "original_sha256": "3c216a402ec4b87600cabf7239af8e2bad7a0ded51a6a36d4ab880a0e0cf9dd1",
+      "size": [
+        1536,
+        1024
+      ],
+      "role": "decorative material scene without physical field arrows or circuit connections",
+      "status": "used: scene only, not engineering evidence"
+    }
+  ]
+}

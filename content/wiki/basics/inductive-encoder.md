@@ -3,11 +3,11 @@
   "title": "电感编码器：线圈和金属靶怎样测位置",
   "description": "聚焦PCB发射—接收耦合路线，讲清激励、涡流、接收信号与靶片位置的关系。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "检测原理与安装",
-  "weight": 9,
+  "basic_group": "编码原理",
+  "weight": 602,
   "related_basics": [
     "magnetic-encoder",
     "mounting",
@@ -27,8 +27,6 @@
   ]
 }
 ---
-
-
 一类PCB电感位置传感器由发射线圈、接收线圈、接口芯片和导电靶片组成。靶片不必是永磁体，位置变化通过线圈之间的电磁耦合进入测量结果。
 
 ## 为什么金属靶能改变读数

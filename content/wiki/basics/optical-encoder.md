@@ -3,11 +3,11 @@
   "title": "光电编码器：从刻线、码道到角度",
   "description": "区分透射与反射、增量周期与绝对编码；理解电子细分怎样获得细刻度。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "检测原理与安装",
-  "weight": 8,
+  "basic_group": "编码原理",
+  "weight": 601,
   "related_basics": [
     "resolution-accuracy",
     "abz",
@@ -30,8 +30,6 @@
   ]
 }
 ---
-
-
 光电编码器用光读取码盘或光栅尺上的位置图案。图案随被测件运动，探测器接收的光分布发生变化，电子电路再从中提取位移或位置。
 
 <figure class="basic-figure"><img src="/images/basics/optical-reflective.webp" alt="参考雷尼绍RESOLUTE光学示意重绘：保留反射式光路和部件关系，仅改变视觉风格。示意图不代表所有光电编码器结构。" loading="lazy"><figcaption>参考雷尼绍RESOLUTE光学示意重绘：保留反射式光路和部件关系，仅改变视觉风格。示意图不代表所有光电编码器结构。 <a href="https://www.renishaw.com.cn/zh/how-renishaw-optical-encoders-work--36979" target="_blank" rel="noopener">原理图来源 ↗</a></figcaption></figure>

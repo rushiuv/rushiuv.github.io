@@ -3,11 +3,11 @@
   "title": "ABZ：正交计数、四倍频与零位索引",
   "description": "通过四个状态解释方向与四倍计数，并用1000 PPR算清计数频率。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "接口与应用",
-  "weight": 11,
+  "basic_group": "接口与读数",
+  "weight": 801,
   "related_basics": [
     "absolute-incremental",
     "interfaces",
@@ -28,8 +28,6 @@
   ]
 }
 ---
-
-
 AB两路数字信号通常相差四分之一周期。控制器观察哪一路先变化，判断运动方向；累计有效边沿，得到位移。Z是参考索引，常用于建立或核对位置基准。
 
 ## 方向来自状态顺序

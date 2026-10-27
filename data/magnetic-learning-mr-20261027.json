@@ -1,0 +1,373 @@
+{
+  "task": "magnetic-learning-20261027",
+  "reviewed_on": "2026-10-27",
+  "authorship": "sensor.fans原创中文讲解与知识结构，非厂商官方译文；新图非原课件重描",
+  "source_scope": {
+    "ESM": {
+      "url": "https://magnetism.eu/esm/2024/slides/esm2024-vallejo-fernandez-slides.pdf",
+      "title": "Magnetic Sensors — 2024 European School of Magnetism",
+      "author": "Gonzalo Vallejo Fernández",
+      "pages": 65,
+      "pdf_sha256": "62f294aa6364be341c83d386d776bf6aeadb39c98f3062b9b92c95d1526a4cc1",
+      "read_method": "全65页文字层通读；PDF第6/41/61/65页渲染目视复核",
+      "derived_summary": "材料路线包括感应线圈、霍尔、磁阻和SQUID，磁通门采用主动磁芯激励；范围拓展应同时说明各测量任务的工作条件。",
+      "derived_summary_budget": "同一课件只作以上短述与覆盖导航，不输出整套译文、页面复刻或专有图；其他正文由独立原厂来源与原创推导支撑",
+      "sections": [
+        {
+          "page_start": 1,
+          "page_end": 2,
+          "topic": "身份、定义与路线总览",
+          "target_slugs": [
+            "inductive-magnetic-sensing",
+            "fluxgate",
+            "hall-effect",
+            "amr",
+            "gmr",
+            "tmr",
+            "squid"
+          ],
+          "handling": "仅用作主题覆盖索引；正文独立组织并用原厂来源复核"
+        },
+        {
+          "page_start": 3,
+          "page_end": 4,
+          "topic": "市场与汽车示例",
+          "target_slugs": [],
+          "handling": "历史市场图不移植到当前网页，不将2024课件图表当2026市场数据"
+        },
+        {
+          "page_start": 5,
+          "page_end": 5,
+          "topic": "被动感应线圈",
+          "target_slugs": [
+            "inductive-magnetic-sensing"
+          ],
+          "handling": "改用UCLA法拉第实验与Lake Shore测量说明支撑，本站新设算例"
+        },
+        {
+          "page_start": 6,
+          "page_end": 8,
+          "topic": "磁通门结构与对称激励",
+          "target_slugs": [
+            "fluxgate"
+          ],
+          "handling": "只保留主动激励可测直流的路线关系，结构解释补TI原厂依据"
+        },
+        {
+          "page_start": 9,
+          "page_end": 12,
+          "topic": "磁标记医疗示例",
+          "target_slugs": [],
+          "handling": "保留课件覆盖身份；不展开临床流程、不提供诊断建议，避免偏离位置传感网站主线"
+        },
+        {
+          "page_start": 13,
+          "page_end": 14,
+          "topic": "霍尔效应与应用",
+          "target_slugs": [
+            "hall-effect"
+          ],
+          "handling": "由霍尔组融合既有条目；不复用历史应用图片"
+        },
+        {
+          "page_start": 15,
+          "page_end": 24,
+          "topic": "霍尔推导、载流子、温度与非线性",
+          "target_slugs": [
+            "hall-effect",
+            "hall-element-materials",
+            "hall-biasing",
+            "hall-temperature-drift"
+          ],
+          "handling": "由霍尔组以AKM/TI原厂来源重建，课件符号与材料泛化不直接搬用"
+        },
+        {
+          "page_start": 25,
+          "page_end": 27,
+          "topic": "模拟/数字输出与旋转检测",
+          "target_slugs": [
+            "linear-hall",
+            "bop-brp",
+            "latch"
+          ],
+          "handling": "既有条目按输出任务合并，不以数字等同开关"
+        },
+        {
+          "page_start": 28,
+          "page_end": 35,
+          "topic": "电流磁场、聚磁与闭环",
+          "target_slugs": [
+            "fluxgate"
+          ],
+          "handling": "应用组负责电流测量；旧课件算例不直接抄，区分同一磁路下近似与新几何条件"
+        },
+        {
+          "page_start": 36,
+          "page_end": 40,
+          "topic": "散射背景、磁阻史与AMR",
+          "target_slugs": [
+            "amr"
+          ],
+          "handling": "不展开固体能带历史长文；改用ADI对工程模式的说明"
+        },
+        {
+          "page_start": 41,
+          "page_end": 42,
+          "topic": "AMR角度响应及应用",
+          "target_slugs": [
+            "amr",
+            "magnetic-hysteresis"
+          ],
+          "handling": "第41页公式常数项存在端点不符，第42页行业淘汰陈述不采纳；以ADI/Murata具体路线替代"
+        },
+        {
+          "page_start": 43,
+          "page_end": 46,
+          "topic": "GMR与两自旋通道模型",
+          "target_slugs": [
+            "gmr"
+          ],
+          "handling": "以诺奖官方科学说明/NVE补足，未逐页重画两通道课件"
+        },
+        {
+          "page_start": 47,
+          "page_end": 50,
+          "topic": "GMR发现与硬盘产业历史",
+          "target_slugs": [
+            "gmr"
+          ],
+          "handling": "只保留原理所需背景，未写人物史及实验室历史数值；课件两篇论文的卷页疑互换，不引用该书目信息"
+        },
+        {
+          "page_start": 51,
+          "page_end": 55,
+          "topic": "旋阀、交换偏置、读头与应用",
+          "target_slugs": [
+            "gmr"
+          ],
+          "handling": "区分参考/自由层；材料与读头工艺细节不伪装普通编码器器件通用结构"
+        },
+        {
+          "page_start": 56,
+          "page_end": 59,
+          "topic": "TMR与势垒材料、显微结构",
+          "target_slugs": [
+            "tmr"
+          ],
+          "handling": "保留金属/绝缘势垒差别；原历史磁阻比、TEM不搬用，采用TDK具体原理"
+        },
+        {
+          "page_start": 60,
+          "page_end": 61,
+          "topic": "磁尺相位到位移",
+          "target_slugs": [
+            "tmr",
+            "pole-pairs"
+          ],
+          "handling": "待主控整合相位/周期阅读路径；第61页参数次序和数值矛盾，不复用该数值例子"
+        },
+        {
+          "page_start": 62,
+          "page_end": 62,
+          "topic": "TMR角度与应用",
+          "target_slugs": [
+            "tmr"
+          ],
+          "handling": "不把课件20–100mT推广全类；完整角度采用atan2与具体产品工作区"
+        },
+        {
+          "page_start": 63,
+          "page_end": 64,
+          "topic": "SQUID与弱磁应用",
+          "target_slugs": [
+            "squid"
+          ],
+          "handling": "短述路线边界，补PTB与原厂来源；不搬医疗图和统一灵敏度值"
+        },
+        {
+          "page_start": 65,
+          "page_end": 65,
+          "topic": "结论与技术比较表",
+          "target_slugs": [],
+          "handling": "不采用无型号/条件的功耗灵敏度成本排名；敏感轴按具体器件判断"
+        }
+      ],
+      "errata_and_rejected_generalizations": [
+        {
+          "page": 28,
+          "issue": "磁导率单位标注",
+          "decision": "不用该单位标注；真空磁导率单位H/m，磁场强度H为A/m，磁通密度B为T"
+        },
+        {
+          "page": 41,
+          "issue": "AMR公式写rho_parallel+(rho_parallel-rho_perp)cos²(theta)，0°极限不满足rho_parallel",
+          "decision": "使用R_perp+(R_parallel-R_perp)cos²(2πu)并以ADI高场AMR解释核对"
+        },
+        {
+          "page": 42,
+          "issue": "将硬盘读头演进泛化为AMR几乎不再使用",
+          "decision": "不采纳该行业泛化；村田三端开关与ADI角度器件分别说明实际工作模式"
+        },
+        {
+          "pages": [
+            48,
+            49
+          ],
+          "issue": "课件列Baibich PRL39,4828与Binasch PRB61,2472；应逐篇核原论文",
+          "decision": "不沿用这两个书目；网页无历史论文卷页引用"
+        },
+        {
+          "page": 61,
+          "issue": "atan2(.2079,.9781)显示1.34390，实际约0.209438rad；下一组约0.227332rad。课件式1.3490又与1.34390不一致，pitch是单极距还是完整信号周期未清",
+          "decision": "不沿用数字或据此给位移结论。明确完整信号周期L时Δx=LΔφ/(2π)，跨周期需解包/计数"
+        },
+        {
+          "page": 62,
+          "issue": "单atan(Y/X)丢象限，20–100mT不适用于全部TMR器件",
+          "decision": "整圈使用atan2；最小/最大工作场按具体型号"
+        },
+        {
+          "page": 65,
+          "issue": "将霍尔、AMR/GMR/TMR按功耗、可靠性、温度等作无条件统一排序",
+          "decision": "删除排行榜式移植，只在器件与测量条件一致时比较"
+        }
+      ]
+    },
+    "Murata": {
+      "url": "https://www.murata.com/products/sensor/amr/overview/basic/principle",
+      "sections": [
+        "Magnetoresistive element",
+        "AMR sensor operation",
+        "Sensor block diagram",
+        "Chattering prevention"
+      ],
+      "target_slugs": [
+        "amr",
+        "magnetic-hysteresis"
+      ],
+      "derived_summary": "磁阻组成桥路，差分电压经阈值电路成为开关输出；三端器件可间歇采样，动作与释放条件不同以稳定状态。",
+      "boundary": "该页为AMR开关例，不是正交角度双桥原理；角度公式另据ADI。补充Murata glossary核对阈值极限不等于单器件磁滞。"
+    }
+  },
+  "files": [
+    {
+      "slug": "amr",
+      "file": "content/wiki/basics/amr.md",
+      "action": "revise",
+      "title": "AMR：同一种磁阻，怎样做角度与开关",
+      "sources": [
+        "https://www.analog.com/en/resources/app-notes/an-1314.html",
+        "https://www.murata.com/products/sensor/amr/overview/basic/principle"
+      ],
+      "source_prose_policy": "原创组织；来源事实短述，新增推导与自设算例明确标注，不逐段翻译",
+      "sha256": "13696eaa8be7f19f3f2da101b610f85b961db452f11e6c54612d6136d0763b6b"
+    },
+    {
+      "slug": "tmr",
+      "file": "content/wiki/basics/tmr.md",
+      "action": "revise",
+      "title": "TMR：隧道结的高响应不等于整机高精度",
+      "sources": [
+        "https://www.micronas.tdk.com/de/produkte/tmr-angle-sensors",
+        "https://product.tdk.com/info/en/documents/datasheet/tmr-angle/ds_sensor_tmr-angle_tad2141_en.pdf"
+      ],
+      "source_prose_policy": "原创组织；来源事实短述，新增推导与自设算例明确标注，不逐段翻译",
+      "sha256": "09b3d833106e7ff1d88ce75e5e75bab4490387101f6268a7165fc3f7b767d22a"
+    },
+    {
+      "slug": "gmr",
+      "file": "content/wiki/basics/gmr.md",
+      "action": "add",
+      "title": "GMR：金属多层怎样把磁方向变成电阻",
+      "sources": [
+        "https://www.nobelprize.org/uploads/2018/06/popular-physicsprize2007.pdf",
+        "https://www.nve.com/Downloads/intro.pdf",
+        "https://www.nve.com/Downloads/analog_catalog.pdf"
+      ],
+      "source_prose_policy": "原创组织；来源事实短述，新增推导与自设算例明确标注，不逐段翻译",
+      "sha256": "5f29a367819e12dc0bfde2c2c5a4e6a33b229bcd77af9e2e0384507e5b68edb3"
+    },
+    {
+      "slug": "semiconductor-mr",
+      "file": "content/wiki/basics/semiconductor-mr.md",
+      "action": "add",
+      "title": "半导体磁阻：齿轮检测为何还要一块偏置磁铁",
+      "sources": [
+        "https://www.akm.com/global/en/products/semiconductor-magnetoresistive-element/"
+      ],
+      "source_prose_policy": "原创组织；来源事实短述，新增推导与自设算例明确标注，不逐段翻译",
+      "sha256": "84fc31fbe1bd2acebd9e4dc2b7d368819eb5c18215f78cb3a0254793c8164dfd"
+    },
+    {
+      "slug": "fluxgate",
+      "file": "content/wiki/basics/fluxgate.md",
+      "action": "add",
+      "title": "磁通门：主动翻转磁芯，为什么能读直流磁场",
+      "sources": [
+        "https://www.ti.com/lit/ug/tiduf03/tiduf03.pdf",
+        "https://www.ti.com/lit/ds/symlink/drv425.pdf",
+        "https://www.ti.com/product/DRV425"
+      ],
+      "source_prose_policy": "原创组织；来源事实短述，新增推导与自设算例明确标注，不逐段翻译",
+      "sha256": "921f099195e5121a17326a5dc7cb9eebb6ca1c5aa742eb6054b2318945dda736"
+    },
+    {
+      "slug": "inductive-magnetic-sensing",
+      "file": "content/wiki/basics/inductive-magnetic-sensing.md",
+      "action": "add",
+      "title": "感应线圈：测到的是磁通变化，不是静止磁场",
+      "sources": [
+        "https://demoweb.physics.ucla.edu/node/113",
+        "https://www.lakeshorecryotronics.com/hubfs/Downloads/Choosing%20the%20right%20magnetic%20measurement%20equipment_FINAL.pdf"
+      ],
+      "source_prose_policy": "原创组织；来源事实短述，新增推导与自设算例明确标注，不逐段翻译",
+      "sha256": "fc5d1ddc1ea53d7c27b4e85e610d26e42a48c537b24e7e515b831c592e8dae8f"
+    },
+    {
+      "slug": "squid",
+      "file": "content/wiki/basics/squid.md",
+      "action": "add",
+      "title": "SQUID：极弱磁测量为何需要另一套系统条件",
+      "sources": [
+        "https://www.ptb.de/cms/fileadmin/internet/publikationen/ptb_mitteilungen/mitt2012/Heft3/PTB-Mitteilungen_2012_Heft_3_en.pdf#page=74",
+        "https://qdusa.com/products/mpms3.html"
+      ],
+      "source_prose_policy": "原创组织；来源事实短述，新增推导与自设算例明确标注，不逐段翻译",
+      "sha256": "28720699e99dcd8b3408f0549bf153b5ee108a554bb9daba1a75a03db3eb8d42"
+    },
+    {
+      "slug": "magnetic-hysteresis",
+      "file": "content/wiki/basics/magnetic-hysteresis.md",
+      "action": "add",
+      "title": "磁滞：材料记忆与开关回差是两件事",
+      "sources": [
+        "https://www.nve.com/Downloads/analog_catalog.pdf",
+        "https://www.murata.com/en-us/products/sensor/amr/overview/basic/glossary"
+      ],
+      "source_prose_policy": "原创组织；来源事实短述，新增推导与自设算例明确标注，不逐段翻译",
+      "sha256": "62cffdb0f4d0e956f587cc2671cd604f509d0aa2ce0f1b7d5e34533999dba693"
+    }
+  ],
+  "local_checks": {
+    "json_frontmatter": true,
+    "all_assigned_page_internal_content_links_resolve": true,
+    "image_pending_parent": "/images/learning/mr-family-20261027.webp",
+    "independent_computations": {
+      "AMR_equal_angles_deg": [
+        36,
+        216
+      ],
+      "TMR_offset_error_deg": 0.5729577951308232,
+      "SMR_60teeth_1024_division_deg": 0.005859375,
+      "wire10A_r10mm_mT": 0.2,
+      "coil100turns_10mm2_1mT_1ms_mV": 1,
+      "hysteresis_distance_mm": 2.0
+    },
+    "all_inline_content_references_verified_count": 30,
+    "pending_image_references": [
+      "/images/learning/mr-family-20261027.webp"
+    ]
+  },
+  "publication_state": "local_source_only_not_pushed",
+  "integration_note": "主控已按八组知识统一分类、补工程图及关联，最终文件哈希以下方或总清单为准。"
+}

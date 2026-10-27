@@ -1,0 +1,299 @@
+{
+  "schema": 1,
+  "task": "magnetic-learning-20261027",
+  "group": "AKM Hall foundations",
+  "date": "2026-10-27",
+  "mode": "Original Chinese knowledge entries, not a translation",
+  "revised": [
+    "hall-effect",
+    "linear-hall",
+    "latch",
+    "bop-brp",
+    "switch-polarity"
+  ],
+  "new": [
+    "hall-element-materials",
+    "hall-element-vs-ic",
+    "hall-biasing",
+    "hall-temperature-drift"
+  ],
+  "sources": [
+    {
+      "chapter": "01",
+      "title": "Magnetic sensor overview",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/magnetic-sensor/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "Static field detection is different from passive induction",
+        "Hall voltage is distinct from magnetoresistance"
+      ],
+      "targets": [
+        "/wiki/basics/hall-effect/"
+      ],
+      "cross_scope_or_excluded": "Coil, reed, SMR and MR taxonomy belong to the magnetism group.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "02",
+      "title": "Hall sensor levels",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/hall-sensors/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "Raw differential Hall voltage vs integrated threshold or amplified output"
+      ],
+      "targets": [
+        "/wiki/basics/hall-element-vs-ic/",
+        "/wiki/basics/hall-effect/"
+      ],
+      "cross_scope_or_excluded": "Actual output swing and electrical limits need a device datasheet.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "03",
+      "title": "Hall element drive and materials",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/hall-elements/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "Current drive depends on Hall coefficient; voltage drive on Hall mobility",
+        "Drive conditions change temperature behavior",
+        "Zero-field offset is possible"
+      ],
+      "targets": [
+        "/wiki/basics/hall-biasing/",
+        "/wiki/basics/hall-element-materials/",
+        "/wiki/basics/hall-temperature-drift/"
+      ],
+      "cross_scope_or_excluded": "No original material data table or plotted curves reproduced.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "04",
+      "title": "InSb high sensitivity",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/ultra-high-sensitivity/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "HW/InSb sensitivity tradeoff; the AKM example favors voltage drive for temperature behavior",
+        "Offset relative to signal affects pole crossing"
+      ],
+      "targets": [
+        "/wiki/basics/hall-element-materials/"
+      ],
+      "cross_scope_or_excluded": "Closed-loop current sensing is delegated to application pages; do not infer zero system power or unlimited isolation.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "05",
+      "title": "GaAs low drift",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/low-drift/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "HG/GaAs temperature stability tradeoff; the AKM example favors current drive",
+        "Material stability cannot alone guarantee system position stability"
+      ],
+      "targets": [
+        "/wiki/basics/hall-element-materials/",
+        "/wiki/basics/hall-temperature-drift/"
+      ],
+      "cross_scope_or_excluded": "OIS and open-loop current detection are cross-scope application topics.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "06",
+      "title": "InAs balance and position sensing",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/high-sensitivity-hall-element/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "HQ/InAs balances sensitivity and temperature behavior; the AKM example favors voltage drive",
+        "Ratios cancel common multiplicative terms, under matching conditions"
+      ],
+      "targets": [
+        "/wiki/basics/hall-element-materials/",
+        "/wiki/basics/hall-temperature-drift/"
+      ],
+      "cross_scope_or_excluded": "AF and differential/ratio position sensing go to application pages. Do not generalize illustrated 1mm/3mm travel.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "07",
+      "title": "Hall IC behavior",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/hall-effect-ic/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "Switch, dual-output polarity detection and latch require different response curves",
+        "Intermittent sensing trades response opportunity for power",
+        "Hysteresis reduces chatter near thresholds"
+      ],
+      "targets": [
+        "/wiki/basics/hall-element-vs-ic/",
+        "/wiki/basics/switch-polarity/",
+        "/wiki/basics/bop-brp/"
+      ],
+      "cross_scope_or_excluded": "Bipolar wording is ambiguous across suppliers. Supply compatibility is not sufficient for output compatibility.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "08",
+      "title": "Switch applications",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/hall-effect-ic-switch/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "Threshold events apply to origin, end-stop and float level detection"
+      ],
+      "targets": [
+        "/wiki/basics/switch-polarity/",
+        "/wiki/basics/bop-brp/"
+      ],
+      "cross_scope_or_excluded": "Detailed screw stage and float examples go to existing application pages.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "09",
+      "title": "Latch applications",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/hall-effect-ic-latch/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "Opposite magnetic field resets a typical bipolar latch",
+        "Quarter magnetic cycle separation supports quadrature relative counting"
+      ],
+      "targets": [
+        "/wiki/basics/latch/"
+      ],
+      "cross_scope_or_excluded": "50 percent duty is conditional, and quarter magnetic cycle is not necessarily quarter mechanical turn.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "10",
+      "title": "Linear Hall applications",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/linear-hall-effect-ic/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "Select sensitivity for field span and output headroom",
+        "Continuous field still needs a mechanical mapping"
+      ],
+      "targets": [
+        "/wiki/basics/linear-hall/"
+      ],
+      "cross_scope_or_excluded": "Float, joystick and current examples go to application pages. Illustrated angle is not a universal joystick guarantee.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    },
+    {
+      "chapter": "FAQ",
+      "title": "FAQ and glossary",
+      "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/faq/",
+      "review": "main technical sections and application examples read",
+      "facts_used": [
+        "Hall voltage and semiconductor MR resistance are different observables",
+        "3-axis values, switch states and quantization steps are different information"
+      ],
+      "targets": [
+        "/wiki/basics/hall-effect/",
+        "/wiki/basics/hall-element-vs-ic/",
+        "/wiki/basics/switch-polarity/"
+      ],
+      "cross_scope_or_excluded": "SMR and B/H/units belong to magnetism group. uT/LSB is not RMS noise or minimum detectable field.",
+      "reuse": "Limited factual synthesis, no verbatim quotes, no chapter translation; new source-specific summaries controlled below about 200 English-word equivalent per source."
+    }
+  ],
+  "additional_sources": [
+    "https://www.ti.com/lit/pdf/SLIA086",
+    "https://www.ti.com/product/DRV5055",
+    "https://www.ti.com/product/DRV5013",
+    "https://www.ti.com/product/DRV5032",
+    "https://www.ti.com/product/DRV5033"
+  ],
+  "numerical_examples": "All new numeric examples explicitly synthetic, no unverified AKM device values.",
+  "formula_review": [
+    "Current bias VH=RH/t*IB*Bperp, |RH|~1/(nq), carrier/wiring sign convention explicit",
+    "Voltage bias VH~muH*(W/L)*VB*Bperp, ideal model only",
+    "Power examples I^2R and V^2/R do not assert measured temperature rise",
+    "BH=BOP-BRP only for same device and conditions; cross-population extrema are not actual single-device hysteresis",
+    "Local position error delta_x~(deltaV/S)/(dB/dx), local monotonic approximation only",
+    "atan2 cancels common positive amplitude A(T)>0, not additive offset, relative gain or phase error"
+  ],
+  "diagram_advice": [
+    "Show bias current, perpendicular B and transverse differential voltage as orthogonal quantities with explicit sign conventions",
+    "Raw element has one excitation pair and one differential measurement pair, not two independent ground-referenced outputs",
+    "For a low-active positive unipolar example: rising B crosses BOP to output low; falling B crosses BRP to output high",
+    "For a bipolar latch example explicitly label BOP>0, BRP<0; state held between them; startup requires datasheet"
+  ],
+  "checks": [
+    {
+      "path": "content/wiki/basics/hall-effect.md",
+      "body_chars": 1104,
+      "cjk_chars": 539,
+      "h2": 3,
+      "internal_links": 6,
+      "sha256": "a2f8de2cbf5441d842e285b89bf3f3454ee8006922cd26f0f8de08e662f0ef2b"
+    },
+    {
+      "path": "content/wiki/basics/hall-element-materials.md",
+      "body_chars": 1125,
+      "cjk_chars": 523,
+      "h2": 3,
+      "internal_links": 5,
+      "sha256": "41f5d6cafc2dba57701106dbf1d6e06cdf1adfa25c6a4a9c36c11903d76594c9"
+    },
+    {
+      "path": "content/wiki/basics/hall-element-vs-ic.md",
+      "body_chars": 1030,
+      "cjk_chars": 555,
+      "h2": 3,
+      "internal_links": 4,
+      "sha256": "05412fbe85a249fcf74fbaa55c2625020086acbeadfdaad2e9695701cb7c549d"
+    },
+    {
+      "path": "content/wiki/basics/hall-biasing.md",
+      "body_chars": 937,
+      "cjk_chars": 471,
+      "h2": 3,
+      "internal_links": 3,
+      "sha256": "43a479e938d2204b2c9e2c60ac8ab24bee32a325d7e0e12ea5a18b581ae8a553"
+    },
+    {
+      "path": "content/wiki/basics/linear-hall.md",
+      "body_chars": 908,
+      "cjk_chars": 481,
+      "h2": 3,
+      "internal_links": 3,
+      "sha256": "c367e36815890e72985eab5c0428030114e970aa66ab2b49ca7ca072aba13484"
+    },
+    {
+      "path": "content/wiki/basics/latch.md",
+      "body_chars": 858,
+      "cjk_chars": 507,
+      "h2": 3,
+      "internal_links": 4,
+      "sha256": "aa4055fcf5a0714db166eebbbfbb267dca1aa5fc9202671127c816a42d4f547c"
+    },
+    {
+      "path": "content/wiki/basics/bop-brp.md",
+      "body_chars": 954,
+      "cjk_chars": 525,
+      "h2": 3,
+      "internal_links": 2,
+      "sha256": "1baebddff3311347f2e4866f536b0f10301b5a76e69c2800d4c87b26184a1442"
+    },
+    {
+      "path": "content/wiki/basics/switch-polarity.md",
+      "body_chars": 907,
+      "cjk_chars": 503,
+      "h2": 3,
+      "internal_links": 3,
+      "sha256": "8776c97b72472b01beb34808e17a18f3a432de72903ccf3cc403ce55d9c75582"
+    },
+    {
+      "path": "content/wiki/basics/hall-temperature-drift.md",
+      "body_chars": 999,
+      "cjk_chars": 475,
+      "h2": 3,
+      "internal_links": 2,
+      "sha256": "471b19236b9bcccec15f1316b21f503d1235421eaf92239902dc57d63ebf706b"
+    }
+  ],
+  "pending": [
+    "Parent taxonomy, backlinks and precise engineering diagrams",
+    "Full Hugo and desktop/mobile preview acceptance",
+    "No Git staging, commit or push done by this agent"
+  ],
+  "integration_note": "主控已按八组知识统一分类、补工程图及关联，最终文件哈希以下方或总清单为准。"
+}

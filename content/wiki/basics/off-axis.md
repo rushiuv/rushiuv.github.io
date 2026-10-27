@@ -1,7 +1,20 @@
 ---
-{"title":"离轴检测：让出轴心以后，磁路也要重做","description":"侧向读双极磁体与沿多极磁环读局部周期是两类离轴方案，不应混用算法与安装容差。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"basic-single","basic_entry":true,"basic_group":"检测原理与安装","weight":102,"related_basics":["mounting","magnetic-encoder","absolute-incremental"]}
+{
+  "title": "离轴检测：让出轴心以后，磁路也要重做",
+  "description": "侧向读双极磁体与沿多极磁环读局部周期是两类离轴方案，不应混用算法与安装容差。",
+  "date": "2026-10-18T10:00:00+08:00",
+  "lastmod": "2026-10-27",
+  "layout": "basic-single",
+  "basic_entry": true,
+  "basic_group": "磁路与机械安装",
+  "weight": 702,
+  "related_basics": [
+    "mounting",
+    "magnetic-encoder",
+    "absolute-incremental"
+  ]
+}
 ---
-
 离轴是读头偏离旋转轴线的安装关系。它能给轴心留出穿线、通气或传动空间，但不自动等于中空编码器，也不自动意味着使用多极磁环。先画机械剖面，再讨论传感器，能避免把两种完全不同的磁路装进同一个名词。
 
 ## 双极磁体的侧边不再是轴端中心

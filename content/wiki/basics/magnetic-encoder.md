@@ -3,11 +3,11 @@
   "title": "磁编码器：霍尔、AMR与TMR怎样读角度",
   "description": "从磁场分量和磁阻方向响应出发，区分传感原理、周期与单圈绝对信息。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "检测原理与安装",
-  "weight": 7,
+  "basic_group": "编码原理",
+  "weight": 600,
   "related_basics": [
     "mounting",
     "absolute-incremental",
@@ -32,8 +32,6 @@
   ]
 }
 ---
-
-
 磁编码器读取的是磁场提供的位置特征。一个常见轴端方案把径向充磁的双极磁体固定在轴上，读头留在定子侧。轴转动时，传感器位置处的磁场方向随之变化。
 
 <figure class="basic-figure"><img src="/images/basics/magnetic-on-axis.webp" alt="按TI SLYA085图3-1重绘：径向充磁磁体位于芯片上方，磁体中心与感应中心对齐。磁力线仅示意方向，不是磁场仿真。" loading="lazy"><figcaption>按TI SLYA085图3-1重绘：径向充磁磁体位于芯片上方，磁体中心与感应中心对齐。磁力线仅示意方向，不是磁场仿真。 <a href="https://www.ti.com/lit/pdf/slya085" target="_blank" rel="noopener">原理图来源 ↗</a></figcaption></figure>

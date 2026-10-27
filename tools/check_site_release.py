@@ -5,7 +5,7 @@ Usage: python3.11 -B tools/check_site_release.py /absolute/path/to/hugo/build
 Requires the project's existing beautifulsoup4 and PyYAML dependencies. Does not build, fetch,
 publish, write reports, or claim that browser/mobile rendering has been tested.
 The previously published KTH7111 article contained five inline SVG illustrations.
-Also checks the current 37 basics / 43 applications and the explicit reference
+Also checks the current 54 basics / 47 applications and the explicit reference
 topic mapping. Source validation is read-only and uses this script's repository.
 """
 
@@ -36,8 +36,8 @@ REQUIRED_LINKS = (
 FORBIDDEN_FIELDS = ("current_owner", "直白标题", "目标平台", "下一步任务")
 UNPUBLISHED_TITLE = "双编码器估扭矩，空载差值曲线能不能直接扣掉"
 SOURCE_ROOT = Path(__file__).resolve().parent.parent
-EXPECTED_BASICS = 37
-EXPECTED_APPLICATIONS = 43
+EXPECTED_BASICS = 54
+EXPECTED_APPLICATIONS = 47
 # ECMAScript whitespace, used by /\s+/ and the existing portal.js normalizer.
 JS_SPACE = r"[\u0009-\u000d\u0020\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]"
 SEARCH_STRIP = re.compile(JS_SPACE + r"|[\-‐‑–—_·]")

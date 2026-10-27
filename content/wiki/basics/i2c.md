@@ -3,17 +3,23 @@
   "title": "I²C：两根线如何分配地址与读取时间",
   "description": "理解开漏上拉、地址冲突与连续读，检查多个位置传感器共用总线时的时间和电气预算。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "接口与应用",
-  "weight": 147,
-  "related_basics": ["spi-ssi", "crc", "latency", "pwm"],
-  "related_topics": ["编码器接口"],
+  "basic_group": "接口与读数",
+  "weight": 805,
+  "related_basics": [
+    "spi-ssi",
+    "crc",
+    "latency",
+    "pwm"
+  ],
+  "related_topics": [
+    "编码器接口"
+  ],
   "related_model_slugs": []
 }
 ---
-
 I²C用时钟SCL和数据SDA在带地址的器件之间通信。两根线通常依赖开漏输出和上拉电阻，不能把接口理解成两根任意长度的普通数字线。总线电容、上拉电流和上升时间会共同限制速度与连接方式。
 
 ## 先分清地址与寄存器

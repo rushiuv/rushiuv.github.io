@@ -3,11 +3,11 @@
   "title": "更新率、延迟与带宽：读得快是否跟得上",
   "description": "用6000 rpm与10 μs算例，将数据刷新、信息年龄和动态跟踪分开。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "看懂性能参数",
-  "weight": 6,
+  "basic_group": "参数与误差",
+  "weight": 503,
   "related_basics": [
     "angle-noise",
     "interfaces",
@@ -29,8 +29,6 @@
   ]
 }
 ---
-
-
 主控每10 μs收到一帧，并不代表角度只滞后10 μs。数据可以更新很频繁，但每帧仍来自更早的采样；内部滤波也能让变化后的读数慢慢跟上。
 
 ## 先把三个时间概念分开

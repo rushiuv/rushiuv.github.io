@@ -3,11 +3,11 @@
   "title": "在轴、离轴、气隙与偏心：先把几何关系说清",
   "description": "分清读头位置、感应中心与旋转轴，避免用一个气隙数字概括安装质量。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "检测原理与安装",
-  "weight": 10,
+  "basic_group": "磁路与机械安装",
+  "weight": 705,
   "related_basics": [
     "magnetic-encoder",
     "resolution-accuracy",
@@ -30,8 +30,6 @@
   ]
 }
 ---
-
-
 “在轴”与“离轴”首先描述读头相对旋转轴的位置。磁体充磁、敏感轴、码环结构和解算方式还需要单独说明。读头移离轴心后，通常必须重新确认信号轨迹和适用算法。
 
 <figure class="basic-figure"><img src="/images/basics/magnetic-on-axis.webp" alt="轴端磁体中心位于芯片感应中心上方" loading="lazy"><figcaption>参考TI SLYA085图3-1重绘的轴端对齐关系。图中没有给出通用气隙数值，实际间隙应按具体型号手册确定。<a href="https://www.ti.com/lit/pdf/slya085" target="_blank" rel="noopener">原图所在应用笔记 ↗</a></figcaption></figure>

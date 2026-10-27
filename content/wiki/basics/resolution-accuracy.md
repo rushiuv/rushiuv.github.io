@@ -3,11 +3,11 @@
   "title": "分辨率、准确度与重复性：三件不同的事",
   "description": "用16位刻度和固定偏差示例，判断更高位数究竟改善了什么。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "看懂性能参数",
-  "weight": 4,
+  "basic_group": "参数与误差",
+  "weight": 500,
   "related_basics": [
     "angle-noise",
     "latency",
@@ -28,8 +28,6 @@
   ]
 }
 ---
-
-
 一颗编码器可以输出很细的数字，同时存在很大的角度偏差。比较产品时，需要把数字刻度、离真值的偏离和重复读数的离散程度分开。
 
 ## 分辨率：数字能分成多少格

@@ -1,7 +1,20 @@
 ---
-{"title":"杂散磁场：外场叠加以后，角度会怎样变","description":"目标磁场与外部磁场共同进入传感器，抗均匀场能力不能代替实际空间梯度验证。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"basic-single","basic_entry":true,"basic_group":"检测原理与安装","weight":107,"related_basics":["magnetic-encoder","angle-noise","mounting"]}
+{
+  "title": "杂散磁场：外场叠加以后，角度会怎样变",
+  "description": "目标磁场与外部磁场共同进入传感器，抗均匀场能力不能代替实际空间梯度验证。",
+  "date": "2026-10-18T10:00:00+08:00",
+  "lastmod": "2026-10-27",
+  "layout": "basic-single",
+  "basic_entry": true,
+  "basic_group": "磁路与机械安装",
+  "weight": 706,
+  "related_basics": [
+    "magnetic-encoder",
+    "angle-noise",
+    "mounting"
+  ]
+}
 ---
-
 目标磁体以外，电机磁钢、通电导线、制动器和附近永磁件也会贡献磁场。传感器无法仅凭一条读数知道磁场来自谁。杂散场问题应先说明方向、幅值、距离和空间梯度，再问某颗芯片能不能承受。
 
 ## 比值算角度也挡不住任意外场

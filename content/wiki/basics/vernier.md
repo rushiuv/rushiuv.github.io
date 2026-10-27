@@ -3,11 +3,11 @@
   "title": "游标编码：两条周期怎样确定绝对位置",
   "description": "从相邻周期的相位差理解游标与Nonius，区分判区能力、细分位数和实际精度。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-24",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "看懂性能参数",
-  "weight": 143,
+  "basic_group": "编码原理",
+  "weight": 604,
   "related_basics": [
     "absolute-incremental",
     "singleturn-multiturn",
@@ -28,7 +28,6 @@
   ]
 }
 ---
-
 一条每圈重复很多次的正弦轨道，能把小范围运动看得很细，却不知道当前处于哪一个周期。游标编码再加一条不同周期的轨道，用两路相位之间的关系确定区间，再由细轨给出区间内位置。它解决的是重复图案的歧义，不是凭空提高每条轨道的精度。
 
 ## 相邻周期给出一个直观例子
