@@ -97,7 +97,10 @@ if mode == "html":
         for key in list(element.attrs):
             if key.lower().startswith("on") or key in ("data-src", "data-ratio", "data-w", "contenteditable", "style"):
                 del element.attrs[key]
-    # WeChat reveals #js_content via its own JavaScript; Hugo pages do not run it.\n    # Keep only a neutral wrapper so the imported text and original images are visible.\n    node.attrs = {"class": ["wechat-article-content"]}\n    body = str(node)
+    # The native WeChat root is invisible until WeChat JavaScript reveals it.
+    # Give standalone Hugo posts a neutral, visible content wrapper.
+    node.attrs = {"class": ["wechat-article-content"]}
+    body = str(node)
     pub_match = re.search(r'(?:var\s+ct\s*=\s*|publish_time\s*[:=]\s*)["\u0027](\d{10})', raw)
     pub = dt.datetime.fromtimestamp(int(pub_match.group(1)), dt.timezone(dt.timedelta(hours=8))) if pub_match else None
     img_count = len(seen)
