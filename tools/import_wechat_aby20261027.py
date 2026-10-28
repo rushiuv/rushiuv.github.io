@@ -75,6 +75,15 @@ if mode == "html":
     byline = name_node.get_text(" ", strip=True) if name_node else ""
     for bad in node.select("script,style,noscript,iframe,form,button,svg,mpvoice,mp-common-profile"):
         bad.decompose()
+    # Explicit editorial review of this article: its first GIF is a decorative
+    # opener and its final picture promotes the publisher's store/social accounts.
+    # Do not fetch or publish either; retain all intervening factual illustrations.
+    images_before = node.select("img")
+    if len(images_before) != 8:
+        raise RuntimeError("Unexpected image inventory: review advertisements before import")
+    for promo in (images_before[0], images_before[-1]):
+        wrapper = promo.find_parent(["section", "p", "figure"])
+        (wrapper or promo).decompose()
     seen = {}
     for element in node.select("img"):
         url = element.get("data-src") or element.get("src")
@@ -148,6 +157,7 @@ meta = (
     "original: " + yml(URL) + "\n"
     "original_from: " + yml("转载自" + from_name) + "\n"
     "tags: [\"转载\"]\n"
+    "no_promo: true\n"
     "---\n\n"
 )
 notice = (
@@ -155,7 +165,7 @@ notice = (
     "，<a href=\"" + URL + "\" rel=\"noopener noreferrer\">点击阅读原文</a>。"
     "版权归原作者所有。</p>\n\n"
 )
-post = meta + "<div class=\"wechat-reprint\">\n" + notice + body + "\n</div>\n"
+post = meta + "<div class=\"wechat-reprint\">\n" + body + "\n</div>\n"
 fname = (pub or now).date().isoformat() + "-" + SLUG + ".md"
 for dirname in ("content/posts", "posts_extra"):
     target = ROOT / dirname / fname
