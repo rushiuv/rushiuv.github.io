@@ -46,9 +46,9 @@
   <div class="wrap foot">
     <div>
       <p class="sutra-foot">{{ site.Params.sutraFoot }}</p>
-      <p class="muted">© {{ now.Year }} {{ site.Params.author }} · 文章首发于微信公众号「如是有为」 · <a href="{{ "/index.xml" | relURL }}">RSS</a></p>
+      {{ if .Params.no_promo }}<p class="muted">© {{ now.Year }} {{ site.Params.author }} · 转载版权归原作者 · <a href="{{ "/index.xml" | relURL }}">RSS</a></p>{{ else }}<p class="muted">© {{ now.Year }} {{ site.Params.author }} · 文章首发于微信公众号「如是有为」 · <a href="{{ "/index.xml" | relURL }}">RSS</a></p>{{ end }}
     </div>
-    <img class="foot-qr" src="{{ "images/site/qrcode.png" | relURL }}" alt="公众号「如是有为」二维码" width="88" height="88">
+    {{ if not .Params.no_promo }}<img class="foot-qr" src="{{ "images/site/qrcode.png" | relURL }}" alt="公众号「如是有为」二维码" width="88" height="88">{{ end }}
   </div>
 </footer>
 </body>
