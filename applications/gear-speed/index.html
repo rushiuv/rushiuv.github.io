@@ -1,8 +1,109 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>齿轮转速检测：齿轮改变磁路，脉冲才变成转速 · 如是有为</title><meta name=description content="区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。"><link rel=canonical href=https://sensor.fans/applications/gear-speed/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="齿轮转速检测：齿轮改变磁路，脉冲才变成转速 · 如是有为"><meta property="og:description" content="区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。"><meta property="og:url" content="https://sensor.fans/applications/gear-speed/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="article"><meta property="article:published_time" content="2026-10-27T00:00:00+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="齿轮转速检测：齿轮改变磁路，脉冲才变成转速 · 如是有为"><meta name=twitter:description content="区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-27T00:00:00+00:00","datePublished":"2026-10-27T00:00:00+08:00","description":"区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。","headline":"齿轮转速检测：齿轮改变磁路，脉冲才变成转速","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/applications/gear-speed/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/applications/gear-speed/"}</script><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159424"><link rel=stylesheet href="/css/wiki.css?v=1793159424"><link rel=stylesheet href="/css/basics.css?v=20261016-open-toc"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"><link rel=stylesheet href="/css/engineering.css?v=c056824e2b1b"><link rel=stylesheet href="/css/knowledge-learning.css?v=65976be951d8"></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/>基础知识</a>
-<a href=/wiki/>型号资料</a>
-<a href=/applications/ aria-current=page>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><div class="basic-layout application-layout"><aside class=basic-sidebar><a class=basic-back href=/applications/>← 全部应用场景</a><nav aria-label=应用词条目录><h2>消费电子</h2><a href=/applications/stylus/>触控笔</a><a href=/applications/electronic-chessboard/>电子棋盘</a><a href=/applications/wheelchair-joystick/>轮椅摇杆</a><a href=/applications/washing-machine/>洗衣机</a><a href=/applications/game-controller/>游戏手柄</a><a href=/applications/handheld-joystick/>掌机摇杆</a><a href=/applications/smartwatch/>智能手表</a><a href=/applications/drone-rotor/>无人机旋翼</a><a href=/applications/laptop-lid/>笔记本与平板合盖检测</a><a href=/applications/electronic-compass/>电子罗盘与磁航向</a><a href=/applications/camera-lens-position/>相机AF与OIS位置反馈</a><h2>智能家居</h2><a href=/applications/coffee-machine/>咖啡机</a><a href=/applications/companion-robot/>陪伴机器人</a><a href=/applications/stove-knob/>燃气灶-旋钮</a><a href=/applications/vacuum-cleaner/>扫地机器人-真空吸尘器</a><a href=/applications/robot-cleaner-water-level/>扫地机-水位监测</a><a href=/applications/photovoltaic-signal-chain/>太阳能光电转换器</a><a href=/applications/toilet-hinge/>智能马桶-枢轴检测</a><a href=/applications/stove-temperature/>燃气灶-温度检测</a><a href=/applications/robot-cleaner-dustbin/>扫地机器人-尘盒检测</a><a href=/applications/toilet-knob/>智能马桶-旋钮</a><a href=/applications/toilet-water-level/>智能马桶-水位监测</a><h2>工业与运动</h2><a href=/applications/electricity-meter/>电表</a><a href=/applications/circuit-breaker/>断路器</a><a href=/applications/gas-meter/>燃气表</a><a href=/applications/industrial-knob/>旋钮操控</a><a href=/applications/turnstile/>闸机</a><a href=/applications/mechanical-electricity-meter/>机械电表</a><a href=/applications/servo-motor/>伺服电机</a><a href=/applications/linear-motor/>直线电机</a><a href=/applications/robot-joint/>机器人关节</a><a href=/applications/gripper/>夹爪</a><a href=/applications/gearbox/>齿轮箱</a><a href=/applications/sewing-machine/>缝纫机</a><a href=/applications/brushless-dc-motor/>无刷直流电机</a><a href=/applications/closed-loop-stepper/>步进闭环</a><a href=/applications/coreless-motor/>空心杯电机</a><a href=/applications/elevator/>电梯</a><a href=/applications/platform-screen-door/>屏蔽门</a><a href=/applications/agv/>AGV 搬运机器人</a><a href=/applications/water-meter/>水表</a><a href=/applications/heat-meter/>热量表</a><a href=/applications/pneumatic-cylinder/>气缸位置检测</a><a href=/applications/current-sensing/>磁式电流检测</a><a href=/applications/gear-speed/ aria-current=page>齿轮与磁极轮测速</a><h2>汽车与交通</h2><a href=/applications/electronic-throttle/>电子节气门</a><a href=/applications/automotive-angle/>汽车角度控制</a></nav></aside><article class="basic-article application-article"><header><p class=basics-kicker>APPLICATIONS / 工业与运动</p><h1>齿轮转速检测：齿轮改变磁路，脉冲才变成转速</h1><p class=basic-deck>区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。</p><p class=basic-updated>更新于 2026.10.27 <span>· 公开资料与工程分析</span></p></header><aside class=basic-toc aria-label=本页目录><p class=basic-toc-title>本页目录</p><nav id=TableOfContents><ul><li><a href=#先确认谁在产生磁场>先确认谁在产生磁场</a></li><li><a href=#每齿脉冲定义清楚转速公式才有意义>每齿脉冲定义清楚，转速公式才有意义</a></li><li><a href=#没有新边沿不等于已经确认静止>没有新边沿不等于已经确认静止</a></li></ul></nav></aside><div class=content><p>没有在每个齿上贴磁铁，也可以用磁传感器测铁磁齿轮：固定磁体提供背偏置磁场，齿和齿槽经过时改变局部磁路，再由霍尔或磁阻元件读出变化。它与交替磁极轮是两种目标结构，不能共用一套未经验证的阈值。</p><h2 id=先确认谁在产生磁场>先确认谁在产生磁场</h2><p><a href=https://www.ti.com/lit/an/sbaa632/sbaa632.pdf>TI SBAA632</a>介绍背偏置三维霍尔与铁磁齿轮的相互作用。<a href=https://community.infineon.com/t5/Knowledge-Base-Articles/Overview-of-XENSIV-TLE5555-TMR-speed-sensor-protocols/ta-p/1065738>Infineon TLE5555说明</a>则区分磁极轮、需外配背偏置磁体的齿轮版本和带磁体版本。选型首先核对目标与磁路，而不是只比较“霍尔还是TMR”。</p><p>齿高、齿槽、齿距、轴向偏移与<a href=/wiki/basics/air-gap/>气隙</a>都会改变敏感位置的场形。某个参考齿轮下的最大气隙，不能直接当成所有模数齿轮的保证值。普通非铁磁金属齿轮也不能直接沿用这套铁磁磁路方案。</p><h2 id=每齿脉冲定义清楚转速公式才有意义>每齿脉冲定义清楚，转速公式才有意义</h2><p>若Z个等距齿、每齿产生一个被计数脉冲，脉冲频率f与转速n满足n=60f/Z。自设Z=60、f=500Hz，则n=500rpm。若固件改数上升沿和下降沿，必须同步修改每圈事件数，否则同一根轴会被算成两倍速度。</p><p>低速时测两个边沿的间隔更容易获得细时间信息，但等待时间变长；高速时固定窗口计数有更多事件，却必须检查最短脉宽、带宽和定时器输入。参见<a href=/topics/guides/rate-budget/>速率预算</a>，不能仅凭平均频率低于采样率判断不会漏齿。</p><h2 id=没有新边沿不等于已经确认静止>没有新边沿不等于已经确认静止</h2><p>单路等距脉冲通常不含方向，换向和往复摆动需额外相位信息或专用协议，原理可接到<a href=/wiki/basics/abz/>AB方向判别</a>。单路没有边沿也可能来自断线、磁体异常或信号过弱，速度超时与<a href=/topics/guides/position-validity-state/>数据有效性</a>应分别报告。</p><p>台架在极低速、反转、最大转速及最差偏摆下同步留原始磁场或脉冲与独立转速参考。它可以为电机和传动提供速度证据，却不自动成为上电绝对角编码器；与<a href=/applications/brushless-dc-motor/>无刷电机换相</a>结合时还需另对齐电零位。</p></div><aside class=application-scope><strong>读器件示例时</strong><p>候选器件与实际量产采用不同；接口、磁路、固件和验证条件需要逐项核对。汽车、人员保护和计量场景还需独立的系统级论证。</p></aside><nav class=basic-related aria-label=相关基础知识><h2>先把这些概念读清楚</h2><a href=/wiki/basics/hall-effect/>霍尔效应：芯片测到的是哪一个磁场分量 <span>→</span></a><a href=/wiki/basics/latch/>霍尔锁存：撤走磁铁后为什么还不释放 <span>→</span></a><a href=/wiki/basics/air-gap/>气隙：先找测量基准，再看磁场工作窗口 <span>→</span></a><a href=/wiki/basics/sensor-noise-bandwidth/>噪声与带宽：平滑了多少，也要问慢了多少 <span>→</span></a><a href=/wiki/basics/abz/>ABZ：正交计数、四倍频与零位索引 <span>→</span></a></nav><section class=guide-backlinks><h2>继续算与测</h2><div class=guide-link-list><a href=/topics/guides/rate-budget/>100kHz输入、1MHz刷新、250kHz帧率，不能直接取最小值 <span aria-hidden=true>→</span></a><a href=/topics/guides/position-validity-state/>CRC通过之后，位置还要过三道检查 <span aria-hidden=true>→</span></a></div></section><div class=basics-footlinks><a href=/applications/>应用场景总览 ↗</a><a href=/wiki/>型号与公司资料 ↗</a></div></article></div></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>齿轮转速检测：齿轮改变磁路，脉冲才变成转速 · 如是有为</title>
+<meta name="description" content="区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。">
+<link rel="canonical" href="https://sensor.fans/applications/gear-speed/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="齿轮转速检测：齿轮改变磁路，脉冲才变成转速 · 如是有为">
+<meta property="og:description" content="区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。">
+<meta property="og:url" content="https://sensor.fans/applications/gear-speed/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-10-27T00:00:00&#43;08:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="齿轮转速检测：齿轮改变磁路，脉冲才变成转速 · 如是有为">
+<meta name="twitter:description" content="区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-27T00:00:00+00:00","datePublished":"2026-10-27T00:00:00+08:00","description":"区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。","headline":"齿轮转速检测：齿轮改变磁路，脉冲才变成转速","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/applications/gear-speed/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/applications/gear-speed/"}
+</script>
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+<link rel="stylesheet" href="/css/basics.css?v=20261016-open-toc">
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+<link rel="stylesheet" href="/css/engineering.css?v=78412614aa48">
+
+
+
+
+<link rel="stylesheet" href="/css/knowledge-learning.css?v=939e3c273186">
+
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/">基础知识</a>
+      <a href="/wiki/">型号资料</a>
+      <a href="/applications/" aria-current="page">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+<div class="basic-layout application-layout"><aside class="basic-sidebar"><a class="basic-back" href="/applications/">← 全部应用场景</a><nav aria-label="应用词条目录"><h2>消费电子</h2><a href="/applications/stylus/">触控笔</a><a href="/applications/electronic-chessboard/">电子棋盘</a><a href="/applications/wheelchair-joystick/">轮椅摇杆</a><a href="/applications/washing-machine/">洗衣机</a><a href="/applications/game-controller/">游戏手柄</a><a href="/applications/handheld-joystick/">掌机摇杆</a><a href="/applications/smartwatch/">智能手表</a><a href="/applications/drone-rotor/">无人机旋翼</a><a href="/applications/laptop-lid/">笔记本与平板合盖检测</a><a href="/applications/electronic-compass/">电子罗盘与磁航向</a><a href="/applications/camera-lens-position/">相机AF与OIS位置反馈</a><h2>智能家居</h2><a href="/applications/coffee-machine/">咖啡机</a><a href="/applications/companion-robot/">陪伴机器人</a><a href="/applications/stove-knob/">燃气灶-旋钮</a><a href="/applications/vacuum-cleaner/">扫地机器人-真空吸尘器</a><a href="/applications/robot-cleaner-water-level/">扫地机-水位监测</a><a href="/applications/photovoltaic-signal-chain/">太阳能光电转换器</a><a href="/applications/toilet-hinge/">智能马桶-枢轴检测</a><a href="/applications/stove-temperature/">燃气灶-温度检测</a><a href="/applications/robot-cleaner-dustbin/">扫地机器人-尘盒检测</a><a href="/applications/toilet-knob/">智能马桶-旋钮</a><a href="/applications/toilet-water-level/">智能马桶-水位监测</a><h2>工业与运动</h2><a href="/applications/electricity-meter/">电表</a><a href="/applications/circuit-breaker/">断路器</a><a href="/applications/gas-meter/">燃气表</a><a href="/applications/industrial-knob/">旋钮操控</a><a href="/applications/turnstile/">闸机</a><a href="/applications/mechanical-electricity-meter/">机械电表</a><a href="/applications/servo-motor/">伺服电机</a><a href="/applications/linear-motor/">直线电机</a><a href="/applications/robot-joint/">机器人关节</a><a href="/applications/gripper/">夹爪</a><a href="/applications/gearbox/">齿轮箱</a><a href="/applications/sewing-machine/">缝纫机</a><a href="/applications/brushless-dc-motor/">无刷直流电机</a><a href="/applications/closed-loop-stepper/">步进闭环</a><a href="/applications/coreless-motor/">空心杯电机</a><a href="/applications/elevator/">电梯</a><a href="/applications/platform-screen-door/">屏蔽门</a><a href="/applications/agv/">AGV 搬运机器人</a><a href="/applications/water-meter/">水表</a><a href="/applications/heat-meter/">热量表</a><a href="/applications/pneumatic-cylinder/">气缸位置检测</a><a href="/applications/current-sensing/">磁式电流检测</a><a href="/applications/gear-speed/" aria-current="page">齿轮与磁极轮测速</a><h2>汽车与交通</h2><a href="/applications/electronic-throttle/">电子节气门</a><a href="/applications/automotive-angle/">汽车角度控制</a></nav></aside>
+<article class="basic-article application-article"><header><p class="basics-kicker">APPLICATIONS / 工业与运动</p><h1>齿轮转速检测：齿轮改变磁路，脉冲才变成转速</h1><p class="basic-deck">区分背偏置铁磁齿轮与交替磁极轮，按齿距、气隙、事件定义和低速行为解释速度与方向。</p><p class="basic-updated">更新于 2026.10.27 <span>· 公开资料与工程分析</span></p></header><aside class="basic-toc" aria-label="本页目录"><p class="basic-toc-title">本页目录</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#先确认谁在产生磁场">先确认谁在产生磁场</a></li>
+    <li><a href="#每齿脉冲定义清楚转速公式才有意义">每齿脉冲定义清楚，转速公式才有意义</a></li>
+    <li><a href="#没有新边沿不等于已经确认静止">没有新边沿不等于已经确认静止</a></li>
+  </ul>
+</nav></aside><div class="content"><p>没有在每个齿上贴磁铁，也可以用磁传感器测铁磁齿轮：固定磁体提供背偏置磁场，齿和齿槽经过时改变局部磁路，再由霍尔或磁阻元件读出变化。它与交替磁极轮是两种目标结构，不能共用一套未经验证的阈值。</p>
+<h2 id="先确认谁在产生磁场">先确认谁在产生磁场</h2>
+<p><a href="https://www.ti.com/lit/an/sbaa632/sbaa632.pdf">TI SBAA632</a>介绍背偏置三维霍尔与铁磁齿轮的相互作用。<a href="https://community.infineon.com/t5/Knowledge-Base-Articles/Overview-of-XENSIV-TLE5555-TMR-speed-sensor-protocols/ta-p/1065738">Infineon TLE5555说明</a>则区分磁极轮、需外配背偏置磁体的齿轮版本和带磁体版本。选型首先核对目标与磁路，而不是只比较“霍尔还是TMR”。</p>
+<p>齿高、齿槽、齿距、轴向偏移与<a href="/wiki/basics/air-gap/">气隙</a>都会改变敏感位置的场形。某个参考齿轮下的最大气隙，不能直接当成所有模数齿轮的保证值。普通非铁磁金属齿轮也不能直接沿用这套铁磁磁路方案。</p>
+<h2 id="每齿脉冲定义清楚转速公式才有意义">每齿脉冲定义清楚，转速公式才有意义</h2>
+<p>若Z个等距齿、每齿产生一个被计数脉冲，脉冲频率f与转速n满足n=60f/Z。自设Z=60、f=500Hz，则n=500rpm。若固件改数上升沿和下降沿，必须同步修改每圈事件数，否则同一根轴会被算成两倍速度。</p>
+<p>低速时测两个边沿的间隔更容易获得细时间信息，但等待时间变长；高速时固定窗口计数有更多事件，却必须检查最短脉宽、带宽和定时器输入。参见<a href="/topics/guides/rate-budget/">速率预算</a>，不能仅凭平均频率低于采样率判断不会漏齿。</p>
+<h2 id="没有新边沿不等于已经确认静止">没有新边沿不等于已经确认静止</h2>
+<p>单路等距脉冲通常不含方向，换向和往复摆动需额外相位信息或专用协议，原理可接到<a href="/wiki/basics/abz/">AB方向判别</a>。单路没有边沿也可能来自断线、磁体异常或信号过弱，速度超时与<a href="/topics/guides/position-validity-state/">数据有效性</a>应分别报告。</p>
+<p>台架在极低速、反转、最大转速及最差偏摆下同步留原始磁场或脉冲与独立转速参考。它可以为电机和传动提供速度证据，却不自动成为上电绝对角编码器；与<a href="/applications/brushless-dc-motor/">无刷电机换相</a>结合时还需另对齐电零位。</p>
+</div><aside class="application-scope"><strong>读器件示例时</strong><p>候选器件与实际量产采用不同；接口、磁路、固件和验证条件需要逐项核对。汽车、人员保护和计量场景还需独立的系统级论证。</p></aside>
+<nav class="basic-related" aria-label="相关基础知识"><h2>先把这些概念读清楚</h2><a href="/wiki/basics/hall-effect/">霍尔效应：芯片测到的是哪一个磁场分量 <span>→</span></a><a href="/wiki/basics/latch/">霍尔锁存：撤走磁铁后为什么还不释放 <span>→</span></a><a href="/wiki/basics/air-gap/">气隙：先找测量基准，再看磁场工作窗口 <span>→</span></a><a href="/wiki/basics/sensor-noise-bandwidth/">噪声与带宽：平滑了多少，也要问慢了多少 <span>→</span></a><a href="/wiki/basics/abz/">ABZ：正交计数、四倍频与零位索引 <span>→</span></a></nav>
+
+
+
+<section class="guide-backlinks"><h2>继续算与测</h2><div class="guide-link-list"><a href="/topics/guides/rate-budget/">100kHz输入、1MHz刷新、250kHz帧率，不能直接取最小值 <span aria-hidden="true">→</span></a><a href="/topics/guides/position-validity-state/">CRC通过之后，位置还要过三道检查 <span aria-hidden="true">→</span></a></div></section>
+
+
+<div class="basics-footlinks"><a href="/applications/">应用场景总览 ↗</a><a href="/wiki/">型号与公司资料 ↗</a></div></article></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

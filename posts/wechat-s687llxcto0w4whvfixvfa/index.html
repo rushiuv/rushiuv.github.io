@@ -1,9 +1,141 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>一支没有数字的尺子，凭什么量到纳米？ · 如是有为</title><meta name=description content="光栅尺如何利用莫尔条纹、正交相位和信号细分实现纳米级分辨率，以及分辨率与精度之间的区别。"><link rel=canonical href=https://sensor.fans/posts/wechat-s687llxcto0w4whvfixvfa/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta name=keywords content="光栅尺,莫尔条纹,位置反馈,光电编码器,纳米分辨率"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="一支没有数字的尺子，凭什么量到纳米？ · 如是有为"><meta property="og:description" content="光栅尺如何利用莫尔条纹、正交相位和信号细分实现纳米级分辨率，以及分辨率与精度之间的区别。"><meta property="og:url" content="https://sensor.fans/posts/wechat-s687llxcto0w4whvfixvfa/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="article"><meta property="article:published_time" content="2026-09-19T15:08:39+08:00"><meta property="article:tag" content="光栅尺"><meta property="article:tag" content="莫尔条纹"><meta property="article:tag" content="位置反馈"><meta property="article:tag" content="光电编码器"><meta property="article:tag" content="纳米分辨率"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="一支没有数字的尺子，凭什么量到纳米？ · 如是有为"><meta name=twitter:description content="光栅尺如何利用莫尔条纹、正交相位和信号细分实现纳米级分辨率，以及分辨率与精度之间的区别。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-18T20:31:57+08:00","datePublished":"2026-09-19T15:08:39+08:00","description":"光栅尺如何利用莫尔条纹、正交相位和信号细分实现纳米级分辨率，以及分辨率与精度之间的区别。","headline":"一支没有数字的尺子，凭什么量到纳米？","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/posts/wechat-s687llxcto0w4whvfixvfa/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/posts/wechat-s687llxcto0w4whvfixvfa/"}</script><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159425"><link rel=stylesheet href="/css/wiki.css?v=1793159425"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/>基础知识</a>
-<a href=/wiki/>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/ aria-current=page>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><article class=post><header class=post-head><time class=date>2026.09.19 15:08</time><h1 class=post-title>一支没有数字的尺子，凭什么量到纳米？</h1><p class="muted orig">首发于公众号「AI智能制造圈」 · <a href=https://mp.weixin.qq.com/s/s687llXCto0W4WHVFixVFA rel=noopener target=_blank>查看原文</a></p></header><div class=content><p>机床上的精密部件 · 原理篇</p><p>光栅尺身上没有一行数字，就是一条刻满细线的尺子加一个读数头。它量位置靠三步：先把微小位移放大，再把光变成电信号，最后在信号里做细分。每一步都不玄，拆开看都是物理和数学。</p><p>01　第一步：两片细线叠加，位移放大一百倍</p><p>尺子本体叫标尺光栅，固定在床身上。玻璃或钢带上用光刻工艺刻满等间距的平行细线，常见栅距 20 微米，比头发丝细三四倍，肉眼根本分辨不出间隔。</p><p>读数头里还有一片差不多的刻线片，叫指示光栅。安装时让两片刻线错开一个很小的角度，比如 0.01 弧度。光穿过去时两片刻线互相挡光：挡得严的地方是暗带，透得开的地方是亮带，于是出现了远比刻线宽的明暗条纹。它叫莫尔条纹。</p><p>条纹宽度 = 栅距 ÷ 错开角度。栅距 0.01 毫米、角度 0.01 弧度，条纹就是 1 毫米宽，刚好放大一百倍。</p><p>—— 科普中国《光栅尺》词条</p><p><img src=images/001-57fc83e017.gif alt=莫尔条纹动图：蓝栅动一个栅距，宽条纹挪一个周期 loading=lazy decoding=async></p><p>10 微米级刻线的动静，被放大成毫米级条纹的移动。光电元件看不清刻线，但看得清条纹。工作台每挪一个栅距，条纹正好挪一个条纹宽度，位移信息一点没丢。</p><p>02　第二步：光变成电，还得认出往哪边走</p><p>条纹亮暗变化被光电管接收，输出的是连续的正弦波：工作台匀速走，波形就匀速爬坡落谷。光栅尺的本质，是把位置问题变成了波形问题。</p><p>办法是沿条纹方向开四个观察窗口，间隔取条纹宽度的四分之一。这样得到四路信号，两两相位差 90°，取两路就是 sin 和 cos。正走时 sin 先到峰值，反走时 cos 先到峰。一比先后，方向就出来了。</p><p><img src=images/002-6ed61306c8.gif alt="辨向动图：sin 与 cos 动点，比较谁先到峰值" loading=lazy decoding=async></p><p>读数头里还有一条零位刻线。工作台每次经过它，计数归零一次，走了多少格才能换算成坐标。</p><p>03　第三步：一个周期里再切五百多份</p><p>数波形只能精确到一个周期，也就是 20 微米，对精密加工太粗。好在正弦波是连续曲线，周期内部可以做文章：电路实时测出波形当前处于周期的哪个相位，把 20 微米再均匀切分。</p><p>01 只数周期：一个波形数一次，分辨率就是 20 微米。</p><p>02 周期内 512 倍细分：除下来约 39 纳米。</p><p>03 sin 加 cos 定相位，任意时刻的插值才算得准。</p><p><img src=images/003-b97ef5e847.gif alt="细分动图：波形相位插值，周期内切 512 份" loading=lazy decoding=async></p><p>细分做出来的是分辨率，精度是另一回事。分辨率指尺子能显示多小的变化，精度指显示值离真实位置差多少。精度由三件事决定：栅线刻得匀不匀、装得正不正，加上温度稳不稳。宣传页上两个数挨着印，看的时候要分开。</p><p>04　它凭什么准：上千条刻线一起投票</p><p>莫尔条纹还送了一份礼物：平均效应。1 毫米宽的条纹由上千条刻线共同参与形成，个别刻线间距有误差，会被众多刻线平均掉。单根刻线做不到的均匀，大量刻线一起做到了。</p><p>这也是光栅尺难做的地方：刻划机自身的精度就是尺子的上限，批量一致性才是真功夫。国内中低端已经自主，长春禹衡的绝对式光栅尺分辨率做到 2.5 纳米；光刻机级的高精度场合，还在样品验证阶段。</p><p>Q　为什么机床要装两套位置反馈？</p><p>A　电机编码器测的是电机转了多少度，隔着丝杠和导轨，不知道工作台最终停在哪。光栅尺直接量移动部件，把传动链的误差全部排除在测量之外。</p><p>Q　绝对式和增量式差在哪？</p><p>A　增量式断电就忘了位置，开机要回零。绝对式带位置编码，断电重启不用回零，展会上的新品已支持 26bit 以上分辨率。</p><p>整条链路</p><p>放大成条纹，辨向靠相位，细分出纳米。<br>一支光栅尺，就这三步。</p><p>事实来源：科普中国《光栅尺》词条、百度百科《光学尺》词条（莫尔条纹公式、四窗口相位差 90°、平均效应）；百度百科《光栅式线位移测量装置》（512 倍细分约 39nm）；CCMT2026 展品评述（绝对式 26bit）；今日头条产业分析（禹衡 JFT 2.5nm、光刻机级样品验证）</p><p>讲透了就点个关注。</p><p>下期拆机床上的下一个精密件。</p></div><div class=end-mark><span>应作如是观</span></div><div class="card qr-card"><img src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=200 height=200 loading=lazy><div><p class=card-title>关注公众号「如是有为」</p><p class=muted>微信扫一扫，新文章先在公众号发出。</p></div></div></article><nav class=prevnext><a href=/posts/a_ddf0gpr1uykkicrtq4vg/><small>上一篇</small>如果机器人不再需要编码器，我们这行怎么办？</a>
-<a class=r href=/posts/ya6ixbey5_9rije5granta/><small>下一篇</small>离轴，不是“磁铁装偏了一点”! 中空轴把芯片挪到磁场边缘后，误差为什么开始有了形状？</a></nav></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>一支没有数字的尺子，凭什么量到纳米？ · 如是有为</title>
+<meta name="description" content="光栅尺如何利用莫尔条纹、正交相位和信号细分实现纳米级分辨率，以及分辨率与精度之间的区别。">
+<link rel="canonical" href="https://sensor.fans/posts/wechat-s687llxcto0w4whvfixvfa/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为"><meta name="keywords" content="光栅尺,莫尔条纹,位置反馈,光电编码器,纳米分辨率">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="一支没有数字的尺子，凭什么量到纳米？ · 如是有为">
+<meta property="og:description" content="光栅尺如何利用莫尔条纹、正交相位和信号细分实现纳米级分辨率，以及分辨率与精度之间的区别。">
+<meta property="og:url" content="https://sensor.fans/posts/wechat-s687llxcto0w4whvfixvfa/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-09-19T15:08:39&#43;08:00"><meta property="article:tag" content="光栅尺"><meta property="article:tag" content="莫尔条纹"><meta property="article:tag" content="位置反馈"><meta property="article:tag" content="光电编码器"><meta property="article:tag" content="纳米分辨率">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="一支没有数字的尺子，凭什么量到纳米？ · 如是有为">
+<meta name="twitter:description" content="光栅尺如何利用莫尔条纹、正交相位和信号细分实现纳米级分辨率，以及分辨率与精度之间的区别。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-18T20:31:57+08:00","datePublished":"2026-09-19T15:08:39+08:00","description":"光栅尺如何利用莫尔条纹、正交相位和信号细分实现纳米级分辨率，以及分辨率与精度之间的区别。","headline":"一支没有数字的尺子，凭什么量到纳米？","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/posts/wechat-s687llxcto0w4whvfixvfa/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/posts/wechat-s687llxcto0w4whvfixvfa/"}
+</script>
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+
+
+
+
+
+
+
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/">基础知识</a>
+      <a href="/wiki/">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/" aria-current="page">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+<article class="post">
+  <header class="post-head">
+    <time class="date">2026.09.19 15:08</time>
+    <h1 class="post-title">一支没有数字的尺子，凭什么量到纳米？</h1>
+    <p class="muted orig">首发于公众号「AI智能制造圈」 · <a href="https://mp.weixin.qq.com/s/s687llXCto0W4WHVFixVFA" rel="noopener" target="_blank">查看原文</a></p>
+  </header>
+  <div class="content"><p>机床上的精密部件 · 原理篇</p>
+<p>光栅尺身上没有一行数字，就是一条刻满细线的尺子加一个读数头。它量位置靠三步：先把微小位移放大，再把光变成电信号，最后在信号里做细分。每一步都不玄，拆开看都是物理和数学。</p>
+<p>01　第一步：两片细线叠加，位移放大一百倍</p>
+<p>尺子本体叫标尺光栅，固定在床身上。玻璃或钢带上用光刻工艺刻满等间距的平行细线，常见栅距 20 微米，比头发丝细三四倍，肉眼根本分辨不出间隔。</p>
+<p>读数头里还有一片差不多的刻线片，叫指示光栅。安装时让两片刻线错开一个很小的角度，比如 0.01 弧度。光穿过去时两片刻线互相挡光：挡得严的地方是暗带，透得开的地方是亮带，于是出现了远比刻线宽的明暗条纹。它叫莫尔条纹。</p>
+<p>条纹宽度 = 栅距 ÷ 错开角度。栅距 0.01 毫米、角度 0.01 弧度，条纹就是 1 毫米宽，刚好放大一百倍。</p>
+<p>—— 科普中国《光栅尺》词条</p>
+<p><img src="images/001-57fc83e017.gif" alt="莫尔条纹动图：蓝栅动一个栅距，宽条纹挪一个周期" loading="lazy" decoding="async">
+</p>
+<p>10 微米级刻线的动静，被放大成毫米级条纹的移动。光电元件看不清刻线，但看得清条纹。工作台每挪一个栅距，条纹正好挪一个条纹宽度，位移信息一点没丢。</p>
+<p>02　第二步：光变成电，还得认出往哪边走</p>
+<p>条纹亮暗变化被光电管接收，输出的是连续的正弦波：工作台匀速走，波形就匀速爬坡落谷。光栅尺的本质，是把位置问题变成了波形问题。</p>
+<p>办法是沿条纹方向开四个观察窗口，间隔取条纹宽度的四分之一。这样得到四路信号，两两相位差 90°，取两路就是 sin 和 cos。正走时 sin 先到峰值，反走时 cos 先到峰。一比先后，方向就出来了。</p>
+<p><img src="images/002-6ed61306c8.gif" alt="辨向动图：sin 与 cos 动点，比较谁先到峰值" loading="lazy" decoding="async">
+</p>
+<p>读数头里还有一条零位刻线。工作台每次经过它，计数归零一次，走了多少格才能换算成坐标。</p>
+<p>03　第三步：一个周期里再切五百多份</p>
+<p>数波形只能精确到一个周期，也就是 20 微米，对精密加工太粗。好在正弦波是连续曲线，周期内部可以做文章：电路实时测出波形当前处于周期的哪个相位，把 20 微米再均匀切分。</p>
+<p>01 只数周期：一个波形数一次，分辨率就是 20 微米。</p>
+<p>02 周期内 512 倍细分：除下来约 39 纳米。</p>
+<p>03 sin 加 cos 定相位，任意时刻的插值才算得准。</p>
+<p><img src="images/003-b97ef5e847.gif" alt="细分动图：波形相位插值，周期内切 512 份" loading="lazy" decoding="async">
+</p>
+<p>细分做出来的是分辨率，精度是另一回事。分辨率指尺子能显示多小的变化，精度指显示值离真实位置差多少。精度由三件事决定：栅线刻得匀不匀、装得正不正，加上温度稳不稳。宣传页上两个数挨着印，看的时候要分开。</p>
+<p>04　它凭什么准：上千条刻线一起投票</p>
+<p>莫尔条纹还送了一份礼物：平均效应。1 毫米宽的条纹由上千条刻线共同参与形成，个别刻线间距有误差，会被众多刻线平均掉。单根刻线做不到的均匀，大量刻线一起做到了。</p>
+<p>这也是光栅尺难做的地方：刻划机自身的精度就是尺子的上限，批量一致性才是真功夫。国内中低端已经自主，长春禹衡的绝对式光栅尺分辨率做到 2.5 纳米；光刻机级的高精度场合，还在样品验证阶段。</p>
+<p>Q　为什么机床要装两套位置反馈？</p>
+<p>A　电机编码器测的是电机转了多少度，隔着丝杠和导轨，不知道工作台最终停在哪。光栅尺直接量移动部件，把传动链的误差全部排除在测量之外。</p>
+<p>Q　绝对式和增量式差在哪？</p>
+<p>A　增量式断电就忘了位置，开机要回零。绝对式带位置编码，断电重启不用回零，展会上的新品已支持 26bit 以上分辨率。</p>
+<p>整条链路</p>
+<p>放大成条纹，辨向靠相位，细分出纳米。<br>
+一支光栅尺，就这三步。</p>
+<p>事实来源：科普中国《光栅尺》词条、百度百科《光学尺》词条（莫尔条纹公式、四窗口相位差 90°、平均效应）；百度百科《光栅式线位移测量装置》（512 倍细分约 39nm）；CCMT2026 展品评述（绝对式 26bit）；今日头条产业分析（禹衡 JFT 2.5nm、光刻机级样品验证）</p>
+<p>讲透了就点个关注。</p>
+<p>下期拆机床上的下一个精密件。</p>
+</div>
+  <div class="end-mark"><span>应作如是观</span></div>
+  <div class="card qr-card">
+  <img src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="200" height="200" loading="lazy">
+  <div>
+    <p class="card-title">关注公众号「如是有为」</p>
+    <p class="muted">微信扫一扫，新文章先在公众号发出。</p>
+  </div>
+</div>
+
+</article>
+<nav class="prevnext">
+  <a href="/posts/a_ddf0gpr1uykkicrtq4vg/"><small>上一篇</small>如果机器人不再需要编码器，我们这行怎么办？</a>
+  <a class="r" href="/posts/ya6ixbey5_9rije5granta/"><small>下一篇</small>离轴，不是“磁铁装偏了一点”! 中空轴把芯片挪到磁场边缘后，误差为什么开始有了形状？</a>
+</nav>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

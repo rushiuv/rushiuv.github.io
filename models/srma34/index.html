@@ -1,8 +1,504 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>SRMA34系列 · 如是有为</title><meta name=description content="分体式磁电绝对编码器，公开资料包含单圈与多圈配置。"><link rel=canonical href=https://sensor.fans/models/srma34/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="SRMA34系列 · 如是有为"><meta property="og:description" content="分体式磁电绝对编码器，公开资料包含单圈与多圈配置。"><meta property="og:url" content="https://sensor.fans/models/srma34/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="website"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="SRMA34系列 · 如是有为"><meta name=twitter:description content="分体式磁电绝对编码器，公开资料包含单圈与多圈配置。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159425"><link rel=stylesheet href="/css/wiki.css?v=1793159425"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"><link rel=stylesheet href="/css/engineering.css?v=c056824e2b1b"><link rel=alternate type=application/rss+xml href=/models/srma34/index.xml title=如是有为></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/>基础知识</a>
-<a href=/wiki/ aria-current=page>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><div class="wiki-layout model-card"><article class=wiki-article><header class=wiki-head><p class=kicker>如是有为 · 型号与产品</p><h1 class=page-title>SRMA34系列</h1><p class=wiki-description>分体式磁电绝对编码器，公开资料包含单圈与多圈配置。</p><p class="muted wiki-meta">资料核对 <time datetime=2026-10-24>2026.10.24</time> · <a href=#related-posts>0 篇相关文章</a></p><div class=wiki-actions><a class="btn ghost" href=https://www.reagles.cn/index/product_detail/content/10121.html target=_blank rel=noopener>官方产品页 ↗</a></div></header><div class="model-card-overview no-visual"><div class="content wiki-content"><h2 id=核心参数>核心参数</h2><table><thead><tr><th>参数</th><th>数值、功能与适用条件</th></tr></thead><tbody><tr><td>形态</td><td>分体磁电编码模块</td></tr><tr><td>单圈配置</td><td>官方规格书目录列17bit单圈版本</td></tr><tr><td>多圈配置</td><td>目录另列M16S17Bit版本，不能把多圈位数写成单圈精度</td></tr><tr><td>资料版本</td><td>官网资料中心列系列规格书V2.0；具体供电、协议依订货号</td></tr><tr><td>通信／速率</td><td>RS485，2.5Mbps</td></tr><tr><td>电源／电流</td><td>5V±5%；72mA典型</td></tr><tr><td>工作温度</td><td>−20～105°C；低温款SRMAE34需另选</td></tr><tr><td>湿度／防护</td><td>90%RH，无结露；依电机后盖防护</td></tr><tr><td>线长</td><td>官网特性列最长50m，须满足相应线缆、供电及通信条件</td></tr></tbody></table><p>参数依据：<a href=https://www.reagles.cn/index/product_detail/content/10121.html>原厂产品页或对应资料</a>。</p><h2 id=产品功能与测量链>产品功能与测量链</h2><p>SRMA34为分体磁电绝对值编码器，读头与转动磁体安装在电机内部。官网分别列单圈17bit与多圈16bit+单圈17bit版本，不能将单圈器件默认按多圈协议读取。</p><h2 id=接入与配置>接入与配置</h2><p>RS485为物理通信形式，具体报文需与驱动器匹配。官网50m线长信息应结合供电压降、线缆、终端和EMC条件评估，不能单独保证任意现场布线均可靠。</p><h2 id=使用与验证>使用与验证</h2><p>标准系列温度为−20～105°C，资料中心另列低温款SRMAE34，须按完整料号选型。安装后检查跨零、方向与上电位置恢复，多圈状态的断电行为也需确认具体计圈方式。</p><h2 id=官方资料>官方资料</h2><ul><li><a href=https://www.reagles.cn/index/product_detail/content/10121.html>SRMA34系列 官方资料</a></li><li><a href=https://www.reagles.cn/index/specification.html>官方补充资料1</a></li></ul></div></div><section class=wiki-relations><h2>相关词条</h2><div class="chips big"><a class="chip company" href=/companies/%E9%94%90%E9%B9%B0/>锐鹰</a></div></section><nav class=model-basic-links aria-label=参数基础知识><span>看懂参数</span><a href=/wiki/basics/resolution-accuracy/>分辨率与精度</a><a href=/wiki/basics/latency/>延迟与带宽</a><a href=/wiki/basics/interfaces/>输出接口</a></nav></article><aside class=wiki-toc><div class=card><h2 class=card-title>词条目录</h2><nav id=TableOfContents><ul><li><a href=#核心参数>核心参数</a></li><li><a href=#产品功能与测量链>产品功能与测量链</a></li><li><a href=#接入与配置>接入与配置</a></li><li><a href=#使用与验证>使用与验证</a></li><li><a href=#官方资料>官方资料</a></li></ul></nav><a class=wiki-posts-link href=#related-posts>相关文章 ↓</a></div></aside></div><section class="wiki-related posts" id=related-posts><header class=page-head><p class=kicker>延伸阅读</p><h2>与 SRMA34系列 相关的文章</h2><p class=muted>共 0 篇，按文章日期排序</p></header></section></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>SRMA34系列 · 如是有为</title>
+<meta name="description" content="分体式磁电绝对编码器，公开资料包含单圈与多圈配置。">
+<link rel="canonical" href="https://sensor.fans/models/srma34/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="SRMA34系列 · 如是有为">
+<meta property="og:description" content="分体式磁电绝对编码器，公开资料包含单圈与多圈配置。">
+<meta property="og:url" content="https://sensor.fans/models/srma34/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SRMA34系列 · 如是有为">
+<meta name="twitter:description" content="分体式磁电绝对编码器，公开资料包含单圈与多圈配置。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+<link rel="stylesheet" href="/css/engineering.css?v=78412614aa48">
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="/models/srma34/index.xml" title="如是有为">
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/">基础知识</a>
+      <a href="/wiki/" aria-current="page">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+
+
+<div class="wiki-layout model-card">
+  <article class="wiki-article">
+    <header class="wiki-head">
+      <p class="kicker">如是有为 · 型号与产品</p>
+      <h1 class="page-title">SRMA34系列</h1>
+      <p class="wiki-description">分体式磁电绝对编码器，公开资料包含单圈与多圈配置。</p>
+      <p class="muted wiki-meta">资料核对 <time datetime="2026-10-24">2026.10.24</time> · <a href="#related-posts">0 篇相关文章</a></p>
+      
+      <div class="wiki-actions">
+        <a class="btn ghost" href="https://www.reagles.cn/index/product_detail/content/10121.html" target="_blank" rel="noopener">官方产品页 ↗</a>
+        
+      </div>
+      
+    </header>
+    
+    
+    
+    <div class="model-card-overview no-visual">
+      <div class="content wiki-content"><h2 id="核心参数">核心参数</h2>
+<table>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>数值、功能与适用条件</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>形态</td>
+					<td>分体磁电编码模块</td>
+			</tr>
+			<tr>
+					<td>单圈配置</td>
+					<td>官方规格书目录列17bit单圈版本</td>
+			</tr>
+			<tr>
+					<td>多圈配置</td>
+					<td>目录另列M16S17Bit版本，不能把多圈位数写成单圈精度</td>
+			</tr>
+			<tr>
+					<td>资料版本</td>
+					<td>官网资料中心列系列规格书V2.0；具体供电、协议依订货号</td>
+			</tr>
+			<tr>
+					<td>通信／速率</td>
+					<td>RS485，2.5Mbps</td>
+			</tr>
+			<tr>
+					<td>电源／电流</td>
+					<td>5V±5%；72mA典型</td>
+			</tr>
+			<tr>
+					<td>工作温度</td>
+					<td>−20～105°C；低温款SRMAE34需另选</td>
+			</tr>
+			<tr>
+					<td>湿度／防护</td>
+					<td>90%RH，无结露；依电机后盖防护</td>
+			</tr>
+			<tr>
+					<td>线长</td>
+					<td>官网特性列最长50m，须满足相应线缆、供电及通信条件</td>
+			</tr>
+	</tbody>
+</table>
+<p>参数依据：<a href="https://www.reagles.cn/index/product_detail/content/10121.html">原厂产品页或对应资料</a>。</p>
+<h2 id="产品功能与测量链">产品功能与测量链</h2>
+<p>SRMA34为分体磁电绝对值编码器，读头与转动磁体安装在电机内部。官网分别列单圈17bit与多圈16bit+单圈17bit版本，不能将单圈器件默认按多圈协议读取。</p>
+<h2 id="接入与配置">接入与配置</h2>
+<p>RS485为物理通信形式，具体报文需与驱动器匹配。官网50m线长信息应结合供电压降、线缆、终端和EMC条件评估，不能单独保证任意现场布线均可靠。</p>
+<h2 id="使用与验证">使用与验证</h2>
+<p>标准系列温度为−20～105°C，资料中心另列低温款SRMAE34，须按完整料号选型。安装后检查跨零、方向与上电位置恢复，多圈状态的断电行为也需确认具体计圈方式。</p>
+<h2 id="官方资料">官方资料</h2>
+<ul>
+<li><a href="https://www.reagles.cn/index/product_detail/content/10121.html">SRMA34系列 官方资料</a></li>
+<li><a href="https://www.reagles.cn/index/specification.html">官方补充资料1</a></li>
+</ul>
+</div>
+      
+    </div>
+    
+    
+
+
+
+
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+    
+
+  
+
+
+
+
+<section class="wiki-relations"><h2>相关词条</h2><div class="chips big">
+<a class="chip company" href="/companies/%E9%94%90%E9%B9%B0/">锐鹰</a>
+</div></section>
+
+
+    <nav class="model-basic-links" aria-label="参数基础知识"><span>看懂参数</span><a href="/wiki/basics/resolution-accuracy/">分辨率与精度</a><a href="/wiki/basics/latency/">延迟与带宽</a><a href="/wiki/basics/interfaces/">输出接口</a></nav>
+    
+  </article>
+  
+  <aside class="wiki-toc"><div class="card"><h2 class="card-title">词条目录</h2><nav id="TableOfContents">
+  <ul>
+    <li><a href="#核心参数">核心参数</a></li>
+    <li><a href="#产品功能与测量链">产品功能与测量链</a></li>
+    <li><a href="#接入与配置">接入与配置</a></li>
+    <li><a href="#使用与验证">使用与验证</a></li>
+    <li><a href="#官方资料">官方资料</a></li>
+  </ul>
+</nav><a class="wiki-posts-link" href="#related-posts">相关文章 ↓</a></div></aside>
+  
+</div>
+<section class="wiki-related posts" id="related-posts">
+  <header class="page-head"><p class="kicker">延伸阅读</p><h2>与 SRMA34系列 相关的文章</h2><p class="muted">共 0 篇，按文章日期排序</p></header>
+  
+  
+
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

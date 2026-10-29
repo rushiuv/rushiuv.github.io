@@ -1,3 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RXMA30 on 如是有为</title><link>https://sensor.fans/models/rxma30/</link><description>Recent content in RXMA30 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 16 May 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/models/rxma30/index.xml" rel="self" type="application/rss+xml"/><item><title>Renishaw把RXMA30做成多自由度光栅后，光编重新值钱的地方不是进关节，是给系统当裁判</title><link>https://sensor.fans/posts/kpyba4cqrx8vqwln6jkl0a/</link><pubDate>Sat, 16 May 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/kpyba4cqrx8vqwln6jkl0a/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/8e7193ddeab6c9f41586e5f24644106f.webp" alt="Renishaw把RXMA30做成多自由度光栅后，光编重新值钱的地方不是进关节，是给系统当裁判" loading="lazy" decoding="async">
-&lt;/p>
-&lt;p>机器人产线里最难受的故障，往往不是某个部件直接坏了，而是每个部件单独看都没坏，整套系统却开始不准。关节编码器没报警，伺服驱动器没报错，电机电流曲线也说得过去，但末端到工件前最后几毫米，就是偏一点。工艺工程师说夹具没动，机械工程师说导轨没松，电气工程师说反馈正常，现场FAE最后只能拿百分表、激光跟踪仪、示教器，一点点把误差往回扒。这个时候你会发现，单个关节的角度值再漂亮，也不能自动证明整台机器人的空间坐标关系还是健康的。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>RXMA30 on 如是有为</title>
+		<link>https://sensor.fans/models/rxma30/</link>
+		<description>Recent content in RXMA30 on 如是有为</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 16 May 2026 00:00:00 +0800</lastBuildDate>
+		
+			<atom:link href="https://sensor.fans/models/rxma30/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Renishaw把RXMA30做成多自由度光栅后，光编重新值钱的地方不是进关节，是给系统当裁判</title>
+				<link>https://sensor.fans/posts/kpyba4cqrx8vqwln6jkl0a/</link>
+				<pubDate>Sat, 16 May 2026 00:00:00 +0800</pubDate>
+				<guid>https://sensor.fans/posts/kpyba4cqrx8vqwln6jkl0a/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/8e7193ddeab6c9f41586e5f24644106f.webp&#34; alt=&#34;Renishaw把RXMA30做成多自由度光栅后，光编重新值钱的地方不是进关节，是给系统当裁判&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;机器人产线里最难受的故障，往往不是某个部件直接坏了，而是每个部件单独看都没坏，整套系统却开始不准。关节编码器没报警，伺服驱动器没报错，电机电流曲线也说得过去，但末端到工件前最后几毫米，就是偏一点。工艺工程师说夹具没动，机械工程师说导轨没松，电气工程师说反馈正常，现场FAE最后只能拿百分表、激光跟踪仪、示教器，一点点把误差往回扒。这个时候你会发现，单个关节的角度值再漂亮，也不能自动证明整台机器人的空间坐标关系还是健康的。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

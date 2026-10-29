@@ -1,8 +1,120 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>CRC：帧正确不等于角度正确 · 如是有为</title><meta name=description content="理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。"><link rel=canonical href=https://sensor.fans/wiki/basics/crc/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="CRC：帧正确不等于角度正确 · 如是有为"><meta property="og:description" content="理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。"><meta property="og:url" content="https://sensor.fans/wiki/basics/crc/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="article"><meta property="article:published_time" content="2026-10-18T10:00:00+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="CRC：帧正确不等于角度正确 · 如是有为"><meta name=twitter:description content="理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-27T00:00:00+00:00","datePublished":"2026-10-18T10:00:00+08:00","description":"理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。","headline":"CRC：帧正确不等于角度正确","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/wiki/basics/crc/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/wiki/basics/crc/"}</script><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159425"><link rel=stylesheet href="/css/wiki.css?v=1793159425"><link rel=stylesheet href="/css/basics.css?v=20261016-open-toc"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"><link rel=stylesheet href="/css/engineering.css?v=c056824e2b1b"><link rel=stylesheet href="/css/knowledge-learning.css?v=65976be951d8"></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/ aria-current=page>基础知识</a>
-<a href=/wiki/>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><div class=basic-layout><aside class=basic-sidebar><a class=basic-back href=/wiki/basics/>← 编码器基础知识</a><nav aria-label=基础词条目录><h2>认识编码器</h2><a href=/wiki/basics/what-is-an-encoder/>编码器是什么</a><a href=/wiki/basics/absolute-incremental/>增量与绝对</a><a href=/wiki/basics/singleturn-multiturn/>单圈与多圈</a><h2>磁场与信号基础</h2><a href=/wiki/basics/magnetic-field-quantities/>磁场、磁通与敏感轴</a><a href=/wiki/basics/magnetic-sensor-types/>磁传感器怎么分</a><a href=/wiki/basics/sensor-transfer-function/>灵敏度、量程与位置映射</a><a href=/wiki/basics/magnetic-bridge/>磁阻电桥</a><a href=/wiki/basics/sensor-noise-bandwidth/>噪声与带宽</a><a href=/wiki/basics/magnetic-hysteresis/>磁滞</a><a href=/wiki/basics/magnetoresistance-ratio/>MR比、桥路灵敏度与精度</a><h2>磁敏机理与器件</h2><a href=/wiki/basics/hall-effect/>霍尔效应</a><a href=/wiki/basics/hall-element-vs-ic/>霍尔元件与霍尔IC</a><a href=/wiki/basics/hall-element-materials/>霍尔元件材料</a><a href=/wiki/basics/hall-biasing/>霍尔偏置</a><a href=/wiki/basics/hall-temperature-drift/>霍尔温漂</a><a href=/wiki/basics/vertical-hall/>垂直霍尔</a><a href=/wiki/basics/3d-hall/>三轴霍尔</a><a href=/wiki/basics/amr/>AMR</a><a href=/wiki/basics/gmr/>GMR</a><a href=/wiki/basics/tmr/>TMR</a><a href=/wiki/basics/semiconductor-mr/>半导体磁阻</a><a href=/wiki/basics/reed-switch/>干簧管与固态磁开关</a><a href=/wiki/basics/inductive-magnetic-sensing/>感应线圈</a><a href=/wiki/basics/fluxgate/>磁通门</a><a href=/wiki/basics/squid/>SQUID</a><h2>开关与连续检测</h2><a href=/wiki/basics/switch-polarity/>单极与全极霍尔</a><a href=/wiki/basics/bop-brp/>动作与释放阈值</a><a href=/wiki/basics/latch/>霍尔锁存</a><a href=/wiki/basics/linear-hall/>线性霍尔</a><h2>参数与误差</h2><a href=/wiki/basics/resolution-accuracy/>分辨率、准确度与重复性</a><a href=/wiki/basics/inl/>INL</a><a href=/wiki/basics/angle-noise/>角度噪声</a><a href=/wiki/basics/latency/>更新率、延迟与带宽</a><a href=/wiki/basics/chopper/>斩波稳定</a><a href=/wiki/basics/self-calibration/>自校准</a><h2>编码原理</h2><a href=/wiki/basics/magnetic-encoder/>磁编码器</a><a href=/wiki/basics/optical-encoder/>光电编码器</a><a href=/wiki/basics/inductive-encoder/>电感编码器</a><a href=/wiki/basics/pole-pairs/>磁极对数</a><a href=/wiki/basics/vernier/>游标编码</a><h2>磁路与机械安装</h2><a href=/wiki/basics/magnets/>编码器磁体</a><a href=/wiki/basics/in-axis/>在轴检测</a><a href=/wiki/basics/off-axis/>离轴检测</a><a href=/wiki/basics/air-gap/>气隙</a><a href=/wiki/basics/eccentricity/>偏心误差</a><a href=/wiki/basics/mounting/>在轴、离轴、气隙与偏心</a><a href=/wiki/basics/stray-field/>杂散磁场</a><h2>接口与读数</h2><a href=/wiki/basics/interfaces/>SPI、SSI与BiSS</a><a href=/wiki/basics/abz/>ABZ</a><a href=/wiki/basics/uvw/>UVW</a><a href=/wiki/basics/pwm/>PWM角度输出</a><a href=/wiki/basics/spi-ssi/>SPI与SSI</a><a href=/wiki/basics/i2c/>I²C</a><a href=/wiki/basics/crc/ aria-current=page>CRC</a></nav></aside><article class=basic-article><details class=basic-mobile-index><summary>本组词条 · 接口与读数</summary><nav aria-label=当前分组词条><a href=/wiki/basics/interfaces/>SPI、SSI与BiSS</a><a href=/wiki/basics/abz/>ABZ</a><a href=/wiki/basics/uvw/>UVW</a><a href=/wiki/basics/pwm/>PWM角度输出</a><a href=/wiki/basics/spi-ssi/>SPI与SSI</a><a href=/wiki/basics/i2c/>I²C</a><a href=/wiki/basics/crc/ aria-current=page>CRC</a></nav></details><header><p class=basics-kicker>WIKI / 接口与读数</p><h1>CRC：帧正确不等于角度正确</h1><p class=basic-deck>理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。</p><p class=basic-updated>更新于 2026.10.27</p></header><aside class=basic-toc aria-label=本页目录><p class=basic-toc-title>本页目录</p><nav id=TableOfContents><ul><li><a href=#位宽相同算法仍可能不同>位宽相同，算法仍可能不同</a></li><li><a href=#接收错误后的动作同样重要>接收错误后的动作同样重要</a></li><li><a href=#选型要问完整的数据可信链>选型要问完整的数据可信链</a></li><li><a href=#把状态位纳入真实测试向量>把状态位纳入真实测试向量</a></li></ul></nav></aside><div class=content><p>CRC把规定比特序列按既定多项式计算成校验值，接收端重新计算并比较。它能发现所覆盖数据中的一类损坏，却不会知道磁铁有没有偏心、机械零位是否标错。一个带着系统偏差的角度，只要按协议正确发送，CRC照样通过。</p><h2 id=位宽相同算法仍可能不同>位宽相同，算法仍可能不同</h2><p>实现至少要确定多项式、初始值、输入位序、输出处理和参与计算的字段。命令、状态和位置是否全部受保护，必须看具体协议，不能把“八位CRC”直接理解成同一段程序。字节排列错误或少算状态位，也会导致所有帧不通过。</p><p><a href=https://biss-interface.com/wp-content/uploads/2025/07/BiSS_AN3_appnote_E3en.pdf>BiSS协会AN3</a>给出CRC多项式与计算方法；<a href=https://www.ti.com/product/TMAG5170>TI TMAG5170</a>也提供串行通信CRC。这是两处独立定义，应分别使用各自的测试向量，不能因为都叫CRC就混用。</p><h2 id=接收错误后的动作同样重要>接收错误后的动作同样重要</h2><p>发现错误帧后，应记录原因、计数和对应时间，再按系统要求拒绝本帧、重读或进入降级状态。若直接沿用上一帧，又把时间标成当前时刻，控制器会收到一份“格式没问题”的旧位置。重试能否赶上控制周期，必须纳入时间预算。</p><p>验证时可以在测试程序中翻转受保护位、改变字段顺序、模拟连续坏帧与超时，检查接收端是否真正拒绝错误数据。这些是通信故障注入，不代表已覆盖磁场失效、芯片内部故障或功能安全所需的全部诊断。</p><h2 id=选型要问完整的数据可信链>选型要问完整的数据可信链</h2><p>除了CRC，还要读状态位、量程或磁场标志、更新时间与失联判据。CRC不是身份认证或加密，不能阻止知道算法的人构造另一份合法帧；有限校验长度也不表示绝无漏检。只有明确错误模型与系统响应，校验功能才从一项参数变成可验证的行为。</p><h2 id=把状态位纳入真实测试向量>把状态位纳入真实测试向量</h2><p><a href=https://biss-interface.com/wp-content/uploads/2025/07/BiSS_AN3_appnote_E3en.pdf>BiSS AN3 Rev E3</a>指出典型过程数据CRC覆盖数据通道中的传感器值、状态及生命计数，且发送前取反。只校验位置字段，会把不同的受保护消息当成相同输入。调试时先保存一帧原始比特，再分别翻转状态位与位置位，确认接收器确实拒收；不要用“收到六位校验”代替算法验证。<a href=/topics/guides/sample-time-contract/>时间约定</a>还要检查重试后数据是否过旧，<a href=/topics/guides/calibration-data-integrity/>配置完整性</a>则处理保存过程的另一类损坏。</p></div><section class=basic-practice><h2>连到专题与型号</h2><div class=basics-practice-links><a href=/tags/%E7%BC%96%E7%A0%81%E5%99%A8%E6%8E%A5%E5%8F%A3/>编码器接口 ↗</a></div></section><nav class=basic-related aria-label=相关基础词条><h2>接着读</h2><a href=/wiki/basics/spi-ssi/>SPI与SSI：同样有时钟，帧和时刻并不相同 <span>→</span></a><a href=/wiki/basics/interfaces/>SPI、SSI与BiSS：角度如何交给控制器 <span>→</span></a><a href=/wiki/basics/latency/>更新率、延迟与带宽：读得快是否跟得上 <span>→</span></a><a href=/wiki/basics/i2c/>I²C：两根线如何分配地址与读取时间 <span>→</span></a></nav><section class=knowledge-incoming><h2>哪些基础词条会用到它</h2><div><a href=/wiki/basics/spi-ssi/>SPI与SSI <span aria-hidden=true>↗</span></a><a href=/wiki/basics/i2c/>I²C <span aria-hidden=true>↗</span></a></div></section><section class=guide-backlinks><h2>继续算与测</h2><div class=guide-link-list><a href=/topics/guides/sample-time-contract/>两路角度要相减，先签清楚哪一刻 <span aria-hidden=true>→</span></a><a href=/topics/guides/calibration-data-integrity/>校准保存成功以后，下一次上电还可信吗？ <span aria-hidden=true>→</span></a></div></section><section class=guide-backlinks><h2>这个概念用在哪里</h2><div class=guide-link-list><a href=/applications/servo-motor/>伺服电机：换向角与负载位置不能混成一个指标 →</a><a href=/applications/electronic-throttle/>电子节气门：阀片角度、双通道与失效状态 →</a><a href=/applications/automotive-angle/>汽车角度控制：同样测转角，任务边界并不相同 →</a></div></section><div class=basics-footlinks><a href=/topics/>技术专题 ↗</a><a href=/wiki/>型号与公司资料 ↗</a></div></article></div></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>CRC：帧正确不等于角度正确 · 如是有为</title>
+<meta name="description" content="理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。">
+<link rel="canonical" href="https://sensor.fans/wiki/basics/crc/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="CRC：帧正确不等于角度正确 · 如是有为">
+<meta property="og:description" content="理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。">
+<meta property="og:url" content="https://sensor.fans/wiki/basics/crc/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-10-18T10:00:00&#43;08:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CRC：帧正确不等于角度正确 · 如是有为">
+<meta name="twitter:description" content="理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-27T00:00:00+00:00","datePublished":"2026-10-18T10:00:00+08:00","description":"理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。","headline":"CRC：帧正确不等于角度正确","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/wiki/basics/crc/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/wiki/basics/crc/"}
+</script>
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+<link rel="stylesheet" href="/css/basics.css?v=20261016-open-toc">
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+<link rel="stylesheet" href="/css/engineering.css?v=78412614aa48">
+
+
+
+
+<link rel="stylesheet" href="/css/knowledge-learning.css?v=939e3c273186">
+
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/" aria-current="page">基础知识</a>
+      <a href="/wiki/">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+<div class="basic-layout"><aside class="basic-sidebar"><a class="basic-back" href="/wiki/basics/">← 编码器基础知识</a><nav aria-label="基础词条目录"><h2>认识编码器</h2><a href="/wiki/basics/what-is-an-encoder/">编码器是什么</a><a href="/wiki/basics/absolute-incremental/">增量与绝对</a><a href="/wiki/basics/singleturn-multiturn/">单圈与多圈</a><h2>磁场与信号基础</h2><a href="/wiki/basics/magnetic-field-quantities/">磁场、磁通与敏感轴</a><a href="/wiki/basics/magnetic-sensor-types/">磁传感器怎么分</a><a href="/wiki/basics/sensor-transfer-function/">灵敏度、量程与位置映射</a><a href="/wiki/basics/magnetic-bridge/">磁阻电桥</a><a href="/wiki/basics/sensor-noise-bandwidth/">噪声与带宽</a><a href="/wiki/basics/magnetic-hysteresis/">磁滞</a><a href="/wiki/basics/magnetoresistance-ratio/">MR比、桥路灵敏度与精度</a><h2>磁敏机理与器件</h2><a href="/wiki/basics/hall-effect/">霍尔效应</a><a href="/wiki/basics/hall-element-vs-ic/">霍尔元件与霍尔IC</a><a href="/wiki/basics/hall-element-materials/">霍尔元件材料</a><a href="/wiki/basics/hall-biasing/">霍尔偏置</a><a href="/wiki/basics/hall-temperature-drift/">霍尔温漂</a><a href="/wiki/basics/vertical-hall/">垂直霍尔</a><a href="/wiki/basics/3d-hall/">三轴霍尔</a><a href="/wiki/basics/amr/">AMR</a><a href="/wiki/basics/gmr/">GMR</a><a href="/wiki/basics/tmr/">TMR</a><a href="/wiki/basics/semiconductor-mr/">半导体磁阻</a><a href="/wiki/basics/reed-switch/">干簧管与固态磁开关</a><a href="/wiki/basics/inductive-magnetic-sensing/">感应线圈</a><a href="/wiki/basics/fluxgate/">磁通门</a><a href="/wiki/basics/squid/">SQUID</a><h2>开关与连续检测</h2><a href="/wiki/basics/switch-polarity/">单极与全极霍尔</a><a href="/wiki/basics/bop-brp/">动作与释放阈值</a><a href="/wiki/basics/latch/">霍尔锁存</a><a href="/wiki/basics/linear-hall/">线性霍尔</a><h2>参数与误差</h2><a href="/wiki/basics/resolution-accuracy/">分辨率、准确度与重复性</a><a href="/wiki/basics/inl/">INL</a><a href="/wiki/basics/angle-noise/">角度噪声</a><a href="/wiki/basics/latency/">更新率、延迟与带宽</a><a href="/wiki/basics/chopper/">斩波稳定</a><a href="/wiki/basics/self-calibration/">自校准</a><h2>编码原理</h2><a href="/wiki/basics/magnetic-encoder/">磁编码器</a><a href="/wiki/basics/optical-encoder/">光电编码器</a><a href="/wiki/basics/inductive-encoder/">电感编码器</a><a href="/wiki/basics/pole-pairs/">磁极对数</a><a href="/wiki/basics/vernier/">游标编码</a><h2>磁路与机械安装</h2><a href="/wiki/basics/magnets/">编码器磁体</a><a href="/wiki/basics/in-axis/">在轴检测</a><a href="/wiki/basics/off-axis/">离轴检测</a><a href="/wiki/basics/air-gap/">气隙</a><a href="/wiki/basics/eccentricity/">偏心误差</a><a href="/wiki/basics/mounting/">在轴、离轴、气隙与偏心</a><a href="/wiki/basics/stray-field/">杂散磁场</a><h2>接口与读数</h2><a href="/wiki/basics/interfaces/">SPI、SSI与BiSS</a><a href="/wiki/basics/abz/">ABZ</a><a href="/wiki/basics/uvw/">UVW</a><a href="/wiki/basics/pwm/">PWM角度输出</a><a href="/wiki/basics/spi-ssi/">SPI与SSI</a><a href="/wiki/basics/i2c/">I²C</a><a href="/wiki/basics/crc/" aria-current="page">CRC</a></nav></aside>
+<article class="basic-article"><details class="basic-mobile-index"><summary>本组词条 · 接口与读数</summary><nav aria-label="当前分组词条"><a href="/wiki/basics/interfaces/">SPI、SSI与BiSS</a><a href="/wiki/basics/abz/">ABZ</a><a href="/wiki/basics/uvw/">UVW</a><a href="/wiki/basics/pwm/">PWM角度输出</a><a href="/wiki/basics/spi-ssi/">SPI与SSI</a><a href="/wiki/basics/i2c/">I²C</a><a href="/wiki/basics/crc/" aria-current="page">CRC</a></nav></details><header><p class="basics-kicker">WIKI / 接口与读数</p><h1>CRC：帧正确不等于角度正确</h1><p class="basic-deck">理解校验覆盖范围、参数与错误处理，区分数据传输完整性、测量有效性和数据新鲜度。</p><p class="basic-updated">更新于 2026.10.27</p></header>
+
+<aside class="basic-toc" aria-label="本页目录"><p class="basic-toc-title">本页目录</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#位宽相同算法仍可能不同">位宽相同，算法仍可能不同</a></li>
+    <li><a href="#接收错误后的动作同样重要">接收错误后的动作同样重要</a></li>
+    <li><a href="#选型要问完整的数据可信链">选型要问完整的数据可信链</a></li>
+    <li><a href="#把状态位纳入真实测试向量">把状态位纳入真实测试向量</a></li>
+  </ul>
+</nav></aside><div class="content"><p>CRC把规定比特序列按既定多项式计算成校验值，接收端重新计算并比较。它能发现所覆盖数据中的一类损坏，却不会知道磁铁有没有偏心、机械零位是否标错。一个带着系统偏差的角度，只要按协议正确发送，CRC照样通过。</p>
+<h2 id="位宽相同算法仍可能不同">位宽相同，算法仍可能不同</h2>
+<p>实现至少要确定多项式、初始值、输入位序、输出处理和参与计算的字段。命令、状态和位置是否全部受保护，必须看具体协议，不能把“八位CRC”直接理解成同一段程序。字节排列错误或少算状态位，也会导致所有帧不通过。</p>
+<p><a href="https://biss-interface.com/wp-content/uploads/2025/07/BiSS_AN3_appnote_E3en.pdf">BiSS协会AN3</a>给出CRC多项式与计算方法；<a href="https://www.ti.com/product/TMAG5170">TI TMAG5170</a>也提供串行通信CRC。这是两处独立定义，应分别使用各自的测试向量，不能因为都叫CRC就混用。</p>
+<h2 id="接收错误后的动作同样重要">接收错误后的动作同样重要</h2>
+<p>发现错误帧后，应记录原因、计数和对应时间，再按系统要求拒绝本帧、重读或进入降级状态。若直接沿用上一帧，又把时间标成当前时刻，控制器会收到一份“格式没问题”的旧位置。重试能否赶上控制周期，必须纳入时间预算。</p>
+<p>验证时可以在测试程序中翻转受保护位、改变字段顺序、模拟连续坏帧与超时，检查接收端是否真正拒绝错误数据。这些是通信故障注入，不代表已覆盖磁场失效、芯片内部故障或功能安全所需的全部诊断。</p>
+<h2 id="选型要问完整的数据可信链">选型要问完整的数据可信链</h2>
+<p>除了CRC，还要读状态位、量程或磁场标志、更新时间与失联判据。CRC不是身份认证或加密，不能阻止知道算法的人构造另一份合法帧；有限校验长度也不表示绝无漏检。只有明确错误模型与系统响应，校验功能才从一项参数变成可验证的行为。</p>
+<h2 id="把状态位纳入真实测试向量">把状态位纳入真实测试向量</h2>
+<p><a href="https://biss-interface.com/wp-content/uploads/2025/07/BiSS_AN3_appnote_E3en.pdf">BiSS AN3 Rev E3</a>指出典型过程数据CRC覆盖数据通道中的传感器值、状态及生命计数，且发送前取反。只校验位置字段，会把不同的受保护消息当成相同输入。调试时先保存一帧原始比特，再分别翻转状态位与位置位，确认接收器确实拒收；不要用“收到六位校验”代替算法验证。<a href="/topics/guides/sample-time-contract/">时间约定</a>还要检查重试后数据是否过旧，<a href="/topics/guides/calibration-data-integrity/">配置完整性</a>则处理保存过程的另一类损坏。</p>
+</div>
+
+<section class="basic-practice"><h2>连到专题与型号</h2><div class="basics-practice-links"><a href="/tags/%E7%BC%96%E7%A0%81%E5%99%A8%E6%8E%A5%E5%8F%A3/">编码器接口 ↗</a></div></section>
+
+<nav class="basic-related" aria-label="相关基础词条"><h2>接着读</h2><a href="/wiki/basics/spi-ssi/">SPI与SSI：同样有时钟，帧和时刻并不相同 <span>→</span></a><a href="/wiki/basics/interfaces/">SPI、SSI与BiSS：角度如何交给控制器 <span>→</span></a><a href="/wiki/basics/latency/">更新率、延迟与带宽：读得快是否跟得上 <span>→</span></a><a href="/wiki/basics/i2c/">I²C：两根线如何分配地址与读取时间 <span>→</span></a></nav>
+
+
+<section class="knowledge-incoming"><h2>哪些基础词条会用到它</h2><div><a href="/wiki/basics/spi-ssi/">SPI与SSI <span aria-hidden="true">↗</span></a><a href="/wiki/basics/i2c/">I²C <span aria-hidden="true">↗</span></a></div></section>
+
+
+
+
+<section class="guide-backlinks"><h2>继续算与测</h2><div class="guide-link-list"><a href="/topics/guides/sample-time-contract/">两路角度要相减，先签清楚哪一刻 <span aria-hidden="true">→</span></a><a href="/topics/guides/calibration-data-integrity/">校准保存成功以后，下一次上电还可信吗？ <span aria-hidden="true">→</span></a></div></section>
+<section class="guide-backlinks"><h2>这个概念用在哪里</h2><div class="guide-link-list"><a href="/applications/servo-motor/">伺服电机：换向角与负载位置不能混成一个指标 →</a><a href="/applications/electronic-throttle/">电子节气门：阀片角度、双通道与失效状态 →</a><a href="/applications/automotive-angle/">汽车角度控制：同样测转角，任务边界并不相同 →</a></div></section>
+
+<div class="basics-footlinks"><a href="/topics/">技术专题 ↗</a><a href="/wiki/">型号与公司资料 ↗</a></div></article></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

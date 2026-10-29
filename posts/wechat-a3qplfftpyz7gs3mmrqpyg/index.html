@@ -1,35 +1,232 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深 · 如是有为</title><meta name=description content="从三轴磁场、交叉轴耦合、对角线非线性、回中迟滞到整机外场与延迟链路，拆解薄型磁摇杆为什么仍然会漂，以及该验证什么。"><link rel=canonical href=https://sensor.fans/posts/wechat-a3qplfftpyz7gs3mmrqpyg/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta name=keywords content="KTH5701,MLX90393,TLE493D-W2B6-A1,磁传感器,霍尔,游戏手柄,摇杆,应用分析"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深 · 如是有为"><meta property="og:description" content="从三轴磁场、交叉轴耦合、对角线非线性、回中迟滞到整机外场与延迟链路，拆解薄型磁摇杆为什么仍然会漂，以及该验证什么。"><meta property="og:url" content="https://sensor.fans/posts/wechat-a3qplfftpyz7gs3mmrqpyg/"><meta property="og:image" content="https://sensor.fans/images/joystick-original/joystick_01.jpg"><meta property="og:type" content="article"><meta property="article:published_time" content="2026-10-19T00:00:00+00:00"><meta property="article:tag" content="磁传感器"><meta property="article:tag" content="霍尔"><meta property="article:tag" content="游戏手柄"><meta property="article:tag" content="摇杆"><meta property="article:tag" content="应用分析"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深 · 如是有为"><meta name=twitter:description content="从三轴磁场、交叉轴耦合、对角线非线性、回中迟滞到整机外场与延迟链路，拆解薄型磁摇杆为什么仍然会漂，以及该验证什么。"><meta name=twitter:image content="https://sensor.fans/images/joystick-original/joystick_01.jpg"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-19T12:45:00+08:00","datePublished":"2026-10-19T00:00:00+00:00","description":"从三轴磁场、交叉轴耦合、对角线非线性、回中迟滞到整机外场与延迟链路，拆解薄型磁摇杆为什么仍然会漂，以及该验证什么。","headline":"摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深","image":["https://sensor.fans/images/joystick-original/joystick_01.jpg"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/posts/wechat-a3qplfftpyz7gs3mmrqpyg/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/posts/wechat-a3qplfftpyz7gs3mmrqpyg/"}</script><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159425"><link rel=stylesheet href="/css/wiki.css?v=1793159425"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/>基础知识</a>
-<a href=/wiki/>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/ aria-current=page>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><article class=post><header class=post-head><time class=date>2026.10.19 00:00</time><h1 class=post-title>摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深</h1><p class="muted orig">首发于公众号「如是有为」 · <a href=https://mp.weixin.qq.com/s/A3QpLffTPYz7gs3mmrQPYg rel=noopener target=_blank>查看原文</a></p></header><div class=content><p>玩游戏最烦的一件事，是明明没有碰摇杆，屏幕上的人物却开始慢慢移动。</p><p>有时候是往左走，有时候镜头自己转。更奇怪的是，重新校准以后似乎好了，玩一段时间又出现。还有一些摇杆，画圈测试非常漂亮，实际玩游戏时却总觉得斜向推动不够顺畅。</p><p>玩家把这种现象统称为“摇杆漂移”。</p><p>于是，磁摇杆出现了：不再依靠电位器滑动触点来测量位置，而是用磁铁和磁传感器做非接触测量。没有那种持续摩擦的电阻轨道，听起来至少解决了一大类磨损问题。</p><p>但磁摇杆真的不会漂移吗？</p><p>答案没那么简单。<strong>没有电接触磨损，不等于没有机械误差；磁场可以非接触测量，也不等于磁场只会按照我们希望的方式变化。</strong></p><p>尤其当游戏手柄变成越来越薄的掌机，磁铁、弹簧、传感器和按压机构全部挤进几毫米量级的空间时，问题会变得相当有趣。</p><h2 id=01你以为摇杆在测-xy其实芯片看到的是三维磁场>01｜你以为摇杆在测 X、Y，其实芯片看到的是三维磁场</h2><p>先看最基础的结构。</p><p>一个典型磁摇杆包括摇杆帽、万向机械机构、回中弹簧、磁体和磁传感器。</p><p>玩家推动摇杆时，机械运动改变磁体与芯片之间的相对位置或姿态。芯片测量磁场，再由算法得到摇杆在 X、Y 两个方向上的位置。</p><p>这里有一个经常被忽略的区别：摇杆的机械输出是两个自由度，但磁传感器测量的可能是三个磁场分量。</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="bold">B</mi><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>B</mi><mi>x</mi></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>B</mi><mi>y</mi></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>B</mi><mi>z</mi></msub></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深 · 如是有为</title>
+<meta name="description" content="从三轴磁场、交叉轴耦合、对角线非线性、回中迟滞到整机外场与延迟链路，拆解薄型磁摇杆为什么仍然会漂，以及该验证什么。">
+<link rel="canonical" href="https://sensor.fans/posts/wechat-a3qplfftpyz7gs3mmrqpyg/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为"><meta name="keywords" content="KTH5701,MLX90393,TLE493D-W2B6-A1,磁传感器,霍尔,游戏手柄,摇杆,应用分析">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深 · 如是有为">
+<meta property="og:description" content="从三轴磁场、交叉轴耦合、对角线非线性、回中迟滞到整机外场与延迟链路，拆解薄型磁摇杆为什么仍然会漂，以及该验证什么。">
+<meta property="og:url" content="https://sensor.fans/posts/wechat-a3qplfftpyz7gs3mmrqpyg/">
+<meta property="og:image" content="https://sensor.fans/images/joystick-original/joystick_01.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-10-19T00:00:00&#43;00:00"><meta property="article:tag" content="磁传感器"><meta property="article:tag" content="霍尔"><meta property="article:tag" content="游戏手柄"><meta property="article:tag" content="摇杆"><meta property="article:tag" content="应用分析">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深 · 如是有为">
+<meta name="twitter:description" content="从三轴磁场、交叉轴耦合、对角线非线性、回中迟滞到整机外场与延迟链路，拆解薄型磁摇杆为什么仍然会漂，以及该验证什么。">
+<meta name="twitter:image" content="https://sensor.fans/images/joystick-original/joystick_01.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-19T12:45:00+08:00","datePublished":"2026-10-19T00:00:00+00:00","description":"从三轴磁场、交叉轴耦合、对角线非线性、回中迟滞到整机外场与延迟链路，拆解薄型磁摇杆为什么仍然会漂，以及该验证什么。","headline":"摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深","image":["https://sensor.fans/images/joystick-original/joystick_01.jpg"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/posts/wechat-a3qplfftpyz7gs3mmrqpyg/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/posts/wechat-a3qplfftpyz7gs3mmrqpyg/"}
+</script>
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+
+
+
+
+
+
+
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/">基础知识</a>
+      <a href="/wiki/">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/" aria-current="page">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+<article class="post">
+  <header class="post-head">
+    <time class="date">2026.10.19 00:00</time>
+    <h1 class="post-title">摇杆没动，游戏人物却自己走了：磁摇杆的坑，比想象中深</h1>
+    <p class="muted orig">首发于公众号「如是有为」 · <a href="https://mp.weixin.qq.com/s/A3QpLffTPYz7gs3mmrQPYg" rel="noopener" target="_blank">查看原文</a></p>
+  </header>
+  <div class="content"><p>玩游戏最烦的一件事，是明明没有碰摇杆，屏幕上的人物却开始慢慢移动。</p>
+<p>有时候是往左走，有时候镜头自己转。更奇怪的是，重新校准以后似乎好了，玩一段时间又出现。还有一些摇杆，画圈测试非常漂亮，实际玩游戏时却总觉得斜向推动不够顺畅。</p>
+<p>玩家把这种现象统称为“摇杆漂移”。</p>
+<p>于是，磁摇杆出现了：不再依靠电位器滑动触点来测量位置，而是用磁铁和磁传感器做非接触测量。没有那种持续摩擦的电阻轨道，听起来至少解决了一大类磨损问题。</p>
+<p>但磁摇杆真的不会漂移吗？</p>
+<p>答案没那么简单。<strong>没有电接触磨损，不等于没有机械误差；磁场可以非接触测量，也不等于磁场只会按照我们希望的方式变化。</strong></p>
+<p>尤其当游戏手柄变成越来越薄的掌机，磁铁、弹簧、传感器和按压机构全部挤进几毫米量级的空间时，问题会变得相当有趣。</p>
+<h2 id="01你以为摇杆在测-xy其实芯片看到的是三维磁场">01｜你以为摇杆在测 X、Y，其实芯片看到的是三维磁场</h2>
+<p>先看最基础的结构。</p>
+<p>一个典型磁摇杆包括摇杆帽、万向机械机构、回中弹簧、磁体和磁传感器。</p>
+<p>玩家推动摇杆时，机械运动改变磁体与芯片之间的相对位置或姿态。芯片测量磁场，再由算法得到摇杆在 X、Y 两个方向上的位置。</p>
+<p>这里有一个经常被忽略的区别：摇杆的机械输出是两个自由度，但磁传感器测量的可能是三个磁场分量。</p>
+<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="bold">B</mi><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>B</mi><mi>x</mi></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>B</mi><mi>y</mi></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>B</mi><mi>z</mi></msub></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">
 \mathbf B=
 \begin{bmatrix}
 B_x \\
 B_y \\
 B_z
 \end{bmatrix}
-</annotation></semantics></math></span><p>一个理想化的想法是：摇杆向右推动，只有磁场的 X 分量变化；向上推动，只有 Y 分量变化。如果世界真的这么简单，一颗双轴传感器加上两个线性映射就足够了。</p><p>但真实磁场不会按照电路工程师画的坐标轴乖乖分开。磁体倾斜时，三个方向的磁场往往同时变化；磁体发生平移时，原本的场强分布也会改变；如果磁体与芯片不在理想相对位置，磁场轨迹还会出现偏移、弯曲和不对称。</p><p>因此，<strong>一颗三轴霍尔芯片测到的不是摇杆位置本身，而是一个由位置、姿态和磁路共同决定的磁场矢量</strong>：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="bold">B</mi><mo>=</mo><mi mathvariant="bold">F</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo separator="true">,</mo><mi>α</mi><mo separator="true">,</mo><mi>β</mi><mo separator="true">,</mo><mi>T</mi><mo stretchy="false">)</mo><mo>+</mo><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>一个理想化的想法是：摇杆向右推动，只有磁场的 X 分量变化；向上推动，只有 Y 分量变化。如果世界真的这么简单，一颗双轴传感器加上两个线性映射就足够了。</p>
+<p>但真实磁场不会按照电路工程师画的坐标轴乖乖分开。磁体倾斜时，三个方向的磁场往往同时变化；磁体发生平移时，原本的场强分布也会改变；如果磁体与芯片不在理想相对位置，磁场轨迹还会出现偏移、弯曲和不对称。</p>
+<p>因此，<strong>一颗三轴霍尔芯片测到的不是摇杆位置本身，而是一个由位置、姿态和磁路共同决定的磁场矢量</strong>：</p>
+<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="bold">B</mi><mo>=</mo><mi mathvariant="bold">F</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo separator="true">,</mo><mi>α</mi><mo separator="true">,</mo><mi>β</mi><mo separator="true">,</mo><mi>T</mi><mo stretchy="false">)</mo><mo>+</mo><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
 \mathbf B=\mathbf F(x,y,z,\alpha,\beta,T)+\mathbf B_{\mathrm{ext}}
-</annotation></semantics></math></span><p>这里的 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">x,y,z</annotation></semantics></math></span> 表示相对平移，<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo separator="true">,</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha,\beta</annotation></semantics></math></span> 表示姿态变化，<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span> 是温度，<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\mathbf B_{\mathrm{ext}}</annotation></semantics></math></span> 是外部磁场。</p><p>实际摇杆机构会约束这些变量，并不是它们全部独立变化。但只要机构存在间隙、形变或额外的按压运动，磁场与两个摇杆控制量之间的关系就可能发生变化。</p><p>所以，摇杆真正要解决的是一个反问题：<strong>如何从测到的三维磁场，准确恢复玩家希望输入的二维运动？</strong> 这个问题比读两个 ADC 数字复杂得多。</p><figure style="margin:26px 0"><img src=/images/joystick-original/joystick_01.jpg alt=薄型磁摇杆内部结构与三维磁场 width=1080 height=1350 loading=lazy style=display:block;width:100%;height:auto;border-radius:12px></figure><h2 id=02摇杆向右推动为什么画面里的角色还会往上走>02｜摇杆向右推动，为什么画面里的角色还会往上走？</h2><p>先假设已经从磁场解算出了两个原始控制量 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo separator="true">,</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u,v</annotation></semantics></math></span>。理想情况下，X、Y 两轴互不干扰：<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><msub><mi>k</mi><mi>x</mi></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">u=k_x x</annotation></semantics></math></span>，<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>k</mi><mi>y</mi></msub><mi>y</mi></mrow><annotation encoding="application/x-tex">v=k_y y</annotation></semantics></math></span>。</p><p>但实际系统更可能接近：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>u</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>v</mi></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>11</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>12</mn></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>21</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>22</mn></msub></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>x</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>y</mi></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>+</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mi>u</mi></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mi>v</mi></msub></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>+</mo><mi mathvariant="bold">n</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>这里的 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">x,y,z</annotation></semantics></math></span> 表示相对平移，<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo separator="true">,</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha,\beta</annotation></semantics></math></span> 表示姿态变化，<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span> 是温度，<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\mathbf B_{\mathrm{ext}}</annotation></semantics></math></span> 是外部磁场。</p>
+<p>实际摇杆机构会约束这些变量，并不是它们全部独立变化。但只要机构存在间隙、形变或额外的按压运动，磁场与两个摇杆控制量之间的关系就可能发生变化。</p>
+<p>所以，摇杆真正要解决的是一个反问题：<strong>如何从测到的三维磁场，准确恢复玩家希望输入的二维运动？</strong> 这个问题比读两个 ADC 数字复杂得多。</p>
+<figure style="margin:26px 0"><img src="/images/joystick-original/joystick_01.jpg" alt="薄型磁摇杆内部结构与三维磁场" width="1080" height="1350" loading="lazy" style="display:block;width:100%;height:auto;border-radius:12px"></figure>
+<h2 id="02摇杆向右推动为什么画面里的角色还会往上走">02｜摇杆向右推动，为什么画面里的角色还会往上走？</h2>
+<p>先假设已经从磁场解算出了两个原始控制量 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo separator="true">,</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u,v</annotation></semantics></math></span>。理想情况下，X、Y 两轴互不干扰：<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><msub><mi>k</mi><mi>x</mi></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">u=k_x x</annotation></semantics></math></span>，<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>k</mi><mi>y</mi></msub><mi>y</mi></mrow><annotation encoding="application/x-tex">v=k_y y</annotation></semantics></math></span>。</p>
+<p>但实际系统更可能接近：</p>
+<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>u</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>v</mi></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>=</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>11</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>12</mn></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>21</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>22</mn></msub></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>x</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>y</mi></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>+</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mi>u</mi></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mi>v</mi></msub></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>+</mo><mi mathvariant="bold">n</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">
 \begin{bmatrix} u \\ v \end{bmatrix} =
 \begin{bmatrix} a_{11} &amp; a_{12} \\ a_{21} &amp; a_{22} \end{bmatrix}
 \begin{bmatrix} x \\ y \end{bmatrix} +
 \begin{bmatrix} b_u \\ b_v \end{bmatrix} +
 \mathbf n(x,y)
-</annotation></semantics></math></span><p>矩阵对角线上的 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>11</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>22</mn></msub></mrow><annotation encoding="application/x-tex">a_{11},a_{22}</annotation></semantics></math></span> 反映两轴各自的响应比例；<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>12</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>21</mn></msub></mrow><annotation encoding="application/x-tex">a_{12},a_{21}</annotation></semantics></math></span> 描述交叉轴耦合；最后的 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">n</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbf n(x,y)</annotation></semantics></math></span> 包含不能用简单线性矩阵描述的非线性残差。</p><p>这就解释了一个现象：摇杆明明沿 X 方向推动，Y 输出却跟着变化。工程师通常可以用二维矩阵补偿消除一部分线性耦合。</p><p>问题是，线性矩阵只能修正线性误差。假如残差中存在 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">xy</annotation></semantics></math></span>、<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mi>y</mi></mrow><annotation encoding="application/x-tex">x^2y</annotation></semantics></math></span> 或其他非线性项，单靠零点校准、轴向增益修正和坐标旋转，就不一定能把整个运动平面修好。</p><p>最容易暴露这个问题的位置，就是四个对角方向。因为沿纯 X 轴移动时 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y=0</annotation></semantics></math></span>，沿纯 Y 轴移动时 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math></span>，某些交叉非线性项在这两条轴线上恰好为零；可是一旦同时推动两个方向，这些项就出现了。</p><p>也就是说：<strong>只测上下左右都很准，完全不能保证左上、右下也很准。</strong> 一款摇杆在工程测试中沿着十字方向表现优秀，却可能在游戏里斜向瞄准时出现明显的方向误差。这不是传感器分辨率不足，而是整个磁路和解算模型没有被充分验证。</p><figure style="margin:26px 0"><img src=/images/joystick-original/joystick_02.jpg alt=交叉轴耦合与对角线误差 width=1080 height=1350 loading=lazy style=display:block;width:100%;height:auto;border-radius:12px></figure><h2 id=03画出来是一个完美的圆就说明摇杆很准吗>03｜画出来是一个完美的圆，就说明摇杆很准吗？</h2><p>不少玩家测试摇杆时，喜欢打开一个二维坐标测试软件。把摇杆沿最大行程绕一圈，如果屏幕上出现一个漂亮的圆，就觉得性能很好。</p><p>但从测量角度看，这个结论并不成立。</p><p>假设某个摇杆的原始轨迹是一条椭圆，软件可以对 X、Y 施加不同增益，把椭圆拉成圆形；再根据测量方向做极坐标归一化，把外圈半径强制限制为 1。最终显示结果可以非常漂亮。</p><p><strong>它能证明软件把输出边界修成了想要的形状，不能证明摇杆内部所有位置都被正确测量。</strong></p><p>举一个假设的例子：机械摇杆沿某个方向实际推动到满行程的 50%，原始磁场解算结果却只对应 43%；接近满行程时，算法又通过非线性放大和外圈饱和让最终输出达到 100%。两个端点都对了，中间仍然错了。</p><p>更麻烦的是，某些校准算法会把大量误差压缩在很小的角度区间内。测试者慢慢画圈时看不出来，玩家快速变向时却会感到运动不连续。</p><p>因此，真正有意义的测试至少要分开三个概念：</p><ul><li><strong>边界形状</strong>：满行程输出是否对称、圆润、连续。</li><li><strong>内部映射</strong>：相同机械位移是否得到预期的二维位置。</li><li><strong>运动历史</strong>：从不同方向到达同一机械位置时，输出是否一致。</li></ul><p>只看第一项，远远不够。</p><figure style="margin:26px 0"><img src=/images/joystick-original/joystick_03.jpg alt=圆形归一化与内部位置误差 width=1080 height=1350 loading=lazy style=display:block;width:100%;height:auto;border-radius:12px></figure><h2 id=04最讨厌的漂移可能来自一根小小的弹簧>04｜最讨厌的漂移，可能来自一根小小的弹簧</h2><p>假设磁体和芯片都没有损坏，磁场测量也足够稳定。玩家松开摇杆以后，输出是不是应该严格回到零？</p><p>未必。</p><p>因为摇杆的中心位置不是由芯片决定，而是由机械回中机构决定。弹簧预紧力、摩擦、结构间隙、塑料件变形和磨损，都会影响最终停止位置。更重要的是，回中位置可能取决于摇杆此前往哪个方向运动：从左边松手和从右边松手，两个最终机械位置未必完全重合。</p><p>这就是机械迟滞。磁传感器如果足够精确，反而可能把这种机械差异如实测出来。也就是说，<strong>芯片读数有变化，不一定是芯片发生了漂移；它可能真的测到了磁体没有回到原位。</strong></p><p>软件通常怎么处理？设置中心死区。设二维归一化输出到中心的距离为：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>r</mi><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>矩阵对角线上的 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>11</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>22</mn></msub></mrow><annotation encoding="application/x-tex">a_{11},a_{22}</annotation></semantics></math></span> 反映两轴各自的响应比例；<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>12</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>21</mn></msub></mrow><annotation encoding="application/x-tex">a_{12},a_{21}</annotation></semantics></math></span> 描述交叉轴耦合；最后的 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">n</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbf n(x,y)</annotation></semantics></math></span> 包含不能用简单线性矩阵描述的非线性残差。</p>
+<p>这就解释了一个现象：摇杆明明沿 X 方向推动，Y 输出却跟着变化。工程师通常可以用二维矩阵补偿消除一部分线性耦合。</p>
+<p>问题是，线性矩阵只能修正线性误差。假如残差中存在 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">xy</annotation></semantics></math></span>、<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mi>y</mi></mrow><annotation encoding="application/x-tex">x^2y</annotation></semantics></math></span> 或其他非线性项，单靠零点校准、轴向增益修正和坐标旋转，就不一定能把整个运动平面修好。</p>
+<p>最容易暴露这个问题的位置，就是四个对角方向。因为沿纯 X 轴移动时 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y=0</annotation></semantics></math></span>，沿纯 Y 轴移动时 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math></span>，某些交叉非线性项在这两条轴线上恰好为零；可是一旦同时推动两个方向，这些项就出现了。</p>
+<p>也就是说：<strong>只测上下左右都很准，完全不能保证左上、右下也很准。</strong> 一款摇杆在工程测试中沿着十字方向表现优秀，却可能在游戏里斜向瞄准时出现明显的方向误差。这不是传感器分辨率不足，而是整个磁路和解算模型没有被充分验证。</p>
+<figure style="margin:26px 0"><img src="/images/joystick-original/joystick_02.jpg" alt="交叉轴耦合与对角线误差" width="1080" height="1350" loading="lazy" style="display:block;width:100%;height:auto;border-radius:12px"></figure>
+<h2 id="03画出来是一个完美的圆就说明摇杆很准吗">03｜画出来是一个完美的圆，就说明摇杆很准吗？</h2>
+<p>不少玩家测试摇杆时，喜欢打开一个二维坐标测试软件。把摇杆沿最大行程绕一圈，如果屏幕上出现一个漂亮的圆，就觉得性能很好。</p>
+<p>但从测量角度看，这个结论并不成立。</p>
+<p>假设某个摇杆的原始轨迹是一条椭圆，软件可以对 X、Y 施加不同增益，把椭圆拉成圆形；再根据测量方向做极坐标归一化，把外圈半径强制限制为 1。最终显示结果可以非常漂亮。</p>
+<p><strong>它能证明软件把输出边界修成了想要的形状，不能证明摇杆内部所有位置都被正确测量。</strong></p>
+<p>举一个假设的例子：机械摇杆沿某个方向实际推动到满行程的 50%，原始磁场解算结果却只对应 43%；接近满行程时，算法又通过非线性放大和外圈饱和让最终输出达到 100%。两个端点都对了，中间仍然错了。</p>
+<p>更麻烦的是，某些校准算法会把大量误差压缩在很小的角度区间内。测试者慢慢画圈时看不出来，玩家快速变向时却会感到运动不连续。</p>
+<p>因此，真正有意义的测试至少要分开三个概念：</p>
+<ul>
+<li><strong>边界形状</strong>：满行程输出是否对称、圆润、连续。</li>
+<li><strong>内部映射</strong>：相同机械位移是否得到预期的二维位置。</li>
+<li><strong>运动历史</strong>：从不同方向到达同一机械位置时，输出是否一致。</li>
+</ul>
+<p>只看第一项，远远不够。</p>
+<figure style="margin:26px 0"><img src="/images/joystick-original/joystick_03.jpg" alt="圆形归一化与内部位置误差" width="1080" height="1350" loading="lazy" style="display:block;width:100%;height:auto;border-radius:12px"></figure>
+<h2 id="04最讨厌的漂移可能来自一根小小的弹簧">04｜最讨厌的漂移，可能来自一根小小的弹簧</h2>
+<p>假设磁体和芯片都没有损坏，磁场测量也足够稳定。玩家松开摇杆以后，输出是不是应该严格回到零？</p>
+<p>未必。</p>
+<p>因为摇杆的中心位置不是由芯片决定，而是由机械回中机构决定。弹簧预紧力、摩擦、结构间隙、塑料件变形和磨损，都会影响最终停止位置。更重要的是，回中位置可能取决于摇杆此前往哪个方向运动：从左边松手和从右边松手，两个最终机械位置未必完全重合。</p>
+<p>这就是机械迟滞。磁传感器如果足够精确，反而可能把这种机械差异如实测出来。也就是说，<strong>芯片读数有变化，不一定是芯片发生了漂移；它可能真的测到了磁体没有回到原位。</strong></p>
+<p>软件通常怎么处理？设置中心死区。设二维归一化输出到中心的距离为：</p>
+<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>r</mi><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">
 r=\sqrt{x^2+y^2}
-</annotation></semantics></math></span><p>一种简单方案是：当 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span> 小于死区半径 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span> 时，输出被置零，避免中心附近的小变化被解释成玩家输入。</p><p>但死区并不是越小越好。假设摇杆的回中散布半径已经达到满量程的 2%，却把死区设置成 0.5%，那么即使换上一颗噪声几乎可以忽略的磁传感器，玩家仍可能遇到角色自行移动。反过来，如果为了压住漂移把死区扩大到 10%，细微瞄准又会变得迟钝。</p><p>真正需要优化的，不是一个孤立的死区数字，而是整个回中位置的统计分布。测试时应该反复从不同方向释放摇杆，记录中心落点，再根据误触发风险与操控精度要求确定死区。<strong>这也是为什么摇杆中心性能不能只靠一次归零校准来评价。</strong></p><figure style="margin:26px 0"><img src=/images/joystick-original/joystick_04.jpg alt=机械回中散布与整机磁场干扰 width=1080 height=1350 loading=lazy style=display:block;width:100%;height:auto;border-radius:12px></figure><h2 id=05掌机越薄磁摇杆反而可能越难做>05｜掌机越薄，磁摇杆反而可能越难做</h2><p>现在的掌机追求轻薄：摇杆帽不能太高，机身又必须容纳屏幕、电池、散热器和其他元件，留给摇杆的高度越来越有限。</p><p>但磁路不会因为产品经理要求薄型化，就自动维持原来的磁场分布。磁铁尺寸、运动半径、传感器安装位置与气隙一旦改变，磁场轨迹就会发生变化。薄型化至少引入三个工程挑战。</p><p>第一，磁体和传感器之间的几何约束更加敏感。机构的小幅倾斜或装配偏差，可能改变原有的磁场映射。</p><p>第二，磁场分量之间的耦合可能更加明显。尤其在既有倾斜又有平移的机构中，不能简单把某一个磁场分量直接当作某个轴的位置。</p><p>第三，摇杆按压动作可能带来额外的磁场变化。想象玩家把摇杆推到右上角，同时按下摇杆按钮：在理想的输入模型里，按压只应该触发一个数字按键，不应该改变原有的 X、Y 方向。但实际结构中，按压过程可能改变磁体高度、倾斜角度或支架形变，于是磁场也变了。如果算法没有处理这种耦合，按下摇杆的瞬间，原本稳定的方向输入就可能发生跳变。</p><p>所以，薄型摇杆的测试不能只有一个二维运动平面，还必须把按压动作、按压行程和机械应力作为额外变量纳入验证。</p><h2 id=06英飞凌迈来芯和国产芯片谁更适合磁摇杆>06｜英飞凌、迈来芯和国产芯片，谁更适合磁摇杆？</h2><p>在三维磁场测量路线中，有几个值得关注的器件：英飞凌 TLE493D-W2B6-A1、迈来芯 MLX90393，以及国产的 KTH5701 系列，都可以作为三维磁场检测的研究对象。</p><p>但这里要强调：<strong>它们是磁场传感器候选，并不是买来直接装进掌机就能正常工作的完整摇杆模组。</strong> 三维磁场传感器解决的是磁场采集问题，后面还有机械结构、磁路设计、坐标映射、中心回中、接口时序、低功耗管理和生产标定。</p><p>评估这些产品时，最不应该做的事情，就是把不同数据手册里的最高采样率、最低工作电流和最小噪声挑出来，直接排成一张性能排行榜。因为这些指标可能对应不同工作模式：高采样率通常需要权衡转换、信号滤波、总线和功耗；低功耗模式也可能牺牲有效输出频率、噪声水平或响应延迟。</p><p>如果最终目的是做摇杆，比较方法应当换成：使用同一磁体、同一机构、相近的磁场范围和明确的采样条件，对候选传感器分别测试。重点不是谁宣称的位数更多，而是谁在整个运动空间里能够提供稳定、可重复、可校准的磁场数据。</p><p>对于芯片厂商而言，这也提出了一个值得思考的产品定义问题：假如未来要做专门面向游戏摇杆的磁传感器，优先增强的功能可能不是更高的标称分辨率，而是低噪声中心检测、稳定的多轴测量时序、低延迟输出、灵活的休眠唤醒，以及便于量产校准的数据接口。<strong>真正的应用竞争力，来自芯片与机械系统的匹配程度。</strong></p><h2 id=07还有一种磁场不是摇杆自己的>07｜还有一种磁场，不是摇杆自己的</h2><p>游戏设备里并不只有一个磁铁。扬声器、振动马达、磁吸配件以及外部磁性物体，都可能改变摇杆附近的磁场环境。</p><p>如果传感器测到的磁场为：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">j</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">k</mi></mrow></msub><mo>+</mo><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">e</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>一种简单方案是：当 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span> 小于死区半径 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span> 时，输出被置零，避免中心附近的小变化被解释成玩家输入。</p>
+<p>但死区并不是越小越好。假设摇杆的回中散布半径已经达到满量程的 2%，却把死区设置成 0.5%，那么即使换上一颗噪声几乎可以忽略的磁传感器，玩家仍可能遇到角色自行移动。反过来，如果为了压住漂移把死区扩大到 10%，细微瞄准又会变得迟钝。</p>
+<p>真正需要优化的，不是一个孤立的死区数字，而是整个回中位置的统计分布。测试时应该反复从不同方向释放摇杆，记录中心落点，再根据误触发风险与操控精度要求确定死区。<strong>这也是为什么摇杆中心性能不能只靠一次归零校准来评价。</strong></p>
+<figure style="margin:26px 0"><img src="/images/joystick-original/joystick_04.jpg" alt="机械回中散布与整机磁场干扰" width="1080" height="1350" loading="lazy" style="display:block;width:100%;height:auto;border-radius:12px"></figure>
+<h2 id="05掌机越薄磁摇杆反而可能越难做">05｜掌机越薄，磁摇杆反而可能越难做</h2>
+<p>现在的掌机追求轻薄：摇杆帽不能太高，机身又必须容纳屏幕、电池、散热器和其他元件，留给摇杆的高度越来越有限。</p>
+<p>但磁路不会因为产品经理要求薄型化，就自动维持原来的磁场分布。磁铁尺寸、运动半径、传感器安装位置与气隙一旦改变，磁场轨迹就会发生变化。薄型化至少引入三个工程挑战。</p>
+<p>第一，磁体和传感器之间的几何约束更加敏感。机构的小幅倾斜或装配偏差，可能改变原有的磁场映射。</p>
+<p>第二，磁场分量之间的耦合可能更加明显。尤其在既有倾斜又有平移的机构中，不能简单把某一个磁场分量直接当作某个轴的位置。</p>
+<p>第三，摇杆按压动作可能带来额外的磁场变化。想象玩家把摇杆推到右上角，同时按下摇杆按钮：在理想的输入模型里，按压只应该触发一个数字按键，不应该改变原有的 X、Y 方向。但实际结构中，按压过程可能改变磁体高度、倾斜角度或支架形变，于是磁场也变了。如果算法没有处理这种耦合，按下摇杆的瞬间，原本稳定的方向输入就可能发生跳变。</p>
+<p>所以，薄型摇杆的测试不能只有一个二维运动平面，还必须把按压动作、按压行程和机械应力作为额外变量纳入验证。</p>
+<h2 id="06英飞凌迈来芯和国产芯片谁更适合磁摇杆">06｜英飞凌、迈来芯和国产芯片，谁更适合磁摇杆？</h2>
+<p>在三维磁场测量路线中，有几个值得关注的器件：英飞凌 TLE493D-W2B6-A1、迈来芯 MLX90393，以及国产的 KTH5701 系列，都可以作为三维磁场检测的研究对象。</p>
+<p>但这里要强调：<strong>它们是磁场传感器候选，并不是买来直接装进掌机就能正常工作的完整摇杆模组。</strong> 三维磁场传感器解决的是磁场采集问题，后面还有机械结构、磁路设计、坐标映射、中心回中、接口时序、低功耗管理和生产标定。</p>
+<p>评估这些产品时，最不应该做的事情，就是把不同数据手册里的最高采样率、最低工作电流和最小噪声挑出来，直接排成一张性能排行榜。因为这些指标可能对应不同工作模式：高采样率通常需要权衡转换、信号滤波、总线和功耗；低功耗模式也可能牺牲有效输出频率、噪声水平或响应延迟。</p>
+<p>如果最终目的是做摇杆，比较方法应当换成：使用同一磁体、同一机构、相近的磁场范围和明确的采样条件，对候选传感器分别测试。重点不是谁宣称的位数更多，而是谁在整个运动空间里能够提供稳定、可重复、可校准的磁场数据。</p>
+<p>对于芯片厂商而言，这也提出了一个值得思考的产品定义问题：假如未来要做专门面向游戏摇杆的磁传感器，优先增强的功能可能不是更高的标称分辨率，而是低噪声中心检测、稳定的多轴测量时序、低延迟输出、灵活的休眠唤醒，以及便于量产校准的数据接口。<strong>真正的应用竞争力，来自芯片与机械系统的匹配程度。</strong></p>
+<h2 id="07还有一种磁场不是摇杆自己的">07｜还有一种磁场，不是摇杆自己的</h2>
+<p>游戏设备里并不只有一个磁铁。扬声器、振动马达、磁吸配件以及外部磁性物体，都可能改变摇杆附近的磁场环境。</p>
+<p>如果传感器测到的磁场为：</p>
+<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">s</mi></mrow></msub><mo>=</mo><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">j</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">k</mi></mrow></msub><mo>+</mo><msub><mi mathvariant="bold">B</mi><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">e</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
 \mathbf B_{\mathrm{meas}} =
 \mathbf B_{\mathrm{joystick}} +
 \mathbf B_{\mathrm{interference}}
-</annotation></semantics></math></span><p>那么在传感器没有饱和的线性测量条件下，外部磁场就会叠加到摇杆磁场上。芯片无法仅凭一次普通测量，天然知道哪一部分来自摇杆、哪一部分来自邻近磁源。</p><p>采用三维磁场解算时，情况还可能更复杂：某些方向的外场会改变磁场矢量方向，某些方向的外场主要改变幅值，而实际摇杆的位置算法对这些变化的敏感度不同。</p><p>例如在一个极其简化的二维方向测量模型中，<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>=</mo><mi mathvariant="normal">atan2</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>B</mi><mi>y</mi></msub><mo separator="true">,</mo><msub><mi>B</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\theta=\operatorname{atan2}(B_y,B_x)</annotation></semantics></math></span>。当磁场受到小扰动时，角度误差的一阶近似为：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>θ</mi><mo>≈</mo><mfrac><mrow><msub><mi>B</mi><mi>x</mi></msub><mi mathvariant="normal">Δ</mi><msub><mi>B</mi><mi>y</mi></msub><mo>−</mo><msub><mi>B</mi><mi>y</mi></msub><mi mathvariant="normal">Δ</mi><msub><mi>B</mi><mi>x</mi></msub></mrow><mrow><msubsup><mi>B</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>B</mi><mi>y</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>那么在传感器没有饱和的线性测量条件下，外部磁场就会叠加到摇杆磁场上。芯片无法仅凭一次普通测量，天然知道哪一部分来自摇杆、哪一部分来自邻近磁源。</p>
+<p>采用三维磁场解算时，情况还可能更复杂：某些方向的外场会改变磁场矢量方向，某些方向的外场主要改变幅值，而实际摇杆的位置算法对这些变化的敏感度不同。</p>
+<p>例如在一个极其简化的二维方向测量模型中，<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>=</mo><mi mathvariant="normal">atan2</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>B</mi><mi>y</mi></msub><mo separator="true">,</mo><msub><mi>B</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\theta=\operatorname{atan2}(B_y,B_x)</annotation></semantics></math></span>。当磁场受到小扰动时，角度误差的一阶近似为：</p>
+<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>θ</mi><mo>≈</mo><mfrac><mrow><msub><mi>B</mi><mi>x</mi></msub><mi mathvariant="normal">Δ</mi><msub><mi>B</mi><mi>y</mi></msub><mo>−</mo><msub><mi>B</mi><mi>y</mi></msub><mi mathvariant="normal">Δ</mi><msub><mi>B</mi><mi>x</mi></msub></mrow><mrow><msubsup><mi>B</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>B</mi><mi>y</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 \Delta\theta
 \approx
 \frac{B_x\Delta B_y-B_y\Delta B_x}
 {B_x^2+B_y^2}
-</annotation></semantics></math></span><p>这个式子给了一个很直接的判断：影响角度的，不仅是干扰磁场有多大，更是它相对于目标磁场的方向；当目标平面磁场模长较小时，同样大小的干扰还可能造成更大的角度变化。</p><p>当然，实际摇杆未必采用这个 atan2 模型，但由此可以理解外场耦合为什么需要根据具体解算算法评估。</p><p>这意味着只拿一块裸露的摇杆小板做实验、测出漂亮的轨迹，还远远不够。<strong>真正的产品验证必须回到装有扬声器、振动模块、电池和完整外壳的整机状态</strong>：特别应该测试振动开始前后中心输出是否发生偏移，再观察外部磁性配件接近时二维位置是否出现系统性变化。</p><h2 id=08读数很快不代表游戏里的响应就快>08｜读数很快，不代表游戏里的响应就快</h2><p>磁传感器的数据手册可能提供很高的测量或输出速率。但玩家真正感受到的，是从手指推动摇杆到游戏画面发生变化的整个延迟链路，其中包括：磁场转换、内部数字滤波、接口读取、主控任务调度、输入数据打包、USB 或无线传输、游戏采样，以及最终的画面显示。</p><p>这里还有一个容易混淆的概念：<strong>输出数据刷新频率，不等于从真实运动发生到数据可用的延迟。</strong> 假设芯片内部采用较强的数字低通滤波，即使外部接口可以频繁读取数据，新的测量结果仍可能包含明显的滤波群延迟；相反，提高输出速率也不能自动消除主控任务调度或无线传输造成的时间抖动。</p><p>对于高速游戏中的快速变向，动态延迟、方向相关响应和过度平滑都可能影响手感。所以评价磁摇杆，不仅应当在静态位置上测误差，还应该输入可重复的动态运动轨迹，测量最终上报的位置与真实运动之间的关系。</p><h2 id=09如果真要验证一款磁摇杆我会先做这些实验>09｜如果真要验证一款磁摇杆，我会先做这些实验</h2><p>第一组不是画圈，而是<strong>测中心</strong>。连续从八个方向松手，记录足够多次的回中位置，区分随机噪声、方向相关迟滞与长期位置变化。</p><p>第二组测<strong>整个二维平面</strong>。不能只测上下左右：除了四个对角方向，还应当在不同的半径、不同的角度采点，检查交叉轴误差和局部非线性。</p><p>第三组必须<strong>保留原始数据</strong>。不要只保存最终归一化的游戏坐标，尽可能同时记录原始磁场分量、温度、解算坐标和校准后坐标。否则一旦出现问题，就很难判断到底是磁路失真、芯片漂移，还是算法把误差重新分配到了其他位置。</p><p>第四组测<strong>按压耦合</strong>。在中心、半行程和接近满行程等不同位置进行按压，检查方向输出是否发生异常变化。</p><p>第五组测<strong>整机环境</strong>。加入温度变化、振动工作、邻近磁性器件和机械寿命测试，观察原本校准好的映射关系能否长期维持。</p><p>第六组测<strong>动态响应</strong>。使用有参考位置测量的运动平台，进行阶跃、往返和快速变向测试，比较原始输出与系统最终上报数据。</p><p>这里最关键的不是一次测出多小的误差，而是确定误差来源、随工况的变化，以及能否通过可靠的方法补偿。</p><h2 id=10磁摇杆最大的进步可能不是终于不用电位器了>10｜磁摇杆最大的进步，可能不是终于不用电位器了</h2><p>传统电位器摇杆存在接触磨损、污染等可靠性挑战。磁摇杆通过非接触测量，确实绕开了其中一部分物理限制，但它同时把大量问题转移到了磁路、机械装配和信号解算上。</p><p>换句话说，原来难的是接触式测量能不能长期稳定工作；现在难的是三维磁场能不能长期、准确地代表一个二维机械输入。</p><p>从这个角度看，磁摇杆并不是一个已经被霍尔芯片彻底解决的简单应用，它更像是一道非常典型的传感器系统工程题。</p><p><strong>芯片越精确，就越容易看见机构不完美的地方；软件越强大，就越有可能把错误修饰成漂亮的输出；产品越薄，留给磁路和机械公差的空间往往越紧张。</strong></p><p>最终决定一款摇杆好不好用的，不是它叫不叫霍尔摇杆，也不是它有多少位分辨率，而是当玩家把它推到任意方向、任意位置，再突然松手时，系统是否始终能够理解那个动作真正意味着什么。</p><p>玩家要的是游戏人物听指挥。传感器工程师要做的，是确保芯片测到的磁场，最终没有误解玩家的手。</p><h2 id=相关资料>相关资料</h2><ul><li>如是有为：<a href=/applications/handheld-joystick/>《掌机摇杆：薄型化以后，先验证中心和对角线》</a></li><li><a href=https://www.infineon.com/part/TLE493D-W2B6-A1>Infineon TLE493D-W2B6-A1</a></li><li><a href=https://www.melexis.com/en/product/MLX90393/Triaxis-Micropower-Magnetometer>Melexis MLX90393</a></li><li><a href=https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/57xilie/index.html>昆泰芯 KTH57 系列</a></li></ul><p>文中公式为磁场测量与位置解算的通用工程模型，并非上述具体芯片内部算法披露。工程测试描述为建议验证方法，不代表特定商业摇杆的实测结果。</p></div><div class=end-mark><span>应作如是观</span></div><div class="card qr-card"><img src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=200 height=200 loading=lazy><div><p class=card-title>关注公众号「如是有为」</p><p class=muted>微信扫一扫，新文章先在公众号发出。</p></div></div></article><nav class=prevnext><a href=/posts/wechat-c7ssdymjnsstyrpsejtp-g/><small>上一篇</small>从磁到电涡流：同一家芯片公司为什么同时押两条技术路线</a>
-<a class=r href=/posts/wechat-q9cmo5namlgnkuu6ghrqfa/><small>下一篇</small>管脚兼容替代实战：TMR 芯片对标 AMR，迁移到底要改什么</a></nav></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+</annotation></semantics></math></span><p>这个式子给了一个很直接的判断：影响角度的，不仅是干扰磁场有多大，更是它相对于目标磁场的方向；当目标平面磁场模长较小时，同样大小的干扰还可能造成更大的角度变化。</p>
+<p>当然，实际摇杆未必采用这个 atan2 模型，但由此可以理解外场耦合为什么需要根据具体解算算法评估。</p>
+<p>这意味着只拿一块裸露的摇杆小板做实验、测出漂亮的轨迹，还远远不够。<strong>真正的产品验证必须回到装有扬声器、振动模块、电池和完整外壳的整机状态</strong>：特别应该测试振动开始前后中心输出是否发生偏移，再观察外部磁性配件接近时二维位置是否出现系统性变化。</p>
+<h2 id="08读数很快不代表游戏里的响应就快">08｜读数很快，不代表游戏里的响应就快</h2>
+<p>磁传感器的数据手册可能提供很高的测量或输出速率。但玩家真正感受到的，是从手指推动摇杆到游戏画面发生变化的整个延迟链路，其中包括：磁场转换、内部数字滤波、接口读取、主控任务调度、输入数据打包、USB 或无线传输、游戏采样，以及最终的画面显示。</p>
+<p>这里还有一个容易混淆的概念：<strong>输出数据刷新频率，不等于从真实运动发生到数据可用的延迟。</strong> 假设芯片内部采用较强的数字低通滤波，即使外部接口可以频繁读取数据，新的测量结果仍可能包含明显的滤波群延迟；相反，提高输出速率也不能自动消除主控任务调度或无线传输造成的时间抖动。</p>
+<p>对于高速游戏中的快速变向，动态延迟、方向相关响应和过度平滑都可能影响手感。所以评价磁摇杆，不仅应当在静态位置上测误差，还应该输入可重复的动态运动轨迹，测量最终上报的位置与真实运动之间的关系。</p>
+<h2 id="09如果真要验证一款磁摇杆我会先做这些实验">09｜如果真要验证一款磁摇杆，我会先做这些实验</h2>
+<p>第一组不是画圈，而是<strong>测中心</strong>。连续从八个方向松手，记录足够多次的回中位置，区分随机噪声、方向相关迟滞与长期位置变化。</p>
+<p>第二组测<strong>整个二维平面</strong>。不能只测上下左右：除了四个对角方向，还应当在不同的半径、不同的角度采点，检查交叉轴误差和局部非线性。</p>
+<p>第三组必须<strong>保留原始数据</strong>。不要只保存最终归一化的游戏坐标，尽可能同时记录原始磁场分量、温度、解算坐标和校准后坐标。否则一旦出现问题，就很难判断到底是磁路失真、芯片漂移，还是算法把误差重新分配到了其他位置。</p>
+<p>第四组测<strong>按压耦合</strong>。在中心、半行程和接近满行程等不同位置进行按压，检查方向输出是否发生异常变化。</p>
+<p>第五组测<strong>整机环境</strong>。加入温度变化、振动工作、邻近磁性器件和机械寿命测试，观察原本校准好的映射关系能否长期维持。</p>
+<p>第六组测<strong>动态响应</strong>。使用有参考位置测量的运动平台，进行阶跃、往返和快速变向测试，比较原始输出与系统最终上报数据。</p>
+<p>这里最关键的不是一次测出多小的误差，而是确定误差来源、随工况的变化，以及能否通过可靠的方法补偿。</p>
+<h2 id="10磁摇杆最大的进步可能不是终于不用电位器了">10｜磁摇杆最大的进步，可能不是终于不用电位器了</h2>
+<p>传统电位器摇杆存在接触磨损、污染等可靠性挑战。磁摇杆通过非接触测量，确实绕开了其中一部分物理限制，但它同时把大量问题转移到了磁路、机械装配和信号解算上。</p>
+<p>换句话说，原来难的是接触式测量能不能长期稳定工作；现在难的是三维磁场能不能长期、准确地代表一个二维机械输入。</p>
+<p>从这个角度看，磁摇杆并不是一个已经被霍尔芯片彻底解决的简单应用，它更像是一道非常典型的传感器系统工程题。</p>
+<p><strong>芯片越精确，就越容易看见机构不完美的地方；软件越强大，就越有可能把错误修饰成漂亮的输出；产品越薄，留给磁路和机械公差的空间往往越紧张。</strong></p>
+<p>最终决定一款摇杆好不好用的，不是它叫不叫霍尔摇杆，也不是它有多少位分辨率，而是当玩家把它推到任意方向、任意位置，再突然松手时，系统是否始终能够理解那个动作真正意味着什么。</p>
+<p>玩家要的是游戏人物听指挥。传感器工程师要做的，是确保芯片测到的磁场，最终没有误解玩家的手。</p>
+<h2 id="相关资料">相关资料</h2>
+<ul>
+<li>如是有为：<a href="/applications/handheld-joystick/">《掌机摇杆：薄型化以后，先验证中心和对角线》</a></li>
+<li><a href="https://www.infineon.com/part/TLE493D-W2B6-A1">Infineon TLE493D-W2B6-A1</a></li>
+<li><a href="https://www.melexis.com/en/product/MLX90393/Triaxis-Micropower-Magnetometer">Melexis MLX90393</a></li>
+<li><a href="https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/57xilie/index.html">昆泰芯 KTH57 系列</a></li>
+</ul>
+<p>文中公式为磁场测量与位置解算的通用工程模型，并非上述具体芯片内部算法披露。工程测试描述为建议验证方法，不代表特定商业摇杆的实测结果。</p>
+</div>
+  <div class="end-mark"><span>应作如是观</span></div>
+  <div class="card qr-card">
+  <img src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="200" height="200" loading="lazy">
+  <div>
+    <p class="card-title">关注公众号「如是有为」</p>
+    <p class="muted">微信扫一扫，新文章先在公众号发出。</p>
+  </div>
+</div>
+
+</article>
+<nav class="prevnext">
+  <a href="/posts/wechat-c7ssdymjnsstyrpsejtp-g/"><small>上一篇</small>从磁到电涡流：同一家芯片公司为什么同时押两条技术路线</a>
+  <a class="r" href="/posts/wechat-q9cmo5namlgnkuu6ghrqfa/"><small>下一篇</small>管脚兼容替代实战：TMR 芯片对标 AMR，迁移到底要改什么</a>
+</nav>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

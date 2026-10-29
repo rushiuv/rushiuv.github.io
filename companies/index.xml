@@ -1,1 +1,927 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>企业 Wiki on 如是有为</title><link>https://sensor.fans/companies/</link><description>Recent content in 企业 Wiki on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://sensor.fans/companies/index.xml" rel="self" type="application/rss+xml"/><item><title>精工NPC</title><link>https://sensor.fans/companies/seiko-npc/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/seiko-npc/</guid><description>&lt;p>精工NPC（セイコーNPC / Seiko NPC）设计、开发、制造和销售半导体产品。编码器产品位于反射式光检测与信号处理这一层；应与外部码尺、细分电路和最终机械系统分开看。&lt;/p></description></item><item><title>Baumer</title><link>https://sensor.fans/companies/baumer/</link><pubDate>Thu, 22 Oct 2026 10:58:00 +0800</pubDate><guid>https://sensor.fans/companies/baumer/</guid><description/></item><item><title>POSIC</title><link>https://sensor.fans/companies/posic/</link><pubDate>Thu, 22 Oct 2026 10:58:00 +0800</pubDate><guid>https://sensor.fans/companies/posic/</guid><description/></item><item><title>ABB</title><link>https://sensor.fans/companies/abb/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/abb/</guid><description>&lt;p>ABB 站在编码器链的下游最粗的那一段：它做变频器、电机、伺服与机器人，是角度反馈的购买方与接口定义方之一。读它的资料，重点不在它有没有编码器产品，而在它的驱动与运动产品对反馈提出了什么要求——接口、时序、安全等级都是从这一层往下压的。&lt;/p></description></item><item><title>ABB Robotics</title><link>https://sensor.fans/companies/abb-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/abb-robotics/</guid><description>&lt;p>ABB Robotics 站在&lt;strong>整机应用&lt;/strong>这一层，而且是这一层里选型权最集中的一类：伺服电机、齿轮单元、控制器和运动学都在集团内部闭环，关节上的反馈由它自己定，集成商和终端用户都碰不到。对做编码器的人，它的公开资料是一个明确的负样本——官网给到 TCP 位姿重复性与路径精度为止，再往下的单轴角分辨率、编码器型式、装在电机侧还是关节侧，一个字都没有。&lt;/p></description></item><item><title>ADI</title><link>https://sensor.fans/companies/adi/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/adi/</guid><description>&lt;p>ADI 在编码器链上占两格：一格是把多圈与角度做进一颗的磁传感（&lt;a href="https://sensor.fans/models/admt4000/">ADMT4000&lt;/a>），一格是旋变路线（AD2S1210 / AD2S83 旋变数字转换器、AD2S99 激励振荡器、ADA4571 AMR 角度前端）。前者回答&amp;quot;掉电后圈数怎么记住&amp;quot;，后者回答&amp;quot;不用光学码盘怎么把角度读出来、怎么给出激励&amp;quot;。读 ADI 的资料，价值几乎全在数据手册：器件级指标写得比任何系列页都细。&lt;/p></description></item><item><title>Akko</title><link>https://sensor.fans/companies/akko/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/akko/</guid><description>&lt;p>Akko 是&amp;quot;磁位移输入与固件交互&amp;quot;这一层里少见的样本：它是键盘整机品牌，但霍尔磁轴把它变成了&lt;strong>每键一根 3.5 mm 行程的线性位移通道加一套可编程阈值&lt;/strong>。对做磁传感与编码器的人，它的价值不在精度有多高，而在它把磁测量的成本、标定和容错压到了消费级量产的价位上，并且轴体、PCB、固件三层里有两层握在自己手里。&lt;/p></description></item><item><title>AKM</title><link>https://sensor.fans/companies/akm/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/akm/</guid><description>&lt;p>AKM 在编码器链上属于&amp;quot;磁传感前端&amp;quot;这一层：卖的是霍尔与磁阻敏感元件加信号处理的芯片，不是编码器整机。它对做编码器的人最有参考价值的是两条路线同时存在——用霍尔做角度但把误差校正做进芯片（AK7440 标 ±20 角秒），以及用 14 位分辨率换离轴安装自由度（AK7455 标 ±0.1°）。&lt;/p></description></item><item><title>Allegro</title><link>https://sensor.fans/companies/allegro/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/allegro/</guid><description>&lt;p>Allegro 在编码器链上是磁传感前端加功率驱动的芯片厂，位置在编码器厂与电机厂的上游。它的角度传感器有一个别家少见的底层结构：CVH（环形立式霍尔）用一圈立式霍尔片旋转扫描磁场矢量，单个敏感点就能测 360°，因此对气隙和偏心不像传统正交霍尔桥那样敏感。读它的资料，先看这个结构，再看它把诊断做到哪一级。&lt;/p></description></item><item><title>ams OSRAM</title><link>https://sensor.fans/companies/ams-osram/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/ams-osram/</guid><description>&lt;p>读 ams OSRAM 现在必须带一个时间点：它在 2026 年 7 月 1 日把非光学的模拟与混合信号传感业务整体卖给了英飞凌。这意味着本站保留的 &lt;a href="https://sensor.fans/models/as5047p/">AS5047P&lt;/a>、&lt;a href="https://sensor.fans/models/as5600/">AS5600&lt;/a> 这类磁角度资料，法律主体与技术支持已经换了东家；而 ams OSRAM 自己退回「光」——LED、激光、光电探测器与光学传感。对做编码器的人来说，它如今是光编码器光源与接收端的候选供应方，不再是磁角度芯片的同台竞争者。&lt;/p></description></item><item><title>Anthropic</title><link>https://sensor.fans/companies/anthropic/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/anthropic/</guid><description>&lt;p>Anthropic 与编码器没有产品关系，它在这个站的位置与 OpenAI 同类：工程资料的读写工具。差别在于它把&amp;quot;模型如何接外部系统&amp;quot;做成了一个公开协议（MCP），这对工程场景的意义比模型本身的分数更具体——手册、测试数据、本地脚本可以按同一套接口挂进去。&lt;/p></description></item><item><title>ANYbotics</title><link>https://sensor.fans/companies/anybotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/anybotics/</guid><description>&lt;p>ANYbotics 是&amp;quot;移动机器人与巡检&amp;quot;这一层里关节密度最高的一类整机厂：四足行走，每台机器十几个电机轴同时在力矩环里工作。但它对外只发表整机级指标——速度、续航、载荷、防护等级、传感器清单——关节数、单关节扭矩、反馈装在电机侧还是关节侧，一个字都没有。对做编码器的人，这是典型的&amp;quot;用量大、门槛在规格书之外&amp;quot;的客户：官网能确认它的应用边界，确认不了器件口径。&lt;/p></description></item><item><title>Apple</title><link>https://sensor.fans/companies/apple/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/apple/</guid><description>&lt;p>Apple 站在链条最末端的终端应用层，而且是&amp;quot;只发布结果、不发布器件&amp;quot;那一端。它公开的每一个角度问题都有自己的解法：手机防抖是把整块图像传感器在平面内甚至三维上做闭环微位移，头显位姿靠 6 个追踪相机加 4 个眼动相机做视觉解算。对做编码器与磁传感的人，Apple 不是可直供的客户，而是&amp;quot;最高端消费电子如何绕开旋转测量&amp;quot;的对照样本：需求由它定义，器件名字从未出现在官网上。&lt;/p></description></item><item><title>April Robotics</title><link>https://sensor.fans/companies/april-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/april-robotics/</guid><description>&lt;p>April Robotics 站在&amp;quot;机器人学习与灵巧操作&amp;quot;这一层，但它卖的不是机器人，是&lt;strong>把熟练工的手上功夫变成模型&lt;/strong>：采集端是一只自带惯性单元与触觉迹线的手套，训练出来的策略再部署到别人家的臂和手上。对做角度测量的人，这是一个干净的负样本——手部十多个关节的角度全部由 IMU 推算，一枚旋转编码器都没有；真正有转轴的地方，在它部署时选用的机械臂与末端手上。&lt;/p></description></item><item><title>Ascento</title><link>https://sensor.fans/companies/ascento/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/ascento/</guid><description>&lt;p>Ascento 是&amp;quot;移动机器人与巡检&amp;quot;这一层里少见的服务型卖方：它不卖机器人，卖的是按站点订阅的巡逻服务，机器人、充电、软件、7×24 支持一起打包。对做编码器的人，这决定了它的采购逻辑——&lt;strong>不按单机规格议价，按整机可用率与巡检次数算账&lt;/strong>，所以它公开的数字全是运营指标，一个关节参数都没有。&lt;/p></description></item><item><title>Auterion</title><link>https://sensor.fans/companies/auterion/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/auterion/</guid><description>&lt;p>Auterion 站在&amp;quot;自主系统软件与平台&amp;quot;这一层：它卖飞控操作系统、集成计算模块和云端的机队管理，不造机体、不造电机，也不采购编码器。对做角度测量的人，这是一个结构性负样本——无人机与地面车的姿态由 IMU、磁力计与 GNSS 融合给出，&lt;strong>转子位置在电调内部闭环、不回传平台&lt;/strong>，所以它的接口表里连一个角度反馈通道都没有。&lt;/p></description></item><item><title>BOTA Systems</title><link>https://sensor.fans/companies/bota-systems/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/bota-systems/</guid><description>&lt;p>BOTA Systems 站在&amp;quot;力觉传感与机器人部件&amp;quot;这一层，卖的是六轴力/力矩传感器、关节力矩传感器、夹爪和定制件。它与角度测量不是竞争关系，而是&lt;strong>同一个关节里的另一路测量&lt;/strong>：力/力矩靠应变敏感元件做，角度靠编码器或磁传感做，两者共用安装面、共用对外的总线与同步时钟，但器件链完全分开。对做编码器的人，它的价值在于看清&amp;quot;关节里第二路信号&amp;quot;的接口与带宽要求，以及一家 ETH 衍生公司如何在十年里把实验室件做成产品目录。&lt;/p></description></item><item><title>Broadcom</title><link>https://sensor.fans/companies/broadcom/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/broadcom/</guid><description>&lt;p>Broadcom 的运动控制编码器是一条&amp;quot;元件产品线&amp;quot;：它卖编码器 IC（AEAT 系列）和反射式光学读头（AEDR 系列），也卖码盘与线驱动 IC，但不做带壳体的整机编码器。对做整机的人，它的价值在于三条不同的封装形态——芯片级磁编、含壳体的增量套件、贴片光学读头——以及 LPI、CPR、位数三套分辨率口径同时公开。&lt;/p></description></item><item><title>Bubble Robotics</title><link>https://sensor.fans/companies/bubble-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/bubble-robotics/</guid><description>&lt;p>Bubble Robotics 站在&amp;quot;水下与海事机器人&amp;quot;这一层，但它卖的不是机器，是常驻海上的监测服务：一座能自己发电、自己抛锚定位、自己布放回收水下机器人的水面母船（BubbleDock），加若干台集成现成 ROV/AUV 平台的水下作业机（BubbleBot）。对做角度测量的人，这是链条里最&amp;quot;少转轴&amp;quot;的一类客户——水下推进器按行业惯例不给位置反馈，全机真正有明确角位移过程的是布放回收那一段，而这一段官方只写&amp;quot;自主&amp;quot;，不写机构。&lt;/p></description></item><item><title>Cloudflare</title><link>https://sensor.fans/companies/cloudflare/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/cloudflare/</guid><description>&lt;p>Cloudflare 与编码器没有产品关系。它出现在这个站的原因是可验证性：查编码器厂商与代工厂资料时，挡在前面的往往是它的验证页；本站自身也是静态站发布，交付层用的是同类形态。所以看它的价值在于判断&amp;quot;一条公开资料取不到，是内容没了还是被网络层拦了&amp;quot;。&lt;/p></description></item><item><title>Disney Research</title><link>https://sensor.fans/companies/disney-research/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/disney-research/</guid><description>&lt;p>Disney Research 站在&amp;quot;科研机构&amp;quot;这一层，而且是一个特殊位置：它不卖机器人、不卖器件，发表的是机构设计与控制方法；机器人上的执行器与关节模组是外购成品，反馈元件随模组进来，论文里一个字都不提。对做编码器的人，它的价值在于看清这类研究的验收标准——&lt;strong>角度&amp;quot;够用&amp;quot;的定义是策略能跑起来、噪声能压下去、执行器不烧，而不是绝对精度&lt;/strong>。&lt;/p></description></item><item><title>Duatic</title><link>https://sensor.fans/companies/duatic/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/duatic/</guid><description>&lt;p>Duatic 站在&amp;quot;关节模组加整臂&amp;quot;这一层，是这条链上离编码器选型权最近的一类公司：它自己设计准直驱关节（DynaDrive 系列），再组装成臂（DynaArm）、上身（DuaTorso）、底盘（DuaRover）和双手机器人（DXTR）。关节里的角度反馈由它定，整机厂买了模组就等于交出了选型权。它官网还公开写了一句极有价值的话：DynaDrive Baboon 已替换 ANYmal 髋与膝上的 ANYdrive——&lt;strong>模组换掉，模组里的编码器跟着换&lt;/strong>。&lt;/p></description></item><item><title>Embotech</title><link>https://sensor.fans/companies/embotech/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/embotech/</guid><description>&lt;p>Embotech 站在&amp;quot;工业车辆自主驾驶&amp;quot;这一层，而且选的是一条与车上装传感器完全相反的路：&lt;strong>智能放在厂房里，车上不加任何传感器与自驾硬件&lt;/strong>。基础设施上的激光雷达负责定位，算好的轨迹以每秒 10 次、每包约 150 字节无线发给车辆。对做角度测量的人，它的意义不在&amp;quot;用不用编码器&amp;quot;，而在时间预算的写法——这条链上的指标不是延时小，而是延时可申报、行为确定。&lt;/p></description></item><item><title>EPFL</title><link>https://sensor.fans/companies/epfl/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/epfl/</guid><description>&lt;p>EPFL 不是供应商，在编码器链上的位置是&amp;quot;指标第一次被写出来的地方&amp;quot;：论文与学位论文里给出测量原理、误差模型与实验数据，比产品手册更早、也更具体。看它的价值是拿到原始定义——同一个&amp;quot;精度&amp;quot;，实验室写的是标准差还是峰峰值，决定了后面所有比较是否成立。&lt;/p></description></item><item><title>ETH</title><link>https://sensor.fans/companies/eth/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/eth/</guid><description>&lt;p>这里的 ETH 指苏黎世联邦理工学院。它在链上的位置与 EPFL 相同：上游的研究与原型，不给量产供货。差别是方向偏机械与腿足机器人——这类原型对关节反馈最苛刻，论文里对&amp;quot;用了什么、为什么用&amp;quot;写得多。&lt;/p></description></item><item><title>Figure AI</title><link>https://sensor.fans/companies/figure-ai/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/figure-ai/</guid><description>&lt;p>Figure 站在&amp;quot;机器人本体与应用&amp;quot;这一层，是整机厂里最封闭的一类：官网讲能力、讲场景、讲模型，不讲机构。三代机器人的公开差异全部落在形态、手、电池位置与使用场景上，&lt;strong>关节数、自由度、执行器型式与角度反馈一个字都没有&lt;/strong>。对做编码器的人，它的价值不在参数，而在看清整机厂的公开叙事结构——卖点永远在&amp;quot;能干什么&amp;quot;，器件层永远留在暗处。&lt;/p></description></item><item><title>Flexion Robotics</title><link>https://sensor.fans/companies/flexion-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/flexion-robotics/</guid><description>&lt;p>Flexion 站在&amp;quot;机器人学习与灵巧操作&amp;quot;这一层，卖的是人形机器人的自主软件栈，不卖机器人也不卖关节。对做角度测量的人，它属于&amp;quot;不采购器件、但直接消耗器件输出&amp;quot;的一类：它读的是整机 API 给的关节状态，&lt;strong>角度质量在它这里只体现为状态估计与控制能不能收敛&lt;/strong>，因此它提出的要求是频率、噪声与时间戳一致性，而不是分辨率位数。&lt;/p></description></item><item><title>Flink Robotics</title><link>https://sensor.fans/companies/flink-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/flink-robotics/</guid><description>&lt;p>Flink Robotics 站在&amp;quot;机器人学习与灵巧操作&amp;quot;这一层，卖的是整机加模型一起交付的搬运机器人 Flinkbot。对做编码器的人，它官网有一句话价值很高：&lt;strong>六轴臂是外购的，Flink AI 在最底层控制它，目的是随时换臂厂与型号&lt;/strong>。这句话把选型权写死了——关节角度随臂一起买进来，Flink 自己只做夹爪、机身、控制器与模型，并且刻意保持供应商可切换。&lt;/p></description></item><item><title>FORGIS</title><link>https://sensor.fans/companies/forgis/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/forgis/</guid><description>&lt;p>FORGIS 站在&amp;quot;工业软件与智能平台&amp;quot;这一层，卖的是产线的智能层，不是器件。它把不同厂商、不同年代的 PLC、机器人、传感器与驱动接进一个平台，读机器已有的数据，再往上做配置、验证与优化。对做角度测量的人，它的意义是看清&lt;strong>软件层消费角度的口径&lt;/strong>：它拿到的是控制器给出的位置与状态，采样率由接口决定，与伺服环里那颗编码器完全不在一个时间尺度上。&lt;/p></description></item><item><title>Gravis Robotics</title><link>https://sensor.fans/companies/gravis-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/gravis-robotics/</guid><description>&lt;p>Gravis Robotics 站在&amp;quot;工程机械自动化&amp;quot;这一层，做的是&lt;strong>改装&lt;/strong>不是造机：一套装在驾驶室顶部的模块化套件 Gravis RACK，加传感器与平板界面，把客户现有的挖掘机与轮式装载机变成自主作业机。对做角度测量的人，它的架构很关键——臂的姿态靠发出的指令与地形扫描推出来，不是靠关节上的编码器测出来的。这类整机原本就没有关节角反馈，改装方也不会加。&lt;/p></description></item><item><title>Hengstler</title><link>https://sensor.fans/companies/hengstler/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/hengstler/</guid><description>&lt;p>Hengstler 是德国巴登-符腾堡州 Aldingen 的编码器与工业计数器件制造商，做的是&lt;strong>可以直接装在轴上、直接对外的整机编码器&lt;/strong>，不是编码器芯片厂。对做芯片或做选型的人来说，它的价值在于公开的规格页：同一家公司同时给光学单圈、光学多圈、无齿轮磁多圈和增量四个方向，型号族之间的取舍写得比多数厂商清楚。&lt;/p></description></item><item><title>Hexagon Robotics</title><link>https://sensor.fans/companies/hexagon-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/hexagon-robotics/</guid><description>&lt;p>Hexagon Robotics 站在&lt;strong>整机应用&lt;/strong>这一层：它不做编码器，也不做关节里的敏感元件，而是把执行器、传感器和自有测量技术装进一台叫 AEON 的人形机器人里，卖给工厂和物流现场。对做编码器的人，它值得读的地方有两个：一是 34 个自由度这个数直接等于单机的关节轴数量级；二是它把执行器公开交给舍弗勒供给，等于把关节内的角度反馈选择权也一并交了出去。&lt;/p></description></item><item><title>iC-Haus</title><link>https://sensor.fans/companies/ic-haus/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/ic-haus/</guid><description>&lt;p>iC-Haus 是那种「编码器厂背后的人」：它不做整机，卖的是感应前端、插值处理器、多圈计数与接口芯片，还能按客户规格做定制 ASIC。所以它的产品目录读起来像一条测量链的分解图——霍尔角度前端（&lt;a href="https://sensor.fans/models/ic-ma/">iC-MA&lt;/a>、&lt;a href="https://sensor.fans/models/ic-ma3/">iC-MA3&lt;/a>、&lt;a href="https://sensor.fans/models/ic-mh16/">iC-MH16&lt;/a>、iC-MHM）、离轴磁绝对位置（&lt;a href="https://sensor.fans/models/ic-mu128/">iC-MU128&lt;/a>）、编码器处理器与 BiSS 接口（iC-TW29）。读它的资料要先认「这颗片子在哪一段」：传感器、插值、接口分属不同层，不能拿目录名当功能等价。&lt;/p></description></item><item><title>Intel</title><link>https://sensor.fans/companies/intel/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/intel/</guid><description>&lt;p>Intel 在编码器链上有两个不相干的位置：一是机器人控制器里的 x86 主板——角度值最终被这个控制器读走，但读的是总线帧不是传感器信号；二是晶圆代工，18A/14A 这类节点决定别人家的 SoC 能做成什么样。它的深度视觉（RealSense）是第三条线，与角度无关，容易混淆。&lt;/p></description></item><item><title>Loki Robotics</title><link>https://sensor.fans/companies/loki-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/loki-robotics/</guid><description>&lt;p>Loki Robotics 做的是&lt;strong>商用设施清洁整机&lt;/strong>：一台要在卫生间、楼面、大堂里换工具、抹清洁剂、直接接触固定设施的移动操作机器人。它在编码器链上的位置很特殊——现在这台机器的可动件不多，但公司正在把机械臂和夹爪收回自研，一旦这条路走通，关节与编码器的选型权就从供应商手里回到整机厂。&lt;/p></description></item><item><title>maxon</title><link>https://sensor.fans/companies/maxon/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/maxon/</guid><description>&lt;p>maxon 站在“精密驱动系统”这一层，编码器是它自己设计并生产的一类传感器件，但有一条关键商业规则写在官网上：&lt;strong>传感器只能作为电机组合的一部分出售&lt;/strong>，并且按电机型号在供货工厂装机。这条规则决定了它在编码器链上的位置——不是可以单独供货的器件厂，而是把编码器锁进电机平台的一层。对做编码器芯片的人，这意味着入口在电机项目，不在器件询价单上。&lt;/p></description></item><item><title>Melexis</title><link>https://sensor.fans/companies/melexis/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/melexis/</guid><description>&lt;p>Melexis 在这条链上值得单独读，是因为它同时供两条互相竞争的前端路线：磁的走 Triaxis® 霍尔，从只有模拟正余弦的 &lt;a href="https://sensor.fans/models/mlx90380/">MLX90380&lt;/a> 一直到片上自校准、ASIL-B 的 MLX90382；电感的走 MLX90520，片内 LC 振荡器加 DSP，双通道还能算游标角。对整机厂而言这不是「买哪家」而是「买哪条路线」，代价分别落在磁体与 PCB 线圈上。读它的资料要从 datasheet 入手，产品页对本次抓取不可达。&lt;/p></description></item><item><title>microagi</title><link>https://sensor.fans/companies/microagi/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/microagi/</guid><description>&lt;p>microagi 是这条链上少见的&lt;strong>零转轴公司&lt;/strong>：它不造机器人，也不训练一颗编码器，做的是把工厂里的手工活录成训练数据、再把别人家的机器人部署回产线。对做编码器的人来说，它的价值不在产品，而在它公开写明的两条边界——不做遥操作、整机从&amp;quot;造得最好的厂商&amp;quot;买——这两句话直接决定了它的采集端和执行端各有多少个角度传感点。&lt;/p></description></item><item><title>mimic</title><link>https://sensor.fans/companies/mimic/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/mimic/</guid><description>&lt;p>mimic 是本批次里对编码器最直接的一家：它把&amp;quot;电机侧一颗、关节侧一颗&amp;quot;的双编码器结构写进了官方技术博客，用来解释一只腱驱手怎么把接触力分辨到 0.1 牛。它的位置是&lt;strong>灵巧操作整机与手部模组&lt;/strong>，不是芯片；但它对角度反馈的定义方式，比多数整机厂都写得更清楚。&lt;/p></description></item><item><title>MPS</title><link>https://sensor.fans/companies/mps/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/mps/</guid><description>&lt;p>MPS 的主业是电源管理，磁角度传感是它挂在 MagAlpha 名下的一条产品线。在编码器链上它是&amp;quot;TMR / 霍尔角度芯片 + ABZ、UVW 输出&amp;quot;的芯片厂，位置在模组厂上游一格。读它的资料要抓两点：INL 有两个数（出厂 &amp;lt;0.6°、用户 32 点校准后 &amp;lt;0.1°），以及 &lt;a href="https://sensor.fans/models/ma600/">MA600&lt;/a> 已经进入&amp;quot;仅供既有客户&amp;quot;状态、新设计要看 &lt;a href="https://sensor.fans/models/ma600a/">MA600A&lt;/a>。&lt;/p></description></item><item><title>Nautica Technologies</title><link>https://sensor.fans/companies/nautica-technologies/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/nautica-technologies/</guid><description>&lt;p>Nautica Technologies 做的是&lt;strong>海事整机应用&lt;/strong>：一台常驻在船上的机器人，在船不起坞、不停租的情况下持续爬行清刷船底，用机械方式替代毒性防污漆。它不是编码器相关公司，但对角度传感有一个明确的抬升作用——船体表面爬行要自主化，轮子上那几路原来只当换相用的反馈，就得变成导航件。&lt;/p></description></item><item><title>NVIDIA</title><link>https://sensor.fans/companies/nvidia/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/nvidia/</guid><description>&lt;p>NVIDIA 不在编码器链上，它站在编码器的下游两步：关节角度经驱动器与现场总线上到控制器，Jetson 只负责感知、规划与推理。所以读它的资料要盯的是输入侧接口——相机走多少路 CSI、几路 HSB、功耗预算多少瓦，这些决定一台机器人能装几只眼，而不是决定它能测多准的角度。&lt;/p></description></item><item><title>NXP</title><link>https://sensor.fans/companies/nxp/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/nxp/</guid><description>&lt;p>NXP 在编码器链上的位置是&amp;quot;车规磁角度前端 + 汽车控制器与接口&amp;quot;。它的 AMR 角度传感器 KMZ 系列曾是 BLDC 换相与 EPS 转角测量里的常见件，但 &lt;a href="https://sensor.fans/models/kmz60/">KMZ60&lt;/a> 在官网已标注 Archived（停产/归档），这条信息对选型比任何参数都重要——参数再好，料号生命周期结束了就得换方案。&lt;/p></description></item><item><title>OpenAI</title><link>https://sensor.fans/companies/openai/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/openai/</guid><description>&lt;p>OpenAI 不产传感器，也不做测量。它在这个站的位置是&amp;quot;工程资料的处理手段&amp;quot;：把厂商手册、专利、公告里的定值抽成表格，把型号差异比对出来，把一段测试脚本写出来。判断它的价值，要严格区分&amp;quot;读得快&amp;quot;和&amp;quot;读得对&amp;quot;——后者仍然要回到官网原文。&lt;/p></description></item><item><title>PixArt</title><link>https://sensor.fans/companies/pixart/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/pixart/</guid><description>&lt;p>PixArt（原相科技）是这条链上少见的&lt;strong>两头都在的公司&lt;/strong>：一头是出货量极大的光学鼠标与光学导航传感器，另一头是挂在同一套光学导航技术下的增量式光学编码器 IC。对做编码器的人来说，后一头才是重点——它把编码器做成 4×4 mm 级别的芯片加码盘方案，卖的是&amp;quot;芯片 + 码盘 + 插值&amp;quot;这一整层，不是整机编码器。&lt;/p></description></item><item><title>POSITAL</title><link>https://sensor.fans/companies/posital/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/posital/</guid><description>&lt;p>POSITAL 站在&amp;quot;整机编码器加套件编码器&amp;quot;这一层，背后是德国的 FRABA 集团。它最有辨识度的一件事是把韦根（Wiegand）效应做成了产品化的多圈计数方案：每转一个磁极翻转产生一个脉冲，脉冲本身既当信号又当能量，于是多圈不需要电池也不用齿轮组。读它的资料，重点看套件编码器的机械脚印和接口清单，而不是只看分辨率。&lt;/p></description></item><item><title>Qualcomm</title><link>https://sensor.fans/companies/qualcomm/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/qualcomm/</guid><description>&lt;p>高通在这条链上的角色与 NVIDIA 类似但落点更低：它卖的是带视觉与 AI 加速的 SoC，用在 AMR、无人机与人形的控制盒里。与编码器的交界仍然是总线而不是传感器——公开的机器人控制器规格表里，能做关节反馈的接口是 CAN FD，不是编码器输入。&lt;/p></description></item><item><title>RAI Institute</title><link>https://sensor.fans/companies/rai-institute/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/rai-institute/</guid><description>&lt;p>RAI Institute 是&lt;strong>研究机构&lt;/strong>这一层：它不卖机器人，也不卖器件，靠论文、博客和视频对外。对做编码器的人来说，它的用处不是采购入口，而是公开的硬件描述——机构自述在研究&amp;quot;给轮式、人形、四足机器人用的先进传感器&amp;quot;，这句话是它在整条链上唯一直接碰感知的地方。&lt;/p></description></item><item><title>Renesas</title><link>https://sensor.fans/companies/renesas/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/renesas/</guid><description>&lt;p>瑞萨在这条链上卖的是&amp;quot;感应芯片加线圈设计工具&amp;quot;，不卖磁体、也不卖码盘：它把客户自制的 PCB 印刷线圈与一片金属靶之间的涡流变化，解成一对正余弦或增量脉冲。读它的资料最该看两处：电感式位置传感器分类页讲清了端轴、侧轴、直线与弧形四种装法怎么选线圈，IPS2550 与 IPS2200 的参数页则给出车规等级、电气转速与传播延迟这三档硬指标。&lt;/p></description></item><item><title>RIVR</title><link>https://sensor.fans/companies/rivr/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/rivr/</guid><description>&lt;p>RIVR 站在&lt;strong>移动整机&lt;/strong>这一层：轮腿结合的送货机器人，做最后一段路和门口最后一百码。它值得关注的原因不是它自己的产品规格（官网几乎没给），而是它把&amp;quot;轮 + 腿&amp;quot;这套构型做成了商业产品——这种构型下每条腿至少要有髋、膝两个关节角，加上轮子的驱动，一台机器的受控轴比轮式底盘多出一截，而且腿关节要求上电即绝对。&lt;/p></description></item><item><title>RLS</title><link>https://sensor.fans/companies/rls/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/rls/</guid><description>&lt;p>RLS 是编码器链上少见的&amp;quot;芯片与读头同一屋檐下&amp;quot;：它既卖 OnAxis 系列磁角度芯片（8~13 位），也卖 AksIM、Orbis、RM 这些读头与成套编码器（最高 21 位）。读它的资料最有价值的不是分辨率表，而是它公开承认的技术边界——哪些参数是环与读头一起决定的，哪些要靠系统级标定。&lt;/p></description></item><item><title>Sensitec</title><link>https://sensor.fans/companies/sensitec/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/sensitec/</guid><description>&lt;p>Sensitec 在编码器链上是&amp;quot;磁阻敏感元件&amp;quot;这一层：卖 AMR、TMR、GMR 芯片与配套的磁环、磁栅、编码器模组，不做带壳整机编码器。它对做选型的人最有价值的一点常被忽略——AMR 角度芯片测的是 180° 绝对角度，不是 360°，因为桥信号是磁场的两倍频，方向要靠外部或芯片侧逻辑另判。&lt;/p></description></item><item><title>Sevensense Robotics</title><link>https://sensor.fans/companies/sevensense-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/sevensense-robotics/</guid><description>&lt;p>Sevensense 是一家&lt;strong>一根转轴都没有的定位公司&lt;/strong>：它卖的是视觉 SLAM 盒子，装在别人的 AGV、AMR 和叉车上，输出位姿。正因为它自己不做运动，它对编码器的态度是&amp;quot;拿来用&amp;quot;——车辆的轮式里程计、底盘控制器的状态量，都是它融合的输入。这条路线上，轮速反馈的精度与时间戳质量会直接落进位姿输出，而它不是这些反馈的生产者。&lt;/p></description></item><item><title>ST</title><link>https://sensor.fans/companies/st/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/st/</guid><description>&lt;p>ST 在这条链上不在敏感元件那一头。它的位置是主控与驱动：MCU 的定时器直接吃正交编码信号，电机驱动与功率器件在编码器外围，MEMS 目录里是惯性、磁力计与测距，而不是旋转角度芯片。读它的资料最该看两处：产品页里那句&amp;quot;quadrature (incremental) encoder input&amp;quot;到底挂在哪些定时器上，以及传感器目录里有没有面向伺服的角度 IC。&lt;/p></description></item><item><title>TDK</title><link>https://sensor.fans/companies/tdk/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/tdk/</guid><description>&lt;p>TDK 在编码器链上不是一个编码器厂，而是&amp;quot;磁传感芯片加无源件&amp;quot;的元件集团：角度传感器这一块有两条并行路线——TDK-Micronas 的 3D 霍尔（HAL 37xy 家族，能同时测 BX/BY/BZ 三个分量）和从硬盘磁头技术下移的 TMR 角度传感器。对做编码器的人，看它的意义在于这两条路线覆盖了&amp;quot;宽气隙穿轴测量&amp;quot;和&amp;quot;高精度小体积&amp;quot;两种需求。&lt;/p></description></item><item><title>Tethys Robotics</title><link>https://sensor.fans/companies/tethys-robotics/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/tethys-robotics/</guid><description>&lt;p>Tethys Robotics 做的是&lt;strong>水下整机&lt;/strong>：一台紧凑型水下机器人，卖点在&amp;quot;能在急流里定住&amp;quot;。这条卖点对推进与反馈的含义很直接——能抗 3.5 节水流做定点作业，靠的不是更强的推进器，而是闭环控制，而闭环里最贵的那一环是&amp;quot;我现在在哪、朝哪、有没有被冲走&amp;quot;。它公开的正好是能力，不公开的正好是这套反馈。&lt;/p></description></item><item><title>TI</title><link>https://sensor.fans/companies/ti/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/ti/</guid><description>&lt;p>TI 在这条链上是「超市」型供应：磁位置只是它传感器目录中的一支，客户拿它的霍尔或 AMR 芯片，自己配 ADC、SPI 时序与角度解算。所以读 TI 的价值不在「它有没有编码器芯片」，而在两条互补的感应路线——三轴霍尔 TMAG5170（片内 CORDIC 直接算角）与 AMR 的 TMAG6180-Q1（只出差分正余弦，解算留给后端）——以及它把评估板与图形工具一起给出来的习惯。&lt;/p></description></item><item><title>UBS</title><link>https://sensor.fans/companies/ubs/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/ubs/</guid><description>&lt;p>瑞银不进编码器的任何供应链环节，它的位置是&amp;quot;观点与预测的发布主体&amp;quot;。所以读它要做的第一件事不是找结论，而是确认口径：哪年发布的、什么情景下的、针对哪个市场。做不到这三点，报告里的百分比会被误读成对当下的判断。&lt;/p></description></item><item><title>Verity</title><link>https://sensor.fans/companies/verity/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/verity/</guid><description>&lt;p>Verity 是&lt;strong>室内自主无人机&lt;/strong>这一层：机器在仓库货架之间飞，扫条码、点库存、自己回巢充电，卖的是&amp;quot;库存准确率&amp;quot;这个结果。它的可动件只有四个桨轴，官方没有任何关于转子位置反馈的公开说明——这正是它在这个话题上的价值：一台把&amp;quot;角度预算&amp;quot;全花在定位上的飞行器，桨轴上不设位置传感。&lt;/p></description></item><item><title>Voliro</title><link>https://sensor.fans/companies/voliro/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/voliro/</guid><description>&lt;p>Voliro 做的是&lt;strong>能贴上去干活的飞行器&lt;/strong>：官方规格表把 Voliro T 定义为 omnidirectional tri-copter，靠可倾转的旋翼改变推力方向，从而在任何姿态下把工具压到结构表面。倾转轴是这台机器上唯一&amp;quot;需要知道自己转到哪&amp;quot;的轴，也是全机最贴近关节编码器场景的地方——但官方规格表对此一字未提。&lt;/p></description></item><item><title>Wingtra</title><link>https://sensor.fans/companies/wingtra/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/wingtra/</guid><description>&lt;p>Wingtra 做的是&lt;strong>测绘整机&lt;/strong>，构型是尾座式垂直起降固定翼：竖直立在尾撑上，靠两副桨直接起飞，转平后当固定翼巡航。这种构型的可动件极少——垂直起降与过渡全靠两副桨的推力向量，巡航靠舵面，没有云台倾转机构。对做角度传感的人来说，它是一台&amp;quot;轴上几乎没有位置反馈&amp;quot;的整机，值多少颗取决于舵面数量，而官方不公布这个数。&lt;/p></description></item><item><title>Wooting</title><link>https://sensor.fans/companies/wooting/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/wooting/</guid><description>&lt;p>Wooting 是这条链上&lt;strong>把磁传感做成消费品&lt;/strong>的一家公司：每颗键轴下面一颗霍尔器件，测的是键帽沿 Z 轴的直线位移，不是角度。它的价值在于把&amp;quot;磁传感器 + 固件 + 上位机接口&amp;quot;这条链完整暴露给用户——触发点、回差、上报率都是可配置项，位移原始值还能通过开源 SDK 直接读到应用里。&lt;/p></description></item><item><title>艾为</title><link>https://sensor.fans/companies/%E8%89%BE%E4%B8%BA/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%89%BE%E4%B8%BA/</guid><description>&lt;p>艾为在编码器链上是外围，不是核心。它不卖角度芯片，卖的是「驱动 + 感知周边」：马达驱动、触觉反馈、音频、电源与信号链，智能传感器类目下只有霍尔开关与霍尔锁存器——测的是磁场的「有与没有、正与反」，不是角度。读它的资料要带着这个前提：在消费类设备里，它提供的往往正是「让整机不需要角度编码器」的那一套。&lt;/p></description></item><item><title>安川</title><link>https://sensor.fans/companies/%E5%AE%89%E5%B7%9D/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%AE%89%E5%B7%9D/</guid><description>&lt;p>安川站在伺服驱动与工业机器人这一层，是角度反馈的大用户：一台六轴机器人有六个电机轴，每条轴都要一个位置反馈器件，伺服驱动还要靠它做换相与闭环。读它的资料，能拿到的多是系统层信息，反馈器件本身的选择标准要另找手册。&lt;/p></description></item><item><title>奥比中光</title><link>https://sensor.fans/companies/%E5%A5%A5%E6%AF%94%E4%B8%AD%E5%85%89/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%A5%A5%E6%AF%94%E4%B8%AD%E5%85%89/</guid><description>&lt;p>奥比中光是这条链上少见的&lt;strong>自己做感知计算芯片的模组厂&lt;/strong>：它把深度计算的 ASIC（&lt;a href="https://sensor.fans/models/mx6800/">MX6800&lt;/a>）和光学系统一起做成相机，卖的是&amp;quot;深度图 + 点云&amp;quot;。但要注意区分——MX6800 是深度引擎，处理的是双目/结构光的视差解算，不是磁或光学的角度测量芯片；这家公司没有一根转轴，也不输出关节角。读它资料的正确姿势是看芯片与光学怎么分工、以及精度指标在什么距离与 ROI 下成立。&lt;/p></description></item><item><title>宝马</title><link>https://sensor.fans/companies/%E5%AE%9D%E9%A9%AC/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%AE%9D%E9%A9%AC/</guid><description>&lt;p>宝马在编码器链上是&lt;strong>整车需求方&lt;/strong>，而且是要求最严的那一类：车上有方向盘角、轮速、电机转子位置、制动踏板行程、悬架高度等多路位置与位移反馈，全部要走车规与功能安全。它不发编码器规格书给市场，也不公布供应商名单，所以看它的资料只能看到&amp;quot;系统级结果&amp;quot;——多少伏、多少公里、算力怎么组织，看不到用哪颗芯片。这个边界必须写清楚，否则很容易把整车指标误当成器件指标。&lt;/p></description></item><item><title>保隆科技</title><link>https://sensor.fans/companies/%E4%BF%9D%E9%9A%86%E7%A7%91%E6%8A%80/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E4%BF%9D%E9%9A%86%E7%A7%91%E6%8A%80/</guid><description>&lt;p>保隆科技在编码器链上是&amp;quot;整机与模组&amp;quot;这一层：它买前端芯片，做成车规传感器、执行器与关节编码器模组卖出去。2026 年公开的机器人旋转关节编码器定点，把它从汽车零部件供应商推到人形关节的位置感知上，这是读它资料时唯一需要盯住的一条线——其余产品（气门嘴、平衡块、排气件、空悬）与角度测量没有直接关系。&lt;/p></description></item><item><title>堡盟</title><link>https://sensor.fans/companies/%E5%A0%A1%E7%9B%9F/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%A0%A1%E7%9B%9F/</guid><description>&lt;p>堡盟（Baumer）是瑞士的家族传感集团，编码器只是它六大产品块之一，但这一块把&amp;quot;磁式够用&amp;quot;和&amp;quot;光学更准&amp;quot;两条路线摆得很清楚：磁式 MAGRES 系列角度精度公开写 ±0.15°，光学 OptoTurn EAL580 写 ±0.01°。读它的资料，最该看的是同尺寸下两种原理怎么分工，以及安全型编码器把认证做到哪一级。&lt;/p></description></item><item><title>倍福</title><link>https://sensor.fans/companies/%E5%80%8D%E7%A6%8F/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%80%8D%E7%A6%8F/</guid><description>&lt;p>倍福站在“控制器 + 驱动 + 电机”这一层，但它对编码器行业的影响不在卖多少反馈器件，而在改写了反馈信号怎么走线。它的 OCT（One Cable Technology）把编码器信号塞进电机动力电缆，这件事直接决定了电机侧那颗反馈器件必须是数字的、且要能和驱动做双向通信。&lt;/p></description></item><item><title>比亚迪</title><link>https://sensor.fans/companies/%E6%AF%94%E4%BA%9A%E8%BF%AA/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%AF%94%E4%BA%9A%E8%BF%AA/</guid><description>&lt;p>比亚迪是&lt;strong>整车与三电全栈自制&lt;/strong>的需求方：电机、电控、电池、功率半导体都在自己手里。这一点决定了它在编码器链上的位置——不是买整套电驱的总装厂，而是自己定义电机、逆变器与底盘执行器的一方，位置反馈的选型标准由它的电驱与底盘团队写。它公开的技术页是这批终端厂里数字最硬的：电机转速到 30511rpm、碳化硅到 1500V、易四方四电机独立驱动、云辇四轮独立悬架。&lt;/p></description></item><item><title>传周科技</title><link>https://sensor.fans/companies/%E4%BC%A0%E5%91%A8%E7%A7%91%E6%8A%80/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E4%BC%A0%E5%91%A8%E7%A7%91%E6%8A%80/</guid><description>&lt;p>传周科技站在&amp;quot;芯片 + 码盘 + 读数头&amp;quot;这一层：它把光电探测器阵列、码盘、角度解算芯片和整只光栅尺系统分开报价，客户可以直接买一颗芯片，也可以买读数头加栅尺的成品。读它的产品页最该注意两件事——分辨率用的是 CPR、栅距还是 M 序列位数三种口径；以及型号状态（已量产 / 可送样 / 预发布），状态比参数更能说明现在能不能用。&lt;/p></description></item><item><title>达尔优</title><link>https://sensor.fans/companies/%E8%BE%BE%E5%B0%94%E4%BC%98/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%BE%BE%E5%B0%94%E4%BC%98/</guid><description>&lt;p>达尔优在编码器链上占的是&amp;quot;磁位移输入&amp;quot;这一格，但方向与旋转编码相反：它测的是一段直线行程，量程只有几毫米，精度要求到 0.01mm。这类产品把霍尔传感器、磁体、弹簧与固件绑成一个键，出货量以百万计，是磁传感在消费端最集中的落点之一。读它的资料，重点不在位数，而在&amp;quot;行程分辨率、回报率、固件里可调的触发点&amp;quot;这三项怎么组合成体验。&lt;/p></description></item><item><title>多摩川</title><link>https://sensor.fans/companies/%E5%A4%9A%E6%91%A9%E5%B7%9D/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%A4%9A%E6%91%A9%E5%B7%9D/</guid><description>&lt;p>多摩川精机在编码器链上同时占两个位置：旋转变压器的老牌供应商，和伺服电机内置编码器的供应商。对做选型的人，它最有参考价值的是两条并行的事实——同一台伺服既可以配无刷旋变 Smartsyn，也可以配 23 位单圈加 16 位多圈的绝对编码器，两条路线的取舍在官网产品表里能横向看到。&lt;/p></description></item><item><title>多维科技</title><link>https://sensor.fans/companies/%E5%A4%9A%E7%BB%B4%E7%A7%91%E6%8A%80/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%A4%9A%E7%BB%B4%E7%A7%91%E6%8A%80/</guid><description>&lt;p>多维科技站在磁阻敏感元件这一层：它做 TMR、AMR 的感应电桥，也做把电桥信号变成角度或阈值的芯片，另外还卖磁传感器晶圆代工。对做编码器的人，它最有用的公开材料不是分辨率数字，而是它把“对轴一颗数字角度芯片”和“离轴四颗线性芯片加一颗解算芯片”这两条关节编码器路线连同各自精度口径一起写了出来。&lt;/p></description></item><item><title>峰岹</title><link>https://sensor.fans/companies/%E5%B3%B0%E5%B2%B9/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%B3%B0%E5%B2%B9/</guid><description>&lt;p>峰岹（Fortior）本来是被当作&amp;quot;电机驱动芯片厂&amp;quot;读的：MCU、ASIC、IPM、HVIC 一整套围着无刷电机转。但 &lt;a href="https://sensor.fans/models/sr3511n/">SR3511N&lt;/a> 与它配套的双磁式旋变，把这家公司推到了位置反馈的解算侧——RDC 负责把旋变的正余弦解成角度，双磁式旋变则把&amp;quot;旋变&amp;quot;从绕线结构搬到更薄、更便宜的载体上。所以读它要看两页：SENSOR 产品线讲它怎么测转子位置，SR3511N 的发布稿讲它怎么解算。&lt;/p></description></item><item><title>弓望</title><link>https://sensor.fans/companies/%E5%BC%93%E6%9C%9B/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%BC%93%E6%9C%9B/</guid><description>&lt;p>弓望（品牌写作&amp;quot;弓望传感&amp;quot;）是编码器链上的整机与模组厂，走的是电感式（涡流）路线——既不是光学，也不是霍尔磁编。它的产品结构很能说明目标市场：机器人关节的同侧双编、异侧双编、超大中空、超窄码道，全部围绕&amp;quot;电机端与减速机端要同时测&amp;quot;这一个需求展开。&lt;/p></description></item><item><title>光鉴</title><link>https://sensor.fans/companies/%E5%85%89%E9%89%B4/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%85%89%E9%89%B4/</guid><description>&lt;p>光鉴科技做的是&lt;strong>固定在壳体里的 3D 深度相机模组&lt;/strong>，站在&amp;quot;外部空间感知&amp;quot;这一层，不在关节位置反馈这条链上：它给机器人一个&amp;quot;前面有什么、离多远&amp;quot;的点云，不给&amp;quot;第几轴转角多少&amp;quot;。模组里没有电机、没有转轴、没有编码器，所以谈它&amp;quot;用谁家的位置反馈&amp;quot;从一开始就是伪问题；该看的是深度分辨率、帧率、出图延迟与接口，以及这些指标在哪个距离段成立。&lt;/p></description></item><item><title>果力智能</title><link>https://sensor.fans/companies/%E6%9E%9C%E5%8A%9B%E6%99%BA%E8%83%BD/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%9E%9C%E5%8A%9B%E6%99%BA%E8%83%BD/</guid><description>&lt;p>果力智能是&lt;strong>教育机器人厂&lt;/strong>，在编码器链上属于&amp;quot;零旋转需求最弱的一端&amp;quot;：它的产品是给学生编程用的 AI 机器人套件与课程，关节靠舵机带动，角度反馈在舵机内部完成。看它的资料时要接受一个事实——官网通篇讲课程与合作学校，不讲机械指标，因此能核对的只有公司与教育业务口径，不能核对任何关节或传感器参数。&lt;/p></description></item><item><title>海德汉</title><link>https://sensor.fans/companies/%E6%B5%B7%E5%BE%B7%E6%B1%89/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%B5%B7%E5%BE%B7%E6%B1%89/</guid><description>&lt;p>海德汉站在位置测量器件这一层，做的是整机与模块，不是单颗芯片：带内置轴承的角度编码器、只有读头与刻度件的模块式编码器、给电机做反馈的旋转编码器，加上直线光栅与数控系统。读它的资料，第一件事是分清“角度编码器”和“旋转编码器”这两条目录——前者服务精密回转轴，后者服务电机反馈，精度与安装方式不是一回事。&lt;/p></description></item><item><title>海康</title><link>https://sensor.fans/companies/%E6%B5%B7%E5%BA%B7/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%B5%B7%E5%BA%B7/</guid><description>&lt;p>海康机器人在这条链上占两格：光学测量（工业相机、3D 相机、读码器）与整机运动（潜伏、叉取、料箱、输送四类移动机器人，以及 2024 年起自研的关节机器人）。编码器对它是轮端与关节的内部件，不是对外产品。读它最该看两组数：相机像素与总线接口的换代节奏，以及移动机器人的累计出货——前者决定视觉测量能做到什么分辨力，后者决定它对位置反馈的采购体量。&lt;/p></description></item><item><title>禾川</title><link>https://sensor.fans/companies/%E7%A6%BE%E5%B7%9D/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E7%A6%BE%E5%B7%9D/</guid><description>&lt;p>禾川站在“伺服驱动 + 伺服电机 + 控制器”这一层，但它的公开资料里有一句话比同类厂更值得注意：官网公司介绍把自己的产品线写成“伺服系统、控制器（PLC）、视觉系统、编码器、变频器、触摸屏等”，编码器被明确列进了自家目录。这句话的价值在于它说明了编码器在这家公司里的归属——不是外购附件，而是自有产品线；它的边界同样明显：产品中心里没有单列的编码器分类页，型号、位数、协议一概不公开。&lt;/p></description></item><item><title>华虹</title><link>https://sensor.fans/companies/%E5%8D%8E%E8%99%B9/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%8D%8E%E8%99%B9/</guid><description>&lt;p>华虹在编码器链上同样落在&amp;quot;芯片变成硅片&amp;quot;这一步，但路线与先进逻辑厂不同：它把资源压在特色工艺上，模拟与电源管理、eNVM、逻辑射频、功率分立四块公开写明覆盖的工艺段与电压段。对做角度芯片的人，这意味着它的公开资料能回答&amp;quot;这颗芯片该走哪个平台、电压段够不够&amp;quot;，而不能回答&amp;quot;谁在里面流片&amp;quot;。&lt;/p></description></item><item><title>华为</title><link>https://sensor.fans/companies/%E5%8D%8E%E4%B8%BA/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%8D%8E%E4%B8%BA/</guid><description>&lt;p>华为在这条链上是&lt;strong>需求方加系统定义者&lt;/strong>，不是编码器厂：它不公开销售编码器，也不公布任何编码器芯片产品。与角度反馈真正相关的是&amp;quot;车控&amp;quot;这一支——转向稳定控制、车身稳定、悬架都要实时读方向盘角、轮速、横摆角速度、悬架高度。看它的资料要把&amp;quot;智驾/座舱&amp;quot;和&amp;quot;车控&amp;quot;分开：前者吃的是雷达与摄像头，后者才是位置传感密集区。&lt;/p></description></item><item><title>汇川</title><link>https://sensor.fans/companies/%E6%B1%87%E5%B7%9D/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%B1%87%E5%B7%9D/</guid><description>&lt;p>汇川站在“驱动器 + 伺服电机 + 系统”这一层，既不卖编码器整机，也不卖编码器芯片。它的编码器相关性落在两段：一段在伺服电机内部，反馈件随电机订货型号一起定；一段在驱动器侧，机床或产线要接的外部编码器按驱动器支持的协议走。所以读汇川的公开资料，能拿到的不是“某颗编码器用了谁的方案”，而是“一个国产驱动平台把哪些反馈形态当成标准配置”。本页只写能从官网读到的部分，规格级数字不猜。&lt;/p></description></item><item><title>金力永磁</title><link>https://sensor.fans/companies/%E9%87%91%E5%8A%9B%E6%B0%B8%E7%A3%81/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E9%87%91%E5%8A%9B%E6%B0%B8%E7%A3%81/</guid><description>&lt;p>金力永磁站在磁性材料这一层，是编码器链条最上游的一段：磁编码器读的是磁场，产生这束磁场的磁体要么是烧结钕铁硼，要么是粘结（注塑）磁环或橡胶磁。它不卖编码器，也不公开给谁供磁体，但它把高性能钕铁硼、磁组件、具身机器人电机转子、稀土回收四件事写在同一段公司介绍里，这四件事正好覆盖了从磁粉到电机转子的路径。读它的资料，价值在于判断磁体供给与牌号能力，而不是找编码器规格。&lt;/p></description></item><item><title>康诺思腾</title><link>https://sensor.fans/companies/%E5%BA%B7%E8%AF%BA%E6%80%9D%E8%85%BE/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%BA%B7%E8%AF%BA%E6%80%9D%E8%85%BE/</guid><description>&lt;p>康诺思腾是&lt;strong>腔镜手术机器人整机厂&lt;/strong>，在编码器链下游。它这一类客户与工业机器人有一个本质差别：主从系统里的&amp;quot;角度&amp;quot;分两处——主手要测医生手的关节角，从手要测器械腕的关节角，两边都要高分辨率、低时延，而且器械要在体内做 600° 旋转。看它的资料，重点是主从自由度与传动方式公开到什么程度，而不是找编码器型号。&lt;/p></description></item><item><title>昆泰芯</title><link>https://sensor.fans/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/</guid><description>&lt;p>昆泰芯在这批公司里是唯一把磁与光两条编码器芯片路线放进同一份目录的一家：霍尔做绝对角，AMR 与 TMR 做高精度角，一颗细分器吃外部正余弦，一颗游标光学芯片吃码盘。读它的资料，重点不是单个位数，而是同一测量任务在四条路线上各自付什么代价——延时、温区、安装方式、要不要外部解算。&lt;/p></description></item><item><title>莱仕达</title><link>https://sensor.fans/companies/%E8%8E%B1%E4%BB%95%E8%BE%BE/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%8E%B1%E4%BB%95%E8%BE%BE/</guid><description>&lt;p>莱仕达在编码器链上是&amp;quot;消费级力反馈外设&amp;quot;这一层，位置精度直接可被用户感知：方向盘转多少度、游戏里车头转多少度，中间只隔一条角度反馈链。它的价值在于公开了一组很少见的消费级数据——16bit 分辨率、3.2Nm 扭矩、双齿轮传动，这让人能算清&amp;quot;消费者为角度分辨率愿意付多少钱&amp;quot;。&lt;/p></description></item><item><title>雷尼绍</title><link>https://sensor.fans/companies/%E9%9B%B7%E5%B0%BC%E7%BB%8D/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E9%9B%B7%E5%B0%BC%E7%BB%8D/</guid><description>&lt;p>雷尼绍站在“读头 + 刻度”这一层：它不卖装在轴上的整机编码器，而是把光学读头和金属或玻璃刻度分开卖，由整机厂装进自己的机械结构。这个位置决定了它的资料重点与众不同——参数永远绑在“读头 + 某种刻度”的组合上，脱开刻度谈分辨率没有意义。&lt;/p></description></item><item><title>雷赛</title><link>https://sensor.fans/companies/%E9%9B%B7%E8%B5%9B/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E9%9B%B7%E8%B5%9B/</guid><description>&lt;p>雷赛站在“驱动 + 电机”这一层，产品结构是从步进起家、往闭环与伺服上走。它在编码器链上的价值有两处：一是把编码器接口写进了驱动器的公开卖点清单（差分 ABZ、第二编码器），这类信息在国产驱动厂里不算常见；二是它同时卖闭环步进与一体化伺服，等于把“编码器从可选件变标准件”这条路径展示了一遍。读它的资料，最该看的是驱动器接口表与电机反馈档位，而不是营销页里的精度形容。&lt;/p></description></item><item><title>零次方</title><link>https://sensor.fans/companies/%E9%9B%B6%E6%AC%A1%E6%96%B9/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E9%9B%B6%E6%AC%A1%E6%96%B9/</guid><description>&lt;p>零次方把产品定义成两半：一半是本体（ZERITH H1 系列轮臂人形），一半是数据（Zerith Data，遥操采集加标注加资产管理）。这个组合对做位置反馈的人有直接含义——本体侧要关节角度，采集侧要人手的位姿，两条线都要编码器，但精度与成本口径不同：一个按整机可靠性算，一个按数据质量算。&lt;/p></description></item><item><title>萝博派对</title><link>https://sensor.fans/companies/%E8%90%9D%E5%8D%9A%E6%B4%BE%E5%AF%B9/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%90%9D%E5%8D%9A%E6%B4%BE%E5%AF%B9/</guid><description>&lt;p>萝博派对是开源人形这一档里少见的&amp;quot;全流程开源&amp;quot;：结构、电气、训练、部署都放到 GitHub 上，连灵巧手的驱动接口也公开成 SDK。对做位置反馈的人，这种公司的价值不在整机指标，而在接口——CAN-FD、ROS 2、关节描述文件都摆在明面上，谁都能看到它的关节里挂了几个自由度、用什么协议读位置，这在闭源整机厂那里看不到。&lt;/p></description></item><item><title>麦歌恩</title><link>https://sensor.fans/companies/%E9%BA%A6%E6%AD%8C%E6%81%A9/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E9%BA%A6%E6%AD%8C%E6%81%A9/</guid><description>&lt;p>麦歌恩站在磁编码芯片这一层，产品面比只做角度的公司宽：磁开关、线性位置、电流检测与磁编码四类并列，磁编码又按在轴、离轴、车用三个子类分开。读它的资料，最该先分清这三类安装方式——同一颗芯片换安装方式，精度口径会跟着变。&lt;/p></description></item><item><title>美敦力</title><link>https://sensor.fans/companies/%E7%BE%8E%E6%95%A6%E5%8A%9B/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E7%BE%8E%E6%95%A6%E5%8A%9B/</guid><description>&lt;p>美敦力在编码器链上是&amp;quot;医疗整机&amp;quot;的一端：手术机器人的每条臂、每个器械轴都要位置反馈，而医疗场景对绝对性、上电即知位、单点失效可诊断的要求高于工业。它的资料分层很清楚——公司层面的财务与并购写在监管文件里，产品层面的参数只在说明书与注册资料里，官网营销页基本不给数。&lt;/p></description></item><item><title>美新半导体</title><link>https://sensor.fans/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/</guid><description>&lt;p>美新半导体是编码器链上的芯片厂：AMR 磁敏元件与 ASIC 一体，出货形态是 TSSOP-16 的裸芯片，客户自己做板、自己配磁铁。它同时是惯性 MEMS 的老牌 IDM（热式加速度计起家），所以读它的资料要分清两条线——磁编码器这条线与角度测量直接相关，惯性那条线只在姿态与振动上间接相关。&lt;/p></description></item><item><title>纳芯微</title><link>https://sensor.fans/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/</guid><description>&lt;p>纳芯微站在“角度芯片 + 它周围那一圈”的位置上：除了磁传感本身，它还做隔离、接口、电机驱动、供电与信号链。对一个关节来说，角度、电流、通信、驱动这几件事它在同一份目录里几乎都有，所以它的竞争点不是单颗角度芯片的位数，而是整条信号链能不能一次配齐。&lt;/p></description></item><item><title>帕西尼</title><link>https://sensor.fans/companies/%E5%B8%95%E8%A5%BF%E5%B0%BC/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%B8%95%E8%A5%BF%E5%B0%BC/</guid><description>&lt;p>帕西尼是这批公司里&lt;strong>唯一在官网参数表里直接写出自家编码器指标的一家&lt;/strong>：PXCap III 三指数据采集手套与 PXDex III 三指执行末端的参数栏都有一行&amp;quot;关节角度感知能力：帕西尼自研高精抗磁编码器，角度编码器精度 ±0.15°&amp;quot;。这句话值得单独记，因为它把触觉厂和位置反馈这两件事绑在了同一个末端上——一个 4 自由度的三指手，既要知道用了多大力，也要知道指节转了多少度。&lt;/p></description></item><item><title>泉智博</title><link>https://sensor.fans/companies/%E6%B3%89%E6%99%BA%E5%8D%9A/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%B3%89%E6%99%BA%E5%8D%9A/</guid><description>&lt;p>泉智博站在编码器链的&amp;quot;关节模组整机&amp;quot;这一层：它买无框电机、减速器、驱动器件和位置反馈，装成一个能直接拧到机器人髋、肩、肘上的关节卖出去。对做传感的人，它的公开材料能回答两件事——关节的扭矩档落在哪、驱动器是不是自研；回答不了的是编码器用磁还是光、位数多少。读它的资料要把这两类问题分开，否则容易把&amp;quot;模组很强&amp;quot;读成&amp;quot;反馈很强&amp;quot;。&lt;/p></description></item><item><title>荣耀</title><link>https://sensor.fans/companies/%E8%8D%A3%E8%80%80/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%8D%A3%E8%80%80/</guid><description>&lt;p>荣耀在编码器链上是终端品牌这一层，但它 2026 年做了一件少见的事：把&amp;quot;可动机构&amp;quot;装进手机，发布首款机器人手机 Robot Phone。手机一旦带受控的转动自由度，位置反馈就从&amp;quot;云台小配件&amp;quot;变成产品定义的一部分。这条线的机器人业务另有&lt;a href="https://sensor.fans/companies/%E8%8D%A3%E8%80%80%E6%9C%BA%E5%99%A8%E4%BA%BA/">荣耀机器人词条&lt;/a>，两边的公开材料都只到功能层，不给执行器与传感参数。&lt;/p></description></item><item><title>荣耀机器人</title><link>https://sensor.fans/companies/%E8%8D%A3%E8%80%80%E6%9C%BA%E5%99%A8%E4%BA%BA/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%8D%A3%E8%80%80%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid><description>&lt;p>荣耀机器人是荣耀公开的机器人方向，页面形态是活动页而不是产品页：它讲的是一场赛事出征，不是一份规格表。对做位置反馈的人，这类页面能提供的只有定性信息——它强调什么能力、把自己摆在什么场景；不能提供的是关节数量、执行器形式与反馈方案。要谈这条线，得先接受&amp;quot;公开材料只到功能描述&amp;quot;这个前提。&lt;/p></description></item><item><title>锐鹰</title><link>https://sensor.fans/companies/%E9%94%90%E9%B9%B0/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E9%94%90%E9%B9%B0/</guid><description>&lt;p>锐鹰（浙江锐鹰传感技术股份有限公司）是编码器链上的整机厂，特点是三条检测原理并行：光电、磁电、感应式，都做成旋转编码器与直线编码器卖。它的公开资料里最有价值的是产品命名规则和规格书清单——型号串本身就写着运动模式、检测方式、编码形式、外径和分辨率，学会读型号等于免费拿到一半选型信息。&lt;/p></description></item><item><title>厦门钨业</title><link>https://sensor.fans/companies/%E5%8E%A6%E9%97%A8%E9%92%A8%E4%B8%9A/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%8E%A6%E9%97%A8%E9%92%A8%E4%B8%9A/</guid><description>&lt;p>厦门钨业站在编码器链条的最上游，是金属与稀土材料的供应商：它不卖磁传感器、不卖编码器、也不直接卖电机。它在这个话题里的相关性只有一条窄路——稀土永磁材料是磁编码器磁体的原料来源，而“势拓稀土永磁电机产业园”这条入口说明它正在把稀土往电机整机那一端推。读它的资料，值得确认的是业务边界，而不是找磁性能数字。&lt;/p></description></item><item><title>舍弗勒</title><link>https://sensor.fans/companies/%E8%88%8D%E5%BC%97%E5%8B%92/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%88%8D%E5%BC%97%E5%8B%92/</guid><description>&lt;p>舍弗勒站在机械传动与精密驱动这一层：轴承、直线与传动部件、机电一体化模组。&lt;strong>编码器不在它的产品目录里&lt;/strong>，它在关节与执行机构里的角色是把“被测量的那一侧”做出来——轴、轴承、减速与导向结构。所以读它的资料，能得到的不是编码器规格，而是一个关节在机械侧留下了多少误差预算；这部分误差不会因为换了更高分辨率的编码器而消失。&lt;/p></description></item><item><title>圣邦微</title><link>https://sensor.fans/companies/%E5%9C%A3%E9%82%A6%E5%BE%AE/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%9C%A3%E9%82%A6%E5%BE%AE/</guid><description>&lt;p>圣邦微在编码器链上有两个身份：老本行是模拟信号链——运放、比较器、ADC、基准、电源，这些是编码器电路板上的通用件；新身份是 AMR 磁传感器，官网把「磁编码」「角度位置传感器」「磁开关」三个子类挂在同一个 AMR 目录下，编码子类里现在是两颗带数字接口的 18 位芯片。读它的资料最该看两处：AMR 目录的参数表（一次把位数、延时、ppr、转速、温度、封装列全）和 &lt;a href="https://sensor.fans/models/vce2755/">VCE2755&lt;/a> 的产品页（给了全温精度与 MTP）。&lt;/p></description></item><item><title>松延动力</title><link>https://sensor.fans/companies/%E6%9D%BE%E5%BB%B6%E5%8A%A8%E5%8A%9B/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%9D%BE%E5%BB%B6%E5%8A%A8%E5%8A%9B/</guid><description>&lt;p>松延动力是&lt;strong>人形与仿生头部整机厂&lt;/strong>，在编码器链的最下游，但它有一处别家没有的位置密度：&lt;strong>仿生人头一个部件就有 30 到 32 个主动自由度&lt;/strong>，全部塞进一个头壳里。这决定了它对角度反馈的第一诉求不是精度而是&lt;strong>体积与装配&lt;/strong>——微型关节、离轴安装、线束极短。看它的资料，重点在自由度分布与关节扭矩档位，不在编码器型号。&lt;/p></description></item><item><title>他山</title><link>https://sensor.fans/companies/%E4%BB%96%E5%B1%B1/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E4%BB%96%E5%B1%B1/</guid><description>&lt;p>他山科技（Tashan Technology）是&lt;strong>触觉感知芯片&lt;/strong>这一层：它测的是接触力与接近，不是角度。放在编码器话题里，它的意义是边界参照——同一批做机器人感知的芯片公司里，触觉走的是电容/电场路线，输出的是三维力与距离，与磁、光的角度测量没有共用信号链，也没有共用客户决策口。&lt;/p></description></item><item><title>台积电</title><link>https://sensor.fans/companies/%E5%8F%B0%E7%A7%AF%E7%94%B5/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%8F%B0%E7%A7%AF%E7%94%B5/</guid><description>&lt;p>台积电在编码器链上不出现，它出现的地方是所有用先进节点芯片的产品——机器人主控 SoC、视觉处理、AI 加速。它的公开资料分两层：逻辑节点的年表式叙述（谁先量产、哪一年）与特色工艺的类别清单。读它最该注意的是这两层的时间点，而不是&amp;quot;最先进&amp;quot;这个形容词。&lt;/p></description></item><item><title>钛虎</title><link>https://sensor.fans/companies/%E9%92%9B%E8%99%8E/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E9%92%9B%E8%99%8E/</guid><description>&lt;p>钛虎在编码器链上是&amp;quot;关节模组 + 力控臂&amp;quot;这一层：既卖装好的关节，也卖带力控的双臂。它与纯关节厂的区别在于把力控做成了对外主张——力控要同时用到位置与力矩两路信息，位置反馈的质量直接决定力控环能不能稳。读它的资料，重点看两件事：产品线怎么分（关节／臂／轮式整机），以及它在哪些公开场合被第三方认可。&lt;/p></description></item><item><title>特斯拉</title><link>https://sensor.fans/companies/%E7%89%B9%E6%96%AF%E6%8B%89/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E7%89%B9%E6%96%AF%E6%8B%89/</guid><description>&lt;p>特斯拉在这条链上是&amp;quot;整机 + 自研执行器&amp;quot;的一端，也是少数把产线状态写进定期材料的公司。对做位置反馈的人，它的价值不在产品页，而在 8-K 与季报：Optimus 走到哪一步、线建在哪、初期机器人拿去干什么，这些都能核。至于关节里用什么编码器、单编还是双编、谁供的货，官方从未公开，任何&amp;quot;特斯拉用了某方案&amp;quot;的说法都需要供应商侧的独立证据。&lt;/p></description></item><item><title>图漾</title><link>https://sensor.fans/companies/%E5%9B%BE%E6%BC%BE/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%9B%BE%E6%BC%BE/</guid><description>&lt;p>图漾科技做的是&lt;strong>工业 3D 相机加手眼协同软件&lt;/strong>，处在&amp;quot;外部测量&amp;quot;这一层。它自己的产品没有任何转轴，不采购关节编码器；但 RVS 平台要把点云换算到机器人坐标，就必须读机械臂末端位姿，而那个位姿来自本体编码器——它是编码器数据的&lt;strong>下游使用者&lt;/strong>，不是采购方。读它的资料最该看出图延迟与帧率，这两个数直接决定这套视觉能不能进闭环。&lt;/p></description></item><item><title>希磁</title><link>https://sensor.fans/companies/%E5%B8%8C%E7%A3%81/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%B8%8C%E7%A3%81/</guid><description>&lt;p>希磁是磁传感的 IDM：晶圆自己做，芯片、码盘、编码器套件也自己做。2023 年单独成立的无锡埃斯特磁专做磁编码器，于是它有两条对外口径——希磁站点讲电流与运动传感器，埃斯特磁站点讲 PRBS 与游标码的编码器套件。读它的资料，先把这两个域名的分工分清，否则会把&amp;quot;同一颗料&amp;quot;当成两家公司的产品。&lt;/p></description></item><item><title>矽睿</title><link>https://sensor.fans/companies/%E7%9F%BD%E7%9D%BF/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E7%9F%BD%E7%9D%BF/</guid><description>&lt;p>矽睿不站在编码器整机那一层。它的位置是&amp;quot;AMR 磁敏元件 + MEMS 惯性&amp;quot;的芯片平台：对外卖的是磁力计、六轴 IMU、加速度计和汽车底盘传感器。对做编码器的人，它的价值在于磁敏元件与校准算法的底座，以及汽车前装那条线的工艺纪律；但它的公开产品里没有编码器级磁角度型号，这一点必须在页面最前面说清，否则很容易把&amp;quot;磁力计的 1°~2° 航向精度&amp;quot;当成角度编码器的精度。&lt;/p></description></item><item><title>西门子</title><link>https://sensor.fans/companies/%E8%A5%BF%E9%97%A8%E5%AD%90/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%A5%BF%E9%97%A8%E5%AD%90/</guid><description>&lt;p>西门子在编码器链上站的是“驱动平台 + 电机”这一层，位置比单一伺服厂更靠系统：它不做编码器品牌，但通过 SINAMICS 驱动器、SIMOTICS 电机与 DRIVE-CLiQ 接口，决定了接入系统的每一颗编码器必须遵守什么协议、走什么线、由谁供电与解算。读它的资料，价值不在找某型号编码器的分辨率，而在看清一套工业驱动体系对反馈件提出了哪些硬约束，以及这些约束怎么被写进选型规则。&lt;/p></description></item><item><title>小米</title><link>https://sensor.fans/companies/%E5%B0%8F%E7%B1%B3/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%B0%8F%E7%B1%B3/</guid><description>&lt;p>小米是&lt;strong>终端需求方&lt;/strong>，而且它的角度需求分成完全不同的两档：手机与穿戴里是云台、折叠、振动马达这类微执行器，扫地机与家电里是轮速与风机换相，汽车里是电驱与底盘。三档的精度要求差几个数量级，采购口也不在同一处。看小米的资料要先把这三条分开：集团层面的用户与设备数据对选型没有用，有用的是它公开了哪些产品分类与法定主体。&lt;/p></description></item><item><title>小鹏</title><link>https://sensor.fans/companies/%E5%B0%8F%E9%B9%8F/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%B0%8F%E9%B9%8F/</guid><description>&lt;p>小鹏是&lt;strong>同时在两条链上跑的整机厂&lt;/strong>：汽车这条线是车规需求方，机器人这条线是人形本体定义者。IRON 公开到&amp;quot;单手 22 个自由度、行业最小谐波关节&amp;quot;这一层，是这家公司最值得记的一句——22 个自由度的手意味着单只手就要 22 路以上角度反馈，而且全部塞进手掌与手指。看它的资料，重点在自由度与关节形态，不在传感器型号。&lt;/p></description></item><item><title>旭顺电子</title><link>https://sensor.fans/companies/%E6%97%AD%E9%A1%BA%E7%94%B5%E5%AD%90/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%97%AD%E9%A1%BA%E7%94%B5%E5%AD%90/</guid><description>&lt;p>旭顺电子在编码器链上站在&lt;strong>驱动这一侧，而且是&amp;quot;不需要精密角度&amp;quot;的那一端&lt;/strong>：它做无刷电机的驱动板与方案，位置信息只服务换相与转速闭环，霍尔三路或反电势估算就够了。它自己的参数表把这一点写得很直白——&amp;ldquo;FOC 控制，带 3 个霍尔&amp;rdquo;。这条信息对做磁编码器的人有用：白电与个护的 BLDC 方案里，角度反馈被压在换相件这一档，价格与体积挤走了高精度方案。&lt;/p></description></item><item><title>易德龙</title><link>https://sensor.fans/companies/%E6%98%93%E5%BE%B7%E9%BE%99/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%98%93%E5%BE%B7%E9%BE%99/</guid><description>&lt;p>易德龙站在&lt;strong>制造与方案落地这一层&lt;/strong>，不是编码器厂，也不是整机厂：它把客户的电路板、控制器、模组做出来，也在 ODM 模式下自己设计电机驱动与运动控制板。对做器件的人来说，这一层的信息价值在于&amp;quot;谁真的在决定 BOM&amp;quot;——EMS 只执行客户给的 BOM，ODM 才有机会建议器件，两者混在一份公司介绍里时必须分开看。&lt;/p></description></item><item><title>英达森斯</title><link>https://sensor.fans/companies/%E8%8B%B1%E8%BE%BE%E6%A3%AE%E6%96%AF/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%8B%B1%E8%BE%BE%E6%A3%AE%E6%96%AF/</guid><description>&lt;p>英达森斯只做一件事：电感式编码器芯片。它在链条上的位置是&amp;quot;芯片 + 算法 + PCB 线圈工具链&amp;quot;——线圈不在片内，画在客户的 PCB 上，所以它卖的不只是硅片，还有一套让客户把线圈画对的设计工具。这条路线与磁编的最大区别就在这：误差链里最关键的几何量（线圈线宽、靶盘间隙、安装偏心）由客户自己掌握。&lt;/p></description></item><item><title>英飞凌</title><link>https://sensor.fans/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/</guid><description>&lt;p>英飞凌在编码器链上是“四种磁阻原理全都自己做”的那一层：霍尔、AMR、GMR、TMR 各有角度产品线，且多数型号同时给单 die 与双 die 两个版本。读它的资料，最该看的是官方选型指南里那张把原理、die 配置、输出形式、精度与功能安全等级并排的表——它把“同一颗芯片怎么做到 ASIL D”这件事讲得比多数厂商清楚。&lt;/p></description></item><item><title>优必选</title><link>https://sensor.fans/companies/%E4%BC%98%E5%BF%85%E9%80%89/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E4%BC%98%E5%BF%85%E9%80%89/</guid><description>&lt;p>优必选（UBTECH）是&lt;strong>人形整机 + 上市公司&lt;/strong>这一层。它的特殊性在信息披露方式：作为港交所主板公司，营收、订单、募投方向都有法定披露义务，但&amp;quot;关节里用什么反馈&amp;quot;这类工程细节，年报与产品页都不写。对做编码器的人来说，它是一个&amp;quot;公开财务、封闭 BOM&amp;quot;的样本——能查到它自研伺服驱动器、能查到伺服驱动器累计产量，查不到驱动器里那颗角度芯片是谁的。&lt;/p></description></item><item><title>宇树</title><link>https://sensor.fans/companies/%E5%AE%87%E6%A0%91/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E5%AE%87%E6%A0%91/</guid><description>&lt;p>宇树科技是&lt;strong>整机厂&lt;/strong>，站在编码器链的最下游：它自己设计关节电机与结构，把编码器装进关节里。它在公开资料里的独特价值是&lt;strong>规格表直接写了&amp;quot;关节编码器：双编码器&amp;quot;&lt;/strong>——这在人形机器人厂商里不常见，多数只写&amp;quot;高精度编码器&amp;quot;或干脆不提。但&amp;quot;双编码器&amp;quot;只说明电机侧与输出侧各有一路，官网没有写位数、原理（磁／光／电感）、接口与供应商，这几项不能推。&lt;/p></description></item><item><title>禹衡</title><link>https://sensor.fans/companies/%E7%A6%B9%E8%A1%A1/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E7%A6%B9%E8%A1%A1/</guid><description>&lt;p>禹衡（长春禹衡光学）在编码器链上是光学整机厂，做的是光栅式角度编码器、光栅尺、旋转变压器与手动脉冲发生器这一整套。它对做选型的人最有用的公开信息是精度档位：产品列表按角秒分档，从 JZN-1 的 0.5 角秒一路排到 JKK-3 的 30 角秒，这在国产厂商里是少见的公开写法。&lt;/p></description></item><item><title>长城汽车</title><link>https://sensor.fans/companies/%E9%95%BF%E5%9F%8E%E6%B1%BD%E8%BD%A6/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E9%95%BF%E5%9F%8E%E6%B1%BD%E8%BD%A6/</guid><description>&lt;p>长城汽车在编码器链上是&amp;quot;车规级角度传感的整机用户&amp;quot;，用量集中在两处：电驱与变速系统的电机控制，以及底盘与转向的位置反馈。它同时是 2025 年起进入机器人链的车企——与宇树科技签战略合作，把机器人技术研发、智能制造与整车创新放在一份协议里。读它的资料，官方年表比产品页有用，因为年表给的是可核的日期与事件。&lt;/p></description></item><item><title>长鑫</title><link>https://sensor.fans/companies/%E9%95%BF%E9%91%AB/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E9%95%BF%E9%91%AB/</guid><description>&lt;p>长鑫存储不在编码器的信号链上：角度从码盘到解算再到控制器，一路用的是片内 OTP/EEPROM/MTP 存校准系数，不用 DRAM。它的位置在另一端——机器人主控与视觉算力板的存储底座。把这条边界说清楚，比硬把它塞进编码器供应链更有用。&lt;/p></description></item><item><title>正元电机</title><link>https://sensor.fans/companies/%E6%AD%A3%E5%85%83%E7%94%B5%E6%9C%BA/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%AD%A3%E5%85%83%E7%94%B5%E6%9C%BA/</guid><description>&lt;p>正元电机站在精密直流电机与驱动这一层，编码器是它自己料号体系里的一类产品，随电机一起配。它的价值在于公开了一套完整的编码器命名规则——尺寸、原理（磁电或光电）、通道形态（增量有无差分、绝对值）、精度位都被编进料号，这在中小电机厂里不常见。读它的资料，最该看的是这套规则与型号表，而不是精度形容。&lt;/p></description></item><item><title>智元</title><link>https://sensor.fans/companies/%E6%99%BA%E5%85%83/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E6%99%BA%E5%85%83/</guid><description>&lt;p>智元机器人是&lt;strong>人形整机厂&lt;/strong>，在编码器链的最下游，但它比多数同行往上游多走了一步：关节是自研并量产的一体化模组，电机、减速、反馈在同一个自制件里定义。这让它既是编码器的需求方，也是关节规格的定义者——看它的资料，值得抓的是&amp;quot;整机自由度怎么分、关节峰值扭矩多少、安全冗余靠什么实现&amp;quot;，而不是编码器型号。&lt;/p></description></item><item><title>中科无线</title><link>https://sensor.fans/companies/%E4%B8%AD%E7%A7%91%E6%97%A0%E7%BA%BF/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E4%B8%AD%E7%A7%91%E6%97%A0%E7%BA%BF/</guid><description>&lt;p>中科无线（CT-Unite）站的是&amp;quot;关节驱动与运动控制芯片&amp;quot;这一层。它把 FOC、电流环与角度输入塞进同一颗关节芯片，同时自己做 GaN 功率级；2026 年官网发展历程里又添了一句&amp;quot;发布我国首颗磁编码芯片 &lt;a href="https://sensor.fans/models/ct-21x/">CT-21X&lt;/a>&amp;quot;，等于从驱动端往反馈端伸了一只手。读它的资料要分清两类：一类有产品页与短规格（功率与驱控芯片），一类只有一句发布记录（磁编码芯片），两者不能用同一种可信度对待。&lt;/p></description></item><item><title>中芯国际</title><link>https://sensor.fans/companies/%E4%B8%AD%E8%8A%AF%E5%9B%BD%E9%99%85/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E4%B8%AD%E8%8A%AF%E5%9B%BD%E9%99%85/</guid><description>&lt;p>中芯国际在编码器链上不测角度，它站在&amp;quot;把角度芯片做成硅片&amp;quot;那一步：霍尔或磁阻前端、ADC、驱动级、校准系数存储，都要落到某条工艺平台上流片。看它有价值的不是排名，而是平台分类、8/12 英寸厂的地理分布，以及它明确不公开的那几项。&lt;/p></description></item><item><title>众擎</title><link>https://sensor.fans/companies/%E4%BC%97%E6%93%8E/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E4%BC%97%E6%93%8E/</guid><description>&lt;p>众擎（ENGINEAI）是&lt;strong>人形整机&lt;/strong>这一层，而且是把关节捏在自己手里的那种整机厂：官网反复写&amp;quot;全栈自研关节&amp;quot;&amp;ldquo;全栈式自研关节设计&amp;rdquo;。对做编码器的人来说，这句话是整个页面里最要紧的一句——关节自研，意味着关节内部的角度反馈也由它自己定，采购口不在外部模组厂，而在深圳这家公司的机械与电控团队。&lt;/p></description></item><item><title>追觅</title><link>https://sensor.fans/companies/%E8%BF%BD%E8%A7%85/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/companies/%E8%BF%BD%E8%A7%85/</guid><description>&lt;p>追觅在编码器链上是终端应用这一层，但它是&amp;quot;用量密集&amp;quot;的那一类：一台扫地机里有驱动轮、边刷、滚刷、拖布升降、激光雷达转轴，每一处都要测速或位置。官网只公开整机体验指标——吸力、越障高度、机身厚度、避障方案——从不公开这些轴上用什么反馈。读它的资料，价值在于判断这一档客户的验收口径：不是位数，而是自清洁、越障、长期不漂。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>企业 Wiki on 如是有为</title>
+		<link>https://sensor.fans/companies/</link>
+		<description>Recent content in 企业 Wiki on 如是有为</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://sensor.fans/companies/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>精工NPC</title>
+				<link>https://sensor.fans/companies/seiko-npc/</link>
+				<pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/seiko-npc/</guid>
+				<description>&lt;p&gt;精工NPC（セイコーNPC / Seiko NPC）设计、开发、制造和销售半导体产品。编码器产品位于反射式光检测与信号处理这一层；应与外部码尺、细分电路和最终机械系统分开看。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Baumer</title>
+				<link>https://sensor.fans/companies/baumer/</link>
+				<pubDate>Thu, 22 Oct 2026 10:58:00 +0800</pubDate>
+				<guid>https://sensor.fans/companies/baumer/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>POSIC</title>
+				<link>https://sensor.fans/companies/posic/</link>
+				<pubDate>Thu, 22 Oct 2026 10:58:00 +0800</pubDate>
+				<guid>https://sensor.fans/companies/posic/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>ABB</title>
+				<link>https://sensor.fans/companies/abb/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/abb/</guid>
+				<description>&lt;p&gt;ABB 站在编码器链的下游最粗的那一段：它做变频器、电机、伺服与机器人，是角度反馈的购买方与接口定义方之一。读它的资料，重点不在它有没有编码器产品，而在它的驱动与运动产品对反馈提出了什么要求——接口、时序、安全等级都是从这一层往下压的。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ABB Robotics</title>
+				<link>https://sensor.fans/companies/abb-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/abb-robotics/</guid>
+				<description>&lt;p&gt;ABB Robotics 站在&lt;strong&gt;整机应用&lt;/strong&gt;这一层，而且是这一层里选型权最集中的一类：伺服电机、齿轮单元、控制器和运动学都在集团内部闭环，关节上的反馈由它自己定，集成商和终端用户都碰不到。对做编码器的人，它的公开资料是一个明确的负样本——官网给到 TCP 位姿重复性与路径精度为止，再往下的单轴角分辨率、编码器型式、装在电机侧还是关节侧，一个字都没有。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ADI</title>
+				<link>https://sensor.fans/companies/adi/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/adi/</guid>
+				<description>&lt;p&gt;ADI 在编码器链上占两格：一格是把多圈与角度做进一颗的磁传感（&lt;a href=&#34;https://sensor.fans/models/admt4000/&#34;&gt;ADMT4000&lt;/a&gt;），一格是旋变路线（AD2S1210 / AD2S83 旋变数字转换器、AD2S99 激励振荡器、ADA4571 AMR 角度前端）。前者回答&amp;quot;掉电后圈数怎么记住&amp;quot;，后者回答&amp;quot;不用光学码盘怎么把角度读出来、怎么给出激励&amp;quot;。读 ADI 的资料，价值几乎全在数据手册：器件级指标写得比任何系列页都细。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Akko</title>
+				<link>https://sensor.fans/companies/akko/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/akko/</guid>
+				<description>&lt;p&gt;Akko 是&amp;quot;磁位移输入与固件交互&amp;quot;这一层里少见的样本：它是键盘整机品牌，但霍尔磁轴把它变成了&lt;strong&gt;每键一根 3.5 mm 行程的线性位移通道加一套可编程阈值&lt;/strong&gt;。对做磁传感与编码器的人，它的价值不在精度有多高，而在它把磁测量的成本、标定和容错压到了消费级量产的价位上，并且轴体、PCB、固件三层里有两层握在自己手里。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>AKM</title>
+				<link>https://sensor.fans/companies/akm/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/akm/</guid>
+				<description>&lt;p&gt;AKM 在编码器链上属于&amp;quot;磁传感前端&amp;quot;这一层：卖的是霍尔与磁阻敏感元件加信号处理的芯片，不是编码器整机。它对做编码器的人最有参考价值的是两条路线同时存在——用霍尔做角度但把误差校正做进芯片（AK7440 标 ±20 角秒），以及用 14 位分辨率换离轴安装自由度（AK7455 标 ±0.1°）。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Allegro</title>
+				<link>https://sensor.fans/companies/allegro/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/allegro/</guid>
+				<description>&lt;p&gt;Allegro 在编码器链上是磁传感前端加功率驱动的芯片厂，位置在编码器厂与电机厂的上游。它的角度传感器有一个别家少见的底层结构：CVH（环形立式霍尔）用一圈立式霍尔片旋转扫描磁场矢量，单个敏感点就能测 360°，因此对气隙和偏心不像传统正交霍尔桥那样敏感。读它的资料，先看这个结构，再看它把诊断做到哪一级。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ams OSRAM</title>
+				<link>https://sensor.fans/companies/ams-osram/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/ams-osram/</guid>
+				<description>&lt;p&gt;读 ams OSRAM 现在必须带一个时间点：它在 2026 年 7 月 1 日把非光学的模拟与混合信号传感业务整体卖给了英飞凌。这意味着本站保留的 &lt;a href=&#34;https://sensor.fans/models/as5047p/&#34;&gt;AS5047P&lt;/a&gt;、&lt;a href=&#34;https://sensor.fans/models/as5600/&#34;&gt;AS5600&lt;/a&gt; 这类磁角度资料，法律主体与技术支持已经换了东家；而 ams OSRAM 自己退回「光」——LED、激光、光电探测器与光学传感。对做编码器的人来说，它如今是光编码器光源与接收端的候选供应方，不再是磁角度芯片的同台竞争者。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Anthropic</title>
+				<link>https://sensor.fans/companies/anthropic/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/anthropic/</guid>
+				<description>&lt;p&gt;Anthropic 与编码器没有产品关系，它在这个站的位置与 OpenAI 同类：工程资料的读写工具。差别在于它把&amp;quot;模型如何接外部系统&amp;quot;做成了一个公开协议（MCP），这对工程场景的意义比模型本身的分数更具体——手册、测试数据、本地脚本可以按同一套接口挂进去。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ANYbotics</title>
+				<link>https://sensor.fans/companies/anybotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/anybotics/</guid>
+				<description>&lt;p&gt;ANYbotics 是&amp;quot;移动机器人与巡检&amp;quot;这一层里关节密度最高的一类整机厂：四足行走，每台机器十几个电机轴同时在力矩环里工作。但它对外只发表整机级指标——速度、续航、载荷、防护等级、传感器清单——关节数、单关节扭矩、反馈装在电机侧还是关节侧，一个字都没有。对做编码器的人，这是典型的&amp;quot;用量大、门槛在规格书之外&amp;quot;的客户：官网能确认它的应用边界，确认不了器件口径。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Apple</title>
+				<link>https://sensor.fans/companies/apple/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/apple/</guid>
+				<description>&lt;p&gt;Apple 站在链条最末端的终端应用层，而且是&amp;quot;只发布结果、不发布器件&amp;quot;那一端。它公开的每一个角度问题都有自己的解法：手机防抖是把整块图像传感器在平面内甚至三维上做闭环微位移，头显位姿靠 6 个追踪相机加 4 个眼动相机做视觉解算。对做编码器与磁传感的人，Apple 不是可直供的客户，而是&amp;quot;最高端消费电子如何绕开旋转测量&amp;quot;的对照样本：需求由它定义，器件名字从未出现在官网上。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>April Robotics</title>
+				<link>https://sensor.fans/companies/april-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/april-robotics/</guid>
+				<description>&lt;p&gt;April Robotics 站在&amp;quot;机器人学习与灵巧操作&amp;quot;这一层，但它卖的不是机器人，是&lt;strong&gt;把熟练工的手上功夫变成模型&lt;/strong&gt;：采集端是一只自带惯性单元与触觉迹线的手套，训练出来的策略再部署到别人家的臂和手上。对做角度测量的人，这是一个干净的负样本——手部十多个关节的角度全部由 IMU 推算，一枚旋转编码器都没有；真正有转轴的地方，在它部署时选用的机械臂与末端手上。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Ascento</title>
+				<link>https://sensor.fans/companies/ascento/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/ascento/</guid>
+				<description>&lt;p&gt;Ascento 是&amp;quot;移动机器人与巡检&amp;quot;这一层里少见的服务型卖方：它不卖机器人，卖的是按站点订阅的巡逻服务，机器人、充电、软件、7×24 支持一起打包。对做编码器的人，这决定了它的采购逻辑——&lt;strong&gt;不按单机规格议价，按整机可用率与巡检次数算账&lt;/strong&gt;，所以它公开的数字全是运营指标，一个关节参数都没有。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Auterion</title>
+				<link>https://sensor.fans/companies/auterion/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/auterion/</guid>
+				<description>&lt;p&gt;Auterion 站在&amp;quot;自主系统软件与平台&amp;quot;这一层：它卖飞控操作系统、集成计算模块和云端的机队管理，不造机体、不造电机，也不采购编码器。对做角度测量的人，这是一个结构性负样本——无人机与地面车的姿态由 IMU、磁力计与 GNSS 融合给出，&lt;strong&gt;转子位置在电调内部闭环、不回传平台&lt;/strong&gt;，所以它的接口表里连一个角度反馈通道都没有。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>BOTA Systems</title>
+				<link>https://sensor.fans/companies/bota-systems/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/bota-systems/</guid>
+				<description>&lt;p&gt;BOTA Systems 站在&amp;quot;力觉传感与机器人部件&amp;quot;这一层，卖的是六轴力/力矩传感器、关节力矩传感器、夹爪和定制件。它与角度测量不是竞争关系，而是&lt;strong&gt;同一个关节里的另一路测量&lt;/strong&gt;：力/力矩靠应变敏感元件做，角度靠编码器或磁传感做，两者共用安装面、共用对外的总线与同步时钟，但器件链完全分开。对做编码器的人，它的价值在于看清&amp;quot;关节里第二路信号&amp;quot;的接口与带宽要求，以及一家 ETH 衍生公司如何在十年里把实验室件做成产品目录。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Broadcom</title>
+				<link>https://sensor.fans/companies/broadcom/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/broadcom/</guid>
+				<description>&lt;p&gt;Broadcom 的运动控制编码器是一条&amp;quot;元件产品线&amp;quot;：它卖编码器 IC（AEAT 系列）和反射式光学读头（AEDR 系列），也卖码盘与线驱动 IC，但不做带壳体的整机编码器。对做整机的人，它的价值在于三条不同的封装形态——芯片级磁编、含壳体的增量套件、贴片光学读头——以及 LPI、CPR、位数三套分辨率口径同时公开。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Bubble Robotics</title>
+				<link>https://sensor.fans/companies/bubble-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/bubble-robotics/</guid>
+				<description>&lt;p&gt;Bubble Robotics 站在&amp;quot;水下与海事机器人&amp;quot;这一层，但它卖的不是机器，是常驻海上的监测服务：一座能自己发电、自己抛锚定位、自己布放回收水下机器人的水面母船（BubbleDock），加若干台集成现成 ROV/AUV 平台的水下作业机（BubbleBot）。对做角度测量的人，这是链条里最&amp;quot;少转轴&amp;quot;的一类客户——水下推进器按行业惯例不给位置反馈，全机真正有明确角位移过程的是布放回收那一段，而这一段官方只写&amp;quot;自主&amp;quot;，不写机构。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Cloudflare</title>
+				<link>https://sensor.fans/companies/cloudflare/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/cloudflare/</guid>
+				<description>&lt;p&gt;Cloudflare 与编码器没有产品关系。它出现在这个站的原因是可验证性：查编码器厂商与代工厂资料时，挡在前面的往往是它的验证页；本站自身也是静态站发布，交付层用的是同类形态。所以看它的价值在于判断&amp;quot;一条公开资料取不到，是内容没了还是被网络层拦了&amp;quot;。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Disney Research</title>
+				<link>https://sensor.fans/companies/disney-research/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/disney-research/</guid>
+				<description>&lt;p&gt;Disney Research 站在&amp;quot;科研机构&amp;quot;这一层，而且是一个特殊位置：它不卖机器人、不卖器件，发表的是机构设计与控制方法；机器人上的执行器与关节模组是外购成品，反馈元件随模组进来，论文里一个字都不提。对做编码器的人，它的价值在于看清这类研究的验收标准——&lt;strong&gt;角度&amp;quot;够用&amp;quot;的定义是策略能跑起来、噪声能压下去、执行器不烧，而不是绝对精度&lt;/strong&gt;。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Duatic</title>
+				<link>https://sensor.fans/companies/duatic/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/duatic/</guid>
+				<description>&lt;p&gt;Duatic 站在&amp;quot;关节模组加整臂&amp;quot;这一层，是这条链上离编码器选型权最近的一类公司：它自己设计准直驱关节（DynaDrive 系列），再组装成臂（DynaArm）、上身（DuaTorso）、底盘（DuaRover）和双手机器人（DXTR）。关节里的角度反馈由它定，整机厂买了模组就等于交出了选型权。它官网还公开写了一句极有价值的话：DynaDrive Baboon 已替换 ANYmal 髋与膝上的 ANYdrive——&lt;strong&gt;模组换掉，模组里的编码器跟着换&lt;/strong&gt;。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Embotech</title>
+				<link>https://sensor.fans/companies/embotech/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/embotech/</guid>
+				<description>&lt;p&gt;Embotech 站在&amp;quot;工业车辆自主驾驶&amp;quot;这一层，而且选的是一条与车上装传感器完全相反的路：&lt;strong&gt;智能放在厂房里，车上不加任何传感器与自驾硬件&lt;/strong&gt;。基础设施上的激光雷达负责定位，算好的轨迹以每秒 10 次、每包约 150 字节无线发给车辆。对做角度测量的人，它的意义不在&amp;quot;用不用编码器&amp;quot;，而在时间预算的写法——这条链上的指标不是延时小，而是延时可申报、行为确定。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>EPFL</title>
+				<link>https://sensor.fans/companies/epfl/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/epfl/</guid>
+				<description>&lt;p&gt;EPFL 不是供应商，在编码器链上的位置是&amp;quot;指标第一次被写出来的地方&amp;quot;：论文与学位论文里给出测量原理、误差模型与实验数据，比产品手册更早、也更具体。看它的价值是拿到原始定义——同一个&amp;quot;精度&amp;quot;，实验室写的是标准差还是峰峰值，决定了后面所有比较是否成立。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ETH</title>
+				<link>https://sensor.fans/companies/eth/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/eth/</guid>
+				<description>&lt;p&gt;这里的 ETH 指苏黎世联邦理工学院。它在链上的位置与 EPFL 相同：上游的研究与原型，不给量产供货。差别是方向偏机械与腿足机器人——这类原型对关节反馈最苛刻，论文里对&amp;quot;用了什么、为什么用&amp;quot;写得多。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Figure AI</title>
+				<link>https://sensor.fans/companies/figure-ai/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/figure-ai/</guid>
+				<description>&lt;p&gt;Figure 站在&amp;quot;机器人本体与应用&amp;quot;这一层，是整机厂里最封闭的一类：官网讲能力、讲场景、讲模型，不讲机构。三代机器人的公开差异全部落在形态、手、电池位置与使用场景上，&lt;strong&gt;关节数、自由度、执行器型式与角度反馈一个字都没有&lt;/strong&gt;。对做编码器的人，它的价值不在参数，而在看清整机厂的公开叙事结构——卖点永远在&amp;quot;能干什么&amp;quot;，器件层永远留在暗处。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Flexion Robotics</title>
+				<link>https://sensor.fans/companies/flexion-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/flexion-robotics/</guid>
+				<description>&lt;p&gt;Flexion 站在&amp;quot;机器人学习与灵巧操作&amp;quot;这一层，卖的是人形机器人的自主软件栈，不卖机器人也不卖关节。对做角度测量的人，它属于&amp;quot;不采购器件、但直接消耗器件输出&amp;quot;的一类：它读的是整机 API 给的关节状态，&lt;strong&gt;角度质量在它这里只体现为状态估计与控制能不能收敛&lt;/strong&gt;，因此它提出的要求是频率、噪声与时间戳一致性，而不是分辨率位数。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Flink Robotics</title>
+				<link>https://sensor.fans/companies/flink-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/flink-robotics/</guid>
+				<description>&lt;p&gt;Flink Robotics 站在&amp;quot;机器人学习与灵巧操作&amp;quot;这一层，卖的是整机加模型一起交付的搬运机器人 Flinkbot。对做编码器的人，它官网有一句话价值很高：&lt;strong&gt;六轴臂是外购的，Flink AI 在最底层控制它，目的是随时换臂厂与型号&lt;/strong&gt;。这句话把选型权写死了——关节角度随臂一起买进来，Flink 自己只做夹爪、机身、控制器与模型，并且刻意保持供应商可切换。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>FORGIS</title>
+				<link>https://sensor.fans/companies/forgis/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/forgis/</guid>
+				<description>&lt;p&gt;FORGIS 站在&amp;quot;工业软件与智能平台&amp;quot;这一层，卖的是产线的智能层，不是器件。它把不同厂商、不同年代的 PLC、机器人、传感器与驱动接进一个平台，读机器已有的数据，再往上做配置、验证与优化。对做角度测量的人，它的意义是看清&lt;strong&gt;软件层消费角度的口径&lt;/strong&gt;：它拿到的是控制器给出的位置与状态，采样率由接口决定，与伺服环里那颗编码器完全不在一个时间尺度上。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Gravis Robotics</title>
+				<link>https://sensor.fans/companies/gravis-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/gravis-robotics/</guid>
+				<description>&lt;p&gt;Gravis Robotics 站在&amp;quot;工程机械自动化&amp;quot;这一层，做的是&lt;strong&gt;改装&lt;/strong&gt;不是造机：一套装在驾驶室顶部的模块化套件 Gravis RACK，加传感器与平板界面，把客户现有的挖掘机与轮式装载机变成自主作业机。对做角度测量的人，它的架构很关键——臂的姿态靠发出的指令与地形扫描推出来，不是靠关节上的编码器测出来的。这类整机原本就没有关节角反馈，改装方也不会加。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hengstler</title>
+				<link>https://sensor.fans/companies/hengstler/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/hengstler/</guid>
+				<description>&lt;p&gt;Hengstler 是德国巴登-符腾堡州 Aldingen 的编码器与工业计数器件制造商，做的是&lt;strong&gt;可以直接装在轴上、直接对外的整机编码器&lt;/strong&gt;，不是编码器芯片厂。对做芯片或做选型的人来说，它的价值在于公开的规格页：同一家公司同时给光学单圈、光学多圈、无齿轮磁多圈和增量四个方向，型号族之间的取舍写得比多数厂商清楚。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hexagon Robotics</title>
+				<link>https://sensor.fans/companies/hexagon-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/hexagon-robotics/</guid>
+				<description>&lt;p&gt;Hexagon Robotics 站在&lt;strong&gt;整机应用&lt;/strong&gt;这一层：它不做编码器，也不做关节里的敏感元件，而是把执行器、传感器和自有测量技术装进一台叫 AEON 的人形机器人里，卖给工厂和物流现场。对做编码器的人，它值得读的地方有两个：一是 34 个自由度这个数直接等于单机的关节轴数量级；二是它把执行器公开交给舍弗勒供给，等于把关节内的角度反馈选择权也一并交了出去。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>iC-Haus</title>
+				<link>https://sensor.fans/companies/ic-haus/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/ic-haus/</guid>
+				<description>&lt;p&gt;iC-Haus 是那种「编码器厂背后的人」：它不做整机，卖的是感应前端、插值处理器、多圈计数与接口芯片，还能按客户规格做定制 ASIC。所以它的产品目录读起来像一条测量链的分解图——霍尔角度前端（&lt;a href=&#34;https://sensor.fans/models/ic-ma/&#34;&gt;iC-MA&lt;/a&gt;、&lt;a href=&#34;https://sensor.fans/models/ic-ma3/&#34;&gt;iC-MA3&lt;/a&gt;、&lt;a href=&#34;https://sensor.fans/models/ic-mh16/&#34;&gt;iC-MH16&lt;/a&gt;、iC-MHM）、离轴磁绝对位置（&lt;a href=&#34;https://sensor.fans/models/ic-mu128/&#34;&gt;iC-MU128&lt;/a&gt;）、编码器处理器与 BiSS 接口（iC-TW29）。读它的资料要先认「这颗片子在哪一段」：传感器、插值、接口分属不同层，不能拿目录名当功能等价。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Intel</title>
+				<link>https://sensor.fans/companies/intel/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/intel/</guid>
+				<description>&lt;p&gt;Intel 在编码器链上有两个不相干的位置：一是机器人控制器里的 x86 主板——角度值最终被这个控制器读走，但读的是总线帧不是传感器信号；二是晶圆代工，18A/14A 这类节点决定别人家的 SoC 能做成什么样。它的深度视觉（RealSense）是第三条线，与角度无关，容易混淆。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Loki Robotics</title>
+				<link>https://sensor.fans/companies/loki-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/loki-robotics/</guid>
+				<description>&lt;p&gt;Loki Robotics 做的是&lt;strong&gt;商用设施清洁整机&lt;/strong&gt;：一台要在卫生间、楼面、大堂里换工具、抹清洁剂、直接接触固定设施的移动操作机器人。它在编码器链上的位置很特殊——现在这台机器的可动件不多，但公司正在把机械臂和夹爪收回自研，一旦这条路走通，关节与编码器的选型权就从供应商手里回到整机厂。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>maxon</title>
+				<link>https://sensor.fans/companies/maxon/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/maxon/</guid>
+				<description>&lt;p&gt;maxon 站在“精密驱动系统”这一层，编码器是它自己设计并生产的一类传感器件，但有一条关键商业规则写在官网上：&lt;strong&gt;传感器只能作为电机组合的一部分出售&lt;/strong&gt;，并且按电机型号在供货工厂装机。这条规则决定了它在编码器链上的位置——不是可以单独供货的器件厂，而是把编码器锁进电机平台的一层。对做编码器芯片的人，这意味着入口在电机项目，不在器件询价单上。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Melexis</title>
+				<link>https://sensor.fans/companies/melexis/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/melexis/</guid>
+				<description>&lt;p&gt;Melexis 在这条链上值得单独读，是因为它同时供两条互相竞争的前端路线：磁的走 Triaxis® 霍尔，从只有模拟正余弦的 &lt;a href=&#34;https://sensor.fans/models/mlx90380/&#34;&gt;MLX90380&lt;/a&gt; 一直到片上自校准、ASIL-B 的 MLX90382；电感的走 MLX90520，片内 LC 振荡器加 DSP，双通道还能算游标角。对整机厂而言这不是「买哪家」而是「买哪条路线」，代价分别落在磁体与 PCB 线圈上。读它的资料要从 datasheet 入手，产品页对本次抓取不可达。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>microagi</title>
+				<link>https://sensor.fans/companies/microagi/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/microagi/</guid>
+				<description>&lt;p&gt;microagi 是这条链上少见的&lt;strong&gt;零转轴公司&lt;/strong&gt;：它不造机器人，也不训练一颗编码器，做的是把工厂里的手工活录成训练数据、再把别人家的机器人部署回产线。对做编码器的人来说，它的价值不在产品，而在它公开写明的两条边界——不做遥操作、整机从&amp;quot;造得最好的厂商&amp;quot;买——这两句话直接决定了它的采集端和执行端各有多少个角度传感点。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>mimic</title>
+				<link>https://sensor.fans/companies/mimic/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/mimic/</guid>
+				<description>&lt;p&gt;mimic 是本批次里对编码器最直接的一家：它把&amp;quot;电机侧一颗、关节侧一颗&amp;quot;的双编码器结构写进了官方技术博客，用来解释一只腱驱手怎么把接触力分辨到 0.1 牛。它的位置是&lt;strong&gt;灵巧操作整机与手部模组&lt;/strong&gt;，不是芯片；但它对角度反馈的定义方式，比多数整机厂都写得更清楚。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>MPS</title>
+				<link>https://sensor.fans/companies/mps/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/mps/</guid>
+				<description>&lt;p&gt;MPS 的主业是电源管理，磁角度传感是它挂在 MagAlpha 名下的一条产品线。在编码器链上它是&amp;quot;TMR / 霍尔角度芯片 + ABZ、UVW 输出&amp;quot;的芯片厂，位置在模组厂上游一格。读它的资料要抓两点：INL 有两个数（出厂 &amp;lt;0.6°、用户 32 点校准后 &amp;lt;0.1°），以及 &lt;a href=&#34;https://sensor.fans/models/ma600/&#34;&gt;MA600&lt;/a&gt; 已经进入&amp;quot;仅供既有客户&amp;quot;状态、新设计要看 &lt;a href=&#34;https://sensor.fans/models/ma600a/&#34;&gt;MA600A&lt;/a&gt;。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Nautica Technologies</title>
+				<link>https://sensor.fans/companies/nautica-technologies/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/nautica-technologies/</guid>
+				<description>&lt;p&gt;Nautica Technologies 做的是&lt;strong&gt;海事整机应用&lt;/strong&gt;：一台常驻在船上的机器人，在船不起坞、不停租的情况下持续爬行清刷船底，用机械方式替代毒性防污漆。它不是编码器相关公司，但对角度传感有一个明确的抬升作用——船体表面爬行要自主化，轮子上那几路原来只当换相用的反馈，就得变成导航件。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>NVIDIA</title>
+				<link>https://sensor.fans/companies/nvidia/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/nvidia/</guid>
+				<description>&lt;p&gt;NVIDIA 不在编码器链上，它站在编码器的下游两步：关节角度经驱动器与现场总线上到控制器，Jetson 只负责感知、规划与推理。所以读它的资料要盯的是输入侧接口——相机走多少路 CSI、几路 HSB、功耗预算多少瓦，这些决定一台机器人能装几只眼，而不是决定它能测多准的角度。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>NXP</title>
+				<link>https://sensor.fans/companies/nxp/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/nxp/</guid>
+				<description>&lt;p&gt;NXP 在编码器链上的位置是&amp;quot;车规磁角度前端 + 汽车控制器与接口&amp;quot;。它的 AMR 角度传感器 KMZ 系列曾是 BLDC 换相与 EPS 转角测量里的常见件，但 &lt;a href=&#34;https://sensor.fans/models/kmz60/&#34;&gt;KMZ60&lt;/a&gt; 在官网已标注 Archived（停产/归档），这条信息对选型比任何参数都重要——参数再好，料号生命周期结束了就得换方案。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>OpenAI</title>
+				<link>https://sensor.fans/companies/openai/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/openai/</guid>
+				<description>&lt;p&gt;OpenAI 不产传感器，也不做测量。它在这个站的位置是&amp;quot;工程资料的处理手段&amp;quot;：把厂商手册、专利、公告里的定值抽成表格，把型号差异比对出来，把一段测试脚本写出来。判断它的价值，要严格区分&amp;quot;读得快&amp;quot;和&amp;quot;读得对&amp;quot;——后者仍然要回到官网原文。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>PixArt</title>
+				<link>https://sensor.fans/companies/pixart/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/pixart/</guid>
+				<description>&lt;p&gt;PixArt（原相科技）是这条链上少见的&lt;strong&gt;两头都在的公司&lt;/strong&gt;：一头是出货量极大的光学鼠标与光学导航传感器，另一头是挂在同一套光学导航技术下的增量式光学编码器 IC。对做编码器的人来说，后一头才是重点——它把编码器做成 4×4 mm 级别的芯片加码盘方案，卖的是&amp;quot;芯片 + 码盘 + 插值&amp;quot;这一整层，不是整机编码器。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>POSITAL</title>
+				<link>https://sensor.fans/companies/posital/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/posital/</guid>
+				<description>&lt;p&gt;POSITAL 站在&amp;quot;整机编码器加套件编码器&amp;quot;这一层，背后是德国的 FRABA 集团。它最有辨识度的一件事是把韦根（Wiegand）效应做成了产品化的多圈计数方案：每转一个磁极翻转产生一个脉冲，脉冲本身既当信号又当能量，于是多圈不需要电池也不用齿轮组。读它的资料，重点看套件编码器的机械脚印和接口清单，而不是只看分辨率。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Qualcomm</title>
+				<link>https://sensor.fans/companies/qualcomm/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/qualcomm/</guid>
+				<description>&lt;p&gt;高通在这条链上的角色与 NVIDIA 类似但落点更低：它卖的是带视觉与 AI 加速的 SoC，用在 AMR、无人机与人形的控制盒里。与编码器的交界仍然是总线而不是传感器——公开的机器人控制器规格表里，能做关节反馈的接口是 CAN FD，不是编码器输入。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>RAI Institute</title>
+				<link>https://sensor.fans/companies/rai-institute/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/rai-institute/</guid>
+				<description>&lt;p&gt;RAI Institute 是&lt;strong&gt;研究机构&lt;/strong&gt;这一层：它不卖机器人，也不卖器件，靠论文、博客和视频对外。对做编码器的人来说，它的用处不是采购入口，而是公开的硬件描述——机构自述在研究&amp;quot;给轮式、人形、四足机器人用的先进传感器&amp;quot;，这句话是它在整条链上唯一直接碰感知的地方。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Renesas</title>
+				<link>https://sensor.fans/companies/renesas/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/renesas/</guid>
+				<description>&lt;p&gt;瑞萨在这条链上卖的是&amp;quot;感应芯片加线圈设计工具&amp;quot;，不卖磁体、也不卖码盘：它把客户自制的 PCB 印刷线圈与一片金属靶之间的涡流变化，解成一对正余弦或增量脉冲。读它的资料最该看两处：电感式位置传感器分类页讲清了端轴、侧轴、直线与弧形四种装法怎么选线圈，IPS2550 与 IPS2200 的参数页则给出车规等级、电气转速与传播延迟这三档硬指标。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>RIVR</title>
+				<link>https://sensor.fans/companies/rivr/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/rivr/</guid>
+				<description>&lt;p&gt;RIVR 站在&lt;strong&gt;移动整机&lt;/strong&gt;这一层：轮腿结合的送货机器人，做最后一段路和门口最后一百码。它值得关注的原因不是它自己的产品规格（官网几乎没给），而是它把&amp;quot;轮 + 腿&amp;quot;这套构型做成了商业产品——这种构型下每条腿至少要有髋、膝两个关节角，加上轮子的驱动，一台机器的受控轴比轮式底盘多出一截，而且腿关节要求上电即绝对。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>RLS</title>
+				<link>https://sensor.fans/companies/rls/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/rls/</guid>
+				<description>&lt;p&gt;RLS 是编码器链上少见的&amp;quot;芯片与读头同一屋檐下&amp;quot;：它既卖 OnAxis 系列磁角度芯片（8~13 位），也卖 AksIM、Orbis、RM 这些读头与成套编码器（最高 21 位）。读它的资料最有价值的不是分辨率表，而是它公开承认的技术边界——哪些参数是环与读头一起决定的，哪些要靠系统级标定。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Sensitec</title>
+				<link>https://sensor.fans/companies/sensitec/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/sensitec/</guid>
+				<description>&lt;p&gt;Sensitec 在编码器链上是&amp;quot;磁阻敏感元件&amp;quot;这一层：卖 AMR、TMR、GMR 芯片与配套的磁环、磁栅、编码器模组，不做带壳整机编码器。它对做选型的人最有价值的一点常被忽略——AMR 角度芯片测的是 180° 绝对角度，不是 360°，因为桥信号是磁场的两倍频，方向要靠外部或芯片侧逻辑另判。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Sevensense Robotics</title>
+				<link>https://sensor.fans/companies/sevensense-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/sevensense-robotics/</guid>
+				<description>&lt;p&gt;Sevensense 是一家&lt;strong&gt;一根转轴都没有的定位公司&lt;/strong&gt;：它卖的是视觉 SLAM 盒子，装在别人的 AGV、AMR 和叉车上，输出位姿。正因为它自己不做运动，它对编码器的态度是&amp;quot;拿来用&amp;quot;——车辆的轮式里程计、底盘控制器的状态量，都是它融合的输入。这条路线上，轮速反馈的精度与时间戳质量会直接落进位姿输出，而它不是这些反馈的生产者。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ST</title>
+				<link>https://sensor.fans/companies/st/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/st/</guid>
+				<description>&lt;p&gt;ST 在这条链上不在敏感元件那一头。它的位置是主控与驱动：MCU 的定时器直接吃正交编码信号，电机驱动与功率器件在编码器外围，MEMS 目录里是惯性、磁力计与测距，而不是旋转角度芯片。读它的资料最该看两处：产品页里那句&amp;quot;quadrature (incremental) encoder input&amp;quot;到底挂在哪些定时器上，以及传感器目录里有没有面向伺服的角度 IC。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>TDK</title>
+				<link>https://sensor.fans/companies/tdk/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/tdk/</guid>
+				<description>&lt;p&gt;TDK 在编码器链上不是一个编码器厂，而是&amp;quot;磁传感芯片加无源件&amp;quot;的元件集团：角度传感器这一块有两条并行路线——TDK-Micronas 的 3D 霍尔（HAL 37xy 家族，能同时测 BX/BY/BZ 三个分量）和从硬盘磁头技术下移的 TMR 角度传感器。对做编码器的人，看它的意义在于这两条路线覆盖了&amp;quot;宽气隙穿轴测量&amp;quot;和&amp;quot;高精度小体积&amp;quot;两种需求。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Tethys Robotics</title>
+				<link>https://sensor.fans/companies/tethys-robotics/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/tethys-robotics/</guid>
+				<description>&lt;p&gt;Tethys Robotics 做的是&lt;strong&gt;水下整机&lt;/strong&gt;：一台紧凑型水下机器人，卖点在&amp;quot;能在急流里定住&amp;quot;。这条卖点对推进与反馈的含义很直接——能抗 3.5 节水流做定点作业，靠的不是更强的推进器，而是闭环控制，而闭环里最贵的那一环是&amp;quot;我现在在哪、朝哪、有没有被冲走&amp;quot;。它公开的正好是能力，不公开的正好是这套反馈。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>TI</title>
+				<link>https://sensor.fans/companies/ti/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/ti/</guid>
+				<description>&lt;p&gt;TI 在这条链上是「超市」型供应：磁位置只是它传感器目录中的一支，客户拿它的霍尔或 AMR 芯片，自己配 ADC、SPI 时序与角度解算。所以读 TI 的价值不在「它有没有编码器芯片」，而在两条互补的感应路线——三轴霍尔 TMAG5170（片内 CORDIC 直接算角）与 AMR 的 TMAG6180-Q1（只出差分正余弦，解算留给后端）——以及它把评估板与图形工具一起给出来的习惯。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>UBS</title>
+				<link>https://sensor.fans/companies/ubs/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/ubs/</guid>
+				<description>&lt;p&gt;瑞银不进编码器的任何供应链环节，它的位置是&amp;quot;观点与预测的发布主体&amp;quot;。所以读它要做的第一件事不是找结论，而是确认口径：哪年发布的、什么情景下的、针对哪个市场。做不到这三点，报告里的百分比会被误读成对当下的判断。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Verity</title>
+				<link>https://sensor.fans/companies/verity/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/verity/</guid>
+				<description>&lt;p&gt;Verity 是&lt;strong&gt;室内自主无人机&lt;/strong&gt;这一层：机器在仓库货架之间飞，扫条码、点库存、自己回巢充电，卖的是&amp;quot;库存准确率&amp;quot;这个结果。它的可动件只有四个桨轴，官方没有任何关于转子位置反馈的公开说明——这正是它在这个话题上的价值：一台把&amp;quot;角度预算&amp;quot;全花在定位上的飞行器，桨轴上不设位置传感。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Voliro</title>
+				<link>https://sensor.fans/companies/voliro/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/voliro/</guid>
+				<description>&lt;p&gt;Voliro 做的是&lt;strong&gt;能贴上去干活的飞行器&lt;/strong&gt;：官方规格表把 Voliro T 定义为 omnidirectional tri-copter，靠可倾转的旋翼改变推力方向，从而在任何姿态下把工具压到结构表面。倾转轴是这台机器上唯一&amp;quot;需要知道自己转到哪&amp;quot;的轴，也是全机最贴近关节编码器场景的地方——但官方规格表对此一字未提。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Wingtra</title>
+				<link>https://sensor.fans/companies/wingtra/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/wingtra/</guid>
+				<description>&lt;p&gt;Wingtra 做的是&lt;strong&gt;测绘整机&lt;/strong&gt;，构型是尾座式垂直起降固定翼：竖直立在尾撑上，靠两副桨直接起飞，转平后当固定翼巡航。这种构型的可动件极少——垂直起降与过渡全靠两副桨的推力向量，巡航靠舵面，没有云台倾转机构。对做角度传感的人来说，它是一台&amp;quot;轴上几乎没有位置反馈&amp;quot;的整机，值多少颗取决于舵面数量，而官方不公布这个数。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Wooting</title>
+				<link>https://sensor.fans/companies/wooting/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/wooting/</guid>
+				<description>&lt;p&gt;Wooting 是这条链上&lt;strong&gt;把磁传感做成消费品&lt;/strong&gt;的一家公司：每颗键轴下面一颗霍尔器件，测的是键帽沿 Z 轴的直线位移，不是角度。它的价值在于把&amp;quot;磁传感器 + 固件 + 上位机接口&amp;quot;这条链完整暴露给用户——触发点、回差、上报率都是可配置项，位移原始值还能通过开源 SDK 直接读到应用里。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>艾为</title>
+				<link>https://sensor.fans/companies/%E8%89%BE%E4%B8%BA/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%89%BE%E4%B8%BA/</guid>
+				<description>&lt;p&gt;艾为在编码器链上是外围，不是核心。它不卖角度芯片，卖的是「驱动 + 感知周边」：马达驱动、触觉反馈、音频、电源与信号链，智能传感器类目下只有霍尔开关与霍尔锁存器——测的是磁场的「有与没有、正与反」，不是角度。读它的资料要带着这个前提：在消费类设备里，它提供的往往正是「让整机不需要角度编码器」的那一套。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>安川</title>
+				<link>https://sensor.fans/companies/%E5%AE%89%E5%B7%9D/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%AE%89%E5%B7%9D/</guid>
+				<description>&lt;p&gt;安川站在伺服驱动与工业机器人这一层，是角度反馈的大用户：一台六轴机器人有六个电机轴，每条轴都要一个位置反馈器件，伺服驱动还要靠它做换相与闭环。读它的资料，能拿到的多是系统层信息，反馈器件本身的选择标准要另找手册。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>奥比中光</title>
+				<link>https://sensor.fans/companies/%E5%A5%A5%E6%AF%94%E4%B8%AD%E5%85%89/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%A5%A5%E6%AF%94%E4%B8%AD%E5%85%89/</guid>
+				<description>&lt;p&gt;奥比中光是这条链上少见的&lt;strong&gt;自己做感知计算芯片的模组厂&lt;/strong&gt;：它把深度计算的 ASIC（&lt;a href=&#34;https://sensor.fans/models/mx6800/&#34;&gt;MX6800&lt;/a&gt;）和光学系统一起做成相机，卖的是&amp;quot;深度图 + 点云&amp;quot;。但要注意区分——MX6800 是深度引擎，处理的是双目/结构光的视差解算，不是磁或光学的角度测量芯片；这家公司没有一根转轴，也不输出关节角。读它资料的正确姿势是看芯片与光学怎么分工、以及精度指标在什么距离与 ROI 下成立。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>宝马</title>
+				<link>https://sensor.fans/companies/%E5%AE%9D%E9%A9%AC/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%AE%9D%E9%A9%AC/</guid>
+				<description>&lt;p&gt;宝马在编码器链上是&lt;strong&gt;整车需求方&lt;/strong&gt;，而且是要求最严的那一类：车上有方向盘角、轮速、电机转子位置、制动踏板行程、悬架高度等多路位置与位移反馈，全部要走车规与功能安全。它不发编码器规格书给市场，也不公布供应商名单，所以看它的资料只能看到&amp;quot;系统级结果&amp;quot;——多少伏、多少公里、算力怎么组织，看不到用哪颗芯片。这个边界必须写清楚，否则很容易把整车指标误当成器件指标。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>保隆科技</title>
+				<link>https://sensor.fans/companies/%E4%BF%9D%E9%9A%86%E7%A7%91%E6%8A%80/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E4%BF%9D%E9%9A%86%E7%A7%91%E6%8A%80/</guid>
+				<description>&lt;p&gt;保隆科技在编码器链上是&amp;quot;整机与模组&amp;quot;这一层：它买前端芯片，做成车规传感器、执行器与关节编码器模组卖出去。2026 年公开的机器人旋转关节编码器定点，把它从汽车零部件供应商推到人形关节的位置感知上，这是读它资料时唯一需要盯住的一条线——其余产品（气门嘴、平衡块、排气件、空悬）与角度测量没有直接关系。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>堡盟</title>
+				<link>https://sensor.fans/companies/%E5%A0%A1%E7%9B%9F/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%A0%A1%E7%9B%9F/</guid>
+				<description>&lt;p&gt;堡盟（Baumer）是瑞士的家族传感集团，编码器只是它六大产品块之一，但这一块把&amp;quot;磁式够用&amp;quot;和&amp;quot;光学更准&amp;quot;两条路线摆得很清楚：磁式 MAGRES 系列角度精度公开写 ±0.15°，光学 OptoTurn EAL580 写 ±0.01°。读它的资料，最该看的是同尺寸下两种原理怎么分工，以及安全型编码器把认证做到哪一级。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>倍福</title>
+				<link>https://sensor.fans/companies/%E5%80%8D%E7%A6%8F/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%80%8D%E7%A6%8F/</guid>
+				<description>&lt;p&gt;倍福站在“控制器 + 驱动 + 电机”这一层，但它对编码器行业的影响不在卖多少反馈器件，而在改写了反馈信号怎么走线。它的 OCT（One Cable Technology）把编码器信号塞进电机动力电缆，这件事直接决定了电机侧那颗反馈器件必须是数字的、且要能和驱动做双向通信。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>比亚迪</title>
+				<link>https://sensor.fans/companies/%E6%AF%94%E4%BA%9A%E8%BF%AA/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%AF%94%E4%BA%9A%E8%BF%AA/</guid>
+				<description>&lt;p&gt;比亚迪是&lt;strong&gt;整车与三电全栈自制&lt;/strong&gt;的需求方：电机、电控、电池、功率半导体都在自己手里。这一点决定了它在编码器链上的位置——不是买整套电驱的总装厂，而是自己定义电机、逆变器与底盘执行器的一方，位置反馈的选型标准由它的电驱与底盘团队写。它公开的技术页是这批终端厂里数字最硬的：电机转速到 30511rpm、碳化硅到 1500V、易四方四电机独立驱动、云辇四轮独立悬架。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>传周科技</title>
+				<link>https://sensor.fans/companies/%E4%BC%A0%E5%91%A8%E7%A7%91%E6%8A%80/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E4%BC%A0%E5%91%A8%E7%A7%91%E6%8A%80/</guid>
+				<description>&lt;p&gt;传周科技站在&amp;quot;芯片 + 码盘 + 读数头&amp;quot;这一层：它把光电探测器阵列、码盘、角度解算芯片和整只光栅尺系统分开报价，客户可以直接买一颗芯片，也可以买读数头加栅尺的成品。读它的产品页最该注意两件事——分辨率用的是 CPR、栅距还是 M 序列位数三种口径；以及型号状态（已量产 / 可送样 / 预发布），状态比参数更能说明现在能不能用。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>达尔优</title>
+				<link>https://sensor.fans/companies/%E8%BE%BE%E5%B0%94%E4%BC%98/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%BE%BE%E5%B0%94%E4%BC%98/</guid>
+				<description>&lt;p&gt;达尔优在编码器链上占的是&amp;quot;磁位移输入&amp;quot;这一格，但方向与旋转编码相反：它测的是一段直线行程，量程只有几毫米，精度要求到 0.01mm。这类产品把霍尔传感器、磁体、弹簧与固件绑成一个键，出货量以百万计，是磁传感在消费端最集中的落点之一。读它的资料，重点不在位数，而在&amp;quot;行程分辨率、回报率、固件里可调的触发点&amp;quot;这三项怎么组合成体验。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>多摩川</title>
+				<link>https://sensor.fans/companies/%E5%A4%9A%E6%91%A9%E5%B7%9D/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%A4%9A%E6%91%A9%E5%B7%9D/</guid>
+				<description>&lt;p&gt;多摩川精机在编码器链上同时占两个位置：旋转变压器的老牌供应商，和伺服电机内置编码器的供应商。对做选型的人，它最有参考价值的是两条并行的事实——同一台伺服既可以配无刷旋变 Smartsyn，也可以配 23 位单圈加 16 位多圈的绝对编码器，两条路线的取舍在官网产品表里能横向看到。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>多维科技</title>
+				<link>https://sensor.fans/companies/%E5%A4%9A%E7%BB%B4%E7%A7%91%E6%8A%80/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%A4%9A%E7%BB%B4%E7%A7%91%E6%8A%80/</guid>
+				<description>&lt;p&gt;多维科技站在磁阻敏感元件这一层：它做 TMR、AMR 的感应电桥，也做把电桥信号变成角度或阈值的芯片，另外还卖磁传感器晶圆代工。对做编码器的人，它最有用的公开材料不是分辨率数字，而是它把“对轴一颗数字角度芯片”和“离轴四颗线性芯片加一颗解算芯片”这两条关节编码器路线连同各自精度口径一起写了出来。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>峰岹</title>
+				<link>https://sensor.fans/companies/%E5%B3%B0%E5%B2%B9/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%B3%B0%E5%B2%B9/</guid>
+				<description>&lt;p&gt;峰岹（Fortior）本来是被当作&amp;quot;电机驱动芯片厂&amp;quot;读的：MCU、ASIC、IPM、HVIC 一整套围着无刷电机转。但 &lt;a href=&#34;https://sensor.fans/models/sr3511n/&#34;&gt;SR3511N&lt;/a&gt; 与它配套的双磁式旋变，把这家公司推到了位置反馈的解算侧——RDC 负责把旋变的正余弦解成角度，双磁式旋变则把&amp;quot;旋变&amp;quot;从绕线结构搬到更薄、更便宜的载体上。所以读它要看两页：SENSOR 产品线讲它怎么测转子位置，SR3511N 的发布稿讲它怎么解算。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>弓望</title>
+				<link>https://sensor.fans/companies/%E5%BC%93%E6%9C%9B/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%BC%93%E6%9C%9B/</guid>
+				<description>&lt;p&gt;弓望（品牌写作&amp;quot;弓望传感&amp;quot;）是编码器链上的整机与模组厂，走的是电感式（涡流）路线——既不是光学，也不是霍尔磁编。它的产品结构很能说明目标市场：机器人关节的同侧双编、异侧双编、超大中空、超窄码道，全部围绕&amp;quot;电机端与减速机端要同时测&amp;quot;这一个需求展开。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>光鉴</title>
+				<link>https://sensor.fans/companies/%E5%85%89%E9%89%B4/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%85%89%E9%89%B4/</guid>
+				<description>&lt;p&gt;光鉴科技做的是&lt;strong&gt;固定在壳体里的 3D 深度相机模组&lt;/strong&gt;，站在&amp;quot;外部空间感知&amp;quot;这一层，不在关节位置反馈这条链上：它给机器人一个&amp;quot;前面有什么、离多远&amp;quot;的点云，不给&amp;quot;第几轴转角多少&amp;quot;。模组里没有电机、没有转轴、没有编码器，所以谈它&amp;quot;用谁家的位置反馈&amp;quot;从一开始就是伪问题；该看的是深度分辨率、帧率、出图延迟与接口，以及这些指标在哪个距离段成立。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>果力智能</title>
+				<link>https://sensor.fans/companies/%E6%9E%9C%E5%8A%9B%E6%99%BA%E8%83%BD/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%9E%9C%E5%8A%9B%E6%99%BA%E8%83%BD/</guid>
+				<description>&lt;p&gt;果力智能是&lt;strong&gt;教育机器人厂&lt;/strong&gt;，在编码器链上属于&amp;quot;零旋转需求最弱的一端&amp;quot;：它的产品是给学生编程用的 AI 机器人套件与课程，关节靠舵机带动，角度反馈在舵机内部完成。看它的资料时要接受一个事实——官网通篇讲课程与合作学校，不讲机械指标，因此能核对的只有公司与教育业务口径，不能核对任何关节或传感器参数。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>海德汉</title>
+				<link>https://sensor.fans/companies/%E6%B5%B7%E5%BE%B7%E6%B1%89/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%B5%B7%E5%BE%B7%E6%B1%89/</guid>
+				<description>&lt;p&gt;海德汉站在位置测量器件这一层，做的是整机与模块，不是单颗芯片：带内置轴承的角度编码器、只有读头与刻度件的模块式编码器、给电机做反馈的旋转编码器，加上直线光栅与数控系统。读它的资料，第一件事是分清“角度编码器”和“旋转编码器”这两条目录——前者服务精密回转轴，后者服务电机反馈，精度与安装方式不是一回事。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>海康</title>
+				<link>https://sensor.fans/companies/%E6%B5%B7%E5%BA%B7/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%B5%B7%E5%BA%B7/</guid>
+				<description>&lt;p&gt;海康机器人在这条链上占两格：光学测量（工业相机、3D 相机、读码器）与整机运动（潜伏、叉取、料箱、输送四类移动机器人，以及 2024 年起自研的关节机器人）。编码器对它是轮端与关节的内部件，不是对外产品。读它最该看两组数：相机像素与总线接口的换代节奏，以及移动机器人的累计出货——前者决定视觉测量能做到什么分辨力，后者决定它对位置反馈的采购体量。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>禾川</title>
+				<link>https://sensor.fans/companies/%E7%A6%BE%E5%B7%9D/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E7%A6%BE%E5%B7%9D/</guid>
+				<description>&lt;p&gt;禾川站在“伺服驱动 + 伺服电机 + 控制器”这一层，但它的公开资料里有一句话比同类厂更值得注意：官网公司介绍把自己的产品线写成“伺服系统、控制器（PLC）、视觉系统、编码器、变频器、触摸屏等”，编码器被明确列进了自家目录。这句话的价值在于它说明了编码器在这家公司里的归属——不是外购附件，而是自有产品线；它的边界同样明显：产品中心里没有单列的编码器分类页，型号、位数、协议一概不公开。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>华虹</title>
+				<link>https://sensor.fans/companies/%E5%8D%8E%E8%99%B9/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%8D%8E%E8%99%B9/</guid>
+				<description>&lt;p&gt;华虹在编码器链上同样落在&amp;quot;芯片变成硅片&amp;quot;这一步，但路线与先进逻辑厂不同：它把资源压在特色工艺上，模拟与电源管理、eNVM、逻辑射频、功率分立四块公开写明覆盖的工艺段与电压段。对做角度芯片的人，这意味着它的公开资料能回答&amp;quot;这颗芯片该走哪个平台、电压段够不够&amp;quot;，而不能回答&amp;quot;谁在里面流片&amp;quot;。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>华为</title>
+				<link>https://sensor.fans/companies/%E5%8D%8E%E4%B8%BA/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%8D%8E%E4%B8%BA/</guid>
+				<description>&lt;p&gt;华为在这条链上是&lt;strong&gt;需求方加系统定义者&lt;/strong&gt;，不是编码器厂：它不公开销售编码器，也不公布任何编码器芯片产品。与角度反馈真正相关的是&amp;quot;车控&amp;quot;这一支——转向稳定控制、车身稳定、悬架都要实时读方向盘角、轮速、横摆角速度、悬架高度。看它的资料要把&amp;quot;智驾/座舱&amp;quot;和&amp;quot;车控&amp;quot;分开：前者吃的是雷达与摄像头，后者才是位置传感密集区。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>汇川</title>
+				<link>https://sensor.fans/companies/%E6%B1%87%E5%B7%9D/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%B1%87%E5%B7%9D/</guid>
+				<description>&lt;p&gt;汇川站在“驱动器 + 伺服电机 + 系统”这一层，既不卖编码器整机，也不卖编码器芯片。它的编码器相关性落在两段：一段在伺服电机内部，反馈件随电机订货型号一起定；一段在驱动器侧，机床或产线要接的外部编码器按驱动器支持的协议走。所以读汇川的公开资料，能拿到的不是“某颗编码器用了谁的方案”，而是“一个国产驱动平台把哪些反馈形态当成标准配置”。本页只写能从官网读到的部分，规格级数字不猜。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>金力永磁</title>
+				<link>https://sensor.fans/companies/%E9%87%91%E5%8A%9B%E6%B0%B8%E7%A3%81/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E9%87%91%E5%8A%9B%E6%B0%B8%E7%A3%81/</guid>
+				<description>&lt;p&gt;金力永磁站在磁性材料这一层，是编码器链条最上游的一段：磁编码器读的是磁场，产生这束磁场的磁体要么是烧结钕铁硼，要么是粘结（注塑）磁环或橡胶磁。它不卖编码器，也不公开给谁供磁体，但它把高性能钕铁硼、磁组件、具身机器人电机转子、稀土回收四件事写在同一段公司介绍里，这四件事正好覆盖了从磁粉到电机转子的路径。读它的资料，价值在于判断磁体供给与牌号能力，而不是找编码器规格。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>康诺思腾</title>
+				<link>https://sensor.fans/companies/%E5%BA%B7%E8%AF%BA%E6%80%9D%E8%85%BE/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%BA%B7%E8%AF%BA%E6%80%9D%E8%85%BE/</guid>
+				<description>&lt;p&gt;康诺思腾是&lt;strong&gt;腔镜手术机器人整机厂&lt;/strong&gt;，在编码器链下游。它这一类客户与工业机器人有一个本质差别：主从系统里的&amp;quot;角度&amp;quot;分两处——主手要测医生手的关节角，从手要测器械腕的关节角，两边都要高分辨率、低时延，而且器械要在体内做 600° 旋转。看它的资料，重点是主从自由度与传动方式公开到什么程度，而不是找编码器型号。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>昆泰芯</title>
+				<link>https://sensor.fans/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/</guid>
+				<description>&lt;p&gt;昆泰芯在这批公司里是唯一把磁与光两条编码器芯片路线放进同一份目录的一家：霍尔做绝对角，AMR 与 TMR 做高精度角，一颗细分器吃外部正余弦，一颗游标光学芯片吃码盘。读它的资料，重点不是单个位数，而是同一测量任务在四条路线上各自付什么代价——延时、温区、安装方式、要不要外部解算。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>莱仕达</title>
+				<link>https://sensor.fans/companies/%E8%8E%B1%E4%BB%95%E8%BE%BE/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%8E%B1%E4%BB%95%E8%BE%BE/</guid>
+				<description>&lt;p&gt;莱仕达在编码器链上是&amp;quot;消费级力反馈外设&amp;quot;这一层，位置精度直接可被用户感知：方向盘转多少度、游戏里车头转多少度，中间只隔一条角度反馈链。它的价值在于公开了一组很少见的消费级数据——16bit 分辨率、3.2Nm 扭矩、双齿轮传动，这让人能算清&amp;quot;消费者为角度分辨率愿意付多少钱&amp;quot;。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>雷尼绍</title>
+				<link>https://sensor.fans/companies/%E9%9B%B7%E5%B0%BC%E7%BB%8D/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E9%9B%B7%E5%B0%BC%E7%BB%8D/</guid>
+				<description>&lt;p&gt;雷尼绍站在“读头 + 刻度”这一层：它不卖装在轴上的整机编码器，而是把光学读头和金属或玻璃刻度分开卖，由整机厂装进自己的机械结构。这个位置决定了它的资料重点与众不同——参数永远绑在“读头 + 某种刻度”的组合上，脱开刻度谈分辨率没有意义。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>雷赛</title>
+				<link>https://sensor.fans/companies/%E9%9B%B7%E8%B5%9B/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E9%9B%B7%E8%B5%9B/</guid>
+				<description>&lt;p&gt;雷赛站在“驱动 + 电机”这一层，产品结构是从步进起家、往闭环与伺服上走。它在编码器链上的价值有两处：一是把编码器接口写进了驱动器的公开卖点清单（差分 ABZ、第二编码器），这类信息在国产驱动厂里不算常见；二是它同时卖闭环步进与一体化伺服，等于把“编码器从可选件变标准件”这条路径展示了一遍。读它的资料，最该看的是驱动器接口表与电机反馈档位，而不是营销页里的精度形容。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>零次方</title>
+				<link>https://sensor.fans/companies/%E9%9B%B6%E6%AC%A1%E6%96%B9/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E9%9B%B6%E6%AC%A1%E6%96%B9/</guid>
+				<description>&lt;p&gt;零次方把产品定义成两半：一半是本体（ZERITH H1 系列轮臂人形），一半是数据（Zerith Data，遥操采集加标注加资产管理）。这个组合对做位置反馈的人有直接含义——本体侧要关节角度，采集侧要人手的位姿，两条线都要编码器，但精度与成本口径不同：一个按整机可靠性算，一个按数据质量算。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>萝博派对</title>
+				<link>https://sensor.fans/companies/%E8%90%9D%E5%8D%9A%E6%B4%BE%E5%AF%B9/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%90%9D%E5%8D%9A%E6%B4%BE%E5%AF%B9/</guid>
+				<description>&lt;p&gt;萝博派对是开源人形这一档里少见的&amp;quot;全流程开源&amp;quot;：结构、电气、训练、部署都放到 GitHub 上，连灵巧手的驱动接口也公开成 SDK。对做位置反馈的人，这种公司的价值不在整机指标，而在接口——CAN-FD、ROS 2、关节描述文件都摆在明面上，谁都能看到它的关节里挂了几个自由度、用什么协议读位置，这在闭源整机厂那里看不到。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>麦歌恩</title>
+				<link>https://sensor.fans/companies/%E9%BA%A6%E6%AD%8C%E6%81%A9/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E9%BA%A6%E6%AD%8C%E6%81%A9/</guid>
+				<description>&lt;p&gt;麦歌恩站在磁编码芯片这一层，产品面比只做角度的公司宽：磁开关、线性位置、电流检测与磁编码四类并列，磁编码又按在轴、离轴、车用三个子类分开。读它的资料，最该先分清这三类安装方式——同一颗芯片换安装方式，精度口径会跟着变。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>美敦力</title>
+				<link>https://sensor.fans/companies/%E7%BE%8E%E6%95%A6%E5%8A%9B/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E7%BE%8E%E6%95%A6%E5%8A%9B/</guid>
+				<description>&lt;p&gt;美敦力在编码器链上是&amp;quot;医疗整机&amp;quot;的一端：手术机器人的每条臂、每个器械轴都要位置反馈，而医疗场景对绝对性、上电即知位、单点失效可诊断的要求高于工业。它的资料分层很清楚——公司层面的财务与并购写在监管文件里，产品层面的参数只在说明书与注册资料里，官网营销页基本不给数。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>美新半导体</title>
+				<link>https://sensor.fans/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/</guid>
+				<description>&lt;p&gt;美新半导体是编码器链上的芯片厂：AMR 磁敏元件与 ASIC 一体，出货形态是 TSSOP-16 的裸芯片，客户自己做板、自己配磁铁。它同时是惯性 MEMS 的老牌 IDM（热式加速度计起家），所以读它的资料要分清两条线——磁编码器这条线与角度测量直接相关，惯性那条线只在姿态与振动上间接相关。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>纳芯微</title>
+				<link>https://sensor.fans/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/</guid>
+				<description>&lt;p&gt;纳芯微站在“角度芯片 + 它周围那一圈”的位置上：除了磁传感本身，它还做隔离、接口、电机驱动、供电与信号链。对一个关节来说，角度、电流、通信、驱动这几件事它在同一份目录里几乎都有，所以它的竞争点不是单颗角度芯片的位数，而是整条信号链能不能一次配齐。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>帕西尼</title>
+				<link>https://sensor.fans/companies/%E5%B8%95%E8%A5%BF%E5%B0%BC/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%B8%95%E8%A5%BF%E5%B0%BC/</guid>
+				<description>&lt;p&gt;帕西尼是这批公司里&lt;strong&gt;唯一在官网参数表里直接写出自家编码器指标的一家&lt;/strong&gt;：PXCap III 三指数据采集手套与 PXDex III 三指执行末端的参数栏都有一行&amp;quot;关节角度感知能力：帕西尼自研高精抗磁编码器，角度编码器精度 ±0.15°&amp;quot;。这句话值得单独记，因为它把触觉厂和位置反馈这两件事绑在了同一个末端上——一个 4 自由度的三指手，既要知道用了多大力，也要知道指节转了多少度。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>泉智博</title>
+				<link>https://sensor.fans/companies/%E6%B3%89%E6%99%BA%E5%8D%9A/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%B3%89%E6%99%BA%E5%8D%9A/</guid>
+				<description>&lt;p&gt;泉智博站在编码器链的&amp;quot;关节模组整机&amp;quot;这一层：它买无框电机、减速器、驱动器件和位置反馈，装成一个能直接拧到机器人髋、肩、肘上的关节卖出去。对做传感的人，它的公开材料能回答两件事——关节的扭矩档落在哪、驱动器是不是自研；回答不了的是编码器用磁还是光、位数多少。读它的资料要把这两类问题分开，否则容易把&amp;quot;模组很强&amp;quot;读成&amp;quot;反馈很强&amp;quot;。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>荣耀</title>
+				<link>https://sensor.fans/companies/%E8%8D%A3%E8%80%80/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%8D%A3%E8%80%80/</guid>
+				<description>&lt;p&gt;荣耀在编码器链上是终端品牌这一层，但它 2026 年做了一件少见的事：把&amp;quot;可动机构&amp;quot;装进手机，发布首款机器人手机 Robot Phone。手机一旦带受控的转动自由度，位置反馈就从&amp;quot;云台小配件&amp;quot;变成产品定义的一部分。这条线的机器人业务另有&lt;a href=&#34;https://sensor.fans/companies/%E8%8D%A3%E8%80%80%E6%9C%BA%E5%99%A8%E4%BA%BA/&#34;&gt;荣耀机器人词条&lt;/a&gt;，两边的公开材料都只到功能层，不给执行器与传感参数。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>荣耀机器人</title>
+				<link>https://sensor.fans/companies/%E8%8D%A3%E8%80%80%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%8D%A3%E8%80%80%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+				<description>&lt;p&gt;荣耀机器人是荣耀公开的机器人方向，页面形态是活动页而不是产品页：它讲的是一场赛事出征，不是一份规格表。对做位置反馈的人，这类页面能提供的只有定性信息——它强调什么能力、把自己摆在什么场景；不能提供的是关节数量、执行器形式与反馈方案。要谈这条线，得先接受&amp;quot;公开材料只到功能描述&amp;quot;这个前提。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>锐鹰</title>
+				<link>https://sensor.fans/companies/%E9%94%90%E9%B9%B0/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E9%94%90%E9%B9%B0/</guid>
+				<description>&lt;p&gt;锐鹰（浙江锐鹰传感技术股份有限公司）是编码器链上的整机厂，特点是三条检测原理并行：光电、磁电、感应式，都做成旋转编码器与直线编码器卖。它的公开资料里最有价值的是产品命名规则和规格书清单——型号串本身就写着运动模式、检测方式、编码形式、外径和分辨率，学会读型号等于免费拿到一半选型信息。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>厦门钨业</title>
+				<link>https://sensor.fans/companies/%E5%8E%A6%E9%97%A8%E9%92%A8%E4%B8%9A/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%8E%A6%E9%97%A8%E9%92%A8%E4%B8%9A/</guid>
+				<description>&lt;p&gt;厦门钨业站在编码器链条的最上游，是金属与稀土材料的供应商：它不卖磁传感器、不卖编码器、也不直接卖电机。它在这个话题里的相关性只有一条窄路——稀土永磁材料是磁编码器磁体的原料来源，而“势拓稀土永磁电机产业园”这条入口说明它正在把稀土往电机整机那一端推。读它的资料，值得确认的是业务边界，而不是找磁性能数字。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>舍弗勒</title>
+				<link>https://sensor.fans/companies/%E8%88%8D%E5%BC%97%E5%8B%92/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%88%8D%E5%BC%97%E5%8B%92/</guid>
+				<description>&lt;p&gt;舍弗勒站在机械传动与精密驱动这一层：轴承、直线与传动部件、机电一体化模组。&lt;strong&gt;编码器不在它的产品目录里&lt;/strong&gt;，它在关节与执行机构里的角色是把“被测量的那一侧”做出来——轴、轴承、减速与导向结构。所以读它的资料，能得到的不是编码器规格，而是一个关节在机械侧留下了多少误差预算；这部分误差不会因为换了更高分辨率的编码器而消失。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>圣邦微</title>
+				<link>https://sensor.fans/companies/%E5%9C%A3%E9%82%A6%E5%BE%AE/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%9C%A3%E9%82%A6%E5%BE%AE/</guid>
+				<description>&lt;p&gt;圣邦微在编码器链上有两个身份：老本行是模拟信号链——运放、比较器、ADC、基准、电源，这些是编码器电路板上的通用件；新身份是 AMR 磁传感器，官网把「磁编码」「角度位置传感器」「磁开关」三个子类挂在同一个 AMR 目录下，编码子类里现在是两颗带数字接口的 18 位芯片。读它的资料最该看两处：AMR 目录的参数表（一次把位数、延时、ppr、转速、温度、封装列全）和 &lt;a href=&#34;https://sensor.fans/models/vce2755/&#34;&gt;VCE2755&lt;/a&gt; 的产品页（给了全温精度与 MTP）。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>松延动力</title>
+				<link>https://sensor.fans/companies/%E6%9D%BE%E5%BB%B6%E5%8A%A8%E5%8A%9B/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%9D%BE%E5%BB%B6%E5%8A%A8%E5%8A%9B/</guid>
+				<description>&lt;p&gt;松延动力是&lt;strong&gt;人形与仿生头部整机厂&lt;/strong&gt;，在编码器链的最下游，但它有一处别家没有的位置密度：&lt;strong&gt;仿生人头一个部件就有 30 到 32 个主动自由度&lt;/strong&gt;，全部塞进一个头壳里。这决定了它对角度反馈的第一诉求不是精度而是&lt;strong&gt;体积与装配&lt;/strong&gt;——微型关节、离轴安装、线束极短。看它的资料，重点在自由度分布与关节扭矩档位，不在编码器型号。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>他山</title>
+				<link>https://sensor.fans/companies/%E4%BB%96%E5%B1%B1/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E4%BB%96%E5%B1%B1/</guid>
+				<description>&lt;p&gt;他山科技（Tashan Technology）是&lt;strong&gt;触觉感知芯片&lt;/strong&gt;这一层：它测的是接触力与接近，不是角度。放在编码器话题里，它的意义是边界参照——同一批做机器人感知的芯片公司里，触觉走的是电容/电场路线，输出的是三维力与距离，与磁、光的角度测量没有共用信号链，也没有共用客户决策口。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>台积电</title>
+				<link>https://sensor.fans/companies/%E5%8F%B0%E7%A7%AF%E7%94%B5/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%8F%B0%E7%A7%AF%E7%94%B5/</guid>
+				<description>&lt;p&gt;台积电在编码器链上不出现，它出现的地方是所有用先进节点芯片的产品——机器人主控 SoC、视觉处理、AI 加速。它的公开资料分两层：逻辑节点的年表式叙述（谁先量产、哪一年）与特色工艺的类别清单。读它最该注意的是这两层的时间点，而不是&amp;quot;最先进&amp;quot;这个形容词。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>钛虎</title>
+				<link>https://sensor.fans/companies/%E9%92%9B%E8%99%8E/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E9%92%9B%E8%99%8E/</guid>
+				<description>&lt;p&gt;钛虎在编码器链上是&amp;quot;关节模组 + 力控臂&amp;quot;这一层：既卖装好的关节，也卖带力控的双臂。它与纯关节厂的区别在于把力控做成了对外主张——力控要同时用到位置与力矩两路信息，位置反馈的质量直接决定力控环能不能稳。读它的资料，重点看两件事：产品线怎么分（关节／臂／轮式整机），以及它在哪些公开场合被第三方认可。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>特斯拉</title>
+				<link>https://sensor.fans/companies/%E7%89%B9%E6%96%AF%E6%8B%89/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E7%89%B9%E6%96%AF%E6%8B%89/</guid>
+				<description>&lt;p&gt;特斯拉在这条链上是&amp;quot;整机 + 自研执行器&amp;quot;的一端，也是少数把产线状态写进定期材料的公司。对做位置反馈的人，它的价值不在产品页，而在 8-K 与季报：Optimus 走到哪一步、线建在哪、初期机器人拿去干什么，这些都能核。至于关节里用什么编码器、单编还是双编、谁供的货，官方从未公开，任何&amp;quot;特斯拉用了某方案&amp;quot;的说法都需要供应商侧的独立证据。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>图漾</title>
+				<link>https://sensor.fans/companies/%E5%9B%BE%E6%BC%BE/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%9B%BE%E6%BC%BE/</guid>
+				<description>&lt;p&gt;图漾科技做的是&lt;strong&gt;工业 3D 相机加手眼协同软件&lt;/strong&gt;，处在&amp;quot;外部测量&amp;quot;这一层。它自己的产品没有任何转轴，不采购关节编码器；但 RVS 平台要把点云换算到机器人坐标，就必须读机械臂末端位姿，而那个位姿来自本体编码器——它是编码器数据的&lt;strong&gt;下游使用者&lt;/strong&gt;，不是采购方。读它的资料最该看出图延迟与帧率，这两个数直接决定这套视觉能不能进闭环。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>希磁</title>
+				<link>https://sensor.fans/companies/%E5%B8%8C%E7%A3%81/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%B8%8C%E7%A3%81/</guid>
+				<description>&lt;p&gt;希磁是磁传感的 IDM：晶圆自己做，芯片、码盘、编码器套件也自己做。2023 年单独成立的无锡埃斯特磁专做磁编码器，于是它有两条对外口径——希磁站点讲电流与运动传感器，埃斯特磁站点讲 PRBS 与游标码的编码器套件。读它的资料，先把这两个域名的分工分清，否则会把&amp;quot;同一颗料&amp;quot;当成两家公司的产品。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>矽睿</title>
+				<link>https://sensor.fans/companies/%E7%9F%BD%E7%9D%BF/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E7%9F%BD%E7%9D%BF/</guid>
+				<description>&lt;p&gt;矽睿不站在编码器整机那一层。它的位置是&amp;quot;AMR 磁敏元件 + MEMS 惯性&amp;quot;的芯片平台：对外卖的是磁力计、六轴 IMU、加速度计和汽车底盘传感器。对做编码器的人，它的价值在于磁敏元件与校准算法的底座，以及汽车前装那条线的工艺纪律；但它的公开产品里没有编码器级磁角度型号，这一点必须在页面最前面说清，否则很容易把&amp;quot;磁力计的 1°~2° 航向精度&amp;quot;当成角度编码器的精度。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>西门子</title>
+				<link>https://sensor.fans/companies/%E8%A5%BF%E9%97%A8%E5%AD%90/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%A5%BF%E9%97%A8%E5%AD%90/</guid>
+				<description>&lt;p&gt;西门子在编码器链上站的是“驱动平台 + 电机”这一层，位置比单一伺服厂更靠系统：它不做编码器品牌，但通过 SINAMICS 驱动器、SIMOTICS 电机与 DRIVE-CLiQ 接口，决定了接入系统的每一颗编码器必须遵守什么协议、走什么线、由谁供电与解算。读它的资料，价值不在找某型号编码器的分辨率，而在看清一套工业驱动体系对反馈件提出了哪些硬约束，以及这些约束怎么被写进选型规则。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>小米</title>
+				<link>https://sensor.fans/companies/%E5%B0%8F%E7%B1%B3/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%B0%8F%E7%B1%B3/</guid>
+				<description>&lt;p&gt;小米是&lt;strong&gt;终端需求方&lt;/strong&gt;，而且它的角度需求分成完全不同的两档：手机与穿戴里是云台、折叠、振动马达这类微执行器，扫地机与家电里是轮速与风机换相，汽车里是电驱与底盘。三档的精度要求差几个数量级，采购口也不在同一处。看小米的资料要先把这三条分开：集团层面的用户与设备数据对选型没有用，有用的是它公开了哪些产品分类与法定主体。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>小鹏</title>
+				<link>https://sensor.fans/companies/%E5%B0%8F%E9%B9%8F/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%B0%8F%E9%B9%8F/</guid>
+				<description>&lt;p&gt;小鹏是&lt;strong&gt;同时在两条链上跑的整机厂&lt;/strong&gt;：汽车这条线是车规需求方，机器人这条线是人形本体定义者。IRON 公开到&amp;quot;单手 22 个自由度、行业最小谐波关节&amp;quot;这一层，是这家公司最值得记的一句——22 个自由度的手意味着单只手就要 22 路以上角度反馈，而且全部塞进手掌与手指。看它的资料，重点在自由度与关节形态，不在传感器型号。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>旭顺电子</title>
+				<link>https://sensor.fans/companies/%E6%97%AD%E9%A1%BA%E7%94%B5%E5%AD%90/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%97%AD%E9%A1%BA%E7%94%B5%E5%AD%90/</guid>
+				<description>&lt;p&gt;旭顺电子在编码器链上站在&lt;strong&gt;驱动这一侧，而且是&amp;quot;不需要精密角度&amp;quot;的那一端&lt;/strong&gt;：它做无刷电机的驱动板与方案，位置信息只服务换相与转速闭环，霍尔三路或反电势估算就够了。它自己的参数表把这一点写得很直白——&amp;ldquo;FOC 控制，带 3 个霍尔&amp;rdquo;。这条信息对做磁编码器的人有用：白电与个护的 BLDC 方案里，角度反馈被压在换相件这一档，价格与体积挤走了高精度方案。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>易德龙</title>
+				<link>https://sensor.fans/companies/%E6%98%93%E5%BE%B7%E9%BE%99/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%98%93%E5%BE%B7%E9%BE%99/</guid>
+				<description>&lt;p&gt;易德龙站在&lt;strong&gt;制造与方案落地这一层&lt;/strong&gt;，不是编码器厂，也不是整机厂：它把客户的电路板、控制器、模组做出来，也在 ODM 模式下自己设计电机驱动与运动控制板。对做器件的人来说，这一层的信息价值在于&amp;quot;谁真的在决定 BOM&amp;quot;——EMS 只执行客户给的 BOM，ODM 才有机会建议器件，两者混在一份公司介绍里时必须分开看。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>英达森斯</title>
+				<link>https://sensor.fans/companies/%E8%8B%B1%E8%BE%BE%E6%A3%AE%E6%96%AF/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%8B%B1%E8%BE%BE%E6%A3%AE%E6%96%AF/</guid>
+				<description>&lt;p&gt;英达森斯只做一件事：电感式编码器芯片。它在链条上的位置是&amp;quot;芯片 + 算法 + PCB 线圈工具链&amp;quot;——线圈不在片内，画在客户的 PCB 上，所以它卖的不只是硅片，还有一套让客户把线圈画对的设计工具。这条路线与磁编的最大区别就在这：误差链里最关键的几何量（线圈线宽、靶盘间隙、安装偏心）由客户自己掌握。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>英飞凌</title>
+				<link>https://sensor.fans/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/</guid>
+				<description>&lt;p&gt;英飞凌在编码器链上是“四种磁阻原理全都自己做”的那一层：霍尔、AMR、GMR、TMR 各有角度产品线，且多数型号同时给单 die 与双 die 两个版本。读它的资料，最该看的是官方选型指南里那张把原理、die 配置、输出形式、精度与功能安全等级并排的表——它把“同一颗芯片怎么做到 ASIL D”这件事讲得比多数厂商清楚。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>优必选</title>
+				<link>https://sensor.fans/companies/%E4%BC%98%E5%BF%85%E9%80%89/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E4%BC%98%E5%BF%85%E9%80%89/</guid>
+				<description>&lt;p&gt;优必选（UBTECH）是&lt;strong&gt;人形整机 + 上市公司&lt;/strong&gt;这一层。它的特殊性在信息披露方式：作为港交所主板公司，营收、订单、募投方向都有法定披露义务，但&amp;quot;关节里用什么反馈&amp;quot;这类工程细节，年报与产品页都不写。对做编码器的人来说，它是一个&amp;quot;公开财务、封闭 BOM&amp;quot;的样本——能查到它自研伺服驱动器、能查到伺服驱动器累计产量，查不到驱动器里那颗角度芯片是谁的。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>宇树</title>
+				<link>https://sensor.fans/companies/%E5%AE%87%E6%A0%91/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E5%AE%87%E6%A0%91/</guid>
+				<description>&lt;p&gt;宇树科技是&lt;strong&gt;整机厂&lt;/strong&gt;，站在编码器链的最下游：它自己设计关节电机与结构，把编码器装进关节里。它在公开资料里的独特价值是&lt;strong&gt;规格表直接写了&amp;quot;关节编码器：双编码器&amp;quot;&lt;/strong&gt;——这在人形机器人厂商里不常见，多数只写&amp;quot;高精度编码器&amp;quot;或干脆不提。但&amp;quot;双编码器&amp;quot;只说明电机侧与输出侧各有一路，官网没有写位数、原理（磁／光／电感）、接口与供应商，这几项不能推。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>禹衡</title>
+				<link>https://sensor.fans/companies/%E7%A6%B9%E8%A1%A1/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E7%A6%B9%E8%A1%A1/</guid>
+				<description>&lt;p&gt;禹衡（长春禹衡光学）在编码器链上是光学整机厂，做的是光栅式角度编码器、光栅尺、旋转变压器与手动脉冲发生器这一整套。它对做选型的人最有用的公开信息是精度档位：产品列表按角秒分档，从 JZN-1 的 0.5 角秒一路排到 JKK-3 的 30 角秒，这在国产厂商里是少见的公开写法。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>长城汽车</title>
+				<link>https://sensor.fans/companies/%E9%95%BF%E5%9F%8E%E6%B1%BD%E8%BD%A6/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E9%95%BF%E5%9F%8E%E6%B1%BD%E8%BD%A6/</guid>
+				<description>&lt;p&gt;长城汽车在编码器链上是&amp;quot;车规级角度传感的整机用户&amp;quot;，用量集中在两处：电驱与变速系统的电机控制，以及底盘与转向的位置反馈。它同时是 2025 年起进入机器人链的车企——与宇树科技签战略合作，把机器人技术研发、智能制造与整车创新放在一份协议里。读它的资料，官方年表比产品页有用，因为年表给的是可核的日期与事件。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>长鑫</title>
+				<link>https://sensor.fans/companies/%E9%95%BF%E9%91%AB/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E9%95%BF%E9%91%AB/</guid>
+				<description>&lt;p&gt;长鑫存储不在编码器的信号链上：角度从码盘到解算再到控制器，一路用的是片内 OTP/EEPROM/MTP 存校准系数，不用 DRAM。它的位置在另一端——机器人主控与视觉算力板的存储底座。把这条边界说清楚，比硬把它塞进编码器供应链更有用。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>正元电机</title>
+				<link>https://sensor.fans/companies/%E6%AD%A3%E5%85%83%E7%94%B5%E6%9C%BA/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%AD%A3%E5%85%83%E7%94%B5%E6%9C%BA/</guid>
+				<description>&lt;p&gt;正元电机站在精密直流电机与驱动这一层，编码器是它自己料号体系里的一类产品，随电机一起配。它的价值在于公开了一套完整的编码器命名规则——尺寸、原理（磁电或光电）、通道形态（增量有无差分、绝对值）、精度位都被编进料号，这在中小电机厂里不常见。读它的资料，最该看的是这套规则与型号表，而不是精度形容。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>智元</title>
+				<link>https://sensor.fans/companies/%E6%99%BA%E5%85%83/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E6%99%BA%E5%85%83/</guid>
+				<description>&lt;p&gt;智元机器人是&lt;strong&gt;人形整机厂&lt;/strong&gt;，在编码器链的最下游，但它比多数同行往上游多走了一步：关节是自研并量产的一体化模组，电机、减速、反馈在同一个自制件里定义。这让它既是编码器的需求方，也是关节规格的定义者——看它的资料，值得抓的是&amp;quot;整机自由度怎么分、关节峰值扭矩多少、安全冗余靠什么实现&amp;quot;，而不是编码器型号。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>中科无线</title>
+				<link>https://sensor.fans/companies/%E4%B8%AD%E7%A7%91%E6%97%A0%E7%BA%BF/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E4%B8%AD%E7%A7%91%E6%97%A0%E7%BA%BF/</guid>
+				<description>&lt;p&gt;中科无线（CT-Unite）站的是&amp;quot;关节驱动与运动控制芯片&amp;quot;这一层。它把 FOC、电流环与角度输入塞进同一颗关节芯片，同时自己做 GaN 功率级；2026 年官网发展历程里又添了一句&amp;quot;发布我国首颗磁编码芯片 &lt;a href=&#34;https://sensor.fans/models/ct-21x/&#34;&gt;CT-21X&lt;/a&gt;&amp;quot;，等于从驱动端往反馈端伸了一只手。读它的资料要分清两类：一类有产品页与短规格（功率与驱控芯片），一类只有一句发布记录（磁编码芯片），两者不能用同一种可信度对待。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>中芯国际</title>
+				<link>https://sensor.fans/companies/%E4%B8%AD%E8%8A%AF%E5%9B%BD%E9%99%85/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E4%B8%AD%E8%8A%AF%E5%9B%BD%E9%99%85/</guid>
+				<description>&lt;p&gt;中芯国际在编码器链上不测角度，它站在&amp;quot;把角度芯片做成硅片&amp;quot;那一步：霍尔或磁阻前端、ADC、驱动级、校准系数存储，都要落到某条工艺平台上流片。看它有价值的不是排名，而是平台分类、8/12 英寸厂的地理分布，以及它明确不公开的那几项。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>众擎</title>
+				<link>https://sensor.fans/companies/%E4%BC%97%E6%93%8E/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E4%BC%97%E6%93%8E/</guid>
+				<description>&lt;p&gt;众擎（ENGINEAI）是&lt;strong&gt;人形整机&lt;/strong&gt;这一层，而且是把关节捏在自己手里的那种整机厂：官网反复写&amp;quot;全栈自研关节&amp;quot;&amp;ldquo;全栈式自研关节设计&amp;rdquo;。对做编码器的人来说，这句话是整个页面里最要紧的一句——关节自研，意味着关节内部的角度反馈也由它自己定，采购口不在外部模组厂，而在深圳这家公司的机械与电控团队。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>追觅</title>
+				<link>https://sensor.fans/companies/%E8%BF%BD%E8%A7%85/</link>
+				<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://sensor.fans/companies/%E8%BF%BD%E8%A7%85/</guid>
+				<description>&lt;p&gt;追觅在编码器链上是终端应用这一层，但它是&amp;quot;用量密集&amp;quot;的那一类：一台扫地机里有驱动轮、边刷、滚刷、拖布升降、激光雷达转轴，每一处都要测速或位置。官网只公开整机体验指标——吸力、越障高度、机身厚度、避障方案——从不公开这些轴上用什么反馈。读它的资料，价值在于判断这一档客户的验收口径：不是位数，而是自清洁、越障、长期不漂。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

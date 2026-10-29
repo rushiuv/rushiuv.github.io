@@ -1,9 +1,583 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>AS5600 · 如是有为</title><meta name=description content="AS5600 是 12 位在轴霍尔旋转位置传感器，支持 I²C 读取及模拟量／PWM 输出，适用于非接触旋钮和电位器替代。"><link rel=canonical href=https://sensor.fans/models/as5600/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="AS5600 · 如是有为"><meta property="og:description" content="AS5600 是 12 位在轴霍尔旋转位置传感器，支持 I²C 读取及模拟量／PWM 输出，适用于非接触旋钮和电位器替代。"><meta property="og:url" content="https://sensor.fans/models/as5600/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="website"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="AS5600 · 如是有为"><meta name=twitter:description content="AS5600 是 12 位在轴霍尔旋转位置传感器，支持 I²C 读取及模拟量／PWM 输出，适用于非接触旋钮和电位器替代。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159424"><link rel=stylesheet href="/css/wiki.css?v=1793159424"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"><link rel=stylesheet href="/css/engineering.css?v=c056824e2b1b"><link rel=alternate type=application/rss+xml href=/models/as5600/index.xml title=如是有为></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/>基础知识</a>
-<a href=/wiki/ aria-current=page>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><div class="wiki-layout model-card"><article class=wiki-article><header class=wiki-head><p class=kicker>如是有为 · 型号与产品</p><h1 class=page-title>AS5600</h1><p class=wiki-description>AS5600 是 12 位在轴霍尔旋转位置传感器，支持 I²C 读取及模拟量／PWM 输出，适用于非接触旋钮和电位器替代。</p><p class="muted wiki-meta">资料核对 <time datetime=2026-10-24>2026.10.24</time> · <a href=#related-posts>5 篇相关文章</a></p><div class=wiki-actions><a class="btn ghost" href=https://www.infineon.com/part/AS5600 target=_blank rel=noopener>官方产品页 ↗</a>
-<a class=btn href=https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf target=_blank rel=noopener>官方数据手册 ↓</a></div></header><div class=model-card-overview><div class="content wiki-content"><h2 id=核心参数>核心参数</h2><table><thead><tr><th>参数</th><th>数值与适用条件</th></tr></thead><tbody><tr><td>感应技术</td><td>霍尔，轴端径向充磁磁体</td></tr><tr><td>角度分辨率</td><td>12 位</td></tr><tr><td>接口</td><td>I²C 读取与配置；模拟量或 PWM 位置输出</td></tr><tr><td>模拟输出</td><td>比例于 VDD，12 位 DAC</td></tr><tr><td>可编程角度行程</td><td>18°～360°，起止位置可配置</td></tr><tr><td>供电模式</td><td>3.3 V 或 5 V</td></tr><tr><td>工作磁场</td><td>30～90 mT</td></tr><tr><td>工作温度</td><td>−40～125°C；支持自动低功耗模式</td></tr><tr><td>理想数字码距</td><td>按12位全圈换算：360°/2^12 ≈ 0.08789062°；计算值，不是准确度保证</td></tr><tr><td>PWM配置</td><td>115/230/460/920 Hz典型值，容差±5%；占空比2.9%～97.1%</td></tr><tr><td>上电准备时间</td><td>最大10 ms</td></tr><tr><td>慢滤波SF=00</td><td>2.2 ms阶跃延迟；最大0.015° RMS（1σ）</td></tr><tr><td>慢滤波SF=01</td><td>1.1 ms阶跃延迟；最大0.021° RMS（1σ）</td></tr><tr><td>慢滤波SF=10</td><td>0.55 ms阶跃延迟；最大0.030° RMS（1σ）</td></tr><tr><td>慢滤波SF=11</td><td>0.286 ms阶跃延迟；最大0.043° RMS（1σ）</td></tr><tr><td>系统INL</td><td>最大±1°；最佳直线拟合、360°行程、无磁体偏移及未做零位编程，PWM/I²C条件</td></tr><tr><td>正常模式电流</td><td>典型6.5 mA，PM=00常开；60mT典型磁场，不含外部负载</td></tr><tr><td>低功耗LPM1</td><td>典型3.4 mA，PM=01，轮询5 ms</td></tr><tr><td>低功耗LPM2</td><td>典型1.8 mA，PM=10，轮询20 ms</td></tr><tr><td>低功耗LPM3</td><td>典型1.5 mA，PM=11，轮询100 ms</td></tr><tr><td>5V／3.3V供电</td><td>5V模式4.5～5.5 V；3.3V模式3.0～3.6 V；OTP烧录另有供电条件</td></tr></tbody></table><p>参数来源：本页所列<a href=https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf>原厂产品资料与手册</a>。</p><p>资料定位：AS5600 v1-06（2018-06-20）正文第7～8页和第28页滤波表；阶跃延迟与噪声逐档配对。</p><h2 id=工作方式与型号定位>工作方式与型号定位</h2><p>AS5600可替代接触式旋钮和电位器，通过I²C读角度，并选择模拟量或PWM输出。12位全圈的理想码距是360°/4096，约0.08789°；这只表示刻度，不是保证角度误差。</p><h2 id=安装接口与配置>安装、接口与配置</h2><p>18°～360°可编程行程用于将选定机械范围映射到输出。零点、终点和输出模式要一起配置；模拟输出与VDD成比例时，ADC参考如何取值会直接影响系统读数。</p><h2 id=校准与选型验证>校准与选型验证</h2><p>磁体应满足30～90mT工作场条件。低速测速会放大12位码距形成的台阶，滤波应同时评估静止噪声和响应延迟。检验应包括全行程、端点、跨零及掉电重启，不只检查旋钮中间位置。</p><h2 id=官方资料>官方资料</h2><ul><li><a href=https://www.infineon.com/part/AS5600>AS5600 原厂资料入口</a></li><li><a href=https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf>AS5600 数据手册（官方 PDF）</a></li></ul></div><figure class=model-card-visual><img src=/images/wiki/as5600-official.jpg alt="AS5600 原厂产品或应用示意" loading=eager decoding=async><figcaption>AS5600 原厂产品页所列 SOIC-8 封装示意 · <a href=https://www.infineon.com/part/AS5600 target=_blank rel=noopener>原图出处 ↗</a></figcaption></figure></div><section class=wiki-relations><h2>相关词条</h2><div class="chips big"><a class="chip company" href=/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/>英飞凌</a></div></section><nav class=model-basic-links aria-label=参数基础知识><span>看懂参数</span><a href=/wiki/basics/resolution-accuracy/>分辨率与精度</a><a href=/wiki/basics/latency/>延迟与带宽</a><a href=/wiki/basics/interfaces/>输出接口</a></nav></article><aside class=wiki-toc><div class=card><h2 class=card-title>词条目录</h2><nav id=TableOfContents><ul><li><a href=#核心参数>核心参数</a></li><li><a href=#工作方式与型号定位>工作方式与型号定位</a></li><li><a href=#安装接口与配置>安装、接口与配置</a></li><li><a href=#校准与选型验证>校准与选型验证</a></li><li><a href=#官方资料>官方资料</a></li></ul></nav><a class=wiki-posts-link href=#related-posts>相关文章 ↓</a></div></aside></div><section class="wiki-related posts" id=related-posts><header class=page-head><p class=kicker>延伸阅读</p><h2>与 AS5600 相关的文章</h2><p class=muted>共 5 篇，按文章日期排序</p></header><article class=item><time class=date>2026.09.23</time><h2><a href=/posts/dq702dxbibuz42t2xcegga/>机器人关节设计中光电编码器、磁编码器和电感编码器到底有什么区别？</a></h2><p class=desc>关节模组的三样核心部件里，减速器决定力矩密度，电机决定功率密度，编码器则几乎单独决定了关节的定位精度上限、速度环带宽和长期可靠性。做关节模组选型时常遇到一个纠结：光电、磁、电感三种编码器，参数表上都能标出很高的分辨率，价格却相差一个数量级，…</p><div class=chips><a class="chip model" href=/models/as5600/>AS5600</a><a class="chip model" href=/models/as5047p/>AS5047P</a><a class="chip model" href=/models/tle5012b/>TLE5012B</a><a class="chip company" href=/companies/%E6%B5%B7%E5%BE%B7%E6%B1%89/>海德汉</a><a class="chip company" href=/companies/%E5%A4%9A%E6%91%A9%E5%B7%9D/>多摩川</a><span class="chip more">+10</span></div></article><article class=item><time class=date>2026.08.08</time><h2><a href=/posts/cnlqbbciozmketdoeuuazq/>一台机器人用了 71 个编码器，但真正值钱的可能只有 10 个</a></h2><p class=desc>ROBOTICS / POSITION SENSING</p><div class=chips><a class="chip model" href=/models/ktm5900/>KTM5900</a><a class="chip model" href=/models/ktm5910/>KTM5910</a><a class="chip model" href=/models/ktm5200/>KTM5200</a><a class="chip model" href=/models/kth78/>KTH78</a><a class="chip model" href=/models/as5600/>AS5600</a><span class="chip more">+7</span></div></article><article class=item><time class=date>2026.06.24</time><h2><a href=/posts/hjpixnlw8de50ek1ytzoww/>AMR、GMR、TMR，磁阻三兄弟傻傻分不清楚, 把KTH5900，TLE5012B、KMZ60、AS5600都塞进“磁阻传感器”一栏，会致机器人关节跑偏</a></h2><p class=desc>我见过一张机器人关节角度传感器选型表。第一列写着"磁阻传感器"，下面列着昆泰芯 KTH5900、Infineon TLE5012B、NXP KMZ60，旁边还有 ams OSRAM AS5600。</p><div class=chips><a class="chip model" href=/models/ktm5800/>KTM5800</a><a class="chip model" href=/models/kth5900/>KTH5900</a><a class="chip model" href=/models/as5600/>AS5600</a><a class="chip model" href=/models/tle5012b/>TLE5012B</a><a class="chip model" href=/models/kmz60/>KMZ60</a><span class="chip more">+12</span></div></article><article class=item><time class=date>2026.04.24</time><h2><a href=/posts/fqgy0fcga9w3ckj-13u2mq/>FOC里最恶心的事，不是磁编码器不准，而是你永远在“低速安静”和“高速不迟”之间二选一</a></h2><p class=desc>做 FOC 写到后面，很多人都会碰到一个很拧巴的现实：磁编码器不是不能用，也不是精度表上不好看，而是一旦真的进环路，它最折磨人的往往不是“准不准”，而是“慢不慢、抖不抖”。</p><div class=chips><a class="chip model" href=/models/kth5701/>KTH5701</a><a class="chip model" href=/models/as5600/>AS5600</a><a class="chip company" href=/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/>昆泰芯</a><a class="chip tag" href=/tags/%E7%A3%81%E7%BC%96%E7%A0%81%E5%99%A8/>磁编码器</a><a class="chip tag" href=/tags/%E9%9C%8D%E5%B0%94/>霍尔</a><span class="chip more">+1</span></div></article><article class=item><time class=date>2026.04.05</time><h2><a href=/posts/z6trnlsqclroga8farmf6a/>AS5600与KTH78放在一起看：滤波和延迟到底该怎么平衡</a></h2><p class=desc>很多人一聊磁编码器，就喜欢先比位数、再比分辨率，最后顺手把“滤波开大一点”当成通用解法。</p><div class=chips><a class="chip model" href=/models/kth78/>KTH78</a><a class="chip model" href=/models/as5600/>AS5600</a><a class="chip tag" href=/tags/%E7%A3%81%E7%BC%96%E7%A0%81%E5%99%A8/>磁编码器</a></div></article></section></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>AS5600 · 如是有为</title>
+<meta name="description" content="AS5600 是 12 位在轴霍尔旋转位置传感器，支持 I²C 读取及模拟量／PWM 输出，适用于非接触旋钮和电位器替代。">
+<link rel="canonical" href="https://sensor.fans/models/as5600/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="AS5600 · 如是有为">
+<meta property="og:description" content="AS5600 是 12 位在轴霍尔旋转位置传感器，支持 I²C 读取及模拟量／PWM 输出，适用于非接触旋钮和电位器替代。">
+<meta property="og:url" content="https://sensor.fans/models/as5600/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AS5600 · 如是有为">
+<meta name="twitter:description" content="AS5600 是 12 位在轴霍尔旋转位置传感器，支持 I²C 读取及模拟量／PWM 输出，适用于非接触旋钮和电位器替代。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+<link rel="stylesheet" href="/css/engineering.css?v=78412614aa48">
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="/models/as5600/index.xml" title="如是有为">
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/">基础知识</a>
+      <a href="/wiki/" aria-current="page">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+
+
+<div class="wiki-layout model-card">
+  <article class="wiki-article">
+    <header class="wiki-head">
+      <p class="kicker">如是有为 · 型号与产品</p>
+      <h1 class="page-title">AS5600</h1>
+      <p class="wiki-description">AS5600 是 12 位在轴霍尔旋转位置传感器，支持 I²C 读取及模拟量／PWM 输出，适用于非接触旋钮和电位器替代。</p>
+      <p class="muted wiki-meta">资料核对 <time datetime="2026-10-24">2026.10.24</time> · <a href="#related-posts">5 篇相关文章</a></p>
+      
+      <div class="wiki-actions">
+        <a class="btn ghost" href="https://www.infineon.com/part/AS5600" target="_blank" rel="noopener">官方产品页 ↗</a>
+        <a class="btn" href="https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf" target="_blank" rel="noopener">官方数据手册 ↓</a>
+      </div>
+      
+    </header>
+    
+    
+    
+    <div class="model-card-overview">
+      <div class="content wiki-content"><h2 id="核心参数">核心参数</h2>
+<table>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>数值与适用条件</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>感应技术</td>
+					<td>霍尔，轴端径向充磁磁体</td>
+			</tr>
+			<tr>
+					<td>角度分辨率</td>
+					<td>12 位</td>
+			</tr>
+			<tr>
+					<td>接口</td>
+					<td>I²C 读取与配置；模拟量或 PWM 位置输出</td>
+			</tr>
+			<tr>
+					<td>模拟输出</td>
+					<td>比例于 VDD，12 位 DAC</td>
+			</tr>
+			<tr>
+					<td>可编程角度行程</td>
+					<td>18°～360°，起止位置可配置</td>
+			</tr>
+			<tr>
+					<td>供电模式</td>
+					<td>3.3 V 或 5 V</td>
+			</tr>
+			<tr>
+					<td>工作磁场</td>
+					<td>30～90 mT</td>
+			</tr>
+			<tr>
+					<td>工作温度</td>
+					<td>−40～125°C；支持自动低功耗模式</td>
+			</tr>
+			<tr>
+					<td>理想数字码距</td>
+					<td>按12位全圈换算：360°/2^12 ≈ 0.08789062°；计算值，不是准确度保证</td>
+			</tr>
+			<tr>
+					<td>PWM配置</td>
+					<td>115/230/460/920 Hz典型值，容差±5%；占空比2.9%～97.1%</td>
+			</tr>
+			<tr>
+					<td>上电准备时间</td>
+					<td>最大10 ms</td>
+			</tr>
+			<tr>
+					<td>慢滤波SF=00</td>
+					<td>2.2 ms阶跃延迟；最大0.015° RMS（1σ）</td>
+			</tr>
+			<tr>
+					<td>慢滤波SF=01</td>
+					<td>1.1 ms阶跃延迟；最大0.021° RMS（1σ）</td>
+			</tr>
+			<tr>
+					<td>慢滤波SF=10</td>
+					<td>0.55 ms阶跃延迟；最大0.030° RMS（1σ）</td>
+			</tr>
+			<tr>
+					<td>慢滤波SF=11</td>
+					<td>0.286 ms阶跃延迟；最大0.043° RMS（1σ）</td>
+			</tr>
+			<tr>
+					<td>系统INL</td>
+					<td>最大±1°；最佳直线拟合、360°行程、无磁体偏移及未做零位编程，PWM/I²C条件</td>
+			</tr>
+			<tr>
+					<td>正常模式电流</td>
+					<td>典型6.5 mA，PM=00常开；60mT典型磁场，不含外部负载</td>
+			</tr>
+			<tr>
+					<td>低功耗LPM1</td>
+					<td>典型3.4 mA，PM=01，轮询5 ms</td>
+			</tr>
+			<tr>
+					<td>低功耗LPM2</td>
+					<td>典型1.8 mA，PM=10，轮询20 ms</td>
+			</tr>
+			<tr>
+					<td>低功耗LPM3</td>
+					<td>典型1.5 mA，PM=11，轮询100 ms</td>
+			</tr>
+			<tr>
+					<td>5V／3.3V供电</td>
+					<td>5V模式4.5～5.5 V；3.3V模式3.0～3.6 V；OTP烧录另有供电条件</td>
+			</tr>
+	</tbody>
+</table>
+<p>参数来源：本页所列<a href="https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf">原厂产品资料与手册</a>。</p>
+<p>资料定位：AS5600 v1-06（2018-06-20）正文第7～8页和第28页滤波表；阶跃延迟与噪声逐档配对。</p>
+<h2 id="工作方式与型号定位">工作方式与型号定位</h2>
+<p>AS5600可替代接触式旋钮和电位器，通过I²C读角度，并选择模拟量或PWM输出。12位全圈的理想码距是360°/4096，约0.08789°；这只表示刻度，不是保证角度误差。</p>
+<h2 id="安装接口与配置">安装、接口与配置</h2>
+<p>18°～360°可编程行程用于将选定机械范围映射到输出。零点、终点和输出模式要一起配置；模拟输出与VDD成比例时，ADC参考如何取值会直接影响系统读数。</p>
+<h2 id="校准与选型验证">校准与选型验证</h2>
+<p>磁体应满足30～90mT工作场条件。低速测速会放大12位码距形成的台阶，滤波应同时评估静止噪声和响应延迟。检验应包括全行程、端点、跨零及掉电重启，不只检查旋钮中间位置。</p>
+<h2 id="官方资料">官方资料</h2>
+<ul>
+<li><a href="https://www.infineon.com/part/AS5600">AS5600 原厂资料入口</a></li>
+<li><a href="https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5600-datasheet-en.pdf">AS5600 数据手册（官方 PDF）</a></li>
+</ul>
+</div>
+      <figure class="model-card-visual"><img src="/images/wiki/as5600-official.jpg" alt="AS5600 原厂产品或应用示意" loading="eager" decoding="async"><figcaption>AS5600 原厂产品页所列 SOIC-8 封装示意 · <a href="https://www.infineon.com/part/AS5600" target="_blank" rel="noopener">原图出处 ↗</a></figcaption></figure>
+    </div>
+    
+    
+
+
+
+
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+    
+
+  
+
+
+
+
+<section class="wiki-relations"><h2>相关词条</h2><div class="chips big">
+<a class="chip company" href="/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/">英飞凌</a>
+</div></section>
+
+
+    <nav class="model-basic-links" aria-label="参数基础知识"><span>看懂参数</span><a href="/wiki/basics/resolution-accuracy/">分辨率与精度</a><a href="/wiki/basics/latency/">延迟与带宽</a><a href="/wiki/basics/interfaces/">输出接口</a></nav>
+    
+  </article>
+  
+  <aside class="wiki-toc"><div class="card"><h2 class="card-title">词条目录</h2><nav id="TableOfContents">
+  <ul>
+    <li><a href="#核心参数">核心参数</a></li>
+    <li><a href="#工作方式与型号定位">工作方式与型号定位</a></li>
+    <li><a href="#安装接口与配置">安装、接口与配置</a></li>
+    <li><a href="#校准与选型验证">校准与选型验证</a></li>
+    <li><a href="#官方资料">官方资料</a></li>
+  </ul>
+</nav><a class="wiki-posts-link" href="#related-posts">相关文章 ↓</a></div></aside>
+  
+</div>
+<section class="wiki-related posts" id="related-posts">
+  <header class="page-head"><p class="kicker">延伸阅读</p><h2>与 AS5600 相关的文章</h2><p class="muted">共 5 篇，按文章日期排序</p></header>
+  <article class="item">
+  <time class="date">2026.09.23</time>
+  <h2><a href="/posts/dq702dxbibuz42t2xcegga/">机器人关节设计中光电编码器、磁编码器和电感编码器到底有什么区别？</a></h2>
+  <p class="desc">关节模组的三样核心部件里，减速器决定力矩密度，电机决定功率密度，编码器则几乎单独决定了关节的定位精度上限、速度环带宽和长期可靠性。做关节模组选型时常遇到一个纠结：光电、磁、电感三种编码器，参数表上都能标出很高的分辨率，价格却相差一个数量级，…</p>
+  <div class="chips"><a class="chip model" href="/models/as5600/">AS5600</a><a class="chip model" href="/models/as5047p/">AS5047P</a><a class="chip model" href="/models/tle5012b/">TLE5012B</a><a class="chip company" href="/companies/%E6%B5%B7%E5%BE%B7%E6%B1%89/">海德汉</a><a class="chip company" href="/companies/%E5%A4%9A%E6%91%A9%E5%B7%9D/">多摩川</a><span class="chip more">+10</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.08.08</time>
+  <h2><a href="/posts/cnlqbbciozmketdoeuuazq/">一台机器人用了 71 个编码器，但真正值钱的可能只有 10 个</a></h2>
+  <p class="desc">ROBOTICS / POSITION SENSING</p>
+  <div class="chips"><a class="chip model" href="/models/ktm5900/">KTM5900</a><a class="chip model" href="/models/ktm5910/">KTM5910</a><a class="chip model" href="/models/ktm5200/">KTM5200</a><a class="chip model" href="/models/kth78/">KTH78</a><a class="chip model" href="/models/as5600/">AS5600</a><span class="chip more">+7</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.06.24</time>
+  <h2><a href="/posts/hjpixnlw8de50ek1ytzoww/">AMR、GMR、TMR，磁阻三兄弟傻傻分不清楚,  把KTH5900，TLE5012B、KMZ60、AS5600都塞进“磁阻传感器”一栏，会致机器人关节跑偏</a></h2>
+  <p class="desc">我见过一张机器人关节角度传感器选型表。第一列写着&#34;磁阻传感器&#34;，下面列着昆泰芯 KTH5900、Infineon TLE5012B、NXP KMZ60，旁边还有 ams OSRAM AS5600。</p>
+  <div class="chips"><a class="chip model" href="/models/ktm5800/">KTM5800</a><a class="chip model" href="/models/kth5900/">KTH5900</a><a class="chip model" href="/models/as5600/">AS5600</a><a class="chip model" href="/models/tle5012b/">TLE5012B</a><a class="chip model" href="/models/kmz60/">KMZ60</a><span class="chip more">+12</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.04.24</time>
+  <h2><a href="/posts/fqgy0fcga9w3ckj-13u2mq/">FOC里最恶心的事，不是磁编码器不准，而是你永远在“低速安静”和“高速不迟”之间二选一</a></h2>
+  <p class="desc">做 FOC 写到后面，很多人都会碰到一个很拧巴的现实：磁编码器不是不能用，也不是精度表上不好看，而是一旦真的进环路，它最折磨人的往往不是“准不准”，而是“慢不慢、抖不抖”。</p>
+  <div class="chips"><a class="chip model" href="/models/kth5701/">KTH5701</a><a class="chip model" href="/models/as5600/">AS5600</a><a class="chip company" href="/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/">昆泰芯</a><a class="chip tag" href="/tags/%E7%A3%81%E7%BC%96%E7%A0%81%E5%99%A8/">磁编码器</a><a class="chip tag" href="/tags/%E9%9C%8D%E5%B0%94/">霍尔</a><span class="chip more">+1</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.04.05</time>
+  <h2><a href="/posts/z6trnlsqclroga8farmf6a/">AS5600与KTH78放在一起看：滤波和延迟到底该怎么平衡</a></h2>
+  <p class="desc">很多人一聊磁编码器，就喜欢先比位数、再比分辨率，最后顺手把“滤波开大一点”当成通用解法。</p>
+  <div class="chips"><a class="chip model" href="/models/kth78/">KTH78</a><a class="chip model" href="/models/as5600/">AS5600</a><a class="chip tag" href="/tags/%E7%A3%81%E7%BC%96%E7%A0%81%E5%99%A8/">磁编码器</a></div>
+</article>
+
+  
+
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

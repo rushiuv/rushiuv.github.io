@@ -1,10 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SROA48 on 如是有为</title><link>https://sensor.fans/models/sroa48/</link><description>Recent content in SROA48 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/models/sroa48/index.xml" rel="self" type="application/rss+xml"/><item><title>为什么锐鹰要在多摩川协议上再造一层TAMA-ED？</title><link>https://sensor.fans/posts/h5di_s_takrhoq0v_fqckg/</link><pubDate>Mon, 27 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/h5di_s_takrhoq0v_fqckg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/dbfe2d93511b48ed489276f7f64de112.webp" alt="为什么锐鹰要在多摩川协议上再造一层TAMA-ED？" loading="lazy" decoding="async">
-&lt;/p>
-&lt;h2 id="锐鹰已经有23bit电感25bit光电了为什么还要在多摩川协议上再造一层tama-ed">锐鹰已经有23bit电感、25bit光电了，为什么还要在多摩川协议上再造一层TAMA-ED？&lt;/h2>
-&lt;p>TAMA-ED真正改的不是传输速率，而是把“角度”升级成一份包含多圈与状态上下文的周期反馈包。&lt;/p>
-&lt;p>前几天，我把锐鹰两份编码器规格书并排放在桌上。&lt;/p></description></item><item><title>编码器的机械多圈VS电池多圈：锐鹰WIN48用15.5mm和一整套专利，把维护问题从客户现场搬回了设计阶段</title><link>https://sensor.fans/posts/zwhvy3jqvfr3bwudu_qxiw/</link><pubDate>Fri, 19 Jun 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/zwhvy3jqvfr3bwudu_qxiw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/25b129a75d78d65f38728b976c6fcde1.webp" alt="编码器的机械多圈VS电池多圈：锐鹰WIN48用15.5mm和一整套专利，把维护问题从客户现场搬回了设计阶段" loading="lazy" decoding="async">
-&lt;/p>
-&lt;h2 id="锐鹰传感-win48-标称155mm23bit12bit无电池机械多圈">锐鹰传感 WIN48 标称15.5mm、23bit+12bit无电池机械多圈&lt;/h2>
-&lt;h2 id="传统电池多圈会导致机器人和机床三年后低电压报警回零返工和停机维护">传统电池多圈会导致机器人和机床三年后低电压报警、回零返工和停机维护&lt;/h2>
-&lt;h3 id="01-这颗电池才是很多多圈编码器最隐蔽的售后炸点">01 这颗电池，才是很多多圈编码器最隐蔽的售后炸点&lt;/h3>
-&lt;p>多圈绝对值编码器被误解得最多的地方，不是单圈bit数、不是通信协议、不是最高转速。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>SROA48 on 如是有为</title>
+		<link>https://sensor.fans/models/sroa48/</link>
+		<description>Recent content in SROA48 on 如是有为</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0800</lastBuildDate>
+		
+			<atom:link href="https://sensor.fans/models/sroa48/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>为什么锐鹰要在多摩川协议上再造一层TAMA-ED？</title>
+				<link>https://sensor.fans/posts/h5di_s_takrhoq0v_fqckg/</link>
+				<pubDate>Mon, 27 Jul 2026 00:00:00 +0800</pubDate>
+				<guid>https://sensor.fans/posts/h5di_s_takrhoq0v_fqckg/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/dbfe2d93511b48ed489276f7f64de112.webp&#34; alt=&#34;为什么锐鹰要在多摩川协议上再造一层TAMA-ED？&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;锐鹰已经有23bit电感25bit光电了为什么还要在多摩川协议上再造一层tama-ed&#34;&gt;锐鹰已经有23bit电感、25bit光电了，为什么还要在多摩川协议上再造一层TAMA-ED？&lt;/h2&gt;&#xA;&lt;p&gt;TAMA-ED真正改的不是传输速率，而是把“角度”升级成一份包含多圈与状态上下文的周期反馈包。&lt;/p&gt;&#xA;&lt;p&gt;前几天，我把锐鹰两份编码器规格书并排放在桌上。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>编码器的机械多圈VS电池多圈：锐鹰WIN48用15.5mm和一整套专利，把维护问题从客户现场搬回了设计阶段</title>
+				<link>https://sensor.fans/posts/zwhvy3jqvfr3bwudu_qxiw/</link>
+				<pubDate>Fri, 19 Jun 2026 00:00:00 +0800</pubDate>
+				<guid>https://sensor.fans/posts/zwhvy3jqvfr3bwudu_qxiw/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/25b129a75d78d65f38728b976c6fcde1.webp&#34; alt=&#34;编码器的机械多圈VS电池多圈：锐鹰WIN48用15.5mm和一整套专利，把维护问题从客户现场搬回了设计阶段&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;锐鹰传感-win48-标称155mm23bit12bit无电池机械多圈&#34;&gt;锐鹰传感 WIN48 标称15.5mm、23bit+12bit无电池机械多圈&lt;/h2&gt;&#xA;&lt;h2 id=&#34;传统电池多圈会导致机器人和机床三年后低电压报警回零返工和停机维护&#34;&gt;传统电池多圈会导致机器人和机床三年后低电压报警、回零返工和停机维护&lt;/h2&gt;&#xA;&lt;h3 id=&#34;01-这颗电池才是很多多圈编码器最隐蔽的售后炸点&#34;&gt;01 这颗电池，才是很多多圈编码器最隐蔽的售后炸点&lt;/h3&gt;&#xA;&lt;p&gt;多圈绝对值编码器被误解得最多的地方，不是单圈bit数、不是通信协议、不是最高转速。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

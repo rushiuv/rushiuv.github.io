@@ -1,9 +1,514 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>KMZ60 · 如是有为</title><meta name=description content="KMZ60是NXP历史磁角度传感器件，提供与磁场方向有关的正余弦模拟信息。"><link rel=canonical href=https://sensor.fans/models/kmz60/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="KMZ60 · 如是有为"><meta property="og:description" content="KMZ60是NXP历史磁角度传感器件，提供与磁场方向有关的正余弦模拟信息。"><meta property="og:url" content="https://sensor.fans/models/kmz60/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="website"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="KMZ60 · 如是有为"><meta name=twitter:description content="KMZ60是NXP历史磁角度传感器件，提供与磁场方向有关的正余弦模拟信息。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159424"><link rel=stylesheet href="/css/wiki.css?v=1793159424"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"><link rel=stylesheet href="/css/engineering.css?v=c056824e2b1b"><link rel=alternate type=application/rss+xml href=/models/kmz60/index.xml title=如是有为></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/>基础知识</a>
-<a href=/wiki/ aria-current=page>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><div class="wiki-layout model-card"><article class=wiki-article><header class=wiki-head><p class=kicker>如是有为 · 型号与产品</p><h1 class=page-title>KMZ60</h1><p class=wiki-description>KMZ60是NXP历史磁角度传感器件，提供与磁场方向有关的正余弦模拟信息。</p><p class="muted wiki-meta">资料核对 <time datetime=2026-10-24>2026.10.24</time> · <a href=#related-posts>1 篇相关文章</a></p><div class=wiki-actions><a class="btn ghost" href=https://www.nxp.com/part/KMZ60 target=_blank rel=noopener>官方产品页 ↗</a>
-<a class=btn href=https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf target=_blank rel=noopener>NXP KMZ60 数据手册 Rev. 2 ↓</a></div></header><div class="model-card-overview no-visual"><div class="content wiki-content"><h2 id=核心参数>核心参数</h2><table><thead><tr><th>参数</th><th>数值与适用条件</th></tr></thead><tbody><tr><td>敏感结构</td><td>MR角度桥与放大器双芯片同封装</td></tr><tr><td>输出</td><td>两路单端、比例式SIN/COS；仍需外部ADC和角度解算</td></tr><tr><td>供电</td><td>2.7～5.5 V，Rev.2第2页</td></tr><tr><td>环境温度</td><td>−40～150°C</td></tr><tr><td>磁场方向周期</td><td>输出cos(2α)/sin(2α)，α为机械磁场角；不能仅凭模拟相位得到上电唯一360°机械位置</td></tr><tr><td>片上功能</td><td>放大、温度幅度补偿、比例式温度参考、掉电控制</td></tr><tr><td>封装</td><td>SO8（SOT96-1）；原厂产品页列本体4.9 × 3.9 × 1.75 mm、引脚间距1.27 mm</td></tr><tr><td>生命周期</td><td>NXP当前产品页标注End of Life，产品归档页注明不再制造；用于存量维护时须另核可获得性</td></tr><tr><td>资料版本</td><td>NXP KMZ60 Rev.2，2014-02-07；历史技术资料，不作为新产品长期供货承诺</td></tr></tbody></table><p>参数来源：<a href=https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf>NXP KMZ60 Rev.2数据手册</a>第1～4页及<a href=https://www.nxp.com/part/KMZ60>NXP产品页</a>。生命周期另见<a href=https://www.nxp.com/products/KMZ60>原厂归档页</a>。</p><h2 id=工作方式与型号定位>工作方式与型号定位</h2><p>KMZ60把磁阻角度桥与放大器集成在同一封装，输出随磁场方向变化的单端正弦、余弦。温度补偿调整幅度，VTEMP提供比例式温度参考，掉电控制可使输出进入高阻。它不直接输出SPI角度或ABZ脉冲。</p><p>原厂第4页描述输出为cos(2α)和sin(2α)，机械磁场转动180°便重复一次。外部atan2得到的是信号相位；若需要上电唯一机械全圈位置，还需独立的半圈消歧信息，不能只把计算结果做比例换算。</p><h2 id=安装接口与配置>安装、接口与配置</h2><p>后端ADC应匹配单端输出、共模、摆幅和供电比例关系。两个通道应同步或严格控制采样时差；错时采样在快速运动下会形成额外相位误差。TCC_EN选择温度补偿，POWERDOWN_EN与未用引脚按手册连接。</p><p>原厂应用包括偶数极对BLDC转子位置，以及EPS、雨刷、方向盘和执行器检测。是否能形成所需机械角度范围仍取决于磁体极对数、感应方向、气隙和上电消歧，不能由应用名称直接推出。</p><h2 id=校准与选型验证>校准与选型验证</h2><p>先保存原始SIN/COS电压，校正零偏、幅差和正交误差，再和机械参考比较周期残差。换用其他器件时，要核对供电、模拟输出类型、敏感周期、温漂、焊盘和失效输出，不只比较室温静态曲线。</p><p>该型号已处于原厂归档/生命周期末期。存量替代还应检查实际可获得料号、接口电气与长期维护安排，现有历史PDF不能自动证明当前有稳定量产供货。</p><h2 id=官方资料>官方资料</h2><ul><li><a href=https://www.nxp.com/part/KMZ60>KMZ60 原厂产品页</a></li><li><a href=https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf>KMZ60 数据手册 Rev.2（PDF）</a></li><li><a href=https://www.nxp.com/products/KMZ60>KMZ60 原厂归档页</a></li></ul></div></div><section class=guide-backlinks><h2>继续算与测</h2><div class=guide-link-list><a href=/topics/guides/magnetic-field-coordinates/>对径两点的磁场同向还是反向？先固定坐标 <span aria-hidden=true>→</span></a><a href=/topics/guides/amplitude-temperature-error/>两路一起变小不改角度，为何温漂仍然变大？ <span aria-hidden=true>→</span></a></div></section><section class=wiki-relations><h2>相关词条</h2><div class="chips big"><a class="chip company" href=/companies/nxp/>NXP</a></div></section><nav class=model-basic-links aria-label=参数基础知识><span>看懂参数</span><a href=/wiki/basics/resolution-accuracy/>分辨率与精度</a><a href=/wiki/basics/latency/>延迟与带宽</a><a href=/wiki/basics/interfaces/>输出接口</a></nav></article><aside class=wiki-toc><div class=card><h2 class=card-title>词条目录</h2><nav id=TableOfContents><ul><li><a href=#核心参数>核心参数</a></li><li><a href=#工作方式与型号定位>工作方式与型号定位</a></li><li><a href=#安装接口与配置>安装、接口与配置</a></li><li><a href=#校准与选型验证>校准与选型验证</a></li><li><a href=#官方资料>官方资料</a></li></ul></nav><a class=wiki-posts-link href=#related-posts>相关文章 ↓</a></div></aside></div><section class="wiki-related posts" id=related-posts><header class=page-head><p class=kicker>延伸阅读</p><h2>与 KMZ60 相关的文章</h2><p class=muted>共 1 篇，按文章日期排序</p></header><article class=item><time class=date>2026.06.24</time><h2><a href=/posts/hjpixnlw8de50ek1ytzoww/>AMR、GMR、TMR，磁阻三兄弟傻傻分不清楚, 把KTH5900，TLE5012B、KMZ60、AS5600都塞进“磁阻传感器”一栏，会致机器人关节跑偏</a></h2><p class=desc>我见过一张机器人关节角度传感器选型表。第一列写着"磁阻传感器"，下面列着昆泰芯 KTH5900、Infineon TLE5012B、NXP KMZ60，旁边还有 ams OSRAM AS5600。</p><div class=chips><a class="chip model" href=/models/ktm5800/>KTM5800</a><a class="chip model" href=/models/kth5900/>KTH5900</a><a class="chip model" href=/models/as5600/>AS5600</a><a class="chip model" href=/models/tle5012b/>TLE5012B</a><a class="chip model" href=/models/kmz60/>KMZ60</a><span class="chip more">+12</span></div></article></section></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>KMZ60 · 如是有为</title>
+<meta name="description" content="KMZ60是NXP历史磁角度传感器件，提供与磁场方向有关的正余弦模拟信息。">
+<link rel="canonical" href="https://sensor.fans/models/kmz60/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="KMZ60 · 如是有为">
+<meta property="og:description" content="KMZ60是NXP历史磁角度传感器件，提供与磁场方向有关的正余弦模拟信息。">
+<meta property="og:url" content="https://sensor.fans/models/kmz60/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KMZ60 · 如是有为">
+<meta name="twitter:description" content="KMZ60是NXP历史磁角度传感器件，提供与磁场方向有关的正余弦模拟信息。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+<link rel="stylesheet" href="/css/engineering.css?v=78412614aa48">
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="/models/kmz60/index.xml" title="如是有为">
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/">基础知识</a>
+      <a href="/wiki/" aria-current="page">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+
+
+<div class="wiki-layout model-card">
+  <article class="wiki-article">
+    <header class="wiki-head">
+      <p class="kicker">如是有为 · 型号与产品</p>
+      <h1 class="page-title">KMZ60</h1>
+      <p class="wiki-description">KMZ60是NXP历史磁角度传感器件，提供与磁场方向有关的正余弦模拟信息。</p>
+      <p class="muted wiki-meta">资料核对 <time datetime="2026-10-24">2026.10.24</time> · <a href="#related-posts">1 篇相关文章</a></p>
+      
+      <div class="wiki-actions">
+        <a class="btn ghost" href="https://www.nxp.com/part/KMZ60" target="_blank" rel="noopener">官方产品页 ↗</a>
+        <a class="btn" href="https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf" target="_blank" rel="noopener">NXP KMZ60 数据手册 Rev. 2 ↓</a>
+      </div>
+      
+    </header>
+    
+    
+    
+    <div class="model-card-overview no-visual">
+      <div class="content wiki-content"><h2 id="核心参数">核心参数</h2>
+<table>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>数值与适用条件</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>敏感结构</td>
+					<td>MR角度桥与放大器双芯片同封装</td>
+			</tr>
+			<tr>
+					<td>输出</td>
+					<td>两路单端、比例式SIN/COS；仍需外部ADC和角度解算</td>
+			</tr>
+			<tr>
+					<td>供电</td>
+					<td>2.7～5.5 V，Rev.2第2页</td>
+			</tr>
+			<tr>
+					<td>环境温度</td>
+					<td>−40～150°C</td>
+			</tr>
+			<tr>
+					<td>磁场方向周期</td>
+					<td>输出cos(2α)/sin(2α)，α为机械磁场角；不能仅凭模拟相位得到上电唯一360°机械位置</td>
+			</tr>
+			<tr>
+					<td>片上功能</td>
+					<td>放大、温度幅度补偿、比例式温度参考、掉电控制</td>
+			</tr>
+			<tr>
+					<td>封装</td>
+					<td>SO8（SOT96-1）；原厂产品页列本体4.9 × 3.9 × 1.75 mm、引脚间距1.27 mm</td>
+			</tr>
+			<tr>
+					<td>生命周期</td>
+					<td>NXP当前产品页标注End of Life，产品归档页注明不再制造；用于存量维护时须另核可获得性</td>
+			</tr>
+			<tr>
+					<td>资料版本</td>
+					<td>NXP KMZ60 Rev.2，2014-02-07；历史技术资料，不作为新产品长期供货承诺</td>
+			</tr>
+	</tbody>
+</table>
+<p>参数来源：<a href="https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf">NXP KMZ60 Rev.2数据手册</a>第1～4页及<a href="https://www.nxp.com/part/KMZ60">NXP产品页</a>。生命周期另见<a href="https://www.nxp.com/products/KMZ60">原厂归档页</a>。</p>
+<h2 id="工作方式与型号定位">工作方式与型号定位</h2>
+<p>KMZ60把磁阻角度桥与放大器集成在同一封装，输出随磁场方向变化的单端正弦、余弦。温度补偿调整幅度，VTEMP提供比例式温度参考，掉电控制可使输出进入高阻。它不直接输出SPI角度或ABZ脉冲。</p>
+<p>原厂第4页描述输出为cos(2α)和sin(2α)，机械磁场转动180°便重复一次。外部atan2得到的是信号相位；若需要上电唯一机械全圈位置，还需独立的半圈消歧信息，不能只把计算结果做比例换算。</p>
+<h2 id="安装接口与配置">安装、接口与配置</h2>
+<p>后端ADC应匹配单端输出、共模、摆幅和供电比例关系。两个通道应同步或严格控制采样时差；错时采样在快速运动下会形成额外相位误差。TCC_EN选择温度补偿，POWERDOWN_EN与未用引脚按手册连接。</p>
+<p>原厂应用包括偶数极对BLDC转子位置，以及EPS、雨刷、方向盘和执行器检测。是否能形成所需机械角度范围仍取决于磁体极对数、感应方向、气隙和上电消歧，不能由应用名称直接推出。</p>
+<h2 id="校准与选型验证">校准与选型验证</h2>
+<p>先保存原始SIN/COS电压，校正零偏、幅差和正交误差，再和机械参考比较周期残差。换用其他器件时，要核对供电、模拟输出类型、敏感周期、温漂、焊盘和失效输出，不只比较室温静态曲线。</p>
+<p>该型号已处于原厂归档/生命周期末期。存量替代还应检查实际可获得料号、接口电气与长期维护安排，现有历史PDF不能自动证明当前有稳定量产供货。</p>
+<h2 id="官方资料">官方资料</h2>
+<ul>
+<li><a href="https://www.nxp.com/part/KMZ60">KMZ60 原厂产品页</a></li>
+<li><a href="https://www.nxp.com/docs/en/data-sheet/KMZ60.pdf">KMZ60 数据手册 Rev.2（PDF）</a></li>
+<li><a href="https://www.nxp.com/products/KMZ60">KMZ60 原厂归档页</a></li>
+</ul>
+</div>
+      
+    </div>
+    
+    
+
+<section class="guide-backlinks"><h2>继续算与测</h2><div class="guide-link-list"><a href="/topics/guides/magnetic-field-coordinates/">对径两点的磁场同向还是反向？先固定坐标 <span aria-hidden="true">→</span></a><a href="/topics/guides/amplitude-temperature-error/">两路一起变小不改角度，为何温漂仍然变大？ <span aria-hidden="true">→</span></a></div></section>
+
+
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+    
+
+  
+
+
+
+
+<section class="wiki-relations"><h2>相关词条</h2><div class="chips big">
+<a class="chip company" href="/companies/nxp/">NXP</a>
+</div></section>
+
+
+    <nav class="model-basic-links" aria-label="参数基础知识"><span>看懂参数</span><a href="/wiki/basics/resolution-accuracy/">分辨率与精度</a><a href="/wiki/basics/latency/">延迟与带宽</a><a href="/wiki/basics/interfaces/">输出接口</a></nav>
+    
+  </article>
+  
+  <aside class="wiki-toc"><div class="card"><h2 class="card-title">词条目录</h2><nav id="TableOfContents">
+  <ul>
+    <li><a href="#核心参数">核心参数</a></li>
+    <li><a href="#工作方式与型号定位">工作方式与型号定位</a></li>
+    <li><a href="#安装接口与配置">安装、接口与配置</a></li>
+    <li><a href="#校准与选型验证">校准与选型验证</a></li>
+    <li><a href="#官方资料">官方资料</a></li>
+  </ul>
+</nav><a class="wiki-posts-link" href="#related-posts">相关文章 ↓</a></div></aside>
+  
+</div>
+<section class="wiki-related posts" id="related-posts">
+  <header class="page-head"><p class="kicker">延伸阅读</p><h2>与 KMZ60 相关的文章</h2><p class="muted">共 1 篇，按文章日期排序</p></header>
+  <article class="item">
+  <time class="date">2026.06.24</time>
+  <h2><a href="/posts/hjpixnlw8de50ek1ytzoww/">AMR、GMR、TMR，磁阻三兄弟傻傻分不清楚,  把KTH5900，TLE5012B、KMZ60、AS5600都塞进“磁阻传感器”一栏，会致机器人关节跑偏</a></h2>
+  <p class="desc">我见过一张机器人关节角度传感器选型表。第一列写着&#34;磁阻传感器&#34;，下面列着昆泰芯 KTH5900、Infineon TLE5012B、NXP KMZ60，旁边还有 ams OSRAM AS5600。</p>
+  <div class="chips"><a class="chip model" href="/models/ktm5800/">KTM5800</a><a class="chip model" href="/models/kth5900/">KTH5900</a><a class="chip model" href="/models/as5600/">AS5600</a><a class="chip model" href="/models/tle5012b/">TLE5012B</a><a class="chip model" href="/models/kmz60/">KMZ60</a><span class="chip more">+12</span></div>
+</article>
+
+  
+
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

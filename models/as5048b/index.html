@@ -1,9 +1,555 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>AS5048B · 如是有为</title><meta name=description content="AS5048B是14位在轴磁角度传感器，主数字接口为I²C。"><link rel=canonical href=https://sensor.fans/models/as5048b/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="AS5048B · 如是有为"><meta property="og:description" content="AS5048B是14位在轴磁角度传感器，主数字接口为I²C。"><meta property="og:url" content="https://sensor.fans/models/as5048b/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="website"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="AS5048B · 如是有为"><meta name=twitter:description content="AS5048B是14位在轴磁角度传感器，主数字接口为I²C。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159424"><link rel=stylesheet href="/css/wiki.css?v=1793159424"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"><link rel=stylesheet href="/css/engineering.css?v=c056824e2b1b"><link rel=alternate type=application/rss+xml href=/models/as5048b/index.xml title=如是有为></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/>基础知识</a>
-<a href=/wiki/ aria-current=page>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><div class="wiki-layout model-card"><article class=wiki-article><header class=wiki-head><p class=kicker>如是有为 · 型号与产品</p><h1 class=page-title>AS5048B</h1><p class=wiki-description>AS5048B是14位在轴磁角度传感器，主数字接口为I²C。</p><p class="muted wiki-meta">资料核对 <time datetime=2026-10-24>2026.10.24</time> · <a href=#related-posts>2 篇相关文章</a></p><div class=wiki-actions><a class="btn ghost" href=https://www.infineon.com/part/AS5048B target=_blank rel=noopener>官方产品页 ↗</a>
-<a class=btn href=https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf target=_blank rel=noopener>官方数据手册 ↓</a></div></header><div class=model-card-overview><div class="content wiki-content"><h2 id=核心参数>核心参数</h2><table><thead><tr><th>参数</th><th>数值与适用条件</th></tr></thead><tbody><tr><td>绝对角度分辨率</td><td>14 位</td></tr><tr><td>主数字接口</td><td>I²C</td></tr><tr><td>其他位置输出</td><td>PWM</td></tr><tr><td>磁路</td><td>在轴安装</td></tr><tr><td>系列区别</td><td>AS5048A 使用 SPI，不能直接复用其通信程序</td></tr><tr><td>理想数字码距</td><td>按14位全圈换算：360°/2^14 ≈ 0.02197266°；计算值，不是准确度保证</td></tr><tr><td>工作供电</td><td>5V模式4.5～5.5 V；3.3V模式3.0～3.6 V</td></tr><tr><td>供电电流上限</td><td>15 mA，工作条件表</td></tr><tr><td>温度与模式</td><td>5V模式−40～150°C；3.3V模式最高125°C</td></tr><tr><td>工作磁场</td><td>30～70 mT，典型50 mT</td></tr><tr><td>输出采样率</td><td>典型11.25 kHz，范围10.2～12.4 kHz</td></tr><tr><td>系统传播延迟</td><td>典型100 µs，范围90.7～110.2 µs</td></tr><tr><td>PWM频率</td><td>典型1 kHz，范围0.907～1.102 kHz</td></tr><tr><td>输出噪声</td><td>典型0.06° RMS，14位约2.73 LSB，按手册表条件</td></tr><tr><td>INL（最佳安装）</td><td>25°C最大±0.8°；全温最大±1°</td></tr><tr><td>INL（偏心条件）</td><td>最大±1.2°；N35H磁体Ø8×3mm、X/Y偏移500µm、Z间距2000µm及规定温度</td></tr><tr><td>启动时间</td><td>最大10 ms</td></tr><tr><td>封装</td><td>TSSOP-14，5 × 6.4 mm</td></tr></tbody></table><p>参数来源：本页所列<a href=https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf>原厂产品资料与手册</a>。</p><p>资料定位：AS5048A/AS5048B v1-11（2018-01-29）正文第7～8页工作条件/系统表、第10页供电图；当前PDF前置两页英飞凌说明。</p><h2 id=工作方式与型号定位>工作方式与型号定位</h2><p>AS5048B通过I²C读取在轴磁体的14位绝对角度，适合已有I²C总线的位置节点。I²C角度与PWM输出共用测量结果，但接收端所用的时间基准不同。</p><h2 id=安装接口与配置>安装、接口与配置</h2><p>多器件共用I²C时，应确认地址配置、上拉、电平和总线电容。角度高低字节按手册规定组合，避免自行把不同测量时刻拼成一个数；总线事务耗时也应计入控制器使用位置的总延迟。</p><h2 id=校准与选型验证>校准与选型验证</h2><p>机械零点、编程零点和输出方向需要留下对应关系。更换AS5048A会改变主数字接口，不能仅改器件名继续使用原程序。验证应分别检查全圈连续性、跨零读取和掉电重启后的配置保持。</p><h2 id=官方资料>官方资料</h2><ul><li><a href=https://www.infineon.com/part/AS5048B>AS5048B 原厂资料入口</a></li><li><a href=https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf>AS5048B 数据手册（官方 PDF）</a></li></ul></div><figure class=model-card-visual><img src=/images/wiki/as5048b-official.jpg alt="AS5048B 原厂产品或应用示意" loading=eager decoding=async><figcaption>AS5048B 原厂产品页所列 TSSOP-14 封装示意（封装共用图） · <a href=https://www.infineon.com/part/AS5048B target=_blank rel=noopener>原图出处 ↗</a></figcaption></figure></div><section class=wiki-relations><h2>相关词条</h2><div class="chips big"><a class="chip company" href=/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/>英飞凌</a><a class="chip model" href=/models/as5048a/>AS5048A</a></div></section><nav class=model-basic-links aria-label=参数基础知识><span>看懂参数</span><a href=/wiki/basics/resolution-accuracy/>分辨率与精度</a><a href=/wiki/basics/latency/>延迟与带宽</a><a href=/wiki/basics/interfaces/>输出接口</a></nav></article><aside class=wiki-toc><div class=card><h2 class=card-title>词条目录</h2><nav id=TableOfContents><ul><li><a href=#核心参数>核心参数</a></li><li><a href=#工作方式与型号定位>工作方式与型号定位</a></li><li><a href=#安装接口与配置>安装、接口与配置</a></li><li><a href=#校准与选型验证>校准与选型验证</a></li><li><a href=#官方资料>官方资料</a></li></ul></nav><a class=wiki-posts-link href=#related-posts>相关文章 ↓</a></div></aside></div><section class="wiki-related posts" id=related-posts><header class=page-head><p class=kicker>延伸阅读</p><h2>与 AS5048B 相关的文章</h2><p class=muted>共 2 篇，按文章日期排序</p></header><article class=item><time class=date>2026.08.04</time><h2><a href=/posts/biuvw-hlf8uezyeeximdug/>编码器芯片已经走了一格，注射泵内的药为什么还没进入患者体内？</a></h2><p class=desc>用KTM5900和丝杠注射泵做一笔可复核的误差账：编码器量化远小于真实给药误差；低流量下更难的是丝杠回差、柱塞静摩擦、管路顺应性与堵塞后的储能释放。轴端编码器只能证明轴转了，不能证明药已经到达患者。</p><div class=chips><a class="chip model" href=/models/ktm5900/>KTM5900</a><a class="chip model" href=/models/as5048a/>AS5048A</a><a class="chip model" href=/models/as5048b/>AS5048B</a><a class="chip model" href=/models/tle5012b/>TLE5012B</a><a class="chip company" href=/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/>昆泰芯</a><span class="chip more">+8</span></div></article><article class=item><time class=date>2026.05.11</time><h2><a href=/posts/mmofynxbqordjhiatek1bq/>百万台量产先过标定关：传感器技术路线的胜负，写在工位账上</a></h2><p class=desc>传感器路线能不能活过百万台量产，先看的不是实验室最好那张精度曲线，先看标定成本能不能被摊薄。</p><div class=chips><a class="chip model" href=/models/as5048a/>AS5048A</a><a class="chip model" href=/models/as5048b/>AS5048B</a><a class="chip model" href=/models/mlx90316/>MLX90316</a><a class="chip company" href=/companies/melexis/>Melexis</a><a class="chip company" href=/companies/ams-osram/>ams OSRAM</a><span class="chip more">+3</span></div></article></section></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>AS5048B · 如是有为</title>
+<meta name="description" content="AS5048B是14位在轴磁角度传感器，主数字接口为I²C。">
+<link rel="canonical" href="https://sensor.fans/models/as5048b/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="AS5048B · 如是有为">
+<meta property="og:description" content="AS5048B是14位在轴磁角度传感器，主数字接口为I²C。">
+<meta property="og:url" content="https://sensor.fans/models/as5048b/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AS5048B · 如是有为">
+<meta name="twitter:description" content="AS5048B是14位在轴磁角度传感器，主数字接口为I²C。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+<link rel="stylesheet" href="/css/engineering.css?v=78412614aa48">
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="/models/as5048b/index.xml" title="如是有为">
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/">基础知识</a>
+      <a href="/wiki/" aria-current="page">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+
+
+<div class="wiki-layout model-card">
+  <article class="wiki-article">
+    <header class="wiki-head">
+      <p class="kicker">如是有为 · 型号与产品</p>
+      <h1 class="page-title">AS5048B</h1>
+      <p class="wiki-description">AS5048B是14位在轴磁角度传感器，主数字接口为I²C。</p>
+      <p class="muted wiki-meta">资料核对 <time datetime="2026-10-24">2026.10.24</time> · <a href="#related-posts">2 篇相关文章</a></p>
+      
+      <div class="wiki-actions">
+        <a class="btn ghost" href="https://www.infineon.com/part/AS5048B" target="_blank" rel="noopener">官方产品页 ↗</a>
+        <a class="btn" href="https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf" target="_blank" rel="noopener">官方数据手册 ↓</a>
+      </div>
+      
+    </header>
+    
+    
+    
+    <div class="model-card-overview">
+      <div class="content wiki-content"><h2 id="核心参数">核心参数</h2>
+<table>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>数值与适用条件</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>绝对角度分辨率</td>
+					<td>14 位</td>
+			</tr>
+			<tr>
+					<td>主数字接口</td>
+					<td>I²C</td>
+			</tr>
+			<tr>
+					<td>其他位置输出</td>
+					<td>PWM</td>
+			</tr>
+			<tr>
+					<td>磁路</td>
+					<td>在轴安装</td>
+			</tr>
+			<tr>
+					<td>系列区别</td>
+					<td>AS5048A 使用 SPI，不能直接复用其通信程序</td>
+			</tr>
+			<tr>
+					<td>理想数字码距</td>
+					<td>按14位全圈换算：360°/2^14 ≈ 0.02197266°；计算值，不是准确度保证</td>
+			</tr>
+			<tr>
+					<td>工作供电</td>
+					<td>5V模式4.5～5.5 V；3.3V模式3.0～3.6 V</td>
+			</tr>
+			<tr>
+					<td>供电电流上限</td>
+					<td>15 mA，工作条件表</td>
+			</tr>
+			<tr>
+					<td>温度与模式</td>
+					<td>5V模式−40～150°C；3.3V模式最高125°C</td>
+			</tr>
+			<tr>
+					<td>工作磁场</td>
+					<td>30～70 mT，典型50 mT</td>
+			</tr>
+			<tr>
+					<td>输出采样率</td>
+					<td>典型11.25 kHz，范围10.2～12.4 kHz</td>
+			</tr>
+			<tr>
+					<td>系统传播延迟</td>
+					<td>典型100 µs，范围90.7～110.2 µs</td>
+			</tr>
+			<tr>
+					<td>PWM频率</td>
+					<td>典型1 kHz，范围0.907～1.102 kHz</td>
+			</tr>
+			<tr>
+					<td>输出噪声</td>
+					<td>典型0.06° RMS，14位约2.73 LSB，按手册表条件</td>
+			</tr>
+			<tr>
+					<td>INL（最佳安装）</td>
+					<td>25°C最大±0.8°；全温最大±1°</td>
+			</tr>
+			<tr>
+					<td>INL（偏心条件）</td>
+					<td>最大±1.2°；N35H磁体Ø8×3mm、X/Y偏移500µm、Z间距2000µm及规定温度</td>
+			</tr>
+			<tr>
+					<td>启动时间</td>
+					<td>最大10 ms</td>
+			</tr>
+			<tr>
+					<td>封装</td>
+					<td>TSSOP-14，5 × 6.4 mm</td>
+			</tr>
+	</tbody>
+</table>
+<p>参数来源：本页所列<a href="https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf">原厂产品资料与手册</a>。</p>
+<p>资料定位：AS5048A/AS5048B v1-11（2018-01-29）正文第7～8页工作条件/系统表、第10页供电图；当前PDF前置两页英飞凌说明。</p>
+<h2 id="工作方式与型号定位">工作方式与型号定位</h2>
+<p>AS5048B通过I²C读取在轴磁体的14位绝对角度，适合已有I²C总线的位置节点。I²C角度与PWM输出共用测量结果，但接收端所用的时间基准不同。</p>
+<h2 id="安装接口与配置">安装、接口与配置</h2>
+<p>多器件共用I²C时，应确认地址配置、上拉、电平和总线电容。角度高低字节按手册规定组合，避免自行把不同测量时刻拼成一个数；总线事务耗时也应计入控制器使用位置的总延迟。</p>
+<h2 id="校准与选型验证">校准与选型验证</h2>
+<p>机械零点、编程零点和输出方向需要留下对应关系。更换AS5048A会改变主数字接口，不能仅改器件名继续使用原程序。验证应分别检查全圈连续性、跨零读取和掉电重启后的配置保持。</p>
+<h2 id="官方资料">官方资料</h2>
+<ul>
+<li><a href="https://www.infineon.com/part/AS5048B">AS5048B 原厂资料入口</a></li>
+<li><a href="https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5048a-as5048b-datasheet-en.pdf">AS5048B 数据手册（官方 PDF）</a></li>
+</ul>
+</div>
+      <figure class="model-card-visual"><img src="/images/wiki/as5048b-official.jpg" alt="AS5048B 原厂产品或应用示意" loading="eager" decoding="async"><figcaption>AS5048B 原厂产品页所列 TSSOP-14 封装示意（封装共用图） · <a href="https://www.infineon.com/part/AS5048B" target="_blank" rel="noopener">原图出处 ↗</a></figcaption></figure>
+    </div>
+    
+    
+
+
+
+
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+    
+
+  
+
+
+  
+
+
+
+<section class="wiki-relations"><h2>相关词条</h2><div class="chips big">
+<a class="chip company" href="/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/">英飞凌</a><a class="chip model" href="/models/as5048a/">AS5048A</a>
+</div></section>
+
+
+    <nav class="model-basic-links" aria-label="参数基础知识"><span>看懂参数</span><a href="/wiki/basics/resolution-accuracy/">分辨率与精度</a><a href="/wiki/basics/latency/">延迟与带宽</a><a href="/wiki/basics/interfaces/">输出接口</a></nav>
+    
+  </article>
+  
+  <aside class="wiki-toc"><div class="card"><h2 class="card-title">词条目录</h2><nav id="TableOfContents">
+  <ul>
+    <li><a href="#核心参数">核心参数</a></li>
+    <li><a href="#工作方式与型号定位">工作方式与型号定位</a></li>
+    <li><a href="#安装接口与配置">安装、接口与配置</a></li>
+    <li><a href="#校准与选型验证">校准与选型验证</a></li>
+    <li><a href="#官方资料">官方资料</a></li>
+  </ul>
+</nav><a class="wiki-posts-link" href="#related-posts">相关文章 ↓</a></div></aside>
+  
+</div>
+<section class="wiki-related posts" id="related-posts">
+  <header class="page-head"><p class="kicker">延伸阅读</p><h2>与 AS5048B 相关的文章</h2><p class="muted">共 2 篇，按文章日期排序</p></header>
+  <article class="item">
+  <time class="date">2026.08.04</time>
+  <h2><a href="/posts/biuvw-hlf8uezyeeximdug/">编码器芯片已经走了一格，注射泵内的药为什么还没进入患者体内？</a></h2>
+  <p class="desc">用KTM5900和丝杠注射泵做一笔可复核的误差账：编码器量化远小于真实给药误差；低流量下更难的是丝杠回差、柱塞静摩擦、管路顺应性与堵塞后的储能释放。轴端编码器只能证明轴转了，不能证明药已经到达患者。</p>
+  <div class="chips"><a class="chip model" href="/models/ktm5900/">KTM5900</a><a class="chip model" href="/models/as5048a/">AS5048A</a><a class="chip model" href="/models/as5048b/">AS5048B</a><a class="chip model" href="/models/tle5012b/">TLE5012B</a><a class="chip company" href="/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/">昆泰芯</a><span class="chip more">+8</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.05.11</time>
+  <h2><a href="/posts/mmofynxbqordjhiatek1bq/">百万台量产先过标定关：传感器技术路线的胜负，写在工位账上</a></h2>
+  <p class="desc">传感器路线能不能活过百万台量产，先看的不是实验室最好那张精度曲线，先看标定成本能不能被摊薄。</p>
+  <div class="chips"><a class="chip model" href="/models/as5048a/">AS5048A</a><a class="chip model" href="/models/as5048b/">AS5048B</a><a class="chip model" href="/models/mlx90316/">MLX90316</a><a class="chip company" href="/companies/melexis/">Melexis</a><a class="chip company" href="/companies/ams-osram/">ams OSRAM</a><span class="chip more">+3</span></div>
+</article>
+
+  
+
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

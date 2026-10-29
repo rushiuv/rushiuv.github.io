@@ -1,8 +1,529 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>特斯拉 · 如是有为</title><meta name=description content="特斯拉：Optimus 第一代产线 2026 年在弗里蒙特安装、初期产出用于训练数据采集；Cortex 1／2 训练算力超 90／115 MW，编码器方案从未公开。"><link rel=canonical href=https://sensor.fans/companies/%E7%89%B9%E6%96%AF%E6%8B%89/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="特斯拉 · 如是有为"><meta property="og:description" content="特斯拉：Optimus 第一代产线 2026 年在弗里蒙特安装、初期产出用于训练数据采集；Cortex 1／2 训练算力超 90／115 MW，编码器方案从未公开。"><meta property="og:url" content="https://sensor.fans/companies/%E7%89%B9%E6%96%AF%E6%8B%89/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="website"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="特斯拉 · 如是有为"><meta name=twitter:description content="特斯拉：Optimus 第一代产线 2026 年在弗里蒙特安装、初期产出用于训练数据采集；Cortex 1／2 训练算力超 90／115 MW，编码器方案从未公开。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159424"><link rel=stylesheet href="/css/wiki.css?v=1793159424"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"><link rel=stylesheet href="/css/company-editorial.css?v=2ee4fdadafb4"><link rel=alternate type=application/rss+xml href=/companies/%E7%89%B9%E6%96%AF%E6%8B%89/index.xml title=如是有为></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/>基础知识</a>
-<a href=/wiki/>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/ aria-current=page>公司品牌</a>
-<a href=/archives/>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><div class="wiki-layout company-profile"><article class=wiki-article><header class=wiki-head><p class=kicker>如是有为 · 公司与机构</p><h1 class=page-title>特斯拉</h1><p class=wiki-description>特斯拉：Optimus 第一代产线 2026 年在弗里蒙特安装、初期产出用于训练数据采集；Cortex 1／2 训练算力超 90／115 MW，编码器方案从未公开。</p><p class="muted wiki-meta">词条更新 <time datetime=2026-10-22>2026.10.22</time> · <a href=#related-posts>13 篇相关文章</a></p><div class=wiki-actions><a class="btn ghost" href=https://www.tesla.com/ target=_blank rel=noopener>官方网站 ↗</a></div></header><div class="content wiki-content"><p>特斯拉在这条链上是"整机 + 自研执行器"的一端，也是少数把产线状态写进定期材料的公司。对做位置反馈的人，它的价值不在产品页，而在 8-K 与季报：Optimus 走到哪一步、线建在哪、初期机器人拿去干什么，这些都能核。至于关节里用什么编码器、单编还是双编、谁供的货，官方从未公开，任何"特斯拉用了某方案"的说法都需要供应商侧的独立证据。</p><h2 id=官方把车辆机器人推理硬件放在同一页>官方把车辆、机器人、推理硬件放在同一页</h2><p>官网 AI & Robotics 页把三件事并列。FSD 芯片一节讲自研推理芯片的架构、功耗与验证流程；神经网络一节给了可核对的数字——一次完整的 FSD 网络构建包含 48 个网络、训练需 7 万 GPU 小时、每个时间步输出 1000 个张量；人形一节只讲目标：通用双足、可执行危险重复枯燥的任务，需要平衡、导航、感知与物理交互的软件栈。这是研发口径，不是产品规格，页面上没有任何关节、自由度或传感配置的参数。</p><h2 id=2026-年第二季度产线在装机器先给训练用>2026 年第二季度：产线在装，机器先给训练用</h2><p>2026 年 7 月 22 日的 8-K 季度更新写得具体：弗里蒙特工厂停掉 Model S 与 X 的产线后，开始安装 Optimus 第一代产线，预计当年内开始生产；初期下线的机器用于 Optimus Academy 做训练数据采集与功能开发，得州超级工厂的建设同期推进。同一份材料的产能表把 Optimus 在加州与得州都标为"建设中"。AI 训练算力：Cortex 1 超 90 MW、Cortex 2 超 115 MW，均标为在产。这几条是逐年可对照的硬信息，比二手转述稳。</p><h2 id=在编码器链上的位置>在编码器链上的位置</h2><p>它买什么：车辆侧的电机与电控是成熟量产体系，人形侧的执行器是自研方向，但电机、减速、位置反馈的来源从未公开。能推的是取舍——自研执行器意味着它对编码器的体积、抗磁干扰、成本有内部标准，供应商更可能被指定而非被选型；不能推的是具体料号、位数、接口与封装。反过来说，把特斯拉当"行业风向标"来证明某条技术路线，目前没有公开依据。</p><h2 id=官方资料>官方资料</h2><ul><li><a href=https://www.tesla.com/ai>AI & Robotics 官方页面</a></li><li><a href=https://ir.tesla.com/_flysystem/s3/sec/000162828026049213/tsla-20260722-gen.pdf>2026 年第二季度 8-K 季度更新（PDF，36 页）</a></li><li><a href=https://www.tesla.com/robotaxi>Robotaxi 官方页面</a></li><li><a href=https://www.tesla.com/master-plan-part-3>Master Plan Part 3 官方页面</a></li><li><a href=https://www.tesla.com/energy>能源业务官方页面</a></li><li><a href=https://www.tesla.com/ns_videos/Tesla-Master-Plan-Part-3.pdf>Master Plan Part 3 报告 PDF</a></li></ul></div></article><aside class=wiki-toc><div class=card><h2 class=card-title>词条目录</h2><nav id=TableOfContents><ul><li><a href=#官方把车辆机器人推理硬件放在同一页>官方把车辆、机器人、推理硬件放在同一页</a></li><li><a href=#2026-年第二季度产线在装机器先给训练用>2026 年第二季度：产线在装，机器先给训练用</a></li><li><a href=#在编码器链上的位置>在编码器链上的位置</a></li><li><a href=#官方资料>官方资料</a></li></ul></nav><a class=wiki-posts-link href=#related-posts>相关文章 ↓</a></div></aside></div><section class="wiki-related posts" id=related-posts><header class=page-head><p class=kicker>延伸阅读</p><h2>与 特斯拉 相关的文章</h2><p class=muted>共 13 篇，按文章日期排序</p></header><article class=item><time class=date>2026.10.11</time><h2><a href=/posts/22edc32a6ecb9dd0/>38%增速！磁编码器成机器人最猛赛道？</a></h2><p class=desc>全球人形机器人关节用磁编码器市场规模约2400万美元，到2032年预计触及3.11亿美元，年复合增长率38%，</p><div class=chips><a class="chip company" href=/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/>美新半导体</a><a class="chip company" href=/companies/%E7%89%B9%E6%96%AF%E6%8B%89/>特斯拉</a><a class="chip tag" href=/tags/%E7%A3%81%E7%BC%96%E7%A0%81%E5%99%A8/>磁编码器</a><a class="chip tag" href=/tags/%E7%94%B5%E6%84%9F%E7%BC%96%E7%A0%81%E5%99%A8/>电感编码器</a><a class="chip tag" href=/tags/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/>人形机器人</a><span class="chip more">+5</span></div></article><article class=item><time class=date>2026.08.08</time><h2><a href=/posts/vtopm9yvml1kyox_adfdua/>藏在机器人关节里的"隐形冠军"：磁编码器，一个被低估的百亿赛道</a></h2><p class=desc>当所有人都在谈论算力芯片、伺服电机和减速器时，有一个不起眼的小器件，正悄悄撑起整个机器人产业的精度天花板。</p><div class=chips><a class="chip model" href=/models/ktm5900/>KTM5900</a><a class="chip model" href=/models/tmr3111/>TMR3111</a><a class="chip model" href=/models/mlx90520/>MLX90520</a><a class="chip model" href=/models/ic-mu/>iC-MU</a><a class="chip model" href=/models/ct-21x/>CT-21X</a><span class="chip more">+28</span></div></article><article class=item><time class=date>2026.06.07</time><h2><a href=/posts/bxtpoyjbicghf1dlkzz4ka/>SpaceX 估值 1.75 万亿美元：硬科技 IPO 最后拼的不是故事，而是闭环验证</a></h2><p class=desc>SpaceX 要 IPO 了。按照公开报道，这家公司计划以约 135 美元/股的价格发行，目标融资约 750 亿美元，对应估值约 1.75 万亿美元；如果成行，这将是全球资本市场历史级别的 IPO。路透社还报道称，SpaceX 的 IPO …</p><div class=chips><a class="chip company" href=/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/>纳芯微</a><a class="chip company" href=/companies/%E9%BA%A6%E6%AD%8C%E6%81%A9/>麦歌恩</a><a class="chip company" href=/companies/%E7%89%B9%E6%96%AF%E6%8B%89/>特斯拉</a><a class="chip tag" href=/tags/%E7%A3%81%E7%BC%96%E7%A0%81%E5%99%A8/>磁编码器</a><a class="chip tag" href=/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%B3%E8%8A%82/>机器人关节</a><span class="chip more">+2</span></div></article><article class=item><time class=date>2026.06.02</time><h2><a href=/posts/vhooe5welgrsrsmlrb4lza/>特斯拉在删传感器，Waymo 在堆传感器，宇树 G1 到底该学谁？</a></h2><p class=desc>之前写宇树 G1 头部的 Intel RealSense D435i 深度相机时，评论区有位读者问：激光雷达不是已经能测距离了吗，为什么还必须有图像深度？激光和图像的深度在应用时到底怎么结合？</p><div class=chips><a class="chip model" href=/models/d435i/>D435i</a><a class="chip model" href=/models/mid-360/>MID-360</a><a class="chip company" href=/companies/intel/>Intel</a><a class="chip company" href=/companies/%E5%AE%87%E6%A0%91/>宇树</a><a class="chip company" href=/companies/%E7%89%B9%E6%96%AF%E6%8B%89/>特斯拉</a><span class="chip more">+1</span></div></article><article class=item><time class=date>2026.05.02</time><h2><a href=/posts/pbibz0n1hsq-9w2tuw3cog/>客户说关节抖，国产编码器不能只回一句“我芯片没问题”：从瑞士机器人供应链看误差解释能力</a></h2><p class=desc>客户现场最难处理的一句话，不是“你这个编码器精度不够”。</p><div class=chips><a class="chip company" href=/companies/%E5%B0%8F%E7%B1%B3/>小米</a><a class="chip company" href=/companies/%E5%AE%87%E6%A0%91/>宇树</a><a class="chip company" href=/companies/%E7%89%B9%E6%96%AF%E6%8B%89/>特斯拉</a><a class="chip company" href=/companies/%E8%88%8D%E5%BC%97%E5%8B%92/>舍弗勒</a><a class="chip tag" href=/tags/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/>人形机器人</a><span class="chip more">+2</span></div></article><article class=item><time class=date>2026.05.01</time><h2><a href=/posts/e87io3zyfwd9fmlgidpwtq/>机器人AI吹出泡沫！外面忙着赚钱！做编码器的在后面擦屁股!宇树／优必选／雷赛／汇川／纳芯微／保隆／中科无线／特斯拉 ... 谁在风光？ 谁在兜底？</a></h2><p class=desc>我是做编码器芯片的。这活说白了，就跟舞台后面的电工差不多。灯亮了没人夸你，灯灭了全场第一个骂你。</p><div class=chips><a class="chip model" href=/models/mt6901/>MT6901</a><a class="chip model" href=/models/sv660nd/>SV660ND</a><a class="chip model" href=/models/ct-21x/>CT-21X</a><a class="chip company" href=/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/>纳芯微</a><a class="chip company" href=/companies/melexis/>Melexis</a><span class="chip more">+11</span></div></article><article class=item><time class=date>2026.04.27</time><h2><a href=/posts/ym2bfkc2yrocc9bpos5ujq/>Lucid Atlas 电驱到底厉害在哪？真正值钱的，可能不是电机，而是里面的编码器</a></h2><p class=desc>先用人话说清楚。Lucid 是美国一家做高端纯电车的公司，前面已经有 Lucid Air 和 Lucid Gravity。</p><div class=chips><a class="chip company" href=/companies/%E7%89%B9%E6%96%AF%E6%8B%89/>特斯拉</a></div></article><article class=item><time class=date>2026.04.24</time><h2><a href=/posts/9fssfqgbylmdrbz3y0c7aa/>特斯拉 Optimus V3 与昆泰芯编码器芯片技术匹配分析</a></h2><p class=desc>特斯拉Optimus V3灵巧手改用前臂集中执行器+柔性肌腱传动的新架构，告别手指单关节电机堆叠设计，对传感器提出多源状态估计、机械畸变补偿等全新严苛要求。针对电磁串扰、中空轴离轴失真、肌腱正反转迟滞、指尖微型多维感知四大难题，昆泰芯凭借超…</p><div class=chips><a class="chip company" href=/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/>昆泰芯</a><a class="chip company" href=/companies/%E7%89%B9%E6%96%AF%E6%8B%89/>特斯拉</a><a class="chip tag" href=/tags/%E7%A6%BB%E8%BD%B4/>离轴</a></div></article><article class=item><time class=date>2026.04.24</time><h2><a href=/posts/atq3p3xo9drtgsbpa1nc2w/>特斯拉公开Optimus V3灵巧手专利</a></h2><p class=desc>前臂集中驱动、腕部过线和腱绳传动成为机器人手新路线</p><div class=chips><a class="chip company" href=/companies/%E7%89%B9%E6%96%AF%E6%8B%89/>特斯拉</a><a class="chip tag" href=/tags/%E4%B8%93%E5%88%A9/>专利</a></div></article><article class=item><time class=date>2026.04.12</time><h2><a href=/posts/wg7dmxcrqocyjebn7ebu7a/>『M序列编码器』这个名词能存在，就是这个行业的『耻辱”』</a></h2><p class=desc>编码器圈子里，有一句话被说得太顺了，顺到很多人已经不觉得它有问题：“我们这是m序列编码器。”</p><div class=chips><a class="chip company" href=/companies/%E7%89%B9%E6%96%AF%E6%8B%89/>特斯拉</a><a class="chip tag" href=/tags/%E4%B8%93%E5%88%A9/>专利</a></div></article><article class=item><time class=date>2026.04.06</time><h2><a href=/posts/tt-6d9abjktlck5hbhm9da/>90秒产一个关节、成本降至百元——但关节里的编码器正在承受最大的代价</a></h2><p class=desc>4月2日，一则新闻在机器人圈刷屏：国内关节模组厂商泉智博宣布其自动化产线正式投产，节拍90秒、自动化率85%、一次性合格率96%，部分基础关节模组成本已压缩至百元级别。</p><div class=chips><a class="chip model" href=/models/kth78/>KTH78</a><a class="chip model" href=/models/mt6901/>MT6901</a><a class="chip company" href=/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/>昆泰芯</a><a class="chip company" href=/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/>纳芯微</a><a class="chip company" href=/companies/%E6%99%BA%E5%85%83/>智元</a><span class="chip more">+5</span></div></article><article class=item><time class=date>2026.03.27</time><h2><a href=/posts/ompod447ooifsorpf5ts2q/>纳芯微MT6901横空出世：国产电感编码器凭什么狙击百亿市场</a></h2><p class=desc>人形机器人不是在采购一堆成熟零件拼装，而是在逼整个底层器件体系重新洗牌。</p><div class=chips><a class="chip model" href=/models/kto9512/>KTO9512</a><a class="chip model" href=/models/kth5900/>KTH5900</a><a class="chip model" href=/models/kth7111/>KTH7111</a><a class="chip model" href=/models/mt6901/>MT6901</a><a class="chip company" href=/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/>昆泰芯</a><span class="chip more">+12</span></div></article><article class=item><time class=date>2025.10.04</time><h2><a href=/posts/2xn99hbw_pevcr8eotc5ja/>Radivoje Popović教授（EPFL）与霍尔传感器帝国：从一间瑞士实验室，铺到整个全球产业链</a></h2><p class=desc>霍尔效应一八七九年就被发现了；问题从来不在“有没有效应”，而在“能不能把它做成稳定、便宜、能上车上机的器件”。早年的器件多数用 InSb、GaAs 等 III-V 材料，灵敏度好却难以规模化。Popović 在九十年代做了几件决定性的事。</p><div class=chips><a class="chip model" href=/models/mlx90316/>MLX90316</a><a class="chip company" href=/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/>英飞凌</a><a class="chip company" href=/companies/melexis/>Melexis</a><a class="chip company" href=/companies/allegro/>Allegro</a><a class="chip company" href=/companies/tdk/>TDK</a><span class="chip more">+9</span></div></article></section></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>特斯拉 · 如是有为</title>
+<meta name="description" content="特斯拉：Optimus 第一代产线 2026 年在弗里蒙特安装、初期产出用于训练数据采集；Cortex 1／2 训练算力超 90／115 MW，编码器方案从未公开。">
+<link rel="canonical" href="https://sensor.fans/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="特斯拉 · 如是有为">
+<meta property="og:description" content="特斯拉：Optimus 第一代产线 2026 年在弗里蒙特安装、初期产出用于训练数据采集；Cortex 1／2 训练算力超 90／115 MW，编码器方案从未公开。">
+<meta property="og:url" content="https://sensor.fans/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="特斯拉 · 如是有为">
+<meta name="twitter:description" content="特斯拉：Optimus 第一代产线 2026 年在弗里蒙特安装、初期产出用于训练数据采集；Cortex 1／2 训练算力超 90／115 MW，编码器方案从未公开。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+
+<link rel="stylesheet" href="/css/company-editorial.css?v=8312c1b904cc">
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="/companies/%E7%89%B9%E6%96%AF%E6%8B%89/index.xml" title="如是有为">
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/">基础知识</a>
+      <a href="/wiki/">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/" aria-current="page">公司品牌</a>
+      <a href="/archives/">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+
+
+<div class="wiki-layout company-profile">
+  <article class="wiki-article">
+    <header class="wiki-head">
+      <p class="kicker">如是有为 · 公司与机构</p>
+      <h1 class="page-title">特斯拉</h1>
+      <p class="wiki-description">特斯拉：Optimus 第一代产线 2026 年在弗里蒙特安装、初期产出用于训练数据采集；Cortex 1／2 训练算力超 90／115 MW，编码器方案从未公开。</p>
+      <p class="muted wiki-meta">词条更新 <time datetime="2026-10-22">2026.10.22</time> · <a href="#related-posts">13 篇相关文章</a></p>
+      
+      <div class="wiki-actions">
+        <a class="btn ghost" href="https://www.tesla.com/" target="_blank" rel="noopener">官方网站 ↗</a>
+        
+      </div>
+      
+    </header>
+    
+    
+    <div class="content wiki-content"><p>特斯拉在这条链上是&quot;整机 + 自研执行器&quot;的一端，也是少数把产线状态写进定期材料的公司。对做位置反馈的人，它的价值不在产品页，而在 8-K 与季报：Optimus 走到哪一步、线建在哪、初期机器人拿去干什么，这些都能核。至于关节里用什么编码器、单编还是双编、谁供的货，官方从未公开，任何&quot;特斯拉用了某方案&quot;的说法都需要供应商侧的独立证据。</p>
+<h2 id="官方把车辆机器人推理硬件放在同一页">官方把车辆、机器人、推理硬件放在同一页</h2>
+<p>官网 AI &amp; Robotics 页把三件事并列。FSD 芯片一节讲自研推理芯片的架构、功耗与验证流程；神经网络一节给了可核对的数字——一次完整的 FSD 网络构建包含 48 个网络、训练需 7 万 GPU 小时、每个时间步输出 1000 个张量；人形一节只讲目标：通用双足、可执行危险重复枯燥的任务，需要平衡、导航、感知与物理交互的软件栈。这是研发口径，不是产品规格，页面上没有任何关节、自由度或传感配置的参数。</p>
+<h2 id="2026-年第二季度产线在装机器先给训练用">2026 年第二季度：产线在装，机器先给训练用</h2>
+<p>2026 年 7 月 22 日的 8-K 季度更新写得具体：弗里蒙特工厂停掉 Model S 与 X 的产线后，开始安装 Optimus 第一代产线，预计当年内开始生产；初期下线的机器用于 Optimus Academy 做训练数据采集与功能开发，得州超级工厂的建设同期推进。同一份材料的产能表把 Optimus 在加州与得州都标为&quot;建设中&quot;。AI 训练算力：Cortex 1 超 90 MW、Cortex 2 超 115 MW，均标为在产。这几条是逐年可对照的硬信息，比二手转述稳。</p>
+<h2 id="在编码器链上的位置">在编码器链上的位置</h2>
+<p>它买什么：车辆侧的电机与电控是成熟量产体系，人形侧的执行器是自研方向，但电机、减速、位置反馈的来源从未公开。能推的是取舍——自研执行器意味着它对编码器的体积、抗磁干扰、成本有内部标准，供应商更可能被指定而非被选型；不能推的是具体料号、位数、接口与封装。反过来说，把特斯拉当&quot;行业风向标&quot;来证明某条技术路线，目前没有公开依据。</p>
+<h2 id="官方资料">官方资料</h2>
+<ul>
+<li><a href="https://www.tesla.com/ai">AI &amp; Robotics 官方页面</a></li>
+<li><a href="https://ir.tesla.com/_flysystem/s3/sec/000162828026049213/tsla-20260722-gen.pdf">2026 年第二季度 8-K 季度更新（PDF，36 页）</a></li>
+<li><a href="https://www.tesla.com/robotaxi">Robotaxi 官方页面</a></li>
+<li><a href="https://www.tesla.com/master-plan-part-3">Master Plan Part 3 官方页面</a></li>
+<li><a href="https://www.tesla.com/energy">能源业务官方页面</a></li>
+<li><a href="https://www.tesla.com/ns_videos/Tesla-Master-Plan-Part-3.pdf">Master Plan Part 3 报告 PDF</a></li>
+</ul>
+</div>
+    
+
+
+
+
+    
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+    
+
+
+
+  
+
+
+
+    
+    
+  </article>
+  
+  <aside class="wiki-toc"><div class="card"><h2 class="card-title">词条目录</h2><nav id="TableOfContents">
+  <ul>
+    <li><a href="#官方把车辆机器人推理硬件放在同一页">官方把车辆、机器人、推理硬件放在同一页</a></li>
+    <li><a href="#2026-年第二季度产线在装机器先给训练用">2026 年第二季度：产线在装，机器先给训练用</a></li>
+    <li><a href="#在编码器链上的位置">在编码器链上的位置</a></li>
+    <li><a href="#官方资料">官方资料</a></li>
+  </ul>
+</nav><a class="wiki-posts-link" href="#related-posts">相关文章 ↓</a></div></aside>
+  
+</div>
+<section class="wiki-related posts" id="related-posts">
+  <header class="page-head"><p class="kicker">延伸阅读</p><h2>与 特斯拉 相关的文章</h2><p class="muted">共 13 篇，按文章日期排序</p></header>
+  <article class="item">
+  <time class="date">2026.10.11</time>
+  <h2><a href="/posts/22edc32a6ecb9dd0/">38%增速！磁编码器成机器人最猛赛道？</a></h2>
+  <p class="desc">全球人形机器人关节用磁编码器市场规模约2400万美元，到2032年预计触及3.11亿美元，年复合增长率38%，</p>
+  <div class="chips"><a class="chip company" href="/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/">美新半导体</a><a class="chip company" href="/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">特斯拉</a><a class="chip tag" href="/tags/%E7%A3%81%E7%BC%96%E7%A0%81%E5%99%A8/">磁编码器</a><a class="chip tag" href="/tags/%E7%94%B5%E6%84%9F%E7%BC%96%E7%A0%81%E5%99%A8/">电感编码器</a><a class="chip tag" href="/tags/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/">人形机器人</a><span class="chip more">+5</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.08.08</time>
+  <h2><a href="/posts/vtopm9yvml1kyox_adfdua/">藏在机器人关节里的&#34;隐形冠军&#34;：磁编码器，一个被低估的百亿赛道</a></h2>
+  <p class="desc">当所有人都在谈论算力芯片、伺服电机和减速器时，有一个不起眼的小器件，正悄悄撑起整个机器人产业的精度天花板。</p>
+  <div class="chips"><a class="chip model" href="/models/ktm5900/">KTM5900</a><a class="chip model" href="/models/tmr3111/">TMR3111</a><a class="chip model" href="/models/mlx90520/">MLX90520</a><a class="chip model" href="/models/ic-mu/">iC-MU</a><a class="chip model" href="/models/ct-21x/">CT-21X</a><span class="chip more">+28</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.06.07</time>
+  <h2><a href="/posts/bxtpoyjbicghf1dlkzz4ka/">SpaceX 估值 1.75 万亿美元：硬科技 IPO 最后拼的不是故事，而是闭环验证</a></h2>
+  <p class="desc">SpaceX 要 IPO 了。按照公开报道，这家公司计划以约 135 美元/股的价格发行，目标融资约 750 亿美元，对应估值约 1.75 万亿美元；如果成行，这将是全球资本市场历史级别的 IPO。路透社还报道称，SpaceX 的 IPO …</p>
+  <div class="chips"><a class="chip company" href="/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/">纳芯微</a><a class="chip company" href="/companies/%E9%BA%A6%E6%AD%8C%E6%81%A9/">麦歌恩</a><a class="chip company" href="/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">特斯拉</a><a class="chip tag" href="/tags/%E7%A3%81%E7%BC%96%E7%A0%81%E5%99%A8/">磁编码器</a><a class="chip tag" href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%B3%E8%8A%82/">机器人关节</a><span class="chip more">+2</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.06.02</time>
+  <h2><a href="/posts/vhooe5welgrsrsmlrb4lza/">特斯拉在删传感器，Waymo 在堆传感器，宇树 G1 到底该学谁？</a></h2>
+  <p class="desc">之前写宇树 G1 头部的 Intel RealSense D435i 深度相机时，评论区有位读者问：激光雷达不是已经能测距离了吗，为什么还必须有图像深度？激光和图像的深度在应用时到底怎么结合？</p>
+  <div class="chips"><a class="chip model" href="/models/d435i/">D435i</a><a class="chip model" href="/models/mid-360/">MID-360</a><a class="chip company" href="/companies/intel/">Intel</a><a class="chip company" href="/companies/%E5%AE%87%E6%A0%91/">宇树</a><a class="chip company" href="/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">特斯拉</a><span class="chip more">+1</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.05.02</time>
+  <h2><a href="/posts/pbibz0n1hsq-9w2tuw3cog/">客户说关节抖，国产编码器不能只回一句“我芯片没问题”：从瑞士机器人供应链看误差解释能力</a></h2>
+  <p class="desc">客户现场最难处理的一句话，不是“你这个编码器精度不够”。</p>
+  <div class="chips"><a class="chip company" href="/companies/%E5%B0%8F%E7%B1%B3/">小米</a><a class="chip company" href="/companies/%E5%AE%87%E6%A0%91/">宇树</a><a class="chip company" href="/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">特斯拉</a><a class="chip company" href="/companies/%E8%88%8D%E5%BC%97%E5%8B%92/">舍弗勒</a><a class="chip tag" href="/tags/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/">人形机器人</a><span class="chip more">+2</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.05.01</time>
+  <h2><a href="/posts/e87io3zyfwd9fmlgidpwtq/">机器人AI吹出泡沫！外面忙着赚钱！做编码器的在后面擦屁股!宇树／优必选／雷赛／汇川／纳芯微／保隆／中科无线／特斯拉 ... 谁在风光？ 谁在兜底？</a></h2>
+  <p class="desc">我是做编码器芯片的。这活说白了，就跟舞台后面的电工差不多。灯亮了没人夸你，灯灭了全场第一个骂你。</p>
+  <div class="chips"><a class="chip model" href="/models/mt6901/">MT6901</a><a class="chip model" href="/models/sv660nd/">SV660ND</a><a class="chip model" href="/models/ct-21x/">CT-21X</a><a class="chip company" href="/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/">纳芯微</a><a class="chip company" href="/companies/melexis/">Melexis</a><span class="chip more">+11</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.04.27</time>
+  <h2><a href="/posts/ym2bfkc2yrocc9bpos5ujq/">Lucid Atlas 电驱到底厉害在哪？真正值钱的，可能不是电机，而是里面的编码器</a></h2>
+  <p class="desc">先用人话说清楚。Lucid 是美国一家做高端纯电车的公司，前面已经有 Lucid Air 和 Lucid Gravity。</p>
+  <div class="chips"><a class="chip company" href="/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">特斯拉</a></div>
+</article>
+<article class="item">
+  <time class="date">2026.04.24</time>
+  <h2><a href="/posts/9fssfqgbylmdrbz3y0c7aa/">特斯拉 Optimus V3 与昆泰芯编码器芯片技术匹配分析</a></h2>
+  <p class="desc">特斯拉Optimus V3灵巧手改用前臂集中执行器&#43;柔性肌腱传动的新架构，告别手指单关节电机堆叠设计，对传感器提出多源状态估计、机械畸变补偿等全新严苛要求。针对电磁串扰、中空轴离轴失真、肌腱正反转迟滞、指尖微型多维感知四大难题，昆泰芯凭借超…</p>
+  <div class="chips"><a class="chip company" href="/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/">昆泰芯</a><a class="chip company" href="/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">特斯拉</a><a class="chip tag" href="/tags/%E7%A6%BB%E8%BD%B4/">离轴</a></div>
+</article>
+<article class="item">
+  <time class="date">2026.04.24</time>
+  <h2><a href="/posts/atq3p3xo9drtgsbpa1nc2w/">特斯拉公开Optimus V3灵巧手专利</a></h2>
+  <p class="desc">前臂集中驱动、腕部过线和腱绳传动成为机器人手新路线</p>
+  <div class="chips"><a class="chip company" href="/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">特斯拉</a><a class="chip tag" href="/tags/%E4%B8%93%E5%88%A9/">专利</a></div>
+</article>
+<article class="item">
+  <time class="date">2026.04.12</time>
+  <h2><a href="/posts/wg7dmxcrqocyjebn7ebu7a/">『M序列编码器』这个名词能存在，就是这个行业的『耻辱”』</a></h2>
+  <p class="desc">编码器圈子里，有一句话被说得太顺了，顺到很多人已经不觉得它有问题：“我们这是m序列编码器。”</p>
+  <div class="chips"><a class="chip company" href="/companies/%E7%89%B9%E6%96%AF%E6%8B%89/">特斯拉</a><a class="chip tag" href="/tags/%E4%B8%93%E5%88%A9/">专利</a></div>
+</article>
+<article class="item">
+  <time class="date">2026.04.06</time>
+  <h2><a href="/posts/tt-6d9abjktlck5hbhm9da/">90秒产一个关节、成本降至百元——但关节里的编码器正在承受最大的代价</a></h2>
+  <p class="desc">4月2日，一则新闻在机器人圈刷屏：国内关节模组厂商泉智博宣布其自动化产线正式投产，节拍90秒、自动化率85%、一次性合格率96%，部分基础关节模组成本已压缩至百元级别。</p>
+  <div class="chips"><a class="chip model" href="/models/kth78/">KTH78</a><a class="chip model" href="/models/mt6901/">MT6901</a><a class="chip company" href="/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/">昆泰芯</a><a class="chip company" href="/companies/%E7%BA%B3%E8%8A%AF%E5%BE%AE/">纳芯微</a><a class="chip company" href="/companies/%E6%99%BA%E5%85%83/">智元</a><span class="chip more">+5</span></div>
+</article>
+<article class="item">
+  <time class="date">2026.03.27</time>
+  <h2><a href="/posts/ompod447ooifsorpf5ts2q/">纳芯微MT6901横空出世：国产电感编码器凭什么狙击百亿市场</a></h2>
+  <p class="desc">人形机器人不是在采购一堆成熟零件拼装，而是在逼整个底层器件体系重新洗牌。</p>
+  <div class="chips"><a class="chip model" href="/models/kto9512/">KTO9512</a><a class="chip model" href="/models/kth5900/">KTH5900</a><a class="chip model" href="/models/kth7111/">KTH7111</a><a class="chip model" href="/models/mt6901/">MT6901</a><a class="chip company" href="/companies/%E6%98%86%E6%B3%B0%E8%8A%AF/">昆泰芯</a><span class="chip more">+12</span></div>
+</article>
+<article class="item">
+  <time class="date">2025.10.04</time>
+  <h2><a href="/posts/2xn99hbw_pevcr8eotc5ja/">Radivoje Popović教授（EPFL）与霍尔传感器帝国：从一间瑞士实验室，铺到整个全球产业链</a></h2>
+  <p class="desc">霍尔效应一八七九年就被发现了；问题从来不在“有没有效应”，而在“能不能把它做成稳定、便宜、能上车上机的器件”。早年的器件多数用 InSb、GaAs 等 III-V 材料，灵敏度好却难以规模化。Popović 在九十年代做了几件决定性的事。</p>
+  <div class="chips"><a class="chip model" href="/models/mlx90316/">MLX90316</a><a class="chip company" href="/companies/%E8%8B%B1%E9%A3%9E%E5%87%8C/">英飞凌</a><a class="chip company" href="/companies/melexis/">Melexis</a><a class="chip company" href="/companies/allegro/">Allegro</a><a class="chip company" href="/companies/tdk/">TDK</a><span class="chip more">+9</span></div>
+</article>
+
+  
+
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

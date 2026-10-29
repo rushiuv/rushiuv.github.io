@@ -1,5 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SR3511N on 如是有为</title><link>https://sensor.fans/models/sr3511n/</link><description>Recent content in SR3511N on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/models/sr3511n/index.xml" rel="self" type="application/rss+xml"/><item><title>峰岹SR3511N能修90°相位，ADI AD2S1210只给±44°——但真正让关节抖的是差分相位</title><link>https://sensor.fans/posts/rhuwxcd_wkj3jtvsdfm4mw/</link><pubDate>Sun, 12 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/rhuwxcd_wkj3jtvsdfm4mw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/a61e5d2fa215c05f5df37032dcfe91bc.webp" alt="峰岹SR3511N能修90°相位，ADI AD2S1210只给±44°——但真正让关节抖的是差分相位" loading="lazy" decoding="async">
-&lt;/p>
-&lt;p>&lt;strong>44°、40°、90°。&lt;/strong>&lt;/p>
-&lt;p>先记住这三个数。&lt;/p>
-&lt;p>&lt;strong>44°&lt;/strong>——ADI AD2S1210 的相位范围，超出这个窗口，解调就不保证了。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>SR3511N on 如是有为</title>
+		<link>https://sensor.fans/models/sr3511n/</link>
+		<description>Recent content in SR3511N on 如是有为</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0800</lastBuildDate>
+		
+			<atom:link href="https://sensor.fans/models/sr3511n/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>峰岹SR3511N能修90°相位，ADI AD2S1210只给±44°——但真正让关节抖的是差分相位</title>
+				<link>https://sensor.fans/posts/rhuwxcd_wkj3jtvsdfm4mw/</link>
+				<pubDate>Sun, 12 Jul 2026 00:00:00 +0800</pubDate>
+				<guid>https://sensor.fans/posts/rhuwxcd_wkj3jtvsdfm4mw/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/a61e5d2fa215c05f5df37032dcfe91bc.webp&#34; alt=&#34;峰岹SR3511N能修90°相位，ADI AD2S1210只给±44°——但真正让关节抖的是差分相位&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;44°、40°、90°。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;先记住这三个数。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;44°&lt;/strong&gt;——ADI AD2S1210 的相位范围，超出这个窗口，解调就不保证了。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

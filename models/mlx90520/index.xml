@@ -1,8 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MLX90520 on 如是有为</title><link>https://sensor.fans/models/mlx90520/</link><description>Recent content in MLX90520 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 08 Aug 2026 07:30:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/models/mlx90520/index.xml" rel="self" type="application/rss+xml"/><item><title>藏在机器人关节里的"隐形冠军"：磁编码器，一个被低估的百亿赛道</title><link>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</link><pubDate>Sat, 08 Aug 2026 07:30:00 +0800</pubDate><guid>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</guid><description>&lt;p>当所有人都在谈论算力芯片、伺服电机和减速器时，有一个不起眼的小器件，正悄悄撑起整个机器人产业的精度天花板。它就是——磁编码器。&lt;/p>
-&lt;p>&lt;img src="https://sensor.fans/images/wx/e1dbff9cd5374c2558b0cbf815d336f2.png" alt="藏在机器人关节里的&amp;#34;隐形冠军&amp;#34;：磁编码器，一个被低估的百亿赛道" loading="lazy" decoding="async">
-&lt;/p>
-&lt;h3 id="01-一台人形机器人要用71个磁编码器">01 一台人形机器人，要用71个磁编码器&lt;/h3>
-&lt;p>2026年，人形机器人行业站在&amp;quot;量产元年&amp;quot;的风口上。&lt;/p></description></item><item><title>MLX90520 做到 22-bit 后，聊聊“白盒编码器”</title><link>https://sensor.fans/posts/fse-qqr255a1auxcqqot4q/</link><pubDate>Thu, 11 Jun 2026 00:10:00 +0800</pubDate><guid>https://sensor.fans/posts/fse-qqr255a1auxcqqot4q/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/2b3ef3628b15428c146892db0178175a.webp" alt="MLX90520 做到 22-bit 后，聊聊“白盒编码器”" loading="lazy" decoding="async">
-&lt;/p>
-&lt;h2 id="22-bit-很漂亮但客户不会只看漂亮参数">22-bit 很漂亮，但客户不会只看漂亮参数&lt;/h2>
-&lt;p>看到 Melexis 发布 MLX90520，很多人的第一反应会被“22-bit 分辨率”吸住。电感式编码器，面向机器人、大型机械关节和工业应用，官方还提到 SPI/SSI 输出、旋转与最长 400mm 线性运动检测、超薄模块、板载数字处理等特性。单看这些参数，很容易让人想到一句话：电感编码器是不是又往光编的地盘里打了一步？&lt;/p></description></item><item><title>别再争“光学第一、磁性第二、电感第三”了：真正决定编码器座次的，不是原理高贵，而是谁把证据堆厚</title><link>https://sensor.fans/posts/bukuwjtbskjai_sobetl_w/</link><pubDate>Fri, 03 Apr 2026 18:10:00 +0800</pubDate><guid>https://sensor.fans/posts/bukuwjtbskjai_sobetl_w/</guid><description>&lt;p>这几年看编码器路线之争，越来越像技术圈版宫斗剧。有人把光学捧成正统皇帝，有人把磁性说成量产世界唯一真神，还有人拿着电感路线的 19-bit、22-bit、&amp;lt;100ns，恨不得当天就给行业改朝换代。可真到了工业现场，客户根本不认这种排位法。客户最后买的，不是哪条路线听起来更高级，而是谁能把精度、延迟、污染、温漂、安装容差、量产节拍、返修闭环和客户导入这些证据，拿得更全、写得更厚、撑得更久。谁能做到，谁就在那个场景里赢。做不到，再漂亮的原理，也只是会议室里的幻觉。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>MLX90520 on 如是有为</title>
+		<link>https://sensor.fans/models/mlx90520/</link>
+		<description>Recent content in MLX90520 on 如是有为</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 08 Aug 2026 07:30:00 +0800</lastBuildDate>
+		
+			<atom:link href="https://sensor.fans/models/mlx90520/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>藏在机器人关节里的&#34;隐形冠军&#34;：磁编码器，一个被低估的百亿赛道</title>
+				<link>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</link>
+				<pubDate>Sat, 08 Aug 2026 07:30:00 +0800</pubDate>
+				<guid>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</guid>
+				<description>&lt;p&gt;当所有人都在谈论算力芯片、伺服电机和减速器时，有一个不起眼的小器件，正悄悄撑起整个机器人产业的精度天花板。它就是——磁编码器。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/e1dbff9cd5374c2558b0cbf815d336f2.png&#34; alt=&#34;藏在机器人关节里的&amp;#34;隐形冠军&amp;#34;：磁编码器，一个被低估的百亿赛道&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h3 id=&#34;01-一台人形机器人要用71个磁编码器&#34;&gt;01 一台人形机器人，要用71个磁编码器&lt;/h3&gt;&#xA;&lt;p&gt;2026年，人形机器人行业站在&amp;quot;量产元年&amp;quot;的风口上。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>MLX90520 做到 22-bit 后，聊聊“白盒编码器”</title>
+				<link>https://sensor.fans/posts/fse-qqr255a1auxcqqot4q/</link>
+				<pubDate>Thu, 11 Jun 2026 00:10:00 +0800</pubDate>
+				<guid>https://sensor.fans/posts/fse-qqr255a1auxcqqot4q/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/2b3ef3628b15428c146892db0178175a.webp&#34; alt=&#34;MLX90520 做到 22-bit 后，聊聊“白盒编码器”&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;22-bit-很漂亮但客户不会只看漂亮参数&#34;&gt;22-bit 很漂亮，但客户不会只看漂亮参数&lt;/h2&gt;&#xA;&lt;p&gt;看到 Melexis 发布 MLX90520，很多人的第一反应会被“22-bit 分辨率”吸住。电感式编码器，面向机器人、大型机械关节和工业应用，官方还提到 SPI/SSI 输出、旋转与最长 400mm 线性运动检测、超薄模块、板载数字处理等特性。单看这些参数，很容易让人想到一句话：电感编码器是不是又往光编的地盘里打了一步？&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>别再争“光学第一、磁性第二、电感第三”了：真正决定编码器座次的，不是原理高贵，而是谁把证据堆厚</title>
+				<link>https://sensor.fans/posts/bukuwjtbskjai_sobetl_w/</link>
+				<pubDate>Fri, 03 Apr 2026 18:10:00 +0800</pubDate>
+				<guid>https://sensor.fans/posts/bukuwjtbskjai_sobetl_w/</guid>
+				<description>&lt;p&gt;这几年看编码器路线之争，越来越像技术圈版宫斗剧。有人把光学捧成正统皇帝，有人把磁性说成量产世界唯一真神，还有人拿着电感路线的 19-bit、22-bit、&amp;lt;100ns，恨不得当天就给行业改朝换代。可真到了工业现场，客户根本不认这种排位法。客户最后买的，不是哪条路线听起来更高级，而是谁能把精度、延迟、污染、温漂、安装容差、量产节拍、返修闭环和客户导入这些证据，拿得更全、写得更厚、撑得更久。谁能做到，谁就在那个场景里赢。做不到，再漂亮的原理，也只是会议室里的幻觉。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

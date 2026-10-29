@@ -1,8 +1,122 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>气隙：先找测量基准，再看磁场工作窗口 · 如是有为</title><meta name=description content="封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。"><link rel=canonical href=https://sensor.fans/wiki/basics/air-gap/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="气隙：先找测量基准，再看磁场工作窗口 · 如是有为"><meta property="og:description" content="封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。"><meta property="og:url" content="https://sensor.fans/wiki/basics/air-gap/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="article"><meta property="article:published_time" content="2026-10-18T10:00:00+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="气隙：先找测量基准，再看磁场工作窗口 · 如是有为"><meta name=twitter:description content="封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-27T00:00:00+00:00","datePublished":"2026-10-18T10:00:00+08:00","description":"封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。","headline":"气隙：先找测量基准，再看磁场工作窗口","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/wiki/basics/air-gap/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/wiki/basics/air-gap/"}</script><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159425"><link rel=stylesheet href="/css/wiki.css?v=1793159425"><link rel=stylesheet href="/css/basics.css?v=20261016-open-toc"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"><link rel=stylesheet href="/css/engineering.css?v=c056824e2b1b"><link rel=stylesheet href="/css/knowledge-learning.css?v=65976be951d8"></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/ aria-current=page>基础知识</a>
-<a href=/wiki/>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><div class=basic-layout><aside class=basic-sidebar><a class=basic-back href=/wiki/basics/>← 编码器基础知识</a><nav aria-label=基础词条目录><h2>认识编码器</h2><a href=/wiki/basics/what-is-an-encoder/>编码器是什么</a><a href=/wiki/basics/absolute-incremental/>增量与绝对</a><a href=/wiki/basics/singleturn-multiturn/>单圈与多圈</a><h2>磁场与信号基础</h2><a href=/wiki/basics/magnetic-field-quantities/>磁场、磁通与敏感轴</a><a href=/wiki/basics/magnetic-sensor-types/>磁传感器怎么分</a><a href=/wiki/basics/sensor-transfer-function/>灵敏度、量程与位置映射</a><a href=/wiki/basics/magnetic-bridge/>磁阻电桥</a><a href=/wiki/basics/sensor-noise-bandwidth/>噪声与带宽</a><a href=/wiki/basics/magnetic-hysteresis/>磁滞</a><a href=/wiki/basics/magnetoresistance-ratio/>MR比、桥路灵敏度与精度</a><h2>磁敏机理与器件</h2><a href=/wiki/basics/hall-effect/>霍尔效应</a><a href=/wiki/basics/hall-element-vs-ic/>霍尔元件与霍尔IC</a><a href=/wiki/basics/hall-element-materials/>霍尔元件材料</a><a href=/wiki/basics/hall-biasing/>霍尔偏置</a><a href=/wiki/basics/hall-temperature-drift/>霍尔温漂</a><a href=/wiki/basics/vertical-hall/>垂直霍尔</a><a href=/wiki/basics/3d-hall/>三轴霍尔</a><a href=/wiki/basics/amr/>AMR</a><a href=/wiki/basics/gmr/>GMR</a><a href=/wiki/basics/tmr/>TMR</a><a href=/wiki/basics/semiconductor-mr/>半导体磁阻</a><a href=/wiki/basics/reed-switch/>干簧管与固态磁开关</a><a href=/wiki/basics/inductive-magnetic-sensing/>感应线圈</a><a href=/wiki/basics/fluxgate/>磁通门</a><a href=/wiki/basics/squid/>SQUID</a><h2>开关与连续检测</h2><a href=/wiki/basics/switch-polarity/>单极与全极霍尔</a><a href=/wiki/basics/bop-brp/>动作与释放阈值</a><a href=/wiki/basics/latch/>霍尔锁存</a><a href=/wiki/basics/linear-hall/>线性霍尔</a><h2>参数与误差</h2><a href=/wiki/basics/resolution-accuracy/>分辨率、准确度与重复性</a><a href=/wiki/basics/inl/>INL</a><a href=/wiki/basics/angle-noise/>角度噪声</a><a href=/wiki/basics/latency/>更新率、延迟与带宽</a><a href=/wiki/basics/chopper/>斩波稳定</a><a href=/wiki/basics/self-calibration/>自校准</a><h2>编码原理</h2><a href=/wiki/basics/magnetic-encoder/>磁编码器</a><a href=/wiki/basics/optical-encoder/>光电编码器</a><a href=/wiki/basics/inductive-encoder/>电感编码器</a><a href=/wiki/basics/pole-pairs/>磁极对数</a><a href=/wiki/basics/vernier/>游标编码</a><h2>磁路与机械安装</h2><a href=/wiki/basics/magnets/>编码器磁体</a><a href=/wiki/basics/in-axis/>在轴检测</a><a href=/wiki/basics/off-axis/>离轴检测</a><a href=/wiki/basics/air-gap/ aria-current=page>气隙</a><a href=/wiki/basics/eccentricity/>偏心误差</a><a href=/wiki/basics/mounting/>在轴、离轴、气隙与偏心</a><a href=/wiki/basics/stray-field/>杂散磁场</a><h2>接口与读数</h2><a href=/wiki/basics/interfaces/>SPI、SSI与BiSS</a><a href=/wiki/basics/abz/>ABZ</a><a href=/wiki/basics/uvw/>UVW</a><a href=/wiki/basics/pwm/>PWM角度输出</a><a href=/wiki/basics/spi-ssi/>SPI与SSI</a><a href=/wiki/basics/i2c/>I²C</a><a href=/wiki/basics/crc/>CRC</a></nav></aside><article class=basic-article><details class=basic-mobile-index><summary>本组词条 · 磁路与机械安装</summary><nav aria-label=当前分组词条><a href=/wiki/basics/magnets/>编码器磁体</a><a href=/wiki/basics/in-axis/>在轴检测</a><a href=/wiki/basics/off-axis/>离轴检测</a><a href=/wiki/basics/air-gap/ aria-current=page>气隙</a><a href=/wiki/basics/eccentricity/>偏心误差</a><a href=/wiki/basics/mounting/>在轴、离轴、气隙与偏心</a><a href=/wiki/basics/stray-field/>杂散磁场</a></nav></details><header><p class=basics-kicker>WIKI / 磁路与机械安装</p><h1>气隙：先找测量基准，再看磁场工作窗口</h1><p class=basic-deck>封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。</p><p class=basic-updated>更新于 2026.10.27</p></header><aside class=basic-toc aria-label=本页目录><p class=basic-toc-title>本页目录</p><nav id=TableOfContents><ul><li><a href=#包装厚度也在磁路里面>包装厚度也在磁路里面</a></li><li><a href=#缩小间隙不保证误差单调下降>缩小间隙不保证误差单调下降</a></li><li><a href=#选型与验证要看最坏组合>选型与验证要看最坏组合</a></li><li><a href=#原厂资料>原厂资料</a></li></ul></nav></aside><div class=content><p>气隙不是脱离基准面的一个数字。磁体表面到封装顶面、到芯片敏感层、到读头外壳，可能对应不同距离；离轴磁环还有径向间隙与轴向位置两项。图纸上先把两个基准标出来，比讨论“能不能再近一点”更有意义。</p><h2 id=包装厚度也在磁路里面>包装厚度也在磁路里面</h2><p>以假设尺寸说明：磁体到封装顶面1.0毫米，敏感层又在顶面下0.3毫米，那么磁体到敏感层是1.3毫米。若误将1.0毫米当成磁仿真距离，仿真和实物便不在同一个位置。0.3毫米只是算例，不代表任何具体封装。</p><p>ADI的AMR应用笔记明确区分封装表面和敏感层，说明原厂给出的气隙曲线必须连同定义一起读。不同封装即使外形相似，也不能沿用同一个敏感层深度。</p><h2 id=缩小间隙不保证误差单调下降>缩小间隙不保证误差单调下降</h2><p>更近会改变场强，但也会改变空间均匀性、分量比例和局部梯度。远处需要防信号不足，近处需要防超量程与磁场形状不适合。对于要求饱和工作的磁阻器件与测场强的线性霍尔，这些限制的含义也不同。</p><p>所以设计应找一个同时满足磁场范围、角度误差与机械安全间隙的窗口。这个窗口还要扣除轴向窜动、磁体厚度、焊接高度与热膨胀，不能只报室温名义值。</p><h2 id=选型与验证要看最坏组合>选型与验证要看最坏组合</h2><p>先按准确料号核对感应轴、场强条件与诊断阈值，再扫描整圈和允许气隙范围。场强报警阈值不是精度保证边界，报警没亮也需查误差。磁体、封装或结构更改后重新验证，不能用另一个厂家的“最大距离”作为替代证据。</p><h2 id=原厂资料>原厂资料</h2><ul><li><a href=https://www.analog.com/en/resources/app-notes/an-1314.html>ADI AN-1314：气隙的测量定义</a></li><li><a href=https://www.ti.com/product/TMAG5170>TI TMAG5170：各磁场量程与信号链</a></li></ul></div><nav class=basic-related aria-label=相关基础词条><h2>接着读</h2><a href=/wiki/basics/mounting/>在轴、离轴、气隙与偏心：先把几何关系说清 <span>→</span></a><a href=/wiki/basics/magnetic-encoder/>磁编码器：霍尔、AMR与TMR怎样读角度 <span>→</span></a><a href=/wiki/basics/resolution-accuracy/>分辨率、准确度与重复性：三件不同的事 <span>→</span></a></nav><section class=knowledge-incoming><h2>哪些基础词条会用到它</h2><div><a href=/wiki/basics/semiconductor-mr/>半导体磁阻 <span aria-hidden=true>↗</span></a></div></section><section class=guide-backlinks><h2>这个概念用在哪里</h2><div class=guide-link-list><a href=/applications/stylus/>触控笔：测到笔尖位移，还没有测到书写压力 →</a><a href=/applications/handheld-joystick/>掌机摇杆：薄型化以后，先验证中心和对角线 →</a><a href=/applications/laptop-lid/>笔记本与平板合盖检测：检测到磁体，不等于知道铰链角度 →</a><a href=/applications/gear-speed/>齿轮转速检测：齿轮改变磁路，脉冲才变成转速 →</a></div></section><div class=basics-footlinks><a href=/topics/>技术专题 ↗</a><a href=/wiki/>型号与公司资料 ↗</a></div></article></div></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>气隙：先找测量基准，再看磁场工作窗口 · 如是有为</title>
+<meta name="description" content="封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。">
+<link rel="canonical" href="https://sensor.fans/wiki/basics/air-gap/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="气隙：先找测量基准，再看磁场工作窗口 · 如是有为">
+<meta property="og:description" content="封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。">
+<meta property="og:url" content="https://sensor.fans/wiki/basics/air-gap/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-10-18T10:00:00&#43;08:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="气隙：先找测量基准，再看磁场工作窗口 · 如是有为">
+<meta name="twitter:description" content="封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-27T00:00:00+00:00","datePublished":"2026-10-18T10:00:00+08:00","description":"封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。","headline":"气隙：先找测量基准，再看磁场工作窗口","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/wiki/basics/air-gap/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/wiki/basics/air-gap/"}
+</script>
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+<link rel="stylesheet" href="/css/basics.css?v=20261016-open-toc">
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+<link rel="stylesheet" href="/css/engineering.css?v=78412614aa48">
+
+
+
+
+<link rel="stylesheet" href="/css/knowledge-learning.css?v=939e3c273186">
+
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/" aria-current="page">基础知识</a>
+      <a href="/wiki/">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+<div class="basic-layout"><aside class="basic-sidebar"><a class="basic-back" href="/wiki/basics/">← 编码器基础知识</a><nav aria-label="基础词条目录"><h2>认识编码器</h2><a href="/wiki/basics/what-is-an-encoder/">编码器是什么</a><a href="/wiki/basics/absolute-incremental/">增量与绝对</a><a href="/wiki/basics/singleturn-multiturn/">单圈与多圈</a><h2>磁场与信号基础</h2><a href="/wiki/basics/magnetic-field-quantities/">磁场、磁通与敏感轴</a><a href="/wiki/basics/magnetic-sensor-types/">磁传感器怎么分</a><a href="/wiki/basics/sensor-transfer-function/">灵敏度、量程与位置映射</a><a href="/wiki/basics/magnetic-bridge/">磁阻电桥</a><a href="/wiki/basics/sensor-noise-bandwidth/">噪声与带宽</a><a href="/wiki/basics/magnetic-hysteresis/">磁滞</a><a href="/wiki/basics/magnetoresistance-ratio/">MR比、桥路灵敏度与精度</a><h2>磁敏机理与器件</h2><a href="/wiki/basics/hall-effect/">霍尔效应</a><a href="/wiki/basics/hall-element-vs-ic/">霍尔元件与霍尔IC</a><a href="/wiki/basics/hall-element-materials/">霍尔元件材料</a><a href="/wiki/basics/hall-biasing/">霍尔偏置</a><a href="/wiki/basics/hall-temperature-drift/">霍尔温漂</a><a href="/wiki/basics/vertical-hall/">垂直霍尔</a><a href="/wiki/basics/3d-hall/">三轴霍尔</a><a href="/wiki/basics/amr/">AMR</a><a href="/wiki/basics/gmr/">GMR</a><a href="/wiki/basics/tmr/">TMR</a><a href="/wiki/basics/semiconductor-mr/">半导体磁阻</a><a href="/wiki/basics/reed-switch/">干簧管与固态磁开关</a><a href="/wiki/basics/inductive-magnetic-sensing/">感应线圈</a><a href="/wiki/basics/fluxgate/">磁通门</a><a href="/wiki/basics/squid/">SQUID</a><h2>开关与连续检测</h2><a href="/wiki/basics/switch-polarity/">单极与全极霍尔</a><a href="/wiki/basics/bop-brp/">动作与释放阈值</a><a href="/wiki/basics/latch/">霍尔锁存</a><a href="/wiki/basics/linear-hall/">线性霍尔</a><h2>参数与误差</h2><a href="/wiki/basics/resolution-accuracy/">分辨率、准确度与重复性</a><a href="/wiki/basics/inl/">INL</a><a href="/wiki/basics/angle-noise/">角度噪声</a><a href="/wiki/basics/latency/">更新率、延迟与带宽</a><a href="/wiki/basics/chopper/">斩波稳定</a><a href="/wiki/basics/self-calibration/">自校准</a><h2>编码原理</h2><a href="/wiki/basics/magnetic-encoder/">磁编码器</a><a href="/wiki/basics/optical-encoder/">光电编码器</a><a href="/wiki/basics/inductive-encoder/">电感编码器</a><a href="/wiki/basics/pole-pairs/">磁极对数</a><a href="/wiki/basics/vernier/">游标编码</a><h2>磁路与机械安装</h2><a href="/wiki/basics/magnets/">编码器磁体</a><a href="/wiki/basics/in-axis/">在轴检测</a><a href="/wiki/basics/off-axis/">离轴检测</a><a href="/wiki/basics/air-gap/" aria-current="page">气隙</a><a href="/wiki/basics/eccentricity/">偏心误差</a><a href="/wiki/basics/mounting/">在轴、离轴、气隙与偏心</a><a href="/wiki/basics/stray-field/">杂散磁场</a><h2>接口与读数</h2><a href="/wiki/basics/interfaces/">SPI、SSI与BiSS</a><a href="/wiki/basics/abz/">ABZ</a><a href="/wiki/basics/uvw/">UVW</a><a href="/wiki/basics/pwm/">PWM角度输出</a><a href="/wiki/basics/spi-ssi/">SPI与SSI</a><a href="/wiki/basics/i2c/">I²C</a><a href="/wiki/basics/crc/">CRC</a></nav></aside>
+<article class="basic-article"><details class="basic-mobile-index"><summary>本组词条 · 磁路与机械安装</summary><nav aria-label="当前分组词条"><a href="/wiki/basics/magnets/">编码器磁体</a><a href="/wiki/basics/in-axis/">在轴检测</a><a href="/wiki/basics/off-axis/">离轴检测</a><a href="/wiki/basics/air-gap/" aria-current="page">气隙</a><a href="/wiki/basics/eccentricity/">偏心误差</a><a href="/wiki/basics/mounting/">在轴、离轴、气隙与偏心</a><a href="/wiki/basics/stray-field/">杂散磁场</a></nav></details><header><p class="basics-kicker">WIKI / 磁路与机械安装</p><h1>气隙：先找测量基准，再看磁场工作窗口</h1><p class="basic-deck">封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。</p><p class="basic-updated">更新于 2026.10.27</p></header>
+
+<aside class="basic-toc" aria-label="本页目录"><p class="basic-toc-title">本页目录</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#包装厚度也在磁路里面">包装厚度也在磁路里面</a></li>
+    <li><a href="#缩小间隙不保证误差单调下降">缩小间隙不保证误差单调下降</a></li>
+    <li><a href="#选型与验证要看最坏组合">选型与验证要看最坏组合</a></li>
+    <li><a href="#原厂资料">原厂资料</a></li>
+  </ul>
+</nav></aside><div class="content"><p>气隙不是脱离基准面的一个数字。磁体表面到封装顶面、到芯片敏感层、到读头外壳，可能对应不同距离；离轴磁环还有径向间隙与轴向位置两项。图纸上先把两个基准标出来，比讨论“能不能再近一点”更有意义。</p>
+<h2 id="包装厚度也在磁路里面">包装厚度也在磁路里面</h2>
+<p>以假设尺寸说明：磁体到封装顶面1.0毫米，敏感层又在顶面下0.3毫米，那么磁体到敏感层是1.3毫米。若误将1.0毫米当成磁仿真距离，仿真和实物便不在同一个位置。0.3毫米只是算例，不代表任何具体封装。</p>
+<p>ADI的AMR应用笔记明确区分封装表面和敏感层，说明原厂给出的气隙曲线必须连同定义一起读。不同封装即使外形相似，也不能沿用同一个敏感层深度。</p>
+<h2 id="缩小间隙不保证误差单调下降">缩小间隙不保证误差单调下降</h2>
+<p>更近会改变场强，但也会改变空间均匀性、分量比例和局部梯度。远处需要防信号不足，近处需要防超量程与磁场形状不适合。对于要求饱和工作的磁阻器件与测场强的线性霍尔，这些限制的含义也不同。</p>
+<p>所以设计应找一个同时满足磁场范围、角度误差与机械安全间隙的窗口。这个窗口还要扣除轴向窜动、磁体厚度、焊接高度与热膨胀，不能只报室温名义值。</p>
+<h2 id="选型与验证要看最坏组合">选型与验证要看最坏组合</h2>
+<p>先按准确料号核对感应轴、场强条件与诊断阈值，再扫描整圈和允许气隙范围。场强报警阈值不是精度保证边界，报警没亮也需查误差。磁体、封装或结构更改后重新验证，不能用另一个厂家的“最大距离”作为替代证据。</p>
+<h2 id="原厂资料">原厂资料</h2>
+<ul>
+<li><a href="https://www.analog.com/en/resources/app-notes/an-1314.html">ADI AN-1314：气隙的测量定义</a></li>
+<li><a href="https://www.ti.com/product/TMAG5170">TI TMAG5170：各磁场量程与信号链</a></li>
+</ul>
+</div>
+
+
+
+<nav class="basic-related" aria-label="相关基础词条"><h2>接着读</h2><a href="/wiki/basics/mounting/">在轴、离轴、气隙与偏心：先把几何关系说清 <span>→</span></a><a href="/wiki/basics/magnetic-encoder/">磁编码器：霍尔、AMR与TMR怎样读角度 <span>→</span></a><a href="/wiki/basics/resolution-accuracy/">分辨率、准确度与重复性：三件不同的事 <span>→</span></a></nav>
+
+
+<section class="knowledge-incoming"><h2>哪些基础词条会用到它</h2><div><a href="/wiki/basics/semiconductor-mr/">半导体磁阻 <span aria-hidden="true">↗</span></a></div></section>
+
+
+
+
+<section class="guide-backlinks"><h2>这个概念用在哪里</h2><div class="guide-link-list"><a href="/applications/stylus/">触控笔：测到笔尖位移，还没有测到书写压力 →</a><a href="/applications/handheld-joystick/">掌机摇杆：薄型化以后，先验证中心和对角线 →</a><a href="/applications/laptop-lid/">笔记本与平板合盖检测：检测到磁体，不等于知道铰链角度 →</a><a href="/applications/gear-speed/">齿轮转速检测：齿轮改变磁路，脉冲才变成转速 →</a></div></section>
+
+<div class="basics-footlinks"><a href="/topics/">技术专题 ↗</a><a href="/wiki/">型号与公司资料 ↗</a></div></article></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

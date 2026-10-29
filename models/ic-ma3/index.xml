@@ -1,1 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iC-MA3 on 如是有为</title><link>https://sensor.fans/models/ic-ma3/</link><description>Recent content in iC-MA3 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate/><atom:link href="https://sensor.fans/models/ic-ma3/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>iC-MA3 on 如是有为</title>
+		<link>https://sensor.fans/models/ic-ma3/</link>
+		<description>Recent content in iC-MA3 on 如是有为</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate></lastBuildDate>
+		
+			<atom:link href="https://sensor.fans/models/ic-ma3/index.xml" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

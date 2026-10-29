@@ -1,8 +1,109 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？ · 如是有为</title><meta name=description content="用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。"><link rel=canonical href=https://sensor.fans/topics/guides/linear-scale-thermal/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？ · 如是有为"><meta property="og:description" content="用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。"><meta property="og:url" content="https://sensor.fans/topics/guides/linear-scale-thermal/"><meta property="og:image" content="https://sensor.fans/images/site/hero.webp"><meta property="og:type" content="article"><meta property="article:published_time" content="2026-10-24T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？ · 如是有为"><meta name=twitter:description content="用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。"><meta name=twitter:image content="https://sensor.fans/images/site/hero.webp"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-24T00:00:00+00:00","datePublished":"2026-10-24T00:00:00+00:00","description":"用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。","headline":"直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/topics/guides/linear-scale-thermal/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/topics/guides/linear-scale-thermal/"}</script><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793159425"><link rel=stylesheet href="/css/wiki.css?v=1793159425"><link rel=stylesheet href="/css/basics.css?v=20261016-open-toc"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"><link rel=stylesheet href="/css/engineering.css?v=c056824e2b1b"></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
-<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
-<a href=/wiki/basics/>基础知识</a>
-<a href=/wiki/>型号资料</a>
-<a href=/applications/>应用场景</a>
-<a href=/topics/ aria-current=page>技术专题</a>
-<a href=/companies/>公司品牌</a>
-<a href=/archives/>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><div class="basic-layout engineering-layout"><aside class=basic-sidebar><a class=basic-back href=/topics/#methods>← 技术专题与方法</a><nav aria-label=工程指南目录><h2>测量与统计</h2><a href=/topics/guides/measurement-tools/>三个小计算：频率、数据年龄与噪声统计</a><a href=/topics/guides/noise-statistics/>RMS变小了，噪声就变小了吗？</a><a href=/topics/guides/independent-samples/>读取一万次，为什么只得到一百份信息？</a><a href=/topics/guides/atan2-quantization/>静止时一位不跳，角度为什么仍有量化误差？</a><a href=/topics/guides/velocity-noise/>速度差分里的根号2，什么时候该留下？</a><a href=/topics/guides/production-variation/>样机误差很小，为什么量产还需要另一张分布图？</a><h2>光学与电感</h2><a href=/topics/guides/optical-signal-chain/>光电流变大，为什么反而读不准？</a><a href=/topics/guides/optical-tolerance-evidence/>理论上消掉三次谐波，宽度偏5%后还剩多少？</a><a href=/topics/guides/reflective-code-validation/>反射绝对码读错，不能只看正余弦有多圆</a><a href=/topics/guides/inductive-error-definition/>电感芯片的0.36°，是哪一层的角度？</a><h2>环境与验收</h2><a href=/topics/guides/parameter-conditions/>精度相同的两行参数，先比较条件栏</a><a href=/topics/guides/system-acceptance-record/>用KIN52示例，把参数表改成整机验收记录</a><a href=/topics/guides/cold-start-validation/>低温能稳态测角，不代表冷机能启动</a><a href=/topics/guides/thermal-cycle-reversibility/>温补前先回到同一温度，看看零位还在不在</a><a href=/topics/guides/safety-evidence-levels/>有CRC、有双芯片，离整机安全结论还差哪些证据</a><a href=/topics/guides/linear-scale-thermal/ aria-current=page>直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？</a><h2>几何与解算</h2><a href=/topics/guides/eccentricity-budget/>偏心10微米，会吃掉多少角秒？</a><a href=/topics/guides/multihead-harmonics/>两个读头平均，先问要消哪一阶</a><a href=/topics/guides/channel-angle-harmonics/>SIN/COS三次失真，为什么角度里冒出二次和四次？</a><a href=/topics/guides/vernier-uniqueness/>游标互质，不等于只做相减就能得绝对角</a><a href=/topics/guides/three-track-observability/>第三条码道买到的是更多信息，不是自动多几位</a><a href=/topics/guides/magnetic-field-coordinates/>对径两点的磁场同向还是反向？先固定坐标</a><a href=/topics/guides/rate-budget/>100kHz输入、1MHz刷新、250kHz帧率，不能直接取最小值</a><a href=/topics/guides/amplitude-temperature-error/>两路一起变小不改角度，为何温漂仍然变大？</a><a href=/topics/guides/reference-recovery/>有距离编码原点，为什么上电后仍要移动？</a><h2>接入与诊断</h2><a href=/topics/guides/first-power-interface/>新板读不通，先把供电引脚分清</a><a href=/topics/guides/mixed-voltage-backpower/>3.3V供电和5V总线，兼容性要查四项</a><a href=/topics/guides/dual-encoder-difference-budget/>两路角差估扭矩，先算同步误差值多少钱</a><a href=/topics/guides/position-validity-state/>CRC通过之后，位置还要过三道检查</a><h2>时间与动态</h2><a href=/topics/guides/dynamic-latency-test/>恒速外推补得准，为什么加速时还会落后？</a><a href=/topics/guides/spi-data-age/>AS5047P这次返回的角度，属于哪一次读取？</a><a href=/topics/guides/sample-time-contract/>两路角度要相减，先签清楚哪一刻</a><h2>校准与配置</h2><a href=/topics/guides/calibration-evidence/>把李萨如椭圆变圆，为什么角度还会错？</a><a href=/topics/guides/calibration-validation/>校准和验收都拿匀速当真值，会发生什么？</a><a href=/topics/guides/calibration-data-integrity/>校准保存成功以后，下一次上电还可信吗？</a><a href=/topics/guides/batteryless-multiturn/>免电池多圈记住了圈数，为什么接口仍要供电？</a></nav></aside><article class="basic-article engineering-article"><header><p class=basics-kicker>技术专题 / 环境与验收</p><h1>直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？</h1><p class=basic-deck>用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。</p><p class=basic-updated>核对于 2026.10.24</p></header><figure class=method-editorial><img src=/images/editorial/chromeos-optical-20261024.webp alt=直线测量的场景示意 width=1536 height=1024 loading=lazy decoding=async></figure><aside class=basic-toc aria-label=本页目录><p class=basic-toc-title>本页目录</p><nav id=TableOfContents><ul><li><a href=#先问尺能不能自由伸长>先问尺能不能自由伸长</a></li><li><a href=#基准点放哪误差从哪长起>基准点放哪，误差从哪长起</a></li><li><a href=#原厂资料怎样用>原厂资料怎样用</a></li></ul></nav></aside><div class=content><p>读数每次只跳1nm，机器工作点仍会随温度移动。分辨率描述数字刻度；长尺热变形取决于材料、温差、固定点及尺与基体怎样传力。</p><h2 id=先问尺能不能自由伸长>先问尺能不能自由伸长</h2><p>自由、均匀温升的简化模型是 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>L</mi><mo>=</mo><mi>α</mi><mi>L</mi><mi mathvariant="normal">Δ</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">\Delta L=\alpha L\Delta T</annotation></semantics></math></span>。设一米尺、温升10°C，若自设尺材系数为10µm/(m·°C)，长度变化100µm。这个算例不是任何型号的保证值。</p><p>若基体自设为23µm/(m·°C)，两者自由伸长差为130µm。但不能把130µm直接填成最终读数误差：尺若被连续约束、只设一端热基准或允许滑移，长度变化、应力和误差分布都不同。</p><h2 id=基准点放哪误差从哪长起>基准点放哪，误差从哪长起</h2><p>理想均匀温差、单点基准且自由伸长时，位置x的变化与离热基准距离成比例。基准在行程中央，端部到基准的距离比全长短；但这只是几何分布变化，不等于热膨胀被消除，也未处理温度梯度和工作点到读头的阿贝偏置。</p><p>安装验收应记录：尺材、基体、约束方式、热基准、测温点和参考位置。再做受控温度变化，比较多个行程点，而不是只看一个零点。补偿表必须对应这些条件；更换夹持或重粘码尺后要重新验证。</p><h2 id=原厂资料怎样用>原厂资料怎样用</h2><p><a href=https://www.renishaw.com/en/white-paper-mounting-encoder-scales-for-optimum-thermal-performance--44316>Renishaw热安装白皮书（英文，2019）</a>明确把材料与安装方式共同纳入热行为。<a href=https://www.renishaw.com/en/optical-encoders-frequently-asked-questions--34674>光学编码器FAQ</a>区分胶粘、夹持、FASTRACK等不同尺型安装。它们提供分类依据，不支持把某个标尺的热膨胀系数移给所有读头。</p><p>例如<a href=/models/resolute-rl/>RESOLUTE</a>的输出分辨率、周期内误差和所配码尺的每米精度需分别读取。真正要比较的是当前装配、温场和参考下的长度误差，不是哪个规格表的小数位最多。</p></div><nav class=basic-related aria-label=接着做><h2>接着做</h2><a href=/topics/guides/thermal-cycle-reversibility/>温补前先回到同一温度，看看零位还在不在 <span>→</span></a><a href=/topics/guides/parameter-conditions/>精度相同的两行参数，先比较条件栏 <span>→</span></a></nav><section class=basic-practice><h2>回到概念与器件</h2><div class=basics-practice-links><a href=/wiki/basics/mounting/>在轴、离轴、气隙与偏心：先把几何关系说清 ↗</a><a href=/wiki/basics/resolution-accuracy/>分辨率、准确度与重复性：三件不同的事 ↗</a><a href=/models/resolute-rl/>RESOLUTE RL ↗</a><a href=/models/sin60/>SIN60系列 ↗</a></div></section><nav class=basic-related aria-label=相关应用><h2>在应用中检验</h2><a href=/applications/linear-motor/>直线电机：测局部磁场，不等于知道全行程位置 <span>→</span></a></nav><div class=basics-footlinks><a href=/topics/#methods>全部专题方法 ↗</a><a href=/topics/>技术专题 ↗</a></div></article></div></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？ · 如是有为</title>
+<meta name="description" content="用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。">
+<link rel="canonical" href="https://sensor.fans/topics/guides/linear-scale-thermal/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="如是有为">
+<meta property="og:site_name" content="如是有为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？ · 如是有为">
+<meta property="og:description" content="用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。">
+<meta property="og:url" content="https://sensor.fans/topics/guides/linear-scale-thermal/">
+<meta property="og:image" content="https://sensor.fans/images/site/hero.webp">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-10-24T00:00:00&#43;00:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？ · 如是有为">
+<meta name="twitter:description" content="用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。">
+<meta name="twitter:image" content="https://sensor.fans/images/site/hero.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-24T00:00:00+00:00","datePublished":"2026-10-24T00:00:00+00:00","description":"用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。","headline":"直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？","image":["https://sensor.fans/images/site/hero.webp"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/topics/guides/linear-scale-thermal/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/topics/guides/linear-scale-thermal/"}
+</script>
+
+<link rel="apple-touch-icon" href="/images/site/logo-512.png">
+<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css?v=1793265260">
+<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
+<link rel="stylesheet" href="/css/basics.css?v=20261016-open-toc">
+<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
+
+
+<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
+<link rel="stylesheet" href="/css/engineering.css?v=78412614aa48">
+
+
+
+
+
+
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳到正文</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
+  </g>
+  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+</svg>
+<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
+    <nav aria-label="主导航">
+      <a href="/">首页</a>
+      <a href="/wiki/basics/">基础知识</a>
+      <a href="/wiki/">型号资料</a>
+      <a href="/applications/">应用场景</a>
+      <a href="/topics/" aria-current="page">技术专题</a>
+      <a href="/companies/">公司品牌</a>
+      <a href="/archives/">博客</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main-content" tabindex="-1">
+<div class="basic-layout engineering-layout">
+<aside class="basic-sidebar"><a class="basic-back" href="/topics/#methods">← 技术专题与方法</a><nav aria-label="工程指南目录"><h2>测量与统计</h2><a href="/topics/guides/measurement-tools/">三个小计算：频率、数据年龄与噪声统计</a><a href="/topics/guides/noise-statistics/">RMS变小了，噪声就变小了吗？</a><a href="/topics/guides/independent-samples/">读取一万次，为什么只得到一百份信息？</a><a href="/topics/guides/atan2-quantization/">静止时一位不跳，角度为什么仍有量化误差？</a><a href="/topics/guides/velocity-noise/">速度差分里的根号2，什么时候该留下？</a><a href="/topics/guides/production-variation/">样机误差很小，为什么量产还需要另一张分布图？</a><h2>光学与电感</h2><a href="/topics/guides/optical-signal-chain/">光电流变大，为什么反而读不准？</a><a href="/topics/guides/optical-tolerance-evidence/">理论上消掉三次谐波，宽度偏5%后还剩多少？</a><a href="/topics/guides/reflective-code-validation/">反射绝对码读错，不能只看正余弦有多圆</a><a href="/topics/guides/inductive-error-definition/">电感芯片的0.36°，是哪一层的角度？</a><h2>环境与验收</h2><a href="/topics/guides/parameter-conditions/">精度相同的两行参数，先比较条件栏</a><a href="/topics/guides/system-acceptance-record/">用KIN52示例，把参数表改成整机验收记录</a><a href="/topics/guides/cold-start-validation/">低温能稳态测角，不代表冷机能启动</a><a href="/topics/guides/thermal-cycle-reversibility/">温补前先回到同一温度，看看零位还在不在</a><a href="/topics/guides/safety-evidence-levels/">有CRC、有双芯片，离整机安全结论还差哪些证据</a><a href="/topics/guides/linear-scale-thermal/" aria-current="page">直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？</a><h2>几何与解算</h2><a href="/topics/guides/eccentricity-budget/">偏心10微米，会吃掉多少角秒？</a><a href="/topics/guides/multihead-harmonics/">两个读头平均，先问要消哪一阶</a><a href="/topics/guides/channel-angle-harmonics/">SIN/COS三次失真，为什么角度里冒出二次和四次？</a><a href="/topics/guides/vernier-uniqueness/">游标互质，不等于只做相减就能得绝对角</a><a href="/topics/guides/three-track-observability/">第三条码道买到的是更多信息，不是自动多几位</a><a href="/topics/guides/magnetic-field-coordinates/">对径两点的磁场同向还是反向？先固定坐标</a><a href="/topics/guides/rate-budget/">100kHz输入、1MHz刷新、250kHz帧率，不能直接取最小值</a><a href="/topics/guides/amplitude-temperature-error/">两路一起变小不改角度，为何温漂仍然变大？</a><a href="/topics/guides/reference-recovery/">有距离编码原点，为什么上电后仍要移动？</a><h2>接入与诊断</h2><a href="/topics/guides/first-power-interface/">新板读不通，先把供电引脚分清</a><a href="/topics/guides/mixed-voltage-backpower/">3.3V供电和5V总线，兼容性要查四项</a><a href="/topics/guides/dual-encoder-difference-budget/">两路角差估扭矩，先算同步误差值多少钱</a><a href="/topics/guides/position-validity-state/">CRC通过之后，位置还要过三道检查</a><h2>时间与动态</h2><a href="/topics/guides/dynamic-latency-test/">恒速外推补得准，为什么加速时还会落后？</a><a href="/topics/guides/spi-data-age/">AS5047P这次返回的角度，属于哪一次读取？</a><a href="/topics/guides/sample-time-contract/">两路角度要相减，先签清楚哪一刻</a><h2>校准与配置</h2><a href="/topics/guides/calibration-evidence/">把李萨如椭圆变圆，为什么角度还会错？</a><a href="/topics/guides/calibration-validation/">校准和验收都拿匀速当真值，会发生什么？</a><a href="/topics/guides/calibration-data-integrity/">校准保存成功以后，下一次上电还可信吗？</a><a href="/topics/guides/batteryless-multiturn/">免电池多圈记住了圈数，为什么接口仍要供电？</a></nav></aside>
+<article class="basic-article engineering-article"><header><p class="basics-kicker">技术专题 / 环境与验收</p><h1>直线尺装在铝梁上，纳米分辨率为何仍挡不住热误差？</h1><p class="basic-deck">用热膨胀和基准位置的设定算例，分开尺本体、安装约束与工作点位移。</p><p class="basic-updated">核对于 2026.10.24</p></header>
+<figure class="method-editorial"><img src="/images/editorial/chromeos-optical-20261024.webp" alt="直线测量的场景示意" width="1536" height="1024" loading="lazy" decoding="async"></figure>
+<aside class="basic-toc" aria-label="本页目录"><p class="basic-toc-title">本页目录</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#先问尺能不能自由伸长">先问尺能不能自由伸长</a></li>
+    <li><a href="#基准点放哪误差从哪长起">基准点放哪，误差从哪长起</a></li>
+    <li><a href="#原厂资料怎样用">原厂资料怎样用</a></li>
+  </ul>
+</nav></aside><div class="content"><p>读数每次只跳1nm，机器工作点仍会随温度移动。分辨率描述数字刻度；长尺热变形取决于材料、温差、固定点及尺与基体怎样传力。</p>
+<h2 id="先问尺能不能自由伸长">先问尺能不能自由伸长</h2>
+<p>自由、均匀温升的简化模型是 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>L</mi><mo>=</mo><mi>α</mi><mi>L</mi><mi mathvariant="normal">Δ</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">\Delta L=\alpha L\Delta T</annotation></semantics></math></span>。设一米尺、温升10°C，若自设尺材系数为10µm/(m·°C)，长度变化100µm。这个算例不是任何型号的保证值。</p>
+<p>若基体自设为23µm/(m·°C)，两者自由伸长差为130µm。但不能把130µm直接填成最终读数误差：尺若被连续约束、只设一端热基准或允许滑移，长度变化、应力和误差分布都不同。</p>
+<h2 id="基准点放哪误差从哪长起">基准点放哪，误差从哪长起</h2>
+<p>理想均匀温差、单点基准且自由伸长时，位置x的变化与离热基准距离成比例。基准在行程中央，端部到基准的距离比全长短；但这只是几何分布变化，不等于热膨胀被消除，也未处理温度梯度和工作点到读头的阿贝偏置。</p>
+<p>安装验收应记录：尺材、基体、约束方式、热基准、测温点和参考位置。再做受控温度变化，比较多个行程点，而不是只看一个零点。补偿表必须对应这些条件；更换夹持或重粘码尺后要重新验证。</p>
+<h2 id="原厂资料怎样用">原厂资料怎样用</h2>
+<p><a href="https://www.renishaw.com/en/white-paper-mounting-encoder-scales-for-optimum-thermal-performance--44316">Renishaw热安装白皮书（英文，2019）</a>明确把材料与安装方式共同纳入热行为。<a href="https://www.renishaw.com/en/optical-encoders-frequently-asked-questions--34674">光学编码器FAQ</a>区分胶粘、夹持、FASTRACK等不同尺型安装。它们提供分类依据，不支持把某个标尺的热膨胀系数移给所有读头。</p>
+<p>例如<a href="/models/resolute-rl/">RESOLUTE</a>的输出分辨率、周期内误差和所配码尺的每米精度需分别读取。真正要比较的是当前装配、温场和参考下的长度误差，不是哪个规格表的小数位最多。</p>
+</div>
+
+<nav class="basic-related" aria-label="接着做"><h2>接着做</h2><a href="/topics/guides/thermal-cycle-reversibility/">温补前先回到同一温度，看看零位还在不在 <span>→</span></a><a href="/topics/guides/parameter-conditions/">精度相同的两行参数，先比较条件栏 <span>→</span></a></nav>
+<section class="basic-practice"><h2>回到概念与器件</h2><div class="basics-practice-links"><a href="/wiki/basics/mounting/">在轴、离轴、气隙与偏心：先把几何关系说清 ↗</a><a href="/wiki/basics/resolution-accuracy/">分辨率、准确度与重复性：三件不同的事 ↗</a><a href="/models/resolute-rl/">RESOLUTE RL ↗</a><a href="/models/sin60/">SIN60系列 ↗</a></div></section>
+<nav class="basic-related" aria-label="相关应用"><h2>在应用中检验</h2><a href="/applications/linear-motor/">直线电机：测局部磁场，不等于知道全行程位置 <span>→</span></a></nav>
+<div class="basics-footlinks"><a href="/topics/#methods">全部专题方法 ↗</a><a href="/topics/">技术专题 ↗</a></div></article></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
+      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
+    </div>
+    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
+  </div>
+</footer>
+</body>
+</html>

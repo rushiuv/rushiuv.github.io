@@ -1,1 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>半导体产业 on 如是有为</title><link>https://sensor.fans/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%BA%A7%E4%B8%9A/</link><description>Recent content in 半导体产业 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Fri, 16 Oct 2026 07:09:51 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%BA%A7%E4%B8%9A/index.xml" rel="self" type="application/rss+xml"/><item><title>把大芯片切开，是在给良率买保险</title><link>https://sensor.fans/posts/3hhkm1evh53alqeqqpmx2a/</link><pubDate>Fri, 16 Oct 2026 07:09:51 +0800</pubDate><guid>https://sensor.fans/posts/3hhkm1evh53alqeqqpmx2a/</guid><description>&lt;p>麒麟 9050 Pro 的裸片照流出来了，编号 Hi36E0。两颗 Die，尺寸一模一样，都是 11.13mm × 10.84mm，单颗约 120.65 平方毫米。一颗计算 Die 跑中芯国际 N+3，一颗 SRAM Die 跑 N+2，靠 LogicFolding 垂直叠起来。叠完之后两颗 Die 通过微米级的垂直互连连在一起，信号路径被缩短，从功能上看就像一颗完整的芯片在工作。&lt;/p></description></item><item><title>Melexis 第一颗“中国造”芯片，真正狠的不是 250kHz，而是那根编程线</title><link>https://sensor.fans/posts/msuozwlgh5clove_544maw/</link><pubDate>Thu, 08 Oct 2026 10:00:00 +0800</pubDate><guid>https://sensor.fans/posts/msuozwlgh5clove_544maw/</guid><description>&lt;p>MLX91241 最值得国内传感器同行盯住的，不是带宽，也不是 3μs，而是 &lt;strong>1-pin EOL programmable&lt;/strong>。因为这一行参数，决定了它是在卖一颗芯片，还是在参与客户的量产制造。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>半导体产业 on 如是有为</title>
+		<link>https://sensor.fans/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%BA%A7%E4%B8%9A/</link>
+		<description>Recent content in 半导体产业 on 如是有为</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 16 Oct 2026 07:09:51 +0800</lastBuildDate>
+		
+			<atom:link href="https://sensor.fans/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%BA%A7%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>把大芯片切开，是在给良率买保险</title>
+				<link>https://sensor.fans/posts/3hhkm1evh53alqeqqpmx2a/</link>
+				<pubDate>Fri, 16 Oct 2026 07:09:51 +0800</pubDate>
+				<guid>https://sensor.fans/posts/3hhkm1evh53alqeqqpmx2a/</guid>
+				<description>&lt;p&gt;麒麟 9050 Pro 的裸片照流出来了，编号 Hi36E0。两颗 Die，尺寸一模一样，都是 11.13mm × 10.84mm，单颗约 120.65 平方毫米。一颗计算 Die 跑中芯国际 N+3，一颗 SRAM Die 跑 N+2，靠 LogicFolding 垂直叠起来。叠完之后两颗 Die 通过微米级的垂直互连连在一起，信号路径被缩短，从功能上看就像一颗完整的芯片在工作。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Melexis 第一颗“中国造”芯片，真正狠的不是 250kHz，而是那根编程线</title>
+				<link>https://sensor.fans/posts/msuozwlgh5clove_544maw/</link>
+				<pubDate>Thu, 08 Oct 2026 10:00:00 +0800</pubDate>
+				<guid>https://sensor.fans/posts/msuozwlgh5clove_544maw/</guid>
+				<description>&lt;p&gt;MLX91241 最值得国内传感器同行盯住的，不是带宽，也不是 3μs，而是 &lt;strong&gt;1-pin EOL programmable&lt;/strong&gt;。因为这一行参数，决定了它是在卖一颗芯片，还是在参与客户的量产制造。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
