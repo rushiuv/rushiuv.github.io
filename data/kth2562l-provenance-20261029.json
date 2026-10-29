@@ -1,0 +1,18 @@
+{
+  "url": "https://chat.connteck.com/downloads/KTH2562L/KTH2562L_Datasheet_CN.pdf",
+  "sha256": "cbdda56fa2200991c11b550164bab1bf19ada65764d951cf9d49d105162f089d",
+  "bytes": 3878337,
+  "pages": 19,
+  "matches_local": false,
+  "source_page": "https://chat.connteck.com/selector/",
+  "redrawn": [
+    "static/images/models/kth2562l/application.svg",
+    "static/images/models/kth2562l/pinout.svg",
+    "static/images/models/kth2562l/latch.svg",
+    "static/images/models/kth2562l/functional.svg",
+    "static/images/models/kth2562l/two-wire.svg",
+    "static/images/models/kth2562l/layout.svg"
+  ],
+  "source_curve_page": 12,
+  "note": "Curves retain source pixels; no digitized measurements. No internal customer material used."
+}

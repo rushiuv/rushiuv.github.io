@@ -37,7 +37,7 @@ def built_path(url: str) -> Path:
 
 
 sources = sorted((ROOT / "content/models").glob("*/_index.md"))
-assert len(sources) == 145, len(sources)
+assert len(sources) == 146, len(sources)
 lengths = []
 
 for source in sources:
