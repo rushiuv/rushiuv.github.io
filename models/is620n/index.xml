@@ -1,31 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>IS620N on 如是有为</title>
-		<link>https://sensor.fans/models/is620n/</link>
-		<description>Recent content in IS620N on 如是有为</description>
-		<generator>Hugo</generator>
-		<language>zh-CN</language>
-		
-		
-		
-		
-			<lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://sensor.fans/models/is620n/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>画圆成椭圆，别先拧增益，先看几根轴是不是同一瞬间读数, 汇川 IS620N &#43; 多摩川 TS5700N8501 17 位反馈，三轴采样差 200µs</title>
-				<link>https://sensor.fans/posts/enbapxomscdpom2_0wod_q/</link>
-				<pubDate>Thu, 18 Jun 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/enbapxomscdpom2_0wod_q/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/51ae09daa5c9f18606f35607e8f24558.webp&#34; alt=&#34;画圆成椭圆，别先拧增益，先看几根轴是不是同一瞬间读数, 汇川 IS620N &amp;#43; 多摩川 TS5700N8501 17 位反馈，三轴采样差 200µs&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;倍福-twincat-3-控汇川-is620n--多摩川-ts5700n8501-17-位反馈如果三轴采样差-200µs会导致龙门-50mm-圆插补拉出-002mm-椭圆&#34;&gt;倍福 TwinCAT 3 控汇川 IS620N + 多摩川 TS5700N8501 17 位反馈，如果三轴采样差 200µs，会导致龙门 50mm 圆插补拉出 0.02mm 椭圆&lt;/h2&gt;&#xA;&lt;h2 id=&#34;画圆成椭圆别先拧增益先看几根轴是不是同一瞬间读数&#34;&gt;画圆成椭圆，别先拧增益，先看几根轴是不是同一瞬间读数&lt;/h2&gt;&#xA;&lt;p&gt;5 月底，一个朋友把雷尼绍 QC20-W 球杆仪报告发到我手机上。现场是一台新搭的三轴龙门，主站跑倍福 TwinCAT 3，三根轴用汇川 IS620N 驱动走 EtherCAT，电机端编码器是多摩川 TS5700N8501，17 位单圈串行反馈。半径 50 mm 的整圆，进给给到 100 mm/s，测出来不是正圆，而是一条长短轴差约 0.02 mm 的椭圆。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>汇川最值钱的，不是17亿伺服收入，而是它正在收回运动控制的话语权</title>
-				<link>https://sensor.fans/posts/gepepllb78zjzwdfae5i2q/</link>
-				<pubDate>Thu, 23 Apr 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/gepepllb78zjzwdfae5i2q/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/e957e5303cfc7a3abc5d0afe953cb44a.jpg&#34; alt=&#34;汇川最值钱的，不是17亿伺服收入，而是它正在收回运动控制的话语权&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;写汇川，最偷懒的办法，就是把17.2亿元伺服收入拎出来，往标题上一挂，再配几句“国产替代”“高端突破”“全面崛起”，文章就差不多了。&lt;/p&gt;&#xA;&lt;p&gt;可这种写法，像把一盘已经下到中局的棋，硬写成开场那几声喝彩。&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IS620N on 如是有为</title><link>https://sensor.fans/models/is620n/</link><description>Recent content in IS620N on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/models/is620n/index.xml" rel="self" type="application/rss+xml"/><item><title>画圆成椭圆，别先拧增益，先看几根轴是不是同一瞬间读数, 汇川 IS620N + 多摩川 TS5700N8501 17 位反馈，三轴采样差 200µs</title><link>https://sensor.fans/posts/enbapxomscdpom2_0wod_q/</link><pubDate>Thu, 18 Jun 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/enbapxomscdpom2_0wod_q/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/51ae09daa5c9f18606f35607e8f24558.webp" alt="画圆成椭圆，别先拧增益，先看几根轴是不是同一瞬间读数, 汇川 IS620N &amp;#43; 多摩川 TS5700N8501 17 位反馈，三轴采样差 200µs" loading="lazy" decoding="async">
+&lt;/p>
+&lt;h2 id="倍福-twincat-3-控汇川-is620n--多摩川-ts5700n8501-17-位反馈如果三轴采样差-200µs会导致龙门-50mm-圆插补拉出-002mm-椭圆">倍福 TwinCAT 3 控汇川 IS620N + 多摩川 TS5700N8501 17 位反馈，如果三轴采样差 200µs，会导致龙门 50mm 圆插补拉出 0.02mm 椭圆&lt;/h2>
+&lt;h2 id="画圆成椭圆别先拧增益先看几根轴是不是同一瞬间读数">画圆成椭圆，别先拧增益，先看几根轴是不是同一瞬间读数&lt;/h2>
+&lt;p>5 月底，一个朋友把雷尼绍 QC20-W 球杆仪报告发到我手机上。现场是一台新搭的三轴龙门，主站跑倍福 TwinCAT 3，三根轴用汇川 IS620N 驱动走 EtherCAT，电机端编码器是多摩川 TS5700N8501，17 位单圈串行反馈。半径 50 mm 的整圆，进给给到 100 mm/s，测出来不是正圆，而是一条长短轴差约 0.02 mm 的椭圆。&lt;/p></description></item><item><title>汇川最值钱的，不是17亿伺服收入，而是它正在收回运动控制的话语权</title><link>https://sensor.fans/posts/gepepllb78zjzwdfae5i2q/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/gepepllb78zjzwdfae5i2q/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/e957e5303cfc7a3abc5d0afe953cb44a.jpg" alt="汇川最值钱的，不是17亿伺服收入，而是它正在收回运动控制的话语权" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>写汇川，最偷懒的办法，就是把17.2亿元伺服收入拎出来，往标题上一挂，再配几句“国产替代”“高端突破”“全面崛起”，文章就差不多了。&lt;/p>
+&lt;p>可这种写法，像把一盘已经下到中局的棋，硬写成开场那几声喝彩。&lt;/p></description></item></channel></rss>

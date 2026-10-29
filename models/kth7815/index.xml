@@ -1,24 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>KTH7815 on 如是有为</title>
-		<link>https://sensor.fans/models/kth7815/</link>
-		<description>Recent content in KTH7815 on 如是有为</description>
-		<generator>Hugo</generator>
-		<language>zh-CN</language>
-		
-		
-		
-		
-			<lastBuildDate>Sat, 12 Sep 2026 08:29:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://sensor.fans/models/kth7815/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>12万转、1μs、16位：读完 KTH7815 对比 AS5047P，几个规格表之外的现场问题</title>
-				<link>https://sensor.fans/posts/_7ifyuhvjfspoqpfkbsqoq/</link>
-				<pubDate>Sat, 12 Sep 2026 08:29:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/_7ifyuhvjfspoqpfkbsqoq/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/8274f535cc6d772c3fcf88941f666f49.webp&#34; alt=&#34;12万转、1μs、16位：读完 KTH7815 对比 AS5047P，几个规格表之外的现场问题&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;刚看完满度科技这篇《&lt;a href=&#34;http://mp.weixin.qq.com/s?__biz=MzkzODk0NDQ2Mw==&amp;amp;mid=2247485043&amp;amp;idx=1&amp;amp;sn=d4ef5decf9a8c267a051295dc3d60f71&amp;amp;chksm=c3288b8a2f05882c405fdac38d3663c98e37fc2a4321cea42151188bd14243e3195f047929bb&amp;amp;scene=21&amp;amp;xtrack=1%EF%BC%83wechat_redirect&#34;&gt;12万转、1μs延时、16位输出，昆泰芯 KTH7815 对比 AS5047P 优势在哪&lt;/a&gt;》。&lt;/p&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;参数&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;昆泰芯 KTH7815&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;ams AS5047P&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;核心分辨率&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;16 位（65536 点/圈）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;14 位（16384 点/圈）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;非线性误差 INL&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;±0.35°（典型）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;±0.8°（25°C 最佳摆放），全温区最高 ±1.2°&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;数据刷新/延时&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;1μs&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;SPI 读取路径 90–110μs（ABI/UVW 经 DAEC 后 1.5–1.9μs）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;最高转速&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;120000rpm&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;28000rpm&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;工作磁场&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;30–150mT&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;35–70mT（低于 35mT 噪声变差）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;输出噪声（1σ）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;0.24°&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;0.068°&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;ABZ 分辨率&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;4–4096 步/圈，任意整数可编程&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;固定档位（25–1000 ppr 及 1024/512/256）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;ABZ 输出形式&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;差分 A/~A、B/~B、Z/~Z&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;单端&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;配置存储&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;MTP，125℃ 下 1000 次写入&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;OTP，仅一次&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;磁场诊断&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;MGH/MGL 独立报警引脚，阈值可编程&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;需经 SPI 读取诊断标志&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;启动时间&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;1ms（典型）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;最长 10ms&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;ESD（HBM）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;±5kV&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;±2kV&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;封装&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;QFN-16L 3×3mm / SOP-8&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;TSSOP-14（本体约 5×4.4mm）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;原文已经把 16 位对 14 位、120000 rpm 对 28000 rpm、MTP 对 OTP、差分 ABZ 对单端 ABI 这些规格拆得很清楚了。下面不重复这些参数，只顺着其中几个数字，补一点规格表之外的工程语义。&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KTH7815 on 如是有为</title><link>https://sensor.fans/models/kth7815/</link><description>Recent content in KTH7815 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 12 Sep 2026 08:29:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/models/kth7815/index.xml" rel="self" type="application/rss+xml"/><item><title>12万转、1μs、16位：读完 KTH7815 对比 AS5047P，几个规格表之外的现场问题</title><link>https://sensor.fans/posts/_7ifyuhvjfspoqpfkbsqoq/</link><pubDate>Sat, 12 Sep 2026 08:29:00 +0800</pubDate><guid>https://sensor.fans/posts/_7ifyuhvjfspoqpfkbsqoq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/8274f535cc6d772c3fcf88941f666f49.webp" alt="12万转、1μs、16位：读完 KTH7815 对比 AS5047P，几个规格表之外的现场问题" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>刚看完满度科技这篇《&lt;a href="http://mp.weixin.qq.com/s?__biz=MzkzODk0NDQ2Mw==&amp;amp;mid=2247485043&amp;amp;idx=1&amp;amp;sn=d4ef5decf9a8c267a051295dc3d60f71&amp;amp;chksm=c3288b8a2f05882c405fdac38d3663c98e37fc2a4321cea42151188bd14243e3195f047929bb&amp;amp;scene=21&amp;amp;xtrack=1%EF%BC%83wechat_redirect">12万转、1μs延时、16位输出，昆泰芯 KTH7815 对比 AS5047P 优势在哪&lt;/a>》。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>参数&lt;/th>
+ &lt;th>昆泰芯 KTH7815&lt;/th>
+ &lt;th>ams AS5047P&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>核心分辨率&lt;/td>
+ &lt;td>16 位（65536 点/圈）&lt;/td>
+ &lt;td>14 位（16384 点/圈）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>非线性误差 INL&lt;/td>
+ &lt;td>±0.35°（典型）&lt;/td>
+ &lt;td>±0.8°（25°C 最佳摆放），全温区最高 ±1.2°&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>数据刷新/延时&lt;/td>
+ &lt;td>1μs&lt;/td>
+ &lt;td>SPI 读取路径 90–110μs（ABI/UVW 经 DAEC 后 1.5–1.9μs）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>最高转速&lt;/td>
+ &lt;td>120000rpm&lt;/td>
+ &lt;td>28000rpm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>工作磁场&lt;/td>
+ &lt;td>30–150mT&lt;/td>
+ &lt;td>35–70mT（低于 35mT 噪声变差）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>输出噪声（1σ）&lt;/td>
+ &lt;td>0.24°&lt;/td>
+ &lt;td>0.068°&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ABZ 分辨率&lt;/td>
+ &lt;td>4–4096 步/圈，任意整数可编程&lt;/td>
+ &lt;td>固定档位（25–1000 ppr 及 1024/512/256）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ABZ 输出形式&lt;/td>
+ &lt;td>差分 A/~A、B/~B、Z/~Z&lt;/td>
+ &lt;td>单端&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>配置存储&lt;/td>
+ &lt;td>MTP，125℃ 下 1000 次写入&lt;/td>
+ &lt;td>OTP，仅一次&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>磁场诊断&lt;/td>
+ &lt;td>MGH/MGL 独立报警引脚，阈值可编程&lt;/td>
+ &lt;td>需经 SPI 读取诊断标志&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>启动时间&lt;/td>
+ &lt;td>1ms（典型）&lt;/td>
+ &lt;td>最长 10ms&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ESD（HBM）&lt;/td>
+ &lt;td>±5kV&lt;/td>
+ &lt;td>±2kV&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>封装&lt;/td>
+ &lt;td>QFN-16L 3×3mm / SOP-8&lt;/td>
+ &lt;td>TSSOP-14（本体约 5×4.4mm）&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>原文已经把 16 位对 14 位、120000 rpm 对 28000 rpm、MTP 对 OTP、差分 ABZ 对单端 ABI 这些规格拆得很清楚了。下面不重复这些参数，只顺着其中几个数字，补一点规格表之外的工程语义。&lt;/p></description></item></channel></rss>

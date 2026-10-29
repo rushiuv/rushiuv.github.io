@@ -1,24 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>AI选型 on 如是有为</title>
-		<link>https://sensor.fans/tags/ai%E9%80%89%E5%9E%8B/</link>
-		<description>Recent content in AI选型 on 如是有为</description>
-		<generator>Hugo</generator>
-		<language>zh-CN</language>
-		
-		
-		
-		
-			<lastBuildDate>Sat, 24 Oct 2026 11:00:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://sensor.fans/tags/ai%E9%80%89%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>DeepSeek 选芯片：同一颗编码器，换份资料就可能换个排名</title>
-				<link>https://sensor.fans/posts/deepseek-encoder-ai-selection/</link>
-				<pubDate>Sat, 24 Oct 2026 11:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/deepseek-encoder-ai-selection/</guid>
-				<description>&lt;section style=&#34;max-width:720px;margin:0 auto;background:#fff;padding:0 0 40px&#34;&gt;&#xD;&#xA;&lt;img src=&#34;https://sensor.fans/images/wx/deepseek-winverse-01.png&#34; alt=&#34;DeepSeek与机器人编码器的技术插画&#34; style=&#34;display:block;width:100%;height:auto&#34;/&gt;&#xD;&#xA;&lt;div style=&#34;padding:22px 16px 0;color:#25374a;font-size:16px;line-height:1.95&#34;&gt;&#xD;&#xA;&lt;p&gt;一颗芯片，电路没变，精度没变，价格也没变。只是往 DeepSeek 里多放了一份技术资料，它在推荐名单中的位置会不会发生变化？&lt;/p&gt;&#xD;&#xA;&lt;p&gt;这个问题挺有意思。尤其是磁编码器这种产品，型号多、参数相似，规格书里却藏着大量不能直接横向比较的条件。&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI选型 on 如是有为</title><link>https://sensor.fans/tags/ai%E9%80%89%E5%9E%8B/</link><description>Recent content in AI选型 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 24 Oct 2026 11:00:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/ai%E9%80%89%E5%9E%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>DeepSeek 选芯片：同一颗编码器，换份资料就可能换个排名</title><link>https://sensor.fans/posts/deepseek-encoder-ai-selection/</link><pubDate>Sat, 24 Oct 2026 11:00:00 +0800</pubDate><guid>https://sensor.fans/posts/deepseek-encoder-ai-selection/</guid><description>&lt;section style="max-width:720px;margin:0 auto;background:#fff;padding:0 0 40px">
+&lt;img src="https://sensor.fans/images/wx/deepseek-winverse-01.png" alt="DeepSeek与机器人编码器的技术插画" style="display:block;width:100%;height:auto"/>
+&lt;div style="padding:22px 16px 0;color:#25374a;font-size:16px;line-height:1.95">
+&lt;p>一颗芯片，电路没变，精度没变，价格也没变。只是往 DeepSeek 里多放了一份技术资料，它在推荐名单中的位置会不会发生变化？&lt;/p>
+&lt;p>这个问题挺有意思。尤其是磁编码器这种产品，型号多、参数相似，规格书里却藏着大量不能直接横向比较的条件。&lt;/p></description></item></channel></rss>

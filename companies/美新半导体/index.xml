@@ -1,52 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>美新半导体 on 如是有为</title>
-		<link>https://sensor.fans/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/</link>
-		<description>Recent content in 美新半导体 on 如是有为</description>
-		<generator>Hugo</generator>
-		<language>zh-CN</language>
-		
-		
-		
-		
-			<lastBuildDate>Sun, 11 Oct 2026 19:00:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://sensor.fans/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>38%增速！磁编码器成机器人最猛赛道？</title>
-				<link>https://sensor.fans/posts/22edc32a6ecb9dd0/</link>
-				<pubDate>Sun, 11 Oct 2026 19:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/22edc32a6ecb9dd0/</guid>
-				<description>&lt;p&gt;全球人形机器人关节用磁编码器市场规模约2400万美元，到2032年预计触及3.11亿美元，年复合增长率38%，是全部编码器细分口径中增速最高的一支。同期全球机器人编码环市场从1.65亿美元增至5.35亿美元，CAGR为18.2%。但这两个数字之间的“温差”本身就是一个值得追问的信号：器件在爆发，磁环未必在等比例受益。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>磁传感器出货全球第四，我更在意半年报里的两个动词，纳芯微2026半年报分析</title>
-				<link>https://sensor.fans/posts/xbsiw3xc6chcsawvw-rmqg/</link>
-				<pubDate>Tue, 15 Sep 2026 14:23:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/xbsiw3xc6chcsawvw-rmqg/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/f34fdfa7b3a6a98204ba6536b768bef4.webp&#34; alt=&#34;磁传感器出货全球第四，我更在意半年报里的两个动词，纳芯微2026半年报分析&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;8 月中旬，一批行业稿开始转同一句话：按 Yole《Magnetic Sensors 2026》，纳芯微磁传感器出货量全球第四、国产第一，2025 年单年出货超过 10 亿颗，累计超过 20 亿颗。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的</title>
-				<link>https://sensor.fans/posts/ih2xtjjwkhgykbn8zv1cwa/</link>
-				<pubDate>Tue, 25 Aug 2026 10:03:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/ih2xtjjwkhgykbn8zv1cwa/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/367e969f950eee5c8f1f49a293592d94.webp&#34; alt=&#34;一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;八月，美新半导体在芜湖办了一场产线启动、研究院揭牌暨新品发布会，发了一颗基于 AMR 的磁编码器。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/2c482e6c9c10fd63e9fe4d1c823f7cab.webp&#34; alt=&#34;一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;行业号转的基本都是同样几行参数：角度 INL 小于 ±0.07°，最大测量转速 12 万 RPM，3×3 mm 封装；官网产品页上写着 21 bit SPI 10 MHz、12 bit PWM、ABZ 1–16384 PPR、UVW，VDD 3–5.5 V。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>藏在机器人关节里的&#34;隐形冠军&#34;：磁编码器，一个被低估的百亿赛道</title>
-				<link>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</link>
-				<pubDate>Sat, 08 Aug 2026 07:30:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</guid>
-				<description>&lt;p&gt;当所有人都在谈论算力芯片、伺服电机和减速器时，有一个不起眼的小器件，正悄悄撑起整个机器人产业的精度天花板。它就是——磁编码器。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/e1dbff9cd5374c2558b0cbf815d336f2.png&#34; alt=&#34;藏在机器人关节里的&amp;#34;隐形冠军&amp;#34;：磁编码器，一个被低估的百亿赛道&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h3 id=&#34;01-一台人形机器人要用71个磁编码器&#34;&gt;01 一台人形机器人，要用71个磁编码器&lt;/h3&gt;&#xA;&lt;p&gt;2026年，人形机器人行业站在&amp;quot;量产元年&amp;quot;的风口上。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>赛峰Colibrys 把＂ 加速度计 校准表寿命 ＂做成了商品，国产加速度计走到哪一步了</title>
-				<link>https://sensor.fans/posts/13m4mp_brvrcikiph7bfvq/</link>
-				<pubDate>Thu, 14 May 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/13m4mp_brvrcikiph7bfvq/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/df40d54b3f47cdd3cb0f6adf2b971389.webp&#34; alt=&#34;赛峰Colibrys 把＂ 加速度计 校准表寿命 ＂做成了商品，国产加速度计走到哪一步了&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;7μghz挂在封面024mg压在寿命里&#34;&gt;7μg/√Hz挂在封面，0.24mg压在寿命里&lt;/h2&gt;&#xA;&lt;p&gt;Safran 体系里的 Colibrys，现在官方名称归在 Safran Timing Technologies 下面。公开资料写得很清楚：这家公司在瑞士 Yverdon-les-Bains，2013 年并入 Safran Electronics &amp;amp; Defense，核心能力就是高性能 MEMS 惯性微传感器，长期做高端电容式加速度计。MS1000 公开页面把几组数字直接摆在封面：±2g 档位下，long-term bias repeatability 0.24mg，in-run bias stability 3μg，noise in band 7μg/√Hz；官方同时把 long-term bias 和 scale factor repeatability 直接写进产品定义。&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>美新半导体 on 如是有为</title><link>https://sensor.fans/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/</link><description>Recent content in 美新半导体 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sun, 11 Oct 2026 19:00:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/companies/%E7%BE%8E%E6%96%B0%E5%8D%8A%E5%AF%BC%E4%BD%93/index.xml" rel="self" type="application/rss+xml"/><item><title>38%增速！磁编码器成机器人最猛赛道？</title><link>https://sensor.fans/posts/22edc32a6ecb9dd0/</link><pubDate>Sun, 11 Oct 2026 19:00:00 +0800</pubDate><guid>https://sensor.fans/posts/22edc32a6ecb9dd0/</guid><description>&lt;p>全球人形机器人关节用磁编码器市场规模约2400万美元，到2032年预计触及3.11亿美元，年复合增长率38%，是全部编码器细分口径中增速最高的一支。同期全球机器人编码环市场从1.65亿美元增至5.35亿美元，CAGR为18.2%。但这两个数字之间的“温差”本身就是一个值得追问的信号：器件在爆发，磁环未必在等比例受益。&lt;/p></description></item><item><title>磁传感器出货全球第四，我更在意半年报里的两个动词，纳芯微2026半年报分析</title><link>https://sensor.fans/posts/xbsiw3xc6chcsawvw-rmqg/</link><pubDate>Tue, 15 Sep 2026 14:23:00 +0800</pubDate><guid>https://sensor.fans/posts/xbsiw3xc6chcsawvw-rmqg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/f34fdfa7b3a6a98204ba6536b768bef4.webp" alt="磁传感器出货全球第四，我更在意半年报里的两个动词，纳芯微2026半年报分析" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>8 月中旬，一批行业稿开始转同一句话：按 Yole《Magnetic Sensors 2026》，纳芯微磁传感器出货量全球第四、国产第一，2025 年单年出货超过 10 亿颗，累计超过 20 亿颗。&lt;/p></description></item><item><title>一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的</title><link>https://sensor.fans/posts/ih2xtjjwkhgykbn8zv1cwa/</link><pubDate>Tue, 25 Aug 2026 10:03:00 +0800</pubDate><guid>https://sensor.fans/posts/ih2xtjjwkhgykbn8zv1cwa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/367e969f950eee5c8f1f49a293592d94.webp" alt="一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>八月，美新半导体在芜湖办了一场产线启动、研究院揭牌暨新品发布会，发了一颗基于 AMR 的磁编码器。&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/2c482e6c9c10fd63e9fe4d1c823f7cab.webp" alt="一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>行业号转的基本都是同样几行参数：角度 INL 小于 ±0.07°，最大测量转速 12 万 RPM，3×3 mm 封装；官网产品页上写着 21 bit SPI 10 MHz、12 bit PWM、ABZ 1–16384 PPR、UVW，VDD 3–5.5 V。&lt;/p></description></item><item><title>藏在机器人关节里的"隐形冠军"：磁编码器，一个被低估的百亿赛道</title><link>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</link><pubDate>Sat, 08 Aug 2026 07:30:00 +0800</pubDate><guid>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</guid><description>&lt;p>当所有人都在谈论算力芯片、伺服电机和减速器时，有一个不起眼的小器件，正悄悄撑起整个机器人产业的精度天花板。它就是——磁编码器。&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/e1dbff9cd5374c2558b0cbf815d336f2.png" alt="藏在机器人关节里的&amp;#34;隐形冠军&amp;#34;：磁编码器，一个被低估的百亿赛道" loading="lazy" decoding="async">
+&lt;/p>
+&lt;h3 id="01-一台人形机器人要用71个磁编码器">01 一台人形机器人，要用71个磁编码器&lt;/h3>
+&lt;p>2026年，人形机器人行业站在&amp;quot;量产元年&amp;quot;的风口上。&lt;/p></description></item><item><title>赛峰Colibrys 把＂ 加速度计 校准表寿命 ＂做成了商品，国产加速度计走到哪一步了</title><link>https://sensor.fans/posts/13m4mp_brvrcikiph7bfvq/</link><pubDate>Thu, 14 May 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/13m4mp_brvrcikiph7bfvq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/df40d54b3f47cdd3cb0f6adf2b971389.webp" alt="赛峰Colibrys 把＂ 加速度计 校准表寿命 ＂做成了商品，国产加速度计走到哪一步了" loading="lazy" decoding="async">
+&lt;/p>
+&lt;h2 id="7μghz挂在封面024mg压在寿命里">7μg/√Hz挂在封面，0.24mg压在寿命里&lt;/h2>
+&lt;p>Safran 体系里的 Colibrys，现在官方名称归在 Safran Timing Technologies 下面。公开资料写得很清楚：这家公司在瑞士 Yverdon-les-Bains，2013 年并入 Safran Electronics &amp;amp; Defense，核心能力就是高性能 MEMS 惯性微传感器，长期做高端电容式加速度计。MS1000 公开页面把几组数字直接摆在封面：±2g 档位下，long-term bias repeatability 0.24mg，in-run bias stability 3μg，noise in band 7μg/√Hz；官方同时把 long-term bias 和 scale factor repeatability 直接写进产品定义。&lt;/p></description></item></channel></rss>

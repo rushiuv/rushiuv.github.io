@@ -1,38 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Qualcomm on 如是有为</title>
-		<link>https://sensor.fans/companies/qualcomm/</link>
-		<description>Recent content in Qualcomm on 如是有为</description>
-		<generator>Hugo</generator>
-		<language>zh-CN</language>
-		
-		
-		
-		
-			<lastBuildDate>Fri, 31 Jul 2026 00:00:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://sensor.fans/companies/qualcomm/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>都在囤 GPU，两年前的 AI 服务器还没交货——可真正卡住机器人伺服的，是那颗没人囤、静态标 0.1° 一转起来却迟到 1.54° 的关节编码器</title>
-				<link>https://sensor.fans/posts/klyoodxsokt6vdq6xpgwjw/</link>
-				<pubDate>Fri, 31 Jul 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/klyoodxsokt6vdq6xpgwjw/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/136788793c44856dc7e8fee1abbbb054.webp&#34; alt=&#34;都在囤 GPU，两年前的 AI 服务器还没交货——可真正卡住机器人伺服的，是那颗没人囤、静态标 0.1° 一转起来却迟到 1.54° 的关节编码器&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;1 AI 抢的是先进制程，编码器却连被抢的资格都没有——它在 AI 基建投资里占比低到没人当回事。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>ams OSRAM AS5047P 标称 10MHz SPI，但 45cm 编码器电缆把 SCLK 上升沿拖到 180ns，会导致伺服驱动器校验错误和通信超时</title>
-				<link>https://sensor.fans/posts/7xmybyokh7_nf9fsudo8mq/</link>
-				<pubDate>Sun, 28 Jun 2026 11:54:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/7xmybyokh7_nf9fsudo8mq/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/d719055098ffd9617993b2d79771072a.webp&#34; alt=&#34;ams OSRAM AS5047P 标称 10MHz SPI，但 45cm 编码器电缆把 SCLK 上升沿拖到 180ns，会导致伺服驱动器校验错误和通信超时&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;上个月帮一个伺服驱动器客户排查编码器通信问题。客户一上来就说：“这批 AS5047P 可能有问题，我们已经换了 5 片，现象都一样。”&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>泡沫，不是芯片行业的病，而是它的青春期发烧</title>
-				<link>https://sensor.fans/posts/o0jxzrpsaagaqe4ta96bzq/</link>
-				<pubDate>Tue, 07 Oct 2025 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/o0jxzrpsaagaqe4ta96bzq/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/505f36d69643c47401665d448497f053.jpg&#34; alt=&#34;泡沫，不是芯片行业的病，而是它的青春期发烧&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;在芯片行业里，泡沫并非一个偶然的错误，而是系统给年轻产业的“高烧期”。那些烧掉的钱、失败的项目、倒闭的公司，不是被动的牺牲，而是整个产业肌体在进化时必须熬过的高烧与排毒期。&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Qualcomm on 如是有为</title><link>https://sensor.fans/companies/qualcomm/</link><description>Recent content in Qualcomm on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Fri, 31 Jul 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/companies/qualcomm/index.xml" rel="self" type="application/rss+xml"/><item><title>都在囤 GPU，两年前的 AI 服务器还没交货——可真正卡住机器人伺服的，是那颗没人囤、静态标 0.1° 一转起来却迟到 1.54° 的关节编码器</title><link>https://sensor.fans/posts/klyoodxsokt6vdq6xpgwjw/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/klyoodxsokt6vdq6xpgwjw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/136788793c44856dc7e8fee1abbbb054.webp" alt="都在囤 GPU，两年前的 AI 服务器还没交货——可真正卡住机器人伺服的，是那颗没人囤、静态标 0.1° 一转起来却迟到 1.54° 的关节编码器" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>1 AI 抢的是先进制程，编码器却连被抢的资格都没有——它在 AI 基建投资里占比低到没人当回事。&lt;/p></description></item><item><title>ams OSRAM AS5047P 标称 10MHz SPI，但 45cm 编码器电缆把 SCLK 上升沿拖到 180ns，会导致伺服驱动器校验错误和通信超时</title><link>https://sensor.fans/posts/7xmybyokh7_nf9fsudo8mq/</link><pubDate>Sun, 28 Jun 2026 11:54:00 +0800</pubDate><guid>https://sensor.fans/posts/7xmybyokh7_nf9fsudo8mq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/d719055098ffd9617993b2d79771072a.webp" alt="ams OSRAM AS5047P 标称 10MHz SPI，但 45cm 编码器电缆把 SCLK 上升沿拖到 180ns，会导致伺服驱动器校验错误和通信超时" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>上个月帮一个伺服驱动器客户排查编码器通信问题。客户一上来就说：“这批 AS5047P 可能有问题，我们已经换了 5 片，现象都一样。”&lt;/p></description></item><item><title>泡沫，不是芯片行业的病，而是它的青春期发烧</title><link>https://sensor.fans/posts/o0jxzrpsaagaqe4ta96bzq/</link><pubDate>Tue, 07 Oct 2025 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/o0jxzrpsaagaqe4ta96bzq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/505f36d69643c47401665d448497f053.jpg" alt="泡沫，不是芯片行业的病，而是它的青春期发烧" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>在芯片行业里，泡沫并非一个偶然的错误，而是系统给年轻产业的“高烧期”。那些烧掉的钱、失败的项目、倒闭的公司，不是被动的牺牲，而是整个产业肌体在进化时必须熬过的高烧与排毒期。&lt;/p></description></item></channel></rss>

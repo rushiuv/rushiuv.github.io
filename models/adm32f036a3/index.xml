@@ -1,24 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>ADM32F036A3 on 如是有为</title>
-		<link>https://sensor.fans/models/adm32f036a3/</link>
-		<description>Recent content in ADM32F036A3 on 如是有为</description>
-		<generator>Hugo</generator>
-		<language>zh-CN</language>
-		
-		
-		
-		
-			<lastBuildDate>Sat, 08 Aug 2026 19:08:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://sensor.fans/models/adm32f036a3/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>进芯科技ADM32F036A3 DSP 为何绕开三霍尔？5°电角错位恐怕先让鼓风机嗡起来</title>
-				<link>https://sensor.fans/posts/2_6eocnkflj4iflwzyfsuw/</link>
-				<pubDate>Sat, 08 Aug 2026 19:08:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/2_6eocnkflj4iflwzyfsuw/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/d42ffdc4984546b91752ef0f1c7c93eb.webp&#34; alt=&#34;进芯科技ADM32F036A3 DSP 为何绕开三霍尔？5°电角错位恐怕先让鼓风机嗡起来&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/e6df0138b779e3469e17b3a77799794f.png&#34; alt=&#34;进芯科技ADM32F036A3 DSP 为何绕开三霍尔？5°电角错位恐怕先让鼓风机嗡起来&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/d582db0a6447cdc8d4d3050a124a7db0.webp&#34; alt=&#34;进芯科技ADM32F036A3 DSP 为何绕开三霍尔？5°电角错位恐怕先让鼓风机嗡起来&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ADM32F036A3 on 如是有为</title><link>https://sensor.fans/models/adm32f036a3/</link><description>Recent content in ADM32F036A3 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 08 Aug 2026 19:08:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/models/adm32f036a3/index.xml" rel="self" type="application/rss+xml"/><item><title>进芯科技ADM32F036A3 DSP 为何绕开三霍尔？5°电角错位恐怕先让鼓风机嗡起来</title><link>https://sensor.fans/posts/2_6eocnkflj4iflwzyfsuw/</link><pubDate>Sat, 08 Aug 2026 19:08:00 +0800</pubDate><guid>https://sensor.fans/posts/2_6eocnkflj4iflwzyfsuw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/d42ffdc4984546b91752ef0f1c7c93eb.webp" alt="进芯科技ADM32F036A3 DSP 为何绕开三霍尔？5°电角错位恐怕先让鼓风机嗡起来" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/e6df0138b779e3469e17b3a77799794f.png" alt="进芯科技ADM32F036A3 DSP 为何绕开三霍尔？5°电角错位恐怕先让鼓风机嗡起来" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/d582db0a6447cdc8d4d3050a124a7db0.webp" alt="进芯科技ADM32F036A3 DSP 为何绕开三霍尔？5°电角错位恐怕先让鼓风机嗡起来" loading="lazy" decoding="async">
+&lt;/p></description></item></channel></rss>

@@ -1,66 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>TMR3111 on 如是有为</title>
-		<link>https://sensor.fans/models/tmr3111/</link>
-		<description>Recent content in TMR3111 on 如是有为</description>
-		<generator>Hugo</generator>
-		<language>zh-CN</language>
-		
-		
-		
-		
-			<lastBuildDate>Sat, 08 Aug 2026 07:30:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://sensor.fans/models/tmr3111/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>藏在机器人关节里的&#34;隐形冠军&#34;：磁编码器，一个被低估的百亿赛道</title>
-				<link>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</link>
-				<pubDate>Sat, 08 Aug 2026 07:30:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</guid>
-				<description>&lt;p&gt;当所有人都在谈论算力芯片、伺服电机和减速器时，有一个不起眼的小器件，正悄悄撑起整个机器人产业的精度天花板。它就是——磁编码器。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/e1dbff9cd5374c2558b0cbf815d336f2.png&#34; alt=&#34;藏在机器人关节里的&amp;#34;隐形冠军&amp;#34;：磁编码器，一个被低估的百亿赛道&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h3 id=&#34;01-一台人形机器人要用71个磁编码器&#34;&gt;01 一台人形机器人，要用71个磁编码器&lt;/h3&gt;&#xA;&lt;p&gt;2026年，人形机器人行业站在&amp;quot;量产元年&amp;quot;的风口上。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>小鹏、比亚迪同时把人形机器人推向量产, 国产编码器牌桌已坐满</title>
-				<link>https://sensor.fans/posts/twechy_ioxs1vbsstfs8tg/</link>
-				<pubDate>Sat, 01 Aug 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/twechy_ioxs1vbsstfs8tg/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/b7c2f98b1a160237fdfbd100d8651015.webp&#34; alt=&#34;小鹏、比亚迪同时把人形机器人推向量产, 国产编码器牌桌已坐满&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;关节编码器的国产牌桌已经坐满了&lt;/p&gt;&#xA;&lt;p&gt;一线编码器工程师视角：五条国产路线，五种不同的上车逻辑&lt;/p&gt;&#xA;&lt;p&gt;7月24日，小鹏IRON人形机器人在广州工厂开启小批量试生产。四天之后，比亚迪确认，人形机器人将在8月于“迪空间”正式亮相。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>都在囤 GPU，两年前的 AI 服务器还没交货——可真正卡住机器人伺服的，是那颗没人囤、静态标 0.1° 一转起来却迟到 1.54° 的关节编码器</title>
-				<link>https://sensor.fans/posts/klyoodxsokt6vdq6xpgwjw/</link>
-				<pubDate>Fri, 31 Jul 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/klyoodxsokt6vdq6xpgwjw/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/136788793c44856dc7e8fee1abbbb054.webp&#34; alt=&#34;都在囤 GPU，两年前的 AI 服务器还没交货——可真正卡住机器人伺服的，是那颗没人囤、静态标 0.1° 一转起来却迟到 1.54° 的关节编码器&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;1 AI 抢的是先进制程，编码器却连被抢的资格都没有——它在 AI 基建投资里占比低到没人当回事。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>TMR编码器可以转到 40000rpm，是＂跟得上＂不是＂测得准＂，高速下输出延迟有可能先吃掉 1.2°</title>
-				<link>https://sensor.fans/posts/983mrruk_vy2m3ftca2cdw/</link>
-				<pubDate>Sat, 11 Jul 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/983mrruk_vy2m3ftca2cdw/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/326fabc2b068e5b95e343b409f707c9d.webp&#34; alt=&#34;TMR编码器可以转到 40000rpm，是＂跟得上＂不是＂测得准＂，高速下输出延迟有可能先吃掉 1.2°&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;tmr3111d-标称-40000rpm是跟得上不是测得准高速下输出延迟先吃掉-12&#34;&gt;TMR3111D 标称 40000rpm，是&amp;quot;跟得上&amp;quot;不是&amp;quot;测得准&amp;quot;，高速下输出延迟先吃掉 1.2°&lt;/h2&gt;&#xA;&lt;p&gt;晚上十点半，微信弹出一条转发。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态</title>
-				<link>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</link>
-				<pubDate>Thu, 02 Jul 2026 00:01:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/65903afc31c4264ac111279d5b8f7599.webp&#34; alt=&#34;英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;6月2日，Infineon 把 XENSIV 磁传感器产品线正式扩展到 TMR。公告里没有给出一个能直接压过国产 TMR3111 的角度精度数字，但它把 TLI55910、TLI55950、TLI5570、TLI5572、TLE5571、TLE5502 这些位置、电流、过流和车规角度传感器，一起放进了 Hall、GMR、AMR、TMR 同一套磁传感矩阵里。Infineon 官方的说法也很明确：TMR 是对既有 Hall、GMR、AMR 方案的补充，而不是单独开一条孤立产品线。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>深度解析 ENX 22 EMT：瑞士maxon真正解决的，不是精度，而是电机旁边测得准、断电以后记得住</title>
-				<link>https://sensor.fans/posts/pyu3zowztlw9oeb2xbqfmw/</link>
-				<pubDate>Sat, 11 Apr 2026 00:01:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/pyu3zowztlw9oeb2xbqfmw/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/0d765f6f69cbe2e02c6e4edcbf5704fb.webp&#34; alt=&#34;深度解析 ENX 22 EMT：瑞士maxon真正解决的，不是精度，而是电机旁边测得准、断电以后记得住&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;很多人会把 ENX 22 EMT 理解成“一颗高端编码器芯片”。这其实不准。更准确的理解是：它是一套小型位置子系统。因为一套模块如果同时做到单圈 17 位、多圈 16 位、断电记圈、SSI/BiSS 差分输出，而且还能塞进 22 mm 这一类小型系统里，它内部大概率不可能只靠一颗单芯片硬扛，而是至少拆成三层：第一层负责单圈测角，第二层负责 Wiegand 取能与多圈记忆，第三层负责把单圈和多圈数据封装后通过 SSI/BiSS 输出给控制器。maxon 自己对外卖的也是模块，而不是裸芯片，甚至明确写了这类传感器“只能作为组合件的一部分购买”。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>江苏多维科技推出用于机器人关节的磁编码器方案</title>
-				<link>https://sensor.fans/posts/ojaz4uddfxg92t1gqjt3yg/</link>
-				<pubDate>Thu, 13 Mar 2025 20:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/ojaz4uddfxg92t1gqjt3yg/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/53259c55297986e5d379c92681256e38.jpg&#34; alt=&#34;江苏多维科技推出用于机器人关节的磁编码器方案&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;小尺寸，低成本，高精度&lt;/p&gt;&#xA;&lt;p&gt;对轴&amp;amp;离轴多种组合，高柔韧性&lt;/p&gt;&#xA;&lt;p&gt;2025年3月13日消息，专注于 AMR（各向异性磁阻）和 TMR（隧道磁阻）技术的磁传感器制造商江苏多维科技有限公司 (MultiDimension Technology Co., Ltd.，简称“MDT”) 为满足人形、犬型等机器人关节的闭环控制要求，推出多种基于TMR磁阻芯片的磁编码器方案。方案可以满足对轴和离轴多种组合使用，对安装要求低，具有小尺寸、低成本、高精度的特点。&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TMR3111 on 如是有为</title><link>https://sensor.fans/models/tmr3111/</link><description>Recent content in TMR3111 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 08 Aug 2026 07:30:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/models/tmr3111/index.xml" rel="self" type="application/rss+xml"/><item><title>藏在机器人关节里的"隐形冠军"：磁编码器，一个被低估的百亿赛道</title><link>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</link><pubDate>Sat, 08 Aug 2026 07:30:00 +0800</pubDate><guid>https://sensor.fans/posts/vtopm9yvml1kyox_adfdua/</guid><description>&lt;p>当所有人都在谈论算力芯片、伺服电机和减速器时，有一个不起眼的小器件，正悄悄撑起整个机器人产业的精度天花板。它就是——磁编码器。&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/e1dbff9cd5374c2558b0cbf815d336f2.png" alt="藏在机器人关节里的&amp;#34;隐形冠军&amp;#34;：磁编码器，一个被低估的百亿赛道" loading="lazy" decoding="async">
+&lt;/p>
+&lt;h3 id="01-一台人形机器人要用71个磁编码器">01 一台人形机器人，要用71个磁编码器&lt;/h3>
+&lt;p>2026年，人形机器人行业站在&amp;quot;量产元年&amp;quot;的风口上。&lt;/p></description></item><item><title>小鹏、比亚迪同时把人形机器人推向量产, 国产编码器牌桌已坐满</title><link>https://sensor.fans/posts/twechy_ioxs1vbsstfs8tg/</link><pubDate>Sat, 01 Aug 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/twechy_ioxs1vbsstfs8tg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/b7c2f98b1a160237fdfbd100d8651015.webp" alt="小鹏、比亚迪同时把人形机器人推向量产, 国产编码器牌桌已坐满" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>关节编码器的国产牌桌已经坐满了&lt;/p>
+&lt;p>一线编码器工程师视角：五条国产路线，五种不同的上车逻辑&lt;/p>
+&lt;p>7月24日，小鹏IRON人形机器人在广州工厂开启小批量试生产。四天之后，比亚迪确认，人形机器人将在8月于“迪空间”正式亮相。&lt;/p></description></item><item><title>都在囤 GPU，两年前的 AI 服务器还没交货——可真正卡住机器人伺服的，是那颗没人囤、静态标 0.1° 一转起来却迟到 1.54° 的关节编码器</title><link>https://sensor.fans/posts/klyoodxsokt6vdq6xpgwjw/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/klyoodxsokt6vdq6xpgwjw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/136788793c44856dc7e8fee1abbbb054.webp" alt="都在囤 GPU，两年前的 AI 服务器还没交货——可真正卡住机器人伺服的，是那颗没人囤、静态标 0.1° 一转起来却迟到 1.54° 的关节编码器" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>1 AI 抢的是先进制程，编码器却连被抢的资格都没有——它在 AI 基建投资里占比低到没人当回事。&lt;/p></description></item><item><title>TMR编码器可以转到 40000rpm，是＂跟得上＂不是＂测得准＂，高速下输出延迟有可能先吃掉 1.2°</title><link>https://sensor.fans/posts/983mrruk_vy2m3ftca2cdw/</link><pubDate>Sat, 11 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/983mrruk_vy2m3ftca2cdw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/326fabc2b068e5b95e343b409f707c9d.webp" alt="TMR编码器可以转到 40000rpm，是＂跟得上＂不是＂测得准＂，高速下输出延迟有可能先吃掉 1.2°" loading="lazy" decoding="async">
+&lt;/p>
+&lt;h2 id="tmr3111d-标称-40000rpm是跟得上不是测得准高速下输出延迟先吃掉-12">TMR3111D 标称 40000rpm，是&amp;quot;跟得上&amp;quot;不是&amp;quot;测得准&amp;quot;，高速下输出延迟先吃掉 1.2°&lt;/h2>
+&lt;p>晚上十点半，微信弹出一条转发。&lt;/p></description></item><item><title>英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态</title><link>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</link><pubDate>Thu, 02 Jul 2026 00:01:00 +0800</pubDate><guid>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/65903afc31c4264ac111279d5b8f7599.webp" alt="英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>6月2日，Infineon 把 XENSIV 磁传感器产品线正式扩展到 TMR。公告里没有给出一个能直接压过国产 TMR3111 的角度精度数字，但它把 TLI55910、TLI55950、TLI5570、TLI5572、TLE5571、TLE5502 这些位置、电流、过流和车规角度传感器，一起放进了 Hall、GMR、AMR、TMR 同一套磁传感矩阵里。Infineon 官方的说法也很明确：TMR 是对既有 Hall、GMR、AMR 方案的补充，而不是单独开一条孤立产品线。&lt;/p></description></item><item><title>深度解析 ENX 22 EMT：瑞士maxon真正解决的，不是精度，而是电机旁边测得准、断电以后记得住</title><link>https://sensor.fans/posts/pyu3zowztlw9oeb2xbqfmw/</link><pubDate>Sat, 11 Apr 2026 00:01:00 +0800</pubDate><guid>https://sensor.fans/posts/pyu3zowztlw9oeb2xbqfmw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/0d765f6f69cbe2e02c6e4edcbf5704fb.webp" alt="深度解析 ENX 22 EMT：瑞士maxon真正解决的，不是精度，而是电机旁边测得准、断电以后记得住" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>很多人会把 ENX 22 EMT 理解成“一颗高端编码器芯片”。这其实不准。更准确的理解是：它是一套小型位置子系统。因为一套模块如果同时做到单圈 17 位、多圈 16 位、断电记圈、SSI/BiSS 差分输出，而且还能塞进 22 mm 这一类小型系统里，它内部大概率不可能只靠一颗单芯片硬扛，而是至少拆成三层：第一层负责单圈测角，第二层负责 Wiegand 取能与多圈记忆，第三层负责把单圈和多圈数据封装后通过 SSI/BiSS 输出给控制器。maxon 自己对外卖的也是模块，而不是裸芯片，甚至明确写了这类传感器“只能作为组合件的一部分购买”。&lt;/p></description></item><item><title>江苏多维科技推出用于机器人关节的磁编码器方案</title><link>https://sensor.fans/posts/ojaz4uddfxg92t1gqjt3yg/</link><pubDate>Thu, 13 Mar 2025 20:00:00 +0800</pubDate><guid>https://sensor.fans/posts/ojaz4uddfxg92t1gqjt3yg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/53259c55297986e5d379c92681256e38.jpg" alt="江苏多维科技推出用于机器人关节的磁编码器方案" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>小尺寸，低成本，高精度&lt;/p>
+&lt;p>对轴&amp;amp;离轴多种组合，高柔韧性&lt;/p>
+&lt;p>2025年3月13日消息，专注于 AMR（各向异性磁阻）和 TMR（隧道磁阻）技术的磁传感器制造商江苏多维科技有限公司 (MultiDimension Technology Co., Ltd.，简称“MDT”) 为满足人形、犬型等机器人关节的闭环控制要求，推出多种基于TMR磁阻芯片的磁编码器方案。方案可以满足对轴和离轴多种组合使用，对安装要求低，具有小尺寸、低成本、高精度的特点。&lt;/p></description></item></channel></rss>

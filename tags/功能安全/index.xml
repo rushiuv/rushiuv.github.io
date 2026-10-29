@@ -1,80 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>功能安全 on 如是有为</title>
-		<link>https://sensor.fans/tags/%E5%8A%9F%E8%83%BD%E5%AE%89%E5%85%A8/</link>
-		<description>Recent content in 功能安全 on 如是有为</description>
-		<generator>Hugo</generator>
-		<language>zh-CN</language>
-		
-		
-		
-		
-			<lastBuildDate>Thu, 01 Oct 2026 00:21:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://sensor.fans/tags/%E5%8A%9F%E8%83%BD%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>机器人都做到功能安全了，编码器还只会报一个角度？</title>
-				<link>https://sensor.fans/posts/kdjd2k2jsmmtt75dxb6pcg/</link>
-				<pubDate>Thu, 01 Oct 2026 00:21:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/kdjd2k2jsmmtt75dxb6pcg/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/9d14bc22b7219b2f7b53b04fc06e850a.webp&#34; alt=&#34;机器人都做到功能安全了，编码器还只会报一个角度？&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;最近看机器人功能安全，我突然发现一个挺有意思的问题。&lt;/p&gt;&#xA;&lt;p&gt;假设一台机器人手臂正在高速运动，某个关节的编码器此刻告诉控制器：&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;37.26°。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;控制器相信了。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>3 万块的人形机器人，把编码器逼到了另一个赛道</title>
-				<link>https://sensor.fans/posts/zxgpgxrxcin7odkdoad9_q/</link>
-				<pubDate>Wed, 23 Sep 2026 01:44:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/zxgpgxrxcin7odkdoad9_q/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/660107586432b7095e755473e26bb609.webp&#34; alt=&#34;3 万块的人形机器人，把编码器逼到了另一个赛道&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;当硬件先便宜下来，真正开始变贵的，是可信、验证和责任。对编码器来说，下一轮竞争可能不再是谁把角度做得更漂亮，而是谁敢让几百万个关节，连续几年相信那个角度。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>从体系合规到产品安全：昆泰芯获ISO 26262汽车功能安全产品证书</title>
-				<link>https://sensor.fans/posts/qkc0f3u7rc1fnl-i7wkna/</link>
-				<pubDate>Tue, 22 Sep 2026 18:09:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/qkc0f3u7rc1fnl-i7wkna/</guid>
-				<description>&lt;p&gt;&lt;strong&gt;近日，TÜV北德（TÜV NORD）正式向昆泰芯微电子颁发 ISO 26262:2018 汽车功能安全产品证书。&lt;/strong&gt;TÜV北德功能安全总监郑威、昆泰芯CTO陈宏雷及项目核心团队共同参与证书颁发仪式，共同见证这一国产车规传感芯片领域的重要里程碑。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>机器人终于开始考功能安全了：NVIDIA把卷子发下来，下一个可能就是编码器</title>
-				<link>https://sensor.fans/posts/boh6pe6lawfeu_qee7nkta/</link>
-				<pubDate>Tue, 22 Sep 2026 07:44:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/boh6pe6lawfeu_qee7nkta/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/%e5%a6%82%e6%98%af%e6%9c%89%e4%b8%ba_20260922_2647878640_1_01.png&#34; alt=&#34;机器人终于开始考功能安全了：NVIDIA把卷子发下来，下一个可能就是编码器&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;我一直有一个判断：&lt;strong&gt;编码器在汽车上，ISO 26262 这张卷子已经考了很多年；到了机器人关节，却一直没人真正出卷子。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;大家选机器人编码器，问得最多的还是精度多少、分辨率多少、延时多少、最高转速多少。客户会问 SPI 多快，会不会丢码，温漂怎么样，磁铁偏一点还能不能用。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>BMW 把人形机器人放进车间后：功能安全到底按哪本国际标准算？  到底什么才是功能安全 ？</title>
-				<link>https://sensor.fans/posts/jblxqmr1yyf4wej1yxwe5g/</link>
-				<pubDate>Mon, 21 Sep 2026 13:59:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/jblxqmr1yyf4wej1yxwe5g/</guid>
-				<description>&lt;p&gt;· BMW 的公开信息证明人形机器人已在真实产线承担重复动作，但不证明它获得了某项功能安全认证。&lt;/p&gt;&#xA;&lt;p&gt;· ISO 10218、ISO 13849、IEC 62061、IEC 61508 与 ISO/TS 15066 分别管不同边界。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>多维科技车规级TMR3081角度传感器芯片赋能汽车电子高精度位置检测</title>
-				<link>https://sensor.fans/posts/c7caa27f7904c9f6/</link>
-				<pubDate>Fri, 17 Jul 2026 20:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/c7caa27f7904c9f6/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/465b1f1d0f9bb06a8654ba41b9e1e4d1.png&#34; alt=&#34;多维科技车规级TMR3081角度传感器芯片赋能汽车电子高精度位置检测&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;随着全球电动汽车市场高速增长和汽车智能等级的提升，汽车电子系统对角度传感器的精度、鲁棒性和功能安全性提出了更为严苛的要求。多维科技自主研发的TMR3081角度传感器芯片，基于领先的隧穿磁阻（TMR）技术，集高精度、宽温区稳定性和强环境适应性于一身，可为IBS、EMB、电子水阀、油泵等汽车电子应用提供兼具高性能与高可靠性的角度检测方案。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Allegro 冗余电感编码器新申请：同板线圈串扰消不掉，就用它判断坏通道会不会拖偏位置反馈</title>
-				<link>https://sensor.fans/posts/zrig_toopp0nlhgpgnjkoa/</link>
-				<pubDate>Tue, 07 Jul 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/zrig_toopp0nlhgpgnjkoa/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/b31243cd40de3051ddf430864b3ddcb3.webp&#34; alt=&#34;Allegro 冗余电感编码器新申请：同板线圈串扰消不掉，就用它判断坏通道会不会拖偏位置反馈&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;这篇拆的是 Allegro 一件新公开的冗余电感编码器相关申请。&lt;/p&gt;&#xA;&lt;p&gt;严格说，专利原文讲的是 &lt;strong&gt;redundant inductive sensor system&lt;/strong&gt;。本文按编码器工程语境来讲，因为它最后影响的是 &lt;strong&gt;角度、位置反馈和冗余通道可信度&lt;/strong&gt;。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态</title>
-				<link>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</link>
-				<pubDate>Thu, 02 Jul 2026 00:01:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/65903afc31c4264ac111279d5b8f7599.webp&#34; alt=&#34;英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;6月2日，Infineon 把 XENSIV 磁传感器产品线正式扩展到 TMR。公告里没有给出一个能直接压过国产 TMR3111 的角度精度数字，但它把 TLI55910、TLI55950、TLI5570、TLI5572、TLE5571、TLE5502 这些位置、电流、过流和车规角度传感器，一起放进了 Hall、GMR、AMR、TMR 同一套磁传感矩阵里。Infineon 官方的说法也很明确：TMR 是对既有 Hall、GMR、AMR 方案的补充，而不是单独开一条孤立产品线。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>300台人形机器人要跑半马，谁来保证关节编码器不在第3公里就“瞎眼”？</title>
-				<link>https://sensor.fans/posts/ekrfs6w-czoxyyxeumz_ja/</link>
-				<pubDate>Mon, 30 Mar 2026 13:26:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/ekrfs6w-czoxyyxeumz_ja/</guid>
-				<description>&lt;p&gt;4月19日，北京亦庄，300多台人形机器人要在同一条半马赛道上开跑。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/54fa4d5c45a1c723daeed101a401c16a.jpg&#34; alt=&#34;300台人形机器人要跑半马，谁来保证关节编码器不在第3公里就“瞎眼”？&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;一半马不是秀场是一场把编码器拖上赛道的压力测试&#34;&gt;一、半马不是秀场，是一场把编码器拖上赛道的压力测试&lt;/h2&gt;&#xA;&lt;p&gt;这个新闻最吸睛的地方，表面上是“人形机器人终于开始像人一样跑步了”，但真正让硬件工程师后背发紧的，根本不是热闹，而是另一个问题：这21.0975公里，不是谁先跑完就算谁赢，而是谁能在整整几万步的重复冲击里，始终不把自己的位置感知跑丢。2026北京亦庄人形机器人半程马拉松目前公开的信息很明确，比赛将于4月19日举行，报名申请来自76家主体、超百支队伍，覆盖26个品牌、300余台人形机器人，其中自主导航参赛队伍占比约38%。这已经不是一场小圈子的技术秀了，它更像一次公开的、长时间的、带负载的系统压力测试。&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>功能安全 on 如是有为</title><link>https://sensor.fans/tags/%E5%8A%9F%E8%83%BD%E5%AE%89%E5%85%A8/</link><description>Recent content in 功能安全 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Thu, 01 Oct 2026 00:21:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E5%8A%9F%E8%83%BD%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>机器人都做到功能安全了，编码器还只会报一个角度？</title><link>https://sensor.fans/posts/kdjd2k2jsmmtt75dxb6pcg/</link><pubDate>Thu, 01 Oct 2026 00:21:00 +0800</pubDate><guid>https://sensor.fans/posts/kdjd2k2jsmmtt75dxb6pcg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/9d14bc22b7219b2f7b53b04fc06e850a.webp" alt="机器人都做到功能安全了，编码器还只会报一个角度？" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>最近看机器人功能安全，我突然发现一个挺有意思的问题。&lt;/p>
+&lt;p>假设一台机器人手臂正在高速运动，某个关节的编码器此刻告诉控制器：&lt;/p>
+&lt;p>&lt;strong>37.26°。&lt;/strong>&lt;/p>
+&lt;p>控制器相信了。&lt;/p></description></item><item><title>3 万块的人形机器人，把编码器逼到了另一个赛道</title><link>https://sensor.fans/posts/zxgpgxrxcin7odkdoad9_q/</link><pubDate>Wed, 23 Sep 2026 01:44:00 +0800</pubDate><guid>https://sensor.fans/posts/zxgpgxrxcin7odkdoad9_q/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/660107586432b7095e755473e26bb609.webp" alt="3 万块的人形机器人，把编码器逼到了另一个赛道" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>当硬件先便宜下来，真正开始变贵的，是可信、验证和责任。对编码器来说，下一轮竞争可能不再是谁把角度做得更漂亮，而是谁敢让几百万个关节，连续几年相信那个角度。&lt;/p></description></item><item><title>从体系合规到产品安全：昆泰芯获ISO 26262汽车功能安全产品证书</title><link>https://sensor.fans/posts/qkc0f3u7rc1fnl-i7wkna/</link><pubDate>Tue, 22 Sep 2026 18:09:00 +0800</pubDate><guid>https://sensor.fans/posts/qkc0f3u7rc1fnl-i7wkna/</guid><description>&lt;p>&lt;strong>近日，TÜV北德（TÜV NORD）正式向昆泰芯微电子颁发 ISO 26262:2018 汽车功能安全产品证书。&lt;/strong>TÜV北德功能安全总监郑威、昆泰芯CTO陈宏雷及项目核心团队共同参与证书颁发仪式，共同见证这一国产车规传感芯片领域的重要里程碑。&lt;/p></description></item><item><title>机器人终于开始考功能安全了：NVIDIA把卷子发下来，下一个可能就是编码器</title><link>https://sensor.fans/posts/boh6pe6lawfeu_qee7nkta/</link><pubDate>Tue, 22 Sep 2026 07:44:00 +0800</pubDate><guid>https://sensor.fans/posts/boh6pe6lawfeu_qee7nkta/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/%e5%a6%82%e6%98%af%e6%9c%89%e4%b8%ba_20260922_2647878640_1_01.png" alt="机器人终于开始考功能安全了：NVIDIA把卷子发下来，下一个可能就是编码器" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>我一直有一个判断：&lt;strong>编码器在汽车上，ISO 26262 这张卷子已经考了很多年；到了机器人关节，却一直没人真正出卷子。&lt;/strong>&lt;/p>
+&lt;p>大家选机器人编码器，问得最多的还是精度多少、分辨率多少、延时多少、最高转速多少。客户会问 SPI 多快，会不会丢码，温漂怎么样，磁铁偏一点还能不能用。&lt;/p></description></item><item><title>BMW 把人形机器人放进车间后：功能安全到底按哪本国际标准算？ 到底什么才是功能安全 ？</title><link>https://sensor.fans/posts/jblxqmr1yyf4wej1yxwe5g/</link><pubDate>Mon, 21 Sep 2026 13:59:00 +0800</pubDate><guid>https://sensor.fans/posts/jblxqmr1yyf4wej1yxwe5g/</guid><description>&lt;p>· BMW 的公开信息证明人形机器人已在真实产线承担重复动作，但不证明它获得了某项功能安全认证。&lt;/p>
+&lt;p>· ISO 10218、ISO 13849、IEC 62061、IEC 61508 与 ISO/TS 15066 分别管不同边界。&lt;/p></description></item><item><title>多维科技车规级TMR3081角度传感器芯片赋能汽车电子高精度位置检测</title><link>https://sensor.fans/posts/c7caa27f7904c9f6/</link><pubDate>Fri, 17 Jul 2026 20:00:00 +0800</pubDate><guid>https://sensor.fans/posts/c7caa27f7904c9f6/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/465b1f1d0f9bb06a8654ba41b9e1e4d1.png" alt="多维科技车规级TMR3081角度传感器芯片赋能汽车电子高精度位置检测" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>随着全球电动汽车市场高速增长和汽车智能等级的提升，汽车电子系统对角度传感器的精度、鲁棒性和功能安全性提出了更为严苛的要求。多维科技自主研发的TMR3081角度传感器芯片，基于领先的隧穿磁阻（TMR）技术，集高精度、宽温区稳定性和强环境适应性于一身，可为IBS、EMB、电子水阀、油泵等汽车电子应用提供兼具高性能与高可靠性的角度检测方案。&lt;/p></description></item><item><title>Allegro 冗余电感编码器新申请：同板线圈串扰消不掉，就用它判断坏通道会不会拖偏位置反馈</title><link>https://sensor.fans/posts/zrig_toopp0nlhgpgnjkoa/</link><pubDate>Tue, 07 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/zrig_toopp0nlhgpgnjkoa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/b31243cd40de3051ddf430864b3ddcb3.webp" alt="Allegro 冗余电感编码器新申请：同板线圈串扰消不掉，就用它判断坏通道会不会拖偏位置反馈" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>这篇拆的是 Allegro 一件新公开的冗余电感编码器相关申请。&lt;/p>
+&lt;p>严格说，专利原文讲的是 &lt;strong>redundant inductive sensor system&lt;/strong>。本文按编码器工程语境来讲，因为它最后影响的是 &lt;strong>角度、位置反馈和冗余通道可信度&lt;/strong>。&lt;/p></description></item><item><title>英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态</title><link>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</link><pubDate>Thu, 02 Jul 2026 00:01:00 +0800</pubDate><guid>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/65903afc31c4264ac111279d5b8f7599.webp" alt="英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>6月2日，Infineon 把 XENSIV 磁传感器产品线正式扩展到 TMR。公告里没有给出一个能直接压过国产 TMR3111 的角度精度数字，但它把 TLI55910、TLI55950、TLI5570、TLI5572、TLE5571、TLE5502 这些位置、电流、过流和车规角度传感器，一起放进了 Hall、GMR、AMR、TMR 同一套磁传感矩阵里。Infineon 官方的说法也很明确：TMR 是对既有 Hall、GMR、AMR 方案的补充，而不是单独开一条孤立产品线。&lt;/p></description></item><item><title>300台人形机器人要跑半马，谁来保证关节编码器不在第3公里就“瞎眼”？</title><link>https://sensor.fans/posts/ekrfs6w-czoxyyxeumz_ja/</link><pubDate>Mon, 30 Mar 2026 13:26:00 +0800</pubDate><guid>https://sensor.fans/posts/ekrfs6w-czoxyyxeumz_ja/</guid><description>&lt;p>4月19日，北京亦庄，300多台人形机器人要在同一条半马赛道上开跑。&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/54fa4d5c45a1c723daeed101a401c16a.jpg" alt="300台人形机器人要跑半马，谁来保证关节编码器不在第3公里就“瞎眼”？" loading="lazy" decoding="async">
+&lt;/p>
+&lt;h2 id="一半马不是秀场是一场把编码器拖上赛道的压力测试">一、半马不是秀场，是一场把编码器拖上赛道的压力测试&lt;/h2>
+&lt;p>这个新闻最吸睛的地方，表面上是“人形机器人终于开始像人一样跑步了”，但真正让硬件工程师后背发紧的，根本不是热闹，而是另一个问题：这21.0975公里，不是谁先跑完就算谁赢，而是谁能在整整几万步的重复冲击里，始终不把自己的位置感知跑丢。2026北京亦庄人形机器人半程马拉松目前公开的信息很明确，比赛将于4月19日举行，报名申请来自76家主体、超百支队伍，覆盖26个品牌、300余台人形机器人，其中自主导航参赛队伍占比约38%。这已经不是一场小圈子的技术秀了，它更像一次公开的、长时间的、带负载的系统压力测试。&lt;/p></description></item></channel></rss>

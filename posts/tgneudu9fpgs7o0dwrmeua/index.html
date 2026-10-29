@@ -1,261 +1,30 @@
-
-<!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light">
-<title>游标编码器为什么一定要互质：数学逻辑解析 · 如是有为</title>
-<meta name="description" content="在编码器行业里，“游标要互质”几乎已经成了一句口头禅。">
-<link rel="canonical" href="https://sensor.fans/posts/tgneudu9fpgs7o0dwrmeua/">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="author" content="如是有为"><meta name="keywords" content="磁编码器,电感编码器,离轴">
-<meta property="og:site_name" content="如是有为">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:title" content="游标编码器为什么一定要互质：数学逻辑解析 · 如是有为">
-<meta property="og:description" content="在编码器行业里，“游标要互质”几乎已经成了一句口头禅。">
-<meta property="og:url" content="https://sensor.fans/posts/tgneudu9fpgs7o0dwrmeua/">
-<meta property="og:image" content="https://sensor.fans/images/wx/38952330fc234ee26cb3b9d44323f3af.png">
-<meta property="og:type" content="article">
-<meta property="article:published_time" content="2026-04-20T00:00:00&#43;08:00"><meta property="article:tag" content="磁编码器"><meta property="article:tag" content="电感编码器"><meta property="article:tag" content="离轴">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="游标编码器为什么一定要互质：数学逻辑解析 · 如是有为">
-<meta name="twitter:description" content="在编码器行业里，“游标要互质”几乎已经成了一句口头禅。">
-<meta name="twitter:image" content="https://sensor.fans/images/wx/38952330fc234ee26cb3b9d44323f3af.png">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-16T00:00:00+00:00","datePublished":"2026-04-20T00:00:00+08:00","description":"在编码器行业里，“游标要互质”几乎已经成了一句口头禅。","headline":"游标编码器为什么一定要互质：数学逻辑解析","image":["https://sensor.fans/images/wx/38952330fc234ee26cb3b9d44323f3af.png"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/posts/tgneudu9fpgs7o0dwrmeua/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/posts/tgneudu9fpgs7o0dwrmeua/"}
-</script>
-
-<link rel="apple-touch-icon" href="/images/site/logo-512.png">
-<link rel="icon" href="/images/site/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/site.css?v=1793265260">
-<link rel="stylesheet" href="/css/wiki.css?v=1793265260">
-
-<link rel="stylesheet" href="/css/portal.css?v=20261016-home-cartoon">
-
-
-<link rel="stylesheet" href="/css/refined.css?v=a16db25ef576">
-
-
-
-
-
-
-
-</head>
-<body>
-<a class="skip-link" href="#main-content">跳到正文</a>
-<header class="site-header">
-  <div class="wrap bar">
-    <a class="brand" href="/"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
-  <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-    <path d="M16 4v5M24 4v5M32 4v5M16 39v5M24 39v5M32 39v5M4 16h5M4 24h5M4 32h5M39 16h5M39 24h5M39 32h5"/>
-  </g>
-  <rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/>
-  <path d="M30.5 17.2A9 9 0 1 0 32.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
-  <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
-</svg>
-<span class="brand-text"><span class="brand-title">如是有为</span><span class="brand-sub">编码器 · 位置反馈 · 研发与应用</span></span></a>
-    <nav aria-label="主导航">
-      <a href="/">首页</a>
-      <a href="/wiki/basics/">基础知识</a>
-      <a href="/wiki/">型号资料</a>
-      <a href="/applications/">应用场景</a>
-      <a href="/topics/">技术专题</a>
-      <a href="/companies/">公司品牌</a>
-      <a href="/archives/" aria-current="page">博客</a>
-    </nav>
-  </div>
-</header>
-
-<main class="wrap" id="main-content" tabindex="-1">
-<article class="post">
-  <header class="post-head">
-    <time class="date">2026.04.20 00:00</time>
-    <h1 class="post-title">游标编码器为什么一定要互质：数学逻辑解析</h1>
-    <p class="muted orig">首发于公众号「如是有为」 · <a href="https://mp.weixin.qq.com/s/TGNeUDu9fPGs7O0dwrmEuA" rel="noopener" target="_blank">查看原文</a></p>
-  </header>
-  <div class="content"><p>在编码器行业里，“游标要互质”几乎已经成了一句口头禅。</p>
-<p>做磁编码器的人知道，做双磁环时两个极对数最好互质。做电感编码器的人也知道，两组周期数最好互质。做光学双码道的人，讲到最后也常常会落到同一句话上：两个码道最好互质</p>
-<p><img src="/images/wx/38952330fc234ee26cb3b9d44323f3af.png" alt="游标编码器为什么一定要互质：数学逻辑解析" loading="lazy" decoding="async">
-</p>
-<p>这句话大家都会说，但很多时候也就停在“知道”这一层。再往下追，往往就只剩下一句“这是原理要求”。至于互质到底是什么，为什么一定要互质，互质到底保证了什么，很多人其实并没有真的把这件事在脑子里想明白。</p>
-<p>这篇文章就只讲这一件事，而且只用高中生能跟上的知识来讲。我们不区分磁、电感、光学，因为只要你面对的是“两码道游标”，背后的数学其实是同一件事。</p>
-<h2 id="先别讲游标先讲重复">先别讲游标，先讲“重复”</h2>
-<p>先把一切想简单一点。</p>
-<p>假设有一条码道，它在一整圈里重复 m 次。<br>
-这意味着什么？意味着你转完一圈，它会把同样的图案、同样的信号、同样的周期，重复出现 m 遍。</p>
-<p>如果 m=7，那它每转 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">1/7</annotation></semantics></math></span> 圈，信号看起来就会重复一次。<br>
-如果 m=32，那它每转 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>32</mn></mrow><annotation encoding="application/x-tex">1/32</annotation></semantics></math></span> 圈，信号也会重复一次。</p>
-<p>所以，单独一条高周期码道有一个天然问题：它很细，但它不唯一。</p>
-<p>它能告诉你，你现在落在某一类位置上。<br>
-但它不能告诉你，这个位置到底是整圈里的第几个。</p>
-<p>这就像一条圆形走廊上装了很多扇一模一样的门。你站到某一扇门前，可以看得很清楚，但你不知道这是第 1 扇，还是第 9 扇，还是第 17 扇。因为它们本来就是重复的。</p>
-<p>游标真正要做的事，就是把这个“重复”拆开。</p>
-<p><img src="/images/wx/6ba2c4a177ddba014b5dc68f7f07314c.webp" alt="游标编码器为什么一定要互质：数学逻辑解析" loading="lazy" decoding="async">
-</p>
-<h2 id="两条码道放在一起真正想要的不是更细而是唯一">两条码道放在一起，真正想要的不是“更细”，而是“唯一”</h2>
-<p>现在再加一条码道。</p>
-<p>第一条，一圈重复 m 次。<br>
-第二条，一圈重复 n 次。</p>
-<p>这时候系统看到的，不再是一个读数，而是一对读数。<br>
-也就是：第一条码道现在走到哪儿了，第二条码道现在走到哪儿了。</p>
-<p>绝对位置真正依赖的，不是哪一条码道单独不重复，而是这<strong>一对读数</strong>在整整一圈里不重复。</p>
-<p>只要一圈里每个机械位置对应的“双读数”都不一样，那绝对位置就成立了。<br>
-反过来，只要有两个不同机械位置，对应了同一对读数，那绝对位置就失败了。</p>
-<p>所以游标问题的本质，其实很朴素：</p>
-<p><strong>两条本来都会重复的码道，放在一起以后，能不能让整圈里的每个位置都拿到一个唯一的“双标签”。</strong></p>
-<p>互质，解决的就是这件事。</p>
-<p><img src="/images/wx/1800cc811c6360ba55cc0ec9136f2c4a.webp" alt="游标编码器为什么一定要互质：数学逻辑解析" loading="lazy" decoding="async">
-</p>
-<h2 id="为什么不互质一定不行">为什么不互质一定不行</h2>
-<p>假设两条码道一圈分别重复 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span> 次和 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span> 次，最大公约数为 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>gcd</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d=\gcd(m,n)&gt;1</annotation></semantics></math></span>。</p>
-<p>机械角只要前进 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">1/d</annotation></semantics></math></span> 圈，第一条码道就走了 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">m/d</annotation></semantics></math></span> 个周期，第二条码道走了 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">n/d</annotation></semantics></math></span> 个周期。两者都是整数，所以两条码道同时回到原来的相位。</p>
-<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>m</mi><mfrac><mn>1</mn><mi>d</mi></mfrac><mo>=</mo><mfrac><mi>m</mi><mi>d</mi></mfrac><mo>∈</mo><mi mathvariant="double-struck">Z</mi><mo separator="true">,</mo><mspace width="2em"/><mi>n</mi><mfrac><mn>1</mn><mi>d</mi></mfrac><mo>=</mo><mfrac><mi>n</mi><mi>d</mi></mfrac><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light"><title>游标编码器为什么一定要互质：数学逻辑解析 · 如是有为</title><meta name=description content="在编码器行业里，“游标要互质”几乎已经成了一句口头禅。"><link rel=canonical href=https://sensor.fans/posts/tgneudu9fpgs7o0dwrmeua/><meta name=robots content="index,follow,max-image-preview:large"><meta name=author content="如是有为"><meta name=keywords content="磁编码器,电感编码器,离轴"><meta property="og:site_name" content="如是有为"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="游标编码器为什么一定要互质：数学逻辑解析 · 如是有为"><meta property="og:description" content="在编码器行业里，“游标要互质”几乎已经成了一句口头禅。"><meta property="og:url" content="https://sensor.fans/posts/tgneudu9fpgs7o0dwrmeua/"><meta property="og:image" content="https://sensor.fans/images/wx/38952330fc234ee26cb3b9d44323f3af.png"><meta property="og:type" content="article"><meta property="article:published_time" content="2026-04-20T00:00:00+08:00"><meta property="article:tag" content="磁编码器"><meta property="article:tag" content="电感编码器"><meta property="article:tag" content="离轴"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="游标编码器为什么一定要互质：数学逻辑解析 · 如是有为"><meta name=twitter:description content="在编码器行业里，“游标要互质”几乎已经成了一句口头禅。"><meta name=twitter:image content="https://sensor.fans/images/wx/38952330fc234ee26cb3b9d44323f3af.png"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"如是有为","url":"https://sensor.fans/"},"dateModified":"2026-10-16T00:00:00+00:00","datePublished":"2026-04-20T00:00:00+08:00","description":"在编码器行业里，“游标要互质”几乎已经成了一句口头禅。","headline":"游标编码器为什么一定要互质：数学逻辑解析","image":["https://sensor.fans/images/wx/38952330fc234ee26cb3b9d44323f3af.png"],"inLanguage":"zh-CN","mainEntityOfPage":"https://sensor.fans/posts/tgneudu9fpgs7o0dwrmeua/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sensor.fans/images/site/logo-512.png"},"name":"如是有为"},"url":"https://sensor.fans/posts/tgneudu9fpgs7o0dwrmeua/"}</script><link rel=apple-touch-icon href=/images/site/logo-512.png><link rel=icon href=/images/site/favicon.svg type=image/svg+xml><link rel=stylesheet href="/css/site.css?v=1793265335"><link rel=stylesheet href="/css/wiki.css?v=1793265335"><link rel=stylesheet href="/css/portal.css?v=20261016-home-cartoon"><link rel=stylesheet href="/css/refined.css?v=26756a7aa46c"></head><body><a class=skip-link href=#main-content>跳到正文</a><header class=site-header><div class="wrap bar"><a class=brand href=/><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 4v5m8-5v5m8-5v5M16 39v5m8-5v5m8-5v5M4 16h5M4 24h5M4 32h5M39 16h5m-5 8h5m-5 8h5"/></g><rect x="9" y="9" width="30" height="30" rx="5" fill="#fff" stroke="currentColor" stroke-width="1.8"/><path d="M30.5 17.2A9 9 0 1032.6 26" fill="none" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.2" fill="currentColor"/></svg>
+<span class=brand-text><span class=brand-title>如是有为</span><span class=brand-sub>编码器 · 位置反馈 · 研发与应用</span></span></a><nav aria-label=主导航><a href=/>首页</a>
+<a href=/wiki/basics/>基础知识</a>
+<a href=/wiki/>型号资料</a>
+<a href=/applications/>应用场景</a>
+<a href=/topics/>技术专题</a>
+<a href=/companies/>公司品牌</a>
+<a href=/archives/ aria-current=page>博客</a></nav></div></header><main class=wrap id=main-content tabindex=-1><article class=post><header class=post-head><time class=date>2026.04.20 00:00</time><h1 class=post-title>游标编码器为什么一定要互质：数学逻辑解析</h1><p class="muted orig">首发于公众号「如是有为」 · <a href=https://mp.weixin.qq.com/s/TGNeUDu9fPGs7O0dwrmEuA rel=noopener target=_blank>查看原文</a></p></header><div class=content><p>在编码器行业里，“游标要互质”几乎已经成了一句口头禅。</p><p>做磁编码器的人知道，做双磁环时两个极对数最好互质。做电感编码器的人也知道，两组周期数最好互质。做光学双码道的人，讲到最后也常常会落到同一句话上：两个码道最好互质</p><p><img src=/images/wx/38952330fc234ee26cb3b9d44323f3af.png alt=游标编码器为什么一定要互质：数学逻辑解析 loading=lazy decoding=async></p><p>这句话大家都会说，但很多时候也就停在“知道”这一层。再往下追，往往就只剩下一句“这是原理要求”。至于互质到底是什么，为什么一定要互质，互质到底保证了什么，很多人其实并没有真的把这件事在脑子里想明白。</p><p>这篇文章就只讲这一件事，而且只用高中生能跟上的知识来讲。我们不区分磁、电感、光学，因为只要你面对的是“两码道游标”，背后的数学其实是同一件事。</p><h2 id=先别讲游标先讲重复>先别讲游标，先讲“重复”</h2><p>先把一切想简单一点。</p><p>假设有一条码道，它在一整圈里重复 m 次。<br>这意味着什么？意味着你转完一圈，它会把同样的图案、同样的信号、同样的周期，重复出现 m 遍。</p><p>如果 m=7，那它每转 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">1/7</annotation></semantics></math></span> 圈，信号看起来就会重复一次。<br>如果 m=32，那它每转 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>32</mn></mrow><annotation encoding="application/x-tex">1/32</annotation></semantics></math></span> 圈，信号也会重复一次。</p><p>所以，单独一条高周期码道有一个天然问题：它很细，但它不唯一。</p><p>它能告诉你，你现在落在某一类位置上。<br>但它不能告诉你，这个位置到底是整圈里的第几个。</p><p>这就像一条圆形走廊上装了很多扇一模一样的门。你站到某一扇门前，可以看得很清楚，但你不知道这是第 1 扇，还是第 9 扇，还是第 17 扇。因为它们本来就是重复的。</p><p>游标真正要做的事，就是把这个“重复”拆开。</p><p><img src=/images/wx/6ba2c4a177ddba014b5dc68f7f07314c.webp alt=游标编码器为什么一定要互质：数学逻辑解析 loading=lazy decoding=async></p><h2 id=两条码道放在一起真正想要的不是更细而是唯一>两条码道放在一起，真正想要的不是“更细”，而是“唯一”</h2><p>现在再加一条码道。</p><p>第一条，一圈重复 m 次。<br>第二条，一圈重复 n 次。</p><p>这时候系统看到的，不再是一个读数，而是一对读数。<br>也就是：第一条码道现在走到哪儿了，第二条码道现在走到哪儿了。</p><p>绝对位置真正依赖的，不是哪一条码道单独不重复，而是这<strong>一对读数</strong>在整整一圈里不重复。</p><p>只要一圈里每个机械位置对应的“双读数”都不一样，那绝对位置就成立了。<br>反过来，只要有两个不同机械位置，对应了同一对读数，那绝对位置就失败了。</p><p>所以游标问题的本质，其实很朴素：</p><p><strong>两条本来都会重复的码道，放在一起以后，能不能让整圈里的每个位置都拿到一个唯一的“双标签”。</strong></p><p>互质，解决的就是这件事。</p><p><img src=/images/wx/1800cc811c6360ba55cc0ec9136f2c4a.webp alt=游标编码器为什么一定要互质：数学逻辑解析 loading=lazy decoding=async></p><h2 id=为什么不互质一定不行>为什么不互质一定不行</h2><p>假设两条码道一圈分别重复 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span> 次和 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span> 次，最大公约数为 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>gcd</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d=\gcd(m,n)&gt;1</annotation></semantics></math></span>。</p><p>机械角只要前进 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">1/d</annotation></semantics></math></span> 圈，第一条码道就走了 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">m/d</annotation></semantics></math></span> 个周期，第二条码道走了 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">n/d</annotation></semantics></math></span> 个周期。两者都是整数，所以两条码道同时回到原来的相位。</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>m</mi><mfrac><mn>1</mn><mi>d</mi></mfrac><mo>=</mo><mfrac><mi>m</mi><mi>d</mi></mfrac><mo>∈</mo><mi mathvariant="double-struck">Z</mi><mo separator="true">,</mo><mspace width="2em"/><mi>n</mi><mfrac><mn>1</mn><mi>d</mi></mfrac><mo>=</mo><mfrac><mi>n</mi><mi>d</mi></mfrac><mo>∈</mo><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">
 m\frac{1}{d}=\frac{m}{d}\in\mathbb{Z},\qquad
 n\frac{1}{d}=\frac{n}{d}\in\mathbb{Z}
-</annotation></semantics></math></span><p>也就是说，组合读数每隔 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">1/d</annotation></semantics></math></span> 圈重复一次，一圈里有 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span> 个位置无法区分。</p>
-<p>例如 32 和 30 的最大公约数是 2。机械角前进半圈，两条码道分别走过 16 和 15 个完整周期，组合读数再次相同。</p>
-<p>所以不互质的问题，不只是误差大小，而是<strong>在一圈里提前重号</strong>。</p>
-<h2 id="为什么互质就可以">为什么互质就可以</h2>
-<p>用一个明确定义的例子：两条码道一圈分别重复 32 次和 31 次。</p>
-<p>把整圈分成 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>32</mn><mo>×</mo><mn>31</mn><mo>=</mo><mn>992</mn></mrow><annotation encoding="application/x-tex">32\times31=992</annotation></semantics></math></span> 格。第一条码道每走 31 格重复，第二条每走 32 格重复。两条同时重复时，格数必须同时是 31 和 32 的倍数，最小正值是 992，恰好一整圈。</p>
-<p>一般地，若 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>gcd</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d=\gcd(m,n)</annotation></semantics></math></span>，组合相位的最短重复周期为 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">1/d</annotation></semantics></math></span> 圈。互质时 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d=1</annotation></semantics></math></span>，所以只有走完整整一圈，才会同时回到原来的双读数。</p>
-<p><strong>两条码道各自都会重复，但不会在半路一起重复。</strong>这就是一圈内绝对位置能够唯一确定的原因。</p>
-<h2 id="互质更深的一层其实就是能不能拼出-1">互质更深的一层，其实就是“能不能拼出 1”</h2>
-<p>互质不只是“最大公约数为 1”。它还有一个等价说法：存在整数 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a,b</annotation></semantics></math></span>，使得</p>
-<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>a</mi><mi>m</mi><mo>+</mo><mi>b</mi><mi>n</mi><mo>=</mo><mn>1.</mn></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>也就是说，组合读数每隔 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">1/d</annotation></semantics></math></span> 圈重复一次，一圈里有 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span> 个位置无法区分。</p><p>例如 32 和 30 的最大公约数是 2。机械角前进半圈，两条码道分别走过 16 和 15 个完整周期，组合读数再次相同。</p><p>所以不互质的问题，不只是误差大小，而是<strong>在一圈里提前重号</strong>。</p><h2 id=为什么互质就可以>为什么互质就可以</h2><p>用一个明确定义的例子：两条码道一圈分别重复 32 次和 31 次。</p><p>把整圈分成 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>32</mn><mo>×</mo><mn>31</mn><mo>=</mo><mn>992</mn></mrow><annotation encoding="application/x-tex">32\times31=992</annotation></semantics></math></span> 格。第一条码道每走 31 格重复，第二条每走 32 格重复。两条同时重复时，格数必须同时是 31 和 32 的倍数，最小正值是 992，恰好一整圈。</p><p>一般地，若 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>gcd</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d=\gcd(m,n)</annotation></semantics></math></span>，组合相位的最短重复周期为 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">1/d</annotation></semantics></math></span> 圈。互质时 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d=1</annotation></semantics></math></span>，所以只有走完整整一圈，才会同时回到原来的双读数。</p><p><strong>两条码道各自都会重复，但不会在半路一起重复。</strong>这就是一圈内绝对位置能够唯一确定的原因。</p><h2 id=互质更深的一层其实就是能不能拼出-1>互质更深的一层，其实就是“能不能拼出 1”</h2><p>互质不只是“最大公约数为 1”。它还有一个等价说法：存在整数 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a,b</annotation></semantics></math></span>，使得</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>a</mi><mi>m</mi><mo>+</mo><mi>b</mi><mi>n</mi><mo>=</mo><mn>1.</mn></mrow><annotation encoding="application/x-tex">
 am+bn=1.
-</annotation></semantics></math></span><p>仍用 32 和 31 举例：<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>32</mn><mo>−</mo><mn>31</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">32-31=1</annotation></semantics></math></span>，所以取 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>b</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=1,b=-1</annotation></semantics></math></span> 就能拼出 1。</p>
-<p>对于不相邻的互质数，可以用欧几里得算法逐步相除，再反向代入。例如 7 和 32：</p>
-<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>32</mn><mo>=</mo><mn>4</mn><mo>×</mo><mn>7</mn><mo>+</mo><mn>4</mn><mo separator="true">,</mo><mspace width="2em"/><mn>7</mn><mo>=</mo><mn>1</mn><mo>×</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo separator="true">,</mo><mspace width="2em"/><mn>4</mn><mo>=</mo><mn>1</mn><mo>×</mo><mn>3</mn><mo>+</mo><mn>1.</mn></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>仍用 32 和 31 举例：<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>32</mn><mo>−</mo><mn>31</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">32-31=1</annotation></semantics></math></span>，所以取 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>b</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=1,b=-1</annotation></semantics></math></span> 就能拼出 1。</p><p>对于不相邻的互质数，可以用欧几里得算法逐步相除，再反向代入。例如 7 和 32：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>32</mn><mo>=</mo><mn>4</mn><mo>×</mo><mn>7</mn><mo>+</mo><mn>4</mn><mo separator="true">,</mo><mspace width="2em"/><mn>7</mn><mo>=</mo><mn>1</mn><mo>×</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo separator="true">,</mo><mspace width="2em"/><mn>4</mn><mo>=</mo><mn>1</mn><mo>×</mo><mn>3</mn><mo>+</mo><mn>1.</mn></mrow><annotation encoding="application/x-tex">
 32=4\times7+4,\qquad 7=1\times4+3,\qquad4=1\times3+1.
-</annotation></semantics></math></span><p>反向代入：</p>
-<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo>=</mo><mn>4</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>4</mn><mo>−</mo><mo stretchy="false">(</mo><mn>7</mn><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>4</mn><mo>−</mo><mn>7</mn><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>32</mn><mo>−</mo><mn>4</mn><mo>×</mo><mn>7</mn><mo stretchy="false">)</mo><mo>−</mo><mn>7</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>32</mn><mo>−</mo><mn>9</mn><mo>×</mo><mn>7.</mn></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>反向代入：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo>=</mo><mn>4</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>4</mn><mo>−</mo><mo stretchy="false">(</mo><mn>7</mn><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>×</mo><mn>4</mn><mo>−</mo><mn>7</mn><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>32</mn><mo>−</mo><mn>4</mn><mo>×</mo><mn>7</mn><mo stretchy="false">)</mo><mo>−</mo><mn>7</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>32</mn><mo>−</mo><mn>9</mn><mo>×</mo><mn>7.</mn></mrow><annotation encoding="application/x-tex">
 1=4-3=4-(7-4)=2\times4-7
 =2(32-4\times7)-7=2\times32-9\times7.
-</annotation></semantics></math></span><p>这个 1 不是凭空出现的，而是原来两个周期数的整数线性组合。互质保证这样的整数配比存在。</p>
-<h2 id="为什么不互质就永远拼不出-1">为什么不互质就永远拼不出 1</h2>
-<p>若 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo separator="true">,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m,n</annotation></semantics></math></span> 有公因数 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d&gt;1</annotation></semantics></math></span>，那么任意整数线性组合 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>m</mi><mo>+</mo><mi>b</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">am+bn</annotation></semantics></math></span> 也一定能被 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span> 整除，当然不可能等于 1。</p>
-<p>例如 32 和 30 都是偶数，无论取多少个 32 加减多少个 30，结果仍是偶数。</p>
-<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>gcd</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mspace width="1em"/><mo>⟺</mo><mspace width="1em"/><mi mathvariant="normal">∃</mi><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi><mo separator="true">,</mo><mtext>  </mtext><mi>a</mi><mi>m</mi><mo>+</mo><mi>b</mi><mi>n</mi><mo>=</mo><mn>1.</mn></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>这个 1 不是凭空出现的，而是原来两个周期数的整数线性组合。互质保证这样的整数配比存在。</p><h2 id=为什么不互质就永远拼不出-1>为什么不互质就永远拼不出 1</h2><p>若 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo separator="true">,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m,n</annotation></semantics></math></span> 有公因数 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d&gt;1</annotation></semantics></math></span>，那么任意整数线性组合 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>m</mi><mo>+</mo><mi>b</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">am+bn</annotation></semantics></math></span> 也一定能被 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span> 整除，当然不可能等于 1。</p><p>例如 32 和 30 都是偶数，无论取多少个 32 加减多少个 30，结果仍是偶数。</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>gcd</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mspace width="1em"/><mo>⟺</mo><mspace width="1em"/><mi mathvariant="normal">∃</mi><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>∈</mo><mi mathvariant="double-struck">Z</mi><mo separator="true">,</mo><mtext>  </mtext><mi>a</mi><mi>m</mi><mo>+</mo><mi>b</mi><mi>n</mi><mo>=</mo><mn>1.</mn></mrow><annotation encoding="application/x-tex">
 \gcd(m,n)=1\quad\Longleftrightarrow\quad
 \exists a,b\in\mathbb{Z},\;am+bn=1.
-</annotation></semantics></math></span><p>这就是互质背后的数学骨架。</p>
-<p><img src="/images/wx/d8852816202deceb45db975320031392.webp" alt="游标编码器为什么一定要互质：数学逻辑解析" loading="lazy" decoding="async">
-</p>
-<h2 id="这和游标到底是什么关系">这和游标到底是什么关系</h2>
-<p>现在就能把前面的几层全部连起来了。</p>
-<p>两条码道，一条一圈重复 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span> 次，一条一圈重复 <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span> 次。<br>
-互质保证的是：这两条码道放在一起以后，一圈里不会提前重号，所以绝对位置唯一。</p>
-<p>而更深一层，<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>m</mi><mo>+</mo><mi>b</mi><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">am+bn=1</annotation></semantics></math></span> 又告诉你：这两个周期数经过合适的整数配比，真的能够拼出最基本的“一个单位”。</p>
-<p>这句话放到游标里，意思非常直白：</p>
-<p><strong>这两条本来都在高速重复的码道，并不是只能各说各话。只要它们互质，它们就有能力通过合适的配比，把最小单位还原出来。</strong></p>
-<p>所以互质这件事，不只是“避免提前重复”，它还说明这两个周期数在数学上是“可解开的”。</p>
-<p>这就是为什么行业里总在说互质。只是过去很多时候，大家只记住了结论，没有把这件事想成一个完整的画面。</p>
-<h2 id="为什么相邻周期数特别顺手而不相邻的互质数也能用">为什么相邻周期数特别顺手，而不相邻的互质数也能用</h2>
-<p>讲到这里，再顺手把另一个常见混淆拆开。</p>
-<p>很多人把“互质”和“差值等于 1”混成一回事。其实不是。</p>
-<p>互质解决的是：<strong>能不能整圈唯一。</strong><br>
-差值等于 1 解决的是：<strong>最简单的差分是不是刚好就是机械角本身。</strong></p>
-<p>比如 32 和 31，它们互质，而且只差 1。<br>
-所以它不但整圈唯一，而且最简单的差分关系也特别漂亮。工程实现、算法表达、直觉理解，都很顺手。</p>
-<p>但 32 和 7 也互质，所以同样能做整圈唯一定位。只是它们相差 25，不能只用两路相位直接相减来还原机械角。</p>
-<p>所以这里一定要分清楚：</p>
-<p><strong>互质，决定能不能唯一。差值小，决定好不好用、简不简单。</strong></p>
-<p>先有前者，系统才成立。<br>
-后者是成立之后，再去讨论优雅程度和实现成本。</p>
-<h2 id="用5与3看看丢掉一路信息会发生什么">用5与3，看看丢掉一路信息会发生什么</h2>
-<p>把机械角按一圈归一为1，记作θ。设两路理想码道一圈分别重复5次和3次，先假定方向、零点和有效采样时刻都已对齐。</p>
-<p>两路读数分别是：</p>
-<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>p</mi><mn>5</mn></msub><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>5</mn><mi>θ</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="2em"/><msub><mi>p</mi><mn>3</mn></msub><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>3</mn><mi>θ</mi><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>这就是互质背后的数学骨架。</p><p><img src=/images/wx/d8852816202deceb45db975320031392.webp alt=游标编码器为什么一定要互质：数学逻辑解析 loading=lazy decoding=async></p><h2 id=这和游标到底是什么关系>这和游标到底是什么关系</h2><p>现在就能把前面的几层全部连起来了。</p><p>两条码道，一条一圈重复 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span> 次，一条一圈重复 <span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span> 次。<br>互质保证的是：这两条码道放在一起以后，一圈里不会提前重号，所以绝对位置唯一。</p><p>而更深一层，<span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>m</mi><mo>+</mo><mi>b</mi><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">am+bn=1</annotation></semantics></math></span> 又告诉你：这两个周期数经过合适的整数配比，真的能够拼出最基本的“一个单位”。</p><p>这句话放到游标里，意思非常直白：</p><p><strong>这两条本来都在高速重复的码道，并不是只能各说各话。只要它们互质，它们就有能力通过合适的配比，把最小单位还原出来。</strong></p><p>所以互质这件事，不只是“避免提前重复”，它还说明这两个周期数在数学上是“可解开的”。</p><p>这就是为什么行业里总在说互质。只是过去很多时候，大家只记住了结论，没有把这件事想成一个完整的画面。</p><h2 id=为什么相邻周期数特别顺手而不相邻的互质数也能用>为什么相邻周期数特别顺手，而不相邻的互质数也能用</h2><p>讲到这里，再顺手把另一个常见混淆拆开。</p><p>很多人把“互质”和“差值等于 1”混成一回事。其实不是。</p><p>互质解决的是：<strong>能不能整圈唯一。</strong><br>差值等于 1 解决的是：<strong>最简单的差分是不是刚好就是机械角本身。</strong></p><p>比如 32 和 31，它们互质，而且只差 1。<br>所以它不但整圈唯一，而且最简单的差分关系也特别漂亮。工程实现、算法表达、直觉理解，都很顺手。</p><p>但 32 和 7 也互质，所以同样能做整圈唯一定位。只是它们相差 25，不能只用两路相位直接相减来还原机械角。</p><p>所以这里一定要分清楚：</p><p><strong>互质，决定能不能唯一。差值小，决定好不好用、简不简单。</strong></p><p>先有前者，系统才成立。<br>后者是成立之后，再去讨论优雅程度和实现成本。</p><h2 id=用5与3看看丢掉一路信息会发生什么>用5与3，看看丢掉一路信息会发生什么</h2><p>把机械角按一圈归一为1，记作θ。设两路理想码道一圈分别重复5次和3次，先假定方向、零点和有效采样时刻都已对齐。</p><p>两路读数分别是：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>p</mi><mn>5</mn></msub><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>5</mn><mi>θ</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="2em"/><msub><mi>p</mi><mn>3</mn></msub><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>3</mn><mi>θ</mi><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
 p_5=\operatorname{wrap}(5\theta),\qquad
 p_3=\operatorname{wrap}(3\theta).
-</annotation></semantics></math></span><p>这里wrap表示按一圈取模。为方便读表，结果放在0到1之间，不含1。</p>
-<table>
-	<thead>
-			<tr>
-					<th>机械位置</th>
-					<th>第一条读数p₅</th>
-					<th>第二条读数p₃</th>
-					<th>相位差wrap(p₅−p₃)</th>
-			</tr>
-	</thead>
-	<tbody>
-			<tr>
-					<td>0圈</td>
-					<td>0</td>
-					<td>0</td>
-					<td>0</td>
-			</tr>
-			<tr>
-					<td>1/4圈</td>
-					<td>1/4</td>
-					<td>3/4</td>
-					<td>1/2</td>
-			</tr>
-			<tr>
-					<td>1/2圈</td>
-					<td>1/2</td>
-					<td>1/2</td>
-					<td>0</td>
-			</tr>
-			<tr>
-					<td>3/4圈</td>
-					<td>3/4</td>
-					<td>1/4</td>
-					<td>1/2</td>
-			</tr>
-	</tbody>
-</table>
-<p>看最后一列：0圈与半圈得到相同差值，四分之一圈与四分之三圈也相同。只保存相位差，就分不清这些位置。</p>
-<p>原因直接写在式子里：</p>
-<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>D</mi><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>p</mi><mn>5</mn></msub><mo>−</mo><msub><mi>p</mi><mn>3</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>2</mn><mi>θ</mi><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>这里wrap表示按一圈取模。为方便读表，结果放在0到1之间，不含1。</p><table><thead><tr><th>机械位置</th><th>第一条读数p₅</th><th>第二条读数p₃</th><th>相位差wrap(p₅−p₃)</th></tr></thead><tbody><tr><td>0圈</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1/4圈</td><td>1/4</td><td>3/4</td><td>1/2</td></tr><tr><td>1/2圈</td><td>1/2</td><td>1/2</td><td>0</td></tr><tr><td>3/4圈</td><td>3/4</td><td>1/4</td><td>1/2</td></tr></tbody></table><p>看最后一列：0圈与半圈得到相同差值，四分之一圈与四分之三圈也相同。只保存相位差，就分不清这些位置。</p><p>原因直接写在式子里：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>D</mi><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>p</mi><mn>5</mn></msub><mo>−</mo><msub><mi>p</mi><mn>3</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>2</mn><mi>θ</mi><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
 D=\operatorname{wrap}(p_5-p_3)
 =\operatorname{wrap}(2\theta).
-</annotation></semantics></math></span><p>它一圈重复两次。5与3互质这个事实，没有改变差值只剩“两倍角”的结果。</p>
-<p>但看中间两列，0圈对应(0,0)，半圈对应(1/2,1/2)，两对读数不同。只要两路信息都还保留，原来那两个位置就能分开。</p>
-<h2 id="联合解算怎样把机械角找回来">联合解算怎样把机械角找回来</h2>
-<p>因为2×3−5=1，所以在这个理想模型里可以构造：</p>
-<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>θ</mi><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>2</mn><msub><mi>p</mi><mn>3</mn></msub><mo>−</mo><msub><mi>p</mi><mn>5</mn></msub><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><p>它一圈重复两次。5与3互质这个事实，没有改变差值只剩“两倍角”的结果。</p><p>但看中间两列，0圈对应(0,0)，半圈对应(1/2,1/2)，两对读数不同。只要两路信息都还保留，原来那两个位置就能分开。</p><h2 id=联合解算怎样把机械角找回来>联合解算怎样把机械角找回来</h2><p>因为2×3−5=1，所以在这个理想模型里可以构造：</p><span class=katex><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>θ</mi><mo>=</mo><mi mathvariant="normal">wrap</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>2</mn><msub><mi>p</mi><mn>3</mn></msub><mo>−</mo><msub><mi>p</mi><mn>5</mn></msub><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
 \theta=\operatorname{wrap}(2p_3-p_5).
-</annotation></semantics></math></span><p>例如机械角为1/4圈时，两路读数是1/4和3/4。代入后得到2×3/4−1/4=5/4圈，再取模回到1/4圈。半圈时，同样恢复出半圈。</p>
-<p>这一步使用了两路信息和合适的整数权重，已经超出了“直接相减”。一般情况下，互质保证存在这样的整数权重；能直接用一减一恢复机械角，则要求两周期数相差1。</p>
-<p>也可以从重复周期证明。若两个位置相差Δθ，且两路相位都相同，那么5Δθ与3Δθ都必须是整数。将它们按2×3−5组合，Δθ也必须是整数。所以在一圈以内，没有另一个不同位置能给出完全相同的两路读数。</p>
-<h2 id="数学唯一之后还要过误差这一关">数学唯一之后，还要过误差这一关</h2>
-<p>上述表格和公式是无噪声、同轴整数周期的数学示例，不是某款产品的测试结果。</p>
-<p>若两路含相位误差ε₅和ε₃，局部解算误差会带入2ε₃−ε₅。实际设计还要处理噪声、周期边界、零点、方向与时间对齐。数学上能唯一恢复，不等于当前误差条件下不会误判。</p>
-<p>机械齿轮传动、额外绝对码道和多级融合，需要先写出各路相位对同一机械角的关系，再判断保留了哪些信息。不能把这里两个同轴周期数的结论直接套过去。</p>
-<h2 id="最后把这件事压成一句最值得记住的话">最后把这件事压成一句最值得记住的话</h2>
-<p>游标里所谓“互质”，本质上不是一条行业规定，而是两条本来都会重复的码道，在整整一圈里不能提前重号。</p>
-<p>互质保证两路理想相位联合起来能够区分整圈；相差1，则让直接作差成为联合解算的一种简便形式。</p>
-<p>所以“游标一定要互质”这句话，说到底不是经验，也不是习惯，而是绝对位置系统能不能站住的地基。</p>
-<p>你要是把这一层想明白了，再回头看磁游标、电感游标、光学双码道，很多以前只是“记住了”的规则，就会第一次真正变成你自己的理解。</p>
-<p>修订于2026年10月16日：补充5与3的相位表、联合恢复及误差边界。表格与公式为数学推导。</p>
-</div>
-  <div class="end-mark"><span>应作如是观</span></div>
-  <div class="card qr-card">
-  <img src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="200" height="200" loading="lazy">
-  <div>
-    <p class="card-title">关注公众号「如是有为」</p>
-    <p class="muted">微信扫一扫，新文章先在公众号发出。</p>
-  </div>
-</div>
-
-</article>
-<nav class="prevnext">
-  <a href="/posts/ulnw2zy8vqulpprjri8hoq/"><small>上一篇</small>多摩川协议是个什么鬼？一个让底层工程师熬秃头的“赛博古董”</a>
-  <a class="r" href="/posts/6nrhkzd2rgy5wzb3lzvljq/"><small>下一篇</small>中年IC人面临价值困境</a>
-</nav>
-</main>
-<footer class="site-footer">
-  <div class="wrap foot">
-    <div>
-      <p class="sutra-foot">凡所有相，皆是虚妄。若见诸相非相，即见如来。</p>
-      <p class="muted">© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href="/index.xml">RSS</a></p>
-    </div>
-    <img class="foot-qr" src="/images/site/qrcode.png" alt="公众号「如是有为」二维码" width="88" height="88">
-  </div>
-</footer>
-</body>
-</html>
+</annotation></semantics></math></span><p>例如机械角为1/4圈时，两路读数是1/4和3/4。代入后得到2×3/4−1/4=5/4圈，再取模回到1/4圈。半圈时，同样恢复出半圈。</p><p>这一步使用了两路信息和合适的整数权重，已经超出了“直接相减”。一般情况下，互质保证存在这样的整数权重；能直接用一减一恢复机械角，则要求两周期数相差1。</p><p>也可以从重复周期证明。若两个位置相差Δθ，且两路相位都相同，那么5Δθ与3Δθ都必须是整数。将它们按2×3−5组合，Δθ也必须是整数。所以在一圈以内，没有另一个不同位置能给出完全相同的两路读数。</p><h2 id=数学唯一之后还要过误差这一关>数学唯一之后，还要过误差这一关</h2><p>上述表格和公式是无噪声、同轴整数周期的数学示例，不是某款产品的测试结果。</p><p>若两路含相位误差ε₅和ε₃，局部解算误差会带入2ε₃−ε₅。实际设计还要处理噪声、周期边界、零点、方向与时间对齐。数学上能唯一恢复，不等于当前误差条件下不会误判。</p><p>机械齿轮传动、额外绝对码道和多级融合，需要先写出各路相位对同一机械角的关系，再判断保留了哪些信息。不能把这里两个同轴周期数的结论直接套过去。</p><h2 id=最后把这件事压成一句最值得记住的话>最后把这件事压成一句最值得记住的话</h2><p>游标里所谓“互质”，本质上不是一条行业规定，而是两条本来都会重复的码道，在整整一圈里不能提前重号。</p><p>互质保证两路理想相位联合起来能够区分整圈；相差1，则让直接作差成为联合解算的一种简便形式。</p><p>所以“游标一定要互质”这句话，说到底不是经验，也不是习惯，而是绝对位置系统能不能站住的地基。</p><p>你要是把这一层想明白了，再回头看磁游标、电感游标、光学双码道，很多以前只是“记住了”的规则，就会第一次真正变成你自己的理解。</p><p>修订于2026年10月16日：补充5与3的相位表、联合恢复及误差边界。表格与公式为数学推导。</p></div><div class=end-mark><span>应作如是观</span></div><div class="card qr-card"><img src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=200 height=200 loading=lazy><div><p class=card-title>关注公众号「如是有为」</p><p class=muted>微信扫一扫，新文章先在公众号发出。</p></div></div></article><nav class=prevnext><a href=/posts/ulnw2zy8vqulpprjri8hoq/><small>上一篇</small>多摩川协议是个什么鬼？一个让底层工程师熬秃头的“赛博古董”</a>
+<a class=r href=/posts/6nrhkzd2rgy5wzb3lzvljq/><small>下一篇</small>中年IC人面临价值困境</a></nav></main><footer class=site-footer><div class="wrap foot"><div><p class=sutra-foot>凡所有相，皆是虚妄。若见诸相非相，即见如来。</p><p class=muted>© 2026 如是有为 · 文章首发于微信公众号「如是有为」 · <a href=/index.xml>RSS</a></p></div><img class=foot-qr src=/images/site/qrcode.png alt=公众号「如是有为」二维码 width=88 height=88></div></footer></body></html>

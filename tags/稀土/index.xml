@@ -1,87 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>稀土 on 如是有为</title>
-		<link>https://sensor.fans/tags/%E7%A8%80%E5%9C%9F/</link>
-		<description>Recent content in 稀土 on 如是有为</description>
-		<generator>Hugo</generator>
-		<language>zh-CN</language>
-		
-		
-		
-		
-			<lastBuildDate>Sun, 11 Oct 2026 19:00:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://sensor.fans/tags/%E7%A8%80%E5%9C%9F/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>38%增速！磁编码器成机器人最猛赛道？</title>
-				<link>https://sensor.fans/posts/22edc32a6ecb9dd0/</link>
-				<pubDate>Sun, 11 Oct 2026 19:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/22edc32a6ecb9dd0/</guid>
-				<description>&lt;p&gt;全球人形机器人关节用磁编码器市场规模约2400万美元，到2032年预计触及3.11亿美元，年复合增长率38%，是全部编码器细分口径中增速最高的一支。同期全球机器人编码环市场从1.65亿美元增至5.35亿美元，CAGR为18.2%。但这两个数字之间的“温差”本身就是一个值得追问的信号：器件在爆发，磁环未必在等比例受益。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>机器人关节设计中光电编码器、磁编码器和电感编码器到底有什么区别？</title>
-				<link>https://sensor.fans/posts/dq702dxbibuz42t2xcegga/</link>
-				<pubDate>Wed, 23 Sep 2026 08:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/dq702dxbibuz42t2xcegga/</guid>
-				<description>&lt;p&gt;关节模组的三样核心部件里，减速器决定力矩密度，电机决定功率密度，编码器则几乎单独决定了关节的定位精度上限、速度环带宽和长期可靠性。做关节模组选型时常遇到一个纠结：光电、磁、电感三种编码器，参数表上都能标出很高的分辨率，价格却相差一个数量级，宣传口径又各说各话。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>厦门钨业跟投弓望传感：从寄生电容到 0.1°，电感编码器真正的 EMC 硬仗</title>
-				<link>https://sensor.fans/posts/jei6fs_o_vqte_opkzb8_w/</link>
-				<pubDate>Fri, 04 Sep 2026 08:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/jei6fs_o_vqte_opkzb8_w/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/1a0fb1b54ee4e428f3731463c162a0e9.webp&#34; alt=&#34;厦门钨业跟投弓望传感：从寄生电容到 0.1°，电感编码器真正的 EMC 硬仗&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/ab6ea9160b5cd9bb9978014661f1ee21.webp&#34; alt=&#34;厦门钨业跟投弓望传感：从寄生电容到 0.1°，电感编码器真正的 EMC 硬仗&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;弓望传感8月31日公布A轮，近亿元，蔚来资本领投，厦门钨业产业基金跟投。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>中国造了全球94%的钕铁硼磁材股,为何只赚11%？ 一颗0.37克的编码器磁体，让我发现钕铁硼的账可能算错了单位</title>
-				<link>https://sensor.fans/posts/lqsrju2pwrqwz3rl9y8dqa/</link>
-				<pubDate>Sat, 15 Aug 2026 09:14:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/lqsrju2pwrqwz3rl9y8dqa/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/8650bd0b477726aeb388a5d282c86920.webp&#34; alt=&#34;中国造了全球94%的钕铁硼磁材股,为何只赚11%？ 一颗0.37克的编码器磁体，让我发现钕铁硼的账可能算错了单位&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;所有人都在谈吨位、产能和 94%。但真正决定编码器性能的，可能是一颗几乎不贡献吨位的磁体——因为它最后不是按克验收，而是按角度误差验收。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>磁编码器 14 位 ADC 不等于 14 位有效角度：信号链上每一级都在偷你的分辨率</title>
-				<link>https://sensor.fans/posts/kicnk65puosl2urxlb2g4w/</link>
-				<pubDate>Sun, 19 Jul 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/kicnk65puosl2urxlb2g4w/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/849476ed0922b045e1b82bb037d1f3b7.webp&#34; alt=&#34;磁编码器 14 位 ADC 不等于 14 位有效角度：信号链上每一级都在偷你的分辨率&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;前几天有个朋友在调试一台伺服关节，选的是 AMS 的 AS5147。参数表上写得清清楚楚：14 位分辨率，SPI 接口，360° 全范围角度输出。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态</title>
-				<link>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</link>
-				<pubDate>Thu, 02 Jul 2026 00:01:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/65903afc31c4264ac111279d5b8f7599.webp&#34; alt=&#34;英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;6月2日，Infineon 把 XENSIV 磁传感器产品线正式扩展到 TMR。公告里没有给出一个能直接压过国产 TMR3111 的角度精度数字，但它把 TLI55910、TLI55950、TLI5570、TLI5572、TLE5571、TLE5502 这些位置、电流、过流和车规角度传感器，一起放进了 Hall、GMR、AMR、TMR 同一套磁传感矩阵里。Infineon 官方的说法也很明确：TMR 是对既有 Hall、GMR、AMR 方案的补充，而不是单独开一条孤立产品线。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>电感编码器想把磁编码器干掉，先解决贵三倍这个问题</title>
-				<link>https://sensor.fans/posts/vfk6obxi5tsy9v7hiwdkkg/</link>
-				<pubDate>Sun, 10 May 2026 00:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/vfk6obxi5tsy9v7hiwdkkg/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/f8a29e7e204128448d42e1b0de82c423.webp&#34; alt=&#34;电感编码器想把磁编码器干掉，先解决贵三倍这个问题&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;纳芯微最近推出 MT6901 电感编码器，很多解读文章说得很猛：它摆脱了光编码器对光路的依赖，也避免了磁编码器对背景磁场的敏感。翻译成大白话就是：&lt;strong&gt;电感编码器想进机器人关节，而且不是来当配角的。&lt;/strong&gt;&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>三月A股主线之争：AI算力延续辉煌，还是有色稀土后来居上？</title>
-				<link>https://sensor.fans/posts/td5umgqvaya8it4tvy6sta/</link>
-				<pubDate>Sun, 01 Mar 2026 00:21:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/td5umgqvaya8it4tvy6sta/</guid>
-				<description>&lt;p&gt;三月的A股并不缺题材：一边是经历年初大涨、景气度持续验证的AI算力链，一边是政策窗口临近、涨价与供给扰动共振的有色金属（尤其是稀土与小金属）。但“谁逻辑更强”并不能回答“谁能拿到当月涨幅第一”——月度冠军是一个可以用历史统计与交易结构推演出来的结果。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>磁编码器 vs 光电编码器：如何为你的应用选择合适的旋转位置传感器？</title>
-				<link>https://sensor.fans/posts/a5ckbz-bmfjhg729jknpsg/</link>
-				<pubDate>Wed, 31 Dec 2025 08:00:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/a5ckbz-bmfjhg729jknpsg/</guid>
-				<description>&lt;p&gt;&lt;strong&gt;请点击&lt;/strong&gt;香磁磁业关注我,设为★星标★&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sensor.fans/images/wx/c9395e24715dbaacfeb3f01a30a9ec78.webp&#34; alt=&#34;磁编码器 vs 光电编码器：如何为你的应用选择合适的旋转位置传感器？&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;在伺服控制、机器人关节、AGV驱动、激光雷达乃至数控机床等现代机电系统中，精确获取旋转轴的位置与速度信息是实现闭环控制的关键。而承担这一任务的核心器件之一，就是旋转编码器。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>稀土的真相：矿在地下，胜负在制度里</title>
-				<link>https://sensor.fans/posts/n-2wcwzwmutthtka3rqe-w/</link>
-				<pubDate>Wed, 15 Oct 2025 00:11:00 +0800</pubDate>
-				<guid>https://sensor.fans/posts/n-2wcwzwmutthtka3rqe-w/</guid>
-				<description>&lt;p&gt;稀土不是“挖出来”的，是一道道化学地狱里“炼出来”的。中国可怕的地方不在矿，更不在价格，而在三把连环刀：高纯分离的硬核化学、几十年工艺数据沉淀成的手艺、以及能长期不计代价把整条链压出来的举国体制。美国不是没钱没技术，是没法在这类“长、苦、脏、重”的系统工程里持续二十年。胜负不在矿口，在系统能力。&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>稀土 on 如是有为</title><link>https://sensor.fans/tags/%E7%A8%80%E5%9C%9F/</link><description>Recent content in 稀土 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sun, 11 Oct 2026 19:00:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E7%A8%80%E5%9C%9F/index.xml" rel="self" type="application/rss+xml"/><item><title>38%增速！磁编码器成机器人最猛赛道？</title><link>https://sensor.fans/posts/22edc32a6ecb9dd0/</link><pubDate>Sun, 11 Oct 2026 19:00:00 +0800</pubDate><guid>https://sensor.fans/posts/22edc32a6ecb9dd0/</guid><description>&lt;p>全球人形机器人关节用磁编码器市场规模约2400万美元，到2032年预计触及3.11亿美元，年复合增长率38%，是全部编码器细分口径中增速最高的一支。同期全球机器人编码环市场从1.65亿美元增至5.35亿美元，CAGR为18.2%。但这两个数字之间的“温差”本身就是一个值得追问的信号：器件在爆发，磁环未必在等比例受益。&lt;/p></description></item><item><title>机器人关节设计中光电编码器、磁编码器和电感编码器到底有什么区别？</title><link>https://sensor.fans/posts/dq702dxbibuz42t2xcegga/</link><pubDate>Wed, 23 Sep 2026 08:00:00 +0800</pubDate><guid>https://sensor.fans/posts/dq702dxbibuz42t2xcegga/</guid><description>&lt;p>关节模组的三样核心部件里，减速器决定力矩密度，电机决定功率密度，编码器则几乎单独决定了关节的定位精度上限、速度环带宽和长期可靠性。做关节模组选型时常遇到一个纠结：光电、磁、电感三种编码器，参数表上都能标出很高的分辨率，价格却相差一个数量级，宣传口径又各说各话。&lt;/p></description></item><item><title>厦门钨业跟投弓望传感：从寄生电容到 0.1°，电感编码器真正的 EMC 硬仗</title><link>https://sensor.fans/posts/jei6fs_o_vqte_opkzb8_w/</link><pubDate>Fri, 04 Sep 2026 08:00:00 +0800</pubDate><guid>https://sensor.fans/posts/jei6fs_o_vqte_opkzb8_w/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/1a0fb1b54ee4e428f3731463c162a0e9.webp" alt="厦门钨业跟投弓望传感：从寄生电容到 0.1°，电感编码器真正的 EMC 硬仗" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/ab6ea9160b5cd9bb9978014661f1ee21.webp" alt="厦门钨业跟投弓望传感：从寄生电容到 0.1°，电感编码器真正的 EMC 硬仗" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>弓望传感8月31日公布A轮，近亿元，蔚来资本领投，厦门钨业产业基金跟投。&lt;/p></description></item><item><title>中国造了全球94%的钕铁硼磁材股,为何只赚11%？ 一颗0.37克的编码器磁体，让我发现钕铁硼的账可能算错了单位</title><link>https://sensor.fans/posts/lqsrju2pwrqwz3rl9y8dqa/</link><pubDate>Sat, 15 Aug 2026 09:14:00 +0800</pubDate><guid>https://sensor.fans/posts/lqsrju2pwrqwz3rl9y8dqa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/8650bd0b477726aeb388a5d282c86920.webp" alt="中国造了全球94%的钕铁硼磁材股,为何只赚11%？ 一颗0.37克的编码器磁体，让我发现钕铁硼的账可能算错了单位" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>所有人都在谈吨位、产能和 94%。但真正决定编码器性能的，可能是一颗几乎不贡献吨位的磁体——因为它最后不是按克验收，而是按角度误差验收。&lt;/p></description></item><item><title>磁编码器 14 位 ADC 不等于 14 位有效角度：信号链上每一级都在偷你的分辨率</title><link>https://sensor.fans/posts/kicnk65puosl2urxlb2g4w/</link><pubDate>Sun, 19 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/kicnk65puosl2urxlb2g4w/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/849476ed0922b045e1b82bb037d1f3b7.webp" alt="磁编码器 14 位 ADC 不等于 14 位有效角度：信号链上每一级都在偷你的分辨率" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>前几天有个朋友在调试一台伺服关节，选的是 AMS 的 AS5147。参数表上写得清清楚楚：14 位分辨率，SPI 接口，360° 全范围角度输出。&lt;/p></description></item><item><title>英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态</title><link>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</link><pubDate>Thu, 02 Jul 2026 00:01:00 +0800</pubDate><guid>https://sensor.fans/posts/f2ycizaudy1epad4effccq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/65903afc31c4264ac111279d5b8f7599.webp" alt="英飞凌 TLE5502 补齐 TMR，但国产磁编码器只拼 ±0.05° 精度，会导致机器人关节选型转向供应链和接口生态" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>6月2日，Infineon 把 XENSIV 磁传感器产品线正式扩展到 TMR。公告里没有给出一个能直接压过国产 TMR3111 的角度精度数字，但它把 TLI55910、TLI55950、TLI5570、TLI5572、TLE5571、TLE5502 这些位置、电流、过流和车规角度传感器，一起放进了 Hall、GMR、AMR、TMR 同一套磁传感矩阵里。Infineon 官方的说法也很明确：TMR 是对既有 Hall、GMR、AMR 方案的补充，而不是单独开一条孤立产品线。&lt;/p></description></item><item><title>电感编码器想把磁编码器干掉，先解决贵三倍这个问题</title><link>https://sensor.fans/posts/vfk6obxi5tsy9v7hiwdkkg/</link><pubDate>Sun, 10 May 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/vfk6obxi5tsy9v7hiwdkkg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/f8a29e7e204128448d42e1b0de82c423.webp" alt="电感编码器想把磁编码器干掉，先解决贵三倍这个问题" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>纳芯微最近推出 MT6901 电感编码器，很多解读文章说得很猛：它摆脱了光编码器对光路的依赖，也避免了磁编码器对背景磁场的敏感。翻译成大白话就是：&lt;strong>电感编码器想进机器人关节，而且不是来当配角的。&lt;/strong>&lt;/p></description></item><item><title>三月A股主线之争：AI算力延续辉煌，还是有色稀土后来居上？</title><link>https://sensor.fans/posts/td5umgqvaya8it4tvy6sta/</link><pubDate>Sun, 01 Mar 2026 00:21:00 +0800</pubDate><guid>https://sensor.fans/posts/td5umgqvaya8it4tvy6sta/</guid><description>&lt;p>三月的A股并不缺题材：一边是经历年初大涨、景气度持续验证的AI算力链，一边是政策窗口临近、涨价与供给扰动共振的有色金属（尤其是稀土与小金属）。但“谁逻辑更强”并不能回答“谁能拿到当月涨幅第一”——月度冠军是一个可以用历史统计与交易结构推演出来的结果。&lt;/p></description></item><item><title>磁编码器 vs 光电编码器：如何为你的应用选择合适的旋转位置传感器？</title><link>https://sensor.fans/posts/a5ckbz-bmfjhg729jknpsg/</link><pubDate>Wed, 31 Dec 2025 08:00:00 +0800</pubDate><guid>https://sensor.fans/posts/a5ckbz-bmfjhg729jknpsg/</guid><description>&lt;p>&lt;strong>请点击&lt;/strong>香磁磁业关注我,设为★星标★&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/c9395e24715dbaacfeb3f01a30a9ec78.webp" alt="磁编码器 vs 光电编码器：如何为你的应用选择合适的旋转位置传感器？" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>在伺服控制、机器人关节、AGV驱动、激光雷达乃至数控机床等现代机电系统中，精确获取旋转轴的位置与速度信息是实现闭环控制的关键。而承担这一任务的核心器件之一，就是旋转编码器。&lt;/p></description></item><item><title>稀土的真相：矿在地下，胜负在制度里</title><link>https://sensor.fans/posts/n-2wcwzwmutthtka3rqe-w/</link><pubDate>Wed, 15 Oct 2025 00:11:00 +0800</pubDate><guid>https://sensor.fans/posts/n-2wcwzwmutthtka3rqe-w/</guid><description>&lt;p>稀土不是“挖出来”的，是一道道化学地狱里“炼出来”的。中国可怕的地方不在矿，更不在价格，而在三把连环刀：高纯分离的硬核化学、几十年工艺数据沉淀成的手艺、以及能长期不计代价把整条链压出来的举国体制。美国不是没钱没技术，是没法在这类“长、苦、脏、重”的系统工程里持续二十年。胜负不在矿口，在系统能力。&lt;/p></description></item></channel></rss>
