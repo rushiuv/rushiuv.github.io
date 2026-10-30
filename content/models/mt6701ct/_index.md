@@ -88,9 +88,9 @@ series_parent: mt6701
 
 SSI按时钟移出角度，I²C则使用寻址与寄存器读写，主控驱动、总线占用和有效数据判断不同。接入前检查所选预设及协议时序，再用正反转验证方向与零点。
 
-## 通用系列和CT成员保留两层入口
+## CT封装与预设配置
 
-既有MT6701系列页可以继续解释共性，本页保留CT的SOP8和完整OPN。官网对部分预设标不推荐新设计、其他预设仍Active，不能把一个旧预设的状态扩展为整个系列停产。
+MT6701CT采用SOP8，预设配置由完整OPN确定。官网对部分预设标不推荐新设计、其他预设仍Active，不能把一个旧预设的状态扩展为整个系列停产。
 
 ## 订货版本之间的差别
 
@@ -141,13 +141,13 @@ SSI按时钟移出角度，I²C则使用寻址与寄存器读写，主控驱动�
 | [MT6701CT-U3D-R](https://www.novosns.com/product/MT6701CT-U3D-R) | SOP8；Industrial；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/XltRb0nAToicoixcUp7c5OIqn3b.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/M7hob1brwoHm6tx8gGgc156nn5c.pdf) |
 | [MT6701CT-U4D-R](https://www.novosns.com/product/MT6701CT-U4D-R) | SOP8；Industrial；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/XltRb0nAToicoixcUp7c5OIqn3b.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/M7hob1brwoHm6tx8gGgc156nn5c.pdf) |
 
-“Not Recommended for New Designs”表示该完整订货号不推荐用于新设计，不代表本页全部成员停产。请结合表内仍为Active的版本核对供应与配置。
+“Not Recommended for New Designs”表示该完整订货号不推荐用于新设计，不代表全部预设停产。请结合表内仍为Active的版本核对供应与配置。
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-同一归一型号不同OPN生命周期不同；逐条保留，不能整体标Active。
+同型号不同预设的生命周期可能不同，供货与新设计适用性按具体OPN查询。
 
 ## 原厂资料
 

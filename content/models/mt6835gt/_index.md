@@ -59,9 +59,9 @@ series_parent: mt6835
 
 官网介绍自动非线性校准，系统仍需按手册提供相应运动和输入条件。校准结束、非易失写入以及重新上电加载分别验收，并用独立位置参考检查残差，不只看完成标志。
 
-## A10K是预设，GT必须保留
+## GT封装与A10K预设
 
-MT6835GT-A10K-R规范为MT6835GT，不能抹去GT。官网将该A10K预设标为不推荐新设计，而其他GT预设仍Active；旧MT6835系列页可保留，本页通过完整订货表说明成员差别。
+MT6835GT采用TSSOP16，A10K为具体预设配置。官网将该A10K预设标为不推荐新设计，而其他GT预设仍Active；具体供货和配置见完整订货表。
 
 ## 订货版本之间的差别
 
@@ -83,13 +83,13 @@ MT6835GT-A10K-R规范为MT6835GT，不能抹去GT。官网将该A10K预设标为
 | [MT6835GT-M5H-R](https://www.novosns.com/product/MT6835GT-M5H-R) | TSSOP16；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/GoD3bN8zQom5Q3xWEBXcFgJInub.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/UiuwbbXLMoytTcxKiaTcLwLwnyh.pdf) |
 | [MT6835GT-STD-R](https://www.novosns.com/product/MT6835GT-STD-R) | TSSOP16；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/GoD3bN8zQom5Q3xWEBXcFgJInub.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/UiuwbbXLMoytTcxKiaTcLwLwnyh.pdf) |
 
-“Not Recommended for New Designs”表示该完整订货号不推荐用于新设计，不代表本页全部成员停产。请结合表内仍为Active的版本核对供应与配置。
+“Not Recommended for New Designs”表示该完整订货号不推荐用于新设计，不代表全部预设停产。请结合表内仍为Active的版本核对供应与配置。
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-同一归一型号不同OPN生命周期不同；逐条保留，不能整体标Active。
+同型号不同预设的生命周期可能不同，供货与新设计适用性按具体OPN查询。
 
 ## 原厂资料
 

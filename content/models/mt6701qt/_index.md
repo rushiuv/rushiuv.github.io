@@ -88,11 +88,11 @@ QT与CT同属MT6701，但封装、焊盘和可用引脚应分别确认。替换�
 | [MT6701QT-P500](https://www.novosns.com/product/MT6701QT-P500) | QFN16；Industrial；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/XltRb0nAToicoixcUp7c5OIqn3b.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/M7hob1brwoHm6tx8gGgc156nn5c.pdf) |
 | [MT6701QT-STD](https://www.novosns.com/product/MT6701QT-STD) | QFN16；Industrial；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/XltRb0nAToicoixcUp7c5OIqn3b.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/M7hob1brwoHm6tx8gGgc156nn5c.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

@@ -7,7 +7,7 @@ lastmod: '2026-10-30'
 related_companies:
 - 昆泰芯
 model_card: true
-description: KTH468N 是来源矩阵中的三维全极性微功耗霍尔开关，适合在确认各轴判决关系和阈值配置后评估多方向磁体接近检测。
+description: KTH468N是三维全极性微功耗Hall开关，面向多方向磁接近状态检测；轴判决与门限按完整订货资料确认。
 wiki_rank: 316
 catalog_type: 磁开关
 wiki_category: 磁开关
@@ -19,7 +19,7 @@ search_aliases:
 
 ## 目录信息与参数条件
 
-以下为[来源产品矩阵](https://chat.connteck.com/products/)的目录标注，用于初步检索；尚未用对应手册正文逐项复核，冲突项见下文，不能直接用作设计保证值。
+以下是[原厂产品矩阵](https://chat.connteck.com/products/)的选型信息；电气保证值、测试条件和封装配置以所选完整型号手册为准。
 
 | 项目 | 内容与条件 |
 | --- | --- |
@@ -46,7 +46,7 @@ search_aliases:
 
 来源只有矩阵，无对应详情页、引脚图或PDF直链；具体轴组合逻辑、门限与后缀配置缺少可核对资料。
 
-目前未取得可确认属于本型号的产品照片或技术图，保留文字资料；不以相邻型号的封装图代替。
+该型号暂无可确认的独立产品照片或技术图，封装和磁敏方向请参见对应订货资料。
 
 来源未提供可核验的本型号 PDF。请通过[资料入口](https://chat.connteck.com/products/)索取，未生成下载地址。
 

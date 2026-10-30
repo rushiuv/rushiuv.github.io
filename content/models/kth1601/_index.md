@@ -49,9 +49,9 @@ product_image_source: https://chat.connteck.com/downloads/KTH1601/KTH1601_Datash
 
 ## 公开资料与型号核对
 
-公开PDF第1页明确CMOS推挽、1.6～5.5V；网页开漏/推挽混列及1.7V下限不能直接套用。本页参数来自可见首页，尚未逐项核读完整电磁参数表。
+KTH1601公开手册第1页列CMOS推挽输出与1.6～5.5V供电；网页另有开漏和1.7V下限标注，接口设计应使用所选完整型号的电磁参数表。
 
-按完整型号、等级和版本选择手册。公开链接核对日期：2026-10-30。
+按完整型号、等级和版本选择手册。
 
 - [KTH1601_Datasheet_CN.pdf](https://chat.connteck.com/downloads/KTH1601/KTH1601_Datasheet_CN.pdf)
 

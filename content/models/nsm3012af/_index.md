@@ -8,7 +8,7 @@ lastmod: '2026-10-30'
 catalog_type: 数字角度
 catalog_form: 芯片
 wiki_category: 数字角度
-description: NSM3012AF 是汽车Hall角度AF成员的检索分组，收录Q0SPR与Q1SPR；完整资格尾部必须保留，不能以代表详情统一两种等级。
+description: NSM3012AF是汽车Hall角度AF成员，提供Q0SPR与Q1SPR配置；两种版本的资格及工作条件分别确认。
 official_url: https://www.novosns.com/product/NSM3012AF-Q0SPR
 related_companies:
 - 纳芯微
@@ -48,21 +48,21 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqV
 | 目录供电 | 3.3~5.0；官网目录标注，适用于上述订货配置 |
 | Magnetic Sensing Principle | Differential hall；官网目录标注，适用于上述订货配置 |
 
-## Q0与Q1不能靠共享摘要合并
+## Q0与Q1资格版本
 
-两种OPN在目录有各自条目，而代表详情复用系列文字。本页仅保留实际记录，不从Q0/Q1字符自行推导完整温区或认证结论，正式选型需核对各自资格与手册版本。
+Q0SPR与Q1SPR为不同完整订货配置，具体温区和资格以各自正式文件为准；共用系列介绍不足以确定两者全部差异。
 
 ## SPI数据与输出曲线分别验证
 
 目录列SPI与PWM及模拟曲线编程，主控要区分角度数据读取、输出参数配置和运行状态。先固定最终使用通道，再验证上电加载、断电保存及角度到输出的比例。
 
-## 三点目录与四段系列说明不拼接
+## 输出曲线节点的版本差异
 
-目录三点编程与系列详情四段拟合不是同一字段，尚不能证明AF版本具备两者全部能力。以实际寄存器和所选预设为依据，避免把共享文案变成额外功能。
+目录三点编程与系列详情四段拟合不是同一字段，尚不能证明AF版本具备两者全部能力。可用节点数及拟合方式由实际寄存器和所选预设决定。
 
 ## 型号与资格版本
 
-本页按核心前缀提供检索入口。Q0、Q1、IND、STD及其他配置串保留在完整订货号中，不能把某一行的车规等级、封装或输出推广到整个分组。
+完整订货号中的Q0、Q1、IND、STD等字符区分资格或配置；温区、封装与输出功能按订货表对应行选择。
 
 ## 完整订货号与资料
 
@@ -71,11 +71,11 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqV
 | [NSM3012AF-Q0SPR](https://www.novosns.com/product/NSM3012AF-Q0SPR) | SOP8；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 | [NSM3012AF-Q1SPR](https://www.novosns.com/product/NSM3012AF-Q1SPR) | SOP8；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-model仅作检索分组键；本文不删除NSM完整订货号中的Q0/Q1/IND/STD资格或配置部分。
+NSM成员的完整资格与配置由订货号定义，型号前缀相同不表示各后缀规格相同。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

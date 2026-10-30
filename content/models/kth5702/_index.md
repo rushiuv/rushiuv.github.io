@@ -57,16 +57,16 @@ AQ1手册明确使用X、Y磁场分量求XY平面角度，不是三轴XYZ位置�
 
 ## AQ1引脚与订货后缀对应
 
-本次核对的订货型号为KTH5702AQ1QNS、QFN3×3-16L。SPI使用Mode 3，A0/A1在SPI模式需接地；不用TRIG时也接地。VDD_IO可低于主电源，接口上拉和主控电平应按IO电源检查。
+KTH5702AQ1QNS采用QFN3×3-16L封装。SPI使用Mode 3，A0/A1在SPI模式需接地；不用TRIG时也接地。VDD_IO可低于主电源，接口上拉和主控电平应按IO电源检查。
 
 
 ## 公开资料与型号核对
 
-参数采用已核读的旧公开KTH5702AQ1手册，限AQ1QNS后缀；网页三轴、TSSOP14、150°C和30KSPS与该手册冲突，不采用。
+KTH5702AQ1手册适用于AQ1QNS，定义为二维XY、QFN3×3-16L和−40～125°C；网页另列三轴、TSSOP14、150°C和30KSPS，与该版本手册不一致。
 
 该手册明确2D X/Y、QFN16、−40～125°C、SPI最高5MHz和I²C400kHz，不能把KTH5701参数或其他等级直接迁移。
 
-按完整型号、等级和版本选择手册。公开链接核对日期：2026-10-30。
+按完整型号、等级和版本选择手册。
 
 - [KTH5702AQ1_DS_CN.pdf](https://conntek.github.io/files/KTH5702AQ1_DS_CN.pdf)
 - [KTH5702AQ1_DS_CN.pdf](https://chat.connteck.com/downloads/KTH5702/KTH5702AQ1_DS_CN.pdf)

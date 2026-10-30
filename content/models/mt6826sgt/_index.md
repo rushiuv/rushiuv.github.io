@@ -56,7 +56,7 @@ ABZ线数越高，主控每秒需要接收的边沿越密。应由实际转速�
 
 ## GT与JT不能只按系列名换板
 
-本型号为TSSOP16，SJT成员为QFN24。两者即使目录参数接近，焊盘、引脚和布局仍要分别核对；既有MT6826S系列页继续保留共同原理，本页明确SGT成员。
+本型号为TSSOP16，SJT成员为QFN24。两者即使目录参数接近，焊盘、引脚和布局仍要分别核对。SGT与SJT的具体引脚按各自封装资料选择。
 
 ## 动态延时看最终工作配置
 
@@ -72,11 +72,11 @@ ABZ线数越高，主控每秒需要接收的边沿越密。应由实际转速�
 | [MT6826SGT-APH-R](https://www.novosns.com/product/MT6826SGT-APH-R) | TSSOP16；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Fl4kbt78Zo59Hxx3EbecPPldnOe.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/IhywbstEKoQqmcxud7JcXPDJngb.pdf) |
 | [MT6826SGT-STD-R](https://www.novosns.com/product/MT6826SGT-STD-R) | TSSOP16；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Fl4kbt78Zo59Hxx3EbecPPldnOe.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/IhywbstEKoQqmcxud7JcXPDJngb.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

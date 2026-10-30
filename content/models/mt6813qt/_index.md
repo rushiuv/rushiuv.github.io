@@ -52,9 +52,9 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/RFHEbF85Io20
 
 I²C/SPI读取给出离散时间点的角度，PWM则需要额外捕获周期。选型时把控制器采样周期、目录延时及协议时间一起考虑，避免把14bit码宽误当成高速跟踪能力。
 
-## 相同目录字段仍需保留预设
+## 预设配置差异
 
-本次目录中的不同QT完整OPN共享参数字段，但其预设差异尚未由完整寄存器文档确认。采购和固件记录保留整个订货号，不能只保存MT6813。
+官网目录中的不同QT完整OPN共享参数字段，但其预设差异尚未由完整寄存器文档确认。采购和固件记录保留整个订货号，不能只保存MT6813。
 
 ## 完整订货号与资料
 
@@ -63,11 +63,11 @@ I²C/SPI读取给出离散时间点的角度，PWM则需要额外捕获周期。
 | [MT6813QT-LAD](https://www.novosns.com/product/MT6813QT-LAD) | QFN16；Industrial；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/Xmfvb3avzoZOiixA6OtcMz8RnEe.pdf) |
 | [MT6813QT-PAD](https://www.novosns.com/product/MT6813QT-PAD) | QFN16；Industrial；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/Xmfvb3avzoZOiixA6OtcMz8RnEe.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

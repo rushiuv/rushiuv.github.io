@@ -20,6 +20,8 @@ official_url: https://www.conntek.com.cn/html/web/product/switchPositionDetectio
 document_version: 官方公开产品页或目录，核对：2026-10-18
 model_card: true
 catalog_level: 系列
+aliases:
+- /models/kth1631/
 ---
 
 KTH16目录中的KTH1604与KTH1631具有不同状态逻辑和功耗等级。先判断磁体是靠近离开，还是正负磁极交替，再选采样和封装。

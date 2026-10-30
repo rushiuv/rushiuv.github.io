@@ -8,7 +8,7 @@ lastmod: '2026-10-30'
 catalog_type: 数字角度
 catalog_form: 芯片
 wiki_category: 数字角度
-description: NSM3013A 是Hall角度系列中带UVW目录路径的检索分组，包含DSPR与Q1SPR；具体换向配置和资格须保留完整订货号。
+description: NSM3013A是带UVW目录路径的Hall角度成员，包含DSPR和Q1SPR配置，换向功能与资格按完整版本确认。
 official_url: https://www.novosns.com/product/NSM3013A-DSPR
 related_companies:
 - 纳芯微
@@ -53,9 +53,9 @@ series_parent: nsm301x
 
 代表工业目录Output Interface字段为横线，而系列摘要泛述SPI/OWI。应区分配置入口与运行角度数据路径，在协议得到确认前不为本成员补造连续SPI读取能力。
 
-## 同一分组的Q1版本另查
+## Q1版本的换向配置
 
-DSPR和Q1SPR分别归工业与汽车目录，目录UVW一项的表示方式也不同。页面保留两条完整记录，不将一个预设的可编程范围扩展成整个分组的统一资格或性能。
+DSPR和Q1SPR分别属于工业与汽车版本，目录对UVW字段的表示方式不同；可编程范围、资格及性能应按所选订货行和对应手册使用。
 
 ## 订货版本之间的差别
 
@@ -96,7 +96,7 @@ DSPR和Q1SPR分别归工业与汽车目录，目录UVW一项的表示方式也�
 
 ## 型号与资格版本
 
-本页按核心前缀提供检索入口。Q0、Q1、IND、STD及其他配置串保留在完整订货号中，不能把某一行的车规等级、封装或输出推广到整个分组。
+完整订货号中的Q0、Q1、IND、STD等字符区分资格或配置；温区、封装与输出功能按订货表对应行选择。
 
 ## 完整订货号与资料
 
@@ -105,11 +105,11 @@ DSPR和Q1SPR分别归工业与汽车目录，目录UVW一项的表示方式也�
 | [NSM3013A-DSPR](https://www.novosns.com/product/NSM3013A-DSPR) | SOP8；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 | [NSM3013A-Q1SPR](https://www.novosns.com/product/NSM3013A-Q1SPR) | SOP8；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-model仅作检索分组键；本文不删除NSM完整订货号中的Q0/Q1/IND/STD资格或配置部分。
+NSM成员的完整资格与配置由订货号定义，型号前缀相同不表示各后缀规格相同。
 
-同一归一型号跨工业与汽车目录；需按完整订货号核对Q0/Q1/工业等级与所用手册，不能把代表工业详情扩展为所有车规配置。
+工业和汽车版本分别使用对应完整订货号、资格文件和手册条件。
 
 ## 原厂资料
 

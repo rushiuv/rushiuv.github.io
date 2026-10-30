@@ -7,7 +7,7 @@ lastmod: '2026-10-30'
 related_companies:
 - 昆泰芯
 model_card: true
-description: KTH5721 的公开手册首页提供XYZ磁场、温度及XY/XZ/YZ平面CORDIC角度输出，内部采用16位ADC；AQ2工业级与AQ3消费级需要按后缀分别选型。
+description: KTH5721提供XYZ磁场、温度及XY/XZ/YZ平面CORDIC角度输出，内部采用16位ADC；AQ2工业级与AQ3消费级分别选择温区和封装。
 wiki_rank: 303
 catalog_type: 线性磁场
 wiki_category: 线性磁场
@@ -33,7 +33,7 @@ product_image_source: https://chat.connteck.com/downloads/KTH5721/KTH5721_Datash
 | 主电源与IO | 主电源2.8～5.5 V；IO可低至1.8 V；两类电源不能混为1.8V主电源工作（手册第1页） |
 | 温度等级 | AQ2工业级−40～105°C；AQ3消费级−40～85°C；按完整订货等级区分，不能把一个等级温区覆盖全系列（手册第1页） |
 | 封装与接口 | QFN3×3-16L或DFN2×2.5-8L；SPI或I²C；封装与订货后缀一一对应；接口速率未在首页给出（手册第1页） |
-| 测量模式 | 持续感应、唤醒睡眠、单次测量；按键检测/Trigger；首页功能说明；采样时间、电流及寄存器值仍需核读对应表格（手册第1页） |
+| 测量模式 | 持续感应、唤醒睡眠、单次测量；按键检测/Trigger；首页功能说明；采样时间、电流及寄存器设置以对应参数表为准（手册第1页） |
 
 ## 同一磁场数据可以服务不同测量平面
 
@@ -49,18 +49,18 @@ product_image_source: https://chat.connteck.com/downloads/KTH5721/KTH5721_Datash
 
 ## 测量模式确定后再核总线与响应
 
-首页列SPI或I²C，以及持续感应、唤醒睡眠和单次测量等模式。当前核读仅到第1页，接口速率、采样时间、电流和寄存器细节还需对应表格；不根据矩阵中的5KSPS或AEC标签直接做整机响应或车规承诺。
+首页列SPI或I²C，以及持续感应、唤醒睡眠和单次测量等模式。接口速率、采样时间、电流及寄存器配置应使用对应等级的完整参数表；矩阵5KSPS与AEC标签不足以确定完整型号的响应和资格。
 
 
 ## 公开资料与型号核对
 
-本页采用目视核读的原PDF第1页功能说明；仅确认该页所列AQ2/AQ3和封装路径，未完整核读电参数表或确认所有订货后缀。
+原手册第1页所列功能适用于相应AQ2/AQ3成员；封装、时序和电参数应连同完整订货后缀选择。
 
 原PDF首页16bitADC、SPI或I²C与XYZ/CORDIC能力优先于矩阵12bit及详情I²C-only等冲突说法；ADC位数不作为机械精度。
 
-AQ2为−40～105°C、AQ3为−40～85°C；不从矩阵AEC-Q100、SPI/5KSPS标签增加资格、速率或温度保证。
+AQ2为−40～105°C、AQ3为−40～85°C；汽车资格与SPI速率由完整订货文件确认，矩阵5KSPS不作为所有模式的固定更新率。
 
-按完整型号、等级和版本选择手册。公开链接核对日期：2026-10-30。
+按完整型号、等级和版本选择手册。
 
 - [KTH5721_Datasheet_CN.pdf](https://chat.connteck.com/downloads/KTH5721/KTH5721_Datasheet_CN.pdf)
 

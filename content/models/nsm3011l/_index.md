@@ -8,7 +8,7 @@ lastmod: '2026-10-30'
 catalog_type: 数字角度
 catalog_form: 芯片
 wiki_category: 数字角度
-description: NSM3011L 是本次目录中的Hall角度L成员检索分组，收录NSM3011L-DSPR工业订货号；没有据此补出未列的Q0/Q1汽车版本。
+description: NSM3011L-DSPR是工业Hall旋转角度成员，输出模式与默认曲线按L成员规格选择。
 official_url: https://www.novosns.com/product/NSM3011L-DSPR
 related_companies:
 - 纳芯微
@@ -49,7 +49,7 @@ series_parent: nsm301x
 
 ## L成员差异不从字母猜
 
-官网本次没有独立解释L与A/B的全部差别。选型时记录完整L-DSPR以及默认输出模式，保留系列共性与成员限定，避免把字母当成只有包装差异。
+L与A/B的完整差异需要对应选型定义。选型时记录完整L-DSPR以及默认输出模式，保留系列共性与成员限定，避免把字母当成只有包装差异。
 
 ## 更新与噪声使用同一配置评价
 
@@ -57,7 +57,7 @@ series_parent: nsm301x
 
 ## 型号与资格版本
 
-本页按核心前缀提供检索入口。Q0、Q1、IND、STD及其他配置串保留在完整订货号中，不能把某一行的车规等级、封装或输出推广到整个分组。
+完整订货号中的Q0、Q1、IND、STD等字符区分资格或配置；温区、封装与输出功能按订货表对应行选择。
 
 ## 完整订货号与资料
 
@@ -65,11 +65,11 @@ series_parent: nsm301x
 | --- | --- |
 | [NSM3011L-DSPR](https://www.novosns.com/product/NSM3011L-DSPR) | SOP8；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-model仅作检索分组键；本文不删除NSM完整订货号中的Q0/Q1/IND/STD资格或配置部分。
+NSM成员的完整资格与配置由订货号定义，型号前缀相同不表示各后缀规格相同。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

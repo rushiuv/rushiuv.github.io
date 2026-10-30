@@ -8,7 +8,7 @@ lastmod: '2026-10-30'
 catalog_type: 数字角度
 catalog_form: 芯片
 wiki_category: 数字角度
-description: NSM3502 是双码道游标Hall离轴编码器的检索分组，保留IND-Q1QWAR与STD-Q1QWAR完整配置；两种OPN目录参数相同不证明内部预设相同。
+description: NSM3502是双码道游标Hall离轴编码器，提供IND-Q1QWAR与STD-Q1QWAR配置，适配对应磁环或磁栅几何。
 official_url: https://www.novosns.com/product/NSM3502-IND-Q1QWAR
 related_companies:
 - 纳芯微
@@ -52,13 +52,13 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/NaIRbbdtFoRi
 
 官方介绍支持多种磁环极对数以及ABZ、SPI、PWM、UART、UVW路径。实际系统应先选磁环，再换算输出边沿频率和主控处理能力，不能把目录22bit码宽作为每一种磁环和转速下的有效精度。
 
-## IND与STD保留为独立配置
+## IND与STD配置差异
 
-本页分组不删除IND/STD或Q1QWAR部分。目录未展示二者参数差异，不代表上电预设、校准流程或资格均相同；正式采用前逐项核对，系列共享图片也不能代替完整封装和敏感点资料。
+IND-Q1QWAR与STD-Q1QWAR的上电预设、校准流程及资格需要分别核对；目录参数相同不表示全部配置一致，敏感点和封装按对应资料定位。
 
 ## 型号与资格版本
 
-本页按核心前缀提供检索入口。Q0、Q1、IND、STD及其他配置串保留在完整订货号中，不能把某一行的车规等级、封装或输出推广到整个分组。
+完整订货号中的Q0、Q1、IND、STD等字符区分资格或配置；温区、封装与输出功能按订货表对应行选择。
 
 ## 完整订货号与资料
 
@@ -67,13 +67,13 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/NaIRbbdtFoRi
 | [NSM3502-IND-Q1QWAR](https://www.novosns.com/product/NSM3502-IND-Q1QWAR) | QFN48；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/AgawbuVmLoE8A2xS2CpcwMzonPf.pdf) |
 | [NSM3502-STD-Q1QWAR](https://www.novosns.com/product/NSM3502-STD-Q1QWAR) | QFN48；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/AgawbuVmLoE8A2xS2CpcwMzonPf.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-model仅作检索分组键；本文不删除NSM完整订货号中的Q0/Q1/IND/STD资格或配置部分。
+NSM成员的完整资格与配置由订货号定义，型号前缀相同不表示各后缀规格相同。
 
-IND与STD都在连字符之后，按用户规则合并为NSM3502，但保留两种完整OPN，不能忽略配置差异。
+NSM3502-IND-Q1QWAR与NSM3502-STD-Q1QWAR为不同完整配置，预设与适用条件需分别确认。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

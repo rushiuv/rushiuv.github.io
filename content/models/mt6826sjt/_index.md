@@ -56,7 +56,7 @@ series_parent: mt6826s
 
 SPI读取和ABZ跟踪共用同一角度链，系统可用绝对读数建立启动位置，但仍要处理主控计数器启用时刻、方向和Z参考。它们有助于交叉检查通信，不能据此构成独立传感冗余。
 
-## 保留STD与其他完整预设
+## STD与其他预设配置
 
 目录列出不同SJT订货号，公开矩阵未逐项解释全部上电预设。固件应回读实际配置并保存对应记录，不把不同预设混成一颗固定功能器件。
 
@@ -68,11 +68,11 @@ SPI读取和ABZ跟踪共用同一角度链，系统可用绝对读数建立启�
 | [MT6826SJT-AKD](https://www.novosns.com/product/MT6826SJT-AKD) | QFN24；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Fl4kbt78Zo59Hxx3EbecPPldnOe.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/IhywbstEKoQqmcxud7JcXPDJngb.pdf) |
 | [MT6826SJT-STD](https://www.novosns.com/product/MT6826SJT-STD) | QFN24；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Fl4kbt78Zo59Hxx3EbecPPldnOe.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/IhywbstEKoQqmcxud7JcXPDJngb.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

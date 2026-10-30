@@ -20,6 +20,8 @@ official_url: https://www.conntek.com.cn/html/web/product/switchPositionDetectio
 document_version: 官方公开产品页或目录，核对：2026-10-18
 model_card: true
 catalog_level: 系列
+aliases:
+- /models/kth1702/
 ---
 
 KTH17采用全极检测，成员的输出级、采样档和温度范围不同。频率与电流必须按同一版本配对比较。

@@ -55,4 +55,4 @@ EAS-006系列包含A、B两个结构成员。官网写作EAS-006A／EAS-006B，�
 | EAS-006A | [产品页](https://www.esstmags.com/products/angle-encoder/integrated/single-turn-abs/270.html) | [原厂手册](https://www.esstmags.com/static/upload/file/20260904/1788510077762748.pdf) |
 | EAS-006B | [产品页](https://www.esstmags.com/products/angle-encoder/integrated/single-turn-abs/269.html) | [原厂手册](https://www.esstmags.com/static/upload/file/20260904/1788510041513528.pdf) |
 
-手册封面使用“Magnetic linear position encoder”，官网归入磁性角度编码器目录，保留这一术语口径差异，不由英文封面额外推定测量功能。公开摘要也未说明是否含壳体、轴和轴承，因此本页按编码器／模块收录。
+手册封面使用“Magnetic linear position encoder”，官网将其归入磁性角度编码器目录，两者术语不同；实际测量功能以该型号规格为准。公开摘要未明确壳体、轴和轴承的交付范围，整机结构需在选型时确认。

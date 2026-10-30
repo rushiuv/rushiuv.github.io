@@ -8,7 +8,7 @@ lastmod: '2026-10-30'
 catalog_type: 数字角度
 catalog_form: 芯片
 wiki_category: 数字角度
-description: NSM3012S 是本次工业目录中的Hall角度S成员分组，保留完整NSM3012S-DSPR；S成员的输出预设不从A/B系列说明直接推定。
+description: NSM3012S-DSPR是工业Hall角度成员，提供相应数字配置及模拟/PWM位置输出路径。
 official_url: https://www.novosns.com/product/NSM3012S-DSPR
 related_companies:
 - 纳芯微
@@ -51,13 +51,13 @@ series_parent: nsm301x
 
 官方系列说明介绍自动增益补偿，用于处理部分磁体温度和轴向装配变化。它不能消除饱和、偏心或磁场方向错误，机构仍需验证全行程的幅值裕量与位置误差。
 
-## 只保留实际列出的工业版本
+## 工业版适用范围
 
-本次只有S-DSPR被纳入，不能按同系列其他成员自行增加汽车版本。若未来资料补出新后缀，应作为独立资格记录补入，而不是沿用现页参数。
+NSM3012S-DSPR属于工业目录，汽车等级尚无对应公开订货条目；其他成员的车规资格不适用于该完整型号。
 
 ## 型号与资格版本
 
-本页按核心前缀提供检索入口。Q0、Q1、IND、STD及其他配置串保留在完整订货号中，不能把某一行的车规等级、封装或输出推广到整个分组。
+完整订货号中的Q0、Q1、IND、STD等字符区分资格或配置；温区、封装与输出功能按订货表对应行选择。
 
 ## 完整订货号与资料
 
@@ -65,11 +65,11 @@ series_parent: nsm301x
 | --- | --- |
 | [NSM3012S-DSPR](https://www.novosns.com/product/NSM3012S-DSPR) | SOP8；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-model仅作检索分组键；本文不删除NSM完整订货号中的Q0/Q1/IND/STD资格或配置部分。
+NSM成员的完整资格与配置由订货号定义，型号前缀相同不表示各后缀规格相同。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

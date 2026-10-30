@@ -87,9 +87,9 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocq
 
 目录列三线及四线SPI，选用共享数据线时须按手册切换驱动方向，避免主控与器件同时驱动。即使两种模式读到相同角度，也不能假设时序、帧长和配置完全一致。
 
-## 升级比较保留既有预设
+## 升级时的配置迁移
 
-GT不是可删除的包装尾缀，本页关联MT6825系列而保留完整型号。不同OPN状态混有Active和不推荐新设计，迁移到MT6835时也要重新核对引脚、配置保存和输出比例，不能仅按“升级”字样判断原位替换。
+MT6825GT中的GT对应TSSOP16成员，属于选型所需的型号信息。不同OPN状态混有Active和不推荐新设计，迁移到MT6835时也要重新核对引脚、配置保存和输出比例，不能仅按“升级”字样判断原位替换。
 
 ## 订货版本之间的差别
 
@@ -140,13 +140,13 @@ GT不是可删除的包装尾缀，本页关联MT6825系列而保留完整型号
 | [MT6825GT-STF-R](https://www.novosns.com/product/MT6825GT-STF-R) | TSSOP16；Industrial；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/IJvVbdAIQoQJ8wxFSw1ccWRundc.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/CSFRbWrSFomtbyx6BDjc5qVAnbd.pdf) |
 | [MT6825GT-STT-R](https://www.novosns.com/product/MT6825GT-STT-R) | TSSOP16；Industrial；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/IJvVbdAIQoQJ8wxFSw1ccWRundc.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/CSFRbWrSFomtbyx6BDjc5qVAnbd.pdf) |
 
-“Not Recommended for New Designs”表示该完整订货号不推荐用于新设计，不代表本页全部成员停产。请结合表内仍为Active的版本核对供应与配置。
+“Not Recommended for New Designs”表示该完整订货号不推荐用于新设计，不代表全部预设停产。请结合表内仍为Active的版本核对供应与配置。
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-同一归一型号不同OPN生命周期不同；逐条保留，不能整体标Active。
+同型号不同预设的生命周期可能不同，供货与新设计适用性按具体OPN查询。
 
 ## 原厂资料
 

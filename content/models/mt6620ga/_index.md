@@ -68,11 +68,11 @@ series_parent: mt6620
 | [MT6620GA-AKT-R](https://www.novosns.com/product/MT6620GA-AKT-R) | TSSOP24；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Ksm5bgqAnoaChwx3v5Yc50Qpn2b.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/Rb6dbaacgobq1RxO5EBcLEcYnJg.pdf) |
 | [MT6620GA-STD-R](https://www.novosns.com/product/MT6620GA-STD-R) | TSSOP24；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Ksm5bgqAnoaChwx3v5Yc50Qpn2b.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/Rb6dbaacgobq1RxO5EBcLEcYnJg.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

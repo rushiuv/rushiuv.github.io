@@ -84,7 +84,7 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqV
 
 ## 小封装与冗余选项不能混成一个料号
 
-目录有冗余封装选项字段，但本页CT明确为SOP8；双芯结构、独立供电或诊断能力必须看完整订货资料。两路相似输出也不能自动认定为功能安全冗余。
+目录有冗余封装选项字段，但CT成员采用SOP8；双芯结构、独立供电或诊断能力必须看完整订货资料。两路相似输出也不能自动认定为功能安全冗余。
 
 ## 模拟读数与SPI配置分开验收
 
@@ -134,13 +134,13 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqV
 | [MT6501CT-PJ2-R](https://www.novosns.com/product/MT6501CT-PJ2-R) | SOP8；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/EXBnbYCABoa0IFxcmYhc5eC5nXf.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/Mt9bb7hEvoTXOex3H3gcHjlwn0a.pdf) |
 | [MT6501CT-PJ3-R](https://www.novosns.com/product/MT6501CT-PJ3-R) | SOP8；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/EXBnbYCABoa0IFxcmYhc5eC5nXf.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/Mt9bb7hEvoTXOex3H3gcHjlwn0a.pdf) |
 
-“Not Recommended for New Designs”表示该完整订货号不推荐用于新设计，不代表本页全部成员停产。请结合表内仍为Active的版本核对供应与配置。
+“Not Recommended for New Designs”表示该完整订货号不推荐用于新设计，不代表全部预设停产。请结合表内仍为Active的版本核对供应与配置。
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-同一归一型号不同OPN生命周期不同；逐条保留，不能整体标Active。
+同型号不同预设的生命周期可能不同，供货与新设计适用性按具体OPN查询。
 
 ## 原厂资料
 

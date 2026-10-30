@@ -8,7 +8,7 @@ lastmod: '2026-10-30'
 catalog_type: 数字角度
 catalog_form: 芯片
 wiki_category: 数字角度
-description: NSM3012B 分组保留Hall角度B成员的DSPR与Q1SPR订货号，分别对应工业和汽车目录；系列公共参数不直接覆盖所有完整版本。
+description: NSM3012B是Hall角度B成员，包含工业DSPR和汽车Q1SPR配置，输出传递函数按所选完整版本确认。
 official_url: https://www.novosns.com/product/NSM3012B-DSPR
 related_companies:
 - 纳芯微
@@ -53,7 +53,7 @@ series_parent: nsm301x
 
 若主控通过PWM获取角度，应检查正常占空比范围、更新周期和异常时的编码方式。接收器不能把所有脉宽都线性转换为合法位置，也不能由目录PWM位宽推断整机准确度。
 
-## 工业与汽车路径保留各自文件
+## 工业与汽车适用条件
 
 DSPR与Q1SPR的资格和目录归属不同，量产选型应使用完整后缀。共享封装图片只能用于识别系列来源，不证明每一版本具有相同诊断与认证。
 
@@ -96,7 +96,7 @@ DSPR与Q1SPR的资格和目录归属不同，量产选型应使用完整后缀�
 
 ## 型号与资格版本
 
-本页按核心前缀提供检索入口。Q0、Q1、IND、STD及其他配置串保留在完整订货号中，不能把某一行的车规等级、封装或输出推广到整个分组。
+完整订货号中的Q0、Q1、IND、STD等字符区分资格或配置；温区、封装与输出功能按订货表对应行选择。
 
 ## 完整订货号与资料
 
@@ -105,11 +105,11 @@ DSPR与Q1SPR的资格和目录归属不同，量产选型应使用完整后缀�
 | [NSM3012B-DSPR](https://www.novosns.com/product/NSM3012B-DSPR) | SOP8；Industrial；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 | [NSM3012B-Q1SPR](https://www.novosns.com/product/NSM3012B-Q1SPR) | SOP8；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-model仅作检索分组键；本文不删除NSM完整订货号中的Q0/Q1/IND/STD资格或配置部分。
+NSM成员的完整资格与配置由订货号定义，型号前缀相同不表示各后缀规格相同。
 
-同一归一型号跨工业与汽车目录；需按完整订货号核对Q0/Q1/工业等级与所用手册，不能把代表工业详情扩展为所有车规配置。
+工业和汽车版本分别使用对应完整订货号、资格文件和手册条件。
 
 ## 原厂资料
 

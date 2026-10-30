@@ -8,7 +8,7 @@ lastmod: '2026-10-30'
 catalog_type: 数字角度
 catalog_form: 芯片
 wiki_category: 数字角度
-description: NSM3012BZ 是汽车Hall角度系列BZ成员分组，本次对应Q1SPR完整版本；不将BZ与BF或B成员混名，也不删去Q1资格尾部。
+description: NSM3012BZ-Q1SPR是汽车Hall角度BZ成员，目录提供SPI、PWM及输出曲线编程信息。
 official_url: https://www.novosns.com/product/NSM3012BZ-Q1SPR
 related_companies:
 - 纳芯微
@@ -49,19 +49,19 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqV
 
 ## BZ成员不从字母猜内部功能
 
-公开详情对多种NSM301x成员复用同一文本，本次没有足够证据解释BZ新增或删减了哪项内部能力。页面保留确切型号和订货表，主控设计以前缀相近不能作为协议兼容依据。
+BZ与B、BF的内部功能差异应查具体型号定义，前缀相近不足以证明协议和寄存器兼容。
 
 ## 模拟/PWM传递函数连同诊断读取
 
 目录列SPI、PWM和输出曲线编程，使用时应定义合法输出窗口及故障处理。仅把输出转换为角度而不核对状态，可能把饱和或异常值当成机构到达端点。
 
-## 汽车资格与共享文案各有边界
+## 汽车资格与输出曲线
 
 Q1SPR的正式资格应对应完整文件，不能用工业版本的代表图或公共参数替代。目录与系列详情在曲线节点口径上不同，保留差异并等具体手册收敛。
 
 ## 型号与资格版本
 
-本页按核心前缀提供检索入口。Q0、Q1、IND、STD及其他配置串保留在完整订货号中，不能把某一行的车规等级、封装或输出推广到整个分组。
+完整订货号中的Q0、Q1、IND、STD等字符区分资格或配置；温区、封装与输出功能按订货表对应行选择。
 
 ## 完整订货号与资料
 
@@ -69,11 +69,11 @@ Q1SPR的正式资格应对应完整文件，不能用工业版本的代表图或
 | --- | --- |
 | [NSM3012BZ-Q1SPR](https://www.novosns.com/product/NSM3012BZ-Q1SPR) | SOP8；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-model仅作检索分组键；本文不删除NSM完整订货号中的Q0/Q1/IND/STD资格或配置部分。
+NSM成员的完整资格与配置由订货号定义，型号前缀相同不表示各后缀规格相同。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

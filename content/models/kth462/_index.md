@@ -27,6 +27,8 @@ product_image: /images/catalog/kth462n-package.jpg
 product_image_caption: KTH462N 系列 SOT-23-6L，原手册第1页
 product_image_source: https://conntek.github.io/files/KTH462N%20Series%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf
 catalog_level: 系列
+aliases:
+- /models/kth462n/
 ---
 
 KTH462系列提供双输出磁状态检测。选型首先区分两路输出的含义，再选敏感平面与采样档；两根信号线相同不代表主控可以沿用同一解释。

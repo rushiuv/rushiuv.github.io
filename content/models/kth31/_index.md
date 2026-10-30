@@ -31,6 +31,8 @@ product_image: /images/catalog/kth31-package.png
 product_image_caption: KTH31 系列封装示意，原手册第1页；按完整后缀选择封装
 product_image_source: https://conntek.github.io/files/KTH31%20Series%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf
 catalog_level: 系列
+aliases:
+- /models/kth31xx/
 ---
 
 KTH31是比例式线性霍尔系列，六个成员主要以灵敏度和可用磁场范围区分。先根据磁路最大场强选档，再检查供电、输出摆幅与噪声。

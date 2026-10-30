@@ -61,7 +61,7 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocq
 
 目录有输出过压保护字段，该字段描述器件相关条件，不能直接代替线束短接、供电瞬态和接收端保护验证。应结合负载及故障电压分别检查传感器和主控输入。
 
-## 保留角度路径与安全文件边界
+## 角度接口与安全要求
 
 SENT状态、故障诊断、冗余封装选项和ISO26262标签分别需要实际定义与正式文件。系统应说明故障发现后采取什么动作，不能把器件标签直接写成整机ASIL结果。
 
@@ -75,11 +75,11 @@ SENT状态、故障诊断、冗余封装选项和ISO26262标签分别需要实�
 | [MT6511GT-STD-R](https://www.novosns.com/product/MT6511GT-STD-R) | TSSOP16；Automotive；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/Os0abZrRvoUzKpx8NrfcmuWJnOd.pdf) |
 | [MT6511GT-STP-R](https://www.novosns.com/product/MT6511GT-STP-R) | TSSOP16；Automotive；Active；[英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/Os0abZrRvoUzKpx8NrfcmuWJnOd.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

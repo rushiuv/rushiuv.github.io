@@ -8,7 +8,7 @@ lastmod: '2026-10-30'
 catalog_type: 数字角度
 catalog_form: 芯片
 wiki_category: 数字角度
-description: NSM3012A 是Hall角度A成员的检索分组，包含DSPR及Q0SPR、Q1SPR、QSPR等完整版本；Q0/Q1资格不能在页面合并时删除。
+description: NSM3012A是Hall角度A成员，提供DSPR、Q0SPR、Q1SPR及QSPR等配置，各版本的温区、接口与资格分别定义。
 official_url: https://www.novosns.com/product/NSM3012A-DSPR
 related_companies:
 - 纳芯微
@@ -53,7 +53,7 @@ series_parent: nsm301x
 
 ## 可编程曲线要匹配被测机构
 
-系列说明中的分段拟合可以调整角度到输出的映射，但其节点与误差口径不能从共享文案推断为每个预设相同。应先固定机构有效行程和接收器量程，再对点间误差和回程进行验证。
+系列说明中的分段拟合可以调整角度到输出的映射，但各预设的节点定义与误差条件应分别核对。应先固定机构有效行程和接收器量程，再对点间误差和回程进行验证。
 
 ## 状态诊断与测量有效性分开
 
@@ -98,7 +98,7 @@ series_parent: nsm301x
 
 ## 型号与资格版本
 
-本页按核心前缀提供检索入口。Q0、Q1、IND、STD及其他配置串保留在完整订货号中，不能把某一行的车规等级、封装或输出推广到整个分组。
+完整订货号中的Q0、Q1、IND、STD等字符区分资格或配置；温区、封装与输出功能按订货表对应行选择。
 
 ## 完整订货号与资料
 
@@ -109,11 +109,11 @@ series_parent: nsm301x
 | [NSM3012A-Q1SPR](https://www.novosns.com/product/NSM3012A-Q1SPR) | SOP8；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 | [NSM3012A-QSPR](https://www.novosns.com/product/NSM3012A-QSPR) | SOP8；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-model仅作检索分组键；本文不删除NSM完整订货号中的Q0/Q1/IND/STD资格或配置部分。
+NSM成员的完整资格与配置由订货号定义，型号前缀相同不表示各后缀规格相同。
 
-同一归一型号跨工业与汽车目录；需按完整订货号核对Q0/Q1/工业等级与所用手册，不能把代表工业详情扩展为所有车规配置。
+工业和汽车版本分别使用对应完整订货号、资格文件和手册条件。
 
 ## 原厂资料
 

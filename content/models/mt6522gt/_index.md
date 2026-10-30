@@ -51,7 +51,7 @@ product_image_source: https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocq
 
 ## 检测平面不能由系列简介代选
 
-官网将MT652x描述为可根据型号配置检测XY、XZ或YZ平面，但本次公开字段没有逐一说明6521/6522/6523与平面的对应表。因此保留本完整型号，实际选型先核对敏感平面及磁体运动，不能自行给它指定某一平面。
+MT652x支持按型号配置检测XY、XZ或YZ平面；6521/6522/6523与具体平面的对应关系应查相应选型表。磁体运动平面必须与所选成员的敏感平面一致。
 
 ## TSSOP16封装的接入取舍
 
@@ -67,11 +67,11 @@ GT版本为TSSOP16，输出曲线、SENT/SPI和换向配置应围绕最终控制
 | --- | --- |
 | [MT6522GT-STD-Q-R](https://www.novosns.com/product/MT6522GT-STD-Q-R) | TSSOP16；Automotive；Active；[中文手册](https://wwwapi.novosns.com/dms/userfiles/docs/PgkFb2I4ioeiFKxvAAjc5gwpnCh.pdf) · [英文／原版手册](https://wwwapi.novosns.com/dms/userfiles/docs/LGpzbWCZnosP54x3qnScgyBanOc.pdf) |
 
-## 资料边界
+## 版本与适用条件
 
-MT保留首连字符前完整字母，包装/预设尾缀记录在full_order_codes。
+完整订货号区分预设配置与供货形式；CT、QT、GT、SGT、SJT等型号字母还对应不同成员或封装。
 
-目录已列参数在这些OPN间未显示不同，不代表寄存器预设、包装或未列功能完全相同。
+这些OPN的目录参数相同，寄存器预设、包装和其他功能仍应按完整订货号确认。
 
 ## 原厂资料
 

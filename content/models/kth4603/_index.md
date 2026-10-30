@@ -1,4 +1,5 @@
 ---
+aliases: ["/models/kth4603x/"]
 title: KTH4603系列
 description: XYZ三轴全极霍尔开关，用于多方向磁体接近检测，而非三轴场强采样。
 wiki: true
