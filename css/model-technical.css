@@ -1,0 +1,18 @@
+.model-card .wiki-content .technical-figure{margin:26px 0;padding:16px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.model-card .wiki-content .technical-figure>a{display:block;text-decoration:none;overflow:hidden}
+.model-card .wiki-content .technical-figure img{display:block;width:100%;height:auto;max-width:100%;max-height:none;object-fit:contain;border:0;border-radius:0;padding:0;margin:0;background:#fff}
+.model-card .wiki-content .technical-figure figcaption{font-size:14px;font-weight:650;color:#284c5d;padding:0 0 12px;margin:0 0 12px;border-bottom:1px solid #e4e9e5;text-align:left}
+.model-card .wiki-content .technical-panel{display:block;width:100%;height:auto;max-width:100%;overflow:hidden;background:#fff}
+.model-card .wiki-content .technical-panels{display:block;margin:20px 0 28px}
+.model-card-visual>a{display:block}.model-card-visual img{max-width:100%;width:auto;margin-inline:auto}
+@media(max-width:640px){.model-card .wiki-content .technical-figure{padding:8px;margin:20px 0}.model-card .wiki-content .technical-figure img{max-height:none;padding:0}.model-card .wiki-content .technical-figure figcaption{font-size:13px;padding-bottom:8px;margin-bottom:8px}}
+.model-card .wiki-content img{max-height:none;max-width:100%;width:auto;height:auto}
+.model-card .wiki-content .model-variant-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0}
+.model-card .wiki-content .model-variant-gallery figure{margin:0;padding:12px;background:#fff;border:1px solid var(--line);border-radius:10px;min-width:0}
+.model-card .wiki-content .model-variant-gallery img{display:block;width:100%;height:145px;object-fit:contain;margin:0;padding:0;border:0}
+.model-card .wiki-content .model-variant-gallery figcaption{font-size:13px;text-align:center;overflow-wrap:anywhere;margin:12px 0 0}
+.model-card .wiki-content .model-drawing-set{margin:14px 0;border:1px solid var(--line);border-radius:10px;padding:0 16px;background:#fff;scroll-margin-top:100px}
+.model-card .wiki-content .model-drawing-set>summary{padding:18px 0;cursor:pointer;font-weight:650;overflow-wrap:anywhere}
+.model-card .wiki-content .model-drawing-set[open]>summary{border-bottom:1px solid var(--line)}
+@media(max-width:640px){.model-card .wiki-content .model-variant-gallery{grid-template-columns:1fr}.model-card .wiki-content .model-variant-gallery img{height:170px}}
+.model-card .wiki-content .variant-product-photo img{max-height:240px;width:auto;margin:0 auto}
