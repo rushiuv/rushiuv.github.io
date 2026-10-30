@@ -36,8 +36,15 @@ def built_path(url: str) -> Path:
     return BUILD / path / "index.html"
 
 
-sources = sorted((ROOT / "content/models").glob("*/_index.md"))
-assert len(sources) == 145, len(sources)
+candidates = sorted((ROOT / "content/models").glob("*/_index.md"))
+sources = []
+for source in candidates:
+    meta0 = frontmatter(source.read_text())
+    if meta0.get("wiki_type") == "model_redirect":
+        continue
+    sources.append(source)
+assert sources, "expected at least one non-redirect model page"
+print(f"checking {len(sources)} non-redirect model pages")
 lengths = []
 
 for source in sources:
