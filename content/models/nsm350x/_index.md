@@ -1,45 +1,51 @@
 ---
-title: "NSM350x"
+title: NSM350x系列
 wiki: true
-wiki_type: "model"
-catalog_type: "数字角度"
-catalog_form: "芯片"
+wiki_type: model
+catalog_type: 数字角度
+catalog_form: 芯片
 wiki_rank: 91
 seed_count: 2
-lastmod: "2026-10-24"
-description: "NSM350x 是纳芯微双码道霍尔游标磁编码器系列，面向中空或离轴绝对角度测量。"
-official_url: "https://www.novosns.com/"
-related_companies: ["纳芯微"]
-wiki_category: "双码道与绝对位置"
-document_version: "公开资料核对：2026-10-16；文件版本见下载件"
+lastmod: '2026-10-30'
+description: NSM350x 是纳芯微双码道霍尔游标磁编码器系列，面向中空或离轴绝对角度测量。
+official_url: https://www.novosns.com/product/NSM3502-IND-Q1QWAR
+related_companies:
+- 纳芯微
+wiki_category: 双码道与绝对位置
+document_version: 公开资料核对：2026-10-16；文件版本见下载件
 model_card: true
+datasheet_url: https://wwwapi.novosns.com/dms/userfiles/docs/AgawbuVmLoE8A2xS2CpcwMzonPf.pdf
+datasheet_label: NSM3502数据手册（PDF）
+catalog_level: 系列
 ---
 
-## 核心参数
+NSM350x采用双码道Hall阵列与游标关系取得中空／离轴绝对位置。目前本地目录资料可确认NSM3502的IND与STD两种完整订货配置，不能把它们当成后缀可随意删除的同一版本。
 
-| 参数 | 数值与适用条件 |
-| --- | --- |
-| 磁检测 | 霍尔双码道 |
-| 编码方法 | 游标绝对位置解算 |
-| 机械形式 | 面向中空／离轴布局的匹配双码道磁环 |
-| 尚待补齐的核心参数 | 供电、电流、温度、接口速率、磁环极数及整圈精度尚未取得可复核的成员级正式表。 |
+## 已确认型号与核心异同
 
-参数来源：本页所列[原厂产品资料与手册](https://www.novosns.com/)。
+| 完整订货号 | 目录封装／等级 | 核心输出 | 尚未展开的差异 |
+| --- | --- | --- | --- |
+| NSM3502-IND-Q1QWAR | QFN48；Industrial | 22bit；4-wire SPI；12bit PWM | IND预设与适用配置需核对 |
+| NSM3502-STD-Q1QWAR | QFN48；Industrial | 目录所列参数相同 | STD预设与适用配置需核对 |
 
-## 工作方式与型号定位
 
-NSM350x通过双磁码道与游标关系获得中空或离轴绝对角度。磁环极数、两道周期及读头位置构成编码系统，裸芯片本身不能决定任意磁环的整圈位置。
+## 先配磁环，再配输出
 
-## 安装、接口与配置
+NSM3502介绍中的主码道对应2mm极距，两个码道的几何及周期关系需一起匹配。细分位数高只说明位置表达，不能证明偏心和气隙变化下的组合消歧一定正确。
 
-双码道既要保证各自信号质量，也要保证组合消歧不跳区。细分位数高只说明局部角度表达，并不能证明粗细码道在偏心、气隙变化时仍稳定对应。
+代表IND配置目录列ABZ 1～65536lines可编程、UVW 1～64对极可编程、转速＜24000rpm、匀速传播延迟5µs、−40～125°C及3.3～5.0V供电；这些是目录条件，不能将所有最大输出能力与最高速度无条件组合。
 
-## 校准与选型验证
+## IND和STD怎样落实到设计
 
-目前取得的官方入口不足以核实所有成员的独立参数。选型需索取具体后缀的接口、供电、磁极和精度条件，不用其他NSM系列或相近竞品填表；样机应特别检查整圈连续性和上电位置。
+现有目录字段未显示差别，不证明寄存器预设、校准、封装内设置或资格完全一致。完整OPN、磁环参数和配置文件应一起确定，样机检查整圈连续性、跨零和上电绝对位置。
+
+更多完整订货行与原厂链接见[NSM3502型号页](/models/nsm3502/)。本页不补造未取得资料的其他NSM350x成员。
+
 
 ## 官方资料
 
-- [NSM350x 原厂资料入口](https://www.novosns.com/)
+明确型号、配置与版本后使用对应文件。
 
-NSM350x 为系列入口，公开完整型号手册尚未取得。
+
+- [官方产品入口](https://www.novosns.com/product/NSM3502-IND-Q1QWAR)
+- [NSM3502数据手册（PDF）](https://wwwapi.novosns.com/dms/userfiles/docs/AgawbuVmLoE8A2xS2CpcwMzonPf.pdf)

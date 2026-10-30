@@ -1,68 +1,77 @@
 ---
-title: "KTH78系列"
-linkTitle: "KTH78"
-catalog_vendor: "昆泰芯"
-catalog_type: "数字角度"
-catalog_form: "芯片"
-search_aliases: ["KTH7801", "KTH7803", "KTH7812", "KTH7813", "KTH7814", "KTH7815", "KTH7816", "KTH7823"]
-description: "KTH78 是 KTH78xx 霍尔角度编码器系列简称，覆盖 KTH7801、KTH7812、KTH7813、KTH7814、KTH7815、KTH7816、KTH7823 等成员。下列具体数值仅标注其对应型号。"
+title: KTH78系列
+linkTitle: KTH78
+catalog_vendor: 昆泰芯
+catalog_type: 数字角度
+catalog_form: 芯片
+search_aliases:
+- KTH7801
+- KTH7803
+- KTH7812
+- KTH7813
+- KTH7814
+- KTH7815
+- KTH7816
+- KTH7823
+description: KTH78 是 KTH78xx 霍尔角度编码器系列简称，覆盖 KTH7801、KTH7812、KTH7813、KTH7814、KTH7815、KTH7816、KTH7823
+  等成员。下列具体数值仅标注其对应型号。
 wiki: true
-wiki_type: "model"
+wiki_type: model
 wiki_rank: 9
 seed_count: 16
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-official_url: "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
-datasheet_url: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
-datasheet_label: "KTH7812 数据手册（系列代表型号）"
-document_version: "KTH7812 官方公开手册，32 个 PDF 页面；其他成员以系列页同名手册为准"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+official_url: https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html
+datasheet_url: https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf
+datasheet_label: KTH7812 数据手册（系列代表型号）
+document_version: KTH7812 官方公开手册，32 个 PDF 页面；其他成员以系列页同名手册为准
 model_card: true
-product_image: "/images/wiki/kth78-diagram.webp"
-product_image_caption: "图片来源：KTH7812 官方数据手册，第 5 个 PDF 页面，功能框图局部。本图仅代表 KTH7812。"
-product_image_source: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+product_image: /images/wiki/kth78-diagram.webp
+product_image_caption: 图片来源：KTH7812 官方数据手册，第 5 个 PDF 页面，功能框图局部。本图仅代表 KTH7812。
+product_image_source: https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf
+catalog_level: 系列
 ---
 
-## 核心参数
+KTH78是霍尔角度传感器系列，成员的温度等级、码宽和接口组合不同。先按应用等级与所需输出筛选，再到具体型号页核对供电、噪声与响应条件。
 
-| 参数 | 数值、配置与条件 |
-| --- | --- |
-| 系列范围 | KTH7801/7803、7812/7813/7814/7815/7816、7823等；成员页独立列参 |
-| 检测方式 | 霍尔平面磁场方向，支持指定在轴/离轴磁路 |
-| 编码格式 | N版本16位；C版本常为12位角度+4位CRC，按订货号 |
-| KTH7812供电 | 3.3V模式3.0～3.6V；5V模式按对应电气表 |
-| KTH7812噪声/INL | 0.015°（1σ）；±0.35°，具体条件见其手册 |
-| KTH7812 ABZ/UVW | 4～4096步/圈；1～8对极 |
-| KTH7812电流/启动 | 11.6mA（3.3V）典型；1ms典型 |
-| KTH7812磁场 | 30～150mT，典型60mT |
-| KTH7812数据更新 | 1µs，不等于所有运动下测量链路无延时 |
-| 温度分级 | 官网新表：7801/7803至150°C；781x至125°C；7823至105°C；不同表/手册另有冲突 |
-| 封装 | QN16或SOP8，接口数量按成员与封装 |
-| 资料冲突 | 官网两张选型表与部分型号手册存在噪声、接口、温度口径差异，本页不合成全系最佳值 |
+## 型号与核心异同
 
-参数依据：[原厂数据手册及型号选型表](https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf)。
+| 具体型号 | 位置码／输出格式 | 接口 | 温度条件 |
+| --- | --- | --- | --- |
+| [KTH7801](/models/kth7801/) | N：16位；C：12位角度+4位CRC，按后缀 | 官网QN16：SSI/PWM/SPI/ABZ；SOP8：PWM/SPI | 官网新表−40～150°C；官网另一表−40～125°C，须按完整订货号确认 |
+| [KTH7803](/models/kth7803/) | 16位，官网N-QN16版本 | SSI、PWM、SPI、ABZ，官网对应完整型号行 | 官网新表−40～150°C |
+| [KTH7812](/models/kth7812/) | 16位绝对角度 | 四线SPI、ABZ、UVW，依配置 | −40～125°C |
+| [KTH7813](/models/kth7813/) | 16位绝对角度 | SPI、ABZ、UVW，官网QN16对应行 | 官网−40～125°C；QFN-16L |
+| [KTH7814](/models/kth7814/) | 官网C-QN16：12位角度+4位CRC；16位帧不等于16位位置 | SPI、ABZ与反相ABZ，官网对应行 | −40～125°C；QFN-16L |
+| [KTH7815](/models/kth7815/) | 16位，按实际后缀/帧格式确认 | QN16和SOP8对应行均列PWM、SPI；SPI、ABZ及反相ABZ；与官网新表存在冲突；PWM、SPI；不能沿用QN16增量输出 | −40～125°C；QFN-16L、SOP8，按订货号 |
+| [KTH7816](/models/kth7816/) | N：16位；C：12位角度+4位CRC，按封装后缀 | 官网N-QN16：SSI、PWM、SPI、ABZ；PWM、SPI；N/C版本数据格式不同 | −40～125°C |
+| [KTH7823](/models/kth7823/) | 消费类成员；N：16位，C：12位角度+4位CRC | 官网：SSI、PWM、SPI、ABZ，按N/C具体版本；官网C-SOP8：PWM、SPI | 官网−40～105°C；具体订货等级按正式资料 |
 
-## 系列页先解决哪三个问题
+上表沿用各成员资料的适用口径；官网新旧表与部分手册存在差异，不将某一版本的结论推广为全系列保证。
 
-先确定应用等级，再确定引脚和输出组合，最后选择噪声与响应配置。KTH78不是每个型号都具备全部接口的统一芯片。汽车、工业与消费成员的温度上限和默认滤波等条件，应进入正式订货资料。
+## KTH7812的参数条件
 
-## 位数与CRC如何区分
+- **供电**：3.3V模式3.0～3.6V；5V模式按对应电气表
+- **噪声/INL**：0.015°（1σ）；±0.35°，具体条件见其手册
+- ** ABZ/UVW**：4～4096步/圈；1～8对极
+- **电流/启动**：11.6mA（3.3V）典型；1ms典型
+- **磁场**：30～150mT，典型60mT
+- **数据更新**：1µs，不等于所有运动下测量链路无延时
 
-N和C后缀涉及数据表达。12位角度加4位CRC占16位帧，但只有12位位置内容，不能写成16位角度分辨率。SPI、SSI、ABZ和PWM也可能有各自的码宽或更新行为。
+## 码宽、封装与信号链一起确认
 
-## QFN与SOP8不是只缩封装
+N与C版本涉及数据表达：12位角度加4位CRC虽然占16位帧，位置内容仍是12位。SPI、SSI、ABZ和PWM也应分别核对码宽与更新方式。
 
-SOP8引脚少，通常保留PWM和SPI等组合，不能沿用QN16的全部增量输出。测试脚连接要求也应以具体引脚表为准。设计替换时需重新核对原理图、软件模式和输出电气条件。
+QN16与SOP8的可用引脚不同，不能把大封装的全部输出移植到小封装。MTP保存方向、零点与滤波等配置；换成员后应核对默认值和已写入参数，实转一圈验证绝对角度与增量计数的关系。
 
-## 怎样使用本页参数
+多个输出共享上游磁体和角度处理，同时读取SPI与ABZ不构成两套独立测量。诊断状态、实际刷新率与动态误差仍须在对应模式下测试。
 
-上表以明确标注的KTH7812作代表，其他成员通过各自页查核心表。官网同时保留新旧两套表，噪声、温度和7815接口并不完全一致；应以适用正式手册和原厂确认收敛，不能挑每一栏最优值拼成一款器件。
-
-## 配置、诊断和共用信号链
-
-KTH78的霍尔信号经前端转换和角度计算后，再按方向、零点与滤波配置生成不同输出；MTP用于配置保存，磁场诊断则用于观察相应工作状态。多个输出共享上游磁体和角度处理，不能仅因同时读取SPI与ABZ，就把它们当成两套独立测量。更换成员后，应核对默认模式与已保存配置，并通过实际转一圈确认绝对角度和增量计数关系。
 
 ## 官方资料
 
-- [官方产品介绍](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html)
-- [下载KTH7812 数据手册（系列代表型号）（官方 PDF）](https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf)
-- 资料版本：KTH7812 官方公开手册，32 个 PDF 页面；其他成员以系列页同名手册为准
+明确型号、配置与版本后使用对应文件。
+
+
+- [官方产品入口](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html)
+- [KTH7812 数据手册（系列代表型号）](https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7812%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf)

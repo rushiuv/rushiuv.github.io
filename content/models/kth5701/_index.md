@@ -1,23 +1,27 @@
 ---
-title: "KTH5701"
+title: KTH5701
 wiki: true
-wiki_type: "model"
-catalog_type: "线性磁场"
-catalog_form: "芯片"
+wiki_type: model
+catalog_type: 线性磁场
+catalog_form: 芯片
 wiki_rank: 22
 seed_count: 9
-lastmod: "2026-10-24"
-description: "KTH5701是数字输出的三轴线性霍尔传感器，可读取XYZ磁场分量，适合摇杆、旋钮和位移感知。"
-official_url: "https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/57xilie/index.html"
-related_companies: ["昆泰芯"]
-datasheet_url: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5701AQ2AQ3_DS_CN.pdf"
-datasheet_label: "官方数据手册"
-wiki_category: "三轴磁场测量"
-document_version: "公开资料核对：2026-10-16；文件版本见下载件"
+lastmod: '2026-10-30'
+description: KTH5701 是面向位置检测的三轴数字霍尔传感器；它提供磁场信息，摇杆、旋钮和位移输出仍取决于磁体几何、测量配置与标定。
+official_url: https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/57xilie/index.html
+related_companies:
+- 昆泰芯
+datasheet_url: https://chat.connteck.com/downloads/KTH5701/KTH5701AQ1_DS_CN_V2.0.pdf
+datasheet_label: 数据手册原链接
+wiki_category: 三轴磁场测量
+document_version: 版本以链接文件名及原件为准；公开链接核对：2026-10-30
 model_card: true
-product_image: "/images/wiki/kth5701-product.png"
-product_image_caption: "KTH5701 原厂手册产品／安装图（PDF 第 1 页）"
-product_image_source: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5701AQ2AQ3_DS_CN.pdf"
+product_image: /images/wiki/kth5701-product.png
+product_image_caption: KTH5701 原厂手册产品／安装图（PDF 第 1 页）
+product_image_source: https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5701AQ2AQ3_DS_CN.pdf
+catalog_source: https://chat.connteck.com/products/3d-hall/KTH5701/
+search_aliases:
+- KTH5701
 ---
 
 ## 核心参数
@@ -62,3 +66,33 @@ AQ1、AQ2/AQ3的温度和封装可选范围需分别核对。读取XYZ与读取C
 
 - [KTH5701 原厂资料入口](https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/57xilie/index.html)
 - [KTH5701 数据手册（官方 PDF）](https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5701AQ2AQ3_DS_CN.pdf)
+
+## 选型补充
+
+### 从三轴磁场得到机构位置
+
+XYZ 是芯片坐标下的磁场分量。由两个分量计算旋转角度，与由磁场幅值估计位移，是两种不同映射；设计时应先明确敏感平面、方向和量程，再把输出与机构基准对应起来。
+
+### AQ 等级和测量模式分开选
+
+AQ1 与 AQ2/AQ3 各有资料入口，温度、封装和电气条件应按完整订货型号核对。连续测量、单次触发和低频唤醒也对应不同功耗，不能把最低休眠电流与最高刷新率写成同一个工作点。
+
+### 记录整段磁场轨迹
+
+用于换挡器或摇杆时，除了中心零偏，还要检查全部位置的场分量、饱和裕量和运动单调性。温度、装配偏移和外部磁场分别施加扰动，才能判断原标定在机构容差内是否仍有效。
+
+
+## 公开资料与型号核对
+
+博客既有原厂资料与 Design Center 在量程、测量速率及功耗口径上不同，应保留各自版本与条件，不能择优拼接。
+
+来源竞品表把三轴加速度计列为磁传感器功能替代，不能直接采用该替换结论。
+
+按完整型号、等级和版本选择手册。公开链接核对日期：2026-10-30。
+
+- [KTH5701AQ1_DS_CN_V2.0.pdf](https://chat.connteck.com/downloads/KTH5701/KTH5701AQ1_DS_CN_V2.0.pdf)
+- [KTH5701AQ2AQ3_DS_CN_V2.0.pdf](https://chat.connteck.com/downloads/KTH5701/KTH5701AQ2AQ3_DS_CN_V2.0.pdf)
+- [KTH5701AQ1_DS_EN_V2.0.pdf](https://chat.connteck.com/downloads/KTH5701/KTH5701AQ1_DS_EN_V2.0.pdf)
+- [KTH5701AQ2AQ3_DS_EN_V2.0.pdf](https://chat.connteck.com/downloads/KTH5701/KTH5701AQ2AQ3_DS_EN_V2.0.pdf)
+
+[来源产品页](https://chat.connteck.com/products/3d-hall/KTH5701/) · [昆泰芯型号目录](/wiki/?vendor=昆泰芯)

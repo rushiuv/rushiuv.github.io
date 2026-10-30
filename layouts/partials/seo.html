@@ -4,8 +4,14 @@
 {{- with findRE `/images/[^)\s"]+\.(webp|jpg|jpeg|png)` .RawContent 1 }}{{ $img = index . 0 | absURL }}{{ end -}}
 {{- $title := cond .IsHome (printf "%s · %s" site.Title site.Params.subtitle) (printf "%s · %s" .Title site.Title) -}}
 <meta name="description" content="{{ $desc }}">
+{{ if .Params.redirect_to }}
+<link rel="canonical" href="{{ (index (split .Params.redirect_to "#") 0) | absURL }}">
+<meta name="robots" content="noindex,follow">
+<meta http-equiv="refresh" content="0;url={{ .Params.redirect_to | relURL }}">
+{{ else }}
 <link rel="canonical" href="{{ .Permalink }}">
 <meta name="robots" content="index,follow,max-image-preview:large">
+{{ end }}
 <meta name="author" content="{{ site.Params.author }}">
 {{- if .IsPage }}
 {{- $kw := slice }}{{ range .GetTerms "models" }}{{ $kw = $kw | append .LinkTitle }}{{ end }}{{ range .GetTerms "companies" }}{{ $kw = $kw | append .LinkTitle }}{{ end }}{{ range .GetTerms "tags" }}{{ $kw = $kw | append .LinkTitle }}{{ end }}

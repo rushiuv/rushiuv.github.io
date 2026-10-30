@@ -1,37 +1,42 @@
 ---
-title: "KTH17系列"
-description: "全极霍尔开关系列，用于磁体靠近、盖合与低功耗位置事件检测。"
+title: KTH17系列
+description: 全极霍尔开关系列，用于磁体靠近、盖合与低功耗位置事件检测。
 wiki: true
-wiki_type: "model"
+wiki_type: model
 wiki_rank: 203
 seed_count: 0
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-wiki_category: "磁开关"
-catalog_vendor: "昆泰芯"
-catalog_type: "磁开关"
-catalog_form: "芯片"
-search_aliases: ["KTH1701","KTH1702"]
-official_url: "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
-document_version: "官方公开产品页或目录，核对：2026-10-18"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+wiki_category: 磁开关
+catalog_vendor: 昆泰芯
+catalog_type: 磁开关
+catalog_form: 芯片
+search_aliases:
+- KTH1701
+- KTH1702
+- KTH17系列
+official_url: https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html
+document_version: 官方公开产品页或目录，核对：2026-10-18
 model_card: true
+catalog_level: 系列
 ---
 
-## 核心参数
+KTH17采用全极检测，成员的输出级、采样档和温度范围不同。频率与电流必须按同一版本配对比较。
 
-| 参数 | 数值、配置与条件 |
-| --- | --- |
-| 成员 | KTH1701、KTH1702，全极检测 |
-| 共同供电 | 1.8～5.5V，官网目录 |
-| KTH1701输出 | CMOS |
-| KTH1701频率/电流 | 25/100/500Hz；0.9/2.4/10.4µA（1.8V） |
-| KTH1701阈值档 | H：±48/±28Gs；L：±36/±20Gs；U：±26/±14Gs（动作/释放） |
-| KTH1701温度 | −40～85°C |
-| KTH1702版本 | AE：25Hz、0.9µA；CC：40kHz、2.25mA，均为1.8V目录口径 |
-| KTH1702输出/温度 | 开漏；−40～125°C |
-| 封装 | SOT-23-3L、TO-92S，按订货号 |
+## 型号与核心异同
 
-参数依据：[原厂产品与型号选型表](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html)。
+| 具体型号／版本 | 输出 | 采样／电流（1.8V） | 温度 |
+| --- | --- | --- | --- |
+| KTH1701 | CMOS | 25/100/500Hz；0.9/2.4/10.4µA | −40～85°C |
+| KTH1702 AE | 开漏 | 25Hz；0.9µA | −40～125°C |
+| KTH1702 CC | 开漏 | 40kHz；2.25mA | −40～125°C |
+
+## 共同条件与参数依据
+
+- **共同供电**：1.8～5.5V，官网目录
+- **KTH1701阈值档**：H：±48/±28Gs；L：±36/±20Gs；U：±26/±14Gs（动作/释放）
+- **封装**：SOT-23-3L、TO-92S，按订货号
 
 ## 全极检测适用的任务
 

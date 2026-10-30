@@ -1,22 +1,27 @@
 ---
-title: "KTM5800"
-description: "KTM5800 是外接正余弦信号的角度细分器，集成双通道 ADC、校准和角度计算，可连接磁阻桥或光电读头。"
+title: KTM5800
+description: KTM5800 是面向 AMR/TMR 正余弦信号的角度细分器，适合多极磁环或磁栅的读数链；其作用是处理外部传感信号，不能直接等同于完整绝对编码器。
 wiki: true
-wiki_type: "model"
-catalog_type: "信号处理"
-catalog_form: "芯片"
+wiki_type: model
+catalog_type: 信号处理
+catalog_form: 芯片
 wiki_rank: 11
 seed_count: 15
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-official_url: "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/absoluteangledivider/index.html"
-datasheet_url: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5800%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
-datasheet_label: "KTM5800 数据手册"
-document_version: "官网公开下载件，核对日期 2026-10-15"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+official_url: https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/absoluteangledivider/index.html
+datasheet_url: https://chat.connteck.com/downloads/KTM5800/KTM5800_Datasheet_CN.pdf
+datasheet_label: 数据手册原链接
+document_version: 版本以链接文件名及原件为准；公开链接核对：2026-10-30
 model_card: true
-product_image: "/images/wiki/ktm5800-diagram.webp"
-product_image_caption: "图片来源：KTM5800 官方数据手册，第 5 个 PDF 页面，功能框图局部。"
-product_image_source: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5800%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
+product_image: /images/wiki/ktm5800-diagram.webp
+product_image_caption: 图片来源：KTM5800 官方数据手册，第 5 个 PDF 页面，功能框图局部。
+product_image_source: https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5800%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf
+wiki_category: 数字角度
+catalog_source: https://chat.connteck.com/products/angle/KTM5800/
+search_aliases:
+- KTM5800
 ---
 
 ## 核心参数
@@ -66,3 +71,30 @@ KTM5800接收外部AMR、TMR、光学或磁栅读头产生的正余弦信号。�
 - [官方产品介绍](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/absoluteangledivider/index.html)
 - [下载KTM5800 数据手册（官方 PDF）](https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5800%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf)
 - 资料版本：官网公开下载件，核对日期 2026-10-15
+
+## 选型补充
+
+### 先把传感桥信号接正确
+
+外部磁敏桥的共模、差分幅度、偏置和相位误差会直接影响后端细分。画图时应同时核对桥供电、输入允许范围和模拟地回路，先观察原始正余弦轨迹，再评估校准后的角度输出。
+
+### 多极细分与全圈绝对位置不同
+
+一个磁周期内的细分角度不能独自识别当前处于第几个磁极。全行程绝对位置还需要极号、参考轨或其他粗位置机制，系统应说明上电如何建立位置，不能用输出码宽代替位置唯一性证明。
+
+### 校准后仍要覆盖安装容差
+
+偏心、磁环谐波和传感器间距可能造成随机械位置变化的误差。自动校准完成后，应在完整工作行程上独立比较参考位置，并验证复装、温度变化及断电加载后的输出一致性。
+
+
+## 公开资料与型号核对
+
+源页把外部AMR/TMR输入细分器配为通用三轴Hall内部框图，该框图不采用。
+
+来源30位输出、细分精度及4096对极为不同口径，不能将码宽折算成整机精度或单芯片全圈唯一位置。
+
+按完整型号、等级和版本选择手册。公开链接核对日期：2026-10-30。
+
+- [KTM5800_Datasheet_CN.pdf](https://chat.connteck.com/downloads/KTM5800/KTM5800_Datasheet_CN.pdf)
+
+[来源产品页](https://chat.connteck.com/products/angle/KTM5800/) · [昆泰芯型号目录](/wiki/?vendor=昆泰芯)

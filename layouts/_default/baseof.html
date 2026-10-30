@@ -23,6 +23,7 @@
 {{ if $isHub }}{{ range slice "hub-directories" "hub-overviews" }}{{ $path := printf "static/css/%s.css" . }}{{ if fileExists $path }}{{ $dv := substr (crypto.SHA256 (readFile $path)) 0 12 }}<link rel="stylesheet" href="{{ printf "css/%s.css" . | relURL }}?v={{ $dv }}">{{ end }}{{ end }}{{ end }}
 {{ if or .Params.basic_entry .Params.application_entry (eq .Layout "basics-index") (eq .Layout "applications-index") }}{{ $lv := substr (crypto.SHA256 (readFile "static/css/knowledge-learning.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/knowledge-learning.css" | relURL }}?v={{ $lv }}">{{ end }}
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
+{{ if .Params.model_card }}{{ $tv := substr (crypto.SHA256 (readFile "static/css/model-technical.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/model-technical.css" | relURL }}?v={{ $tv }}">{{ end }}
 </head>
 <body{{ if .IsHome }} class="is-home"{{ else if $isHub }} class="is-hub"{{ end }}>
 <a class="skip-link" href="#main-content">跳到正文</a>

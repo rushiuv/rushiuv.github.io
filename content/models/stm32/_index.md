@@ -1,37 +1,42 @@
 ---
-title: "STM32"
+title: STM32系列
 wiki: true
-wiki_type: "model"
+wiki_type: model
 wiki_rank: 96
 seed_count: 2
-lastmod: "2026-10-24"
-description: "STM32 是 ST 的 32 位微控制器家族，可通过具备相应外设的成员接收增量脉冲、SPI 角度或模拟传感器信号。"
-official_url: "https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html"
-related_companies: ["ST"]
-wiki_category: "控制计算与外设采样"
-document_version: "公开资料核对：2026-10-16；文件版本见下载件"
+lastmod: '2026-10-30'
+description: STM32 是 ST 的 32 位微控制器家族，可通过具备相应外设的成员接收增量脉冲、SPI 角度或模拟传感器信号。
+official_url: https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html
+related_companies:
+- ST
+wiki_category: 控制计算与外设采样
+document_version: 公开资料核对：2026-10-16；文件版本见下载件
 model_card: true
+catalog_level: 系列
+search_aliases:
+- STM32系列
 ---
 
-## 核心参数
+STM32是MCU家族，接收并处理编码器信号，不是位置传感器。当前页作为接入选型入口，未指定完整MCU料号，下表区分所需外设路径。
 
-| 参数 | 数值、功能与适用条件 |
-| --- | --- |
-| 产品范围 | ST 的 32 位 MCU 家族 |
-| 编码器接入 | 部分成员提供定时器编码器模式、SPI 或 ADC |
-| 型号差异 | 内核、存储、外设及封装随完整 STM32 料号 |
+## 型号与核心异同
 
-参数依据：[原厂产品页或对应资料](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html)。
+| 接入配置（非具体MCU型号） | 所需资源 | 具体成员需核对 |
+| --- | --- | --- |
+| 增量ABZ采集 | 支持编码器模式的定时器与引脚 | 计数位宽、滤波、捕获频率 |
+| 串行绝对角度采集 | 相应SPI等串行外设 | 时序、DMA、数据帧及引脚映射 |
+| 模拟正余弦采集 | ADC、采样同步与角度运算 | 同步能力、参考、带宽与计算资源 |
 
-## 产品功能与测量链
+## 共同条件与参数依据
 
-STM32是跨多种内核与性能档的MCU家族，可作为编码器采集和控制处理器。不同成员的定时器、ADC、通信和DMA资源差别很大，家族名本身不对应固定外设表。
+- **产品范围**：ST 的 32 位 MCU 家族
+- **型号差异**：内核、存储、外设及封装随完整 STM32 料号
 
-## 接入与配置
+## 接口与安装
 
 增量接口使用定时器编码器模式，绝对值编码器使用SPI等串行接口，模拟正余弦则需要ADC采样与角度解算。三种链路对引脚、时序和计算量的要求不同。
 
-## 使用与验证
+## 动态与装配验证
 
 选具体料号时核对定时器位宽、输入滤波、最高捕获频率、ADC同步和DMA映射。控制程序还应处理计数器回绕、角度跨零和读取时间戳，避免只验证静止读数而遗漏高速丢边沿。
 

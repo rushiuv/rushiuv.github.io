@@ -1,20 +1,27 @@
 ---
-title: "KTH7101"
+title: KTH7101
 wiki: true
-wiki_type: "model"
-catalog_type: "数字角度"
-catalog_form: "芯片"
+wiki_type: model
+catalog_type: 数字角度
+catalog_form: 芯片
 wiki_rank: 40
 seed_count: 5
-lastmod: "2026-10-24"
-description: "KTH7101是昆泰芯带自动非线性校准功能的磁编码器。"
-official_url: "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html"
-related_companies: ["昆泰芯"]
-datasheet_url: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
-datasheet_label: "官方数据手册"
-wiki_category: "磁角度测量"
-document_version: "公开资料核对：2026-10-16；文件版本见下载件"
+lastmod: '2026-10-30'
+description: KTH7101 是带自动非线性校准的磁角度编码器，适合在明确磁路和接口配置后评估绝对角度与增量反馈；SOP8 引脚资源限制需要单独核对。
+official_url: https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html
+related_companies:
+- 昆泰芯
+datasheet_url: https://conntek.github.io/files/KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf
+datasheet_label: 数据手册原链接
+wiki_category: 磁角度测量
+document_version: 版本以链接文件名及原件为准；公开链接核对：2026-10-30
 model_card: true
+catalog_source: https://chat.connteck.com/products/
+search_aliases:
+- KTH7101
+product_image: /images/catalog/kth7101-original-figure.png
+product_image_caption: KTH7101 SOP-8引脚与磁感中心（原手册第7页）
+product_image_source: https://conntek.github.io/files/KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf#page=7
 ---
 
 ## 核心参数
@@ -58,3 +65,30 @@ KTH7101把霍尔检测、角度计算与ANLC集成在SOP8中。八脚封装的�
 
 - [KTH7101 原厂资料入口](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html)
 - [KTH7101 数据手册（官方 PDF）](https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf)
+
+## 选型补充
+
+### 八脚封装决定接口取舍
+
+同系列的输出功能不能全部迁移到八脚型号。原博客已经按原厂手册整理三线 SPI、SSI 与 ABZ，设计时应以实际引脚复用表为准，避免照搬其他封装的 PWM 或换向接线。
+
+### ANLC 与置零解决不同问题
+
+置零建立机构参考，非线性校准用于补偿随角度变化的误差。应先按手册完成规定运动和保存流程，再独立测整圈残差；校准完成标志不能替代准确度验收。
+
+### 绝对与增量在上电时对齐
+
+绝对角度可读取当前姿态，AB 计数则依赖主控何时开始累积。控制器同时使用两者时，需要统一方向和零点，并明确启动等待、数据有效和重新上电后的加载行为。
+
+
+## 公开资料与型号核对
+
+来源矩阵列SPI/ABZ/UVW/PWM，与博客按原厂手册整理的三线SPI/SSI/ABZ有差别；保留手册引脚证据，不补造UVW/PWM能力。
+
+来源没有独立详情页或该型号PDF直链，不能把系列入口误标成数据手册。
+
+按完整型号、等级和版本选择手册。公开链接核对日期：2026-10-30。
+
+- [KTH7101 产品手册.pdf](https://conntek.github.io/files/KTH7101%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf)
+
+[来源产品页](https://chat.connteck.com/products/) · [昆泰芯型号目录](/wiki/?vendor=昆泰芯)

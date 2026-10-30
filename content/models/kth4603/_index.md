@@ -1,36 +1,41 @@
 ---
-title: "KTH4603系列"
-description: "XYZ三轴全极霍尔开关，用于多方向磁体接近检测，而非三轴场强采样。"
+title: KTH4603系列
+description: XYZ三轴全极霍尔开关，用于多方向磁体接近检测，而非三轴场强采样。
 wiki: true
-wiki_type: "model"
+wiki_type: model
 wiki_rank: 207
 seed_count: 0
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-wiki_category: "磁开关"
-catalog_vendor: "昆泰芯"
-catalog_type: "磁开关"
-catalog_form: "芯片"
-search_aliases: ["KTH4603"]
-official_url: "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highlysensitive3dhallswitch/index.html"
-document_version: "官方公开产品页或目录，核对：2026-10-18"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+wiki_category: 磁开关
+catalog_vendor: 昆泰芯
+catalog_type: 磁开关
+catalog_form: 芯片
+search_aliases:
+- KTH4603
+- KTH4603系列
+official_url: https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highlysensitive3dhallswitch/index.html
+document_version: 官方公开产品页或目录，核对：2026-10-18
 model_card: true
+catalog_level: 系列
 ---
 
-## 核心参数
+KTH4603是三轴全极开关系列，输出事件状态。AA与AB配置首先在采样频率和平均电流上区分，不输出连续XYZ磁场数据。
 
-| 参数 | 数值、配置与条件 |
-| --- | --- |
-| 检测方式 | XYZ三轴全极霍尔开关，输出事件状态 |
-| 供电 | 2.25～5.5V |
-| AA-STx版本 | 2.5Hz；5.5µA（3.3V），官网目录 |
-| AB-STx版本 | 5.0Hz；8.0µA（3.3V），官网目录 |
-| 动作/释放阈值 | ±25Gs/±15Gs，官网目录 |
-| 输出 | 开漏 |
-| 工作温度 | −40～125°C |
-| 封装 | SOT-23-3L或SOT-23-6L，依具体版本 |
+## 型号与核心异同
 
-参数依据：[原厂产品与型号选型表](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highlysensitive3dhallswitch/index.html)。
+| 配置（非完整料号） | 采样频率 | 目录电流（3.3V） | 封装范围 |
+| --- | --- | --- | --- |
+| AA-STx | 2.5Hz | 5.5µA | SOT-23-3L或6L，按完整版本 |
+| AB-STx | 5.0Hz | 8.0µA | SOT-23-3L或6L，按完整版本 |
+
+## 共同条件与参数依据
+
+- **供电**：2.25～5.5V
+- **动作/释放阈值**：±25Gs/±15Gs，官网目录
+- **输出**：开漏
+- **工作温度**：−40～125°C
 
 ## 三轴开关不是三轴磁通计
 

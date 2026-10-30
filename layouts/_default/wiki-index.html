@@ -1,11 +1,11 @@
 {{ define "main" }}
 <div class="hub-directory hub-directory-models">
 {{ $entries := sort (where (where site.Pages "Params.wiki" true) "Params.wiki_type" "model") "Params.wiki_rank" }}
-<header class="page-head hub-directory-hero"><div><p class="kicker">REFERENCE INDEX / 型号资料</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div><div class="hub-directory-stats"><span><strong>{{ len $entries }}</strong> 型号与产品</span><span>芯片 / 模块 / 完整编码器</span></div></div><figure class="hub-directory-art"><img src="{{ "images/editorial/chromeos-reference-desk-20261025.webp" | relURL }}" alt="暖纸轻漫画中的编码器、芯片与资料查阅场景，非产品结构图" width="1536" height="1024" fetchpriority="high"><figcaption>器件 → 参数条件 → 官方原件</figcaption></figure></header>
+<header class="page-head hub-directory-hero"><div><p class="kicker">REFERENCE INDEX / 型号资料</p><h1 class="page-title">{{ .Title }}</h1><div class="content">{{ .Content }}</div><div class="hub-directory-stats"><span><strong>{{ len $entries }}</strong> 资料入口</span><span>芯片 / 模块 / 完整编码器</span></div></div><figure class="hub-directory-art"><img src="{{ "images/editorial/chromeos-reference-desk-20261025.webp" | relURL }}" alt="暖纸轻漫画中的编码器、芯片与资料查阅场景，非产品结构图" width="1536" height="1024" fetchpriority="high"><figcaption>器件 → 参数条件 → 官方原件</figcaption></figure></header>
 <p class="guide-directory-link"><a href="{{ "topics/guides/parameter-conditions/" | relURL }}">先读参数条件 →</a> · <a href="{{ "topics/guides/system-acceptance-record/" | relURL }}">再做整机验收记录 →</a></p>
 <section class="wiki-index">
   <div class="hub-index-heading"><span aria-hidden="true">01 / INDEX</span><h2>查型号、参数与官方文档</h2></div>
-  <p class="muted">已整理 {{ len $entries }} 个型号与产品词条 · 芯片、模块与完整编码器分开标记 · 系列和具体型号均可查</p>
+  <p class="muted">共 {{ len $entries }} 个资料入口，包含型号、配置与系列；芯片、模块和完整编码器分开标记。</p>
   <label for="wiki-search">搜索词条</label>
   <input id="wiki-search" type="search" placeholder="型号、产品或技术关键词" autocomplete="off">
   {{ $vendors := slice }}{{ $types := slice }}
@@ -22,7 +22,7 @@
     {{ $aliases := delimit (.Params.search_aliases | default slice) " " }}
     {{ $vendors := delimit (.Params.related_companies | default slice) "|" }}
     {{ if eq .Params.wiki_type "company" }}{{ $vendors = printf "%s|%s" $vendors .LinkTitle }}{{ end }}
-    <a class="wiki-index-card" href="{{ .RelPermalink }}" data-kind="{{ .Params.wiki_type }}" data-vendors="{{ $vendors }}" data-type="{{ .Params.catalog_type | default "其他既有型号" }}" data-form="{{ .Params.catalog_form | default "既有产品（待细分）" }}" data-search="{{ printf "%s %s %s %s %s" .Title .Description (.Params.wiki_category | default "") $aliases $vendors | lower }}"><small>{{ if eq .Params.wiki_type "model" }}{{ .Params.catalog_form | default "型号／产品" }} · {{ .Params.catalog_type | default .Params.wiki_category | default "资料卡" }}{{ else }}公司／机构{{ end }}</small><strong>{{ .Title }}</strong><p>{{ .Description }}</p></a>
+    <a class="wiki-index-card" href="{{ .RelPermalink }}" data-kind="{{ .Params.wiki_type }}" data-vendors="{{ $vendors }}" data-type="{{ .Params.catalog_type | default "其他既有型号" }}" data-form="{{ .Params.catalog_form | default "既有产品（待细分）" }}" data-search="{{ printf "%s %s %s %s %s" .Title .Description (.Params.wiki_category | default "") $aliases $vendors | lower }}"><small>{{ with .Params.catalog_level }}{{ . }} · {{ end }}{{ if eq .Params.wiki_type "model" }}{{ .Params.catalog_form | default "型号／产品" }} · {{ .Params.catalog_type | default .Params.wiki_category | default "资料卡" }}{{ else }}公司／机构{{ end }}</small><strong>{{ .Title }}</strong><p>{{ .Description }}</p></a>
   {{ end }}
   </div>
   <p id="wiki-empty" class="muted" hidden>没有匹配的型号，可调整关键词或重置筛选。</p>

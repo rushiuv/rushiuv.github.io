@@ -1,37 +1,40 @@
 ---
-title: "KTH16系列"
-description: "包含双输出单极开关与高速锁存器；型号相近，检测逻辑和功耗并不相同。"
+title: KTH16系列
+description: 包含双输出单极开关与高速锁存器；型号相近，检测逻辑和功耗并不相同。
 wiki: true
-wiki_type: "model"
+wiki_type: model
 wiki_rank: 202
 seed_count: 0
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-wiki_category: "磁开关"
-catalog_vendor: "昆泰芯"
-catalog_type: "磁开关"
-catalog_form: "芯片"
-search_aliases: ["KTH1604","KTH1631"]
-official_url: "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html"
-document_version: "官方公开产品页或目录，核对：2026-10-18"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+wiki_category: 磁开关
+catalog_vendor: 昆泰芯
+catalog_type: 磁开关
+catalog_form: 芯片
+search_aliases:
+- KTH1604
+- KTH1631
+- KTH16系列
+official_url: https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html
+document_version: 官方公开产品页或目录，核对：2026-10-18
 model_card: true
+catalog_level: 系列
 ---
 
-## 核心参数
+KTH16目录中的KTH1604与KTH1631具有不同状态逻辑和功耗等级。先判断磁体是靠近离开，还是正负磁极交替，再选采样和封装。
 
-| 参数 | 数值、配置与条件 |
-| --- | --- |
-| 系列成员 | KTH1604双输出单极开关；KTH1631双极锁存器 |
-| KTH1604供电 | 1.6～5.5V |
-| KTH1604采样/电流 | 20Hz：3.3µA；5Hz：1.6µA，均为官网1.8V条件 |
-| KTH1604阈值档 | 动作/释放场绝对值46/34、33/23、22/16Gs，按完整型号 |
-| KTH1631供电 | 1.8～5.5V |
-| KTH1631响应/电流 | 40kHz；2.25mA（1.8V），官网目录口径 |
-| 输出 | CMOS；两个成员的状态逻辑不同 |
-| 温度 | −40～85°C，官网目录 |
-| 封装 | 1604：DFN/FBP 1×1mm-4L；1631：SOT-23-3L、TO-92S |
+## 型号与核心异同
 
-参数依据：[原厂产品与型号选型表](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/microPowerSeries/index.html)。
+| 具体型号 | 逻辑／输出 | 供电 | 响应／电流（1.8V目录条件） | 封装 |
+| --- | --- | --- | --- | --- |
+| KTH1604 | 双输出单极；CMOS | 1.6～5.5V | 20Hz：3.3µA；5Hz：1.6µA | DFN/FBP 1×1mm-4L |
+| KTH1631 | 双极锁存；CMOS | 1.8～5.5V | 40kHz；2.25mA | SOT-23-3L、TO-92S |
+
+## 共同条件与参数依据
+
+- **KTH1604阈值档**：动作/释放场绝对值46/34、33/23、22/16Gs，按完整型号
+- **温度**：−40～85°C，官网目录
 
 ## 为什么不能只按16系列选型
 

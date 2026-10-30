@@ -1,37 +1,45 @@
 ---
-title: "KTM28系列"
-description: "AMR与ASIC组合的气缸位置检测芯片，提供二线或三线开关应用路径。"
+title: KTM28系列
+description: AMR与ASIC组合的气缸位置检测芯片，提供二线或三线开关应用路径。
 wiki: true
-wiki_type: "model"
+wiki_type: model
 wiki_rank: 205
 seed_count: 0
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-wiki_category: "磁开关"
-catalog_vendor: "昆泰芯"
-catalog_type: "磁开关"
-catalog_form: "芯片"
-search_aliases: ["KTM2801","KTM2802"]
-official_url: "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/hvcpDetectionSensor/index.html"
-document_version: "官方公开产品页或目录，核对：2026-10-18"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+wiki_category: 磁开关
+catalog_vendor: 昆泰芯
+catalog_type: 磁开关
+catalog_form: 芯片
+search_aliases:
+- KTM2801
+- KTM2802
+- KTM28系列
+official_url: https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/hvcpDetectionSensor/index.html
+document_version: 官方公开产品页或目录，核对：2026-10-18
 model_card: true
+catalog_level: 系列
 ---
 
-## 核心参数
+KTM28面向气缸端位磁检测。两个基础成员同列AMR与调理ASIC路线，但现有目录没有完整说明NPN/PNP及二线/三线与成员的映射。
 
-| 参数 | 数值、配置与条件 |
-| --- | --- |
-| 成员/任务 | KTM2801、KTM2802，气缸端位磁检测 |
-| 技术路线 | AMR与信号调理ASIC组合 |
-| 检测逻辑 | 官网列全极型 |
-| 供电口径 | 产品介绍3～30V；选型表3～32V，正式设计按具体手册 |
-| 平均电流 | 官网目录70µA，按对应工作条件 |
-| 工作频率 | 官网目录4kHz |
-| 动作/释放场 | 官网目录±18/±16Gs |
-| 输出 | 开漏；NPN/PNP、二线/三线应用按成员与手册 |
-| 温度/封装 | −40～105°C；HFBP 2×3mm-6L |
+## 型号与核心异同
 
-参数依据：[原厂产品与型号选型表](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/hvcpDetectionSensor/index.html)。
+| 具体型号 | 共同检测任务 | 尚需落实的配置 |
+| --- | --- | --- |
+| KTM2801 | 全极气缸端位事件检测 | 输出接线、NPN/PNP及二线/三线版本 |
+| KTM2802 | 全极气缸端位事件检测 | 输出接线、NPN/PNP及二线/三线版本 |
+
+## 共同条件与参数依据
+
+- **技术路线**：AMR与信号调理ASIC组合
+- **供电口径**：产品介绍3～30V；选型表3～32V，正式设计按具体手册
+- **平均电流**：官网目录70µA，按对应工作条件
+- **工作频率**：官网目录4kHz
+- **动作/释放场**：官网目录±18/±16Gs
+- **输出**：开漏；NPN/PNP、二线/三线应用按成员与手册
+- **温度/封装**：−40～105°C；HFBP 2×3mm-6L
 
 ## 气缸检测测的是端位事件
 

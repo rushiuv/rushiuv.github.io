@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ if .Params.redirect_to }}
+<article class="wiki-article"><h1>{{ .Title }}</h1><p>资料已合并至系列页面。<a href="{{ .Params.redirect_to | relURL }}">查看对应型号资料 →</a></p></article>
+{{ else }}
 {{ $pager := .Paginate .Pages.ByDate.Reverse }}
 {{ if .Params.wiki }}
 <div class="wiki-layout{{ if .Params.model_card }} model-card{{ end }}{{ if eq .Params.wiki_type "company" }} company-profile{{ end }}">
@@ -20,7 +23,7 @@
     {{ if .Params.model_card }}
     <div class="model-card-overview{{ if not .Params.product_image }} no-visual{{ end }}">
       <div class="content wiki-content">{{ .Content }}</div>
-      {{ with .Params.product_image }}<figure class="model-card-visual"><img src="{{ . | relURL }}" alt="{{ $.Title }} 原厂产品或应用示意" loading="eager" decoding="async"><figcaption>{{ $.Params.product_image_caption }}{{ with $.Params.product_image_source }} · <a href="{{ . }}" target="_blank" rel="noopener">原图出处 ↗</a>{{ end }}</figcaption></figure>{{ end }}
+      {{ with .Params.product_image }}<figure class="model-card-visual"><a href="{{ . | relURL }}" target="_blank" rel="noopener"><img src="{{ . | relURL }}" alt="{{ $.Title }} 原厂产品或应用示意" loading="eager" decoding="async"></a><figcaption>{{ $.Params.product_image_caption }}{{ with $.Params.product_image_source }} · <a href="{{ . }}" target="_blank" rel="noopener">原图出处 ↗</a>{{ end }}</figcaption></figure>{{ end }}
     </div>
     {{ else }}<div class="content wiki-content">{{ .Content }}</div>{{ end }}
     {{ partial "engineering-backlinks.html" . }}
@@ -54,5 +57,6 @@
 <div class="layout"><section class="posts"><header class="page-head"><h1 class="page-title">{{ .Title }}</h1><p class="muted">共 {{ len .Pages }} 篇</p></header>
 {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 {{ range $pager.Pages }}{{ partial "post-item.html" . }}{{ end }}{{ partial "pager.html" $pager }}</section>{{ partial "sidebar.html" . }}</div>
+{{ end }}
 {{ end }}
 {{ end }}
