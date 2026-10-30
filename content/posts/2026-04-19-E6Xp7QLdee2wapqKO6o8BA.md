@@ -3,6 +3,7 @@ title: "下一代编码器一定是把 FAE 做进芯片里"
 date: 2026-04-19T10:42:00+08:00
 slug: "E6Xp7QLdee2wapqKO6o8BA"
 description: "下一代编码器最狠的升级，不是继续卷 bit 数，而是把 FAE 做进芯片里。"
+tags: ["非线性校准", "TMR", "专利"]
 original: "https://mp.weixin.qq.com/s/E6Xp7QLdee2wapqKO6o8BA"
 models: ["AS5147", "AS5247", "MT6835", "TLE5012B"]
 companies: ["麦歌恩", "英飞凌", "ams OSRAM", "Allegro", "堡盟"]

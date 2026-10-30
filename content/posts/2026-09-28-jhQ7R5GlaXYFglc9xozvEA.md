@@ -3,6 +3,7 @@ title: "有些国家平均财富很富，中位数却很拉跨"
 date: 2026-09-28T16:23:00+08:00
 slug: "jhQ7R5GlaXYFglc9xozvEA"
 description: "同样是“富裕国家”，为什么有些国家看平均财富时排在世界前列，一换成中位数，名次就突然掉下去？这张图最有意思的地方，不是谁排第一，而是它把“平均数会骗人”这件事画得非常直观。平均财富回答的是：把全国成年人的财富全部加起来，再平均分，每个人理论…"
+tags: ["瑞士"]
 original: "https://mp.weixin.qq.com/s/jhQ7R5GlaXYFglc9xozvEA"
 ---
 

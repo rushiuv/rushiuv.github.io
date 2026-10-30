@@ -3,6 +3,7 @@ title: "单器件→系统入口， 纳芯微收购麦歌恩"
 date: 2026-04-23T22:03:00+08:00
 slug: "kfpZE8LJ5OjDSj1GbEbNSQ"
 description: "纳芯微收购麦歌恩，不是一场简单的技术并购，而是国产芯片行业一场血淋淋的“牌桌抬高”——当单点替代的红利被吃干抹净，行业终于撕下“性价比内卷”的遮羞布，用一场并购宣告：单器件的时代，结束了。"
+tags: ["TMR", "霍尔"]
 original: "https://mp.weixin.qq.com/s/kfpZE8LJ5OjDSj1GbEbNSQ"
 companies: ["纳芯微", "麦歌恩"]
 ---

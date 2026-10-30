@@ -3,6 +3,7 @@ title: "中年IC人面临价值困境"
 date: 2026-04-19T22:17:00+08:00
 slug: "6nrhkzD2RgY5Wzb3lZvljQ"
 description: "后半夜的写字楼沉在梦里，只他工位一盏冷白灯，映着满屏时序与红字，键盘声轻得被服务器低鸣吞了去。"
+tags: ["AI"]
 original: "https://mp.weixin.qq.com/s/6nrhkzD2RgY5Wzb3lZvljQ"
 ---
 

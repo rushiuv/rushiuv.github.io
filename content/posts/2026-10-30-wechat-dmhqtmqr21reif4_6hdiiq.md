@@ -4,7 +4,7 @@ date: '2026-10-30T11:00:00+08:00'
 slug: wechat-dmhqtmqr21reif4_6hdiiq
 description: 编码器装机后精度下降，问题常不在芯片在线缆：模拟正余弦怕幅值衰减与相移失配，数字协议怕边沿畸变与共模干扰，布线处方完全不同。本文分信号类型拆解线缆损伤机理，给出屏蔽、双绞、终端匹配的分类处方与验收方法。
 original: https://mp.weixin.qq.com/s/dmHqTMqr21reIF4_6HdiIQ
-original_from: 转载自微信公众号「方寸技研」
+original_from: "转载自公众号「方寸技研」"
 author: 方寸技研
 tags:
 - 转载

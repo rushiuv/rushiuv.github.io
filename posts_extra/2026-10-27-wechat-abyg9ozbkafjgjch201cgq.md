@@ -4,7 +4,7 @@ date: 2026-10-27T09:30:00+08:00
 slug: "wechat-abyg9ozbkafjgjch201cgq"
 description: "把技术做成产品，把实践写进国标——中国人形机器人的产业实力，正从头部企业一线经验里生长出来。 央视新闻报道首批人形机器人国家标准发布 近期，《人形机器人技术要求》系列首批5项国家标准正式发布，帕西尼作为主要起草单位之一，"
 original: "https://mp.weixin.qq.com/s/ABYg9OZbkaFjGJch201cgQ"
-original_from: "转载自微信公众号「帕西尼」"
+original_from: "转载自公众号「帕西尼」"
 tags: ["转载"]
 no_promo: true
 ---

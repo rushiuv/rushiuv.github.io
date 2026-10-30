@@ -3,6 +3,7 @@ title: "做产品就做产品，做服务就做服务，别再骗自己了"
 date: 2025-10-04T13:43:00+08:00
 slug: "YMoAcvnL8drCXgHiqmp_ug"
 description: "最刺耳的真相是：很多中国创业公司，根本没分清楚自己在干什么。嘴上说“产品化”，身体却扑在客户那边做服务；融资路演讲“平台”，后台却全是人盯人项目；招的不是产品经理，而是驻场工程师。你自己心里可能还觉得挺光鲜，实际上已经沦为别人链条里的外包。"
+tags: ["芯片设计", "投资"]
 original: "https://mp.weixin.qq.com/s/YMoAcvnL8drCXgHiqmp_ug"
 ---
 

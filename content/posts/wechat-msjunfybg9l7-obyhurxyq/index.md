@@ -4,7 +4,7 @@ date: '2026-10-22T10:58:00+08:00'
 slug: wechat-msjunfybg9l7-obyhurxyq
 description: '瑞士编码器产业深读：Sensima/MPS、POSIC、ESPROS、SENISENS及Baumer如何把传感技术变成实际产品与客户。'
 original: 'https://mp.weixin.qq.com/s/mSjunFYbG9L7_ObyHurxYQ'
-original_from: '首发于公众号「如是有为」'
+original_from: "首发于公众号「如是有为」"
 tags:
   - 瑞士
   - 编码器

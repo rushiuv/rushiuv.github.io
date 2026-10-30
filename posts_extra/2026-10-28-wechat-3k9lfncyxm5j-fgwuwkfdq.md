@@ -4,7 +4,7 @@ date: '2026-10-28T18:15:52+08:00'
 slug: wechat-3k9lfncyxm5j-fgwuwkfdq
 description: 华大九天在工博会上报了个数：国产 EDA 工具覆盖率从不到 30% 涨到 85%。
 original: https://mp.weixin.qq.com/s/3k9lfncYXm5J-fGWUwKFdQ
-original_from: 转载自微信公众号「数字芯片实验室」
+original_from: "转载自公众号「数字芯片实验室」"
 author: learn vlsi
 tags:
 - 转载

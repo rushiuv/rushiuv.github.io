@@ -3,6 +3,7 @@ title: "威世集团这颗1万转感应式编码器，200微秒里转子已经�
 date: 2026-10-02T11:21:00+08:00
 slug: "qJiDt4dRjsEbt6YX29E1-Q"
 description: "如是有为 · 编码器 / 伺服 / 机器人"
+tags: ["磁编码器", "机器人关节"]
 original: "https://mp.weixin.qq.com/s/qJiDt4dRjsEbt6YX29E1-Q"
 ---
 

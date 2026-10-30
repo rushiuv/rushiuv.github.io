@@ -4,7 +4,7 @@ date: '2026-10-16T11:00:00+08:00'
 slug: wechat-qzevfb98ussklx-7mxcm-q
 description: 磁编码器的常温精度、全温漂移、永磁体退磁及整机误差预算。
 original: https://mp.weixin.qq.com/s/qzeVfb98UsskLX-7mxCM-Q
-original_from: 首发于公众号「方寸技研」
+original_from: "首发于公众号「方寸技研」"
 tags:
 - 温度漂移
 - 磁编码器

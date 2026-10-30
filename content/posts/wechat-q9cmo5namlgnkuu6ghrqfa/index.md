@@ -4,7 +4,7 @@ date: '2026-10-18T11:00:00+08:00'
 slug: wechat-q9cmo5namlgnkuu6ghrqfa
 description: 从封装管脚、通信协议到零位、磁场与温漂验证的TMR对标AMR芯片迁移。
 original: https://mp.weixin.qq.com/s/q9cMO5NaMLGnKUu6ghrQfA
-original_from: 首发于公众号「方寸技研」
+original_from: "首发于公众号「方寸技研」"
 tags:
 - TMR
 - AMR

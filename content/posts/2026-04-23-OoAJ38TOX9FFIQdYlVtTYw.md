@@ -3,6 +3,7 @@ title: "希磁STK-636TMF：高频电流检测"
 date: 2026-04-23T22:16:00+08:00
 slug: "OoAJ38TOX9FFIQdYlVtTYw"
 description: "STK-636TMF是希磁科技推出的TMR芯片级电流传感器，专为第三代半导体（SiC/GaN）高频电力电子系统设计，以极致响应速度解决行业痛点。"
+tags: ["TMR", "霍尔", "GaN"]
 original: "https://mp.weixin.qq.com/s/OoAJ38TOX9FFIQdYlVtTYw"
 companies: ["希磁"]
 ---

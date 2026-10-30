@@ -3,6 +3,7 @@ title: "小米灵巧手这次不秀动作了：8200 平方毫米触觉覆盖，�
 date: 2026-04-28T07:00:00+08:00
 slug: "KH0ENQR9Ut_K4xnmhTKpLg"
 description: "小米这次把机器人灵巧手拿出来，最值得看的不是“像不像人”，而是它终于不再像一个只会摆手势的展示品了。"
+tags: ["磁编码器"]
 original: "https://mp.weixin.qq.com/s/KH0ENQR9Ut_K4xnmhTKpLg"
 companies: ["昆泰芯", "小米"]
 ---

@@ -3,6 +3,7 @@ title: "腱驱动灵巧手要不要力矩传感器？两个编码器的差值就
 date: 2026-07-18T00:00:00+08:00
 slug: "muWitiYD46_G-TGfXmKvUw"
 description: "两个编码器的差值就是腱变形，是免费的力信号，却被 if-else 压掉了"
+tags: ["多圈编码器", "自校准", "机器人关节"]
 original: "https://mp.weixin.qq.com/s/muWitiYD46_G-TGfXmKvUw"
 ---
 
