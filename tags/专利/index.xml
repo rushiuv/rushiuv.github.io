@@ -6,11 +6,16 @@
 &lt;/p>
 &lt;p>如是有为 · 编码器技术观察&lt;/p>
 &lt;h2 id="多摩川给-reset-加了一把锁日本给它授权了一项超简单专利">多摩川给 Reset 加了一把锁，日本给它授权了一项&amp;quot;超简单&amp;quot;专利&lt;/h2>
-&lt;p>一个几乎可以写在 RTL 代码评审备注里的状态转换，为何在日本获得了发明专利？它又可能怎样影响已经被广泛兼容的 T-Format 协议？&lt;/p></description></item><item><title>双磁环编码器 两个码道 之间隔了一块＂软磁材料＂的独门专利技术</title><link>https://sensor.fans/posts/n6ujxjbjvunqwgkbduik7q/</link><pubDate>Thu, 17 Sep 2026 17:13:00 +0800</pubDate><guid>https://sensor.fans/posts/n6ujxjbjvunqwgkbduik7q/</guid><description>&lt;h2 id="两个码道之间隔了一块软磁">两个码道之间隔了一块软磁&lt;/h2>
+&lt;p>一个几乎可以写在 RTL 代码评审备注里的状态转换，为何在日本获得了发明专利？它又可能怎样影响已经被广泛兼容的 T-Format 协议？&lt;/p></description></item><item><title>双磁环编码器 两个码道 之间隔了一块＂软磁</title><link>https://sensor.fans/posts/txs-xkhyyfz2qpyohm5wlg/</link><pubDate>Thu, 17 Sep 2026 17:17:00 +0800</pubDate><guid>https://sensor.fans/posts/txs-xkhyyfz2qpyohm5wlg/</guid><description>&lt;p>珠海楠欣半导体公开了件专利，双磁环编码器中间硬塞了一圈软磁材料。&lt;/p>
+&lt;p>内圈单极对给个粗角，外圈多极对把角度切细。两只磁环靠得近，磁场就互相串门。外圈芯片读到的细角信号直接被带偏，算法补偿都只是在给变形的信号记账。&lt;/p></description></item><item><title>双磁环编码器 两个码道 之间隔了一块＂软磁材料＂的独门专利技术</title><link>https://sensor.fans/posts/n6ujxjbjvunqwgkbduik7q/</link><pubDate>Thu, 17 Sep 2026 17:13:00 +0800</pubDate><guid>https://sensor.fans/posts/n6ujxjbjvunqwgkbduik7q/</guid><description>&lt;h2 id="两个码道之间隔了一块软磁">两个码道之间隔了一块软磁&lt;/h2>
 &lt;p>离轴磁编 4.8° 到 0.6° 的那一步，不在算法里&lt;/p>
 &lt;p>读完这篇，你会带走三件事&lt;/p>
 &lt;p>双磁环最先坏掉的，往往不是算法，而是细码道的磁场输入。&lt;/p>
-&lt;p>软磁环不是第三条码道，它给漏磁通安排了一条低磁阻回路。&lt;/p></description></item><item><title>易德龙两件雨刷专利放在一起，真正有意思的是 PARK 后面的闭环</title><link>https://sensor.fans/posts/xyrmcwybqexzbvkdcqmlca/</link><pubDate>Wed, 26 Aug 2026 15:30:00 +0800</pubDate><guid>https://sensor.fans/posts/xyrmcwybqexzbvkdcqmlca/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/dc7822ed349824451f5d3c6a53e96f01.jpg" alt="易德龙两件雨刷专利放在一起，真正有意思的是 PARK 后面的闭环" loading="lazy" decoding="async">
+&lt;p>软磁环不是第三条码道，它给漏磁通安排了一条低磁阻回路。&lt;/p></description></item><item><title>英飞凌和纳芯微都吃下传感器业务，“传感器并购”这个词，几乎没告诉你任何东西</title><link>https://sensor.fans/posts/lhz_zb6igsur6wlvzkfuzw/</link><pubDate>Sat, 29 Aug 2026 00:09:00 +0800</pubDate><guid>https://sensor.fans/posts/lhz_zb6igsur6wlvzkfuzw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/139b02a3f8cd98918a4219388c714aa4.webp" alt="英飞凌和纳芯微都吃下传感器业务，“传感器并购”这个词，几乎没告诉你任何东西" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>我干的活就是跟磁传感、编码器打交道的，所以英飞凌和纳芯微两笔收购前后被同行转过来的时候，后面经常跟着一句：&lt;/p>
+&lt;p>&lt;strong>“你看，都在买传感器。”&lt;/strong>&lt;/p>
+&lt;p>我第一反应也是，真巧。&lt;/p></description></item><item><title>易德龙两件雨刷专利放在一起，真正有意思的是 PARK 后面的闭环</title><link>https://sensor.fans/posts/xyrmcwybqexzbvkdcqmlca/</link><pubDate>Wed, 26 Aug 2026 15:30:00 +0800</pubDate><guid>https://sensor.fans/posts/xyrmcwybqexzbvkdcqmlca/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/dc7822ed349824451f5d3c6a53e96f01.jpg" alt="易德龙两件雨刷专利放在一起，真正有意思的是 PARK 后面的闭环" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>雨刷开关已经拨到 OFF，雨刷却不能立刻停。&lt;/p>
 &lt;p>它还要走完最后一程，准确收进挡风玻璃下沿。早一拍，雨刷停在视野里；晚一拍，电机还在顶着机构走。车身控制器等的不是一句含糊的“差不多到了”，而是一个能拿来断电、复位位置计数的 &lt;strong>PARK 时刻&lt;/strong>。&lt;/p></description></item><item><title>英飞凌为什么把TMR一层自由层拆成多层？ 专利 US20260029492A1分析</title><link>https://sensor.fans/posts/oq5la2n7fcn5tlvz1ajfpa/</link><pubDate>Fri, 14 Aug 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/oq5la2n7fcn5tlvz1ajfpa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/41cc6935eb1dbc2d4b6b39ed3b9d9f38.webp" alt="英飞凌为什么把TMR一层自由层拆成多层？ 专利 US20260029492A1分析" loading="lazy" decoding="async">
@@ -62,7 +67,8 @@
 &lt;ol>
 &lt;li>灵巧手不是多装几个电机&lt;/li>
 &lt;/ol>
-&lt;p>特斯拉这批 Optimus V3 灵巧手专利，真正值得看的不是手指能做多少动作，而是它把机器人手的底层结构重新拆了一遍。过去很多灵巧手的思路，是哪里要动就在哪里放电机、减速器、轴承和传感器。这个办法直观，但越做越重，手掌越来越厚，线束越来越乱，散热和装配也越来越麻烦。机器人手不是展台玩具，它要长期抓取、碰撞、磨损、校准，还要在真实环境里稳定工作。这个时候，单纯堆自由度并不能解决问题。&lt;/p></description></item><item><title>AMR角度传感器里的谐波哪来的？</title><link>https://sensor.fans/posts/wsid4uvaigqmf-1kceee4w/</link><pubDate>Sat, 18 Apr 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/wsid4uvaigqmf-1kceee4w/</guid><description>&lt;h2 id="amr角度传感器里的谐波不是后端算坏了而是前端材料把它带歪了">AMR角度传感器里的谐波，不是后端算坏了，而是前端材料把它带歪了&lt;/h2>
+&lt;p>特斯拉这批 Optimus V3 灵巧手专利，真正值得看的不是手指能做多少动作，而是它把机器人手的底层结构重新拆了一遍。过去很多灵巧手的思路，是哪里要动就在哪里放电机、减速器、轴承和传感器。这个办法直观，但越做越重，手掌越来越厚，线束越来越乱，散热和装配也越来越麻烦。机器人手不是展台玩具，它要长期抓取、碰撞、磨损、校准，还要在真实环境里稳定工作。这个时候，单纯堆自由度并不能解决问题。&lt;/p></description></item><item><title>下一代编码器一定是把 FAE 做进芯片里</title><link>https://sensor.fans/posts/e6xp7qldee2wapqko6o8ba/</link><pubDate>Sun, 19 Apr 2026 10:42:00 +0800</pubDate><guid>https://sensor.fans/posts/e6xp7qldee2wapqko6o8ba/</guid><description>&lt;p>下一代编码器最狠的升级，不是继续卷 bit 数，而是把 FAE 做进芯片里。&lt;/p>
+&lt;p>总有人说这是句空话。不是。你把市场上已经在卖的型号摊开看，就会发现，这事其实已经开始了，只是很多人还在拿“更高 bit 数”当主线，没意识到真正值钱的升级，正在从“更会测”转向“更会自检、更会自校、更会报警、更会告诉系统我现在到底靠不靠谱”。&lt;/p></description></item><item><title>AMR角度传感器里的谐波哪来的？</title><link>https://sensor.fans/posts/wsid4uvaigqmf-1kceee4w/</link><pubDate>Sat, 18 Apr 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/wsid4uvaigqmf-1kceee4w/</guid><description>&lt;h2 id="amr角度传感器里的谐波不是后端算坏了而是前端材料把它带歪了">AMR角度传感器里的谐波，不是后端算坏了，而是前端材料把它带歪了&lt;/h2>
 &lt;p>&lt;img src="https://sensor.fans/images/wx/4d2470fd8e2838919b1c4e25281b5929.webp" alt="AMR角度传感器里的谐波哪来的？" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>很多工程师第一次看AMR角度传感器，看到输出里有谐波，第一反应都是一样的：是不是放大器失真了，是不是桥臂不匹配，是不是磁环偏心了，是不是算法没调好。&lt;/p></description></item><item><title>『M序列编码器』这个名词能存在，就是这个行业的『耻辱”』</title><link>https://sensor.fans/posts/wg7dmxcrqocyjebn7ebu7a/</link><pubDate>Sun, 12 Apr 2026 19:07:00 +0800</pubDate><guid>https://sensor.fans/posts/wg7dmxcrqocyjebn7ebu7a/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/67bac806265b97836936f4457b596c67.webp" alt="『M序列编码器』这个名词能存在，就是这个行业的『耻辱”』" loading="lazy" decoding="async">

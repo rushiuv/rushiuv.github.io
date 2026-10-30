@@ -14,7 +14,9 @@
 &lt;p>最近看机器人功能安全，我突然发现一个挺有意思的问题。&lt;/p>
 &lt;p>假设一台机器人手臂正在高速运动，某个关节的编码器此刻告诉控制器：&lt;/p>
 &lt;p>&lt;strong>37.26°。&lt;/strong>&lt;/p>
-&lt;p>控制器相信了。&lt;/p></description></item><item><title>国产编码器最大的敌人，可能正是“国产化”</title><link>https://sensor.fans/posts/tnx0vkwxevf0q6vzunjflq/</link><pubDate>Sun, 06 Sep 2026 14:03:00 +0800</pubDate><guid>https://sensor.fans/posts/tnx0vkwxevf0q6vzunjflq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/432c48c9783c886d7f0317ece755a525.webp" alt="国产编码器最大的敌人，可能正是“国产化”" loading="lazy" decoding="async">
+&lt;p>控制器相信了。&lt;/p></description></item><item><title>一颗编码器把三种输出都写成 65536，不代表它们同样精确</title><link>https://sensor.fans/posts/hg4wd25wkyygn0yneniueg/</link><pubDate>Wed, 16 Sep 2026 14:27:00 +0800</pubDate><guid>https://sensor.fans/posts/hg4wd25wkyygn0yneniueg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/1c72558eb66650f74b9099a2b9da4066.jpg" alt="一颗编码器把三种输出都写成 65536，不代表它们同样精确" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>假设一台电机同时给你三种角度读数：屏幕上的数字、PWM 占空比、还有 A/B 脉冲。它们最后都被软件换算成 32768。你会认为电机正好转了半圈，而且三种读法同样可靠。&lt;/p></description></item><item><title>国产编码器最大的敌人，可能正是“国产化”</title><link>https://sensor.fans/posts/tnx0vkwxevf0q6vzunjflq/</link><pubDate>Sun, 06 Sep 2026 14:03:00 +0800</pubDate><guid>https://sensor.fans/posts/tnx0vkwxevf0q6vzunjflq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/432c48c9783c886d7f0317ece755a525.webp" alt="国产编码器最大的敌人，可能正是“国产化”" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>凌晨两点，产线停了。&lt;/p>
 &lt;p>设备工程师从床上爬起来，赶到现场，最后发现是一只编码器报错。&lt;/p>
@@ -65,7 +67,9 @@
 &lt;p>&lt;img src="https://sensor.fans/images/wx/6b7e6c0a52d6710ec52bb9738922925b.webp" alt="BiSS 你越按标准做，越死在客户的魔改上" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>最让人窝火的，不是协议难。&lt;/p>
-&lt;p>最让人窝火的是，你按标准把主站做出来了，线接对了，时钟打出来了，逻辑分析仪上波形也规规矩矩，结果客户看一眼，来一句：“不对，我们以前那家能用。”&lt;/p></description></item><item><title>想跑 SSI，出厂却得先接 SPI：很多编码器输的不是精度，是第一次接入太别扭</title><link>https://sensor.fans/posts/wz2ln0tfo8-eihtrtshwya/</link><pubDate>Fri, 24 Apr 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/wz2ln0tfo8-eihtrtshwya/</guid><description>&lt;h2 id="读着累可听本文播客">读着累可听本文播客&lt;/h2>
+&lt;p>最让人窝火的是，你按标准把主站做出来了，线接对了，时钟打出来了，逻辑分析仪上波形也规规矩矩，结果客户看一眼，来一句：“不对，我们以前那家能用。”&lt;/p></description></item><item><title>Lucid Atlas 电驱到底厉害在哪？真正值钱的，可能不是电机，而是里面的编码器</title><link>https://sensor.fans/posts/ym2bfkc2yrocc9bpos5ujq/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/ym2bfkc2yrocc9bpos5ujq/</guid><description>&lt;h2 id="lucid-atlas-到底是什么">Lucid Atlas 到底是什么？&lt;/h2>
+&lt;p>先用人话说清楚。&lt;strong>Lucid&lt;/strong> 是美国一家做高端纯电车的公司，前面已经有 Lucid Air 和 Lucid Gravity。&lt;/p>
+&lt;p>&lt;strong>Atlas&lt;/strong> 则不是一台车，而是 Lucid 在 2026 年 3 月发布的一套全新电驱单元，你可以把它理解成未来 Lucid 中型平台的“动力心脏”。&lt;/p></description></item><item><title>想跑 SSI，出厂却得先接 SPI：很多编码器输的不是精度，是第一次接入太别扭</title><link>https://sensor.fans/posts/wz2ln0tfo8-eihtrtshwya/</link><pubDate>Fri, 24 Apr 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/wz2ln0tfo8-eihtrtshwya/</guid><description>&lt;h2 id="读着累可听本文播客">读着累可听本文播客&lt;/h2>
 &lt;p>&lt;img src="https://sensor.fans/images/wx/fff6b7817792adb072f478a0e4976214.webp" alt="想跑 SSI，出厂却得先接 SPI：很多编码器输的不是精度，是第一次接入太别扭" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>这两天我反复想到的，是一个特别小、特别土、但特别容易让客户心里犯嘀咕的细节：&lt;/p></description></item><item><title>汇川最值钱的，不是17亿伺服收入，而是它正在收回运动控制的话语权</title><link>https://sensor.fans/posts/gepepllb78zjzwdfae5i2q/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/gepepllb78zjzwdfae5i2q/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/e957e5303cfc7a3abc5d0afe953cb44a.jpg" alt="汇川最值钱的，不是17亿伺服收入，而是它正在收回运动控制的话语权" loading="lazy" decoding="async">

@@ -17,7 +17,16 @@
 &lt;p>前几天，我把锐鹰两份编码器规格书并排放在桌上。&lt;/p></description></item><item><title>【韦根效应】为什么【记圈】不需要电？ 四分之一毫米粗合金丝，为什么能在没有电池的情况下，给断电后的编码器记下一圈？</title><link>https://sensor.fans/posts/0ftn5pzc94oodemccof8ba/</link><pubDate>Fri, 24 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/0ftn5pzc94oodemccof8ba/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/ae8081613397e51a5faa9aeede39e5ef.webp" alt="【韦根效应】为什么【记圈】不需要电？ 四分之一毫米粗合金丝，为什么能在没有电池的情况下，给断电后的编码器记下一圈？" loading="lazy" decoding="async">
 &lt;/p>
 &lt;h2 id="磁铁转过去编码器自己记数韦根效应为什么不需要电">磁铁转过去，编码器自己记数：韦根效应为什么不需要电&lt;/h2>
-&lt;p>一根只有约四分之一毫米粗的合金丝，为什么能在没有电池的情况下，给断电后的编码器记下一圈？&lt;/p></description></item><item><title>宇树从AS5047P、MT6816升级到双电感编码器，不是为了22位，而是温漂会让同一动作无法复现</title><link>https://sensor.fans/posts/oxkxxzdowgoxuzmgdprzwg/</link><pubDate>Fri, 10 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/oxkxxzdowgoxuzmgdprzwg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/d64bddecc7a57308e25fcf2fa0e51cb0.webp" alt="宇树从AS5047P、MT6816升级到双电感编码器，不是为了22位，而是温漂会让同一动作无法复现" loading="lazy" decoding="async">
+&lt;p>一根只有约四分之一毫米粗的合金丝，为什么能在没有电池的情况下，给断电后的编码器记下一圈？&lt;/p></description></item><item><title>腱驱动灵巧手要不要力矩传感器？两个编码器的差值就是腱变形，是免费的力信号，却被 if-else 压掉了</title><link>https://sensor.fans/posts/muwitiyd46_g-tgfxmkvuw/</link><pubDate>Sat, 18 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/muwitiyd46_g-tgfxmkvuw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/38e70f868c4e1e4afb99a18d7a528b3b.webp" alt="腱驱动灵巧手要不要力矩传感器？两个编码器的差值就是腱变形，是免费的力信号，却被 if-else 压掉了" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>工 程 现 场 手 记&lt;/p>
+&lt;p>我见过一个机器人关节的驱动代码。&lt;/p>
+&lt;p>&lt;strong>光是压一根毛刺的 if-else，写了两百多行。&lt;/strong>&lt;/p>
+&lt;p>加一个迟滞窗。&lt;/p>
+&lt;p>加一个&amp;quot;跳变超过阈值就丢弃&amp;quot;。&lt;/p></description></item><item><title>判错一段，指尖弹出 37 毫米——两个编码器装进机器人手指，大多数人只用了一个半</title><link>https://sensor.fans/posts/sl74zs-2kprzmbj7t87wcw/</link><pubDate>Thu, 16 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/sl74zs-2kprzmbj7t87wcw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/2b537c4541b87b5d52c055d76ab164fd.webp" alt="判错一段，指尖弹出 37 毫米——两个编码器装进机器人手指，大多数人只用了一个半" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>·判错一段，关节跳 24°、指尖弹出 37 毫米——而这只手的标称精度是 ±0.2 毫米。&lt;/p>
+&lt;p>·容错窗 ±12°、噪声只有 ±0.15°、余量 80 倍；但边界是硬判决，路过边界时余量就是 0。&lt;/p></description></item><item><title>宇树从AS5047P、MT6816升级到双电感编码器，不是为了22位，而是温漂会让同一动作无法复现</title><link>https://sensor.fans/posts/oxkxxzdowgoxuzmgdprzwg/</link><pubDate>Fri, 10 Jul 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/oxkxxzdowgoxuzmgdprzwg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/d64bddecc7a57308e25fcf2fa0e51cb0.webp" alt="宇树从AS5047P、MT6816升级到双电感编码器，不是为了22位，而是温漂会让同一动作无法复现" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>很多人觉得，人形机器人最大的门槛是AI。站在做编码器芯片的人角度，我更愿意相信另一件事情。&lt;/p>
 &lt;p>真正决定机器人是不是生产力的，不是它会不会完成一个动作，而是昨天完成的那个动作，今天还能不能再完成一次。&lt;/p></description></item><item><title>汇川 23bit／26bit 绝对值伺服编码器标称高精度，但插值 DNL 和采样延迟，会让速度环把最后几位角度噪声放大成电流啸叫</title><link>https://sensor.fans/posts/n2a_yp-dinfvqi86tsml8g/</link><pubDate>Sat, 27 Jun 2026 00:00:00 +0800</pubDate><guid>https://sensor.fans/posts/n2a_yp-dinfvqi86tsml8g/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/6093e46b62bca26556305633c3665939.webp" alt="汇川 23bit／26bit 绝对值伺服编码器标称高精度，但插值 DNL 和采样延迟，会让速度环把最后几位角度噪声放大成电流啸叫" loading="lazy" decoding="async">

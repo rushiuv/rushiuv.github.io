@@ -7,7 +7,11 @@
 &lt;/p>
 &lt;p>8 月中旬，一批行业稿开始转同一句话：按 Yole《Magnetic Sensors 2026》，纳芯微磁传感器出货量全球第四、国产第一，2025 年单年出货超过 10 亿颗，累计超过 20 亿颗。&lt;/p></description></item><item><title>「霍尔够用了」这四个字有四条前提</title><link>https://sensor.fans/posts/ejhl4jayxg76qy8gkhoahq/</link><pubDate>Sun, 30 Aug 2026 06:06:00 +0800</pubDate><guid>https://sensor.fans/posts/ejhl4jayxg76qy8gkhoahq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/08f77c0b3245dec5e0af6d37fb500412.jpg" alt="「霍尔够用了」这四个字有四条前提" loading="lazy" decoding="async">
 &lt;/p>
-&lt;p>总有人问我，一个要加角度/位置检测的码盘，要不要再往上堆一颗更贵的。我通常就一句话：霍尔够用了。磁轴键盘那种场合，一颗 SS49E 一类的小线性霍尔，几毛钱，SOT-23 一个小管子，输出接主控的 ADC 扫一圈，就到头了——没必要上磁编。&lt;/p></description></item><item><title>一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的</title><link>https://sensor.fans/posts/ih2xtjjwkhgykbn8zv1cwa/</link><pubDate>Tue, 25 Aug 2026 10:03:00 +0800</pubDate><guid>https://sensor.fans/posts/ih2xtjjwkhgykbn8zv1cwa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/367e969f950eee5c8f1f49a293592d94.webp" alt="一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的" loading="lazy" decoding="async">
+&lt;p>总有人问我，一个要加角度/位置检测的码盘，要不要再往上堆一颗更贵的。我通常就一句话：霍尔够用了。磁轴键盘那种场合，一颗 SS49E 一类的小线性霍尔，几毛钱，SOT-23 一个小管子，输出接主控的 ADC 扫一圈，就到头了——没必要上磁编。&lt;/p></description></item><item><title>英飞凌和纳芯微都吃下传感器业务，“传感器并购”这个词，几乎没告诉你任何东西</title><link>https://sensor.fans/posts/lhz_zb6igsur6wlvzkfuzw/</link><pubDate>Sat, 29 Aug 2026 00:09:00 +0800</pubDate><guid>https://sensor.fans/posts/lhz_zb6igsur6wlvzkfuzw/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/139b02a3f8cd98918a4219388c714aa4.webp" alt="英飞凌和纳芯微都吃下传感器业务，“传感器并购”这个词，几乎没告诉你任何东西" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>我干的活就是跟磁传感、编码器打交道的，所以英飞凌和纳芯微两笔收购前后被同行转过来的时候，后面经常跟着一句：&lt;/p>
+&lt;p>&lt;strong>“你看，都在买传感器。”&lt;/strong>&lt;/p>
+&lt;p>我第一反应也是，真巧。&lt;/p></description></item><item><title>一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的</title><link>https://sensor.fans/posts/ih2xtjjwkhgykbn8zv1cwa/</link><pubDate>Tue, 25 Aug 2026 10:03:00 +0800</pubDate><guid>https://sensor.fans/posts/ih2xtjjwkhgykbn8zv1cwa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/367e969f950eee5c8f1f49a293592d94.webp" alt="一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>八月，美新半导体在芜湖办了一场产线启动、研究院揭牌暨新品发布会，发了一颗基于 AMR 的磁编码器。&lt;/p>
 &lt;p>&lt;img src="https://sensor.fans/images/wx/2c482e6c9c10fd63e9fe4d1c823f7cab.webp" alt="一颗磁编码器的量产门槛：三温标定1200万片每年怎么算出来的" loading="lazy" decoding="async">
