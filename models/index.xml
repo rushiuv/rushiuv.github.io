@@ -39,7 +39,7 @@
 &lt;/ul>
 &lt;h2 id="接入电路与配置">接入电路与配置&lt;/h2>
 &lt;p>AMR的原生方向周期与机械360°唯一位置是两个问题。需要整圈上电绝对位置时，应确认具体成员和系统是否含极性消歧，而不是在软件里将180°输出简单乘二。桥路供电、共模和差分幅度应一并匹配后端ADC。&lt;/p></description></item><item><title>BBA-010A1</title><link>https://sensor.fans/models/bba-010a1/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/bba-010a1/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
-&lt;p>以下按该型号官网公开摘要整理；目录未写明的温度、磁体、安装、校准与统计条件，需结合下方原厂参数图及对应手册确认。&lt;/p>
+&lt;p>以下是该型号官网选型信息；温度、磁体、安装、校准与统计条件应结合原厂参数图及对应手册使用。&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -469,7 +469,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;p>参数依据：&lt;a href="https://www.esstmags.com/products/angle-encoder/integrated/single-turn-abs/265.html">EAS-010B 官方产品页&lt;/a>。&lt;/p></description></item><item><title>EAS-014</title><link>https://sensor.fans/models/eas-014/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/eas-014/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
-&lt;p>以下按该型号官网公开摘要整理；目录未写明的温度、磁体、安装、校准与统计条件，需结合下方原厂参数图及对应手册确认。&lt;/p>
+&lt;p>以下是该型号官网选型信息；温度、磁体、安装、校准与统计条件应结合原厂参数图及对应手册使用。&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -1173,7 +1173,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;p>参数依据：&lt;a href="https://www.esstmags.com/products/safety-encoder/single/single-turn-abs/273.html">EAS-132 官方产品页&lt;/a>。&lt;/p></description></item><item><title>EAS-D006ZT-DS</title><link>https://sensor.fans/models/eas-d006zt-ds/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/eas-d006zt-ds/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
-&lt;p>以下按该型号官网公开摘要整理；目录未写明的温度、磁体、安装、校准与统计条件，需结合下方原厂参数图及对应手册确认。&lt;/p>
+&lt;p>以下是该型号官网选型信息；温度、磁体、安装、校准与统计条件应结合原厂参数图及对应手册使用。&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -1189,7 +1189,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;p>参数依据：&lt;a href="https://www.esstmags.com/products/encoder-kit/chip/digital/321.html">EAS-D006ZT-DS 官方产品页&lt;/a>。&lt;/p></description></item><item><title>EAS-D006ZT-VS</title><link>https://sensor.fans/models/eas-d006zt-vs/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/eas-d006zt-vs/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
-&lt;p>以下按该型号官网公开摘要整理；目录未写明的温度、磁体、安装、校准与统计条件，需结合下方原厂参数图及对应手册确认。&lt;/p>
+&lt;p>以下是该型号官网选型信息；温度、磁体、安装、校准与统计条件应结合原厂参数图及对应手册使用。&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -1205,7 +1205,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;p>参数依据：&lt;a href="https://www.esstmags.com/products/encoder-kit/chip/analog/320.html">EAS-D006ZT-VS 官方产品页&lt;/a>。&lt;/p></description></item><item><title>EAS-D010KM-VS</title><link>https://sensor.fans/models/eas-d010km-vs/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/eas-d010km-vs/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
-&lt;p>以下按该型号官网公开摘要整理；目录未写明的温度、磁体、安装、校准与统计条件，需结合下方原厂参数图及对应手册确认。&lt;/p>
+&lt;p>以下是该型号官网选型信息；温度、磁体、安装、校准与统计条件应结合原厂参数图及对应手册使用。&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -1257,7 +1257,7 @@
 &lt;p>本系列包含 &lt;strong>PRBS与游标码两类方案&lt;/strong>，每类再按芯片级套件、PCBA和功能安全配置区分。下面逐型号对照，空缺项表示官网文字摘要未列明。&lt;/p></description></item><item><title>EAS-J068系列</title><link>https://sensor.fans/models/eas-j068kp-hd/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/eas-j068kp-hd/</guid><description>&lt;p>EAS-J068系列汇集埃斯特磁同一关节适配档的中空式编码器套件。选型先区分编码方案与交付形态，再比较参数，最后核对对应型号的安装图纸。&lt;/p>
 &lt;h2 id="型号与核心异同">型号与核心异同&lt;/h2>
 &lt;p>本系列包含 &lt;strong>PRBS与游标码两类方案&lt;/strong>，每类再按芯片级套件、PCBA和功能安全配置区分。下面逐型号对照，空缺项表示官网文字摘要未列明。&lt;/p></description></item><item><title>EKS-T54K3D14-C030T0</title><link>https://sensor.fans/models/eks-t54k3d14-c030t0/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/eks-t54k3d14-c030t0/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
-&lt;p>以下按该型号官网公开摘要整理；目录未写明的温度、磁体、安装、校准与统计条件，需结合下方原厂参数图及对应手册确认。&lt;/p>
+&lt;p>以下是该型号官网选型信息；温度、磁体、安装、校准与统计条件应结合原厂参数图及对应手册使用。&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -1930,7 +1930,11 @@
 &lt;li>&lt;strong>最薄结构&lt;/strong>：官网描述小于8mm；具体尺寸按型号图&lt;/li>
 &lt;/ul>
 &lt;h2 id="接口与安装">接口与安装&lt;/h2>
-&lt;p>两端23bit输出、±10角秒重复定位和最薄小于8mm是不同类型的产品信息。具体厚度要以所选机械尺寸图为准，不能对所有KIT型号统一写8mm。&lt;/p></description></item><item><title>KTAx333系列</title><link>https://sensor.fans/models/ktax333/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktax333/</guid><description>&lt;p>KTAx333是低失调运放系列，KTA333为单通道，KTA2333为双通道。先确定通道数和封装，再按负载、闭环增益及误差预算判断是否适合传感器前端。&lt;/p></description></item><item><title>KTH1601</title><link>https://sensor.fans/models/kth1601/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1601/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>两端23bit输出、±10角秒重复定位和最薄小于8mm是不同类型的产品信息。具体厚度要以所选机械尺寸图为准，不能对所有KIT型号统一写8mm。&lt;/p></description></item><item><title>KTAx333系列</title><link>https://sensor.fans/models/ktax333/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktax333/</guid><description>&lt;p>KTAx333是低失调运放系列，KTA333为单通道，KTA2333为双通道。先确定通道数和封装，再按负载、闭环增益及误差预算判断是否适合传感器前端。&lt;/p></description></item><item><title>KTH1361</title><link>https://sensor.fans/models/kth1361/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1361/</guid><description>&lt;p>KTH1361是昆泰芯的X轴全极霍尔开关，检测X轴方向的磁场阈值，用数字状态报告磁体是否进入感应区域。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>X轴指敏感方向，全极表示两种磁极均可参与触发，不表示任意空间方向具有相同响应。设计时先对齐芯片敏感轴与磁体运动路径，再根据最差气隙检查阈值裕量。&lt;/p></description></item><item><title>KTH1362</title><link>https://sensor.fans/models/kth1362/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1362/</guid><description>&lt;p>KTH1362是昆泰芯的X轴全极霍尔开关，检测X轴方向的磁场阈值，用数字状态报告磁体是否进入感应区域。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>X轴指敏感方向，全极表示两种磁极均可参与触发，不表示任意空间方向具有相同响应。设计时先对齐芯片敏感轴与磁体运动路径，再根据最差气隙检查阈值裕量。&lt;/p></description></item><item><title>KTH1601</title><link>https://sensor.fans/models/kth1601/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1601/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -1966,7 +1970,17 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="先判断动作逻辑再选磁体">先判断动作逻辑再选磁体&lt;/h2>
-&lt;p>单极、全极和锁存的释放行为不同。设计门磁或翻盖检测时，应记录磁体靠近与离开的全路径，以及两种极性下的输出，避免把一次“有磁翻转”误当成完整逻辑确认。&lt;/p></description></item><item><title>KTH16系列</title><link>https://sensor.fans/models/kth16/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth16/</guid><description>&lt;p>KTH16目录中的KTH1604与KTH1631具有不同状态逻辑和功耗等级。先判断磁体是靠近离开，还是正负磁极交替，再选采样和封装。&lt;/p>
+&lt;p>单极、全极和锁存的释放行为不同。设计门磁或翻盖检测时，应记录磁体靠近与离开的全路径，以及两种极性下的输出，避免把一次“有磁翻转”误当成完整逻辑确认。&lt;/p></description></item><item><title>KTH1601S</title><link>https://sensor.fans/models/kth1601s/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1601s/</guid><description>&lt;p>KTH1601S是昆泰芯的全极霍尔开关，把磁场是否越过开关阈值转换为数字状态，可用于接近、开合和位置状态检测。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>全极检测允许两种磁极参与触发，但触发距离仍取决于磁体和感应方向。主控读取的是开关状态，不是连续角度或绝对距离；装配误差和杂散磁场需要纳入阈值裕量。&lt;/p></description></item><item><title>KTH1604S</title><link>https://sensor.fans/models/kth1604s/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1604s/</guid><description>&lt;p>KTH1604S是昆泰芯的双输出单极霍尔开关，使用双路输出报告磁场检测状态，供主控区分相应的磁极或位置条件。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>双输出器件需要按引脚定义分别连接接收端。两路输出的动作磁极与有效电平必须结合型号手册确认，不能把两个输出自动解释成两轴连续磁场测量。&lt;/p></description></item><item><title>KTH1611</title><link>https://sensor.fans/models/kth1611/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1611/</guid><description>&lt;p>KTH1611是昆泰芯的南极单极霍尔开关，检测指定南极磁场是否越过开关阈值，将磁场状态转换为数字输出。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>单极检测需要按感应面摆放磁体。南、北极并非任意互换；磁体越过动作和释放阈值时产生状态变化，实际触发距离由磁体、气隙和安装方向共同决定。&lt;/p></description></item><item><title>KTH1621</title><link>https://sensor.fans/models/kth1621/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1621/</guid><description>&lt;p>KTH1621是昆泰芯的北极单极霍尔开关，检测指定北极磁场是否越过开关阈值，将磁场状态转换为数字输出。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>单极检测需要按感应面摆放磁体。南、北极并非任意互换；磁体越过动作和释放阈值时产生状态变化，实际触发距离由磁体、气隙和安装方向共同决定。&lt;/p></description></item><item><title>KTH1642</title><link>https://sensor.fans/models/kth1642/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1642/</guid><description>&lt;p>KTH1642是昆泰芯的全极霍尔开关，把磁场是否越过开关阈值转换为数字状态，可用于接近、开合和位置状态检测。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>全极检测允许两种磁极参与触发，但触发距离仍取决于磁体和感应方向。主控读取的是开关状态，不是连续角度或绝对距离；装配误差和杂散磁场需要纳入阈值裕量。&lt;/p></description></item><item><title>KTH16系列</title><link>https://sensor.fans/models/kth16/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth16/</guid><description>&lt;p>KTH16目录中的KTH1604与KTH1631具有不同状态逻辑和功耗等级。先判断磁体是靠近离开，还是正负磁极交替，再选采样和封装。&lt;/p>
 &lt;h2 id="型号与核心异同">型号与核心异同&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -2001,7 +2015,15 @@
 &lt;li>&lt;strong>温度&lt;/strong>：−40～85°C，官网目录&lt;/li>
 &lt;/ul>
 &lt;h2 id="为什么不能只按16系列选型">为什么不能只按16系列选型&lt;/h2>
-&lt;p>KTH1604使用两路单极输出区分磁极作用，KTH1631则以相反磁极切换锁存状态。一个适合磁体靠近和离开事件，另一个适合转子磁极交替通过。两者既不是同一输出逻辑，也不是同一功耗等级。&lt;/p></description></item><item><title>KTH17系列</title><link>https://sensor.fans/models/kth17/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth17/</guid><description>&lt;p>KTH17采用全极检测，成员的输出级、采样档和温度范围不同。频率与电流必须按同一版本配对比较。&lt;/p>
+&lt;p>KTH1604使用两路单极输出区分磁极作用，KTH1631则以相反磁极切换锁存状态。一个适合磁体靠近和离开事件，另一个适合转子磁极交替通过。两者既不是同一输出逻辑，也不是同一功耗等级。&lt;/p></description></item><item><title>KTH1711</title><link>https://sensor.fans/models/kth1711/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1711/</guid><description>&lt;p>KTH1711是昆泰芯的南极单极霍尔开关，检测指定南极磁场是否越过开关阈值，将磁场状态转换为数字输出。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>单极检测需要按感应面摆放磁体。南、北极并非任意互换；磁体越过动作和释放阈值时产生状态变化，实际触发距离由磁体、气隙和安装方向共同决定。&lt;/p></description></item><item><title>KTH1721</title><link>https://sensor.fans/models/kth1721/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1721/</guid><description>&lt;p>KTH1721是昆泰芯的北极单极霍尔开关，检测指定北极磁场是否越过开关阈值，将磁场状态转换为数字输出。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>单极检测需要按感应面摆放磁体。南、北极并非任意互换；磁体越过动作和释放阈值时产生状态变化，实际触发距离由磁体、气隙和安装方向共同决定。&lt;/p></description></item><item><title>KTH1722</title><link>https://sensor.fans/models/kth1722/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1722/</guid><description>&lt;p>KTH1722是昆泰芯的北极单极霍尔开关，检测指定北极磁场是否越过开关阈值，将磁场状态转换为数字输出。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>单极检测需要按感应面摆放磁体。南、北极并非任意互换；磁体越过动作和释放阈值时产生状态变化，实际触发距离由磁体、气隙和安装方向共同决定。&lt;/p></description></item><item><title>KTH1731P</title><link>https://sensor.fans/models/kth1731p/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth1731p/</guid><description>&lt;p>KTH1731P是昆泰芯的双极锁存霍尔开关，检测相反方向磁场经过动作与释放阈值的过程，并输出锁存状态。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>磁场越过动作阈值后输出翻转；磁铁退回弱场区时可能继续保持，直到反向磁场越过释放阈值。因此磁体移开不一定代表输出复位，转动计数与位置判断应考虑磁场经过的顺序。&lt;/p></description></item><item><title>KTH17系列</title><link>https://sensor.fans/models/kth17/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth17/</guid><description>&lt;p>KTH17采用全极检测，成员的输出级、采样档和温度范围不同。频率与电流必须按同一版本配对比较。&lt;/p>
 &lt;h2 id="型号与核心异同">型号与核心异同&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -2108,7 +2130,9 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="锁存器不能只用移走磁体测试">锁存器不能只用移走磁体测试&lt;/h2>
-&lt;p>该系列由相反极性的磁场门限完成切换，磁体移远后可能保留原状态。旋转磁环适合产生正负交替磁场；若用于翻盖或单次接近检测，必须先确认机构能完成整个切换路径，不能把普通开关的有磁/无磁逻辑直接套入。&lt;/p></description></item><item><title>KTH25系列</title><link>https://sensor.fans/models/kth25/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth25/</guid><description>&lt;p>KTH25采用双极锁存逻辑。目录列QA、QB、QC磁阈值档，完整型号还需包含温度与封装；不能把档位当成独立基础型号。&lt;/p>
+&lt;p>该系列由相反极性的磁场门限完成切换，磁体移远后可能保留原状态。旋转磁环适合产生正负交替磁场；若用于翻盖或单次接近检测，必须先确认机构能完成整个切换路径，不能把普通开关的有磁/无磁逻辑直接套入。&lt;/p></description></item><item><title>KTH2582</title><link>https://sensor.fans/models/kth2582/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth2582/</guid><description>&lt;p>KTH2582是昆泰芯的双极锁存霍尔开关，检测相反方向磁场经过动作与释放阈值的过程，并输出锁存状态。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>磁场越过动作阈值后输出翻转；磁铁退回弱场区时可能继续保持，直到反向磁场越过释放阈值。因此磁体移开不一定代表输出复位，转动计数与位置判断应考虑磁场经过的顺序。&lt;/p></description></item><item><title>KTH25系列</title><link>https://sensor.fans/models/kth25/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth25/</guid><description>&lt;p>KTH25采用双极锁存逻辑。目录列QA、QB、QC磁阈值档，完整型号还需包含温度与封装；不能把档位当成独立基础型号。&lt;/p>
 &lt;h2 id="型号与核心异同">型号与核心异同&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -2150,7 +2174,13 @@
 &lt;li>&lt;strong>封装&lt;/strong>：SOT-23-3L、TO-92S，磁极性按具体图示&lt;/li>
 &lt;/ul>
 &lt;h2 id="锁存与接近开关的区别">锁存与接近开关的区别&lt;/h2>
-&lt;p>KTH25使用相反极性的磁场完成动作和释放，适合交替磁极经过的转子位置检测。磁体只靠近后又移远，未必满足反向释放条件，因此不能按普通全极接近开关的逻辑使用。&lt;/p></description></item><item><title>KTH31系列</title><link>https://sensor.fans/models/kth31/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth31/</guid><description>&lt;p>KTH31是比例式线性霍尔系列，六个成员主要以灵敏度和可用磁场范围区分。先根据磁路最大场强选档，再检查供电、输出摆幅与噪声。&lt;/p>
+&lt;p>KTH25使用相反极性的磁场完成动作和释放，适合交替磁极经过的转子位置检测。磁体只靠近后又移远，未必满足反向释放条件，因此不能按普通全极接近开关的逻辑使用。&lt;/p></description></item><item><title>KTH2612</title><link>https://sensor.fans/models/kth2612/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth2612/</guid><description>&lt;p>KTH2612是昆泰芯的单极霍尔开关，把磁场是否越过开关阈值转换为数字状态，可用于接近、开合和位置状态检测。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>单极检测需要按感应面与磁体极性安排安装，不能假设南北两极都触发。触发距离仍取决于磁体和感应方向。主控读取的是开关状态，不是连续角度或绝对距离；装配误差和杂散磁场需要纳入阈值裕量。&lt;/p></description></item><item><title>KTH2631</title><link>https://sensor.fans/models/kth2631/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth2631/</guid><description>&lt;p>KTH2631是昆泰芯的双极锁存霍尔开关，检测相反方向磁场经过动作与释放阈值的过程，并输出锁存状态。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>磁场越过动作阈值后输出翻转；磁铁退回弱场区时可能继续保持，直到反向磁场越过释放阈值。因此磁体移开不一定代表输出复位，转动计数与位置判断应考虑磁场经过的顺序。&lt;/p></description></item><item><title>KTH2632</title><link>https://sensor.fans/models/kth2632/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth2632/</guid><description>&lt;p>KTH2632是昆泰芯的双极锁存霍尔开关，检测相反方向磁场经过动作与释放阈值的过程，并输出锁存状态。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>磁场越过动作阈值后输出翻转；磁铁退回弱场区时可能继续保持，直到反向磁场越过释放阈值。因此磁体移开不一定代表输出复位，转动计数与位置判断应考虑磁场经过的顺序。&lt;/p></description></item><item><title>KTH31系列</title><link>https://sensor.fans/models/kth31/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth31/</guid><description>&lt;p>KTH31是比例式线性霍尔系列，六个成员主要以灵敏度和可用磁场范围区分。先根据磁路最大场强选档，再检查供电、输出摆幅与噪声。&lt;/p>
 &lt;h2 id="六个型号的核心差异">六个型号的核心差异&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -2283,7 +2313,7 @@
 &lt;/ul>
 &lt;h2 id="先画磁场轨迹再验证速度和方向">先画磁场轨迹，再验证速度和方向&lt;/h2>
 &lt;p>锁存状态需要相反磁极完成切换，磁体远离不一定释放。按所选XY、XZ或YZ平面画出正负场轨迹，再用目标磁体检查完整往返是否越过两路门限。&lt;/p></description></item><item><title>KTH468N</title><link>https://sensor.fans/models/kth468n/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth468n/</guid><description>&lt;h2 id="目录信息与参数条件">目录信息与参数条件&lt;/h2>
-&lt;p>以下为&lt;a href="https://chat.connteck.com/products/">来源产品矩阵&lt;/a>的目录标注，用于初步检索；尚未用对应手册正文逐项复核，冲突项见下文，不能直接用作设计保证值。&lt;/p>
+&lt;p>以下是&lt;a href="https://chat.connteck.com/products/">原厂产品矩阵&lt;/a>的选型信息；电气保证值、测试条件和封装配置以所选完整型号手册为准。&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -2524,7 +2554,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>测量模式&lt;/td>
- &lt;td>持续感应、唤醒睡眠、单次测量；按键检测/Trigger；首页功能说明；采样时间、电流及寄存器值仍需核读对应表格（手册第1页）&lt;/td>
+ &lt;td>持续感应、唤醒睡眠、单次测量；按键检测/Trigger；首页功能说明；采样时间、电流及寄存器设置以对应参数表为准（手册第1页）&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -2552,7 +2582,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>模式&lt;/td>
- &lt;td>周期循环测量、单次测量；首页功能说明；具体周期、电流和转换时间尚未完整核读（手册第1页）&lt;/td>
+ &lt;td>周期循环测量、单次测量；首页功能说明；具体周期、电流和转换时间取决于对应模式与电参数表（手册第1页）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>供电&lt;/td>
@@ -2569,7 +2599,11 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="场强与温度先对应目标机构">场强与温度先对应目标机构&lt;/h2>
-&lt;p>AQ3 V2.0首页给出XYZ磁场和温度输出，XY典型量程±65mT、Z典型±40mT。它测的是磁场，摇杆和位移仍需要机构对应的轨迹或标定曲线；量程也不能直接换算成角度或毫米行程。&lt;/p></description></item><item><title>KTH5771</title><link>https://sensor.fans/models/kth5771/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth5771/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>AQ3 V2.0首页给出XYZ磁场和温度输出，XY典型量程±65mT、Z典型±40mT。它测的是磁场，摇杆和位移仍需要机构对应的轨迹或标定曲线；量程也不能直接换算成角度或毫米行程。&lt;/p></description></item><item><title>KTH5762</title><link>https://sensor.fans/models/kth5762/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth5762/</guid><description>&lt;p>KTH5762是昆泰芯面向手表类应用的低功耗3D霍尔角度传感器，用磁场方向变化进行非接触位置检测。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>磁体运动改变芯片附近的磁场，器件感知场方向并提供角度相关信息。感应结果依赖磁体、气隙和安装几何；三维磁场感知不表示三个轴均能在任意磁路下输出相同精度的机械角度。&lt;/p></description></item><item><title>KTH5763</title><link>https://sensor.fans/models/kth5763/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth5763/</guid><description>&lt;p>KTH5763是昆泰芯面向手表类应用的低功耗3D霍尔角度传感器，用磁场方向变化进行非接触位置检测。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>磁体运动改变芯片附近的磁场，器件感知场方向并提供角度相关信息。感应结果依赖磁体、气隙和安装几何；三维磁场感知不表示三个轴均能在任意磁路下输出相同精度的机械角度。&lt;/p></description></item><item><title>KTH5771</title><link>https://sensor.fans/models/kth5771/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth5771/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -2588,7 +2622,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>主电源&lt;/td>
- &lt;td>2.8～5.5 V；首页工作范围；尚未核读完整电参数表（手册第1页）&lt;/td>
+ &lt;td>2.8～5.5 V；首页工作范围；详细条件见对应电参数表（手册第1页）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>工作温度&lt;/td>
@@ -2609,7 +2643,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="双路模拟输出先匹配主控adc">双路模拟输出先匹配主控ADC&lt;/h2>
-&lt;p>v1.0手册首页确认双路模拟输出。接入原电位器输入电路时，应进一步核对输出摆幅、负载、ADC参考电压与采样保持要求；本次没有完整核读电参数表，不把网页的差分四路或UART介绍当成已确认接口。&lt;/p></description></item><item><title>KTH5772</title><link>https://sensor.fans/models/kth5772/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth5772/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>v1.0手册首页确认双路模拟输出。接入原电位器输入电路时，应进一步核对输出摆幅、负载、ADC参考电压与采样保持要求；网页的差分四路和UART描述与v1.0首页的双路模拟输出不同，具体接口、摆幅及负载请以该版本完整规格为准。&lt;/p></description></item><item><title>KTH5772</title><link>https://sensor.fans/models/kth5772/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth5772/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -2624,11 +2658,11 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>数字接口&lt;/td>
- &lt;td>UART可编程波特率；I²C快速模式400 kHz；第1—2页功能说明；UART具体波特率范围未在本次读页中核实（手册第2页）&lt;/td>
+ &lt;td>UART可编程波特率；I²C快速模式400 kHz；第1—2页功能说明；UART波特率范围按对应通信时序表确认（手册第2页）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>主电源&lt;/td>
- &lt;td>2.8～5.5 V；第2页主要特性工作范围；尚未核读完整电参数表（手册第2页）&lt;/td>
+ &lt;td>2.8～5.5 V；第2页主要特性工作范围；详细条件见对应电参数表（手册第2页）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>工作温度&lt;/td>
@@ -2668,11 +2702,11 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>数字接口&lt;/td>
- &lt;td>UART波特率可编程；I²C快速模式400 kHz；首页功能说明；具体寄存器、引脚复用和时序尚未完整核读（手册第1页）&lt;/td>
+ &lt;td>UART波特率可编程；I²C快速模式400 kHz；首页功能说明；寄存器、引脚复用和时序以对应完整协议为准（手册第1页）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>主电源&lt;/td>
- &lt;td>2.8～5.5 V；首页工作范围；尚未核读完整电参数表（手册第1页）&lt;/td>
+ &lt;td>2.8～5.5 V；首页工作范围；详细条件见对应电参数表（手册第1页）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>工作温度&lt;/td>
@@ -2929,7 +2963,9 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>参数依据：&lt;a href="https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7801%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf">原厂数据手册及型号选型表&lt;/a>。&lt;/p></description></item><item><title>KTM1301</title><link>https://sensor.fans/models/ktm1301/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1301/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>参数依据：&lt;a href="https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7801%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf">原厂数据手册及型号选型表&lt;/a>。&lt;/p></description></item><item><title>KTH7824</title><link>https://sensor.fans/models/kth7824/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth7824/</guid><description>&lt;p>KTH7824是昆泰芯的数字角度编码器，把旋转磁场方向转换为角度信息，可用于旋转位置反馈和运动控制。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>磁体随轴旋转，芯片安装在固定位置。主控使用角度读数或增量信号完成位置与速度计算；所需磁体和安装几何应以本型号的应用条件为准。&lt;/p></description></item><item><title>KTM1301</title><link>https://sensor.fans/models/ktm1301/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1301/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -2940,7 +2976,7 @@
  &lt;tbody>
  &lt;tr>
  &lt;td>原理与逻辑&lt;/td>
- &lt;td>TMR全极性磁开关；CMOS推挽输出；首页明确，不采用来源矩阵开漏标注；有磁动作输出低，无磁释放输出高（手册第1页）&lt;/td>
+ &lt;td>TMR全极性磁开关；CMOS推挽输出；手册第1页列推挽输出；产品矩阵另标开漏，两种输出接法不同；有磁动作输出低，无磁释放输出高（手册第1页）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>供电范围&lt;/td>
@@ -2964,7 +3000,25 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>参数依据：&lt;a href="https://www.conntek.com.cn/api/resource/freeDownload?name=KTM1301%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf">原厂数据手册及型号选型表&lt;/a>。&lt;/p></description></item><item><title>KTM13xx系列</title><link>https://sensor.fans/models/ktm13xx/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm13xx/</guid><description>&lt;p>KTM13xx包含全极、单极与锁存器。先选择磁体极性和状态逻辑，再核对输出级、采样档与封装。&lt;/p>
+&lt;p>参数依据：&lt;a href="https://www.conntek.com.cn/api/resource/freeDownload?name=KTM1301%20Series%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf">原厂数据手册及型号选型表&lt;/a>。&lt;/p></description></item><item><title>KTM1302</title><link>https://sensor.fans/models/ktm1302/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1302/</guid><description>&lt;p>KTM1302是昆泰芯的全极TMR磁开关，把磁场是否越过开关阈值转换为数字状态，可用于接近、开合和位置状态检测。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>全极检测允许两种磁极参与触发，但触发距离仍取决于磁体和感应方向。主控读取的是开关状态，不是连续角度或绝对距离；装配误差和杂散磁场需要纳入阈值裕量。&lt;/p></description></item><item><title>KTM1302L</title><link>https://sensor.fans/models/ktm1302l/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1302l/</guid><description>&lt;p>KTM1302L是昆泰芯的全极TMR磁开关，把磁场是否越过开关阈值转换为数字状态，可用于接近、开合和位置状态检测。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>全极检测允许两种磁极参与触发，但触发距离仍取决于磁体和感应方向。主控读取的是开关状态，不是连续角度或绝对距离；装配误差和杂散磁场需要纳入阈值裕量。&lt;/p></description></item><item><title>KTM1302R</title><link>https://sensor.fans/models/ktm1302r/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1302r/</guid><description>&lt;p>KTM1302R是昆泰芯的全极TMR磁开关，把磁场是否越过开关阈值转换为数字状态，可用于接近、开合和位置状态检测。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>全极检测允许两种磁极参与触发，但触发距离仍取决于磁体和感应方向。主控读取的是开关状态，不是连续角度或绝对距离；装配误差和杂散磁场需要纳入阈值裕量。&lt;/p></description></item><item><title>KTM1304</title><link>https://sensor.fans/models/ktm1304/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1304/</guid><description>&lt;p>KTM1304是昆泰芯的全极TMR磁开关，把磁场是否越过开关阈值转换为数字状态，可用于接近、开合和位置状态检测。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>全极检测允许两种磁极参与触发，但触发距离仍取决于磁体和感应方向。主控读取的是开关状态，不是连续角度或绝对距离；装配误差和杂散磁场需要纳入阈值裕量。&lt;/p></description></item><item><title>KTM1311</title><link>https://sensor.fans/models/ktm1311/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1311/</guid><description>&lt;p>KTM1311是昆泰芯的南极单极TMR开关，检测指定南极磁场是否越过开关阈值，将磁场状态转换为数字输出。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>单极检测需要按感应面摆放磁体。南、北极并非任意互换；磁体越过动作和释放阈值时产生状态变化，实际触发距离由磁体、气隙和安装方向共同决定。&lt;/p></description></item><item><title>KTM1312</title><link>https://sensor.fans/models/ktm1312/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1312/</guid><description>&lt;p>KTM1312是昆泰芯的南极单极TMR开关，检测指定南极磁场是否越过开关阈值，将磁场状态转换为数字输出。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>单极检测需要按感应面摆放磁体。南、北极并非任意互换；磁体越过动作和释放阈值时产生状态变化，实际触发距离由磁体、气隙和安装方向共同决定。&lt;/p></description></item><item><title>KTM1321</title><link>https://sensor.fans/models/ktm1321/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1321/</guid><description>&lt;p>KTM1321是昆泰芯的北极单极TMR开关，检测指定北极磁场是否越过开关阈值，将磁场状态转换为数字输出。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>单极检测需要按感应面摆放磁体。南、北极并非任意互换；磁体越过动作和释放阈值时产生状态变化，实际触发距离由磁体、气隙和安装方向共同决定。&lt;/p></description></item><item><title>KTM1331</title><link>https://sensor.fans/models/ktm1331/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1331/</guid><description>&lt;p>KTM1331是昆泰芯的双极锁存TMR开关，检测相反方向磁场经过动作与释放阈值的过程，并输出锁存状态。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>磁场越过动作阈值后输出翻转；磁铁退回弱场区时可能继续保持，直到反向磁场越过释放阈值。因此磁体移开不一定代表输出复位，转动计数与位置判断应考虑磁场经过的顺序。&lt;/p></description></item><item><title>KTM1331R</title><link>https://sensor.fans/models/ktm1331r/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm1331r/</guid><description>&lt;p>KTM1331R是昆泰芯的双极锁存TMR开关，检测相反方向磁场经过动作与释放阈值的过程，并输出锁存状态。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>磁场越过动作阈值后输出翻转；磁铁退回弱场区时可能继续保持，直到反向磁场越过释放阈值。因此磁体移开不一定代表输出复位，转动计数与位置判断应考虑磁场经过的顺序。&lt;/p></description></item><item><title>KTM13xx系列</title><link>https://sensor.fans/models/ktm13xx/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm13xx/</guid><description>&lt;p>KTM13xx包含全极、单极与锁存器。先选择磁体极性和状态逻辑，再核对输出级、采样档与封装。&lt;/p>
 &lt;h2 id="型号与核心异同">型号与核心异同&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -3044,7 +3098,9 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="气缸到位是一个磁事件">气缸到位是一个磁事件&lt;/h2>
-&lt;p>活塞磁环经过传感器时形成动作窗口，输出表示是否达到对应磁状态，不直接给出活塞毫米位置。缸体材料、槽口、磁环和敏感轴都会改变动作区，应在目标气缸上测往返触发点。&lt;/p></description></item><item><title>KTM28系列</title><link>https://sensor.fans/models/ktm28/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm28/</guid><description>&lt;p>KTM28面向气缸端位磁检测。两个基础成员同列AMR与调理ASIC路线，但现有目录没有完整说明NPN/PNP及二线/三线与成员的映射。&lt;/p>
+&lt;p>活塞磁环经过传感器时形成动作窗口，输出表示是否达到对应磁状态，不直接给出活塞毫米位置。缸体材料、槽口、磁环和敏感轴都会改变动作区，应在目标气缸上测往返触发点。&lt;/p></description></item><item><title>KTM2802P</title><link>https://sensor.fans/models/ktm2802p/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm2802p/</guid><description>&lt;p>KTM2802P是昆泰芯的AMR气缸位置开关，利用磁阻感应判断带磁活塞的位置，以PNP输出向控制端报告检测状态。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>活塞磁体经过传感器时，磁场改变触发输出。它提供位置状态，适合行程端点或特定位置检测；不能直接作为连续位移数值使用。&lt;/p></description></item><item><title>KTM28系列</title><link>https://sensor.fans/models/ktm28/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktm28/</guid><description>&lt;p>KTM28面向气缸端位磁检测。两个基础成员同列AMR与调理ASIC路线，但现有目录没有完整说明NPN/PNP及二线/三线与成员的映射。&lt;/p>
 &lt;h2 id="型号与核心异同">型号与核心异同&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -3224,7 +3280,9 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>参数依据：&lt;a href="https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf">原厂数据手册及型号选型表&lt;/a>。&lt;/p></description></item><item><title>MAQ8xx系列</title><link>https://sensor.fans/models/maq8xx/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/maq8xx/</guid><description>&lt;p>MAQ8xx面向旋钮角度与磁性按压检测。三款共同提供8位角度与按压功能，输出组合随型号选择。&lt;/p>
+&lt;p>参数依据：&lt;a href="https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf">原厂数据手册及型号选型表&lt;/a>。&lt;/p></description></item><item><title>KTP112</title><link>https://sensor.fans/models/ktp112/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ktp112/</guid><description>&lt;p>KTP112是昆泰芯的数字温度传感器，把芯片所在位置的温度转换为数字信息，可用于板级温度监测和控制。&lt;/p>
+&lt;h2 id="工作方式">工作方式&lt;/h2>
+&lt;p>主控读取温度后可用于阈值判断、风扇或加热控制。传感器测到的是器件自身附近的温度，安装位置、铜箔导热和邻近热源会影响它与被测对象之间的温差。&lt;/p></description></item><item><title>MAQ8xx系列</title><link>https://sensor.fans/models/maq8xx/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/maq8xx/</guid><description>&lt;p>MAQ8xx面向旋钮角度与磁性按压检测。三款共同提供8位角度与按压功能，输出组合随型号选择。&lt;/p>
 &lt;h2 id="型号与核心异同">型号与核心异同&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -3662,7 +3720,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="检测平面不能由系列简介代选">检测平面不能由系列简介代选&lt;/h2>
-&lt;p>官网将MT652x描述为可根据型号配置检测XY、XZ或YZ平面，但本次公开字段没有逐一说明6521/6522/6523与平面的对应表。因此保留本完整型号，实际选型先核对敏感平面及磁体运动，不能自行给它指定某一平面。&lt;/p></description></item><item><title>MT6521GT</title><link>https://sensor.fans/models/mt6521gt/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6521gt/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
+&lt;p>MT652x支持按型号配置检测XY、XZ或YZ平面；6521/6522/6523与具体平面的对应关系应查相应选型表。磁体运动平面必须与所选成员的敏感平面一致。&lt;/p></description></item><item><title>MT6521GT</title><link>https://sensor.fans/models/mt6521gt/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6521gt/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
 &lt;p>以下为官网目录中 &lt;strong>MT6521GT-STD-Q-R&lt;/strong> 这一配置的标注。最大值、典型值及测试条件以对应手册为准；不同订货号的差异列在后文。&lt;/p>
 &lt;table>
  &lt;thead>
@@ -3743,7 +3801,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="检测平面不能由系列简介代选">检测平面不能由系列简介代选&lt;/h2>
-&lt;p>官网将MT652x描述为可根据型号配置检测XY、XZ或YZ平面，但本次公开字段没有逐一说明6521/6522/6523与平面的对应表。因此保留本完整型号，实际选型先核对敏感平面及磁体运动，不能自行给它指定某一平面。&lt;/p></description></item><item><title>MT6522CT</title><link>https://sensor.fans/models/mt6522ct/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6522ct/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
+&lt;p>MT652x支持按型号配置检测XY、XZ或YZ平面；6521/6522/6523与具体平面的对应关系应查相应选型表。磁体运动平面必须与所选成员的敏感平面一致。&lt;/p></description></item><item><title>MT6522CT</title><link>https://sensor.fans/models/mt6522ct/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6522ct/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
 &lt;p>以下为官网目录中 &lt;strong>MT6522CT-STD-Q-R&lt;/strong> 这一配置的标注。最大值、典型值及测试条件以对应手册为准；不同订货号的差异列在后文。&lt;/p>
 &lt;table>
  &lt;thead>
@@ -3824,7 +3882,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="检测平面不能由系列简介代选">检测平面不能由系列简介代选&lt;/h2>
-&lt;p>官网将MT652x描述为可根据型号配置检测XY、XZ或YZ平面，但本次公开字段没有逐一说明6521/6522/6523与平面的对应表。因此保留本完整型号，实际选型先核对敏感平面及磁体运动，不能自行给它指定某一平面。&lt;/p></description></item><item><title>MT6522GT</title><link>https://sensor.fans/models/mt6522gt/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6522gt/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
+&lt;p>MT652x支持按型号配置检测XY、XZ或YZ平面；6521/6522/6523与具体平面的对应关系应查相应选型表。磁体运动平面必须与所选成员的敏感平面一致。&lt;/p></description></item><item><title>MT6522GT</title><link>https://sensor.fans/models/mt6522gt/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6522gt/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
 &lt;p>以下为官网目录中 &lt;strong>MT6522GT-STD-Q-R&lt;/strong> 这一配置的标注。最大值、典型值及测试条件以对应手册为准；不同订货号的差异列在后文。&lt;/p>
 &lt;table>
  &lt;thead>
@@ -3905,7 +3963,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="检测平面不能由系列简介代选">检测平面不能由系列简介代选&lt;/h2>
-&lt;p>官网将MT652x描述为可根据型号配置检测XY、XZ或YZ平面，但本次公开字段没有逐一说明6521/6522/6523与平面的对应表。因此保留本完整型号，实际选型先核对敏感平面及磁体运动，不能自行给它指定某一平面。&lt;/p></description></item><item><title>MT6523CT</title><link>https://sensor.fans/models/mt6523ct/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6523ct/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
+&lt;p>MT652x支持按型号配置检测XY、XZ或YZ平面；6521/6522/6523与具体平面的对应关系应查相应选型表。磁体运动平面必须与所选成员的敏感平面一致。&lt;/p></description></item><item><title>MT6523CT</title><link>https://sensor.fans/models/mt6523ct/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6523ct/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
 &lt;p>以下为官网目录中 &lt;strong>MT6523CT-STD-Q-R&lt;/strong> 这一配置的标注。最大值、典型值及测试条件以对应手册为准；不同订货号的差异列在后文。&lt;/p>
 &lt;table>
  &lt;thead>
@@ -3986,7 +4044,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="检测平面不能由系列简介代选">检测平面不能由系列简介代选&lt;/h2>
-&lt;p>官网将MT652x描述为可根据型号配置检测XY、XZ或YZ平面，但本次公开字段没有逐一说明6521/6522/6523与平面的对应表。因此保留本完整型号，实际选型先核对敏感平面及磁体运动，不能自行给它指定某一平面。&lt;/p></description></item><item><title>MT6523GT</title><link>https://sensor.fans/models/mt6523gt/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6523gt/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
+&lt;p>MT652x支持按型号配置检测XY、XZ或YZ平面；6521/6522/6523与具体平面的对应关系应查相应选型表。磁体运动平面必须与所选成员的敏感平面一致。&lt;/p></description></item><item><title>MT6523GT</title><link>https://sensor.fans/models/mt6523gt/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6523gt/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
 &lt;p>以下为官网目录中 &lt;strong>MT6523GT-STD-Q-R&lt;/strong> 这一配置的标注。最大值、典型值及测试条件以对应手册为准；不同订货号的差异列在后文。&lt;/p>
 &lt;table>
  &lt;thead>
@@ -4067,7 +4125,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="检测平面不能由系列简介代选">检测平面不能由系列简介代选&lt;/h2>
-&lt;p>官网将MT652x描述为可根据型号配置检测XY、XZ或YZ平面，但本次公开字段没有逐一说明6521/6522/6523与平面的对应表。因此保留本完整型号，实际选型先核对敏感平面及磁体运动，不能自行给它指定某一平面。&lt;/p></description></item><item><title>MT6620GA</title><link>https://sensor.fans/models/mt6620ga/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6620ga/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
+&lt;p>MT652x支持按型号配置检测XY、XZ或YZ平面；6521/6522/6523与具体平面的对应关系应查相应选型表。磁体运动平面必须与所选成员的敏感平面一致。&lt;/p></description></item><item><title>MT6620GA</title><link>https://sensor.fans/models/mt6620ga/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6620ga/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
 &lt;p>以下为官网目录中 &lt;strong>MT6620GA-ACH-R&lt;/strong> 这一配置的标注。最大值、典型值及测试条件以对应手册为准；不同订货号的差异列在后文。&lt;/p>
 &lt;table>
  &lt;thead>
@@ -5020,8 +5078,8 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="一个分组保留两种应用等级">一个分组保留两种应用等级&lt;/h2>
-&lt;p>本组的DSPR在工业编码器目录，Q1SPR在汽车角度目录。共用系列说明可以帮助理解感知链，但工作条件和资格文件必须对应完整订货号，不能用工业代表详情为汽车版本背书。&lt;/p></description></item><item><title>NSM3011AD</title><link>https://sensor.fans/models/nsm3011ad/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/nsm3011ad/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
+&lt;h2 id="工业与汽车版本">工业与汽车版本&lt;/h2>
+&lt;p>DSPR在工业编码器目录，Q1SPR在汽车角度目录。共用系列说明可以帮助理解感知链，但工作条件和资格文件必须对应完整订货号，不能用工业代表详情为汽车版本背书。&lt;/p></description></item><item><title>NSM3011AD</title><link>https://sensor.fans/models/nsm3011ad/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/nsm3011ad/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
 &lt;p>以下为官网目录中 &lt;strong>NSM3011AD-Q1SPR&lt;/strong> 这一配置的标注。最大值、典型值及测试条件以对应手册为准；不同订货号的差异列在后文。&lt;/p>
 &lt;table>
  &lt;thead>
@@ -5341,8 +5399,8 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="q0与q1不能靠共享摘要合并">Q0与Q1不能靠共享摘要合并&lt;/h2>
-&lt;p>两种OPN在目录有各自条目，而代表详情复用系列文字。本页仅保留实际记录，不从Q0/Q1字符自行推导完整温区或认证结论，正式选型需核对各自资格与手册版本。&lt;/p></description></item><item><title>NSM3012B</title><link>https://sensor.fans/models/nsm3012b/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/nsm3012b/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
+&lt;h2 id="q0与q1资格版本">Q0与Q1资格版本&lt;/h2>
+&lt;p>Q0SPR与Q1SPR为不同完整订货配置，具体温区和资格以各自正式文件为准；共用系列介绍不足以确定两者全部差异。&lt;/p></description></item><item><title>NSM3012B</title><link>https://sensor.fans/models/nsm3012b/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/nsm3012b/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
 &lt;p>以下为官网目录中 &lt;strong>NSM3012B-DSPR&lt;/strong> 这一配置的标注。最大值、典型值及测试条件以对应手册为准；不同订货号的差异列在后文。&lt;/p>
 &lt;table>
  &lt;thead>
@@ -5553,7 +5611,7 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="bz成员不从字母猜内部功能">BZ成员不从字母猜内部功能&lt;/h2>
-&lt;p>公开详情对多种NSM301x成员复用同一文本，本次没有足够证据解释BZ新增或删减了哪项内部能力。页面保留确切型号和订货表，主控设计以前缀相近不能作为协议兼容依据。&lt;/p></description></item><item><title>NSM3012S</title><link>https://sensor.fans/models/nsm3012s/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/nsm3012s/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
+&lt;p>BZ与B、BF的内部功能差异应查具体型号定义，前缀相近不足以证明协议和寄存器兼容。&lt;/p></description></item><item><title>NSM3012S</title><link>https://sensor.fans/models/nsm3012s/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/nsm3012s/</guid><description>&lt;h2 id="核心参数与配置">核心参数与配置&lt;/h2>
 &lt;p>以下为官网目录中 &lt;strong>NSM3012S-DSPR&lt;/strong> 这一配置的标注。最大值、典型值及测试条件以对应手册为准；不同订货号的差异列在后文。&lt;/p>
 &lt;table>
  &lt;thead>
@@ -5837,7 +5895,7 @@
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td>RT-D036～RT-D090（范围，不补造中间型号）&lt;/td>
+ &lt;td>RT-D036～RT-D090（尺寸范围）&lt;/td>
  &lt;td>目录包含异侧、同侧双编码器；逐款对应关系待核&lt;/td>
  &lt;td>尺寸、双路采样同步、协议&lt;/td>
  &lt;/tr>
@@ -6638,7 +6696,7 @@
 &lt;li>&lt;strong>结构&lt;/strong>：分体式机械多圈，无计圈电池&lt;/li>
 &lt;/ul>
 &lt;h2 id="接口与安装">接口与安装&lt;/h2>
-&lt;p>本页所附G12S17版本为12位多圈与17位单圈，不能把其他WIN48变体的单圈码宽或通信配置直接套入。直径48.2mm、高15.5mm同样限于该尺寸图。&lt;/p></description></item><item><title>MA600</title><link>https://sensor.fans/models/ma600/</link><pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ma600/</guid><description>&lt;p>MA600是MPS的一颗TMR磁角度传感器。它把磁场方向变成数字角度，提供串行绝对位置、增量脉冲和电机换向输出。理解它的关键，是把分辨率、带宽和校准条件放在一起看。&lt;/p></description></item><item><title>ADM32F036A3</title><link>https://sensor.fans/models/adm32f036a3/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/adm32f036a3/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>本页所附G12S17版本为12位多圈与17位单圈，不能把其他WIN48变体的单圈码宽或通信配置直接套入。直径48.2mm、高15.5mm同样限于该尺寸图。&lt;/p></description></item><item><title>KTH2562L</title><link>https://sensor.fans/models/kth2562l/</link><pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/kth2562l/</guid><description>&lt;p>KTH2562L是昆泰芯的宽电压数字双极锁存霍尔系列。它检测磁场是否越过两个方向的阈值，并通过开漏输出给出高、低状态；适合做转动检测、换向或位置状态判断。它输出开关量，不直接输出连续角度。&lt;/p></description></item><item><title>MA600</title><link>https://sensor.fans/models/ma600/</link><pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ma600/</guid><description>&lt;p>MA600是MPS的一颗TMR磁角度传感器。它把磁场方向变成数字角度，提供串行绝对位置、增量脉冲和电机换向输出。理解它的关键，是把分辨率、带宽和校准条件放在一起看。&lt;/p></description></item><item><title>ADM32F036A3</title><link>https://sensor.fans/models/adm32f036a3/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/adm32f036a3/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -8279,7 +8337,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>证据层级&lt;/td>
- &lt;td>本页新增数值来自型号选型行；未取得独立7803正式手册，不套用7801全部保证值&lt;/td>
+ &lt;td>参数来自KTH7803型号选型行；详细电参数、时序与保证条件待对应正式手册确认&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -8676,15 +8734,15 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>独立公开手册&lt;/td>
- &lt;td>本次原厂目录未找到KTM1305独立下载项&lt;/td>
+ &lt;td>原厂目录暂无KTM1305独立下载项&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>分辨率/角度&lt;/td>
- &lt;td>磁开关条目不套用角度编码器位数&lt;/td>
+ &lt;td>开关量输出；无角度编码分辨率定义&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>供电/电流/门限&lt;/td>
- &lt;td>尚无已核对的本型号公开资料，本页不借1301等成员数值&lt;/td>
+ &lt;td>KTM1305尚缺型号专用公开数值，1301等成员参数不适用于本型号&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>输出/温度/封装&lt;/td>
@@ -10360,7 +10418,7 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>参数来源：本页所列&lt;a href="https://www.magntek.com.cn/46/54">原厂产品资料与手册&lt;/a>。&lt;/p></description></item><item><title>MT6701</title><link>https://sensor.fans/models/mt6701/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6701/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>参数来源：&lt;a href="https://www.magntek.com.cn/46/54">原厂产品资料与手册&lt;/a>。&lt;/p></description></item><item><title>MT6701</title><link>https://sensor.fans/models/mt6701/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6701/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -10640,7 +10698,7 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>参数来源：本页所列&lt;a href="https://www.magntek.com.cn/upload/pdf/202312/MT6835_Rev.1.3_%E4%B8%AD%E6%96%87%E7%89%88.pdf">原厂产品资料与手册&lt;/a>。&lt;/p></description></item><item><title>MT6901</title><link>https://sensor.fans/models/mt6901/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6901/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>参数来源：&lt;a href="https://www.magntek.com.cn/upload/pdf/202312/MT6835_Rev.1.3_%E4%B8%AD%E6%96%87%E7%89%88.pdf">原厂产品资料与手册&lt;/a>。&lt;/p></description></item><item><title>MT6901</title><link>https://sensor.fans/models/mt6901/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/mt6901/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
