@@ -97,7 +97,11 @@
 &lt;/p>
 &lt;p>在学到对应课文之前，一直认为《钢铁是怎样炼成的》是本炼钢抡锤子的工业书籍，真正学习后，才体会到保尔·柯察金的信仰，从来不是一时的热血迸发，而是在漫长磨砺中，把每一分气力都钉在认定的方向上，以持久的深耕兑现初心。这份“往细处抠、往久处熬”的韧劲，也是国产模拟芯片行业啃硬骨头的真实底色。面对便携智能设备“体积越做越小、能量密度提升、续航要求越来越高”的普遍困境，艾为电子低功耗升降压系列，正是以这样的坚守，在毫厘硅片上死磕性能，在微安电流里抠出续航，给终端设备带去扎实可靠的供电支撑。&lt;/p></description></item><item><title>编码器还在卷 20 位，买家已经开始追问：这是哪一刻的角度？</title><link>https://sensor.fans/posts/encoder-20bit-which-moment/</link><pubDate>Tue, 13 Oct 2026 16:28:00 +0800</pubDate><guid>https://sensor.fans/posts/encoder-20bit-which-moment/</guid><description>&lt;p>&lt;em>从芯片参数到位置反馈链的系统级验收&lt;/em>&lt;/p>
 &lt;p>从挑芯片参数，到审查整条位置反馈链，机器人关节的选型逻辑正在出现一条新分界线。&lt;/p>
-&lt;p>一颗 16 位编码器，理论上能把一圈分成 65,536 份，每份约 0.0055°。&lt;/p></description></item><item><title>编码器把误差补没了， 轴承坏了谁来报警？精度之外，别丢掉机械变化的证据 !</title><link>https://sensor.fans/posts/sunp66apcjkm6mjccxzvqa/</link><pubDate>Tue, 13 Oct 2026 00:08:00 +0800</pubDate><guid>https://sensor.fans/posts/sunp66apcjkm6mjccxzvqa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/dac9ca24c08c1311cc0fe8f75be83151.jpg" alt="编码器把误差补没了， 轴承坏了谁来报警？精度之外，别丢掉机械变化的证据 !" loading="lazy" decoding="async">
+&lt;p>一颗 16 位编码器，理论上能把一圈分成 65,536 份，每份约 0.0055°。&lt;/p></description></item><item><title>伺服运动篇5·惯量比与刚性：怎么调才不抖、不冲</title><link>https://sensor.fans/posts/wechat-_3q_oz5cb7qgulvmdqo-xq/</link><pubDate>Tue, 13 Oct 2026 09:08:00 +0800</pubDate><guid>https://sensor.fans/posts/wechat-_3q_oz5cb7qgulvmdqo-xq/</guid><description>&lt;p>惯量比与刚性：怎么调才不抖、不冲&lt;/p>
+&lt;p>惯量比估算 · 增益/刚性 · 空载与带载 · 调试顺序&lt;/p>
+&lt;p>&lt;img src="images/001-6eceb19592.jpg" alt="惯量比与刚性：怎么调才不抖、不冲" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>“空载好好的，一带料就啸叫”“刚性调到头还是抖”——多半是&lt;strong>惯量比 J_ratio&lt;/strong> 与增益不匹配。本篇给估算公式、推荐范围 1:3~1:10、以及空载→带载的调试顺序。&lt;/p></description></item><item><title>编码器把误差补没了， 轴承坏了谁来报警？精度之外，别丢掉机械变化的证据 !</title><link>https://sensor.fans/posts/sunp66apcjkm6mjccxzvqa/</link><pubDate>Tue, 13 Oct 2026 00:08:00 +0800</pubDate><guid>https://sensor.fans/posts/sunp66apcjkm6mjccxzvqa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/dac9ca24c08c1311cc0fe8f75be83151.jpg" alt="编码器把误差补没了， 轴承坏了谁来报警？精度之外，别丢掉机械变化的证据 !" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>如是有为 · 编码器观察&lt;/p>
 &lt;h2 id="编码器把误差补没了轴承坏了谁来报警">编码器把误差补没了，轴承坏了谁来报警？&lt;/h2>
