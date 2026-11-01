@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STM32系列 on 如是有为</title><link>https://sensor.fans/models/stm32/</link><description>Recent content in STM32系列 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Wed, 16 Sep 2026 14:27:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/models/stm32/index.xml" rel="self" type="application/rss+xml"/><item><title>一颗编码器把三种输出都写成 65536，不代表它们同样精确</title><link>https://sensor.fans/posts/hg4wd25wkyygn0yneniueg/</link><pubDate>Wed, 16 Sep 2026 14:27:00 +0800</pubDate><guid>https://sensor.fans/posts/hg4wd25wkyygn0yneniueg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/1c72558eb66650f74b9099a2b9da4066.jpg" alt="一颗编码器把三种输出都写成 65536，不代表它们同样精确" loading="lazy" decoding="async">
 &lt;/p>
-&lt;p>假设一台电机同时给你三种角度读数：屏幕上的数字、PWM 占空比、还有 A/B 脉冲。它们最后都被软件换算成 32768。你会认为电机正好转了半圈，而且三种读法同样可靠。&lt;/p></description></item><item><title>从欧艾迪绝对值编码器说起：SSI 读到的是比特，可能现场输掉的是采样确定性</title><link>https://sensor.fans/posts/vsmo_lrrgatnhgdmzyltqa/</link><pubDate>Mon, 08 Jun 2026 00:15:00 +0800</pubDate><guid>https://sensor.fans/posts/vsmo_lrrgatnhgdmzyltqa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/8c6dbfae38e74757a51d2419424e23a2.webp" alt="从欧艾迪绝对值编码器说起：SSI 读到的是比特，可能现场输掉的是采样确定性" loading="lazy" decoding="async">
+&lt;p>假设一台电机同时给你三种角度读数：屏幕上的数字、PWM 占空比、还有 A/B 脉冲。它们最后都被软件换算成 32768。你会认为电机正好转了半圈，而且三种读法同样可靠。&lt;/p></description></item><item><title>基于STM32和AS5600实现（绝对式）编码器软硬件方案</title><link>https://sensor.fans/posts/wechat-0vweqpm1use4b9hpqwhncq/</link><pubDate>Thu, 03 Sep 2026 05:21:00 +0800</pubDate><guid>https://sensor.fans/posts/wechat-0vweqpm1use4b9hpqwhncq/</guid><description>&lt;h2 id="目录">目录&lt;/h2>
+&lt;p>概述&lt;/p>
+&lt;h2 id="1-系统架构">1 系统架构&lt;/h2>
+&lt;h2 id="11-硬件架构">1.1 硬件架构&lt;/h2>
+&lt;h2 id="12-工装要求">1.2 工装要求&lt;/h2>
+&lt;h2 id="2-软件实现">2 软件实现&lt;/h2>
+&lt;h2 id="21-软件架构设计">2.1 软件架构设计&lt;/h2>
+&lt;h2 id="22-stm32-cube配置项目">2.2 STM32 Cube配置项目&lt;/h2>
+&lt;h2 id="3-软件功能实现">3 软件功能实现&lt;/h2>
+&lt;h2 id="31-系统代码架构">3.1 系统代码架构&lt;/h2>
+&lt;h2 id="32-代码功能介绍">3.2 代码功能介绍&lt;/h2>
+&lt;h2 id="33-源代码文件">3.3 源代码文件&lt;/h2>
+&lt;h2 id="4-测试">4 测试&lt;/h2>
+&lt;hr>
+&lt;p>测试视频&lt;/p></description></item><item><title>从欧艾迪绝对值编码器说起：SSI 读到的是比特，可能现场输掉的是采样确定性</title><link>https://sensor.fans/posts/vsmo_lrrgatnhgdmzyltqa/</link><pubDate>Mon, 08 Jun 2026 00:15:00 +0800</pubDate><guid>https://sensor.fans/posts/vsmo_lrrgatnhgdmzyltqa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/8c6dbfae38e74757a51d2419424e23a2.webp" alt="从欧艾迪绝对值编码器说起：SSI 读到的是比特，可能现场输掉的是采样确定性" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>前段时间聊一个国产设备项目，对方用的是欧艾迪这类 SSI 绝对值编码器。选它的理由其实很朴素：国产供应链响应快，价格和交期都更友好；绝对值输出对设备上电回零更方便；SSI 接口也足够标准，控制器侧好接，资料里把 CLOCK+/CLOCK-、DATA+/DATA-、电源和地写得很清楚。&lt;/p></description></item></channel></rss>
