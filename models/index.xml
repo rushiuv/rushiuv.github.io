@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>芯片型号 on 如是有为</title><link>https://sensor.fans/models/</link><description>Recent content in 芯片型号 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://sensor.fans/models/index.xml" rel="self" type="application/rss+xml"/><item><title>AEDR-850x系列</title><link>https://sensor.fans/models/aedr-850x/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/aedr-850x/</guid><description>&lt;p>AEDR-850x是集成LED与光检测的反射式增量读头系列。当前资料入口对应AEDR-8500-102，其它完整后缀尚未逐项核实，不从通配系列名补造型号。&lt;/p></description></item><item><title>AMR30xx系列</title><link>https://sensor.fans/models/amr30xx/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/amr30xx/</guid><description>&lt;p>AMR30xx是模拟角度桥路系列，选型先看桥路与磁路，再匹配采集电路。现有目录确认四个成员，但尚不足以给出逐型号桥阻与工作磁场对照。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>芯片型号 on 如是有为</title><link>https://sensor.fans/models/</link><description>Recent content in 芯片型号 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://sensor.fans/models/index.xml" rel="self" type="application/rss+xml"/><item><title>AK09973D</title><link>https://sensor.fans/models/ak09973d/</link><pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/ak09973d/</guid><description>&lt;h2 id="核心参数">核心参数&lt;/h2>
+&lt;p>依据原厂数据手册 &lt;a href="https://media.digikey.com/pdf/Data%20Sheets/AKM%20Semiconductor%20Inc.%20PDFs/AK09973D_Sep2020.pdf">200900045-E-00（2020/9，43页）&lt;/a>。典型值、最值与适用条件分别保留；未在手册给出的项标明「数据手册未给出」。公开 PDF 与原厂产品页登记下载件同为该文档编号（43页／约932KB）。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>参数&lt;/th>
+ &lt;th>数值与适用条件&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>感应类型&lt;/td>
+ &lt;td>三轴霍尔；各轴独立检测弱至强磁场（手册第1页）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>数字输出&lt;/td>
+ &lt;td>每轴 16 位磁场分量；另有三轴平方和 HV[23:0]（手册第1、32～33页）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>高灵敏度档&lt;/td>
+ &lt;td>灵敏度典型 1.1 µT/LSB（25°C，SMR=0，min 0.99／max 1.21）；量程典型 ±36.04 mT（同条件，min ±32.44／max ±39.64）；表8.1，第9页&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>宽量程档&lt;/td>
+ &lt;td>灵敏度典型 3.1 µT/LSB（25°C，SMR=1，min 2.79／max 3.41）；X/Y 典型 ±34.91 mT，Z 典型 ±101.57 mT；表8.2，第9页&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>测量时间 TSM&lt;/td>
+ &lt;td>低噪声驱动（SDR=0）典型 0.825 ms／最大 0.908 ms；低功耗驱动（SDR=1）典型 0.265 ms／最大 0.292 ms；两档量程表同值，第9页&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>噪声（设计参考）&lt;/td>
+ &lt;td>高灵敏度：低噪声 5.5 µTrms、低功耗 15.0 µTrms；宽量程：低噪声 6.8 µTrms、低功耗 18.0 µTrms；恒定磁场、无 Max 列，第9页注*7&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>初始失调&lt;/td>
+ &lt;td>高灵敏度 ±500 LSB；宽量程 ±177 LSB；出厂无外加磁场测得的测量数据寄存器值，第9页注*8&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>接口&lt;/td>
+ &lt;td>I²C；Standard／Fast／Fast-mode Plus；SCL 最高 1000 kHz（第10页）；从地址可选手脚连接选 10h 或 11h（第5页）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>中断输出&lt;/td>
+ &lt;td>OD-INT 开漏、低有效；可报开关事件／DRDY／溢出错误（第1、19页）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>供电&lt;/td>
+ &lt;td>VDD 1.65～1.95 V（典型 1.8 V）；输入电平 VIN 1.1 V～VDD；工作温度 −30～+85°C（第6页）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>驱动电流&lt;/td>
+ &lt;td>磁传感驱动中典型 1.4 mA／最大 2.2 mA；掉电典型 1.0 µA／最大 3 µA；自检驱动典型 5.6 mA；无电阻负载，第6页&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>平均电流（示例）&lt;/td>
+ &lt;td>VDD=1.8 V、+25°C：低功耗驱动 3.5 µA＠10 Hz、22 µA＠100 Hz；低噪声驱动 11 µA＠10 Hz、101 µA＠100 Hz（第1页 Features）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>工作模式&lt;/td>
+ &lt;td>掉电、单次测量、连续测量（5／10／20／50／100／500／1000／2000 Hz）、自检（第13～14页）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>连续 ODR 限制&lt;/td>
+ &lt;td>1000 Hz 与 2000 Hz 仅在低功耗驱动（SDR=1）有效；低噪声驱动（SDR=0）下这两档按 500 Hz 测量（第13页）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>可编程开关&lt;/td>
+ &lt;td>各轴及平方和可设 BOP／BRP 阈值与使能；阈值设定范围／灵敏度与当前测量档相同（第17页）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>片上角度解算&lt;/td>
+ &lt;td>数据手册未给出整圈角度精度规格；无 arctan／角度输出寄存器（对照产品线公开表，本型号「Internal calculation」为空；本片仅给磁场与平方和）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>片内时钟&lt;/td>
+ &lt;td>框图 OSC1 为传感测量时钟、OSC2 为周期控制时钟（第4页）；数据手册未给出 OSC1／OSC2 频率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>封装&lt;/td>
+ &lt;td>5 引脚 WL-CSP（BGA），1.18 mm × 0.78 mm × 0.55 mm（第1、40页）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>典型应用（原厂口径）&lt;/td>
+ &lt;td>与磁体配合检测相对距离与方位；折叠／卷轴手机形态；智能手表、耳机、安防等低功耗开关场景（原厂产品页；手册第1页写智能手机与可穿戴）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>兼容说明&lt;/td>
+ &lt;td>原厂产品页写向上兼容 AK09970D&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="产品功能与测量链">产品功能与测量链&lt;/h2>
+&lt;p>AK09973D 把三轴霍尔、斩波放大、ADC 与开关比较做在同一芯片里：主机经 I²C 读出 HX／HY／HZ 与平方和 HV，也可只依赖可编程阈值与 OD-INT 做事件唤醒。它输出的是磁场数字量与开关状态，不是编码器角度码；整机角度或开合行程需要外加磁路与标定。&lt;/p></description></item><item><title>AEDR-850x系列</title><link>https://sensor.fans/models/aedr-850x/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/aedr-850x/</guid><description>&lt;p>AEDR-850x是集成LED与光检测的反射式增量读头系列。当前资料入口对应AEDR-8500-102，其它完整后缀尚未逐项核实，不从通配系列名补造型号。&lt;/p></description></item><item><title>AMR30xx系列</title><link>https://sensor.fans/models/amr30xx/</link><pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate><guid>https://sensor.fans/models/amr30xx/</guid><description>&lt;p>AMR30xx是模拟角度桥路系列，选型先看桥路与磁路，再匹配采集电路。现有目录确认四个成员，但尚不足以给出逐型号桥阻与工作磁场对照。&lt;/p>
 &lt;h2 id="型号与核心异同">型号与核心异同&lt;/h2>
 &lt;table>
  &lt;thead>
