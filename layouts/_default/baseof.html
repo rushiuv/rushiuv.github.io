@@ -1,3 +1,4 @@
+{{ $isHub := or (in (slice "wiki-index" "basics-index" "portal-topics" "applications-index" "archives") .Layout) (and (eq .Data.Plural "companies") (eq .Kind "taxonomy")) }}
 <!doctype html>
 <html lang="zh-CN">
 <head>
@@ -10,14 +11,21 @@
 <link rel="icon" href="{{ "images/site/favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="stylesheet" href="{{ "css/site.css" | relURL }}?v={{ now.Unix }}">
 <link rel="stylesheet" href="{{ "css/wiki.css" | relURL }}?v={{ now.Unix }}">
-{{ if or (eq .Section "wiki") (eq .Section "applications") .IsHome }}<link rel="stylesheet" href="{{ "css/basics.css" | relURL }}?v=20261016-open-toc">{{ end }}
+{{ if or (eq .Section "wiki") (eq .Section "applications") .Params.engineering_entry .IsHome }}<link rel="stylesheet" href="{{ "css/basics.css" | relURL }}?v=20261016-open-toc">{{ end }}
 <link rel="stylesheet" href="{{ "css/portal.css" | relURL }}?v=20261016-home-cartoon">
 {{ if .IsHome }}<link rel="stylesheet" href="{{ "css/home.css" | relURL }}?v=20261016-refine-2">{{ end }}
 {{ $refinedVersion := substr (crypto.SHA256 (readFile "static/css/refined.css")) 0 12 }}
 <link rel="stylesheet" href="{{ "css/refined.css" | relURL }}?v={{ $refinedVersion }}">
+{{ if or .Params.engineering_entry (eq .Layout "engineering-index") .IsHome (eq .Layout "portal-topics") .Params.basic_entry .Params.application_entry .Params.model_card (eq .Layout "wiki-index") }}{{ $gv := substr (crypto.SHA256 (readFile "static/css/engineering.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/engineering.css" | relURL }}?v={{ $gv }}">{{ end }}
+{{ if eq .Params.wiki_type "company" }}{{ $cv := substr (crypto.SHA256 (readFile "static/css/company-editorial.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/company-editorial.css" | relURL }}?v={{ $cv }}">{{ end }}
+{{ if .IsHome }}{{ $hv := substr (crypto.SHA256 (readFile "static/css/home-editorial.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/home-editorial.css" | relURL }}?v={{ $hv }}">{{ end }}
+{{ if or .IsHome $isHub }}{{ $cv := substr (crypto.SHA256 (readFile "static/css/circuit-paper.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/circuit-paper.css" | relURL }}?v={{ $cv }}">{{ end }}
+{{ if $isHub }}{{ range slice "hub-directories" "hub-overviews" }}{{ $path := printf "static/css/%s.css" . }}{{ if fileExists $path }}{{ $dv := substr (crypto.SHA256 (readFile $path)) 0 12 }}<link rel="stylesheet" href="{{ printf "css/%s.css" . | relURL }}?v={{ $dv }}">{{ end }}{{ end }}{{ end }}
+{{ if or .Params.basic_entry .Params.application_entry (eq .Layout "basics-index") (eq .Layout "applications-index") }}{{ $lv := substr (crypto.SHA256 (readFile "static/css/knowledge-learning.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/knowledge-learning.css" | relURL }}?v={{ $lv }}">{{ end }}
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
+{{ if .Params.model_card }}{{ $tv := substr (crypto.SHA256 (readFile "static/css/model-technical.css")) 0 12 }}<link rel="stylesheet" href="{{ "css/model-technical.css" | relURL }}?v={{ $tv }}">{{ end }}
 </head>
-<body{{ if .IsHome }} class="is-home"{{ end }}>
+<body{{ if .IsHome }} class="is-home"{{ else if $isHub }} class="is-hub"{{ end }}>
 <a class="skip-link" href="#main-content">跳到正文</a>
 <header class="site-header">
   <div class="wrap bar">
@@ -27,9 +35,9 @@
       <a href="{{ "/wiki/basics/" | relURL }}"{{ if or .Params.basic_entry (eq .Layout "basics-index") }} aria-current="page"{{ end }}>基础知识</a>
       <a href="{{ "/wiki/" | relURL }}"{{ if or (eq .Layout "wiki-index") (eq .Params.wiki_type "model") (eq .Data.Plural "models") }} aria-current="page"{{ end }}>型号资料</a>
       <a href="{{ "/applications/" | relURL }}"{{ if eq .Section "applications" }} aria-current="page"{{ end }}>应用场景</a>
-      <a href="{{ "/topics/" | relURL }}"{{ if eq .Section "topics" }} aria-current="page"{{ end }}>技术专题</a>
+      <a href="{{ "/topics/" | relURL }}"{{ if or (eq .Section "topics") .Params.engineering_entry (eq .Layout "engineering-index") }} aria-current="page"{{ end }}>技术专题</a>
       <a href="{{ "/companies/" | relURL }}"{{ if eq .Data.Plural "companies" }} aria-current="page"{{ end }}>公司品牌</a>
-      <a href="{{ "/archives/" | relURL }}"{{ if or (eq .Layout "archives") (eq .Section "posts") }} aria-current="page"{{ end }}>文章归档</a>
+      <a href="{{ "/archives/" | relURL }}"{{ if or (eq .Layout "archives") (eq .Section "posts") }} aria-current="page"{{ end }}>博客</a>
     </nav>
   </div>
 </header>
@@ -39,9 +47,9 @@
   <div class="wrap foot">
     <div>
       <p class="sutra-foot">{{ site.Params.sutraFoot }}</p>
-      <p class="muted">© {{ now.Year }} {{ site.Params.author }} · 文章首发于微信公众号「如是有为」 · <a href="{{ "/index.xml" | relURL }}">RSS</a></p>
+      {{ if .Params.no_promo }}<p class="muted">© {{ now.Year }} {{ site.Params.author }} · 转载版权归原作者 · <a href="{{ "/index.xml" | relURL }}">RSS</a></p>{{ else }}<p class="muted">© {{ now.Year }} {{ site.Params.author }} · 文章首发于微信公众号「如是有为」 · <a href="{{ "/index.xml" | relURL }}">RSS</a></p>{{ end }}
     </div>
-    <img class="foot-qr" src="{{ "images/site/qrcode.png" | relURL }}" alt="公众号「如是有为」二维码" width="88" height="88">
+    {{ if not .Params.no_promo }}<img class="foot-qr" src="{{ "images/site/qrcode.png" | relURL }}" alt="公众号「如是有为」二维码" width="88" height="88">{{ end }}
   </div>
 </footer>
 </body>

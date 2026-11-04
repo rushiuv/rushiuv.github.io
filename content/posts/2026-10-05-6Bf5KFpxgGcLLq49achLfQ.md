@@ -3,6 +3,7 @@ title: "关节已经断了力矩，手臂却还在往下掉"
 date: 2026-10-05T00:27:00+08:00
 slug: "6Bf5KFpxgGcLLq49achLfQ"
 description: "驱动器撤掉力矩，电机不再主动做功，机器人手臂就安全了。"
+tags: ["ADC", "功能安全", "人形机器人", "机器人关节"]
 original: "https://mp.weixin.qq.com/s/6Bf5KFpxgGcLLq49achLfQ"
 companies: ["NVIDIA", "西门子"]
 ---

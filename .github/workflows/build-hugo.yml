@@ -39,26 +39,25 @@ jobs:
           test -s /tmp/rushiuv-site/index.html
           # Hugo's page-bundle files are not automatically copied into the static Pages directory.
           # Copy every published article's bundled images without hardcoding a single article.
+          COPIED=0
           while IFS= read -r -d '' IMAGE_DIR; do
             DIR_NAME=$(basename "$(dirname "$IMAGE_DIR")" | tr '[:upper:]' '[:lower:]')
             TARGET="/tmp/rushiuv-site/posts/$DIR_NAME"
             if [ -s "$TARGET/index.html" ]; then
               mkdir -p "$TARGET/images"
               cp -a "$IMAGE_DIR/." "$TARGET/images/"
+              # Every published bundle with an images/ dir must end up with at least one non-empty image file.
+              if ! find "$TARGET/images" -type f -size +0 | grep -q .; then
+                echo "Published bundle $DIR_NAME has empty images/ after copy"
+                exit 1
+              fi
+              COPIED=$((COPIED + 1))
               echo "Copied bundled images for $DIR_NAME"
             else
               echo "Skipped non-published bundle $DIR_NAME"
             fi
           done < <(find content/posts -mindepth 2 -maxdepth 2 -type d -name images -print0)
-          test -s /tmp/rushiuv-site/posts/wechat-ezlztznhze3-08xvy1jr5q/index.html
-          test -s /tmp/rushiuv-site/posts/wechat-ezlztznhze3-08xvy1jr5q/images/001-1f9ce63e66.png
-          NEW_ARTICLE="/tmp/rushiuv-site/posts/wechat-s687llxcto0w4whvfixvfa"
-          test -s "$NEW_ARTICLE/index.html" || { echo "New article HTML missing"; exit 1; }
-          grep -Fq '一支没有数字的尺子' "$NEW_ARTICLE/index.html"
-          test -s "$NEW_ARTICLE/images/001-57fc83e017.gif"
-          test -s "$NEW_ARTICLE/images/002-6ed61306c8.gif"
-          test -s "$NEW_ARTICLE/images/003-b97ef5e847.gif"
-          echo "Validated original text and three local GIF images."
+          echo "Validated $COPIED published page-bundle image directories."
       - name: Update static main safely
         shell: bash
         run: |

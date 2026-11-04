@@ -3,13 +3,27 @@
   "title": "机器人关节：电机角与输出角各管哪一段",
   "description": "区分换相反馈、关节定位和传动链观测，从测点、同步与断电状态确定编码器方案。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "application-single",
   "application_entry": true,
   "application_group": "工业与运动",
   "weight": 209,
-  "related_basics": ["singleturn-multiturn", "latency", "inl"],
-  "reference_topic": "机器人关节"
+  "related_basics": [
+    "singleturn-multiturn",
+    "latency",
+    "inl"
+  ],
+  "reference_topic": "机器人关节",
+  "related_guides": [
+    "dual-encoder-difference-budget",
+    "position-validity-state",
+    "calibration-data-integrity"
+  ],
+  "related_model_slugs": [
+    "ma730",
+    "tle5012b",
+    "ktm5300"
+  ]
 }
 ---
 
@@ -37,3 +51,10 @@
 ## 验证要覆盖一次完整动作
 
 在独立参考下检查上电姿态、缓慢跨零、正反转、负载保持及温升后的误差。记录两路原始角度和状态，而不只保存控制器最终位置。若关节断电后能被外力转过多圈，应单独验证多圈保持；单圈绝对值芯片不能凭软件记忆保证断电期间的位置。
+
+
+## 断电后单圈码不变，仍要核圈数解释
+
+[Nikon双编码器执行器资料](https://www.nikon.com/business/intelligent-actuator-units/)提供了外力检测与输出轴全闭环的具体产品例，不能外推为任意两路角度都能测扭矩。先核[单圈与多圈](/wiki/basics/singleturn-multiturn/)和[延迟](/wiki/basics/latency/)，再进入[双编码器预算](/topics/guides/dual-encoder-difference-budget/)。
+
+自设100:1减速比，若断电期间电机轴转过一整圈，单圈码可回到原值，输出却理想移动0.01圈即3.6°。在台架允许的范围内，用独立输出参考记录断电前后姿态、圈数和首次有效帧；缺少圈数保持证据时，不能按“单圈码相同”恢复旧坐标。依据[位置有效性](/topics/guides/position-validity-state/)区分未就绪与有效输出，并按[配置数据完整性](/topics/guides/calibration-data-integrity/)核重启配置，恢复条件由实际关节行程与机构定义。

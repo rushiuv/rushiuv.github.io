@@ -1,7 +1,20 @@
 ---
-{"title":"气隙：先找测量基准，再看磁场工作窗口","description":"封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"basic-single","basic_entry":true,"basic_group":"检测原理与安装","weight":104,"related_basics":["mounting","magnetic-encoder","resolution-accuracy"]}
+{
+  "title": "气隙：先找测量基准，再看磁场工作窗口",
+  "description": "封装顶面距离不等于敏感层距离，气隙合格也不等于全温全角度精度合格。",
+  "date": "2026-10-18T10:00:00+08:00",
+  "lastmod": "2026-10-27",
+  "layout": "basic-single",
+  "basic_entry": true,
+  "basic_group": "磁路与机械安装",
+  "weight": 703,
+  "related_basics": [
+    "mounting",
+    "magnetic-encoder",
+    "resolution-accuracy"
+  ]
+}
 ---
-
 气隙不是脱离基准面的一个数字。磁体表面到封装顶面、到芯片敏感层、到读头外壳，可能对应不同距离；离轴磁环还有径向间隙与轴向位置两项。图纸上先把两个基准标出来，比讨论“能不能再近一点”更有意义。
 
 ## 包装厚度也在磁路里面

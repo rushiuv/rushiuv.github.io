@@ -53,7 +53,72 @@ STRONG = [
     r"^\s*<end>\s*$",
     r"^\s*欢迎(咨询|联系|合作|垂询)[！!。]?\s*$",
     r"^\s*(如果|若)(你|您|贵司)?(也|想|需要)?.{0,12}(合作|咨询|联系我们)",
+    # 厂商样片/扫码留资/邮件获客（2026-10-30 cleanup）
+    r"扫描上方二维码",
+    r"开放样片申请",
+    r"申请样片",
+    r"获取产品样片",
+    r"样片申请",
+    r"设为.{0,4}星标",
+    r"请点击.{0,20}关注",
+    r"欢迎发送邮件至\s*sales@",
 ]
+
+# 正文中段的获客块：申请样片标题 + 可选二维码图 + 扫码/邮件说明；或独立获客句；或开头关注星标
+LEADGEN_PATTERNS = [
+    # 「**申请样片**」小节：标题 + 可选二维码图 + 说明段
+    re.compile(
+        r"(?ms)^\s*\*{0,2}申请样片\*{0,2}\s*\n+"
+        r"(?:!\[[^\]]*\]\([^\)]+\)\s*\n+)*"
+        r"[^\n]*(?:开放样片申请|扫描上方二维码|获取产品样片|sales@)[^\n]*\n*"
+    ),
+    # 独立获客段（无「申请样片」标题）
+    re.compile(
+        r"(?m)^[^\n]*(?:扫描上方二维码填写申请|欢迎发送邮件至\s*sales@|"
+        r"进一步咨询[^\n]{0,60}申请样片[^\n]{0,80}sales@|"
+        r"可邮件\s*sales@[^\n]{0,80}www\.novosns)[^\n]*\n*"
+    ),
+    # 文首关注/星标引流（紧贴 front matter 后）
+    re.compile(
+        r"(?m)^\*{0,2}请点击\*{0,2}[^\n]{0,40}(?:关注|星标)[^\n]*\n+"
+    ),
+    # 斜体「注：…开放样片申请…」获客备注（非技术口径）
+    re.compile(
+        r"(?m)^\s*\*注：[^\n]*开放样片申请[^\n]*\*\s*\n*"
+    ),
+    # 厂商文末公司简介（股票代码 + 使命口号）
+    re.compile(
+        r"(?ms)^[^\n]*（简称[^\n]{0,40}科创板股票代码[^\n]*\n+"
+        r"(?:[^\n]+\n+)*?"
+        r"[^\n]*以[『「].{0,80}为使命[^\n]*\n*"
+    ),
+]
+
+
+def strip_leadgen(body: str):
+    """去掉正文里的样片二维码/邮件获客/关注星标等引流块。返回 (新正文, 删除片段列表)。"""
+    removed = []
+    out = body
+    for rx in LEADGEN_PATTERNS:
+        while True:
+            m = rx.search(out)
+            if not m:
+                break
+            snippet = m.group(0)
+            removed.append(snippet.strip())
+            out = out[: m.start()] + out[m.end() :]
+    if removed:
+        out = re.sub(r"\n{3,}", "\n\n", out)
+        # front matter 后若直接贴正文，补一个空行
+        if out.startswith("**") or (out and not out.startswith("\n")):
+            pass
+        out = out.lstrip("\n")
+        if not out.endswith("\n"):
+            out += "\n"
+        else:
+            out = out.rstrip("\n") + "\n"
+    return out, removed
+
 
 # 弱标记：只在**短块**（默认 ≤80 字）里才算套路，避免正文里提到"官网/电话"被误删
 # ⚠️ 不放「在看/留言/分享」：作者的收尾提问（「欢迎在评论区分享」「留言说说」）是正文语气，不是套路
@@ -219,7 +284,9 @@ def drop_images(body, keys):
 def collect_files():
     out = []
     for d in ("content/posts", "posts_extra"):
-        out += sorted((ROOT / d).glob("*.md"))
+        root = ROOT / d
+        out += sorted(root.glob("*.md"))
+        out += sorted(root.glob("*/index.md"))
     return out
 
 
@@ -238,9 +305,10 @@ def main():
         if not text.startswith("---"):
             continue
         _, fm, body = text.split("---", 2)
+        body, leadgen = strip_leadgen(body)
         pos, why = find_tail_cut(body, args.weak_max)
         small = find_small_images(body, args.max_kb)
-        if pos is None and not small:
+        if pos is None and not small and not leadgen:
             continue
         if pos is None:
             kept = body
@@ -256,9 +324,19 @@ def main():
             kept += "\n"
         if small:
             kept = drop_images(kept, small)
-        report.append({"file": f.name, "why": why, "cut_chars": len(cut),
+        if leadgen and pos is None and not small:
+            kept = body
+            cut = "\n\n".join(leadgen)
+            why = "leadgen"
+            keep = []
+        elif leadgen:
+            # leadgen already applied to body; append note
+            why = (why + "+leadgen") if why else "leadgen"
+            cut = (cut + "\n\n" if cut else "") + "\n\n".join(leadgen)
+        report.append({"file": str(f.relative_to(ROOT)), "why": why, "cut_chars": len(cut),
                        "kept_lines": keep if pos is not None else [],
                        "small_images": small,
+                       "leadgen": leadgen,
                        "cut_preview": re.sub(r"\s+", " ", cut)[:70]})
         if args.fix:
             f.write_text("---" + fm + "---" + kept, encoding="utf-8", newline="\n")

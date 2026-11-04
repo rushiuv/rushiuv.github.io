@@ -1,22 +1,28 @@
 ---
-title: "KTH5502"
-description: "集成XYZ霍尔检测的16位磁角度芯片，适合低压旋钮与位置检测。"
+title: KTH5502
+description: KTH5502 将三轴霍尔感知与角度计算集成在单芯片中，提供数字、增量、PWM 与模拟等输出路径，选型时需先确定实际使用的接口和安装方式。
 wiki: true
-wiki_type: "model"
+wiki_type: model
 wiki_rank: 201
 seed_count: 0
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-wiki_category: "数字角度"
-catalog_vendor: "昆泰芯"
-catalog_type: "数字角度"
-catalog_form: "芯片"
-search_aliases: ["KTH5502"]
-official_url: "https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/kth5502/index.html"
-document_version: "官方公开产品页或目录，核对：2026-10-18"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+wiki_category: 数字角度
+catalog_vendor: 昆泰芯
+catalog_type: 数字角度
+catalog_form: 芯片
+search_aliases:
+- KTH5502
+official_url: https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/kth5502/index.html
+document_version: 版本以链接文件名及原件为准；公开链接核对：2026-10-30
 model_card: true
-datasheet_url: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5502%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
-datasheet_label: "KTH5502 官方产品手册"
+datasheet_url: https://chat.connteck.com/downloads/KTH5502/KTH5502_DS_CN_V1.3.pdf
+datasheet_label: 数据手册原链接
+catalog_source: https://chat.connteck.com/products/3d-hall/KTH5502/
+product_image: /images/catalog/kth5502-original.png
+product_image_caption: KTH5502 原厂产品与封装示意
+product_image_source: https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/kth5502/index.html
 ---
 
 ## 核心参数
@@ -56,3 +62,28 @@ I²C、SPI、ABZ、PWM和模拟输出属于可配置选项，不能按五种接�
 - [KTH5502 官方资料](https://www.conntek.com.cn/html/web/product/magneticAngleDetectionChip/kth5502/index.html)
 
 - [KTH5502 官方产品手册（PDF）](https://www.conntek.com.cn/api/resource/freeDownload?name=KTH5502%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf)
+
+## 选型补充
+
+### 绝对角度与增量计数怎样配合
+
+数字角度用于读取当前磁场方向，ABZ 则把运动转换为边沿序列。主控选择绝对读取还是增量跟踪，会改变启动、零点和丢脉冲处理方式；两种输出来自同一磁路，不能据此认定为独立冗余。
+
+### 先定接口，再核对订货型号
+
+源页列出多类输出和多种封装，不能理解为每个订货型号都把所有信号同时引出。应按所选 SKU 的引脚、输出模式和供电条件画图，尤其避免把模拟接口、PWM 位宽和数字角度位宽混成一项性能。
+
+### 在轴与离轴分别验收
+
+在轴旋转、偏心旋转和离轴读头的场分量轨迹不同。来源提供普通与离轴专版文档，应按目标几何选择资料，再检查气隙、偏心、倾斜对整圈误差的影响。不能用一次静态读数代替整圈准确度验证。
+
+
+## 公开资料与型号核对
+
+按完整型号、等级和版本选择手册。公开链接核对日期：2026-10-30。
+
+- [KTH5502_DS_CN_V1.3.pdf](https://chat.connteck.com/downloads/KTH5502/KTH5502_DS_CN_V1.3.pdf)
+- [KTH5502_DS_CN_V1.3_off-axis.pdf](https://chat.connteck.com/downloads/KTH5502/KTH5502_DS_CN_V1.3_off-axis.pdf)
+- [KTH5502_DS_EN_V1.3.pdf](https://chat.connteck.com/downloads/KTH5502/KTH5502_DS_EN_V1.3.pdf)
+
+[来源产品页](https://chat.connteck.com/products/3d-hall/KTH5502/) · [昆泰芯型号目录](/wiki/?vendor=昆泰芯)

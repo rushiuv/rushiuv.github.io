@@ -3,6 +3,7 @@ title: "我读完博士以后理解 Dyson 讨厌 Ph.D. 制度"
 date: 2026-09-17T18:09:00+08:00
 slug: "TVSLHHFPsoYrv5hYyGFsOg"
 description: "我读完博士以后，反而越来越理解 Dyson 为什么讨厌 Ph.D. 制度"
+tags: ["ADC"]
 original: "https://mp.weixin.qq.com/s/TVSLHHFPsoYrv5hYyGFsOg"
 ---
 

@@ -3,6 +3,7 @@ title: "编码器的分辨率和精度区别"
 date: 2026-04-04T20:54:00+08:00
 slug: "yjNAGS3K_sxebtsNJghj1g"
 description: "编码器的分辨率和精度，是两个完全独立的核心指标，用一把尺子就能说透。"
+tags: ["磁编码器", "霍尔"]
 original: "https://mp.weixin.qq.com/s/yjNAGS3K_sxebtsNJghj1g"
 ---
 

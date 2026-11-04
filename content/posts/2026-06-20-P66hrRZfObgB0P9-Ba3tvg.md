@@ -3,6 +3,7 @@ title: "Unitree G1 Edu-U4 主动双目做到94.4%，但加Dex3-1指端压力掉�
 date: 2026-06-20T07:07:00+08:00
 slug: "P66hrRZfObgB0P9-Ba3tvg"
 description: "Unitree G1 Edu-U4 上，同一个 Sort Cans 结构化分拣任务，只用主动双目相机的 A 组合做到 94.4%；加入 Dex3-1 三指手指端压力后，A-P 组合掉到 67.3%。不是因为压力传感器一定没用，而是因为在小数…"
+tags: ["人形机器人"]
 original: "https://mp.weixin.qq.com/s/P66hrRZfObgB0P9-Ba3tvg"
 companies: ["宇树"]
 ---

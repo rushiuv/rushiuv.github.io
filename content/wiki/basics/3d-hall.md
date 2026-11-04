@@ -3,15 +3,19 @@
   "title": "三轴霍尔：三路磁场不等于三个位置坐标",
   "description": "理解三轴磁场读数、角度计算和磁体位置之间仍然需要的几何条件。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "磁敏机理与开关",
-  "weight": 124,
-  "related_basics": ["hall-effect", "vertical-hall", "magnetic-encoder", "mounting"]
+  "basic_group": "磁敏机理与器件",
+  "weight": 306,
+  "related_basics": [
+    "hall-effect",
+    "vertical-hall",
+    "magnetic-encoder",
+    "mounting"
+  ]
 }
 ---
-
 三轴霍尔把同一感测区域附近的磁场分解为三个方向的读数。它增加的是观测信息，而不是直接交付磁铁的三个空间坐标。磁体形状、姿态和运动约束没有确定时，同一组读数不能被随意解释成唯一位置。
 
 ## 磁场读数与角度结果分两层

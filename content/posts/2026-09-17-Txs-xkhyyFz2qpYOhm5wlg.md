@@ -3,6 +3,7 @@ title: "双磁环编码器 两个码道 之间隔了一块＂软磁"
 date: 2026-09-17T17:17:00+08:00
 slug: "Txs-xkhyyFz2qpYOhm5wlg"
 description: "珠海楠欣半导体公开了件专利，双磁环编码器中间硬塞了一圈软磁材料。"
+tags: ["专利"]
 original: "https://mp.weixin.qq.com/s/Txs-xkhyyFz2qpYOhm5wlg"
 ---
 

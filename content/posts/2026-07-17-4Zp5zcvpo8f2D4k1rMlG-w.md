@@ -3,6 +3,7 @@ title: "同批两颗 KTM5900、共用一张温补表，一颗到 100°C 就 ＂
 date: 2026-07-17T00:00:00+08:00
 slug: "4Zp5zcvpo8f2D4k1rMlG-w"
 description: "MAGNETIC ENCODER / CALIBRATION LABEL"
+tags: ["磁编码器", "离轴"]
 original: "https://mp.weixin.qq.com/s/4Zp5zcvpo8f2D4k1rMlG-w"
 models: ["KTM5900"]
 ---

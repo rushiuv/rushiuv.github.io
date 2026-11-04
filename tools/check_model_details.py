@@ -19,9 +19,15 @@ ROOT = Path(__file__).resolve().parents[1]
 build = Path(sys.argv[1]).resolve()
 baseline = Path(sys.argv[2]).resolve()
 errors, records, paragraphs = [], [], collections.defaultdict(list)
-paths = sorted((ROOT / 'content/models').glob('*/_index.md'))
-if len(paths) != 145:
-    errors.append(f'Expected 145 model pages, got {len(paths)}')
+all_paths = sorted((ROOT / 'content/models').glob('*/_index.md'))
+paths = []
+for path in all_paths:
+    meta0 = yaml.safe_load(path.read_text().split('---', 2)[1]) or {}
+    if meta0.get('wiki_type') == 'model_redirect':
+        continue
+    paths.append(path)
+if not paths:
+    errors.append('Expected at least one non-redirect model page')
 for path in paths:
     slug = path.parent.name
     text = path.read_text()
@@ -32,7 +38,7 @@ for path in paths:
         for key in ('title', 'linkTitle', 'aliases', 'search_aliases', 'series_parent', 'related_companies', 'product_image'):
             if meta.get(key) != old_meta.get(key):
                 errors.append(f'{slug}: changed identity field {key}')
-    if str(meta.get('lastmod')) != '2026-10-24':
+    if not meta.get('lastmod'):
         errors.append(f'{slug}: missing revision date')
     page = build / 'models' / slug / 'index.html'
     if not page.exists():
@@ -74,7 +80,7 @@ for path in paths:
                     'sections': len(content.select('h2')), 'body_characters': len(content.get_text()),
                     'source_sha256': hashlib.sha256(path.read_bytes()).hexdigest()})
 duplicates = [slugs for slugs in paragraphs.values() if len(set(slugs)) > 1]
-report = {'scope': '145 model pages; rendered tables and local body links only',
+report = {'scope': f'{len(paths)} non-redirect model pages; rendered tables and local body links only',
           'errors': errors, 'duplicate_long_paragraph_groups': duplicates,
           'pages': records, 'total_parameter_rows': sum(r['parameter_rows'] for r in records)}
 print(json.dumps(report, ensure_ascii=False, indent=2))

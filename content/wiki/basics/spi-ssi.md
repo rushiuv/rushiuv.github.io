@@ -3,17 +3,30 @@
   "title": "SPI与SSI：同样有时钟，帧和时刻并不相同",
   "description": "核对命令、帧长、锁存与电气层，不把串行读取速度当成角度刷新速度。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "接口与应用",
-  "weight": 145,
-  "related_basics": ["interfaces", "crc", "latency", "absolute-incremental"],
-  "related_topics": ["编码器接口"],
-  "related_model_slugs": []
+  "basic_group": "接口与读数",
+  "weight": 804,
+  "related_basics": [
+    "interfaces",
+    "crc",
+    "latency",
+    "absolute-incremental"
+  ],
+  "related_topics": [
+    "编码器接口"
+  ],
+  "related_model_slugs": [],
+  "related_guides": [
+    "spi-data-age",
+    "sample-time-contract"
+  ],
+  "related_applications": [
+    "servo-motor"
+  ]
 }
 ---
-
 主控能发出时钟，还不代表能读对角度。SPI通常通过片选、时钟与数据线交换器件定义的命令和结果；SSI常用于主站时钟驱动的位置输出。两者都必须逐项核对帧和时序，不能因接线数量相似就切换同一段读取代码。
 
 ## 先把一帧拆开
@@ -31,3 +44,9 @@
 ## 板内与长线分开判断
 
 单端逻辑口不能直接当工业长线差分口。供电、电平、地电位、驱动器、接收器和终端匹配都要另验。选型验收应包含上电首帧、故障状态、错误帧、最大读取频率和线缆干扰，而不只检查室温静止时能否读出一个合理数字。
+
+## 流水返回要先编号再计算年龄
+
+[AS5047P手册正文12—13页](https://www.infineon.com/assets/row/public/documents/30/49/infineon-as5047p-datasheet-en.pdf#page=14)说明读操作快照与后续返回关系。合成安排两次片选上升沿相差3µs，第二帧结束即使用，则已知寄存器年龄约3µs；若每100µs只读一帧，这一段便可能是100µs。这里两数是主控计划，不是器件最小时序规格。记录命令地址、片选和返回值编号，按[SPI数据年龄](/topics/guides/spi-data-age/)逐帧配对，再与[延迟](/wiki/basics/latency/)预算相接。
+
+验证时改变任务负载，观察快照到实际使用的最长间隔，而不是只测空闲系统。

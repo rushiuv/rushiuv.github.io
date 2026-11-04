@@ -1,0 +1,171 @@
+{
+  "task": "magnetic-learning-20261027",
+  "date": "2026-10-27",
+  "scope": "四篇既有应用融合、三篇新应用；保留原有URL；不做发布或Git操作",
+  "existing_application_groups": [
+    "消费电子",
+    "智能家居",
+    "工业与运动",
+    "汽车与交通"
+  ],
+  "modified": [
+    "content/applications/laptop-lid.md",
+    "content/applications/water-meter.md",
+    "content/applications/brushless-dc-motor.md",
+    "content/applications/electronic-throttle.md"
+  ],
+  "added": [
+    "content/applications/current-sensing.md",
+    "content/applications/gear-speed.md",
+    "content/applications/electronic-compass.md"
+  ],
+  "primary_requested_source": {
+    "url": "https://www.monolithicpower.com/en/learning/resources/magnetic-sensors-common-types-key-components-parameters-usage-considerations-and-applications",
+    "title": "Magnetic Position and Angle Sensors: Common Types, Key Components, Parameters, Usage Considerations and Applications",
+    "read_sections": [
+      "Introduction",
+      "Common Types of Magnetic Sensors",
+      "Induction Sensors",
+      "Hall Effect Sensors",
+      "MR / AMR / GMR / TMR",
+      "Fluxgate Sensors",
+      "SQUID Sensors",
+      "Key Components",
+      "Performance Parameters",
+      "Usage Considerations",
+      "Calibration and Testing",
+      "Applications: Intelligent Transportation / Consumer Electronics / Industrial Electronics",
+      "Conclusion"
+    ],
+    "brief_contribution": "磁传感可以承担角度、位置和事件检测；机理、完整信号链、参数条件与应用任务应分别组织。应用页据此分流到合盖、电机、阀轴和齿轮，而不是另建一篇重复综述。",
+    "derivation_budget": "本分工MPS来源只贡献上述概览级关系，约40英文词等价；不复制原段、原图或原表，具体技术论述依据另列原厂资料与明示假设的本站算例。主控仍需合计全站该源预算。",
+    "not_adopted": [
+      "不把MR技术普遍低噪/更准确改写成跨型号排名",
+      "不把AMR约5%、GMR约20%、TMR超过100%的示例比率当成所有器件保证值",
+      "不把控制系统与传感器带宽10倍经验值当硬规则",
+      "不把CAN或以太网视作每颗裸磁传感芯片都支持的接口",
+      "不逐个翻译SQUID/生物磁/柔性传感市场概览；由基础分工解释边界",
+      "不采用对所有传感器均可通过反馈扩大量程的无条件表述"
+    ]
+  },
+  "requested_murata_connection": {
+    "url": "https://www.murata.com/products/sensor/amr/overview/basic/example",
+    "contribution": "以几何布局示例说明AMR开关需要按敏感方向核磁体轨迹；不复刻原图、不把开关图当连续角度输出。",
+    "target": "laptop-lid",
+    "budget": "约40英文词等价，低于该页200词上限"
+  },
+  "sources_by_page": {
+    "laptop-lid": [
+      "https://www.ti.com/product/DRV5032",
+      "https://www.murata.com/products/sensor/amr/overview/basic/example",
+      "https://www.allegromicro.com/en/products/sense/switches-and-latches/switches/a1266"
+    ],
+    "water-meter": [
+      "https://www.ti.com/product/DRV5032",
+      "https://www.allegromicro.com/en/products/sense/switches-and-latches/switches/a1171"
+    ],
+    "brushless-dc-motor": [
+      "https://www.maxongroup.com/medias/sys_master/root/8873283846174/ecXXframeless-en-21-03.pdf",
+      "https://www.ti.com/lit/ds/symlink/tmag5115.pdf",
+      "https://www.monolithicpower.com/en/ma330.html",
+      "https://www.infineon.com/part/TLE5012B-E1000"
+    ],
+    "electronic-throttle": [
+      "https://www.melexis.com/en/product/mlx90371/triaxis-performance-rotary-linear-position-sensor-ic-analog-pwm",
+      "https://www.ti.com/product/TMAG5170-Q1"
+    ],
+    "current-sensing": [
+      "https://www.allegromicro.com/en/products/sense/current-sensor-ics/integrated-current-sensors/acs712",
+      "https://www.akm.com/eu/en/products/current-sensor/tutorial/",
+      "https://www.akm.com/eu/en/products/hall-sensor/tutorial/ultra-high-sensitivity/"
+    ],
+    "gear-speed": [
+      "https://www.ti.com/lit/an/sbaa632/sbaa632.pdf",
+      "https://community.infineon.com/t5/Knowledge-Base-Articles/Overview-of-XENSIV-TLE5555-TMR-speed-sensor-protocols/ta-p/1065738"
+    ],
+    "electronic-compass": [
+      "https://www.akm.com/eu/en/products/electronic-compass/tutorial/",
+      "https://www.nxp.com/docs/en/application-note/AN4246.pdf",
+      "https://www.nxp.com/docs/en/application-note/AN4248.pdf"
+    ]
+  },
+  "self_constructed_examples": [
+    {
+      "page": "water-meter",
+      "assumptions": "磁有效窗口6ms、理想周期采样间隔50ms",
+      "result": "可能全事件落在采样间隙；不推导某芯片漏计率"
+    },
+    {
+      "page": "brushless-dc-motor",
+      "assumptions": "4对极、6000rpm、固定延迟10us",
+      "result": "电频400Hz、60电角区间约417us、机械15deg；延迟机械0.36deg/电1.44deg"
+    },
+    {
+      "page": "electronic-throttle",
+      "assumptions": "y1=0.1+0.8u、y2=0.9-0.8u",
+      "result": "和为1，仅检查通道关系，不排除共因磁体移位"
+    },
+    {
+      "page": "current-sensing",
+      "assumptions": "100mV/A、零点残差5mV",
+      "result": "输入等效0.05A；非ACS712某后缀参数"
+    },
+    {
+      "page": "gear-speed",
+      "assumptions": "60齿、每齿1脉冲、500Hz",
+      "result": "500rpm；双边沿计数需重定义每圈事件数"
+    }
+  ],
+  "excluded_application": {
+    "slug": "magnetic-ndt",
+    "reason": "与编码器主路径较远，原材料仅概览；本轮无足够具体检测对象、激励方法、标定及可验收缺陷证据，故不凑新页。磁通门/SQUID医学应用仅在基础页保留能力边界，不做临床结论。"
+  },
+  "preserved_boundaries": [
+    "所有既有slug不变",
+    "候选不等于实际量产采用或可直接换料",
+    "自设算例不作为厂商实测",
+    "AEC-Q100/SEooC不等于整机功能安全",
+    "计数芯片不等于水表计量等级",
+    "电子罗盘不等于轴角编码器"
+  ],
+  "verification_status": "待主控统一构建、链接与页面渲染；本文本已进行JSON语法、独占路径范围及自设数值核对。",
+  "requested_akm_connection": {
+    "chapter": "#04 Ultra High-sensitivity Hall Element",
+    "url": "https://www.akm.com/eu/en/products/hall-sensor/tutorial/ultra-high-sensitivity/",
+    "target": "current-sensing",
+    "contribution": "反向磁场补偿与从补偿电流推回输入的闭环结构。",
+    "budget": "约25英文词等价；不采用原文无损耗的无条件表述"
+  },
+  "external_source_verification": {
+    "checked_via_web": [
+      "TI DRV5032产品页和Rev.H手册",
+      "Allegro A1266产品页",
+      "Allegro A1171产品页",
+      "MPS MA330产品页",
+      "maxon EC frameless安装手册3.5.2节（PDF第24页）",
+      "TI TMAG5115 Rev.B手册",
+      "Melexis MLX90371产品页",
+      "TI TMAG5170-Q1产品页",
+      "Allegro ACS712产品页",
+      "AKM Current Sensor教程入口",
+      "AKM Hall教程#04闭环示例",
+      "TI SBAA632",
+      "Infineon TLE5555官方知识库",
+      "AKM Electronic Compass教程",
+      "NXP AN4246 Rev.4.0",
+      "NXP AN4248 Rev.4.0",
+      "Murata AMR detection example",
+      "Conntek KTH4603原厂页",
+      "Conntek磁阻开关系列页",
+      "Conntek KTM5200原厂页"
+    ],
+    "temporarily_failed": [
+      "Conntek hshrMagneticCodedAngleSensor页面本轮web读取超时；保留既有霍尔角度路线和型号链接，不新增细参数或认证结论"
+    ],
+    "not_revalidated": [
+      "Infineon TLE5012B E1000链接沿用既有路线；本轮未核接口细节",
+      "KTH4622链接沿用既有路线；本轮未核细参数"
+    ]
+  },
+  "integration_note": "主控已按八组知识统一分类、补工程图及关联，最终文件哈希以下方或总清单为准。"
+}

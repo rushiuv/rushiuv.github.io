@@ -3,6 +3,7 @@ title: "Lucid Atlas 电驱到底厉害在哪？真正值钱的，可能不是电
 date: 2026-04-27T00:00:00+08:00
 slug: "yM2BFkc2YroCc9bPOS5ujQ"
 description: "先用人话说清楚。Lucid 是美国一家做高端纯电车的公司，前面已经有 Lucid Air 和 Lucid Gravity。"
+tags: ["FOC", "编码器接口"]
 original: "https://mp.weixin.qq.com/s/yM2BFkc2YroCc9bPOS5ujQ"
 companies: ["特斯拉"]
 ---

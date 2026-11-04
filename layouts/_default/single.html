@@ -7,7 +7,7 @@
   </header>
   <div class="content">{{ .Content }}</div>
   <div class="end-mark"><span>应作如是观</span></div>
-  {{ partial "qr-card.html" . }}
+  {{ if not .Params.no_promo }}{{ partial "qr-card.html" . }}{{ end }}
 </article>
 <nav class="prevnext">
   {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><small>上一篇</small>{{ .Title }}</a>{{ else }}<span></span>{{ end }}

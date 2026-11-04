@@ -3,6 +3,7 @@ title: "芯片项目为啥老延期？因为真正能干仗的人，被你派去
 date: 2025-11-14T00:00:00+08:00
 slug: "NxdIqz16cz9tMF439aFcxg"
 description: "项目启动那天，楼下喜茶杯子堆满了会议室垃圾桶，白板上写满箭头和代号，leader站在中间拍板：“这次得拼一把，大家都拉满。”"
+tags: ["芯片设计"]
 original: "https://mp.weixin.qq.com/s/NxdIqz16cz9tMF439aFcxg"
 ---
 

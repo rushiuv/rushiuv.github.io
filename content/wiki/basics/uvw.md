@@ -3,17 +3,24 @@
   "title": "UVW：换相信号怎样对应电角度",
   "description": "区分传感器UVW逻辑输出与电机功率相线，检查极对数、相序和启动换相零点。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "接口与应用",
-  "weight": 144,
-  "related_basics": ["abz", "magnetic-encoder", "latency", "spi-ssi"],
-  "related_topics": ["编码器接口", "电机控制"],
+  "basic_group": "接口与读数",
+  "weight": 802,
+  "related_basics": [
+    "abz",
+    "magnetic-encoder",
+    "latency",
+    "spi-ssi"
+  ],
+  "related_topics": [
+    "编码器接口",
+    "电机控制"
+  ],
   "related_model_slugs": []
 }
 ---
-
 角度芯片上的U、V、W通常是供控制器读取的换相逻辑，不是给绕组供电的三根功率相线。控制器根据转子所处电角度选择驱动状态，逻辑端口不能直接接电机相线，也不能只凭三个相同字母判断相序一致。
 
 ## 极对数决定机械角怎样重复

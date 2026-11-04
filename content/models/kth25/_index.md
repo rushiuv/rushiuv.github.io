@@ -1,36 +1,44 @@
 ---
-title: "KTH25系列"
-description: "高压双极锁存霍尔系列，适合转子磁极切换与位置事件检测。"
+title: KTH25系列
+description: 高压双极锁存霍尔系列，适合转子磁极切换与位置事件检测。
 wiki: true
-wiki_type: "model"
+wiki_type: model
 wiki_rank: 204
 seed_count: 0
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-wiki_category: "磁开关"
-catalog_vendor: "昆泰芯"
-catalog_type: "磁开关"
-catalog_form: "芯片"
-search_aliases: ["KTH2502"]
-official_url: "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/automotiveHvdlHallEffectSensor/index.html"
-document_version: "官方公开产品页或目录，核对：2026-10-18"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+wiki_category: 磁开关
+catalog_vendor: 昆泰芯
+catalog_type: 磁开关
+catalog_form: 芯片
+search_aliases:
+- KTH2502
+- KTH25系列
+official_url: https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/automotiveHvdlHallEffectSensor/index.html
+document_version: 官方公开产品页或目录，核对：2026-10-18
 model_card: true
+catalog_level: 系列
 ---
 
-## 核心参数
+KTH25采用双极锁存逻辑。目录列QA、QB、QC磁阈值档，完整型号还需包含温度与封装；不能把档位当成独立基础型号。
 
-| 参数 | 数值、配置与条件 |
-| --- | --- |
-| 检测逻辑 | 双极锁存霍尔开关 |
-| 目录阈值档 | QA：15/−15Gs；QB：30/−30Gs；QC：60/−60Gs，正负方向按封装确认 |
-| 目录供电 | 2.7～36V；官网介绍另有32V上限，正式设计按具体手册 |
-| 目录电流 | 2.7mA |
-| 目录频率 | 30kHz |
-| 输出 | 开漏；官网介绍列最大30mA灌电流，需对应负载条件 |
-| 温度 | −40～125°C |
-| 封装 | SOT-23-3L、TO-92S，磁极性按具体图示 |
+## 型号与核心异同
 
-参数依据：[原厂产品与型号选型表](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/automotiveHvdlHallEffectSensor/index.html)。
+| 阈值档（非完整料号） | 动作／释放场 | 共同输出 | 选型区别 |
+| --- | --- | --- | --- |
+| QA | 15／−15Gs | 开漏 | 低门限；正负方向按封装确认 |
+| QB | 30／−30Gs | 开漏 | 中间门限；正负方向按封装确认 |
+| QC | 60／−60Gs | 开漏 | 较高门限；正负方向按封装确认 |
+
+## 共同条件与参数依据
+
+- **目录供电**：2.7～36V；官网介绍另有32V上限，正式设计按具体手册
+- **目录电流**：2.7mA
+- **目录频率**：30kHz
+- **输出**：开漏；官网介绍列最大30mA灌电流，需对应负载条件
+- **温度**：−40～125°C
+- **封装**：SOT-23-3L、TO-92S，磁极性按具体图示
 
 ## 锁存与接近开关的区别
 

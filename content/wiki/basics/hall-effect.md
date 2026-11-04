@@ -1,33 +1,43 @@
 ---
 {
   "title": "霍尔效应：芯片测到的是哪一个磁场分量",
-  "description": "从载流结构的横向电压出发，理解霍尔敏感轴、磁场与位置的区别。",
+  "description": "从载流子的横向偏转理解敏感轴、霍尔电压与机械位置，区分裸元件和集成输出。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "磁敏机理与开关",
-  "weight": 121,
-  "related_basics": ["vertical-hall", "3d-hall", "linear-hall", "switch-polarity"]
+  "basic_group": "磁敏机理与器件",
+  "weight": 300,
+  "related_basics": [
+    "hall-element-vs-ic",
+    "hall-biasing",
+    "vertical-hall",
+    "3d-hall"
+  ],
+  "related_applications": [
+    "brushless-dc-motor",
+    "handheld-joystick"
+  ]
 }
 ---
+磁铁靠近后读数改变，首先说明敏感方向上的磁场变了。芯片是否能由此判断距离或角度，还要看磁铁的运动路径、充磁方向和观测通道。[霍尔元件与霍尔IC](/wiki/basics/hall-element-vs-ic/)回答的是不同层次的问题。
 
-磁铁靠近后输出改变，不等于芯片直接知道距离。霍尔元件首先感受磁场在敏感方向上的分量；磁铁的位置、充磁方向和周围金属，共同决定这个分量怎样变化。
+<figure class="basic-figure technical-figure"><div class="diagram-viewport" tabindex="0" role="region" aria-label="工程示意图，可左右滑动查看"><img src="/images/learning/hall-axes-20261027.svg" alt="平面霍尔俯视：偏置电流沿x、磁场沿z，两横向端形成差分测量" width="960" height="560" loading="lazy"></div><figcaption>平面霍尔的方向约定；不是具体封装的引脚图。端子电压定义与所用公式必须配套。<a href="/images/learning/hall-axes-20261027.svg" target="_blank" rel="noopener">查看原图 ↗</a></figcaption></figure>
 
-## 横向电压怎样产生
+## 横向电压来自载流子的偏转
 
-在通电的半导体结构中，运动载流子受到磁场作用，向横向偏转并形成电荷积累。建立的电场抵消继续偏转，两个测量端之间出现霍尔电压。在规定工作范围内，这个电压随偏置电流和垂直于载流结构的磁场分量变化。芯片还要放大、补偿，再变成模拟电压或数字结果。
+载流子沿通电薄片运动，磁场使它们向横向偏转，边缘电荷积累形成反向电场。稳定后，两侧测量端之间出现霍尔电压。理想弱场近似可写成 \(V_H=S_I I_B B_\perp\)：偏置电流为 \(I_B\)，\(S_I\) 是电流相关灵敏度，\(B_\perp\) 是与感知结构对应的磁场分量。实际信号还叠加失调与噪声。
 
-实际封装表面的南北方向，不应靠引脚朝向猜测。敏感轴、正磁场定义和磁敏中心要从具体手册的封装图读取。把芯片翻面，或换成横向敏感结构，同一块磁铁得到的符号和幅度都能改变。
+静止磁场也能产生霍尔响应；这与依赖磁通变化的被动线圈不同。磁场翻转时，霍尔电压的符号可翻转，但符号还取决于载流子类型、接线和手册的正方向定义，不能仅从封装朝向猜。
 
-## 同是霍尔，输出不一定相同
+## 敏感轴决定它看得见什么
 
-线性霍尔保留磁场幅度信息，开关霍尔把它与阈值比较，锁存霍尔则保留上一次磁极触发的状态。例如 TI DRV5055 是线性模拟路线，Melexis MLX92232 可配置磁开关或锁存行为。它们不是按价格高低排列的一组等价器件。
+普通平面霍尔结构与[垂直霍尔](/wiki/basics/vertical-hall/)的感知方向不同。[三轴霍尔](/wiki/basics/3d-hall/)提供多个分量，也不自动获得唯一位置：两处机械位置可能产生相同或相近的磁场向量。应从手册查磁敏中心、敏感轴与封装坐标，再检查全行程是否存在歧义。
 
-“磁场与输出成比例”也不是“距离与输出成比例”。沿磁铁运动路径，磁场曲线通常需要独立建模或标定；某一方向上单调，也不代表换一条路径仍能唯一确定位置。
+同一颗磁铁移近、侧滑或转动，都能改变读数。只有约束了磁路，才能把磁场换算成位移；“输出随磁场线性”也不能推出“输出随距离线性”。
 
-## 选型要把磁路带进去
+## 输出形式决定后级还剩多少信息
 
-先确定测量的是到位、位移还是角度，再核敏感轴、量程、失调、温漂、带宽和供电。验证应覆盖最大气隙、横向偏移、磁铁批差与外部磁场。数字位数只能描述输出刻度，不能替代这些误差的实测。
+[线性霍尔](/wiki/basics/linear-hall/)保留幅度，[磁开关](/wiki/basics/switch-polarity/)只判断门限，[锁存器](/wiki/basics/latch/)还带有状态保持。按到位、位移或角度任务选择，再核量程、温漂与带宽；数字位数不能替代磁路验证。
 
-原理与器件来源：[TI 霍尔传感器概述](https://www.ti.com/lit/pdf/SLYT824)、[TI DRV5055](https://www.ti.com/product/DRV5055)、[Melexis MLX92232](https://www.melexis.com/en/product/mlx92232)。
+来源：[AKM 磁传感原理](https://www.akm.com/eu/en/products/hall-sensor/tutorial/magnetic-sensor/)、[AKM 霍尔传感器分类](https://www.akm.com/eu/en/products/hall-sensor/tutorial/hall-sensors/)。进一步核对：[TI 霍尔数据手册读法](https://www.ti.com/lit/pdf/SLIA086)。

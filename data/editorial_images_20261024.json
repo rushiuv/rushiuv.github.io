@@ -1,0 +1,113 @@
+{
+  "generated": [
+    {
+      "name": "fabrication",
+      "path": "static/images/editorial/chromeos-fabrication-20261024.webp",
+      "original": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-45fd92bb-8581-4e76-ae18-20327892dc64.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "bytes": 122112,
+      "sha256": "c5cb8b94e48321006a22dbb439a97443c39bdfd6095c4674817f6c270c8fc582",
+      "generation": "built-in image_gen",
+      "style_reference": "static/images/editorial/chromeos-signals-20261018.webp",
+      "purpose": "editorial context only, not actual facility/product geometry",
+      "processing": "WebP encoding only, no crop or geometric change",
+      "prompt": "Create one brand-new wide editorial illustration for a Chinese encoder engineering reference website. Use the reference ONLY for visual style: warm ivory paper, muted navy ink, desaturated teal, sage and ochre, rounded clean geometric forms, calm soft shadows, fine restrained paper texture, tasteful Chrome OS editorial cartoon matching the attached reference. Landscape 1536x1024, full bleed, no text, no labels, no logos, no watermark. It is a generic editorial scene, not a real company's facility or real product diagram. Avoid photorealism, neon, sci-fi and 3D plastic render. Scene: a quiet semiconductor cleanroom manufacturing environment. Foreground a cream-colored wafer cassette beside a circular silicon wafer on a clean inspection desk, simplified circular wafer and small square die pattern. Background a few orderly enclosed process tool cabinets behind glass, one small clean-suited technician observing through glass. Main composition readable and grounded, no exposed impossible fabrication machinery. Soft warm daylight, plenty of breathing room, no invented technical data."
+    },
+    {
+      "name": "optical",
+      "path": "static/images/editorial/chromeos-optical-20261024.webp",
+      "original": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-797b1371-b349-4812-bdfc-4b74f3db8859.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "bytes": 142166,
+      "sha256": "81c18d8d133016dc689bfdcdbb78a856ef1da4b99c597735e9290bbd22fb651b",
+      "generation": "built-in image_gen",
+      "style_reference": "static/images/editorial/chromeos-signals-20261018.webp",
+      "purpose": "editorial context only, not actual facility/product geometry",
+      "processing": "WebP encoding only, no crop or geometric change",
+      "prompt": "Create one brand-new wide editorial illustration for a Chinese encoder engineering reference website. Use the reference ONLY for visual style: warm ivory paper, muted navy ink, desaturated teal, sage and ochre, rounded clean geometric forms, calm soft shadows, fine restrained paper texture, tasteful Chrome OS editorial cartoon matching the attached reference. Landscape 1536x1024, full bleed, no text, no labels, no logos, no watermark. It is a generic editorial scene, not a real company's facility or real product diagram. Avoid photorealism, neon, sci-fi and 3D plastic render. Scene: a precision optical encoder measurement workbench with a straight metal linear motion stage, a thin scale alongside its travel and a small compact readhead above one side, all resting correctly on a solid base. A microscope/inspection camera on its independent stand, notebook and closed tablet nearby. Gentle teal/navy parts, ivory workbench. Convey careful measurement, not an optical ray diagram: no beam paths, no transparent cross-section, no floating parts or claimed internal construction. No person necessary."
+    },
+    {
+      "name": "magnetic",
+      "path": "static/images/editorial/chromeos-magnetic-20261024.webp",
+      "original": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-82d92904-14f7-49de-9c3f-db7210319e04.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "bytes": 94502,
+      "sha256": "64e5685113b80da9d17736f3e5efc9d351bf5cf70f35987ddad320932446b871",
+      "generation": "built-in image_gen",
+      "style_reference": "static/images/editorial/chromeos-signals-20261018.webp",
+      "purpose": "editorial context only, not actual facility/product geometry",
+      "processing": "WebP encoding only, no crop or geometric change",
+      "prompt": "Create one brand-new wide editorial illustration for a Chinese encoder engineering reference website. Use the reference ONLY for visual style: warm ivory paper, muted navy ink, desaturated teal, sage and ochre, rounded clean geometric forms, calm soft shadows, fine restrained paper texture, tasteful Chrome OS editorial cartoon matching the attached reference. Landscape 1536x1024, full bleed, no text, no labels, no logos, no watermark. It is a generic editorial scene, not a real company's facility or real product diagram. Avoid photorealism, neon, sci-fi and 3D plastic render. Scene: a small electric motor and encoder assembly on an orderly engineering desk, a teal motor housing, a separate cream circular encoder board and matching small round magnet laid out as generic components beside the motor, caliper and notebook neatly placed. Motor shaft mechanically supported; objects sit on desk and do not intersect. Three-quarter editorial view, rounded geometric shapes, subdued warm cream, teal and navy. Do not show a specific chip layout, winding topology or magnetic field lines; a generic assembly scene only."
+    }
+  ],
+  "product_images": [
+    {
+      "slug": "smd-01b",
+      "status": "ready",
+      "page_url": "https://www.npc.co.jp/products/438",
+      "original_url": "https://www.npc.co.jp/upload/InfoContents/images/img_339_c50126ef-f21b-42f0-985a-bdebaa4ee543.png",
+      "identity": "Exact model page SMD-01B, product package photograph in section; alt empty but page context exact.",
+      "original_dimensions": [
+        287,
+        266
+      ],
+      "original_sha256": "0016248ca1d04128d8aecf9240f93f7337848d2f138421a54989d7d91fda68cb",
+      "file": "static/images/wiki/global-smd-01b-20261024.webp",
+      "dimensions": [
+        287,
+        266
+      ],
+      "bytes": 8784,
+      "sha256": "43afdeaedc1233f86b9a655f556da25fdfd407e3e510aeb626fdc522aed4e5f3",
+      "visual_check": "view_image contact sheet inspected: real product geometry, not logo/banner/diagram",
+      "processing": "proportional resize if needed; WebP compression; no AI edit, no geometry change"
+    },
+    {
+      "slug": "posital-ktd-s100b-1609",
+      "status": "ready",
+      "page_url": "https://www.posital.com/en/products/kit-encoders/KTD-S100B-1609-LP2A-BAQ/3440429",
+      "original_url": "https://dms.posital.com/storage/a7fd15e6-532b-4712-84c8-ad991264bbeb-picture-kt2-l-1560-1021.png",
+      "identity": "Exact full ordering page, img alt KTD-S100B-1609-LP2A-BAQ; shared named kt2-l asset, shown by manufacturer for this configuration, appearance not suffix-exclusive.",
+      "original_dimensions": [
+        1560,
+        1021
+      ],
+      "original_sha256": "798613bea081f7579715273e7b8cb1a1894560b9eb226d2595c059fe15bf50cc",
+      "file": "static/images/wiki/global-posital-ktd-s100b-1609-20261024.webp",
+      "dimensions": [
+        900,
+        589
+      ],
+      "bytes": 6544,
+      "sha256": "03a8cb40c9a6f99d913a7fc14b994c80d628bbb6be7adbf36a44ae3fcd79badd",
+      "visual_check": "view_image contact sheet inspected: real product geometry, not logo/banner/diagram",
+      "processing": "proportional resize if needed; WebP compression; no AI edit, no geometry change"
+    },
+    {
+      "slug": "resolute-rl",
+      "status": "gap",
+      "page_url": "https://www.renishaw.com/en/37823.aspx",
+      "reason": "Page img elements contain scale photos (RTLA/RELA/RSLA), icons and ADTa accessory; no individually identified RL readhead img. Header CSS image is family banner and excluded. No substitute downloaded."
+    },
+    {
+      "slug": "rod-280",
+      "status": "gap",
+      "page_url": "https://www.heidenhain.de/fileadmin/pdf/ja/Produktinformation/PI_ROD_200_700_800_ID1385973_ja.pdf",
+      "reason": "Verified official_url is ROD200/700/800 multi-model PDF, not product webpage img. No exact ROD280 webpage img URL verified; no adjacent model substitute or PDF structural drawing extracted."
+    }
+  ],
+  "technical_images": [
+    "images/technical/noise-statistics-comparison.svg",
+    "images/technical/sample-time-contract.svg",
+    "images/technical/multihead-harmonics.svg"
+  ]
+}

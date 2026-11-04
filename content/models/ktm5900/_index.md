@@ -1,22 +1,27 @@
 ---
-title: "KTM5900"
-description: "KTM5900 是集成 TMR 磁敏元件的绝对角度编码器，单对极角度最高 24 位，支持数字位置、增量及换向输出。"
+title: KTM5900
+description: KTM5900 集成 TMR 感知和高速角度处理，单对极位置可用较高码宽输出；选型应同时核对噪声、校准误差、输出频率和磁感中心。
 wiki: true
-wiki_type: "model"
-catalog_type: "数字角度"
-catalog_form: "芯片"
+wiki_type: model
+catalog_type: 数字角度
+catalog_form: 芯片
 wiki_rank: 2
 seed_count: 34
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-official_url: "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html"
-datasheet_url: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf"
-datasheet_label: "KTM5900 数据手册"
-document_version: "官网公开下载件，核对日期 2026-10-15"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+official_url: https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html
+datasheet_url: https://chat.connteck.com/downloads/KTM5900/KTM5900_Datasheet_CN.pdf
+datasheet_label: 数据手册原链接
+document_version: 版本以链接文件名及原件为准；公开链接核对：2026-10-30
 model_card: true
-product_image: "/images/wiki/ktm5900-diagram.webp"
-product_image_caption: "图片来源：KTM5900 官方数据手册，第 5 个 PDF 页面，功能框图局部。"
-product_image_source: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf"
+product_image: /images/wiki/ktm5900-diagram.webp
+product_image_caption: 图片来源：KTM5900 官方数据手册，第 5 个 PDF 页面，功能框图局部。
+product_image_source: https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf
+wiki_category: 数字角度
+catalog_source: https://chat.connteck.com/products/angle/KTM5900/
+search_aliases:
+- KTM5900
 ---
 
 ## 核心参数
@@ -71,3 +76,30 @@ KTM5900支持对应在轴与离轴应用，但官网和下载PDF在场强上限�
 - [官方产品介绍](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrTMPMagnrticEncoderChip/index.html)
 - [下载KTM5900 数据手册（官方 PDF）](https://www.conntek.com.cn/api/resource/freeDownload?name=KTM5900%2024bit%E7%BB%9D%E5%AF%B9%E8%A7%92%E5%BA%A6%E7%A3%81%E6%80%A7%E7%BC%96%E7%A0%81%E5%99%A8.pdf)
 - 资料版本：官网公开下载件，核对日期 2026-10-15
+
+## 选型补充
+
+### 高码宽不能替代准确度条件
+
+输出码距是数字量化单位，噪声和非线性误差仍取决于磁体、安装、温度及校准状态。比较不同器件时，应先统一典型/最大值、在轴/离轴以及噪声统计口径，避免只按位数排名。
+
+### 线数与转速需要共同核算
+
+ABZ 线数越高，单位时间内的脉冲越密。应把目标转速换算为输出边沿频率，再与芯片、接收器、布线和主控计数上限比较；最大线数与最大转速并不天然可以同时使用。
+
+### 校准和保存分别验证
+
+线性校准、非线性补偿、置零和 MTP 保存是不同步骤。保存后应重新上电检查参数与输出，同时按手册磁感中心定位磁体，避免用封装几何中心替代真实敏感点。
+
+
+## 公开资料与型号核对
+
+Design Center只列SPI，博客原厂手册资料还列ABZ/UVW/PWM，不能以矩阵简表否定完整资料。
+
+源页通用Hall框图不对应TMR/SAR信号链；原博客还保留电流、磁场、封装和INL的多来源差异。
+
+按完整型号、等级和版本选择手册。公开链接核对日期：2026-10-30。
+
+- [KTM5900_Datasheet_CN.pdf](https://chat.connteck.com/downloads/KTM5900/KTM5900_Datasheet_CN.pdf)
+
+[来源产品页](https://chat.connteck.com/products/angle/KTM5900/) · [昆泰芯型号目录](/wiki/?vendor=昆泰芯)

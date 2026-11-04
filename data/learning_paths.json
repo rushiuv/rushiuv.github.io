@@ -1,0 +1,57 @@
+[
+  {
+    "id": "field",
+    "title": "从磁场认识传感",
+    "description": "先读量与方向，再读霍尔、电桥和磁阻。",
+    "slugs": [
+      "magnetic-field-quantities",
+      "hall-effect",
+      "magnetic-bridge",
+      "amr",
+      "gmr",
+      "tmr"
+    ],
+    "image": "magnetic-sensing-landscape",
+    "application": "electronic-compass"
+  },
+  {
+    "id": "switch",
+    "title": "做一个可靠的到位检测",
+    "description": "极性与回差决定动作窗口，采样决定是否漏掉事件。",
+    "slugs": [
+      "hall-element-vs-ic",
+      "switch-polarity",
+      "bop-brp",
+      "latch",
+      "magnetic-hysteresis"
+    ],
+    "image": "hall-foundations-v2",
+    "application": "laptop-lid"
+  },
+  {
+    "id": "position",
+    "title": "把磁读数变成连续位置",
+    "description": "磁路映射、温漂与噪声，接到实际的位移或角度。",
+    "slugs": [
+      "sensor-transfer-function",
+      "hall-temperature-drift",
+      "sensor-noise-bandwidth",
+      "resolution-accuracy"
+    ],
+    "image": "signal-quality",
+    "application": "camera-lens-position"
+  },
+  {
+    "id": "boundary",
+    "title": "识别相似技术的边界",
+    "description": "被动线圈、主动电感、磁通门与SQUID，适合的任务各不同。",
+    "slugs": [
+      "inductive-magnetic-sensing",
+      "inductive-encoder",
+      "fluxgate",
+      "squid"
+    ],
+    "image": "magnetic-sensing-landscape",
+    "application": "current-sensing"
+  }
+]

@@ -1,0 +1,195 @@
+{
+  "updated": "2026-10-30",
+  "scope": "仅如是有为博客Wiki",
+  "source_category": "https://www.sg-micro.com/cn/products/amr-sensor",
+  "category_models": 7,
+  "new_specific_pages": 4,
+  "updated_specific_pages": 3,
+  "preserved_series_pages": 1,
+  "unique_pdf_urls": 5,
+  "pdf_policy": "外链，无新增PDF文件",
+  "unique_packaging_images": 2,
+  "entries": [
+    {
+      "model": "VCE2755",
+      "slug": "vce2755",
+      "path": "content/models/vce2755/_index.md",
+      "previously_exists": true,
+      "image": "/images/wiki/sgmicro/3c9d045f0e4c07d8.png",
+      "image_sha256": "3c9d045f0e4c07d878aaf7da924f972245340228a82054da8ae1cb696d0c88c6",
+      "image_source": "https://www.sg-micro.com/api/assets/7c267236-6f8a-43e4-82e1-128cee30031b",
+      "official_url": "https://www.sg-micro.com/cn/product/VCE2755",
+      "pdf_urls": [
+        "https://www.sg-micro.com/rect/assets/db119b16-8eeb-40df-8fd5-74e92fd603fd/VCE2755.pdf"
+      ],
+      "pdf_version": "2026-01 Rev.A.3，30页",
+      "pdf_sha256": "ce1716e06453c2700cbed77fe27356a5a4202405b28a734cc922e6301233698e",
+      "order_codes": [
+        "VCE2755Q079",
+        "VCE2755Q102",
+        "VCE2755Q104",
+        "VCE2755Q113",
+        "VCE2755Q134",
+        "VCE2755Q161",
+        "VCE2755S076",
+        "VCE2755S087",
+        "VCE2755S096",
+        "VCE2755S108",
+        "VCE2755S121",
+        "VCE2755S124",
+        "VCE2755S142",
+        "VCE2755S152",
+        "VCE2755S153",
+        "VCE2755S159",
+        "VCE2755S164"
+      ],
+      "category": "数字角度",
+      "parameter_rows": 12
+    },
+    {
+      "model": "VCE2758",
+      "slug": "vce2758",
+      "path": "content/models/vce2758/_index.md",
+      "previously_exists": false,
+      "image": "/images/wiki/sgmicro/3c9d045f0e4c07d8.png",
+      "image_sha256": "3c9d045f0e4c07d878aaf7da924f972245340228a82054da8ae1cb696d0c88c6",
+      "image_source": "https://www.sg-micro.com/api/assets/7c267236-6f8a-43e4-82e1-128cee30031b",
+      "official_url": "https://www.sg-micro.com/cn/product/VCE2758",
+      "pdf_urls": [
+        "https://www.sg-micro.com/rect/assets/64cb57c0-73ce-4a80-88b7-431ab31b5c44/VCE2758.pdf"
+      ],
+      "pdf_version": "2026-01 Rev.A.3，30页",
+      "pdf_sha256": "4f47cd5bb6ee5d53c15eb4dc367d586df94ba8d2238ca008f53e0174ca39bd60",
+      "order_codes": [
+        "VCE2758Q081",
+        "VCE2758Q082",
+        "VCE2758Q092",
+        "VCE2758Q120",
+        "VCE2758Q130",
+        "VCE2758Q131",
+        "VCE2758Q132",
+        "VCE2758Q137",
+        "VCE2758Q151",
+        "VCE2758Q160",
+        "VCE2758S083",
+        "VCE2758S110",
+        "VCE2758S123",
+        "VCE2758S138",
+        "VCE2758S141",
+        "VCE2758S147",
+        "VCE2758S148",
+        "VCE2758S154",
+        "VCE2758S156",
+        "VCE2758S158",
+        "VCE2758S162"
+      ],
+      "category": "数字角度",
+      "parameter_rows": 12
+    },
+    {
+      "model": "VCE1715",
+      "slug": "vce1715",
+      "path": "content/models/vce1715/_index.md",
+      "previously_exists": true,
+      "image": "/images/wiki/sgmicro/3c9d045f0e4c07d8.png",
+      "image_sha256": "3c9d045f0e4c07d878aaf7da924f972245340228a82054da8ae1cb696d0c88c6",
+      "image_source": "https://www.sg-micro.com/api/assets/7c267236-6f8a-43e4-82e1-128cee30031b",
+      "official_url": "https://www.sg-micro.com/cn/product/VCE1715",
+      "pdf_urls": [
+        "https://www.sg-micro.com/rect/assets/eb1206f7-9540-4af3-afdc-946624082e12/VCE1715.pdf"
+      ],
+      "pdf_version": "2025-08 Rev.A，12页",
+      "pdf_sha256": "c4bf92ba9440dc723a99e7f2116f61ee26cb368105c4426f1eaf74d0f23f0d79",
+      "order_codes": [
+        "VCE1715S"
+      ],
+      "category": "模拟角度",
+      "parameter_rows": 9
+    },
+    {
+      "model": "VCS2381",
+      "slug": "vcs2381",
+      "path": "content/models/vcs2381/_index.md",
+      "previously_exists": false,
+      "image": "/images/wiki/sgmicro/5e862c9d90ab495f.png",
+      "image_sha256": "5e862c9d90ab495fac61b94b4bd9855097e643d957868194399531e755bdf647",
+      "image_source": "https://www.sg-micro.com/api/assets/47789a8d-5b7e-4ba1-87f7-349777e2cc09",
+      "official_url": "https://www.sg-micro.com/cn/product/VCS2381",
+      "pdf_urls": [
+        "https://www.sg-micro.com/rect/assets/11532fa9-9d2d-45be-9bd4-64d54249e3cb/VCS2381_VCS2382_VCS2383.pdf"
+      ],
+      "pdf_version": "2025-09 Rev.A，8页",
+      "pdf_sha256": "9e001e4cb3125c23d759529cdcd4bd8a708f8df7e8cb24b59e2536dc0e8b48a6",
+      "order_codes": [
+        "VCS2381S"
+      ],
+      "category": "磁开关",
+      "parameter_rows": 9
+    },
+    {
+      "model": "VCS2382",
+      "slug": "vcs2382",
+      "path": "content/models/vcs2382/_index.md",
+      "previously_exists": false,
+      "image": "/images/wiki/sgmicro/5e862c9d90ab495f.png",
+      "image_sha256": "5e862c9d90ab495fac61b94b4bd9855097e643d957868194399531e755bdf647",
+      "image_source": "https://www.sg-micro.com/api/assets/47789a8d-5b7e-4ba1-87f7-349777e2cc09",
+      "official_url": "https://www.sg-micro.com/cn/product/VCS2382",
+      "pdf_urls": [
+        "https://www.sg-micro.com/rect/assets/11532fa9-9d2d-45be-9bd4-64d54249e3cb/VCS2381_VCS2382_VCS2383.pdf"
+      ],
+      "pdf_version": "2025-09 Rev.A，8页",
+      "pdf_sha256": "9e001e4cb3125c23d759529cdcd4bd8a708f8df7e8cb24b59e2536dc0e8b48a6",
+      "order_codes": [
+        "VCS2382S"
+      ],
+      "category": "磁开关",
+      "parameter_rows": 9
+    },
+    {
+      "model": "VCS2383",
+      "slug": "vcs2383",
+      "path": "content/models/vcs2383/_index.md",
+      "previously_exists": false,
+      "image": "/images/wiki/sgmicro/5e862c9d90ab495f.png",
+      "image_sha256": "5e862c9d90ab495fac61b94b4bd9855097e643d957868194399531e755bdf647",
+      "image_source": "https://www.sg-micro.com/api/assets/47789a8d-5b7e-4ba1-87f7-349777e2cc09",
+      "official_url": "https://www.sg-micro.com/cn/product/VCS2383",
+      "pdf_urls": [
+        "https://www.sg-micro.com/rect/assets/11532fa9-9d2d-45be-9bd4-64d54249e3cb/VCS2381_VCS2382_VCS2383.pdf"
+      ],
+      "pdf_version": "2025-09 Rev.A，8页",
+      "pdf_sha256": "9e001e4cb3125c23d759529cdcd4bd8a708f8df7e8cb24b59e2536dc0e8b48a6",
+      "order_codes": [
+        "VCS2383S"
+      ],
+      "category": "磁开关",
+      "parameter_rows": 9
+    },
+    {
+      "model": "VCS2395",
+      "slug": "vcs2395",
+      "path": "content/models/vcs2395/_index.md",
+      "previously_exists": true,
+      "image": "/images/wiki/sgmicro/5e862c9d90ab495f.png",
+      "image_sha256": "5e862c9d90ab495fac61b94b4bd9855097e643d957868194399531e755bdf647",
+      "image_source": "https://www.sg-micro.com/api/assets/47789a8d-5b7e-4ba1-87f7-349777e2cc09",
+      "official_url": "https://www.sg-micro.com/cn/product/VCS2395",
+      "pdf_urls": [
+        "https://www.sg-micro.com/rect/assets/44618042-c8aa-424d-906e-c08938df5bd7/VCS2395.pdf"
+      ],
+      "pdf_version": "2025-09 Rev.A，8页",
+      "pdf_sha256": "6543a9a87c9e20c78d1ec93f95207cc7b1614182de446158fc66574bee9193ee",
+      "order_codes": [
+        "VCS2395S"
+      ],
+      "category": "磁开关",
+      "parameter_rows": 9
+    }
+  ],
+  "series_page": "content/models/vcs238x/_index.md",
+  "verified_limits": [
+    "资料可访问与硬件实测分开；未验证器件实际量产应用或替代兼容。",
+    "原始HTML含站点公开资源访问参数，不应把原始HTML全部发布；此清单已使用无token稳定公开链接，并逐项验证200。"
+  ]
+}

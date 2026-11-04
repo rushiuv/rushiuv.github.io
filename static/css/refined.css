@@ -576,3 +576,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .model-card-overview > .wiki-content { min-width: 0; }
 .model-card .wiki-content table { width: 100%; }
 .model-card .wiki-content th, .model-card .wiki-content td { overflow-wrap: anywhere; }
+
+/* 2026-10-25 mid-width masthead: retain every navigation link without overflow. */
+@media(min-width:761px) and (max-width:900px) {
+ .site-header .bar,.is-home .site-header .bar { height:auto; min-height:82px; flex-wrap:wrap; row-gap:10px; padding-top:16px; padding-bottom:12px; }
+ .site-header nav,.is-home .site-header nav { width:100%; margin-left:0; display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:3px; white-space:normal; }
+ .site-header nav a,.is-home .site-header nav a { display:flex; justify-content:center; align-items:center; min-width:0; min-height:42px; padding:7px 2px; font-size:12px; line-height:1.6; text-align:center; white-space:normal; }
+}

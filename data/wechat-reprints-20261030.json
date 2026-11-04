@@ -1,0 +1,165 @@
+{
+  "updated": "2026-10-30",
+  "scope": "仅如是有为博客",
+  "articles": [
+    {
+      "key": "3k9lfncYXm5J-fGWUwKFdQ",
+      "title": "国产替代喊到 85%，华大九天还是没人敢签核",
+      "account": "数字芯片实验室",
+      "author": "learn vlsi",
+      "original": "https://mp.weixin.qq.com/s/3k9lfncYXm5J-fGWUwKFdQ",
+      "original_from": "转载自微信公众号「数字芯片实验室」",
+      "published": "2026-10-28T18:15:52+08:00",
+      "slug": "wechat-3k9lfncyxm5j-fgwuwkfdq",
+      "content_path": "content/posts/2026-10-28-wechat-3k9lfncyxm5j-fgwuwkfdq.md",
+      "source_override_path": "posts_extra/2026-10-28-wechat-3k9lfncyxm5j-fgwuwkfdq.md",
+      "body_text_preserved_except_removed_ads": true,
+      "body_characters_after": 561,
+      "images_preserved": 2,
+      "images": [
+        {
+          "index": 1,
+          "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/K8SbU1k3vokavkjYuj6R19Q5rMTD1C2pKoPKMt4r8EDuyLYS1sU2qMyXNaXD20haKn0YLIfMN29sFeox8Pwd6H8kULQicAthtrGoVoqqOG38/640?wx_fmt=jpeg&from=appmsg",
+          "path": "static/images/wx/wechat-3k9lfncyxm5j-fgwuwkfdq-001-de02cd3c8951.jpg",
+          "sha256": "de02cd3c8951e7f2562e3f758999a0c150580273f331f1168d31ff42af5255c5",
+          "bytes": 37822,
+          "role": "technical_figure",
+          "removed": false
+        },
+        {
+          "index": 2,
+          "source_url": "https://mmbiz.qpic.cn/mmbiz_jpg/K8SbU1k3vomLJSZRAwe5ia2ekVL8XbR9oclICBI7Td7WBZ8BxoAiamJggInqeD3HHvF49oh3CBDnRjoGWj3Jk8S7oiaGDyuutMYk52mgnva1c8/640?wx_fmt=jpeg&from=appmsg",
+          "path": "static/images/wx/wechat-3k9lfncyxm5j-fgwuwkfdq-002-6b83d99f493a.jpg",
+          "sha256": "6b83d99f493a86646285e6c98eceb3713ea6f427d224e74fe24bea02b733bba7",
+          "bytes": 117987,
+          "role": "article_photo",
+          "removed": false
+        }
+      ],
+      "removed_promotional_paragraphs": [],
+      "authorization": "用户于当前任务明确确认两篇均已取得完整转载授权；按主代理转交记录执行",
+      "no_promo": true,
+      "no_added_editorial_disclaimer": true,
+      "original_claims_not_silently_rewritten": true,
+      "source_pending_phrases_preserved": false,
+      "body_sha256": "7e2811af668acf6861acc87d281ccfe3ffcc857e2f68cade1366164c440b1e13"
+    },
+    {
+      "key": "dmHqTMqr21reIF4_6HdiIQ",
+      "title": "长线传输吃掉信号质量：模拟正余弦 vs 数字协议",
+      "account": "方寸技研",
+      "author": "方寸技研",
+      "original": "https://mp.weixin.qq.com/s/dmHqTMqr21reIF4_6HdiIQ",
+      "original_from": "转载自微信公众号「方寸技研」",
+      "published": "2026-10-30T11:00:00+08:00",
+      "slug": "wechat-dmhqtmqr21reif4_6hdiiq",
+      "content_path": "content/posts/2026-10-30-wechat-dmhqtmqr21reif4_6hdiiq.md",
+      "source_override_path": "posts_extra/2026-10-30-wechat-dmhqtmqr21reif4_6hdiiq.md",
+      "body_text_preserved_except_removed_ads": true,
+      "body_characters_after": 1478,
+      "images_preserved": 9,
+      "images": [
+        {
+          "index": 1,
+          "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/Dbzyo5gcd9UDctfE86SE4FFyocvvZueMGicVRicj4HDXkkE7kUmMCYjdoicIic7OUEkUvrUBRD6xygBfXYHhFvh91iborMrhkDRYP7fYh0iberCMo/640?wx_fmt=png&from=appmsg",
+          "path": "static/images/wx/wechat-dmhqtmqr21reif4_6hdiiq-001-dbfe4291f6f8.png",
+          "sha256": "dbfe4291f6f8ca87080c23104ff98669c1df60c10592f5c627970832d8abb3e4",
+          "bytes": 84891,
+          "role": "technical_cover",
+          "removed": false
+        },
+        {
+          "index": 2,
+          "source_url": "https://mmbiz.qpic.cn/mmbiz_png/Dbzyo5gcd9UOljj1eJF5k9vxoGoTwcz6x5SicJXA29Ufxb6YE7BZkqriasb8BN00VEgmsnX6DibaItljWhqFDEHmrH4IAXs0vkXNqzKXqsQNmE/640?wx_fmt=png&from=appmsg",
+          "path": "static/images/wx/wechat-dmhqtmqr21reif4_6hdiiq-002-61461f0ff8ee.png",
+          "sha256": "61461f0ff8ee5d640053e500dacc87fd1597cce80cabe03839b90abe5471cdd5",
+          "bytes": 161934,
+          "role": "technical_figure",
+          "removed": false
+        },
+        {
+          "index": 3,
+          "source_url": "https://mmbiz.qpic.cn/mmbiz_png/Dbzyo5gcd9W6bkxRpGrTOibzgfSC8M0B2tqlc8T6ibznU3gLyO5jq9QK8jzTQ3doWIKnhoiceVI2Rb0Zch55lZkCnMnxiciaQTdIbRTM0UkibJgAQ/640?wx_fmt=png&from=appmsg",
+          "path": "static/images/wx/wechat-dmhqtmqr21reif4_6hdiiq-003-946dd228431d.png",
+          "sha256": "946dd228431d26d28cad1309c9ed667412925cd45b815438fa5df0a9e9c82b94",
+          "bytes": 123669,
+          "role": "technical_figure",
+          "removed": false
+        },
+        {
+          "index": 4,
+          "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/Dbzyo5gcd9UUH920E6yAh4RuQMial4n2OOs9KZShs81OSxqaHndqXbUKssc2RganmHgmxiafcoQCs5lqRic6p6E8mqyBKbj3u45BDSM2P79nibs/640?wx_fmt=png&from=appmsg",
+          "path": "static/images/wx/wechat-dmhqtmqr21reif4_6hdiiq-004-38b7dd0ea8f9.png",
+          "sha256": "38b7dd0ea8f9d185d645eefbfdcd5391186c01a9df44ef2f3291ee833f17b730",
+          "bytes": 127646,
+          "role": "technical_figure",
+          "removed": false
+        },
+        {
+          "index": 5,
+          "source_url": "https://mmbiz.qpic.cn/mmbiz_png/Dbzyo5gcd9UGYj5LKUyDcczUYZic4F6ap0OFhpRCFrSPkoUdW0LdWlfrsMylsAJuF8ICgg6L7LHcytL3JJQXcOTicYmOXvOhWqlgIicBiaOyKBU/640?wx_fmt=png&from=appmsg",
+          "path": "static/images/wx/wechat-dmhqtmqr21reif4_6hdiiq-005-b893b39ef0c4.png",
+          "sha256": "b893b39ef0c439116336160eee3ba91473cb2151b6db8b66a1a8524587f0f7a0",
+          "bytes": 151398,
+          "role": "technical_figure",
+          "removed": false
+        },
+        {
+          "index": 6,
+          "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/Dbzyo5gcd9VHydRczrJonXAo038f9z5rdPy60I1aViaMmiaHGoyHY3pZxEUENL5KGeCh5U8ydicJ5GASPyRv6b6pqb7jsTnFtU6wibtvG4jsP9Q/640?wx_fmt=png&from=appmsg",
+          "path": "static/images/wx/wechat-dmhqtmqr21reif4_6hdiiq-006-b51f98b5c93a.png",
+          "sha256": "b51f98b5c93a67579cdc856b319b2fa595adfd0241d2b02ede3641f92c14e156",
+          "bytes": 152744,
+          "role": "technical_figure",
+          "removed": false
+        },
+        {
+          "index": 7,
+          "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/Dbzyo5gcd9USWGY0KNreJlYQNwC4rkTSNowYm0LEF1CmYLNibnwXUn3eUx5MX9FicO71dAulhq8Guf3OoDvkomkTXicv6Fq3AjL8MFwoRFzzJE/640?wx_fmt=png&from=appmsg",
+          "path": "static/images/wx/wechat-dmhqtmqr21reif4_6hdiiq-007-40f8964b160d.png",
+          "sha256": "40f8964b160dc1b0d0684999e715fd714952d6510f23060af478a0282a76d622",
+          "bytes": 128335,
+          "role": "technical_figure",
+          "removed": false
+        },
+        {
+          "index": 8,
+          "source_url": "https://mmbiz.qpic.cn/mmbiz_png/Dbzyo5gcd9U38FkbbMaz7bSib7d7mxSrM3Ily869brj2mR84MGrPOvtdjqqv0v0bWJibsxdic5ibiaxk4j1PeTYCpKRcfbqictcnYRfUzClCz09ibo/640?wx_fmt=png&from=appmsg",
+          "path": "static/images/wx/wechat-dmhqtmqr21reif4_6hdiiq-008-7bca40cf88d6.png",
+          "sha256": "7bca40cf88d63705d4277e08b69d118111bd81462f805a238d7d3f5219d18f0d",
+          "bytes": 137746,
+          "role": "technical_figure",
+          "removed": false
+        },
+        {
+          "index": 9,
+          "source_url": "https://mmbiz.qpic.cn/sz_mmbiz_png/Dbzyo5gcd9V11hWDHfSlJFLibc71XicHrXSZ4AWhYjQatdoVLCpwYaRsBVgibGKNdy6jCMZMhmeBD6icxAfPTC3cyT48HaE6iaib4KsIkLemkBkCw/640?wx_fmt=png&from=appmsg",
+          "path": "static/images/wx/wechat-dmhqtmqr21reif4_6hdiiq-009-39ac6923500b.png",
+          "sha256": "39ac6923500b16c6ba0bd6d751edbc9b7489db24a4601f351ae8108fe7043ea4",
+          "bytes": 118831,
+          "role": "technical_figure",
+          "removed": false
+        }
+      ],
+      "removed_promotional_paragraphs": [
+        "💬 互动提问 ：你被线缆坑过最狠的一次是什么情况？几米线、什么信号、什么症状？评论区对个账。",
+        "关注方寸技研，下一篇聊一个行业的\"体面退场\"——光电编码器曾经的王座是怎么被磁编和电感式一步步接管的，退到哪、守住哪，下期见。",
+        "—— 方寸技研 · 下期预告：《光电编码器的退场路线图：谁接管了它的王座，它还守着哪几座山头》"
+      ],
+      "authorization": "用户于当前任务明确确认两篇均已取得完整转载授权；按主代理转交记录执行",
+      "no_promo": true,
+      "no_added_editorial_disclaimer": true,
+      "original_claims_not_silently_rewritten": true,
+      "source_pending_phrases_preserved": true,
+      "body_sha256": "cd1cd13edecb8d31e3444670a03fce720cfd67c2b259bc722c5649b597397397"
+    }
+  ],
+  "rules": [
+    "原文URL保留原大小写",
+    "原作者、原公众号、原发布日期保留",
+    "11张原图顺序与字节保留，不生成替代图",
+    "移除第一篇末尾互动/关注/下期预告3段导流；无推广GIF、二维码或商城图片",
+    "正文无额外转载声明、免责声明、编辑核查段或尾部重复原文链接",
+    "标题下原文入口沿用original/original_from模板，no_promo关闭本站二维码卡"
+  ]
+}

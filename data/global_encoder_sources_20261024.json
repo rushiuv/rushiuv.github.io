@@ -1,0 +1,78 @@
+{
+  "checked": "2026-10-24",
+  "scope": "curated batch, no whole-world completeness claim",
+  "sources": [
+    {
+      "vendor": "Seiko NPC",
+      "language": "ja",
+      "kind": "datasheet",
+      "url": "https://www.npc.co.jp/filecontents/file/1121/file/",
+      "version": "DE220185-J002 2024.04",
+      "used_for": [
+        "smd-01b",
+        "optical-signal-chain"
+      ]
+    },
+    {
+      "vendor": "HEIDENHAIN",
+      "language": "ja",
+      "kind": "product information",
+      "url": "https://www.heidenhain.de/fileadmin/pdf/ja/Produktinformation/PI_ROD_200_700_800_ID1385973_ja.pdf",
+      "version": "07/2022 ID1385973",
+      "used_for": [
+        "rod-280",
+        "reference-recovery"
+      ]
+    },
+    {
+      "vendor": "HEIDENHAIN",
+      "language": "ja",
+      "kind": "measurement principles",
+      "url": "https://product.heidenhain.de/JPBC/image/HWP.EN/hlr-system/1078628-J3.pdf",
+      "version": "specific public PDF",
+      "used_for": [
+        "reference-recovery"
+      ]
+    },
+    {
+      "vendor": "Renishaw",
+      "language": "en",
+      "kind": "series and configuration",
+      "url": "https://www.renishaw.com/en/37823.aspx",
+      "version": "checked 2026-10-24",
+      "used_for": [
+        "resolute-rl"
+      ]
+    },
+    {
+      "vendor": "Renishaw",
+      "language": "en",
+      "kind": "white paper introduction",
+      "url": "https://www.renishaw.com/en/white-paper-mounting-encoder-scales-for-optimum-thermal-performance--44316",
+      "version": "January 2019",
+      "used_for": [
+        "linear-scale-thermal"
+      ]
+    },
+    {
+      "vendor": "POSITAL",
+      "language": "de",
+      "kind": "technology",
+      "url": "https://www.posital.com/de/wiegand-sensors",
+      "version": "checked 2026-10-24",
+      "used_for": [
+        "batteryless-multiturn"
+      ]
+    },
+    {
+      "vendor": "POSITAL",
+      "language": "en",
+      "kind": "exact order code",
+      "url": "https://www.posital.com/en/products/kit-encoders/KTD-S100B-1609-LP2A-BAQ/3440429",
+      "version": "Lab Sample on page 2026-10-24",
+      "used_for": [
+        "posital-ktd-s100b-1609"
+      ]
+    }
+  ]
+}

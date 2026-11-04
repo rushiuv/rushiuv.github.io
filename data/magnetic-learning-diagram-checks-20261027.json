@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "name": "RC 1 tau",
+      "actual": 0.6321205588285577,
+      "expected": 0.6321205588285577
+    },
+    {
+      "name": "RC rise ms",
+      "actual": 21.97224577336219,
+      "expected": 21.972245773362193
+    },
+    {
+      "name": "AMR half turn equal",
+      "actual": 2.7755575615628914e-16,
+      "expected": 0,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "bridge 3.3V differential",
+      "actual": -0.03300000000000003,
+      "expected": -0.033
+    },
+    {
+      "name": "field units mT to G",
+      "actual": 10.0,
+      "expected": 10
+    },
+    {
+      "name": "noise displacement um",
+      "actual": 5.0,
+      "expected": 5
+    }
+  ],
+  "svgs": [
+    "amr-angle-20261027.svg",
+    "current-feedback-20261027.svg",
+    "hall-axes-20261027.svg",
+    "induction-boundary-20261027.svg",
+    "magnetic-bridge-20261027.svg",
+    "mr-structures-20261027.svg",
+    "noise-bandwidth-20261027.svg",
+    "sensor-chain-20261027.svg",
+    "switch-hysteresis-20261027.svg"
+  ]
+}

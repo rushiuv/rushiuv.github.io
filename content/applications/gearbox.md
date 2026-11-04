@@ -3,13 +3,26 @@
   "title": "齿轮箱：用两端位置区分理想传动与实际输出",
   "description": "从输入输出测点理解传动误差、方向分支和扭转变形，避免把角差直接当扭矩。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-24",
   "layout": "application-single",
   "application_entry": true,
   "application_group": "工业与运动",
   "weight": 211,
-  "related_basics": ["vernier", "inl", "latency"],
-  "reference_topic": "齿轮箱"
+  "related_basics": [
+    "vernier",
+    "inl",
+    "latency"
+  ],
+  "reference_topic": "齿轮箱",
+  "related_guides": [
+    "dual-encoder-difference-budget",
+    "system-acceptance-record"
+  ],
+  "related_model_slugs": [
+    "ma732",
+    "ktm5900",
+    "ktm5200"
+  ]
 }
 ---
 
@@ -37,3 +50,10 @@
 用同方向重复轨迹建基线，再用未参与拟合的轨迹验证，反向分支单独保存。改变温度、速度、输出载荷后检查基线是否仍适用。若要发布扭矩结果，应使用独立负载参照识别刚度与迟滞，并明确测到的是哪段传递扭矩，不把它自动叫作末端接触力。
 
 选型验收因此应同时写清绝对位置误差、换向行为、时间同步和覆盖工况；只有一张平滑的空载曲线，还不足以判定齿轮箱状态。
+
+
+## 目录刚度不能直接替代整机负载曲线
+
+[Nabtesco德文刚度说明](https://www.nabtesco.de/service/faq/begriffserklaerung/torsionssteifigkeit)给出固定输入、对输出加载卸载的测量方式，并在指定载荷区间取斜率。先按[INL](/wiki/basics/inl/)区分传感器误差，按[延迟](/wiki/basics/latency/)排除运动中的采样错位，再使用[双编码器预算](/topics/guides/dual-encoder-difference-budget/)。
+
+自设同一加载支路中，输出扭矩由10增至20N·m、扭角增加0.5角分，局部斜率是20N·m/角分；这不代表零载附近或卸载支路也相同。用独立负载参考同步记录两端连续圈数和扭矩，卸载数据保持原样；判定对象是当前两测点间的传动链，不能把轴和联轴器柔性都归给齿轮。把加载范围、温度、预载与参考写入[整机验收记录](/topics/guides/system-acceptance-record/)，再决定目录值是否适用。

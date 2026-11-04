@@ -3,6 +3,7 @@ title: "电机一转角度就抖？ 电源入口那颗滤噪声的磁珠， 把�
 date: 2026-09-27T15:43:00+08:00
 slug: "aS3HJzE6sTjt1H_DaDQrZA"
 description: "阅读约 12 分钟 · 手册、教材与复算全部公开，可自己重算"
+tags: ["ADC"]
 original: "https://mp.weixin.qq.com/s/aS3HJzE6sTjt1H_DaDQrZA"
 models: ["KTM5800"]
 ---

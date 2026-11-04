@@ -53,3 +53,7 @@ related_companies: []
 - [TONiC 增量式系列](https://www.renishaw.com/en/tonic-encoder-series--37824)
 - [QUANTiC 增量式系列](https://www.renishaw.com/en/quantic-encoder-series--43210)
 - [ATOM DX 增量式系列](https://www.renishaw.com/en/atom-dx-encoder-series--42875)
+
+## 具体型号与工程方法
+
+- [RESOLUTE RL](/models/resolute-rl/)：独立记录该配置的规格、出处与使用边界。

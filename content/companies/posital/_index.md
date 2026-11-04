@@ -55,3 +55,7 @@ POSITAL 是少见的把敏感材料做到上游的整机厂：韦根丝自产，
 - [36 mm 套件新一代升级公告](https://www.posital.com/en/news-events/36mm-kit-encoders-nextgen)
 - [为什么选 POSITAL（产能与交付口径）](https://www.posital.com/en/why-posital)
 - [FRABA 集团与三个品牌](https://www.fraba.com/)
+
+## 具体型号与工程方法
+
+- [KTD-S100B-1609-LP2A-BAQ（Lab Sample）](/models/posital-ktd-s100b-1609/)：独立记录该配置的规格、出处与使用边界。

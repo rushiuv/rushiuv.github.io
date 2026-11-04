@@ -1,7 +1,20 @@
 ---
-{"title":"在轴检测：感应中心先对准旋转轴","description":"在轴不是磁铁放在芯片上方就算完成，还要核对磁化方向、敏感轴与机械基准。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"basic-single","basic_entry":true,"basic_group":"检测原理与安装","weight":101,"related_basics":["mounting","magnetic-encoder","resolution-accuracy"]}
+{
+  "title": "在轴检测：感应中心先对准旋转轴",
+  "description": "在轴不是磁铁放在芯片上方就算完成，还要核对磁化方向、敏感轴与机械基准。",
+  "date": "2026-10-18T10:00:00+08:00",
+  "lastmod": "2026-10-27",
+  "layout": "basic-single",
+  "basic_entry": true,
+  "basic_group": "磁路与机械安装",
+  "weight": 701,
+  "related_basics": [
+    "mounting",
+    "magnetic-encoder",
+    "resolution-accuracy"
+  ]
+}
 ---
-
 在轴检测把读头的感应中心放到旋转轴线上。常见磁方案在轴端安装沿直径方向充磁的双极磁体，芯片固定在下方；磁体转动时，读头看到的场方向随之变化。这里的中心指敏感元件，不保证等于封装外形中心。
 
 ## 居中让两路分量更容易形成圆

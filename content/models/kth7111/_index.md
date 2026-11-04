@@ -12,7 +12,7 @@ related_companies: ["昆泰芯"]
 official_url: "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html"
 datasheet_url: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7111%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
 datasheet_label: "KTH7111 数据手册"
-document_version: "KTH7111 官方公开手册，33 个 PDF 页面；参数采用型号专用手册，不套用系列汇总表"
+document_version: "KTH7111 官方公开手册，33 个 PDF 页面；适用KTH7111对应配置"
 model_card: true
 product_image: "/images/wiki/kth7111-diagram.webp"
 product_image_caption: "图片来源：KTH7111 官方数据手册，第 5 个 PDF 页面，功能框图局部。"
@@ -66,4 +66,4 @@ ANLC完成后保存配置，再用独立参考记录全圈正反转误差。静�
 
 - [官方产品介绍](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/magneticencoder/index.html)
 - [下载KTH7111 数据手册（官方 PDF）](https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7111%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf)
-- 资料版本：KTH7111 官方公开手册，33 个 PDF 页面；参数采用型号专用手册，不套用系列汇总表
+- 资料版本：KTH7111 官方公开手册，33 个 PDF 页面；适用KTH7111对应配置

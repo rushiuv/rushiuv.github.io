@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-25",
+  "generator": "image_gen built-in for raster; original SVG/CSS for symbols and background",
+  "items": [
+    {
+      "name": "reference",
+      "output": "static/images/editorial/chromeos-reference-desk-20261025.webp",
+      "sha256": "b34edff4e256653595330751454e9ef5b1f20202640dfc44de4e34fe4c4f7cad",
+      "bytes": 132590,
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "built-in image generation; generic editorial illustration, not a device photograph or installation diagram",
+      "source_file": "exec-0ff1fc94-b98c-4b99-a58f-cc673a41a433.png",
+      "prompt": "Create a wide editorial illustration for an independent Chinese encoder engineering knowledge website. Style: the same calm Chrome OS-like flat storybook editorial illustration, warm cream paper #f5f2eb, deep navy #1d2f43, muted teal #356c72, sage, restrained ochre, soft painted shading, precise charming small details. Subject: an elegant engineering still life on a tidy light cream workbench, an optical encoder annular disk with alternating radial tracks, a small magnetic sensor PCB, a cylindrical diametric magnet, an open engineering notebook with simple sine/cosine sketches, a fine caliper, a dark teal pen. No people. Close-up, gently elevated three-quarter perspective, tangible friendly objects rather than abstract UI. Composition: main cluster centrally with generous clean cream negative space around, wide landscape framing 3:2. Soft warm light, no harsh shadows, no dramatic depth of field. It will appear in a small reference-library panel, so use a few large readable shapes. No written text, no numbers, no brands, no labels, no watermark, no website mockup, no interface, no invented specific product markings. The disk is an illustrative generic object, not a technical installation diagram. Only output the artwork."
+    },
+    {
+      "name": "signal",
+      "output": "static/images/editorial/chromeos-signal-desk-20261025.webp",
+      "sha256": "e078b896d7cf1432720d35e7dd6945439f27402529e7e76c92247549ba2740b0",
+      "bytes": 137842,
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "built-in image generation; generic editorial illustration, not a device photograph or installation diagram",
+      "source_file": "exec-17489dfa-744c-4b8d-a6f7-0d0859c00017.png",
+      "prompt": "A calm editorial illustration in a warm paper Chrome OS-like illustrated engineering knowledge website style. An intimate tidy electronics workbench still life, NO PEOPLE, one compact oscilloscope with two simple teal and muted ochre sine-like traces with phase difference on its screen, a tiny encoder sensor PCB next to a small plain silver shaft motor, tidy probes and a single coil of cable, open cream notebook, muted teal storage tray. Gentle elevated three-quarter view, a few large clear shapes, restrained detail, navy ink #1d2f43, sage and muted teal #356c72, warm cream #f5f2eb, small ochre accents. Soft painted flat shading, slightly tactile paper, friendly polished storybook technical editorial art. Landscape 3:2. Background cream. No words, numbers, model names, brands, labels, watermarks, UI mockup. This is a generic conceptual illustration, not a physically prescriptive connection diagram. Do not make a photorealistic photograph."
+    },
+    {
+      "name": "magnetic",
+      "output": "static/images/editorial/chromeos-magnetic-desk-20261025.webp",
+      "sha256": "d8a2b56c8798221865010eb4d6100737fc3329913410eb5fd68a13ceb42cde73",
+      "bytes": 80924,
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "built-in image generation; generic editorial illustration, not a device photograph or installation diagram",
+      "source_file": "exec-e47b36c4-4ab0-4ca9-a821-9f97f0f38ff9.png",
+      "prompt": "Create a polished warm paper editorial still life illustration for an encoder engineering knowledge website. No people. A small generic green magnetic sensor PCB on a tidy cream workbench, a short dark teal cylindrical magnet held just above its round sensing center by a simple bracket, a separate annular magnetic ring with subtle alternating muted teal and warm ochre segments, small brass ruler, a few metal spacers and navy fine-tip pen, one open notebook with a simple clean circular angle sketch. Gentle elevated three-quarter view, few large legible forms, subtle painted shading, flat Chrome OS-inspired storybook art, soft warm lighting. Colors cream #f5f2eb, dark navy #1d2f43, muted teal #356c72, sage and small ochre accents. Landscape 3:2. No text, no labels, no numbers, no brand, no logo, no watermark, no UI. This is a generic conceptual still life, not a named device or installation/acceptance diagram. Preserve an understated warm editorial feel, not glossy photorealistic rendering."
+    },
+    {
+      "output": "static/images/editorial/encoder-reticle-20261025.svg",
+      "sha256": "2087fdad8bc7dbfedb52331c390e3bcb3364d85b26d7ec63e91739ddbadefe1b",
+      "bytes": 2134,
+      "kind": "deterministic SVG decoration, no model-specific dimensions or measured data"
+    },
+    {
+      "name": "magnetic",
+      "source_file": "exec-d6553266-7016-4586-8eec-533f0a7ef650.png",
+      "output": "static/images/editorial/topic-magnetic-20261025.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 71288,
+      "sha256": "6b0a7f882f6444f6b816335df96ffbdd24491f0ea78a2e5d15b766e59ab0ee3b",
+      "prompt": "Create a richly detailed, polished SPOT ILLUSTRATION for a topic card on a Chinese encoder engineering knowledge website. Square 1:1 composition. Fill 80 percent of the frame with a few substantial readable physical engineering objects, centrally composed, gently elevated three-quarter perspective. Same coherent family as warm Chrome OS-like editorial illustrations: warm cream background #f5f2eb, navy #1d2f43, muted teal #356c72, sage green, small muted brass/ochre accents, softly painted material shading and lightly tactile paper, charming but technically grounded objects. NOT a thin outline glyph, not a vector icon pack, not a logo, no enclosing emblem, no text or numbers or labels or watermark, no product brand. No people. No website mockup. A conceptual editorial illustration, not a prescriptive installation drawing. Subject: a small square green magnetic angle sensor PCB beside an upright rotating shaft and a cylindrical diametric magnet hovering slightly above the center; a separate two-tone segmented magnetic ring nearby, small brass spacers. Make the magnet, board and ring large and distinct.",
+      "kind": "built-in image generation; conceptual decoration, no specific model or measured performance"
+    },
+    {
+      "name": "inductive",
+      "source_file": "exec-7d2f5f80-737f-4d26-9c1b-db1e814bbae7.png",
+      "output": "static/images/editorial/topic-inductive-20261025.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 130298,
+      "sha256": "ea369f54e1fe4276ba61ed294773b3ad5488458ac2ebf3071c5069e0a478e875",
+      "prompt": "Create a richly detailed, polished SPOT ILLUSTRATION for a topic card on a Chinese encoder engineering knowledge website. Square 1:1 composition. Fill 80 percent of the frame with a few substantial readable physical engineering objects, centrally composed, gently elevated three-quarter perspective. Same coherent family as warm Chrome OS-like editorial illustrations: warm cream background #f5f2eb, navy #1d2f43, muted teal #356c72, sage green, small muted brass/ochre accents, softly painted material shading and lightly tactile paper, charming but technically grounded objects. NOT a thin outline glyph, not a vector icon pack, not a logo, no enclosing emblem, no text or numbers or labels or watermark, no product brand. No people. No website mockup. A conceptual editorial illustration, not a prescriptive installation drawing. Subject: a circular green printed circuit board with clearly visible beautiful concentric planar copper coil tracks and a small metallic crescent-shaped rotor target hovering above it, silver central spindle and two small mounting spacers. A careful compact still life, the planar copper coils must be visually prominent.",
+      "kind": "built-in image generation; conceptual decoration, no specific model or measured performance"
+    },
+    {
+      "name": "optical",
+      "source_file": "exec-1ecabcf5-0b5c-4460-817e-9c335e08ddaa.png",
+      "output": "static/images/editorial/topic-optical-20261025.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 111082,
+      "sha256": "789c0a98c1a3ee37e0d87e7d18ee18e013b7477643608562d962ba0b12a2babd",
+      "prompt": "Create a richly detailed, polished SPOT ILLUSTRATION for a topic card on a Chinese encoder engineering knowledge website. Square 1:1 composition. Fill 80 percent of the frame with a few substantial readable physical engineering objects, centrally composed, gently elevated three-quarter perspective. Same coherent family as warm Chrome OS-like editorial illustrations: warm cream background #f5f2eb, navy #1d2f43, muted teal #356c72, sage green, small muted brass/ochre accents, softly painted material shading and lightly tactile paper, charming but technically grounded objects. NOT a thin outline glyph, not a vector icon pack, not a logo, no enclosing emblem, no text or numbers or labels or watermark, no product brand. No people. No website mockup. A conceptual editorial illustration, not a prescriptive installation drawing. Subject: an elegant black optical encoder code disk with a dense ring of light/dark radial sectors and a central silver shaft, paired with a compact cream and teal optical readhead close to the disk edge and a small lens. Tiny generic metal supports. Make the optical code disk the visual focus.",
+      "kind": "built-in image generation; conceptual decoration, no specific model or measured performance"
+    },
+    {
+      "name": "interface",
+      "source_file": "exec-a2b2ceb9-62c2-4041-adca-d11d7cc76926.png",
+      "output": "static/images/editorial/topic-interface-20261025.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 111432,
+      "sha256": "cb058779b40331f99114cbdf9b65230094e59069a54a551cb6afeac63f2fc95a",
+      "prompt": "Create a richly detailed, polished SPOT ILLUSTRATION for a topic card on a Chinese encoder engineering knowledge website. Square 1:1 composition. Fill 80 percent of the frame with a few substantial readable physical engineering objects, centrally composed, gently elevated three-quarter perspective. Same coherent family as warm Chrome OS-like editorial illustrations: warm cream background #f5f2eb, navy #1d2f43, muted teal #356c72, sage green, small muted brass/ochre accents, softly painted material shading and lightly tactile paper, charming but technically grounded objects. NOT a thin outline glyph, not a vector icon pack, not a logo, no enclosing emblem, no text or numbers or labels or watermark, no product brand. No people. No website mockup. A conceptual editorial illustration, not a prescriptive installation drawing. Subject: a compact green interface controller board with two substantial cream connectors, a short neatly curved dark teal cable, a small upright display showing two clean staggered rectangular digital pulse tracks without labels, silver contacts and small brass details. Visually about transferring encoder signals, not a specific protocol wiring schematic.",
+      "kind": "built-in image generation; conceptual decoration, no specific model or measured performance"
+    },
+    {
+      "name": "calibration",
+      "source_file": "exec-62ea6bc2-0061-430e-914a-12137ea9c911.png",
+      "output": "static/images/editorial/topic-calibration-20261025.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 131924,
+      "sha256": "536e7da35244ac09ce15096a7bae6d428e669521bbce7c8625c36ca234395e38",
+      "prompt": "Create a richly detailed, polished SPOT ILLUSTRATION for a topic card on a Chinese encoder engineering knowledge website. Square 1:1 composition. Fill 80 percent of the frame with a few substantial readable physical engineering objects, centrally composed, gently elevated three-quarter perspective. Same coherent family as warm Chrome OS-like editorial illustrations: warm cream background #f5f2eb, navy #1d2f43, muted teal #356c72, sage green, small muted brass/ochre accents, softly painted material shading and lightly tactile paper, charming but technically grounded objects. NOT a thin outline glyph, not a vector icon pack, not a logo, no enclosing emblem, no text or numbers or labels or watermark, no product brand. No people. No website mockup. A conceptual editorial illustration, not a prescriptive installation drawing. Subject: a compact precision rotary calibration stage with a silver spindle, a black-and-cream graduated optical disk, a small mechanical dial indicator on a sage stand and a notebook with two subtle curved error traces. A distinctive beautiful measurement still life. No readable ticks numbers or words, no claim of actual measured performance.",
+      "kind": "built-in image generation; conceptual decoration, no specific model or measured performance"
+    },
+    {
+      "name": "robot",
+      "source_file": "exec-1ac77c99-e529-4d0e-b103-c118fbce1df6.png",
+      "output": "static/images/editorial/topic-robot-20261025.webp",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 97806,
+      "sha256": "2a2c914cef39ff4f7a7f82f0b4da4da4ec518f2e9744f0abe91b69c00b472bbd",
+      "prompt": "Create a richly detailed, polished SPOT ILLUSTRATION for a topic card on a Chinese encoder engineering knowledge website. Square 1:1 composition. Fill 80 percent of the frame with a few substantial readable physical engineering objects, centrally composed, gently elevated three-quarter perspective. Same coherent family as warm Chrome OS-like editorial illustrations: warm cream background #f5f2eb, navy #1d2f43, muted teal #356c72, sage green, small muted brass/ochre accents, softly painted material shading and lightly tactile paper, charming but technically grounded objects. NOT a thin outline glyph, not a vector icon pack, not a logo, no enclosing emblem, no text or numbers or labels or watermark, no product brand. No people. No website mockup. A conceptual editorial illustration, not a prescriptive installation drawing. Subject: a compact beautifully engineered cream-and-muted-teal industrial robot arm, with prominent circular joints, and a separate silver annular encoder ring and small green feedback board nearby. A few clear substantial parts, friendly precise industrial design, visually about servo joint position feedback. No exact named robot.",
+      "kind": "built-in image generation; conceptual decoration, no specific model or measured performance"
+    },
+    {
+      "name": "circuit-background",
+      "source_file": "exec-6d9f5a92-a664-49f6-9e80-dffc1ded4255.png",
+      "output": "static/images/editorial/circuit-paper-20261025.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "bytes": 18228,
+      "sha256": "a789a7cd1f1ed11d4cb35c5b9f955b6a8db5267214921dd44d4c35dfa24a5256",
+      "prompt": "Create an elegant large landscape electronic CIRCUIT SCHEMATIC drawing to use as a quiet blurred website background. It is a real-looking circuit DIAGRAM drawn on warm cream paper #f5f2eb, NOT a photograph of a circuit board. Large loosely arranged op-amp triangles, resistor zigzags, capacitor plates, ground symbols, a few connector pin blocks, clean right-angle connecting signal traces and small junction dots, tiny generic waveform traces. Use muted sage and grey teal lines with very small restrained brass details. No words, no numbers, no labels, no logo, no watermark, no computer, no border. Wide composition covering the frame with open areas between circuit clusters. The entire schematic is softly OUT OF FOCUS with a gentle optical blur and faded contrast, so it reads as a texture behind text, not as an educational circuit to wire or verify. Main colors warm ivory and pale desaturated teal. Very quiet tonal range. No vibrant colors, no dark background. 3:2 landscape.",
+      "kind": "built-in image generation; conceptual decoration, no specific model or measured performance"
+    }
+  ],
+  "superseded": "Initial six outline topic glyphs and grid background were rejected by the user and replaced with six generated illustrations and a blurred schematic background; KTM5300 has ordering priority only, no special visual treatment."
+}

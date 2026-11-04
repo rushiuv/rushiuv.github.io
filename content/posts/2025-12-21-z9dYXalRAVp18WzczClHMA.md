@@ -3,6 +3,7 @@ title: "为什么只有小米敢把事做慢：把钱、时间和骂声一起吞
 date: 2025-12-21T00:12:00+08:00
 slug: "z9dYXalRAVp18WzczClHMA"
 description: "慢这件事，之所以经常被说空，是因为大多数人只站在结果端讨论它：节奏慢、兑现慢、股价慢。可真正的慢，发生在过程里，发生在每天那些“不划算”的具体选择上。只要把这些选择摊开来看，你就会明白，慢不是一种姿态，而是一种持续流血的状态。"
+tags: ["芯片设计", "投资"]
 original: "https://mp.weixin.qq.com/s/z9dYXalRAVp18WzczClHMA"
 companies: ["小米"]
 ---

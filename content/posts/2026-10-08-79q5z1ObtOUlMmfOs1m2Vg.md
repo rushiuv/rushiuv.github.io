@@ -3,6 +3,7 @@ title: "【awinic inside】艾为超高带宽 UWB 开关芯片，助力红旗G91
 date: 2026-10-08T18:33:00+08:00
 slug: "79q5z1ObtOUlMmfOs1m2Vg"
 description: "艾为超高带宽 UWB 开关芯片，助力红旗G919国产数字钥匙方案量产落地。"
+tags: ["车规"]
 original: "https://mp.weixin.qq.com/s/79q5z1ObtOUlMmfOs1m2Vg"
 original_from: "转载自公众号「艾为之家」"
 companies: ["艾为"]

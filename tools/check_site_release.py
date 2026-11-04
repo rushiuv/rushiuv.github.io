@@ -2,11 +2,12 @@
 """Read-only checks for the October 2026 sensor.fans release.
 
 Usage: python3.11 -B tools/check_site_release.py /absolute/path/to/hugo/build
-Requires the project's existing beautifulsoup4 dependency. Does not build, fetch,
+Requires the project's existing beautifulsoup4 and PyYAML dependencies. Does not build, fetch,
 publish, write reports, or claim that browser/mobile rendering has been tested.
 The previously published KTH7111 article contained five inline SVG illustrations.
-Also checks the current 37 basics / 43 applications and the explicit reference
-topic mapping. Source validation is read-only and uses this script's repository.
+Basics and applications counts are derived from content/ at runtime.
+Also checks the explicit reference topic mapping. Source validation is read-only
+and uses this script's repository.
 """
 
 import argparse
@@ -17,6 +18,8 @@ import sys
 import unicodedata
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+
+import yaml
 
 try:
     from bs4 import BeautifulSoup, Tag
@@ -34,8 +37,12 @@ REQUIRED_LINKS = (
 FORBIDDEN_FIELDS = ("current_owner", "直白标题", "目标平台", "下一步任务")
 UNPUBLISHED_TITLE = "双编码器估扭矩，空载差值曲线能不能直接扣掉"
 SOURCE_ROOT = Path(__file__).resolve().parent.parent
-EXPECTED_BASICS = 37
-EXPECTED_APPLICATIONS = 43
+EXPECTED_BASICS = sum(
+    1 for p in (SOURCE_ROOT / "content/wiki/basics").glob("*.md") if p.name != "_index.md"
+)
+EXPECTED_APPLICATIONS = sum(
+    1 for p in (SOURCE_ROOT / "content/applications").glob("*.md") if p.name != "_index.md"
+)
 # ECMAScript whitespace, used by /\s+/ and the existing portal.js normalizer.
 JS_SPACE = r"[\u0009-\u000d\u0020\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]"
 SEARCH_STRIP = re.compile(JS_SPACE + r"|[\-‐‑–—_·]")
@@ -144,8 +151,8 @@ def source_entries(checks, source_root, folder, flag):
             text = path.read_text(encoding="utf-8")
             if not text.startswith("---"):
                 raise ValueError("missing front matter")
-            # These release entries deliberately use JSON in YAML front matter.
-            params = json.loads(text.split("---", 2)[1])
+            # Hugo accepts YAML front matter, including the older JSON objects.
+            params = yaml.safe_load(text.split("---", 2)[1])
             if not isinstance(params, dict):
                 raise ValueError("front matter must be an object")
             if not params.get(flag):
@@ -155,7 +162,7 @@ def source_entries(checks, source_root, folder, flag):
                 raise ValueError("unexpected slug: " + str(slug))
             entries.append({"slug": slug, "url": "/" + folder + "/" + slug + "/",
                             "params": params, "file": path})
-        except (OSError, ValueError, TypeError) as error:
+        except (OSError, ValueError, TypeError, yaml.YAMLError) as error:
             errors.append(str(path.relative_to(source_root)) + ": " + str(error))
     checks.record(folder + "_source_format", not errors, "errors=" + repr(errors))
     return entries
@@ -326,7 +333,7 @@ def check_release(root, forbidden_titles, forbidden_slugs, minimum_svg, baseline
     required_nav = [("首页", "/"), ("基础知识", "/wiki/basics/"),
                     ("型号资料", "/wiki/"), ("应用场景", "/applications/"),
                     ("技术专题", "/topics/"), ("公司品牌", "/companies/"),
-                    ("文章归档", "/archives/")]
+                    ("博客", "/archives/")]
     for path, active in (("/", "/"), ("/wiki/", "/wiki/"),
                          ("/wiki/basics/", "/wiki/basics/"),
                          ("/applications/", "/applications/"),

@@ -1,23 +1,29 @@
 ---
-title: "KTH7801"
-description: "KTH7801是KTH78霍尔角度系列成员；接口和编码格式按具体封装及后缀区分。"
+title: KTH7801
+description: KTH7801 是 Hall 绝对角度编码器，来源列出数字、增量与 PWM 等接口，可用于电机位置和旋转机构反馈；具体接口组合与车规等级需要按订货资料核对。
 wiki: true
-wiki_type: "model"
+wiki_type: model
 wiki_rank: 209
 seed_count: 0
-lastmod: "2026-10-24"
-related_companies: ["昆泰芯"]
-wiki_category: "数字角度"
-catalog_vendor: "昆泰芯"
-catalog_type: "数字角度"
-catalog_form: "芯片"
-search_aliases: ["KTH7801"]
-official_url: "https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html"
-document_version: "官方公开产品页或目录，核对：2026-10-18"
+lastmod: '2026-10-30'
+related_companies:
+- 昆泰芯
+wiki_category: 数字角度
+catalog_vendor: 昆泰芯
+catalog_type: 数字角度
+catalog_form: 芯片
+search_aliases:
+- KTH7801
+official_url: https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html
+document_version: 版本以链接文件名及原件为准；公开链接核对：2026-10-30
 model_card: true
-series_parent: "kth78"
-datasheet_url: "https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7801%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf"
-datasheet_label: "KTH7801 官方产品手册"
+series_parent: kth78
+datasheet_url: https://chat.connteck.com/downloads/KTH7801/KTH7801_Datasheet_CN.pdf
+datasheet_label: 数据手册原链接
+catalog_source: https://chat.connteck.com/products/angle/KTH7801/
+product_image: /images/catalog/kth7801-original-figure.png
+product_image_caption: KTH7801 SOP-8引脚与磁感中心（原手册第7页）
+product_image_source: https://conntek.github.io/files/KTH7801%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf#page=7
 ---
 
 ## 核心参数
@@ -61,3 +67,30 @@ QN16与SOP8的输出组合不同，替换时先核对引脚。绝对值读数用
 - [KTH7801 官方资料](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html)
 
 - [KTH7801 官方产品手册（PDF）](https://www.conntek.com.cn/api/resource/freeDownload?name=KTH7801%20%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C.pdf)
+
+## 选型补充
+
+### 电机反馈先区分机械角和电角
+
+传感器输出机械角，换向所需电角还取决于电机极对数、安装方向和电角零点。设置完角度方向与零点后，应在目标转速下比较位置与控制采样的时间关系，避免静态正确而高速换向偏移。
+
+### 多接口需要逐项核对引脚
+
+SPI/SSI 读取、ABZ 计数和 PWM 采样使用不同主控资源。应根据完整封装的复用关系选择可用组合，同时检查未用输入的处理要求，不从“多接口”描述推断任意信号都能同时启用。
+
+### 车规与功能安全资料各自核验
+
+AEC-Q100 是器件可靠性资格口径，故障诊断则需要具体状态位和测试条件。汽车系统仍需核对完整订货型号、资格文件及失效响应，不能把网站的功能安全措辞直接写成整机安全等级保证。
+
+
+## 公开资料与型号核对
+
+来源首屏和介绍列UVW，所示16脚表未出现UVW；另列SOP8但未给对应完整引脚表，输出组合待手册确认。
+
+源页AEC-Q100 Grade 0与−40～150°C的并列口径需核对实际资格文件，不将网站标签作为等级证明。
+
+按完整型号、等级和版本选择手册。公开链接核对日期：2026-10-30。
+
+- [KTH7801_Datasheet_CN.pdf](https://chat.connteck.com/downloads/KTH7801/KTH7801_Datasheet_CN.pdf)
+
+[来源产品页](https://chat.connteck.com/products/angle/KTH7801/) · [昆泰芯型号目录](/wiki/?vendor=昆泰芯)

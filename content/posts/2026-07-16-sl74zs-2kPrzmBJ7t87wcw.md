@@ -3,6 +3,7 @@ title: "判错一段，指尖弹出 37 毫米——两个编码器装进机器�
 date: 2026-07-16T00:00:00+08:00
 slug: "sl74zs-2kPrzmBJ7t87wcw"
 description: "·判错一段，关节跳 24°、指尖弹出 37 毫米——而这只手的标称精度是 ±0.2 毫米。"
+tags: ["多圈编码器", "自校准", "机器人关节"]
 original: "https://mp.weixin.qq.com/s/sl74zs-2kPrzmBJ7t87wcw"
 ---
 

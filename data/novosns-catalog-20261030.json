@@ -1,0 +1,1230 @@
+{
+  "date": "2026-10-30",
+  "normalization_rule": "MT订货号按第一个连字符前完整型号归一，保留GT/CT/QT/SGT/SJT/QB/QC等；NSM型号未证实可按相同规则截断，model仅为分组检索键，完整订货号及连字符后的资格/配置必须保留。",
+  "scope_notes": [
+    "工业编码器与汽车角度传感器合计221个完整OPN；另纳入位置ASSP目录两种编码解码/细分器，共223个OPN、36个检索分组。MT可规范为完整前缀型号，NSM保留完整订货号的资格和配置部分。",
+    "线性位置目录已核：其产品为普通线性Hall，未因名称含位置而纳入编码器。",
+    "磁传感器菜单未出现独立TMR或光电编码器分类；不把应用“替代光电”写成器件光电原理，也不把AMR写成TMR。",
+    "官网findSummaryList不带id默认仅100条；本次不用该默认响应判定全量，采用各分类findList返回完整productList。",
+    "36个检索分组不等于已证实36个可去掉所有连字符后缀的独立核心型号；MT共23个规范型号，NSM共13个分组容器，NSM资格以完整OPN显示。"
+  ],
+  "counts": {
+    "included_orderables": 223,
+    "official_common_names": 18,
+    "unique_pdf_urls": 25,
+    "unique_image_urls": 18,
+    "normalized_model_groups": 36,
+    "MT_normalized_models": 23,
+    "NSM_index_groups": 13
+  },
+  "entries": [
+    {
+      "model": "MT6620GA",
+      "slug": "mt6620ga",
+      "full_order_codes": [
+        "MT6620GA-ACH-R",
+        "MT6620GA-AKT-R",
+        "MT6620GA-STD-R"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6620GA-ACH-R",
+      "pdfs": [
+        {
+          "label": "MT6620_Rev.1.0_CN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Ksm5bgqAnoaChwx3v5Yc50Qpn2b.pdf"
+        },
+        {
+          "label": "MT6620_Rev.1.0_EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Rb6dbaacgobq1RxO5EBcLEcYnJg.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/e289152f5761c653.png",
+        "sha256": "e289152f5761c65367dc6e0b411787c0c4e91b0e5c801fdbb8254fa22cefac76",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/EWtpbqabtoN8Ljx1J6qcsJmknHd.png"
+      },
+      "series_parent": "mt6620",
+      "body_characters": 2161,
+      "kind": "磁栅位置与角度"
+    },
+    {
+      "model": "MT6701CT",
+      "slug": "mt6701ct",
+      "full_order_codes": [
+        "MT6701CT-A200-R",
+        "MT6701CT-A32-R",
+        "MT6701CT-A360-R",
+        "MT6701CT-A360T-R",
+        "MT6701CT-A400-R",
+        "MT6701CT-A400T-R",
+        "MT6701CT-A457-R",
+        "MT6701CT-A48-R",
+        "MT6701CT-A50-R",
+        "MT6701CT-A520-R",
+        "MT6701CT-A600-R",
+        "MT6701CT-A64-R",
+        "MT6701CT-A682-R",
+        "MT6701CT-A697-R",
+        "MT6701CT-A700-R",
+        "MT6701CT-A720-R",
+        "MT6701CT-A722-R",
+        "MT6701CT-A800-R",
+        "MT6701CT-AAD-R",
+        "MT6701CT-ABD-R",
+        "MT6701CT-ACD-R",
+        "MT6701CT-ACV-R",
+        "MT6701CT-AKD-R",
+        "MT6701CT-AKE-R",
+        "MT6701CT-LAA-R",
+        "MT6701CT-LAV-R",
+        "MT6701CT-P500-R",
+        "MT6701CT-SHC-R",
+        "MT6701CT-ST8-R",
+        "MT6701CT-STD-R",
+        "MT6701CT-STF-R",
+        "MT6701CT-STG-R",
+        "MT6701CT-STV-R",
+        "MT6701CT-U3D-R",
+        "MT6701CT-U4D-R"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6701CT-A200-R",
+      "pdfs": [
+        {
+          "label": "MT6701_Datasheet_Rev.1.9.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/XltRb0nAToicoixcUp7c5OIqn3b.pdf"
+        },
+        {
+          "label": "MT6701_Datasheet_Rev.1.9_中文版.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/M7hob1brwoHm6tx8gGgc156nn5c.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "mt6701",
+      "body_characters": 11899,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6701QT",
+      "slug": "mt6701qt",
+      "full_order_codes": [
+        "MT6701QT-A16",
+        "MT6701QT-A32",
+        "MT6701QT-A64",
+        "MT6701QT-A800",
+        "MT6701QT-A900",
+        "MT6701QT-A9D",
+        "MT6701QT-AAD",
+        "MT6701QT-ABD",
+        "MT6701QT-ACD",
+        "MT6701QT-ACE",
+        "MT6701QT-ACS",
+        "MT6701QT-P500",
+        "MT6701QT-STD"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6701QT-A16",
+      "pdfs": [
+        {
+          "label": "MT6701_Datasheet_Rev.1.9.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/XltRb0nAToicoixcUp7c5OIqn3b.pdf"
+        },
+        {
+          "label": "MT6701_Datasheet_Rev.1.9_中文版.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/M7hob1brwoHm6tx8gGgc156nn5c.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/36ddf827b24fee09.png",
+        "sha256": "36ddf827b24fee0964f1ed4ca610d9eacea4f8a1dbfc9c7e23003e64a9341dbd",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/RFHEbF85Io209CxN8y7ciOPKnSf.png"
+      },
+      "series_parent": "mt6701",
+      "body_characters": 4871,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6813CT",
+      "slug": "mt6813ct",
+      "full_order_codes": [
+        "MT6813CT-LAC-R",
+        "MT6813CT-PAD-R",
+        "MT6813CT-PBD-R",
+        "MT6813CT-PCD-R"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6813CT-LAC-R",
+      "pdfs": [
+        {
+          "label": "DatasheetEN)MT6813_Rev.3.1.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Xmfvb3avzoZOiixA6OtcMz8RnEe.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": null,
+      "body_characters": 2136,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6813QT",
+      "slug": "mt6813qt",
+      "full_order_codes": [
+        "MT6813QT-LAD",
+        "MT6813QT-PAD"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6813QT-LAD",
+      "pdfs": [
+        {
+          "label": "DatasheetEN)MT6813_Rev.3.1.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Xmfvb3avzoZOiixA6OtcMz8RnEe.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/36ddf827b24fee09.png",
+        "sha256": "36ddf827b24fee0964f1ed4ca610d9eacea4f8a1dbfc9c7e23003e64a9341dbd",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/RFHEbF85Io209CxN8y7ciOPKnSf.png"
+      },
+      "series_parent": null,
+      "body_characters": 1476,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6816CT",
+      "slug": "mt6816ct",
+      "full_order_codes": [
+        "MT6816CT-A100-R",
+        "MT6816CT-A200-R",
+        "MT6816CT-A30-R",
+        "MT6816CT-A360-R",
+        "MT6816CT-A400-R",
+        "MT6816CT-A500-R",
+        "MT6816CT-A600-R",
+        "MT6816CT-A6D-R",
+        "MT6816CT-A780-R",
+        "MT6816CT-A9D-R",
+        "MT6816CT-AAH-R",
+        "MT6816CT-AAL-R",
+        "MT6816CT-ABD-R",
+        "MT6816CT-ACD-R",
+        "MT6816CT-ACE-R",
+        "MT6816CT-ACG-R",
+        "MT6816CT-ACH-R",
+        "MT6816CT-ACL-R",
+        "MT6816CT-ACP-R",
+        "MT6816CT-ACS-R",
+        "MT6816CT-ACT-R",
+        "MT6816CT-ACV-R",
+        "MT6816CT-ADS-R",
+        "MT6816CT-AED-R",
+        "MT6816CT-AKD-R",
+        "MT6816CT-AKH-R",
+        "MT6816CT-AKK-R",
+        "MT6816CT-H600-R",
+        "MT6816CT-STD-R",
+        "MT6816CT-STH-R",
+        "MT6816CT-STT-R",
+        "MT6816CT-U5D-R",
+        "MT6816CT-U7D-R"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6816CT-A100-R",
+      "pdfs": [
+        {
+          "label": "DatasheetCN)MT6816_Rev.2.1.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/ZAe9bnX7ToO8zcxT5P5cXsednXe.pdf"
+        },
+        {
+          "label": "MT6816_Rev.2.1.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/FyBlbe4GQoeeAbx6X2Rc2pMQnGe.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "mt6816",
+      "body_characters": 11212,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6825GT",
+      "slug": "mt6825gt",
+      "full_order_codes": [
+        "MT6825GT-A1D-R",
+        "MT6825GT-A1T-R",
+        "MT6825GT-A360-R",
+        "MT6825GT-C1T-R",
+        "MT6825GT-C4D-R",
+        "MT6825GT-CDD-R",
+        "MT6825GT-D1H-R",
+        "MT6825GT-DHV-R",
+        "MT6825GT-E1T-R",
+        "MT6825GT-E2D-R",
+        "MT6825GT-EED-R",
+        "MT6825GT-EEH-R",
+        "MT6825GT-EEN-R",
+        "MT6825GT-J4D-R",
+        "MT6825GT-J4E-R",
+        "MT6825GT-J5D-R",
+        "MT6825GT-K4D-R",
+        "MT6825GT-LL1-R",
+        "MT6825GT-LLD-R",
+        "MT6825GT-M1T-R",
+        "MT6825GT-M2D-R",
+        "MT6825GT-M4D-R",
+        "MT6825GT-M4F-R",
+        "MT6825GT-M4V-R",
+        "MT6825GT-M5D-R",
+        "MT6825GT-M5V-R",
+        "MT6825GT-M5VF-R",
+        "MT6825GT-MM1-R",
+        "MT6825GT-MMD-R",
+        "MT6825GT-PP1-R",
+        "MT6825GT-QQ1-R",
+        "MT6825GT-STD-R",
+        "MT6825GT-STD1-R",
+        "MT6825GT-STF-R",
+        "MT6825GT-STT-R"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6825GT-A1D-R",
+      "pdfs": [
+        {
+          "label": "DatasheetMT6825_Rev.1.8.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/IJvVbdAIQoQJ8wxFSw1ccWRundc.pdf"
+        },
+        {
+          "label": "MT6825_Rev.1.8.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/CSFRbWrSFomtbyx6BDjc5qVAnbd.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/c7e90e5222cb61b2.png",
+        "sha256": "c7e90e5222cb61b248492c7900a30b87b10c4d29141be6114ca3c193b407d6ed",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocqAPxpD51c2RJbn8b.png"
+      },
+      "series_parent": null,
+      "body_characters": 12122,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6826SGT",
+      "slug": "mt6826sgt",
+      "full_order_codes": [
+        "MT6826SGT-ACD-R",
+        "MT6826SGT-AKD-R",
+        "MT6826SGT-AKH-R",
+        "MT6826SGT-APH-R",
+        "MT6826SGT-STD-R"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6826SGT-ACD-R",
+      "pdfs": [
+        {
+          "label": "MT6826S_Datasheet_Rev.1.1-CN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Fl4kbt78Zo59Hxx3EbecPPldnOe.pdf"
+        },
+        {
+          "label": "MT6826S_Datasheet_Rev.1.1-EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/IhywbstEKoQqmcxud7JcXPDJngb.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/c7e90e5222cb61b2.png",
+        "sha256": "c7e90e5222cb61b248492c7900a30b87b10c4d29141be6114ca3c193b407d6ed",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocqAPxpD51c2RJbn8b.png"
+      },
+      "series_parent": "mt6826s",
+      "body_characters": 2746,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6826SJT",
+      "slug": "mt6826sjt",
+      "full_order_codes": [
+        "MT6826SJT-ACD",
+        "MT6826SJT-AKD",
+        "MT6826SJT-STD"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6826SJT-ACD",
+      "pdfs": [
+        {
+          "label": "MT6826S_Datasheet_Rev.1.1-CN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Fl4kbt78Zo59Hxx3EbecPPldnOe.pdf"
+        },
+        {
+          "label": "MT6826S_Datasheet_Rev.1.1-EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/IhywbstEKoQqmcxud7JcXPDJngb.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/ec2add0a8a6fdc81.png",
+        "sha256": "ec2add0a8a6fdc815b5d41e1bcf6866a998e87cb5661ab0b1e1b02cf99a3afce",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XxYybQMMFotD7Kxh3H3cFkdBnMb.png"
+      },
+      "series_parent": "mt6826s",
+      "body_characters": 2157,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6835GT",
+      "slug": "mt6835gt",
+      "full_order_codes": [
+        "MT6835GT-A10K-R",
+        "MT6835GT-AED-R",
+        "MT6835GT-AGD-R",
+        "MT6835GT-M5F-R",
+        "MT6835GT-M5H-R",
+        "MT6835GT-STD-R"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6835GT-A10K-R",
+      "pdfs": [
+        {
+          "label": "Datasheet(CN)MT6835_Rev.1.3.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/GoD3bN8zQom5Q3xWEBXcFgJInub.pdf"
+        },
+        {
+          "label": "MT6835_Rev.1.3.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/UiuwbbXLMoytTcxKiaTcLwLwnyh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/c7e90e5222cb61b2.png",
+        "sha256": "c7e90e5222cb61b248492c7900a30b87b10c4d29141be6114ca3c193b407d6ed",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocqAPxpD51c2RJbn8b.png"
+      },
+      "series_parent": "mt6835",
+      "body_characters": 3322,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6901QB",
+      "slug": "mt6901qb",
+      "full_order_codes": [
+        "MT6901QB-STD"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/MT6901QB-STD",
+      "pdfs": [],
+      "image": {
+        "path": "/images/wiki/novosns/5018253ad18ae2e7.png",
+        "sha256": "5018253ad18ae2e7a24be186ef940077ee602af302758469bc995a25ebb35057",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/JNVsb8r5AosZ30xKUSJcuG3cn9f.png"
+      },
+      "series_parent": "mt6901",
+      "body_characters": 1303,
+      "kind": "电涡流角度"
+    },
+    {
+      "model": "NSM3011A",
+      "slug": "nsm3011a",
+      "full_order_codes": [
+        "NSM3011A-DSPR",
+        "NSM3011A-Q1SPR"
+      ],
+      "category": [
+        "工业编码器",
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3011A-DSPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "nsm301x",
+      "body_characters": 2501,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3011B",
+      "slug": "nsm3011b",
+      "full_order_codes": [
+        "NSM3011B-DSPR",
+        "NSM3011B-Q1SPR"
+      ],
+      "category": [
+        "工业编码器",
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3011B-DSPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "nsm301x",
+      "body_characters": 2482,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3011L",
+      "slug": "nsm3011l",
+      "full_order_codes": [
+        "NSM3011L-DSPR"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3011L-DSPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "nsm301x",
+      "body_characters": 1609,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3012A",
+      "slug": "nsm3012a",
+      "full_order_codes": [
+        "NSM3012A-DSPR",
+        "NSM3012A-Q0SPR",
+        "NSM3012A-Q1SPR",
+        "NSM3012A-QSPR"
+      ],
+      "category": [
+        "工业编码器",
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3012A-DSPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "nsm301x",
+      "body_characters": 3173,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3012B",
+      "slug": "nsm3012b",
+      "full_order_codes": [
+        "NSM3012B-DSPR",
+        "NSM3012B-Q1SPR"
+      ],
+      "category": [
+        "工业编码器",
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3012B-DSPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "nsm301x",
+      "body_characters": 2480,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3012S",
+      "slug": "nsm3012s",
+      "full_order_codes": [
+        "NSM3012S-DSPR"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3012S-DSPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "nsm301x",
+      "body_characters": 1608,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3013A",
+      "slug": "nsm3013a",
+      "full_order_codes": [
+        "NSM3013A-DSPR",
+        "NSM3013A-Q1SPR"
+      ],
+      "category": [
+        "工业编码器",
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3013A-DSPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "nsm301x",
+      "body_characters": 2531,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3013B",
+      "slug": "nsm3013b",
+      "full_order_codes": [
+        "NSM3013B-DSPR",
+        "NSM3013B-Q1SPR"
+      ],
+      "category": [
+        "工业编码器",
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3013B-DSPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "nsm301x",
+      "body_characters": 2529,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3502",
+      "slug": "nsm3502",
+      "full_order_codes": [
+        "NSM3502-IND-Q1QWAR",
+        "NSM3502-STD-Q1QWAR"
+      ],
+      "category": [
+        "工业编码器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3502-IND-Q1QWAR",
+      "pdfs": [
+        {
+          "label": "NSM3502_Datasheet_V1.0_CN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AgawbuVmLoE8A2xS2CpcwMzonPf.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/7bdfbafacaf78d0c.png",
+        "sha256": "7bdfbafacaf78d0c633dbd213ded4d112152784acf586714673bababebdb47e8",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/NaIRbbdtFoRioRxZf7FcFqconbe.png"
+      },
+      "series_parent": null,
+      "body_characters": 1800,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6501CT",
+      "slug": "mt6501ct",
+      "full_order_codes": [
+        "MT6501CT-AAV-R",
+        "MT6501CT-ABD-R",
+        "MT6501CT-ACD-R",
+        "MT6501CT-ADD-R",
+        "MT6501CT-ADV-R",
+        "MT6501CT-AED-R",
+        "MT6501CT-AFD-R",
+        "MT6501CT-AGD-R",
+        "MT6501CT-AHD-R",
+        "MT6501CT-AHV-R",
+        "MT6501CT-AJD-R",
+        "MT6501CT-AKD-R",
+        "MT6501CT-ALD-R",
+        "MT6501CT-AMD-R",
+        "MT6501CT-AND-R",
+        "MT6501CT-AOD-R",
+        "MT6501CT-APD-R",
+        "MT6501CT-P1K-R",
+        "MT6501CT-P1KA-R",
+        "MT6501CT-P1KB-R",
+        "MT6501CT-P1KC-R",
+        "MT6501CT-P250-R",
+        "MT6501CT-P250V-R",
+        "MT6501CT-P500-R",
+        "MT6501CT-PAD-R",
+        "MT6501CT-PBD-R",
+        "MT6501CT-PBF-R",
+        "MT6501CT-PJ1-R",
+        "MT6501CT-PJ2-R",
+        "MT6501CT-PJ3-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6501CT-AAV-R",
+      "pdfs": [
+        {
+          "label": "DatasheetCN)MT6501_Rev.1.9.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/EXBnbYCABoa0IFxcmYhc5eC5nXf.pdf"
+        },
+        {
+          "label": "MT6501_Rev.1.9.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Mt9bb7hEvoTXOex3H3gcHjlwn0a.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": null,
+      "body_characters": 10491,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6501GT",
+      "slug": "mt6501gt",
+      "full_order_codes": [
+        "MT6501GT-ABD-R",
+        "MT6501GT-ADD-R",
+        "MT6501GT-ADDC-R",
+        "MT6501GT-P1KB-R",
+        "MT6501GT-PB1-R",
+        "MT6501GT-PGQ1-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6501GT-ABD-R",
+      "pdfs": [
+        {
+          "label": "DatasheetCN)MT6501_Rev.1.9.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/EXBnbYCABoa0IFxcmYhc5eC5nXf.pdf"
+        },
+        {
+          "label": "MT6501_Rev.1.9.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Mt9bb7hEvoTXOex3H3gcHjlwn0a.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/c7e90e5222cb61b2.png",
+        "sha256": "c7e90e5222cb61b248492c7900a30b87b10c4d29141be6114ca3c193b407d6ed",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocqAPxpD51c2RJbn8b.png"
+      },
+      "series_parent": null,
+      "body_characters": 3559,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6511CT",
+      "slug": "mt6511ct",
+      "full_order_codes": [
+        "MT6511CT-AED-R",
+        "MT6511CT-PMP-R",
+        "MT6511CT-SPH-R",
+        "MT6511CT-SPI-R",
+        "MT6511CT-SPICH-R",
+        "MT6511CT-STD-R",
+        "MT6511CT-STP-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6511CT-AED-R",
+      "pdfs": [
+        {
+          "label": "MT6511_Datasheet_Rev.1.3.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Os0abZrRvoUzKpx8NrfcmuWJnOd.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": null,
+      "body_characters": 2836,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6511GT",
+      "slug": "mt6511gt",
+      "full_order_codes": [
+        "MT6511GT-LFC-R",
+        "MT6511GT-PMP-R",
+        "MT6511GT-SPI-R",
+        "MT6511GT-STD-R",
+        "MT6511GT-STP-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6511GT-LFC-R",
+      "pdfs": [
+        {
+          "label": "MT6511_Datasheet_Rev.1.3.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Os0abZrRvoUzKpx8NrfcmuWJnOd.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/c7e90e5222cb61b2.png",
+        "sha256": "c7e90e5222cb61b248492c7900a30b87b10c4d29141be6114ca3c193b407d6ed",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocqAPxpD51c2RJbn8b.png"
+      },
+      "series_parent": null,
+      "body_characters": 2482,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6521CT",
+      "slug": "mt6521ct",
+      "full_order_codes": [
+        "MT6521CT-STD-Q-R",
+        "MT6521CT-STP-Q-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6521CT-STD-Q-R",
+      "pdfs": [
+        {
+          "label": "Datasheet(CN)MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/PgkFb2I4ioeiFKxvAAjc5gwpnCh.pdf"
+        },
+        {
+          "label": "MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/LGpzbWCZnosP54x3qnScgyBanOc.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": "mt6521",
+      "body_characters": 2373,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6521GT",
+      "slug": "mt6521gt",
+      "full_order_codes": [
+        "MT6521GT-STD-Q-R",
+        "MT6521GT-STP1-Q-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6521GT-STD-Q-R",
+      "pdfs": [
+        {
+          "label": "Datasheet(CN)MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/PgkFb2I4ioeiFKxvAAjc5gwpnCh.pdf"
+        },
+        {
+          "label": "MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/LGpzbWCZnosP54x3qnScgyBanOc.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/c7e90e5222cb61b2.png",
+        "sha256": "c7e90e5222cb61b248492c7900a30b87b10c4d29141be6114ca3c193b407d6ed",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocqAPxpD51c2RJbn8b.png"
+      },
+      "series_parent": "mt6521",
+      "body_characters": 2371,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6522CT",
+      "slug": "mt6522ct",
+      "full_order_codes": [
+        "MT6522CT-STD-Q-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6522CT-STD-Q-R",
+      "pdfs": [
+        {
+          "label": "Datasheet(CN)MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/PgkFb2I4ioeiFKxvAAjc5gwpnCh.pdf"
+        },
+        {
+          "label": "MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/LGpzbWCZnosP54x3qnScgyBanOc.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": null,
+      "body_characters": 1965,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6522GT",
+      "slug": "mt6522gt",
+      "full_order_codes": [
+        "MT6522GT-STD-Q-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6522GT-STD-Q-R",
+      "pdfs": [
+        {
+          "label": "Datasheet(CN)MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/PgkFb2I4ioeiFKxvAAjc5gwpnCh.pdf"
+        },
+        {
+          "label": "MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/LGpzbWCZnosP54x3qnScgyBanOc.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/c7e90e5222cb61b2.png",
+        "sha256": "c7e90e5222cb61b248492c7900a30b87b10c4d29141be6114ca3c193b407d6ed",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocqAPxpD51c2RJbn8b.png"
+      },
+      "series_parent": null,
+      "body_characters": 1984,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6523CT",
+      "slug": "mt6523ct",
+      "full_order_codes": [
+        "MT6523CT-STD-Q-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6523CT-STD-Q-R",
+      "pdfs": [
+        {
+          "label": "Datasheet(CN)MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/PgkFb2I4ioeiFKxvAAjc5gwpnCh.pdf"
+        },
+        {
+          "label": "MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/LGpzbWCZnosP54x3qnScgyBanOc.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": null,
+      "body_characters": 1967,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6523GT",
+      "slug": "mt6523gt",
+      "full_order_codes": [
+        "MT6523GT-STD-Q-R"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/MT6523GT-STD-Q-R",
+      "pdfs": [
+        {
+          "label": "Datasheet(CN)MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/PgkFb2I4ioeiFKxvAAjc5gwpnCh.pdf"
+        },
+        {
+          "label": "MT652x_Datasheet_Rev.1.2.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/LGpzbWCZnosP54x3qnScgyBanOc.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/c7e90e5222cb61b2.png",
+        "sha256": "c7e90e5222cb61b248492c7900a30b87b10c4d29141be6114ca3c193b407d6ed",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/ABPwbOVGbocqAPxpD51c2RJbn8b.png"
+      },
+      "series_parent": null,
+      "body_characters": 1983,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3011AD",
+      "slug": "nsm3011ad",
+      "full_order_codes": [
+        "NSM3011AD-Q1SPR"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3011AD-Q1SPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": null,
+      "body_characters": 1919,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3012AF",
+      "slug": "nsm3012af",
+      "full_order_codes": [
+        "NSM3012AF-Q0SPR",
+        "NSM3012AF-Q1SPR"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3012AF-Q0SPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": null,
+      "body_characters": 2214,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3012BF",
+      "slug": "nsm3012bf",
+      "full_order_codes": [
+        "NSM3012BF-Q0SPR",
+        "NSM3012BF-Q0SWR",
+        "NSM3012BF-Q1SPR"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3012BF-Q0SPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": null,
+      "body_characters": 2505,
+      "kind": "数字角度"
+    },
+    {
+      "model": "NSM3012BZ",
+      "slug": "nsm3012bz",
+      "full_order_codes": [
+        "NSM3012BZ-Q1SPR"
+      ],
+      "category": [
+        "汽车角度传感器"
+      ],
+      "source": "https://www.novosns.com/product/NSM3012BZ-Q1SPR",
+      "pdfs": [
+        {
+          "label": "NSM3011_3012_3013_Datasheet_V1.0_CN-715.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/Qtsqb2adCoN0gQx6PylcDoOXnGd.pdf"
+        },
+        {
+          "label": "NSM3011_3012_3013_DatasheetV1.0EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/AXgrbYeOooyjNbxyorqcTYgLnMh.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/b48c45076127e433.png",
+        "sha256": "b48c45076127e4331b4518ca4234527740b000fb4c146de6a51ca049aeb75df4",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/XXBSbBZIOoqVo2x1VAhcWmfcnrg.png"
+      },
+      "series_parent": null,
+      "body_characters": 1941,
+      "kind": "数字角度"
+    },
+    {
+      "model": "MT6709QC",
+      "slug": "mt6709qc",
+      "full_order_codes": [
+        "MT6709QC-STD"
+      ],
+      "category": [
+        "位置传感器专用芯片"
+      ],
+      "source": "https://www.novosns.com/product/MT6709QC-STD",
+      "pdfs": [
+        {
+          "label": "MT6709_Rev.1.0_CN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/ZMKGbLDV5oqeE9xMt4OcXAFmndc.pdf"
+        },
+        {
+          "label": "MT6709_Rev.1.0_EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/XCk7btIiBofFcXx8MuNcyrcWnMg.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/7bdfbafacaf78d0c.png",
+        "sha256": "7bdfbafacaf78d0c633dbd213ded4d112152784acf586714673bababebdb47e8",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/Ghdxb9VfOo57XoxOChCc68p5nMd.png"
+      },
+      "series_parent": null,
+      "body_characters": 1597,
+      "kind": "编码器信号处理"
+    },
+    {
+      "model": "MT6728QC",
+      "slug": "mt6728qc",
+      "full_order_codes": [
+        "MT6728QC-STD"
+      ],
+      "category": [
+        "位置传感器专用芯片"
+      ],
+      "source": "https://www.novosns.com/product/MT6728QC-STD",
+      "pdfs": [
+        {
+          "label": "MT6728_Rev.1.0_CN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/PdwKbt7WZoFHgOxflFMcexsmnof.pdf"
+        },
+        {
+          "label": "MT6728_Rev.1.0_EN.pdf",
+          "url": "https://wwwapi.novosns.com/dms/userfiles/docs/IazpbkU4uo8tXDxPRVlczy18nQc.pdf"
+        }
+      ],
+      "image": {
+        "path": "/images/wiki/novosns/7bdfbafacaf78d0c.png",
+        "sha256": "7bdfbafacaf78d0c633dbd213ded4d112152784acf586714673bababebdb47e8",
+        "source": "https://wwwapi.novosns.com/dms/userfiles/docs/DTmCbc32Jo1O0ex8RpvcuGUTnlc.png"
+      },
+      "series_parent": null,
+      "body_characters": 1663,
+      "kind": "编码器信号处理"
+    }
+  ]
+}

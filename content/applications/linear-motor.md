@@ -1,6 +1,29 @@
 ---
-{"title":"直线电机：测局部磁场，不等于知道全行程位置","description":"短行程磁体跟踪与光栅尺反馈各有边界，周期歧义、拼接和热膨胀需要单独预算。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"application-single","application_entry":true,"application_group":"工业与运动","weight":208,"related_basics":["optical-encoder","absolute-incremental","latency"],"reference_topic":"直线电机"}
+title: 直线电机：测局部磁场，不等于知道全行程位置
+description: 短行程磁体跟踪与光栅尺反馈各有边界，周期歧义、拼接和热膨胀需要单独预算。
+date: '2026-10-18T10:00:00+08:00'
+lastmod: '2026-10-24'
+layout: application-single
+application_entry: true
+application_group: 工业与运动
+weight: 208
+related_basics:
+- optical-encoder
+- absolute-incremental
+- latency
+reference_topic: 直线电机
+related_guides:
+- thermal-cycle-reversibility
+- parameter-conditions
+- linear-scale-thermal
+- reference-recovery
+related_model_slugs:
+- ktm5800
+- resolute-rl
+- smd-01b
 ---
+
+
 
 直线电机需要知道动子相对导轨的位置，而不是某根轴转了几圈。磁场跟踪、磁尺和光栅尺都能进入位置反馈设计，但量程、周期与安装条件不同，不能用一个“高分辨率”把它们归为同一方案。
 
@@ -24,3 +47,10 @@ Renishaw ATOM属于光学增量编码器系统，可配线性标尺。读头、�
 
 - [TI TMAG5170及线性位置参考设计入口](https://www.ti.com/product/TMAG5170)
 - [Renishaw ATOM光学增量系统](https://www.renishaw.com/en/atom-optical-incremental-encoder-series--37564)
+
+
+## 热起来后位置偏了，尺和基座要一起量
+
+[Renishaw热安装白皮书](https://www.renishaw.com/en/white-paper-mounting-encoder-scales-for-optimum-thermal-performance--44316)说明，标尺材料与固定方式共同影响热行为。先读[光学编码器](/wiki/basics/optical-encoder/)与[安装关系](/wiki/basics/mounting/)，不要把单周期细分能力当成长行程热稳定性。
+
+自设均匀自由膨胀的0.5m尺，热膨胀系数10µm/(m·°C)，升温10°C，长度变化为50µm；这不是ATOM系统的精度规格，约束安装后也不能照搬该值。测量时同时记录尺、基座和工作点温度，保留独立位移参考；若回到同温仍有残余，按[温度循环回测](/topics/guides/thermal-cycle-reversibility/)排查装配和基准，而非直接增加温补点。比较不同尺之前，用[参数条件核对](/topics/guides/parameter-conditions/)确认基准温度、安装状态及允许误差。

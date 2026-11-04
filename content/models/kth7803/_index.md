@@ -31,7 +31,7 @@ series_parent: "kth78"
 | 磁路 | 官网列支持离轴；系列磁场范围30～150mT，成员手册待核 |
 | 温度 | 官网新表−40～150°C |
 | 封装 | QFN-16L |
-| 证据层级 | 本页新增数值来自型号选型行；未取得独立7803正式手册，不套用7801全部保证值 |
+| 证据层级 | 参数来自KTH7803型号选型行；详细电参数、时序与保证条件待对应正式手册确认 |
 
 参数依据：[原厂产品与型号选型表](https://www.conntek.com.cn/html/web/product/magneticCurrentLinearSensingChip/hshrMagneticCodedAngleSensor/index.html)。
 

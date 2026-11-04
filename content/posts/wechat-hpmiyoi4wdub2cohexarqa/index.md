@@ -4,7 +4,7 @@ date: '2026-10-20T08:08:00+08:00'
 slug: wechat-hpmiyoi4wdub2cohexarqa
 description: MP Materials和通用汽车的美国稀土永磁供应链及电机验证进展。
 original: https://mp.weixin.qq.com/s/hPMIYOi4WDUB2cOHexarqA
-original_from: 首发于公众号「电机新材料平台」
+original_from: "首发于公众号「电机新材料平台」"
 tags:
 - 永磁体
 - 电机

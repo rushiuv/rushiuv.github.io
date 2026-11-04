@@ -3,6 +3,7 @@ title: "仿真里 95% 成功的机器人，到了现场为什么突然不会了�
 date: 2026-09-18T15:17:00+08:00
 slug: "xhFgYnlqNM4M8Uom54QTCw"
 description: "左边写着：95% in simulation。右边写着：95% in reality。中间一个大大的“不等于”。"
+tags: ["磁编码器", "非线性校准"]
 original: "https://mp.weixin.qq.com/s/xhFgYnlqNM4M8Uom54QTCw"
 ---
 

@@ -3,6 +3,7 @@ title: "英飞凌和纳芯微都吃下传感器业务，“传感器并购”这
 date: 2026-08-29T00:09:00+08:00
 slug: "lhz_zB6IGSUR6wLvzkFuzw"
 description: "我干的活就是跟磁传感、编码器打交道的，所以英飞凌和纳芯微两笔收购前后被同行转过来的时候，后面经常跟着一句："
+tags: ["非线性校准", "TMR", "AMR", "霍尔", "专利", "半导体产业", "投资"]
 original: "https://mp.weixin.qq.com/s/lhz_zB6IGSUR6wLvzkFuzw"
 companies: ["纳芯微", "麦歌恩", "英飞凌", "ams OSRAM"]
 ---

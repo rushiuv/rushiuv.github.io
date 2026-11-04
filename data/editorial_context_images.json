@@ -1,0 +1,141 @@
+{
+  "companies": {
+    "中芯国际": {
+      "image": "images/editorial/chromeos-fabrication-20261024.webp",
+      "alt": "晶圆制造与检测场景插画",
+      "caption": "晶圆制造与检测场景"
+    },
+    "intel": {
+      "image": "images/editorial/chromeos-fabrication-20261024.webp",
+      "alt": "晶圆制造与检测场景插画",
+      "caption": "晶圆制造与检测场景"
+    },
+    "雷尼绍": {
+      "image": "images/editorial/chromeos-optical-20261024.webp",
+      "alt": "精密测量与光学读出场景插画",
+      "caption": "精密测量与光学读出场景"
+    },
+    "海德汉": {
+      "image": "images/editorial/chromeos-optical-20261024.webp",
+      "alt": "精密测量与光学读出场景插画",
+      "caption": "精密测量与光学读出场景"
+    },
+    "seiko-npc": {
+      "image": "images/editorial/chromeos-optical-20261024.webp",
+      "alt": "精密测量与光学读出场景插画",
+      "caption": "精密测量与光学读出场景"
+    },
+    "broadcom": {
+      "image": "images/editorial/chromeos-optical-20261024.webp",
+      "alt": "精密测量与光学读出场景插画",
+      "caption": "精密测量与光学读出场景"
+    },
+    "ic-haus": {
+      "image": "images/editorial/chromeos-optical-20261024.webp",
+      "alt": "精密测量与光学读出场景插画",
+      "caption": "精密测量与光学读出场景"
+    },
+    "posital": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "rls": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "maxon": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "ams-osram": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "tdk": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "melexis": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "mps": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "allegro": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "renesas": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "ti": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    },
+    "st": {
+      "image": "images/editorial/chromeos-magnetic-20261024.webp",
+      "alt": "位置反馈与器件应用场景插画",
+      "caption": "位置反馈与器件应用场景"
+    }
+  },
+  "generated": [
+    {
+      "name": "fabrication",
+      "path": "static/images/editorial/chromeos-fabrication-20261024.webp",
+      "original": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-45fd92bb-8581-4e76-ae18-20327892dc64.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "bytes": 122112,
+      "sha256": "c5cb8b94e48321006a22dbb439a97443c39bdfd6095c4674817f6c270c8fc582",
+      "generation": "built-in image_gen",
+      "style_reference": "static/images/editorial/chromeos-signals-20261018.webp",
+      "purpose": "editorial context only, not actual facility/product geometry",
+      "processing": "WebP encoding only, no crop or geometric change"
+    },
+    {
+      "name": "optical",
+      "path": "static/images/editorial/chromeos-optical-20261024.webp",
+      "original": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-797b1371-b349-4812-bdfc-4b74f3db8859.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "bytes": 142166,
+      "sha256": "81c18d8d133016dc689bfdcdbb78a856ef1da4b99c597735e9290bbd22fb651b",
+      "generation": "built-in image_gen",
+      "style_reference": "static/images/editorial/chromeos-signals-20261018.webp",
+      "purpose": "editorial context only, not actual facility/product geometry",
+      "processing": "WebP encoding only, no crop or geometric change"
+    },
+    {
+      "name": "magnetic",
+      "path": "static/images/editorial/chromeos-magnetic-20261024.webp",
+      "original": "/Users/mac/.codex/generated_images/01a16cec-7900-7a42-a515-77eff16de1cd/exec-82d92904-14f7-49de-9c3f-db7210319e04.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "bytes": 94502,
+      "sha256": "64e5685113b80da9d17736f3e5efc9d351bf5cf70f35987ddad320932446b871",
+      "generation": "built-in image_gen",
+      "style_reference": "static/images/editorial/chromeos-signals-20261018.webp",
+      "purpose": "editorial context only, not actual facility/product geometry",
+      "processing": "WebP encoding only, no crop or geometric change"
+    }
+  ]
+}

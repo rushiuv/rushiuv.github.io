@@ -3,6 +3,7 @@ title: "一群人开会做芯片＂人肉＂ LVS，最后验证了什么？当�
 date: 2026-08-02T00:00:00+08:00
 slug: "uPx1kud3SVlGbQaNxYyhjg"
 description: "当工具无法给出答案，我们最容易犯的错误，是用更多人的参与来替代更可靠的证据。"
+tags: ["芯片设计"]
 original: "https://mp.weixin.qq.com/s/uPx1kud3SVlGbQaNxYyhjg"
 ---芯片研发方法论
 

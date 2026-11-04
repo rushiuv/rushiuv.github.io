@@ -6,8 +6,7 @@ description: "作为电机磁性材料核心供应商，致力于磁石行业六
 original: "https://mp.weixin.qq.com/s/a5CKBZ-BMfJHG729JkNpSg"
 original_from: "转载自公众号「香磁磁业」"
 tags: ["磁编码器", "光电编码器", "TMR", "机器人关节", "稀土"]
----**请点击**香磁磁业关注我,设为★星标★
-
+---
 ![](/images/wx/c9395e24715dbaacfeb3f01a30a9ec78.webp)
 
 在伺服控制、机器人关节、AGV驱动、激光雷达乃至数控机床等现代机电系统中，精确获取旋转轴的位置与速度信息是实现闭环控制的关键。而承担这一任务的核心器件之一，就是旋转编码器。

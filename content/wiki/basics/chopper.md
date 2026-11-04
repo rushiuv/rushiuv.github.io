@@ -3,15 +3,19 @@
   "title": "斩波稳定：减小失调，不是消除全部磁误差",
   "description": "区分斩波、旋转电流和低通滤波，理解霍尔芯片的零点改善与动态代价。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "磁敏机理与开关",
-  "weight": 122,
-  "related_basics": ["hall-effect", "linear-hall", "latency", "bop-brp"]
+  "basic_group": "参数与误差",
+  "weight": 504,
+  "related_basics": [
+    "hall-effect",
+    "linear-hall",
+    "latency",
+    "bop-brp"
+  ]
 }
 ---
-
 没有磁场时，霍尔读数仍会偏离零点。器件不对称、应力和放大器失调，都会把一个本来不存在的磁场带进结果。斩波稳定针对的就是这类电子链路误差，不负责修正磁铁装偏。
 
 ## 把信号与失调分开处理

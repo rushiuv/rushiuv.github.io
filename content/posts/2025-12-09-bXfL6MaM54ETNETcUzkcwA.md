@@ -3,6 +3,7 @@ title: "房地产没塌，钱先塌了；然后它顺着味道钻进了芯片厂
 date: 2025-12-09T00:06:00+08:00
 slug: "bXfL6MaM54ETNETcUzkcwA"
 description: "城市的夜景越来越亮，楼市却越来越沉。倒是另一边，那些原本被嫌贵、嫌难、嫌烧钱的芯片企业，突然像从地下钻出的嫩芽，在资本这种“怕死又逐利”的风里越冒越硬。一个时代的兴趣正在换对象，经济的神经悄悄改线。"
+tags: ["投资"]
 original: "https://mp.weixin.qq.com/s/bXfL6MaM54ETNETcUzkcwA"
 ---
 

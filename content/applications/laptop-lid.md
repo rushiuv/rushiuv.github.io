@@ -1,35 +1,46 @@
 ---
-{"title":"笔记本与平板合盖检测：检测到磁体，不等于知道铰链角度","description":"磁开关适合生成开合事件，折叠姿态识别还需要检查磁路歧义、阈值窗口和外部磁附件。","date":"2026-10-18T10:00:00+08:00","lastmod":"2026-10-18","layout":"application-single","application_entry":true,"application_group":"消费电子","weight":9,"related_basics":["air-gap","magnetic-encoder","stray-field"],"reference_topic":"笔记本与平板合盖检测"}
+{
+  "title": "笔记本与平板合盖检测：检测到磁体，不等于知道铰链角度",
+  "description": "磁开关适合生成开合事件，折叠姿态识别还需要检查磁路歧义、阈值窗口和外部磁附件。",
+  "date": "2026-10-18T10:00:00+08:00",
+  "lastmod": "2026-10-27",
+  "layout": "application-single",
+  "application_entry": true,
+  "application_group": "消费电子",
+  "weight": 9,
+  "related_basics": [
+    "switch-polarity",
+    "bop-brp",
+    "amr",
+    "air-gap",
+    "stray-field"
+  ],
+  "reference_topic": "笔记本与平板合盖检测",
+  "related_guides": [
+    "rate-budget",
+    "magnetic-field-coordinates"
+  ]
+}
 ---
 
-在屏幕或键盘侧放置磁体，另一侧检测磁场，可以生成合盖与开盖事件。它回答的是“当前位置是否满足磁阈值条件”，不是连续铰链角度。对可翻转笔记本或折叠键盘，还要检查完全合盖和背折姿态是否产生相似磁场。
+合盖检测首先需要一个可靠事件：屏幕到了约定位置，系统可以休眠。磁开关测到的是敏感方向上的磁场越过阈值；想知道铰链转了多少，还需要连续读数和能区分各个姿态的磁路。这两种任务应在结构设计前分清。
 
-## 单轴开关与三维开关各有边界
+## 先选输出任务，再选敏感机理
 
-以开合事件为任务，比较检测轴与阈值，而不是给所有候选统一贴“角度传感器”标签：
+[TI DRV5032](https://www.ti.com/product/DRV5032)是按阈值输出状态的霍尔开关；[Allegro A1266](https://www.allegromicro.com/en/products/sense/switches-and-latches/switches/a1266)是三维磁开关。增加检测方向不代表得到三轴连续磁场，更不能直接计算任意铰链角度。
 
-| 候选 | 测量量或输出 | 适用边界 | 原厂来源 |
-|---|---|---|---|
-| TI DRV5032 | 霍尔开关状态 | 门限、极性、采样率按后缀选 | [详情](https://www.ti.com/product/DRV5032) |
-| Allegro A1266 | 三维磁开关 | 核对各轴或组合输出配置 | [详情](https://www.allegromicro.com/en/products/sense/switches-and-latches/switches/a1266) |
-| 昆泰芯 KTH4603 | XYZ全极霍尔开关 | 增加方向覆盖，仍是阈值事件 | [详情](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highlysensitive3dhallswitch/index.html) |
-| 昆泰芯 KTM1301 | 平面内感应的全极TMR开关 | 磁体路径须对准其敏感方向 | [具体型号表](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html) |
+现有候选中，[KTH4603](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/highlysensitive3dhallswitch/index.html)属于XYZ全极霍尔开关，[KTM1301](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html)属于平面内感应的全极TMR开关。比较时要对准具体后缀的敏感轴、阈值与输出逻辑，封装接近也不能据此换料。
 
-三维开关不是三轴连续磁场传感器，不能直接拿开关信号计算任意铰链角度。TMR与霍尔的敏感方向不同，也不是同封装即可换料。
+[村田AMR检测示例](https://www.murata.com/products/sensor/amr/overview/basic/example)给出不同磁体与器件相对位置的开关检测布局。它提醒的是磁路要与方向响应匹配；[AMR材料机理](/wiki/basics/amr/)本身不规定成品一定输出连续角度。
 
-选型时应核对实际订货后缀的检测方向、极性、工作与释放阈值及输出逻辑。不是所有带相近名称的版本都对同一磁体产生相同响应。
+## 磁滞窗口要覆盖结构容差
 
-## 设计一个可靠的开合窗口
+先沿真实开合轨迹测磁场，再按[动作与释放阈值](/wiki/basics/bop-brp/)画窗口：最弱磁体、最大气隙、最不利温度下，合盖仍应可靠触发；最强磁体、最小气隙时，明确打开的位置又应可靠释放。不能只测一台样机的典型触发角。
 
-关闭位置应在最弱磁体、最大装配气隙和温度变化下仍能触发；明确打开的位置又应在最强磁体与最小气隙下可靠释放。工作与释放阈值之间的磁滞有助于避免临界位置反复跳变，但它不能代替结构容差设计。
+磁滞可减少临界位置反复翻转，却不能消除完全合盖与背折姿态的歧义。若两种姿态在敏感轴上产生相同磁场，软件去抖也不能把它们重新区分。连续铰链测量应另核对磁场到角度的唯一映射。
 
-可以用缓慢开合曲线标出触发和释放时刻，再测试快速开盖及休眠唤醒。采样周期、系统去抖与操作系统处理都会增加响应时间，芯片输出翻转并不是屏幕立即亮起。
+## 响应验收带上采样和磁吸附件
 
-## 加上用户真正会放的附件
+DRV5032不同版本采用不同更新速率，低功耗与唤醒时间应按订货号一起核算。传感器观测、主控去抖和操作系统唤醒是三段时间，输出翻转不是屏幕立即点亮；具体做法见[速率预算](/topics/guides/rate-budget/)。
 
-验证应覆盖磁吸保护套、手机、耳机盒和外部磁体接近的情况，记录是否误休眠或无法唤醒；不同摆放方向不能只测一次。合盖信号也不能证明键盘已脱离、设备适合进入平板模式或铰链完好。若产品需要连续角度，应另建可观测的磁路或采用其他角度检测路线，而不是给二值开关追加更多软件位数。
-
-## 原厂资料
-
-- [TI DRV5032](https://www.ti.com/product/DRV5032)
-- [Allegro A1266](https://www.allegromicro.com/en/products/sense/switches-and-latches/switches/a1266)
+最后加入保护套、耳机盒及外部磁体，改变方向和距离，记录误休眠、无法释放与快速开盖响应。通过[外磁干扰](/wiki/basics/stray-field/)检查后的合盖事件，仍只证明磁检测状态；不能证明铰链完好或设备已进入平板姿态。

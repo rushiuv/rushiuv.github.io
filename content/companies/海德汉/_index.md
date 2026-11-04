@@ -55,3 +55,7 @@ related_companies: []
 - [角度编码器模块（MRP／MRS）](https://www.heidenhain.com/products/encoders/angle-encoders/modules)
 - [旋转编码器目录](https://www.heidenhain.com/products/encoders/rotary-encoders)
 - [企业沿革与规模（维基百科）](https://en.wikipedia.org/wiki/Heidenhain)
+
+## 具体型号与工程方法
+
+- [ROD 280 / 280C](/models/rod-280/)：独立记录该配置的规格、出处与使用边界。

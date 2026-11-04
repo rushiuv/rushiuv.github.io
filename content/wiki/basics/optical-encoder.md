@@ -3,11 +3,11 @@
   "title": "光电编码器：从刻线、码道到角度",
   "description": "区分透射与反射、增量周期与绝对编码；理解电子细分怎样获得细刻度。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-16",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "检测原理与安装",
-  "weight": 8,
+  "basic_group": "编码原理",
+  "weight": 601,
   "related_basics": [
     "resolution-accuracy",
     "abz",
@@ -18,11 +18,18 @@
   ],
   "related_model_slugs": [
     "kto9512"
+  ],
+  "related_applications": [
+    "linear-motor",
+    "servo-motor"
+  ],
+  "related_guides": [
+    "optical-signal-chain",
+    "reflective-code-validation",
+    "optical-tolerance-evidence"
   ]
 }
 ---
-
-
 光电编码器用光读取码盘或光栅尺上的位置图案。图案随被测件运动，探测器接收的光分布发生变化，电子电路再从中提取位移或位置。
 
 <figure class="basic-figure"><img src="/images/basics/optical-reflective.webp" alt="参考雷尼绍RESOLUTE光学示意重绘：保留反射式光路和部件关系，仅改变视觉风格。示意图不代表所有光电编码器结构。" loading="lazy"><figcaption>参考雷尼绍RESOLUTE光学示意重绘：保留反射式光路和部件关系，仅改变视觉风格。示意图不代表所有光电编码器结构。 <a href="https://www.renishaw.com.cn/zh/how-renishaw-optical-encoders-work--36979" target="_blank" rel="noopener">原理图来源 ↗</a></figcaption></figure>
@@ -50,3 +57,7 @@
 读头与码盘的间隙、倾斜和偏心是否满足安装规范；污染是否影响光路；输出边沿或串行速率是否能被控制器可靠接收。防护能力要看整机结构和额定条件，不能仅由检测原理判断。
 
 [雷尼绍：光栅工作原理](https://www.renishaw.com.cn/zh/how-renishaw-optical-encoders-work--36979)介绍了其反射式光学、绝对图案解码与细分方式。本文透射/反射分类不意味着所有产品采用同样的光学结构。
+
+## 插值之前先确认前端没有削顶
+
+自设TIA的线性输出范围0.2至3.1V，偏置2.5V、反馈100kΩ，光电流20±2µA对应0.3至0.7V；光照加倍便要求负电压，已超出假定范围。数字位数再多也恢复不了此前削顶的波形。[TI光电TIA设计资料](https://www.ti.com/lit/an/sboa324a/sboa324a.pdf)用于核增益、偏置与稳定性，数值并非其中器件指标。与[分辨率](/wiki/basics/resolution-accuracy/)分开检查，沿[光学信号链](/topics/guides/optical-signal-chain/)逐级留波形；[直线电机](/applications/linear-motor/)还要在实际污染和间隙下复测。

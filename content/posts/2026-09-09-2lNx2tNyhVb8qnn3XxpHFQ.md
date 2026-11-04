@@ -3,6 +3,7 @@ title: "机器转得越快反而越找不到家，回零信号被转速压薄了
 date: 2026-09-09T10:20:00+08:00
 slug: "2lNx2tNyhVb8qnn3XxpHFQ"
 description: "九月初，实验室。小推车把一台伺服转台送进来，电机壳还留着点温度——跑了一整天才返修的。工单上客户只写了一行字："
+tags: ["非线性校准"]
 original: "https://mp.weixin.qq.com/s/2lNx2tNyhVb8qnn3XxpHFQ"
 models: ["KTM5800", "KTM5200"]
 companies: ["昆泰芯"]

@@ -1,9 +1,15 @@
 {{ define "main" }}
-<header class="page-head"><h1 class="page-title">归档</h1><p class="muted">共 {{ len (where site.RegularPages "Section" "posts") }} 篇</p></header>
-{{ range (where site.RegularPages "Section" "posts").GroupByDate "2006 年" }}
-<section class="year">
-  <h2>{{ .Key }} <span class="count">{{ len .Pages }} 篇</span></h2>
-  <ul>{{ range .Pages }}<li><time>{{ .Date.Format "01.02" }}</time><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $years := $posts.GroupByDate "2006 年" }}
+<div class="hub-overview hub-blog">
+<header class="page-head hub-overview-hero"><div class="hub-overview-copy"><p class="kicker">BLOG / 如是有为</p><h1 class="page-title">{{ .Title }}</h1><p class="hub-blog-lead">沿着编码器与位置反馈，记录器件、信号链和工程应用。</p><div class="hub-overview-stats"><span><strong>{{ len $posts }}</strong> 篇文章</span><span>按发表年份浏览</span></div><nav class="hub-blog-years" aria-label="按年份浏览博客">{{ range $years }}<a href="#blog-year-{{ substr .Key 0 4 }}">{{ .Key }} <span>{{ len .Pages }}</span><b aria-hidden="true">↓</b></a>{{ end }}</nav></div><figure class="hub-overview-art"><img src="{{ "images/editorial/chromeos-reference-desk-20261025.webp" | relURL }}" alt="码盘、量具与工程笔记的静物插画" width="1536" height="1024" loading="eager" fetchpriority="high"><figcaption>一个问题，一次记录，继续向下研究。</figcaption></figure></header>
+<div class="hub-blog-archive">
+{{ range $years }}
+<section class="year hub-blog-year" id="blog-year-{{ substr .Key 0 4 }}">
+  <h2><span>{{ .Key }}</span> <span class="count">{{ len .Pages }} 篇</span></h2>
+  <ul>{{ range .Pages }}<li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "01.02" }}</time><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="hub-blog-entry-arrow" aria-hidden="true">↗</span></li>{{ end }}</ul>
 </section>
 {{ end }}
+</div>
+</div>
 {{ end }}

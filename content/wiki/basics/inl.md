@@ -3,17 +3,30 @@
   "title": "INL：位数之外的整圈角度偏差",
   "description": "区分角度非线性、零位与静止噪声，按参考轴和温度条件比较校准前后的误差。",
   "date": "2026-10-18T10:00:00+08:00",
-  "lastmod": "2026-10-18",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
-  "basic_group": "看懂性能参数",
-  "weight": 141,
-  "related_basics": ["resolution-accuracy", "angle-noise", "self-calibration", "mounting"],
-  "related_topics": ["非线性校准"],
-  "related_model_slugs": []
+  "basic_group": "参数与误差",
+  "weight": 501,
+  "related_basics": [
+    "resolution-accuracy",
+    "angle-noise",
+    "self-calibration",
+    "mounting"
+  ],
+  "related_topics": [
+    "非线性校准"
+  ],
+  "related_model_slugs": [],
+  "related_guides": [
+    "inductive-error-definition",
+    "calibration-validation"
+  ],
+  "related_applications": [
+    "robot-joint"
+  ]
 }
 ---
-
 一颗芯片输出十六位，不代表磁铁转到每个位置时都同样准确。位数规定数字台阶，INL描述测量关系偏离理想关系的程度。角度传感器的误差还包含磁体、安装和参考轴的贡献，不能只拿一个位数替代整圈检查。
 
 ## 先说明误差怎样定义
@@ -31,3 +44,9 @@
 ## 选型要把芯片和整机分开验收
 
 要求资料写明校准前后、最大值或典型值、测试温度、磁体和装配条件。整机验收则固定参考与零位规则，分别报告重复性和整圈误差。若目标是运动控制，再补速度与时间延迟测试；静态INL合格不能替代动态误差预算。
+
+## 先核对INL约束的是哪一级
+
+“通道INL为1%”不等于机械角误差为3.6°。[TI LDC5072-Q1手册](https://www.ti.com/lit/ds/symlink/ldc5072-q1.pdf)定义的是每通道传输函数相对最佳拟合线的偏差，外部反正切还取决于两路误差形状。只有误差明确为电相位时才可按周期数换算：合成设8周期结构、电角误差0.36°，局部机械误差为0.045°，且扇区必须判对。[误差层次](/topics/guides/inductive-error-definition/)与[校准独立验收](/topics/guides/calibration-validation/)给出对应测量动作。
+
+注入理想信号与接回实际靶体两轮试验，应分别留档，不把系统误差混入通道规格。

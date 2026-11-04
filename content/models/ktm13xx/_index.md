@@ -1,36 +1,45 @@
 ---
-title: "KTM13XX"
+title: KTM13xx系列
 wiki: true
-wiki_type: "model"
-catalog_type: "磁开关"
-catalog_form: "芯片"
+wiki_type: model
+catalog_type: 磁开关
+catalog_form: 芯片
 wiki_rank: 129
 seed_count: 1
-lastmod: "2026-10-24"
-description: "KTM13XX 是昆泰芯磁开关系列标签，具体成员提供不同磁门限、采样频率、输出形式及封装。"
-official_url: "https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html"
-related_companies: ["昆泰芯"]
-related_models: ["KTM1301"]
-wiki_category: "磁开关与状态检测"
-document_version: "公开资料核对：2026-10-16；文件版本见下载件"
+lastmod: '2026-10-30'
+description: KTM13XX 是昆泰芯磁开关系列标签，具体成员提供不同磁门限、采样频率、输出形式及封装。
+official_url: https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html
+related_companies:
+- 昆泰芯
+related_models:
+- KTM1301
+wiki_category: 磁开关与状态检测
+document_version: 公开资料核对：2026-10-16；文件版本见下载件
 model_card: true
+catalog_level: 系列
+search_aliases:
+- KTM13xx系列
 ---
 
-## 核心参数
+KTM13xx包含全极、单极与锁存器。先选择磁体极性和状态逻辑，再核对输出级、采样档与封装。
 
-| 参数 | 数值、配置与条件 |
-| --- | --- |
-| 系列范围 | TMR磁开关，XX为系列占位，不是可下单完整料号 |
-| 检测逻辑 | 130x全极；1311单S极；1321单N极；1331锁存，按成员 |
-| 常见供电 | 官网所列1301/1302等成员1.8～5.5V，不扩展到未列成员 |
-| 1301采样/电流 | 50/1600/5000Hz；160nA/600nA/1.9µA（3V） |
-| 1302输出 | 开漏；目录50/5000Hz版本，按完整料号 |
-| 1304配置 | 目录50Hz、160nA（3V）；CMOS；DFN 2×2mm-3L |
-| 1301阈值例 | A～E动作绝对值45/30/18/9/7Gs，其他成员不得照搬 |
-| 温度口径 | 上述目录成员−40～125°C |
-| 封装口径 | SOT-23-3L、TO-92S、DFN等，按成员 |
+## 型号与核心异同
 
-参数依据：[原厂产品与型号选型表](https://www.conntek.com.cn/html/web/product/switchPositionDetectionChip/magnetoresistiveSwitchSeries/index.html)。
+| 具体型号 | 逻辑 | 输出／采样区别 |
+| --- | --- | --- |
+| KTM1301 | 全极 | CMOS；50/1600/5000Hz对应160nA/600nA/1.9µA（3V） |
+| KTM1302 | 全极 | 开漏；目录50/5000Hz版本 |
+| KTM1304 | 全极 | CMOS；50Hz、160nA（3V）；DFN 2×2mm-3L |
+| KTM1311 | 单S极 | 具体输出、门限及版本按手册 |
+| KTM1321 | 单N极 | 具体输出、门限及版本按手册 |
+| KTM1331 | 锁存 | 具体输出、门限及版本按手册 |
+
+## 共同条件与参数依据
+
+- **常见供电**：官网所列1301/1302等成员1.8～5.5V，不扩展到未列成员
+- **1301阈值例**：A～E动作绝对值45/30/18/9/7Gs，其他成员不得照搬
+- **温度口径**：上述目录成员−40～125°C
+- **封装口径**：SOT-23-3L、TO-92S、DFN等，按成员
 
 ## 按逻辑选，不按同族编号选
 

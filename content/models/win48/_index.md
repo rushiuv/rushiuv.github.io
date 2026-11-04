@@ -1,45 +1,47 @@
 ---
-title: "WIN48"
+title: WIN48系列
 wiki: true
-wiki_type: "model"
-catalog_type: "完整编码器"
-catalog_form: "完整编码器"
+wiki_type: model
+catalog_type: 完整编码器
+catalog_form: 完整编码器
 wiki_rank: 148
 seed_count: 1
-lastmod: "2026-10-24"
-description: "WIN48是锐鹰分体式机械多圈绝对编码器系列，强调薄型结构和无电池多圈位置保持，用于精密运动反馈。"
-official_url: "https://www.reagles.cn/"
-related_companies: ["锐鹰"]
-datasheet_url: "https://www.reagles.cn/uploads/Download/20240723/092834205ac8885.pdf"
-datasheet_label: "官方数据手册"
-wiki_category: "机械多圈位置保持"
-document_version: "公开资料核对：2026-10-16；文件版本见下载件"
+lastmod: '2026-10-30'
+description: WIN48是锐鹰分体式机械多圈绝对编码器系列，强调薄型结构和无电池多圈位置保持，用于精密运动反馈。
+official_url: https://www.reagles.cn/
+related_companies:
+- 锐鹰
+datasheet_url: https://www.reagles.cn/uploads/Download/20240723/092834205ac8885.pdf
+datasheet_label: 官方数据手册
+wiki_category: 机械多圈位置保持
+document_version: 公开资料核对：2026-10-16；文件版本见下载件
 model_card: true
-product_image: "/images/wiki/win48-product.png"
-product_image_caption: "WIN48 原厂手册产品／安装图（PDF 第 1 页）"
-product_image_source: "https://www.reagles.cn/uploads/Download/20240723/092834205ac8885.pdf"
+product_image: /images/wiki/win48-product.png
+product_image_caption: WIN48 原厂手册产品／安装图（PDF 第 1 页）
+product_image_source: https://www.reagles.cn/uploads/Download/20240723/092834205ac8885.pdf
+catalog_level: 系列
+search_aliases:
+- WIN48系列
 ---
 
-## 核心参数
+WIN48采用分体式机械多圈结构。当前收录手册对应G12S17配置，尺寸与位数只在这一版本范围内使用。
 
-| 参数 | 数值、功能与适用条件 |
-| --- | --- |
-| 结构 | 分体式机械多圈，无计圈电池 |
-| 本页手册版本 | 单圈 17 位、多圈 12 位 |
-| 外形上限 | 直径 48.2 mm、高 15.5 mm，依所附 17 位版本尺寸图 |
-| 接口 | 随完整订货码选择 |
+## 型号与核心异同
 
-参数依据：[原厂产品页或对应资料](https://www.reagles.cn/)。
+| 已确认配置（非完整订货号） | 单圈／多圈 | 外形条件 | 未展开的差异 |
+| --- | --- | --- | --- |
+| WIN48 G12S17 | 17位／12位 | 直径48.2mm、高15.5mm，按该尺寸图 | 通信及完整订货后缀 |
+| 其他WIN48配置 | 按对应版本 | 不沿用G12S17尺寸 | 尚未逐项取得成员资料 |
 
-## 产品功能与测量链
+## 共同条件与参数依据
 
-WIN48采用分体式机械多圈结构，机械转数状态不依赖计圈电池。薄型化适合紧凑电机，但转子、读头与齿轮机构仍须按完整装配图定位。
+- **结构**：分体式机械多圈，无计圈电池
 
-## 接入与配置
+## 接口与安装
 
 本页所附G12S17版本为12位多圈与17位单圈，不能把其他WIN48变体的单圈码宽或通信配置直接套入。直径48.2mm、高15.5mm同样限于该尺寸图。
 
-## 使用与验证
+## 动态与装配验证
 
 验证应包含无电源正反转、重新上电读取、多圈回绕和机械零点保持。机械多圈免电池维护，不意味着无需检查磨损、冲击和安装应力；接口线序与控制器协议仍需逐版确认。
 

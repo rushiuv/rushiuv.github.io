@@ -21,7 +21,7 @@ model_card: true
 
 KTH2562L是昆泰芯的宽电压数字双极锁存霍尔系列。它检测磁场是否越过两个方向的阈值，并通过开漏输出给出高、低状态；适合做转动检测、换向或位置状态判断。它输出开关量，不直接输出连续角度。
 
-这页按公开中文数据手册的19页内容重新整理。参数保持原表的测试条件，应用公式与接线另行解释；[完整datasheet](https://chat.connteck.com/downloads/KTH2562L/KTH2562L_Datasheet_CN.pdf)可用于核对原图和尺寸。以下图示除原厂曲线外，均按手册信息重新绘制；点击图片可打开大图。
+[公开中文数据手册（19页）](https://chat.connteck.com/downloads/KTH2562L/KTH2562L_Datasheet_CN.pdf)包含完整电气条件、封装原图和尺寸。参数适用范围与接线条件见下文，各图可点击放大。
 
 ## 核心参数
 
@@ -39,7 +39,7 @@ KTH2562L是昆泰芯的宽电压数字双极锁存霍尔系列。它检测磁场
 | HBM / CDM | ±6000 V / ±500 V，器件级ESD指标 |
 | 反向供电保护 | 手册列至−40 V；反接时不工作 |
 | 封装 | ST3：SOT-23-3L；SS3：SOT23；TO3：TO-92S |
-| 汽车应用声明 | 手册写“符合AEC-Q100汽车标准”；本页不扩写报告号或具体鉴定覆盖 |
+| 汽车应用声明 | 手册声明符合AEC-Q100汽车标准；具体鉴定覆盖与资格文件需按订货版本确认 |
 
 3.8～60 V是推荐工作范围，65 V是绝对最大额定值，不能把两者合并成“65 V工作”。45 mA也不是任何温度和板级散热条件下都可持续使用的电流。
 
@@ -66,7 +66,7 @@ SPQ是标准包装数量，不能据此判断最低订购量、库存或交期�
 | ST3 / SOT-23-3L | VCC | OUTPUT | GND | 第5页 |
 | TO3 / TO-92S | VCC | GND | OUTPUT | 第5页 |
 
-[![三种封装的引脚功能重绘](/images/models/kth2562l/pinout.svg)](/images/models/kth2562l/pinout.svg)
+[![三种封装的引脚功能示意](/images/models/kth2562l/pinout.svg)](/images/models/kth2562l/pinout.svg)
 
 图中按手册引脚表列功能。落板时仍要把顶视图、标记面和PCB焊盘编号一起核对，尤其TO-92S的2、3脚功能与两个表贴封装不同。原手册还用封装标记说明内部代码、生产年与周；这些位置用于追溯，不能单凭标记文字推导阈值档或鉴定状态。
 
@@ -74,7 +74,7 @@ SPQ是标准包装数量，不能据此判断最低订购量、库存或交期�
 
 双极锁存包含动作点BOP和释放点BRP。以正阈值动作、负阈值释放的坐标示意：磁场越过BOP后，输出晶体管导通；磁场回到零，输出仍保持。只有反向磁场越过BRP，输出才释放为高阻，由上拉电阻建立高电平。
 
-[![双极锁存磁滞重绘](/images/models/kth2562l/latch.svg)](/images/models/kth2562l/latch.svg)
+[![双极锁存磁滞示意](/images/models/kth2562l/latch.svg)](/images/models/kth2562l/latch.svg)
 
 因此，“磁铁移开就复位”不适用于这种锁存行为。磁场处在两个阈值之间时，需要知道此前经过哪一侧；手册未在电参数中给出上电初始输出保证，系统不能凭零磁场假设一个初始状态。
 
@@ -82,11 +82,11 @@ SPQ是标准包装数量，不能据此判断最低订购量、库存或交期�
 
 原手册第1页把输出磁滞图标为SOT-23-3L，第6～8页分别画了三种封装的感应方向。首页ST3曲线将动作点画在负磁场侧、释放点画在正磁场侧；第11页磁参数表则列正BOP、负BRP。两处符号口径不能不加说明地合并。相同磁铁面对不同封装的标记面时，应先按原图确认动作极，再检查实际装配方向和输出状态。
 
-本页磁滞重绘采用第11页表的正BOP坐标，并明确作为符号示意；磁参数表保留同一页的数值坐标。它不是“任意封装、任意朝向都由同一磁极拉低”的保证。ST3、SS3和TO3替换时，磁极性应作为独立核对项。
+磁滞示意采用手册第11页表的正BOP坐标；表中数值也使用该坐标。不同封装与朝向的动作磁极应结合第6～8页原图确认，ST3、SS3和TO3替换时需单独核对磁极性。
 
 ### 信号怎样变成开关输出
 
-[![功能关系框图重绘](/images/models/kth2562l/functional.svg)](/images/models/kth2562l/functional.svg)
+[![功能关系框图示意](/images/models/kth2562l/functional.svg)](/images/models/kth2562l/functional.svg)
 
 手册给出霍尔元件、斩波稳定、放大与比较、驱动以及保护模块。斩波和温度补偿用于减小前端漂移，比较与锁存决定翻转，NMOS负责拉低输出。这里简化的是功能关系，不把框图解释成完整内部晶体管实现。
 
@@ -144,7 +144,7 @@ A档典型阈值幅值2 mT、典型磁滞4 mT；C档分别为5 mT、10 mT。磁�
 
 ## 三线接法与上拉电阻
 
-[![三线应用电路重绘](/images/models/kth2562l/application.svg)](/images/models/kth2562l/application.svg)
+[![三线应用电路示意](/images/models/kth2562l/application.svg)](/images/models/kth2562l/application.svg)
 
 供电端用至少0.1 µF陶瓷电容紧贴器件旁路。OUT通过R1上拉到Vref，接收端与传感器共地。Vref不必等于芯片VCC，因此宽压供电可以与低压逻辑配合；但必须同时满足OUT额定值、MCU输入范围、漏电和电源时序要求。
 
@@ -168,7 +168,7 @@ A档典型阈值幅值2 mT、典型磁滞4 mT；C档分别为5 mT、10 mT。磁�
 
 ## 减少线数：替代双线应用
 
-[![双线电流检测接法重绘](/images/models/kth2562l/two-wire.svg)](/images/models/kth2562l/two-wire.svg)
+[![双线电流检测接法示意](/images/models/kth2562l/two-wire.svg)](/images/models/kth2562l/two-wire.svg)
 
 手册的做法是把OUT经电阻接到VCC，在控制器附近检测总供电电流。OUT拉低时，多出一条上拉电阻电流；OUT高阻时，主要剩器件工作电流。控制器从电流台阶还原状态，可用分流电阻或其他电流检测电路。
 
@@ -202,7 +202,7 @@ A档典型阈值幅值2 mT、典型磁滞4 mT；C档分别为5 mT、10 mT。磁�
 
 ## 电源与PCB布局
 
-[![布局原则重绘](/images/models/kth2562l/layout.svg)](/images/models/kth2562l/layout.svg)
+[![布局原则示意](/images/models/kth2562l/layout.svg)](/images/models/kth2562l/layout.svg)
 
 手册建议至少0.1 µF陶瓷旁路靠近芯片，并将供电变化限制在50 mVPP以下。更大的电容可用于处理系统纹波，具体取值由电源阻抗和瞬态决定。
 
@@ -284,8 +284,8 @@ A档典型阈值幅值2 mT、典型磁滞4 mT；C档分别为5 mT、10 mT。磁�
 
 ## 官方资料
 
-- [公开中文datasheet，19页](https://chat.connteck.com/downloads/KTH2562L/KTH2562L_Datasheet_CN.pdf)：本页参数、订货表、功能与机械尺寸的主要来源，访问日期2026-10-29。
+- [公开中文datasheet，19页](https://chat.connteck.com/downloads/KTH2562L/KTH2562L_Datasheet_CN.pdf)：相应参数、订货表、功能与机械尺寸的主要来源，访问日期2026-10-29。
 - [CONNTEK公开选型入口](https://chat.connteck.com/selector/)：可检索KTH2562L并访问该PDF。
 - [昆泰芯官网](https://www.conntek.com.cn/)：厂商与产品资料入口。
 
-公开下载文件未在已核页面明确显示可确认的修订号，故本页按访问日期识别来源。典型曲线与应用示例不扩展成最差条件保证；AEC-Q100的手册声明也不在此补写未经核对的等级或报告编号。
+该19页公开文件的修订号未明确，使用时请同时确认访问日期与原件。典型曲线及应用示例不属于最差条件保证；AEC-Q100的具体等级与报告覆盖以正式资格文件为准。

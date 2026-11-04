@@ -1,0 +1,137 @@
+/* Applications, company directory and blog overview. No article-page selectors. */
+.hub-overview { --hub-brass:#80633d; --hub-rule:#d3d8ca; padding:28px 0 42px; }
+.hub-overview .hub-overview-hero { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(250px,.85fr); gap:48px; align-items:center; padding:35px 38px; margin:0 0 36px; border:1px solid #d4d9ca; border-radius:15px; background:linear-gradient(115deg,#f6f3e9,#fbf9f2); box-shadow:0 3px 0 #fff9; }
+.hub-overview .hub-overview-copy { min-width:0; }
+.hub-overview .hub-overview-copy>.kicker,.hub-overview .hub-overview-copy>.basics-kicker { display:flex; align-items:center; gap:11px; margin:0 0 18px; font:11px/1.6 var(--mono); letter-spacing:.11em; color:var(--hub-brass); }
+.hub-overview .hub-overview-copy>.kicker::before,.hub-overview .hub-overview-copy>.basics-kicker::before { content:""; width:23px; height:1px; background:#a88b56; flex:none; }
+.hub-overview .hub-overview-hero h1 { font-family:var(--sans); font-size:clamp(30px,3.2vw,42px); line-height:1.45; letter-spacing:-.025em; font-weight:600; margin:0 0 19px; color:#1d2f43; text-wrap:balance; }
+.hub-overview .hub-overview-hero h1>span { color:#356c72; }
+.hub-overview .hub-overview-copy>.content,.hub-overview .applications-lead,.hub-overview .hub-blog-lead { padding:0; margin:0; font-size:15px; line-height:1.95; color:#4e6070; }
+.hub-overview .hub-overview-copy>.content p { font-size:inherit; line-height:inherit; margin:0 0 12px; }
+.hub-overview .hub-overview-art { margin:0; min-width:0; border:1px solid #cdd5c5; border-radius:11px; overflow:hidden; background:#fcfaf1; box-shadow:0 10px 25px -23px #254b4a88; }
+.hub-overview .hub-overview-art img { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; }
+.hub-overview .hub-overview-art figcaption { border-top:1px solid #d8decf; padding:10px 14px; font-size:11px; line-height:1.7; letter-spacing:.04em; color:#617061; background:#faf9ef; }
+.hub-overview .hub-overview-stats { display:flex; flex-wrap:wrap; align-items:baseline; gap:16px 25px; padding-top:19px; margin-top:19px; border-top:1px solid #d6dccd; font-size:12px; color:#5a6d6d; }
+.hub-overview .hub-overview-stats strong { font:500 26px/1.3 var(--mono); letter-spacing:-.04em; color:#315c66; margin-right:5px; }
+.hub-applications .applications-count { border-top:1px solid #d5dccc; padding-top:18px; margin-top:22px; margin-bottom:17px; font-size:12px; line-height:2; color:#5b6d6a; }
+.hub-applications .applications-count strong { font:500 26px/1.3 var(--mono); letter-spacing:-.04em; color:#315c66; margin-right:5px; }
+.hub-applications .applications-count i { color:#b0b8a5; margin:0 8px; }
+.hub-applications .application-jump { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; margin-top:16px; }
+.hub-applications .application-jump a { min-width:0; display:flex; align-items:center; justify-content:space-between; gap:9px; border:1px solid #d0d8c7; border-radius:7px; background:#fffdf6; padding:10px 13px; min-height:44px; font-size:12px; color:#355b60; transition:border-color 160ms,background 160ms; }
+.hub-applications .application-jump a:hover { border-color:#9fb59d; background:#eef2e7; text-decoration:none; }
+.hub-applications .application-group { margin:42px 0 48px; scroll-margin-top:24px; }
+.hub-applications .application-group>header { position:relative; padding:29px 30px; gap:36px; border-radius:13px; background:#f7f6ed; border:1px solid #d8ddce; box-shadow:0 3px 0 #fff8; }
+.hub-applications .application-group>header::before { content:""; position:absolute; left:30px; top:0; width:33px; height:2px; background:#b19b6a; }
+.hub-applications .application-group .home-overline { font-size:11px; letter-spacing:.1em; color:#80633d; margin-bottom:16px; }
+.hub-applications .application-group h2 { font-size:28px; margin:0 0 15px; line-height:1.5; color:#294c59; }
+.hub-applications .application-group>header p:not(.home-overline) { font-size:15px; line-height:1.95; color:#4e6070; }
+.hub-applications .application-group>header figure { border:1px solid #d1d9c8; border-radius:10px; overflow:hidden; box-shadow:none; }
+.hub-applications .application-group>header figure img { border-radius:0; }
+.hub-applications .application-grid { gap:15px; margin-top:20px; }
+.hub-applications .application-card { position:relative; padding:25px 23px 20px; border-radius:11px; border:1px solid #d4dbcc; background:#fffdf7; box-shadow:0 2px 0 #eaece1; transition:border-color 160ms,background 160ms; }
+.hub-applications .application-card::before { content:""; position:absolute; top:0; left:23px; width:23px; height:1px; background:#b09a6a; }
+.hub-applications .application-card:hover { border-color:#97b1a0; background:#fdfdf5; text-decoration:none; transform:none; box-shadow:0 4px 15px -13px #31585a66; }
+.hub-applications .application-card-kicker { font-size:10px; letter-spacing:.05em; color:#80633d; }
+.hub-applications .application-card h3 { font-size:19px; line-height:1.7; margin:14px 0 12px; color:#294b59; }
+.hub-applications .application-card>p { font-size:14px; line-height:1.95; color:#4e6070; }
+.hub-applications .application-card-end { margin-top:21px; padding-top:14px; border-top:1px solid #e0e5d7; font-size:11px; color:#5e7776; align-items:center; }
+.hub-applications .application-card-end b { display:flex; align-items:center; justify-content:center; width:28px; height:28px; border:1px solid #d2dccb; border-radius:50%; font-weight:400; }
+.hub-overview .basics-footlinks { margin-top:35px; border-top:1px solid #cfd7c6; padding-top:22px; gap:15px; }
+.hub-overview .basics-footlinks a { padding:11px 0; font-size:13px; color:#35646a; }
+.hub-companies .wiki-index { padding:29px 30px; background:#fffdf6; border:1px solid #d4dbcc; border-radius:13px; }
+.hub-companies .wiki-index>h2 { margin:0 0 10px; font-size:25px; line-height:1.6; color:#284b59; }
+.hub-companies .wiki-index>.muted { font-size:13px; line-height:1.9; color:#5d6f72; }
+.hub-companies .hub-company-controls { display:grid; grid-template-columns:minmax(0,1.6fr) minmax(220px,1fr); gap:17px; align-items:end; padding:21px; margin:23px 0 16px; background:#f1f3e9; border:1px solid #d6dfcc; border-radius:10px; }
+.hub-companies .hub-company-query { min-width:0; }
+.hub-companies .hub-company-controls label { font-size:12px; line-height:1.7; color:#506b67; }
+.hub-companies #company-search,.hub-companies #company-category { box-sizing:border-box; display:block; width:100%; min-width:0; min-height:47px; margin-top:7px; padding:10px 13px; border:1px solid #b6c4b0; border-radius:7px; font:14px/1.7 var(--sans); color:#284652; background:#fffdf6; }
+.hub-companies #company-search:focus,.hub-companies #company-category:focus { outline:2px solid #57837e; outline-offset:2px; border-color:#71968b; }
+.hub-companies .catalog-filters { display:block; padding:0; margin:0; }
+.hub-companies .catalog-filters label { display:block; }
+.hub-companies #company-result-count { margin:17px 0; padding-left:10px; border-left:2px solid #b39b65; font:11px/1.8 var(--mono); color:#62766c; }
+.hub-companies .wiki-index-grid { gap:13px; }
+.hub-companies .wiki-index-card { position:relative; padding:23px 21px; border:1px solid #d8ddce; border-radius:10px; background:#fbfbf3; box-shadow:0 2px 0 #eeefe5; transition:border-color 160ms,background 160ms; }
+.hub-companies .wiki-index-card::after { content:"↗"; position:absolute; right:18px; top:21px; color:#789088; font-size:16px; }
+.hub-companies .wiki-index-card:hover { border-color:#a4b89f; background:#f8faf0; text-decoration:none; transform:none; }
+.hub-companies .wiki-index-card small { display:block; padding-right:22px; color:#80633d; font-size:10px; line-height:1.8; letter-spacing:.025em; }
+.hub-companies .wiki-index-card strong { display:block; padding-right:16px; margin:12px 0 10px; color:#264d5a; font-size:19px; line-height:1.6; }
+.hub-companies .wiki-index-card p { margin:0; font-size:13px; line-height:1.95; color:#4e6070; }
+.hub-blog .hub-blog-years { display:flex; justify-content:flex-start; flex-wrap:wrap; gap:8px; margin-top:20px; }
+.hub-blog .hub-blog-years a { display:flex; align-items:center; gap:10px; min-height:42px; padding:7px 12px; border:1px solid #d0d9c7; border-radius:7px; background:#fffdf5; font-size:12px; color:#3c6264; }
+.hub-blog .hub-blog-years a span { padding-left:9px; border-left:1px solid #dbe1d2; font:11px/1.4 var(--mono); color:#7b7655; }
+.hub-blog .hub-blog-years a b { font-weight:400; color:#7e9384; }
+.hub-blog .hub-blog-years a:hover { text-decoration:none; background:#edf2e5; border-color:#9aaf94; }
+.hub-blog .hub-blog-archive { padding:0 7px; }
+.hub-blog .hub-blog-year { margin:37px 0 48px; scroll-margin-top:24px; }
+.hub-blog .hub-blog-year>h2 { display:flex; align-items:center; gap:19px; margin:0 0 20px; padding:13px 0 15px; border-bottom:1px solid #cdd5c3; font-size:25px; line-height:1.5; color:#294d59; }
+.hub-blog .hub-blog-year>h2::before { content:""; width:22px; height:2px; flex:none; background:#a88b56; }
+.hub-blog .hub-blog-year .count { padding:4px 10px; font:11px/1.5 var(--mono); border:1px solid #d4ddca; border-radius:5px; background:#f5f6ec; color:#607265; }
+.hub-blog .hub-blog-year>ul { list-style:none; padding:0; margin:0; }
+.hub-blog .hub-blog-year li { display:grid; grid-template-columns:68px minmax(0,1fr) 28px; align-items:start; gap:17px; padding:18px 12px; border-bottom:1px solid #dde2d4; transition:background 160ms; }
+.hub-blog .hub-blog-year li:hover { background:#eeeee3; }
+.hub-blog .hub-blog-year time { padding-top:4px; font:11px/1.7 var(--mono); letter-spacing:.03em; color:#80633d; }
+.hub-blog .hub-blog-year li>a { color:#2d4e5c; font-size:16px; line-height:1.85; text-decoration:none; }
+.hub-blog .hub-blog-year li>a:hover { color:#356c72; text-decoration:underline; text-decoration-color:#a4bab1; text-underline-offset:5px; }
+.hub-blog .hub-blog-entry-arrow { display:flex; align-items:center; justify-content:center; width:27px; height:27px; margin-top:2px; border:1px solid #d2dac9; border-radius:50%; color:#69837b; font-size:13px; }
+.hub-overview [hidden] { display:none!important; }
+@media(max-width:1000px) {
+ .hub-overview .hub-overview-hero { padding:29px; gap:29px; grid-template-columns:minmax(0,1.1fr) minmax(230px,.9fr); }
+ .hub-overview .hub-overview-hero h1 { font-size:35px; }
+ .hub-companies .hub-company-controls { grid-template-columns:minmax(0,1.4fr) minmax(180px,1fr); padding:18px; }
+ .hub-companies .wiki-index { padding:25px; }
+}
+@media(max-width:760px) {
+ .hub-overview { padding-top:22px; }
+ .hub-overview .hub-overview-hero { grid-template-columns:minmax(0,1fr); padding:25px; gap:25px; margin-bottom:30px; border-radius:12px; }
+ .hub-overview .hub-overview-hero h1 { font-size:clamp(29px,6.8vw,37px); margin-bottom:18px; }
+ .hub-overview .hub-overview-copy>.kicker,.hub-overview .hub-overview-copy>.basics-kicker { font-size:10px; margin-bottom:16px; }
+ .hub-overview .hub-overview-copy>.content,.hub-overview .applications-lead,.hub-overview .hub-blog-lead { font-size:15px; }
+ .hub-overview .hub-overview-art { width:100%; max-width:500px; margin:0 auto; border-radius:9px; }
+ .hub-overview .hub-overview-art figcaption { padding:9px 12px; font-size:11px; }
+ .hub-overview .hub-overview-stats { gap:15px 20px; padding-top:17px; margin-top:18px; font-size:11px; }
+ .hub-overview .hub-overview-stats strong { font-size:24px; }
+ .hub-applications .applications-count { font-size:11px; }
+ .hub-applications .applications-count strong { font-size:24px; }
+ .hub-applications .applications-count i { margin:0 5px; }
+ .hub-applications .application-jump a { font-size:12px; padding:10px 11px; }
+ .hub-applications .application-group { margin-top:33px; margin-bottom:35px; }
+ .hub-applications .application-group>header { padding:23px; gap:24px; }
+ .hub-applications .application-group>header::before { left:23px; }
+ .hub-applications .application-group h2 { font-size:26px; }
+ .hub-applications .application-group>header p:not(.home-overline) { font-size:14px; }
+ .hub-applications .application-group .home-overline { font-size:10px; }
+ .hub-applications .application-grid { gap:12px; margin-top:16px; }
+ .hub-applications .application-card { padding:23px 21px 19px; }
+ .hub-applications .application-card h3 { font-size:19px; }
+ .hub-applications .application-card>p { font-size:14px; }
+ .hub-applications .application-card-end { font-size:11px; }
+ .hub-companies .wiki-index { padding:22px 20px; border-radius:11px; }
+ .hub-companies .wiki-index>h2 { font-size:23px; }
+ .hub-companies .hub-company-controls { grid-template-columns:minmax(0,1fr); padding:17px; gap:15px; margin-top:20px; }
+ .hub-companies #company-search,.hub-companies #company-category { font-size:16px; }
+ .hub-companies #company-search::placeholder { font-size:13px; }
+ .hub-companies .wiki-index-grid { gap:12px; }
+ .hub-companies .wiki-index-card { padding:23px 21px; }
+ .hub-companies .wiki-index-card strong { font-size:20px; }
+ .hub-companies .wiki-index-card p { font-size:14px; }
+ .hub-companies .wiki-index-card small { font-size:11px; }
+ .hub-blog .hub-blog-archive { padding:0; }
+ .hub-blog .hub-blog-years a { min-height:44px; }
+ .hub-blog .hub-blog-year { margin-top:31px; margin-bottom:35px; }
+ .hub-blog .hub-blog-year>h2 { gap:12px; font-size:24px; }
+ .hub-blog .hub-blog-year>h2::before { width:15px; }
+ .hub-blog .hub-blog-year li { grid-template-columns:49px minmax(0,1fr) 24px; padding:16px 2px; gap:12px; }
+ .hub-blog .hub-blog-year li>a { font-size:15px; line-height:1.9; overflow-wrap:anywhere; }
+ .hub-blog .hub-blog-year time { font-size:10px; padding-top:5px; }
+ .hub-blog .hub-blog-entry-arrow { width:23px; height:23px; font-size:12px; margin-top:5px; }
+}
+@media(max-width:450px) {
+ .hub-overview .hub-overview-hero { padding:22px 20px; }
+ .hub-companies .wiki-index { padding:21px 16px; }
+ .hub-companies .hub-company-controls { padding:15px 13px; }
+ .hub-applications .application-group>header { grid-template-columns:minmax(0,1fr); padding:22px 20px; }
+ .hub-applications .application-card-end { gap:9px; }
+ .hub-blog .hub-blog-year li { grid-template-columns:42px minmax(0,1fr); gap:10px; }
+ .hub-blog .hub-blog-entry-arrow { display:none; }
+}
+@media(prefers-reduced-motion:reduce) { .hub-overview *, .hub-overview *::before, .hub-overview *::after { transition:none!important; animation:none!important; } }

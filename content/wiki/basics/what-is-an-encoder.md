@@ -3,11 +3,11 @@
   "title": "编码器是什么：从运动到位置反馈",
   "description": "分清码盘、读头、芯片和整机；用三个独立维度理解编码器分类。",
   "date": "2026-10-16T10:00:00+08:00",
-  "lastmod": "2026-10-16",
+  "lastmod": "2026-10-27",
   "layout": "basic-single",
   "basic_entry": true,
   "basic_group": "认识编码器",
-  "weight": 1,
+  "weight": 100,
   "related_basics": [
     "absolute-incremental",
     "resolution-accuracy",
@@ -24,8 +24,6 @@
   ]
 }
 ---
-
-
 电机接到转动指令，不代表轴已经转到目标位置。编码器把轴或直线滑台的位置转换为电信号，让控制器知道实际走到了哪里。控制器据此计算位置偏差；连续读取位置，还能估计速度与方向。
 
 ## 一套编码器里有什么

@@ -1,0 +1,3 @@
+{{ $page := . }}{{ $slug := .File.ContentBaseName }}{{ $refs := slice }}
+{{ range (where site.RegularPages "Params.basic_entry" true).ByWeight }}{{ if and (ne .RelPermalink $page.RelPermalink) (in (.Params.related_basics | default slice) $slug) }}{{ $refs = $refs | append . }}{{ end }}{{ end }}
+{{ with $refs }}<section class="knowledge-incoming"><h2>哪些基础词条会用到它</h2><div>{{ range . }}<a href="{{ .RelPermalink }}">{{ .Title | replaceRE "[：:].*$" "" }} <span aria-hidden="true">↗</span></a>{{ end }}</div></section>{{ end }}
