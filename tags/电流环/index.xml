@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电流环 on 如是有为</title><link>https://sensor.fans/tags/%E7%94%B5%E6%B5%81%E7%8E%AF/</link><description>Recent content in 电流环 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Mon, 02 Nov 2026 11:20:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E7%94%B5%E6%B5%81%E7%8E%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>机器人关节的角度补偿，该补到电流采样，还是数据到达？</title><link>https://sensor.fans/posts/jyjsvcpkkip4leucs-jhsa/</link><pubDate>Mon, 02 Nov 2026 11:20:00 +0800</pubDate><guid>https://sensor.fans/posts/jyjsvcpkkip4leucs-jhsa/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/2406c200b466688f5d085d016191fa31.png" alt="机器人关节的角度补偿，该补到电流采样，还是数据到达？" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>角度在0微秒测得，电流在10微秒采样，位置数据到18微秒才送到控制器。&lt;/p>
+&lt;p>&lt;strong>做这次电流坐标变换，角度该向前推10微秒，还是18微秒？&lt;/strong>&lt;/p>
+&lt;p>两种做法只差8微秒。在6000 rpm下，却差了&lt;strong>0.288°机械角&lt;/strong>。&lt;/p></description></item></channel></rss>
