@@ -11,3 +11,10 @@
 - 本地 Gitea http://localhost:3002/ 与公开 GitHub/Pages 分开。只同步用户授权的相关分支，核对远端祖先并正常快进，不强推、不重写历史。
 
 本文件随博客仓库同步；构建时通过 Hugo --destination 指向系统临时目录，缓存用 --cacheDir 指向系统临时目录。不得再创建 .build-check*、.local-preview、.release-* 等临时目录。
+
+## 单篇公众号文章入库（2026-11-04 王超要求长期遵守）
+
+从 `mp.weixin.qq.com/s/<id>` 链接新增文章时，按 README.md「单篇公众号文章入库（链接 → 博客，2026-11-04 实践）」执行：
+源稿先写 `posts_extra/` 再复制进 `content/posts/`，配图落 `static/images/wx/`，构建与检查只用系统临时目录，
+检查用 `py -3` 并设 `PYTHONUTF8=1`。**不要运行全量 `tools/import_wechat.py`**：本机存档源目录不存在，
+它会先清空 `content/posts/`。发布须有王超本轮授权。

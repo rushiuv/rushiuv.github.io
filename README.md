@@ -88,6 +88,7 @@ AI标定文的手工清理也同步到posts_extra，避免重导时重新引入�
 - 重新导入文章：`python tools/import_wechat.py`
   - 来源：`D:\VerySync\VerySync_notes\2-Resources\2K-公众号-如是有为`
   - 会清空并重建 `content/posts/`；新出现的微信配图自动下载到 `static/images/wx/`，已下载的不重复下
+  - ⚠️ 2026-11-04 起本机**不要跑全量导入**：该存档源目录在本机不存在，脚本会先清空 `content/posts/` 再重建，等于删掉现有文章。单篇入库按下一节「单篇公众号文章入库」。
 - 压缩新下载的大图：`python tools/optimize_images.py`，然后再跑一次导入改好链接
 - 发布：遵守本文开头的正常父提交、fast-forward及原子更新约定；旧 `tools/deploy.sh` 禁用，不作为日常命令。
 
@@ -113,6 +114,42 @@ AI标定文的手工清理也同步到posts_extra，避免重导时重新引入�
    （模板 `layouts/_default/single.html` 支持这个字段，不写则回落到「首发于公众号「如是有为」」）。
 3. **文末的固定套路一律去掉**（联系信息、公司简介、扫码关注、往期推荐、免责/版权声明、推广）——
    见下一节，导入管道会自动处理，源稿也应保持干净。
+
+## 单篇公众号文章入库（链接 → 博客，2026-11-04 实践）
+
+从 `https://mp.weixin.qq.com/s/<id>` 新增一篇，**不跑全量导入**（见上一节警告），按下面流程。
+2026-11-04 用《6000转，晚10微秒就差0.36°》走通；同样的坑下次直接跳过。
+
+1. **拿 HTML**：用 Node 的 `fetch`，带浏览器 UA 和 `referer: https://mp.weixin.qq.com/`，存整页。
+   本机 `web_fetch` 会因 DNS 把域名解析到 198.18.x 假 IP 而拒绝；`curl`/`git` 默认走 schannel 会报
+   `SEC_E_NO_CREDENTIALS`（git 可加 `-c http.sslBackend=openssl`）。只抓公开可访问的文章。
+2. **元数据**：`var ct`（=`create_time` 时间戳）换算北京时间，写 `date` 和文件名日期；`og:title`、
+   `og:description`；`var nickname` 判断是否本号——本号不写 `original_from`，别家写
+   `original_from: "转载自公众号「××」"`。
+3. **正文**：取 `id="js_content"` 的 div，自己按块解析转 Markdown：`h2→##`、`p`、`table→GFM 表格`、
+   `strong/em`、`img`。**不要直接用 pandoc**：它会把 `span leaf`、`section`、表格留成原始 HTML。
+   转完必须核对：HTML 纯文本与 Markdown 去掉标记后逐字比较，长度与内容完全相等才算没漏字。
+4. **配图**：`img[data-src]` 逐张下载到 `static/images/wx/<URL 的 md5>.<扩展名>`（带 referer），
+   正文引用 `/images/wx/<md5>.<ext>`。原图字节不改、不裁不压；`optimize_images.py` 会整批处理
+   ≥200 KB 的 png/jpg，单篇不要顺手跑，免得压到别的图。
+5. **落两处**：先写 `posts_extra/<YYYY-MM-DD>-<slug>.md` 源稿，再按导入管道同样工序复制进
+   `content/posts/`（`boilerplate.strip_boiler` + `format_fixes.fix_body`），以后重导不会被冲掉。
+   文末套路按 `boilerplate.py` 规则清；本次原文无套路块。
+6. **构建与检查**（构建输出和缓存都放系统临时目录，见 AGENTS.md）：
+   ```sh
+   hugo --minify --destination "$TEMP/wxblog/site" --cacheDir "$TEMP/wxblog/hugo-cache"
+   py -3 -B tools/check_site_release.py <构建目录>   # 必须 51 项全过
+   py -3 -B tools/check_topic_hub.py <构建目录>
+   py -3 -B tools/check_readability.py <构建目录>    # 用 py -3；python3.11 没装 bs4
+   ```
+   控制台是 GBK，先设 `PYTHONUTF8=1`、`PYTHONIOENCODING=utf-8`，否则脚本打印中文会 `UnicodeEncodeError`。
+7. **读性检查对比基线**：全站本来就有历史问题（2026-11-04 基线 80 条）。用
+   `git worktree add <临时目录> HEAD` 建基线各自构建，比较 issue 集合，确认「新文章 0 问题、总数不变」；
+   只看 `passed:false` 会误判成这次改坏了。
+8. **浏览器验收**：桌面和 360px 实拍。当前沙箱内 Chrome/Edge 无头启动会因命名管道被禁失败，
+   需放宽沙箱权限另跑；没有截图就不算浏览器验收。
+9. **发布**：按开头约定推 `source`（Actions 构建后写 `main`），本地 `main` 与远端语义不同，
+   不能把源码直接推 `main`；没有王超本轮授权不发布。
 
 ## 采集文的尾部套路清理（统一规律，2026-10-14 定）
 
