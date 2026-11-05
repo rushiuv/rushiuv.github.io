@@ -4,39 +4,48 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 108
 seed_count: 2
-lastmod: "2026-10-22"
-description: "舍弗勒（Schaeffler）是德国运动技术集团，四个事业部覆盖电驱、动力总成与底盘、汽车后市场、轴承与工业；它供关节里被测量的机械那一侧，编码器不在其产品目录。"
+lastmod: "2026-11-05"
+description: "舍弗勒提供轴承、传动、电机、传感器和集成执行器；公开人形机器人执行器包含编码器及控制器，不能再把它仅归为机械侧供应商。"
 official_url: "https://www.schaeffler.com/"
 wiki_category: "机械传动与精密驱动"
 related_models: []
 ---
 
-舍弗勒站在机械传动与精密驱动这一层：轴承、直线与传动部件、机电一体化模组。**编码器不在它的产品目录里**，它在关节与执行机构里的角色是把“被测量的那一侧”做出来——轴、轴承、减速与导向结构。所以读它的资料，能得到的不是编码器规格，而是一个关节在机械侧留下了多少误差预算；这部分误差不会因为换了更高分辨率的编码器而消失。
+舍弗勒（Schaeffler）是一家运动技术集团，产品从轴承和精密传动，延伸到电机、传感器、执行器与控制。对机器人读者，最直观的产品是**把减速器、电机、编码器和控制器装进一个单元的关节执行器**。它既提供零件，也提供集成运动部件，不能只理解为轴承厂。
 
-## 四个事业部里没有编码器这一格
+## 集团能力与中国法人分别理解
 
-官网导航给出的事业部结构是四条线：E-Mobility（电驱）、Powertrain & Chassis（动力总成与底盘）、Vehicle Lifetime Solutions（车辆全生命周期方案）、Bearings & Industrial Solutions（轴承与工业方案）。集团页的自我描述是八十年来一直在运动技术领域推动突破性发明与开发，产品页的表述是从基础部件延伸到完整系统方案。[集团与事业部结构](https://www.schaeffler.com/en/divisions-products/)
+本页介绍舍弗勒集团及其公开产品方向，“舍弗勒（中国）有限公司”是中国业务的企业名称入口。集团发布的产品与合作，不自动等于某一个中国法人的独立生产、供货或签约范围。查具体项目时仍需核供货主体与对应产品资料。[集团产品入口](https://www.schaeffler.com/en/divisions-products/)
 
-这个结构本身就是一条信息：四条线分别对应电驱、动力总成、售后与工业轴承，没有一条是传感与测量。也就是说，在舍弗勒的公开产品体系里，找不到编码器这个独立品类页；它能提供的与反馈相关的东西，是承载编码器的机械界面——轴承内外圈、轴端、法兰，以及决定角度传递精度的减速与导向件。[轴承与工业方案](https://www.schaeffler.com/en/divisions-products/industrial/)
+## 公开执行器已经包含角度反馈
 
-| 公开条目 | 层级 | 与编码器的关系 | 公开信息 |
-| --- | --- | --- | --- |
-| Bearings & Industrial Solutions | 事业部 | 提供承载与被测量的机械界面，轴承与导向精度进角度读数 | 事业部名称与归口公开 |
-| E-Mobility | 事业部 | 电驱系统，反馈随电机与传动配置确定 | 同上 |
-| Powertrain & Chassis | 事业部 | 动力总成与底盘，不含测量器件 | 同上 |
-| Vehicle Lifetime Solutions | 事业部 | 售后与全生命周期服务，不涉及器件开发 | 同上 |
-| 电机到减速器到输出法兰 | 工程结构 | 编码器测其中一根轴，游隙与背隙直接进读数 | 属工程判断，非厂商参数 |
+2026年1月5日的官方CES新闻介绍了面向人形机器人的行星齿轮执行器，明确列出两级行星减速器、电机、编码器和控制器的组合。这个公开事实已经足以说明，舍弗勒的人形运动产品覆盖反馈与控制，而不只是承载编码器的机械界面。[官方执行器新闻](https://www.schaeffler-industrial-drives.com/en/news_media/press_releases/press_releases_detail.jsp?id=88158464)
 
-## 关节里它供的是被测量的一端，编码器精度补偿不了机械回差
+| 公开方向 | 在运动链中的位置 |
+|---|---|
+| 轴承、导向与传动件 | 支撑载荷，建立机械运动约束 |
+| 电机与线性、旋转执行器 | 产生运动并与传动结构集成 |
+| 转子位置传感器 | 为运动系统提供位置反馈 |
+| 控制电子 | 将指令、反馈与驱动组织成系统 |
 
-一个关节的执行链是电机、减速器、输出法兰三段，编码器通常测其中某一根轴的角度。这条链上有两处机械误差会直接进到角度读数里：轴承游隙让轴在受力时产生微小位移，减速器的背隙让输入端与输出端之间出现一个不随指令变化的死区。这两项属于机械件的公开属性（在样本里查游隙与背隙），但**不会被写进任何一份编码器规格书**。
+2026年1月12日的官方人形机器人投资者材料，还列出了穿轴和轴端两种电感式转子位置传感器。材料同时说明，组合中的许多产品处于样机和客户测试阶段；产品方向、原型展示与批量交付状态应分别阅读。[官方演示材料，页面7](https://www.schaeffler.com/remotemedien/media/_shared_media_rwd/08_investor_relations/presentations/20260112_schaeffler_powering_humanoid_motion.pdf)
 
-这条判断对采购的实际含义是：用更高的编码器分辨率去追一个由回差决定的定位误差，方向是错的；反过来，若机械侧已经把回差压到很小，编码器的分辨率与重复性才会成为瓶颈。这是工程推理，不是舍弗勒的官方结论，本节不引用任何未经核实的整机指标。**能推的是它在链条上的位置，不能推的是它给某个具体关节模组配了什么反馈件**：官网公开层没有这条信息。
+## 对编码器读者，机械误差与反馈链都要看
+
+从工程上看，电机轴角度、减速后的输出角度和整机末端位置属于不同测量层级。集成执行器的精度要结合传动回差、承载、温升、安装及控制条件，不能用某个传感器的位数代替整机指标。
+
+官方资料确认了有反馈与集成控制的产品方向，但没有因此给出每一种执行器的内部芯片来源、全部接口、误差和校准方法。查具体产品应取得对应数据表，不从集团介绍补齐这些细节。[人形机器人产品方向](https://www.schaeffler.com/en/technology-innovation/technology/humanoid-robots/)
+
+## 本页修订
+
+2026年11月5日：旧版根据集团事业部导航中缺少独立编码器分类，写成“编码器不在产品目录”。这个判断过度，现依据上述公开执行器新闻和电感位置传感器资料撤回。历史版本保留在源码Git记录中，不再作为现行公司介绍。
 
 ## 官方资料
 
 - [舍弗勒集团官网](https://www.schaeffler.com/en/)
-- [事业部与产品结构（四条事业部线）](https://www.schaeffler.com/en/divisions-products/)
-- [轴承与工业方案（Bearings & Industrial Solutions）](https://www.schaeffler.com/en/divisions-products/industrial/)
-- [产品总览入口](https://www.schaeffler.com/en/divisions-products/products/)
-- [集团历史](https://www.schaeffler.com/en/group/history/)
+- [事业部与产品](https://www.schaeffler.com/en/divisions-products/)
+- [人形机器人方向](https://www.schaeffler.com/en/technology-innovation/technology/humanoid-robots/)
+- [CES 2026行星执行器新闻](https://www.schaeffler-industrial-drives.com/en/news_media/press_releases/press_releases_detail.jsp?id=88158464)
+- [2026年1月人形机器人公开演示材料](https://www.schaeffler.com/remotemedien/media/_shared_media_rwd/08_investor_relations/presentations/20260112_schaeffler_powering_humanoid_motion.pdf)
+
+公开资料核对：2026年11月5日。
