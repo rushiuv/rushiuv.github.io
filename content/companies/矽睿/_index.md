@@ -31,7 +31,7 @@ related_models: []
 | [QMC5883P](https://www.qstcorp.com/comp_prod/QMC5883P) | 三轴地磁传感器（AMR） | 16 位 ADC、1°~2° 罗经航向精度 | LGA 3×3×0.9 mm、1500 Hz、I2C、通过 AEC-Q100 |
 | [QMC6309 / QMC6309H / QMC5883L](https://www.qstcorp.com/comp_prod/) | 地磁系列 | 未在类目页列位数 | 消费与移动设备分档 |
 | [QMI8658 / QMI8610 / QMI8A01 / QMI8A01z](https://www.qstcorp.com/imu_prod/) | 六轴 IMU（三轴加速度 + 三轴陀螺） | 类目页未列零偏与噪声指标 | QMI8A01 带运动协处理器，QMI8A01z 符合 AEC-Q100 |
-| [底盘传感（驭芯）](https://www.qstcorp.com/Chassis/) | 轮速、车身高度、偏航率、加速度、转速/位移 | 未公开逐型号指标 | 带接插件 / 轮毂轴承 / 集成 EPB 等安装形态 |
+| [底盘传感（驭芯）](https://www.qstcorp.com/Chassis/) | 轮速、车身高度、偏航率、加速度、转速/位移 | — | 带接插件 / 轮毂轴承 / 集成 EPB 等安装形态 |
 
 值得记的一点：QMC6308 与 QMC5883P 都是 AMR 加 16 位 ADC 的架构，软件侧随芯片提供指南针航向角、硬磁与软磁校准库。这套"磁阻桥 + ADC + 校准算法"的结构，与磁角度编码器是同源的——差别在下游：罗盘要的是磁场方向，编码器要的是磁铁相对芯片的角度，且必须跨装配公差稳定。[磁力计目录](https://www.qstcorp.com/comp_prod/)
 

@@ -26,9 +26,9 @@ related_models: []
 | [EL8 系列伺服驱动](https://www.leadshine.com/products/servo/servo-drive/el8-series.html) | 驱动器 | 编码器侧给差分 ABZ 与 OCZ 输出，支持接入第二个编码器 | 频响最高 3.5 kHz（上一代 3.2 kHz）、STO SIL3、400–2000 W |
 | [EL8-EC 与 EL8-RS 子型号](https://www.leadshine.com/products/servo/servo-drive/el8-series.html) | 驱动器 | 同一平台，接口能力按总线版本分档 | EL8-EC 为 8 入 3 出、2 模拟入 2 模拟出；EL8-RS 为 10 入（最高 4 MHz）、6 出 |
 | [ELM2 交流伺服电机](https://www.leadshine.com/products/servo/servo-motor/elm2-series.html) | 电机 | 23 位光学绝对值编码器 | 50–7500 W、机座 40–180 mm、220 或 400 VAC、IP65 或 IP67 |
-| [ELM1 交流伺服电机](https://www.leadshine.com/products/servo/servo-motor/elm2-series.html) | 电机 | 系列页未单列编码器档位，作 EL8 的配套 | 与 ELM2 并列在伺服电机目录下 |
-| [ELD2 等系列伺服驱动](https://www.leadshine.com/products/servo/servo-drive/eld2-series.html) | 驱动器 | 系列页未公开编码器接口细节 | 与 EL7、EL6、ELD3 同列，覆盖不同功率与总线 |
-| [iSV2-RS 一体化伺服](https://www.leadshine.com/products/servo/integrated-servo-motor/isv2-rs-series.html) | 驱动与电机同体 | 反馈内置，官网未公开位数 | 分 CAN 与 RS485 两个版本 |
+| [ELM1 交流伺服电机](https://www.leadshine.com/products/servo/servo-motor/elm2-series.html) | 电机 | — | 与 ELM2 并列在伺服电机目录下 |
+| [ELD2 等系列伺服驱动](https://www.leadshine.com/products/servo/servo-drive/eld2-series.html) | 驱动器 | — | 与 EL7、EL6、ELD3 同列，覆盖不同功率与总线 |
+| [iSV2-RS 一体化伺服](https://www.leadshine.com/products/servo/integrated-servo-motor/isv2-rs-series.html) | 驱动与电机同体 | — | 分 CAN 与 RS485 两个版本 |
 | [编码器线缆](https://www.leadshine.com/products/servo.html) | 配件 | 官网把编码器线缆单列为配件品类 | 与电机、刹车、调试、通信线缆并列 |
 | [B23M-C 整体式光编](https://www.leisai.com/product/product_details_1172.html?cid=M001173) | 编码器整机（中文站单列） | 绝对值旋转编码器，单圈 23 位、多圈 16 位 | 重复定位精度 <±3 角秒；RS485；弹片连接；直轴与锥轴 |
 | [分体光编 B25M / B23M / B23MP](https://www.leisai.com/product/product_details_1113.html?cid=M001114) | 编码器整机（中文站单列） | 单圈 23～25 位、多圈 16 位 | B25M 机身厚 14.9 mm、重复定位精度 <±3 角秒；通信线缆最长 50 m |

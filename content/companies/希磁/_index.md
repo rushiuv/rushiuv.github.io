@@ -29,11 +29,11 @@ related_models: []
 | --- | --- | --- | --- |
 | [EAS-110 / EAS-111 / EAS-102](https://www.esstmags.com/products/angle-encoder/) | 标准型磁性角度编码器 | 类目页最高 24 位，总览页 23~26 位 | 大中空关节款与在轴款、30 kHz 刷新、PRBS 或游标码、抗冲击振动与油污粉尘 |
 | [EAS-006A / EAS-006B / EAS-010B](https://www.esstmags.com/products/angle-encoder/integrated/single-turn-abs/270.html) | 一体式单圈绝对值 | 未逐型号公开位数 | 另有分体式，含电池多圈与机械有限多圈两种方案 |
-| [EAS-J030KP-HD / J034 / J048 / J068](https://www.esstmags.com/products/encoder-kit/chip/prbs-dual/) | 关节中空式编码器套件（芯片级，PRBS 内外双编） | 未公开位数 | 按 30、34~48、48~68、68 以上关节分档、成套交付芯片与解码芯片、码盘与磁铁 BOM |
-| [EAS-J034ZP-HD](https://www.esstmags.com/products/encoder-kit/chip/prbs-dual/) | 34~48 关节在轴式套件 | 未公开位数 | 与中空式同族，安装方式不同 |
-| [ELS-001 / 004 / 005 / 008](https://www.esstmags.com/products/linear-encoder/) | 线性位移磁性编码器（TMR 读头 + 磁栅） | 未公开分辨率 | BiSS-C 与 SPI、长行程与微型短行程两类、面向灵巧手电缸与直线电机 |
-| [BBT-A903P8-SM03P / BBT-A907D16JR / BBT-A907D0805 等](https://www.esstmags.com/products/sensor-chip/angle/) | xMR 角度与线性芯片 | 未公开位数 | 模拟或数字输出、部分型号支持功能安全、可单卖也可配套件 |
-| [功能安全磁性角度编码器](https://www.esstmags.com/products/) | 双通道冗余 + 故障自检 | 未公开位数 | 满足 ISO 13849 PL d（官网口径）、覆盖单圈 / 机械有限多圈 / 电池多圈、分体式与可集成式两种形态 |
+| [EAS-J030KP-HD / J034 / J048 / J068](https://www.esstmags.com/products/encoder-kit/chip/prbs-dual/) | 关节中空式编码器套件（芯片级，PRBS 内外双编） | — | 按 30、34~48、48~68、68 以上关节分档、成套交付芯片与解码芯片、码盘与磁铁 BOM |
+| [EAS-J034ZP-HD](https://www.esstmags.com/products/encoder-kit/chip/prbs-dual/) | 34~48 关节在轴式套件 | — | 与中空式同族，安装方式不同 |
+| [ELS-001 / 004 / 005 / 008](https://www.esstmags.com/products/linear-encoder/) | 线性位移磁性编码器（TMR 读头 + 磁栅） | — | BiSS-C 与 SPI、长行程与微型短行程两类、面向灵巧手电缸与直线电机 |
+| [BBT-A903P8-SM03P / BBT-A907D16JR / BBT-A907D0805 等](https://www.esstmags.com/products/sensor-chip/angle/) | xMR 角度与线性芯片 | — | 模拟或数字输出、部分型号支持功能安全、可单卖也可配套件 |
+| [功能安全磁性角度编码器](https://www.esstmags.com/products/) | 双通道冗余 + 故障自检 | — | 满足 ISO 13849 PL d（官网口径）、覆盖单圈 / 机械有限多圈 / 电池多圈、分体式与可集成式两种形态 |
 
 三条差异要点。**编码方案有两套**：PRBS 码与游标码并存，且都做成"内圈 + 外圈双编"，这是公开页面上少见的明确写法；**多圈有三条路**：电池多圈、机械有限多圈、以及单圈，官方按关节型号分档给；**接口清单是 SPI、BiSS-C、RS485、模拟量**，与光编常见的 SSI 不在同一套习惯里。
 

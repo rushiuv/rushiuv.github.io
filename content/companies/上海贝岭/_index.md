@@ -4,7 +4,7 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 622
 lastmod: "2026-11-05"
-description: "600171，模拟与数模混合芯片公司，2025 年营收 31.74 亿元、可售产品 5501 款。年报称已打通电机驱动、栅极驱动到霍尔传感器的链条，官网目录未单列霍尔。"
+description: "600171，模拟与数模混合芯片公司，2025 年营收 31.74 亿元、可售产品 5501 款，年报称已打通电机驱动、栅极驱动到霍尔传感器的链条。"
 official_url: "https://www.belling.com.cn/"
 wiki_category: "芯片与信号链"
 search_aliases:

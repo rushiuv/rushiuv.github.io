@@ -29,7 +29,7 @@ related_models: ["IS620N", "SV660ND"]
 | [EA58 系列总线编码器](https://www.inovance.com/product/details?productId=514) | 编码器整机 | 官网单列产品页，CANopen 协议 | 外径 58 mm；单圈 13 位、多圈 12 位 |
 | [EA84 系列双核功能安全编码器](https://www.inovance.com/portal/product/details?productId=852) | 编码器整机 | 官网单列产品页，配伺服实现 SIL3 | 26 bit 光编码器；IP67；双 MCU；支持 SS1/SS2/SLS/SBC/SDI/SOS/SSM |
 | [工业自动化标准品（伺服、变频、PLC、触摸屏）](https://www.inovance.com/global/product/overview.html) | 驱动器与控制 | 驱动器侧的编码器接口能力属技术手册内容，公开总览页不列 | 总览页只写品类，具体型号落在下级页 |
-| [长春汇通（2011 年并购）](https://www.inovance.com/global/about/index.html) | 传感器件平台 | 官方称 transducer technologies and product platforms，未披露具体产品形态 | 并购年份 2011，纳入工业自动化板块 |
+| [长春汇通（2011 年并购）](https://www.inovance.com/global/about/index.html) | 传感器件平台 | — | 并购年份 2011，纳入工业自动化板块 |
 
 表里能确认的是：汇川的编码器有两条交付路径。一条是随伺服电机订货的内置件，不给单独型号；另一条是 EA 系列这样在官网单列产品页、可单独采购的整机，从 13 位的 CANopen 总线型到 26 位带功能安全的型号都有公开参数页。
 
