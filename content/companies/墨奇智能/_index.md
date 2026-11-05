@@ -4,31 +4,30 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 303
 lastmod: "2026-11-05"
-description: "深圳墨奇智能技术有限公司做具身智能与服务机器人；公开产品KINO是轮式双臂机器人，从酒店等商业服务场景切入，长期目标是家庭。"
+description: "墨奇智能研发具身智能与服务机器人，KINO采用轮式底盘和双机械臂，结合MoRA模型完成移动、抓取、递送与整理等任务。"
 official_url: "https://www.morphi.com/"
 wiki_category: "人形机器人与关节"
 related_models: []
 ---
 
-深圳墨奇智能技术有限公司是一家做**具身智能和服务机器人**的公司。大白话说，它希望机器人不只会回答问题，还能自己移动、伸出机械臂、拿取和递送物品。世界机器人大会公开介绍的 KINO，是一台带轮式底盘、两只机械臂的机器人。
+深圳墨奇智能技术有限公司研发**具身智能与服务机器人**，将机器人本体、运动控制与具身模型结合，面向需要移动和操作物品的服务任务。
 
-## 从酒店服务进入真实工作场景
+## KINO服务机器人
 
-公司在大会展商介绍中说明，长期目标面向家庭，现阶段先做可反复验证的商业服务场景。KINO以酒店等场景为起点，公开任务包括移动、识别、抓取、递送和整理。这是公司公开的产品定位，不等于所有任务都已在任意环境下达到同样的完成率。[大会公司及产品介绍](https://www.worldrobotconference.com/expo/company/646.html)
+MORPHI KINO采用轮式底盘和双机械臂，融合多模态感知、自主导航与双臂协同操作，任务覆盖移动、识别、抓取、递送和整理。
 
-## 模型、机器人本体和运动控制一起做
+KINO以酒店等商业服务场景为起点，把移动和操作连接成连续作业。墨奇将家庭服务作为长期方向，现阶段着重在商业场景中积累真实任务经验。
 
-展商资料把数据、模型训练与评测、机器人本体、运动控制和端侧部署放在同一条技术链中；KINO搭载自研具身模型 MoRA，并组合导航与双臂操作。它在产业链里的位置是把软件和硬件整合成能完成任务的机器人产品。
+<figure class="company-photo company-photo--wide">
+<div class="company-photo__frame"><a href="/images/companies/public-20261105/morphi-kino.webp"><img src="/images/companies/public-20261105/morphi-kino.webp" alt="KINO服务机器人" width="800" height="600" loading="lazy" decoding="async"></a></div>
+<figcaption>KINO服务机器人 · 图：<a href="https://www.worldrobotconference.com/expo/product/1526.html">世界机器人大会</a></figcaption>
+</figure>
 
-## 编码器服务于底盘和机械臂的运动反馈
+## MoRA模型与机器人系统
 
-从工程上看，移动、抓取、递送需要把感知结果变成机械动作，再用反馈检查动作是否到位。对编码器读者，值得关注的是关节和轮系的反馈质量如何影响任务，而不能用单个器件的分辨率代替整机抓取成功率。
+KINO搭载墨奇自研的具身模型MoRA，用于理解任务与环境变化。公司技术布局覆盖数据采集、模型训练与评测、机器人本体、运动控制、端侧部署及场景应用，并通过真实任务反馈持续迭代。
 
-上述是一般机器人系统分析。已核公开介绍没有给出KINO的编码器型号、关节内部器件、各轴精度或完整可靠性条件，本页不推定这些信息。后续查资料应优先看官方产品规格、任务演示条件和验证说明。
-
-## 官方及主办方资料
+## 资料来源
 
 - [墨奇智能官网](https://www.morphi.com/)
-- [2026世界机器人大会：墨奇智能与KINO](https://www.worldrobotconference.com/expo/company/646.html)
-
-公开资料核对：2026年11月5日。官网动态正文未完整抓取，产品介绍以大会公开展商页为依据。
+- [2026世界机器人大会：公司与KINO产品介绍](https://www.worldrobotconference.com/expo/company/646.html)

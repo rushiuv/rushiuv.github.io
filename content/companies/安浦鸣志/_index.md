@@ -4,39 +4,39 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 300
 lastmod: "2026-11-05"
-description: "上海安浦鸣志自动化设备有限公司是鸣志运动控制体系中的电机驱动与自动化企业，公开产品涉及步进、步进伺服、交流伺服和总线驱动。"
+description: "上海安浦鸣志是鸣志运动控制体系中的电机驱动与自动化企业，产品覆盖步进、步进伺服、交流伺服及集成式电机。"
 official_url: "https://www.moons.com.cn/"
 wiki_category: "电机与驱动系统"
 related_models: []
 ---
 
-上海安浦鸣志自动化设备有限公司做的是**让电机按指令运动的驱动与控制系统**。在鸣志（MOONS’）体系中，可以找到步进、步进伺服、交流伺服，以及把电机和驱动器组合起来的集成式产品。它在产业链里更接近电机与设备之间的驱动平台，而不是单独出售磁敏芯片的一层。
+上海安浦鸣志自动化设备有限公司是鸣志（MOONS’）运动控制体系中的电机驱动与自动化企业，产品覆盖**步进、步进伺服、交流伺服及集成式电机**，服务于设备的运动控制。
 
-## 安浦鸣志与鸣志品牌是什么关系
+## 发展历程
 
-鸣志官网的发展历程记载，2007年2月，鸣志与美国 Applied Motion Products 合资，安浦鸣志成立；同页另列2014年收购 Applied Motion Products 的历史。安浦鸣志、集团品牌和海外公司应按具体主体区分，不能把一个历史节点写成当前全部股权结构。[鸣志官方发展历程](https://www.moons.com.cn/about-us/who-we-are/history)
+安浦鸣志于2007年2月由鸣志与美国 Applied Motion Products 合资成立。2014年，鸣志收购 Applied Motion Products，进一步扩展电机驱动与运动控制业务。
 
-## 产品从电机延伸到驱动器和现场总线
+## 电机、驱动器与总线控制
 
-| 公开产品方向 | 给设备解决什么问题 |
+| 产品方向 | 主要形式 |
 |---|---|
-| 步进与步进伺服驱动 | 把运动指令转换成对电机的控制 |
-| 交流伺服驱动 | 面向需要反馈控制的运动轴 |
-| 集成式电机 | 将电机与驱动组合，减少外部分立接线 |
-| 总线型产品 | 接入设备控制网络，与其他运动轴协作 |
+| 步进驱动 | 智能型步进驱动器 |
+| 步进伺服 | 步进伺服驱动器及集成式步进伺服电机 |
+| 交流伺服 | 伺服电机与驱动器 |
+| 集成式电机 | 将电机与驱动器组合的运动单元 |
 
-官网的总线入口分别列出 Modbus、CANopen、EtherNet/IP、eSCL/SCL 和 EtherCAT 相关产品。支持哪些协议，要沿对应产品链接查，不能把整个目录的功能合并成一台驱动器的规格。[总线型驱动器与电机](https://www.moons.com.cn/support-training/fieldbus_control)
+M3系列是鸣志的交流输入伺服驱动产品。
 
-## 编码器要放到完整运动轴里理解
+<figure class="company-photo company-photo--portrait">
+<div class="company-photo__frame"><a href="/images/companies/public-20261105/moons-m3.webp"><img src="/images/companies/public-20261105/moons-m3.webp" alt="M3系列交流伺服驱动器" width="500" height="897" loading="lazy" decoding="async"></a></div>
+<figcaption>M3系列交流伺服驱动器 · 图：<a href="https://www.moons.com.cn/series/m3-series-servo-drives-ac-input-cn050303">鸣志</a></figcaption>
+</figure>
 
-从工程分工看，电机、驱动器、反馈元件和上位控制器共同决定一个轴的表现。选反馈时，除了角度分辨率，还要核接口、更新时刻、机械安装及驱动器支持条件。这是一般选型方法，不表示上述产品都采用同一种编码器。
+鸣志的总线产品覆盖 Modbus、CANopen、EtherNet/IP、eSCL/SCL 和 EtherCAT 等通信方式。配套的Q编程功能可将运动指令、条件判断和寄存器操作组织成程序，保存在驱动器中独立运行。
 
-查资料时先定电机和驱动器完整型号，再读用户手册、通信手册及配套表；品牌页只用于了解业务范围。
+## 资料来源
 
-## 官方资料
-
-- [鸣志官网](https://www.moons.com.cn/)
 - [鸣志发展历程](https://www.moons.com.cn/about-us/who-we-are/history)
 - [总线型驱动器与电机](https://www.moons.com.cn/support-training/fieldbus_control)
 
-公开资料核对：2026年11月5日。
+- [M3交流输入伺服驱动器](https://www.moons.com.cn/series/m3-series-servo-drives-ac-input-cn050303)

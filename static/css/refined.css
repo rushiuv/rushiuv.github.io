@@ -361,7 +361,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .brand-title, .is-home .brand-title { font-size: 22px; }
   .brand-sub, .is-home .brand-sub { font-size: 10px; }
   .site-header nav { width: 100%; min-width: 0; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 2px; white-space: normal; }
-  .site-header nav a, .is-home .site-header nav a { display: flex; justify-content: center; align-items: center; min-width: 0; min-height: 44px; padding: 5px 1px; font-size: 12px; line-height: 1.6; text-align: center; letter-spacing: 0; white-space: normal; overflow-wrap: anywhere; }
+  .site-header nav a, .is-home .site-header nav a { display: flex; justify-content: center; align-items: center; min-width: 0; min-height: 44px; padding: 5px 1px; font-size: 12px; line-height: 1.6; text-align: center; letter-spacing: 0; white-space: nowrap; overflow-wrap: normal; }
   .home-hero-grid { padding-top: 32px; padding-bottom: 18px; gap: 26px; }
   .home-eyebrow { font-size: 11px; margin-bottom: 19px; }
   .home-intro h1 { font-size: clamp(33px,7vw,42px); margin-bottom: 21px; }
@@ -583,3 +583,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
  .site-header nav,.is-home .site-header nav { width:100%; margin-left:0; display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:3px; white-space:normal; }
  .site-header nav a,.is-home .site-header nav a { display:flex; justify-content:center; align-items:center; min-width:0; min-height:42px; padding:7px 2px; font-size:12px; line-height:1.6; text-align:center; white-space:normal; }
 }
+
+/* Company product photographs: limited to explicitly marked figures. */
+.company-profile .company-photo{margin:1.7rem 0;text-align:center}
+.company-profile .company-photo__frame{display:flex;justify-content:center;align-items:center;padding:1rem;background:#fff;border:1px solid #e5e7e9;border-radius:14px}
+.company-profile .company-photo__frame a{display:block;max-width:100%}
+.company-profile .company-photo img{display:block;width:auto;height:auto;max-width:100%;max-height:420px;margin:auto;object-fit:contain;background:#fff;border:0;padding:0;box-shadow:none}
+.company-profile .company-photo--portrait img{max-height:360px}
+.company-profile .company-photo--screen img{max-height:460px;border-radius:8px}
+.company-profile .company-photo figcaption{margin:.65rem 0 0;font-size:.86rem;line-height:1.6;color:#4b5964}
+.company-profile .company-photo figcaption a{text-decoration:none}
+@media(max-width:600px){.company-profile .company-photo__frame{padding:.75rem}.company-profile .company-photo--portrait img{max-height:320px}.company-profile .company-photo--screen img{max-height:420px}.company-profile .company-photo figcaption{font-size:.82rem}}

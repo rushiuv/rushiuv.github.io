@@ -1,0 +1,217 @@
+[
+  {
+    "company": "安浦鸣志",
+    "key": "moons-m3",
+    "source_page": "https://www.moons.com.cn/series/m3-series-servo-drives-ac-input-cn050303",
+    "image_url": "https://s3.cn-northwest-1.amazonaws.com.cn/s3-pro-nx-staticphoto/staticpic/servo_drives/m3_cn/m3_driver_02.png",
+    "retrieved": "2026-11-05",
+    "caption": "M3系列交流伺服驱动器",
+    "credit": "鸣志",
+    "kind": "portrait",
+    "original_format": "PNG",
+    "original_dimensions": [
+      500,
+      897
+    ],
+    "original_bytes": 150336,
+    "original_sha256": "76ecd8284e4af9cfc49bacc785c52dfced335c6ad7bc3cebee8e97012156e1fa",
+    "transformation": {
+      "crop": null,
+      "padding": 0,
+      "max_width": 1440,
+      "webp_quality": 90
+    },
+    "publication_url": "/images/companies/public-20261105/moons-m3.webp",
+    "publication_dimensions": [
+      500,
+      897
+    ],
+    "publication_bytes": 65990,
+    "publication_sha256": "89d7481da129063b83d04743e57c4e5fc578694a3d47613beea61a4073bfb242"
+  },
+  {
+    "company": "德昌电机",
+    "key": "johnson-mdr",
+    "source_page": "https://warehouseautomation.johnsonelectric.com/about/",
+    "image_url": "https://warehouseautomation.johnsonelectric.com/wp-content/uploads/2026/03/MDR-spec.461-1.png",
+    "retrieved": "2026-11-05",
+    "caption": "MDR电动滚筒",
+    "credit": "德昌电机",
+    "kind": "wide",
+    "original_format": "PNG",
+    "original_dimensions": [
+      963,
+      636
+    ],
+    "original_bytes": 159488,
+    "original_sha256": "1e8de6d08a6c31c87999f250a770996216c963dead13a9890335ab9e5c26ef69",
+    "transformation": {
+      "crop": null,
+      "padding": 0,
+      "max_width": 1440,
+      "webp_quality": 90
+    },
+    "publication_url": "/images/companies/public-20261105/johnson-mdr.webp",
+    "publication_dimensions": [
+      963,
+      636
+    ],
+    "publication_bytes": 22960,
+    "publication_sha256": "99e064d354ec2fd8ab2d065c5fcbcf10365bff540c25f9d8cf98245b15eb1336"
+  },
+  {
+    "company": "墨奇智能",
+    "key": "morphi-kino",
+    "source_page": "https://www.worldrobotconference.com/expo/product/1526.html",
+    "image_url": "https://www.worldrobotconference.com/profile/robot/download/2026/08/04/20260804120507000341_20260804120507A221.jpg",
+    "retrieved": "2026-11-05",
+    "caption": "KINO服务机器人",
+    "credit": "世界机器人大会",
+    "kind": "wide",
+    "original_format": "JPEG",
+    "original_dimensions": [
+      800,
+      600
+    ],
+    "original_bytes": 30644,
+    "original_sha256": "3f4049834623044e587363ad6f91eed7de37034a517a16e6eba9e05f6e24456b",
+    "transformation": {
+      "crop": null,
+      "padding": 0,
+      "max_width": 1440,
+      "webp_quality": 90
+    },
+    "publication_url": "/images/companies/public-20261105/morphi-kino.webp",
+    "publication_dimensions": [
+      800,
+      600
+    ],
+    "publication_bytes": 19232,
+    "publication_sha256": "1bab675f3cfd2178e11027d761614e7aae83741e5f0fff38cba0c43abb958364"
+  },
+  {
+    "company": "舍弗勒",
+    "key": "schaeffler-planetary",
+    "source_page": "https://www.schaeffler-industrial-drives.com/en/news_media/press_releases/press_releases_detail.jsp?id=88158464",
+    "image_url": "https://media.schaeffler-cdn.com/__image/a/1292350/alias/l/ar/cor-16-9/q/100/fn/1292350",
+    "retrieved": "2026-11-05",
+    "caption": "人形机器人行星齿轮执行器",
+    "credit": "Schaeffler",
+    "kind": "wide",
+    "original_format": "JPEG",
+    "original_dimensions": [
+      1440,
+      810
+    ],
+    "original_bytes": 35135,
+    "original_sha256": "e95659a1d1f8790f019a372da3297acf8659517975bc882b3af83797745a98e0",
+    "transformation": {
+      "crop": null,
+      "padding": 0,
+      "max_width": 1440,
+      "webp_quality": 90
+    },
+    "publication_url": "/images/companies/public-20261105/schaeffler-planetary.webp",
+    "publication_dimensions": [
+      1440,
+      810
+    ],
+    "publication_bytes": 27310,
+    "publication_sha256": "c5cf601cb988391ef38c96d202560317b1a6c3ef1e7db1f4a1284b4bc27eeb5a"
+  },
+  {
+    "company": "龙图信泰",
+    "key": "longtu-powerband",
+    "source_page": "https://apps.apple.com/cn/app/powerband/id1327357122",
+    "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f5/67/0b/f5670b3e-30e6-6d3d-386d-43b1682be193/Simulator_Screenshot_-_iPhone_17_Pro_Max_-_2026-07-02_at_14.18.23.png/600x1300bb.webp",
+    "retrieved": "2026-11-05",
+    "caption": "Powerband设备管理界面",
+    "credit": "App Store",
+    "kind": "screen",
+    "original_format": "WEBP",
+    "original_dimensions": [
+      598,
+      1300
+    ],
+    "original_bytes": 24588,
+    "original_sha256": "8d128273846fc25b5be847c832d7f73653e95e5745a348e5fb019d8b8ca27b2e",
+    "transformation": {
+      "crop": null,
+      "padding": 0,
+      "max_width": 1440,
+      "webp_quality": 90
+    },
+    "publication_url": "/images/companies/public-20261105/longtu-powerband.webp",
+    "publication_dimensions": [
+      598,
+      1300
+    ],
+    "publication_bytes": 26954,
+    "publication_sha256": "32a5e522a9eb96d760acb120a82c2c104d46190d2079b4e6a814e0542faa0fe8"
+  },
+  {
+    "company": "正元智慧",
+    "key": "zhengyuan-yt241",
+    "source_page": "https://www.hzsun.com/product-detail?id=111",
+    "image_url": "https://cdn.hzsun.com/szzc/footerImg/png/h5_1742365131150.png",
+    "retrieved": "2026-11-05",
+    "caption": "YT241智付终端",
+    "credit": "正元智慧",
+    "kind": "wide",
+    "original_format": "PNG",
+    "original_dimensions": [
+      660,
+      420
+    ],
+    "original_bytes": 54939,
+    "original_sha256": "3e191f51885c58bd7131365bf1607e37735e942e9fb22550ef4c3c30656e0f29",
+    "transformation": {
+      "crop": null,
+      "padding": 0,
+      "max_width": 1440,
+      "webp_quality": 90
+    },
+    "publication_url": "/images/companies/public-20261105/zhengyuan-yt241.webp",
+    "publication_dimensions": [
+      660,
+      420
+    ],
+    "publication_bytes": 10694,
+    "publication_sha256": "9d19d7be0447d8b54206462ff5e210931016cf14007dbe715b3ca03373011c73"
+  },
+  {
+    "company": "三相创新",
+    "key": "sanxiang-rtm",
+    "source_page": "https://szaicx.com/hydt/19577.html",
+    "image_url": "https://mmbiz.qpic.cn/mmbiz_png/ZXgY9d4oR4qADGSEG2uAiaZib3L52FXUdcxjpqH9QNxuC9xeu4UjTbVfp7J0wwmG7S63ia0PFm1ScUvD8wblOQjSw/640?wx_fmt=png",
+    "retrieved": "2026-11-05",
+    "caption": "RTM无框关节电机",
+    "credit": "3Φ／深圳市人工智能产业协会",
+    "kind": "wide",
+    "original_format": "PNG",
+    "original_dimensions": [
+      1080,
+      577
+    ],
+    "original_bytes": 412194,
+    "original_sha256": "604e165871f2d1461118d447fc12d3cfd2b0d7cd532a50d12baefc92f245e9cc",
+    "transformation": {
+      "crop": [
+        0,
+        425,
+        620,
+        577
+      ],
+      "padding": 24,
+      "max_width": 1440,
+      "webp_quality": 90
+    },
+    "publication_url": "/images/companies/public-20261105/sanxiang-rtm.webp",
+    "publication_dimensions": [
+      668,
+      200
+    ],
+    "publication_bytes": 9156,
+    "publication_sha256": "1aa213a6db9f037453c283719e661e765163a3554a89dc2aadc3abd50dd2caf8"
+  }
+]

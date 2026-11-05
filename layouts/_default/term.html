@@ -10,7 +10,7 @@
       <p class="kicker">如是有为 · {{ if eq .Params.wiki_type "model" }}型号与产品{{ else }}公司与机构{{ end }}</p>
       <h1 class="page-title">{{ .Title }}</h1>
       <p class="wiki-description">{{ .Description }}</p>
-      <p class="muted wiki-meta">{{ if eq .Params.wiki_type "company" }}词条更新{{ else }}资料核对{{ end }} <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006.01.02" }}</time> · <a href="#related-posts">{{ len .Pages }} 篇相关文章</a></p>
+      <p class="muted wiki-meta">{{ if eq .Params.wiki_type "company" }}词条更新{{ else }}资料核对{{ end }} <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006.01.02" }}</time>{{ if gt (len .Pages) 0 }} · <a href="#related-posts">{{ len .Pages }} 篇相关文章</a>{{ end }}</p>
       {{ if eq $pager.PageNumber 1 }}
       <div class="wiki-actions">
         {{ with .Params.official_url }}<a class="btn ghost" href="{{ . }}" target="_blank" rel="noopener">官方{{ if eq $.Params.wiki_type "model" }}产品页{{ else }}网站{{ end }} ↗</a>{{ end }}
@@ -35,14 +35,16 @@
     {{ end }}
   </article>
   {{ if eq $pager.PageNumber 1 }}
-  <aside class="wiki-toc"><div class="card"><h2 class="card-title">词条目录</h2>{{ .TableOfContents }}<a class="wiki-posts-link" href="#related-posts">相关文章 ↓</a></div></aside>
+  <aside class="wiki-toc"><div class="card"><h2 class="card-title">词条目录</h2>{{ .TableOfContents }}{{ if gt (len .Pages) 0 }}<a class="wiki-posts-link" href="#related-posts">相关文章 ↓</a>{{ end }}</div></aside>
   {{ end }}
 </div>
+{{ if gt (len .Pages) 0 }}
 <section class="wiki-related posts" id="related-posts">
   <header class="page-head"><p class="kicker">延伸阅读</p><h2>与 {{ .Title }} 相关的文章</h2><p class="muted">共 {{ len .Pages }} 篇，按文章日期排序</p></header>
   {{ range $pager.Pages }}{{ partial "post-item.html" . }}{{ end }}
   {{ partial "pager.html" $pager }}
 </section>
+{{ end }}
 {{ else if .Params.topic_guide }}
 <section class="topic-guide" aria-labelledby="topic-guide-title">
   <header class="topic-guide-head"><a class="topic-back" href="{{ "topics/" | relURL }}">技术专题 /</a><h1 id="topic-guide-title">{{ .Title }}</h1><p class="topic-guide-deck">{{ .Description }}</p><div class="topic-guide-meta"><span>主题导读</span><span>{{ len .Pages }} 篇相关文章</span><a href="#related-posts">直接阅读文章 ↓</a></div></header>
