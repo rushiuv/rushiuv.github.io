@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电机驱动 on 如是有为</title><link>https://sensor.fans/tags/%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8/</link><description>Recent content in 电机驱动 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Wed, 23 Sep 2026 08:21:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>刹车电流反冲 6 倍？电机驱动的坑，一半藏在 PWM 关断后的那 50μs</title><link>https://sensor.fans/posts/bbqk9vvcdfgaq1cd1ehwua/</link><pubDate>Wed, 23 Sep 2026 08:21:00 +0800</pubDate><guid>https://sensor.fans/posts/bbqk9vvcdfgaq1cd1ehwua/</guid><description>&lt;p>续流、衰减模式、刹车——把 TI 应用笔记 ZHCAA31 读透，再用仿真把每个结论复现一遍，这几个地方你就再也不会翻车。&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/b3f9ad2888f5a868f7ea0b1e26efb9c5.png" alt="b3f9ad2888f5a868f7ea0b1e26efb9c5.png" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>封面图&lt;/p>
+&lt;h2 id="一先说三个真实场景">一、先说三个真实场景&lt;/h2>
+&lt;p>&lt;strong>场景一&lt;/strong>：24V 代步车控制器，满速行驶瞬间切刹车，相电流采样瞬间报过流，MOS 炸了一只。回头测驱动波形，时序一点毛病没有。&lt;/p></description></item></channel></rss>

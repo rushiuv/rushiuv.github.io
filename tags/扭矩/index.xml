@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>扭矩 on 如是有为</title><link>https://sensor.fans/tags/%E6%89%AD%E7%9F%A9/</link><description>Recent content in 扭矩 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Thu, 05 Nov 2026 11:00:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E6%89%AD%E7%9F%A9/index.xml" rel="self" type="application/rss+xml"/><item><title>从"测角度"到"测扭矩"：位置信号还能派什么用场</title><link>https://sensor.fans/posts/9tgngq_2is--evuewd2pcq/</link><pubDate>Thu, 05 Nov 2026 11:00:00 +0800</pubDate><guid>https://sensor.fans/posts/9tgngq_2is--evuewd2pcq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/4fa9bcee5bb72913ac9aa90e797c47f0.png" alt="4fa9bcee5bb72913ac9aa90e797c47f0.png" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>一个关节里，通常有两个位置：电机侧、输出侧。&lt;/p>
+&lt;p>两者的角度差，乘上一个已知的刚度，就是扭矩。&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/20b3556349f1a9c3da9f3b5993875a3a.png" alt="20b3556349f1a9c3da9f3b5993875a3a.png" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>图 1｜两个位置的差值 | 电机侧 / 输出侧两个角度，差值引出&amp;quot;力矩信号&amp;quot;&lt;/p></description></item></channel></rss>
