@@ -4,7 +4,7 @@ wiki: true
 wiki_type: "company"
 wiki_rank: 53
 seed_count: 4
-lastmod: "2026-10-22"
+lastmod: "2026-11-05"
 description: "浙江锐鹰传感是嘉兴的编码器厂，光电、磁电、感应式三条平台并行，光电分体与整体式绝对值做到 17 至 25 位、中空型 KIN 系列覆盖 38 到 71 mm。"
 official_url: "https://www.reagles.cn/"
 wiki_category: "位置测量与编码器"
@@ -35,6 +35,9 @@ related_models: ["SROA48", "KIN60", "WIN48"]
 | [SROA13-17Bit / SROA20-17Bit](https://www.reagles.cn/Index/specification.html) | 超小型光电分体式单圈 | 17 位 | 外径 13 mm 与 20 mm |
 | [SROA35 / SROA46](https://www.reagles.cn/Index/specification.html) | 光电分体式，单圈与多圈 | 按型号 | 分体结构，与整体式共用读数原理 |
 | [KIN38 / KIN52 / KIN60 / KIN71](https://www.reagles.cn/Index/specification.html) | 中空型绝对值，单圈与多圈 | 按型号 | 型号数字对应中空孔径档，38 到 71 mm |
+| [KIJ 同侧电感双编码器](https://reagles.cn/index/news_expo_detail/content/10070.html) | 电感式，同侧双编，外径 25–45 mm | 双 24 位 | 重复定位精度 ±10 角秒；抗动态轴窜 ±0.2 mm；RS485；定转子可交叉互用 |
+| [KIT 同侧电感双编码器](https://reagles.cn/index/news_expo_detail/content/10070.html) | 电感式，同侧双编，关节模组用 | 双 24 位 | 重复定位精度 ±10 角秒；安装气隙 0.5±0.2 mm；20 秒现场校准；−40…+125 °C |
+| KID 异侧电感 / KIE 中空电感 / SRIA 电感 | 电感式，异侧双编与中空单编 | 官网未给逐型号参数 | 与 KIJ、KIT 同属电感平台，覆盖协作与工业机器人关节 |
 | [KON113-M16S20SN00 等](https://www.reagles.cn/Index/specification.html) | 反射式中空型绝对值 | 20 / 23 / 24 位 + 16 位多圈 | 反射式读数，中空 113 mm 级 |
 | [WIN36 / WIN48-G12S17](https://www.reagles.cn/Index/specification.html) | 分体式齿轮多圈绝对值 | 17 位 + 12 位齿轮多圈 | 分体外壳，低温与常规版本 |
 | [EROA52C-S24bit](https://www.reagles.cn/Index/specification.html) | 正余弦通讯型 | 24 位 | 正余弦信号加通讯输出 |
@@ -46,9 +49,11 @@ related_models: ["SROA48", "KIN60", "WIN48"]
 
 规格书清单给型号串与类型，命名规则给编码逻辑，产品分类页给结构（嵌入型/中空型/轴型 × 绝对值/增量，拉线一体式/分体式）。要看具体型号的电气与机械参数，必须下载对应规格书 PDF。
 
+上表里 KIJ、KIT、KID、KIE 这几行不来自规格书清单，而来自官方的新品与展会稿，是 2026 年才成型的一条独立产品线：光电与磁电做传统工业与伺服，电感式专攻人形与协作机器人的关节。它们的公开口径也换了落点——重点不在标称精度，而在安装容差（抗轴窜 ±0.2 mm、气隙 0.5±0.2 mm）、校准时间（20 秒）与温域（−40…+125 °C），也就是量产装配的工程指标。
+
 ## 在编码器链上的位置
 
-锐鹰是买光电元件或磁敏感元件、自己做码盘/码道与解算、装成整机的厂。**官网不公布它用的光电二极管阵列、解算 ASIC 或磁传感裸片的来源**，所以看到"锐鹰某型号"能推的是它对精度、体积与接口的取舍，不能推出内部器件供应商。
+锐鹰自己做码盘/码道与解算、装成整机。**它用的光电二极管阵列、解算 ASIC 或磁传感裸片的具体来源，官网没有列**；看到"锐鹰某型号"，可读到的是它对精度、体积与接口的取舍。
 
 它的位置在"国产替代"这一段：产品谱系对标的正是多摩川、海德汉、堡盟这些整机厂的型号段（协议兼容、外径覆盖 13 到 105 mm、锥轴直轴齐备），因此决策权多数在机床厂、伺服电机厂与机器人关节厂手里，且往往由"能不能直接替换现役型号"决定，而不是由分辨率决定。它同时卖光电传感器（标准方型、光纤、激光测距、8 m TOF），说明公司体量不只靠编码器一条线。
 
@@ -60,4 +65,5 @@ related_models: ["SROA48", "KIN60", "WIN48"]
 - [产品总览](https://www.reagles.cn/Index/product.html)
 - [规格书下载清单（含全部型号串）](https://www.reagles.cn/Index/specification.html)
 - [研发与制造](https://www.reagles.cn/Index/research.html)
+- [ITES2026 展会稿（KIJ / KIH / 直线系列首发）](https://reagles.cn/index/news_expo_detail/content/10070.html)
 - [应用案例](https://www.reagles.cn/Index/application.html)
