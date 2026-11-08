@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>时序 on 如是有为</title><link>https://sensor.fans/tags/%E6%97%B6%E5%BA%8F/</link><description>Recent content in 时序 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 26 Sep 2026 11:10:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E6%97%B6%E5%BA%8F/index.xml" rel="self" type="application/rss+xml"/><item><title>编码器开发专题（三）位置融合-上卷</title><link>https://sensor.fans/posts/tteyq-utocz4oerkwzxwrg/</link><pubDate>Sat, 26 Sep 2026 11:10:00 +0800</pubDate><guid>https://sensor.fans/posts/tteyq-utocz4oerkwzxwrg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/407e18bf083bce1a6790ba789359e6fe.jpg" alt="407e18bf083bce1a6790ba789359e6fe.jpg" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>前言:本章主要介绍QEP计数+细分位置的融合，Z信号问控处理，数字滤波，边界位置跳点处理。&lt;/p>
+&lt;p>应用场景:增量式光栅尺，光电编码器等。&lt;/p>
+&lt;p>在之前的文章中已经介绍了QEP计数和周期内细分，在实际的应用中往往这两者需要配合计算位置。&lt;/p></description></item></channel></rss>
