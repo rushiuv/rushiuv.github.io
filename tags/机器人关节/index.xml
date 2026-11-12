@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>机器人关节 on 如是有为</title><link>https://sensor.fans/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%B3%E8%8A%82/</link><description>Recent content in 机器人关节 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Mon, 09 Nov 2026 08:47:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%B3%E8%8A%82/index.xml" rel="self" type="application/rss+xml"/><item><title>关节不到90秒触发热降额：限流之后，位置还能不能跟住？</title><link>https://sensor.fans/posts/9rnrxaez2dj6wdenfpvpcg/</link><pubDate>Mon, 09 Nov 2026 08:47:00 +0800</pubDate><guid>https://sensor.fans/posts/9rnrxaez2dj6wdenfpvpcg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/7f3a82bea54417bfee59b4cda2e72340.jpg" alt="7f3a82bea54417bfee59b4cda2e72340.jpg" loading="lazy" decoding="async">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>机器人关节 on 如是有为</title><link>https://sensor.fans/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%B3%E8%8A%82/</link><description>Recent content in 机器人关节 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Thu, 12 Nov 2026 06:40:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%B3%E8%8A%82/index.xml" rel="self" type="application/rss+xml"/><item><title>KTM5300 离轴自校准：机器人关节的轴心，不该伺候一颗芯片</title><link>https://sensor.fans/posts/pvdarqvsvgxr-9incp6dba/</link><pubDate>Thu, 12 Nov 2026 06:40:00 +0800</pubDate><guid>https://sensor.fans/posts/pvdarqvsvgxr-9incp6dba/</guid><description>&lt;p>如 是 有 为 / ENGINEERING NOTES&lt;/p>
+&lt;p>磁编码器 · 机器人关节 · 工程判断&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/c7b67bee55e7e0943e94af210cde697a.jpg" alt="c7b67bee55e7e0943e94af210cde697a.jpg" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>DEVICE STUDY / KTM5300&lt;/p>
+&lt;p>机械工程师辛苦做出一根中空轴，不该最后再为了编码器改掉结构。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>CORE RESOLUTION21 bit核心角度分辨率&lt;/th>
+ &lt;th>CALIBRATED INL±0.02°典型值，指定条件&lt;/th>
+ &lt;th>ANGLE MAP64 点周期角度补偿节点&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>机器人关节中间那点地方，越来越贵了。&lt;/p></description></item><item><title>关节不到90秒触发热降额：限流之后，位置还能不能跟住？</title><link>https://sensor.fans/posts/9rnrxaez2dj6wdenfpvpcg/</link><pubDate>Mon, 09 Nov 2026 08:47:00 +0800</pubDate><guid>https://sensor.fans/posts/9rnrxaez2dj6wdenfpvpcg/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/7f3a82bea54417bfee59b4cda2e72340.jpg" alt="7f3a82bea54417bfee59b4cda2e72340.jpg" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>有人把机器人关节的热问题写得很具体：微型氮化镓功率级被装进密封壳体，在约30 A峰值相电流工况下运行，不到90秒便达到约125℃的结温估计或保护阈值，随后固件把电流上限降低约一半，以避免功率器件继续升温。&lt;/p></description></item><item><title>从"测角度"到"测扭矩"：位置信号还能派什么用场</title><link>https://sensor.fans/posts/9tgngq_2is--evuewd2pcq/</link><pubDate>Thu, 05 Nov 2026 11:00:00 +0800</pubDate><guid>https://sensor.fans/posts/9tgngq_2is--evuewd2pcq/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/4fa9bcee5bb72913ac9aa90e797c47f0.png" alt="4fa9bcee5bb72913ac9aa90e797c47f0.png" loading="lazy" decoding="async">
 &lt;/p>

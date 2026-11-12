@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>全部文章 on 如是有为</title><link>https://sensor.fans/posts/</link><description>Recent content in 全部文章 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Wed, 11 Nov 2026 11:14:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>纳芯微 MT6835：最难得的不是精度，而是对精度的克制</title><link>https://sensor.fans/posts/jgmdauycje4dcrjsawwbog/</link><pubDate>Wed, 11 Nov 2026 11:14:00 +0800</pubDate><guid>https://sensor.fans/posts/jgmdauycje4dcrjsawwbog/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/6103d8f1d2304e35b78c8e2b4953f97a.png" alt="6103d8f1d2304e35b78c8e2b4953f97a.png" loading="lazy" decoding="async">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>全部文章 on 如是有为</title><link>https://sensor.fans/posts/</link><description>Recent content in 全部文章 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Thu, 12 Nov 2026 06:40:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>KTM5300 离轴自校准：机器人关节的轴心，不该伺候一颗芯片</title><link>https://sensor.fans/posts/pvdarqvsvgxr-9incp6dba/</link><pubDate>Thu, 12 Nov 2026 06:40:00 +0800</pubDate><guid>https://sensor.fans/posts/pvdarqvsvgxr-9incp6dba/</guid><description>&lt;p>如 是 有 为 / ENGINEERING NOTES&lt;/p>
+&lt;p>磁编码器 · 机器人关节 · 工程判断&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/c7b67bee55e7e0943e94af210cde697a.jpg" alt="c7b67bee55e7e0943e94af210cde697a.jpg" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>DEVICE STUDY / KTM5300&lt;/p>
+&lt;p>机械工程师辛苦做出一根中空轴，不该最后再为了编码器改掉结构。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>CORE RESOLUTION21 bit核心角度分辨率&lt;/th>
+ &lt;th>CALIBRATED INL±0.02°典型值，指定条件&lt;/th>
+ &lt;th>ANGLE MAP64 点周期角度补偿节点&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>机器人关节中间那点地方，越来越贵了。&lt;/p></description></item><item><title>纳芯微 MT6835：最难得的不是精度，而是对精度的克制</title><link>https://sensor.fans/posts/jgmdauycje4dcrjsawwbog/</link><pubDate>Wed, 11 Nov 2026 11:14:00 +0800</pubDate><guid>https://sensor.fans/posts/jgmdauycje4dcrjsawwbog/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/6103d8f1d2304e35b78c8e2b4953f97a.png" alt="6103d8f1d2304e35b78c8e2b4953f97a.png" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>慕尼黑 electronica 的 NOVOSENSE 展台场景&lt;/p>
 &lt;p>慕尼黑 electronica 展会上，纳芯微的 NOVOSENSE 标识悬在展台中央。&lt;/p>

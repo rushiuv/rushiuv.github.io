@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>自校准 on 如是有为</title><link>https://sensor.fans/tags/%E8%87%AA%E6%A0%A1%E5%87%86/</link><description>Recent content in 自校准 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sun, 01 Nov 2026 00:35:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E8%87%AA%E6%A0%A1%E5%87%86/index.xml" rel="self" type="application/rss+xml"/><item><title>一块磁铁量出角度，AMR磁编码器从材料到校准讲明白</title><link>https://sensor.fans/posts/wechat-r6lqwnft3gelrfndcblvda/</link><pubDate>Sun, 01 Nov 2026 00:35:00 +0800</pubDate><guid>https://sensor.fans/posts/wechat-r6lqwnft3gelrfndcblvda/</guid><description>&lt;p>&lt;img src="images/001-33d61a48af.png" alt="封面：主人公与直径充磁磁铁的轴端测试架" loading="lazy" decoding="async">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>自校准 on 如是有为</title><link>https://sensor.fans/tags/%E8%87%AA%E6%A0%A1%E5%87%86/</link><description>Recent content in 自校准 on 如是有为</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Thu, 12 Nov 2026 06:40:00 +0800</lastBuildDate><atom:link href="https://sensor.fans/tags/%E8%87%AA%E6%A0%A1%E5%87%86/index.xml" rel="self" type="application/rss+xml"/><item><title>KTM5300 离轴自校准：机器人关节的轴心，不该伺候一颗芯片</title><link>https://sensor.fans/posts/pvdarqvsvgxr-9incp6dba/</link><pubDate>Thu, 12 Nov 2026 06:40:00 +0800</pubDate><guid>https://sensor.fans/posts/pvdarqvsvgxr-9incp6dba/</guid><description>&lt;p>如 是 有 为 / ENGINEERING NOTES&lt;/p>
+&lt;p>磁编码器 · 机器人关节 · 工程判断&lt;/p>
+&lt;p>&lt;img src="https://sensor.fans/images/wx/c7b67bee55e7e0943e94af210cde697a.jpg" alt="c7b67bee55e7e0943e94af210cde697a.jpg" loading="lazy" decoding="async">
+&lt;/p>
+&lt;p>DEVICE STUDY / KTM5300&lt;/p>
+&lt;p>机械工程师辛苦做出一根中空轴，不该最后再为了编码器改掉结构。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>CORE RESOLUTION21 bit核心角度分辨率&lt;/th>
+ &lt;th>CALIBRATED INL±0.02°典型值，指定条件&lt;/th>
+ &lt;th>ANGLE MAP64 点周期角度补偿节点&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>机器人关节中间那点地方，越来越贵了。&lt;/p></description></item><item><title>一块磁铁量出角度，AMR磁编码器从材料到校准讲明白</title><link>https://sensor.fans/posts/wechat-r6lqwnft3gelrfndcblvda/</link><pubDate>Sun, 01 Nov 2026 00:35:00 +0800</pubDate><guid>https://sensor.fans/posts/wechat-r6lqwnft3gelrfndcblvda/</guid><description>&lt;p>&lt;img src="images/001-33d61a48af.png" alt="封面：主人公与直径充磁磁铁的轴端测试架" loading="lazy" decoding="async">
 &lt;/p>
 &lt;p>电机轴上装一块磁铁，下面放一颗芯片。两者不接触，轴转到哪里，芯片就报出一个角度。&lt;/p>
 &lt;p>这件事看起来简单，真要做好，却会一路碰到材料、电路、磁铁、装配和算法。&lt;/p></description></item><item><title>人形机器人关节为什么在换编码器：从磁到电感式，差的不只是抗干扰</title><link>https://sensor.fans/posts/nrro1r03gluat9b7bwgz8g/</link><pubDate>Fri, 09 Oct 2026 18:00:00 +0800</pubDate><guid>https://sensor.fans/posts/nrro1r03gluat9b7bwgz8g/</guid><description>&lt;p>&lt;img src="https://sensor.fans/images/wx/f1dbf5d7bd40f06a54ed4e2bd79c23ea.png" alt="人形机器人关节为什么在换编码器：从磁到电感式，差的不只是抗干扰" loading="lazy" decoding="async">
